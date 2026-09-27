@@ -599,6 +599,20 @@
       "items": {
         "type": "string"
       }
+    },
+    "thumbnail": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Relative path to local lobby/cover art under thumbs/ (e.g. thumbs/<slug>.webp). Sourced from SlotCatalog / Big Win Board / studio art \u2014 not invented."
+    },
+    "thumbnail_attribution": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Attribution label for the thumbnail source (SlotCatalog, Big Win Board, etc.)."
     }
   },
   "$defs": {

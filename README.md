@@ -8,17 +8,21 @@ Built for Money / Crypto Marketing workflows under GitHub user [`stepupgaming`](
 
 Live dataset viewer (GitHub Pages): **https://stepupgaming.github.io/slot-mechanics-dataset/**
 
-Polished catalog viewer (game tiles + sticky filters + dossier with Mechanics/Symbols/Bonus/Sources). Search and filter by studio, confidence, win system, tumble/buy/ante. Raw JSON in `games/` / `dataset.json`. Visual system: `DESIGN.md`.
+Art-first catalog viewer (lobby/cover tiles + sticky filters + dossier with Mechanics/Symbols/Bonus/Sources). Search and filter by studio, confidence, win system, tumble/buy/ante. Raw JSON in `games/` / `dataset.json`. Visual system: `DESIGN.md`.
+
+### Thumbnails
+Cover art lives in `thumbs/<slug>.webp` with a `thumbnail` path on each index entry and game record. Sources (see `thumbnail_attribution`): **SlotCatalog** lobby thumbs and **Big Win Board** review featured images (studio promotional art redistributed for catalog browsing). Mechanics data is independent of art provenance.
 
 ## Layout
 
 ```
 schema/slot-mechanics.schema.json   # JSON Schema (draft 2020-12) for one game record
-games/<slug>.json                   # one record per game
-dataset.json                        # index + counts (points at games/)
+games/<slug>.json                   # one record per game (incl. thumbnail path)
+dataset.json                        # index + counts + thumbnail paths
 dataset-full.json                   # combined array of all records (large)
+thumbs/<slug>.webp                  # local lobby/cover art for the catalog viewer
 sources/                            # raw evidence dumps (official HTML/PDF/txt, SlotCatalog HTML)
-scripts/                            # parsers used to build records
+scripts/                            # parsers + thumbnail fetch / index rebuild
 ```
 
 ## Quick start

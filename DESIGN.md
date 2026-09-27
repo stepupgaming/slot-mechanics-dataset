@@ -4,10 +4,10 @@
 Catalog / Read. Browse and understand games. Presentation quality matters; the data must still be scannable.
 
 ## Brief (user)
-Polished public interface for the mechanics dataset. Reference energy of Big Win Board / Casino Guru catalogs, but cleaner, more structured, and better looking. Not a raw admin table. Not purple-glass SaaS.
+Polished public interface for the mechanics dataset. Reference energy of Big Win Board / Casino Guru catalogs — **art-first game tiles**, cleaner and more structured. Not a raw admin table. Not purple-glass SaaS.
 
 ## Scene
-Evening desk, researching slots. Deep charcoal canvas, soft elevated panels, warm accent (not neon).
+Evening desk, researching slots. Deep charcoal canvas, soft elevated panels, warm accent (not neon). Lobby art leads every tile.
 
 ## Color
 - Canvas: `#090a0d`
@@ -19,17 +19,20 @@ Evening desk, researching slots. Deep charcoal canvas, soft elevated panels, war
 - High: `#3ecf8e` · Medium: `#e0b44c` · Low: `#f07178`
 
 ## Type
-- Display / titles: **Bricolage Grotesque**
-- UI / body: **Source Sans 3**
-- Mono (slugs, JSON): **IBM Plex Mono** only for code paths — wait, IBM Plex is on anti-default list as family; use system mono stack instead for data.
+- Display / titles: **Fraunces**
+- UI / body: **Figtree**
+- Mono (slugs, JSON): system mono stack
 
 Scale: 12 / 13 / 14 / 16 / 18 / 24 / 40. Weights 400–700. Tracking on large titles −0.03em.
 
 ## Layout
 1. Top brand bar + search
 2. Filter chips (providers) + selects
-3. Responsive game **tile grid** (the catalog)
-4. Selecting a game opens a **dossier** (right drawer on desktop, full sheet on mobile): title block, at-a-glance strip, then structured sections (Mechanics · Symbols · Bonus · Sources)
+3. Responsive **art-first tile grid** (cover / lobby still → title / provider / chips)
+4. Selecting a game opens a **dossier** (right drawer on desktop, full sheet on mobile): hero art, title block, at-a-glance strip, then Mechanics · Symbols · Bonus · Sources
+
+## Thumbnails
+Local files under `thumbs/<slug>.webp` (relative paths in `dataset.json` / per-game JSON). Sourced from SlotCatalog lobby thumbs and Big Win Board review featured images. Attribution on each record (`thumbnail_attribution`). Tasteful initials placeholder only if a path is missing.
 
 ## Anti-references
-Previous dark purple glass dashboard; previous light admin toolbar shell.
+Previous dark purple glass dashboard; previous light admin toolbar shell; text-only tiles without art.
