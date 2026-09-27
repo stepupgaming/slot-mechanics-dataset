@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Merlin's Fortune",
@@ -178,13 +178,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -194,14 +194,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/merlins-fortune",
       "local_path": "sources/slotmill/merlins-fortune.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 6x4 -> 6x8 Video Slot\nBetways: 4096 -> 262144\nRTP (%): 96,27%\nMax win; x Bet: 10 000 x\nBonus Features: Free Spins, Merlin's Expansion, Transform\nSpecial Symbols: Wild, Bonus Symbol\nVolatility (variance): High\nGame URL: \"https://merlins-fortune.slotmill.com\"\nMerlin’s Fortune is a feature packed six-reel avalanche video slot with four symbol rows and 4096 betways in the base game and a max win of 10,000 times bet! Merlin’s Expansion is a random feature in the base game adding up to four additional symbol rows and a maximum 262,144 betways!\n\nTwo Bonus Symbols trigger the Transform feature which, after pay-out of normal wins, transforms all low symbols with their corresponding medium symbols giving new win opportunities.\n\nSymbols that are part of winning combinations during the Transform feature, explode and trigger an avalanche.\n\nFree Spins are triggered by three or more Bonus Symbols and a maximum of 16 spins can be awarded. During Free Spins, ro"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_merlins-fortune.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Immerse yourself in a world of magic with Merlin’s Fortune!\n\nMerlin’s Fortune is a feature packed six-reel avalanche video slot with four symbol rows and 4096\nbetways in the base game and a max win of 10,000 times bet! Merlin’s Expansion is a random feature in\nthe base game adding up to four additional symbol rows and a maximum 262,144 betways! Two Bonus\nSymbols trigger the Merlin’s Substitution feature which, after pay-out of normal wins, substitute all low\nsymbols with their corresponding medium symbols giving new win opportunities.\n\nSymbols that are part of winning combinations during Merlin’s Substitution, explode and trigger an\navalanche.\nFree Spins are triggered by three or more Bonus Symbols and a maximum of 16 spins can be awarded.\nDuring Free Spins, royal symbols are collected and"
     }
   ],
@@ -209,7 +209,8 @@
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: High"
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-merlins-fortune.webp",
   "thumbnail_attribution": "Slotmill"

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Emperors Rise",
@@ -79,7 +79,7 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": null,
+        "trigger": "Landing 3 bonus/scatter symbols triggers Free Spins (per official description).",
         "spins_awarded": null,
         "retrigger": null,
         "sticky_or_persistent_state": null,
@@ -89,7 +89,7 @@
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "what_happens": "Landing 3 bonus/scatter symbols triggers Free Spins (per official description).",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -116,6 +116,12 @@
     {
       "name": "Super Free Spins Bonus",
       "trigger": "Unlock the Free Spins bonus by landing 3 or more Bonus Symbols.",
+      "effects": "Unlock the Free Spins bonus by landing 3 or more Bonus Symbols.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
+      "trigger": null,
       "effects": "Unlock the Free Spins bonus by landing 3 or more Bonus Symbols.",
       "params": {}
     },
@@ -160,13 +166,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -176,14 +182,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/emperors-rise",
       "local_path": "sources/slotmill/emperors-rise.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 5x3 Video Slot\nPaylines: 20 bet lines\nRTP (%): Variant 1: 96.08 | Variant 2: 94.14\nMax win; x Bet: 6000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus\nSpecial Symbols: Multiplier Wild Symbol\nVolatility (variance): Medium-High\nGame URL: \"https://emperors-rise.slotmill.com\"\nEnter the majestic world of ancient Rome in Emperor’s Rise, a captivating 5×3 video slot with 20 Bet Lines. Stand beside the Emperor, a powerful warrior, in a game teeming with excitement and endless opportunities.\n\nExperience the thrill of the Random Multiplier Wild, a symbol of prosperity that can boost your wins by up to 20 times! With each spin, feel the excitement build as you rise to greatness with the strength of an emperor.\n\nUnlock the Free Spins bonus by landing 3 or more Bonus Symbols. Progress through five exhilarating stages of Free Spins, each marked by the gathering of Bonus Symbols. Delight in the increasing rewards, with higher Multiplier Wilds appearing at each stage.\n\nWith "
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_emperors-rise.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Emperor’s Rise\n\nEnter the majestic world of ancient Rome in Emperor’s Rise, a captivating 5×3 video slot with 20 Bet Lines.\nStand beside the Emperor, a powerful warrior, in a game teeming with excitement and endless\nopportunities.\n\nExperience the thrill of the Random Multiplier Wild, a symbol of prosperity that can boost your wins by up\nto 20 times! With each spin, feel the excitement build as you rise to greatness with the strength of an\nemperor.\n\nUnlock the Free Spins bonus by landing 3 or more Bonus Symbols. Progress through five exhilarating stages\nof Free Spins, each marked by the gathering of Bonus Symbols. Delight in the increasing rewards, with\nhigher Multiplier Wilds appearing at each stage.\n\nWith the potential to win up to 6000 times your bet, Emperor’s Rise offers a thrilling ga"
     }
   ],
@@ -192,7 +198,8 @@
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Medium-High"
+    "volatility from official specs: Medium-High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-emperors-rise.webp",
   "thumbnail_attribution": "Slotmill"

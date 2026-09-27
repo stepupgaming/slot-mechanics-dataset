@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Starspell",
@@ -119,7 +119,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -135,20 +135,21 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/star-spell",
       "local_path": "sources/slotmill/star-spell.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 5x3 Video Slot\nPaylines: 10 - fixed\nRTP (%): 96,17 %\nMax win; x Bet: 1 200 / 120 000\nBonus Features: Re-spin and 2x/3x win multipliers\nSpecial Symbols: Expanding, sticky wild\nVolatility (variance): Low\nGame URL: \"https://starspell.slotmill.com\"\nStarSpell is a 5-reel video slot with 10 bet lines where you can win two-ways – left to right or right to left on each bet line. Expanding Wilds appear on reels 2, 3 and 4 triggering a free re-spin. The wilds are sticky during the re-spin and additional wilds trigger another re-spin. A 2x win multiplier is applied to wins if two wilds are present and a 3x multiplier is applied to wins if three wilds are present. All 10 bet lines are always active, and players simply set their desired bet per spin in the casino currency. StarSpell is a low volatile game with a maximum win of 1,200 times bet or 120,000 Euro at max bet. The default bet levels can be customized for each operator.\n\nDesigned and b"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_star-spell.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "High-paced enchanting video slot\nStarSpell is a 5-reel video slot with 10 bet lines where you can win two-ways – left to right or right to\nleft on each bet line. Expanding Wilds appear on reels 2, 3 and 4 triggering a free re-spin. The wilds are\nsticky during the re-spin and additional wilds trigger another re-spin. A 2x win multiplier is applied to\nwins if two wilds are present and a 3x multiplier is applied to wins if three wilds are present. All 10 bet\nlines are always active, and players simply set their desired bet per spin in the casino currency. StarSpell\nis a low volatile game with a maximum win of 1,200 times bet or 120,000 Euro at max bet. The default\nbet levels can be customized for each operator.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmil"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
-    "volatility from official specs: Low"
+    "volatility from official specs: Low",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-star-spell.webp",
   "thumbnail_attribution": "Slotmill"

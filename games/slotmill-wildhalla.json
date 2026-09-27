@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Wildhalla",
@@ -171,13 +171,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -187,7 +187,7 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/wildhalla",
       "local_path": "sources/slotmill/wildhalla.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 5x4\nPaylines: 40\nRTP (%): Variant 1: 96.05% | Variant 2: 94.16%\nMax win; x Bet: 10 000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Wild Multiplier\nSpecial Symbols: Multiplier Wild, Wild Reset\nVolatility (variance): Very High\nGame URL: \"https://wildhalla.slotmill.com\"\nThe drums are pounding, the longships are ready, and a band of completely unqualified Vikings are charging headfirst toward Valhalla.\n\nAxes fly, shields break, and common sense is left far behind in this chaotic Norse adventure. Every time a Wild appears, another fearless warrior joins the charge, marching across the reels in search of glory, riches, and a spectacularly heroic death.\n\nSet on a 5x4 reel layout with 40 paylines, the battlefield is packed with roaming Wilds, growing multipliers, and enough Viking chaos to make Odin himself nervous. Whether your warriors earn eternal glory or simply run straight into disaster, massive wins of up to 10,000x your bet await those brave enough to jo"
     }
   ],
@@ -196,7 +196,8 @@
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Very High"
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-wildhalla.webp",
   "thumbnail_attribution": "Slotmill"

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Reel Rampage",
@@ -138,6 +138,18 @@
       "params": {}
     },
     {
+      "name": "Super Free Spins",
+      "trigger": null,
+      "effects": "Trigger Super Free Spins, and the mayhem hits top gear.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "In Free Spins, the action ramps up even further with guaranteed nudges and a Multiplier Meter that never resets.",
+      "params": {}
+    },
+    {
       "name": "Burst Mode",
       "trigger": "Player enables Burst Mode",
       "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
@@ -178,13 +190,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -194,14 +206,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/reel-rampage",
       "local_path": "sources/slotmill/reel-rampage.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 5x4 Video Slot\nPaylines: 20\nRTP (%): Variant 1: 96.04 | Variant 2: 94.12\nMax win; x Bet: 15000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Respin Feature\nSpecial Symbols: Bonus, Wilds, Stacked Symbols\nVolatility (variance): Very High\nGame URL: \"https://reel-rampage.slotmill.com\"\nReel Rampage puts you behind the wheel in a full-throttle 5x4 slot set in a world gone off the rails—where the only rule is win or get wrecked. With explosive volatility and a max payout of 15,000x your bet, every spin feels like a shot of pure nitrous.\n\nStacked Symbols are your ticket to chaos—land one on reel 1, watch it nudge into place, and fire up the Nitrous Respin feature. It’s a high-risk, high-reward ride where premium symbols lock in, multipliers build, and the longer you last, the harder it hits.\n\nModifiers fuel the rampage—upgrade symbols, add new ones, or charge the multiplier to pile on the pressure. In Free Spins, the action ramps up even further with guaranteed nudges and a M"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_reel-rampage.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Reel Rampage\n\nReel Rampage puts you behind the wheel in a full-throttle 5x4 slot set in a world gone off the rails—where the only\nrule is win or get wrecked. With explosive volatility and a max payout of 15,000x your bet, every spin feels like a\nshot of pure nitrous.\nStacked Symbols are your ticket to chaos—land one on reel 1, watch it nudge into place, and fire up the Nitrous\nRespin feature. It’s a high-risk, high-reward ride where premium symbols lock in, multipliers build, and the longer\nyou last, the harder it hits.\n\nModifiers fuel the rampage—upgrade symbols, add new ones, or charge the multiplier to pile on the pressure. In\nFree Spins, the action ramps up even further with guaranteed nudges and a Multiplier Meter that never resets.\nTrigger Super Free Spins, and the mayhem hits top ge"
     }
   ],
@@ -210,7 +222,8 @@
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Very High"
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-reel-rampage.webp",
   "thumbnail_attribution": "Slotmill"

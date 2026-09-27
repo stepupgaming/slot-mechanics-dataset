@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Shark Frenzy",
@@ -132,6 +132,12 @@
       "params": {}
     },
     {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Experience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases with each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!",
+      "params": {}
+    },
+    {
       "name": "Burst Mode",
       "trigger": "Player enables Burst Mode",
       "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”.",
@@ -165,13 +171,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "high",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -181,21 +187,22 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/shark-frenzy",
       "local_path": "sources/slotmill/shark-frenzy.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 5-reel 5-row Video Slot\nPaylines: 30 bet lines\nRTP (%): 96,13%\nMax win; x Bet: 7777 x\nBonus Features: Respin Frenzy, Free Spins bonus, Super Free Spins Bonus\nSpecial Symbols: Bonus, Wild\nVolatility (variance): Medium - High\nGame URL: \"https://shark-frenzy.slotmill.com\"\nDive into the depths of Shark Frenzy, the thrilling ocean-themed video slot that’s making waves!\n\nExperience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases with each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!\n\nKeep an eye out for the Shark Collector Wild symbol and get ready to respin your way to victory by collecting treasures worth up to 500x your bet!So, what are you waiting for? Jump in and experience the ultimate underwater adventure with Shark Frenzy!\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing feature"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_shark-frenzy.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Dive into the depths of Shark Frenzy\n\nDive into the depths of Shark Frenzy, the thrilling ocean-themed video slot that’s making waves!\n\nExperience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases\nwith each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!\nKeep an eye out for the Shark Collector Wild symbol and get ready to respin your way to victory by collecting\ntreasures worth up to 500x your bet!So, what are you waiting for? Jump in and experience the ultimate\nunderwater adventure with Shark Frenzy!\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have\ntwo integrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is an enhanced\naut"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Medium - High"
+    "volatility from official specs: Medium - High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-shark-frenzy.webp",
   "thumbnail_attribution": "Slotmill"

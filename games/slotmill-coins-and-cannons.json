@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:02Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Coins and Cannons",
@@ -97,7 +97,7 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "trigger": "Set your sights on the Free Spins Bonus by landing 3 Bonus symbols, where 10 free spins await, and Coin symbols accumulate for massive potential payouts.",
         "spins_awarded": 10,
         "retrigger": null,
         "sticky_or_persistent_state": null,
@@ -107,7 +107,7 @@
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "what_happens": "Set your sights on the Free Spins Bonus by landing 3 Bonus symbols, where 10 free spins await, and Coin symbols accumulate for massive potential payouts.",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -126,9 +126,15 @@
   },
   "features": [
     {
-      "name": "Yes",
+      "name": "Super Free Spins",
       "trigger": null,
-      "effects": "Yes listed under Bonus Features on official Slotmill game page.",
+      "effects": "For the ultimate thrill, aim for the Super Free Spins Bonus, where a guaranteed Multiplier Cannon on every spin ensures a heart-pounding chase for the ultimate booty.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Set your sights on the Free Spins Bonus by landing 3 Bonus symbols, where 10 free spins await, and Coin symbols accumulate for massive potential payouts.",
       "params": {}
     },
     {
@@ -194,14 +200,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/coins-and-cannons",
       "local_path": "sources/slotmill/coins-and-cannons.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): Variant 1: 96,08% | Variant 2: 94,04%\nMax win; x Bet: 15000x\nBonus Features: Yes\nSpecial Symbols: Free Spins Bonus, Super Free Spins Bonus, Wild\nVolatility (variance): High\nGame URL: \"https://coins-and-cannons.slotmill.com\"\nPrepare to set sail on an epic adventure in Coins & Cannons , a thrilling 6×6 Avalanche video slot where the spoils of victory can reach up to 15,000 times your bet! Immerse yourself in a world of explosive excitement as clusters of coins and symbols cascade across the grid, delivering exhilarating wins and non-stop action.\n\nThe true treasure of Coins & Cannons lies in its powerful bonus features. Harness the unique Coin Cluster™ feature to form clusters of coin symbols, unleashing multipliers that can send your winnings skyrocketing. But the real game-changer is the Multiplier Cannon—when this symbol lands, it locks in place and blasts your total win with multipliers of up to 100x!\n\nSet you"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_coins-and-cannons.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Coins and Cannons\n\nPrepare to set sail on an epic adventure in Coins & Cannons, a thrilling 6×6 Avalanche video slot where the\nspoils of victory can reach up to 15,000 times your bet! Immerse yourself in a world of explosive excitement\nas clusters of coins and symbols cascade across the grid, delivering exhilarating wins and non-stop action.\n\nThe true treasure of Coins & Cannons lies in its powerful bonus features. Harness the unique Coin Cluster™\nfeature to form clusters of coin symbols, unleashing multipliers that can send your winnings skyrocketing.\nBut the real game-changer is the Multiplier Cannon—when this symbol lands, it locks in place and blasts\nyour total win with multipliers of up to 100x!\n\nSet your sights on the Free Spins Bonus by landing 3 Bonus symbols, where 10 free spins a"
     }
   ],

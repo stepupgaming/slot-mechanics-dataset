@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Brew Brothers",
@@ -120,6 +120,18 @@
       "params": {}
     },
     {
+      "name": "Sticky Wilds",
+      "trigger": null,
+      "effects": "Trigger the Free Spins feature and brace yourself for the sticky wilds that cling to the reels, amplifying your chances of landing substantial wins.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Trigger the Free Spins feature and brace yourself for the sticky wilds that cling to the reels, amplifying your chances of landing substantial wins.",
+      "params": {}
+    },
+    {
       "name": "Burst Mode",
       "trigger": "Player enables Burst Mode",
       "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .’  Burst Mode functions as an enhanced auto-play, completing two game rounds per second.",
@@ -160,13 +172,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -176,14 +188,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/brew-brothers",
       "local_path": "sources/slotmill/brew-brothers.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 5x4 Video Slot\nBetways: 40\nRTP (%): 96.09%\nMax win; x Bet: 12 000x\nBonus Features: Free Spins with Sticky Wilds\nSpecial Symbols: Old Betty, Wilds\nVolatility (variance): Very High\nGame URL: \"https://brew-brothers.slotmill.com\"\nDeep within the untouched northern woodlands, Brew Brothers are busy crafting their legendary beverage in this captivating slot game. These two hillbilly siblings invite you into their world of rustic adventures, promising an experience that’s as wild as it gets.\n\nWith an opportunity to win an incredible 12,000 times your bet, the Brew Brothers slot is a rollercoaster of excitement. Keep an eye out for the Wild symbols featuring powerful multipliers, boosting your wins to astonishing heights.\n\nTrigger the Free Spins feature and brace yourself for the sticky wilds that cling to the reels, amplifying your chances of landing substantial wins. And watch out for Old Betty, the Wild adder, injecti"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_brew-brothers.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Journey into the Wild North!\n\nDeep within the untouched northern woodlands, Brew Brothers are busy crafting their legendary beverage\nin this captivating slot game. These two hillbilly siblings invite you into their world of rustic adventures,\npromising an experience that’s as wild as it gets.\n\nWith an opportunity to win an incredible 12,000 times your bet, the Brew Brothers slot is a rollercoaster of\nexcitement. Keep an eye out for the Wild symbols featuring powerful multipliers, boosting your wins to\nastonishing heights.\nTrigger the Free Spins feature and brace yourself for the sticky wilds that cling to the reels, amplifying your\nchances of landing substantial wins. And watch out for Old Betty, the Wild adder, injecting an element of\nmagic into your gameplay.\n\nJoin the escapade with the "
     }
   ],
@@ -192,7 +204,8 @@
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Very High"
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-brew-brothers.webp",
   "thumbnail_attribution": "Slotmill"

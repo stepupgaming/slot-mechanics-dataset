@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Super Fruit Smash",
@@ -133,6 +133,12 @@
       "params": {}
     },
     {
+      "name": "Giant Symbols",
+      "trigger": null,
+      "effects": "In addition, giant symbols can appear randomly at any time not only at the beginning of a spin.",
+      "params": {}
+    },
+    {
       "name": "Avalanche / Cluster Cascade",
       "trigger": "Winning cluster lands",
       "effects": "Still an avalanche game with a 6×6 symbol grid and based on matching symbols, but with new features and a doubled max win of 12000x bet!",
@@ -172,13 +178,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -188,14 +194,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/super-fruit-smash",
       "local_path": "sources/slotmill/super-fruit-smash.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 8+ Matching Symbols\nRTP (%): 96,08%\nMax win; x Bet: 12 000 x\nBonus Features: Free Spins, Super Free Spins, Giant Wild, Giant Fruit\nVolatility (variance): High\nGame URL: \"https://super-fruit-smash.slotmill.com\"\nSuper Fruit Smash is an evolution of our immensely popular ‘Fruit Smash’, where we have listened to player feedback and made the game even more fun and exciting to play. Still an avalanche game with a 6×6 symbol grid and based on matching symbols, but with new features and a doubled max win of 12000x bet!\n\nIn Super Fruit Smash we introduce Countdown Wilds that not only stay between avalanches but also come as a giant symbol and contain a multiplier. In addition, giant symbols can appear randomly at any time not only at the beginning of a spin. In Super Free Spins at least one Giant Symbol with a multiplier is guaranteed in each new spin. Another key change in Super Fruit Smash is that the mu"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_super-fruit-smash.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "More fruits and features with Super Fruit Smash!\n\nSuper Fruit Smash is an evolution of our immensely popular 'Fruit Smash', where we have listened to player\nfeedback and made the game even more fun and exciting to play. Still an avalanche game with a 6x6 symbol\ngrid and based on matching symbols, but with new features and a doubled max win of 12000x bet!\n\nIn Super Fruit Smash we introduce Countdown Wilds that not only stay between avalanches but also come\nas a giant symbol and contain a multiplier. In addition, giant symbols can appear randomly at any time not\nonly at the beginning of a spin. In Super Free Spins at least one Giant Symbol with a multiplier is guaranteed\nin each new spin. Another key change in Super Fruit Smash is that the multiplier values are multiplied with\neach other ins"
     }
   ],
@@ -203,7 +209,8 @@
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: High"
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-super-fruit-smash.webp",
   "thumbnail_attribution": "Slotmill"

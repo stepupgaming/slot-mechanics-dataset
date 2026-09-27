@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Season of Fortune",
@@ -80,7 +80,7 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": null,
+        "trigger": "Find 3 Bonus symbols to trigger Free Spins, where the seasonal excitement truly kicks in.",
         "spins_awarded": null,
         "retrigger": null,
         "sticky_or_persistent_state": null,
@@ -90,7 +90,7 @@
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "what_happens": "Find 3 Bonus symbols to trigger Free Spins, where the seasonal excitement truly kicks in.",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -127,6 +127,18 @@
       "params": {}
     },
     {
+      "name": "Super Free Spins",
+      "trigger": null,
+      "effects": "And in Super Free Spins, the gifts just keep getting bigger as the Christmas Coins remain persistent until used in a win.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Find 3 Bonus symbols to trigger Free Spins, where the seasonal excitement truly kicks in.",
+      "params": {}
+    },
+    {
       "name": "Avalanche / Cluster Cascade",
       "trigger": "Winning cluster lands",
       "effects": "Step into the holiday magic in Season of Fortune, a festive 6×6 Avalanche slot set in a snow-covered Christmas village, where cheerful surprises and big-win potential can deliver up to 15,000x your bet!",
@@ -152,13 +164,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "low",
     "numeric_limits": "high"
@@ -168,21 +180,22 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/season-of-fortune",
       "local_path": "sources/slotmill/season-of-fortune.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): Variant 1: 96,04% | Variant 2: 94,20%\nMax win; x Bet: 15000\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Wild\nVolatility (variance): High\nGame URL: \"https://season-of-fortune.slotmill.com\"\nStep into the holiday magic in Season of Fortune, a festive 6×6 Avalanche slot set in a snow-covered Christmas village, where cheerful surprises and big-win potential can deliver up to 15,000x your bet!\n\nAt the heart of the celebration is the Coin Cluster™ feature. Land clusters of shimmering Christmas Coins to rack up wins, then watch them merge into a single high-value Coin for even more festive fortune. When the Multiplier Present appears, it delivers a true holiday miracle, boosting your total win with a multiplier of up to x500!\n\nFind 3 Bonus symbols to trigger Free Spins, where the seasonal excitement truly kicks in. Every Multiplier Present once used increases the total win multiplier"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_season-of-fortune.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Season of Fortune\n\nStep into the holiday magic in Season of Fortune, a festive 6×6 Avalanche slot set in a snow-covered Christmas\nvillage, where cheerful surprises and big-win potential can deliver up to 15,000x your bet!\n\nAt the heart of the celebration is the Coin Cluster™ feature. Land clusters of shimmering Christmas Coins to rack up\nwins, then watch them merge into a single high-value Coin for even more festive fortune. When the Multiplier\nPresent appears, it delivers a true holiday miracle, boosting your total win with a multiplier of up to x500!\n\nFind 3 Bonus symbols to trigger Free Spins, where the seasonal excitement truly kicks in. Every Multiplier Present\nonce used increases the total win multiplier, growing throughout the round to create snowballing payouts. And in\nSuper Free S"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
-    "volatility from official specs: High"
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-season-of-fortune.webp",
   "thumbnail_attribution": "Slotmill"

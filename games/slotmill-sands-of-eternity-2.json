@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:02Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Sands of Eternity 2",
@@ -92,7 +92,7 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "trigger": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
         "spins_awarded": 8,
         "retrigger": null,
         "sticky_or_persistent_state": null,
@@ -102,7 +102,7 @@
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "what_happens": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -128,6 +128,12 @@
     },
     {
       "name": "Super Free Spins Bonus",
+      "trigger": null,
+      "effects": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
       "trigger": null,
       "effects": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
       "params": {}
@@ -195,14 +201,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/sands-of-eternity-2",
       "local_path": "sources/slotmill/sands-of-eternity-2.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 6x3->7 Video Slot\nPaylines: 729-117649 Bet Ways\nRTP (%): Variant 1: 96.10 | Variant 2: 94.09\nMax win; x Bet: 15000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus\nSpecial Symbols: Wild, Bonus Symbol\nVolatility (variance): Medium-High\nGame URL: \"https://sands-of-eternity-2.slotmill.com\"\nSands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up to 117,649 bet ways. The game starts with a unique 6 x 3 symbol grid arranged in a jigsaw pattern, offering 729 initial bet ways. Winning symbols and adjacent blockers are removed, allowing new symbols to cascade down in an avalanche motion, creating new win opportunities and increasing the number of bet ways.\n\nIn the base game, a random Expansion feature can activate, increasing the number of bet ways even further. Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.\n\nEach corner position of t"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_sands-of-eternity-2.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Sands of Eternity 2\n\nSands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up\nto 117,649 bet ways. The game starts with a unique 6 x 3 symbol grid arranged in a jigsaw pattern, offering\n729 initial bet ways. Winning symbols and adjacent blockers are removed, allowing new symbols to cascade\ndown in an avalanche motion, creating new win opportunities and increasing the number of bet ways.\n\nIn the base game, a random Expansion feature can activate, increasing the number of bet ways even further.\nLanding three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode,\nboosting the win multiplier with every win.\n\nEach corner position of the symbol grid holds special features that can significantly enhance win potent"
     }
   ],

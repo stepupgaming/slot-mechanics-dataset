@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "King of the Streets",
@@ -127,6 +127,18 @@
       "params": {}
     },
     {
+      "name": "Super Free Spins",
+      "trigger": null,
+      "effects": "And in Super Free Spins, the stakes climb even higher.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Hit 3 Bonus symbols to unlock Free Spins, where things get serious.",
+      "params": {}
+    },
+    {
       "name": "Avalanche / Cluster Cascade",
       "trigger": "Winning cluster lands",
       "effects": "Take over the city in King of the Streets, a gritty 6×6 Avalanche slot set in the heart of New York, where street smarts and bold moves can earn you up to 15,000x your bet!",
@@ -173,13 +185,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -189,14 +201,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/king-of-the-streets",
       "local_path": "sources/slotmill/king-of-the-streets.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): Variant 1: 96.04% | Variant 2: 94.20%\nMax win; x Bet: 15000\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Wild\nVolatility (variance): Very High\nGame URL: https://king-of-the-streets.slotmill.com/\nTake over the city in King of the Streets, a gritty 6×6 Avalanche slot set in the heart of New York, where street smarts and bold moves can earn you up to 15,000x your bet!\n\nAt the core of the action is the Coin Cluster™ feature—land clusters of Coin symbols to score big, then watch them merge into a single high-value Coin for even more winning potential. When the Multiplier Safe lands, it brings the heat—boosting your total win with a multiplier of up to 500x!\n\nHit 3 Bonus symbols to unlock Free Spins, where things get serious. Every Multiplier Safe becomes persistent, sticking around and stacking throughout the round to create explosive, escalating payouts. And in Super Free Spins, the sta"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_king-of-the-streets.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "King of the Streets\n\nTake over the city in King of the Streets, a gritty 6×6 Avalanche slot set in the heart of New York, where street\nsmarts and bold moves can earn you up to 15,000x your bet!\n\nAt the core of the action is the Coin Cluster™ feature—land clusters of Coin symbols to score big, then watch them\nmerge into a single high-value Coin for even more winning potential. When the Multiplier Safe lands, it brings the\nheat—boosting your total win with a multiplier of up to 500x!\n\nHit 3 Bonus symbols to unlock Free Spins, where things get serious. Every Multiplier Safe becomes persistent,\nsticking around and stacking throughout the round to create explosive, escalating payouts. And in Super Free Spins,\nthe stakes climb even higher.\n\nKing of the Streets brings raw urban energy and relentl"
     }
   ],
@@ -205,7 +217,8 @@
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Very High"
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-king-of-the-streets.webp",
   "thumbnail_attribution": "Slotmill"

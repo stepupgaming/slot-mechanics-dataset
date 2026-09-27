@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Demon's Gate",
@@ -127,6 +127,12 @@
       "params": {}
     },
     {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Free Spins send you deeper into the gate across five stages, each one unlocked by collecting Bonus Symbols and each one arming you with a more powerful Wild.",
+      "params": {}
+    },
+    {
       "name": "Avalanche / Cluster Cascade",
       "trigger": "Winning cluster lands",
       "effects": "Described as avalanche/cluster cascade in official game page copy.",
@@ -173,13 +179,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -189,14 +195,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/demons-gate",
       "local_path": "sources/slotmill/demons-gate.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 5x5 Cluster Video Slot\nPaylines: 5+ Cluster Pays\nRTP (%): Variant 1: 96.02 | Variant 2: 94.09\nMax win; x Bet: 10000x\nBonus Features: Freespins, Super Free Spins\nSpecial Symbols: Multiplier Wild\nVolatility (variance): Very High\nGame URL: \"https://demons-gate.slotmill.com\"\nDemon's Gate sends a lone demon slayer into the heart of darkness, the deeper you push, the bigger the rewards. A 5x5 Cluster Pays slot built around a Roaming Multiplier Wild that grows with every win and can reach x100, with a max payout of 10,000x your bet waiting on the other side.\n\nThe Multiplier Wild is your weapon of choice, land it in a cluster, it multiplies the win, steps up in value, then moves to a new position ready to strike again. Every hit builds on the last, and the momentum carries. Free Spins send you deeper into the gate across five stages, each one unlocked by collecting Bonus Symbols and each one arming you with a more powerful Wild. It anchors the reels throughout, rese"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_demons-gate.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Demon's Gate\n\nDemon's Gate sends a lone demon slayer into the heart of darkness, the deeper you push, the bigger the rewards.\nA 5x5 Cluster Pays slot built around a Roaming Multiplier Wild that grows with every win and can reach x100, with a\nmax payout of 10,000x your bet waiting on the other side.\n\nThe Multiplier Wild is your weapon of choice, land it in a cluster, it multiplies the win, steps up in value, then moves\nto a new position ready to strike again. Every hit builds on the last, and the momentum carries. Free Spins send\nyou deeper into the gate across five stages, each one unlocked by collecting Bonus Symbols and each one arming\nyou with a more powerful Wild. It anchors the reels throughout, resetting to the current stage multiplier, x3 to\nstart, x100 if you fight your way to Stag"
     }
   ],
@@ -205,7 +211,8 @@
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Very High"
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-demons-gate.webp",
   "thumbnail_attribution": "Slotmill"

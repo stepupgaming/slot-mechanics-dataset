@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:44Z",
+  "updated_at": "2026-09-27T18:34:05Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Gods of Glory",
@@ -108,9 +108,15 @@
   },
   "features": [
     {
-      "name": "Yes",
+      "name": "Super Free Spins",
       "trigger": null,
-      "effects": "Yes listed under Bonus Features on official Slotmill game page.",
+      "effects": "Unlock the true glory of Olympus with Free Spins, where the Expanding Wilds appear more frequently, and ascend to the pinnacle of the gods with Super Free Spins, where all Wilds transform into the revered Fully Expanding Wild, expanding in both directions.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Unlock the true glory of Olympus with Free Spins, where the Expanding Wilds appear more frequently, and ascend to the pinnacle of the gods with Super Free Spins, where all Wilds transform into the revered Fully Expanding Wild, expanding in both directions.",
       "params": {}
     },
     {
@@ -154,13 +160,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -170,14 +176,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/gods-of-glory",
       "local_path": "sources/slotmill/gods-of-glory.html",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Game Type: 5x6 Video Slot\nPaylines: 40\nRTP (%): Variant 1: 96.08 | Variant 2: 94.13\nMax win; x Bet: 15000x\nBonus Features: Yes\nSpecial Symbols: Expanding Wilds\nVolatility (variance): High\nGame URL: \"https://gods-of-glory.slotmill.com\"\nEnter the legendary realm of Ancient Greece with our exhilarating new video slot, “ Gods of Glory “. This 5×6 slot game features 40 bet lines and offers the chance to achieve heavenly wins, up to an extraordinary 15,000 times your bet!\n\nCentral to this epic adventure are the two types of Expanding Wilds. The first type surges downward, turning each covered position into a Wild symbol. The second type appears fully expanded, covering an entire reel with divine power. Each of these Wilds has a chance to be blessed with a multiplier, randomly enhancing your winnings by 2x to a mighty 10x.\n\nPrepare for the awe-inspiring Synced Reels, where two or more reels synchronize, landing identical symbols"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_gods-of-glory.pdf",
-      "extracted_at": "2026-09-27T18:33:44Z",
+      "extracted_at": "2026-09-27T18:34:02Z",
       "quote_or_excerpt": "Gods of Glory\n\nEnter the legendary realm of Ancient Greece with our exhilarating new video slot, \"Gods of Glory.\" This 5x6 slot game\nfeatures 40 bet lines and offers the chance to achieve heavenly wins, up to an extraordinary 15,000 times your bet!\n\nCentral to this epic adventure are the two types of Expanding Wilds. The first type surges downward, turning each\ncovered position into a Wild symbol. The second type appears fully expanded, covering an entire reel with divine\npower. Each of these Wilds has a chance to be blessed with a multiplier, randomly enhancing your winnings by 2x to\na mighty 10x.\n\nPrepare for the awe-inspiring Synced Reels, where two or more reels synchronize, landing identical symbols across\nthem for even greater chances of hitting legendary combinations.\nUnlock the tru"
     }
   ],
@@ -186,7 +192,8 @@
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: High"
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-gods-of-glory.webp",
   "thumbnail_attribution": "Slotmill"

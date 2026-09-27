@@ -667,10 +667,13 @@ def build_record(
         features.append(feat)
 
     # Named bonus features from specs — enrich from description sentences
-    if bonus_feats:
+    bf_useful = bonus_feats and bonus_feats.strip().lower() not in (
+        "yes", "no", "n/a", "na", "tba", "-", "none"
+    )
+    if bf_useful:
         for part in re.split(r",\s*", bonus_feats):
             part = part.strip()
-            if not part:
+            if not part or part.lower() in ("yes", "no", "n/a", "na", "tba"):
                 continue
             pl = part.lower()
             sent = find_sentence(desc, part)
@@ -701,6 +704,24 @@ def build_record(
                     None,
                     sent or f"{part} listed under Bonus Features on official Slotmill game page.",
                 )
+
+    # When specs only say Bonus Features: Yes (or empty), mine description for named mechanics
+    desc_feature_needles = [
+        ("Sticky Wilds", "Sticky Wilds"),
+        ("Stacked Wilds", "Stacked Wilds"),
+        ("Super Free Spins", "Super Free Spins"),
+        ("Giant Symbols", "Giant Symbols"),
+        ("Progressive Win Multiplier", "Progressive Win Multiplier"),
+        ("Respin Frenzy", "Respin Frenzy"),
+        ("Fortune Frenzy", "Fortune Frenzy"),
+        ("Free Spins", "Free Spins"),
+        ("Respins", "Respins"),
+    ]
+    for name, needle in desc_feature_needles:
+        if needle.lower() in dl:
+            sent = find_sentence(desc, needle)
+            if sent:
+                add_feature(name, None, sent)
 
     # Description-only features (avalanche, progressive) if not already listed
     if tumble and not any("avalanche" in f["name"].lower() or "cluster" in f["name"].lower() for f in features):
@@ -799,11 +820,33 @@ def build_record(
                 fs_effects_parts.append(persist)
 
         trigger = None
+        # Prefer explicit marketing wording e.g. "Landing three bonus symbols unlocks..."
+        trig_sent = find_sentence(
+            desc,
+            "Landing three bonus",
+            "Landing 3 bonus",
+            "three bonus symbols",
+            "3 bonus symbols",
+            "bonus symbols unlock",
+            "scatter symbols",
+        )
+        m_trig = re.search(
+            r"(?:land(?:ing)?|collect|hit)\s+(\d+)\s+(?:or more\s+)?(?:bonus|scatter)",
+            desc,
+            re.I,
+        )
         if pdf_info.get("trigger_count"):
             trigger = (
                 f"Product sheet implies trigger involving "
                 f"{pdf_info['trigger_count']}+ scatter/bonus symbols "
                 "(verify in sheet; marketing page may omit exact count)."
+            )
+        elif trig_sent:
+            trigger = trig_sent
+        elif m_trig:
+            trigger = (
+                f"Landing {m_trig.group(1)} bonus/scatter symbols triggers Free Spins "
+                "(per official description)."
             )
         elif "bonus" in (specials or "").lower():
             trigger = (
