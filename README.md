@@ -80,7 +80,7 @@ Live counts are always in `dataset.json` → `by_provider` / `by_confidence` / `
 | **Backseat Gaming** | **35** (all high) | Independent studio on Hacksaw OpenRGS. Same `en-us-gameinfo.html` CDN path; `identity.provider` = **Backseat Gaming**, slug prefix `backseat-`. |
 | **Elk Studios** | 1 (1 high: Ryze from Game Description PDF) | Expand only with official Game Description PDFs. |
 | **Slotmill** | **61** (**16 high** / **45 medium**) | Official pages + product sheets. High only when FS trigger/award evidenced in sheet/copy; Fast Track/Xtra-Bet *costs* not stated in public sheets (left null, medium when FS also vague). |
-| **Nolimit City** | 16 high gold (schema 1.1.0 + base_game_loop) | +Blood & Shadow 2, San Quentin 2, Fire in the Hole 2, Mental II, El Paso, Infectious 5. |
+| **Nolimit City** | 20 high gold (schema 1.1.0 + base_game_loop) | +Bushido Ways, Evil Goblins, Das xBoot, xWays Hoarder from GameSheets. |
 
 Priority while collecting: official rules/gameinfo first, SlotCatalog only to fill gaps without inventing mechanics.
 

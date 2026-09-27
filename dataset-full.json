@@ -48560,6 +48560,528 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:43:00Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Bushido Ways xNudge",
+      "slug": "nolimit-bushido-ways",
+      "provider_game_id": "BushidoWays",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/BushidoWays",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/bushido-ways-xnudge"
+    },
+    "grid": {
+      "rows": 4,
+      "cols": 5,
+      "rows_min": 4,
+      "rows_max": null,
+      "layout_notes": "5×4; Wild Geisha is 4-row high on reel 3. Ways 1,024 expanding up to 12,288."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": 1024,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "1,024 ways expandable to 12,288 via sliced wilds / expansions."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "Sliced Wilds expand to 2/3/4 wilds on reels 3/4/5; in free spins copy downward before slice. Wild Geisha nudges fully visible on reel 3."
+      },
+      "other": [
+        {
+          "name": "Oni Transform",
+          "how_it_works": "Bonus + stacked Samurai → transform into best paying symbol present; also upgrades lower stacked Samurai to that symbol."
+        },
+        {
+          "name": "The Wild Geisha (xNudge)",
+          "how_it_works": "4-row Wild on reel 3; always nudges fully visible; +1 win multiplier per nudge step."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Sliced Wild",
+          "behavior": "Single wilds on reels 2–5 (except Bonus). Sliced into 2/3/4 wilds on reels 3/4/5. In Shogun/Geisha copy downward to bottom row before slice.",
+          "params": {}
+        },
+        {
+          "name": "The Wild Geisha",
+          "behavior": "4-row high on reel 3; nudges fully visible; +1 mult per nudge. With 3 Bonus at trigger → Geisha Spins. During Shogun, landing Geisha upgrades to Geisha Spins with extra spins = multiplier achieved.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "3 Bonus → 8 Shogun Spins (+1 per extra Bonus). 3 Bonus + Wild Geisha → 8 Geisha Spins. Extra Bonus during Geisha +1 spin.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Samurai (stacked)",
+          "behavior": "With Bonus, Oni Transform upgrades to best paying symbol on reels.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Paid spin on 5×4 (1024→12288 ways). Sliced Wilds on 2–5; Wild Geisha xNudge on reel 3. Bonus+Samurai can Oni Transform. 3 Bonus → Shogun 8 (guaranteed wild each spin); Geisha present upgrades to Geisha Spins with sticky nudge mults. Buy Shogun 75× / Geisha 700×.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Reels stop; Geisha nudges if partial; sliced wilds apply; Oni Transform if Bonus+stacked Samurai.",
+          "ends_when": "Modifiers done",
+          "state_changes": "Ways/mult may rise"
+        },
+        {
+          "name": "Evaluate ways",
+          "order": 2,
+          "what_happens": "Pay left-to-right ways (up to 12,288).",
+          "ends_when": "Paid",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Bonus → Shogun 8; 3 Bonus+Geisha → Geisha 8.",
+          "ends_when": "Feature or end",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After nudge/slice/Oni transforms.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Shogun Spins",
+          "trigger": "3 Bonus symbols.",
+          "spins_awarded": "8 (+1 per additional Bonus at trigger)",
+          "retrigger": "Additional Bonus at trigger +1. Upgrade to Geisha by landing Wild Geisha during Shogun; extra Geisha spins = multiplier achieved.",
+          "sticky_or_persistent_state": "≥1 guaranteed single wild on reel 2–5 each spin. Sliced wilds copy downward before slice.",
+          "progressive_state": null,
+          "end_condition": "Spins done, upgrade to Geisha, or Journey's End 30,000×.",
+          "phases": [
+            {
+              "name": "Shogun",
+              "order": 1,
+              "what_happens": "8+ spins with guaranteed wilds; possible Geisha upgrade."
+            }
+          ],
+          "effects": "8 FS guaranteed wilds; upgradeable to Geisha."
+        },
+        {
+          "name": "Geisha Spins",
+          "trigger": "3 Bonus + Wild Geisha at once, or upgrade from Shogun.",
+          "spins_awarded": "8 natural; extra spins equal to xNudge multiplier when upgrading/awarding; +1 per extra Bonus.",
+          "retrigger": "+1 Geisha spin per extra Bonus during bonus.",
+          "sticky_or_persistent_state": "Each Geisha nudge awards sticky multiplier; ≥1 guaranteed wild on reels 2,4 or 5 each spin.",
+          "progressive_state": "Sticky multipliers from Geisha nudges.",
+          "end_condition": "Spins done or 30,000×.",
+          "phases": [
+            {
+              "name": "Geisha",
+              "order": 1,
+              "what_happens": "Sticky nudge mults; guaranteed wilds; Bonus retriggers."
+            }
+          ],
+          "effects": "Premium FS with sticky Geisha nudge multipliers."
+        }
+      ],
+      "notes": null
+    },
+    "features": [
+      {
+        "name": "Wilds & Sliced Wilds",
+        "trigger": null,
+        "when": "during_spin",
+        "effects": "Wilds on 2–5; slice 2/3/4 on reels 3/4/5; copy down in FS.",
+        "params": {}
+      },
+      {
+        "name": "The Wild Geisha (xNudge)",
+        "trigger": "Geisha lands reel 3",
+        "when": "during_spin",
+        "effects": "4-high nudge; +1 mult per step.",
+        "params": {}
+      },
+      {
+        "name": "Oni Transform",
+        "trigger": "Bonus + stacked Samurai",
+        "when": "during_spin",
+        "effects": "Transform to best paying symbol present.",
+        "params": {}
+      },
+      {
+        "name": "The Journey's End",
+        "trigger": "Cap",
+        "effects": "Max 30,000×.",
+        "params": {
+          "max_win_multiplier": 30000
+        }
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "when": "base_game",
+        "cost_text": "Shogun 75×; Geisha 700×",
+        "effects": "Buy Shogun or Geisha Spins.",
+        "params": {}
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Shogun Spins",
+          "cost_multiplier": 75.0,
+          "cost_text": "75× bet",
+          "effects": "Buy Shogun Spins.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Geisha Spins",
+          "cost_multiplier": 700.0,
+          "cost_text": "700× bet",
+          "effects": "Buy Geisha Spins.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": null
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 30000.0,
+      "max_win_notes": "Journey's End 30,000×",
+      "rtp_percent": 96.01,
+      "rtp_notes": "96.01% / 94.00%. Main 59.35%, free spins 36.66%.",
+      "hit_frequency_notes": "Hit frequency 21.54%; free spins ~1 in 205; win 100× ~1 in 1,179."
+    },
+    "confidence": {
+      "overall": "high",
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "high",
+      "base_game_loop": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Bushido_Ways_x_Nudge_23532_1_315c606cf0.pdf",
+        "local_path": "sources/nolimit/bushido-ways-xnudge/GameSheet.pdf",
+        "extracted_at": "2026-09-27T18:43:00Z",
+        "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                    Wilds & Sliced Wilds\n                                                              5x4   Oni Transform\n                                                                    Shogun/Geisha Spins\n                                                                    The Wild Geisha\n\n\n\n\nBUSHIDO WAYS xNUDGE\nHonour, Respect, Tribute, Glory, Fear and\nRevenge - Learn the way of the Warrior with\nNolimit City in Bushido Ways xNudge!\nThe game features a 5x4 reel area, 1,024 ways that can\nexpand up to 12,288 ways to win, Wilds / Sliced Wilds, Oni\nTransform and The Wild Geisha.\n\nEvery so often, Bushido Warriors spins their way into the\nlucrative Shogun Spins - which is the free spins feature of\nthe game. Simultaneously landing a Wild Geisha turns the\nShogun Spins into the even more lucrative Geisha Spins!\n\nThe most honourable and fearless Bushido warriors get to\nexperience The Journey’s End - which is only achievable by\nreaching the maximum payout of the game, 30,000x.\n\fGAME SHEET\n\n\n\n\nGame Features\nShogun Spins\nWhen landing 3 Bonus symbols, 8 Shogun Spins are\nawarded. Any additional Bonus symbol that lands awards\n+1 S"
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/bushido-ways-xnudge",
+        "local_path": "sources/nolimit/bushido-ways-xnudge/cms_features.txt",
+        "extracted_at": "2026-09-27T18:43:00Z",
+        "quote_or_excerpt": "## Shogun Spins\nWhen landing 3 Bonus symbols, 8 Shogun Spins are awarded. Any additional Bonus symbol that lands awards +1 Shogun Spin. For every spin, at least one guaranteed single wild will land on reel 2, 3, 4 or 5. It is possible to upgrade to Geisha Spins by landing The Wild Geisha during Shogun Spins. Extra Geisha Spins are awarded equal to the multiplier achieved.\n\n## Geisha Spins\nWhen landing 3 Bonus symbols at the same time as the The Wild Geisha lands, 8 Geisha Spins are awarded.\\nFor each nudge the The Wild Geisha does, a sticky multiplier is awarded.\\nExtra Geisha Spins are awarded equal to the xNudge multiplier. +1 spin is awarded if landing an extra Bonus symbol. +1 Geisha Spin is awarded if landing extra Bonus symbols during the bonus rounds. For every spin at least one guaranteed single wild will land on reels 2, 4 or 5.\n\n## Wilds & Sliced Wilds\nThere are single position Wilds on reel 2, 3, 4 and 5 and they substitute for any other symbol except for the Bonus symbols. The Wilds are sliced into 2 Wilds on reel 3, into 3 Wilds on reel 4 and into 4 Wilds on reel 5.\\nIn The Shogun Spins and Geisha Spins they also copy themselves downwards to the bottom row before possi"
+      }
+    ],
+    "unknowns": [],
+    "thumbnail": "thumbs/nolimit-bushido-ways.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:43:00Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Das xBoot",
+      "slug": "nolimit-das-xboot",
+      "provider_game_id": "DasxBoot",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/DasxBoot",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/das-xboot"
+    },
+    "grid": {
+      "rows": null,
+      "cols": 6,
+      "rows_min": 2,
+      "rows_max": 8,
+      "layout_notes": "Layout code 234432 = reel heights 2-3-4-4-3-2. Silent Hunter grows reel 3 to 8 rows."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Ways game on 2-3-4-4-3-2 layout; xWays expands heights. Exact base ways integer not printed on sheet."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "xBomb Wild blows away non-winning symbols for new symbols to fall in; +1 win multiplier before next collapse."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "xWays reveals 2–3 same symbol; Silent Hunter expands reel 3 to 8 rows."
+      },
+      "other": [
+        {
+          "name": "xNudge Wild",
+          "how_it_works": "4-row high; always nudges fully visible; +1 Wild mult per nudge."
+        },
+        {
+          "name": "Periscope Wild (Silent Hunter)",
+          "how_it_works": "With a win on reel 3: fills reel 3 to top and nudges down; mult per downward nudge; increased mult sticky for rest of feature."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xNudge Wild",
+          "behavior": "4-high; nudge fully visible; +1 mult per step.",
+          "params": {}
+        },
+        {
+          "name": "xBomb Wild",
+          "behavior": "Counts as Wild; removes non-winning symbols; +1 win mult before next collapse. In FS awards sticky win mult for remainder.",
+          "params": {}
+        },
+        {
+          "name": "Periscope Wild",
+          "behavior": "Silent Hunter reel 3; with win fills reel and nudges down for mults.",
+          "params": {}
+        },
+        {
+          "name": "xWays Wild (Wolf Pack)",
+          "behavior": "Collected toward torpedo parts in Wolf Pack Spins.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "3 → 8 Silent Hunter Spins (reel 3 = 8 high). 4 → 8 Wolf Pack Spins.",
+          "params": {}
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "xWays",
+          "behavior": "Always reveals 2–3 of same symbol; multiple xWays share the same kind.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Spin on 2-3-4-4-3-2 with xNudge, xWays, and xBomb collapses. 3 Bonus → Silent Hunter 8 (reel 3 to 8 high, Periscope sequence). 4 Bonus → Wolf Pack 8 (collect xWays Wilds to launch torpedoes, +1 mult per launch). Buy 75–350×.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Apply xNudge; reveal xWays; xBomb may clear non-winners and +1 collapse mult.",
+          "ends_when": "Collapses done",
+          "state_changes": "Ways/mult update"
+        },
+        {
+          "name": "Evaluate",
+          "order": 2,
+          "what_happens": "Pay ways wins.",
+          "ends_when": "Paid",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Bonus → Silent Hunter; 4 Bonus → Wolf Pack.",
+          "ends_when": "Feature or end",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After nudge/xWays/xBomb collapses.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Silent Hunter Spins",
+          "trigger": "3 Bonus symbols.",
+          "spins_awarded": "8",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Reel 3 grown to 8 rows. Periscope win sequence awards increased win mult for remainder; xBomb sticky win mult for remainder.",
+          "progressive_state": "Periscope downward nudges add mult; feature mult persists.",
+          "end_condition": "8 spins or Das Gold 55,200×.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Expand reel 3 to 8 rows; play 8 spins."
+            },
+            {
+              "name": "Periscope",
+              "order": 2,
+              "what_happens": "Win + Periscope Wild on reel 3 → fill to top, nudge down with mults; sticky feature mult."
+            }
+          ],
+          "effects": "8 FS; reel 3 = 8 high; Periscope torpedo sequence."
+        },
+        {
+          "name": "Wolf Pack Spins",
+          "trigger": "4 Bonus symbols.",
+          "spins_awarded": "8",
+          "retrigger": null,
+          "sticky_or_persistent_state": "xBomb sticky win mult for remainder of feature.",
+          "progressive_state": "Collect xWays Wilds as torpedo parts; each full launch +1 win mult.",
+          "end_condition": "8 spins or 55,200×.",
+          "phases": [
+            {
+              "name": "Wolf Pack",
+              "order": 1,
+              "what_happens": "Collect 4 torpedo parts from xWays Wilds; launch for +1 mult each; xBomb sticky mults."
+            }
+          ],
+          "effects": "8 FS torpedo collection with sticky xBomb mults."
+        }
+      ],
+      "notes": null
+    },
+    "features": [
+      {
+        "name": "xNudge Wilds",
+        "trigger": "Wild lands",
+        "when": "during_spin",
+        "effects": "4-high nudge; +1 mult/step.",
+        "params": {}
+      },
+      {
+        "name": "xWays",
+        "trigger": "xWays lands",
+        "when": "during_spin",
+        "effects": "Reveal 2–3 same symbol; multiples match kind.",
+        "params": {}
+      },
+      {
+        "name": "xBomb Wild",
+        "trigger": "xBomb lands",
+        "when": "during_spin",
+        "effects": "Clear non-winners; Wild; +1 mult next collapse.",
+        "params": {}
+      },
+      {
+        "name": "Das Gold Des Roter Teufel",
+        "trigger": "Cap",
+        "effects": "Max 55,200×.",
+        "params": {
+          "max_win_multiplier": 55200
+        }
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "when": "base_game",
+        "cost_text": "75×–350×",
+        "effects": "Buy into Silent Hunter / Wolf Pack.",
+        "params": {
+          "cost_range_min": 75,
+          "cost_range_max": 350
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Nolimit Bonus — bonus features",
+          "cost_multiplier": null,
+          "cost_text": "75×–350×",
+          "effects": "Buy Silent Hunter or Wolf Pack variants.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Per-mode prices not itemized."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 55200.0,
+      "max_win_notes": "55,200× (~1 in 64M)",
+      "rtp_percent": 96.03,
+      "rtp_notes": "96.03% / 94.04% DX1. Main 59.74%, free spins 36.29%.",
+      "hit_frequency_notes": "Hit frequency 22.17%; free spins 1 in 211; win 100× 1 in 635."
+    },
+    "confidence": {
+      "overall": "high",
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "medium",
+      "numeric_limits": "high",
+      "base_game_loop": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Das_x_Boot_252020_910e206e32.pdf",
+        "local_path": "sources/nolimit/das-xboot/GameSheet.pdf",
+        "extracted_at": "2026-09-27T18:43:00Z",
+        "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                       xNudge, xWays &\n                                                              234432   xBomb\n                                                                       Silent Hunter Spins\n                                                                       Wolf Pack Spins\n\n\n\n\nDAS xBOOT\nPerishing in the harsh sea’s depths lies the\nlost WWII gold, hidden in a longed after\nsubmarine. The fight for gold is at an all-\ntime high, where the hunters can become\nthe prey very easily.\nChaos erupts as your u-boat is in danger of suffering grief\ndamages. Will you be able to evade the enemy’s ferocious\nattacks and bring back the gold? Or will you suffer the\nnature of the cruel war at sea?\n\nDas xBoot is available with dual RTP setup at 96.03% and\n94.04% (DX1).\n\fGAME SHEET\n\n\n\n\nGame Features\nxNudge Wilds\n4-row high Wild that always nudges into fully visible, where\nevery nudge increases the Wild multiplier with +1.\n\nxWays\nSpecial symbol that adds additional winning ways, as it will\nalways reveal 2-3 of the same symbol. Land several xWays\nsymbols and they’ll all be of the same kind.\n\nxBomb Wild Multiplier\nxBombs will "
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/das-xboot",
+        "local_path": "sources/nolimit/das-xboot/cms_features.txt",
+        "extracted_at": "2026-09-27T18:43:00Z",
+        "quote_or_excerpt": "## xNudge Wilds\n4-row high Wild that always nudges into fully visible, where every nudge increases the Wild multiplier with +1.\n\n## xWays\nSpecial symbol that adds additional winning ways, as it will always reveal 2-3 of the same symbol. Land several xWays symbols and they’ll all be of the same kind.\n\n## xBomb Wild Multiplier\nxBombs will blow away the non-winning symbols from the reel, to make room for new symbols to fall in, as well as it’s counted as a Wild. A xBomb also increases the win multiplier by one before the next collapse.\n\n## Silent Hunter Spins\nThree bonus symbols activates eight Silent Hunter Spins where reel 3 has grown to 8 rows high. Get ready to enter the torpedo launch sequence when you land a winning combination together with the Periscope Wild on reel 3. Hit the target and the Periscope Wild fills the third reel\\nto the top and nudges down to the bottom, giving a win multiplier for each nudge downwards. It will also award an increased win multiplier for the remainder of the feature. xBombs also award a sticky win multiplier for the remainder of the feature.\n\n## Wolf Pack Spins\nFour bonus symbols activates eight Wolf Pack Spins. Load up the torpedo bay and collec"
+      }
+    ],
+    "unknowns": [
+      "exact base ways_count for 234432",
+      "per-mode buy prices in 75–350×"
+    ],
+    "thumbnail": "thumbs/nolimit-das-xboot.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T18:35:38Z",
     "identity": {
       "provider": "Nolimit City",
@@ -49103,6 +49625,283 @@
       "per-mode buy prices within 100–1000×"
     ],
     "thumbnail": "thumbs/nolimit-el-paso.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:43:00Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Evil Goblins xBomb",
+      "slug": "nolimit-evil-goblins",
+      "provider_game_id": "EvilGoblins",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/EvilGoblins",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/evil-goblins"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 6,
+      "rows_min": 3,
+      "rows_max": 7,
+      "layout_notes": "Sheet branding 6x3+; xBomb explosions add rows up to 7."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Ways on expanding rows; Evil 4 counts matched goblin symbols as 4-of-each. Exact base ways not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "xBomb removes all symbols except Scatters, Dead Wilds, Resurrection Wilds; +1 win mult; adds one row after explosion (up to 7); new symbols fall in."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "Each xBomb adds a row after explosion, up to 7 rows."
+      },
+      "other": [
+        {
+          "name": "Goblin Sacrifice",
+          "how_it_works": "Match top-row goblin with symbol beneath → sacrifice turns goblin into Wild."
+        },
+        {
+          "name": "Resurrection Wilds",
+          "how_it_works": "3 Dead Wilds activate → Resurrection Wilds; last Wild to land carries a hefty multiplier."
+        },
+        {
+          "name": "Evil 4",
+          "how_it_works": "All top goblins matched → throned goblin reel 1 with ≥x4 boost; symbols count as 4-of; +1 mult each matching top goblin."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Dead Wild / Resurrection Wild",
+          "behavior": "3 Dead Wilds transform into Resurrection Wilds; last Wild landing adds hefty multiplier.",
+          "params": {}
+        },
+        {
+          "name": "Sacrifice Wild",
+          "behavior": "Created when Goblin Sacrifice matches top goblin to reel below.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "Survives xBomb explosions. Free-spin trigger count for Fresh Meat Spins not stated on affiliate sheet.",
+          "params": {}
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "xBomb / Evil 4 multipliers",
+          "behavior": "xBomb +1 win mult per explosion; Evil 4 boosts ≥x4 and +1 per matching top goblin.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Top goblins",
+          "behavior": "Match for Sacrifice / Evil 4. In Feast, matching goblins stick; new matches become skeletons that still wild-convert matches.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "6-wide expanding grid. Goblin Sacrifice and Dead/Resurrection Wilds build wilds; xBomb clears (sparing scatters/dead/res wilds), +1 mult, +1 row to 7. Evil 4 when all top goblins matched. Fresh Meat 8 FS (Dead Wilds each spin) upgrades to Goblins Feast via Evil 4. Buy 60–666×.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Land symbols; resolve Sacrifice matches and Dead→Resurrection wilds.",
+          "ends_when": "Wild state set",
+          "state_changes": null
+        },
+        {
+          "name": "xBomb / Evil 4",
+          "order": 2,
+          "what_happens": "xBomb may explode (clear, +mult, +row). If all top goblins matched, Evil 4 activates.",
+          "ends_when": "Explosions/Evil4 done",
+          "state_changes": "Rows/mult may rise"
+        },
+        {
+          "name": "Evaluate",
+          "order": 3,
+          "what_happens": "Pay ways wins with active multipliers.",
+          "ends_when": "Paid",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 4,
+          "what_happens": "Enter Fresh Meat Spins when triggered (scatter count not on sheet); Evil 4 during Fresh Meat upgrades to Goblins Feast.",
+          "ends_when": "Feature or end",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After sacrifice/resurrection/xBomb/Evil4.",
+      "notes": "Fresh Meat trigger symbol count not printed on GameSheet."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Fresh Meat Spins",
+          "trigger": "Free-spin bonus mode (exact scatter/bonus count not stated on affiliate GameSheet).",
+          "spins_awarded": "8",
+          "retrigger": "Upgrade to Goblins Feast by triggering Evil 4 during Fresh Meat.",
+          "sticky_or_persistent_state": "Dead Wilds on each spin; high chance Sacrifice + xBomb.",
+          "progressive_state": null,
+          "end_condition": "8 spins, upgrade, or All Hail the King 31,969×.",
+          "phases": [
+            {
+              "name": "Fresh Meat",
+              "order": 1,
+              "what_happens": "8 spins with Dead Wilds each spin; possible Evil 4 → Feast upgrade."
+            }
+          ],
+          "effects": "8 FS Dead Wilds; upgrade via Evil 4."
+        },
+        {
+          "name": "Goblins Feast Spins",
+          "trigger": "Evil 4 during Fresh Meat (upgrade), or bought.",
+          "spins_awarded": "4",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Evil 4 multiplier active; matching goblins stay; new matches → skeletons that still wild-convert. Explosive Feast: xBomb every new spin.",
+          "progressive_state": "Matching goblin +1 mult while sticky.",
+          "end_condition": "4 spins or 31,969×.",
+          "phases": [
+            {
+              "name": "Feast",
+              "order": 1,
+              "what_happens": "4 spins with sticky goblins/skeletons and per-spin xBomb on Explosive upgrade."
+            }
+          ],
+          "effects": "4 FS Evil 4 feast with sticky goblins."
+        }
+      ],
+      "notes": "Fresh Meat entry scatter count unknown on sheet — left honest."
+    },
+    "features": [
+      {
+        "name": "Resurrection Wilds",
+        "trigger": "3 Dead Wilds",
+        "when": "during_spin",
+        "effects": "Become Resurrection Wilds; last Wild = hefty mult.",
+        "params": {}
+      },
+      {
+        "name": "Goblin Sacrifice",
+        "trigger": "Top goblin matches symbol below",
+        "when": "during_spin",
+        "effects": "Goblin → Wild.",
+        "params": {}
+      },
+      {
+        "name": "xBomb",
+        "trigger": "xBomb lands",
+        "when": "during_spin",
+        "effects": "Clear except Scatter/Dead/Res; +1 mult; +1 row to 7.",
+        "params": {}
+      },
+      {
+        "name": "Evil 4",
+        "trigger": "All top goblins matched",
+        "when": "during_spin",
+        "effects": "≥x4 boost reel 1; count as 4-of; +1 mult per matching top goblin.",
+        "params": {}
+      },
+      {
+        "name": "All Hail the King",
+        "trigger": "Cap",
+        "effects": "Max 31,969×.",
+        "params": {
+          "max_win_multiplier": 31969
+        }
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "when": "base_game",
+        "cost_text": "60×–666×",
+        "effects": "Buy into bonus features.",
+        "params": {
+          "cost_range_min": 60,
+          "cost_range_max": 666
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Nolimit Bonus — bonus features",
+          "cost_multiplier": null,
+          "cost_text": "60×–666×",
+          "effects": "Buy Fresh Meat / Feast variants.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Per-mode prices not itemized."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 31969.0,
+      "max_win_notes": "31,969× (~1 in 55M)",
+      "rtp_percent": 96.14,
+      "rtp_notes": "96.14% / 94.21% DX1. Main 63.46%, free spins 32.68%.",
+      "hit_frequency_notes": "Hit frequency 40.47%; free spins 1 in 191; win 100× 1 in 788."
+    },
+    "confidence": {
+      "overall": "high",
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "medium",
+      "features": "high",
+      "feature_buy": "medium",
+      "numeric_limits": "high",
+      "base_game_loop": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Evil_Goblins_x_Bomb_113355_85e46869c4.pdf",
+        "local_path": "sources/nolimit/evil-goblins/GameSheet.pdf",
+        "extracted_at": "2026-09-27T18:43:00Z",
+        "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                     Fresh Meat Spins\n                                                                     Goblins Feast Spins\n                                                              6x3+   xBomb, Evil 4, Goblin\n                                                                     Sacrifice and\n                                                                     Resurrection Wilds\n\n\n\n\nEVIL GOBLINS xBOMB\nThe mischievous goblins would like to come\nout to play in this slot. They are a malevolent\nbunch who want to interfere with your game\nand throw explosives everywhere just to get\ntheir way. Stop them from feeding off your\nsoul in the new Evil Goblins xBomb.\nEvil Goblins is available with dual RTP setup at 96.14% and\n94.21% (DX1).\n\fGAME SHEET\n\n\n\n\nGame Features\nResurrection Wilds\nYou need 3 Dead Wilds to activate and transform them into\nResurrection Wild Symbols. The last Wild symbol to land will also\ncount as a hefty multiplier.\n\n\nGoblin Sacrifice\nMatch the goblin on top of the reels with the symbol on the reel\nbeneath that same goblin to trigger a Goblin Sacrifice. get a match\nfor a grenade to be thrown as a sacrific"
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/evil-goblins",
+        "local_path": "sources/nolimit/evil-goblins/cms_features.txt",
+        "extracted_at": "2026-09-27T18:43:00Z",
+        "quote_or_excerpt": "## Resurrection Wilds\nYou need 3 Dead Wilds to activate and transform them into\\nResurrection Wild Symbols. The last Wild symbol to land will also\\ncount as a hefty multiplier.\n\n## Goblin Sacrifice\nMatch the goblin on top of the reels with the symbol on the reel\\nbeneath that same goblin to trigger a Goblin Sacrifice. get a match\\nfor a grenade to be thrown as a sacrifice, turning him into a Wild\\nsymbol.\n\n## xBomb\nThe inevitable explosion removes all symbols except Scatter\\nsymbols, Dead Wilds and Resurrection Wilds whilst also increasing\\nthe win multiplier with +1. Every time an xBomb symbol appears,\\none row will be added after the explosion, can go up to 7 rows.\n\n## Evil 4\nEvil 4 feature is triggered when all goblins at the top of the reels\\nare matched. The throned goblin will be sitting on reel 1, where\\na multiplier of x4 or higher is boosted. The symbols are counted\\nas 4 of each, multipliers will increase by 1 each time a matching\\ngoblin appears on the top reel.\n\n## Goblins Feast Spins\n4 spins with the Evil 4 multiplier activated. Each matching goblin\\nwill stay in its position with the rest of the bonus round, whilst the\\nmultiplier will increase +1. Any new matching go"
+      }
+    ],
+    "unknowns": [
+      "Fresh Meat Spins exact scatter/bonus trigger count",
+      "base ways_count",
+      "per-mode buy prices in 60–666×"
+    ],
+    "thumbnail": "thumbs/nolimit-evil-goblins.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {
@@ -52246,6 +53045,223 @@
     ],
     "thumbnail": "thumbs/nolimit-true-grit-redemption.webp",
     "thumbnail_attribution": "SlotCatalog"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:43:00Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "xWays Hoarder xSplit",
+      "slug": "nolimit-xways-hoarder",
+      "provider_game_id": "XwaysHoarder",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/XwaysHoarder",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/xways-hoarder"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": null,
+      "layout_notes": "5×3; xWays expands heights 2–4; xSplit doubles symbols left on row."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "xWays + xSplit expand ways. Base ways not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "xWays reveals 2–4 of same symbol (all xWays same kind). xSplit Wild splits all symbols to the left on the same row."
+      },
+      "other": [
+        {
+          "name": "Super Scatter",
+          "how_it_works": "Upgraded scatter; if FS triggered by Super Scatters, all symbols incl. scatter below Super Scatter convert to xWays on feature entry."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xSplit Wild",
+          "behavior": "Splits all symbols to the left on the same row.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter / Super Scatter",
+          "behavior": "3 Scatters → 7 Bunker Raid Spins; 4 → 10. May upgrade to Super Scatter (converts symbols below to xWays on entry).",
+          "params": {}
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "xWays",
+          "behavior": "Reveals 2–4 same symbol; all xWays show same kind. Sticky at bottom during Bunker Raid; collecting levels 1→3 removing low pays; each extra xWays +1 spin.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×3 ways spin with xWays (2–4 high, synced) and xSplit Wilds splitting leftward. 3/4 Scatters (or Super Scatters) start Bunker Raid 7/10 with sticky bottom xWays and level-ups that remove low pays. Buy 95–777× across 3 features.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Reveal xWays; apply xSplit left-row splits.",
+          "ends_when": "Modifiers done",
+          "state_changes": "Ways expand"
+        },
+        {
+          "name": "Evaluate",
+          "order": 2,
+          "what_happens": "Pay ways wins.",
+          "ends_when": "Paid",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3/4 scatters → Bunker Raid 7/10; Super Scatter entry converts below symbols to xWays.",
+          "ends_when": "Feature or end",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After xWays/xSplit.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Bunker Raid Spins",
+          "trigger": "3 Scatters (7 spins) or 4 Scatters (10 spins). Super Scatter trigger converts symbols below Super Scatter to xWays on entry.",
+          "spins_awarded": "7 from 3 scatters; 10 from 4 scatters",
+          "retrigger": "Any additional xWays awards +1 spin.",
+          "sticky_or_persistent_state": "All xWays sticky, stored at bottom of reels for feature.",
+          "progressive_state": "Collect xWays to level up Bunker Raid 1→3; each level removes more low paying symbols.",
+          "end_condition": "Spins done or max 11,030×.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 7 or 10; if Super Scatter entry, convert below symbols to xWays; stick xWays at bottoms."
+            },
+            {
+              "name": "Level up",
+              "order": 2,
+              "what_happens": "Collect xWays to advance levels 1–3 (low pays removed); +1 spin per extra xWays."
+            }
+          ],
+          "effects": "Sticky bottom xWays FS with 3 collect levels and +1 spin per xWays."
+        }
+      ],
+      "notes": null
+    },
+    "features": [
+      {
+        "name": "xSplit Wilds",
+        "trigger": "xSplit Wild lands",
+        "when": "during_spin",
+        "effects": "Split all symbols left on same row.",
+        "params": {}
+      },
+      {
+        "name": "xWays",
+        "trigger": "xWays lands",
+        "when": "during_spin",
+        "effects": "2–4 same symbol; all xWays same kind.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "when": "base_game",
+        "cost_text": "95×–777× across 3 bonus features",
+        "effects": "Buy into Bunker Raid variants.",
+        "params": {
+          "cost_range_min": 95,
+          "cost_range_max": 777
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Nolimit Bonus — 3 features",
+          "cost_multiplier": null,
+          "cost_text": "95×–777×",
+          "effects": "Buy one of three bonus features.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Per-mode prices not itemized."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 11030.0,
+      "max_win_notes": "11,030× (~1 in 14M)",
+      "rtp_percent": 96.14,
+      "rtp_notes": "96.14% / 94.10% DX1. Main 61.40%, free spins 32.70%.",
+      "hit_frequency_notes": "Hit frequency 21.54%; free spins ~1 in 307; win 100× 1 in 840."
+    },
+    "confidence": {
+      "overall": "high",
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "medium",
+      "numeric_limits": "high",
+      "base_game_loop": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_x_Ways_Hoarder_x_Split_12213_593d037898.pdf",
+        "local_path": "sources/nolimit/xways-hoarder/GameSheet.pdf",
+        "extracted_at": "2026-09-27T18:43:00Z",
+        "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                    Bunker Raid Spins\n                                                              5x3   xWays\n                                                                    xSplit\n\n\n\n\nxWAYS HOARDER xSPLIT\nCollect all the toilet paper you can, buy a\ngas mask and steal the biggest f*in car you\ncan find. Now you’re ready to play xWays\nHoarder.\nSay hello to Karen, Hovenberg, Moonshine King and make\nsure that you’re more of a hoarder than this bunch - a slot\nwhere you collect xWays symbols and can get rewarded\neven more if you split ‘em up with the new xSplit Wilds\nmechanic!\n\nNolimit City is taking it up a notch by combining the xWays\nmechanic with the xSplit mechanic - it’ll be awesome to\nstock up!\n\nxWays Hoarder xSplit is available with dual RTP setup at\n96.14% and 94.10% (DX1).\n\fGAME SHEET\n\n\n\n\nGame Features\nxSplit Wilds\nNot an ordinary wilds, and super potent as it’ll split all\nsymbols to the left on the same row. Boom!\n\nxWays\nJust as previously seen in a slot by Nolimit City - it’ll reveal\n2-4 of the same symbol and all xWays symbols will reveal\nthe same symbol for a major punch in the gut.\n\nScatter symbols\nTrigge"
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/xways-hoarder",
+        "local_path": "sources/nolimit/xways-hoarder/cms_features.txt",
+        "extracted_at": "2026-09-27T18:43:00Z",
+        "quote_or_excerpt": "## xSplit Wilds\nNot an ordinary wilds, and super potent as it’ll split all symbols to the left on the same row. Boom!\n\n## xWays\nJust as previously seen in a slot by Nolimit City - it’ll reveal 2-4 of the same symbol and all xWays symbols will reveal the same symbol for a major punch in the gut.\n\n## Scatter symbols\nTriggers the Bunker Raid Spins, but can also be upgraded to a Super Scatter symbol.\n\n## Bunker Raid Spins\nAll xWays symbols will be sticky for the remainder of the feature, and always stored in the bottom of the reels. If the FS is triggered by Super Scatters, then all symbols, incl. the scatter, below the Super Scatter automatically converts to xWays symbols when entering the feature.\\nCollect xWays symbols to level up the Bunker Raids Spin from level 1 to level 3 - each level with its upgrade of low paying symbols being removed.\\nAwards 7 or 10 free spins if triggered by 3 or 4 scatters. Any additional xWays symbols award +1 spin retrigger.\n\n## Nolimit Bonus - Feature Buy Functionality\nBuy your way straight into one of the 3 different bonus features, ranging from 95x to 777x the base bet.\n"
+      }
+    ],
+    "unknowns": [
+      "exact base ways_count",
+      "how Scatter upgrades to Super Scatter",
+      "per-mode buy prices in 95–777×"
+    ],
+    "thumbnail": "thumbs/nolimit-xways-hoarder.webp",
+    "thumbnail_attribution": "Nolimit City"
   },
   {
     "schema_version": "1.0.0",

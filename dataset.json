@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T18:41:34Z",
-  "game_count": 576,
-  "thumbnail_count": 576,
+  "updated_at": "2026-09-27T18:43:17Z",
+  "game_count": 580,
+  "thumbnail_count": 580,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
     "Slotmill": 61,
     "Backseat Gaming": 35,
-    "Nolimit City": 16,
+    "Nolimit City": 20,
     "Elk Studios": 11
   },
   "by_confidence": {
-    "high": 408,
+    "high": 412,
     "low": 28,
     "medium": 140
   },
@@ -30,7 +30,7 @@
       "medium": 1
     },
     "Nolimit City": {
-      "high": 16
+      "high": 20
     },
     "Pragmatic Play": {
       "high": 156,
@@ -3319,6 +3319,32 @@
       "thumbnail": "thumbs/nolimit-book-of-shadows.webp"
     },
     {
+      "slug": "nolimit-bushido-ways",
+      "title": "Bushido Ways xNudge",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-bushido-ways.json",
+      "win_system_type": "ways",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-bushido-ways.webp"
+    },
+    {
+      "slug": "nolimit-das-xboot",
+      "title": "Das xBoot",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-das-xboot.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-das-xboot.webp"
+    },
+    {
       "slug": "nolimit-deadwood-xnudge",
       "title": "Deadwood xNudge",
       "provider": "Nolimit City",
@@ -3343,6 +3369,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-el-paso.webp"
+    },
+    {
+      "slug": "nolimit-evil-goblins",
+      "title": "Evil Goblins xBomb",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-evil-goblins.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-evil-goblins.webp"
     },
     {
       "slug": "nolimit-fire-in-the-hole-2",
@@ -3486,6 +3525,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-true-grit-redemption.webp"
+    },
+    {
+      "slug": "nolimit-xways-hoarder",
+      "title": "xWays Hoarder xSplit",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-xways-hoarder.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-xways-hoarder.webp"
     },
     {
       "slug": "pragmatic-3-buzzing-wilds",
