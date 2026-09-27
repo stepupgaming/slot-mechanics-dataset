@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+<!--================= GAME DOCUMENTATION =========================================================-->
+<entry key="gdd-description">High above the clouds of Machu Picchu, ancient light stirs once more. Hidden within the Sun Temple, celestial gates align as the stars of Cygnus cast their cosmic glow upon the Andes. Time fractures, gravity bends, and the secrets of the ancient awaken!
+
+Cygnus 6 is a 6 column, 4 rows slot with dropping symbols. The columns can expand upwards to a maximum of 8 rows. The main features are the star charger, the starlight, Cygnus Realm and the multiplier pillar, and the bonus drops bonus game. 
+
+A bonus symbol reaching the leftmost column triggers the bonus game with bonus drops. The current active multiplier and star states are carried over to the bonus game and remain persistent throughout the bonus game.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Cygnus 6 has up to 262,144 ways to win. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.</entry> 
+
+<entry key="gdd-bonusgame">A bonus symbol that reaches the leftmost column triggers bonus mode with bonus drops. 7 bonus drops are awarded, and the current multiplier and star states are carried over to the bonus game. If another bonus symbol reaches the leftmost column during an active bonus game, it retriggers additional bonus drops.</entry> 
+
+<!--Key Features texts-->
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Standard 4,096 expanding up to 262,144 ways to win</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 reels</entry>
+<entry key="gdd-kf-rows">4 rows</entry> 
+<entry key="gdd-kf-maxexposure" tags="maxwin">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin" tags="maxwin">__TBB__ max bet</entry>
+
+
+<!-- Special Symbols text -->
+<entry key="gdd-sfs-1">The wild symbol substitutes for any payout symbol.</entry> 
+
+<entry key="gdd-sfs-2">A multiplier symbol that reaches the leftmost column or the bottom of the game grid increases the current multiplier value by 1 and then turns into a wild symbol.</entry>
+
+<entry key="gdd-sfs-3">A star charger symbol that reaches the bottom of the game grid activates 1 or multiple stars in the star constellation before turning into a wild symbol.</entry> <!-- Alt 1 --> 
+
+<entry key="gdd-sfs-4">A bonus symbol that reaches the leftmost column triggers a bonus game with bonus drops. 7 bonus drops are awarded, and the current multiplier and star states are carried over to the bonus game. Additional bonus drops can be triggered.</entry>
+
+<entry key="gdd-sfs-5">Mystery Symbols are awarded in the Cygnus Realm and turn into one payout symbol type.</entry>
+
+<!--X-iter UI button text-->
+<entry key="gdd-xiterbutton-1">Bonus Hunt</entry>			
+<entry key="gdd-xiterbutton-2">Mega Bonus Hunt</entry>
+<entry key="gdd-xiterbutton-3">Cosmic Spin</entry> 
+<entry key="gdd-xiterbutton-4">Bonus</entry>				
+<entry key="gdd-xiterbutton-5">Shooting Stars</entry>			
+
+
+<!--================= X-ITER UI TEXTS =========================================================-->
+<entry key="X01B1">Bonus Hunt</entry>
+<entry key="X01B2">More than 3 times the chance to trigger the Bonus game.</entry>
+<entry key="X01B3">Cygnus star constellation.</entry>
+
+<entry key="X02B1">Mega Bonus Hunt</entry> 
+<entry key="X02B2">More than 6 times the chance to trigger the Bonus game.</entry>
+<entry key="X02B3">Cygnus star constellation.</entry>
+
+<entry key="X03B1">Cosmic Spin</entry>
+<entry key="X03B2">Draw a pillar multiplier.</entry>
+<entry key="X03B3">The round is played with maximum rows.</entry>
+
+<entry key="X04B1">Bonus</entry>
+<entry key="X04B2">Guaranteed entry to the Bonus game.</entry>
+<entry key="X04B3">Cygnus star constellation.</entry>
+
+<entry key="X05B1">Shooting Stars</entry>
+<entry key="X05B2">Draw a pillar multiplier and a number of mystery symbols.</entry>
+<entry key="X05B3">Guaranteed Cygnus Realm.</entry>
+
+
+<!-- ================ GAMERULES ============================================================= -->
+<!-- Unique Init --> 
+<entry key="gamerule">Cygnus 6 is a 6 column, 4 row slot with dropping symbols. The grid can expand to a maximum of 8 rows.</entry> 
+
+<!--General Init -->
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Wins begin with the first leftmost column and only pay from left to right on consecutive columns. No gaps between the columns are allowed. Only the longest payline per active payline is paid out. An active payline is defined as the longest winning symbol combination.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry> <!--Translate Settings into local language using initial capital letter since it is a name of a button-->
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<!--Unique Game Rules-->
+<entry key="gamerule">The game is played in three modes; normal mode, the bonus mode with bonus drops, and the Cygnus Realm with Cygnus drops.</entry>
+
+<entry key="gamerule">All symbol drops in the normal mode start with 4 rows, 4,096 ways to win and no active multiplier.</entry>
+
+<entry key="gamerule">All wins in the current symbol drop are collected and thereafter all symbols which were part of a winning combination explode. The remaining symbols fall vertically, slide to the left and then right repeatedly until they reach a resting position. An additional row is added at the top and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.</entry>
+
+<entry key="gamerule">Each additional symbol drop adds an additional row of symbols, up to a maximum of 8 rows. The number of ways to win increases as the number of rows increases.
+4 rows: 4,096 ways to win
+5 rows: 15,625 ways to win
+6 rows: 46,656 ways to win
+7 rows: 117,649 ways to win
+8 rows: 262,144 ways to win</entry>
+
+<!--Cygnus 6 Game Specific -->
+<entry key="gamerule">The wild symbol substitutes for any payout symbol.</entry> 
+
+<!-- Progression -->
+<entry key="gamerule">From the start, the unlocked features include star charger, multiplier, wilds and bonus symbols.</entry> 
+
+<entry key="gamerule">The game begins with star constellation 1, which is represented by the butterfly with 3 stars.</entry>
+
+<entry key="gamerule">Successfully triggering the starlight feature, Cygnus Realm or bonus game advances to the next star constellation on the grid. This is also shown by advancing one step on the right pillar’s mini map ladder.</entry>
+
+<entry key="gamerule">The next stage is star constellation 2, which is the hummingbird with 5 stars.</entry>
+
+<entry key="gamerule">The subsequent stage is star constellation 3, which is the jaguar with 7 stars.</entry>
+
+<entry key="gamerule">Star constellation 4 is the final stage, represented by the llama with 9 stars. Once completed, the progression system resets to star constellation 1.</entry>
+
+<entry key="gamerule">Each Star constellation has an unique hit frequency that determines how often the Cygnus Realm is triggered.</entry>
+
+<!-- end of progression -->
+<entry key="gamerule">The progression of unlocked star constellations is saved at each bet level. Changing the bet level will install the saved values.</entry> 
+
+<!-- Star constellation -->
+<entry key="gamerule">Each star in the star constellation has 3 states: inactive, active, and consumed.</entry>
+
+<entry key="gamerule">Every star starts in the inactive state.</entry>
+
+<entry key="gamerule">A star transitions to the active state after a symbol in front of it has been part of a winning combination.</entry>
+
+<entry key="gamerule">A star transitions to the consumed state after it has been part of a starlight feature.</entry>
+
+
+
+<!--Game Rules Multiplier Symbol & Multiplier Pillar-->
+<entry key="gamerule">A multiplier symbol that reaches the bottom or the leftmost column increases the current active multiplier by 1 before turning into a wild symbol. The multiplier increases prior to the payout.</entry> 
+
+<entry key="gamerule">The first multiplier symbol that reaches the bottom or the leftmost column activates the current multiplier and defines the start value.</entry> 
+
+<entry key="gamerule">The current active multiplier multiplies all wins.</entry>
+
+<entry key="gamerule">The current active multiplier is reset before the start of a new game round.</entry>
+
+<!-- max win Symbol -->
+<entry key="gamerule" tags="maxwin">A max win symbol that reaches the leftmost column immediately pays the remaining amount required to reach the maximum win.</entry>
+
+<entry key="gamerule" tags="maxwin">A max win symbol that ends up on the bottom row in column 2 to 6 is removed and dropped down again in the column one step further to the left. The replacement occurs at the end of the current Avalanche cycle, and only once per cycle.</entry>
+
+<!--Star Charger Feature / Symbol-->
+<entry key="gamerule">The star charger symbol is activated when it reaches the bottom of the game grid. It activates 1, 2 or 3 stars in the star constellation before turning into a wild symbol.</entry> <!-- Alt 3  -->
+
+<!--Starlight feature-->
+<entry key="gamerule">The starlight feature is triggered if 2 or more stars within the current star constellation are in the active state at the end of an Avalanche. When activated, it turns all symbols along one or more constellation lines into the same payout symbol or wild symbols.</entry>  
+
+<entry key="gamerule">Upon activation, all active stars in the star constellation immediately transition to the consumed state, and the involved stars cannot contribute to a new starlight feature in the current game round.</entry>
+
+<entry key="gamerule" tags="maxwin">Multiplier, bonus and max win symbols along a direction selected by a starlight feature temporarily turn into the selected symbol. The feature symbols then return after the win evaluation.</entry>
+
+<entry key="gamerule" tags="no-maxwin">Multiplier and bonus symbols along a direction selected by a starlight feature temporarily turn into the selected symbol. The feature symbols then return after the win evaluation.</entry>
+
+<!--Cygnus Realm-->
+<entry key="gamerule">Cygnus Realm is triggered when all stars in the star constellation have been either consumed or activated. The game round is played through until the end when there are no more wins nor bonus drops before entering the Cygnus Realm.</entry>
+
+<entry key="gamerule">The Cygnus Realm is played on a 6x8 game grid. The current active multiplier is carried into the Cygnus Realm.</entry> <!-- Alt 1 -->
+
+<entry key="gamerule">The Cygnus Realm features three symbols: mystery symbol, premium mystery symbol and a blocker.</entry> 
+
+<entry key="gamerule">At the start of the Cygnus Realm, 3 Cygnus drops are awarded and all symbols in front of stars of the star constellation are turned into mystery symbols. Landing one premium mystery symbol resets the drop counter to 3.</entry>
+
+<entry key="gamerule">In each Cygnus drop, every blocker symbol is removed and replaced with either another blocker symbol, a mystery symbol or a premium mystery symbol.</entry>
+
+<entry key="gamerule">When there are no more Cygnus drops left all mystery and premium mystery symbols are turned into the same random payout symbol and a win evaluation happens, after which the game round ends.</entry>
+
+<!-- Feature order--> 
+<entry key="gamerule">Multiplier symbols perform their action first before the star charger symbols if both feature symbols are activated in the same drop.</entry>
+
+<!--Bonus and Swan Bonus-->
+<entry key="gamerule">A bonus symbol that ends up on the bottom row in columns 2 to 6 is removed and dropped down again in the column one step further to the left. The replacement occurs at the end of the current Avalanche cycle, and only once per cycle.</entry> 
+
+<entry key="gamerule">A bonus symbol that reaches the leftmost column triggers bonus mode with bonus drops. 7 bonus drops are awarded, and the current active multiplier is carried into the bonus game. The bonus game starts when there are no more winning combinations.</entry>
+
+<entry key="gamerule">A bonus symbol that reaches the leftmost column during bonus mode retriggers the bonus game, awarding 3 additional bonus drops.</entry>
+
+<entry key="gamerule">Each new bonus drop starts with a number of rows corresponding to the current safety level and with the current active multiplier. The active multiplier is persistent throughout the bonus game.</entry>
+
+<entry key="gamerule">The safety level starts at 4 rows, and increases by 1 row at the end of a winning bonus drop. The maximum safety level is 8 rows.</entry>
+
+<entry key="gamerule" tags="maxwin">The bonus game ends when no bonus drops remain or when the win cap has been reached.</entry>
+
+<entry key="gamerule" tags="no-maxwin">The bonus game ends when no bonus drops remain.</entry>
+
+<!-- General End -->
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+
+<entry key="gamerule" tags="maxwin">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry>
+
+<entry key="gamerule" tags="maxwin">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+<entry key="gamerule" tags="lastupdated">Last updated 2025-10-28</entry>
+
+<!-- Xiter rules -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule">All X-iter 1 to X-iter 4 rounds are played using a special Cygnus star constellation instead of the regular 4 star constellations.</entry>
+
+<entry key="xiter-rule">The Cygnus constellation contains 9 stars.</entry>
+
+<entry key="xiter-rule" tags="X05">Shooting Stars: Draw a pillar multiplier from 2 to 10 and 1, 2, 3 or 4 star constellations are selected on the right pillar at the cost of __X05_MULTIPLIER__ the selected bet. All collected constellation stars are placed on the game grid as mystery symbols. Cygnus Realm is guaranteed.</entry>
+
+<entry key="xiter-rule" tags="X04">Bonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet. If the Cygnus Realm is triggered, the Cygnus star constellation is carried over to the Cygnus Realm.</entry>
+
+<entry key="xiter-rule" tags="X03">Cosmic Spins: Draw a pillar multiplier at the cost of __X03_MULTIPLIER__ the selected bet. The round is played with the maximum of 8 rows. </entry>
+
+<entry key="xiter-rule" tags="X02">Mega Bonus Hunt: One spin with more than 6 times the chance to trigger the bonus game at the cost of __X02_MULTIPLIER__ the selected bet. If the Cygnus Realm is triggered, the swan constellation is carried over to the Cygnus Realm.</entry>
+
+<entry key="xiter-rule" tags="X01">Bonus Hunt: One spin with more than 3 times the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet. If the Cygnus Realm is triggered, the swan constellation is carried over to the Cygnus Realm.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated  2025-10-28</entry>
+
+<!--Dialogs-->	
+
+</translation>
+

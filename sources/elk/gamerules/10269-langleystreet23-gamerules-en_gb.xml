@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<translation language="en_gb" gameid="10269">
+<!--*************************************************************************************************
+
+	DO NOT TRANSLATE THE FOLLOWING:
+	Langley Street 23
+	Langley Street
+	Marvin
+	
+
+****************************************************************************************************** 
+ GAME DOCUMENTATION ******************************************************************************-->
+<entry key="gdd-description">
+Welcome to Langley Street. A quiet little neighborhood. Houses, people, pets, everything looks ordinary. Your first stop is Langley Street 23. Home to Marvin. 
+Marvin believes someone, or something, is watching him. On Langley Street, that’s not the strangest thing to believe.
+
+Langley Street 23 is a 5 row by 5 column slot.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+
+<entry key="gdd-payline">Langley Street 23 has 5 columns and 5 rows with 35 paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">Three or more bonus symbols in normal mode trigger the bonus game with bonus spins. There are two bonus modes that a player can trigger, sticky wilds or sticky mystery bonus.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+
+<entry key="gdd-kf-gametype">Slot</entry>
+
+<entry key="gdd-kf-lines">35 ways to win</entry>
+
+<entry key="gdd-kf-jackpot">No</entry>
+
+<entry key="gdd-kf-reels">5 columns</entry>
+
+<entry key="gdd-kf-rows">5 rows</entry>
+
+<entry key="gdd-kf-maxexposure" tags="maxwin">__TBB__ max bet</entry>
+
+<entry key="gdd-kf-maxwinsinglespin" tags="maxwin">__TBB__ max bet</entry>
+
+<!--GAME DOC: Symbol descriptions ***********************************************************************************-->
+<entry key="gdd-sfs-1">Collecting VHS tapes unlocks new features. There are a total of 4 features that can be unlocked.</entry>
+
+<!--Bonus-->
+<entry key="gdd-sfs-2">Three or more bonus symbols trigger the bonus game.</entry>
+
+<!--Multi adder-->
+<entry key="gdd-sfs-3">The multiplier adder increases or adds a multiplier value to symbols on the game grid.</entry>
+
+<!--Wild-->
+<entry key="gdd-sfs-4">The wild symbol substitutes for any payout symbol.</entry>
+
+<!--Mystery Symbol-->
+<entry key="gdd-sfs-5">The mystery symbols reveal the same payout or wild symbols. </entry>
+
+<!--Expanding Wild-->
+<entry key="gdd-sfs-6">The expanding wild symbol expands to cover the entire reel on landing and has two multiplier values. When all reels have landed, one of the two multiplier values is chosen and applied to the wild.</entry>
+
+<!--Cloning Wild-->
+<entry key="gdd-sfs-7">The cloning wild symbol, when unlocked, creates a wild symbol in its position and in the adjacent position to the left.</entry>
+
+<!--Xiter button ***********************************************************************************-->
+<entry key="ALT2-gdd-xiterbutton-5">STICKY WILD BONUS</entry>
+
+<entry key="ALT-gdd-xiterbutton-5">SUPER BONUS</entry>
+
+<entry key="gdd-xiterbutton-5">PROJECT: MEMORY WIPE</entry>
+
+<entry key="ALT-gdd-xiterbutton-4">STICKY MYSTERY BONUS</entry>
+
+<entry key="gdd-xiterbutton-4">BONUS</entry>
+
+<entry key="gdd-xiterbutton-3">THE LANGLEY FILES</entry>
+
+<entry key="gdd-xiterbutton-2">MEGA HUNT</entry>
+
+<entry key="ALT-gdd-xiterbutton-2">MEGA BONUS HUNT</entry>
+
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>
+
+<!--PAYTABLE ***********************************************************************************
+ Maxwin/Paytable General-->
+<gfx key="PaytableTxt">PAYTABLE</gfx>
+
+<gfx key="HaveFunTxt">Have Fun!</gfx>
+
+<gfx key="GoodLuckTxt">Good Luck!</gfx>
+
+<gfx key="WinUpToTxt">WIN UP TO</gfx>
+
+<gfx key="PlayedInTotalTxt">PLAYED IN TOTAL</gfx>
+
+<gfx key="TotalWinTxt">TOTAL WIN</gfx>
+
+<!--GENERIC TEXT
+ Header Paytable-->
+<entry key="WildSymbolsHeader">Wild Symbols</entry>
+
+<entry key="BonusGameHeader">BONUS GAME</entry>
+
+<entry key="MemoryWipeHeader">PROJECT: MEMORY WIPE</entry>
+
+<!--Subheader Paytable-->
+<gfx key="BonusSpinsSubHeader">BONUS SPINS</gfx>
+
+<entry key="WildSubHeader">WILD</entry>
+
+<entry key="BonusSymbolSubHeader">BONUS SYMBOL</entry>
+
+<entry key="SuperBonusSubHeader">SUPER BONUS</entry>
+
+<entry key="BonusSubHeader">BONUS</entry>
+
+<entry key="WaysToWinTxt">Ways to win</entry>
+
+<entry key="ConnectingLinesTxt">CONNECTING PAYLINES</entry>
+
+<entry key="MultipliersTxt">MULTIPLIERS</entry>
+
+<entry key="StartTxt">START</entry>
+
+<!--Langley 
+ Headers-->
+<entry key="MultiplierWildsHeader">MULTIPLIER WILDS</entry>
+
+<entry key="UnlockableFeaturesHeader">UNLOCKABLE FEATURES</entry>
+
+<entry key="UnlockableHeader">UNLOCKABLE</entry>
+
+<entry key="FeaturesHeader">FEATURES</entry>
+
+<entry key="UnlockFeaturesHeader">UNLOCK FEATURES</entry>
+
+<entry key="VhsTapesHeader">VHS TAPES</entry>
+
+<entry key="MultiplierAdderHeader">MULTIPLIER ADDER</entry>
+
+<entry key="LockedFeatureHeader">LOCKED FEATURES</entry>
+
+<entry key="MysterySymbolsHeader">MYSTERY SYMBOLS</entry>
+
+<entry key="ExpandingWildsHeader">EXPANDING WILDS</entry>
+
+<entry key="CloningWildsHeader">CLONING WILDS</entry>
+
+<entry key="SurveillanceTVHeader">SURVEILLANCE TV</entry>
+
+<entry key="StickyWildsHeader">STICKY WILD</entry>
+
+<entry key="StickyMysteryHeader">STICKY MYSTERY</entry>
+
+<entry key="SymbolPayout">SYMBOL PAYOUT</entry>
+
+<entry key="PaylinesHeader">PAYLINES</entry>
+
+<!--PAYTABLE PAGE GFX 2 - Wild Multipler adder and VHS + TV-->
+<entry key="paytableVHSTapes">Collecting VHS tapes unlocks new features. There are a total of 4 features than can be unlocked. </entry>
+
+<entry key="paytableMultiplierAdder">The multiplier adder increases or adds a multiplier value to mystery or wild symbols in the bonus game.</entry>
+
+<!--PAYTABLE PAGE GFX 3 - Mystery and Expanding wild-->
+<entry key="paytableMysterSymbol">The mystery symbols reveal the same payout or wild symbols. Each spin, after it is unlocked, there is a chance that payout symbols become mystery symbols.</entry>
+
+<entry key="paytableExpandingWild">The expanding wild symbol, when unlocked, expands to cover the entire reel and has two multiplier values. A fight starts where one of the two multiplier values is chosen and applied.</entry>
+
+<!--PAYTABLE PAGE GFX 4 - Cloning wild and Surveillance TV-->
+<entry key="paytableCloningWild">The cloning wild symbol, when unlocked, creates a wild symbol in its position and in the adjacent position to the left.</entry>
+
+<entry key="paytableSurvellanceTV">The surveillance TV, when unlocked, can trigger the mystery, cloning wild, expanding wild or bonus trigger re-spin. </entry>
+
+<!--PAYTABLE PAGE GFX 5 - BONUS-->
+<entry key="paytableBonusGame">Three or more bonus symbols trigger the bonus game.</entry>
+
+<entry key="paytableBonusGameChooseMode">Before the bonus spins begin, either sticky mystery or sticky wild bonus mode is awarded.</entry>
+
+<entry key="paytableBonusFeatures">All feature symbols are unlocked in the bonus game.</entry>
+
+<!--PAYTABLE PAGE GFX 6 - BONUS-->
+<entry key="paytableStickyMysteryFeatures">In the sticky mystery bonus mode, all mystery symbols are persistent during bonus spins. The mystery symbol reveals a symbol each spin.</entry>
+
+<entry key="paytableStickyWildFeatures">In the sticky wild bonus mode, all wild and expanding wild symbols are persistent during bonus spins.</entry>
+
+<!--PAYTABLE PAGE GFX - EXTRA-->
+<entry key="paytableWildSymbols">The wild symbol substitutes for any payout symbol at their current respective payout level.</entry>
+
+<!--Bonus game GENERAL **********************************************************************-->
+<gfx key="BonusIntroTxt">Bonus</gfx>
+
+<gfx key="PlayedInTotal">played in total</gfx>
+
+<gfx key="TotalWin">Total Win</gfx>
+
+<entry key="OfTxt">of</entry>
+
+<!--TRANSLATE (even if in CAPITALs)-->
+<entry key="StartBtn">START</entry>
+
+<entry key="BonusIntroMultiplier">Multiplier</entry>
+
+<entry key="BonusdropsBonusTxt">Bonus Spins</entry>
+
+<gfx key="CoinsTxt">Coins</gfx>
+
+<gfx key="StickyTxt">STICKY</gfx>
+
+<gfx key="MysteryTxt">MYSTERY</gfx>
+
+<gfx key="WildTxt">WILD</gfx>
+
+<!--GAMERULES ******************************************************************************** 
+
+* General Init *****************************-->
+<entry key="gamerule-0">Langley Street 23 is a 5 reels, 5 rows slot with spinning reels and 35 paylines.</entry>
+
+<entry key="gamerule-1">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule-2" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule-3">Wins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out. An active payline is defined as the longest winning symbol combination.</entry>
+
+<entry key="gamerule-4">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule-5" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule-6" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule-7">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<entry key="gamerule-8" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+
+<entry key="gamerule-9" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule-10">The game is played in two modes; Normal mode and Bonus mode with Bonus Spins.</entry>
+
+<!--* Game specific ****************************
+
+ STATE 1:
+ MULTI WILD-->
+<entry key="gamerule-11">The wild symbol substitutes for any symbol except bonus, multiplier adder and VHS tape symbols. The wild symbol may land with a multiplier. A payline of all wilds pays as the highest value symbol.</entry>
+
+<entry key="gamerules-111">Wild, Expanding Wild, and Mystery symbols might have a multiplier value when they land on the gamegrid. Possible multiplier values are: 
+
+Wild: 2x, 3x, 5x, 8x, 10x, 15x, 20x, 25x, 50x, or 100x.
+Expanding Wild: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, or 100x.
+Mystery: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, or 100x.</entry>
+
+<!--STATE/JOURNEY-->
+<entry key="gamerule-12">There are 4 features locked at the start of the game: mystery, expanding wild, cloning wild and surveillance TV.</entry>
+
+<!--VHS TAPES-->
+<entry key="gamerule-13">VHS tapes can only land on reel 5 and are added to the TV. The state of the surveillance and CRT TV is kept between game rounds for each bet level.</entry>
+
+<entry key="gamerule-14">VHS tapes cannot land during re-spins.</entry>
+
+<entry key="gamerule-15">Feature symbols have a different probability of landing depending on how many VHS tapes have been collected.</entry>
+
+<entry key="gamerule-16">The probability of triggering the bonus game is different depending on how many VHS tapes have been collected.</entry>
+
+<entry key="ALT-gamerule-5">VHS tapes have different probability of landing depending on how many VHS tapes have been collected.</entry>
+
+<!--STATE 2:
+ MYSTERY FEATURE-->
+<entry key="gamerule-17">When a total of 6 VHS tapes have been collected, the mystery symbol is unlocked. A mystery re-spin is awarded.</entry>
+
+<entry key="gamerule-18">A mystery re-spin is a re-spin with at least 1 guaranteed mystery symbol.</entry>
+
+<entry key="ALT-gamerule-6">A mystery re-spin is a re-spin with at least 3 guaranteed mystery symbols.</entry>
+
+<entry key="gamerule-19">The mystery symbols reveal the same payout or wild symbols.</entry>
+
+<entry key="gamerule-20">The mystery symbol can have a multiplier.</entry>
+
+<entry key="gamerule-21">Each spin, there is a chance that at least 1 payout symbol type becomes mystery symbols for that spin. When the reels stop, all mystery symbols become the same chosen symbol.</entry>
+
+<!--STATE 3:
+ EXPANDING WILD FEATURE-->
+<entry key="gamerule-22">When a total of 12 VHS tapes have been collected, the expanding wild symbol is unlocked. An expanding wild re-spin is awarded.</entry>
+
+<entry key="gamerule-23">An expanding wild re-spin is a re-spin with at least 1 guaranteed expanding wild symbol.</entry>
+
+<entry key="gamerule-24">The expanding wild symbol expands to cover the entire reel and has two multiplier values. When all reels have landed, one of the two multiplier values is chosen and applied to the wild. If a symbol with a multiplier is present on the same reel as an expanding wild when it expands, the multiplier values get added to the expanding wild.</entry>
+
+<entry key="gamerule-25">The expanding wild substitutes for any symbol except the bonus, multiplier adder and VHS tape symbols and may include a multiplier.</entry>
+
+<!--STATE 4:
+ CLONING WILD FEATURE-->
+<entry key="gamerule-26">When a total of 18 VHS tapes have been collected, the cloning wild symbol is unlocked. A cloning wild re-spin is awarded.</entry>
+
+<entry key="gamerule-27">A cloning wild re-spin is a re-spin with at least 1 guaranteed cloning wild symbol.</entry>
+
+<entry key="ALT-gamerule-1">A cloning wild re-spin is a re-spin with at least 3 guaranteed cloning wild symbols.</entry>
+
+<entry key="gamerule-28">Cloning wild symbols can land on reels 2, 3, 4 and 5. The cloning wild symbol creates a wild symbol in its position and in the adjacent position to the left. The cloning wild may have a multiplier. If it does, this multiplier will also be applied to the new wild symbols.</entry>
+
+<entry key="gamerule-29">If the cloning wild clones over a wild symbol or a expanding wild symbol, it instead adds its multiplier value to that symbol. If the cloning wild does not have a multiplier, it still adds +1.</entry>
+
+<entry key="gamerule-30">If the cloning wild clones over a mystery symbol that has turned into a payout symbol, it turns it into a wild symbol. If the cloning wild has a multiplier value it is added to the symbol.</entry>
+
+<entry key="gamerule-31">Each spin, there is a chance that at least 1 payout symbol type become cloning wild symbols for that spin on reels 2, 3, 4 and 5.</entry>
+
+<!--STATE 5/FINAL:
+ P-STATE UNLOCK-->
+<entry key="gamerule-32">When a total of 24 VHS tapes have been collected, the surveillance TV feature is unlocked and replaces the CRT TV. A re-spin with a guaranteed bonus game trigger is also awarded.</entry>
+
+<!--P-STATE-->
+<entry key="gamerule-33">The surveillance TV is split up into 4 screens. Each screen is paired with a matching VHS tape. When a VHS tape lands, there is a chance that it lights up a part of the image of the screen it belongs to. It may also collect an already collected piece, meaning that nothing happens, and lastly, it may immediately add the remaining pieces of the image.</entry>
+
+<entry key="gamerule-34">Every time the surveillance TV collects a VHS tape, there is an equal chance that the corresponding feature will trigger.</entry>
+
+<entry key="gamerule-35">When a screen's image is completed one of the following features are awarded: 
+
+Completing the top left screen triggers the mystery re-spin.  
+Completing the top right screen triggers the expanding wild re-spin.
+Completing the bottom left screen triggers the cloning wild re-spin.
+Completing the bottom right screen triggers a re-spin with guaranteed bonus trigger. </entry>
+
+<entry key="gamerule-36">Unlocked feature progression and the state of the surveillance TV is kept between game rounds for each bet level.</entry>
+
+<entry key="ALT-gamerule-2">The surveillance TV's respective screen is reset after its feature triggers.</entry>
+
+<!--BONUS-->
+<entry key="gamerule-37">Three or more bonus symbols trigger the bonus game with bonus spins. 
+The bonus game starts at the end of the game round when there are no more winning combinations in view. 
+
+- 3 bonus symbols trigger the bonus game with 8 bonus spins.
+- 4 bonus symbols trigger the bonus game with 10 bonus spins.
+- 5 bonus symbols trigger the bonus game with 12 bonus spins.</entry>
+
+<entry key="gamerule-38">There are no VHS tapes in the bonus games.</entry>
+
+<entry key="gamerule-39">All feature symbols are unlocked in the bonus game.</entry>
+
+<entry key="gamerule-40">Before the bonus spins begin, either sticky mystery or sticky wild bonus mode is awarded.</entry>
+
+<entry key="ALT-gamerule-3">Landing a bonus symbol in the bonus game adds +1 bonus spin.</entry>
+
+<!--BONUS WITH Wild-->
+<entry key="gamerule-41">In the sticky wild bonus mode, all wild and expanding wild symbols are persistent during bonus spins.</entry>
+
+<entry key="gamerule-42">In the sticky wild bonus mode, the multiplier adder increases or adds a multiplier value to one or more wild or expanding wild symbols.</entry>
+
+<!--BONUS WITH Mystery-->
+<entry key="gamerule-43">In the sticky mystery bonus mode, all mystery symbols are persistent during bonus spins. The mystery symbol becomes a symbol each spin.</entry>
+
+<entry key="gamerule-44">In the sticky mystery bonus mode, the multiplier adder increases or adds a multiplier value to one or more mystery symbols.</entry>
+
+<!--BONUS RE-SPINS-->
+<entry key="gamerule-45">In both bonus modes, there is a chance that the multiplier adder increases the bonus counter with +2 bonus spins.</entry>
+
+<entry key="ALT-gamerule-4">In both bonus modes, there is a chance that the multiplier adder increases the bonus counter with +1 bonus spin.</entry>
+
+<entry key="gamerules-112">The Multiplier Adder may target multiple symbols and increase the multiplier value of each target by one of the following amounts:
+1x, 2x, 3x, 5x, 10x, 15x, 20x, 25x.</entry>
+
+<!--* General End *******************************-->
+<entry key="gamerule-46">Winnings are paid out at the end of a game round.</entry>
+
+<entry key="gamerule-47">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule-48">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule-49" tags="mwp">The maximum total win is accumulated across all wins in the game round and can be obtained from one big win or several smaller wins. The probability to hit the maximum total win in the game is __MWP__.</entry>
+
+<entry key="gamerule-50">No bets can be changed during a game round.</entry>
+
+<entry key="gamerule-51">The theoretical return to player (RTP) is __RTP__.</entry>
+
+<entry key="gamerule-52">In the event of malfunction all bets and wins are void.</entry>
+
+<entry key="gamerule-53" tags="lastupdated">Last updated 2026-06-01</entry>
+
+<!--X-iter RULES *****************************************************************************-->
+<entry key="xiter-rule-0">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule-1" tags="X05">Project: Memory wipe:
+Guarantees a game round with at least 2 expanding wilds at the cost of __X05_MULTIPLIER__ the selected bet. The bonus mode can not be triggered.</entry>
+
+<entry key="ALT-xiter5-rule" tags="X05">Super bonus:
+Guarantees a game round with entry to the bonus game with 5 bonus symbols at the cost of __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="ALT2-xiter5-rule" tags="X05">Sticky wild bonus:
+Guarantees a game round with entry to the bonus game with the sticky wild mode at the cost of __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-2" tags="X04">Bonus:
+Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="ALT-xiter4-rule" tags="X04">Sticky mystery bonus:
+Guarantees a game round with entry the bonus game with the sticky mystery mode at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-3" tags="X03">The Langley Files:
+Guarantees a game round with one of the following features: cloning wild spin, mystery symbol spin, expanding wild spin or bonus trigger. The cost is __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-4" tags="X02">Mega hunt:
+Buy a game round with a higher chance to trigger a Bonus game. Cost is __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="ALT-xiter2-rule" tags="X02">Mega hunt: 
+One spin with 6 times the chance to trigger the bonus game, compared to the bonus probability when all features have been unlocked, at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="ALT2-xiter2-rule" tags="X02">Mega hunt: 
+One spin with 8 times the average chance to trigger the bonus game, at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-5" tags="X01">Bonus hunt:
+Buy a game round with a high chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="ALT-xiter1-rule" tags="X01">Bonus hunt: 
+One spin with 3 times the chance to trigger the bonus game, compared to the bonus probability when all features have been unlocked, at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="ALT2-xiter1-rule" tags="X01">Bonus hunt: 
+One spin with 4 times the average chance to trigger the bonus game, at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-6">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+
+<entry key="xiter-rule-7">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule-8">The theoretical return to player (RTP) for all X-iter game modes are __RTP__.</entry>
+
+<entry key="xiter-rule-9">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule-10">All game rules apply in X-iter mode.</entry>
+
+<entry key="xiter-rule-11" tags="lastupdated">Last updated 2026-06-01</entry>
+
+<!--Dialogs
+======== X-iter texts =========-->
+<entry key="X05B1">PROJECT: MEMORY WIPE!</entry>
+
+<entry key="X05B2">Guarantees a spin with at least 2 expanding wilds!</entry>
+
+<entry key="ALT-X05B1">SUPER BONUS!</entry>
+
+<entry key="ALT-X05B2">Guaranteed entry to the bonus game with 5 bonus symbols!</entry>
+
+<entry key="2ALT-X05B1">STICKY WILD BONUS!</entry>
+
+<entry key="2ALT-X05B2">Guaranteed entry to the bonus game with the sticky wild mode!</entry>
+
+<entry key="X04B1">BUY BONUS!</entry>
+
+<entry key="X04B2">Guaranteed entry to the bonus game!</entry>
+
+<entry key="ALT-X04B1">STICKY MYSTERY BONUS!</entry>
+
+<entry key="ALT-X04B2">Guaranteed entry to the bonus game with the sticky mystery mode!</entry>
+
+<entry key="X03B1">THE LANGLEY FILES!</entry>
+
+<entry key="X03B2">Guarantees a game round with one of the following features: cloning wild spin, mystery symbol spin, expanding wild spin or bonus trigger!</entry>
+
+<entry key="X02B1">MEGA HUNT!</entry>
+
+<entry key="ALT-X02B2">More than 6 times the average chance to trigger the bonus game!</entry>
+
+<entry key="X02B2">More than 8 times the average chance to trigger bonus game!</entry>
+
+<entry key="ALT2-X02B2">Higher chance to trigger a Bonus game!</entry>
+
+<entry key="X01B1">BONUS HUNT!</entry>
+
+<entry key="ALT-X01B2">More than 3 times the average chance to trigger the bonus game!</entry>
+
+<entry key="X01B2">More than 4 times the average chance to trigger bonus game!</entry>
+
+<entry key="ALT2-X01B2">High chance to trigger a Bonus game!</entry>
+
+<!--X-iter Onboarding-->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+
+<entry key="xiterOnboardingBet">Cost.</entry>
+
+<entry key="xiterOnboardingBet_2">Total bet.</entry><!--Backup alternative text-->
+
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry><!--Backup alternative text-->
+
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+</translation>

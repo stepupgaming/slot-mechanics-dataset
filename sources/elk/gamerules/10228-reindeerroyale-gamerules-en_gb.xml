@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- English en_gb -->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC-->
+
+<!--
+TRANSLATIONS INFO
+
+=================================
+Words not translated in this game
+=================================
+
+REINDEER ROYALE
+Oh Deer!
+It’s Reining Deers
+
+-->
+
+<!--
+==============
+SPECIAL TRANSLATION RULES:
+==============
+
+-->
+
+<!--X-iter UI button text-->
+<entry key="gdd-xiterbutton-1">Bonus Hunt</entry>
+<entry key="gdd-xiterbutton-2">Oh Deer!</entry>
+<entry key="gdd-xiterbutton-3">It’s Reining Deers</entry>
+<entry key="gdd-xiterbutton-4">Bonus</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus</entry>
+
+<!--X-iter UI texts-->
+<entry key="X01B1">Bonus Hunt</entry>
+<entry key="X01B2">More than TRIPLE the chance to trigger the Bonus and Super Bonus game!</entry>
+
+<entry key="X02B1">Oh Deer!</entry>
+<entry key="X02B2">Guaranteed reindeer on the first spin</entry>
+
+<entry key="X03B1">It’s Reining Deers</entry>
+<entry key="X03B2">Two guaranteed reindeer and a wild symbol on the first spin</entry>
+<entry key="X03B3">Guaranteed wild</entry>
+
+<entry key="X04B1">Bonus</entry>
+<entry key="X04B2">Guaranteed entry to the Bonus game.</entry>
+
+<entry key="X05B1">Super Bonus</entry>
+<entry key="X05B2">Guaranteed entry to the Super Bonus game.</entry>
+
+<!--Game documentation--> 
+<entry key="gdd-description">Hunters in the mountains have killed the leader of the weirdest reindeer gang the world has ever seen. In the eternal struggle between humans and reindeer, it is hard to know who is the prey and who is the hunter.
+The revenge drives the reindeer wild and they plan to break into the hunting lodge and kill the humans.
+Reindeer Royale is a 5 reels, 5 rows slot with 259 connecting paylines. The game's main features are collectors and coins, represented by reindeer and ammunition caches. The reindeer symbol is the driver of the game and awards respins when it collects ammunition caches or steals from other reindeer. 
+Wild symbols reveal ammunition caches when they are part of a win and can then trigger a collect.
+Three bonus symbols trigger the free spins bonus game which kicks off with a sticky reindeer. Triggering the bonus game with more bonus symbols guarantees additional sticky reindeer.</entry>
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Reindeer Royale has 259 connecting paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">Three or more bonus symbols trigger the bonus game with free spins. Three bonus symbols award 3 free spins and 1 initial reindeer in the bonus game, four bonus symbols award 4 free spins and 2 initial reindeer, five bonus symbols award 5 free spins and 3 initial reindeer.
+
+The reindeer which are in view when the bonus game is triggered are brought into the bonus game, in addition to the reindeer awarded by the bonus trigger. The bonus game starts immediately after potential payline wins and collections, ending any ongoing respin.
+All reindeers are sticky during the bonus game. 
+</entry> 
+
+<!--Key Features texts-->
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">259 connecting paylines</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">5 reels</entry>
+<entry key="gdd-kf-rows">5 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!--Special symbols-->
+<entry key="gdd-sfs-1">Wild symbols substitute for any symbol except the bonus, reindeer and ammunition cache symbols.</entry>
+
+<entry key="gdd-sfs-2">The ammunition cache symbol is a blocker. It has a value that is individually collected by all the reindeer currently in view.</entry>
+
+<entry key="gdd-sfs-3">The reindeer symbol is a blocker. It collects the value from all the ammunition caches currently in view, and from the vertically and horizontally connected reindeer.</entry>
+
+<entry key="gdd-sfs-4">Bonus symbols are blockers. Three or more bonus symbols trigger the free spins bonus game. All reindeer are sticky during the free spins. Free spins can be retriggered.</entry>
+
+<!--Gamerules-->
+<entry key="gamerule">Reindeer Royale is a 5 reel, 5 rows slot with spinning reels and 259 connecting paylines.</entry>
+
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Wins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry> <!--Translate Settings into local language using initial capital letter since it is a name of a button-->
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Reindeer Royale is played in two modes; normal mode and bonus mode with free spins.</entry>
+
+<entry key="gamerule">The wild symbol substitutes for any symbol except the bonus, reindeer and ammunition cache symbols. A payline of all wilds pays as the highest value symbol.</entry>
+
+<entry key="gamerule">A wild that contributes to a win reveals an ammunition cache with a random value. The reveal occurs after the payline win, and only if there is at least one reindeer in view.</entry>
+
+<entry key="gamerule">Ammunition cache symbols are blockers. All reindeer in view individually collect the values of the ammunition caches after the potential payline wins. The collections award one respin regardless of the number of ammunition caches and reindeer involved. The value of the ammunition cache is presented in the current active currency and based on the current active bet level. The value ranges from a minimum of 0.5 to a maximum of 25 times the active bet.</entry>
+
+<entry key="gamerule">Reindeer symbols are blockers. They collect values from all ammunition caches in view, and from vertically and horizontally adjacent reindeer. The collect awards a respin, during which the reindeer may move to new positions. Any additional reindeer that appear without ammunition caches during a respin award one respin regardless of the number of reindeer.</entry>
+
+<entry key="gamerule">The collection of ammunition caches and between reindeer occur after potential payline wins. One respin is awarded regardless of the number of reindeer and ammunition caches involved, as long as some value has been collected. The values of the reindeer are paid out at the end of the game round when there are no more respins.</entry>
+
+<entry key="gamerule">All reindeer in view individually collect all ammunition caches in view prior to any potential collection from each other. Reindeer do not interact with each other if neither of them has any value. The value of a reindeer can never decrease and it is kept until the end of the game round.</entry>
+
+<entry key="gamerule">The ghost feature is triggered randomly during a respin or free spin when there are at least two reindeer in view. It triggers a collect between a random number of reindeer that are currently in view. The selected reindeer do not need to be adjacent to each other, and the collection takes place over spinning reels where the selected reindeer are currently located.</entry>
+
+<entry key="gamerule">A combination of three or more bonus symbols during normal mode triggers the bonus mode with free spins.
+3 bonus symbols award 3 free spins and 1 reindeer in the first free spin
+4 bonus symbols award 4 free spins and 2 reindeer in the first free spin
+5 bonus symbols award 5 free spins and 3 reindeer in the first free spin</entry>
+
+<entry key="gamerule">Three or more bonus symbols during bonus mode retrigger additional free spins and additional reindeer. The number of additional free spins and reindeer is determined in the same way as when the bonus game was initially triggered. Single bonus symbols award an additional free spin.</entry>
+
+<entry key="gamerule">The bonus game starts immediately after potential payline wins and collections if a bonus game is triggered during a respin. The reindeer which are currently present in view are brought into the bonus game, in addition to the reindeer awarded by the bonus trigger. </entry>
+
+<entry key="gamerule">There can never be more than 5 reindeer simultaneously in view in any mode. Bonus triggers and retriggers only award additional free spins when the maximum number of reindeer is reached.</entry>
+
+<entry key="gamerule">The bonus game and super bonus game end when no free spins remain or when the win cap has been reached.</entry>
+
+<entry key="gamerule">Winnings are paid out at the end of the bonus mode.</entry>
+
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Reindeer Royale is __RTP__.</entry>
+
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+<entry key="gamerule" tags="lastupdated">Last updated 2024.12.12</entry>
+
+<!-- X-iter rules -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus: Guaranteed entry to the super bonus game with 5 free spins and 3 reindeer at the cost of __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">Bonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">It’s Reining Deers: Guarantees a game round with two reindeer and a wild symbol at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">Oh Deer!: Guarantees a game round with a reindeer at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">Bonus Hunt: One spin with more than TRIPLE the chance to trigger the bonus and super bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Reindeer Royale is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-11-11</entry>
+
+</translation>

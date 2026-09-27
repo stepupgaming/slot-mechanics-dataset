@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+
+<!--Intro-->
+	
+<!--Paytable-->
+<entry key="paytableWild">The wild symbol substitutes for any payout symbol except the bonus symbol. A payline of all wilds pays as the highest value symbol.</entry>
+<entry key="paytableNitroReels">Nitro Reels cover two symbol places and contain 4, 6, 8, 10 or 12 payout symbols.</entry>
+<entry key="paytableWinningRespins">All symbols and Nitro Reels which are part of a win respin individually. The respin feature continues as long as new winning combinations appear.</entry>
+<entry key="paytableNitroBooster">The Nitro Booster adds features onto the main reel. There are 8 different features.</entry>
+<entry key="paytableRespin">All Nitro Reels and bonus symbols lock in place and the Nitro Booster and all reels Respin.</entry>
+<entry key="paytableBothWays">All winnings are paid out from left to right and right to left.</entry>
+<entry key="paytableNitroWild">Nitro Reels landing in the same column will contain wild symbols.</entry>
+<entry key="paytableNitroMatch">Nitro Reels landing in the same column match up with a symbol on the reel to the left.</entry>
+<entry key="paytableNitroUpgrade">Nitro Reels landing in the same column are upgraded and add additional symbols to the Nitro Reel.</entry>
+<entry key="paytableAllNitroWild">All sticky and landing Nitro Reels will contain wild symbols exclusively.</entry>
+<entry key="paytableAllNitroMatch">All Nitro Reels landing match up with a symbol on the reel to the left.</entry>
+<entry key="paytableAllPremium">All Nitro Reels landing will contain high value symbols.</entry>
+<entry key="paytableBonusSymbols">3 or more bonus symbols trigger the free spins bonus game. The bonus can be retriggered.</entry>
+<entry key="paytableBonusGame">All Nitro Reels lock in place in the bonus game and remain in play for the remaining free spins.</entry>
+
+<!--X-iter-->
+<entry key="xiter1">Guarantees a winning spin at the cost of 5x the selected bet.</entry>
+<entry key="xiter2">Guarantees 3 spins with a feature or bonus symbol landing on every position in the Nitro Booster at the cost of 25x the selected bet.</entry>
+<entry key="xiter3">Guarantees a game round with three bonus symbols and entry to the bonus game at the cost of 100x the selected bet.</entry>
+<entry key="xiter4">Guarantees a game round with four bonus symbols and entry to the bonus game at the cost of 200x the selected bet.</entry>
+<entry key="xiter5">Guarantees a game round with three bonus symbols and entry to the bonus game with twelve Nitro Reels, the maximum number possible, at the cost of 500x the selected bet.</entry>
+
+<!--X-iter UI texts-->
+<entry key="X01B1">Win on every spin!</entry>
+<entry key="X02B1">3 spins</entry>
+<entry key="X02B2">All 6 Nitro Booster slots activated!</entry>
+<entry key="X03B1">Guaranteed entry to the bonus game!</entry>
+<entry key="X04B1">Guaranteed entry to the bonus game!</entry>
+<entry key="X04B2">At least 15 free spins!</entry>
+<entry key="X05B1">Guaranteed entry to the bonus game!</entry>
+<entry key="X05B2">Bonus game starts with 12 locked Nitro Reels!</entry>
+
+<!--Gamerules-->
+<entry key="gamerules">
+<![CDATA[
+1. Nitropolis 2 is a 6 reel, 4 rows slot with up to 191 102 976 ways to win.
+
+2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.
+
+3. Each bet is __CPBB__ coins.
+
+4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. Nitropolis 2 is played in two modes; Normal mode and Bonus mode with free spins.
+
+10. All spins in Normal mode and Bonus mode start with 6 reels, 4 rows and 4 096 ways to win.
+
+11. The wild symbol substitutes for any symbol except the bonus symbol and the Nitro Booster symbols. A payline of all wilds pays as the highest value symbol.
+
+12. All symbols and Nitro Reels which are a part of a win, respin individually. The new result is paid out accordingly and the respin feature continues as long as new winning combinations appear.
+
+13. A Nitro Reel always covers two symbol places and can be of size 4, 6, 8, 10 or 12. The size represents the number of identical 1x1 symbol instances it contains, e.g. size 8 consists of 8 standard 1x1 symbols.
+
+14. A Nitro Reel can appear in an initial spin and randomly when two symbols vertically next to each other respin after a win.
+
+15. The number of ways to win increase as the number of Nitro Reels and the size of the Nitro Reels increase. It starts with 4 096 and may grow up to a maximum 191 102 976 ways.
+
+16. Nitro Boosters are separate reels which stop prior to the main reels. They only contain feature symbols and bonus symbols. 6 features affect Nitro Reels and 2 affect the main reels. Nitro Booster reels above respinning main reels will also respin during winning respins, except for when they contain an active Nitro Booster feature.
+
+17. The Nitro Booster features affecting Nitro Reels are: Nitro Wild, Nitro Match, Nitro Upgrade, All Wild, All Match and All Premium. Nitro Wild, Nitro Match and Nitro Upgrade will only affect Nitro Reels on the corresponding reel in the same column. All Wild, All Match and All Premium will affect all Nitro Reels in the game view.
+
+18. The Both Ways and Respin features will affect all main reels. The Respin feature will also affect the Nitro Booster.
+
+19. The Respin feature activates when a Respin symbol is in the Nitro Booster, and there are no more wins on the main reels. All Nitro Reels, bonus symbols, and the Both Ways feature symbol lock in place. All main reels, including Nitro Reels and the Nitro Booster, respin. If there are multiple Respin feature symbols in the Nitro Booster, 1 Respin is activated and used at a time. The remaining Respin feature symbols lock in place between respins.
+
+20. The Both Ways feature activates when it lands in the Nitro Booster, then all ways will pay from left to right, and from right to left. The Both Ways symbol stays sticky until there are no more respins or wins.
+
+21. The Nitro Wild feature activates when it lands in the Nitro Booster, and one or more Nitro Reels are spinning on the corresponding reel in the same column. All symbols inside the Nitro Reel will land as wild symbols. The Nitro Wild feature replaces the symbols in Nitro Reels with wilds if All Match and All Premium feature symbols land in the Nitro Booster.
+
+22. The Nitro Match feature activates when it lands in the Nitro Booster, and one or more Nitro Reels are spinning on the corresponding reel in the same column. All symbols in the Nitro Reels will land, matching with a payout symbol on the reel to the left.
+
+23. The Nitro Upgrade feature activates when it lands in the Nitro Booster, and one or more Nitro Reels are spinning on the corresponding reel in the same column. The number of symbols in the Nitro Reels upgrades and increases to a higher number of symbols.
+
+24. The All Wilds feature activates when it lands in the Nitro Booster, and one or more Nitro Reels are spinning on the main reel. All symbols inside all Nitro Reels will land as wild symbols. The All Wild feature overrides the All Match and All Premium features in the Nitro Booster.
+
+25. The All Match feature activates when it lands in the Nitro Booster, and one or more Nitro Reels are spinning on the main reel. All symbols in all of the Nitro Reels will land, matching up with a payout symbol on the reel to the left. A Nitro Reel that is spinning on the first reel will not match up with any symbol.
+
+26. The All Premium feature activates when it lands in the Nitro Booster, and one or more Nitro Reels are spinning on the main reel. All symbols in each of the Nitro Reels will land as one of the four highest paying symbols according to the paytable.
+
+27. A combination of three or more bonus symbols on the main reels or in the Nitro Booster, during Normal mode triggers the Bonus mode with free spins.
+6 bonus symbols: 25 free spins
+5 bonus symbols: 20 free spins
+4 bonus symbols: 15 free spins
+3 bonus symbols: 10 free spins
+
+28. Bonus symbols can appear on the main reels, including Nitro Reels, and in the Nitro Booster. A bonus symbol landing in a Nitro Reel will only be counted as one no matter of the Nitro Reel's size. The number of ways to win resets to the previous number when the bonus symbol spins out.
+
+29. During free spins, all Nitro Reels lock in place and remain in play for the remaining free spins.
+
+30. During free spins, three or more bonus symbols on the main reels or the Nitro Booster retrigger additional free spins. The number of additional free spins is determined in the same way as when initially triggering the bonus game.
+
+31. The free spins bonus game ends when no free spins remain or when the maximum win has been reached.
+
+32. Winnings are paid out at the end of the bonus game.
+
+33. No bets can be changed during an ongoing spin or in any Bonus mode.
+
+34. The theoretical payout (RTP) in Nitropolis 2 is __RTP__.
+
+35. The game has a maximum win of __TBB__ the placed bet.
+
+36. In the event of malfunction all bets and wins are void.
+
+
+Last updated 2022-01-14
+	]]></entry>
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X01">X-iter 1: Guarantees a winning spin at the cost of 5x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">X-iter 2: Guarantees 3 spins with a feature or bonus symbol landing on every position in the Nitro Booster at the cost of 25x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">X-iter 3: Guarantees a game round with three bonus symbols and entry to the bonus game at the cost of 100x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">X-iter 4: Guarantees a game round with four bonus symbols and entry to the bonus game at the cost of 200x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X05">X-iter 5: Guarantees three bonus symbols and entry to the bonus game with twelve Nitro Reels, the maximum number possible, at the cost of 500x the selected bet. </entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Nitropolis 2 is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-04-09</entry>
+
+<!--Dialogs-->	
+
+
+</translation>

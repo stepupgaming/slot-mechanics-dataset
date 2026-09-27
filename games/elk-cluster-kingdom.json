@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Cluster Kingdom",
+    "slug": "elk-cluster-kingdom",
+    "provider_game_id": "10222",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10222&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/clusterkingdom/build-263580/assets/translation/clusterkingdom-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 5 rows"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": "horizontal_or_vertical",
+    "notes": "A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The Wild symbol substitutes for any paying symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Cluster Kingdom: paid spin on 5x5. A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 5x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.",
+    "notes": "eference in Settings.\nWinnings are presented in the player's currency.\nThe game is played in two modes; normal mode and bonus mode with free drops.\nThe Wild symbols substitute for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.\nA game round st"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "Bonus symbols trigger the bonus game (see PDF)",
+        "spins_awarded": "6 free drops",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Multiplier Wilds sticky between free drops",
+        "progressive_state": null,
+        "effects": "nted in the player's currency.\nThe game is played in two modes; normal mode and bonus mode with free drops.\nThe Wild symbols substitute for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.\nA game round starts with a new set of symbols added to the game.\nWinning symbols and all non winning symbols of the same type as the winning symbols are removed from the grid.\nThe grid fills up with new symbols. Any new winning combinations are paid and the round continues until there are no more wins.\nThe Sticky redrops feature selects one paying symbol. All m",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award 6 free drops. Persistent state: Multiplier Wilds sticky between free drops.",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "6 free drops"
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": "6 free drops",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Multiplier Wilds sticky between free drops",
+        "progressive_state": null,
+        "effects": "i bonus game runs 3 free drops with increasing persistent multiplier Wilds.\nThe super bonus game triggers when the Princess symbol, the Queen symbol and the King symbol are adjacent to each other. The super bonus game runs 6 free drops with increasing persistent multiplier Wilds.\nThe Queen symbol and the Princess symbol walk one step towards the King symbol after each win and before refill.\nCluster Kingdom is a cluster game where a cluster of 5 or more identical symbols which are either vertically or horizontally connected triggers a win.\nT",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "i bonus game runs 3 free drops with increasing persistent multiplier Wilds.\nThe super bonus game triggers when the Princess symbol, the Queen symbol and the King symbol are adjacent to each other. The super bonus game runs 6 free drops with increasing persistent multiplier Wilds.\nThe Queen symbol and the Princess symbol walk one step towards the King symbol after each win and before refill.\nCluste",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "6 free drops"
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Cluster Kingdom."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round triggering the super bonus game, with increasing persistent multiplier Wilds. Cost is __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round that triggers the bonus game. Cost is __X04_MULTIPLIER__ the selected bet.; Mini Bonus (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round that triggers the mini bonus game, with increasing persistent multiplier Wilds. Cost is __X03_MULTIPLIER__ the selected bet.; Sticky Redrops (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round with sticky redrops. Cost is __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round with more than triple the chance to trigger the bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nAn X-iter feature is purchased by pres",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round triggering the super bonus game, with increasing persistent multiplier Wilds. Cost is __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round that triggers the bonus game. Cost is __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Mini Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round that triggers the mini bonus game, with increasing persistent multiplier Wilds. Cost is __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Sticky Redrops",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round with sticky redrops. Cost is __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round with more than triple the chance to trigger the bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nAn X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.\nThe X-iter features can only be activated in the base game.\nThe theoretical payout (RTP) for all X-iter game modes is __RTP__.\nThe minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.\nAll game rules apply in X-iter mode.\nLast updated 2024-08-13\nAwards one additional redrop for every redrop with at least one new matching symbol. Feature pays out when no additional matching symbols appear.\nThe Wild symbols substitute for any paying symbol.\nThe multiplier Wild symbol multiplies the winning cluster with its multiplier.\nPlaces 1-4 wild symbols on the game grid.\nUpgrades one payout symbol ty",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/clusterkingdom/build-263580/assets/translation/clusterkingdom-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10222-clusterkingdom-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Cluster Kingdom\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster Wins\nJackpot No\nReels 5 columns\nRows 5 rows\n\nGame description\nCluster Kingdom is a cluster game with 5 columns by 5 rows. The game comes with multiplier Wilds, walking Wilds, upgrade feature, rearrange feature, placing Wild feature, sticky redrop and walking bonus triggers. \nAll feature symbols ( King, Queen, Princess and Knight) are wild symbols. \nMultiplier symbols adjacent to each other multiply their value and add it to one of the multiplier symbols, the other multiplier symbol becomes a Wild"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/clusterkingdom/build-263580/assets/translation/clusterkingdom-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10222-clusterkingdom-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers buy-in to different game modes.\nSUPER BONUS: \nBuy a game round triggering the super bonus game, with increasing persistent multiplier Wilds. Cost is __X05_MULTIPLIER__ the selected bet.\nBONUS: \nBuy a game round that triggers the bonus game. Cost is __X04_MULTIPLIER__ the selected bet.\nMINI BONUS: \nBuy a game round that triggers the mini bonus game, with increasing persistent multiplier Wilds. Cost is __X03_MULTIPLIER__ the selected bet.\nSTICKY REDROPS: \nBuy a game round with sticky redrops. Cost is __X02_MULTIPLIER__ the selected bet.\nBONUS HUNT: \nBuy a game round with more than triple the chance to trigger the bonus game. Cost is __X01_MULTIPLIER__ the selected be"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/clusterkingdom/build-263580/assets/translation/clusterkingdom-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10222-clusterkingdom-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nCluster Kingdom is a cluster game with 5 columns by 5 rows. The game comes with multiplier Wilds, walking Wilds, upgrade feature, rearrange feature, placing Wild feature, sticky redrop and walking bonus triggers. \nAll feature symbols ( King, Queen, Princess and Knight) are wild symbols. \nMultiplier symbols adjacent to each other multiply their value and add it to one of the multiplier symbols, the other multiplier symbol becomes a Wild symbol. \n\nThe bonus game triggers when the Queen symbol and the King symbol are adjacent to each other. The bonus game runs 6 free drops.\nThe mini bonus game triggers when the Princess symbol and the King symbol are adjacent to each other. The mini bonus game runs 3 free drops with increasing persistent multiplier Wilds.\nThe super bonus game triggers when t"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/clusterkingdom/build-263580/assets/translation/clusterkingdom-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10222-clusterkingdom-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Cluster Kingdom\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster Wins\nJackpot No\nReels 5 columns\nRows 5 rows\n\nGame description\nCluster Kingdom is a cluster game with 5 columns by 5 rows. The game comes with multiplier Wilds, walking Wilds, upgrade feature, rearrange feature, placing Wild feature, sticky redrop and walking bonus triggers. \nAll feature symbols ( King, Queen, Princess and Knight) are wild symbols. \nMultiplier symbols adjacent to each other multiply their value and add it to one of the multiplier symbols, the other multiplier symbol becomes a Wild symbol. \n\nThe bonus game triggers when the Queen symbol and the King symbol are adjacent to each other. The bonus game runs 6 free drops.\nThe mini bonus game triggers when the Princess symbol and the King symbol are adjacent to each other. The mini bonus game runs 3 free drops with incr"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/cluster-kingdom/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10222; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-cluster-kingdom.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

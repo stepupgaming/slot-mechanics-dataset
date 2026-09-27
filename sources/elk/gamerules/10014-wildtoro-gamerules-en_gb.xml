@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+	<gfx key="SymbolPayoutTxt">Symbol payout</gfx>
+	<gfx key="ToroTxt">Toro</gfx>
+	<gfx key="MatadorTxt">Matador</gfx>	
+	<gfx key="WaysToWinTxt">Ways to win</gfx>
+	<gfx key="YouWonTxt">YOU WON</gfx>
+
+<!--Translation needed for internal use how to write the line-->
+	<gfx key="YouWonXCoinsTxt">YOU WON 1000 COINS</gfx>
+
+<!--Intro-->
+	
+<!--Paytable-->
+	<entry key="ConnectingLinesTxt">Connecting paylines</entry>
+	<entry key="paytableToroHeadline">Walking Wild</entry>
+	<entry key="paytableToro">Moves from right to left.</entry>
+	<entry key="paytableWildHeadline">Wild</entry>
+	<entry key="paytableWildToroWild">Substitutes all symbols except Toro and Matador. Win lines of only Wilds pay as the highest value symbol.</entry>
+	<entry key="paytableMatadorHeadline">Respin trigger</entry>
+	<entry key="paytableMatador">A combination of 3 Matadors initiates the Matador Respin Challenge.</entry>
+	<entry key="paytableFight">Toro attacks any Matador in sight. He charges vertically and then horizontally, leaving Wilds behind, until all Matadors are defeated.</entry>
+	
+	
+<!--Gamerules-->
+	<entry key="rulesDate">27/10/2016</entry>
+<entry key="gamerule">Wild Toro is a 5 reel, 4 rows video slot with 178 ways to win.</entry> 
+	
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the paytable.</entry>
+
+<entry key="gamerule">Winnings are presented in coins or in the player's currency. The player can change preference in Settings.</entry>
+
+<entry key="gamerule">The Wild Toro Wild substitutes any symbol except Toro and Matador.</entry> 
+
+<entry key="gamerule">Toro is a Walking Wild, moving reel by reel to the left, generating one respin for each step.</entry> 
+
+<entry key="gamerule">Matador is a blocker if there is no Toro on the reels.</entry>
+
+<entry key="gamerule">Toro symbols only appear on reel 5.</entry>
+
+<entry key="gamerule">Matador symbols appear on reels 2, 3 and 4.</entry>
+
+<entry key="gamerule">Wild Toro is played in two modes, Normal mode and Bonus mode where Toro goes wild and attacks Matadors.</entry> 
+
+<entry key="gamerule">Toro moves vertically and then horizontally to knock all Matadors off, leaving Wilds behind. Toro continues to attack until all Matadors are defeated.</entry> 
+
+<entry key="gamerule">Toro starts by attacking Matadors on the same reel. He then looks to the right and continues to attack to the right as long as there are additional Matadors or until reel 5 is reached. He finally looks to the left and attacks all Matadors on his left side.</entry>
+
+<entry key="gamerule">Bonus mode ends when Toro reaches reel 1 and there are no Matadors left on the reels.</entry>
+
+<entry key="gamerule">Only one Toro is actively attacking Matadors at a time. He will stay active until he leaves the screen, even though there might be more than one Toro on the reels.</entry>
+
+<entry key="gamerule">3 Matador symbols trigger the Matador Respin Challenge with 3 respins.</entry>
+
+<entry key="gamerule">Matador symbols are sticky during the Matador Respin Challenge and every additional Matador appearing will add 1 respin. The respins stop either when a Toro appears or when the respin count reaches zero.</entry>
+
+<entry key="gamerule">Payout is made when the Toro has defeated all Matadors.</entry> 
+
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry>
+	
+<entry key="gamerule">The game has a maximum win of __TBB__ the placed bet.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+
+<entry key="gamerule" tags="lastupdated">
+
+Last updated 2022-12-06</entry>
+
+<!--Dialogs-->	
+
+</translation>

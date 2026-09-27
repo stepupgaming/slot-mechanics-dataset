@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--WORDS NOT TO TRANSLATED
+- Walking Wild
+- Walking Multiplier Wild
+- Pico
+- Pepe
+- Paso
+- Captain Diaz
+- Señorita
+- Taco Brothers Derailed
+- Taco Brothers
+- Taco Brother
+-->
+
+
+
+<!-- GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+<gfx key="paytableWalkingWildsSubTxt">Walking Wilds</gfx>
+<gfx key="paytableBonusGameTrainRobberyTxt">Plus Super Bonus chance</gfx>
+<gfx key="paytableWalkingMultiplierWildSubTxt">Walking Multiplier Wild</gfx>
+<gfx key="paytablePicoTxt">Pico</gfx>
+<gfx key="paytablePepeTxt">Pepe</gfx>
+<gfx key="paytablePasoTxt">Paso</gfx>
+
+<!-- Game documentation --> 
+<entry key="gdd-description">The three Taco Brothers - Paso, Pepe and Pico are back in the time of the gold rush. They have unveiled Captain Diaz plans to get his hands on all the gold by redirecting the trains through Santa Maria. Paso, Pepe and Pico do their utmost to collect the gold and return it to the people of the town.
+
+Taco Brothers Derailed is an exciting 6 reels, 4 rows slot with 466 connecting paylines. The core feature is the Walking Wilds, in terms of the three Taco Brothers, which turn the normal Taco Brother symbols into wilds. Respins are generated for each step that a Taco Brother takes moving leftwards until he leaves the first reel.
+
+Three bonus symbols trigger the free spins bonus game. Each of the three Taco Brothers move as multiplier Walking Wilds from right to left, with the aim to leave the first reel without getting locked up by Captain Diaz.
+</entry>
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+<entry key="gdd-payline">Taco Brothers Derailed has 466 connecting paylines. The RTP for all paylines is the same and is defined in the game rules.</entry>
+<entry key="gdd-bonusgame">A combination of 3 bonus symbols in normal mode triggers the bonus mode with respins. Each Taco Brother drops down as a Walking Wild on the sixth reel and moves leftwards generating a respin for each step. The size of the multiplier that is attached to the Walking Wild Taco Brother is randomly changed at each step. The next Taco Brother appears when the previous one has either been locked in by Captain Diaz or has left the first reel. Señorita can either unlock or pull back a Walking Wild Taco Brother to reel 6. The bonus game ends when all Walking Wilds have left the first reel, all remaining Walking Wild Taco Brothers are locked in, or when the maximum win has been reached.
+
+4 bonus symbols trigger the Super Bonus game where the Walking Wild Taco Brothers and the Walking Multiplier Wild move simultaneously from right to left until they spin out on reel 1. Captain Diaz is wild and is unable to imprison any of the Walking Wild Taco Brothers. Señorita can still pull back Walking Wild Taco Brothers to reel 6 for additional respins.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">466 connecting paylines</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 reels</entry>
+<entry key="gdd-kf-rows">4 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The wild symbol substitutes for any symbol except the bonus, Walking Wild Taco Brothers, Walking Multiplier Wild, Captain Diaz and Señorita symbols.</entry>
+<entry key="gdd-sfs-2">Captain Diaz only appears in the bonus game where he lands as a blocker and turns the Walking Wild Taco Brother furthest to the left into a blocker. He is a wild in the Super Bonus game.</entry>
+<entry key="gdd-sfs-3">Señorita only appears in the bonus game where she lands as a blocker. She unlocks a locked in Walking Wild Taco Brother or moves the Walking Wild Taco Brother symbol that is closest to reel 1 all the way back to reel 6 if there are no locked in Walking Wild Taco Brothers.</entry>
+<entry key="gdd-sfs-4">Walking Wild Taco Brother (Pico) that moves leftwards and generates a respin for each step. All normal versions of the Walking Wild Taco Brother symbol turn to wild during the respins. It has a multiplier attached to it in the bonus game that randomly changes for each move.</entry>
+<entry key="gdd-sfs-5">Walking Wild Taco Brother (Pepe) that moves leftwards and generates a respin for each step. All normal versions of the Walking Wild Taco Brother symbol turn to wild during the respins. It has a multiplier attached to it in the bonus game that randomly changes for each move.</entry>
+<entry key="gdd-sfs-6">Walking Wild Taco Brother (Paso) that moves leftwards and generates a respin for each step. All normal versions of the Walking Wild Taco Brother symbol turn to wild during the respins. It has a multiplier attached to it in the bonus game that randomly changes for each move.</entry>
+<entry key="gdd-sfs-7">A Walking Multiplier Wild that moves leftwards and generates a respin for each step. All normal wilds get the same multiplier as the Walking Multiplier Wild during the respins.</entry>
+<entry key="gdd-sfs-8">Three bonus symbols anywhere in view trigger the bonus game, and four bonus symbols trigger the Super Bonus game.</entry>
+
+<entry key="gdd-xiterbutton-1">Bonus Hunt</entry>
+<entry key="gdd-xiterbutton-2">Walking Wild Taco Brother</entry>
+<entry key="gdd-xiterbutton-3">Walking Multiplier Wild</entry>
+<entry key="gdd-xiterbutton-4">Bonus</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus</entry>
+
+<!--Intro-->
+	
+<!--Paytable-->
+
+<entry key="paytableWalkingWildsSymbols">All Taco Brother symbols can appear as Walking Wilds and generate respins. They move leftwards and turn corresponding Taco Brother symbols in view into wild symbols.</entry>
+<entry key="paytableWildSymbol">The wild symbol substitutes for any symbol except the bonus, Walking Wild Taco Brother, Walking Multiplier Wild, Captain Diaz and Señorita symbols.</entry>
+<entry key="paytableWalkingMultiplierWildSymbol">The Walking Multiplier Wild is a Walking Wild symbol with a multiplier attached. All regular wild symbols in view get the same multiplier as the Walking Multiplier Wild.</entry>
+<entry key="paytableWalkingWilds">Walking Wilds move leftwards generating a respin for each step. In the Bonus game Walking Wild Taco Brothers have a random multiplier attached that is applied for wins passing through them. The multiplier of a Walking Wild Taco Brother spinning out on reel 1 will be added to any Walking Wild Taco Brother in view.</entry>
+<entry key="paytableCptDiaz">Captain Diaz brings out his keys and imprisons a Walking Wild Taco Brother.</entry>
+<entry key="paytableSenorita">Señorita either unlocks or pulls back a Walking Wild Taco Brother to reel 6.</entry>
+<entry key="paytableSenoritaSuperBonus">Señorita can pull back Walking Wild Taco Brothers to reel 6 for additional respins.</entry>
+<entry key="paytableSuperBonusTrigger">4 bonus symbols trigger the Super Bonus game where the Walking Wild Taco Brothers and the Walking Multiplier Wild move simultaneously from right to left until they spin out on reel 1.</entry>
+<entry key="paytableSuperBonus">Captain Diaz is wild during the Super Bonus game, and he is unable to imprison any of the Walking Wild Taco Brothers.</entry>
+
+<!--X-iter UI texts-->
+<entry key="X01B1">Boosted Bonus Chance!</entry>
+<entry key="X01B2">More than double the chance to trigger the bonus game!</entry>
+<entry key="X02B1">Guaranteed Walking Wild Taco Brother!</entry>
+<entry key="X03B1">Guaranteed Walking Multiplier Wild!</entry>
+<entry key="X04B1">Bonus game!</entry>
+<entry key="X04B2">All three Walking Wild Taco Brothers!</entry>
+<entry key="X05B1">Super Bonus!</entry>
+<entry key="X05B2">All three Walking Wild Taco Brothers are moving jointly with the Walking Multiplier Wild!</entry>
+<entry key="X05B3">Captain Diaz is wild!</entry>
+
+<!--Gamerules-->
+<entry key="gamerule">Taco Brothers Derailed is a 6 reels, 4 rows slot with spinning reels and 466 connecting paylines.</entry>
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">Wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+<entry key="gamerule">Taco Brothers Derailed is played in two modes; Normal mode and Bonus mode with free spins.</entry>
+<entry key="gamerule">The wild symbol substitutes for any symbol except the bonus, Walking Wild Taco Brothers, Walking Multiplier Wild, Captain Diaz and Señorita symbols. A payline of all wilds pays as the highest value symbol.</entry>
+<entry key="gamerule">The Taco Brothers symbols exist in three different versions; normal high value, wild and Walking Wild.</entry>
+<entry key="gamerule">The Walking Wilds move leftwards until they spin out from the first reel, generating a respin for each step. </entry>
+<entry key="gamerule">All normal high value versions of the active Walking Wild Taco Brother turn into wild symbols and remain as wild symbols as long as the Walking Wild Taco Brother generates respins.</entry>
+<entry key="gamerule">It is possible to simultaneously have multiple active Walking Wild Taco Brothers and if so all normal high value versions of these Walking Wild Taco Brothers turn into wild symbols and remain as wild symbols as long as their respective Walking Wild Taco Brother version is in view.</entry>
+<entry key="gamerule">Bonus symbols which land during Walking Wild respins become sticky and remain in place until the end of the respins.</entry>
+<entry key="gamerule">The Walking Multiplier Wild is a Walking Wild with a multiplier that only appears on the top row. It moves leftwards until it spins out from the first reel, generating a respin for each step. All normal wild symbols get the same multiplier as the Walking Multiplier Wild as long as it is in view.</entry>
+<entry key="gamerule">Multipliers on the Walking Multiplier Wild and on wild symbols only affect winning combinations that have a payline passing through them. The multipliers are additive in case the payline passes through more than one multiplier.</entry>
+<entry key="gamerule">Bonus symbols only appear on reels 2, 3, 4 and 5 in Normal mode. Three or more bonus symbols anywhere in view during Normal mode trigger the Bonus mode.</entry>
+<entry key="gamerule">Captain Diaz and Señorita only appear in Bonus mode. Captain Diaz is a blocker that exists on reel 1 and Señorita is a blocker that exists on reel 6.</entry>
+<entry key="gamerule">All three Walking Wild Taco Brothers are guaranteed to appear during the bonus game. They land one by one on reel 6 and move leftwards towards reel 1. They have an individual multiplier attached that randomly varies for each step they take. It is applied to all wins passing through the Walking Wild Taco Brother symbol.</entry>
+<entry key="gamerule">The bonus game starts with the first Walking Wild Taco Brother (Pico) landing on the bottom row of the sixth reel. He moves leftwards and generates a respin for each move. The second Walking Wild Taco Brother (Pepe) appears on the second row on the sixth reel when either the first Walking Wild Taco Brother has left the first reel or has been locked in by Captain Diaz. The third Walking Wild Taco Brother (Paso) appears on the third row of the sixth reel when the two previous Walking Wild Taco Brothers have either left the first reel or have been locked in by Captain Diaz.</entry>
+<entry key="gamerule">The multiplier currently attached to the Walking Wild Taco Brother leaving the first reel is added to the multipliers of the remaining Walking Wild Taco Brothers in view.</entry>
+<entry key="gamerule">Captain Diaz locks the Walking Wild Taco Brother closest to reel 1 and turns it into a sticky blocker when he appears in view. Captain Diaz performs his action after the payout. The Walking Wild Taco Brother at the bottom will be locked by Captain Diaz in case there are several Walking Wild Taco Brothers on the same reel.</entry>
+<entry key="gamerule">Señorita unlocks the locked Walking Wild Taco Brother closest to reel 1 or sends the Walking Wild Taco Brother closest to reel 1 all the way back to reel 6. The Walking Wild Taco Brother is unlocked prior to the payout and starts moving leftwards again after the payout. A Walking Wild Taco Brother is moved back to reel 6 after the payout, and then it starts moving leftwards again from reel 6.</entry>
+<entry key="gamerule">If Señorita and Captain Diaz appear in the same spin, Señorita will block Captain Diaz from locking the Walking Wild Taco Brothers and she turns Captain Diaz into a wild symbol.</entry>
+<entry key="gamerule">Four bonus symbols anywhere in view during Normal mode trigger the Super Bonus game.</entry>
+<entry key="gamerule">The Super Bonus game starts with all three Walking Wild Taco Brothers and the Walking Multiplier Wild along the sixth reel. They all move simultaneously leftwards towards reel 1 generating a respin for each joint move.</entry>
+<entry key="gamerule">Captain Diaz is wild in the Super Bonus game, and he is unable to lock in the Walking Wild Taco Brothers.</entry>
+<entry key="gamerule">The bonus game ends when all Walking Wilds have left the first reel, all remaining Walking Wild Taco Brothers are locked in, or when the maximum win has been reached.</entry>
+<entry key="gamerule">Winnings are paid out at the end of the bonus mode.</entry>
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+<entry key="gamerule">A game round ends if the maximum win is reached.</entry>
+<entry key="gamerule">The theoretical payout (RTP) in Taco Brothers Derailed is __RTP__.</entry>
+<entry key="gamerule">The game has a maximum win of __TBB__ the placed bet.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">
+Last updated 2022-04-25</entry>
+
+
+<!-- X-iter rules -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus:
+Guarantees a game round with entry to the Super Bonus game at the cost of __X05_MULTIPLIER__ the selected bet. In the Super Bonus game, all the three Walking Wild Taco Brothers and the Walking Multiplier Wild drop in at the same time.</entry>
+<entry key="xiter-rule" tags="X04">Bonus:
+Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X03">Walking Multiplier Wild:
+One spin with a guaranteed Walking Multiplier Wild at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X02">Walking Wild Taco Brother:
+One spin with a guaranteed Walking Wild Taco Brother at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X01">Bonus Hunt:
+One spin with more than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+
+<entry key="xiter-rule">
+
+The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Taco Brothers Derailed is __RTP__.</entry>
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+<entry key="xiter-rule" tags="lastupdated">
+Last updated 2024-04-10</entry>
+
+
+
+<!--Dialogs-->	
+
+</translation>

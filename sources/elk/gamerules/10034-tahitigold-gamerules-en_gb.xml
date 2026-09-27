@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+	<gfx key="paytableBonusGame">BONUS GAME</gfx>
+	<gfx key="paytablePaylinesHeadline">WAYS TO WIN</gfx>
+	<gfx key="paytableBonusSymbolHeadline">BONUS SYMBOL</gfx>
+	<gfx key="paytableAvalancheHeadline">AVALANCHE</gfx>
+	<gfx key="paytableTikiHeadline">EYE OF TIKI</gfx> 
+	<gfx key="paytableForgeHeadline">WILD FORGE</gfx>
+	<gfx key="paytableWildHeadline">WILD SYMBOL</gfx>
+	<gfx key="paytableStickyWildHeadline">STICKY WILDS</gfx>
+	<gfx key="paytableSafetyLevelsHeadline">SAFETY LEVELS</gfx>
+	<gfx key="paytableFreeSpinsHeadline">FREE DROPS</gfx>
+	<gfx key="paytableBigSymbolsHeadline">BIG SYMBOLS</gfx>
+	<gfx key="winUpTxt">WIN UP TO</gfx>
+	<gfx key="coinsTxt">COINS</gfx>	
+	<gfx key="totalWinTxt">Total win</gfx>
+	<gfx key="safetyLevelTxt">Safety Levels</gfx>
+	<gfx key="activatedTxt">ACTIVATED</gfx>
+	<gfx key="waysTxt">WAYS</gfx>
+	<gfx key="ofTxt">OF</gfx>
+	<gfx key="playedInTotalTxt">played in total</gfx>
+	<gfx key="startTxt">Start</gfx>
+
+<!--Intro-->
+	
+<!--Paytable-->
+	<entry key="paytableBonusSymbol">Three or more bonus symbols trigger the free drops bonus game. Free drops can be retriggered.</entry>
+	<entry key="paytableTiki">Two or more Eye of Tiki symbols trigger the feature which removes all symbols within the area between them and adds an additional row of symbols at the top.</entry>
+	<entry key="paytableWildForge">Wild Forge symbol may drop in columns 3, 4, 5 and 6. It locks into position as it lands. It fills empty symbol spaces below with wilds.</entry>
+	<entry key="paytableAvalanche">All symbols which are part of a win explode and leave space for additional symbol drops, and an additional row of symbols is added at the top up to a maximum of 8 rows. The avalanche feature continues as long as new winning combinations appear.</entry>
+	<entry key="paytableSafetyLevel">The free drops bonus game always starts with the safety level set to 4 rows. The safety level advances one row for every new free drop initiated that results in a win. Every new free drop starts at the current active safety level.</entry>
+	<entry key="paytableBigSymbols">Super, mega and epic symbols of size 2x2, 3x3 and 4x4 may drop down in any symbol drop. A bigger symbol clears away smaller symbols on its way downwards.</entry>
+	<entry key="paytableWildTxt">Wild symbols substitute for any symbol except the bonus symbol, the Wild Forge symbol and the Eye of Tiki symbol.</entry>
+	<entry key="paytableStickyWildsTxt">During the bonus game all wilds are collected and kept at the bottom when a free drop ends. They become sticky and remain in play for the remaining free drops.</entry>
+
+<!--Gamerules-->
+<entry key="gamerule">Tahiti Gold is a 6 column, 4 rows slot with dropping symbols and up to 262,144 ways to win. The columns may expand upwards to a total of 8 rows.</entry>
+
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Wins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry> <!--Translate Settings into local language using initial capital letter since it is a name of a button-->
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Tahiti Gold is played in two modes; Normal mode and Bonus mode with free drops.</entry>
+
+<entry key="gamerule">All symbol drops in Normal mode starts with 4 rows and 4,096 ways to win.</entry>
+
+<entry key="gamerule">All low, mid and high value symbols exist in four sizes; standard 1x1, super 2x2, mega 3x3 and epic 4x4. All big symbols are counted as consisting of the number of 1x1 symbol instances it covers, e.g. super 2x2 consists of 4 standard 1x1 symbols.</entry>
+
+<entry key="gamerule">Big symbols clear away smaller symbols on their way downwards. Symbols of identical size, Eye of Tiki symbols, Wild Forge symbols, bonus symbols and sticky wilds are not affected.</entry>
+
+<entry key="gamerule">The wins in current symbol drop are collected and then all symbols which are part of a winning combination explode and give space for additional symbols to drop down from above. This next symbol drop will add an additional row of symbols at the top, resulting in an increased number of ways to win. The new result is paid out accordingly and the avalanche feature continues as long as new winning combinations appear.</entry>
+
+<entry key="gamerule">The numbers of ways to win increase as the number of rows increase.
+4 rows: 4,096 ways to win
+5 rows: 15,625 ways to win
+6 rows: 46,656 ways to win
+7 rows: 117,649 ways to win
+8 rows: 262,144 ways to win</entry>
+
+<entry key="gamerule">The maximum number of rows are 8 with maximum 262,144 ways to win.</entry>
+
+<entry key="gamerule">The wild symbol substitutes for any symbol except the bonus symbol, the Wild Forge symbol and the Eye of Tiki symbol. All wilds are sticky for the remaining free drops in the bonus game.</entry>
+
+<entry key="gamerule">The blocking Wild Forge symbol appears in columns 3, 4, 5 and 6. It fills empty spaces straight below it with wilds after avalanche explosions. It locks into position as it lands. The generated wilds become sticky for the remaining free drops in the bonus game.</entry>
+
+<entry key="gamerule">A combination of two or more Eye of Tiki symbols anywhere in view triggers the Eye of Tiki feature when there are no additional winning combinations. Symbols which are touched by or included within the area between the Eye of Tiki symbols, and the Eye of Tiki symbols themselves explode and give space for additional symbols to drop down from above.
+This next symbol drop will add an additional row of symbols at the top up to a maximum of 8 rows.</entry>
+
+<entry key="gamerule">Wild Forge symbols, wild symbols and bonus symbols are not affected by the Eye of Tiki feature.</entry>
+
+<entry key="gamerule">Bonus symbols appear in all columns. A column may contain up to two bonus symbols.</entry>
+
+<entry key="gamerule">A combination of 3 or more bonus symbols (scatters) anywhere in view during Normal mode triggers Bonus mode with free drops. 3 bonus symbols award 10 free drops, 4 bonus symbols award 15 free drops, 5 bonus symbols award 20 free drops and 6 bonus symbols award up to maximum 25 free drops.</entry>
+
+<entry key="gamerule">Three or more bonus symbols during Bonus mode retrigger additional free drops. The number of awarded additional free drops is determined in the same way as when triggering the bonus game.</entry>
+
+<entry key="gamerule">The free drops bonus game always starts with the safety level set to 4 rows. Every winning free drop advances the safety level one row.</entry>
+
+<entry key="gamerule">The advancement of the safety level occurs after the payout. The next free drop starts from the new safety level. The safety level can at the most advance 4 rows resulting in a total of 8 rows with a maximum of 262,144 ways to win.</entry>
+
+<entry key="gamerule">Every new free drop starts at the current active safety level.</entry>
+
+<entry key="gamerule">The maximum safety level is 8 with a maximum of 262,144 ways to win. An achieved safety level never decreases during an ongoing free drops bonus game.</entry>
+
+<entry key="gamerule">The free drops bonus game ends when no free drops remain or when the win cap has been reached.</entry>
+
+<entry key="gamerule">Winnings are paid out at the end of the bonus game.</entry>	
+
+<entry key="gamerule">No bets can be changed during an ongoing symbol drop or in Bonus mode.</entry>
+
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Tahiti Gold is  __RTP__.</entry>
+
+<entry key="gamerule">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+   
+<entry key="gamerule" tags="lastupdated">Last updated 2023-11-07</entry>
+
+
+<!--Dialogs-->	
+
+</translation>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+
+<!--Intro-->
+
+<!--Paytable-->
+
+<gfx key="paytableFeatureReelSubHeader">Feature Reel</gfx>     																				<!-- NO_TRANSLATE -->
+<gfx key="paytableFeatureReelHeader">Feature Symbols</gfx>
+<entry key="paytableFeatureReelTxt">Features symbols drop down on winnings to boost the game.</entry>
+<gfx key="paytable...SubHeader">Free Drops</gfx>    																									<!-- NO_TRANSLATE -->
+<gfx key="paytable...Header">Bonus Game</gfx>
+<entry key="paytable...Txt">3 or more Bonus symbols trigger the free drops bonus game.</entry>
+
+<gfx key="paytableAvalancheSubHeader">Feature symbols &amp;</gfx>    																	<!-- NO_TRANSLATE -->
+<gfx key="paytableAvalancheHeader">Avalanche</gfx>    																								<!-- NO_TRANSLATE -->
+<entry key="paytableAvalancheTxt">Winning symbols explode, remaining symbols drop down, feature symbols over empty cells are activated and new symbols drop down for new win chances.</entry>
+
+<gfx key="paytableFeatureSymbolsHeader">Feature Symbols</gfx>
+<entry key="paytableWild">A payline of all Wilds pays as the highest value symbol.</entry>
+<gfx key="paytableWild">Wild</gfx>    																																<!-- NO_TRANSLATE -->
+<entry key="paytableWildTxt">The Wild symbol substitutes for any symbol except Wild feature, Bonus and Row Swap symbols.</entry>
+<gfx key="paytableLockedWild">Locked Wild</gfx>    																										<!-- NO_TRANSLATE -->
+<entry key="paytableLockedWildTxt">A Wild symbol charged to stay locked for 3 winnings.</entry>
+<gfx key="paytableMultiplierWild">Multiplier Wild</gfx>    																						<!-- NO_TRANSLATE -->
+<entry key="paytableMultiplierWildTxt">Winnings with this Wild is multiplied by x2-x5.</entry>
+<gfx key="paytableRowPayout">Row Swap</gfx>    																												<!-- NO_TRANSLATE -->
+<entry key="paytableRowPayoutTxt">One symbol replaces all other symbols on the row except Wilds and Bonus.</entry>
+
+<entry key="paytableBonusGameSubheader">BONUS GAME</entry>
+<gfx key="paytableBonusGameHeader">Free Drops</gfx>    																								<!-- NO_TRANSLATE -->
+<entry key="paytableBonusGameSubHeader2">Additional feature symbols</entry>
+<gfx key="paytableExtraDrops">Extra Drops</gfx>    																										<!-- NO_TRANSLATE -->
+<entry key="paytableExtraDropsTxt">Adds extra free drops to the bonus game.</entry>
+<gfx key="paytableMultipliers">Progressive Multiplier</gfx>    																				<!-- NO_TRANSLATE -->
+<entry key="paytableMultipliersTxt">Increases the Win Multiplier in the bonus game.</entry>
+
+<gfx key="paytableSymbolPayoutHeader">Symbol Payout</gfx>
+<entry key="scatterBirdsTxt">Full birds pays scattered.</entry>
+
+
+
+<!--X-iter-->
+<entry key="gameMode5">SUPER BONUS - Buy a bonus game starting with x10 Win Multiplier.</entry> 			<!-- NO_TRANSLATE: "SUPER BONUS" -->
+<entry key="gameMode4">BIG BONUS - Buy a bonus game starting with x5 Win Multiplier.</entry> 					<!-- NO_TRANSLATE: "BIG BONUS" -->
+<entry key="gameMode3">BONUS - Buy a bonus game starting with x1 Win Multiplier.</entry> 							<!-- NO_TRANSLATE: "BONUS" -->
+<entry key="gameMode2">LOCKED WILDS - Buy a game round with 3 Locked Wilds.</entry>  									<!-- NO_TRANSLATE: "LOCKED WILDS" -->
+<entry key="gameMode1">GUARANTEED WIN - Buy a game round with a guaranteed win.</entry>
+
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 																									<!-- Backup alternative text -->
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+
+<!--Gamerules-->
+<entry key="gamerules">
+	<![CDATA[
+1. Tropicool is a 6 columns and 6 rows slot with dropping symbols, a Feature reel and 46,656 ways to win.
+
+2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.
+
+3. Each bet is __CPBB__ coins.
+
+4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. Tropicool is played in two modes, Normal mode and Bonus mode with free drops.
+
+10. The Wild symbol appears in Normal mode and Bonus mode and substitutes for any symbol except any Wild feature symbols, Bonus scatter symbol and the Row Swap feature symbol. A payline of all Wild symbols pays as the highest paying symbol.
+
+11. The Birds appear as 3 individual stacked symbols of same color; head, body and legs, forming a full bird. Each symbol matches any part of a Bird of same color and pays according to the paytable.
+
+12. 3, or more, full Birds of same color pay scattered. This only applies if there are full Birds of same color that are not part of a line win.
+
+13. A game round starts in Normal mode with new symbols dropping into the grid and new feature symbols spinning in on the Feature reel.
+
+14. Each winning combination in the grid is paid and the symbols, except Locked Wild symbols, are removed from the grid while the remaining symbols drop down. The Feature symbols above empty cells drop down into the grid followed by new symbols being added from the above to fill the grid. The Feature reel is filled with new feature symbols from the right and new winning combinations can occur. This avalanche repeats until no more wins occur. Any Row Swap symbol on the grid will then be activated.
+
+15. The Feature reel feature symbols:
+• Blank: No feature.
+• Wild: Wild symbol.
+• Locked Wild: A Wild symbol charged to last for 3 winnings. It is removed after the last win.
+• Multiplier Wild x2-x5: Winnings with this Wild is multiplied by x2-x5. If several Multiplier Wilds are part of a winning combination, the highest Wild multiplier is used.
+• Row Swap: One of the symbols on the row replaces all symbols on the row except Bonus and Wild symbols. This feature is activated at the end of an avalanche cycle.
+
+16. 3 or more Bonus symbols appearing anywhere on the grid at the end of a symbol drop in Normal mode triggers the free drops bonus game starting with a win multiplier of x1.
+• 3 Bonus symbols: 10 free drops
+• 4 Bonus symbols: 15 free drops
+• 5 Bonus symbols: 20 free drops
+• 6 or more Bonus symbols: 25 free drops
+
+17. In Bonus mode, the Feature reel also contains the following additional feature symbols, which are not dropping into the grid but applied to the bonus game:
+• Extra Drops: Adds 1, 2 or 5 additional free drops.
+• Win Multiplier: Adds x1, x2 or x3 to the win multiplier.
+
+18. The bonus game starts with a new set of symbols in the grid and new feature symbols on the Feature reel. The feature symbols remain in the Feature reel between free drops. Locked Wild symbols on the grid remain between free drops until fully used.
+
+19. A game round ends if the maximum win is reached.
+
+20. Winnings are paid out at the end of a game round.
+
+21. No bets can be changed during a game round.
+
+22. The theoretical payout (RTP) is __RTP__.
+
+23. The game has a maximum win of __TBB__ the placed bet.
+
+24. In the event of malfunction all bets and wins are void.
+ 
+Last updated 2022-01-24
+	]]></entry>
+
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">SUPER BONUS: Buy a game round with 3-6 Bonus symbols triggering the bonus game with the win multiplier starting at x10. Cost is 500x the bet.</entry>
+
+<entry key="xiter-rule" tags="X04">BIG BONUS: Buy a game round with 3-6 Bonus symbols triggering the bonus game with the win multiplier starting at x5. Cost is 200x the bet.</entry>
+
+<entry key="xiter-rule" tags="X03">BONUS: Buy a game round with 3-6 Bonus symbols triggering the bonus game. Cost is 100x the bet.</entry>
+
+<entry key="xiter-rule" tags="X02">LOCKED WILDS: Buy a game round with 3 Locked Wilds initially dropping into the grid. Cost is 25x the bet.</entry>
+
+<entry key="xiter-rule" tags="X01">GUARANTEED WIN: Buy a game round with a guaranteed winning combination. Cost is 5x the bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-02-07</entry>
+
+<!--Dialogs-->
+
+</translation>

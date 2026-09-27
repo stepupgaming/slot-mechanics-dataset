@@ -1,0 +1,96 @@
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+	<gfx key="paytableRespins">Perfect Match Respins</gfx>
+	<gfx key="paytableBonusGame">BONUS GAME</gfx>
+	<gfx key="paytableWheelsHeadline">Fortune Wheel</gfx>
+	<gfx key="paytablePaylinesHeadline">5 Paylines</gfx>
+	<gfx key="paytableBonusSymbolHeadline">Bonus Symbol</gfx>
+	<gfx key="paytableLevelUpHeadline">Level Up</gfx>
+	<gfx key="paytableWildsHeadline">Multiplier Wilds</gfx> 
+	<gfx key="paytableFreeSpinsHeadline">Free Spins</gfx>
+	<gfx key="totalWinTxt">Total win</gfx>
+	<gfx key="allWinsTxt">All wins X5</gfx>
+
+<!--Intro-->
+	
+<!--Paytable-->
+	<entry key="paytableBonusGame">A combination of three fortune wheel symbols anywhere on the reels triggers the Bonus game with 3 spins on the Fortune Wheel. The wheel consists of three levels (Bronze, Silver and Golden Wheel) with increasing win amounts.</entry>
+	<entry key="paytableBonusSymbol">A combination of three fortune wheel symbols anywhere on the reels triggers the Fortune Wheel with 3 spins.</entry>
+	<entry key="paytableWOF">Every additional fortune wheel symbol during the Free Spins awards an extra spin on the Fortune Wheel.</entry>
+	<entry key="paytableFreeSpins">A hit on the Free Spins section awards 5 Free Spins with a 5x multiplier on all wins.</entry>
+	<entry key="paytableFortuneWheelArrow">A hit on the arrow immediately activates the next level on the wheel and awards an extra spin on the new level.</entry>
+	<entry key="paytableLockedTxt1">The Perfect Match Respin feature is trigged by identical symbols on the first two reels.</entry>
+	<entry key="paytableLockedTxt2">The first two reels become locked for 3 respins while the third reel spins normally.</entry>
+	<entry key="paytableNudgeTxt">Three diamond symbols anywhere in view will make the reels nudge to get all three diamonds aligned on the middle row.</entry>
+	<entry key="paytableWildTxt">The Wild symbols include an additive multiplier of 2, 3, 4 or 5. They substitute for any symbol except the fortune wheel, other wild symbols and the nudge feature of the diamond symbol. </entry>
+
+<!--Gamerules-->
+	<entry key="1-rulehead">Game rules</entry>
+	<entry key="1-rules">
+	<![CDATA[
+1. Vegas Diamonds is a 3 reel, 3 rows slot with 5 paylines. 
+	
+2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.
+
+3. Each bet is __CPBB__ coins.
+
+4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in coins or in the player's currency. The player can change preference in Settings.
+
+9. Vegas Diamonds is played in four modes; Normal mode, Perfect Match Respins mode, Fortune Wheel mode and Free Spins mode.
+
+10. Three diamond symbols anywhere in view nudge the reels, after payout, to get all three diamonds aligned on the middle row. Then the diamonds payout as well as potential additional new paylines.
+
+11. Identical hits on the first two reels trigger the Perfect Match Respins with 3 respins.
+
+12. The first two reels lock during Perfect Match Respins while the third reel spins normally.
+
+13. Diamond symbols will nudge in Perfect Match Respins but the reels will be adjusted back to locked position prior to the next respin.
+
+14. Perfect Match Respins can only be trigged in Normal mode.
+
+15. A combination of 3 fortune wheel symbols (scatters) anywhere on the reels during Normal or Perfect Match Respins mode triggers Fortune Wheel mode with 3 spins on the Fortune Wheel. Any number of fortune wheel symbols during the Free Spins mode increases the number of spins available on the Fortune Wheel by that number.
+
+16. In case the Fortune Wheel mode is triggered from Perfect Match Respins mode the respins are paused and resumed after the end of the Fortune Wheel and Free Spins modes.
+
+17. If the first two reels have identical symbols and 3 fortune wheel symbols hit both Perfect Match Respins and Fortune Wheel modes are awarded. In such a case the spins in the Fortune Wheel mode will be played first before continuing to the respins in Perfect Match Respins mode.
+
+18. A hit on the Free Spins section on the Fortune Wheel immediately triggers Free Spins mode with 5 free spins and a 5x multiplier on all wins.
+
+19. Every hit on the arrow section on the Fortune Wheel makes the wheel advance one level (Bronze, Silver and Golden Wheel) and awards an additional spin on the new level. 
+
+20. The potentially higher attained level of the Fortune Wheel is not retained in case the Fortune Wheel mode is triggered more than once during Perfect Match Respins mode. 
+
+21. The collected additional spins on the Fortune Wheel are played after the Free Spins on the reels are finished.
+
+22. The Vegas Diamonds bonus game ends when no spins remain on the Fortune Wheel, no free spins remain on the reels or when the maximum win has been reached.
+
+23. Winnings are paid out at the end of the bonus game.	
+
+
+
+24. No bets can be changed during an ongoing spin or in any Bonus mode.
+
+25. The theoretical payout (RTP) in Vegas Diamonds is __RTP__.
+
+26. The game has a maximum win of __TBB__ the placed bet.
+
+27. In the event of malfunction all bets and wins are void.
+
+   
+Last updated 2022-01-19
+	]]></entry>
+
+<!--Dialogs-->	
+
+</translation>

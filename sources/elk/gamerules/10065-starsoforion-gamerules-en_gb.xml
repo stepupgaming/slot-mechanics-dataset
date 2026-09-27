@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+
+<!--INTRO-->
+
+<!--PAYTABLE-->
+
+<!-- Page 1 -->
+<gfx key="paytableFeatureSuperSymbolGHeader">Super Symbol</gfx>									<!-- NO_TRANSLATE -->
+<gfx key="paytableFeatureBonusGameHeader">Bonus Game</gfx>				<!-- Note: DO TRANSLATE -->
+<gfx key="paytableFeatureSuperBonusGameHeader">Super Bonus</gfx>								<!-- NO_TRANSLATE -->
+<gfx key="paytableFeatureMagicMeterHeader">Magic Meter</gfx>											<!-- NO_TRANSLATE -->
+
+<!-- Page 2 -->
+<gfx key="paytableFeatureWildSymbolHeader">Wild</gfx> 													<!-- NO_TRANSLATE -->
+<entry key="paytableFeatureWildSymbolTxt">The Wild symbol substitutes for any symbol except the Bonus symbol.</entry>
+
+<gfx key="paytableFeatureSuperSymbolHeader">Super Symbol</gfx> 									<!-- NO_TRANSLATE -->
+<entry key="paytableFeatureSuperSymbolTxt">Super symbols spread to merge winning clusters into larger super clusters.</entry>
+
+<gfx key="paytableFeatureClusterWinsHeader">Cluster Wins</gfx>			<!-- Note: DO TRANSLATE -->
+<entry key="paytableFeatureClusterWinsTxt">Win on any cluster of 5+ symbols.</entry>
+
+
+<!-- Page 3 -->
+<gfx key="paytableFeatureMagicMeterHeader">Magic Meter</gfx> 										<!-- NO_TRANSLATE -->
+<entry key="paytableFeatureMagicMeterTxt">Meter progress on every win. Multipliers and Magic Features.</entry>
+
+<gfx key="paytableFeatureOrionsWildsHeader">Orion's Wilds</gfx> 								<!-- NO_TRANSLATE -->
+<entry key="paytableFeatureOrionsWildsTxt">Extra drops with Wilds in Orion patterns.</entry>
+
+<gfx key="paytableFeatureSymbolSwapHeader">Symbol Swap</gfx> 										<!-- NO_TRANSLATE -->
+<entry key="paytableFeatureSymbolSwapTxt">Swaps adjacent symbols creating winning clusters.</entry>
+
+
+<!-- Page 4 BONUS -->
+<entry key="paytableBonusGameTopHeaderTxt">BONUS GAME</entry>           <!-- Note: DO Translate -->
+
+<gfx key="paytableBonusGameHeader">Free Drops</gfx>    													<!-- NO_TRANSLATE -->
+
+<gfx key="paytableBonusSymbolHeader">Bonus Symbol</gfx>              <!-- Note: DO Translate -->
+<entry key="paytableBonusGameTxt">3 Bonus symbols trigger 10 free drops.</entry>
+
+<gfx key="paytableSuperBonusHeader">Super Bonus</gfx>              							<!-- NO_TRANSLATE -->
+<entry key="paytableSuperBonusTxt">3 Super Bonus symbols trigger the Super Bonus with a higher rate of Super Symbols.</entry>
+
+<gfx key="paytableMeterProgressHeader">Persistent Meter</gfx> 		<!-- Note. DO Translate -->
+<entry key="paytableMeterProgressTxt">Magic Meter is kept maintained between free drops.</entry>
+
+
+
+<!-- Page Symbol Payout -->
+<entry key="paytableSymbolPayoutTopHeader">CLUSTER WINS</entry>
+<gfx key="paytableSymbolPayoutHeader">Symbol Payout</gfx>
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 																					<!-- Backup alternative text -->
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+<!-- Bonus Intro -->
+<gfx key="bonusIntroProgressiveMeter">Progressive Meter</gfx>
+<gfx key="bonusIntroPersistentMeter">Persistent Meter</gfx>
+
+
+<!--GAMERULES-->
+<entry key="gamerules">
+	<![CDATA[
+
+1. Stars of Orion is a 6 x 8 symbol grid slot with hexagonal cluster wins and dropping symbols.
+
+2. The game offers several bet levels for each currency.
+
+3. Each bet is __CPBB__ coins.
+
+4. Winning combinations are paid for clusters with 5 or more matching symbols adjacently connected to each other, anywhere in the 6x8 grid. Multiple clusters of same symbol that are not connected are paid as separate clusters.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. Stars of Orion is played in two modes, Normal mode and Bonus mode with free drops.
+
+10. The Wild symbol appears in Normal mode and Bonus mode and substitutes for any symbol except the Bonus scatter symbol. A winning combination of all Wild symbols pays as the highest paying symbol.
+
+11. Symbols drop vertically with gravity and slide to the left and right repeatedly as far downwards as possible.
+
+12. Winning cluster combinations are paid, winning symbols and all other symbols of the same value are removed from the grid. All wins contribute to increasing the Magic meter on the right pillar. When a Magic meter level is complete, the next Win Multiplier or Magic Feature in turn is awarded. The Win Multiplier is applied immediately while the Magic Feature is saved for later use. The remaining symbols drop down and new symbols drop in to top-up the symbol grid. This avalanche repeats until there are no more wins when the first saved Magic Feature is consumed until a win occurs, resuming the avalanche. The maximum Win Multiplier is 64x, at which point no further progression can be made to the Magic meter for the game round.
+
+13. Super symbol and Super cluster
+Any payout symbol can appear as a Super symbol indicated with a blue frame. When included in a winning cluster, it will spread the super symbol frame within the cluster and to all connected winning clusters creating a large Super cluster replacing all symbols with the highest value symbol from the included clusters. This will repeat for any further symbols that can be added to the new Super cluster, and further winning clusters that become connected as a consequence of the new Super cluster.
+
+14. The Magic features can be any of the following:
+
+• SYMBOL SWAP: Swaps adjacent symbols creating winning clusters.
+Any two adjacent symbols will swap place if that creates, or improves, a winning cluster. Symbols are analysed for possible swap one-by-one from left to right and from bottom to top, prioritizing creating clusters over improving clusters. A symbol in a winning cluster cannot be swapped. If no winning cluster can be created in the entire symbol grid, one or more symbols will be replaced by Wild symbols to form one or more winning clusters.
+
+• ORION'S BELT: Extra drop with 3 WILD symbols formed as Orion's belt.
+• ORION'S CLUB: Extra drop with 6 WILD symbols formed as Orion's club.
+• ORION'S SHIELD: Extra drop with 8 WILD symbols formed as Orion's shield.
+• ORION: Extra drop with 13 WILD symbols formed as the full Orion's constellation.
+All Bonus symbols appearing in the grid prior to an ORION's wild drop will be retained in the new drop.
+
+15. 3 Bonus symbols appearing anywhere in the grid in Normal mode trigger the free drops bonus game with 10 free drops.
+
+16. In the free drops bonus game, the Magic meter's progress is maintained between the free drops.
+
+17. Super bonus symbol and Super bonus
+Bonus symbols may appear as a Super bonus symbol indicated with a red frame and will spread to other adjacent bonus symbols. If all 3 bonus symbols are Super bonus symbols, the Super bonus game will be triggered with a higher rate of Super symbols and 10 free drops.
+
+18. A game round ends if the maximum win is reached.
+
+19. Winnings are paid out at the end of a game round.
+
+20. No bets can be changed during a game round.
+
+21. The theoretical payout (RTP) is __RTP__.
+
+22. The game has a maximum win of __TBB__ the bet.
+
+23. In the event of malfunction all bets and wins are void.
+ 
+Last updated 2021-09-21
+	]]></entry>
+
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">SUPER BONUS: Buy a game round with 3 Super Bonus symbols triggering the Super bonus game with a higher rate of Super symbols. Cost is 500x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">BUY BONUS: Buy a game round with 3 Bonus symbols triggering the bonus game. Cost is 100x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">SYMBOL SWAP: Buy a game round with 3 extra Symbol Swap features. Activated at no-wins when no other Magic features are saved. Cost is 50x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">SUPER SYMBOLS: Buy a game round with a higher rate of Super symbols. Cost is 10x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">GUARANTEED WIN: Buy a game round with a guaranteed winning combination. Cost is 5x the selected bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-02-05</entry>
+
+
+<!--Dialogs-->
+
+<!-- X-iter dialogs -->
+<entry key="X05B_">SUPER BONUS</entry>
+<entry key="X05B1">Buy a SUPER BONUS round</entry>
+<entry key="X05B2">3 SUPER BONUS symbols triggering the SUPER BONUS</entry>
+<entry key="X05B3">Free drops crowded with Super symbols</entry>
+
+<entry key="X04B_">BUY BONUS</entry>
+<entry key="X04B1">Buy a BONUS round!</entry>
+
+<entry key="X03B_">SYMBOL SWAP</entry>
+<entry key="X03B1">3 extra Symbol Swaps</entry>
+<entry key="X03B2">Triggered by no-wins</entry>
+
+<entry key="X02B_">SUPER SYMBOLS</entry>
+<entry key="X02B1">Drops crowded with Super symbols</entry>
+
+<entry key="X01B_">100% / GUARANTEED WIN</entry>
+<entry key="X01B1">Win on every game round</entry>
+
+</translation>

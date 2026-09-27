@@ -1,0 +1,298 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "DeadEye",
+    "slug": "elk-deadeye",
+    "provider_game_id": "10245",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10245&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/deadeye/build-357139/assets/translation/deadeye-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 30,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "30 ways to win"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "DeadEye: paid spin on 4x6. 30 ways to win. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 30 ways to win",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "30 ways to win",
+    "notes": "eference in Settings.\nWinnings are presented in the player's currency.\nThe game is played in two modes; Normal mode and Bonus mode with Free Spins.\nThe Wild symbols substitutes for any symbol except Bonus symbols.\nThe character symbols can land in 1x1, 1x2 or 1x3 sizes on any of the reels.\nB"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more Bonus symbols anywhere in view trigger the Bonus game with Free Spins.",
+        "spins_awarded": "8 free Spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "character symbols to Wilds and add multipliers to duelling characters, and the Bonus game with Free Spins.\nDeadeye has 30 paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.\nThree or more Bonus symbols in Normal mode triggers the Bonus game with Free Spins. Each Bonus symbol can carry up to 2 bullets that will be collected in Bonus mode. If 6 bullets are collected, one extra Free Spin is awarded, then the six bullets will be fired on the Free Spin counter or on the steel plates above the grid. A shot on the Free Spin counter awards more Free Sp",
+        "end_condition": "Bonus game ends when no Free Spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award 8 free Spins. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "8 free Spins"
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": "8 free Spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "-iter feature offers different game modes.\nSuper Bonus:\nGuaranteed entry to the Super Bonus game where all Bonus symbols carry 2 bullets at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus:\nGuarantees a game round with entry to the Bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nDuel:\nOne spin with a guaranteed duel feature at the cost of __X03_MULTIPLIER__ the selected bet.\nShots Fired:\nOne spin where 3 or more shots will be fired on the steel plates at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt:\nOne s",
+        "end_condition": "Bonus game ends when no Free Spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "-iter feature offers different game modes.\nSuper Bonus:\nGuaranteed entry to the Super Bonus game where all Bonus symbols carry 2 bullets at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus:\nGuarantees a game round with entry to the Bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nDuel:\nOne spin with a guaranteed duel feature at the cost of __X03_MULTIPLIER__ the selected bet.\nS",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "8 free Spins"
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for DeadEye."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed entry to the Super Bonus game where all Bonus symbols carry 2 bullets at the cost of __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the Bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Duel (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with a guaranteed duel feature at the cost of __X03_MULTIPLIER__ the selected bet.; Shots Fired (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin where 3 or more shots will be fired on the steel plates at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with more than TRIPLE the chance to trigger the Bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed entry to the Super Bonus game where all Bonus symbols carry 2 bullets at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the Bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Duel",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with a guaranteed duel feature at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Shots Fired",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin where 3 or more shots will be fired on the steel plates at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with more than TRIPLE the chance to trigger the Bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadeye/build-357139/assets/translation/deadeye-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10245-deadeye-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English DeadEye\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 30 ways to win\nJackpot No\nReels 6 reels\nRows 4 rows\n\nGame description\nWe are standing on a dusty road, the end of Main street of a Western town, looking outwards towards the desolate Prairie. The town is weathered. Rough. The street is empty. Only the muffled sounds from the saloon can be heard. We can sense that a deadly climax is approaching. In a town like this, there are good chances to earn some coins. If the undertaker won't get them all.\n\nDeadeye is a 6 reel, 4 row slot with spinning reels and 30 paylines"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadeye/build-357139/assets/translation/deadeye-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10245-deadeye-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 6 reel, 4 row slot with spinning reels and 30 paylines. The main features in Deadeye are: The Duel where 2 high value characters challenge eachother in a deadly duel, the steel plates above the reels that can convert character symbols to Wilds and add multipliers to duelling characters, and the Bonus game with Free Spins.\nDeadeye has 30 paylines."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadeye/build-357139/assets/translation/deadeye-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10245-deadeye-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers different game modes.\nSuper Bonus:\nGuaranteed entry to the Super Bonus game where all Bonus symbols carry 2 bullets at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus:\nGuarantees a game round with entry to the Bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nDuel:\nOne spin with a guaranteed duel feature at the cost of __X03_MULTIPLIER__ the selected bet.\nShots Fired:\nOne spin where 3 or more shots will be fired on the steel plates at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt:\nOne spin with more than TRIPLE the chance to trigger the Bonus game at the cost of __X01_MULTIPLIER__ the selected bet.\nThe X-iter features can only be a"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadeye/build-357139/assets/translation/deadeye-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10245-deadeye-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nWe are standing on a dusty road, the end of Main street of a Western town, looking outwards towards the desolate Prairie. The town is weathered. Rough. The street is empty. Only the muffled sounds from the saloon can be heard. We can sense that a deadly climax is approaching. In a town like this, there are good chances to earn some coins. If the undertaker won't get them all.\n\nDeadeye is a 6 reel, 4 row slot with spinning reels and 30 paylines. The main features in Deadeye are: The Duel where 2 high value characters challenge eachother in a deadly duel, the steel plates above the reels that can convert character symbols to Wilds and add multipliers to duelling characters, and the Bonus game with Free Spins.\nDeadeye has 30 paylines. The RTP for all paylines is the same and the RTP of the g"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadeye/build-357139/assets/translation/deadeye-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10245-deadeye-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English DeadEye\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 30 ways to win\nJackpot No\nReels 6 reels\nRows 4 rows\n\nGame description\nWe are standing on a dusty road, the end of Main street of a Western town, looking outwards towards the desolate Prairie. The town is weathered. Rough. The street is empty. Only the muffled sounds from the saloon can be heard. We can sense that a deadly climax is approaching. In a town like this, there are good chances to earn some coins. If the undertaker won't get them all.\n\nDeadeye is a 6 reel, 4 row slot with spinning reels and 30 paylines. The main features in Deadeye are: The Duel where 2 high value characters challenge eachother in a deadly duel, the steel plates above the reels that can convert character symbols to Wilds and add multipliers to duelling characters, and the Bonus game with Free Spins.\nDeadeye has 30 pay"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/deadeye/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10245; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-deadeye.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

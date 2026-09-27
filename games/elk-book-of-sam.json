@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Book of Sam",
+    "slug": "elk-book-of-sam",
+    "provider_game_id": "10187",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10187&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/bookofsam/build-267475/assets/translation/bookofsam-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 3 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 10,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "10 pay lines"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "ll low value symbols, together with the cat and Maggie symbols are removed, and new symbols drop in.\n\nA win on Sandra will trigger the Sandra Electric Treat. Sandra will increase the multiplier and trigger Respins.\n\nA win on Sam will trigger the Sam Electric Treat. Sam will add a book symbol and trigger Respins. If the Sam Electric Treat is triggered during a bonus game, the added book symbol will also be an expanding Wild symbol.\n\nBook symbols are sticky during Respins.\nBook of Sam has 10 payl"
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "gger the Sandra Electric Treat. Sandra will increase the multiplier and trigger Respins.\n\nA win on Sam will trigger the Sam Electric Treat. Sam will add a book symbol and trigger Respins. If the Sam Electric Treat is triggered during a bonus game, the added book symbol will also be an expanding Wild symbol.\n\nBook symbols are sticky du"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Book of Sam: paid spin on 3x5. 10 pay lines. Avalanche/tumble after wins. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 3x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 10 pay lines",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "ll low value symbols, together with the cat and Maggie symbols are removed, and new symbols drop in.\n\nA win on Sandra will trigger the Sandra Electric Treat. Sandra will increase the multiplier and trigger Respins.\n\nA win on Sam will trigger the Sam Electric Treat. Sam will add a book symbol and trigger Respins. If the Sam Electric Treat is triggered during a bonus game, the added book symbol will also be an expanding Wild symbol.\n\nBook symbols are sticky during Respins.\nBook of Sam has 10 payl",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "10 pay lines",
+    "notes": "rence in Settings.\nWinnings are presented in the player's currency.\nBook of Sam is played in two modes; Normal mode and Bonus mode with Free Spins.\nThe Wild book symbol substitute for any symbol.\nA payline of only Wild symbols pay as the highest value symbol.\nTwo or more Maggie symbols will"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": "Free Spins can be retriggered and will award one or more expanding symbols, up to a maximum of five, and four Free Spins\nThree, four or five book symbols award one, two or three expanding symbols respectively that can trigger the scatter pay feature.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "everal different game modes.\nSuper Bonus:\nOne Spin with guaranteed entry to the super bonus game where all symbols are expanding symbols at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus Game:\nOne Spin with guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nExpanding Symbols:\nOne Spin where all symbols are expanding symbols at the cost of __X03_MULTIPLIER__ the selected bet.\nElectric Treat:\nOne Spin with a guaranteed Electric Treat at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt:\nMo",
+        "end_condition": "bonus game ends when no free spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "everal different game modes.\nSuper Bonus:\nOne Spin with guaranteed entry to the super bonus game where all symbols are expanding symbols at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus Game:\nOne Spin with guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nExpanding Symbols:\nOne Spin where all symbols are expanding symbols at the cost of __X03_MULTIPLIE",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Book of Sam."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "ll low value symbols, together with the cat and Maggie symbols are removed, and new symbols drop in.\n\nA win on Sandra will trigger the Sandra Electric Treat. Sandra will increase the multiplier and trigger Respins.\n\nA win on Sam will trigger the Sam Electric Treat. Sam will add a book symbol and trigger Respins. If the Sam Electric Treat is triggered during a bonus game, the added book symbol will also be an expanding Wild symbol.\n\nBook symbols are sticky during Respins.\nBook of Sam has 10 payl",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One Spin with guaranteed entry to the super bonus game where all symbols are expanding symbols at the cost of __X05_MULTIPLIER__ the selected bet.; Bonus Game (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One Spin with guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Expanding Symbols (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One Spin where all symbols are expanding symbols at the cost of __X03_MULTIPLIER__ the selected bet.; Electric Treat (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One Spin with a guaranteed Electric Treat at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): More than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One Spin with guaranteed entry to the super bonus game where all symbols are expanding symbols at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Game",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One Spin with guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Expanding Symbols",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One Spin where all symbols are expanding symbols at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Electric Treat",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One Spin with a guaranteed Electric Treat at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "More than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookofsam/build-267475/assets/translation/bookofsam-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10187-bookofsam-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Book of Sam\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 10 pay lines\nJackpot No\nReels 5 reels\nRows 3 rows\n\nGame description\nOur favourite electrician Sam welcomes you to fabulous Sam Vegas! Have a wonderful stay in this amazing city together with the returning characters Sam, Sandra and Maggie. Here you will find yourself in an ancient Egyptian setting, in combination with modern Sam Vegas where anything can happen.\n\nBook of Sam is a 5 reel, 3 rows slot with spinning reels and 10 pay lines. Central game features are the three characters with their unique Electric"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookofsam/build-267475/assets/translation/bookofsam-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10187-bookofsam-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 5 reel, 3 rows slot with spinning reels and 10 pay lines. Central game features are the three characters with their unique Electric Treats and the bonus game with Free Spins.\n\nA win on Maggie will trigger the Maggie Electric Treat."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookofsam/build-267475/assets/translation/bookofsam-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10187-bookofsam-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper Bonus:\nOne Spin with guaranteed entry to the super bonus game where all symbols are expanding symbols at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus Game:\nOne Spin with guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nExpanding Symbols:\nOne Spin where all symbols are expanding symbols at the cost of __X03_MULTIPLIER__ the selected bet.\nElectric Treat:\nOne Spin with a guaranteed Electric Treat at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt:\nMore than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.\nThe X-iter features ca"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookofsam/build-267475/assets/translation/bookofsam-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10187-bookofsam-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nOur favourite electrician Sam welcomes you to fabulous Sam Vegas! Have a wonderful stay in this amazing city together with the returning characters Sam, Sandra and Maggie. Here you will find yourself in an ancient Egyptian setting, in combination with modern Sam Vegas where anything can happen.\n\nBook of Sam is a 5 reel, 3 rows slot with spinning reels and 10 pay lines. Central game features are the three characters with their unique Electric Treats and the bonus game with Free Spins.\n\nA win on Maggie will trigger the Maggie Electric Treat. It consists of a redrop where all low value symbols, together with the cat and Maggie symbols are removed, and new symbols drop in.\n\nA win on Sandra will trigger the Sandra Electric Treat. Sandra will increase the multiplier and trigger Respins.\n\nA win"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookofsam/build-267475/assets/translation/bookofsam-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10187-bookofsam-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Book of Sam\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 10 pay lines\nJackpot No\nReels 5 reels\nRows 3 rows\n\nGame description\nOur favourite electrician Sam welcomes you to fabulous Sam Vegas! Have a wonderful stay in this amazing city together with the returning characters Sam, Sandra and Maggie. Here you will find yourself in an ancient Egyptian setting, in combination with modern Sam Vegas where anything can happen.\n\nBook of Sam is a 5 reel, 3 rows slot with spinning reels and 10 pay lines. Central game features are the three characters with their unique Electric Treats and the bonus game with Free Spins.\n\nA win on Maggie will trigger the Maggie Electric Treat. It consists of a redrop where all low value symbols, together with the cat and Maggie symbols are removed, and new symbols drop in.\n\nA win on Sandra will trigger the Sandra Electric Treat"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/book-of-sam/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10187; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-book-of-sam.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

@@ -1,0 +1,127 @@
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+<!-- Intro-->
+	<gfx key="SkipIntroTxt">Skip intro</gfx>
+
+<!-- Dialogs -->
+	<gfx key="totalWinTxt">Total win</gfx>
+	<gfx key="ofTxt">of</gfx>
+	<gfx key="startTxt">Start</gfx>
+
+<!-- Paytable-->
+<!-- Page 1  -->
+
+	<gfx key="paytableHeaderRespinSymbol">Respin Symbol</gfx>
+	<entry key="paytableSectionRespinSymbol">The Respin symbol lands on reel 5 and triggers Boosted Respin feature.</entry>
+
+	<gfx key="paytableHeaderStacks">Boosted Stacks</gfx>
+	<entry key="paytableSectionStacks">All reels have stacks of identical symbols. At the beginning of every spin, random symbols are chosen to fill these stacks. Different reels may have different symbols in the Boosted Stacks.</entry>
+
+	<gfx key="paytableHeaderBonusSymbol">Bonus Symbol</gfx>
+	<entry key="paytableSectionBonusSymbol">3 bonus scatter symbols trigger the free spins bonus game. The bonus game can be retriggered.</entry>
+
+<!-- Page 2  -->
+
+	<gfx key="paytableHeaderBonusGame">Bonus Game</gfx>
+
+	<entry key="paytableSectionFreeSpins">The number of symbol spaces within the rectangular area, that surrounds all bonus scatter symbols in view, defines the number of awarded free spins.</entry>
+
+	<entry key="paytableSectionCounters">All vampire symbols that land in view are counted. When a vampire meter is full, all instances of that vampire symbol on all reels are replaced by the Dracula symbol, for the remaining free spins. One additional free spin is awarded.</entry>
+
+<!-- Page 3  -->
+
+	<gfx key="paytableHeaderRespin">Boosted Respin</gfx>
+
+	<entry key="paytableSectionSticky">A random symbol in view is selected. All instances of this symbol in view and all bonus scatter symbols in view remain sticky during one awarded respin.</entry>
+
+<!-- Symbol payout and paylines pages -->
+
+	<gfx key="paytableHeaderWildSymbol">Wild Symbol</gfx>
+	<gfx key="paytableHeaderDracula">Dracula Symbol</gfx>
+	<gfx key="paytableHeaderSymbolPayout">Symbol Payout</gfx>
+	<gfx key="paytableHeaderPaylines">Paylines</gfx>
+
+	<entry key="paytableSectionWildSymbol">The wild symbol substitutes for any symbol except the Respin symbol and the bonus scatter symbol. A payline of all wilds pays as the highest value symbol.</entry>
+	<entry key="paytableSectionDracula">Dracula is the most valuable symbol. During the free spins bonus game all vampire symbols can be replaced by the Dracula symbol.</entry>
+
+<!--Gamerules-->
+<entry key="1-rulehead">Game rules</entry>
+<entry key="1-rules">
+<![CDATA[
+1. Blood Lust is a 5 reel, 3 rows slot with 99 paylines.
+
+2. The game offers several bet levels for each currency.
+
+3. Each bet is 100 coins.
+
+4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+]]>
+</entry>
+<entry key="2-rulehead">Game rules</entry>
+<entry key="2-rules">
+<![CDATA[
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. Blood Lust is played in two modes; Normal mode and Bonus mode with free spins.
+
+10. The wild symbol substitutes for any symbol except the Respin symbol and the bonus scatter symbol. A payline of all wilds pays as the highest value symbol.
+
+11. Boosted Stacks feature: All reels have stacks of identical symbols - Boosted Stacks. At the beginning of every spin, random symbols are chosen to fill these stacks. Different reels may have different symbols in their Boosted Stacks.
+
+12. Respin symbols and bonus scatter symbols can not be chosen to fill the Boosted Stacks.
+]]>
+</entry>
+<entry key="3-rulehead">Game rules</entry>
+<entry key="3-rules">
+<![CDATA[
+13. Boosted Respin feature: A Respin symbol that hits on reel 5 triggers the Boosted Respin feature. A random symbol in view is selected and all instances of that symbol in view and all bonus scatter symbols in view remain sticky during one awarded respin.
+
+14. The free spins are paused in case the Boosted Respin feature is triggered in Bonus mode.
+
+15. If the triggers for Bonus mode and for the Boosted Respin feature coincide in the same result, the Boosted Respin feature will be performed first, before entering the free spins bonus game.
+
+16. 3 or more bonus scatter symbols trigger Bonus mode, with between 3 to 15 free spins.
+]]>
+</entry>
+<entry key="4-rulehead">Game rules</entry>
+<entry key="4-rules">
+<![CDATA[
+17. The number of symbol spaces within the rectangular area, that surrounds all bonus scatter symbols in view, defines the number of awarded free spins.
+
+18. All vampire symbols can be replaced by the Dracula symbol in the free spins bonus game.
+
+19. All vampire symbols that land in view in Bonus mode are counted. When a vampire meter is full, all instances of that vampire symbol on all reels are replaced by the Dracula symbol for the remaining free spins. One additional free spin is awarded.
+
+20. 3 or more bonus scatter symbols in Bonus mode, retrigger the free spins bonus game.
+
+21. The free spins bonus game ends when no free spins remain or when the maximum win has been reached.
+]]>
+</entry>
+<entry key="5-rulehead">Game rules</entry>
+<entry key="5-rules">
+<![CDATA[
+22. Winnings are paid out at the end of the bonus game.
+
+23. No bets can be changed during an ongoing spin or in any Bonus mode.
+
+24. The theoretical payout (RTP) in Blood Lust is 96.0%
+
+25. The game has a maximum win of 250,000 coins.
+
+26. In the event of malfunction all bets and wins are void.
+
+
+Last updated 2021-05-10
+]]></entry>
+
+</translation>

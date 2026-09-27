@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Pirots 4",
+    "slug": "elk-pirots-4",
+    "provider_game_id": "10234",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10234&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/pirots4/build-338634/assets/translation/pirots4-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": 6,
+    "rows_max": 8,
+    "layout_notes": "Official Game Description: 6 rows by 6 columns; expands up to 8 rows by 8 columns; schema has rows_min/rows_max; cols variable upper=8 noted in layout_notes (no cols_min/cols_max)"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "horizontal_or_vertical",
+    "notes": "The number of possible paylines vary based on the position of the birds."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "ining symbols and birds move vertically until they reach a resting position and new symbols drop in from above to fill the empty spaces. The feature continues as long as at least one bird can move.\nAbove the game grid there is a symbol collection meter. The meter keeps track of the collected symbols. Only gems and wild symbols collected by any of the four birds count. The symbol collection meter continues to count collected symbols until the birds can't collect more symbols.\nThe Space Bandit do"
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "ns, across the stars and beyond.\n\nPirots 4 is a 6 row by 6 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four birds that move around the grid collecting gems and feature symbols, the symbol collection meter that counts the number of symbols collected and adds a pending feature symbol release when the"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Pirots 4: paid spin on 6x6 (expands to 8 rows). The number of possible paylines vary based on the position of the birds.. Avalanche/tumble after wins. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 6x6 (expands to 8 rows). Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: The number of possible paylines vary based on the position of the birds.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "ining symbols and birds move vertically until they reach a resting position and new symbols drop in from above to fill the empty spaces. The feature continues as long as at least one bird can move.\nAbove the game grid there is a symbol collection meter. The meter keeps track of the collected symbols. Only gems and wild symbols collected by any of the four birds count. The symbol collection meter continues to count collected symbols until the birds can't collect more symbols.\nThe Space Bandit do",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "The number of possible paylines vary based on the position of the birds.",
+    "notes": "eference in Settings.\nWinnings are presented in the player's currency.\nPirots 4 is played in two modes; normal mode and bonus mode with free drops.\nPirots 4 has four collecting bird symbols that can move around the game grid. Each bird is paired with a gem of the same color as the bird.\nThe"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "game is triggered, they will be released as a part of the first free drop.\nThe super bonus game with free drops is triggered if one of the three collected bonus symbols is a super bonus symbol. The super bonus game starts on 8 rows and 8 columns.\nThe wild symbol substitutes for any gem at their current respective payout level.\nA collected transform symbol transforms a cluster of gems next to the bird into the same color as the bird that collected the transform symbol. It may also convert a random number of gems into feature symbols.\nThe up",
+        "end_condition": "The free drops bonus game ends when no free drops remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "game is triggered, they will be released as a part of the first free drop.\nThe super bonus game with free drops is triggered if one of the three collected bonus symbols is a super bonus symbol. The super bonus game starts on 8 rows and 8 columns.\nThe wild symbol substitutes for any gem at their current respective payout level.\nA collected transform symbol transforms a cluster of gems next to the b",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Pirots 4."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "ining symbols and birds move vertically until they reach a resting position and new symbols drop in from above to fill the empty spaces. The feature continues as long as at least one bird can move.\nAbove the game grid there is a symbol collection meter. The meter keeps track of the collected symbols. Only gems and wild symbols collected by any of the four birds count. The symbol collection meter continues to count collected symbols until the birds can't collect more symbols.\nThe Space Bandit do",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Expanding grid",
+      "trigger": "Feature/bomb/clear-board events as described",
+      "when": "Base and bonus",
+      "effects": "ns, across the stars and beyond.\n\nPirots 4 is a 6 row by 6 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four birds that move around the grid collecting gems and feature symbols, the symbol collection meter that counts the number of symbols collected a",
+      "params": {}
+    },
+    {
+      "name": "Feature Release",
+      "trigger": null,
+      "when": null,
+      "effects": "feature activates when the birds are no longer able to collect symbols, pending feature releases have been released and corner bombs have detonated.\nDuring the Fire Minions feature between one to four Fire Minions appear on random positions on the game grid.\nIf a bird ends up in a horizontally, vertically or diagonally adjacent position to a Fire Minion, the bird gets lit on fire and starts a fire marathon. During the fire marathon the burni",
+      "params": {}
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the super bonus game. All free drops are played with the maximum grid size, and all upgrade symbols upgrade all gems at th; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Lost In Space (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the Lost in Space coin game at the cost of __X03_MULTIPLIER__ the selected bet.; Frozen Fury (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the Frozen Fury coin game at the cost of __X03_MULTIPLIER__ the selected bet.; Inferno (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the Inferno coin game at the cost of __X03_MULTIPLIER__ the selected bet.; Alien Invasion (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop where the Alien Invasion feature is triggered at the cost of __X02_MULTIPLIER__ the selected bet.; Yeti Snack Time (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop where the Yeti snack time feature is triggered at the cost of __X02_MULTIPLIER__ the selected bet.; Fire Minions (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop where the Fire Minions feature is triggered at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop with quadruple the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 9
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the super bonus game. All free drops are played with the maximum grid size, and all upgrade symbols upgrade all gems at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Lost In Space",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the Lost in Space coin game at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Frozen Fury",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the Frozen Fury coin game at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Inferno",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the Inferno coin game at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Alien Invasion",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop where the Alien Invasion feature is triggered at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Yeti Snack Time",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop where the Yeti snack time feature is triggered at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fire Minions",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop where the Fire Minions feature is triggered at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop with quadruple the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pirots4/build-338634/assets/translation/pirots4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10234-pirots4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Pirots 4\nProduct category Casino\nGame type Slot\nClient HTML5\nLines The number of possible paylines vary based on the position of the birds.\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nFresh off their wild west triumph, the fearful four's celebrations were cut short by a Black Hole tearing through the sky, and a space monster emerged and snatched their treasure. With no time to lose, they dove into the vortex just before it sealed. Now, the mission to reclaim their stolen bounty begins, across the stars and beyond.\n\nPirots 4 is a 6 row by 6 column slot that can exp"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pirots4/build-338634/assets/translation/pirots4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10234-pirots4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 6 row by 6 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four birds that move around the grid collecting gems and feature symbols, the symbol collection meter that counts the number of symbols collected and adds a pending feature symbol release when the meter is full, and the bonus game with free drops.\nWins are generated by the four birds collecting horizontally or vertically adjacent gems, wilds or coins, resulting in a varying number of ways to win."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pirots4/build-338634/assets/translation/pirots4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10234-pirots4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper Bonus: \nGuarantees a game round with entry to the super bonus game. All free drops are played with the maximum grid size, and all upgrade symbols upgrade all gems at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus: \nGuarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nLost in Space: \nGuarantees a game round with entry to the Lost in Space coin game at the cost of __X03_MULTIPLIER__ the selected bet.\nFrozen Fury: \nGuarantees a game round with entry to the Frozen Fury coin game at the cost of __X03_MULTIPLIER__ the selected bet.\nInferno:\nGuarantees a game round with entry t"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pirots4/build-338634/assets/translation/pirots4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10234-pirots4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nFresh off their wild west triumph, the fearful four's celebrations were cut short by a Black Hole tearing through the sky, and a space monster emerged and snatched their treasure. With no time to lose, they dove into the vortex just before it sealed. Now, the mission to reclaim their stolen bounty begins, across the stars and beyond.\n\nPirots 4 is a 6 row by 6 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four birds that move around the grid collecting gems and feature symbols, the symbol collection meter that counts the number of symbols collected and adds a pending feature symbol release when the meter is full, and the bonus game with free drops.\nWins are generated by the four birds collecting horizontally or vertically adjacent gems, wilds or coin"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pirots4/build-338634/assets/translation/pirots4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10234-pirots4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Pirots 4\nProduct category Casino\nGame type Slot\nClient HTML5\nLines The number of possible paylines vary based on the position of the birds.\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nFresh off their wild west triumph, the fearful four's celebrations were cut short by a Black Hole tearing through the sky, and a space monster emerged and snatched their treasure. With no time to lose, they dove into the vortex just before it sealed. Now, the mission to reclaim their stolen bounty begins, across the stars and beyond.\n\nPirots 4 is a 6 row by 6 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four birds that move around the grid collecting gems and feature symbols, the symbol collection meter that counts the number of symbols collected and adds a pending feature symbol release when the meter is full, and the bonus"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/pirots-4/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10234; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-pirots-4.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

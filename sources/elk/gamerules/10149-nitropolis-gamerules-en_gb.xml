@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+
+<!--Intro-->
+	
+<!--Paytable-->
+<gfx key="PaytableNitroReelsCaps">NITRO REELS</gfx>
+<gfx key="PaytableNitroReelUpgradeCaps">UPGRADE</gfx>
+
+<entry key="paytableRespins">All symbols and Nitro Reels which are part of a win respin individually. The respin feature continues as long as new winning combinations appear.</entry>
+<entry key="paytableNitroReel">Nitro Reels containing 4, 6, 8, 10 or 12 identical symbols may appear in any spin.</entry>
+<entry key="paytableUpgrade">A Nitro Reel can randomly upgrade in ways to win during a respin or between free spins.</entry>
+<entry key="paytableLastHurrah">Nitro Reels in view can randomly respin at the end of a spin when there are no additional wins.</entry>
+<entry key="paytableBonusSymbol">Three or more bonus symbols trigger the free spins bonus game. The bonus game can be retriggered.</entry>
+<entry key="paytableScatterWin">A symbol is randomly selected for scatter wins in the bonus game.</entry>
+<entry key="paytableBonusGame">All Nitro Reels lock in place in the bonus game and remain in play for the remaining free spins.</entry>
+
+<entry key="paytableWildSymbol">The wild symbol substitutes for any symbol except the bonus symbol. A payline of all wilds pays as the highest value symbol. In free spins wilds will substitute for the scatter paying symbol in a scatter win.</entry>
+
+<!--Buy bonus-->
+<gfx key="buyBonusRetrigger">RETRIGGER</gfx>
+<entry key="buyBonusConfirmation">You are about to start the Free Spins Bonus.
+	Bet _BET_
+
+</entry>
+<entry key="buySuperBonusConfirmation">You are about to start the Super Bonus.
+	Bet _BET_
+
+</entry>
+<entry key="buyBonusTotalCost">TOTAL COST
+_COST_</entry>
+<entry key="buyBonusButtonConfirm">OK</entry>
+<entry key="buyBonusButtonCancel">Cancel</entry>
+<entry key="buyBonusHeader">Free Spins Bonus</entry>
+<entry key="buyBonus">Free spins with locked Nitro Reels and Scatter paying symbol!</entry>
+<entry key="buySuperBonusHeader">Super Bonus</entry>
+<entry key="buySuperBonus">Free spins with a guaranteed retrigger, adding an extra Scatter paying symbol!</entry>
+
+<!--Gamerules-->
+<entry key="gamerule">Nitropolis is a 6 reel, 4 rows slot with up to 85,155,840 ways to win.</entry>
+	
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Wins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry> <!--Translate Settings into local language using initial capital letter since it is a name of a button-->
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Nitropolis is played in two modes; Normal mode and Bonus mode with free spins.</entry>
+
+<entry key="gamerule">All spins in Normal mode and Bonus mode start with 6 reels, 4 rows and 4,096 ways to win.</entry>
+
+<entry key="gamerule">The wild symbol substitutes for any symbol except the bonus symbol. A payline of all wilds pays as the highest value symbol. In free spins wilds will substitute for the scatter paying symbol in a scatter win.</entry>
+
+<entry key="gamerule">A Nitro Reel always covers two symbol places and can be of size 4, 6, 8, 10 or 12. The size represents the number of identical 1x1 symbol instances it contains, e.g. size 8 consists of 8 standard 1x1 symbols.</entry>
+
+<entry key="gamerule">A bonus symbol can appear within a Nitro Reel but will only be counted as one no matter of the Nitro Reel's size and the number of ways to win is reduced. The size of the Nitro Reel remains when the bonus symbol spins out, and the number of ways to win increases again.</entry>
+
+<entry key="gamerule">The wins in the current spin are collected and then all symbols and Nitro Reels which are part of a winning combination respin individually. The new result is paid out accordingly and the respin feature continues as long as new winning combinations appear.</entry>
+
+<entry key="gamerule">The number of ways to win increase as the number of Nitro Reels and the size of the Nitro Reels increase. It starts with 4,096 and may grow up to a maximum 85,155,840 ways.</entry>
+
+<entry key="gamerule">A Nitro Reel can appear in an initial spin and randomly when two symbols vertically next to each other respin after a win.</entry>
+
+<entry key="gamerule">One or more Nitro Reels in view can randomly increase in size during a respin or between free spins.</entry>
+
+<entry key="gamerule">One or more Nitro Reels in view can randomly respin at the end of a spin when there are no additional wins.</entry>
+
+<entry key="gamerule">A combination of three or more bonus symbols during Normal mode triggers the Bonus mode with free spins.
+3 bonus symbols: 10 free spins
+4 bonus symbols: 15 free spins
+5 bonus symbols: 20 free spins
+6 bonus symbols: 25 free spins</entry>
+
+<entry key="gamerule">Three or more bonus symbols during Bonus mode retrigger additional free spins. The number of additional free spins is determined in the same way as when initially triggering the bonus game. An additional symbol is selected for the scatter wins up to a maximum of 3 scatter paying symbols.</entry>
+
+<entry key="gamerule">All Nitro Reels lock in place in the bonus game and remain in play for the remaining free spins.</entry>
+
+<entry key="gamerule">When entering Bonus mode, one paying symbol is randomly selected for scatter wins during the bonus game. Three or more scatter paying symbols on three different reels in view are needed to generate a win. A Nitro Reel containing the scatter paying symbol is only counted as one symbol instance when triggering the feature but represents its actual size in the potential payout.</entry>
+
+<entry key="gamerule">Only the scatter win will pay out in case a symbol selected for scatter win in the bonus game appears in a normal win as well.</entry>
+
+<entry key="gamerule">The free spins bonus game ends when no free spins remain or when the win cap has been reached.</entry>
+
+<entry key="gamerule">Winnings are paid out at the end of the bonus game.</entry>	
+
+<entry key="gamerule">No bets can be changed during an ongoing spin or in any Bonus mode.</entry>
+
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Nitropolis is __RTP__.</entry>
+
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+   
+<entry key="gamerule" tags="lastupdated">Last updated 2023-10-12</entry>
+
+<entry key="buyBonus-rules">
+	<![CDATA[
+The Buy Free Spins Bonus feature guarantees a game round with 3 to 6 bonus symbols and entry to the bonus game at the cost of 100x the selected bet.
+
+The Buy Super Bonus feature guarantees a game round with 3 to 6 bonus symbols and a retrigger of the bonus game, at the cost of 300x the selected bet.
+
+The Buy Bonus features can only be activated in the base game.
+
+The minimum Buy Bonus cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.
+
+The theoretical payout (RTP) for the Buy Free Spins Bonus feature in Nitropolis is __RTP__.
+
+The theoretical payout (RTP) for the Buy Super Bonus feature in Nitropolis is __RTP__.
+
+
+
+All game rules apply for the Buy Free Spins Bonus and Buy Super Bonus features as well.
+
+
+Last updated 2024-02-02
+	]]></entry>		
+<!--Dialogs-->	
+
+</translation>

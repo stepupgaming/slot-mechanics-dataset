@@ -1,0 +1,202 @@
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx - paytable text-assets-->
+
+<gfx key="PaytableBonusGameHeaderCaps">BONUS GAME</gfx>
+<gfx key="PaytableBonusGameHeader">Bonus Game</gfx>
+
+<gfx key="PaytableWaysToWinCaps">WAYS TO WIN</gfx>
+<gfx key="PaytableWaysToWin">ways to win</gfx>
+
+<gfx key="PaytablePaylinesHeadlineCaps">PAYLINES</gfx>
+<gfx key="PaytablePaylinesHeadline">Paylines</gfx>
+
+<gfx key="PaytableHeaderSymbolPayoutCaps">SYMBOL PAYOUT</gfx>
+<gfx key="PaytableHeaderSymbolPayout">Symbol Payout</gfx>
+
+<gfx key="PaytableBonusSymbolHeaderCaps">BONUS SYMBOL</gfx>
+<gfx key="PaytableBonusSymbolHeader">Bonus Symbol</gfx>
+
+<gfx key="PaytableWildSymbolHeadlineCaps">WILD SYMBOL</gfx>
+<gfx key="PaytableWildSymbolHeadlineC">Wild Symbol</gfx>
+
+<gfx key="PaytableWinUpCaps">WIN UP TO</gfx>
+<gfx key="PaytableWinUp">Win up to</gfx>
+
+<gfx key="PaytableCoinsTxtCaps">COINS</gfx>
+<gfx key="PaytableCoinsTxt">Coins</gfx>
+
+<gfx key="PaytableSafetyLevelsHeadlineCaps">SAFETY LEVELS</gfx>
+<gfx key="PaytableSafetyLevelsHeadlineC">Safety levels</gfx>
+
+<gfx key="PaytableBigSymbolsHeadlineCaps">BIG SYMBOLS</gfx>
+<gfx key="PaytableBigSymbolsHeadlineC">Big Symbols</gfx>
+
+<entry key="PaytableBonusGameCaps">BONUS GAME</entry>
+<entry key="PaytableBonusGame">Bonus Game</entry>
+
+<!-- Do not translate below - for completeness only-->
+<gfx key="PaytableFreeDropsHeaderCaps">FREE DROPS</gfx>
+<gfx key="PaytableAvalancheHeadlineCaps">AVALANCHE</gfx>
+<gfx key="PaytableCompassHeadlineCaps">WILD COMPASS</gfx>
+<gfx key="PaytableRevolverHeadlineCaps">REVOLVER</gfx>
+<gfx key="PaytableStickyWildHeadlineCaps">STICKY WILDS</gfx>
+<!-- Do not translate above - for completeness only-->
+
+
+<!--Copy to gfx - ingame text-assets-->
+
+<gfx key="TotalWinTxtCaps">TOTAL WIN</gfx>
+<gfx key="TotalWinTxt">Total Win</gfx>
+
+<gfx key="SafetyLevelTxtCaps">SAFETY LEVELS</gfx>
+<gfx key="SafetyLevelTxt">Safety Levels</gfx>
+
+<gfx key="ActivatedTxtCaps">ACTIVATED</gfx>
+<gfx key="ActivatedTxt">Activated</gfx>
+
+<gfx key="WaysTxtCaps">WAYS</gfx>
+<gfx key="WaysTxt">ways</gfx>
+
+<gfx key="PlayedInTotalTxtCaps">PLAYED IN TOTAL</gfx>
+<gfx key="PlayedInTotalTxt">Played in total</gfx>
+
+<gfx key="StartTxtCaps">START</gfx>
+<gfx key="StartTxt">Start</gfx>
+
+<gfx key="ofTxtCaps">OF</gfx>
+<gfx key="ofTxt">of</gfx>
+
+<gfx key="SkipIntroTxtCaps">SKIP INTRO</gfx>
+<gfx key="SkipIntroTxt">Skip intro</gfx>
+
+
+<!--Intro-->
+
+<!--Paytable-->
+<entry key="paytableBonusSymbol">Three or more bonus symbols trigger the free drops bonus game. Free drops can be retriggered.</entry>
+<entry key="paytableCompassSymbol">When symbols match across the Wild Compass they become wilds. When reaching the bottom row it becomes a wild.</entry>
+<entry key="paytableRevolverSymbol">Big symbols can absorb smaller symbols below, becoming a Revolver. A Revolver represents all symbols it has absorbed. A Revolver becomes wild when it is full.</entry>
+<entry key="paytableAvalanche">All symbols which are part of a win explode and leave space for additional symbol drops, and an additional row of symbols is added at the top up to a maximum of 8 rows. The avalanche feature continues as long as new winning combinations appear.</entry>
+<entry key="paytableSafetyLevel">The free drops bonus game always starts with the safety level set to 4 rows. The safety level advances one row for every new free drop initiated that results in a win. Every new free drop starts at the current active safety level.</entry>
+<entry key="paytableBigSymbols">Super, mega and epic symbols of size 2x2, 3x3 and 4x4 may drop down in any symbol drop.</entry>
+<entry key="paytableWildTxt">Wild symbols substitute for any symbol except the bonus symbol and the Wild Compass.</entry>
+<entry key="paytableStickyWildsTxt">During the bonus game all wilds are collected and kept at the bottom when a free drop ends. They become sticky and remain in play until they are a part of a win.</entry>
+
+<!--Gamerules-->
+<entry key="1-rulehead">Game rules</entry>
+<entry key="1-rules">
+<![CDATA[
+1. Black River Gold is a 6 column, 4 rows slot with dropping symbols. The columns may expand upwards to a maximum of 9 rows.
+
+2. The game offers several bet levels for each currency.
+
+3. Each bet is 100 coins.
+
+4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+]]>
+</entry>
+<entry key="2-rulehead">Game rules</entry>
+<entry key="2-rules">
+<![CDATA[
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. Black River Gold is played in two modes; Normal mode and Bonus mode with free drops.
+
+10. All symbol drops in Normal mode starts with 4 rows and 4,096 ways to win.
+
+11. All low, mid and high value and wild symbols exist in four sizes; standard 1x1, super 2x2, mega 3x3 and epic 4x4. All big symbols are counted as consisting of the number of 1x1 symbol instances it covers, e.g. super 2x2 consists of 4 standard 1x1 symbols.
+]]>
+</entry>
+<entry key="3-rulehead">Game rules</entry>
+<entry key="3-rules">
+<![CDATA[
+12. Big symbols with empty symbol places underneath absorb smaller symbols below to reach a stable horizontal resting state, becoming a Revolver. Big symbols can not absorb other big symbols, Wild Compass symbols or bonus symbols.
+
+13. A Revolver represents the initial big symbol and all the symbols it has absorbed, and pays out individually for each instance of a symbol, in case it contains several instances of the same symbol. It can contribute to wins of all the symbols it represents in the same symbol drop.
+
+14. A Revolver is removed once it has participated in a win of all symbols it represents. In case the Revolver represents a wild it will be removed after the payout of all the wins it contributes to in the same symbol drop.
+
+15. The Revolver becomes wild in case it has absorbed another 5 symbols, or absorbed a wild.
+]]>
+</entry>
+<entry key="4-rulehead">Game rules</entry>
+<entry key="4-rules">
+<![CDATA[
+16. The wins in current symbol drop are collected and then all symbols which are part of a winning combination explode and give space for additional symbols to drop down from above. This next symbol drop will add an additional row of symbols at the top (up to the maximum 8 rows), resulting in an increased number of ways to win. The new result is paid out accordingly and the avalanche feature continues as long as new winning combinations appear.
+
+17. A big symbol can be dropped in such a way that it generates an incomplete additional 9th row.
+
+18. Identical symbols except Wild Compass and bonus symbols, matching straight across a Wild Compass become wilds. The comparison will continue until all relevant matches are turned wild. A wild is considered to match all other symbols except Wild Compass and bonus symbols.
+]]>
+</entry>
+<entry key="5-rulehead">Game rules</entry>
+<entry key="5-rules">
+<![CDATA[
+19. A Wild Compass reaching the bottom row turns into a wild symbol after the relevant matchings are completed.
+
+20. In bonus mode, all Wild Compass symbols are collected at the bottom and become wild when a free drop ends. A Wild Compass on top of a wild remains as a Wild Compass for the next free drop.
+
+21. The numbers of ways to win increase as the number of rows increase.
+4 rows: 4,096 ways to win
+5 rows: 15,625 ways to win
+6 rows: 46,656 ways to win
+7 rows: 117,649 ways to win
+8 rows: 262,144 ways to win
+]]>
+</entry>
+<entry key="6-rulehead">Game rules</entry>
+<entry key="6-rules">
+<![CDATA[
+22. The wild symbol substitutes for any symbol except the bonus symbol and the Wild Compass symbol. All wilds become sticky and remain in play for the remaining free drops in the bonus game until they become part of a winning combination.
+
+23. A combination of three or more bonus symbols during Normal mode triggers the Bonus mode with free drops.
+3 bonus symbols: 10 free drops
+4 bonus symbols: 15 free drops
+5 bonus symbols: 20 free drops
+6 bonus symbols: 25 free drops.
+
+24. Three or more bonus symbols during Bonus mode retrigger additional free drops. The number of additional free drops is determined in the same way as when initially triggering the bonus game.
+]]>
+</entry>
+<entry key="7-rulehead">Game rules</entry>
+<entry key="7-rules">
+<![CDATA[
+25. The free drops bonus game always starts with the safety level set to 4 rows.
+
+26. A winning free drop moves the safety level up one row. The advancement of the safety level occurs after the payout. The next free drop starts from the new safety level.
+
+27. A safety level never moves down during an ongoing free drops bonus game.
+
+28. The maximum safety level is 8 with a maximum of 262,144 ways to win.
+
+29. The free drops bonus game ends when no free drops remain or when the maximum win has been reached.
+]]>
+</entry>
+<entry key="8-rulehead">Game rules</entry>
+<entry key="8-rules">
+<![CDATA[
+30. Winnings are paid out at the end of the bonus game.
+
+31. No bets can be changed during an ongoing symbol drop or in Bonus mode.
+
+32. The theoretical payout (RTP) in Black River Gold is 96.1%
+
+33. The game has a maximum win of 500 000 coins.
+
+34. In the event of malfunction all bets and wins are void.
+
+
+Last updated 2021-05-10
+]]></entry>
+
+
+</translation>

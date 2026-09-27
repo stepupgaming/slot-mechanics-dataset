@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Taco Brothers Deralied",
+    "slug": "elk-taco-brothers-deralied",
+    "provider_game_id": "10079",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10079&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/tacobrothersderailed/build-262000/assets/translation/tacobrothersderailed-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "466 connecting paylines"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "the three Taco Brothers, which turn the normal Taco Brother symbols into wilds. Respins are generated for each step that a Taco Brother takes moving leftwards until he leaves the first reel.\n\nThree bonus symbols trigger the free spins bonus game. Each of the three Taco Brothers move as multiplier Walking Wilds from right to left, with"
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the bonus, Walking Wild Taco Brothers, Walking Multiplier Wild, Captain Diaz and Señorita symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Taco Brothers Deralied: paid spin on 4x6. 466 connecting paylines. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 466 connecting paylines",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "466 connecting paylines",
+    "notes": "in coins. The player can change preference in Settings.\nTaco Brothers Derailed is played in two modes; Normal mode and Bonus mode with free spins.\nThe wild symbol substitutes for any symbol except the bonus, Walking Wild Taco Brothers, Walking Multiplier Wild, Captain Diaz and Señorita symb"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 bonus symbols in normal mode triggers the bonus mode with respins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "nce in Settings.\nTaco Brothers Derailed is played in two modes; Normal mode and Bonus mode with free spins.\nThe wild symbol substitutes for any symbol except the bonus, Walking Wild Taco Brothers, Walking Multiplier Wild, Captain Diaz and Señorita symbols. A payline of all wilds pays as the highest value symbol.\nThe Taco Brothers symbols exist in three different versions; normal high value, wild and Walking Wild.\nThe Walking Wilds move leftwards until they spin out from the first reel, generating a respin for each step.\nAll normal high value versions of the active Walking Wild Taco Brother tur",
+        "end_condition": "The bonus game ends when all Walking Wilds have left the first reel, all remaining Walking Wild Taco Brothers are locked in, or when the maximum win has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "cked in, or when the maximum win has been reached.\n\n4 bonus symbols trigger the Super Bonus game where the Walking Wild Taco Brothers and the Walking Multiplier Wild move simultaneously from right to left until they spin out on reel 1. Captain Diaz is wild and is unable to imprison any of the Walking Wild Taco Brothers. Señorita can still pull back Walking Wild Taco Brothers to reel 6 for additional respins.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen.",
+        "end_condition": "The bonus game ends when all Walking Wilds have left the first reel, all remaining Walking Wild Taco Brothers are locked in, or when the maximum win has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "cked in, or when the maximum win has been reached.\n\n4 bonus symbols trigger the Super Bonus game where the Walking Wild Taco Brothers and the Walking Multiplier Wild move simultaneously from right to left until they spin out on reel 1. Captain Diaz is wild and is unable to imprison any of the Walking Wild Taco Brothers. Señorita can still pull back Walking Wild Taco Brothers to reel 6 for addition",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Taco Brothers Deralied."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the Super Bonus game at the cost of __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Walking Multiplier Wild (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with a guaranteed Walking Multiplier Wild at the cost of __X03_MULTIPLIER__ the selected bet.; Walking Wild Taco Brother (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with a guaranteed Walking Wild Taco Brother at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with more than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the Super Bonus game at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Walking Multiplier Wild",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with a guaranteed Walking Multiplier Wild at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Walking Wild Taco Brother",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with a guaranteed Walking Wild Taco Brother at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with more than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/tacobrothersderailed/build-262000/assets/translation/tacobrothersderailed-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10079-tacobrothersderailed-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Taco Brothers Deralied\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 466 connecting paylines\nJackpot No\nReels 6 reels\nRows 4 rows\n\nGame description\nThe three Taco Brothers - Paso, Pepe and Pico are back in the time of the gold rush. They have unveiled Captain Diaz plans to get his hands on all the gold by redirecting the trains through Santa Maria. Paso, Pepe and Pico do their utmost to collect the gold and return it to the people of the town.\n\nTaco Brothers Derailed is an exciting 6 reels, 4 rows slot with 466 connecting paylines. The core feature is the Walking W"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/tacobrothersderailed/build-262000/assets/translation/tacobrothersderailed-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10079-tacobrothersderailed-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 6 reels, 4 rows slot with spinning reels and 466 connecting paylines.\nThe minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\nEach bet is __CPBB__ coins."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/tacobrothersderailed/build-262000/assets/translation/tacobrothersderailed-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10079-tacobrothersderailed-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper Bonus:\nGuarantees a game round with entry to the Super Bonus game at the cost of __X05_MULTIPLIER__ the selected bet. In the Super Bonus game, all the three Walking Wild Taco Brothers and the Walking Multiplier Wild drop in at the same time.\nBonus:\nGuarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nWalking Multiplier Wild:\nOne spin with a guaranteed Walking Multiplier Wild at the cost of __X03_MULTIPLIER__ the selected bet.\nWalking Wild Taco Brother:\nOne spin with a guaranteed Walking Wild Taco Brother at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt:\nOne spin wi"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/tacobrothersderailed/build-262000/assets/translation/tacobrothersderailed-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10079-tacobrothersderailed-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nThe three Taco Brothers - Paso, Pepe and Pico are back in the time of the gold rush. They have unveiled Captain Diaz plans to get his hands on all the gold by redirecting the trains through Santa Maria. Paso, Pepe and Pico do their utmost to collect the gold and return it to the people of the town.\n\nTaco Brothers Derailed is an exciting 6 reels, 4 rows slot with 466 connecting paylines. The core feature is the Walking Wilds, in terms of the three Taco Brothers, which turn the normal Taco Brother symbols into wilds. Respins are generated for each step that a Taco Brother takes moving leftwards until he leaves the first reel.\n\nThree bonus symbols trigger the free spins bonus game. Each of the three Taco Brothers move as multiplier Walking Wilds from right to left, with the aim to leave the"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/tacobrothersderailed/build-262000/assets/translation/tacobrothersderailed-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10079-tacobrothersderailed-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Taco Brothers Deralied\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 466 connecting paylines\nJackpot No\nReels 6 reels\nRows 4 rows\n\nGame description\nThe three Taco Brothers - Paso, Pepe and Pico are back in the time of the gold rush. They have unveiled Captain Diaz plans to get his hands on all the gold by redirecting the trains through Santa Maria. Paso, Pepe and Pico do their utmost to collect the gold and return it to the people of the town.\n\nTaco Brothers Derailed is an exciting 6 reels, 4 rows slot with 466 connecting paylines. The core feature is the Walking Wilds, in terms of the three Taco Brothers, which turn the normal Taco Brother symbols into wilds. Respins are generated for each step that a Taco Brother takes moving leftwards until he leaves the first reel.\n\nThree bonus symbols trigger the free spins bonus game. Each of the three Taco"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/taco-brothers-deralied/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10079; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-taco-brothers-deralied.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

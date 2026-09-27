@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+
+<!-- GAME DOCUMENTATION -->
+<entry key="gdd-description">
+	Deep inside in the Mexican jungle lies the mysterious COBA temple of the worshiped snake god Quetzalcoatl. The temple is protected by his snakes and temple traps. Your goal is to climb the temple and level up rewarded by snakes entering the grid, which will help with larger win clusters and Multiplying Wild Multipliers.
+
+	COBA is a cluster game with symbol win explosions and symbol gravity to keep the game going. Winnings are collected towards level ups where "walking cluster" snakes enter the game alone or in larger groups. The snakes eat symbols to grow and stay alive to create even larger win clusters for big win crescendos, over and over again.
+
+	Snakes crossing each other creates Double Multiplied Wild symbols which will keep doubling for any new crossing.
+
+	There is no separate bonus game, while the last level 4 will release 6 snakes which is worth a bonus game.
+</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+
+<entry key="gdd-payline">COBA has cluster wins. Each cluster of 5 or more connecting symbols of same value is a win.</entry>
+
+<entry key="gdd-bonusgame">No separate bonus game available.
+Activation of Level 4 releases 6 snakes and corresponds to a bonus game.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Cluster wins (5 connecting symbol clusters)</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">7 reels</entry>
+<entry key="gdd-kf-rows">6-7 columns</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The Wild symbol substitutes for any paying symbol. A winning combination of 6 Wild symbols pays as the highest paying symbol.</entry>
+<entry key="gdd-sfs-2">The head of the snake defines the Snake Symbol. All passed over symbols will become this symbol. Eating any same symbol will make the snake to grow and survive another symbol avalanche drop.</entry>
+
+<entry key="gdd-xiterbutton-5">COBA!</entry>                                                  <!--  NO TRANSLATE -->
+<entry key="gdd-xiterbutton-4">QUETZALCÓATL</entry>                                           <!--  NO TRANSLATE -->
+<entry key="gdd-xiterbutton-3">BOA CONSTRUCTOR</entry>                                        <!--  NO TRANSLATE -->
+<entry key="gdd-xiterbutton-2">VIPER ACTIVE</entry>                                           <!--  NO TRANSLATE -->
+<entry key="gdd-xiterbutton-1">PRAY TO QUETZALCÓATL</entry>                                   <!--  NO TRANSLATE -->
+
+
+
+<!--INTRO-->
+
+<!--PAYTABLE-->
+
+<!-- PAGE 1 -->
+<gfx key="MultiplyingMultipliers">Wild Multipliers</gfx>                                       									<!-- NO TRANSLATE -->
+<gfx key="MultiplyingMultipliersB">Multiplying Multipliers</gfx>                                       					<!-- NO TRANSLATE -->
+<entry key="MultiplyingMultipliersTxt">All multipliers in a cluster win are multiplied by each other.</entry>
+<gfx key="Snakes">Snakes</gfx>                                                                                  <!-- NO TRANSLATE -->
+<entry key="SnakesTxt">Snakes are released into the grid as walking clusters. Moves around for each drop for even bigger win clusters.</entry>
+
+<!-- PAGE 2 -->
+<gfx key="SnakeMeter">Snake Meter</gfx>																													                <!-- NO TRANSLATE -->
+<entry key="SnakeMeterTxt">Wins collect points to level up. Get 1, 2, 3 and 6 snakes when activating the 4 increasing levels.</entry>
+
+<gfx key="EatAndGrow">Eat and Grow</gfx>
+<entry key="EatAndGrowTxt">Snakes eat symbols of same color to survive another drop and to grow and create larger win clusters.</entry>
+
+<!-- PAGE 3 -->
+<gfx key="Die">Die</gfx>
+<entry key="DieTxt">A snake not eating a symbol of same color, or biting itself - will die. And removed from the grid.</entry>
+<gfx key="Crossing">Crossing</gfx>
+<entry key="CrossingTxt">A snake moving across another snake will create an x2 Wild Multiplier in this position. Further crossings will double the multiplier.</entry>
+
+<!-- PAGE 4 -->
+<gfx key="Avalanche">Avalanche</gfx>   																													                 <!-- NO TRANSLATE -->
+<entry key="AvalancheTxt">Winning symbols explode. New symbols drop down to fill the grid. Repeats for every win.</entry>
+
+<gfx key="ClusterWins">Cluster Wins</gfx>
+<entry key="ClusterWinsTxt">Clusters of 5 or more connecting symbols are paid.</entry>
+
+<gfx key="WILD">Wild Symbol</gfx>                                       												                 <!-- NO TRANSLATE -->
+<entry key="WILDTxt">The Wild symbol substitutes for any paying symbol.</entry>
+
+
+<!--GAMERULES-->
+<entry key="gamerule">Coba is a 7 rows and 6-7 columns slot with a hexagonal symbol grid with cluster wins, dropping symbols and a snake feature of walking clusters.</entry>
+
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Winning combinations are paid for clusters with 5 or more matching symbols adjacently connected to each other, anywhere in the symbol grid. Multiple clusters of same symbol that are not connected are paid as separate clusters.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<entry key="gamerule">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+
+<entry key="gamerule">The Wild symbol substitutes for any paying symbol. A winning combination of all Wild symbols pays as the highest paying symbol.</entry>
+
+<entry key="gamerule">Symbols drop vertically with gravity and slide to the left and right repeatedly as far downwards as possible.</entry>
+
+<entry key="gamerule">Winning cluster combinations are paid. Each symbol of a winning cluster is removed from the grid and a point is added to the Snake progress meter. The remaining symbols drop down and new symbols drop in to fill the symbol grid. If new winning combinations occur, this avalanche repeats.</entry>
+
+<entry key="gamerule">Snake progress meter
+The Snake progress meter has 4 levels. All winning symbols add progress to the meter. Activating any of the levels will release snakes to enter the grid.
+Level 1: 1 snake enters
+Level 2: 2 snakes enter
+Level 3: 3 snakes enter
+Level 4: 6 snakes enter</entry>
+
+<entry key="gamerule">A snake is a linear cluster of symbols moving along the grid throughout its length for each drop prior to the win evaluation. The snake comprises a head and a body with the symbols indicated by a golden frame. It can be in a survival or non-survival state indicated with a yellow or blue tail not part of the actual snake. The snake's length is at least 5 symbols long and will always form a winning cluster or be part of a larger winning cluster.</entry>
+
+<entry key="gamerule">The first symbol the snake moves over will become the Snake Symbol, indicated on the snake's head.</entry>
+
+<entry key="gamerule">All the following symbols the snake moves over will be transformed into this Snake Symbol and become part of the snake indicated by a golden frame around the symbols.</entry>
+
+<entry key="gamerule">If a snake moves over the same symbol as the Snake Symbol, it will eat this symbol, grow in length making an extra symbol movement and get into its survival state indicated by a yellow tail. It will remain in the grid for the next avalanche drop.</entry>
+
+<entry key="gamerule">If a snake does not move over a Snake Symbol to eat during its entire move in a drop, it will die and is removed from the grid after win evaluations but before the next drop.</entry>
+
+<entry key="gamerule">When a snake is released into the grid, it will initially be in its survival state indicated by a yellow tail. It will therefore always survive the first avalanche drop.</entry>
+
+<entry key="gamerule">For each new avalanche drop, all snakes will start in their non-survival state, indicated by a blue tail and an empty Snake Symbol.</entry>
+
+<entry key="gamerule">If two snakes move across each other's bodies, the symbol position will become a Multiplier Wild symbol starting with an x2 multiplier. Any more snakes moving across this Multiplier Wild will double the multiplier to x4, x8, etc.</entry>
+
+<entry key="gamerule">A snake crossing and biting its own snake body will die and be removed from the grid.</entry>
+
+<entry key="gamerule">Several Multiplier Wild symbols in different positions in a winning cluster will be multiplied by each other.</entry>
+
+<entry key="gamerule">A game round ends if the maximum win is reached.</entry>
+<entry key="gamerule">Winnings are paid out at the end of a game round.</entry>
+<entry key="gamerule">No bets can be changed during a game round.</entry>
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry>
+<entry key="gamerule">The game has a maximum win of __TBB__ the bet.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">
+	Last updated 2022-05-25</entry>
+
+
+
+<!-- X-iter RULES -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">COBA!:     	                                                         <!-- NO TRANSLATE -->
+Start by activating Level 4, where 6 snakes are released. Cost is __X05_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X04">QUETZALCÓATL:                                                       	<!-- NO TRANSLATE -->
+Start by activating Level 1. Level 1 and Level 2 will release 3 snakes. Cost is __X04_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X03">BOA CONSTRUCTOR:                                                     <!-- NO TRANSLATE -->
+Start by activating Level 1. Snakes will be longer when released. Cost is __X03_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X02">VIPER ACTIVE:                                                        <!-- NO TRANSLATE -->
+Start by activating Level 1, where 1 snake is released. Cost is __X02_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X01">PRAY TO QUETZALCÓATL:                                               <!-- NO TRANSLATE -->
+Start from the base game. Level 1 and Level 2 will release 3 snakes. Cost is __X01_MULTIPLIER__ the bet.</entry>
+
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+<entry key="xiter-rule" tags="lastupdated">
+	Last updated 2024-04-12</entry>
+
+
+<!--Dialogs-->
+
+<!-- X-iter dialogs -->
+<entry key="X05B1">COBA!</entry>                                 														<!-- NO TRANSLATE -->
+<entry key="X05B2">Start at level 4</entry>
+<entry key="X05B3">Where 6 snakes are released</entry>
+
+<entry key="X04B1">QUETZALCÓATL</entry>                                                     <!-- NO TRANSLATE -->
+<entry key="X04B2">Start at Level 1</entry>
+<entry key="X04B3">More snakes - 3 snakes already at Level 1 and 2</entry>
+<entry key="X04B3_">3 snakes released also on Level 1 and 2</entry>
+
+<entry key="X03B1">BOA CONSTRUCTOR</entry>                                                  <!-- NO TRANSLATE -->
+<entry key="X03B2">Start at Level 1</entry>
+<entry key="X03B3">Longer snakes when released</entry>
+
+<entry key="X02B1">VIPER ACTIVE</entry>                                                     <!-- NO TRANSLATE -->
+<entry key="X02B2">Start at Level 1</entry>
+<entry key="X02B3">Where 1 snake is released</entry>
+
+<entry key="X01B1">PRAY TO QUETZALCÓATL</entry>                                             <!-- NO TRANSLATE -->
+<entry key="X01B2">Start at Level 0</entry>
+<entry key="X01B3">More snakes - 3 snakes already at Level 1 and 2</entry>
+<entry key="X01B3_">3 snakes released also on Level 1 and 2</entry>
+
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 																			<!-- Backup alternative text -->
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry> 																  	<!-- Backup alternative text -->
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+
+</translation>

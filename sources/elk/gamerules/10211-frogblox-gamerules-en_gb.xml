@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- English en_gb -->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+
+<!--Words not translated in this game
+Frogblox
+Frogception
+
+-->
+<!--
+Note for translators:
+
+-->
+
+<!--Copy to gfx game specific text-assets-->
+<gfx key="FreeDropsTxt">FREE DROPS</gfx>
+<gfx key="StartTxt">START</gfx>
+<gfx key="TotalWinTxt">TOTAL WIN</gfx>
+<gfx key="PlayedInTotal">PLAYED IN TOTAL</gfx>
+
+<gfx key="PaytableTxt">PAYTABLE</gfx>
+<gfx key="WinUpToTxt">WIN UP TO</gfx>
+<gfx key="CoinsTxt">COINS</gfx>
+<gfx key="SymbolPayoutTxt">SYMBOL PAYOUT</gfx>
+
+<gfx key="DevourHeadSubTxt">DEVOUR SYMBOLS</gfx>
+<gfx key="BonusHeadSubTxt">BONUS GAME</gfx>
+<gfx key="WildHeadSubTxt">GREAT APPETITE</gfx>
+
+<gfx key="AvalancheSubTxt">AVALANCHE</gfx>
+<gfx key="ShelfSubTxt">FEATURE SHELF</gfx>
+
+<gfx key="GlobalMultiSubTxt">GLOBAL MULTIPLIER</gfx>
+<gfx key="RedropsSubTxt">EXTRA DROPS</gfx>
+
+<gfx key="BigSubTxt">BIG SYMBOL</gfx>
+<gfx key="BothWaysSubTxt">BOTH WAYS</gfx>
+<gfx key="SymbolMultiSubTxt">SYMBOL MULTIPLIER</gfx>
+<gfx key="BlockbusterSubTxt">BOMB</gfx>
+
+<gfx key="FrogWildSubTxt">FROG TO WILD</gfx>
+<gfx key="LilySubTxt">LILY PAD</gfx>
+
+<gfx key="BonusSubTxt">BONUS SYMBOL</gfx>
+
+<!--Copy to gfx game specific text-->
+<entry key="BonusGameSubTitle">BONUS GAME</entry>
+
+<!--X-iter UI texts-->
+<entry key="X01B1">Bonus Hunt</entry>
+<entry key="X01B2">More than 4 times the chance to trigger the bonus game!</entry>
+
+<entry key="X02B1">Big Block</entry>
+<entry key="X02B2">Guaranteed big symbol block in the feature shelf.</entry>
+
+<entry key="X03B1">Frogception</entry>
+<entry key="X03B2">One drop with scatter-collect on the frogs.</entry>
+
+<entry key="X04B1">Bonus</entry>
+<entry key="X04B2">Guaranteed entry to the bonus game.</entry>
+<entry key="X04B3">6 Free Drops</entry>
+
+<entry key="X05B1">Super Bonus</entry>
+<entry key="X05B2">Guaranteed entry to the super bonus game.</entry>
+<entry key="X05B3">Bonus starting with a 10x multiplier.</entry>
+<entry key="X05B4">6 Free Drops</entry>
+
+<!--Paytable-->
+
+<!-- PAGE 1 -->
+
+<!-- PAGE 2 -->
+<entry key="paytableAvalancheTxt">All symbols which are part of a win explode and leave space for additional symbol drops. Blocker symbols that connect to winning symbols also explode.The avalanche feature continues as long as new winning combinations appear.</entry>
+
+<entry key="paytableFeatureTxt">Frogs collect features from the bottom row of the feature shelf and remove blockers if no features can be collected.</entry>
+
+<!-- PAGE 3 -->
+<entry key="paytableGlobalMultiplierTxt">Collect global multipliers!</entry>
+
+<entry key="paytableRedropsTxt">Collect extra drops!</entry>
+
+<!-- PAGE 4 -->
+<entry key="paytableBigTxt">A pulled down big symbol crushes the frog and reveals a big wild or a big paying symbol!</entry>
+
+<entry key="paytableBothWaysTxt">Collected both ways symbols allow a right-to-left win evaluation.</entry>
+
+<entry key="paytableSymbolMultiplierTxt">Collected symbol multipliers apply a ways multiplier to all wilds and paying symbols along the frog’s column.</entry>
+
+<entry key="paytableBlockbusterTxt">Activate the bomb to remove all blocker symbols from the feature shelf!</entry>
+
+<!-- PAGE 5 -->
+<entry key="paytableFrogWildTxt">Frogs on the main grid spit to destroy blockers in the feature shelf or pull down a feature symbol. They can also pull down another frog causing a panicked collection of all feature symbols. Frogs that pull down a feature may explode and create a wild symbol.</entry>
+
+<entry key="paytableLilyPadTxt">Frogs that have not pulled down a feature symbol may jump to a lily pad, replacing its position with any random symbol.</entry>
+
+<!-- PAGE 6 -->
+<entry key="paytableBonusTxt">Removing all blockers from the main grid triggers the bonus game. The bonus game will begin once all remaining tumble wins have been resolved. The bonus game awards 6 free drops.</entry>
+
+<!--Game documentation--> 
+<entry key="gdd-description">
+Welcome to the heart of the lush, humid Amazon! Out in a brightly-lit clearing, a colorful crumbling stone temple wrapped in strangler fig trees and banyans has provided the habitat for a colony of vibrant rainforest frogs.
+
+Frogblox is a slot with dropping symbols on a 6 row by 6 column main grid and a 2 row by 6 column feature shelf.
+
+Core game features: 
+The game has a main grid where payout symbols drop in along with frogs and lily pad feature symbols. The feature shelf has all the other feature symbols, but also frogs that drop in. The frogs do their best to pull down and collect all the feature symbols and boost any winnings. Both grids are also partly filled with blocker symbols that can explode and be removed in various ways to access the feature symbols but also trigger the bonus game.
+
+Removing all blocker symbols from the main grid awards the free drops bonus game.
+</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Frogblox starts with a random number of ways to win and can increase to a maximum of 46,656 ways to win. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">Removing all blocker symbols from the main grid in normal mode triggers the bonus mode with free drops.</entry>
+
+<!--Key Features texts-->
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">46,656 ways</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 columns</entry>
+<entry key="gdd-kf-rows">6 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!--Special symbols-->
+<entry key="gdd-sfs-1">The wild symbol substitutes for any symbol in the main grid except the frog and lily pad symbols.</entry>
+
+<entry key="gdd-sfs-2">Frogs remove blocker symbols within the feature shelf, or collect features. The frog may transform into a wild after collecting a feature.</entry>
+
+<entry key="gdd-sfs-3">Lily pad symbols allow frogs to reactivate and move to new positions when no feature has been collected.</entry>
+
+<entry key="gdd-sfs-4">A global multiplier is a feature symbol that activates a global multiplier for the rest of the round.</entry>
+
+<entry key="gdd-sfs-5">A symbol multiplier applies an individual multiplier to each payout symbol, including wild symbols, along its column.</entry>
+
+<entry key="gdd-sfs-6">A Both Ways symbol activates win evaluations from right to left as well.</entry>
+
+<entry key="gdd-sfs-7">An extra drop symbol provides an extra main grid drop at the end of the avalanche cycle when there are no more wins.</entry>
+
+<entry key="gdd-sfs-8">A big symbol pulled down to the main grid turns into a 2x2 random payout symbol or wild symbol.</entry>
+
+<entry key="gdd-sfs-9">The bomb symbol causes all blocker symbols within the feature shelf to be removed.</entry>
+
+<entry key="gdd-sfs-10">Blocker symbols in the main grid that connect to winning symbols are also removed. Removing all blocker symbols from the main grid in normal mode triggers the bonus mode with free drops.</entry>
+
+<!--X-iter UI button text-->
+<entry key="gdd-xiterbutton-1">Bonus Hunt</entry>
+<entry key="gdd-xiterbutton-2">Big Block</entry>
+<entry key="gdd-xiterbutton-3">Frogception</entry>
+<entry key="gdd-xiterbutton-4">Bonus</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus</entry>
+
+<!--Gamerules-->
+<entry key="gamerule">Frogblox is a 6 column, 6 rows slot with dropping symbols.</entry>
+
+<entry key="gamerule">All drops in normal mode start with 6 rows and a varying number of ways to win. The number of ways to win depends on the number and placement of blocker symbols on the main grid.</entry>
+
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+    <entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry> <!--Translate Settings into local language using initial capital letter since it is a name of a button-->
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Frogblox is played in two modes; normal mode and bonus mode with free drops.</entry>
+
+<entry key="gamerule">Wins begin with the first leftmost column and only pay from left to right on consecutive columns. No gaps between the columns are allowed. Only the longest payline per active payline is paid out.</entry>
+
+<entry key="gamerule">All low, high, kicker and wild symbols exist in two sizes; standard 1x1 and big 2x2. All big symbols are counted as consisting of the number of 1x1 symbol instances it covers, e.g. A big 2x2 is counted as 4 standard 1x1 symbols. Big symbols can only be created by the feature shelf.</entry>
+
+<entry key="gamerule">The wild symbol substitutes for any symbol on the main grid except the frog and lily pad symbols.</entry>
+
+<entry key="gamerule">Above the main grid is a 6 column x 2 rows grid referred to as the feature shelf.</entry>
+
+<entry key="gamerule">The feature shelf can contain symbol multipliers, global multipliers, extra drops, both ways, big, bomb, frog and blocker symbols. </entry>
+
+<entry key="gamerule">All wins in the current symbol drop are collected and thereafter all symbols which are part of a winning combination explode. Adjacent blocker symbols are also exploded and removed. The remaining symbols fall vertically until they reach a resting position, and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.</entry>
+
+<entry key="gamerule">A frog symbol in the main grid only interacts with the symbol on the bottom row of the feature shelf in the same column as the frog. The interaction happens prior to the win evaluation. Some of the feature symbols are activated up in the feature shelf, and some are pulled down by the frog. Frogs on the main grid may interact in any order.</entry>
+
+<entry key="gamerule">A blocker symbol is activated by the frog up in the feature shelf. It explodes and causes an avalanche within that column, and a new symbol drops in to fill the empty space. The frog remains or can jump to a lily pad.</entry>
+
+<entry key="gamerule">A bomb symbol is activated by the frog up in the feature shelf. It removes all blocker symbols from the feature shelf and causes avalanches in all affected columns, and new symbols drop in to fill the empty spaces. The frog remains or can jump to a lily pad.</entry>
+
+<entry key="gamerule">The frog pulls down a symbol multiplier from the feature shelf. The multiplier is individually applied to each payout and wild symbol along the frog’s column. The removed symbol multiplier causes an avalanche in the affected column, and a new symbol drops in to fill the empty space. The frog remains or turns into a wild symbol.</entry>
+
+<entry key="gamerule">Symbol multipliers are additive in case more than one is applicable for the same symbol.</entry>
+
+<entry key="gamerule">The frog pulls down a global multiplier from the feature shelf. The multiplier is applied to all wins, and remains in play for the remaining game round. The removed global multiplier causes an avalanche in the affected column, and a new symbol drops in to fill the empty space. The frog remains or turns into a wild symbol.</entry>
+
+<entry key="gamerule">Global multipliers are additive in case more than one is pulled down by a frog.</entry>
+
+<entry key="gamerule">The frog pulls down extra drops from the feature shelf. The extra drops come into play when the avalanche cycle has ended and there are no more wins. The removed extra drops symbol causes an avalanche in the affected column, and a new symbol drops in to fill the empty space. The frog remains or turns into a wild symbol.</entry>
+
+<entry key="gamerule">The feature shelf is persistent during the extra drops.</entry>
+
+<entry key="gamerule">The frog pulls down Both Ways from the feature shelf. The Both Ways feature stays active until there is a win from right to left. The removed Both Ways symbol causes an avalanche in the affected column, and a new symbol drops in to fill the empty space. The frog remains or turns into a wild symbol.</entry>
+
+<entry key="gamerule">The frog pulls down a big symbol from the feature shelf. It generates a big 2x2 payout or wild symbol covering the frog’s position. A frog can only pull down one big symbol per win evaluation. The removed big symbol causes an avalanche in the affected columns, and new symbols drop in to fill the empty spaces. The frog is crushed by the big symbol.</entry>
+
+<entry key="gamerule">A big symbol landing on an existing big symbol will break the existing big symbol into smaller 1x1 symbols.</entry>
+
+<entry key="gamerule">The frog on the main grid can activate a frog on the feature shelf. The frog on the feature shelf interacts with all feature shelf symbols except blockers, bombs and other frogs. The activated frog on the feature shelf is pulled down by the frog on the main grid which causes an avalanche in the affected columns, and new symbols drop in to fill the empty spaces. The frog on the main grid remains or turns into a wild symbol.</entry>
+
+<entry key="gamerule">A frog on the main grid may interact with another frog higher up in the same column on the main grid. The frog highest up in the column interacts with all feature shelf symbols except blockers, bombs and other frogs. Then that frog is pulled down by the frog further down which in turn either remains as a frog or turns into a wild.</entry>
+
+<entry key="gamerule">A frog can move to a lily pad symbol elsewhere on the main grid, and reactivate from the new position. The frog’s old symbol position either turns into a lily pad, wild, payout or into a new frog symbol.</entry>
+
+<entry key="gamerule">Removing all blocker symbols from the main grid in normal mode triggers the bonus mode with free drops. 6 free drops are awarded.</entry>
+
+<entry key="gamerule">The bonus game is pending until there are no more wins. The current active global multiplier and remaining extra drops are kept from the base game and brought into the bonus game. The awarded free drops are added to the extra drops inventory.</entry>
+
+<entry key="gamerule">The feature shelf is emptied and refilled at the start of the bonus game. It is then persistent throughout the bonus game.</entry>
+
+<entry key="gamerule">A collected Both Ways feature stays persistent through free drops until used.</entry>
+
+<entry key="gamerule">Removing all blocker symbols from the main grid during bonus mode awards 6 additional free drops.</entry>
+
+<entry key="gamerule">The free drops bonus game ends when no free drops remain or when the win cap has been reached.</entry>
+
+<entry key="gamerule">Winnings are paid out at the end of the bonus mode.</entry>
+
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Frogblox is __RTP__.</entry>
+
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+    <entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+    <entry key="gamerule" tags="lastupdated">Last updated 2025.05.12</entry>
+
+<!-- X-iter rules -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus: Guaranteed entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet. The bonus game starts with a 10x global multiplier.</entry>
+
+<entry key="xiter-rule" tags="X04">Bonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">Frogception: A game round with scatter-collect on the frogs. at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">Big Block: A guaranteed big symbol block in the feature shelf at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">Bonus Hunt: One drop with more than 4 times the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Frogblox is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-01-07</entry>
+
+<!--Dialogs-->	
+
+</translation>

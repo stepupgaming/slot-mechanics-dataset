@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Wild Toro 3",
+    "slug": "elk-wild-toro-3",
+    "provider_game_id": "10264",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10264&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/wildtoro3/build-336550/assets/translation/wildtoro3-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 7 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "The number of paylines varies depending on the number of active rows (178-421)."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": "all wins and other features have concluded, triggering the Golden Rose Bonus game.\nThe Golden Rose Bonus is a 5 column by 7 row special game mode where only Golden Roses, Toritos, and Regular Matadors drop in, and a 2x2 Toro is always present."
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "l 5. Toro moves leftward until he spins out from the first reel, generating one respin for each step.\n3 types of Toritos can land on reels 2, 3, or 4. Each Torito that lands expands the height of the reels by 1, up to a maximum of 7 rows.\n3 types of Matadors can land on reels 2, 3, or 4. All Matadors are walking Wilds who move leftwar"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The Wild symbol substitutes for any paying symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Global Multiplier",
+        "behavior": "the global multiplier before being added to the total win counter. This resets Toro's win counter.\nThe Golden Rose Bonus game ends once Toro is out of lives, at which point the game returns to normal mode.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Wild Toro 3: paid spin on 7x5. The number of paylines varies depending on the number of active rows (178-421).. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 7x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: The number of paylines varies depending on the number of active rows (178-421).",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "The number of paylines varies depending on the number of active rows (178-421).",
+    "notes": "eference in Settings.\nWinnings are presented in the player's currency.\nThe game is played in two modes; normal mode and bonus mode.\nIn normal mode, the game has 5 reels that can expand to a maximum of 7 rows each.\nWins begin with the leftmost reel and only pay from left to right on consecuti"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Super bonus symbol combination triggers the super bonus game",
+        "end_condition": "Bonus game ends once Toro is out of lives, at which point the game returns to normal mode.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "Super bonus symbol combination triggers the super bonus game",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Wild Toro 3."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed Golden Rose Bonus trigger on the initial spin. Cost is __X04_MULTIPLIER__ the selected bet.; Toro Goes Loco (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed Toro Goes Loco trigger on the initial spin. Cost is __X03_MULTIPLIER__ the selected bet.; Mega Hunt (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): More than 6 times the chance to trigger the Golden Rose Bonus game. Cost is __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): More than 3 times the chance to trigger the Golden Rose Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nAn X-iter feature is purchased by pressing the ",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 4
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed Golden Rose Bonus trigger on the initial spin. Cost is __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Toro Goes Loco",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed Toro Goes Loco trigger on the initial spin. Cost is __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Mega Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "More than 6 times the chance to trigger the Golden Rose Bonus game. Cost is __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "More than 3 times the chance to trigger the Golden Rose Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nAn X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.\nThe X-iter features can only be activated in the base game.\nThe theoretical payout (RTP) for all X-iter game modes are __RTP__.\nThe minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.\nAll game rules apply in X-iter mode.\nLast updated 2026-03-27",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro3/build-336550/assets/translation/wildtoro3-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10264-wildtoro3-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Wild Toro 3\nProduct category Casino\nGame type Slot\nClient HTML5\nLines The number of paylines varies depending on the number of active rows (178-421).\nJackpot No\nReels 5 reels\nRows 4 rows\n\nGame description\nWild Toro 3 is a 5 reel, 4-7 row slot. Central game features include the Toro and Matadors walking Wild symbols, Toritos sticky Wild symbols, and the Golden Rose bonus game.\nWins begin with the leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out. An active payline is"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro3/build-336550/assets/translation/wildtoro3-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10264-wildtoro3-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 5 reel, 4-7 row slot. Central game features include the Toro and Matadors walking Wild symbols, Toritos sticky Wild symbols, and the Golden Rose bonus game.\nWins begin with the leftmost reel and only pay from left to right on consecutive reels."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro3/build-336550/assets/translation/wildtoro3-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10264-wildtoro3-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers buy-in to different game modes.\n(NIGHT) MIDNIGHT BULLFIGHT: \nGuaranteed Midnight Bullfight trigger. Cost is __X05_MULTIPLIER__ the selected bet.\n(DAY) SUPER BONUS: \nGuaranteed Golden Rose Bonus trigger on the initial spin. Bonus starts with an active multiplier. Cost is __X05_MULTIPLIER__ the selected bet.\nBONUS:\nGuaranteed Golden Rose Bonus trigger on the initial spin. Cost is __X04_MULTIPLIER__ the selected bet.\nTORO GOES LOCO:\nGuaranteed Toro Goes Loco trigger on the initial spin. Cost is __X03_MULTIPLIER__ the selected bet.\nMEGA HUNT: \nMore than 6 times the chance to trigger the Golden Rose Bonus game. Cost is __X02_MULTIPLIER__ the selected bet.\nBONUS HUNT:\nMo"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro3/build-336550/assets/translation/wildtoro3-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10264-wildtoro3-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nWild Toro 3 is a 5 reel, 4-7 row slot. Central game features include the Toro and Matadors walking Wild symbols, Toritos sticky Wild symbols, and the Golden Rose bonus game.\nWins begin with the leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out. An active payline is defined as the longest winning symbol combination.\nThe Golden Rose bonus game is triggered by a Golden Rose symbol and Toro landing on the reels at the same time.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro3/build-336550/assets/translation/wildtoro3-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10264-wildtoro3-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Wild Toro 3\nProduct category Casino\nGame type Slot\nClient HTML5\nLines The number of paylines varies depending on the number of active rows (178-421).\nJackpot No\nReels 5 reels\nRows 4 rows\n\nGame description\nWild Toro 3 is a 5 reel, 4-7 row slot. Central game features include the Toro and Matadors walking Wild symbols, Toritos sticky Wild symbols, and the Golden Rose bonus game.\nWins begin with the leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out. An active payline is defined as the longest winning symbol combination.\nThe Golden Rose bonus game is triggered by a Golden Rose symbol and Toro landing on the reels at the same time.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player h"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/wild-toro-3/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10264; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-wild-toro-3.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

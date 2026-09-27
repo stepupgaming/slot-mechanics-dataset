@@ -1,0 +1,142 @@
+<!--English en_gb-->
+<translation language="en_gb">
+
+	
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+<!--Copy to gfx game specific text-assets for Respin-->
+	<gfx key="RSUN2">until</gfx>
+	<gfx key="HappySpinsUntilTxt">Happy Spins until</gfx>
+
+	<gfx key="FK">5 of a kind</gfx>
+	<gfx key="WS">Any win with</gfx>
+	<gfx key="NW">3, 4 or 5 Wins</gfx>
+	<gfx key="SS">Electrified</gfx>
+	
+	<gfx key="PaytablePunchlineTxt">A respin feast</gfx>
+
+	<gfx key="paytableWaysToWin">178 Ways to win</gfx>
+	<gfx key="ConnectingLinesTxt">Connecting paylines</gfx>
+	<gfx key="totalWin">Total win</gfx>
+	<gfx key="SkipIntroTxt">Skip intro</gfx>
+
+
+
+<!--Translation needed for internal use how to write the line-->
+	<gfx key="YouWonXCoinsTxt">YOU WON 1000 COINS</gfx>
+
+<!--Interface-->
+<entry key="replaybalance">REPLAY</entry>
+
+<!--Intro-->
+	
+<!--Paytable-->
+<entry key="PaytableLogoTxt">Wild symbols substitute any other symbol. A winline with all Wilds pay out as the highest valued symbol.</entry>
+<entry key="ARespinFeast">All Birthday party guests bring unique gifts. There are 3 types of respin and free spin features:  Happy spins, free spins and wilds. Happy spins can be combined with free spins and wilds. Free spins will not be deducted as long as a Happy spins feature is activated. All features are trigged randomly and announced with a doorbell.</entry>
+<entry key="paytableFreeSpinsTxt">The Maggie free spins feature starts with 10 free spins. The free spins feature can be re-triggered during the same event.</entry>
+<entry key="paytableStickyWildTxt">Sticky wilds trigger randomly during Happy spins and free spins. The 3 Sticky wilds handed out will remain for the duration of the feature.</entry>
+<entry key="paytableWalkingWildTxt">Walking wilds can trigger at any time. The 3 Walking wilds handed out will move leftwards one reel for every spin. The reels will respin until no more Walking wilds remain.</entry>
+<entry key="paytableNWTxt">The Camel respin feature spins until a certain number of wins are achieved. This can vary between 3, 4 or 5 wins.</entry>
+<entry key="paytableFKTxt">The Mr Lake respin feature spins until the player gets a connecting winline over all 5 reels.</entry>
+<entry key="paytableSSTxt">The Electric Sam feature starts with him selecting a symbol. The reels then spin continously and collect as many instances of the selected symbol as possible before pay out. The feature pays out when no more instances of the selected symbol lands.</entry>
+<entry key="paytableWSTxt">The Matador respin feature starts with him selecting a symbol. The reels then spin until a win with the selected symbol occurs. All wins during the respins will be collected and added to the total win.</entry>
+<entry key="paytableXWTxt">The Anne Bonny respin feature spins until the player gets a Big Win (20xbet). All wins during the respins will be collected and added to the total win.</entry>
+
+
+
+<!--Gamerules-->
+	<entry key="1-rulehead">Game rules</entry>
+	<entry key="1-rules">
+	<![CDATA[
+1. Birthday! is a 5 reel, 4 row slot with 178 connecting paylines. 
+	
+2. The game offers several bet levels for each currency.
+
+3. Each bet is 100 coins.
+
+4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+]]>
+	</entry>
+	<entry key="2-rulehead">Game rules</entry>
+	<entry key="2-rules">
+	<![CDATA[
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in coins or in the player's currency. The player can change preference in Settings.
+
+9. Birthday! is played in four modes: Normal mode, Happy Spins mode, Free Spin mode, and Respin mode.
+
+10. Birthday! has three kinds of randomly triggered features: Happy Spins, Free Spins, and Wilds.
+
+11. There are five different Happy Spins features, one Free Spin feature, and two Wild features in the game.
+
+]]>
+</entry>
+<entry key="3-rulehead">Game rules</entry>
+	<entry key="3-rules">
+	<![CDATA[
+12. When a Happy Spins feature triggers, the player is given Respins until a specific randomly selected condition is met. The possible conditions are:
+
+- The player gets a Big Win (minimum 20x bet)
+- The player gets a win on a 5 reel long winline
+- The player gets a win on a specific randomly selected symbol (any non-Wild symbol)
+- The player achieves a specific randomly selected number of wins (3, 4, or 5)
+- No instance of a specific randomly selected symbol (any non-Wild symbol) lands, while instances of the selected symbol that do land become sticky until this feature ends. No payouts are made until this Happy Spins feature ends.
+
+13. It is not possible to trigger another Happy Spins feature while a Happy Spins feature is in play.
+]]>
+</entry>
+<entry key="4-rulehead">Game rules</entry>
+	<entry key="4-rules">
+	<![CDATA[
+14. Wild features can trigger during a Happy Spins feature and Free Spins feature.
+
+15. The Free Spins feature can trigger during Happy Spins, but isn't activated until the Happy Spins feature finishes.
+
+16. When the Free Spins feature triggers, the player is given 10 Free Spins.
+
+17. If a Happy Spins feature is triggered during Free Spins, Free Spins are frozen until the Happy Spins feature is done.
+
+18. If a Free Spins feature is triggered during Free Spins, the player is given an additional 10 Free Spins.
+
+19. When a Wild feature is triggered, the player is given either of:
+- 3 randomly placed Sticky Wilds.
+- 3 randomly placed Walking Wilds.
+]]>
+</entry>
+<entry key="5-rulehead">Game rules</entry>
+	<entry key="5-rules">
+	<![CDATA[
+20. Sticky Wilds can only appear during Happy Spins, Free Spins or Respins, and stay for the remaining Happy Spins, Free Spins, and Respins.
+
+21.  Walking Wilds move leftwards one reel for each spin, and stay until they walk off reel 1. If there are Walking Wilds on the screen, but no Happy Spins feature is active and there are no Free Spins, Respins are given until all Walking Wilds have walked off the screen, or until a Happy Spins or Free Spins feature is triggered.
+
+22. Winnings are paid out when no Happy Spins feature is active, there are no Free Spins left, and there are no Walking Wilds left on the screen.
+
+23. No bets can be changed during an ongoing spin, during Happy Spins, during Free Spins, or during Respins.
+]]>
+</entry>
+<entry key="6-rulehead">Game rules</entry>
+<entry key="6-rules">
+<![CDATA[
+24. Cake symbol works as a Wild symbol. Pay out as a symbol in a winline.
+
+25. The theoretical payout (RTP) in Birthday! is 96.3%
+
+26. The game has a maximum win of 500,000 coins.
+
+27. In the event of malfunction all bets and wins are void.
+
+
+Last updated 2021-05-10
+]]>
+</entry>
+
+<!--Dialogs-->	
+
+</translation>

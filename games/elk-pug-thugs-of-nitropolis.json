@@ -1,0 +1,287 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Pug Thugs of NItropolis",
+    "slug": "elk-pug-thugs-of-nitropolis",
+    "provider_game_id": "10213",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10213&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/pugthugs/build-263789/assets/translation/pugthugs-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 columns by 6 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Connecting paylines"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "ctive payline is paid out.\nAll winning symbols and Nitro Reels on the game grid respin after a win.\nA game round starts on the selected bet level when the player hits the Spin button.\nThe game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the bonus symbol, the super bonus symbol, and the coin symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Super Bonus",
+        "behavior": "the super bonus symbol, and the coin symbols.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Coin",
+        "behavior": "the coin symbols.",
+        "params": {}
+      },
+      {
+        "name": "Nitro Reel",
+        "behavior": "A Nitro Reel can spawn inside the central 4 x 4 area of the grid either by two or more crossing win lines, by a random Nitro Reel spawn, or by the Nitro Insane feature.\nThree or more bonus symbols anywhere on the game grid trigger the Free Spins Bonus Game. If at least one of the bonus symbols is a super bonus symbol, the super bonus game is triggered.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Pug Thugs of NItropolis: paid spin on 6x6. Connecting paylines. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 6x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Connecting paylines",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Connecting paylines",
+    "notes": "ference in Settings.\nWinnings are presented in the player's currency.\nPug Thugs is played in two modes; normal mode and bonus mode with free spins.\nThe wild symbol substitutes for any symbol except the bonus symbol, the super bonus symbol, and the coin symbols. A payline of only wild symbols"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Super Bonus",
+        "trigger": "super bonus symbol, the super bonus game is triggered.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "e Bonus Game. If at least one of the bonus symbols is a super bonus symbol, the super bonus game is triggered.\nPug Thugs has connecting paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.\nThree or more bonus symbols anywhere on the game grid trigger the Free Spins Bonus Game. If at least one of the bonus symbols is a super bonus symbol, the super bonus game is triggered. More than three bonus symbols award additional free spins.\nBet amount and balance are always displayed in the info bar at t",
+        "end_condition": "The Bonus Game ends when no spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "e Bonus Game. If at least one of the bonus symbols is a super bonus symbol, the super bonus game is triggered.\nPug Thugs has connecting paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.\nThree or more bonus symbols anywhere on the game grid trigger the Free Spins Bonus Game. If at least one of the bonus symbols is a super bonus symbol, the super bo",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Pug Thugs of NItropolis."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with guaranteed entry to the Super Bonus Game where all Nitro Reels are kept sticky at the cost of __X05_MULTIPLIER__ the selected bet.; Bonus Game (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with guaranteed entry to the Bonus Game where each free spin starts with a Nitro Insane feature at the cost of __X04_MULTIPLIER__ the selected bet.; Nitro Insane Plus Feature (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with guaranteed trigger of the Nitro Insane feature and one random Feature Screen at the cost of __X03_MULTIPLIER__ the selected bet.; Nitro Insane (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with guaranteed trigger of the Nitro Insane feature at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): More than TRIPLE the chance to trigger the Bonus Game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with guaranteed entry to the Super Bonus Game where all Nitro Reels are kept sticky at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Game",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with guaranteed entry to the Bonus Game where each free spin starts with a Nitro Insane feature at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Nitro Insane Plus Feature",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with guaranteed trigger of the Nitro Insane feature and one random Feature Screen at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Nitro Insane",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with guaranteed trigger of the Nitro Insane feature at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "More than TRIPLE the chance to trigger the Bonus Game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pugthugs/build-263789/assets/translation/pugthugs-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10213-pugthugs-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Pug Thugs of NItropolis\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Connecting paylines\nJackpot No\nReels 6 reels\nRows 6 rows\n\nGame description\nThey might appear weak and stupid, but don't underestimate the Pug Thugs! Cunning and smart, the Pug Thugs secretly pull the strings behind the scenes in the city of Nitropolis. After years of living as outcasts in the wild outside of the city, the Pug Thugs are back in their airship, dominating the skies above the skyline. Exploiting their air supremacy, the Pug Thugs are constantly watching. Constantly searching. They se"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pugthugs/build-263789/assets/translation/pugthugs-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10213-pugthugs-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 6 column, 6 rows slot with spinning reels and connecting paylines originating from all 4 sides of the game grid. Central game features are the Nitro Reels which can be upgraded, the four Feature Screens that trigger features randomly, the Nitro Insane feature and the Free Spins Bonus Game.\n\nThree or more bonus symbols anywhere on the game grid trigger the Bonus Game."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pugthugs/build-263789/assets/translation/pugthugs-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10213-pugthugs-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper Bonus:\nOne spin with guaranteed entry to the Super Bonus Game where all Nitro Reels are kept sticky at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus Game:\nOne spin with guaranteed entry to the Bonus Game where each free spin starts with a Nitro Insane feature at the cost of __X04_MULTIPLIER__ the selected bet.\nNitro Insane plus Feature:\nOne spin with guaranteed trigger of the Nitro Insane feature and one random Feature Screen at the cost of __X03_MULTIPLIER__ the selected bet.\nNitro Insane:\nOne spin with guaranteed trigger of the Nitro Insane feature at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt:\nMore th"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pugthugs/build-263789/assets/translation/pugthugs-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10213-pugthugs-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nThey might appear weak and stupid, but don't underestimate the Pug Thugs! Cunning and smart, the Pug Thugs secretly pull the strings behind the scenes in the city of Nitropolis. After years of living as outcasts in the wild outside of the city, the Pug Thugs are back in their airship, dominating the skies above the skyline. Exploiting their air supremacy, the Pug Thugs are constantly watching. Constantly searching. They see everything that is going on in the city below. When the Nitro Wolf is up to something, the Pug Thugs are the first to know. And knowledge is power.\n\nPug Thugs is a 6 column, 6 rows slot with spinning reels and connecting paylines originating from all 4 sides of the game grid. Central game features are the Nitro Reels which can be upgraded, the four Feature Screens that"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/pugthugs/build-263789/assets/translation/pugthugs-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10213-pugthugs-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Pug Thugs of NItropolis\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Connecting paylines\nJackpot No\nReels 6 reels\nRows 6 rows\n\nGame description\nThey might appear weak and stupid, but don't underestimate the Pug Thugs! Cunning and smart, the Pug Thugs secretly pull the strings behind the scenes in the city of Nitropolis. After years of living as outcasts in the wild outside of the city, the Pug Thugs are back in their airship, dominating the skies above the skyline. Exploiting their air supremacy, the Pug Thugs are constantly watching. Constantly searching. They see everything that is going on in the city below. When the Nitro Wolf is up to something, the Pug Thugs are the first to know. And knowledge is power.\n\nPug Thugs is a 6 column, 6 rows slot with spinning reels and connecting paylines originating from all 4 sides of the game grid. Central g"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/pug-thugs-of-nitropolis/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10213; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-pug-thugs-of-nitropolis.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

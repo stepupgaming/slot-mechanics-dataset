@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation language="en_gb">
+
+<!-- *************************************************************************************************
+
+	Do NOT translate the following:
+===============================
+wild / Wild / WILD
+bonus / Bonus / BONUS
+super bonus / Super Bonus / SUPER BONUS
+X-Blaster Wild
+Oxygen
+	
+
+Feel free to translate the following:
+=====================================...
+	BONUS HUNT   -   Can be translated, but try to keep "BONUS" if suitable
+	Free Drops   -   Can be kept "as is",  but please translate if there is a native word/phrase commonly used. Note, for German, we prefer it to be translated.
+
+
+****************************************************************************************************** -->
+
+
+
+<!-- GAME DOCUMENTATION ****************************************************************************** -->
+
+<entry key="gdd-description">Oxygen is a 6 columns x 7 rows slot with dropping symbols and cluster wins. The game comes with multiplier collectors, multiplier dealers, big symbols, exploding Wilds, X-Blaster Wilds and a free drop bonus game. </entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+<entry key="gdd-payline">Oxygen is a cluster game where a cluster of 5 or more identical symbols which are either vertically or horizontally connected triggers a win.</entry>
+<entry key="gdd-bonusgame">A combination of three bonus symbols in normal mode trigger the bonus mode with free drops.</entry>
+
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Cluster Wins</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 columns</entry>
+<entry key="gdd-kf-rows">7 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The Wild symbol substitutes for any payout symbol. A winning combination of only Wild symbols pays as the highest payout symbol.</entry>
+<entry key="gdd-sfs-2">The exploding Wild is a Wild symbol that activates when it is part of a winning cluster. The exploding Wild removes all payout symbols within an X-shape area above and below itself. The exploding Wild detonates when no more winning combinations appear.</entry>
+<entry key="gdd-sfs-3">The X-Blaster Wild is a Wild symbol that triggers when it is part of a winning cluster. A random payout symbol or Wild symbol is selected and replaces all payout symbols in an X-shape. Exploding Wilds or X-Blasters on its trajectory will be triggered. Symbols affected by multiple X-Blasters will turn into Wild symbols.</entry>
+<entry key="gdd-sfs-4">The dealer feature multiplies all multiplier values in one or more vertically or horizontally adjacent V shapes with the multiplier value on the dealers symbol position.</entry>
+<entry key="gdd-sfs-5">The collector feature collects and adds all multiplier values in view to the collectors symbol position.</entry>
+<entry key="gdd-sfs-6">3 or more bonus symbols trigger the bonus game. Bonus game can be retriggered </entry>
+
+
+
+<entry key="gdd-xiterbutton-5">SUPER BONUS</entry> 						<!-- do NOT translate -->
+<entry key="gdd-xiterbutton-4">BONUS</entry>							<!-- do NOT translate -->
+<entry key="gdd-xiterbutton-3">PERSISTENT MULTIPLIER FEATURE</entry>	<!-- TRANSLATE -->
+<entry key="gdd-xiterbutton-2">MULTIPLIER STRIKE</entry>				<!-- TRANSLATE -->
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>						<!-- TRANSLATE, try to keep "BONUS" -->
+
+
+
+<!-- Maxwin/Paytable General -->
+<gfx key="PaytableTxt">Paytable</gfx>							<!-- TRANSLATE -->
+<gfx key="HaveFunTxt">Have Fun!</gfx>							<!-- TRANSLATE -->
+<gfx key="GoodLuckTxt">Good Luck!</gfx>							<!-- TRANSLATE -->
+
+
+
+<!-- PAYTABLE *********************************************************************************** -->
+
+	<!-- Header Paytable -->
+	<gfx key="BigHeaderSymbolPayout">Symbol Payout</gfx> 				<!-- TRANSLATE -->
+	<gfx key="BigHeaderBonusGame">Bonus Game</gfx>						<!-- TRANSLATE, try to keep "BONUS" -->
+	<gfx key="BigHeaderMultipliers">Multipliers</gfx> 					<!-- TRANSLATE  -->		
+	<gfx key="BigHeaderOxygenBubbles">Oxygen Bubbles</gfx>				<!-- do NOT translate -->
+	<gfx key="BigHeaderSuperBonus">Super Bonus</gfx>					<!-- do NOT translate -->
+	<gfx key="BigHeaderWildSymbols">Wild Symbols</gfx>					<!-- do NOT translate "Wild". TRANSLATE "Symbols" -->
+	<gfx key="BigHeaderMultiplierFeatures">Multiplier Features</gfx> 	<!-- TRANSLATE  -->	
+	<gfx key="BigHeaderBigSymbols">Big Symbols</gfx>					<!-- TRANSLATE  -->	
+	
+
+	
+	<!-- Subheader Paytable -->
+	<entry key="SubHeaderBlasterWild">X-Blaster Wild</entry>					<!-- do NOT translate -->
+	<entry key="SubHeaderFreeDrops">Free Drops</entry>							<!-- KEEP or TRANSLATE -->
+	<entry key="SubHeaderWildSymbol">Wild Symbol</entry>						<!-- do NOT translate "Wild". TRANSLATE "Symbol" -->
+	<entry key="SubHeaderSuperBonusSymbol">Super Bonus Symbol</entry>			<!-- TRANSLATE, but try to keep "Super Bonus" -->
+	<entry key="SubHeaderBonusSymbol">Bonus Symbol</entry>						<!-- TRANSLATE, try to keep "Bonus" -->
+	<entry key="SubHeaderExplodingWild">Exploding Wild</entry>					<!-- do NOT translate "Wild" -->
+	<entry key="SubHeaderMultiplierDealer">Dealer</entry>						<!-- TRANSLATE-->
+	<entry key="SubHeaderMultiplierCollector">Collector</entry>   				<!-- TRANSLATE-->
+	<entry key="SubHeaderMultiplierFeatures">Multiplier Features</entry>   		<!-- TRANSLATE-->
+	<entry key="SubHeaderSpecialWilds">Special Wilds</entry>   					<!-- do NOT translate "Wild" -->
+	<entry key="SubHeaderBigSymbols">Big Symbols</entry>						<!-- TRANSLATE-->
+	<entry key="SubHeaderAvalanche">Avalanche</entry>							<!-- TRANSLATE-->
+
+
+	<!-- Text for Paytable -->
+
+
+<entry key="TxtSuperBonusSymbol">Three bonus symbols and a persistent multiplier feature triggers the Super Bonus.</entry>
+<entry key="TxtSuperBonusGame">In Super Bonus at least one multiplier feature is persistent.</entry>
+<entry key="TxtBonusSymbol">Three bonus symbols trigger the free drops bonus game.</entry> 
+<entry key="TxtBonusGame">In the bonus game all multiplier values are persistent between free drops. The Bonus game can be retriggered.</entry>
+<entry key="TxtBigSymbols">Symbols of size 2x2, 3x3 and 4x4 may appear in any symbol drop.</entry>
+<entry key="TxtWildSpreader">A random payout symbol or wild symbol is selected and replaces all payout symbols in an X-shape</entry>
+<entry key="TxtExplodingWild">Removes all payout symbols within an X-shape area above and below itself.</entry>	
+<entry key="TxtWild">Wild symbols substitutes for any payout symbol.</entry>	
+<entry key="TxtMultiplierDealer">Multiplies all multiplier values in one or more V shape. The Dealer feature can be persistent.</entry>	
+<entry key="TxtMultiplierCollector">Collects all multiplier values in view. The Collector feature can be persistent.</entry>
+<entry key="TxtMultiplierSystem">Every winning combination doubles the multiplier value on the symbol positions covered by the winning combination.</entry>
+<entry key="TxtAvalanche">All symbols which were part of a winning combination is removed. The remaining symbols fall vertically. New symbols drop in to fill the empty spaces.</entry>
+
+
+<!-- Bonus game GENERAL ********************************************************************** -->
+<gfx key="BonusIntroTxt">BONUS</gfx>    					<!-- DO NOT TRANSLATE -->
+<gfx key="PlayedInTotal">PLAYED IN TOTAL</gfx>				<!-- TRANSLATE -->			
+<gfx key="TotalWin">TOTAL WIN</gfx>							<!-- TRANSLATE -->	       
+<entry key="SpinOfSpin">of</entry>							<!-- TRANSLATE -->			
+<entry key="StartBtn">START</entry>  						<!-- TRANSLATE -->					
+<entry key="BonusIntroMultiplier">Multiplier</entry>		<!-- TRANSLATE -->
+<entry key="FreedropsBonusTxt">Free Drops</entry> 			<!-- KEEP or TRANSLATE -->
+<gfx key="CoinsTxt">Coins</gfx>								<!-- TRANSLATE -->
+<entry key="PaytableDrops">Drops</entry> 					<!-- KEEP or TRANSLATE to same as Free Drops-->
+
+<!-- GAMERULES ******************************************************************************** -->
+
+* Unique Init ******************************
+<entry key="gamerule">Oxygen is a 6 columns x 7 rows slot with dropping symbols and cluster wins.</entry>
+
+
+ General Init *****************************
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. Only the largest cluster of the connected identical symbols is paid out.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>     <!-- Translate "Settings" keeping Capitalization. (It is a name of a button.) -->
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+<entry key="gamerule">The game is played in two modes; normal mode and bonus mode with free drops.</entry>
+<entry key="gamerule">The Wild symbols substitute for any payout symbol. A winning combination of only Wild symbols pays as the highest payout symbol.</entry>
+
+
+* Game specific ****************************
+
+<entry key="gamerule">The game starts with a symbol drop. All wins in the current symbol drop are collected and symbols which were part of a winning combination is removed. The remaining symbols fall vertically until they reach a resting position. New symbols drop in to fill the empty spaces. The avalanche continues as long as new winning combinations appear.</entry>
+
+* Multiplier system ****
+<entry key="gamerule">The first win on each symbol position activates an oxygen bubble for that position. The following win on such a bubble position activates a multiplier value x2 on that position. Further wins on the same bubble position double this multiplier value. Winning combinations are paid multiplied by the sum of all bubble multiplier values in the cluster. All multiplier values are persistent between free drops in the Bonus mode.</entry>
+
+<entry key="gamerule" tags="show-x-values">The multiplier value can have a value of x2, x4, x8, x16, x32, x64, x128, x256, 
+x512, x1024 or x2048.</entry>
+
+* Multiplier biggest value ****
+<entry key="gamerule">The biggest single multiplier is 2048.</entry>
+
+* Multplier strike ****
+<entry key="gamerule">The Multiplier Strike feature places an x2 multiplier value on a random number of positions on the symbol grid. If a position already has a multiplier value, it will instead be multiplied by x2. The multiplier strike feature can trigger in any symbol drop or free drop.</entry>
+
+* Multplier Collector ****
+<entry key="gamerule">The multiplier collector feature collects and adds all multiplier values in view to the collectors symbol position. The multiplier collector feature activates when part of a winning cluster. The Multiplier collector feature can be persistent.
+</entry>
+
+* Multplier Dealer ***
+
+<entry key="gamerule">The dealer feature triggers when its position is part of a win. It then takes the bubble multiplier of its position, or X2 if there is no other bubble multiplier, and multiples all multipliers in a triangular V-shaped area to the left, right, above, or below the dealer position by its multiplier. The multiplier dealer feature can be persistent and can trigger several times, but will not increase its multiplier value.</entry>
+
+* Exploding Wild ****
+
+<entry key="gamerule">The exploding Wild is a Wild symbol that activates when it is part of a winning cluster. The exploding Wild removes all payout symbols within an X-shape area above and below itself. The exploding Wild detonates when no more winning combinations appear. All features within the X-Shape area will be triggered.</entry>
+
+* X-spreader Wild ****
+<entry key="gamerule">The X-Blaster Wild is a Wild symbol that triggers when it is part of a winning cluster. A random payout symbol or wild symbol is selected and replaces all payout symbols in an X-shape. Exploding Wilds or X-Blasters on its trajectory will be triggered. Symbols affected by multiple X-Blasters will turn into Wild symbols.</entry>
+
+* Big Symbols ****
+<entry>Symbols of size 2x2, 3x3 and 4x4 may appear in any symbol drop. All big symbols are counted as consisting of the number of 1x1 symbol instances it covers, e.g. 2x2 is counted as 4 standard 1x1 symbols.</entry>
+
+
+* Bonus *************************************
+<entry key="gamerule">3 bonus symbols trigger the bonus game with 10 free drops. Multipliers are persistent when entering the bonus game and between freedrops. In Super Bonus at least one multiplier feature is persistent. Bonus game can be retriggered.
+3 Bonus symbols, +5 free drops
+2 Bonus symbols, +3 free drops
+</entry>
+
+<entry key="gamerule">The free drops bonus game ends when no free drops remain or when the win cap has been reached.</entry>
+
+
+* General End *******************************
+<entry key="gamerule">Winnings are paid out at the end of a game round.</entry>
+<entry key="gamerule">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">No bets can be changed during a game round.</entry>
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">Last updated 2025.06.10</entry>
+
+
+<!-- X-iter RULES ***************************************************************************** -->
+<entry key="xiter-rule">The X-iter feature offers buy-in to different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">SUPER BONUS:				<!-- do NOT translate -->
+Buy a bonus game with a guaranteed persistent multiplier feature. Cost is __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">BONUS:					<!-- do NOT translate -->
+Buy a bonus game. Cost is __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">PERSISTENT MULTIPLIER FEATURE:				<!--TRANSLATE  -->
+Guaranteed persistent multiplier feature. Cost is __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">MULTIPLIER STRIKE:				<!-- translate -->
+Guaranteed multiplier strike. Cost is __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">BONUS HUNT:				<!-- TRANSLATE, try to keep "BONUS" -->
+Buy a game round with more than triple the chance to trigger a bonus. Cost is __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+<entry key="xiter-rule" tags="lastupdated">Last updated 2025-06-10</entry>
+
+
+<!--Dialogs-->
+
+<!-- X-iter dialogs -->
+<entry key="X05B1">SUPER BONUS</entry>			<!-- do NOT translate -->
+<entry key="X05B2">Free Drops!</entry>			<!-- KEEP or TRANSLATE -->
+<entry key="X05B3">Guaranteed persistent Multiplier Feature!</entry>  <!-- TRANSLATE -->
+
+<entry key="X04B1">BONUS</entry>				<!-- do NOT translate -->
+<entry key="X04B2">Free Drops!</entry>			<!-- KEEP or TRANSLATE -->
+
+<entry key="X03B1">PERSISTENT MULTIPLIER FEATURE</entry>			<!--TRANSLATE  -->
+<entry key="X03B2">Guaranteed persistent Multiplier Feature!</entry> <!-- TRANSLATE  -->
+
+<entry key="X02B1">MULTIPLIER STRIKE</entry>				<!-- TRANSLATE  -->
+<entry key="X02B2">Guaranteed Multiplier Strike Feature!</entry> <!-- TRANSLATE  -->
+
+<entry key="X01B1">BONUS HUNT</entry>			<!-- TRANSLATE, try to keep "BONUS" -->
+<entry key="X01B2">Triple the chance to trigger a Bonus game!</entry> <!-- TRANSLATE, try to keep "bonus" -->
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>		<!-- TRANSLATE -->	
+<entry key="xiterOnboardingBet">Cost.</entry>				<!-- TRANSLATE -->	
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 		<!-- TRANSLATE -->																					
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry> 		<!-- TRANSLATE -->															  
+<entry key="xiterOnboardingSpin">Press spin!</entry>		<!-- TRANSLATE -->	
+
+
+
+</translation>

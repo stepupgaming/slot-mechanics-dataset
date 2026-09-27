@@ -1,0 +1,119 @@
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+	<gfx key="paytableRollTheDice">Roll the Dice!</gfx>
+	<gfx key="paytableSymbolPayout">Symbol Payout</gfx>	
+
+<!--Intro-->
+
+<!--Paytable-->
+	<entry key="paytableObjective">The Bonus Game begins on the Start arrow. A dice roll decides the next movement and amount of reel spins awarded. Winning on at least one of the awarded spins keeps the bonus game going.</entry>
+	<entry key="paytableWildRespins">Reel 3 is loaded with multiplier wilds. If no luck it sticks around for a RESPIN!</entry>
+	<entry key="paytableBonusSymbol">A DICE on the mid position on reel 3 triggers the Bonus Game and turns into a 10x wild multiplier!</entry>
+	<entry key="paytableLuckyBallz">This mini pachinko game awards 4 shots with guaranteed wins.</entry>
+	<entry key="paytableSuperBallz">This mini pachinko game awards unlimited shots until hitting the same win amount basket for a second time.</entry>
+	<entry key="paytableBreakTheBank">Collect TWO KEYS and land on the vault to BREAK THE BANK with the MAXIMUM WIN.</entry>
+	<entry key="paytableStackedWilds">Get a spin with STACKED WILDS on reel 2, then on reel 3, and finally with STACKED WILDS on both reel 2 and 3.</entry>
+	<entry key="paytableWildSpins">Get 10 WILD SPINS with multiplier wilds guaranteed on reel 3.</entry>
+	<entry key="paytableQuantumLeap">Take a QUANTUM LEAP in the bonus game! The jump can be a lot bigger than an ordinary dice roll.</entry>
+	<entry key="paytablePowerRun">Awards every feature you pass on your way, up to a maximum of 6 steps depending on the dice roll.</entry>
+	<entry key="paytableExtraMultiSpins">Awards additional spins and multipliers or even a combination of both!</entry>
+
+<!--Gamerules-->
+	<entry key="1-rulehead">Game rules</entry>
+	<entry key="1-rules">
+	<![CDATA[
+1. Hit it Hard is a 3 reel, 3 rows slot with 5 paylines.
+
+2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.
+
+3. Each bet is __CPBB__ coins.
+
+4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. Hit it Hard is played in two modes; Normal mode and Bonus mode. 
+
+10. Normal mode has respin feature.
+
+11. Wilds can appear on reel 2 and 3. The wild symbol substitutes for any symbols except for the bonus (dice) symbol.
+
+12. The multiplier wilds only appear on the third reel. A multiplier wild which takes part in a win, multiplies the win accordingly. If a wild or multiplier wild on reel 3 is not part of a winning combination, the "Wild Respin" feature is triggered where reel 3 is kept locked for one respin.
+
+13. The "Wild Respin" feature can be triggered in the spins awarded from the bonus game board but not in the WILD SPINS mini game. It can be triggered in the STACKED WILDS mini game with the stack of wilds covering reel 2 but not by the stack of wilds covering the third reel.
+
+14. A bonus symbol (dice) that hits on the centre payline on the third reel triggers Bonus mode.
+
+15. The bonus symbol turns into a 10x wild multiplier in Bonus mode. The Bonus mode can not be retriggered.
+
+16. The "Roll the Dice!" bonus game starts with the roll of a dice. The player moves as many steps, from START, on the bonus game board as the dice show.
+
+17. At least one win on either the reels or in the mini games on the bonus game board is needed to continue to roll the dice and to continue to move along the bonus game board.
+
+18. The bonus game board contains multipliers, additional spins, additional moves, reel features and four small mini games; LUCKY BALLZ, STACKED WILDS, SUPER BALLZ and WILD SPINS. 
+
+19. START
+START indicates where the bonus game board starts. Hitting START again results in an immediate new roll of the dice followed by a move by the given number of steps.
+
+20. Multiplier and additional spins.
+The label on the hit bonus game board section indicates the number of awarded spins (1 to 5) and the level of the multiplier (1x, 2x, 3x, 4x, 5x, 10x or 20x).
+
+21. The additional spins awarded from the bonus game board are paused in case the "Wild Respin" feature is triggered in Bonus mode. Multipliers are multiplicative in case more than one apply to the same payline.
+
+22. MYSTERY SPINS
+A random number of additional spins are awarded.
+
+23. Mini game: LUCKY BALLZ
+A pachinko styled mini game. 4 balls are awarded. All hits in the cups are added and jointly make up the total win. It is a guaranteed win and the mini game is therefore always followed by a new roll of the dice.
+
+24. Mini game: SUPER BALLZ
+A pachinko styled mini game, as LUCKY BALLZ, but with unlimited number of balls. All hits in the cups are added and jointly make up the total win. SUPER BALLZ continues until a ball hits a cup which is already occupied (already hit). It is a guaranteed win and the mini game is therefore always followed by a new roll of the dice.
+
+25. Mini game: STACKED WILDS
+Awards 3 spins with locked stacked wilds. First spin has a stack of wilds covering reel 2. Second spin has a stack of wilds covering reel 3. The third and last spin has stack of wilds covering both reel 2 and 3. 
+It is a guaranteed win and the mini game is therefore always followed by a new roll of the dice.
+
+26. Mini game: WILD SPINS
+WILD SPINS awards 10 spins with a random multiplier wild on the third reel. 
+
+27. POWER RUN
+A new roll of the dice indicates the end section on the bonus game board (maximum 6 steps away). One step at a time is taken meaning that all features along the way to the end section are awarded and sequentially played through. A new roll of the dice follows at the end of POWER RUN if there was at least one win in either the awarded spins on the reels or in the awarded mini games on the bonus game board.
+
+28. QUANTUM LEAP
+Moves a random number of steps which can be much further away than what a normal roll of the dice would give. The move is immediately made and the feature on the hit section is awarded.
+
+29. KEY
+Hitting the KEY partly unlocks the BANK feature. Two keys are needed to unlock the BANK. A new roll of the dice will follow no matter whether there is a key left to hand out or not.
+
+30. BANK
+Hitting the unlocked BANK section awards the maximum win of the game which in turn ends the bonus game. A new roll of the dice occur in case the BANK is still locked.
+
+31. The bonus game ends when there are no remaining spins or remaining moves on the bonus game board, or when the maximum win has been reached.
+
+32. Winnings are paid out at the end of the bonus game.
+
+33. No bets can be changed during an ongoing spin or in any Bonus mode.
+
+34. The theoretical payout (RTP) in Hit it Hard is __RTP__.
+
+35. The game has a maximum win of __TBB__ the placed bet.
+
+36. In the event of malfunction all bets and wins are void.
+
+
+Last updated 2022-05-10
+]]></entry>
+
+<!--Dialogs-->
+
+</translation>

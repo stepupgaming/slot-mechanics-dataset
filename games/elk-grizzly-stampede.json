@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Grizzly Stampede",
+    "slug": "elk-grizzly-stampede",
+    "provider_game_id": "10274",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10274&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/grizzlystampede/build-347689/assets/translation/grizzlystampede-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 7776,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "1,024 to 7,776 ways to win"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "Super Bonus",
+        "behavior": "The Super Bonus symbol, together with at least 2 Bonus symbols trigger the Super Bonus game.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Grizzly Stampede: paid spin on 4x5. 1,024 to 7,776 ways to win. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 1,024 to 7,776 ways to win",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "1,024 to 7,776 ways to win",
+    "notes": "eference in Settings.\nWinnings are presented in the player's currency.\nThe game is played in two modes; Normal mode and Bonus mode with Bonus spins.\nThe Wild symbols substitute for any symbol except the Bonus-, Super Bonus-, and Stampede symbols. If the Wild symbol contributes to a win, a mu"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 Bonus symbols to trigger the Bonus game with Bonus spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "",
+        "end_condition": "The Bonus game ends when no Bonus spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super Bonus symbol, together with at least 2 Bonus symbols trigger the Super Bonus game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "ure, the Super Stampede feature, the stateful Totem feature, and the Bonus- and Super Bonus games with Bonus spins. In the Bonus game, each reel can individually expand from 4 to 6 rows, increasing the number of ways to win up to a maximum of 7,776.\nGrizzly Stampede has 1,024 to 7,776 ways to win. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.\nThree or more Bonus symbols in Normal mode triggers the Bonus game with Bonus spins. If more than three Bonus symbols land, more Bonus spins are awarded. In",
+        "end_condition": "The Bonus game ends when no Bonus spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "ure, the Super Stampede feature, the stateful Totem feature, and the Bonus- and Super Bonus games with Bonus spins. In the Bonus game, each reel can individually expand from 4 to 6 rows, increasing the number of ways to win up to a maximum of 7,776.\nGrizzly Stampede has 1,024 to 7,776 ways to win. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.\nThree or m",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Grizzly Stampede."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed Super Bonus trigger at the cost of __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed Bonus trigger at the cost of __X04_MULTIPLIER__ the selected bet.; Grizzly Stampede (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed Totem feature trigger releasing the Grizzly Spirit at the cost of __X03_MULTIPLIER__ the selected bet.; Mega Hunt (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): More than 15 times the chance to trigger the Bonus game at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): More than 4 times the chance to trigger the Bonus game at the cost of __X01_MULTIPLIER__ the selected bet.\nThe X-iter features can only be activated in the base",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed Super Bonus trigger at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed Bonus trigger at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Grizzly Stampede",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed Totem feature trigger releasing the Grizzly Spirit at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Mega Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "More than 15 times the chance to trigger the Bonus game at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "More than 4 times the chance to trigger the Bonus game at the cost of __X01_MULTIPLIER__ the selected bet.\nThe X-iter features can only be activated in the base game.\nThe minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.\nThe theoretical payout (RTP) for all X-iter game modes in the game is __RTP__.\nAll game rules apply for the X-iter features as well.\nLast updated 2026-05-22\nA single Stampede symbol on a row transfers its energy to the stateful Totem pole.\nTwo Stampede symbols on the same row connect, triggering the Stampede feature or the Super Stampede feature.\nA Stampede converts the connected Stampede symbols and payout symbols in between them into Grizzly symbols.\nThe Super Stampede feature scatters additional Grizzly symbols on the reels.\nAt the end of each spin, energy from remaining Stampede symbols charges the stateful Totem pole.\nThe Totem feature c",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/grizzlystampede/build-347689/assets/translation/grizzlystampede-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10274-grizzlystampede-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Grizzly Stampede\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 1,024 to 7,776 ways to win\nJackpot No\nReels 5 reels\nRows 4 rows by default, each reel can be individually expanded to 6 rows in Bonus mode.\n\nGame description\nGrizzly Stampede is a 5 reel, 4 row slot with spinning reels and 1,024 ways to win. Grizzly Stampede comes with Multiplier Wilds, the Stampede feature, the Super Stampede feature, the stateful Totem feature, and the Bonus- and Super Bonus games with Bonus spins. In the Bonus game, each reel can individually expand from 4 to 6 rows, increasing the n"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/grizzlystampede/build-347689/assets/translation/grizzlystampede-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10274-grizzlystampede-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 5 reel, 4 row slot with spinning reels and 1,024 ways to win. Grizzly Stampede comes with Multiplier Wilds, the Stampede feature, the Super Stampede feature, the stateful Totem feature, and the Bonus- and Super Bonus games with Bonus spins. In the Bonus game, each reel can individually expand from 4 to 6 rows, increasing the number of ways to win up to a maximum of 7,776."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/grizzlystampede/build-347689/assets/translation/grizzlystampede-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10274-grizzlystampede-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers different game modes.\nSUPER BONUS:\nGuaranteed Super Bonus trigger at the cost of __X05_MULTIPLIER__ the selected bet.\nBONUS:\nGuaranteed Bonus trigger at the cost of __X04_MULTIPLIER__ the selected bet.\nGRIZZLY STAMPEDE:\nGuaranteed Totem feature trigger releasing the Grizzly Spirit at the cost of __X03_MULTIPLIER__ the selected bet.\nMEGA HUNT:\nMore than 15 times the chance to trigger the Bonus game at the cost of __X02_MULTIPLIER__ the selected bet.\nBONUS HUNT:\nMore than 4 times the chance to trigger the Bonus game at the cost of __X01_MULTIPLIER__ the selected bet.\nThe X-iter features can only be activated in the base game.\nThe minimum X-iter cost is __MINBABMODE__"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/grizzlystampede/build-347689/assets/translation/grizzlystampede-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10274-grizzlystampede-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nGrizzly Stampede is a 5 reel, 4 row slot with spinning reels and 1,024 ways to win. Grizzly Stampede comes with Multiplier Wilds, the Stampede feature, the Super Stampede feature, the stateful Totem feature, and the Bonus- and Super Bonus games with Bonus spins. In the Bonus game, each reel can individually expand from 4 to 6 rows, increasing the number of ways to win up to a maximum of 7,776.\nGrizzly Stampede has 1,024 to 7,776 ways to win. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.\nThree or more Bonus symbols in Normal mode triggers the Bonus game with Bonus spins. If more than three Bonus symbols land, more Bonus spins are awarded. In the Bonus game, golden Grizzly symbols are collected on each reel. 3 collected golden Grizzly symbols on"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/grizzlystampede/build-347689/assets/translation/grizzlystampede-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10274-grizzlystampede-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Grizzly Stampede\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 1,024 to 7,776 ways to win\nJackpot No\nReels 5 reels\nRows 4 rows by default, each reel can be individually expanded to 6 rows in Bonus mode.\n\nGame description\nGrizzly Stampede is a 5 reel, 4 row slot with spinning reels and 1,024 ways to win. Grizzly Stampede comes with Multiplier Wilds, the Stampede feature, the Super Stampede feature, the stateful Totem feature, and the Bonus- and Super Bonus games with Bonus spins. In the Bonus game, each reel can individually expand from 4 to 6 rows, increasing the number of ways to win up to a maximum of 7,776.\nGrizzly Stampede has 1,024 to 7,776 ways to win. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.\nThree or more Bonus symbols in Normal mode triggers the Bonus game with Bonus spins. If more than thr"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/grizzly-stampede/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10274; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-grizzly-stampede.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

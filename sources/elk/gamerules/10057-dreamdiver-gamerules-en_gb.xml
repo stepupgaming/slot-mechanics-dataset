@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+
+<!--Intro-->
+	
+<!--Paytable-->
+<entry key="paytableStackedWildRespin">The Stacked Wild is nudged in to cover the entire reel and awards a respin. The Stacked Wild symbol appears on reels 2, 3 and 4 and substitutes for any symbol except the Pick Me symbol.</entry> 
+<entry key="paytablePickMeSymbols">3 Pick Me symbols trigger the Pick Me Feature which either awards a monetary win or triggers the bonus game.</entry>
+<entry key="paytableWildSymbol">The wild symbol substitutes for any symbol except the Pick Me symbol.</entry>
+<entry key="paytableBonusGame">The bonus game consists of 6 levels. Five levels with Pick 'n' Click objects and one final Dream Wheel level.</entry>
+<entry key="paytableBonusWins">Winnings and multipliers are collected throughout the bonus game and paid out when the bonus game ends or is completed.</entry>
+<entry key="paytablePickCoin">Awards a monetary win.</entry>
+<entry key="paytablePickMultiplier">Awards an additive multiplier which is distributed over the current and remaining levels.</entry>
+<entry key="paytablePickNextLevel">Takes the player to the next level.</entry>
+<entry key="paytablePickHeart">Awards an extra life.</entry>
+<entry key="paytablePickAlarmClock">Ends the bonus game</entry>
+<entry key="paytableDreamWheel">The Dream Wheel has two clock hands, each of which awards a multiplier that is added to the total accumulated multiplier.</entry>
+
+
+<!--Translations for assets-->
+<entry key="TranslationCollectWins">Collect Wins!</entry>
+<entry key="TranslationCollectMultipliers">Collect Multipliers!</entry>
+<entry key="TranslationNextLevel">Next Level!</entry>
+
+
+<!--X-iter-->
+<entry key="gameMode1">Guarantees a winning game round.</entry>
+<entry key="gameMode2">Guarantees 3 spins with at least one Stacked Wild symbol triggering the Stacked Wilds Respin feature in every spin.</entry>
+<entry key="gameMode3">Guarantees a game round with entry to the bonus game.</entry>
+<entry key="gameMode4">Guarantees a game round with entry to the bonus game with a higher entry win.</entry>
+<entry key="gameMode5">Guarantees a game round with entry to the bonus game with a guarantee to reach the final Dream Wheel level.</entry>
+
+
+<!--X-iter UI texts-->
+<entry key="X01B1">Win on every spin!</entry>
+<entry key="X02B1">3 spins</entry>
+<entry key="X02B2">Stacked Wilds Respin in every spin!</entry>
+<entry key="X03B1">Guaranteed bonus game!</entry>
+<entry key="X04B1">Guaranteed bonus game!</entry>
+<entry key="X04B2">Bigger entry win!</entry>
+<entry key="X05B1">Guaranteed bonus game!</entry>
+<entry key="X05B2">Always reach the Dream Wheel!</entry>
+
+
+<!--Gamerules-->
+	<entry key="1-rulehead">Game rules</entry>
+	<entry key="1-rules">
+	<![CDATA[
+1. Dream Diver is a 5 reel, 4 rows slot with 178 connecting paylines.
+
+2. The game offers several bet levels for each currency.
+
+3. Each bet is 100 coins.
+
+4. A game round starts on the selected bet level when the player hits the Spin button.
+
+5. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+]]>
+	</entry>
+	<entry key="2-rulehead">Game rules</entry>
+	<entry key="2-rules">
+	<![CDATA[
+6. Winnings and winning combinations are paid out according to the Paytable.
+
+7. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+8. Dream Diver is played in two modes; Normal mode and Bonus mode with a Pick 'n' Click bonus game.
+
+9. The wild symbol substitutes for any symbol except the Pick Me symbol and the Stacked Wild symbol.
+]]>
+</entry>
+<entry key="3-rulehead">Game rules</entry>
+	<entry key="3-rules">
+	<![CDATA[
+10. The Stacked Wild symbol is a 4x1 high wild symbol that appears on reels 2, 3 and 4 and it substitutes for any symbol except the Pick Me symbol. Landing one or more Stacked Wild symbols trigger the Stacked Wilds Respin feature. 
+
+11. All Stacked Wild symbols are nudged in to cover the entire reel and award a respin during the Stacked Wilds Respin feature. Only one respin is awarded independently of the number of Stacked Wild symbols appearing in the same spin. 
+
+12. Additional Stacked Wilds that appear during an ongoing Stacked Wilds Respin award additional respins. All Stacked Wild symbols remain sticky for the duration of the respins.
+]]>
+</entry>
+<entry key="4-rulehead">Game rules</entry>
+	<entry key="4-rules">
+	<![CDATA[
+13. 3 Pick Me symbols, which appear on reels 2, 3 and 4, trigger the Pick Me feature. When triggered, the player is expected to click on one of the 3 Pick Me symbols that either award a predetermined instant monetary win or trigger the bonus game. 
+
+14. The bonus game consists of 6 levels of which 5 are Pick 'n' Click and one is the final level with a wheel of fortune consisting of multipliers.
+
+15. Potential winnings in the spin that triggers the bonus game are brought into the bonus game.
+]]>
+</entry>
+<entry key="5-rulehead">Game rules</entry>
+	<entry key="5-rules">
+	<![CDATA[
+16. The Pick 'n' Click items in the bonus game hide one of the following winnings:
+- a monetary win which is added to bonus game collect
+- a multiplier that is distributed over the current level and the remaining levels. The distribution starts from level 5 and continues downwards 
+- an alarm clock that ends the bonus game. 
+- a heart that provides an extra life by interrupting the alarm clock which keeps the player in the bonus game.
+- an arrow that takes the player to the next level. 
+
+17. The accumulated multiplier is applied to the bonus game collect when the bonus game ends.  
+]]>
+</entry>
+<entry key="6-rulehead">Game rules</entry>
+	<entry key="6-rules">
+	<![CDATA[
+18. The Dream Wheel has two clock hands that spin individually. The player hits Stop and the clock stops at a predetermined result. Each clock hand awards a multiplier that is added to the total accumulated multiplier. 
+
+19. The size of the sectors on the Dream Wheel is not an indicative representation of the probability of stopping the clock hands in each sector.
+
+20. The Pick 'n' Click items in the bonus game might have different positions in case of replay.
+
+21. The bonus game cannot be retriggered during bonus mode.
+	
+]]>
+</entry>
+<entry key="7-rulehead">Game rules</entry>
+	<entry key="7-rules">
+	<![CDATA[
+22. The bonus mode ends when all the hearts are used and the player reveals the alarm clock, when the last level with the Dream Wheel has been completed or when the maximum win has been reached.
+
+23. Winnings are paid out at the end of the Bonus mode.
+
+24. No bets can be changed during an ongoing game round.
+
+25. The theoretical payout (RTP) in Dream Diver is 95.0%.
+
+26. The game has a maximum win of 2 500x the placed bet.
+
+27. In the event of malfunction all bets and wins are void.
+
+
+Last updated 2021-04-08
+	]]></entry>
+
+
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X01">X-iter 1: Guarantees a winning game round at the cost of 5x the selected bet. </entry>
+
+<entry key="xiter-rule" tags="X02">X-iter 2: Guarantees 3 spins with at least one Stacked Wilds symbol triggering the Stacked Wild Respin feature in every spin at the cost of 25x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">X-iter 3: Guarantees a game round with entry to the bonus game at the cost of 100x the selected bet. </entry>
+
+<entry key="xiter-rule" tags="X04">X-iter 4: Guarantees a game round with entry to the Big Bonus game with a higher entry win at the cost of 200x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X05">X-iter 5: Guarantees a game round with entry to the Super Bonus game with a guarantee to reach the final Dream Wheel level at the cost of 500x the selected bet. </entry>
+
+
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Dream Diver is 95.0%.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-05-14</entry>
+<!--Dialogs-->	
+
+</translation>

@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Dead Man’s Gold",
+    "slug": "elk-dead-mans-gold",
+    "provider_game_id": "10194",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10194&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/deadmansgold/build-244320/assets/translation/deadmansgold-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 262144,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "4,096 ways to win expanding up to 262,144 ways to win"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "dditional row of symbols is added at the top up to a maximum of eight rows. The avalanche feature continues as long as new winning combinations appear.\nSuper, Mega and Epic symbols of size 2x2, 3x3 and 4x4 may drop down in any symbol drop.\nThe wild symbol substitutes for any symbol except the Treasure Target, Multiplier Treasure Target, Bottomless Chest, cannonball and the bonus symbols.\nThree or more bonus symbols trigger the bonus game, awarding free drops. The more bonus symbols, the more free drops"
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "old\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 4,096 ways to win expanding up to 262,144 ways to win\nJackpot No\nReels 6 reels\nRows 4 rows\n\nGame description\nKane Steel, the treasure hunter and intrepid adventurer is back! After deciphering ciphers and drawings in the journal of his privateer ancestor Captain “Long John” Steel, Ka"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the bonus, Treasure Target, Multiplier Treasure Target, Bottomless Chest and cannonball symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Three or more bonus symbols trigger the free drops bonus game.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Global Multiplier",
+        "behavior": "The global multiplier is only affected by a Multiplier Treasure Target being shot at by the Pirate’s Cannons. The increase of the multiplier is independent of the size of the Multiplier Treasure Target, and takes place prior to the payout. The global multiplier is persistent and never decreases during an ongoing game round.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Dead Man’s Gold: paid spin on 4x6. 4,096 ways to win expanding up to 262,144 ways to win. Avalanche/tumble after wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 4,096 ways to win expanding up to 262,144 ways to win",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "dditional row of symbols is added at the top up to a maximum of eight rows. The avalanche feature continues as long as new winning combinations appear.\nSuper, Mega and Epic symbols of size 2x2, 3x3 and 4x4 may drop down in any symbol drop.\nThe wild symbol substitutes for any symbol except the Treasure Target, Multiplier Treasure Target, Bottomless Chest, cannonball and the bonus symbols.\nThree or more bonus symbols trigger the bonus game, awarding free drops. The more bonus symbols, the more free drops",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "4,096 ways to win expanding up to 262,144 ways to win",
+    "notes": "e in Settings.\nWinnings are presented in the player's currency.\nDead Man's Gold is played in two modes; normal mode and bonus mode with free drops.\nAll low, mid and high symbols exist in four sizes; standard 1x1, Super 2x2, Mega 3x3 and Epic 4x4. All big symbols are counted as consisting of"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more bonus symbols trigger the bonus game",
+        "spins_awarded": null,
+        "retrigger": "Free drops can be retriggered.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "rules.\nA combination of three or more bonus symbols in normal mode triggers the bonus mode with free drops.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.\nThe wild symbol substitutes for any symbol except the bonus, Treasure Target, Multiplier Treasure Target, Bottomless Chest and cannonball symbols.\nThree or more bonus",
+        "end_condition": "The free drops bonus game ends when no free drops remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": "Free drops can be retriggered.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "eral different game modes.\nSuper Bonus: Guarantees a game round with entry to a Super Bonus game with a minimum of 10 free drops and with unlimited ammunition for the Pirate’s Cannons at the cost of __X05_MULTIPLIER__ the selected bet. The Treasure Targets are sticky until part of a win, and the Bottomless Chest is sticky throughout the whole bonus game.\nBonus: Guarantees a game round with entry to the Bonus game at the cost of __X04_MULTIPLIER__ the selected bet. The Treasure Targets are sticky until part of a win, and the Bottomless Chest",
+        "end_condition": "The free drops bonus game ends when no free drops remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "eral different game modes.\nSuper Bonus: Guarantees a game round with entry to a Super Bonus game with a minimum of 10 free drops and with unlimited ammunition for the Pirate’s Cannons at the cost of __X05_MULTIPLIER__ the selected bet. The Treasure Targets are sticky until part of a win, and the Bottomless Chest is sticky throughout the whole bonus game.\nBonus: Guarantees a game round with entry t",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Dead Man’s Gold."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "dditional row of symbols is added at the top up to a maximum of eight rows. The avalanche feature continues as long as new winning combinations appear.\nSuper, Mega and Epic symbols of size 2x2, 3x3 and 4x4 may drop down in any symbol drop.\nThe wild symbol substitutes for any symbol except the Treasure Target, Multiplier Treasure Target, Bottomless Chest, cannonball and the bonus symbols.\nThree or more bonus symbols trigger the bonus game, awarding free drops. The more bonus symbols, the more free drops",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Expanding grid",
+      "trigger": "Feature/bomb/clear-board events as described",
+      "when": "Base and bonus",
+      "effects": "old\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 4,096 ways to win expanding up to 262,144 ways to win\nJackpot No\nReels 6 reels\nRows 4 rows\n\nGame description\nKane Steel, the treasure hunter and intrepid adventurer is back! After deciphering ciphers and drawings in the journal of hi",
+      "params": {}
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to a Super Bonus game with a minimum of 10 free drops and with unlimited ammunition for the Pirate’s Cannons at the cost of _; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the Bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Super Cannon Spin (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin where the Pirate’s Cannons have unlimited amounts of cannonball shots. Bonus triggers award Super Bonus at the cost of __X03_MULTIPLIER__ the selected ; Chest Plunderer (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with a guaranteed Bottomless Chest at the cost of __X02_MULTIPLIER__ the selected bet.; Big Block (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with a guaranteed big symbol at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to a Super Bonus game with a minimum of 10 free drops and with unlimited ammunition for the Pirate’s Cannons at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the Bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Cannon Spin",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin where the Pirate’s Cannons have unlimited amounts of cannonball shots. Bonus triggers award Super Bonus at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Chest Plunderer",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with a guaranteed Bottomless Chest at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Big Block",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with a guaranteed big symbol at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadmansgold/build-244320/assets/translation/deadmansgold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10194-deadmansgold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Dead Man’s Gold\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 4,096 ways to win expanding up to 262,144 ways to win\nJackpot No\nReels 6 reels\nRows 4 rows\n\nGame description\nKane Steel, the treasure hunter and intrepid adventurer is back! After deciphering ciphers and drawings in the journal of his privateer ancestor Captain “Long John” Steel, Kane has unearthed a secretive lost pirate colony on the Caribbean Island of Tortuga.\n\nDead Man's Gold is a 6 column, 4 rows slot with dropping symbols. Symbol wins trigger the avalanche feature that expands the reels upwards up"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadmansgold/build-244320/assets/translation/deadmansgold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10194-deadmansgold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 6 column, 4 rows slot with dropping symbols. Symbol wins trigger the avalanche feature that expands the reels upwards up to the maximum 8 rows. The game comes with exploding symbols, hidden wild symbols, a multiplier feature, and a free drops bonus game."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadmansgold/build-244320/assets/translation/deadmansgold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10194-deadmansgold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper Bonus: Guarantees a game round with entry to a Super Bonus game with a minimum of 10 free drops and with unlimited ammunition for the Pirate’s Cannons at the cost of __X05_MULTIPLIER__ the selected bet. The Treasure Targets are sticky until part of a win, and the Bottomless Chest is sticky throughout the whole bonus game.\nBonus: Guarantees a game round with entry to the Bonus game at the cost of __X04_MULTIPLIER__ the selected bet. The Treasure Targets are sticky until part of a win, and the Bottomless Chest is sticky throughout the whole bonus game.\nSuper cannon spin: One spin where the Pirate’s Cannons have unlimited amounts of"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadmansgold/build-244320/assets/translation/deadmansgold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10194-deadmansgold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nKane Steel, the treasure hunter and intrepid adventurer is back! After deciphering ciphers and drawings in the journal of his privateer ancestor Captain “Long John” Steel, Kane has unearthed a secretive lost pirate colony on the Caribbean Island of Tortuga.\n\nDead Man's Gold is a 6 column, 4 rows slot with dropping symbols. Symbol wins trigger the avalanche feature that expands the reels upwards up to the maximum 8 rows. The game comes with exploding symbols, hidden wild symbols, a multiplier feature, and a free drops bonus game. \n\nThere are hidden wild symbols behind the Treasure Target symbols. Cannons fire directed at target symbols reveals the hidden wild symbols and removes non-winning adjacent symbols. The Pirate’s Cannons require cannonball symbols to be able to activate. Multiplier"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/deadmansgold/build-244320/assets/translation/deadmansgold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10194-deadmansgold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Dead Man’s Gold\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 4,096 ways to win expanding up to 262,144 ways to win\nJackpot No\nReels 6 reels\nRows 4 rows\n\nGame description\nKane Steel, the treasure hunter and intrepid adventurer is back! After deciphering ciphers and drawings in the journal of his privateer ancestor Captain “Long John” Steel, Kane has unearthed a secretive lost pirate colony on the Caribbean Island of Tortuga.\n\nDead Man's Gold is a 6 column, 4 rows slot with dropping symbols. Symbol wins trigger the avalanche feature that expands the reels upwards up to the maximum 8 rows. The game comes with exploding symbols, hidden wild symbols, a multiplier feature, and a free drops bonus game. \n\nThere are hidden wild symbols behind the Treasure Target symbols. Cannons fire directed at target symbols reveals the hidden wild symbols and removes n"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/dead-mans-gold/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10194; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-dead-mans-gold.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!-- *************************************************************************************************
+
+	DO NOT TRANSLATE(DNT) THE FOLLOWING:
+Bonus 
+Wild/Wilds
+Elmo
+Kyle
+Cool Reel
+BONUS HUNT - when commented with DNT
+SUPER BONUS - when commented with DNT
+MEGA HUNT - when commented with DNT
+
+****************************************************************************************************** -->
+	
+
+
+<!-- GAME DOCUMENTATION ****************************************************************************** -->
+<entry key="gdd-description">
+The Tropicool series continues and this time we go down underwater. Tropicool 5 comes with an enhanced set of features and the classic Cool Reel mechanics.
+
+Tropicool 5 is a 6 columns by 5 rows slot with dropping symbols, big symbols, all win ways and a feature Cool Reel. The feature Cool Reel is up to 2 rows. The Locked Wild features and multiplier symbols remain, as do the Row Swap mechanics and Mystery symbols. Tropicool 5 also comes with a bunch of new features: the Wild Egg symbol, Golden symbols and the Mystery Crocodile feature.
+The Birds are back and this time they act like Wild symbols. Elmo the sloth collects pearls and when activated Elmo drops down the entire Cool Reel.
+
+The Bonus game is triggered by 3 or more Bonus symbols to run 6 or more bonus drops.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in either portrait or landscape mode.</entry>
+
+<entry key="gdd-payline">All win ways with 15,625 ways.</entry>
+
+<entry key="gdd-bonusgame">3 or more Bonus symbols trigger the Bonus game. The Player gets 9 or more bonus drops. Locked Wild features and Win Multipliers are persistent over the bonus drops for even greater chances to win.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">15,625 ways to win</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 columns</entry>
+<entry key="gdd-kf-rows">5 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The Wild symbol substitutes for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.</entry>
+<entry key="gdd-sfs-2">The Locked Wild symbol is a Wild symbol charged to last for the number of wins displayed on the symbol. It is removed after the last charge is used.</entry>
+<entry key="gdd-sfs-3">The Row Swap symbol removes all payout symbols on a row and fills the row with matching payout symbols.</entry>
+<entry key="gdd-sfs-4">The Mystery symbol reveals a symbol when no more wins are present.</entry>
+<entry key="gdd-sfs-5">The Flamingo symbol is a Wild symbol that can occur in sizes 1x4 up to 1x5.</entry>
+<entry key="gdd-sfs-6">The Toucan symbol is a Wild symbol that can occur in sizes 1x2 up to 1x3.</entry>
+<entry key="gdd-sfs-7">The Elmo symbol clears all payout symbols and empty clam shells on the top 3-5 rows. This guarantees a full Cool Reel drop.</entry>
+<entry key="gdd-sfs-8">The Wild Egg symbol is a sticky Wild symbol. When there is at least 1 empty symbol position in the column, it turns into a Wild bird.</entry>
+<entry key="gdd-sfs-9">The golden symbol has a multiplier value attached to it. The value is determined by its position in the grid.</entry>
+<entry key="gdd-sfs-10">The Mystery Crocodile feature appears in the Cool Reel and drops Mystery symbols to the game grid.</entry>
+<entry key="gdd-sfs-11">3 or more Bonus symbols trigger the Bonus game.</entry>
+<entry key="gdd-sfs-12">The Extra Drops symbol adds more bonus drops when it lands during the Bonus game.</entry>
+<entry key="gdd-sfs-13">The Multiplier symbol adds its displayed value to the global multiplier.</entry>
+
+
+<entry key="gdd-xiterbutton-5">SUPER BONUS</entry> <!--DNT-->
+<entry key="gdd-xiterbutton-4">BUY BONUS</entry>
+<entry key="gdd-xiterbutton-3">3 LOCKED WILDS</entry>
+<entry key="gdd-xiterbutton-2">MEGA HUNT</entry> <!--DNT-->
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>  <!--DNT-->
+
+<!--================= PAYTABLE PAGES =========================================================-->
+<!-- PAGE 1 -->
+<!-- Win up to -->
+
+<!-- PAGE 2 -->
+<!--Character Features -->
+<entry key="WildEggTxt">The Wild Egg symbol is a sticky Wild that turns into a Wild bird when there is space in its reel for it to expand.</entry>
+<entry key="BirdFeaturesTxt">The Toucan and Flamingo are Wild symbols of sizes 1x2 to 1x5. They are created from the Wild Egg.</entry>
+
+<!-- PAGE 3 -->
+<!-- Character Features -->
+<entry key="ElmoDropTxt">Elmo collects Pearls from clamshell symbols once no more wins are possible. There’s always a chance Elmo will drop the Pearls and clear the top rows, triggering the whole Cool Reel to drop in!</entry>
+<entry key="MysteryCrocodileTxt">Kyle the Mystery Crocodile is a 6x2 special symbol that slides into the Cool Reel and drops Mystery symbols on to the grid whenever there is space below him.</entry>
+
+<!-- PAGE 4 -->
+<!-- Feature Symbols -->
+<entry key="MysterySymbolTxt">Mystery symbols reveal paying or feature symbols when all wins are resolved.</entry>
+<entry key="RowSwapTxt">The Row Swap symbol selects 1 random paying symbol on its row to replace all other symbols on the same row.</entry>
+<entry key="GoldenSymbol">The Golden Symbol has a multiplier value attached to it. The displayed value is determined by its position in the grid.</entry>
+<entry key="PearlTxt">Elmo collects Pearls from clamshell symbols once no more wins are possible. There’s always a chance Elmo will drop the Pearls and clear the top rows, triggering the whole Cool Reel to drop in!</entry>
+
+<!-- PAGE 5 -->
+<!-- Feature Symbols -->
+<entry key="WildTxt">Wilds symbols substitute for any paying symbol.</entry>
+<entry key="LockedWildTxt">The Locked Wild symbol is a Wild symbol charged to last for the number of wins displayed on the symbol. It is sticky until the last charge is used.</entry>
+
+<!-- PAGE 6 -->
+<!-- Game Features -->
+<entry key="BigSymbolsTxt">Paying symbols and Row Swap, Wild, Locked Wild, and Mystery features can drop in at 2x2 size. Big symbols pay as the amount of regular 1x1 symbols they cover.</entry>
+<entry key="AvalancheCoolReelTxt">The Cool Reel drops feature symbols and empty ice cubes into the grid after wins. Ice cubes get crushed immediately to make room for more features and symbols! Then symbols drop down with gravity, and new symbols refill from the top.</entry>
+
+<!-- PAGE 7 -->
+<!-- Bonus game -->
+<entry key="BonusGameTxt">3 or more Bonus symbols in the main game triggers the Bonus game.</entry>
+<entry key="BonusGameTxt2">The Cool Reel also contains Extra Drop symbols and Multiplier symbols.</entry>
+<entry key="MultiplierSymbolTxt">Adds the displayed value to the global multiplier.</entry>
+<entry key="ExtraDropsTxt">Adds the displayed value of bonus drops to the Bonus game.</entry>
+
+<!-- PAGE 8 -->
+<!-- Symbol Payout -->
+
+
+<!-- GAMERULES ******************************************************************************** -->
+
+* Unique Init ******************************
+<entry key="gamerule">Tropicool 5 is a 6 columns by 5 rows slot with dropping symbols, a 2 row feature Cool Reel and 15,625 ways to win.</entry>
+
+* General Init *****************************
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">Wins begin with the first leftmost column and only pay from left to right on consecutive columns. No gaps between the columns are allowed. Only the longest payline per active payline is paid out. An active payline is defined as the longest winning symbol combination.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>     <!-- Translate "Settings" keeping Capitalization. (It is a name of a button.) -->
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+<entry key="gamerule">The game is played in two modes; normal mode and bonus mode with bonus drops.</entry>
+<entry key="gamerule">The Wild symbols substitute for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.</entry>
+
+
+* Game specific ****************************
+* Cool Reel, Gravity, Explosions ************
+
+<entry key="gamerule">The Cool Reel on the top of the main grid comprises 2 rows with feature symbols, empty ice cubes and empty cells. Feature symbols activate when they drop down into the main grid. Ice cubes are spacers.</entry>
+<entry key="gamerule">A game round starts in Normal mode with new symbols dropping into the main grid and new feature symbols sliding in from the right in the Cool Reel.</entry>
+<entry key="gamerule">Each winning combination in the main grid is paid and the symbols, except Wild Egg symbols and Locked Wild symbols with charges remaining, are removed from the grid while the remaining symbols drop down.
+The feature symbols in the Cool Reel above empty cells drop down into the main grid followed by new symbols refilling the main grid. 
+
+The Cool Reel is refilled from the right, pushing all symbols to the left. Any new winning combinations are paid and this avalanche repeats until no more wins are possible. Mystery symbols activate first, followed by Row Swap symbols, Elmo feature, and Bonus trigger.</entry>
+
+
+* BIG SYMBOLS *******************************
+<entry key="gamerule">Any paying and feature symbol except Elmo, Wild Egg, Birds, Multiplier, Pearl, extra drop and bonus symbols can appear as 2x2 big symbols.</entry>
+<entry key="gamerule">A 2x2 big symbol pays out as 4 regular symbols of the same type.</entry>
+<entry key="gamerule">If an entire big symbol cannot completely drop down from the Cool Reel into the main grid, it will split into regular 1x1 symbols allowing some of them to drop down.</entry>
+<entry key="gamerule">Any empty spaces below a big symbol on the grid will be filled with 1x1 symbols of the same type as the big symbol.</entry>
+
+
+* LOCKED WILDS ********************************
+<entry key="gamerule">The Locked Wild symbol is a Wild symbol charged to last for the number of wins displayed on it. It is removed after the last charge is used.</entry>
+<entry key="gamerule">Locked Wild symbols remain in the Base game and Bonus game.</entry>
+
+* MYSTERY SYMBOL ******************************
+<entry key="gamerule">The Mystery symbols are revealed when there are no more wins present in a symbol drop. All Mystery symbols will reveal the same payout symbol.</entry>
+
+* GOLDEN SYMBOL ******************************
+<entry key="gamerule">A paying symbol may appear as a golden symbol with a win multiplier. The multiplier value is x2 when the symbol is on the top row of the grid and increases by 1 for each row below. The maximum multiplier value is x6. Multiple win multipliers in the same column are added, while multiple win multipliers in different columns are multiplied.</entry>
+
+* ROW SWAP ************************************
+<entry key="gamerule">The Row Swap feature symbol replaces all symbols on a row to matching payout symbols. 1 of the paying symbols on the row is selected to replace all other symbols on the same row. If the Flamingo, Toucan, Wild Egg, or Wild symbol is selected it will replace all other symbols with Wild symbols.
+The feature is activated at the end of the avalanche after any winnings, Mystery symbols are revealed, and Wild Egg symbols are activated.</entry>
+<entry key="gamerule">Any additional Row Swap feature symbols on the same row will extend the symbol replacement to its column.</entry>
+<entry key="gamerule">Any symbol position that would be changed to different symbols due to 2 Row Swap actions, will be replaced by a Wild symbol.</entry>
+<keep> If this column would intersect with any other row also replaced by a Row Swap symbol, the intersecting symbol will be replaced with a Wild symbol.</keep>
+<entry key="gamerule">A big paying symbol in a Row Swap will be completely replaced. If it is part of 2 or more separate Row Swaps that would replace with different symbols, it will instead be replaced with a Wild symbol.</entry>
+<entry key="gamerule">A big Row Swap feature symbol will replace all symbols on the covered rows to the same payout symbol.</entry>
+<entry key="gamerule">Bonus symbols and Pearl symbols in a Row Swap will be temporarily replaced for a possible winning combination, and then revert back.</entry>
+<entry key="gamerule">Wild symbols will not be replaced in a Row Swap.</entry>
+
+* MYSTERY CROCODILE ******************************
+<entry key="gamerule">The Mystery Crocodile symbol appears in the Cool Reel as a 6x2 symbol. Empty cells in the main grid under the Mystery Crocodile symbol fill up with Mystery symbols. The Crocodile moves to the left when no more empty symbol positions can be filled with Mystery symbols.</entry>
+
+* WILD EGG SYMBOL  ******************************
+<entry key="gamerule">The Wild Egg symbol functions as a sticky Wild symbol. If there is at least 1 empty symbol position in its column, it activates and transforms into a toucan or flamingo. The birds act as Wild symbols which are removed when they are part of a winning combination.
+The size of the birds created by the Wild Egg is determined by the number of empty symbol positions in the column. The birds can assume sizes 1x2, 1x3, 1x4 or 1x5.</entry> 
+
+* ELMO FEATURE  ******************************
+<entry key="gamerule">The Elmo Sloth feature can trigger in any spin or Bonus Drop when there are no more winning combinations and Elmo collects a pearl symbol. When the Elmo feature is triggered, it will remove all payout symbols from the topmost 3, 4 or 5 rows of the game grid, and any remaining empty pearl symbols. All symbols in the Cool Reel will drop down into the game grid. Every time the Elmo collects, there is an equal chance of him triggering. The amount of  collected pearls  is kept for each bet level and remains between game rounds.
+</entry> 
+* BONUS *****************************************
+<entry key="gamerule">3 or more Bonus symbols appearing anywhere on the main grid trigger the Bonus game when there are no more wins present and all other features have been activated.
+	• 3 Bonus symbols: 6 bonus drops
+	• 4 Bonus symbols: 9 bonus drops
+	• 5 Bonus symbols: 12 bonus drops
+	• 6 Bonus symbols: 15 bonus drops</entry>
+<entry key="gamerule">In the Bonus game, the Cool Reel also contains extra drop symbols and multiplier symbols. The Extra drops symbol adds its displayed number of extra bonus drops. The Multiplier Symbol adds its displayed value to the win multiplier. These symbols will be triggered when they drop down from the Cool Reel.</entry>
+<entry key="gamerule">Extra Drops: Adds 1, 2 or 3 bonus drops.
+	• Multiplier symbols: Adds x1, x2 or x3 to the win multiplier.
+	• Extra Drops and Multiplier symbols cannot appear as big symbols.</entry>
+<entry key="gamerule">The Bonus game starts with a new set of symbols in the grid and new feature symbols in the Cool Reel. The Win multiplier in the Bonus game starts at x1. The Cool Reel is refilled with new feature symbols for every free drop. Locked Wild symbols in the main grid remain between bonus drops until fully used.</entry>
+
+* General End *******************************
+<entry key="gamerule">Winnings are paid out at the end of a game round.</entry>
+<entry key="gamerule">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule" tags="mwp">The maximum total win is accumulated across all wins in the game round and can be obtained from one big win or several smaller wins. The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule">No bets can be changed during a game round.</entry>
+<entry key="gamerule">The theoretical return to player (RTP) is __RTP__.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">Last updated 2026-03-24</entry>
+
+
+
+<!-- X-iter RULES ***************************************************************************** -->
+<entry key="xiter-rule">The X-iter feature offers buy-in to different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">SUPER BONUS: <!--DNT-->
+Buy a game round triggering the Super Bonus game, with 3 Locked Wilds in each Bonus Drop. Cost is __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">BUY BONUS:
+Buy a game round triggering the Bonus game with bonus drops. Cost is __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">LOCKED WILDS:
+Buy a game round with a guaranteed 3 Locked Wild symbols. Cost is __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">MEGA HUNT: <!--DNT-->
+Buy a game round with more than 15x chance to trigger bonus drops. Cost is __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">BONUS HUNT:<!--DNT-->
+Buy a game round with more than 4x chance to trigger bonus drops. Cost is __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+<entry key="xiter-rule" tags="lastupdated">Last updated 2026-03-24</entry>
+
+
+<!--Dialogs-->
+
+<!-- X-iter dialogs -->
+<entry key="X05B1">SUPER BONUS</entry> <!--DNT-->
+<entry key="X05B2">Play a Bonus game</entry>
+<entry key="X05B3">3 Locked Wilds Guaranteed per Bonus Drop!</entry>
+
+<entry key="X04B1">BUY BONUS</entry>
+<entry key="X04B2">Play a Bonus game with bonus drops!</entry>
+
+<entry key="X03B1">Locked Wilds</entry>
+<entry key="X03B2">3 Locked Wilds Guaranteed.</entry>
+
+<entry key="X02B1">MEGA HUNT</entry> <!--DNT-->
+<entry key="X02B2">More than 15 times the chance to trigger the Bonus game.</entry>
+
+<entry key="X01B1">BONUS HUNT</entry> <!--DNT-->
+<entry key="X01B2">More than 4 times the chance to trigger the Bonus game.</entry>
+
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 																			
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry> 																  	
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+
+
+
+</translation>

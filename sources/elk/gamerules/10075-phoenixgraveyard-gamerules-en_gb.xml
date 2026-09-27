@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+
+<!-- Intro -->
+
+<!-- Paytable -->
+<!-- PAGE 1 -->
+
+<gfx key="paytablePhoenixSubHeader">Phoenix</gfx> 								              <!-- NO_TRANSLATE -->
+<gfx key="paytableJumpingWildSubHeader">Jumping Wild</gfx> 								      <!-- NO_TRANSLATE -->
+<gfx key="paytableExpandingSubHeader">Expanding</gfx>  					    						<!-- NO_TRANSLATE -->
+<gfx key="paytableWinWaysHeader">Win ways</gfx>  					    									<!-- NO_TRANSLATE -->
+<gfx key="paytableGrimReaperSubHeader">Grim Reaper</gfx>												<!-- NO_TRANSLATE -->
+<gfx key="paytableWalkingWildHeader">Walking Wild</gfx>												  <!-- NO_TRANSLATE -->
+
+<!-- PAGE 2 -->
+
+<gfx key="paytablePhoenix2SubHeader">Phoenix</gfx> 								              <!-- NO_TRANSLATE -->
+<entry key="paytablePhoenix2Txt">Wild symbol jumping to new locations in respins and free spins.</entry>
+
+<gfx key="paytableSuddenDeathSubHeader">Sudden Death</gfx> 	   		              <!-- NO_TRANSLATE -->
+<entry key="paytableSuddenDeathTxt">Random slicing of symbol positions expanding win ways.</entry>
+
+<gfx key="paytableGrimReaper2SubHeader">Grim Reaper</gfx> 	   		              <!-- NO_TRANSLATE -->
+<entry key="paytableGrimReaper2Txt">Walking Wild triggering respins, slicing high value symbols and battling Phoenix Wilds.</entry>
+
+<!-- PAGE 3 -->
+
+<gfx key="paytableBattleHeader">Battle</gfx> 			      					              <!-- YES TRANSLATE -->
+<entry key="paytableBattleTxt">Adjacent Grim Reaper and Phoenix symbols trigger a battle with one of the following outcomes.</entry> 			      					              <!-- DO translate -->
+
+<gfx key="paytablePhoenixMultiplierSubHeader">Phoenix Multiplier</gfx> 		      <!-- NO_TRANSLATE -->
+<entry key="paytablePhoenixMultiplierTxt">Phoenix Wild doubles its multiplier.</entry>
+
+<gfx key="paytableFeatherWildSubHeader">Feather Wild</gfx> 		              		<!-- NO_TRANSLATE -->
+<entry key="paytableFeatherWildTxt">Phoenix Wild jumps away leaving a Feather Wild behind turning into a Phoenix Wild.</entry>
+
+<gfx key="paytableGrimReaperMultiplierSubHeader">Grim Reaper Multiplier</gfx> 	<!-- NO_TRANSLATE -->
+<entry key="paytableGrimReaperMultiplierTxt">Grim Reaper doubles its multiplier.</entry>
+
+<!-- PAGE 4 -->
+
+<gfx key="paytableBonusGameHeader">Bonus Game</gfx> 														<!-- YES TRANSLATE -->
+
+<gfx key="paytableBonusTriggerSubHeader">Bonus Trigger</gfx>                    <!-- YES translate -->
+<entry key="paytableBonusTriggerTxt">3-5 Bonus symbols trigger the Free Spins with 1-3 awarded Phoenix Wilds. Bonus game can retrigger.</entry>
+
+<gfx key="paytablePhoenixCreateSubHeader">Phoenix Wild</gfx>         						<!-- NO_TRANSLATE -->
+<entry key="paytablePhoenixCreateTxt">Phoenix Wilds are awarded with a multiplier equal to the position's win ways.</entry>
+
+<gfx key="paytablePhoenixPersistentSubHeader">State building</gfx>     					<!-- NO_TRANSLATE -->
+<entry key="paytablePhoenixPersistentTxt">Expanded win ways and Phoenix Wilds last the entire bonus game.</entry>
+
+
+<!-- PAGE 5 -->
+
+<entry key="paytableAllWaysTxt">ALL WAYS</entry>
+<gfx key="paytableSymbolPayoutHeader">Symbol Payout</gfx>                       <!-- YES translate -->
+<gfx key="paytableHighValueSymbolsSubHeader">High Value Symbols</gfx>           <!-- YES translate -->
+
+<!-- PAGE 6 -->
+
+<gfx key="paytableRoyalValueSymbolsSubHeader">Royal Value Symbols</gfx>        <!-- YES translate (can keep ROYAL) -->
+
+
+<!-- Bonus Intro -->
+<gfx key="bonusGameIntro">BONUS</gfx>                                           <!-- NO translate -->
+<gfx key="bonusGameFreeSpins">Free Spins</gfx>                                  <!-- NO translate -->
+<gfx key="bonusGameStartBtn">START</gfx>                                        <!-- NO translate -->
+
+<!-- Bonus Outro -->
+<gfx key="bonusGameTotalWin">Total Win</gfx>                                    <!-- YES translate -->
+<gfx key="bonusGamePlayedInTotal">played in total</gfx>                         <!-- YES translate -->
+
+<!-- WAYS plate -->
+<gfx key="waysPlate">WAYS</gfx>                                                 <!-- NO_TRANSLATE -->
+
+
+
+<!--Gamerules-->
+<entry key="gamerules">
+<![CDATA[
+1. Phoenix Graveyard is a 5 columns by 3 rows slot, with expanding-ways starting at 243 ways to win.
+
+2. The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.
+
+3. Each bet is __CPBB__ coins.
+
+4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. The game is played in two modes, Normal mode and Bonus mode with free spins.
+
+10. Wild symbols substitute for any paying symbol, excluding any other Wild feature or bonus symbol. A payline of all Wild symbols pays as the highest paying symbol.
+
+11. Bonus symbols can land anywhere on the reels except in positions holding a sticky Wild or Bonus symbol. Bonus symbols are sticky on its reel position during respins. 3 or more Bonus symbols trigger the Bonus game free spins.
+
+12. All symbol positions on the reel can be sliced to expand the win ways which is indicated by a tombstone and the number of win ways in that position. The tombstones with the expanded win ways remain over respins, into and during free spins until the end of the game round. The slicing is triggered by Grim Reaper attacks and Sudden Death events. Maximum win ways per symbol position is 10.
+
+13. A paying symbol appearing in a tombstone will expand to fill each of the expanded win ways. This is valid for this position only and does not affect the underlying reel when spinning out.
+
+14. A Wild symbol has a Wild multiplier of x1 when it first appears on the reels. The multiplier counts as the number of wilds on that position.
+
+15. A Wild symbol on a tombstone position has its Wild multiplier multiplied with the ways provided by the tombstone to give the total number of wilds on that position.
+
+16. A Phoenix Wild is a Wild symbol with a jumping feature. It remains on the reels during respins and between free spins. At each such spin it jumps to a new position. Before the first jump, it gets a Wild multiplier equal to the win ways indicated on the tombstone in that position, if any.
+
+17. Grim Reaper Wild is a Wild symbol appearing on reel 3-5 with a Walking feature triggering respins, expanding win ways and battling with the Phoenix Wild.
+
+18. After a win evaluation the Grim Reaper will attack all adjacent (above, below, left and right) symbol positions holding a High Value character or Phoenix Wild symbol. It will then trigger a respin and walk one reel to the left. Before the first walk, it gets a Wild multiplier equal to the win ways indicated on the tombstone in that position, if any. This repeats until it has walked out from the leftmost reel. The Grim Reaper may randomly appear again on reel 5 giving additional respins.
+
+19. Several Grim Reaper symbols may appear on the reels at the same time. Respins last until the last symbol has disappeared.
+
+20. When Grim Reaper attacks any of the 3 High Value character symbols, the symbol position will be sliced and get expanded win ways indicated by a tombstone. The expanded win ways is persistent during the entire game round over respins, into and between free spins.
+
+21. When Grim Reaper attacks a Phoenix Wild symbol there will be a battle with one of the following outcomes:
+- The Grim Reaper Wild gets a doubled Wild multiplier, or
+- The Phoenix Wild gets a doubled Wild multiplier, or
+- The Phoenix Wild jumps to a new location leaving a Feather Wild behind in the same position.
+
+22. A Feather Wild is a Wild symbol turning into a Phoenix Wild symbol at a following respin or free spin when it also gets its Wild multiplier from the tombstone in this position, if any, before it jumps to a new position.
+
+23. Sudden Death. Any symbol position not holding any sticky symbol (Phoenix Wild, Grim Reaper Wild, Feather Wild or Bonus) can be sliced and get expanding win ways indicated by a tombstone at any random time during spinning.
+
+24. Bonus game is triggered by 3, 4 or 5 Bonus symbols landing anywhere on the reels.
+- 3 Bonus symbols trigger 6 free spins with 1 Phoenix Wild symbol awarded.
+- 4 Bonus symbols trigger 8 free spins with 2 Phoenix Wild symbols awarded.
+- 5 Bonus symbols trigger 10 free spins with 3 Phoenix Wild symbols awarded.
+
+25. The awarded Phoenix Wild symbol(s) will spawn at any position of the triggering Bonus symbols, and given a Wild multiplier equal to the number of win ways in that position, before it jumps to a new position. The Phoenix Wild symbol(s) remains on the reels during the entire Bonus game and jump to new positions for each respin and free spin.
+
+26. All tombstones on the reels in the base game remain in the Bonus game. Phoenix Wild symbols in base game do not remain in the Bonus game.
+
+27. The Bonus game can retrigger. Giving additional free spins and Phoenix Wild symbols. Any already existing Phoenix Wild symbols remains.
+
+28. A game round ends if the maximum win is reached.
+
+29. Winnings are paid out at the end of a game round.
+
+30. No bets can be changed during a game round.
+
+31. The theoretical payout (RTP) is __RTP__.
+
+32. The game has a maximum win of __TBB__ the bet.
+
+33. In the event of malfunction all bets and wins are void.
+   
+Last updated 2022-02-24
+	]]></entry>
+
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">SUPER BONUS: Buy a game round triggering the Bonus game with 5 Bonus symbols, resulting in 10 free spins and 3 initial Phoenix Wild symbols. Cost is __X05_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X04">BIG BONUS: Buy a game round triggering the Bonus game with at least 4 Bonus symbols, resulting in 8 free spins and 2 initial Phoenix Wild symbols. Cost is __X04_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X03">BUY BONUS: Buy a game round triggering the Bonus game with at least 3 Bonus symbols, resulting in 6 free spins and 1 initial Phoenix Wild symbol. Cost is __X03_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X02">GRIM REAPER &amp; PHOENIX BATTLE: Buy a game round where a Phoenix Wild symbol and a Grim Reaper symbol triggers the battle between them. Cost is __X02_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X01">SUDDEN DEATH: Buy a game round were all symbol positions in a row will get a Sudden Death event creating expanded win ways in all symbol positions on the row. It can trigger for 1, 2 or 3 rows. Cost is __X01_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">
+Last updated 2023-02-05</entry>
+
+
+<!--Dialogs-->
+
+<!-- X-iter dialogs -->
+<entry key="X05B_">SUPER BONUS</entry>
+<entry key="X05B1">Trigger BONUS with 5 Bonus symbols</entry>
+<entry key="X05B2">10 Free Spins</entry>
+<entry key="X05B3">3 Phoenix Wilds</entry>
+
+<entry key="X04B_">BIG BONUS</entry>
+<entry key="X04B1">Trigger BONUS with minimum 4 Bonus symbols</entry>
+<entry key="X04B2">8 Free Spins</entry>
+<entry key="X04B3">2 Phoenix Wilds</entry>
+
+<entry key="X03B_">BUY BONUS</entry>
+<entry key="X03B1">Trigger BONUS with minimum 3 Bonus symbols</entry>
+<entry key="X03B2">6 Free Spins</entry>
+<entry key="X03B3">1 Phoenix Wild</entry>
+
+<entry key="X02B_">GRIM REAPER &amp; PHOENIX BATTLE</entry>
+<entry key="X02B1">Grim Reaper &amp; Phoenix Battle</entry>
+<entry key="X02B2">Doubling Wild Multiplier or additional Phoenix Wild</entry>
+<entry key="X02B3">Respins</entry>
+
+<entry key="X01B_">SUDDEN DEATH</entry>
+<entry key="X01B1">Sudden Death</entry>
+<entry key="X01B2">Complete row(s) of expanding win ways.</entry>
+
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 																			<!-- Backup alternative text -->
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry> 																  	<!-- Backup alternative text -->
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+</translation>

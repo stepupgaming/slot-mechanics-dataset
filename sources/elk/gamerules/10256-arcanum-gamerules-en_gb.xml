@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation language="en_gb">
+
+<!-- *************************************************************************************************
+
+	DO NOT TRANSLATE THE FOLLOWING:
+	
+	Arcanum 
+	Mirage 
+	Bonus
+	SPELLSTORM
+	Wild
+	
+	
+	
+****************************************************************************************************** -->
+
+
+
+<!-- GAME DOCUMENTATION ****************************************************************************** -->
+<entry key="gdd-description">
+
+Arcanum is a 6 columns x 7 rows slot with dropping symbols and cluster wins. The game comes with global multiplier, jumping Wild, explode feature, symbol transform, magic spells and bonus game.
+
+The bonus game is triggered by 3 or more bonus symbols to run a bonus game with bonus drops</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+
+<entry key="gdd-payline">Arcanum is a cluster game, where a cluster of 5 or more identical symbols which are either vertically or horizontally connected triggers a win.</entry>
+
+<entry key="gdd-bonusgame">3 or more bonus symbols trigger the bonus games. The global multiplier, spell inventory, mirror wizard symbols and the wizard´s win tracker are persistent when entering the bonus game and between bonus drops.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Cluster win</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 columns</entry>
+<entry key="gdd-kf-rows">7 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The Wild symbol substitutes for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.</entry>
+<entry key="gdd-sfs-2">The wizard symbol is a persistent Wild symbol that moves to a new empty symbol position after each win.</entry>
+<entry key="gdd-sfs-3">The mirror wizard symbol is a persistent Wild symbol that moves to a new empty symbol position after each win. The mirror wizard does not trigger any magical spells.</entry>
+<entry key="gdd-sfs-4">Explosive feature symbol triggers when no more winning combinations are in view. The explosive feature symbol removes all symbols, except bonus symbols and wizard symbols, in an area of 3x3, 5x5 or 6x7 symbols. All magical spells and multiplier symbols behind the removed payout symbols are collected.</entry>
+<entry key="gdd-sfs-5">The transform feature selects one payout symbol type on the grid and transforms it to an equal or higher value payout symbol type.</entry>
+<entry key="gdd-sfs-6">The multiplier symbol adds +1 to the global multiplier.</entry>
+<entry key="gdd-sfs-7">Global multiplier multiplies all winning combinations in view.</entry> 
+<entry key="gdd-sfs-8">The add Wild spell adds 1 additional Wild symbol to the grid.</entry>
+<entry key="gdd-sfs-9">The expanding spell replace all symbols in an area of 2x2, 3x3, 4x4, 5x5 or 6x6 with one payout symbol type.</entry>
+<entry key="gdd-sfs-10">The Wild column spell replaces all payout symbols with Wild symbols in the Wizard's column.</entry>
+<entry key="gdd-sfs-11">The Wild cross spell replaces all payout symbols in an X-shape with Wild symbols.</entry>
+<entry key="gdd-sfs-12">The Wild transform spell selects one, two, or three payout symbol types on the grid and transforms all selected symbols to Wild symbols.</entry>
+<entry key="gdd-sfs-13">3 or more bonus symbols trigger the bonus games.</entry>
+
+
+<entry key="gdd-xiterbutton-5">MIRAGE BONUS</entry> <!-- DNT -->
+<entry key="gdd-xiterbutton-4">BONUS</entry> <!-- DNT -->
+<entry key="gdd-xiterbutton-3">SPELLSTORM</entry> <!-- DNT -->
+<entry key="gdd-xiterbutton-2">MEGA HUNT</entry> 
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry> 
+
+
+
+<!-- Maxwin/Paytable General -->
+<gfx key="PaytableTxt">Paytable</gfx>
+<gfx key="HaveFunTxt">Have Fun!</gfx>
+<gfx key="GoodLuckTxt">Good Luck!</gfx>
+
+
+<!-- PAYTABLE *********************************************************************************** -->
+
+	<!-- Header Paytable -->
+	<gfx key="SymbolPayout">Symbol Payout</gfx>
+	<gfx key="WildSymbolsHeader">Wild Symbols</gfx>
+	<gfx key="BonusGameHeader">Bonus Game</gfx>
+	<gfx key="SuperBonusHeader">Super Bonus</gfx>
+	<gfx key="PaylinesHeader">Paylines</gfx>
+	<entry key="FreeSpinsSubHeader">Free Spins</entry>
+	<gfx key="WildSubHeader">Wild</gfx>
+	<gfx key="BonusSymbolSubHeader">Bonus Symbol</gfx>
+	<gfx key="SuperBonusSubHeader">Super Bonus</gfx>
+	<gfx key="BonusSubHeader">Bonus</gfx>
+	<entry key="WaysToWinTxt">Ways to win</entry>
+	<entry key="ConnectingLinesTxt">Connecting paylines</entry>
+
+
+
+
+
+
+<!-- Bonus game GENERAL ********************************************************************** -->
+<gfx key="BonusIntroTxt">Bonus</gfx>
+<gfx key="PlayedInTotal">played in total</gfx>
+<gfx key="TotalWin">Total Win</gfx>								        
+<gfx key="StartBtn">START</gfx>  											
+<entry key="BonusIntroMultiplier">Multiplier</entry>
+<entry key="FreedropsBonusTxt">Bonus Drops</entry>
+<gfx key="CoinsTxt">Coins</gfx>
+
+
+<!-- GAMERULES ******************************************************************************** -->
+* Unique Init ******************************
+<entry key="gamerule">Arcanum is a 6 columns and 7 rows slot with dropping symbols and cluster wins.</entry>
+
+* General Init *****************************
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. Only the largest cluster of the connected identical symbols is paid out.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>   
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+<entry key="gamerule">The game is played in two modes; normal mode and bonus mode with bonus drops.</entry>
+<entry key="gamerule">The Wild symbols substitute for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.</entry>
+
+
+* Game specific ****************************
+<entry key="gamerule">The game starts with the wizard symbol moving to an empty symbol position on the grid, followed by a symbol drop. 
+All wins in the current symbol drop are paid out and symbols which where part of a winning combination are removed. Revealed magical spells and multiplier symbols are collected.
+The wizard symbol moves to a new empty symbol position. 
+The remaining symbols fall vertically until they reach a resting position. New symbols drop in to fill the empty spaces.
+The avalanche continues as long as new winning combinations appear.</entry> 
+
+!--Wizard-->
+<entry key="gamerule">The wizard symbol is a persistant Wild symbol that moves to a new empty symbol position before every new symbol refill. Each game round guarantees a wizard symbol. The wizard symbol is not affected by gravity.</entry>
+
+!--Mirror Wizard-->
+<entry key="gamerule">The mirror wizard symbols may appear in any symbol drop. The mirror wizard symbol is a persistant Wild symbol that move to a new empty symbol position before every new symbol refill. The mirror wizard does not trigger any magical spells. The mirror wizard is not affected by gravity.</entry>
+
+!--Spell Orbs->
+<entry key="gamerule">Magical spells can be hidden behind the payout symbols and are collected if revealed behind a winning cluster. All collected magical spells are stored in the spell inventory.</entry> 
+
+!--Spells->
+<entry key="gamerule">There are 5 different magical spells, expanding, add Wilds, Wild transform, Wild column and Wild cross. The magical spells are triggered in this order.</entry>
+
+!--Activate spells-->
+<entry key="gamerule">The wizard win tracker keeps track of all cluster wins with the wizard symbol. 3 cluster wins, with the wizard symbol, completes the wizard win tracker. 
+When no more wins are in view and the tracker is completed, all stored magical spells in the spell inventory are triggered. When all magical spells are triggered, the spell inventory is emptied. The wizard win tracker resets and stays deactivated until the wizard moves to a new empty symbol position.</entry> 
+
+!--Expanding spells-->
+<entry key="gamerule">The expanding spell replaces all payout symbols in an area with one selected payout symbol type. Bonus symbols, wizard symbol, mirror wizard symbols and feature symbols are not replaced. The area depends on how many expanding spells are collected in the spell inventory. 
+- 1 collected expanding spell equals 2x2 size 
+- 2 collected expanding spell equals 3x3 size
+- 3 collected expanding spell equals 4x4 size
+- 4 collected expanding spell equals 5x5 size
+- 5 collected expanding spell equals 6x6 size.
+
+If the expanding spell selects the wizard symbol or a mirror wizard symbol, the wizard symbol or mirror wizard symbol expands to a big symbol of the stated size.
+If a big wizard symbol expands over a 1x1 wizard, the 1x1 wizard moves to a new symbol position on the grid and replaces the symbol on that position. </entry>
+
+!--Add wild spells-->
+<entry key="gamerule">The add Wild spell adds 1 additional Wild symbol to the grid for each collected add Wild spell.</entry>
+
+!--Wild column spells-->
+<entry key="gamerule">The Wild column spell replaces all payout symbols with Wild symbols in the wizard's column. Feature symbols, bonus symbols and mirror wizard symbols are not replaced.</entry>
+
+!--Wild Cross spells-->
+<entry key="gamerule">The Wild cross spell replace all payout symbols with Wild symbols in an X-shape, originating from the wizard symbol. Feature symbols, bonus symbols and mirror wizard symbols are not replaced.</entry>
+
+!--Wild Transform spells-->
+<entry key="gamerule">The Wild transform spell selects one, two, or three payout symbol types on the grid and transforms all selected symbols to Wild symbols.</entry>
+
+!--Feature->
+<entry key="gamerule">The transform feature symbol selects one payout symbol type on the grid and transforms all selected symbols to an equal or higher value payout symbol type. Transform feature triggers when no more winning combinations are in view.</entry> 
+
+<entry key="gamerule">The explosive feature symbol removes payout symbols in an area of 3x3, 5x5 or 6x7. All magical spells and multiplier symbols behind the removed symbols are collected. The explosive feature triggers when no more winning combinations are in view.</entry>
+
+<entry key="gamerule">The transform feature activates prior to the explosive feature.</entry>
+
+* Global Multiplier ****************************
+
+<entry key="gamerule">The global multiplier starts at x1 and multiplies all winning combinations in view. The global multiplier remains active until the end of the game round.</entry>
+
+
+* Multiplier symbols ****************************
+
+<entry key="gamerule">The multiplier symbols can be hidden behind the payout symbols and are collected if revealed behind a winning cluster. The multiplier symbol adds +1 to the global multiplier.</entry>
+
+
+* Bonus *************************************
+
+<entry key="gamerule">Three or more bonus symbols trigger the bonus game with 7 bonus drops. The bonus game starts at the end of the game round when there are no more winning combinations in view. 
+The global multiplier, spell inventory, mirror wizard symbols and the wizard´s win tracker are persistent when entering the bonus game and between bonus drops.
+
+- 3 bonus symbols trigger the bonus game with 7 bonus drops.
+- 4 bonus symbols trigger the Mirage bonus game, with 7 bonus drops and one additional mirror wizard symbol.
+- 5 bonus symbols trigger the Arcanum bonus game, with 7 bonus drops and two additional mirror wizard symbols.</entry>
+
+<entry key="gamerule">The extra drop symbols can be hidden behind the payout symbols and are collected if revealed behind a winning cluster. The extra drop symbol adds +1 to the bonus drop counter.</entry>
+
+<entry key="gamerule">The bonus game ends when no bonus drops remain or when the win cap has been reached.</entry>
+
+* General End *******************************
+<entry key="gamerule">Winnings are paid out at the end of a game round.</entry>
+<entry key="gamerule">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule" tags="mwp">The maximum total win is accumulated across all wins in the game round and can be obtained from one big win or several smaller wins. The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule">No bets can be changed during a game round.</entry>
+<entry key="gamerule">The theoretical return to player (RTP) is __RTP__.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">Last updated 2025-12-16</entry>
+
+
+
+<!-- X-iter RULES ***************************************************************************** -->
+<entry key="xiter-rule">The X-iter feature offers buy-in to different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">MIRAGE BONUS:
+Buy a bonus game with a guaranteed persistent mirror wizard feature. Cost is __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">BONUS:
+Buy a game round, triggering the bonus game. Cost is __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">SPELLSTORM:
+Buy a game round with one initial drop where potential magical spells and multiplier symbols underneath the grid are collected before the symbols drop in. Cost is __X03_MULTIPLIER__ the selected bet.</entry> 
+
+<entry key="xiter-rule" tags="X02">MEGA HUNT: 
+One drop with more than 8 times the chance to trigger the bonus game at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">BONUS HUNT:
+ One drop with more than 4 times the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The theoretical return to player (RTP) for all X-iter game modes are __RTP__.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+<entry key="xiter-rule" tags="lastupdated">Last updated 2025-12-16</entry>
+
+
+<!--Dialogs-->
+
+<!-- X-iter dialogs -->
+<entry key="X05B1">MIRAGE BONUS</entry>
+<entry key="X05B2">Play a bonus game with bonus drops</entry>
+<entry key="X05B3">Guaranteed persistent mirror wizard feature!</entry>
+
+<entry key="X04B1">BONUS</entry>
+<entry key="X04B2">Play a bonus game with bonus drops!</entry>
+
+<entry key="X03B1">SPELLSTORM</entry>
+<entry key="X03B2">Guaranteed magical spell collection before the initial drop!</entry>
+
+<entry key="X02B1">MEGA HUNT</entry>
+<entry key="X02B2">More than 8 times the chance to trigger the bonus game!</entry>
+
+<entry key="X01B1">BONUS HUNT</entry>
+<entry key="X01B2">More than 4 times the chance to trigger the bonus game!</entry>
+
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 																			
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry> 																  	
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+
+
+</translation>

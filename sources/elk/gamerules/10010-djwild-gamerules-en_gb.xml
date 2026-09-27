@@ -1,0 +1,111 @@
+<!--English en_gb-->
+<translation language="en_gb">
+<!--GENERIC**********************************-->	
+<!--Copy to start.html-->	
+	<entry key="retry">Retry</entry>
+	<entry key="lobbytext">Lobby</entry>
+	<div id="browserwarning" lang="en_gb" lobby="Lobby">We are sorry, but your browser is not supported. We recommend the latest version of Chrome or FireFox.</div>
+	<div id="loadtime" lang="en_gb" retry="Reload" lobby="Lobby">We are sorry, but it seems that the loading took longer than usual. Please try to reload.</div>	
+
+<!--Loader-->
+	<entry key="rotate">Please rotate the device.</entry>
+	<entry key="loaded">loaded</entry>
+<!--Welcome-->
+	<entry key="sound">Sound</entry>
+<!--Replay-->
+	<entry key="replay">Your previous game result was not completed and your last spin will be replayed.</entry>
+
+
+<!--Auto Spin jurisdiction-->
+	<entry key="stopOnJackpot">Stop Auto Spin 
+on Jackpot win</entry>
+	<entry key="stopOnWin">STOP AUTO SPIN IF 
+SINGLE WIN EXCEEDS</entry>
+	<entry key="AutospinMenuSetLossLimit">SET LOSS 
+LIMIT</entry>
+	<entry key="AutospinMenuSelectBetlevel">SELECT 
+BET LEVEL</entry>
+	<entry key="activated">
+ACTIVATED</entry>
+
+<!--Reality Check jurisdiction-->
+	<entry key="realitycheckInitMessage">Local jurisdiction requires you to select a time interval, to be shown a friendly reminder of how long you’ve been playing.</entry>
+	<entry key="setRealityCheckInterval">SELECT REALITY CHECK 
+INTERVAL</entry>
+	<entry key="openHistory">Open history…</entry>
+	<entry key="exitGame">EXIT GAME</entry>
+	<entry key="continueGame">CONTINUE</entry>
+	<entry key="reallyLeaveGame">You are about to leave the game.</entry>
+	<entry key="minutesShort">min</entry>
+ 	<entry key="hoursShort">h</entry>
+
+
+<!--Interface-->	
+	<entry key="coinsPerBet">COINS PER BET 100</entry>
+	<entry key="balance">BALANCE</entry>
+	<entry key="balanceFreerounds">FREE ROUNDS: %s, Total win: %s</entry>
+	<entry key="demobalance">DEMO PLAY</entry>
+	<entry key="win">WIN</entry>
+	<entry key="bet">BET</entry>
+	<entry key="totalbet">Total bet</entry>
+	<entry key="stay">Stay</entry>
+	<entry key="leave">Leave</entry>
+	<entry key="AUTO SPIN"></entry>
+	<entry key="STOP">STOP</entry>
+	<entry key="accept">Accept</entry>
+	<entry key="reject">Reject</entry>
+	<entry key="ok">OK</entry>
+
+	<entry key="percentOfBalance">% OF BALANCE</entry>
+
+<!--Strategy-->
+	<entry key="optimizerHigh">High Roller</entry>
+	<entry key="optimizerLow">Casual player</entry>
+
+	<entry key="select">Select strategy</entry>
+	<entry key="strategy0">No strategy selected. Traditional betting activated.
+
+Try different Betting Strategies by scrolling to the right.</entry>
+
+	<entry key="strategyTitle1">Jumper</entry>
+	<entry key="strategyTitle2">Leveller</entry>
+	<entry key="strategyTitle3">Booster</entry>
+	<entry key="strategyTitle4">Optimizer</entry>
+
+	<entry key="strategyText1">Raises on win</entry>	
+	<entry key="strategyText2">Raises after 5 consecutive losses</entry>	
+	<entry key="strategyText3">Raises on loss</entry>
+	<entry key="strategyText4">Bets a % of balance</entry>
+
+	<entry key="strategyTextLong1">Raises bet 1 level after every winning round, until reaching 4 levels above base bet (e.g. to 10 times base bet). 
+
+Resets after a loss.</entry>
+	<entry key="strategyTextLong2">Raises bet 2 levels after 5 consecutive losses. A repetition increases the bet 2 more levels (e.g. to 10 times base bet). 
+
+Resets after a win.</entry>
+	<entry key="strategyTextLong3">Raises bet 1 level after a loss, until reaching 4 levels above base bet (e.g. to 10 times base bet). 
+
+Resets after a win.</entry>
+	<entry key="strategyTextLong4">Your bet level will be changed automatically based on the percent of your balance.
+	
+Pick your percentage to the left</entry>
+
+	<entry key="strategyActiveBetting">Activate Betting Strategy through the Bet Level selector.</entry>
+<!--Game puff-->
+
+<!--Settings-->
+	<entry key="btnSound">Sound on</entry>
+	<entry key="btnFx">Game sounds</entry>
+	<entry key="btnMusic">Music</entry>
+	<entry key="btnQuickSpin">Quick play</entry>
+	<entry key="btnCoins">Show in coins</entry>
+	<entry key="btnPaytable">Paytable</entry>
+	<entry key="btnSettings">Settings</entry>
+	<entry key="btnRules">Rules</entry>
+	<entry key="btnLobby">Lobby</entry>
+
+	<entry key="1-settingshead">Settings</entry>
+	<entry key="1-sethead">Settings</entry>
+	<entry key="soundonoff">Sound on / off</entry>
+	
+</translation>

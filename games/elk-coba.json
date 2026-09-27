@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:50:07Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Coba",
+    "slug": "elk-coba",
+    "provider_game_id": "10077",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10077&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/coba/build-261966/assets/translation/coba-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 7 rows and 6-7 columns"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": "horizontal_or_vertical",
+    "notes": "Cluster wins (5 connecting symbol clusters)"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "point is added to the Snake progress meter. The remaining symbols drop down and new symbols drop in to fill the symbol grid. If new winning combinations occur, this avalanche repeats.\nSnake progress meter\nThe Snake progress meter has 4 levels. All winning symbols add progress to the meter. Activating any of the levels will release snakes to enter the grid.\nLevel 1: 1 snake enters\nLevel 2: 2 snakes enter\nLevel 3: 3 snakes enter\nLevel 4: 6 snakes enter\nA snake is a linear cluster of symbols movin"
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The Wild symbol substitutes for any paying symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Coba: paid spin on 7x7. Cluster wins (5 connecting symbol clusters). Avalanche/tumble after wins. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 7x7. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Cluster wins (5 connecting symbol clusters)",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "point is added to the Snake progress meter. The remaining symbols drop down and new symbols drop in to fill the symbol grid. If new winning combinations occur, this avalanche repeats.\nSnake progress meter\nThe Snake progress meter has 4 levels. All winning symbols add progress to the meter. Activating any of the levels will release snakes to enter the grid.\nLevel 1: 1 snake enters\nLevel 2: 2 snakes enter\nLevel 3: 3 snakes enter\nLevel 4: 6 snakes enter\nA snake is a linear cluster of symbols movin",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Cluster wins (5 connecting symbol clusters)",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "point is added to the Snake progress meter. The remaining symbols drop down and new symbols drop in to fill the symbol grid. If new winning combinations occur, this avalanche repeats.\nSnake progress meter\nThe Snake progress meter has 4 levels. All winning symbols add progress to the meter. Activating any of the levels will release snakes to enter the grid.\nLevel 1: 1 snake enters\nLevel 2: 2 snakes enter\nLevel 3: 3 snakes enter\nLevel 4: 6 snakes enter\nA snake is a linear cluster of symbols movin",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Coba (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Start by activating Level 4, where 6 snakes are released. Cost is __X05_MULTIPLIER__ the bet.\nQUETZALCÓATL: \nStart by activating Level 1. Level 1 and Level 2 wi; Boa Constructor (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Start by activating Level 1. Snakes will be longer when released. Cost is __X03_MULTIPLIER__ the bet.; Viper Active (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Start by activating Level 1, where 1 snake is released. Cost is __X02_MULTIPLIER__ the bet.\nPRAY TO QUETZALCÓATL: \nStart from the base game. Level 1 and Level 2",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 3
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Coba",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Start by activating Level 4, where 6 snakes are released. Cost is __X05_MULTIPLIER__ the bet.\nQUETZALCÓATL: \nStart by activating Level 1. Level 1 and Level 2 will release 3 snakes. Cost is __X04_MULTIPLIER__ the bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Boa Constructor",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Start by activating Level 1. Snakes will be longer when released. Cost is __X03_MULTIPLIER__ the bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Viper Active",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Start by activating Level 1, where 1 snake is released. Cost is __X02_MULTIPLIER__ the bet.\nPRAY TO QUETZALCÓATL: \nStart from the base game. Level 1 and Level 2 will release 3 snakes. Cost is __X01_MULTIPLIER__ the bet.\nAn X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.\nThe X-iter features can only be activated in the base game.\nThe theoretical payout (RTP) for all X-iter game modes are __RTP__.\nThe minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.\nAll game rules apply in X-iter mode.\nLast updated 2024-04-12",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/coba/build-261966/assets/translation/coba-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10077-coba-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:50:07Z",
+      "quote_or_excerpt": "Key features\nName in English Coba\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster wins (5 connecting symbol clusters)\nJackpot No\nReels 7 reels\nRows 6-7 columns\n\nGame description\nDeep inside in the Mexican jungle lies the mysterious COBA temple of the worshiped snake god Quetzalcoatl. The temple is protected by his snakes and temple traps. Your goal is to climb the temple and level up rewarded by snakes entering the grid, which will help with larger win clusters and Multiplying Wild Multipliers.\n\n COBA is a cluster game with symbol win explosions and symbol gravity to keep the game going."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/coba/build-261966/assets/translation/coba-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10077-coba-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:50:07Z",
+      "quote_or_excerpt": "is a 7 rows and 6-7 columns slot with a hexagonal symbol grid with cluster wins, dropping symbols and a snake feature of walking clusters.\nThe minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.\nEach bet is __CPBB__ coins."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/coba/build-261966/assets/translation/coba-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10077-coba-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:50:07Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nCOBA!: \nStart by activating Level 4, where 6 snakes are released. Cost is __X05_MULTIPLIER__ the bet.\nQUETZALCÓATL: \nStart by activating Level 1. Level 1 and Level 2 will release 3 snakes. Cost is __X04_MULTIPLIER__ the bet.\nBOA CONSTRUCTOR: \nStart by activating Level 1. Snakes will be longer when released. Cost is __X03_MULTIPLIER__ the bet.\nVIPER ACTIVE: \nStart by activating Level 1, where 1 snake is released. Cost is __X02_MULTIPLIER__ the bet.\nPRAY TO QUETZALCÓATL: \nStart from the base game. Level 1 and Level 2 will release 3 snakes. Cost is __X01_MULTIPLIER__ the bet.\nAn X-iter feature is purchased by pressing the X-iter button, s"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/coba/build-261966/assets/translation/coba-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10077-coba-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:50:07Z",
+      "quote_or_excerpt": "Game description\nDeep inside in the Mexican jungle lies the mysterious COBA temple of the worshiped snake god Quetzalcoatl. The temple is protected by his snakes and temple traps. Your goal is to climb the temple and level up rewarded by snakes entering the grid, which will help with larger win clusters and Multiplying Wild Multipliers.\n\n COBA is a cluster game with symbol win explosions and symbol gravity to keep the game going. Winnings are collected towards level ups where \"walking cluster\" snakes enter the game alone or in larger groups. The snakes eat symbols to grow and stay alive to create even larger win clusters for big win crescendos, over and over again.\n\n Snakes crossing each other creates Double Multiplied Wild symbols which will keep doubling for any new crossing.\n\n There is no separate bonu"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/coba/build-261966/assets/translation/coba-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10077-coba-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:50:07Z",
+      "quote_or_excerpt": "Key features\nName in English Coba\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster wins (5 connecting symbol clusters)\nJackpot No\nReels 7 reels\nRows 6-7 columns\n\nGame description\nDeep inside in the Mexican jungle lies the mysterious COBA temple of the worshiped snake god Quetzalcoatl. The temple is protected by his snakes and temple traps. Your goal is to climb the temple and level up rewarded by snakes entering the grid, which will help with larger win clusters and Multiplying Wild Multipliers.\n\n COBA is a cluster game with symbol win explosions and symbol gravity to keep the game going. Winnings are collected towards level ups where \"walking cluster\" snakes enter the game alone or in larger groups. The snakes eat symbols to grow and stay alive to create even larger win clusters for big win crescendos, over and over again.\n\n Snakes crossing each other creates Double Mul"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/coba/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:50:07Z",
+      "quote_or_excerpt": "Demo launcher gameid=10077; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins.modes",
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-coba.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

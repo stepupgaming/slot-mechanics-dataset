@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation language="en_gb">
+
+<!-- *************************************************************************************************
+
+DO NOT TRANSLATE THE FOLLOWING:
+	Ashoka Eternal
+	
+	wild / Wild / WILD
+	
+
+Feel free to translate the following:
+=====================================...
+	
+	BONUS HUNT   -   Can be translated.
+	Free Drops  -   Can be kept "as is",  but please translate if there is a native word/phrase commonly used. Note, for German, we prefer it to be translated.
+	Sticky - Do NOT translate this. 
+	
+	
+	...
+
+****************************************************************************************************** -->
+
+
+
+<!-- GAME DOCUMENTATION ****************************************************************************** -->
+<entry key="gdd-description">
+Cluster Kingdom is a cluster game with 5 columns by 5 rows. The game comes with multiplier Wilds, walking Wilds, upgrade feature, rearrange feature, placing Wild feature, sticky redrop and walking bonus triggers. 
+All feature symbols ( King, Queen, Princess and Knight) are wild symbols. 
+Multiplier symbols adjacent to each other multiply their value and add it to one of the multiplier symbols, the other multiplier symbol becomes a Wild symbol. 
+
+
+The bonus game triggers when the Queen symbol and the King symbol are adjacent to each other. The bonus game runs 6 free drops.
+The mini bonus game triggers when the Princess symbol and the King symbol are adjacent to each other. The mini bonus game runs 3 free drops with increasing persistent multiplier Wilds.
+The super bonus game triggers when the Princess symbol, the Queen symbol and the King symbol are adjacent to each other. The super bonus game runs 6 free drops with increasing persistent multiplier Wilds.
+The Queen symbol and the Princess symbol walk one step towards the King symbol after each win and before refill. 
+</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+
+<entry key="gdd-payline">Cluster Kingdom is a cluster game where a cluster of 5 or more identical symbols which are either vertically or horizontally connected triggers a win.</entry>
+
+<entry key="gdd-bonusgame">The Queen symbol and the King symbol adjacent to each other trigger the free drops bonus game. Player gets 6 free drops. Bonus game can be retriggered.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Cluster Wins</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">5 columns</entry>
+<entry key="gdd-kf-rows">5 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The Wild symbol substitutes for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.</entry>
+<entry key="gdd-sfs-2">The Princess symbol places one or more wild symbols on the grid after each win.</entry>
+<entry key="gdd-sfs-3">The Queen symbol rearranges symbols horizontally and vertically adjacent to the Queen symbol. </entry>
+<entry key="gdd-sfs-4">The King symbol choses the lowest payout symbol type adjacent to the King symbol and upgrades these symbols to the highest adjacent payout symbol.</entry>
+<entry key="gdd-sfs-5">The Knight Symbols are multiplier wilds.</entry>
+<entry key="gdd-sfs-6">The sticky redrops feature selects one paying symbol. All matching paying symbols will become sticky on the grid. Landing one or more new matching paying symbols will award one redrop, potential winnings are paid out when no additional matching symbols appear. Wild and Multiplier Wilds are persistent during sticky redrops.</entry>
+<entry key="gdd-sfs-7">The King symbol adjacent to the Queen symbol triggers the free drops bonus game.</entry>
+
+
+<entry key="gdd-xiterbutton-5">SUPER BONUS</entry>
+<entry key="gdd-xiterbutton-4">BONUS</entry>
+<entry key="gdd-xiterbutton-3">MINI BONUS</entry>
+<entry key="gdd-xiterbutton-2">STICKY REDROPS</entry>
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>
+
+
+
+<!-- Maxwin/Paytable General -->
+<gfx key="PaytableTxt">Paytable</gfx>
+<gfx key="HaveFunTxt">Have Fun!</gfx>
+<gfx key="GoodLuckTxt">Good Luck!</gfx>
+
+
+
+
+
+
+<!-- PAYTABLE *********************************************************************************** -->
+														 
+<!-- Header Paytable -->
+	<gfx key="BigHeaderStickyRedrops">Sticky Redrops</gfx> 	<!-- translate Redrops, NOT Sticky-->
+	<gfx key="BigHeaderWildSymbols">Wild Symbols</gfx> 	<!-- translate -->
+	<gfx key="BigHeaderFeatureSymbols">Feature Symbols</gfx> 	<!-- translate -->
+	<gfx key="BigHeaderSymbolPayout">Symbol Payout</gfx> 	<!-- translate -->
+	<gfx key="BigHeaderBonusGame">Bonus Game</gfx> 	<!-- translate -->
+	<gfx key="BigHeaderSpecialBonus">Special Bonus</gfx> 	<!-- translate -->
+	<gfx key="PaylinesHeader">Paylines</gfx> 	<!-- translate -->
+
+	<!-- Subheader Paytable -->
+	<gfx key="SubHeaderStickyRedrops">Sticky Redrops</gfx> 	<!-- translate Redrops, NOT Sticky-->
+	<gfx key="SubHeaderMultiplierWild">Multiplier Wild</gfx> 	<!-- translate Multiplier-->
+	<gfx key="SubHeaderBonusGame">Bonus Game</gfx> 	<!-- translate -->
+	<gfx key="SubHeaderMultiplierWildSymbol">Multiplier Wild Symbol</gfx> <!-- translate Multiplier and Symbol -->
+	<gfx key="SubHeaderWildSymbol">Wild Symbol</gfx> <!--  translate inly Symbol -->
+	<gfx key="SubHeaderPrincessSymbol">Princess Symbol</gfx> <!-- translate -->
+	<gfx key="SubHeaderKingSymbol">King Symbol</gfx> <!-- translate -->
+	<gfx key="SubHeaderQueenSymbol">Queen Symbol</gfx> <!-- translate -->
+	<gfx key="SubHeaderFreeSpins">Free Drops</gfx> <!-- translate -->
+	<gfx key="SubHeaderMiniBonusGame">Mini Bonus Game</gfx> <!-- translate -->
+	<gfx key="SubHeaderSuperBonusGame">Super Bonus Game</gfx> <!-- translate -->
+	<gfx key="SubHeaderWild">Wild</gfx> <!-- translate -->
+
+	
+
+
+	<!-- Text for Paytable -->
+	<entry key="TxtStickyRedrops">Awards one additional redrop for every redrop with at least one new matching symbol. Feature pays out when no additional matching symbols appear.</entry>
+	<entry key="TxtWild">The Wild symbols substitute for any paying symbol.</entry>
+	<entry key="TxtMultiplierWild">The multiplier Wild symbol multiplies the winning cluster with its multiplier.</entry>
+	<entry key="TxtPrincessSymbol">Places 1-4 wild symbols on the game grid.</entry>
+	<entry key="TxtKingSymbol">Upgrades one payout symbol type to a higher value payout symbol type.</entry>
+	<entry key="TxtQueenSymbol">Rearranges symbols horizontally and vertically adjacent to the Queen symbol.</entry>
+	<entry key="TxtBonusGame">Triggers the bonus game and runs 6 free drops when the King symbol and the Queen symbol are connected horizontally or vertically.</entry>
+	<entry key="TxtBonusTrigger">The Queen symbol moves one symbol position towards the King symbol after each win.</entry>
+	<entry key="TxtSuperBonus">The Super bonus game runs 6 free drops with a guaranteed increasing persistent multiplier Wild.</entry>
+	<entry key="TxtMiniBonus">The mini bonus game runs 3 free drops with a guaranteed increasing persistent multiplier Wild.</entry>	
+	<entry key="WaysToWinTxt">Ways to win</entry>
+	
+
+
+<!--INTRO-->
+
+
+<!-- Bonus game GENERAL ********************************************************************** -->
+<gfx key="BonusIntroTxt">Bonus</gfx> <!-- translate -->
+<gfx key="PlayedInTotal">played in total</gfx> <!-- translate -->
+<gfx key="TotalWin">Total Win</gfx>								        <!-- TRANSLATE (even if in Sentence Case)-->
+<entry key="SpinOfSpin">of</entry> <!-- translate -->
+<entry key="StartBtn">START</entry>  											<!-- TRANSLATE (even if in CAPITALs)-->
+<entry key="BonusIntroMultiplier">Multiplier</entry> <!-- translate -->
+<entry key="FreedropsBonusTxt">Free Drops</entry> <!-- translate -->
+<gfx key="WinUpToTxt">Win up to</gfx>     <!-- translate -->
+<gfx key="CoinsTxt">coins</gfx>     <!-- translate -->
+
+
+<!-- GAMERULES ******************************************************************************** -->
+
+* Unique Init ******************************
+<entry key="gamerule">Cluster Kingdom is a cluster game with 5 columns by 5 rows and dropping symbols. </entry>
+
+* General Init *****************************
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. Only the largest cluster of the connected identical symbols is paid out.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>     <!-- Translate "Settings" keeping Capitalization. (It is a name of a button.) -->
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+<entry key="gamerule">The game is played in two modes; normal mode and bonus mode with free drops.</entry>
+<entry key="gamerule">The Wild symbols substitute for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.</entry>
+
+
+
+* Game specific ****************************
+
+<entry key="gamerule">A game round starts with a new set of symbols added to the game.
+Winning symbols and all non winning symbols of the same type as the winning symbols are removed from the grid.
+The grid fills up with new symbols. Any new winning combinations are paid and the round continues until there are no more wins.</entry>
+
+* Sticky Redrops ********************************
+<entry key="gamerule">The Sticky redrops feature selects one paying symbol. All matching paying symbols will become sticky on the grid. Landing one or more new matching paying symbols will award one redrop, potential winnings are paid out when no additional matching symbols appear. Wild and multiplier Wilds are persistent during sticky redrops. Feature symbols keep inactive until end of the sticky redrops.</entry>
+ 
+
+* Multiplier Wild ********************************
+<entry key="gamerule">Multiplier wilds add their value to winning combinations that they're part of. Multiplier wilds are sticky until end of the game round.</entry>
+
+
+* Multiplier Battle ********************************
+<entry key="gamerule">Multiplier wild symbols adjacent to each other multiply their value and add the sum of the multiplication to one of the multiplier wild symbols, the other multiplier symbol becomes a wild symbol.</entry>
+
+* Princess Feature ********************************
+<entry key="gamerule">The Princess feature places 1-4 wild symbols on the game grid. When the King symbol is in view, the princess symbol moves one step towards the King symbol after each win and before refill.</entry>
+
+* King Feature ********************************
+<entry key="gamerule">The King feature choses the lowest payout symbol type adjacent to the King symbol and upgrades these symbols to the highest adjacent payout symbol.</entry>
+
+* Queen Feature ********************************
+<entry key="gamerule">The Queen symbol switches the places of adjacent symbols. When the King symbol is in view, the Queen symbol moves one step towards the King symbol after each win and before refill.</entry>
+
+
+
+
+** Bonus *****************************************
+
+<entry key="gamerule">When the King symbol and the Queen symbol are adjacent connected to each other the bonus game is triggered with a 6 free drops bonus game. Multipliers are persistent when entering the bonus game and between free drops</entry>
+<entry key="gamerule">The bonus game starts with a new set of symbols in the grid.</entry>
+<entry key="gamerule">To trigger the super bonus game the Queen symbol, the Princess symbol and the King symbol need to be adjacent to each other. In the super bonus game you get 6 free drops and increasing persistent multiplier Wild symbols.</entry>
+<entry key="gamerule">The mini bonus game triggers when the Princess symbol and the King symbol are adjacent connected to each other. In the mini bonus game you get 3 free drops and increasing persistent multiplier wild symbols.</entry>
+<entry key="gamerule">In the super bonus and mini bonus game, the increasing multiplier wild symbols increase the multiplier with +1 when part of one or more winning combination.</entry>
+<entry key="gamerule">The bonus games can be retriggered.</entry>
+
+* General End *******************************
+<entry key="gamerule">Winnings are paid out at the end of a game round.</entry>
+<entry key="gamerule">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">No bets can be changed during a game round.</entry>
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">Last updated 2024-10-24</entry>
+
+
+
+<!-- X-iter RULES ***************************************************************************** -->
+<entry key="xiter-rule">The X-iter feature offers buy-in to different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">SUPER BONUS: <!-- translate -->
+Buy a game round triggering the super bonus game, with increasing persistent multiplier Wilds. Cost is __X05_MULTIPLIER__ the selected bet.</entry> <!-- translate -->
+
+<entry key="xiter-rule" tags="X04">BONUS: <!-- translate -->
+Buy a game round that triggers the bonus game. Cost is __X04_MULTIPLIER__ the selected bet.</entry> <!-- translate -->
+
+<entry key="xiter-rule" tags="X03">MINI BONUS: <!-- translate -->
+Buy a game round that triggers the mini bonus game, with increasing persistent multiplier Wilds. Cost is __X03_MULTIPLIER__ the selected bet.</entry> <!-- translate -->
+
+<entry key="xiter-rule" tags="X02"> STICKY REDROPS: <!-- translate Charged -->
+Buy a game round with sticky redrops. Cost is __X02_MULTIPLIER__ the selected bet.</entry> <!-- translate but not Wild-->
+
+<entry key="xiter-rule" tags="X01">BONUS HUNT: <!-- translate -->
+Buy a game round with more than triple the chance to trigger the bonus game. Cost is __X01_MULTIPLIER__ the selected bet.</entry> <!-- translate -->
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes is __RTP__.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-08-13</entry>
+
+
+<!--Dialogs-->
+
+<!-- X-iter dialogs -->
+<entry key="X05B1">SUPER BONUS</entry> <!-- translate -->
+<entry key="X05B2">Play a bonus game with increasing persistent multiplier Wilds</entry> <!-- translate -->
+<entry key="X05B3">6 Free Drops</entry> <!-- translate -->
+
+<entry key="X04B1">BONUS</entry> <!-- translate -->
+<entry key="X04B2">Play a bonus game</entry> <!-- translate -->
+<entry key="X04B3">6 Free Drops</entry> <!-- translate -->
+
+<entry key="X03B1">MINI BONUS</entry> <!-- translate -->
+<entry key="X03B2">Play a bonus game with increasing persistent multiplier Wilds.</entry> <!-- translate -->
+<entry key="X03B3">3 Free Drops</entry> <!-- translate -->
+
+<entry key="X02B1">STICKY REDROPS</entry>
+<entry key="X02B2">Guaranteed Sticky Redrop </entry>
+
+<entry key="X01B1">BONUS HUNT</entry> <!-- translate -->
+<entry key="X01B2">More than triple the chance to trigger the bonus game</entry> <!-- translate -->
+
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 																			<!-- Backup alternative text -->
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry> 																  	<!-- Backup alternative text -->
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+
+
+</translation>

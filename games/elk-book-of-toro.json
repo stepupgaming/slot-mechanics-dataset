@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Book of Toro",
+    "slug": "elk-book-of-toro",
+    "provider_game_id": "10068",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10068&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/bookoftoro/build-253698/assets/translation/bookoftoro-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 3 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 10,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": null
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "The Toro moves leftwards until he spins out from the first reel, generating one respin for each step.\nBook symbols are kept sticky as long as at least one Toro is in view. A potential Bonus mode will be triggered when all wins have been paid out and all Toro symbols have left the screen.\nTwo or more mummy symbols trigger Mummy Respin."
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Book of Toro: paid spin on 3x5. paylines. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 3x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: paylines",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "paylines",
+    "notes": "ence in Settings.\nWinnings are presented in the player's currency.\nBook of Toro is played in two modes; Normal mode and Bonus mode with free spins.\nThe wild and the wild book symbol substitute for any symbol except the mummy, Toro and other wild symbols.\nA payline of only wild symbols pay as"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": "Free spins can be retriggered.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Super bonus symbol combination triggers the super bonus game",
+        "end_condition": "the Bonus mode ends.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "Super bonus symbol combination triggers the super bonus game",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Book of Toro."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Mummy Respin (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): 1 spin with guaranteed Mummy Respin at the cost of __X01_MULTIPLIER__ the selected bet.; Toro (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): 1 spin with a guaranteed Toro at the cost of __X02_MULTIPLIER__ the selected bet.; Mini Bonus (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): 3 spins with a randomly selected expansion symbol applicable for the scatter pay feature at the cost of __X03_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the Free Spins bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the Super Free Spins bonus game at the cost of __X05_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Mummy Respin",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "1 spin with guaranteed Mummy Respin at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Toro",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "1 spin with a guaranteed Toro at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Mini Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "3 spins with a randomly selected expansion symbol applicable for the scatter pay feature at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the Free Spins bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the Super Free Spins bonus game at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookoftoro/build-253698/assets/translation/bookoftoro-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10068-bookoftoro-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Book of Toro\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\nBook of Toro is a 5 reel, 3 rows slot with spinning reels and 10 paylines.\nThe minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\nEach bet is __CPBB__ coins.\nWins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out.\nA game round starts on the selected bet level when the player hits the Spin button.\nThe game can be played automati"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookoftoro/build-253698/assets/translation/bookoftoro-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10068-bookoftoro-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 5 reel, 3 rows slot with spinning reels and 10 paylines.\nThe minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\nEach bet is __CPBB__ coins."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookoftoro/build-253698/assets/translation/bookoftoro-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10068-bookoftoro-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nMummy Respin: \n1 spin with guaranteed Mummy Respin at the cost of __X01_MULTIPLIER__ the selected bet.\nToro: \n1 spin with a guaranteed Toro at the cost of __X02_MULTIPLIER__ the selected bet. All book symbols that appear during the respins remain Sticky.\nMini Bonus: \n3 spins with a randomly selected expansion symbol applicable for the scatter pay feature at the cost of __X03_MULTIPLIER__ the selected bet.\nBonus:\nGuarantees a game round with entry to the Free Spins bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nSuper Bonus:\nGuarantees a game round with entry to the Super Free Spins bonus game at the cost of __X05_MULTIPL"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookoftoro/build-253698/assets/translation/bookoftoro-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10068-bookoftoro-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\n\nGame rules\nBook of Toro is a 5 reel, 3 rows slot with spinning reels and 10 paylines.\nThe minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\nEach bet is __CPBB__ coins.\nWins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out.\nA game round starts on the selected bet level when the player hits the Spin button.\nThe game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\nWinnings and winning combinations are paid out according to the Paytable.\nWinnings are presented in the player's currency or in coins. The player can cha"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bookoftoro/build-253698/assets/translation/bookoftoro-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10068-bookoftoro-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Book of Toro\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\nBook of Toro is a 5 reel, 3 rows slot with spinning reels and 10 paylines.\nThe minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\nEach bet is __CPBB__ coins.\nWins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out.\nA game round starts on the selected bet level when the player hits the Spin button.\nThe game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\nWinnings and winning combinations are paid out according to the Paytable.\nWinnings are presented in the player's currency or in coins. The pla"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/book-of-toro/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10068; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-book-of-toro.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

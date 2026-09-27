@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation language="en_gb">
+
+<!--
+TRANSLATIONS INFO
+
+=================================
+Words not translated in this game
+=================================
+
+Knight Fight
+wild, Wild, Wilds (partly translated e.g. wild symbol becomes wild-symbol in Swedish)
+free drop, free drops, Free Drop, Free Drops
+Switcheroo (feature name)
+GOLDEN APPLE FEAST (feature name)
+MAX WIN
+
+==============
+SPECIAL RULES:
+==============
+
+In German (de_de), translate all words, but in parenthesis after the non translated words, like this:
+Cygnus 3 wird in drei Modi gespielt, dem normalen Modus, dem Cygnus-Wheel-Modus und dem Bonusmodus mit Free Drops (Freispiele).
+
+In Bulgarian, translate everything, even non translatable words, like this:
+<gfx key="paytableFreeDropsTxt">БЕЗПЛАТНИ ПАДАНИЯ</gfx>
+Cygnus 3 се играе в три режима: нормален режим, режим Cygnus Wheel и бонус режим с безплатни падания.
+
+
+===========================================================
+Short texts / names used in Knight Fight
+Cash and Collect removed as this was never used
+========================================================-->
+
+<gfx key="paytableBonusGameTxt">BONUS GAME</gfx>
+<gfx key="paytableCollectingBirdsTxt">COLLECTING KNIGHTS</gfx> <!-- As in 'knights that collect symbols' -->
+<gfx key="paytableWildSymbolSubTxt">WILD SYMBOL</gfx>
+<gfx key="SwitcherooTxt">SWITCHEROO</gfx> <!-- Not translated -->
+<gfx key="OfTxt">OF</gfx>
+<gfx key="PlayedInTotalTxt">Played in Total</gfx>
+<gfx key="StartTxt">START</gfx>
+<gfx key="SymbolPayoutTxt">SYMBOL PAYOUT</gfx>
+<gfx key="TotalWinTxt">Total Win</gfx>
+<gfx key="WinUpToTxt">WIN UP TO</gfx>
+<gfx key="UpgradeSubTxt">UPGRADE</gfx>
+<gfx key="TransformSubTxt">TRANSFORM</gfx>
+<gfx key="BombSubTxt">DRAGON FLAME</gfx>
+<gfx key="CoinSubTxt">COIN</gfx>
+<gfx key="CoinsSubTxt">COINS</gfx>
+<gfx key="BonusSymbolSubTxt">BONUS SYMBOL</gfx>
+<gfx key="WildSymbolSubTxt">WILD SYMBOL</gfx> <!-- Do not translate 'wild' -->
+<gfx key="SymbolCollectionTxt">SYMBOL COLLECTION</gfx>
+<gfx key="FeaturesSubTxt">FEATURES</gfx>
+<gfx key="PaytableTxt">PAYTABLE</gfx>
+
+<!--
+For our game description document
+==============================-->
+<entry key="gdd-description">In the dawning forest, Captain Aelred beheld the paths leading to the Heraldic Crests, guarded by the Dragon Mother.  <!-- Do not translate name "Aelred" -->
+    
+    "The Ruby Aegis calls to me," he said, eyes ablaze with purpose, yet wary of the beast that lurked. 
+    Gareth, entranced by purple blossoms, longed for the Amethyst Enigma, its allure tempered by the threat of dragonfire. <!-- Do not translate name "Gareth" -->
+    Ewan eyed the verdant depths, his desire for the life-affirming Emerald Bastion shadowed by a hint of trepidation. <!-- Do not translate name "Ewan" -->
+    Callum, stirred by the clear sky, yearned for the profound mysteries of the Sapphire's Deluge, mindful of the dragon’s omnipresent gaze. <!-- Do not translate name "Callum" -->
+
+Captain Aelred grips his comrades. Just when he's about to rally their spirits, his too-loose helmet clatters down over his face. "We shall overcome fear and claim our honor!" he declared, his voice muffled by the metal. <!-- Do not translate name "Aelred" -->
+    
+    As the knights set forth, Aelred’s plume brushes against a low hanging branch, dislodging a squirrel that scurries down his armor. <!-- Do not translate name "Aelred" -->
+    Gareth, clad in purple, tries to draw his sword to help but instead drops his scabbard, which clatters along the ground. <!-- Do not translate name "Gareth" -->
+    Ewan, in his oversized green helm, turns too quickly to see the commotion. In his haste, he lets loose a bolt that zips through the air and pins a hapless apple to a tree, causing a flock of birds to scatter in alarm. <!-- Do not translate name "Ewan" -->
+    And Callum, brandishing his mace with a bit too much enthusiasm, recoiled in surprise by the flock of birds, his warrior's instinct mistaking their flapping wings for an ambush. He swings his mace around only to lodge it between two branches overhead. Tugging at it with a knightly grunt, he finally set it free, sending a shower of leaves fluttering down upon them like a strange, green rain. <!-- Do not translate name "Callum" -->
+
+Gathering themselves with as much dignity as they could muster, the knights exchange determined nods and stride on with the unspoken agreement to never mention the squirrel incident again...
+
+Knight Fight is a 6 row by 6 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four knights that move around the grid collecting crest symbols and feature symbols, the symbol collection meter that counts the number of symbols collected and adds a pending feature symbol release when the meter is full, and finally the bonus game with free drops.</entry> <!-- Do not translate 'free drops' or 'Knight Fight' -->
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Wins are generated by the four knights collecting horizontally or vertically adjacent crest symbols, resulting in a varying number of ways to win. The RTP for all wins is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">Three bonus symbols collected by the knights during a game round trigger the free drops bonus game. The grid size, the progress on the symbol collection meter, the collection of additional bonus symbols and the payout level of the crest symbols are all persistent during the bonus game.</entry> <!-- Do not translate 'free drops' -->
+
+<!--
+Basic game definitions:
+====================-->
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">The number of possible paylines vary based on the position of the knights.</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 columns</entry> 
+<entry key="gdd-kf-rows">6 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!--
+Symbol descriptions:
+====================
+
+Collection Symbols ('amber symbols' as they were called in Pirots 2 have been changed in Knight Fight to 'crest symbols')
+-->
+<entry key="gdd-sfs-1">There are four types of crest symbols, one for each knight. The knights can only collect the crest symbols that have the same color as the knight. The crest symbols can be upgraded to higher payout levels.</entry>
+<!--Bonus-->
+<entry key="gdd-sfs-2">The bonus game with free drops is triggered if the knights collect three bonus symbols during a game round. If any feature symbol releases are pending when the bonus game starts, they will be released as a part of the first free drop.</entry> <!-- Do not translate 'free drops' -->
+<!--Wild-->
+<entry key="gdd-sfs-3">The wild symbol substitutes for any crest symbol at their current respective payout level.</entry> <!-- Do not translate 'wild' -->
+<!--Transform (Chalice)-->
+<entry key="gdd-sfs-4">A collected transform symbol transforms a cluster of crest symbols next to the knight into the same color as the knight that collected the symbol. It may also convert a random number of crest symbols into feature symbols.</entry>
+<!--LevelUp-->
+<entry key="gdd-sfs-5">The upgrade symbol upgrades the payout level of crest symbols of the same color as the knight that collected the upgrade symbol. The payout level of the crest symbols increases 1, 2 or 3 steps, up to a maximum payout level of 7.</entry>
+<!--LevelUp All-->
+<entry key="gdd-sfs-6">The upgrade all symbol upgrades all four different colored crest symbols at the same time. The payout level of the crest symbols increases 1, 2 or 3 steps, up to a maximum payout level of 7.</entry>
+<!--Golden Apple Basket (Cross Over)-->
+<entry key="gdd-sfs-7">The Golden Apple Basket symbol places apples in empty grid spaces when it is collected by a knight. The knights are then able to cross empty spaces one time each to reach additional symbols.</entry>
+<!--Goat (Move knights)-->
+<entry key="gdd-sfs-8">A goat symbol collected by a knight turns the goat evil at the end of the game round, when the knights are unable to collect more symbols. The knights are then scared away from the game grid, forcing them to redrop and land in new places. If any feature symbol releases are pending, they will be released just before the goat turns evil.</entry>
+<!--dragon flame (Bomb)-->
+<entry key="gdd-sfs-9">A Dragon Egg symbol collected by a knight triggers a dragon flame strike at the end of the game round when the knights are unable to collect more symbols. It removes the knights from the grid, and also removes all crest symbols in close proximity of it, resulting in a redrop to fill empty symbol places. The flame also expands the game grid, up to a maximum 8 rows by 8 columns. If any feature symbol releases are pending, they will be released just before the dragon flame strike.</entry>
+<!--Coin-->
+<entry key="gdd-sfs-10">A coin symbol collected by a knight pays its value times the current active bet level. The MAX WIN coin immediately pays the remaining amount required to reach the maximum win.</entry> <!-- Do not translate 'MAX WIN' -->
+
+<entry key="gdd-xiterbutton-1">BONUS HUNT!</entry> <!-- translate HUNT, keep BONUS when possible -->
+<entry key="gdd-xiterbutton-2">GOLDEN APPLE FEAST!</entry> <!-- do NOT translate, it's a feature name -->
+<entry key="gdd-xiterbutton-3">MAXIMUM GRID SIZE!</entry> <!-- translate -->
+<entry key="gdd-xiterbutton-4">BONUS!</entry> <!-- keep BONUS when possible -->
+<entry key="gdd-xiterbutton-5">SUPER BONUS!</entry> <!-- keep SUPER and BONUS respectively when possible -->
+
+<!--========================================================
+Paytable Pages:
+Translate everything according to the translation info above
+=========================================================-->
+	
+<entry key="paytablePayoutFunction">Knights move and collect crest symbols of the same color as the knights themselves, and all feature symbols.</entry>
+
+<entry key="paytableBirds">The four knights collect all feature symbols and crest symbols of the same color as the knights themselves.</entry>
+
+<entry key="paytableAdjacent">The knights can only collect horizontally or vertically adjacent symbols.</entry>
+
+<entry key="paytableGems">The crest symbols can be upgraded to higher payout levels up to a maximum payout level of 7.</entry>
+
+<entry key="paytableFeatureMeter">The symbol collection meter keeps track of symbols collected by the knights. Only crest symbols and wild symbols count. A full meter adds one pending feature symbol release.</entry> <!-- Do not translate 'wild' -->
+
+<entry key="paytableFreeDropsBonusGame">Three bonus symbols collected by the knights during a game round trigger the free drops bonus game.</entry> <!-- Do not translate 'free drops' -->
+
+<!-- Golden Apple Basket (Cross Over) -->
+<entry key="paytablePopcorn">The Golden Apple Basket symbol fills empty grid spaces with Golden Apples when it is collected by a knight. This allows the knights to cross the empty spaces one time each to reach additional clusters of symbols.</entry>
+
+<!-- goat (Move knights) -->
+<entry key="paytableEgg">A goat symbol collected by a knight turns the goat evil at the end of the game round. The knights are then scared away from the game grid, forcing them to redrop and land in new places.</entry>
+
+<entry key="paytableTransform">A collected transform symbol transforms a cluster of crest symbols next to the knight into the same color as the knight that collected the symbol. It may also convert a random number of crest symbols into feature symbols.</entry>
+
+<entry key="paytableUpgrade">The upgrade symbol upgrades the payout level of one of the crest symbols 1-3 steps, up to a maximum payout level of 7.</entry>
+
+<entry key="paytableUpgradeAll">The upgrade all symbol upgrades the payout level of all four crest symbols simultaneously by 1-3 steps, up to a maximum payout level of 7.</entry>
+
+<entry key="paytableCoin">A collected coin symbol pays its value times the current active bet level. The MAX WIN coin immediately pays the remaining amount required to reach the maximum win.</entry> <!-- Do not translate 'wild' -->
+
+<entry key="paytableBomb">A collected dragon egg triggers a dragon flame strike that explodes symbols and expands the game grid, up to a maximum 8 rows by 8 columns.</entry>
+
+<entry key="paytableWild">The wild symbol substitutes for any crest symbols at their current respective payout level.</entry> <!-- Do not translate 'wild' -->
+
+<entry key="paytableSwitcheroo">Adjacent knights may perform a "Switcheroo" where they switch places. This may happen when the knights can't collect more symbols and if new clusters of symbols can be unlocked.</entry> <!-- Do not translate 'Switcheroo' -->
+
+<entry key="paytableFightcloud">If three or more knights end up next to each other, they will start a fight. This will remove crest symbols, as well as trigger an automatic collection of bonus, coin, goat and dragon egg symbols.</entry>
+
+<entry key="paytableBonusPersistence">The grid size, the progress on the symbol collection meter, the collection of additional bonus symbols and the payout level of the crest symbols are all persistent during the bonus game.</entry>
+
+<entry key="paytableSymbolCollection">A full symbol collection meter adds one pending feature symbol release. Up to three feature symbol releases can be stacked before payout.</entry>
+
+<!--========
+X-Iter texts
+=========-->
+
+<entry key="X01B1">BONUS HUNT!</entry> <!-- translate HUNT, keep BONUS when possible -->
+<entry key="X01B2">One drop with more than QUADRUPLE the chance to trigger the bonus game!</entry> <!-- translate, if applicable QUADRUPLE should be in uppercase -->
+<entry key="X02B1">GOLDEN APPLE FEAST!</entry> <!-- do NOT translate, it's a feature name -->
+<entry key="X02B2">One drop with the Golden Apple Basket feature activated from start!</entry> <!-- translate -->
+<entry key="X03B1">MAXIMUM GRID SIZE!</entry> <!-- translate -->
+<entry key="X03B2">One drop that is played with the maximum grid size!</entry> <!-- translate -->
+<entry key="X04B1">BONUS!</entry> <!-- keep BONUS when possible -->
+<entry key="X04B2">One drop with guaranteed entry to the bonus game!</entry> <!-- translate -->
+<entry key="X05B1">SUPER BONUS!</entry> <!-- keep SUPER and BONUS respectively when possible -->
+<entry key="X05B2">One drop with guaranteed entry to the super bonus game!</entry> <!-- translate -->
+<entry key="X05B3">The game round is played with the maximum grid size!</entry> <!-- translate -->
+<entry key="X05B4">Upgrade symbols upgrade all crest symbols!</entry> <!-- translate -->
+
+<!--========================================================
+GAME RULES:
+Translate everything according to the translation info above
+keep our keywords like __MINBADEFBMODE__ as is
+=========================================================-->
+
+<entry key="gamerule">Knight Fight is a 6 row by 6 column slot with dropping symbols. The game can expand the grid up to a maximum of 8 rows by 8 columns.</entry> <!-- Do not translate 'Knight Fight' -->
+
+<entry key="gamerule">All drops in normal mode start with crest symbols on payout level 1 and with a grid size of 6 rows and 6 columns.</entry>
+
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry> <!-- don't touch __MINBADEFBMODE__ or __MAXBADEFBMODE__ -->
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry> <!-- don't touch __CPBB__ -->
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Knight Fight is played in two modes; normal mode and bonus mode with free drops.</entry>  <!-- Do not translate 'free drops' --> <!-- Do not translate 'Knight Fight' -->
+
+<entry key="gamerule">Knight Fight has four collecting knight symbols that can move around the game grid. Each knight is paired with an crest symbol of the same color as the knight.</entry> <!-- Do not translate 'Knight Fight' -->
+
+<entry key="gamerule">The knights can collect the crest symbols of the same color as the knight and all feature symbols.</entry>
+
+<!-- ADDED -->
+<entry key="gamerule">Paying symbols consist of crest symbols of the same color as the moving knight, coins and wild symbols.</entry> <!-- Do not translate 'wild' -->
+
+<!-- ADDED -->
+<entry key="gamerule">Wins are generated by a knight moving and collecting orthogonally adjacent paying symbols.</entry>
+
+<entry key="gamerule">The knights collect symbols by moving to horizontally or vertically adjacent collectable symbols.</entry>
+
+<entry key="gamerule">Crest symbols can be individually upgraded to higher payout levels, up to a maximum payout level of 7.</entry>
+
+<entry key="gamerule">If there are more collectable symbols, the knights will keep collecting until they can't collect more symbols. This means that a knight can move several times prior to a symbol refill.</entry>
+
+<entry key="gamerule">A knight that collects a feature symbol triggers that symbol's feature.</entry>
+
+<entry key="gamerule">The order of movement of the knights depends on the current payout of the crest symbols. The knights move in descending order of symbol payout.</entry>
+
+<entry key="gamerule">Above the game grid there is a symbol collection meter. The meter keeps track of the collected symbols. Only crest symbols and wild symbols count. The symbol collection meter continues to count collected symbols until the knights can't collect more symbols.</entry> <!-- Do not translate 'wild' -->
+
+<entry key="gamerule">When the symbol collection meter is full, one pending feature symbol release is added.</entry>
+
+<entry key="gamerule">Up to three feature symbol releases can be stacked simultaneously. All stacked feature symbol releases are awarded simultaneously.</entry>
+
+<entry key="gamerule">A feature symbol release is awarded just before a goat turns evil, before the dragon flame strikes, as a part of the first free drop in the bonus game, or when the knights can't collect any more symbols.</entry> <!-- Do not translate 'free drops' -->
+
+<entry key="gamerule">A feature symbol release converts a number of random crest symbols into random feature symbols.</entry>
+
+<entry key="gamerule">There are eight different types of feature symbols in Knight Fight; bonus symbols, wild symbols, coins, upgrade symbols, goat symbols, transform symbols, Golden Apple Basket symbol, and the dragon egg.</entry> <!-- Do not translate 'wild' --> <!-- Do not translate 'Knight Fight' -->
+
+<!--Bonus-->
+<entry key="gamerule">The bonus game with free drops is triggered if the knights collect three bonus symbols during an active game round.</entry> <!-- Do not translate 'free drops' -->
+
+<!-- ADDED -->
+<entry key="gamerule">The free drops bonus game starts on the current active number of rows and columns. The current progress on the symbol collection meter is brought into the bonus game. If there are pending feature symbol releases at the start of the bonus game, they will be released as a part of the first free drop.</entry> <!-- Do not translate 'free drops' -->
+
+<!--LevelUp-->
+<entry key="gamerule">A collected upgrade symbol upgrades the payout level of crest symbols of the same color as the knight that collected the upgrade symbol. The payout level of the crest symbols increases by 1-3 steps, up to a maximum payout level of 7.</entry>
+
+<!--LevelUp All-->
+<entry key="gamerule">A collected upgrade all symbol upgrades all four crest symbols simultaneously. The payout level of the crest symbols increases 1-3 steps, up to a maximum payout level of 7.</entry>
+
+<!--goat (Move knights)-->
+<entry key="gamerule">A goat symbol collected by a knight turns the goat evil at the end of the game round, when the knights are unable to collect more symbols. The knights are then scared away from the game grid, forcing them to redrop and land in new places. If a feature symbol release is pending, it will be released just before the goat turns evil.</entry>
+
+<!--Transform (Chalice)-->
+<entry key="gamerule">A collected transform symbol transforms a cluster of crest symbols next to the knight into the same color as the knight that collected the transform symbol. It may also convert a random number of crest symbols into feature symbols.</entry>
+
+<!--Golden Apple Basket (Cross Over)-->
+<entry key="gamerule">The Golden Apple Basket symbol places Apples in empty grid spaces when it is collected by a knight. The knights are then able to cross empty spaces one time each to reach additional symbols.</entry>
+
+<!--dragon flame (The red button)-->
+<entry key="gamerule">A dragon egg or dragon flame symbol collected by a knight triggers a dragon flame strike at the end of the game round when the knights are unable to collect more symbols. It removes the knights from the grid, and also removes all symbols, except feature symbols, in close proximity of it, resulting in a redrop to fill empty symbol places. The dragon flame strike also expands the game grid, up to a maximum 8 rows by 8 columns. If there is a pending feature symbol release, it will be released just before the dragon flame strike.</entry>
+
+<!-- ADDED -->
+<entry key="gamerule">A collected goat performs its action first in case there are both a collected goat and a collected dragon egg in view.</entry>
+
+<entry key="gamerule">The wild symbol substitutes for any crest symbol at their current respective payout level.</entry> <!-- Do not translate 'wild' -->
+
+<entry key="gamerule">A collected coin symbol pays its value times the current active bet level. The MAX WIN coin immediately pays the remaining amount required to reach the maximum win.</entry> <!-- Do not translate 'wild' -->
+
+<entry key="gamerule">Adjacent knights may perform a "Switcheroo" where they switch places horizontally or vertically when they can't collect more symbols. It may only happen if new clusters of symbols can be unlocked.</entry> <!-- Do not translate 'Switcheroo' -->
+
+<entry key="gamerule">If three or more knights end up horizontally or vertically next to each other, they will start a fight. The fight will take place over a random area on the game grid. Bonus symbols, coins, goats and dragon egg symbols along the fight cloud's path will be automatically collected, while crest symbols are removed. The knights are redropped once the fight is over, and a symbol refill occurs to fill empty symbol places.</entry>
+
+<entry key="gamerule">Bonus mode with free drops is triggered if the knights collect three bonus symbols during normal mode. 5 free drops are awarded.</entry> <!-- Do not translate 'free drops' -->
+
+<entry key="gamerule">The free drops bonus game starts on the current active number of rows and columns.</entry> <!-- Do not translate 'free drops' -->
+
+<entry key="gamerule">The grid size, the progress on the symbol collection meter, the payout level of the crest symbols, and the collection of additional bonus symbols are all persistent during the bonus game.</entry>
+
+<entry key="gamerule">Three bonus symbols collected by the knights during bonus mode award additional free drops.</entry> <!-- Do not translate 'free drops' -->
+
+<!-- ADDED -->
+<entry key="gamerule">The free drops bonus game ends when no free drops remain or when the win cap has been reached.</entry> <!-- Do not translate 'free drops' -->
+
+<entry key="gamerule">Winnings are paid out at the end of the bonus mode.</entry>
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+
+<!-- ADDED -->
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Knight Fight is __RTP__. <!-- don't translate (RTP) if possible, and don't touch __RTP__ --> <!-- Do not translate 'Knight Fight' -->
+</entry>
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry> <!-- don't touch __TBB__ -->
+
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+<entry key="gamerule" tags="lastupdated">
+Last updated 2024-12-12</entry> <!-- translate -->
+
+<!--========
+X-Iter rules
+=========-->
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry> <!-- translate -->
+<entry key="xiter-rule" tags="X05">SUPER BONUS: <!-- keep SUPER and BONUS respectively when possible -->
+Guarantees a game round with entry to the super bonus game. All free drops are played with the maximum grid size, and all upgrade symbols upgrade all crest symbols at the cost of __X05_MULTIPLIER__ the selected bet.
+
+</entry> <!-- translate but don't touch __X05_MULTIPLIER__ -->  <!-- Do not translate 'free drops' -->
+
+<entry key="xiter-rule" tags="X04">BONUS: <!-- keep BONUS when possible -->
+Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.
+
+</entry> <!-- translate but don't touch __X04_MULTIPLIER__ -->
+
+<entry key="xiter-rule" tags="X03">MAXIMUM GRID SIZE: <!-- translate -->
+One drop that is played with the maximum grid size at the cost of __X03_MULTIPLIER__ the selected bet.
+
+</entry> <!-- translate but don't touch __X03_MULTIPLIER__ -->
+
+<entry key="xiter-rule" tags="X02">GOLDEN APPLE FEAST: <!-- do NOT translate, it's a feature name -->
+One drop with the Golden Golden Apple Basket feature activated from start at the cost of __X02_MULTIPLIER__ the selected bet.
+
+</entry> <!-- translate but don't touch __X02_MULTIPLIER__ -->
+
+<entry key="xiter-rule" tags="X01">BONUS HUNT: <!-- translate HUNT, keep BONUS when possible -->
+One drop with QUADRUPLE the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.
+
+</entry> <!-- translate but don't touch __X01_MULTIPLIER__ -->
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry> <!-- translate -->
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry> <!-- translate but don't touch __MINBABMODE__ or __MAXBABMODE__ -->
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Knight Fight is __RTP__.</entry> <!-- translate but don't translate (RTP) if possible, and don't touch __RTP__ --> <!-- Do not translate 'Knight Fight' -->
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry> <!-- translate -->
+<entry key="xiter-rule" tags="lastupdated">
+Last updated 2024-04-24</entry> <!-- translate -->
+
+</translation>

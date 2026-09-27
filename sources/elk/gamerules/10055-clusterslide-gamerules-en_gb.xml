@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+
+<!--Intro-->
+	
+<!--Paytable-->
+<gfx key="PaytableWildFeaturesCaps">FEATURE WILDS</gfx>
+<gfx key="paytableBonusGameCaps">WILD DROPS</gfx>
+<gfx key="paytableMultipliersCaps">MULTIPLIERS</gfx>
+
+<entry key="paytableGenerator">All winning symbols contribute to fill the Generator which awards Feature Wild symbols.</entry>
+
+<entry key="paytableClusterWins">A winning cluster consists of 5 or more vertically or horizontally connected identical symbols. Winning clusters are removed generating an Avalanche, after which new symbols drop in to fill the empty spaces.</entry>
+
+<entry key="paytableMultipliers">Generating 5 Feature Wild symbols during a game round adds an x5 multiplier to the total multiplier which applies to all subsequent winning clusters.</entry> 
+
+<entry key="paytableWildSymbol">The wild symbol substitutes for any symbol except the bonus symbol and the Feature Wild symbols.</entry> 
+
+<entry key="paytableWildFeatures">There are 5 different Feature Wild symbols, each with a unique feature that is activated when the Feature Wild symbol is part of a winning cluster.</entry> 
+
+<entry key="paytableRandomWild">Replaces 2-4 payout symbols with wild symbols.</entry> 
+
+<entry key="paytableUpgradingWild">Upgrades all occurrences of a random symbol type to a higher valued symbol.</entry>
+
+<entry key="paytableRemovingWild">Removes all occurrences of a random symbol type from the symbol grid.</entry>
+
+<entry key="paytableMultiplierWild">Increases the multiplier by 1.</entry>
+
+<entry key="paytableBigWild">Expands a random symbol to a 2x2 sized symbol.</entry>
+
+<entry key="paytableBonusSymbol">3 bonus symbols trigger 3 Wild Drops. Wild Drops can be retriggered. </entry>
+
+<entry key="paytableWildDrops">The first drop turns all bonus symbols on the symbol grid into wild symbols and adds three 1x1 wild symbols. The second drop adds two 2x2 wild symbols and the third drop adds one 3x3 wild symbol to the symbol grid. </entry>
+
+<!--X-iter-->
+<entry key="gameMode1">Guarantees 3 symbol drops with a multiplier starting at 5x.</entry>
+<entry key="gameMode2">Guarantees 3 symbol drops during which the moustache symbols are collected and made sleepy after each symbol drop. The sleepy moustache symbols are then reactivated during the final symbol drop.</entry>
+<entry key="gameMode3">Guarantees 3 symbol drops during which Feature Wild symbols are collected and made sleepy after each symbol drop. The Feature Wild symbols are then reactivated during the final symbol drop.</entry>
+<entry key="gameMode4">Guarantees a game round with 3 or more bonus symbols and entry to the bonus game.</entry>
+<entry key="gameMode5">Guarantees a game round with 3 or more bonus symbols and entry to a super bonus game.</entry>
+
+
+
+
+
+<!--Gamerules-->
+The X-iter feature offers 5 different game modes; X-iter 1, X-iter 2, X-iter 3, X-iter 4 and X-iter 5.
+
+X-iter 1: Guarantees 3 symbol drops with a multiplier starting at 5x at the cost of 15x the selected bet. 
+
+X-iter 2: Guarantees 3 symbol drops in which the highest paying symbol according to the paytable, the moustache symbol, is collected at the cost of 25x the selected bet. All winning and non-winning moustache symbols are kept inactive and are accumulated at the bottom of the symbol grid between the symbol drops. They remain inactive until the last symbol drop, during which they are activated and payout according to the paytable.
+
+
+X-iter 3: Guarantees 3 symbol drops with collected Feature Wild symbols at the cost of 50x the selected bet. Feature Wild symbols that contribute to form winning clusters execute their feature and then become inactive and remain on the symbol grid. All Feature Wild symbols in view become inactivated and are accumulated at the bottom of the symbol grid between the symbol drops. They remain inactive until the last symbol drop, during which they are activated and play out as in the base game. 
+
+X-iter 4: Guarantees a game round with 3 or more bonus symbols and entry to the bonus game at the cost of 100x the selected bet.
+
+X-iter 5: Guarantees a game round with 3 or more bonus symbols and entry to a super bonus game at the cost of 300x the selected bet. The super bonus game consists of 5 Wild Drops, each with a different wild symbol pattern. 3 or more bonus symbols on the symbol grid retrigger additional 5 Wild Drops.  
+
+
+
+The X-iter features can only be activated in the base game.
+
+The theoretical payout (RTP) for all X-iter game modes in Cluster Slide is xx.x%.
+
+All game rules apply for the X-iter features as well.
+
+Last updated yyyy-mm-dd
+
+
+
+
+
+	<entry key="1-rulehead">Game rules</entry>
+	<entry key="1-rules">
+	<![CDATA[
+1. Cluster Slide is a 7 columns, 8 rows slot with dropping symbols and cluster wins.
+	
+2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.
+
+3. Each bet is __CPBB__ coins.
+
+4. A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. 
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. Cluster Slide is played in two modes; Normal mode and Bonus mode with Wild Drops.
+
+10. The winnings in the current symbol drop are collected and the winning clusters are removed, except for the Feature Wilds that subsequently execute their function and are then removed. The remaining symbols fall vertically and then slide to the left until they reach a resting position. The new result is played out and new symbols drop in to fill the empty spaces. The cycle continues as long as new winning clusters appear.
+
+11. There are 6 different wild symbols in the game, 1 wild symbol and 5 Feature Wild symbols. All wilds substitute for any symbol except the bonus symbol and Feature Wild symbols.
+
+12. The 5 Feature Wild symbols are; Multiplier, Removing, Upgrading, Random and Big Wild. The features trigger if the respective Feature Wild symbol contributes to a winning cluster. If multiple Feature Wild symbols are triggered simultaneously they will execute in the following order; Multiplier, Removing, Upgrading, Random and Big Wild.
+
+13. Feature Wild: Multiplier Wild
+A Multiplier Wild symbol that contributes to a winning cluster increases the total multiplier by one and then turns into a normal wild symbol. The total multiplier is applied to all wins in the current drop and to all subsequent winning clusters. The total multiplier is reset at the beginning of the next game round. 
+
+14. Feature Wild: Removing Wild
+A Removing Wild symbol that contributes to a winning cluster randomly selects a symbol type in view and removes all of its occurrences from the symbol grid. The Removing Wild itself is also removed.
+
+15. Feature Wild: Upgrading Wild 
+An Upgrading Wild symbol that contributes to a winning cluster randomly selects a symbol type in view and upgrades all of its occurrences on the symbol grid. Affected symbols are upgraded to the next symbol in the value hierarchy according to the paytable, and the Upgrading Wild is removed. 
+
+If multiple Upgrading Wild symbols contribute to winning clusters, they will all affect the same symbols. If the affected symbols reach the highest paying symbol type in the value hierarchy, the remaining Upgrading Wild symbols will randomly select a new symbol type in view.
+
+16. Feature Wild: Random Wild 
+A Random Wild symbol that contributes to a winning cluster randomly replaces 2-4 payout symbols on the symbol grid with wild symbols. The Random Wild symbol is then removed. 
+
+17. Feature Wild: Big Wild
+A Big Wild symbol that contributes to a winning cluster randomly selects a payout or wild symbol on the symbol grid and expands it into a 2x2 sized symbol, and the Big Wild is then removed. Feature Wild symbols are not affected by the Big Wild. 
+
+18. At the beginning of each symbol drop in Normal mode, a Feature Wild symbol is randomly selected and displayed in the Generator above the symbol grid. Each symbol in a winning cluster contributes to fill the meter in the Generator. Wild symbols only count once.
+
+19. When the meter in the Generator is full, the Feature Wild symbol within the Generator is collected and added to the inventory next to the Generator. The Generator is reset and a new randomly selected Feature Wild symbol is displayed in the Generator. The cycle continues as long as new winning clusters appear. The meter is reset at the beginning of the next game round. 
+
+20. When no new winning clusters appear the inventory will be emptied. Each Feature Wild symbol in the inventory randomly replaces 1-4 payout symbols on the symbol grid with instances of itself.
+
+21. Generating 5 Feature Wild symbols within the same game round awards an additive x5 multiplier that is added to the total multiplier. The multiplier is applied to all subsequent winning clusters. The total multiplier is reset at the beginning of the next game round. 
+
+22. 3 or more bonus symbols on the symbol grid trigger Bonus mode with 3 Wild Drops. 
+
+23. Wild Drops start when there are no new winning clusters appearing and all Feature Wilds in the inventory have been played through. 
+
+24. The progress of the Generator and x5 multiplier is persistent and continues when the Bonus mode with Wild Drops start. 
+
+25. The Bonus mode consists of 3 Wild Drops, each with a different wild symbol pattern awarded on the current symbol grid.  
+
+Wild Drop 1: 
+The bonus symbols on the symbol grid turn into wild symbols and three additional wild symbols are randomly placed on the symbol grid. The round is played through until no additional winning clusters appear. 
+
+Wild Drop 2: 
+Two 2x2 wild symbols are randomly placed on the symbol grid. The round is played through until no additional winning clusters appear. 
+
+Wild Drop 3:
+One 3x3 wild symbol is randomly placed on the symbol grid. The round is played through until no additional winning clusters appear.
+
+26. 3 or more bonus symbols on the symbol grid in Bonus mode retrigger additional 3 Wild Drops. 
+
+27. The Bonus mode ends when no additional winning clusters appear and the inventory has been emptied or when the maximum win has been reached.
+
+28. Winnings are paid out at the end of the Bonus mode.
+
+29. No bets can be changed during an ongoing game round.
+
+30. The theoretical payout (RTP) in Cluster Slide is __RTP__.
+
+31. The game has a maximum win of __TBB__ the placed bet.
+
+32. In the event of malfunction all bets and wins are void.
+
+
+Last updated 2022-01-14
+	]]></entry>
+
+
+	
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X01">X-iter 1: Guarantees 3 symbol drops with a multiplier starting at 5x at the cost of 15x the selected bet. </entry>
+
+<entry key="xiter-rule" tags="X02">X-iter 2: Guarantees 3 symbol drops in which the highest paying symbol according to the paytable, the moustache symbol, is collected at the cost of 25x the selected bet. All winning and non-winning moustache symbols are kept inactive and are accumulated at the bottom of the symbol grid between the symbol drops. They remain inactive until the last symbol drop, during which they are activated and payout according to the paytable.</entry>
+
+
+<entry key="xiter-rule" tags="X03">X-iter 3: Guarantees 3 symbol drops with collected Feature Wild symbols at the cost of 50x the selected bet. Feature Wild symbols that contribute to form winning clusters execute their feature and then become inactive and remain on the symbol grid. All Feature Wild symbols in view become inactivated and are accumulated at the bottom of the symbol grid between the symbol drops. They remain inactive until the last symbol drop, during which they are activated and play out as in the base game.</entry> 
+
+<entry key="xiter-rule" tags="X04">X-iter 4: Guarantees a game round with 3 or more bonus symbols and entry to the bonus game at the cost of 100x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X05">X-iter 5: Guarantees a game round with 3 or more bonus symbols and entry to a super bonus game at the cost of 300x the selected bet. The super bonus game consists of 5 Wild Drops, each with a different wild symbol pattern. 3 or more bonus symbols on the symbol grid retrigger additional 5 Wild Drops.  </entry>
+
+
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Cluster Slide is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-09-24</entry>
+	
+
+<!--Dialogs-->	
+
+</translation>

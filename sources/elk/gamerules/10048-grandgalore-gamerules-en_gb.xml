@@ -1,0 +1,131 @@
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+<!-- Intro-->
+	<gfx key="SkipIntroTxtCaps">Skip Intro</gfx>
+
+<!-- Dialogs -->
+	<gfx key="TotalWinTxtCaps">TOTAL WIN</gfx>
+	<gfx key="ofTxtCaps">OF</gfx>
+	<gfx key="StartTxtCaps">START</gfx>
+	<gfx key="WaysTxtCaps">WAYS</gfx>
+	
+<!--Paytable-->
+	<gfx key="PaytableWinUpCaps">WIN UP TO</gfx>
+	<gfx key="PaytableCoinsTxtCaps">COINS</gfx>
+	<gfx key="PaytableSymbolPayoutCaps">SYMBOL PAYOUT</gfx>
+	<gfx key="PaytableUpTo10RowsCaps">UP TO 10 ROWS</gfx>
+
+	<gfx key="PaytableHeadExpandingReelRespinCaps">EXPANDING REEL RESPIN</gfx>  <!-- NOT TRANSLATED -->
+	<entry key="PaytableSectionExpandingReelRespin">All reels which contribute to a win expand with one row. Both the winning symbols and the added symbol positions respin. A reel can expand up to 10 rows.</entry>
+
+	<gfx key="PaytableHeadSyncedRespinCaps">SYNCED RESPIN</gfx>  <!-- NOT TRANSLATED -->
+	<entry key="PaytableSectionSyncedRespin">2-5 neighbouring reels can randomly synchronize during a respin. The synchronized reels stop on the same symbol.</entry>
+	
+	<gfx key="PaytableHeadStackedRespinCaps">STACKED RESPIN</gfx>  <!-- NOT TRANSLATED -->
+	<entry key="PaytableSectionStackedRespin">Respinning symbols next to each other on a reel always stop on the same symbol.</entry>	
+
+	<gfx key="PaytableBonusSymbolCaps">BONUS SYMBOL</gfx> <!-- NOT TRANSLATED -->
+	<entry key="paytableSectionBonusSymbol">3 or more bonus scatter symbols trigger the free spins bonus game. Free spins can be retriggered.</entry>
+		
+	<gfx key="PaytableWildSymbolCaps">WILD SYMBOL</gfx> <!-- NOT TRANSLATED -->
+	<entry key="paytableSectionWildSymbol">The wild symbol substitutes for any symbol except the bonus symbol. A winning combination of all wilds pays as the highest value symbol.</entry>
+	
+	<gfx key="PaytableBonusGameHeaderCaps">BONUS GAME</gfx>
+		
+	<gfx key="PaytableHeadGrandRespinMeterCaps">GRAND RESPIN METER</gfx>  <!-- NOT TRANSLATED -->
+	<entry key="PaytableSectionGrandRespinMeter">Every 5th win in the bonus game triggers Grand Synced Respin on an increasing number of reels, from 2 up to a maximum of 5 reels.</entry>
+
+	<gfx key="PaytableHeadGrandSyncedRespinCaps">GRAND SYNCED RESPIN</gfx>  <!-- NOT TRANSLATED -->
+	<entry key="PaytableSectionGrandSyncedRespin">The 1st Grand Synced Respin expands reel 4 with one row before the Synced Respin. The 2nd, expands both reel 4 and 5. All subsequent Grand Synced Respins expand reels 4, 5 and 6. (A reel can expand up to max 10 rows.)</entry>
+
+<!--Gamerules-->
+<entry key="1-rulehead">Game rules</entry>
+<entry key="1-rules">
+<![CDATA[
+1. The Grand Galore is a 6 reel, 4 rows slot with asymmetrically expanding reels and up to 1 000 000 ways to win. 
+	
+2. The game offers several bet levels for each currency.
+
+3. Each bet is 100 coins.
+
+4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+]]>
+</entry>
+<entry key="2-rulehead">Game rules</entry>
+<entry key="2-rules">
+<![CDATA[
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. The Grand Galore is played in two modes; Normal mode and Bonus mode with free spins.
+
+10. The wild symbol substitutes for any symbol except the bonus scatter symbol. A payline of all wilds pays as the highest value symbol.
+
+11. All spins, in Normal mode and Bonus mode, start with 6 reels, 4 rows and 4 096 ways to win.
+]]>
+</entry>
+<entry key="3-rulehead">Game rules</entry>
+<entry key="3-rules">
+<![CDATA[
+12. Expanding Reel Respin: All reels which contribute to a win are expanded by one additional row after the payout. The position where to insert the new row is randomly selected.
+
+13. Both the winning symbols and the newly added symbol positions respin. Potential new winning combinations are paid out and the expansion of reels and respins continue as long as new winning combinations appear.
+
+14. A reel can expand up to a maximum of 10 rows.
+
+15. Stacked Respin: Two or more respinning symbols situated on top of each other on a reel, always stop on the same symbol.
+]]>
+</entry>
+<entry key="4-rulehead">Game rules</entry>
+<entry key="4-rules">
+<![CDATA[
+16. Synced Respin: 2 to 5 neighbouring reels are randomly selected to do the Expanding Reel Respin in sync and to stop on the same symbol.
+
+17. A combination of three or more bonus symbols during normal mode triggers the Bonus mode with free spins. 
+	3 bonus symbols: 10 free spins
+	4 bonus symbols: 15 free spins
+	5 bonus symbols: 20 free spins
+	6 bonus symbols: 25 free spins
+
+18. Three or more bonus symbols during Bonus mode retrigger additional free spins. The number of additional free spins is determined in the same way as when initially triggering the bonus game.
+]]>
+</entry>
+<entry key="5-rulehead">Game rules</entry>
+<entry key="5-rules">
+<![CDATA[
+19. Grand Synced Respin triggers after every 5th win in the bonus game. The counting of wins is persistent throughout all free spins in the bonus game.
+
+20. Every 5th win in the bonus game triggers Grand Synced Respin on an increasing number of reels, from 2 up to a maximum of 5 reels.
+
+21. At the 1st Grand Synced Respin reel 4 is expanded by an extra row, before the Synced Respin. At the 2nd Grand Synced Respin reels 4 and 5 are expanded. At all subsequent Grand Synced Respins reels 4, 5 and 6 are expanded. The expansion of a reel continues up to a maximum of 10 rows.
+]]>
+</entry>
+<entry key="6-rulehead">Game rules</entry>
+<entry key="6-rules">
+<![CDATA[
+22. Winnings are paid out at the end of the bonus game.	
+
+23. No bets can be changed during an ongoing spin or in any Bonus mode.
+
+24. The theoretical payout (RTP) in The Grand Galore is 96.0%
+
+25. The game has a maximum win of 1 000 000 coins.
+
+26. In the event of malfunction all bets and wins are void.
+
+   
+Last updated 2021-05-10
+	]]></entry>
+
+<!--Dialogs-->	
+
+</translation>

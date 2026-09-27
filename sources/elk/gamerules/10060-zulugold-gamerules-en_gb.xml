@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+
+<!--Words not translated in this game
+Wild Walker
+Charged Wild(s)
+Zulu Stack(s)
+Avalanche
+Super
+Mega
+Epic
+-->
+
+<!--Copy to gfx game specific text-assets-->
+<gfx key="PlayedInTotal">Played in total</gfx>
+<gfx key="BigSymbol">Big symbol</gfx>
+<gfx key="BonusSymbol">Bonus symbol</gfx>
+<gfx key="WildSymbol">Wild symbol</gfx>
+<gfx key="MultiplierSymbol">Multiplier symbol</gfx>
+<gfx key="safetyLevelTxt">Safety Levels</gfx>
+<gfx key="activatedTxt">ACTIVATED</gfx>
+
+<!--Intro-->
+	
+<!--Paytable-->
+<entry key="paytableWildWalker">The Wild Walker is a wild symbol that moves and leaves a trail of wild symbols behind. It is persistent between Avalanches.</entry>
+<entry key="paytableChargedWild">The Charged Wild is a wild symbol with extra lives. It only consumes a life when it contributes to a win.</entry>
+<entry key="paytableWildSymbol">The wild symbol substitutes for any symbol except the bonus, multiplier, Wild Walker and Charged Wild symbols.</entry>
+<entry key="paytableMultiplierFeature">The Free Drops game features a progressive multiplier. The progressive multiplier can be increased throughout the bonus game.</entry>
+<entry key="paytableMultiplierSymbol">When 3 or more Multiplier symbols are in view they activate, adding their multiplier values to the total progressive multiplier.</entry>
+<entry key="paytableBonusSymbol">Three or more bonus symbols trigger the Multiplier Free Drops bonus game. Free drops can be retriggered.</entry>
+<entry key="paytableZuluStacks">A Zulu Stack is a symbol stack that can represent any symbol type except for the Wild Walker, Charged Wild and the bonus symbol.</entry>
+<entry key="paytableAvalanche">All symbols which are part of a win explode and leave space for additional symbol drops, and an additional row of symbols is added at the top up to a maximum of 8 rows. The avalanche feature continues as long as new winning combinations appear.</entry>
+<entry key="paytableBigSymbols">Super, Mega and Epic symbols of size 2x2, 3x3 and 4x4 may drop down in any symbol drop.</entry>
+<entry key="paytableSafetyLevel">In the bonus game the safety level advances one row for every new free drop initiated that results in a win. Every new free drop starts at the current active safety level.</entry>
+
+<!--X-iter-->
+<entry key="gameMode1">Guarantees a winning game round.</entry>
+<entry key="gameMode2">Guarantees 3 symbol drops with at least one Zulu Stack.</entry>
+<entry key="gameMode3">Guarantees a game round with entry to the bonus game.</entry>
+<entry key="gameMode4">Guarantees 3 symbol drops with a Wild Walker.</entry>
+<entry key="gameMode5">Guarantees a game round with entry to the bonus game with persistent multiplier symbols.</entry>
+
+	
+<!--X-iter UI texts-->
+<entry key="X01B1">No dead drops, only wins!</entry>
+<entry key="X02B1">3 Zulu drops!</entry>
+<entry key="X02B2">Zulu Stacks in every drop!</entry>
+<entry key="X03B1">Guaranteed bonus entry!</entry>
+<entry key="X04B1">3 drops!</entry>
+<entry key="X04B2">Wild Walker unleashed in every drop!</entry>
+<entry key="X05B1">Guaranteed bonus entry!</entry>
+<entry key="X05B2">Multiplier symbols persistent!</entry>
+
+
+
+
+<!--Gamerules-->
+	<entry key="1-rulehead">Game rules</entry>
+	<entry key="1-rules">
+	<![CDATA[
+1. Zulu Gold is a 6 column, 4 rows slot with dropping symbols. The columns can expand upwards to a maximum of 8 rows.
+	
+2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.
+
+3. Each bet is __CPBB__ coins.
+
+4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. Zulu Gold is played in two modes; Normal mode and Bonus mode with free drops.
+
+10. All symbol drops in Normal mode start with 4 rows and 4,096 ways to win. 
+
+11. The wild symbol and all low, mid and high value symbols exist in four sizes; standard 1x1, Super 2x2, Mega 3x3 and Epic 4x4. All big symbols are counted as consisting of the number of 1x1 symbol instances it covers, e.g a Super 2x2 consists of 4 standard 1x1 symbols.
+
+12. Empty spaces occurring below big symbols are filled with 1x1 sized symbols of the same type as the big symbol to reach a stable horizontal resting state.
+
+13. Big symbols clear away 1x1 symbols on their way downwards. Big symbols, Wild Walker, Charged Wild, multiplier, bonus and wild symbols are not affected. 
+
+14. A Zulu Stack is a stack of 2, 3 or 4 identical payout symbols that can drop in any symbol drop, potentially adding additional rows of symbols. Zulu Stacks can represent any symbol except the Wild Walker, Charged Wild and the bonus symbol. 
+
+15. The wild symbol substitutes for any symbol except the Wild Walker, Charged Wild and the bonus symbol.
+
+16. The Charged Wild is a 1x1 sized wild symbol with additional lives. It consumes a life when it contributes to one or more winning combinations, and eventually turns into a normal wild symbol when only one life remains. The Charged Wild is persistent between free drops in bonus mode.
+
+17. The Wild Walker is a wild symbol that might appear in any symbol drop. It moves randomly as soon as the symbol drop is completed and leaves a trail of wilds behind, and thereafter the potential wins are collected.
+
+18. The Wild Walker may pass over Charged Wilds, bonus and wild symbols without affecting them. If the Wild Walker moves into a Zulu Stack, the Zulu Stack will be broken up and a 1x1 wild symbol will be left behind where the Wild Walker entered the stack.
+
+19. All wins in the current symbol drop are collected and thereafter all symbols which were part of a winning combination explode except for the Wild Walker. The remaining symbols fall vertically until they reach a resting position, an additional row is added at the top and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.
+
+20. Each additional symbol drop will add an additional row of symbols, up to a maximum of 8 rows, increasing the number of ways to win. The number of ways to win increases as the number of rows increases.
+4 rows: 4,096 ways to win
+5 rows: 15,625 ways to win
+6 rows: 46,656 ways to win
+7 rows: 117,649 ways to win
+8 rows: 262,144 ways to win
+
+21. A combination of three or more bonus symbols during Normal mode triggers the Bonus mode with free drops.
+3 bonus symbols: 10 free drops
+4 bonus symbols: 15 free drops
+5 bonus symbols: 20 free drops
+6 bonus symbols: 25 free drops.
+
+22. The free drops bonus game always starts with the safety level set to 4 rows. Every winning free drop advances the safety level one row.
+
+23. The advancement of the safety level occurs after the payout. The next free drop starts from the new safety level. The safety level can at the most advance 4 rows resulting in a total of 8 rows with a maximum of 262,144 ways to win.
+
+24. Three or more bonus symbols during Bonus mode retrigger additional free drops. The number of additional free drops is determined in the same way as when initially triggering the bonus game.
+
+25. The multiplier symbol only appears in the bonus game and contains a random multiplier. 3 or more in view sums the multipliers and adds them to the total progressive multiplier. The addition is done prior to the payout of the current symbol drop, after which the multiplier symbols become inactive. Additional multiplier symbols within the same free drop reactivate all multiplier symbols in view and sum them again. 
+
+26. Unactivated multiplier symbols remain sticky between free drops but inactive multiplier symbols drop out between free drops. 
+
+27. The free drops bonus game always starts with the active progressive multiplier set to x1. An achieved multiplier applies to all subsequent free drops and can never decrease during an ongoing bonus game. 
+
+28. The Free Drops bonus game ends when no free drops remain or when the maximum win has been reached.
+
+29. Winnings are paid out at the end of the bonus mode.
+
+30. No bets can be changed during an ongoing game round.
+
+31. The theoretical payout (RTP) in Zulu Gold is __RTP__.
+
+32. The game has a maximum win of __TBB__ the placed bet.
+
+33. In the event of malfunction all bets and wins are void.
+
+
+   
+Last updated 2022-01-13
+	]]></entry>
+
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X01">X-iter 1: Guarantees a winning game round at the cost of 5x the selected bet. </entry>
+
+<entry key="xiter-rule" tags="X02">X-iter 2: Guarantees 3 symbol drops with at least one Zulu Stack at the cost of 25x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">X-iter 3: Guarantees a game round with entry to the bonus game at the cost of 100x the selected bet. </entry>
+
+<entry key="xiter-rule" tags="X04">X-iter 4: Guarantees 3 symbol drops with a Wild Walker at the cost of 250x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X05">X-iter 5: Guarantees a game round with entry to the bonus game with persistent multiplier symbols at the cost of 500x the selected bet.</entry>
+
+
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Zulu Gold is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-02-06</entry>
+<!--Dialogs-->	
+
+</translation>

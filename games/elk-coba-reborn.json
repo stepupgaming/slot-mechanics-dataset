@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Coba Reborn",
+    "slug": "elk-coba-reborn",
+    "provider_game_id": "10197",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10197&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/cobareborn/build-280586/assets/translation/cobareborn-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Key features Rows: 7 rows; Key features Reels: 7 reels"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "horizontal_or_vertical",
+    "notes": "Cluster wins (5 connecting symbols)"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "All cluster wins in the current symbol drop are collected. Thereafter, all symbols which were part of a winning combination explode, and the snake progress meter increases. The remaining symbols fall vertically until they reach a resting position and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the orchid symbol.",
+        "params": {}
+      },
+      {
+        "name": "Multiplier Wild",
+        "behavior": "The multiplier wild symbol substitutes for any symbol except for the orchid symbol. A snake that eats a multiplier wild symbol triggers growth and enters its survival state, if not already secured.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Multiplier Wild",
+        "behavior": "The multiplier wild symbol substitutes for any symbol except for the orchid symbol. A snake that eats a multiplier wild symbol triggers growth and enters its survival state, if not already secured.",
+        "params": {
+          "role": "symbol_multiplier"
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Coba Reborn: paid spin on 7x7. Cluster wins (5 connecting symbols). Avalanche/tumble after wins. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 7x7. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Cluster wins (5 connecting symbols)",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "All cluster wins in the current symbol drop are collected. Thereafter, all symbols which were part of a winning combination explode, and the snake progress meter increases. The remaining symbols fall vertically until they reach a resting position and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Cluster wins (5 connecting symbols)",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "All cluster wins in the current symbol drop are collected. Thereafter, all symbols which were part of a winning combination explode, and the snake progress meter increases. The remaining symbols fall vertically until they reach a resting position and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Coba (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round that starts on level 4 at the cost of __X05_MULTIPLIER__ the selected bet. 6 snakes are awarded.; Bali Boost (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round that starts on level 1 at the cost of __X04_MULTIPLIER__ the selected bet.; All Ouroboros (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with a double blood orchid activation at the cost of __X03_MULTIPLIER__ the selected bet. All snakes may cross themselves.; Flower Power (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop with a minimum of 3 random orchids at the cost of __X02_MULTIPLIER__ the selected bet.; Boosted Chance (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop with more than double the chance of reaching the first level at the cost of __X01_MULTIPLIER__ the selected bet.\nThe X-iter features can only be activa",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Coba",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round that starts on level 4 at the cost of __X05_MULTIPLIER__ the selected bet. 6 snakes are awarded.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bali Boost",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round that starts on level 1 at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "All Ouroboros",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with a double blood orchid activation at the cost of __X03_MULTIPLIER__ the selected bet. All snakes may cross themselves.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Flower Power",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop with a minimum of 3 random orchids at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Boosted Chance",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop with more than double the chance of reaching the first level at the cost of __X01_MULTIPLIER__ the selected bet.\nThe X-iter features can only be activated in the base game.\nThe minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.\nThe theoretical payout (RTP) for all X-iter game modes in Coba Reborn is __RTP__.\nAll game rules apply for the X-iter features as well.\nLast updated 2023-06-19",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/cobareborn/build-280586/assets/translation/cobareborn-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10197-cobareborn-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Coba Reborn\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster wins (5 connecting symbols)\nJackpot No\nReels 7 reels\nRows 7 rows\n\nGame description\nLegend speaks of a flower hidden in deepest Borneo that provides immortal life. Local villagers speak of a temple filled with riches, but warn any treasure hunters that it is guarded by unkillable giant snakes. Your goal is to climb the temple and level up to be rewarded by snakes entering the game grid, and these snakes combined with powerful orchids will help generate larger win clusters and create multiplier wilds."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/cobareborn/build-280586/assets/translation/cobareborn-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10197-cobareborn-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 7 rows and 7 columns slot with a hexagonal symbol grid, dropping symbols and cluster wins.\nThe minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\nEach bet is __CPBB__ coins."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/cobareborn/build-280586/assets/translation/cobareborn-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10197-cobareborn-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nCOBA: Guarantees a game round that starts on level 4 at the cost of __X05_MULTIPLIER__ the selected bet. 6 snakes are awarded.\nBALI BOOST: Guarantees a game round that starts on level 1 at the cost of __X04_MULTIPLIER__ the selected bet.\nALL OUROBOROS: Guarantees a game round with a double blood orchid activation at the cost of __X03_MULTIPLIER__ the selected bet. All snakes may cross themselves.\nFLOWER POWER: One drop with a minimum of 3 random orchids at the cost of __X02_MULTIPLIER__ the selected bet.\nBOOSTED CHANCE: One drop with more than double the chance of reaching the first level at the cost of __X01_MULTIPLIER__ the selected"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/cobareborn/build-280586/assets/translation/cobareborn-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10197-cobareborn-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nLegend speaks of a flower hidden in deepest Borneo that provides immortal life. Local villagers speak of a temple filled with riches, but warn any treasure hunters that it is guarded by unkillable giant snakes. Your goal is to climb the temple and level up to be rewarded by snakes entering the game grid, and these snakes combined with powerful orchids will help generate larger win clusters and create multiplier wilds.\n\nCoba Reborn is a cluster game with symbol win explosions and symbol gravity that keep the game going. Wins are collected towards level ups where \"walking cluster\" snakes enter the game alone or in larger groups. The snakes eat symbols to grow and stay alive to be able to create even larger win clusters for big win crescendos.\n\nFour different orchids drop in as blockers with"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/cobareborn/build-280586/assets/translation/cobareborn-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10197-cobareborn-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Coba Reborn\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster wins (5 connecting symbols)\nJackpot No\nReels 7 reels\nRows 7 rows\n\nGame description\nLegend speaks of a flower hidden in deepest Borneo that provides immortal life. Local villagers speak of a temple filled with riches, but warn any treasure hunters that it is guarded by unkillable giant snakes. Your goal is to climb the temple and level up to be rewarded by snakes entering the game grid, and these snakes combined with powerful orchids will help generate larger win clusters and create multiplier wilds.\n\nCoba Reborn is a cluster game with symbol win explosions and symbol gravity that keep the game going. Wins are collected towards level ups where \"walking cluster\" snakes enter the game alone or in larger groups. The snakes eat symbols to grow and stay alive to be able to create even lar"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/coba-reborn/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10197; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins.modes",
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-coba-reborn.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

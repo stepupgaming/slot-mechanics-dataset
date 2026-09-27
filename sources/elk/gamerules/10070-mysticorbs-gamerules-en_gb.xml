@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+<!--WORDS NOT TO TRANSLATE IN THIS GAME
+- Orb(s)
+- Charged 
+- Upgrade
+- Orb Siege
+- Extra Life
+- Bonus
+- Multiplier
+- Orb Payout
+- Avalanche
+
+-->
+
+<!--Intro-->
+	
+<!--Paytable-->
+
+<entry key="paytableOrbs">The Orb is a wild symbol that activates the feature vertically above it on the feature row.</entry>
+
+<entry key="paytableChargedOrb">The Charged Orb is a wild symbol that activates all features currently on the feature row.</entry>
+
+<entry key="paytableOrbExplosion">Orbs contributing to winning combinations are removed with their respective winning combinations. Orbs not contributing to winning combinations explode and remove all adjacent symbols.</entry>
+								  
+<entry key="paytableFeatureRow">The feature row is populated with up to 5 features at the start of a game round. Activated features are removed and new features are added.</entry>
+
+<entry key="paytableClusterWins">A winning cluster consists of 5 or more vertically or horizontally connected identical symbols, wilds or Orbs. Winning clusters are removed, generating an Avalanche, after which new symbols drop in to fill the empty spaces.</entry>
+
+<entry key="paytableOrbSiege">One of the Orb's adjacent symbols is chosen to surround the Orb. Each Siege feature replaces up to 4 surrounding symbols.</entry>
+
+<entry key="paytableUpgrade">Upgrades all occurrences of one symbol type to a symbol type with higher value or wilds for up to 3 Avalanches.</entry>
+
+<entry key="paytableExtraLife">Awards an additional symbol drop when no further winning combinations appear.</entry>
+
+<entry key="paytableBonus">Awards entry to the bonus game.</entry>
+
+<entry key="paytableMultiplier">Adds its value to the total multiplier.</entry>
+
+<entry key="paytableOrbPayout">Pays out the value times the placed bet.</entry>
+
+<entry key="paytableOrbCollection">Collect 5 Orbs to trigger the bonus game. Collect Orbs in the bonus game for additional free drops.</entry>
+
+<entry key="paytableWildSymbol">The wild symbol substitutes for any symbol except the Orbs.</entry>
+
+<entry key="paytableBonusMultiplier">The bonus game features a persistent multiplier, which can increase in value.</entry>
+
+
+
+<!--X-iter UI texts-->	
+
+<entry key="X01B1">Guaranteed Feature!</entry>
+
+<entry key="X02B1">3 Drops!</entry>
+<entry key="X02B2">Persistent Multiplier!</entry>
+
+<entry key="X03B1">1 Spin!</entry>
+<entry key="X03B2">All Orbs Charged!</entry>
+
+<entry key="X04B1">Bonus!</entry>
+<entry key="X04B2">Guaranteed Free Drops!</entry>
+
+<entry key="X05B1">Super Bonus!</entry>
+<entry key="X05B2">All Orbs Charged!</entry>
+
+
+<!--Gamerules-->
+<entry key="gamerules">
+	<![CDATA[
+1. Mystic Orbs is a 5 reel, 5 row slot with dropping symbols and cluster wins.
+
+2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.
+
+3. Each bet is __CPBB__ coins.
+
+4. A winning cluster consists of 5 or more identical symbols, wilds or Orbs which are either vertically or horizontally connected.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins (if available in the applicable jurisdiction). The player can change preference in Settings.
+
+9. Mystic Orbs is played in two modes; Normal mode and Bonus mode with free drops.
+
+10. The wild symbol substitutes for any symbol except the Orbs. If a winning cluster consists of only wild symbols with no payout symbols included, the wild symbol pays as the highest valued symbol.
+
+11. There are 2 Orbs in the game, the Orb and the Charged Orb, and both are wild symbols. The Orb activates the function vertically directly above on the feature row and the Charged Orb activates all features currently on the feature row. Both Orbs and Charged Orbs are collected.
+
+12. Orbs not contributing to winning combinations explode and remove all adjacent symbols. Orbs that contribute to winning combinations are removed with their respective winning clusters.
+
+13. The feature row has 5 slots that are populated individually with a feature at the beginning of a game round or free drop, or remain empty. Triggered features are removed and new features may be added in the empty slots. 
+
+14. There are 6 features in the game; Upgrade, Orb Siege, Extra Life, Multiplier, Orb Payout and Bonus. 
+
+15. Feature: Upgrade
+Randomly selects a symbol type in view and upgrades all its occurrences on the symbol grid to a symbol type with higher value or wilds for up to 3 Avalanches. The feature can be retriggered and is executed prior to the payout of the current result.
+
+16. Feature: Orb Siege
+One of the Orb's adjacent symbols is chosen to replace up to 4 symbols surrounding the Orb with instances of the chosen symbol or wilds. Every Siege feature extends the replacement pattern around the Charged Orb with up to 4 instances outwards from the Orb. The feature is executed prior to the payout of the current result.
+
+17. Feature: Multiplier
+The multiplier value is added to the total multiplier. The total multiplier is applied to all current and subsequent winning combinations and Orb Payouts.
+
+18. Feature: Orb Payout
+The value of the feature slot is multiplied by the placed bet and that win is paid out prior to the payout of cluster wins. The feature only appears in the bonus game. 
+
+19. Feature: Extra Life
+Provides an additional symbol drop when no further winning combinations appear in the current game round. The feature executes at the end of an Avalanche cycle and only appears in the base game.
+
+20. Feature: Bonus
+Awards entry to the bonus game at the end of the game round's Avalanche cycle when no additional activated features remain. The feature only appears in the base game.
+
+21. Multiple features triggered in the same result will execute in the following order:
+- Multiplier
+- Orb Payout
+- Upgrade 
+- Orb Siege
+- Extra Life
+- Bonus 
+
+
+22. All cluster wins in the current symbol drop are collected and then all symbols that were part of a winning combination, all triggered feature symbols and all Orbs explode. The remaining symbols fall vertically until they reach a resting position, after which new symbols drop in and potential features are added to fill the empty spaces on the feature row. The Avalanche cycle continues as long as new winning combinations or Orbs appear.
+
+23. Orbs are continuously collected during the base game. Collecting 5 Orbs during a game round in the base game triggers the bonus game. Only 5 Orbs can be collected in the base game.
+
+24. Orbs are continuously collected during the bonus game. Additional free drops are awarded for every 5 Orbs collected in the bonus game. 
+
+25. Bonus mode ends when no free drops remain.
+
+26. Winnings are paid out when all triggered features have ended.
+
+27. No bets can be changed during an ongoing game round.
+
+28. A game round ends if the maximum win is reached.
+
+29. The theoretical payout (RTP) in Mystic Orbs is __RTP__.
+
+30. The game has a maximum win of __TBB__ the placed bet.
+
+31. In the event of a malfunction, all bets and wins are void.
+
+
+   
+Last updated 2021-12-03
+	]]></entry>
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X01">Feature:
+1 drop with a guaranteed Orb and at least 1 activated feature at the cost of 5x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">Persistent Multiplier: 
+3 drops with a persistent multiplier at the cost of 25x the selected bet. </entry>
+
+<entry key="xiter-rule" tags="X03">Charged Orbs: 
+1 drop with all Orbs Charged at the cost of 50x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">Bonus:
+Guarantees entry to the Bonus mode with free drops at the cost of 100x the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus:
+Guarantees entry to a Super Bonus mode with free drops where all Orbs are Charged at the cost of 500x the selected bet.</entry>
+
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Mystic Orbs is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-03-26</entry>
+<!--Dialogs-->	
+
+</translation>

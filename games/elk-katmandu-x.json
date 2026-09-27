@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Katmandu X",
+    "slug": "elk-katmandu-x",
+    "provider_game_id": "10192",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10192&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/katmandux/build-279557/assets/translation/katmandux-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 rows by 6 columns"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": "horizontal_or_vertical",
+    "notes": "A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "All cluster wins in the current symbol drop are collected and thereafter all symbols which were part of a winning combination explode. The remaining symbols fall vertically until they reach a resting position and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The Wild symbol substitutes for any symbol except other wild symbols, bonus symbol, free drops symbol, and super bonus symbol.",
+        "params": {}
+      },
+      {
+        "name": "Multiplier Wild",
+        "behavior": "The multiplier Wild symbol substitutes for any symbol except other wild symbols, the bonus symbol, free drops symbol, and super bonus symbol. It also has a multiplier that will be multiplied to the win amount of any winning cluster where the multiplier Wild is included.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Three or more bonus symbols trigger the bonus game with free drops.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      },
+      {
+        "name": "Super Bonus",
+        "behavior": "The super bonus symbol in combination with two or more bonus symbols trigger the super bonus game with free drops and a guaranteed Super Wild Strike in every free drop.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Multiplier Wild",
+        "behavior": "The multiplier Wild symbol substitutes for any symbol except other wild symbols, the bonus symbol, free drops symbol, and super bonus symbol. It also has a multiplier that will be multiplied to the win amount of any winning cluster where the multiplier Wild is included.",
+        "params": {
+          "role": "symbol_multiplier"
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Katmandu X: paid spin on 6x6. A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.. Avalanche/tumble after wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 6x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "All cluster wins in the current symbol drop are collected and thereafter all symbols which were part of a winning combination explode. The remaining symbols fall vertically until they reach a resting position and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.",
+    "notes": "erence in Settings.\nWinnings are presented in the player's currency.\nKatmandu X is played in two modes; normal mode and bonus mode with free drops.\nThe wild symbol substitutes for any symbol except the bonus, free drops and super bonus symbols.\nThe multiplier wild symbol substitutes for any"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 bonus symbols anywhere in view during normal mode trigger the bonus mode with 7 free drops.",
+        "spins_awarded": "7 free drops",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "ng Wild. The big symbols get up to four by four in size. Icing of the cake is a bonus game with free drops.\nWins are generated by orthogonally adjacent clusters of five or more symbols, resulting in a varying number of ways to win. The RTP of the game is defined in the game rules.\nThree bonus symbols trigger the bonus game with free drops. If one of the bonus symbols is a super bonus symbol, the super bonus game is triggered.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always availabl",
+        "end_condition": "The free drops bonus game ends when no free drops remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award 7 free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "7 free drops"
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "super bonus symbol, the super bonus game is triggered.",
+        "spins_awarded": "7 free drops",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "game with free drops. If one of the bonus symbols is a super bonus symbol, the super bonus game is triggered.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.\nThree or more bonus symbols trigger the bonus game with free drops.\nThe super bonus symbol in combination wit",
+        "end_condition": "The free drops bonus game ends when no free drops remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "game with free drops. If one of the bonus symbols is a super bonus symbol, the super bonus game is triggered.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bo",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "7 free drops"
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Katmandu X."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "All cluster wins in the current symbol drop are collected and thereafter all symbols which were part of a winning combination explode. The remaining symbols fall vertically until they reach a resting position and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the Super bonus game with a guaranteed Super Wild Strike at the beginning of each free drop at the cost of __X05_MULTIPLIE; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the bonus game with free drops at the cost of __X04_MULTIPLIER__ the selected bet.; Super Wild Strike (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): A symbol drop with a guaranteed Super Wild Strike at the cost of __X03_MULTIPLIER__ the selected bet.; Exploding Wild (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): A symbol drop with a guaranteed exploding Wild symbol at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): A symbol drop with more than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the Super bonus game with a guaranteed Super Wild Strike at the beginning of each free drop at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the bonus game with free drops at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Wild Strike",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "A symbol drop with a guaranteed Super Wild Strike at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Exploding Wild",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "A symbol drop with a guaranteed exploding Wild symbol at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "A symbol drop with more than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/katmandux/build-279557/assets/translation/katmandux-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10192-katmandux-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Katmandu X\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster wins (5 connecting symbol clusters)\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nAlong the horizon lies the snow-covered mountains of Katmandu valley. Ahead you find a long stairway leading up the cliffs to an old temple, your final destination. You are entering a mythical ancient place filled with unknown riches. Will you be able to find them?\n\nKatmandu X is a 6 row by 6 column cluster based slot where you win on clusters with five or more connecting symbols. Central game features are: Th"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/katmandux/build-279557/assets/translation/katmandux-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10192-katmandux-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 6 row by 6 column cluster based slot where you win on clusters with five or more connecting symbols. Central game features are: The total multiplier that increases for every win, the different wild symbols and the big symbols. The Wild symbols come in three flavours; regular Wild, the multiplier Wild and the exploding Wild."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/katmandux/build-279557/assets/translation/katmandux-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10192-katmandux-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper Bonus:\nGuarantees a game round with entry to the Super bonus game with a guaranteed Super Wild Strike at the beginning of each free drop at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus:\nGuarantees a game round with entry to the bonus game with free drops at the cost of __X04_MULTIPLIER__ the selected bet.\nSuper Wild Strike: \nA symbol drop with a guaranteed Super Wild Strike at the cost of __X03_MULTIPLIER__ the selected bet.\nExploding Wild: \nA symbol drop with a guaranteed exploding Wild symbol at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt:\nA symbol drop with more than double the chance to trigger the b"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/katmandux/build-279557/assets/translation/katmandux-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10192-katmandux-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nAlong the horizon lies the snow-covered mountains of Katmandu valley. Ahead you find a long stairway leading up the cliffs to an old temple, your final destination. You are entering a mythical ancient place filled with unknown riches. Will you be able to find them?\n\nKatmandu X is a 6 row by 6 column cluster based slot where you win on clusters with five or more connecting symbols. Central game features are: The total multiplier that increases for every win, the different wild symbols and the big symbols. The Wild symbols come in three flavours; regular Wild, the multiplier Wild and the exploding Wild. The big symbols get up to four by four in size. Icing of the cake is a bonus game with free drops.\nWins are generated by orthogonally adjacent clusters of five or more symbols, resulting in"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/katmandux/build-279557/assets/translation/katmandux-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10192-katmandux-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Katmandu X\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster wins (5 connecting symbol clusters)\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nAlong the horizon lies the snow-covered mountains of Katmandu valley. Ahead you find a long stairway leading up the cliffs to an old temple, your final destination. You are entering a mythical ancient place filled with unknown riches. Will you be able to find them?\n\nKatmandu X is a 6 row by 6 column cluster based slot where you win on clusters with five or more connecting symbols. Central game features are: The total multiplier that increases for every win, the different wild symbols and the big symbols. The Wild symbols come in three flavours; regular Wild, the multiplier Wild and the exploding Wild. The big symbols get up to four by four in size. Icing of the cake is a bonus game with free"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/katmandu-x/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10192; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-katmandu-x.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

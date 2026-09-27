@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--====================
+***** GAMESPECIFIC *****
+=====================-->
+
+<!--Words not translated in this game
+
+Dirty Dawgs
+Wild
+Wilds
+BIG WIN
+SUPER WIN
+MEGA WIN
+EPIC WIN
+DIRTY WIN
+DIRTY WILD
+Nitro Wild Reels
+Nitro Feature Box
+Nitro Raffle
+Nitro Expand
+Nitro Wolf
+Respin
+
+
+-->
+
+<!-- Copy to gfx game specific text-assets -->
+<gfx key="paytableBonusTxt">BONUS</gfx>
+<gfx key="paytableSuperBonusTxt">SUPER BONUS</gfx>
+<gfx key="paytableBonusSymbolTxt">BONUS SYMBOL</gfx>
+<gfx key="paytableBonusGameTxt">BONUS GAME</gfx>
+<gfx key="paytableFreeDropsTxt">FREE SPINS</gfx>
+<gfx key="paytableWildSymbolSubTxt">WILD SYMBOL</gfx>
+<gfx key="paytableWildSymbolsSubTxt">WILD SYMBOLS</gfx>
+<gfx key="CoinsTxt">COINS</gfx>
+<gfx key="OfTxt">OF</gfx>
+<gfx key="PlayedInTotalTxt">Played in Total</gfx>
+<gfx key="SkipIntroTxt">SKIP INTRO</gfx>
+<gfx key="StartTxt">START</gfx>
+<gfx key="SymbolPayoutTxt">SYMBOL PAYOUT</gfx>
+<gfx key="SymbolPaytableTxt">PAYTABLE</gfx>
+<gfx key="FeaturesTxt">FEATURES</gfx><!-- New from 2024 01 04 -->
+<gfx key="TotalWinTxt">Total Win</gfx>
+<gfx key="WinUpToTxt">WIN UP TO</gfx>
+<gfx key="IncreasingMultiplierTxt">INCREASING MULTIPLIER</gfx>
+
+<!--==========================
+***** Game Documentation *****
+===========================-->
+
+<entry key="gdd-description">Big. Bad. Brutal. Meet the Dirty Dawgs clan of Nitropolis. After years of living as outcasts in the wild outside of the city, the Dirty Dawgs are back and aiming to reclaim what is theirs. The guardian Dobermans repopulate Nitropolis and work together with the other clans to defeat the Nitro Wolf and bring havoc where they go. 
+
+Dirty Dawgs is a 6 column, 4 rows slot with spinning reels and 20 paylines. Central game features are the Nitro Wild Reels which can be upgraded and expanded to cover an entire column, the Nitro Feature Box which generates random features, and the Free Spins Bonus Game.
+
+Three or more bonus symbols anywhere on the reels trigger the Free Spin Bonus Game. Nitro Wild Reels are sticky during the bonus game. Six bonus symbols trigger the Super Bonus Game.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Dirty Dawgs has 20 paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">Three or more bonus symbols anywhere on the reels trigger the Free Spins Bonus Game. Nitro Wild Reels are sticky during the bonus game. Six bonus symbols trigger the Super Bonus Game.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">20 paylines</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 reels</entry>
+<entry key="gdd-kf-rows">4 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!--=======================
+***** Special Symbols *****
+========================-->
+
+<entry key="gdd-sfs-1">The Nitro Wild Reels are two or more stacked wild symbols in a 1x2 up to 1x4 size symbol. One Nitro Wild Reel can land on each column and they can be expanded, upgraded and turned into spinning coin reels by a Nitro Feature Box.</entry>
+
+<entry key="gdd-sfs-2">The Nitro Feature Box trigger one or more random features. It can trigger a Respin, the Nitro Expand feature, the Nitro Raffle feature or the Wild feature where the Nitro Feature Box turns into a wild symbol.</entry>
+
+<entry key="gdd-sfs-3">Three or more bonus symbols anywhere on the reels trigger the Free Spins Bonus Game. During free spins, Nitro Wild Reels are sticky. Landing more than three bonus symbols adds a Nitro Wild Reel for each bonus symbol beyond the three required to trigger the bonus game. Landing six bonus symbols trigger the Super Bonus game with three Nitro Wild Reels from the beginning of the bonus game.</entry>
+
+<!--======================
+***** X-iter Buttons *****
+=======================-->
+
+<entry key="gdd-xiterbutton-1">Bonus Hunt!</entry>
+<entry key="gdd-xiterbutton-2">Three Nitro Wild Reels!</entry>
+<entry key="gdd-xiterbutton-3">Dirty Wilds!</entry>
+<entry key="gdd-xiterbutton-4">Bonus Game!</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus!</entry>
+
+<!--=======================
+***** X-iter UI Texts *****
+========================-->
+
+<entry key="X01B1">Bonus Hunt!</entry>
+<entry key="X01B2">More than TRIPLE the chance to trigger the Bonus Game!</entry>
+<entry key="X02B1">Three Nitro Wild Reels!</entry>
+<entry key="X02B2">One spin with three guaranteed Nitro Wild Reels!</entry>
+<entry key="X02B3">Three or more Bonus symbols trigger the Super Bonus!</entry><!-- Changed 2024 01 22, "the" added -->
+<entry key="X03B1">Dirty Wilds!</entry>
+<entry key="X03B2">One spin with guaranteed Dirty Wilds feature!</entry>
+
+<entry key="X04B1">Bonus Game!</entry>
+<entry key="X04B2">One spin with guaranteed entry to the Bonus Game!</entry>
+<entry key="X04B3">Sticky Nitro Wild Reels!</entry>
+<entry key="X05B1">Super Bonus!</entry>
+<entry key="X05B2">One spin with guaranteed entry to the Super Bonus!</entry><!-- Changed 2024 01 22, "Game" "removed -->
+<entry key="X05B3">Three guaranteed Nitro Wild Reels from the start!</entry><!-- Changed 2024 01 22 "at level 3 or higher" removed -->
+<entry key="X05B4">Sticky Nitro Wild Reels!</entry>
+<!--Intro-->
+
+<!--================
+***** Paytable *****
+=================-->
+
+<!--The six Nitro Wild Reels and the Dirty Dawgs-->
+<entry key="paytableBrutal">Big. Bad. Brutal. Meet the Dirty Dawgs clan of Nitropolis.</entry>
+
+<!--Paylines-->
+<entry key="paytablePaylines">Dirty Dawgs has 20 paylines.</entry>
+
+<!--Dirty Wilds-->
+
+<!--Bonus Game-->
+<entry key="paytableBonus">Three bonus symbols trigger Free Spins.</entry><!-- Changed 2023 12 20 -->
+<entry key="paytableSuperBonus">Each additional bonus symbol awards a Nitro Wild Reel, and six bonus symbols trigger the Super Bonus.</entry>
+<entry key="paytableBonusRetrigger">Landing a Nitro Wild Reel on each of the six reels in Bonus awards 5 additional Free Spins.</entry>
+
+<!--Nitro Feature Box-->
+<entry key="paytableNitroFeatureBox">The Nitro Feature Box awards random features.</entry>
+<entry key="paytableRespin">Bonus symbols, Nitro Wild Reels and Nitro Feature Boxes are all sticky during respins.</entry>
+<entry key="paytableNitroFeatureRaffle">All Nitro Wild Reels switch state to spinning coin reels. Any coin landed pay the value times the current bet level.</entry>
+
+<!--Nitro Wild Reels-->
+<entry key="paytableNitroWildReels">Nitro Wild Reels cover two to four vertical symbol positions and contain a stack of wild symbols.</entry>
+<entry key="paytableNitroWildReelExpand">Nitro Wild Reels can be expanded and upgraded.</entry>
+
+<entry key="paytableNitroWildReelLand">One Nitro Wild Reel can land per column.</entry>
+
+<!--Dirty Wilds-->
+<entry key="paytableDirtyWildsInit">The Dirty Wilds feature may be triggered at any time in the base game.</entry>
+<entry key="paytableDirtyWilds">A random number of fully expanded Nitro Wild Reels land on the game grid.</entry>
+
+<!--=================
+***** Gamerules *****
+==================-->
+
+<!--General Rules-->
+<entry key="gamerule">Dirty Dawgs is a 6 column, 4 rows slot with spinning reels and 20 paylines.</entry>
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Wins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Dirty Dawgs is played in two modes; normal mode and bonus mode with free spins.</entry>
+
+<entry key="gamerule">The wild symbol substitutes for any symbol except the bonus and Nitro Feature Box symbol. A payline of only wild symbols pay as the highest value symbol.</entry>
+
+<!--Nitro Wild Reels-->
+<entry key="gamerule">A Nitro Wild Reel covers two to four vertical positions and contains a stack of wild symbols. The level indicator on the Nitro Wild Reel indicates the size of the wild stack.</entry><!-- Changed 2024 01 22 "symbol" removed -->
+
+<entry key="gamerule">Nitro Wild Reels can be randomly upgraded to a higher level increasing the size of the contained wild stack.</entry>
+
+<entry key="gamerule">Nitro Wild Reels can expand from 1x2 to 1x3 and up to 1x4. The fully expanded Nitro Wild Reel of 1x4 covers the entire column.</entry>
+
+<entry key="gamerule">Only one Nitro Wild Reel can land per column.</entry>
+
+<!--Nitro Feature Box-->
+<entry key="gamerule">The Nitro Feature Box is a feature symbol that triggers a random feature when it lands. It might trigger additional features within a spin.</entry>
+
+<entry key="gamerule">The Nitro Feature Box can trigger Respin, wild, Nitro Expand and Nitro Raffle.</entry>
+
+<entry key="gamerule">The Nitro Feature Box Respin feature awards a respin where Nitro Wild Reels, Nitro Feature Boxes and bonus symbols all remain sticky.</entry>
+
+<entry key="gamerule">The Nitro Feature Box wild feature converts the Nitro Feature Box into a wild symbol.</entry>
+
+<entry key="gamerule">The Nitro Feature Box Nitro Expand feature will expand the size of a Nitro Wild Reel.</entry>
+
+<entry key="gamerule">The Nitro Feature Box Nitro Raffle feature converts all Nitro Wild Reels in view into a number of small 1x1 spinning coin reels. The levels of the Nitro Wild Reels are temporarily inactivated during the feature. The coin reels are sparse and any landed coins award their coin value times the current bet level.</entry>
+
+<entry key="gamerule">The Nitro Raffle feature starts after potential respins have been played.</entry>
+
+<entry key="gamerule">Only one Max Win coin can land during a Nitro Raffle feature.</entry>
+
+<!--Dirty Wilds-->
+<entry key="gamerule">The Dirty Wilds feature can be triggered randomly at any time in normal mode. It lands a random number of fully expanded Nitro Wild Reels on the game grid before the rest of the reels stop.</entry>
+
+<!--Bonus Game-->
+<entry key="gamerule">Three or more bonus symbols anywhere on the reels trigger the Free Spin Bonus Game.</entry>
+<entry key="gamerule">Landing more than three bonus symbols award a boosted Bonus Game start with up to three sticky Nitro Wild Reel from the start. Six bonus symbols trigger the Super Bonus Game</entry>
+
+<entry key="gamerule">The bonus game starts once any respins and Nitro Raffle features have been played through. No Nitro Wild Reels from the base game are brought into the bonus game.</entry>
+
+<entry key="gamerule">Six Nitro Wild Reels in bonus mode retrigger the bonus game and award additional free spins. The bonus game can only be retriggered once.</entry>
+<entry key="gamerule">Nitro Wild Reels are sticky in bonus mode.</entry>
+<entry key="gamerule">The bonus game ends when no spins remain or when the win cap has been reached.</entry>
+<entry key="gamerule">Winnings are paid out at the end of the bonus mode.</entry>
+
+<!--PaymentRules-->
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">The theoretical payout (RTP) in Dirty Dawgs is __RTP__</entry>
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">Last updated 2023-12-14</entry>
+
+<!--====================
+***** X-iter rules *****
+=====================-->
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus:
+One spin with guaranteed entry to the Super Bonus with three persistent Nitro Wild Reels at level 3 or higher from the start at the cost of __X05_MULTIPLIER__ the selected bet.</entry><!-- Changed 2024 01 22, "Game" "removed -->
+
+<entry key="xiter-rule" tags="X04">Bonus Game:
+One spin with guaranteed entry to the Bonus Game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">Dirty Wilds:
+One spin with guaranteed trigger of the Dirty Wilds feature at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">Three Nitro Wild Reels:
+One spin with three guaranteed Nitro Wild Reels and where three or more Bonus symbols will trigger the Super Bonus at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">Bonus Hunt:
+More than TRIPLE the chance to trigger the Bonus Game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Dirty Dawgs is __RTP__.</entry>
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2023-12-14</entry>
+<!--Dialogs-->
+
+</translation>

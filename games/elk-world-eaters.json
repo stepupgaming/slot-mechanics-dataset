@@ -1,0 +1,326 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "World Eaters",
+    "slug": "elk-world-eaters",
+    "provider_game_id": "10255",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10255&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/worldeaters/build-328014/assets/translation/worldeaters-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 5 rows"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "horizontal_or_vertical",
+    "notes": "Collector Wins"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Multiplier Wild",
+        "behavior": "The Multiplier Wild symbol substitutes for any payout symbol and adds its value to the global multiplier when part of a winning combination.\nCoin symbols pay out the displayed value times the bet and multiplied by the global multiplier when they have a clear path to the topmost row.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Multiplier Wild",
+        "behavior": "The Multiplier Wild symbol substitutes for any payout symbol and adds its value to the global multiplier when part of a winning combination.\nCoin symbols pay out the displayed value times the bet and multiplied by the global multiplier when they have a clear path to the topmost row.",
+        "params": {
+          "role": "symbol_multiplier"
+        }
+      },
+      {
+        "name": "Global Multiplier",
+        "behavior": "the global multiplier when part of a winning combination.\nCoin symbols pay out the displayed value times the bet and multiplied by the global multiplier when they have a clear path to the topmost row.\nThe Grey House symbol is normally a blocker symbol.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "World Eaters: paid spin on 5x5. Collector Wins. Avalanche/tumble after wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 5x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Collector Wins",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "Winning symbols explode/are removed; remaining symbols fall; new symbols drop in. Continues while new wins appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Collector Wins",
+    "notes": "e preference in settings.\nWins are presented in the player's currency.\nThe game is played in two modes, normal mode and bonus mode.\nThe game consists of 4 different Collector types with matching payout symbols.\nA game round starts with a new set of symbols dropping in on the grid and 2 Colle"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 Bonus symbols trigger the Bonus game with 3 Super drops.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Super bonus symbol combination triggers the super bonus game",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "Super bonus symbol combination triggers the super bonus game",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for World Eaters."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "Winning symbols removed; remaining fall; new symbols drop in.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round with a guaranteed Bonus game and a starting global Multiplier of 10. Cost is __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round triggering the Bonus game. Cost is __X04_MULTIPLIER__ the selected bet.; Epic Bonus Hunt (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round with the highest chance to trigger a Bonus game. Cost is __X03_MULTIPLIER__ the selected bet.; Mega Bonus Hunt (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round with a higher chance to trigger a Bonus game. Cost is __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round with a high chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nDuring the X-iter modes, the grid size is 7x7.\nA UFO f",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round with a guaranteed Bonus game and a starting global Multiplier of 10. Cost is __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round triggering the Bonus game. Cost is __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Epic Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round with the highest chance to trigger a Bonus game. Cost is __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Mega Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round with a higher chance to trigger a Bonus game. Cost is __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round with a high chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nDuring the X-iter modes, the grid size is 7x7.\nA UFO feature symbol appears in the X-iter mode.\nThe following features do not appear in the X-iter modes: Whale, Pipe, Fireworks, Tree and Volcano.\nAn X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.\nThe X-iter features can only be activated in the base game.\nThe theoretical payout (RTP) for all X-iter game modes are __RTP__.\nThe minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.\nAll game rules apply in X-iter mode.\nLast updated 2026-04-14",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/worldeaters/build-328014/assets/translation/worldeaters-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10255-worldeaters-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English World Eaters\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Collector Wins\nJackpot No\nReels 5 columns\nRows 5 rows\n\nGame description\nWorld Eaters is a slot game with 5 columns by 5 rows with dropping symbols.\nWins are paid for each symbol with a free path to the topmost row and its color matching a visible Collector.\nThe Bonus game is triggered when 3 Bonus symbols appear on the grid, after all wins have resolved.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/worldeaters/build-328014/assets/translation/worldeaters-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10255-worldeaters-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers buy-in to different game modes.\nSUPER BONUS:\nBuy a game round with a guaranteed Bonus game and a starting global Multiplier of 10. Cost is __X05_MULTIPLIER__ the selected bet.\nBONUS:\nBuy a game round triggering the Bonus game. Cost is __X04_MULTIPLIER__ the selected bet.\nEPIC BONUS HUNT:\nBuy a game round with the highest chance to trigger a Bonus game. Cost is __X03_MULTIPLIER__ the selected bet.\nMEGA BONUS HUNT:\nBuy a game round with a higher chance to trigger a Bonus game. Cost is __X02_MULTIPLIER__ the selected bet.\nBONUS HUNT:\nBuy a game round with a high chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nDuring the X-iter modes, the g"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/worldeaters/build-328014/assets/translation/worldeaters-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10255-worldeaters-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nWorld Eaters is a slot game with 5 columns by 5 rows with dropping symbols.\nWins are paid for each symbol with a free path to the topmost row and its color matching a visible Collector.\nThe Bonus game is triggered when 3 Bonus symbols appear on the grid, after all wins have resolved.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in either portrait or landscape mode.\nThe Multiplier Wild symbol substitutes for any payout symbol and adds its value to the global multiplier when part of a winning combination.\nCoin symbo"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/worldeaters/build-328014/assets/translation/worldeaters-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10255-worldeaters-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English World Eaters\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Collector Wins\nJackpot No\nReels 5 columns\nRows 5 rows\n\nGame description\nWorld Eaters is a slot game with 5 columns by 5 rows with dropping symbols.\nWins are paid for each symbol with a free path to the topmost row and its color matching a visible Collector.\nThe Bonus game is triggered when 3 Bonus symbols appear on the grid, after all wins have resolved.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in either portrait or landscape mode.\nThe Multiplier Wild symbol substitutes for any payout symbol and adds its value"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/world-eaters/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10255; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-world-eaters.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "ZapLab",
+    "slug": "elk-zaplab",
+    "provider_game_id": "10239",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10239&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/zaplab/build-268295/assets/translation/zaplab-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Key features Rows: 7 rows; Key features Reels: 7 columns"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": "horizontal_or_vertical",
+    "notes": "A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "em and feature symbols, move vertically until they reach a resting position and new symbols drop in from above to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.\nPayout symbols which are part of a winning cluster are collected and increase the Monster Meter. Each exploded symbol position increases the Monster Meter by one step, and the Monster Meter has a total of 25 steps except in X-iter mode Shockwaves Hunt where it has 20 steps and in Shock"
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "ld symbol behind. Zappy's multiplier increases with each zap attack, and he may expand up to 2x2, 3x3, or 4x4 during the last attack.\nDr. Mayhem is a blocker that is zapped off the symbol grid by Zappy.\n\nGame rules\nZapLab is a 7 rows, 7 columns slot with dropping symbols and cluster wins.\nThe minimum bet is __MINBADEFBMODE__, and the maximu"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "ZapLab: paid spin on 7x7. A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.. Avalanche/tumble after wins. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 7x7. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "em and feature symbols, move vertically until they reach a resting position and new symbols drop in from above to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.\nPayout symbols which are part of a winning cluster are collected and increase the Monster Meter. Each exploded symbol position increases the Monster Meter by one step, and the Monster Meter has a total of 25 steps except in X-iter mode Shockwaves Hunt where it has 20 steps and in Shock",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "em and feature symbols, move vertically until they reach a resting position and new symbols drop in from above to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.\nPayout symbols which are part of a winning cluster are collected and increase the Monster Meter. Each exploded symbol position increases the Monster Meter by one step, and the Monster Meter has a total of 25 steps except in X-iter mode Shockwaves Hunt where it has 20 steps and in Shock",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Expanding grid",
+      "trigger": "Feature/bomb/clear-board events as described",
+      "when": "Base and bonus",
+      "effects": "ld symbol behind. Zappy's multiplier increases with each zap attack, and he may expand up to 2x2, 3x3, or 4x4 during the last attack.\nDr. Mayhem is a blocker that is zapped off the symbol grid by Zappy.\n\nGame rules\nZapLab is a 7 rows, 7 columns slot with dropping symbols and cluster wins.\nTh",
+      "params": {}
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Maxed Monster (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop with a Monstrous drop of 5x5, and the Monster Meter only awards Monster Chunks and Monstrous features until Shockwaves is triggered at the cost of __X0; Shockwaves (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round where Shockwaves is triggered at the cost of __X04_MULTIPLIER__ the selected bet.; Amplifier (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop with a pending feature from the Monster Meter, and the Monster Meter only awards Monster features at the cost of __X03_MULTIPLIER__ the selected bet.; Zappy'S Turf (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop with a guaranteed Zappy at the cost of __X02_MULTIPLIER__ the selected bet.; Shockwaves Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop with more than 3 times the chance to trigger Shockwaves at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Maxed Monster",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop with a Monstrous drop of 5x5, and the Monster Meter only awards Monster Chunks and Monstrous features until Shockwaves is triggered at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Shockwaves",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round where Shockwaves is triggered at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Amplifier",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop with a pending feature from the Monster Meter, and the Monster Meter only awards Monster features at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Zappy'S Turf",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop with a guaranteed Zappy at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Shockwaves Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop with more than 3 times the chance to trigger Shockwaves at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/zaplab/build-268295/assets/translation/zaplab-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10239-zaplab-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English ZapLab\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster wins (at least 5 connecting symbols)\nJackpot No\nReels 7 columns\nRows 7 rows\n\nGame description\nLet's turn back the clock to the early 1900s. In the moonlight inside the laboratory, the mad Dr. Mayhem stands and conducts one of his many controversial experiments to try to harness the souls of the past through electricity. Forged by these spirits and powered by light, Zappy appears, an electrical being that lingered like a distant thunder, ready to strike back!\nYears pass and Dr. Mayhem and his experiments f"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/zaplab/build-268295/assets/translation/zaplab-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10239-zaplab-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 7 row, 7 column charged cluster slot that comes with wilds, symbol upgrades, wild flips, big symbols, Zappy, a Monster Meter and Shockwaves - all packed into a potential of 10,000x!\n\nThe Monster Meter awards random feature symbols and random Monster features, such as redrops, wild flips, symbol upgrades, big symbols and Dr. Mayhem symbols which are attacked by Zappy.\nA winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/zaplab/build-268295/assets/translation/zaplab-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10239-zaplab-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nMaxed Monster: One drop with a Monstrous drop of 5x5, and the Monster Meter only awards Monster Chunks and Monstrous features until Shockwaves is triggered at the cost of __X05_MULTIPLIER__ the selected bet.\nShockwaves: Guarantees a game round where Shockwaves is triggered at the cost of __X04_MULTIPLIER__ the selected bet.\nAmplifier: One drop with a pending feature from the Monster Meter, and the Monster Meter only awards Monster features at the cost of __X03_MULTIPLIER__ the selected bet.\nZappy's Turf: One drop with a guaranteed Zappy at the cost of __X02_MULTIPLIER__ the selected bet.\nShockwaves Hunt: One drop with more than 3 times"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/zaplab/build-268295/assets/translation/zaplab-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10239-zaplab-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nLet's turn back the clock to the early 1900s. In the moonlight inside the laboratory, the mad Dr. Mayhem stands and conducts one of his many controversial experiments to try to harness the souls of the past through electricity. Forged by these spirits and powered by light, Zappy appears, an electrical being that lingered like a distant thunder, ready to strike back!\nYears pass and Dr. Mayhem and his experiments fall into oblivion but Zappy remains...\n\nZapLab is a 7 row, 7 column charged cluster slot that comes with wilds, symbol upgrades, wild flips, big symbols, Zappy, a Monster Meter and Shockwaves - all packed into a potential of 10,000x!\n\nThe Monster Meter awards random feature symbols and random Monster features, such as redrops, wild flips, symbol upgrades, big symbols and Dr. Mayhe"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/zaplab/build-268295/assets/translation/zaplab-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10239-zaplab-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English ZapLab\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster wins (at least 5 connecting symbols)\nJackpot No\nReels 7 columns\nRows 7 rows\n\nGame description\nLet's turn back the clock to the early 1900s. In the moonlight inside the laboratory, the mad Dr. Mayhem stands and conducts one of his many controversial experiments to try to harness the souls of the past through electricity. Forged by these spirits and powered by light, Zappy appears, an electrical being that lingered like a distant thunder, ready to strike back!\nYears pass and Dr. Mayhem and his experiments fall into oblivion but Zappy remains...\n\nZapLab is a 7 row, 7 column charged cluster slot that comes with wilds, symbol upgrades, wild flips, big symbols, Zappy, a Monster Meter and Shockwaves - all packed into a potential of 10,000x!\n\nThe Monster Meter awards random feature symbols and r"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/zaplab/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10239; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins.modes",
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-zaplab.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

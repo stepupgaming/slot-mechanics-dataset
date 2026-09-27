@@ -1,0 +1,326 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Frogblox",
+    "slug": "elk-frogblox",
+    "provider_game_id": "10211",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10211&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/frogblox/build-267951/assets/translation/frogblox-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 rows by 6 columns"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 46656,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "46,656 ways"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "All wins in the current symbol drop are collected and thereafter all symbols which are part of a winning combination explode. Adjacent blocker symbols are also exploded and removed. The remaining symbols fall vertically until they reach a resting position, and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol in the main grid except the frog and lily pad symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Bomb",
+        "behavior": "The bomb symbol causes all blocker symbols within the feature shelf to be removed.\nBlocker symbols in the main grid that connect to winning symbols are also removed. Removing all blocker symbols from the main grid in normal mode triggers the bonus mode with free drops.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Frogblox: paid spin on 6x6. 46,656 ways. Avalanche/tumble after wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 6x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 46,656 ways",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "All wins in the current symbol drop are collected and thereafter all symbols which are part of a winning combination explode. Adjacent blocker symbols are also exploded and removed. The remaining symbols fall vertically until they reach a resting position, and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "46,656 ways",
+    "notes": "eference in Settings.\nWinnings are presented in the player's currency.\nFrogblox is played in two modes; normal mode and bonus mode with free drops.\nWins begin with the first leftmost column and only pay from left to right on consecutive columns. No gaps between the columns are allowed. Only"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "Bonus symbols trigger the bonus game (see PDF)",
+        "spins_awarded": "6 free drops",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "es.\nRemoving all blocker symbols from the main grid in normal mode triggers the bonus mode with free drops.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.\nThe wild symbol substitutes for any symbol in the main grid except the frog and lily pad symbols.\nFrogs remove blocker symbols within the feature shelf, or collect fe",
+        "end_condition": "The free drops bonus game ends when no free drops remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award 6 free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "6 free drops"
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": "6 free drops",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "ature offers several different game modes.\nSuper Bonus: Guaranteed entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet. The bonus game starts with a 10x global multiplier.\nBonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nFrogception: A game round with scatter-collect on the frogs. at the cost of __X03_MULTIPLIER__ the selected bet.\nBig Block: A guaranteed big symbol block in the feature shelf at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt: One drop wit",
+        "end_condition": "The free drops bonus game ends when no free drops remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "ature offers several different game modes.\nSuper Bonus: Guaranteed entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet. The bonus game starts with a 10x global multiplier.\nBonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nFrogception: A game round with scatter-collect on the frogs. at the cost of __X03_MULTIPLIER__ the select",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "6 free drops"
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Frogblox."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "All wins in the current symbol drop are collected and thereafter all symbols which are part of a winning combination explode. Adjacent blocker symbols are also exploded and removed. The remaining symbols fall vertically until they reach a resting position, and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Frogception (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): A game round with scatter-collect on the frogs. at the cost of __X03_MULTIPLIER__ the selected bet.; Big Block (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): A guaranteed big symbol block in the feature shelf at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One drop with more than 4 times the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Frogception",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "A game round with scatter-collect on the frogs. at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Big Block",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "A guaranteed big symbol block in the feature shelf at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One drop with more than 4 times the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/frogblox/build-267951/assets/translation/frogblox-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10211-frogblox-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Frogblox\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 46,656 ways\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nWelcome to the heart of the lush, humid Amazon! Out in a brightly-lit clearing, a colorful crumbling stone temple wrapped in strangler fig trees and banyans has provided the habitat for a colony of vibrant rainforest frogs.\n\nFrogblox is a slot with dropping symbols on a 6 row by 6 column main grid and a 2 row by 6 column feature shelf.\n\nCore game features: \nThe game has a main grid where payout symbols drop in along with frogs and lily pad fea"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/frogblox/build-267951/assets/translation/frogblox-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10211-frogblox-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 6 column, 6 rows slot with dropping symbols.\nAll drops in normal mode start with 6 rows and a varying number of ways to win. The number of ways to win depends on the number and placement of blocker symbols on the main grid."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/frogblox/build-267951/assets/translation/frogblox-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10211-frogblox-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper Bonus: Guaranteed entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet. The bonus game starts with a 10x global multiplier.\nBonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nFrogception: A game round with scatter-collect on the frogs. at the cost of __X03_MULTIPLIER__ the selected bet.\nBig Block: A guaranteed big symbol block in the feature shelf at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt: One drop with more than 4 times the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.\nThe X-iter features can only be"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/frogblox/build-267951/assets/translation/frogblox-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10211-frogblox-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nWelcome to the heart of the lush, humid Amazon! Out in a brightly-lit clearing, a colorful crumbling stone temple wrapped in strangler fig trees and banyans has provided the habitat for a colony of vibrant rainforest frogs.\n\nFrogblox is a slot with dropping symbols on a 6 row by 6 column main grid and a 2 row by 6 column feature shelf.\n\nCore game features: \nThe game has a main grid where payout symbols drop in along with frogs and lily pad feature symbols. The feature shelf has all the other feature symbols, but also frogs that drop in. The frogs do their best to pull down and collect all the feature symbols and boost any winnings. Both grids are also partly filled with blocker symbols that can explode and be removed in various ways to access the feature symbols but also trigger the bonus"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/frogblox/build-267951/assets/translation/frogblox-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10211-frogblox-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Frogblox\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 46,656 ways\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nWelcome to the heart of the lush, humid Amazon! Out in a brightly-lit clearing, a colorful crumbling stone temple wrapped in strangler fig trees and banyans has provided the habitat for a colony of vibrant rainforest frogs.\n\nFrogblox is a slot with dropping symbols on a 6 row by 6 column main grid and a 2 row by 6 column feature shelf.\n\nCore game features: \nThe game has a main grid where payout symbols drop in along with frogs and lily pad feature symbols. The feature shelf has all the other feature symbols, but also frogs that drop in. The frogs do their best to pull down and collect all the feature symbols and boost any winnings. Both grids are also partly filled with blocker symbols that can explode and be removed in vario"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/frogblox/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10211; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-frogblox.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

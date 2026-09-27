@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Reindeer Royale",
+    "slug": "elk-reindeer-royale",
+    "provider_game_id": "10228",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10228&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/reindeerroyale/build-263820/assets/translation/reindeerroyale-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 5 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "259 connecting paylines"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "and ammunition caches. The reindeer symbol is the driver of the game and awards respins when it collects ammunition caches or steals from other reindeer. \nWild symbols reveal ammunition caches when they are part of a win and can then trigger a collect.\nThree bonus symbols trigger the free spins bonus game which kicks off with a sticky"
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the bonus, reindeer and ammunition cache symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Three or more bonus symbols trigger the bonus game with free spins.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Reindeer Royale: paid spin on 5x5. 259 connecting paylines. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 5x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 259 connecting paylines",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "259 connecting paylines",
+    "notes": "e in Settings.\nWinnings are presented in the player's currency.\nReindeer Royale is played in two modes; normal mode and bonus mode with free spins.\nThe wild symbol substitutes for any symbol except the bonus, reindeer and ammunition cache symbols. A payline of all wilds pays as the highest v"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 bonus symbols award 3 free spins and 1 reindeer in the first free spin\n4 bonus symbols award 4 free spins and 2 reindeer in the first free spin\n5 bonus symbols award 5 free spins and 3 reindeer in the first free spin\nThree or more bonus symbols during bonus mode retrigger additional free spins and additional reindeer.",
+        "spins_awarded": "3 free spins",
+        "retrigger": "Free spins can be retriggered.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "the game is defined in the game rules.\nThree or more bonus symbols trigger the bonus game with free spins. Three bonus symbols award 3 free spins and 1 initial reindeer in the bonus game, four bonus symbols award 4 free spins and 2 initial reindeer, five bonus symbols award 5 free spins and 3 initial reindeer.\n\nThe reindeer which are in view when the bonus game is triggered are brought into the bonus game, in addition to the reindeer awarded by the bonus trigger. The bonus game starts immediately after potential payline wins and collections, ending any ongoing respin.\nAll reindeers are sticky",
+        "end_condition": "The bonus game and super bonus game end when no free spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award 3 free spins. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "3 free spins"
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": "3 free spins",
+        "retrigger": "Free spins can be retriggered.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "l free spins when the maximum number of reindeer is reached.\nThe bonus game and super bonus game end when no free spins remain or when the win cap has been reached.\nWinnings are paid out at the end of the bonus mode.\nNo bets can be changed during an ongoing game round.\nA game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.\nThe theoretical payout (RTP) in Reindeer Royale is __RTP__.\nThe game will be capped at __TBB__ the placed bet.\nThe probability to hit the maximum total win in the ga",
+        "end_condition": "The bonus game and super bonus game end when no free spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "l free spins when the maximum number of reindeer is reached.\nThe bonus game and super bonus game end when no free spins remain or when the win cap has been reached.\nWinnings are paid out at the end of the bonus mode.\nNo bets can be changed during an ongoing game round.\nA game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.\nThe theoretical pay",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "3 free spins"
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Reindeer Royale."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed entry to the super bonus game with 5 free spins and 3 reindeer at the cost of __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Reining Deers (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with two reindeer and a wild symbol at the cost of __X03_MULTIPLIER__ the selected bet.; Oh Deer (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with a reindeer at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with more than TRIPLE the chance to trigger the bonus and super bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed entry to the super bonus game with 5 free spins and 3 reindeer at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Reining Deers",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with two reindeer and a wild symbol at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Oh Deer",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with a reindeer at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with more than TRIPLE the chance to trigger the bonus and super bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/reindeerroyale/build-263820/assets/translation/reindeerroyale-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10228-reindeerroyale-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Reindeer Royale\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 259 connecting paylines\nJackpot No\nReels 5 reels\nRows 5 rows\n\nGame description\nHunters in the mountains have killed the leader of the weirdest reindeer gang the world has ever seen. In the eternal struggle between humans and reindeer, it is hard to know who is the prey and who is the hunter.\nThe revenge drives the reindeer wild and they plan to break into the hunting lodge and kill the humans.\nReindeer Royale is a 5 reels, 5 rows slot with 259 connecting paylines. The game's main features are collectors"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/reindeerroyale/build-263820/assets/translation/reindeerroyale-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10228-reindeerroyale-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 5 reels, 5 rows slot with 259 connecting paylines. The game's main features are collectors and coins, represented by reindeer and ammunition caches. The reindeer symbol is the driver of the game and awards respins when it collects ammunition caches or steals from other reindeer."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/reindeerroyale/build-263820/assets/translation/reindeerroyale-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10228-reindeerroyale-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper Bonus: Guaranteed entry to the super bonus game with 5 free spins and 3 reindeer at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nIt’s Reining Deers: Guarantees a game round with two reindeer and a wild symbol at the cost of __X03_MULTIPLIER__ the selected bet.\nOh Deer!: Guarantees a game round with a reindeer at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt: One spin with more than TRIPLE the chance to trigger the bonus and super bonus game at the cost of __X01_MULTIPLIER__ the selected bet.\nThe X-iter features can only"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/reindeerroyale/build-263820/assets/translation/reindeerroyale-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10228-reindeerroyale-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nHunters in the mountains have killed the leader of the weirdest reindeer gang the world has ever seen. In the eternal struggle between humans and reindeer, it is hard to know who is the prey and who is the hunter.\nThe revenge drives the reindeer wild and they plan to break into the hunting lodge and kill the humans.\nReindeer Royale is a 5 reels, 5 rows slot with 259 connecting paylines. The game's main features are collectors and coins, represented by reindeer and ammunition caches. The reindeer symbol is the driver of the game and awards respins when it collects ammunition caches or steals from other reindeer. \nWild symbols reveal ammunition caches when they are part of a win and can then trigger a collect.\nThree bonus symbols trigger the free spins bonus game which kicks off with a stic"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/reindeerroyale/build-263820/assets/translation/reindeerroyale-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10228-reindeerroyale-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Reindeer Royale\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 259 connecting paylines\nJackpot No\nReels 5 reels\nRows 5 rows\n\nGame description\nHunters in the mountains have killed the leader of the weirdest reindeer gang the world has ever seen. In the eternal struggle between humans and reindeer, it is hard to know who is the prey and who is the hunter.\nThe revenge drives the reindeer wild and they plan to break into the hunting lodge and kill the humans.\nReindeer Royale is a 5 reels, 5 rows slot with 259 connecting paylines. The game's main features are collectors and coins, represented by reindeer and ammunition caches. The reindeer symbol is the driver of the game and awards respins when it collects ammunition caches or steals from other reindeer. \nWild symbols reveal ammunition caches when they are part of a win and can then trigger a collect."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/reindeer-royale/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10228; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-reindeer-royale.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

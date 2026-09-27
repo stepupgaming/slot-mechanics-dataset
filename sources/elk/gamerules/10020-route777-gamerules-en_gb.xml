@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+	<gfx key="paytableRespins">Overtake Respins</gfx>
+	<gfx key="paytableBonusGame">Bonus Game</gfx>
+	<gfx key="paytableExtraFreeSpinsTxt">5-15 FREE SPINS</gfx>
+	<gfx key="paytableWheelTxt">FORTUNE WHEEL</gfx>
+	<gfx key="paytableFortuneWheel">Fortune wheel paytable</gfx>
+	<gfx key="ConnectingLinesTxt">Connecting paylines</gfx>
+
+
+<!--Translation needed for internal use how to write the line-->
+	<gfx key="YouWonXCoinsTxt">YOU WON 1000 COINS</gfx>
+
+<!--Intro-->
+	
+<!--Paytable-->
+	<entry key="paytableBonusGame">A combination of three skull symbols anywhere on the reels triggers the Bonus game with 5 free spins - Route 777 Free Spins bonus game.</entry>
+	<entry key="paytableTwoSkulls">Two skull symbols in the Bonus game bring a random number of additional free spins.</entry>
+	<entry key="paytableThreeSkulls">Three skull symbols in the Bonus game trigger the Route 777 Fortune Wheel.</entry>
+	<entry key="paytableFortuneWheel">The wheel continues to spin until three identical 7s have been collected or the Stop sign hit.</entry>
+	<entry key="paytableFortuneWheelWins">Winnings increment for every successful spin.</entry>
+	<entry key="paytableOvertakeTxt">Identical hits on the first two reels trigger the Overtake Respins with 5 respins.</entry>
+	<entry key="paytableLockedTxt">The Overtake Respin feature is trigged by identical symbols on the first two reels. Generates 5 respins.</entry>
+	<entry key="paytableRespinsTxt">The first two reels move one step downwards for every respin.</entry>
+
+<!--Gamerules-->
+<entry key="gamerule">Route 777 is a 3 reel, 3 rows slot with 17 connecting paylines.</entry> 
+	
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Wins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in coins.</entry>
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Route 777 is played in two modes, Normal mode and Bonus mode with free spins.</entry>
+
+<entry key="gamerule">Identical hits on the first two reels trigger the Overtake Respins with 5 respins.</entry>
+
+<entry key="gamerule">The first two reels lock during Overtake Respins and move jointly one step downwards for every respin. The third reel spins as normal.</entry>
+
+<entry key="gamerule">Overtake Respins can only be trigged in Normal mode.</entry>
+
+<entry key="gamerule">A combination of 3 skull symbols (scatter) anywhere on the reels triggers Bonus mode with 5 free spins - Route 777 Free Spins bonus game.</entry>
+
+<entry key="gamerule">A combination of 3 skull symbols during Overtake Respins immediately triggers Bonus mode with 5 free spins - Route 777 Free Spins bonus game. The remaining respins are played when the bonus game has ended.</entry> 
+
+<entry key="gamerule">If the triggers for Bonus mode and for the Overtake Respins coincide in the same result then the Route 777 Free Spins bonus game will be triggered but no Overtake Respins.</entry>
+
+<entry key="gamerule">Two skull symbols in Bonus mode bring a random number of additional free spins.</entry>
+
+<entry key="gamerule">Three skull symbols in Bonus mode trigger the Route 777 Fortune Wheel.</entry>  
+
+<entry key="gamerule">Every hit on the Route 777 Fortune Wheel makes the win advance one level in the related win matrix.</entry> 
+
+<entry key="gamerule">The spins on the Route 777 Fortune Wheel continue until 3 identical sevens have been collected or the stop sign has been hit. The total win is collected when the fortune wheel session is completed.</entry> 
+
+<entry key="gamerule">The free spins bonus game ends when no free spins remain or when the win cap has been reached.</entry>
+
+<entry key="gamerule">Winnings are paid out at the end of Bonus mode. </entry>	
+
+
+
+<entry key="gamerule">No bets can be changed during an ongoing spin or in Bonus mode.</entry>
+
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Route 777 is __RTP__.</entry>
+
+<entry key="gamerule">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+   
+<entry key="gamerule" tags="lastupdated">
+Last updated 2024-01-16</entry>
+
+<!--Dialogs-->	
+
+</translation>

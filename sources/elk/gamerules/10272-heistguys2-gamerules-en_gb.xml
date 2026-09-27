@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- English en_gb -->
+<translation language="en_gb">
+
+<!--
+================================
+GAME-SPECIFIC TRANSLATION NOTES:
+================================
+
+UI buttons:
+Translate the words "Settings", "Auto Spin" and "Spin" into the local language using an initial capital letter, as they are names of buttons.
+
+Feature names:
+Keep the following feature names capitalized consistently in all translations:
+Super Wild
+State Jar
+Heist Game
+Bonus Drops
+Super Bonus Drops
+
+Legacy series reference:
+Heist Guys 2 is a prequel to Heist Guys. When referring to the original crew or game universe, keep "Heist Guys" as the series name.
+
+=================================
+Words not translated in this game
+=================================
+
+Heist Guys
+Heist Guys 2
+Heist Game
+Bonus Hunt
+Mega Bonus Hunt
+Buy Bonus
+Super Bonus
+Super Wild
+Bonus Drops
+Super Safe
+MAX WIN
+-->
+
+<!-- ====================== GFX TAGS (LOADING & INTRO) ================ -->
+<gfx key="WinUpToTxt">WIN UP TO</gfx>
+<gfx key="CoinsTxt">COINS</gfx>
+<gfx key="SymbolPayoutTxt">SYMBOL PAYOUT</gfx>
+<gfx key="SkipIntroTxt">SKIP INTRO</gfx>
+<gfx key="BonusHeadSubTxt">BONUS GAME</gfx>
+<gfx key="HeistHeadSubTxt">HEIST GAME</gfx>
+<gfx key="TotalWinTxt">TOTAL WIN</gfx>
+<gfx key="PlayedInTotal">PLAYED IN TOTAL</gfx>
+
+<!-- ======================= PAYTABLE =============================== -->
+
+<!-- Paytable subheaders -->
+<entry key="BonusSubHeader">BONUS GAME</entry>
+<entry key="HeistSubHeader">HEIST GAME</entry>
+
+<entry key="BonusHeadSubTxt">BONUS SYMBOL</entry>
+<entry key="WildHeadSubTxt">SUPER WILD</entry>
+<entry key="HeistHeadSubTxt">HEIST GAME</entry>
+
+<entry key="WildSubTxt">SUPER WILD</entry>
+<entry key="MultiplierSubTxt">MULTIPLIER</entry>
+
+<entry key="BigSubTxt">BONUS SYMBOL</entry>
+
+<entry key="HeistSubTxt">HEIST GAME</entry>
+
+<entry key="SafesSubTxt">SAFES</entry>
+<entry key="SafeItemsSubTxt">HIDING</entry>
+<entry key="CoinsSubTxt">OUTLAW</entry>
+
+<entry key="KeycardSubTxt">KEYS</entry>
+<entry key="GunSubTxt">GUN</entry>
+<entry key="DynamiteSubTxt">DYNAMITE</entry>
+
+<entry key="RescueSubTxt">RESCUE</entry>
+<entry key="ImprisonedSubTxt">IMPRISON</entry>
+<entry key="ArmedSubTxt">ARMED</entry>
+
+<entry key="BankdoorSubTxt">BANK DOOR</entry>
+<entry key="HackingSubTxt">BREAKING IN</entry>
+<entry key="FinalSafeSubTxt">SUPER SAFE</entry>
+
+<!-- DESCRIPTIONS -->
+
+<!-- PAGE 2 -->
+<entry key="paytableWild">The Super Wild moves to a new random empty position before each symbol refill.</entry>
+<entry key="paytableMultiplier">If one or more Super Wilds are part of a winning combination, the win is multiplied by the sum of the multiplier values of all Super Wilds with a multiplier that are part of that win. The multiplier value of each contributing Super Wild doubles after the win is paid.</entry>
+
+<!-- PAGE 3 -->
+<entry key="paytableBonusSymbol">Three or more bonus symbols trigger the bonus game.</entry>
+<entry key="paytableBonusTrigger">If one or more of the collected Bonus symbols is a Super Bonus symbol, the Super Bonus Drops bonus game is triggered instead.</entry>
+
+<entry key="paytableStateBonus">State symbols may increase the State Jar, which can award a cash win, Bonus Drops or the Heist Game.</entry>
+
+<!-- PAGE 4 -->
+<entry key="paytableHeistGame">In the Heist Game, the Heist Guys move through the town toward The Bank, collecting useful items, avoiding guards, catching outlaws and trying to reach the Super Safe.</entry>
+
+<!-- PAGE 5 -->
+<entry key="paytableSafes">Safes appear in different qualities. Better safes contain more valuable rewards.</entry>
+<entry key="paytableHiding">A Heist Guy will hide in any bushes it passes through to stay safe from guards and move past them.</entry>
+<entry key="paytableOutlaw">An outlaw may roam the map during the Heist Game. A Heist Guy that catches an outlaw triggers a standoff.</entry>
+
+<!-- PAGE 6 -->
+<entry key="paytableKeys">Collect keys to unlock The Bank if the Heist Guys reach it.</entry>
+<entry key="paytableGun">Collect guns to catch outlaws and remove guards blocking the Heist Guys’ path.</entry>
+<entry key="paytableDynamite">Collect dynamite to open the Super Safe after reaching and opening The Bank.</entry>
+
+<!-- PAGE 7 -->
+<entry key="paytableImprisoned">When a guard catches the Heist Guys, the active Heist Guy is imprisoned and his progress is stopped.</entry>
+<entry key="paytableRescued">An imprisoned Heist Guy is rescued and reactivated when reached by the remaining Heist Guys.</entry>
+<entry key="paytableGunVsGuard">If the Heist Guy encounters a guard and a gun is available in the inventory, the guard is removed.</entry>
+
+<!-- PAGE 8 -->
+<entry key="paytableKeycardBank">The Bank contains valuable rewards and the path to the Super Safe. Collected keys guarantee access to The Bank if reached.</entry>
+<entry key="paytableHacking">No keys? If the Heist Guys reaches The Bank without keys, there is a chance of breaking in.</entry>
+<entry key="paytableFinalBank">Opening The Bank and having collected dynamite gives access to the Super Safe, where the MAX WIN can be found.</entry>
+
+<!-- ========================= X-ITER UI TEXTS ========================= -->
+<entry key="X01B1">Bonus Hunt</entry>
+<entry key="X01B2">More than 3 times the chance to trigger any bonus game or Heist Game.</entry>
+
+<entry key="X02B1">Mega Bonus Hunt</entry>
+<entry key="X02B2">More than 7 times the chance to trigger any bonus game or Heist Game.</entry>
+
+<entry key="X03B1">Heist Game</entry>
+<entry key="X03B2">Start the game in the Heist Game.</entry>
+
+<entry key="X04B1">Buy Bonus</entry>
+<entry key="X04B2">Guaranteed entry to the bonus game.</entry>
+
+<entry key="X05B1">Super Bonus</entry>
+<entry key="X05B2">Guaranteed entry to the super bonus game.</entry>
+<entry key="X05B3">The game round is played with 2 Super Wilds.</entry>
+
+<!-- X-iter UI button text -->
+<entry key="gdd-xiterbutton-1">Bonus Hunt</entry>
+<entry key="gdd-xiterbutton-2">Mega Bonus Hunt</entry>
+<entry key="gdd-xiterbutton-3">Heist Game</entry>
+<entry key="gdd-xiterbutton-4">Buy Bonus</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus</entry>
+
+<!-- ==================== GAME DOCUMENTATION (GDD) ================== -->
+<entry key="gdd-description">Heist Guys 2 - Heist at Dawn follows the legendary ancestors of the Heist Guys, long before the modern crew took shape. Heist Guys 2 is a 5-column, 4-row slot with ways wins, Avalanche mechanics, an Always Super Wild, the State Jar, Bonus Drops and the Heist Game. Each bonus heist retells the crew's daring exploits through guarded routes, safes, The Bank and the Super Safe. The maximum total win is up to 10,000x your bet.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Winning combinations are formed by matching identical paying symbols on consecutive columns from left to right, beginning on the leftmost column, resulting in a varying number of ways to win. The RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">3 or more Bonus symbols collected in the same game round trigger the Bonus Drops bonus game when the game round ends and no more wins remain. The bonus game starts with 8, 10 or 12 Bonus Drops depending on how many Bonus symbols were collected. If one or more of the collected Bonus symbols is a Super Bonus symbol, the Super Bonus Drops bonus game is triggered instead. Each Bonus Drops or Super Bonus Drops bonus game starts fresh with the Wild multiplier set to its initial value and only the standard Wilds in play. During the bonus game, the Wild multiplier and collected Guys remain persistent, and the Heist Game is triggered if all 3 Guys are collected.</entry>
+
+<!-- GDD Key facts -->
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Ways</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">5 columns</entry>
+<entry key="gdd-kf-rows">4 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- GDD Special symbols -->
+<entry key="gdd-sfs-1">The Super Wild is always present on the game grid. It substitutes for any paying symbol, applies its current multiplier value to the win it is part of, and then doubles its multiplier for future wins in the same game round. The Super Wild moves to a new random empty position before the symbol refills. If the resolved win includes Guy symbols together with the Super Wild, Guy tokens are added to the inventory.</entry>
+
+<entry key="gdd-sfs-2">State symbols can increase the State Jar when they are collected at the end of a game round. The State Jar can award either a cash win, the Bonus Drops bonus game or the Heist Game.</entry>
+
+<entry key="gdd-sfs-3">3 or more Bonus symbols trigger the Bonus Drops bonus game. If one of the collected Bonus symbols is a Super Bonus symbol, the Super Bonus Drops bonus game is triggered instead. Each Bonus Drops or Super Bonus Drops bonus game starts fresh with the Wild multipliers set to its initial value and only the standard Wilds in play. In the bonus games, the Wild multiplier and the collected Guys remain persistent between bonus drops.</entry>
+
+<entry key="gdd-sfs-4">If all 3 Guys are collected, the Heist Game is triggered. In the Heist Game, the crew progresses through a shared run on one map. The crew can collect coin prizes, multipliers and items from safes while trying to reach The Bank and the Super Safe.</entry>
+
+<entry key="gdd-sfs-5">Guns can be collected during the Heist Game. Guns remove guards and win standoffs with outlaws.</entry>
+
+<entry key="gdd-sfs-6">Keys can be collected during the Heist Game. Keys guarantee access to The Bank.</entry>
+
+<entry key="gdd-sfs-7">Dynamite can be collected during the Heist Game. Dynamite guarantees access to the Super Safe if the crew has entered The Bank.</entry> 
+
+<!-- ========================= GAMERULES ========================= -->
+<entry key="gamerule">Heist Guys 2 is a 5-column, 4-row slot with 1,024 ways to win, Avalanche mechanics, an Always Super Wild in normal and bonus mode.</entry>
+
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Winning combinations are formed by matching identical paying symbols on consecutive columns from left to right, beginning on the leftmost column. No gaps between the columns are allowed. Only the longest payline per active payline is paid out. An active payline is defined as the longest winning symbol combination. The number of ways to win is determined by the number of matching symbols on each winning column.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Heist Guys 2 is played in three modes: normal mode, bonus mode with Bonus Drops, and Heist mode.</entry>
+
+<entry key="gamerule">A Super Wild is always present on the game grid. Super Wilds substitute for any paying symbol. Super Wilds always enter the game grid without a multiplier value.</entry>
+
+<entry key="gamerule">If one or more Super Wilds are part of a winning combination, the win is multiplied by the sum of the multiplier values of all Super Wilds with a multiplier that are part of that win. After the win is paid, the multiplier value of each Super Wild with a multiplier that was part of a winning combination is doubled, and each Super Wild without a multiplier that was part of a winning combination gains a multiplier value of 2.</entry>
+
+<entry key="gamerule">After each win, the winning symbols, except for Super Wilds, are removed from the game grid, and all Super Wilds in the game grid move to a random empty symbol position before the symbol refill. Thereafter, the remaining symbols fall down, and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.</entry>
+
+<entry key="gamerule">Super Wilds are dropped out at the end of the game round and before Bonus Drops or Super Bonus Drops begin, but not between bonus drops. At least one Super Wild without a multiplier value is dropped in the first Bonus Drop. At least two Super Wilds without a multiplier value are dropped in the first Super Bonus Drop. Super Wilds keep their multiplier values between bonus drops, and each Super Wild moves to a new position.</entry>
+
+<entry key="gamerule">If a Super Wild is part of a resolved win together with Guy (high value) symbols, Guy tokens are added to the inventory. The Heist Game starts when all 3 Guys have been collected.</entry>
+
+<entry key="gamerule">At the end of a game round, if the game grid contains a State symbol, it will be collected. After collecting a State symbol, the State Jar may increase by one state level or the State Jar is emptied and it awards a random prize. The State Jar can award either a cash win, the Bonus Drops bonus game or the Heist Game.</entry>
+
+<entry key="gamerule">3 or more Bonus symbols collected in the same game round trigger the Bonus Drops bonus game when the game round ends and no more wins remain. 3 Bonus symbols award 8 Bonus Drops, 4 Bonus symbols award 10 Bonus Drops, and 5 Bonus symbols award 12 Bonus Drops. Bonus Drops cannot be retriggered.</entry>
+
+<entry key="gamerule">If one or more of the collected Bonus symbols is a Super Bonus symbol, the Super Bonus Drops bonus game is triggered instead. 3 Bonus symbols award 8 Super Bonus Drops, 4 Bonus symbols award 10 Super Bonus Drops, and 5 Bonus symbols award 12 Super Bonus Drops. Super Bonus Drops cannot be retriggered.</entry>
+
+<entry key="gamerule">If the State Jar is emptied and awards the Bonus Drops bonus game, the player is awarded 8 Bonus Drops.</entry>
+
+<entry key="gamerule">The appearance of the State Jar between spins is for presentation purposes only and is independent of the game outcome.</entry>
+
+<entry key="gamerule">In both bonus games, Super Wilds and collected Guys are persistent between bonus drops. If the Heist Game is triggered and bonus drops remain afterwards, the game returns to the bonus game and continues with the remaining bonus drops after the Heist Game has ended.</entry>
+
+<entry key="gamerule">The Heist Game is a shared run with one map and 3 Guys acting as lives. The Heist Game continues until all 3 Guys are caught, when no Guy can progress further, or when the win cap has been reached. Coins are collected during the Heist Game and awarded at the end.</entry>
+
+<entry key="gamerule">Heist guys can only move upward or sideways—never backwards—and may not revisit any space they’ve already been on. </entry>
+
+<entry key="gamerule">Rooms on the map may contain coin prizes or safes containing prizes of varying value. Safes can award coin prizes, multipliers, Guns, Keys, Dynamite or safe upgrades.</entry>
+
+<entry key="gamerule">Multipliers found in safes are applied directly to the current heist win as the multiplier is picked up.</entry>
+
+<entry key="gamerule">Guns are automatically used to defeat and remove guards or win standoffs with outlaws when the Heist Guys encounter them. The Gun is consumed when used but prevents the active Guy from being caught.</entry>
+
+<entry key="gamerule">A Key is automatically used to guarantee access to The Bank when at least one Guy reaches the door to The Bank.</entry>
+
+<entry key="gamerule">If there is no Key in the inventory when at least one Guy reaches the door to The Bank, a lock attempt is made. An unsuccessful attempt immediately ends the Heist Game and all collected winnings are paid out. A successful attempt opens The Bank.</entry>
+
+<entry key="gamerule">If the crew enters The Bank, each remaining Guy is assigned to a safe.</entry>
+
+<entry key="gamerule">Dynamite is automatically used to gain access to the Super Safe if the Heist Guys have entered The Bank and Dynamite is in the inventory. The Super Safe is the most valuable safe and can award high-value coin prizes, multipliers or MAX WIN.</entry>
+
+<entry key="gamerule">At intersections in the Heist Game, the active Guy automatically chooses a path.</entry>
+
+<entry key="gamerule">A bush in the Heist Guys’ path allows a Guy to pass that part of the map without the risk of being caught by guards.</entry> <!-- hidingALT 1 -->
+
+<entry key="gamerule">If a Guy is within a guard's sight range, a Gun is consumed to remove the guard if available. Otherwise, the active Guy is caught and removed from the run. The guard is then removed from the game.</entry>
+
+<entry key="gamerule">If a Guy is caught, the Heist Game continues immediately with the next Guy. A caught Guy can replace the content of a room on the map, and if that room is reached later, the Guy is freed and added back to the remaining Guys.</entry>
+
+<entry key="gamerule">A Heist Game may include a high-value bounty. If the crew has a Gun when meeting the outlaw, the Gun is consumed, the bounty value is awarded and the outlaw with the bounty is removed. Otherwise, a standoff is resolved for the remaining Guys. A successful standoff awards the bounty value, while a failed standoff causes one Guy to be caught. The standoff continues until either the Guys win or there are no more Guys left to be caught.</entry>
+
+<entry key="gamerule">The Heist Game ends when all Guys are caught, or when no Guy can progress any further, or when the win cap has been reached.</entry>
+
+<entry key="gamerule">Collected winnings are paid out when the bonus game or Heist Game ends.</entry>
+
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Heist Guys 2 is __RTP__.</entry>
+
+<entry key="gamerule" tags="maxwin">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+<entry key="gamerule" tags="lastupdated">Last updated 2026-06-17</entry>
+
+<!-- ========================= X-ITER RULES ========================= -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus: Guaranteed entry to the super bonus game with at least 2 Super Wilds at the cost of __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">Buy Bonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">Heist Game: Start the game in the Heist Game at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">Mega Bonus Hunt: More than 7 times the chance to trigger any bonus game or Heist Game at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">Bonus Hunt: More than 3 times the chance to trigger any bonus game or Heist Game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting an X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Heist Guys 2 is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2026-06-17</entry>
+
+</translation>

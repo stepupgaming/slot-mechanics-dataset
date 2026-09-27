@@ -1,0 +1,280 @@
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+<!-- GAME DOCUMENTATION -->
+<entry key="gdd-description">
+Sumo Sumo is about 2 Sumo streetfighter teams (red, blue) fighting against each other in the main game and free spins. In the bonus game, they break the roadblock and end up in the water, only to be rescued by a Sumo who drives the speedboat to collect them and earn multipliers for a final big win crescendo.
+
+Sumos will stack on top of each other on wins and become walking stacked wilds with respins for big winnings. Sumo stacks of different teams (red, blue) fight each other creating a large sumo stack with multipliers for even bigger wins.
+
+Sumo Sumo is a 5 by 5 reel slot with connecting win ways, paying symbols, Wilds, Bonus symbols, Free Spin symbols and Red and Blue Sumo symbols. Sumo symbols stack on each other creating WILDs with multipliers.
+
+Free Spins are are awarded with 6 spins and played in the main game.
+Bonus game is played on a 5x5 grid of 25 mini reels. Player is awarded with 3 lives with 1 live consumed per spin. A speedboat moves to any other symbol in line in the grid. Each such movement will collect a multiplier and reset the remaining lives to 3. When all lives are consumed, the total bonus game win will be according to the collected multipliers.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+
+<entry key="gdd-payline">Sumo Sumo features 259 connecting win ways with 5 reels and 5 rows.</entry>
+
+<entry key="gdd-bonusgame">Trigger the Speedboat Bonus game by landing 3 Bonus symbols in the main game. Player gets 3 lives which are consumed one-by-one for every spin and reset to 3 for every boat movement with a collected multiplier.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">259 connecting win ways</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">5 reels</entry>
+<entry key="gdd-kf-rows">5 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The Wild symbol substitutes for any paying symbol.</entry>
+<entry key="gdd-sfs-2">Red Sumo symbol may stack up to become a Walking Wild with a multiplier triggering respins. Fights with blue Sumo stacks.</entry>
+<entry key="gdd-sfs-3">Blue Sumo symbol may stack up to become a Walking Wild with a multiplier triggering respins. Fights with red Sumo stacks.</entry>
+<entry key="gdd-sfs-4">2 Free Spins symbols trigger the free spins.</entry>
+<entry key="gdd-sfs-5">3 Bonus symbols trigger the bonus game.</entry>
+
+<entry key="gdd-xiterbutton-5">FREE SPINS</entry>                                         <!--  NO TRANSLATE -->
+<entry key="gdd-xiterbutton-4">SUPER SPEEDBOAT BONUS</entry>                             	<!--  NO TRANSLATE -->
+<entry key="gdd-xiterbutton-3">SPEEDBOAT BONUS</entry>                                   	<!--  NO TRANSLATE -->
+<entry key="gdd-xiterbutton-2">BRAWL MODE</entry>                                   			<!--  NO TRANSLATE -->
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>                                   			<!--  NO TRANSLATE -->
+
+
+
+<!--Intro-->
+
+<!--Paytable-->
+
+<!-- PAGE 1 -->
+<gfx key="FreeSpins">Free Spins</gfx>  																													<!-- NO TRANSLATE -->
+<gfx key="SumoStack">Multiplier Wild Sumo Stacks</gfx>
+<gfx key="BonusGame">Speedboat Bonus</gfx>																											<!-- NO TRANSLATE -->
+
+<!-- PAGE 2 -->
+<gfx key="FreeSpinsSmall">Free Spins</gfx>																											<!-- NO TRANSLATE -->
+<entry key="FreeSpinsxt">2 Free Spins symbols trigger the Free Spins game!</entry>
+
+<gfx key="StickyStack">Sticky Stack</gfx>																												<!-- NO TRANSLATE -->
+<entry key="StickyStackTxt">Wild Sumo stacks stick around during Free Spins!</entry>
+
+<gfx key="Wild">Wild Symbol</gfx> 																															<!-- NO TRANSLATE -->
+<entry key="WildTxt">The Wild Symbol substitutes for any symbol except the Bonus and Free Spins symbols. </entry>
+
+<!-- PAGE 3 -->
+<gfx key="SumoStackRespin">Sumo Stack Respin</gfx>
+
+<gfx key="WalkingMultiplierWilds">Walking Multiplier Wilds</gfx>
+<entry key="WalkingMultiplierWildsTxt">Sumos stacked up are Wild! You get a multiplier based on high they go, stack them up!</entry>
+
+<gfx key="AddSumo">Add Sumo</gfx>
+<entry key="AddSumoTxt">Sumos add to stacks and awards respins!</entry>
+
+<!-- PAGE 4 -->
+<gfx key="SumoStackRespin">Sumo Stack Respin</gfx>
+
+<gfx key="Fight">Fight!</gfx>
+<entry key="FightTxt">Opposing Wild Sumo Stacks rush and start a brawl. The biggest Sumo Stack's strength multiplies based on their opponent!</entry>
+
+<gfx key="Merge">Merge</gfx>
+<entry key="MergeTxt">When similar Wild Sumo Stacks meet, they combine!</entry>
+
+<!-- PAGE 5 -->
+<gfx key="BonusGameBig">Speedboat Bonus</gfx>																											<!-- NO TRANSLATE -->
+
+<gfx key="BonusSymbol">Bonus Symbol</gfx>   																											<!-- NO TRANSLATE -->
+<entry key="BonusSymbolTxt">3 Bonus symbols trigger the Speedboat Bonus Game.</entry>
+
+<gfx key="Boat">Speedboat Sumo</gfx>
+<entry key="BoatTxt">Save lives and collect bet multipliers as the Speedboat Sumo!</entry>
+
+<gfx key="WaterSkier">Wakeboarder</gfx>
+<entry key="WaterSkierTxt">Grow in style and winnings for every position moved! </entry>
+
+<!-- PAGE 6 -->
+<gfx key="BonusGameBig">Speedboat Bonus</gfx>   																										<!-- NO TRANSLATE -->
+
+<gfx key="Swimmers">Swimmers</gfx>
+<entry key="SwimmersTxt">Save them and collect their values!</entry>
+
+<gfx key="Ramp">Ramp</gfx>
+<entry key="RampTxt">Performs tricks and multiplies both the Speedboat and the Wakeboarder values!</entry>
+
+<gfx key="Harpoon">Harpoon</gfx>
+<entry key="HarpoonTxt">Adds its value each turn to all the uncollected Sumos!</entry>
+
+<gfx key="TurboHarpoon">Turbo Harpoon</gfx>
+<entry key="TurboHarpoonTxt">Adds its value for each boat collection to all the uncollected Sumos!</entry>
+
+<gfx key="Shark">Shark</gfx>
+<entry key="SharkTxt">It takes twice as many harpoons to catch this shark!</entry>
+
+
+<!-- PAGE 7 -->
+<gfx key="SymbolPayout">Symbol Payout</gfx>
+
+<!-- PAGE 8 -->
+<gfx key="Paylines">Paylines</gfx>
+
+<!-- Others -->
+<gfx key="SaveLives">Save Lives</gfx>
+<gfx key="CollectMulti">Collect Multipliers</gfx>
+
+
+<!--GAMERULES-->
+* Unique Init
+<entry key="gamerule">Sumo Sumo is a 5 columns by 5 rows slot with walking multiplier wilds, respins and 2 distinct bonus games.</entry>
+
+* General Init
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">All wins begin with the leftmost reel and pay left to right only on the consecutive reels. Only the highest win per active bet line is paid out.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+<entry key="gamerule">The game is played in three modes, Normal mode, Free Spins mode, and Speedboat Bonus mode.</entry>
+<entry key="gamerule">All spins in Normal mode and Free Spins mode have 259 ways to win.</entry>
+<entry key="gamerule">The Wild symbols substitute for any paying symbol. A winning combination of all Wild symbols pays as the highest paying symbol.</entry>
+
+* Wild Sumo Stacks
+<entry key="gamerule">Normal mode and Free Spins mode contain two sets of regular paying symbols: Sumo symbols and Fruit symbols.</entry>
+<entry key="gamerule">Sumo symbols may appear stacked atop each other, only in this state is the stack a Walking Multiplier Wild symbol. This feature is herein referred to as a Wild Sumo Stack. The amount of sumo symbols stacked within a Wild Sumo Stack determines its multiplier value.</entry>
+<entry key="gamerule">When a winline connects through multiple Wild Sumo Stacks, the Wild Sumo Stack multipliers are applied multiplicatively to provide the final winline multiplier.</entry>
+
+* Creation
+<entry key="gamerule">Wild Sumo Stacks are created by winning on multiple sumos within a winline. Sumo symbols within that winline stack onto the last sumo symbol of the same type present in the winline to create a Wild Sumo Stack. When sumos are contributing to multiple winlines, sumos may stack onto shorter winlines to provide multiple Wild Sumo Stacks.</entry>
+<entry key="gamerule">Each sumo symbol only contributes to one Wild Sumo Stack creation; as such some winlines may not create a Wild Sumo Stack as the sumo symbols are being used to create another Wild Sumo Stack on an alternative winline.</entry>
+<entry key="gamerule">Wild Sumo Stacks can also be created by any win when multiple horizontally-adjacent sumo symbols of the same type are also on the landed reels.</entry>
+<entry key="gamerule">Creating Wild Sumo Stacks awards a respin. Sumo symbols that vacate their position respawn before spinning out.</entry>
+
+* Respin
+<entry key="gamerule">Wild Sumo Stacks initially begin to walk rightwards 1 reel during a respin. 1 reel position is traversed during a respin. On reaching the last reel the Wild Sumo Stack starts to walk leftwards 1 reel.</entry>
+<entry key="gamerule">When Wild Sumo Stacks are on the reels, any win awards a respin. </entry>
+<entry key="gamerule">A horizontally-adjacent sumo symbol to a Sumo Wild Stack of the same type adds itself to the Wild Sumo Stack and awards a respin.</entry>
+<entry key="gamerule">During a respin, horizontally-adjacent Wild Sumo Stacks of the same type merge.</entry>
+<entry key="gamerule">During a respin, when opposite type Wild Sumo Stacks are present on the same row, the rightmost Wild Sumo Stack runs at the leftmost Wild Sumo Stack and causes a brawl. The largest Wild Sumo Stack wins the brawl, multiplying its value by the value of the losing Wild Sumo Stack. When equal value Wild Sumo Stacks brawl, the victor is chosen at random. The losing Wild Sumo Stack is removed from the reels.</entry>
+<entry key="gamerule">Wild Sumo Stack interactions may redirect the direction the Wild Sumo Stack travels.</entry>
+<entry key="gamerule">Wild Sumo Stacks spin out on the first reel.</entry>
+<entry key="gamerule">Respins do not stack. A no-win result without a Wild Sumo Stack addition ends the respin game.</entry>
+<entry key="gamerule">Speedboat Bonus and Free Spins game round triggers will be handled before continuing the game should a respin be awarded.</entry>
+
+* Speedboat Bonus Game
+<entry key="gamerule">The Speedboat Bonus game is awarded with 3 lives by landing 3 Bonus symbols in Normal mode or Free Spins mode.</entry>
+<entry key="gamerule">The Speedboat Bonus game is a 5 columns by 5 rows slot with mini-reels and a collection mechanic.</entry>
+
+* Speedboat Bonus Init
+<entry key="gamerule">The Speedboat symbol is awarded at the start of the bonus game. The Speedboat starts with an initial x-bet value.</entry>
+
+<entry key="gamerule">During the Speedboat Bonus game, unoccupied positions on the reels spin to reveal a symbol, consuming a life.</entry>
+<entry key="gamerule">When a symbol lands in line of sight, north, south, east or west to the Speedboat symbol, lives are reset to 3. The speedboat travels across the reels to collect the landed symbol.</entry>
+<entry key="gamerule">Collecting a symbol removes the symbol from its position on the reel. Collections can be chained. The highest value route is prioritised.</entry>
+
+* Speedboat Bonus Mechanics
+<entry key="gamerule">When the collected symbol is a Swimmer Sumo symbol the speedboat adds the collected symbol x-bet value to its own.</entry>
+<entry key="gamerule">When the collected symbol is a Wakeboarder Sumo symbol the speedboat adds the collected symbol x-bet value to its own. The Wakeboarder counter is activated, the Wakeboarder Sumo symbol attaches to the back of the Speedboat symbol and for every new position the Wakeboarder Sumo symbol travels the Wakeboarder counter increases its x-bet value.</entry>
+<entry key="gamerule">The Wakeboarder counter increases its step value per additional Wakeboarder sumo collected. Additional Wakeboarder Sumo symbols do not attach to the Speedboat symbol.</entry>
+<entry key="gamerule">When the collected symbol is a Ramp symbol the Speedboat x-bet value and Wakeboarder counter is multiplied by the value of the ramp.</entry>
+<entry key="gamerule">When the collected symbol is a Harpoonist symbol or Turbo Harpoonist symbol the speedboat adds the collected symbol x-bet value to its own.</entry>
+<entry key="gamerule">Harpoonist and Turbo Harpoonist symbols increase the values of all uncollected Swimmer Sumos and Wakeboarder Sumos by its own x-bet value on landing and for subsequent Speedboat Bonus game spins while uncollected.</entry>
+<entry key="gamerule">Turbo Harpoonist symbols additionally increase the values of all uncollected Swimmer Sumos and Wakeboarder Sumos by its own x-bet value per collection by the Speedboat Sumo.</entry>
+************ POSSIBILITY TO REMOVE BELOW THIS LINE
+<entry key="_gamerule">When the collected symbol is a Shark symbol the speedboat adds the collected symbol x-bet value to its own. Sharks receive double the increments from Harpoonists.</entry>
+************ POSSIBILITY TO REMOVE ABOVE THIS LINE
+<entry key="gamerule">The Speedboat bonus game ends when all lives are lost and no collection possibility is presented.</entry>
+<entry key="gamerule">The Speedboat bonus game win amount is the summation of the Speedboat value and the Wakeboarder counter value.</entry>
+
+* Free Spins Game
+<entry key="gamerule">The Free Spins game is awarded with 6 free spins by landing 2 Free Spins symbols in Normal mode.</entry>
+<entry key="gamerule">Wild Sumo Stacks stay in place between Free Spins. They do not spin out on loss, nor do they spin out on reel 1.</entry>
+<entry key="gamerule">Speedboat Bonus game round triggers will be handled before continuing the game should a respin be awarded or free spins remaining.</entry>
+<entry key="gamerule">Retriggering the Free Spins game awards 6 extra free spins.</entry>
+
+* General End
+<entry key="gamerule">A game round ends if the maximum win is reached.</entry>
+<entry key="gamerule">Winnings are paid out at the end of a game round.</entry>
+<entry key="gamerule">No bets can be changed during a game round.</entry>
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry>
+<entry key="gamerule">The game has a maximum win of __TBB__ the bet.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">
+	Last updated 2022-10-12</entry>
+
+
+
+<!-- X-iter RULES -->
+<entry key="xiter-rule">The X-iter feature offers buy-in to different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">FREE SPINS:     	                                                             <!-- NO TRANSLATE -->
+Buy a game round triggering the Free Spins game. Cost is __X05_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X04">SUPER SPEEDBOAT BONUS:                                                       <!-- NO TRANSLATE -->
+Buy a game round triggering the Speedboat Bonus game. All Harpoonists are Turbo Harpoonists. Cost is __X04_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X03">SPEEDBOAT BONUS:                                                             <!-- NO TRANSLATE -->
+Buy a game round triggering the Speedboat Bonus game. Cost is __X03_MULTIPLIER__ the bet.</entry>
+
+<entry key="_xiter-rule" tags="X02">MELEE MODE:                                                                  <!-- NO TRANSLATE -->
+Buy a game round where all Sumo symbols walk whether they are in a Wild Sumo Stack or not. Cost is __X02_MULTIPLIER__ the bet.</entry>
+
+<entry key="_xiter-rule" tags="X02AltAa">BIPOLAR MODE:                                                            <!-- NO TRANSLATE -->
+Buy a game round with a guaranteed win. All Sumo symbols switch colours between respins. Cost is __X02_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X02AltB">BRAWL MODE:                                                              <!-- NO TRANSLATE -->
+Buy a game round with a guaranteed brawl. Cost is __X02_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule" tags="X01">BONUS HUNT:                                                                  <!-- NO TRANSLATE -->
+Buy a game round with heightened chance for a Speedboat Bonus or Free Spins game. Cost is __X01_MULTIPLIER__ the bet.</entry>
+
+<entry key="_xiter-rule" tags="X01Alt">GUARANTEED WIN:
+Buy a game round with a guaranteed win. Cost is __X01_MULTIPLIER__ the bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+<entry key="xiter-rule" tags="lastupdated">
+	Last updated 2022-10-12</entry>
+
+
+<!--Dialogs-->
+
+<!-- X-iter dialogs -->
+<entry key="X05B1">FREE SPINS</entry>                                 														<!-- NO TRANSLATE -->
+<entry key="X05B2">Play a Free Spins game.</entry>
+
+<entry key="X04B1">SUPER SPEEDBOAT BONUS</entry>                                                  <!-- NO TRANSLATE -->
+<entry key="X04B2">Turbo Harpoonists Rule!</entry>
+
+<entry key="X03B1">SPEEDBOAT BONUS</entry>                                                        <!-- NO TRANSLATE -->
+<entry key="X03B2">You're gonna need a bigger boat.</entry>
+
+<entry key="_X02B1">MELEE MODE</entry>                                                            <!-- NO TRANSLATE -->
+<entry key="_X02B2">All Sumo symbols walk!</entry>
+
+<entry key="X02B1">BRAWL MODE</entry>                                                           <!-- NO TRANSLATE -->
+<entry key="X02B2">Sumo mayhem!</entry>
+
+<entry key="_X02B1">BIPOLAR MODE</entry>                                                         <!-- NO TRANSLATE -->
+<entry key="_X02B2">Sumo mayhem!</entry>
+
+<entry key="X01B1">BONUS HUNT</entry>                                                            <!--  NO TRANSLATE -->
+<entry key="X01B2">Heightened chance for a Speedboat Bonus or Free Spins game</entry>
+
+<entry key="_X01B1">GUARANTEED WIN</entry>
+<entry key="_X01B2">Buy a game round with a guaranteed win.</entry>
+
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 																			<!-- Backup alternative text -->
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry> 																  	<!-- Backup alternative text -->
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+
+</translation>

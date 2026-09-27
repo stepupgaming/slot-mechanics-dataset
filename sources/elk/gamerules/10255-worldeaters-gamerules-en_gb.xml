@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+
+
+<!--
+==============================================
+NOTE for Translations
+==============================================
+
+Do NOT translate the following 
+===============================
+World Eaters                             Game name
+Wild / Wild / Wild                       Always KEEP Wild untranslated
+Wilds / Wilds / WildS
+Bonus                                    Always KEEP Bonus untranslated
+
+
+==============================================
+-->
+
+
+<translation language="en_gb">
+
+<!-- ================= GAME DESCRIPTION DOCUMENT TEXT ========================================= -->
+
+<entry key="gdd-description">World Eaters is a slot game with 5 columns by 5 rows with dropping symbols.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in either portrait or landscape mode.</entry>
+
+<entry key="gdd-payline">Wins are paid for each symbol with a free path to the topmost row and its color matching a visible Collector.</entry>
+
+<entry key="gdd-bonusgame">The Bonus game is triggered when 3 Bonus symbols appear on the grid, after all wins have resolved.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Collector Wins</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">5 columns</entry>
+<entry key="gdd-kf-rows">5 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The Multiplier Wild symbol substitutes for any payout symbol and adds its value to the global multiplier when part of a winning combination.</entry>
+<entry key="gdd-sfs-2">Coin symbols pay out the displayed value times the bet and multiplied by the global multiplier when they have a clear path to the topmost row.</entry>
+<entry key="gdd-sfs-3">The Grey House symbol is normally a blocker symbol. When the Grey House symbol is vertically or horizontally adjacent to a winning symbol, it turns into a single symbol of that type.</entry>
+<entry key="gdd-sfs-4">The Whale symbol is a blocker. When neither Collector in view can collect anything, the Whale symbol is triggered and removes itself and all payout symbols on the same column.</entry>
+<entry key="gdd-sfs-5">The Pipe symbol is triggered when it has a clear path to the topmost row. The Pipe lets a Collector collect all matching symbols below the wall above the bottom row. The Pipe is used by the Collector who can collect the highest value.</entry>
+<entry key="gdd-sfs-6">The Fireworks symbol triggers when it is on the grid at the same time as a Grey House symbol. The Fireworks symbol turns all Grey House symbols on the grid into Multiplier Wild symbols.</entry>
+<entry key="gdd-sfs-7">The Tree symbol triggers when it is next to empty spaces as a result of a win. The Tree symbol will spawn Forest symbols into any clusters of empty spaces that it is connected to. After a new Collector enters the game, if a Tree symbol has made a Forest symbol then all Forest symbols will reveal payout symbols of one and the same type or Multiplier Wild symbols.</entry>
+<entry key="gdd-sfs-8">The Volcano symbol is a Wild symbol. Once collected, the feature is pending, and triggers when neither Collector in view can collect anymore. The Volcano feature triggers with its Collector while the other Collector is removed. 
+Then a cycle starts where the Collector destroys all payout symbols not of its type. Remaining payout symbols are then stacked. A refill occurs. This cycle repeats until no new symbols of the Collector's type drop in during the refill. Then win evaluation occurs.</entry>
+<entry key="gdd-sfs-9">Whenever there is an uncollected Coin symbol on the grid and no more wins are available, it will be collected by the Piggy Bank. Every time the Piggy Bank collects, there is an equal chance it will explode, triggering a coin row drop. In a coin row drop the bottom row is filled with coins and the rest of the grid is filled with rows of matching symbols.</entry>
+<entry key="gdd-sfs-10">The UFO symbol can appear in the Bonus game and triggers the Ultra Beast Feature. The Ultra Beast replaces the visible Collectors, pays for all payout symbols on the grid and empties the grid from symbols. This cycle can repeat several times until the Ultra Beast leaves and triggers a refill and the regular Collectors return. Ultra Beast drops do not count against remaining Super drops.</entry>
+
+
+
+<entry key="gdd-xiterbutton-5">SUPER BONUS</entry>
+<entry key="gdd-xiterbutton-4">BONUS</entry>
+<entry key="gdd-xiterbutton-3">EPIC BONUS HUNT</entry>
+<entry key="gdd-xiterbutton-2">MEGA BONUS HUNT</entry>
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>
+
+
+
+<!--================= PAYTABLE PAGES =========================================================-->
+<!-- PAGE 1 -->
+<!-- Win up to -->
+
+<!-- PAGE 2 -->
+<!--World Eaters -->
+<entry key="WorldEatersTxt">Collectors collect their matching payout symbols and any feature symbols that have a clear path to the topmost row.</entry>
+
+<!-- PAGE 3 -->
+<!-- World Eaters - Coin Collector -->
+<entry key="CoinCollectorTxt">The Piggy Bank collects all coins remaining after all wins are paid out. The Piggy Bank can explode at any time, triggering a coin drop and symbol refill.</entry>
+
+<!-- PAGE 4 -->
+<!-- Worlds - World Transition -->
+<entry key="WorldTransitionTxt">Triggering each world's world feature 3 times will unlock the next world with a new feature.</entry>
+<entry key="WorldTransition2Txt">Triggering special features 3 times unlocks the next world and its special feature.</entry>
+
+<!-- PAGE 5 -->
+<!-- Features -->
+<entry key="FeaturesTxt">These features can land in any world.</entry>
+<entry key="CoinTxt">The Coin symbol pays its value multiplied by the selected bet level.</entry>
+<entry key="MultiplierWildTxt">The Multiplier Wild symbol substitutes for any paying symbol and adds the shown value to the global multiplier.</entry>
+<entry key="GreyHouseTxt">The Grey House symbol will change to the color of an adjacent paying cluster, to be collected by the matching Collector.</entry>
+
+<!-- PAGE 6 -->
+<!-- World Features -->
+<entry key="WhaleTxt">The Whale symbol clears all symbols on its column and forces a refill. If triggered 3 times, it unlocks the world with the Pipe feature.</entry>
+<entry key="PipeTxt">The Pipe is used to collect symbols and features from behind the wall at the bottom. Triggering the Pipe 3 times unlocks the world with the Fireworks feature.</entry>
+<entry key="FireworksTxt">The Fireworks symbol shoots off fireworks which transform any Grey Houses to Multiplier Wilds. Triggering the Fireworks 3 times unlocks the world with the Tree feature.</entry>
+
+<!-- PAGE 7 -->
+<!-- World Features -->
+<entry key="TreeTxt">The Tree symbol spreads Forest symbols to adjacent empty areas on the grid. All Forest symbols reveal payout symbols of the same type or Multiplier Wilds. Triggering the Tree 3 times unlocks the world with the Volcano feature.</entry>
+<entry key="VolcanoTxt">The Volcano symbol triggers the Collector that collects it to go berserk, drive off the other Collector, and removes all payout symbols not of its own type or Wild symbols. Stacking up its own type symbols and triggering refills until no more new symbols of its own type appears.</entry>
+
+<!-- PAGE 8 -->
+<!-- Bonus Game -->
+<entry key="BonusSymbolTxt">Landing 3 Bonus symbols triggers the bonus game, awarding 3 Super Drops! In the bonus game, collecting a Bonus symbol adds 1 Super drop to the total.</entry>
+<entry key="UFOTxt">During the Bonus game, the UFO feature symbol triggers the Ultra Beast to appear.</entry>
+
+<!-- PAGE 9 -->
+<!-- Bonus Game - Ultra Beast  -->
+<entry key="UltraBeastTxt">The Ultra Beast scares away the other Collectors, then collects all payout symbols on the grid for a combined payout. This can repeat!</entry>
+
+<!-- PAGE 10 -->
+<!-- Symbol Payout (optional) -->
+<entry key="SymbolPayoutTxt">Symbol clusters with a clear path to the topmost row when the matching Collector appears will pay out.</entry>
+
+
+<!-- ================ GAMERULES ============================================================= -->
+
+
+<!-- * UNIQUE INIT -->
+<entry key="gamerule">World Eaters is a slot game with 5 columns by 5 rows with dropping symbols.</entry>
+
+<!-- * GENERAL INIT -->
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">Wins are paid for each symbol with a free path to the topmost row and its color matching a visible Collector.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Wins are paid out according to the paytable.</entry>
+<entry key="gamerule" tags="coins">Wins are presented in the player's currency or in coins. The player can change preference in settings.</entry>
+<entry key="gamerule" tags="no-coins">Wins are presented in the player's currency.</entry>
+<entry key="gamerule">The game is played in two modes, normal mode and bonus mode.</entry>
+
+
+<entry key="gamerule">The game consists of 4 different Collector types with matching payout symbols.</entry> 
+<entry key="gamerule">A game round starts with a new set of symbols dropping in on the grid and 2 Collectors entering into view.</entry> 
+<entry key="gamerule">Payout symbols matching a visible Collector's color and with a clear path to the topmost row trigger a win and are then removed. If a win has occurred, all remaining symbols gravitate upwards to fill empty spaces. New symbols are refilled from the bottom. The Collector on the left is removed and a new Collector is added from the right. The game continues until there are no more wins.</entry> 
+<entry key="gamerule">Payout symbols can occur as stacked symbols. A stacked symbol counts as a multiple of the symbol. The multiple is displayed by its number on the symbol.</entry> 
+
+
+
+<!-- * GAME SPECIFIC -->
+*** FEATURE SYMBOLS *********************
+* MULTIPLIER
+<entry key="gamerule">The game has a global multiplier that multiplies all wins. Global multiplier starts at 1 and resets for each game round.</entry>
+
+* WILD
+<entry key="gamerule">The Multiplier Wild symbols substitute for any payout symbol and adds its value to the global multiplier when part of a winning combination.</entry>
+
+* COINS
+<entry key="gamerule">Coin symbols pay out the displayed value times the bet and multiplied by the global multiplier when they have a clear path to the topmost row.</entry>
+
+* GREY HOUSE
+<entry key="gamerule">The Grey House symbol is normally a blocker symbol. When the Grey House symbol is vertically or horizontally adjacent to a winning symbol, it turns into a single symbol of that type.</entry>
+
+* WHALE
+<entry key="gamerule">The Whale symbol is a blocker. When neither Collector in view can collect anything, the Whale symbol is triggered and removes itself and all payout symbols on the same column.</entry>
+
+* PIPE
+<entry key="gamerule">The Pipe symbol is triggered when it has a clear path to the topmost row. The Pipe lets a Collector collect all matching symbols below the wall just above the bottom row. The Pipe is used by the Collector, who can collect the highest value.</entry>
+
+* FIREWORKS
+<entry key="gamerule">The Fireworks symbol triggers when it is on the grid at the same time as a Grey House symbol. The Fireworks symbol turns all Grey House symbols on the grid into Multiplier Wild symbols.</entry>
+
+* TREE
+<entry key="gamerule">The Tree symbol triggers when it is next to empty spaces as a result of a win. The Tree symbol will spawn Forest symbols into any clusters of empty spaces that it is connected to. After a new Collector enters the game and the Tree symbol did spawn a Forest symbol, then all Forest symbols will reveal either a Multiplier Wild symbol or a paying symbol all of one and same type.</entry>
+
+* VOLCANO
+<entry key="gamerule">The Volcano symbol is a Wild symbol. Once collected, the feature is pending, and triggers when neither Collector in view can collect anymore. The Volcano feature triggers with its Collector while the other Collector is removed. Then a cycle starts were the Collector destroys all payout symbols not of its type. The remaining same type symbols will be stacked with more same type symbols and a refill occurs. This cycle repeats until no new symbols of the Collector's type drops in during the refill. Then win evaluation occurs.</entry>
+
+* PIGGY BANK
+<entry key="gamerule">Whenever there is an uncollected Coin symbol on the grid and no more wins are available, it will be collected by the Piggy Bank. Every time the Piggy Bank collects, there is an equal chance it will explode, triggering a coin row drop. In a coin row drop the bottom row is filled with coins and the rest of the grid is filled with rows of matching symbols.</entry>
+
+* FEATURE UNLOCK
+<entry key="gamerule">There are 4 features locked at the start of the game: Pipe, Fireworks, Trees and Volcano.</entry>
+<entry key="gamerule">When 3 Whales have triggered, the Pipe feature is unlocked.</entry>
+<entry key="gamerule">When 3 Pipes have triggered, the Fireworks feature is unlocked.</entry>
+<entry key="gamerule">When 3 Fireworks have triggered, the Tree feature is unlocked.</entry>
+<entry key="gamerule">When 3 Trees have triggered, the Volcano feature is unlocked.</entry>
+<entry key="gamerule">Unlocked feature progression and the current state of the Piggy Bank is saved between game rounds for each bet level. Changing the bet level will install the saved values.</entry>
+
+<!-- * BONUS SPECIFIC -->
+<entry key="gamerule">3 Bonus symbols trigger the Bonus game with 3 Super drops.</entry>
+<entry key="gamerule">During the Bonus game, the grid size is 7x7.</entry>
+<entry key="gamerule">Each Super drop in the bonus game starts with new Collectors and dropping a new set of symbols into the grid.</entry>
+<entry key="gamerule">The following features do not appear in the Bonus game: Whale, Pipe, Fireworks, Tree and Volcano.</entry>
+<entry key="gamerule">A UFO feature symbol can appear in the Bonus game or in X-iters.</entry> 
+<entry key="gamerule">All payout symbols are stacked in the Bonus game, except for coin row drops, and indicated by a number.</entry>
+<entry key="gamerule">Each Bonus symbol in the Bonus game adds 1 additional Super drop.</entry>
+<entry key="gamerule">The UFO symbol can appear in the Bonus game or in X-iters and triggers the Ultra Beast feature. The Ultra Beast replaces the visible Collectors, pays for all payout symbols on the grid and empties the grid from symbols. This cycle can repeat several times until the Ultra Beast leaves and triggers a refill and the regular Collectors return. Ultra Beast drops do not count against remaining Super drops.</entry> 
+
+
+
+* General End *******************************
+<entry key="gamerule">Winnings are paid out at the end of a game round.</entry>
+<entry key="gamerule">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule" tags="mwp">The maximum total win is accumulated across all wins in the game round and can be obtained from one big win or several smaller wins. The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">No bets can be changed during a game round.</entry>
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">Last updated 2026-04-14</entry>
+
+
+<!-- ================ X-ITER GAMERULES ====================================================== -->
+
+<entry key="xiter-rule">The X-iter feature offers buy-in to different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">SUPER BONUS:
+Buy a game round with a guaranteed Bonus game and a starting global Multiplier of 10. Cost is __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">BONUS:
+Buy a game round triggering the Bonus game. Cost is __X04_MULTIPLIER__ the selected bet.</entry>
+
+<!-- Alt 1 -->
+<entry key="xiter-rule" tags="X03">EPIC BONUS HUNT:
+Buy a game round with the highest chance to trigger a Bonus game. Cost is __X03_MULTIPLIER__ the selected bet.</entry>
+<!-- Alt 2 -->
+<entry key="xiter-rule_alt3" tags="X03">EPIC BONUS HUNT:
+Buy a game round with more than 45X the chance to trigger a Bonus game. Cost is __X03_MULTIPLIER__ the selected bet.</entry>
+
+<!-- Alt 1 -->
+<entry key="xiter-rule" tags="X02">MEGA BONUS HUNT:
+Buy a game round with a higher chance to trigger a Bonus game. Cost is __X02_MULTIPLIER__ the selected bet.</entry>
+<!-- Alt 2 -->
+<entry key="xiter-rule_alt2" tags="X02">MEGA BONUS HUNT:
+Buy a game round with more than 15X the chance to trigger a Bonus game. Cost is __X02_MULTIPLIER__ the selected bet.</entry>
+
+<!-- Alt 1 -->
+<entry key="xiter-rule" tags="X01">BONUS HUNT:
+Buy a game round with a high chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.</entry>
+<!-- Alt 2 -->
+<entry key="xiter-rule_alt1" tags="X01">BONUS HUNT:
+Buy a game round with more than 4X the chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.</entry>
+
+
+<entry key="xiter-rule">During the X-iter modes, the grid size is 7x7.</entry>
+<entry key="xiter-rule">A UFO feature symbol appears in the X-iter mode.</entry>
+<entry key="xiter-rule">The following features do not appear in the X-iter modes: Whale, Pipe, Fireworks, Tree and Volcano.</entry>
+
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+<entry key="xiter-rule" tags="lastupdated">Last updated 2026-04-14</entry>
+
+
+<!-- X-iter dialogs -->
+<entry key="X05B1">SUPER BONUS</entry>
+<entry key="X05B2">Play a Bonus game starting with 10X Multiplier.</entry>
+
+<entry key="X04B1">BONUS</entry>
+<entry key="X04B2">Guaranteed bonus game.</entry>
+
+<entry key="X03B1">EPIC BONUS HUNT</entry>
+<!-- alt 1 -->
+<entry key="X03B2">Highest chance to trigger a Bonus game.</entry>
+<!-- alt 2 -->
+<entry key="X03B2_alt13">More than 45X the chance to trigger the Bonus game.</entry><!--(47,5x exakt)-->
+
+
+<entry key="X02B1">MEGA BONUS HUNT</entry>
+<!-- alt 1 -->
+<entry key="X02B2">Higher chance to trigger a Bonus game.</entry>   
+<!-- alt 2 -->
+<entry key="X02B2_alt12">More than 15X the chance to trigger the Bonus game.</entry> <!--(15,89x exakt)-->
+
+
+<entry key="X01B1">BONUS HUNT</entry>
+<!-- alt 1 -->
+<entry key="X01B2">High chance to trigger a Bonus game.</entry>
+<!-- alt 2 -->
+<entry key="X01B2_alt11">More than 4X the chance to trigger the Bonus game.</entry><!--(4,57x exakt)-->
+
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry>                            <!-- Backup alternative text -->
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry>                           <!-- Backup alternative text -->
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+</translation>

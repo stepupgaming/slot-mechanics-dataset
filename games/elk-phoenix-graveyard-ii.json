@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Phoenix Graveyard II",
+    "slug": "elk-phoenix-graveyard-ii",
+    "provider_game_id": "10243",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10243&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/phoenixgraveyard2/build-288662/assets/translation/phoenixgraveyard2-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 1024,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Standard 4 rows and 1024 ways to win, where features can add additional ways."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "e-spin symbol freezes all present Reapers and Phoenixes in place and triggers a respin. If no Reaper or Phoenix on the grid, you are still awarded a respin.\nThree or more bonus symbols trigger the bonus game.\n\nGame rules\nPhoenix Graveyard 2 is a 5 reels, 4 rows slot with spinning reels and an extra special row above the symbol grid wi"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbols substitute for any paying symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Three or more bonus symbols trigger the bonus game.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Phoenix Graveyard II: paid spin on 4x5. Standard 4 rows and 1024 ways to win, where features can add additional ways.. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Standard 4 rows and 1024 ways to win, where features can add additional ways.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Standard 4 rows and 1024 ways to win, where features can add additional ways.",
+    "notes": "Settings.\nWinnings are presented in the player's currency.\nPhoenix Graveyard 2 is played in two modes; normal mode and bonus mode.\nAll spins in normal mode start with 4 rows and 1024 ways to win.\nThe Phoenix wild symbol substitutes for any paying symbol. It will also award a re-spin and unl"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more bonus symbols trigger the bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "d.\nA combination of three or more bonus symbols during normal mode triggers the bonus mode with free spins.\n3 bonus symbols: 6 free spins\n4 bonus symbols: 8 free spins\n5 bonus symbols: 10 free spins\nWhen in the normal bonus, a super bonus symbol can land on the last reel. This results in the bonus upgrading to super bonus, thus opening all feature rows that are not already open, and activating the powered up mechanic which is active in the super bonus. Also, +2 Free Spins are awarded.\nThe bonus starts with one Phoenix wild that stays in play and moves to a new position each spin. Any ways incr",
+        "end_condition": "bonus game ends when no free spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "ature offers several different game modes.\nSuper bonus: Guaranteed entry to the super bonus game with the whole feature row unlocked at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nSplitting Frenzy: One spin with all feature row positions unlocked and an increased chance of landing feature symbols in them. Additionally, bonus symbols are replaced by super bonus symbols during the round at the cost of __X03_MULTIPLIER__ the selected bet.\nMega Bo",
+        "end_condition": "bonus game ends when no free spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "ature offers several different game modes.\nSuper bonus: Guaranteed entry to the super bonus game with the whole feature row unlocked at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nSplitting Frenzy: One spin with all feature row positions unlocked and an increased chance of landing feature symbols in ",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Phoenix Graveyard II."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed entry to the super bonus game with the whole feature row unlocked at the cost of __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Splitting Frenzy (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with all feature row positions unlocked and an increased chance of landing feature symbols in them. Additionally, bonus symbols are replaced by super b; Mega Bonus Hunt (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with more than eight times the chance to trigger the bonus game at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): One spin with more than four times the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed entry to the super bonus game with the whole feature row unlocked at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Splitting Frenzy",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with all feature row positions unlocked and an increased chance of landing feature symbols in them. Additionally, bonus symbols are replaced by super bonus symbols during the round at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Mega Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with more than eight times the chance to trigger the bonus game at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "One spin with more than four times the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/phoenixgraveyard2/build-288662/assets/translation/phoenixgraveyard2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10243-phoenixgraveyard2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Phoenix Graveyard II\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Standard 4 rows and 1024 ways to win, where features can add additional ways.\nJackpot No\nReels 5 reels\nRows 4 rows\n\nGame description\nPhoenixtown is a town under constant threat from a relentless grim reaper, determined to drag the inhabitants into the underworld. But a powerful phoenix, worshipped as a god by the townsfolk, rises to protect them.\n\nPhoenix Graveyard 2 is a 5 reels, 4 rows slot that comes with expanded win ways, special wilds, multipliers, a bonus and all packed into a potential of 25"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/phoenixgraveyard2/build-288662/assets/translation/phoenixgraveyard2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10243-phoenixgraveyard2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 5 reels, 4 rows slot that comes with expanded win ways, special wilds, multipliers, a bonus and all packed into a potential of 25,000x!\n\nThree bonus symbols trigger the free spins bonus game. A bonus symbol is sticky if there is a pending re-spin. The bonus game always starts with one Phoenix wild symbol."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/phoenixgraveyard2/build-288662/assets/translation/phoenixgraveyard2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10243-phoenixgraveyard2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper bonus: Guaranteed entry to the super bonus game with the whole feature row unlocked at the cost of __X05_MULTIPLIER__ the selected bet.\nBonus: Guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nSplitting Frenzy: One spin with all feature row positions unlocked and an increased chance of landing feature symbols in them. Additionally, bonus symbols are replaced by super bonus symbols during the round at the cost of __X03_MULTIPLIER__ the selected bet.\nMega Bonus Hunt: One spin with more than eight times the chance to trigger the bonus game at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/phoenixgraveyard2/build-288662/assets/translation/phoenixgraveyard2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10243-phoenixgraveyard2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nPhoenixtown is a town under constant threat from a relentless grim reaper, determined to drag the inhabitants into the underworld. But a powerful phoenix, worshipped as a god by the townsfolk, rises to protect them.\n\nPhoenix Graveyard 2 is a 5 reels, 4 rows slot that comes with expanded win ways, special wilds, multipliers, a bonus and all packed into a potential of 25,000x!\n\nThree bonus symbols trigger the free spins bonus game. A bonus symbol is sticky if there is a pending re-spin. The bonus game always starts with one Phoenix wild symbol.\nPhoenix Graveyard 2 has 1024 ways to win but split symbol positions add additional ways. The RTP for all paylines is the same and the RTP of the game is defined in the game rules\nThree bonus symbols trigger the free spins bonus game. A bonus symbol i"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/phoenixgraveyard2/build-288662/assets/translation/phoenixgraveyard2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10243-phoenixgraveyard2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Phoenix Graveyard II\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Standard 4 rows and 1024 ways to win, where features can add additional ways.\nJackpot No\nReels 5 reels\nRows 4 rows\n\nGame description\nPhoenixtown is a town under constant threat from a relentless grim reaper, determined to drag the inhabitants into the underworld. But a powerful phoenix, worshipped as a god by the townsfolk, rises to protect them.\n\nPhoenix Graveyard 2 is a 5 reels, 4 rows slot that comes with expanded win ways, special wilds, multipliers, a bonus and all packed into a potential of 25,000x!\n\nThree bonus symbols trigger the free spins bonus game. A bonus symbol is sticky if there is a pending re-spin. The bonus game always starts with one Phoenix wild symbol.\nPhoenix Graveyard 2 has 1024 ways to win but split symbol positions add additional ways. The RTP for all payli"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/phoenix-graveyard-ii/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10243; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-phoenix-graveyard-ii.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

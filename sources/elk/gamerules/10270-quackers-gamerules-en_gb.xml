@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<translation language="en_gb" gameid="10270">
+<!--Translation Guidelines **************************************************************************
+
+Please do NOT translate the following:
+=================================================
+wild / wilds / Wild / Wilds / WILD / WILDS
+Quackers - The name of the game
+=================================================
+
+< GAME DOCUMENTATION ******************************************************************************-->
+<entry key="gdd-description">Quackers is a 6 column, 6 row slot with dropping symbols and cluster wins. The main features are the coin collector where 20 collected coins trigger a coin game, the four Duck symbols that transform symbols and increase multipliers, and a Bonus game with Quack Drops where the grid is expanded to 8 columns and 8 rows.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Quackers is a cluster game where 5 or more vertically or horizontally connected identical symbols trigger a win.</entry>
+
+<entry key="gdd-bonusgame">A combination of three Bonus symbols in normal mode triggers the Bonus game with Quack Drops.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+
+<entry key="gdd-kf-gametype">Slot</entry>
+
+<entry key="gdd-kf-lines">Cluster Wins</entry>
+
+<entry key="gdd-kf-jackpot">No</entry>
+
+<entry key="gdd-kf-reels">6 columns</entry>
+
+<entry key="gdd-kf-rows">6 rows</entry>
+
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!--Special symbols-->
+<entry key="gdd-sfs-1">The Wild symbol substitutes for any payout symbol. A winning combination of only Wild symbols pays as the highest payout symbol.</entry>
+
+<entry key="gdd-sfs-2">!!A combination of three Bonus symbols in normal mode triggers the Bonus game with Quack Drops.</entry>
+
+<entry key="gdd-sfs-3">If 1 of 3 Bonus symbols is a Super Bonus symbol, the Super Bonus game is triggered.</entry>
+
+<entry key="gdd-sfs-4">The coin symbol is collected and 20 collected coin symbols trigger the coin game.</entry>
+
+<entry key="gdd-sfs-5">The flying Duck increases the global multiplier when triggered.</entry>
+
+<entry key="gdd-sfs-6">The dynamite Duck converts payout symbols into Wilds.</entry>
+
+<entry key="gdd-sfs-7">The princess Duck converts payout symbols of one kind into a more valuable kind.</entry>
+
+<entry key="gdd-sfs-8">The Marilyn Duck adds or increases symbol multipliers to payout symbols.</entry>
+
+<gfx key="FreeSpinsTxt">Quack Drops</gfx>
+
+<entry key="gdd-xiterbutton-5">SUPER BONUS</entry>
+
+<entry key="gdd-xiterbutton-4">BONUS GAME</entry>
+
+<entry key="gdd-xiterbutton-3">TWO DUCKS</entry>
+
+<entry key="gdd-xiterbutton-2">MEGA HUNT</entry>
+
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>
+
+<!--PAYTABLE 
+ Texts for Paytable pages 
+ Paytable Page 1
+Here we just show max win and as many of the game features as we can.
+
+ Paytable Page 2 The Ducks 
+ Ducks-->
+<entry key="paytableDucks">DUCKS</entry>
+
+<!--Ducks-->
+<entry key="paytableTheDucks">THE DUCKS</entry>
+
+<entry key="paytableDuckCharacters">Quackers have four different duck characters, each with a unique feature that triggers before every win evaluation.</entry>
+
+<entry key="paytableFlyingDuck">The Flying Duck increases the global multiplier.</entry>
+
+<entry key="paytableDynamiteDuck">The Dynamite Duck converts payout symbols into Wilds.</entry>
+
+<entry key="paytablePrincessDuck">The Princess Duck increases the value of payout symbols.</entry>
+
+<entry key="paytableMarilynDuck">The Marilyn Duck increases symbol multipliers.</entry>
+
+<!--Paytable Page 3 Coin Game-->
+<entry key="paytableCoinGame">COIN GAME</entry>
+
+<entry key="paytableTheCoinGame">THE COIN GAME</entry>
+
+<entry key="paytableCoinCollect">Coins that land in normal mode or bonus mode are collected.</entry>
+
+<entry key="paytableCoinTrigger">20 collected Coins trigger the Coin game.</entry>
+
+<entry key="paytableCoinRespins">The Coin game continues until no hearts remain in the heart counter.</entry>
+
+<entry key="paytableCoinRespins2">As long as new feature symbols land, the Coin game continues.</entry>
+
+<entry key="paytableCoinWin">The more coins, chests, and multipliers, the higher the win.</entry>
+
+<!--Paytable Page 4 Bonus Game-->
+<entry key="paytableBonusGame">BONUS GAME</entry>
+
+<entry key="paytableBonus">3 Bonus symbols trigger the Bonus game.</entry>
+
+<entry key="paytableBonusGrid">The Bonus game is played on an 8 rows, 8 column sized grid.</entry>
+
+<entry key="paytableBonusDucks">Ducks are persistent through the Bonus game.</entry>
+
+<!--Paytable Page 5 Super Bonus-->
+<entry key="paytableSuperBonus">SUPER BONUS</entry>
+
+<entry key="paytableSuperBonusTrigger">2 Bonus symbols and 1 Super Bonus symbol trigger Super Bonus.</entry>
+
+<entry key="paytableSuperBonusDucks">Super Bonus starts with all ducks on the grid.</entry>
+
+<!--Paytable Page 6 and 7 SYMBOL PAYOUT 
+ GAMERULES 
+ Unique Init-->
+<entry key="gamerule-0">Quackers is a 6 columns x 6 rows slot with dropping symbols and cluster wins.</entry>
+
+<!--General Init-->
+<entry key="gamerule-1">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule-2" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule-3">A winning cluster consists of 5 or more identical symbols which are connected vertically or horizontally. Only the largest cluster of the connecting symbols is paid out.</entry>
+
+<entry key="gamerule-4">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule-5" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<!--New rule for autospin with losslimit 20240109-->
+<entry key="gamerule-6" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule-7">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<!--Translate "Settings" keeping Capitalization. (It is a name of a button.)-->
+<entry key="gamerule-8" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+
+<entry key="gamerule-9" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<!--Two Game Modes-->
+<entry key="gamerule-10" tags="TwoModes">The game is played in two modes; normal mode, and Bonus mode with Quack Drops.</entry>
+
+<!--Three Game Modes-->
+<entry key="Alt_gamerule_001" tags="ThreeModes">The game is played in three modes; normal mode, coin game mode, and Bonus mode with Quack Drops.</entry>
+
+<entry key="gamerule-11">The Wild symbols substitute for any payout symbol. A winning combination of only Wild symbols pays as the highest payout symbol.</entry>
+
+<!--Game specific-->
+<entry key="gamerule-12">Quackers uses the Avalanche mechanic: At the end of every drop, a win evaluation is performed where all winning clusters are collected and removed. The remaining symbols fall vertically until they reach a resting position. New symbols drop in, refilling the empty spaces. The avalanche continues as long as new winning combinations appear.</entry>
+
+<entry key="gamerule-13">Quackers has a global multiplier that will multiply every win with its current value.</entry>
+
+<entry key="Alt_gamerule_002" tags="NumberMightChange">Every time winning symbols have removed, before refilling empty spaces with new symbols, the global multiplier is increased by +1.</entry>
+
+<entry key="gamerule-14">Pressing the spin button will reset the global multiplier to x1.</entry>
+
+<!--Ducks-->
+<entry key="gamerule-15">Quackers have four different duck characters, each duck has a unique feature that triggers before every win evaluation.</entry>
+
+<entry key="gamerule-16" tags="TriggerNumberMightChange">Each duck can trigger its feature a maximum of three times in normal mode.</entry>
+
+<entry key="gamerule-17" tags="TriggerGenericNumber">Each duck can trigger its feature a maximum number of times in normal mode as indicated by the feature meter on the symbol.</entry>
+
+<entry key="gamerule-18">In normal mode, each duck has a meter that keeps track of how many times the duck's feature has triggered.</entry>
+
+<entry key="gamerule-19" tags="TriggerNrMightChange">In normal mode, when the duck's feature has triggered 3 times during an ongoing spin, the duck is removed from the Game Grid, leaving a Wild behind.</entry>
+
+<entry key="gamerule-20">When a Bonus game is pending, the ducks will not trigger their features.</entry>
+
+<entry key="gamerule-21" tags="MightBeRemoved">There is no limit on how many times the ducks' features can trigger during the bonus mode.</entry>
+
+<entry key="gamerule-22" tags="MghtBeRemoved">The ducks are persistent in bonus mode and will stay on the Game Grid until the Bonus Game has ended.</entry>
+
+<entry key="gamerule-23">All 4 duck characters can be present on the Game Grid at the same time, but there can only be 1 duck of each kind.</entry>
+
+<entry key="gamerule-24" tags="FlyingDuck">The flying Duck, recognized by his leather pilot outfit, will increase the global multiplier when triggered.</entry>
+
+<entry key="gamerule-25" tags="DynamiteDuck">The dynamite Duck, recognized by his dynamite stick and scruffy appearance, will convert payout symbols into Wilds.</entry>
+
+<entry key="gamerule-26" tags="PrincessDuck">The princess Duck, recognized by her silver headband, will convert every payout symbol of one specific kind into a more valuable kind. If the highest value symbol is selected, they will be converted into Wilds.</entry>
+
+<entry key="gamerule-27" tags="MarilynDuck">The Marilyn Duck, recognized by her pearl necklace, will add a symbol multiplier or increase an already existing symbol multiplier on payout symbols.</entry>
+
+<!--Coingame-->
+<entry key="gamerule-28">If a Coin symbol lands on the Game Grid, it will be collected or it will be discarded.</entry>
+
+<entry key="gamerule-29">A collected Coin symbol will show up in the Coin inventory.</entry>
+
+<entry key="gamerule-30">The state of the Coin inventory is saved for the player and will be persistent, even between separate gaming sessions.</entry>
+
+<entry key="gamerule-31" tags="9CoinsMightChange">When 20 Coin symbols have been collected, the Coin game will be triggered.</entry>
+
+<entry key="gamerule-32">The average probability to land a coin in Quackers is not the same for every coin.</entry>
+
+<entry key="gamerule-33">The Coin game is played on a 6 row, 6 column Game Grid where each symbol position has its own individual mini-reel.</entry>
+
+<entry key="gamerule-34">The Coin game starts by spinning all mini-reels on the Game Grid.</entry>
+
+<entry key="gamerule-35">The Coin game uses a separate symbol set.</entry>
+
+<entry key="gamerule-36">Coins. Each coin that lands brings a value equal to the number on the coin.</entry>
+
+<entry key="gamerule-37">Chests. Each chest that lands on the Game Grid collects the values of all Coins and Chest symbols currently on the Game Grid and adds the sum to itself.</entry>
+
+<entry key="gamerule-38">Multiplier Increase. The Multiplier Increase symbol will add a multiplier at the end of the Coin game to any symbol of the eight adjacent symbols that is a Coin or a Chest. If a symbol position already has a multiplier, the existing multiplier will be multiplied with the new multiplier value.</entry>
+
+<entry key="gamerule-39">Seaweed. The Seaweed symbol does not contribute to the result.</entry>
+
+<entry key="gamerule-40">The Coin game uses a heart counter with three hearts.</entry>
+
+<entry key="gamerule-41">One heart from the heart counter is consumed for every new spin.</entry>
+
+<entry key="gamerule-42">During an active Coin game, all 3 hearts in the heart counter are refilled when at least one feature symbol lands on the grid.</entry>
+
+<entry key="gamerule-43">During a spin, only symbol positions occupied by Seaweed symbols will respin.</entry>
+
+<entry key="gamerule-44">If the heart counter is empty after a spin, the Coin game is over and the win evaluation is executed.</entry>
+
+<entry key="gamerule-45">If every symbol position on the Game Grid is occupied by a feature symbol, the Coin game is over and the win evaluation is executed.</entry>
+
+<entry key="gamerule-46">The win will be equal to the value of all Coins and Chests, individually multiplied by their symbol multipliers, times the current bet level.</entry>
+
+<!--Bonus-->
+<entry key="gamerule-47" tags="BonusDropsMightChange">3 Bonus symbols trigger the Bonus game with 5 Quack Drops.</entry>
+
+<entry key="gamerule-48">The Bonus game is played on an 8 rows, 8 column sized grid where 4 symbol positions are reserved for the four duck characters.</entry>
+
+<entry key="gamerule-49">The Ducks do not land on their reserved symbol positions, but they are moved there after the current spin.</entry>
+
+<entry key="gamerule-50">The Ducks are persistent in bonus mode.</entry>
+
+<entry key="gamerule-51">The Ducks have no limit to the number of times their respective feature can retrigger in bonus mode.</entry>
+
+<!--Super Bonus-->
+<entry key="gamerule-52" tags="SuperDropsMightChange">3 Bonus symbols where one of the Bonus symbols is a Super Bonus symbol trigger the Super Bonus game with 5 Quack Drops.</entry>
+
+<entry key="gamerule-53">The Super Bonus game starts with all four ducks present on the Game Grid, positioned at their reserved symbol positions.</entry>
+
+<entry key="gamerule-54">The Bonus game with Quack Drops ends when no Quack Drops remain or when the win cap has been reached.</entry>
+
+<!--* General End *******************************-->
+<entry key="gamerule-55">Winnings are paid out at the end of a game round.</entry>
+
+<!--Please don't touch __TBB__-->
+<entry key="gamerule-56">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule-57" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+
+<entry key="gamerule-58">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule-59">No bets can be changed during a game round.</entry>
+
+<!--Please don't touch __RTP__-->
+<entry key="gamerule-60">The theoretical payout (RTP) is __RTP__.</entry>
+
+<entry key="gamerule-61">In the event of malfunction all bets and wins are void.</entry>
+
+<entry key="gamerule-62" tags="lastupdated">Last updated 20260428</entry>
+
+<!--X-iter RULES ***************************************************************************** 
+ Please don't translate X-iter-->
+<entry key="xiter-rule-0">The X-iter feature offers buy-in to different game modes.</entry>
+
+<!--TRANSLATE 
+ Please don't touch __X05_MULTIPLIER__ but please translate the rest-->
+<entry key="xiter-rule-1" tags="X05">SUPER BONUS: 
+ Guarantees entry to the Super Bonus game with 5 Quack Drops at the cost of __X05_MULTIPLIER__ the selected bet.</entry>
+
+<!--TRANSLATE 
+ Please don't touch __X04_MULTIPLIER__ but please translate the rest-->
+<entry key="xiter-rule-2" tags="X04">BONUS GAME: 
+ Guarantees entry to the Bonus game with 5 Quack Drops at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<!--Changed 20240109 
+ Changed 20240109 Please don't touch __X03_MULTIPLIER__, translate the rest-->
+<entry key="xiter-rule-3" tags="X03">TWO DUCKS: 
+Two guaranteed ducks in the initial drop at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+
+<!--Changed 20240109 Please don't touch __X02_MULTIPLIER__ translate the rest-->
+<entry key="xiter-rule-4" tags="X02">Mega Hunt:
+One game round at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<!--TRANSLATE 
+ Please don't touch __X01_MULTIPLIER__ but please translate the rest-->
+<entry key="xiter-rule-5" tags="X01">BONUS HUNT:
+ One game round with more than 3 times the chance to trigger the Bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<!--Please don't translate X-iter-->
+<entry key="xiter-rule-6">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+
+<!--Please don't translate X-iter-->
+<entry key="xiter-rule-7">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule-8">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+
+<entry key="xiter-rule-9">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule-10">All game rules apply in X-iter mode.</entry>
+
+<entry key="xiter-rule-11" tags="lastupdated">Last updated 20260428</entry>
+
+<!--Dialogs
+ X-iter dialogs-->
+<entry key="X05B1">SUPER BONUS</entry>
+
+<entry key="X05B2">5 Quack Drops!</entry>
+
+<entry key="X05B3">All Ducks on the Grid from the start!</entry>
+
+<entry key="X04B1">BONUS GAME</entry>
+
+<entry key="X04B2">!!5 Quack Drops!</entry>
+
+<entry key="X03B1">TWO DUCKS!</entry>
+
+<entry key="X03B2">Two guaranteed ducks in the first drop!</entry>
+
+<entry key="X02B1">MEGA HUNT!</entry>
+
+<entry key="X02B2">More than 6 times the chance to trigger the Bonus game!</entry>
+
+<entry key="X01B1">BONUS HUNT</entry>
+
+<entry key="X01B2">More than 3 times the chance to trigger the Bonus game!</entry>
+
+</translation>

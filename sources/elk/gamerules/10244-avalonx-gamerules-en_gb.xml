@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--================= TRANSLATIONS INFO =========================================================-->
+<!--
+
+Do NOT translate the following:
+===============================
+wild / Wild / WILD
+wilds / Wilds / WILDS - use wild in context with symbols when in plural
+- Mystery Box
+- Wild
+- Avalanche
+- Collect (only the name of the feature, what it does can be translated)
+- Holy Strike
+-->
+
+<!--================= GAME DOCUMENTATION =========================================================-->
+
+<entry key="gdd-description">Let us journey back through the mists of time, to an age of legend and magic. In the twilight shadows of ancient Britain, the noble Lancelot and the wise Merlin embark on a perilous quest. Their mission: to seek out the hidden doorway to Avalon and restore King Arthur to the world, rekindling hope for the realm. But time is not on their side. Dark forces stir—Morgana, the cunning enchantress, and her ally Mordred, Arthur’s treacherous foe, also seek Avalon’s secret path. If they reach it first, darkness may reign forever.
+
+Avalon X is a 6 column, 7 rows cluster slot where you win on clusters with five or more connecting symbols. Central game features are: The global multiplier that increases for every winning cluster, the different wild symbols, big symbols, Holy Strike and Mystery Boxes. The big symbols can get up to four by four in size. Icing on the cake is a bonus game with free drops.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. The RTP for all wins is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">Three bonus symbols trigger the bonus game with free drops. If one of the bonus symbols is a super bonus symbol, the super bonus game is triggered.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Cluster wins (5 or more vertically or horizontally adjacent identical symbols)</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 columns</entry>
+<entry key="gdd-kf-rows">7 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+
+<!-- Special Symbols text -->
+<!--Wild Symbol-->
+<entry key="gdd-sfs-1">The wild symbol substitutes for any symbol except other wild symbols, Mystery Box, bonus symbol and super bonus symbol.</entry>
+
+<!--Bonus Symbol-->
+<entry key="gdd-sfs-2">Three or more bonus symbols trigger the bonus game with free drops.</entry>
+
+<!--Super Bonus Symbol-->
+<entry key="gdd-sfs-3">One super bonus symbol and two bonus symbols trigger the super bonus game with free drops.</entry>
+
+<!--Mystery Boxes-->
+<entry key="gdd-sfs-4">The Mystery Box is a blocking symbol that can drop in on any column in any drop. 5 or more Mystery Box symbols activate the opening of the Mystery Boxes which can reveal payout symbols, wild symbols or trigger the Avalon features.</entry>
+
+<!--Coin-->
+<entry key="gdd-sfs-5">The value on the coin win symbol is multiplied by the placed bet.</entry>
+
+<!--Collect-->
+<entry key="gdd-sfs-6">The Collect feature collects all coin values from the already revealed Mystery Boxes and the Collect symbol gets their total value. All already opened Mystery Boxes are then reactivated, revealing new coin wins or features.</entry>
+
+<!--Redrop-->
+<entry key="gdd-sfs-7">The Redrop feature awards a new symbol drop and a guaranteed reactivation of the Mystery Boxes currently in view. The Redrop feature executes when all other Mystery Box features have been played through.</entry>
+
+<!--Global Multiplier Spreader-->
+<entry key="gdd-sfs-8">The global multiplier spreader multiplies a random number of revealed coin values.</entry>
+
+<entry key="gdd-xiterbutton-1">Bonus Hunt</entry>			
+<entry key="gdd-xiterbutton-2">Holy Strike</entry>
+<entry key="gdd-xiterbutton-3">Mystery Boxes</entry> 
+<entry key="gdd-xiterbutton-4">Bonus</entry>				
+<entry key="gdd-xiterbutton-5">Super Bonus</entry>	
+
+
+<!--================= X-ITER UI TEXTS =========================================================-->
+<entry key="X01B1">Bonus Hunt</entry>
+<entry key="X01B2">More than TRIPLE the chance to trigger the bonus game.</entry>
+<entry key="X02B1">Holy Strike</entry> 
+<entry key="X02B2">Guaranteed Holy Strike.</entry>
+<entry key="X03B1">Mystery Boxes</entry>
+<entry key="X03B2">Guaranteed at least 5 Mystery Boxes.</entry>
+<entry key="X04B1">Bonus</entry>
+<entry key="X04B2">Guaranteed entry to the bonus game.</entry>
+<entry key="X05B1">Super Bonus</entry> 
+<entry key="X05B2">Guaranteed entry to the super bonus game.</entry> 
+<!--<entry key="X05B3">Persistent Mystery Boxes!</entry>-->
+<entry key="X05B3">A Holy Strike in every free drop!</entry>
+
+
+<!-- ================ GAMERULES ============================================================= -->
+<!-- Unique Init --> 
+<entry key="gamerule">Avalon X is a 7 rows, 6 columns slot with dropping symbols and cluster wins.</entry> 
+
+<!--General Init -->
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. Only the largest cluster of the connected identical symbols is paid out.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Avalon X is played in two modes; Normal mode and Bonus mode with free drops.</entry>
+
+<!--AVALANCHE-->
+<entry key="gamerule">All cluster wins in the current symbol drop are collected and thereafter all symbols which were part of a winning combination explode. The remaining symbols fall vertically until they reach a resting position and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.</entry>
+
+<!--do we call it low or mid?-->
+<entry key="gamerule">All low, high values and Mystery Box symbols exist in four sizes; standard 1x1, Super 2x2, Mega 3x3 and Epic 4x4. All big symbols are counted as consisting of the number of 1x1 symbol instances it covers, e.g. 1 Super 2x2 is counted as 4 standard 1x1 symbols.</entry>
+
+<!-- CRUSH -->
+<entry key="gamerule">Re-dropped Big symbols will crush 1x1 symbols on their way downwards. Symbols of the same kind as the crushing Big symbol will stay unaffected together with Wild symbols, bonus symbols and Mystery Box symbols.</entry>
+
+<!-- Replication -->
+<entry key="gamerule">Empty spaces occurring below big symbols are filled with 1x1 sized symbols of the same type as the big symbol.</entry>
+
+<!--Wild Symbol -->
+<entry key="gamerule">The wild symbol substitutes for any symbol except the Mystery Box, bonus and super bonus symbols.</entry>
+
+<!--Multiplier Wild -->
+<entry key="gamerule">The multiplier wild symbol substitutes for any symbol except other wild symbols, Mystery Box, the bonus symbol and super bonus symbol.</entry>
+
+<entry key="gamerule">All multiplier wild symbols that contribute to a winning cluster are added to each other and then multiply the winning amount of their respective clusters before the global multiplier is applied.</entry>
+<!-- Alternative GameRule <entry key="gamerule">All multiplier wild symbols that contribute to a winning cluster are multiplied with each other and then multiply the winning amount of their respective clusters before the global multiplier is applied.</entry> -->
+
+<!--The Global Multiplier Increase-->
+<entry key="gamerule">The global multiplier applies to all winning clusters. Each winning cluster with low value symbols increases the global multiplier by one and each winning cluster with high value symbols increases the global multiplier by two. The global multiplier remains active throughout the Avalanche feature and can never reset during an ongoing game round.</entry>
+
+<!-- Alternative GameRule <entry key="gamerule">The global multiplier applies to all winning clusters. Each winning cluster with low value symbols increases the global multiplier by one and each winning cluster with high value symbols increases the global multiplier by three. The global multiplier remains active throughout the Avalanche feature and can never reset during an ongoing game round.</entry>-->
+
+<!-- Alternative GameRule <entry key="gamerule">The global multiplier applies to all winning clusters. Each winning symbol increases the global multiplier by one after the payout of the current result. The global multiplier remains active throughout the Avalanche feature and can never reset during an ongoing game round.</entry> -->
+
+<!--Wild Generation-->
+<entry key="gamerule">Each winning cluster generates a wild symbol that appears in one of the empty spaces created after the explosion of the winning symbols.</entry>
+
+<entry key="gamerule">The multiplier values of the wild symbols are added together and applied to the generated wild symbol if several wild symbols contribute to the same winning cluster. Normal wild symbols are counted as having a multiplier value of 1.</entry>
+
+<!-- Mystery Boxes -->
+<entry key="gamerule">The Mystery Box symbol is a blocking symbol that can drop in on any column in any drop.</entry>
+
+<entry key="gamerule">If there are 5 or more Mystery Boxes on the game grid, the Mystery Boxes will activate and either reveal a payout symbol, a wild symbol or trigger the Avalon features. The activation occurs when there are no more winning combinations.</entry>
+
+<entry key="gamerule">If the Mystery Box reveals a payout or wild symbol that leads to a win, a new chain of Avalanches will start, and all Mystery Boxes will go back to a blocking state. When the Avalanche cycle is over and no additional wins appear, the Mystery Boxes will be activated again.</entry>
+
+<entry key="gamerule">If the Mystery Boxes reveal the Avalon features, the Mystery Boxes will reveal either a coin win or a feature. There are different features; global multiplier spreader, Collect and Redrop. The Mystery Boxes are revealed one at a time, top to bottom one column at a time.</entry>
+
+<entry key="gamerule">Big Mystery Boxes turn into small Mystery Boxes before revealing coins or Avalon features.</entry>
+
+<!-- Coin Win -->
+<entry key="gamerule">Coin win: 
+The value of the coin win symbol is multiplied by the placed bet.</entry>
+
+<!-- Collect -->
+<entry key="gamerule">Collect:
+Collects all coin values from the already revealed Mystery Boxes and the Collect symbol gets their total value. All already opened Mystery Boxes are then reactivated, revealing new coin wins or features.</entry>
+
+<!-- Redrop -->
+<entry key="gamerule">Redrop:
+The Redrop feature awards a new symbol drop and a guaranteed reactivation of the Mystery Boxes currently in view. The Redrop feature executes when all other Mystery Box features have been played through.</entry>
+
+<!-- Global Multiplier Spreader -->
+<entry key="gamerule">Global multiplier spreader:
+The global multiplier spreader feature multiplies a random number of already revealed coin values.</entry>
+
+<!-- Holy Strike -->
+<entry key="gamerule">The Holy Strike feature replaces a random number of symbols in view with wild, multiplier wild symbols or Mystery Boxes and can occur in any drop. Bonus, super bonus, Mystery Box, wild, or multiplier wild symbols can not be replaced.</entry>
+
+<!-- Bonus Game -->
+<entry key="gamerule">3 bonus symbols anywhere in view during normal mode trigger the bonus game with 7 free drops.</entry>
+
+<entry key="gamerule">The global multiplier is persistent between free drops in bonus mode.</entry>
+
+<entry key="gamerule">Unopened Mystery Boxes are persistent between free drops in the bonus game.</entry>
+<!-- Alternative GameRule
+<entry key="gamerule">Unopened Mystery Boxes are persistent between free drops in the bonus mode.</entry>-->
+
+<entry key="gamerule">Landing individual bonus or super bonus symbols in bonus mode awards two additional free drops.</entry>
+
+<!--<entry key="gamerule">One super bonus symbol and two bonus symbols trigger the super bonus game with persistent Mystery Boxes between each free drop. A super bonus symbol during a regular bonus game turns the ongoing bonus game into a super bonus game.</entry>-->
+ 
+<entry key="gamerule">One super bonus symbol and two bonus symbols trigger the super bonus game. The super bonus game guarantees a Holy Strike in every free drop. A super bonus symbol during a regular bonus game turns the ongoing bonus game into a super bonus game.</entry> 
+
+<entry key="gamerule">The free drops bonus game ends when no free drops remain or when the win cap has been reached.</entry>
+
+<!--General End -->
+<entry key="gamerule">Winnings are paid out when all triggered features have ended.</entry>
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">The theoretical payout (RTP) in Avalon X is __RTP__.</entry>
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule">In the event of a malfunction, all bets and wins are void.</entry>>
+
+   
+<entry key="gamerule" tags="lastupdated">Last updated 2025-06-03</entry>
+
+
+<!-- X-iter Rules -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+<!--<entry key="xiter-rule" tags="X05">Super Bonus:
+Guarantees a game round with entry to a Super Bonus game with persistent Mystery Boxes throughout the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet.</entry>-->
+<entry key="xiter-rule" tags="X05">Super Bonus: 
+Guaranteed entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet. A Holy Strike is guaranteed in every free drop throughout the super bonus game.</entry>
+
+
+<entry key="xiter-rule" tags="X04">Bonus:
+Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X03">Mystery Boxes: 
+A symbol drop with five guaranteed Mystery Boxes at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">Holy Strike: 
+A symbol drop with a guaranteed Holy Strike feature at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">Bonus Hunt:
+A symbol drop with more than triple the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Avalon X is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2025-06-03</entry>
+
+<!--Dialogs-->	
+
+</translation>

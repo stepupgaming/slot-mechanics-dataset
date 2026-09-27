@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation language="en_gb">
+
+<!-- *************************************************************************************************
+
+	DO NOT TRANSLATE THE FOLLOWING:
+	... Sticky 
+	... Wild 
+	... 
+
+****************************************************************************************************** -->
+
+
+
+<!-- GAME DOCUMENTATION ****************************************************************************** -->
+<entry key="gdd-description">
+Hula Balua takes place deep in the magical forest, where the sloth Elmo lives in symbiosis with nature.
+The game is a scatter game with 6 columns, 6 rows and dropping symbols.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+
+<entry key="gdd-payline">Hula Balua is a scatter game where 8 or more identical symbols anywhere on the grid is a win. There are no pay lines.</entry>
+
+<entry key="gdd-bonusgame">3 or more Bonus symbols appearing anywhere on the main grid at the end of a symbol drop in normal mode triggers the free drop Bonus game. Two Bonus symbols vertically connected on top of each other upgrades all Bonus symbols into Super Bonus symbols.
+	• 3 Bonus symbols: 6 free drops
+	• 4 Bonus symbols: 8 free drops
+	• 5 Bonus symbols: 10 free drops
+	• 6 Bonus symbols: 12 free drops
+	
+
+The Bonus game starts with a new set of symbols on the grid. The global multiplier is persistent during free drops.</entry>
+
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Scatter Pays</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 columns</entry>
+<entry key="gdd-kf-rows">6 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The Wild symbol substitutes for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.</entry>
+<entry key="gdd-sfs-2">The Sticky redrops feature selects one paying symbol. All matching paying symbols will become sticky on the grid. Landing one or more new matching paying symbols or Wild symbols will award one redrop, potential winnings are paid out when no additional matching symbols appear.</entry>
+<entry key="gdd-sfs-3">3 or more Bonus symbols trigger the Bonus game.</entry>
+<entry key="gdd-sfs-4">Multiplier are created by big symbols. The multiplier value corresponds to the number of small symbols the big symbol covers.</entry>
+<entry key="gdd-sfs-5">Big symbols are created when matching symbols form a square or a rectangle, symbols can vary between 2x2 up to 6x6. 
+Big symbols can expand if new matching symbols appear and they together creates a bigger symbol. This will generate an additional multiplier for the new bigger symbol.
+Big symbols pay as the amount of regular 1x1 symbols they cover </entry>
+<entry key="gdd-sfs-6">Elmo triggers the Elmo Wild Drops feature. Elmo walks 1 column to the left and places a random amount of Wild symbols on the grid for every redrop. Wild symbols last until Elmo has left the leftmost column or if they have contributed to a win. Elmo is still active during the last redrop</entry>
+
+<entry key="gdd-xiterbutton-5">SUPER BONUS</entry>
+<entry key="gdd-xiterbutton-4">BONUS</entry>
+<entry key="gdd-xiterbutton-3">STICKY REDROPS</entry>
+<entry key="gdd-xiterbutton-2">BIG SYMBOL</entry>
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>
+
+
+
+<!-- Maxwin/Paytable General -->
+<gfx key="PaytableTxt">Paytable</gfx>
+<gfx key="HaveFunTxt">Have Fun!</gfx>
+<gfx key="GoodLuckTxt">Good Luck!</gfx>
+
+
+<!--INTRO-->
+
+
+<!-- PAYTABLE *********************************************************************************** -->
+
+
+	<!-- Header Paytable -->
+	<gfx key="BigHeaderSymbolPayout">Symbol Payout</gfx>
+	<gfx key="BigHeaderRedrops">Redrops</gfx>
+	<gfx key="BigHeaderBonusGame">Bonus Game</gfx>
+	<gfx key="BigHeaderFeatures">Features</gfx>
+	<gfx key="BigHeaderMultipliers">Multipliers</gfx>
+	<gfx key="BigHeaderPaytable">Paytable</gfx>
+	<gfx key="BigHeaderWinUpTo">Win Up To</gfx>
+
+
+	<!-- Subheader Paytable -->
+	<entry key="SubHeaderFreeDrops">Free Drops</entry>
+	<entry key="SubHeaderBonusGame">Bonus Game</entry>
+	<entry key="SubHeaderWild">Wild</entry>
+	<entry key="SubHeaderBigSymbols">Big Symbols</entry>
+	<entry key="SubHeaderMergingSymbols">Merging Symbols</entry>
+	<entry key="SubHeaderGlobalMultiplier">Global Multiplier</entry>
+	<entry key="SubHeaderStickyRedrops">Sticky Redrops</entry>
+	<entry key="SubHeaderElmoRedrops">Elmo Redrops</entry>
+	<entry key="SubHeaderBonusSymbols">Bonus Symbols</entry>
+	<entry key="SubHeaderSuperBonusSymbol">Super Bonus</entry>
+	<entry key="SubHeaderBonus">Bonus</entry>
+	<entry key="SubHeaderBonusRetrigger">Bonus Retrigger</entry>
+	<entry key="SubHeaderRedrops">Redrops</entry>
+	<entry key="SubHeaderStickyUpgrades">Sticky Upgrades</entry>
+	<entry key="SubHeaderBigSymbols">Big Symbols</entry>
+
+
+	<!-- Text for Paytable -->
+	<entry key="TxtElmoRedrops">When Elmo appears, he awards redrops and creates Wild symbols as he walks.</entry>
+	<entry key="TxtStickyRedrops">Awards one additional redrop for every redrop with at least one new matching symbol. Feature pays out when no additional matching symbols appear.</entry>
+	<entry key="TxtStickyUpgrades">Landing another Sticky Redrop symbol will upgrade the already selected paying symbols.</entry>
+	<entry key="TxtBigSymbols">Multipliers are created by big symbols. The multiplier value corresponds to the number of small symbols the big symbol covers. Big symbols can drop in first.</entry>
+	<entry key="TxtMergingSymbols">Identical symbols that form either a square or a rectangle merge together to create big symbols.</entry>
+	<entry key="TxtBonusSymbol">Three or more Bonus symbols trigger the free drops Bonus game. Bonus game can retrigger.</entry>
+	<entry key="TxtSuperBonusSymbol">Two Bonus symbols vertically connected on top of each other upgrades all Bonus symbols into Super Bonus symbols.</entry>
+	<entry key="TxtScatterPay">Wins are paid for 8 or more identical symbols scattered anywhere on the grid.</entry>
+
+
+<!-- Bonus game GENERAL ********************************************************************** -->
+<gfx key="BonusIntroTxt">Bonus</gfx>
+<gfx key="PlayedInTotal">Played in Total</gfx>
+<gfx key="TotalWin">Total Win</gfx>								        <!-- TRANSLATE (even if in Sentence Case)-->
+<entry key="SpinOfSpin">of</entry>
+<entry key="StartBtn">START</entry>  											<!-- TRANSLATE (even if in CAPITALs)-->
+<entry key="BonusIntroMultiplier">Multiplier</entry>
+<entry key="FreedropsBonusTxt">Free Drops</entry>
+
+
+
+<!-- GAMERULES ******************************************************************************** -->
+
+* Unique Init ******************************
+<entry key="gamerule">Hula Balua is a scatter pay game with 6 columns, 6 rows and dropping symbols. </entry>
+
+* General Init *****************************
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">Wins are paid for 8 or more identical symbols scattered anywhere on the grid.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+    <entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>     <!-- Translate "Settings" keeping Capitalization. (It is a name of a button.) -->
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+<entry key="gamerule">The game is played in two modes; normal mode and Bonus mode with free drops.</entry>
+<entry key="gamerule">The Wild symbol substitute for any paying symbol. A winning combination of only Wild symbols pays as the highest paying symbol.</entry>
+
+
+* Game specific ****************************
+
+* General Round of Play (Avalanche and Big Symbol) ********************************
+<entry key="gamerule">A game round starts with a symbol drop. 
+Identical symbols that form either a square or a rectangle of size 2x2 or more, merge together to create big symbols.
+Multipliers are created by big symbols. The multiplier value corresponds to the number of small symbols the big symbol covers. Big symbols can drop in first. 
+If a big symbol contributes to a winning combination, its multiplier value will instantly be added to the global multiplier which applies to all wins. All winning symbols are then removed from the grid. 
+The grid fills up with new symbols. The avalanche repeats until no more wins.</entry>
+
+<entry key="gamerule" keys="show-x-values">The big symbol multiplier can have a multiplier value of 4, 6, 8, 9, 10, 12, 15, 18, 20, 24, 25, 30 or 36.</entry>
+* Merge Big Symbols **************************
+<entry key="gamerule">Big symbols can merge into bigger symbols if matching symbols land adjacent to form bigger squares or rectangles. A big symbol can never break up into smaller symbols.
+Big symbols merging into bigger symbol adds an additional multiplier to the global multiplier.</entry>
+
+* Global Multiplier ****************************
+<entry key="gamerule">Global multiplier on top or side of the game view, multiplies all winning combinations in view. Global multiplier remains until no more winning combinations appear.</entry>
+
+<entry key="gamerule">If a big symbol drop ends with empty cells below it, it will replicate and fill the empty cells with regular 1x1 sized symbols of the same type as the big symbol.</entry>
+
+
+* Sticky Redrop and upgrade  ********************************
+<entry key="gamerule">The sticky redrops feature selects one paying symbol and makes it sticky. All matching paying symbols already in view will become sticky. Landing one or more matching sticky symbols or Wild symbols during a redrop will award one additional redrop, potential winnings are paid out when no additional matching symbols or Wild symbols appear during a redrop.
+Landing a new sticky redrop symbol will upgrade the selected paying symbols to the nearest higher paying symbol. This repeats for every new sticky redrop symbol until highest paying symbol is selected in the sticky redrops feature.
+The sticky redrop symbol can appear in sizes 1x1 - 6x6.</entry>
+
+* Elmo Redrops ********************************
+
+<entry key="gamerule">Elmo triggers the Elmo Wild Drops feature. Elmo walks 1 column to the left and places a random amount of Wild symbols on the grid for every redrop. Wild symbols last until Elmo has left the leftmost column or if they have contributed to a win. Elmo is still active during the last redrop</entry>
+
+* Bonus *****************************************
+
+<entry key="gamerule">3 or more Bonus symbols appearing anywhere on the main grid at the end of a symbol drop in normal mode triggers the free drops Bonus game.
+Two Bonus symbols vertically connected on top of each other upgrades all Bonus symbols into Super Bonus symbols. Super Bonus guarantee big symbols in each freedrop.
+	• 3 Bonus symbols: 6 free drops
+	• 4 Bonus symbols: 8 free drops
+	• 5 Bonus symbols: 10 free drops
+	• 6 Bonus symbols: 12 free drops</entry>
+<entry key="gamerule">Bonus game starts with a new set of symbols on the grid. The global multiplier remains during free drops.</entry>	
+
+
+* Bonus Retrigger  *****************************************
+<entry key="gamerule">Bonus game can retrigger 
+	• 2 Bonus symbols: 4 free drops
+	• 3 Bonus symbols: 6 free drops
+	• 4 Bonus symbols: 8 free drops
+	• 5 Bonus symbols: 10 free drops
+	• 6 Bonus symbols: 12 free drops
+</entry>	
+
+* Alternative Bonus Retrigger  *****************************************
+
+Bonus game can retrigger 				Please translate
+	• 3 Bonus symbols: 6 free drops		Please translate
+*
+
+* General End *******************************
+<entry key="gamerule">Winnings are paid out at the end of a game round.</entry>
+<entry key="gamerule">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+    <entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">No bets can be changed during a game round.</entry>
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+    <entry key="gamerule" tags="lastupdated">Last updated 2025.06.12</entry>
+
+
+
+<!-- X-iter RULES ***************************************************************************** -->
+<entry key="xiter-rule">The X-iter feature offers buy-in to different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">SUPER BONUS:
+Buy a game round triggering the Super Bonus game, with guaranteed big symbols in each freedrop. Cost is __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">BUY BONUS:
+Buy a game round triggering the Bonus game. Cost is __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">STICKY REDROPS:
+Buy a game round with sticky redrops. Cost is __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">BIG SYMBOL:
+Buy a game round with guaranteed big symbol. Cost is __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">BONUS HUNT:
+Buy a game round with a increased chance to trigger a Bonus. Cost is __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+<entry key="xiter-rule" tags="lastupdated">Last updated 2023-06-05</entry>
+
+
+<!--Dialogs-->
+
+<!-- X-iter dialogs -->
+<entry key="X05B1">SUPER BONUS</entry>
+<entry key="X05B2">Play a Bonus game</entry>
+<entry key="X05B3">Big Symbols in every drop</entry>
+
+<entry key="X04B1">BONUS</entry>
+<entry key="X04B2">Play a Bonus game</entry>
+
+<entry key="X03B1">STICKY REDROPS</entry>
+<entry key="X03B2">Guaranteed Sticky Redro </entry>
+
+<entry key="X02B1">BIG SYMBOLS</entry>
+<entry key="X02B2">Guaranteed Big Symbol</entry>
+
+<entry key="X01B1">Bonus Hunt</entry>
+<entry key="X01B3">More than double the chance to trigger the Bonus game!</entry>
+
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+<entry key="xiterOnboardingBet">Cost.</entry>
+<entry key="xiterOnboardingBet_2">Total bet.</entry> 																		
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry> 																 
+<entry key="xiterOnboardingSpin">Press spin!</entry>
+
+
+
+</translation>

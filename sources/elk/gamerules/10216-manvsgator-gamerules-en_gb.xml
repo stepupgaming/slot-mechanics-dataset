@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- English en_gb -->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+
+<!--Words not translated in this game
+Man vs Gator
+Gator Gang
+Florida Man
+Man Up
+Gator Down
+-->
+
+<!--Note for translators:
+
+-->
+
+<!--Copy to gfx game specific text-assets-->
+<gfx key="WinUpToIntroTxt">WIN UP TO</gfx> <!-- To be used as part of “Win up to 10,000x your bet!" on an intro screen, so please reorganize win and bet if they should be placed in opposite order in a language -->
+<gfx key="YourBetIntroTxt">YOUR BET!</gfx>
+<gfx key="GoodLuckTxt">GOOD LUCK!</gfx>
+<gfx key="HaveFunTxt">HAVE FUN!</gfx>
+
+<gfx key="StartTxt">START</gfx>
+<gfx key="OfTxt">OF</gfx>
+<gfx key="TotalWinTxt">TOTAL WIN</gfx>
+<gfx key="PlayedInTotal">PLAYED IN TOTAL</gfx>
+
+<gfx key="PaytableTxt">PAYTABLE</gfx>
+<gfx key="WinUpToTxt">WIN UP TO</gfx>
+<gfx key="CoinsTxt">COINS</gfx>
+<gfx key="SymbolPayoutTxt">SYMBOL PAYOUT</gfx>
+
+<gfx key="StackedHeadSubTxt">STACKED MULTIPLIER WILDS</gfx>
+<gfx key="BonusStickyHeadSubTxt">BONUS STICKY WILDS</gfx>
+
+<gfx key="WildFightSubTxt">MULTIPLIER FIGHT</gfx>
+
+<gfx key="NudgingRespinSubTxt">NUDGING WILDS</gfx>
+<gfx key="ComboSubTxt">COMBO NUDGE</gfx>
+
+<gfx key="BonusSubTxt">BONUS SYMBOL</gfx>
+<gfx key="SuperBonusSubTxt">SUPER BONUS</gfx>
+
+<!--Copy to gfx game specific text-->
+<entry key="BonusGameSubTitle">BONUS GAME</entry>
+
+<!--X-iter UI texts-->
+<entry key="X01B1">Bonus Hunt</entry>
+<entry key="X01B2">More than 3 times the chance to trigger the bonus game!</entry>
+
+<entry key="X02B1">Man vs Gator</entry>
+<entry key="X02B2">Guaranteed Man vs Gator wild symbol!</entry>
+
+<entry key="X03B1">Tag Team</entry>
+<entry key="X03B2">Guaranteed 2 Man vs Gator wild symbols!</entry>
+
+<entry key="X04B1">Trigger the Bonus with minimum 3 bonus symbols.</entry>
+<entry key="X04B2">5 Free Spins</entry>
+
+<entry key="X05B1">Trigger the Bonus with 5 bonus symbols</entry>
+<entry key="X05B2">5 Free Spins</entry>
+<entry key="X05B3">Guaranteed 2 Man vs Gator wild symbols on the first spin!</entry>
+
+<!--Paytable-->
+
+<!-- PAGE 1 -->
+
+<!-- PAGE 2 -->
+<entry key="paytableWildFightTxt">Big stacked wilds fight to choose a multiplier and award a respin.</entry>
+
+<!-- PAGE 3 -->
+<entry key="paytableUpDownWild">A stacked wild symbol that nudges either up or down, awarding a respin for each nudge until it leaves the screen.</entry>
+
+<entry key="paytableComboNudge">Each nudge by the Man Up or Gator Down wilds upgrade the multiplier values on their respective Man vs Gator wild symbols.</entry>
+
+<!-- PAGE 4 -->
+<entry key="paytableBonusSymbol">3 or more bonus symbols trigger the free spins bonus game. Free spins can be retriggered.</entry>
+<entry key="paytableSuperBonus">4 bonus symbols awards a Man vs Gator wild symbol landing on the first spin! 5 bonus symbols award 2!</entry>
+
+<!--Game documentation--> 
+<entry key="gdd-description">It's that time of year - time to celebrate the greatest day in world history.
+Motel patron Florida Man has prepared for a big 4th of July BBQ banquet. But the rough and rowdy Gator Gang want to have a meal themselves. So, the stage is set for a fierce showdown between muscle heads.
+
+Man vs Gator is a slot with 5 reels and 5 rows and 259 connecting paylines. The game has full reel tall stacked wilds with upgradeable dueling multipliers, nudging 2-row tall stacked wilds and respins.
+
+3 or more bonus symbols trigger the free spins bonus game.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Man vs Gator has 259 connecting paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">3 or more bonus symbols trigger the free spins bonus game. 4 bonus symbols award a Man vs Gator wild symbol landing on the first spin. 5 bonus symbols award 2 Man vs Gator wild symbols landing on the first spin.</entry>
+
+<!--Key Features texts-->
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">259 connecting paylines</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">5 reels</entry>
+<entry key="gdd-kf-rows">5 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!--Special symbols-->
+<entry key="gdd-sfs-1">The Man vs Gator wild symbol substitutes for any symbol except the bonus symbol. It is a 5-row tall symbol that nudges in with dueling multipliers that, once resolved to the victor, award a respin. The final multiplier is upgradeable.</entry>
+
+<entry key="gdd-sfs-2">The Man Up wild symbol substitutes for any symbol except the bonus symbol. It is a 2-row tall symbol without a multiplier value that nudges upwards, giving respins until off screen. Each nudge upgrades the multiplier value shown on any Man vs Gator wilds where the victor is the Man.</entry>
+
+<entry key="gdd-sfs-3">The Gator Down wild symbol substitutes for any symbol except the bonus symbol. It is a 2-row tall symbol without a multiplier value that nudges downwards, giving respins until off screen. Each nudge upgrades the multiplier value shown on any Man vs Gator wilds where the victor is the Gator.</entry>
+
+<entry key="gdd-sfs-4">A combination of 3 or more bonus symbols trigger the bonus game. 4 bonus symbols award a Man vs Gator wild symbol landing on the first spin. 5 bonus symbols award 2 Man vs Gator wild symbols landing on the first spin.</entry>
+
+<!--X-iter UI button text-->
+<entry key="gdd-xiterbutton-1">Bonus Hunt</entry>
+<entry key="gdd-xiterbutton-2">Man vs Gator</entry>
+<entry key="gdd-xiterbutton-3">Tag Team</entry> 
+<entry key="gdd-xiterbutton-4">Bonus</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus</entry>
+
+<!--Gamerules-->
+<entry key="gamerule">Man vs Gator is a 5 reel, 5 rows slot with spinning reels and 259 connecting paylines.</entry>
+
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry> <!--Translate Settings into local language using initial capital letter since it is a name of a button-->
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Man vs Gator is played in two modes; normal mode and bonus mode with free spins.</entry>
+
+<entry key="gamerule">Wins begin with the leftmost reel and pay left-to-right only on consecutive reels. No gaps between the reels are allowed.
+Only the longest payline per active payline is paid out.</entry>
+
+<entry key="gamerule">The Man vs Gator wild, Man Up wild and Gator Down wild substitutes for any symbol except the bonus symbol. A payline of all wilds pays as the highest value symbol.</entry>
+
+<entry key="gamerule">The Man vs Gator wild symbol is a 5-row tall symbol with two multiplier values. This symbol nudges into the screen until covering all 5 rows. When all reels have landed, one of the two multiplier values is chosen and applied to the wild, showing either the Man or the Gator as the victor.</entry>
+
+<entry key="gamerule">Landing a Man vs Gator wild symbol awards a respin where all Man vs Gator wild symbols currently in view are kept sticky. In the case of multiple Man vs Gator wild symbols landing simultaneously, the respins are stacked and played out one by one.</entry>
+
+<entry key="gamerule">The Man Up wild is a 2-row tall symbol without a multiplier value that nudges upwards, giving respins until off screen. Each nudge upgrades the multiplier value shown on Man vs Gator wilds where the victor is the Man and is currently in view.</entry>
+
+<entry key="gamerule">The Gator Down wild is a 2-row tall symbol without a multiplier value that nudges downwards, giving respins until off screen. Each nudge upgrades the multiplier value shown on Man vs Gator wilds where the victor is the Gator and is currently in view.</entry>
+
+<entry key="gamerule">The increment amount applied to each multiplier on a Man vs Gator wild symbol when a nudge occurs by their respective Man Up or Gator Down wild may differ.</entry>
+
+<entry key="gamerule">A combination of 3 or more bonus symbols during normal mode triggers the bonus mode, awarding 5 free spins. 4 bonus symbols award a Man vs Gator wild symbol landing on the first spin, 5 bonus symbols award 2 Man vs Gator wild symbols landing on the first spin.</entry>
+
+<entry key="gamerule">During bonus mode, landing 3 or more bonus symbols award 5 additional free spins; 4 bonus symbols also award a Man vs Gator wild symbol landing on the next free spin; 5 bonus symbols also award 2 Man vs Gator wild symbols landing on the next free spin.</entry>
+
+<entry key="gamerule">All Man vs Gator wild symbols landing in bonus mode are kept sticky throughout the remaining free spins.</entry>
+
+<entry key="gamerule">Free spins are not consumed during respins triggered by Man vs Gator wild symbols or Man Up and Gator Down wild symbols in the bonus game.</entry>
+
+<entry key="gamerule">It is possible to trigger the bonus game during a respin. When this occurs, the state of the game prior to entering the bonus game is saved. After the bonus game is completed, the game resets to the trigger state and the base game respins continue.</entry>
+
+<entry key="gamerule">Man vs Gator wild symbols present within a base game bonus trigger are not brought into the bonus game.</entry>
+
+<entry key="gamerule">It is possible to enter the bonus game multiple times during a game round.</entry>
+
+<entry key="gamerule">The free spins bonus game ends when no free spins remain or when the win cap has been reached.</entry>
+
+<entry key="gamerule">Winnings are paid out at the end of the game round.</entry>
+
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Man vs Gator is __RTP__.</entry>
+
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+<entry key="gamerule" tags="lastupdated">Last updated 2024.12.12</entry>
+
+<!-- X-iter rules -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus: Buy a game round triggering the bonus game with 5 bonus symbols, resulting in 5 free spins and 2 Man vs Gator wild symbols landing on the first spin. Cost is __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">Bonus: Buy a game round triggering the bonus game with at least 3 bonus symbols, resulting in 5 free spins. Cost is __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">Tag Team: Buy a game round where 2 Man vs Gator wild symbols land. Cost is __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">Man vs Gator: Buy a game round where a Man vs Gator wild symbol lands. Cost is __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">Bonus Hunt: Buy a game round with more than 3 times the chance to trigger the bonus game. Cost is __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Man vs Gator is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-05-27</entry>
+
+<!--Dialogs-->	
+
+</translation>
+

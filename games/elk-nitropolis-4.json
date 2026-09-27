@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Nitropolis 4",
+    "slug": "elk-nitropolis-4",
+    "provider_game_id": "10188",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10188&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/nitropolis4/build-267441/assets/translation/nitropolis4-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": 8,
+    "layout_notes": "Official Game Description: 6 columns by 4 rows; rows expand up to 8"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 262144,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Standard 4 rows and 4,096 ways to win and expansions up to 8 rows with 262,144 ways to win, where features can add additional ways."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "All wins in the current symbol spin/drop are collected and thereafter all symbols which were part of a winning combination explode except for the Nitro Reels. The remaining symbols fall vertically until they reach a resting position, an additional row is added at the top and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear."
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Reels and Nitro Multipliers that are part of a winning combination are kept and respin during the symbol refill.\nEach additional symbol drop will add an additional row of symbols, up to a maximum of 8 rows, increasing the number of ways to win. The number of ways to win increases as the number of rows increases. The number of ways to"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "olis 4 is a 6 column, 4 rows slot with all ways wins. Avalanches make the reels expand up to the maximum 8 rows. The game has Nitro Reels, Nitro Multipliers, big symbols, and a Nitro Booster generating different kind of features for both Nitro Reels and the main reels. The Nitro Multiplier multiplies all wins in view. \n\nThe expansion of the"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the bonus and super bonus symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Three or more bonus symbols trigger the bonus game with free spins.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      },
+      {
+        "name": "Super Bonus",
+        "behavior": "the super bonus symbol spins out.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Nitro Multiplier",
+        "behavior": "The Nitro Multiplier multiplies all wins in view.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Nitro Reel",
+        "behavior": "A Nitro Reel always covers two symbol positions and contains 4, 6, 8, 10 or 12 identical 1x1 payout symbols. A big Nitro Reel always covers six symbol positions and contains 2, 3, 4, 5 or 6 identical 2x2 payout symbols.\nA Nitro Reel can contain a super bonus symbol and is then only counted as one 1x1 symbol regardless of the size indicator of the Nitro Reel.",
+        "params": {}
+      },
+      {
+        "name": "Nitro Booster",
+        "behavior": "the Nitro Booster to activate, and at the maximum 8 rows additional wins continue to trigger the Nitro Booster. The Nitro Booster can award Nitro features in terms of Nitro Match, Nitro Upgrade and Nitro Wild, or main reel features such as Nitro Appear, Redrop, Both Ways, Max Rows and Garbage Collect.\n\nThree bonus symbols trigger the free spins bonus game in which all Nitro Reels are sticky.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Nitropolis 4: paid spin on 4x6 (expands to 8 rows). Standard 4 rows and 4,096 ways to win and expansions up to 8 rows with 262,144 ways to win, where features can add additional ways.. Avalanche/tumble after wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x6 (expands to 8 rows). Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Standard 4 rows and 4,096 ways to win and expansions up to 8 rows with 262,144 ways to win, where features can add additional ways.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "All wins in the current symbol spin/drop are collected and thereafter all symbols which were part of a winning combination explode except for the Nitro Reels. The remaining symbols fall vertically until they reach a resting position, an additional row is added at the top and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Standard 4 rows and 4,096 ways to win and expansions up to 8 rows with 262,144 ways to win, where features can add additional ways.",
+    "notes": "ence in Settings.\nWinnings are presented in the player's currency.\nNitropolis 4 is played in two modes; normal mode and bonus mode with free spins.\nAll spins in normal mode start with 4 rows and 4,096 ways to win.\nA Nitro Reel always covers two symbol positions and contains 4, 6, 8, 10 or 12"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more bonus symbols trigger the bonus game",
+        "spins_awarded": null,
+        "retrigger": "Free spins can be retriggered.",
+        "sticky_or_persistent_state": "Nitro Reels sticky/persistent during free spins",
+        "progressive_state": null,
+        "effects": "the game is defined in the game rules.\nThree or more bonus symbols trigger the bonus game with free spins. Free spins start at 4 rows. Every free spin initiated that results in a win advances the safety level one row, and every new free spin starts at the current active safety level.\n\nAll Nitro Reels are sticky during the bonus game. \n\nThree bonus symbols of which one is a super bonus symbol trigger the Super Bonus Game which is played with Max Rows and Both Ways activated.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the play",
+        "end_condition": "bonus game ends when no free spins remain or when the maximum win has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. Persistent state: Nitro Reels sticky/persistent during free spins.",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "super bonus symbol trigger the Super Bonus Game which is played with Max Rows and Both Ways activated.",
+        "spins_awarded": null,
+        "retrigger": "Free spins can be retriggered.",
+        "sticky_or_persistent_state": "Nitro Reels sticky/persistent during free spins",
+        "progressive_state": null,
+        "effects": "us game. \n\nThree bonus symbols of which one is a super bonus symbol trigger the Super Bonus Game which is played with Max Rows and Both Ways activated.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in po",
+        "end_condition": "bonus game ends when no free spins remain or when the maximum win has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "us game. \n\nThree bonus symbols of which one is a super bonus symbol trigger the Super Bonus Game which is played with Max Rows and Both Ways activated.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected curren",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Nitropolis 4."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "All wins in the current symbol spin/drop are collected and thereafter all symbols which were part of a winning combination explode except for the Nitro Reels. The remaining symbols fall vertically until they reach a resting position, an additional row is added at the top and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Expanding grid",
+      "trigger": "Feature/bomb/clear-board events as described",
+      "when": "Base and bonus",
+      "effects": "olis 4 is a 6 column, 4 rows slot with all ways wins. Avalanches make the reels expand up to the maximum 8 rows. The game has Nitro Reels, Nitro Multipliers, big symbols, and a Nitro Booster generating different kind of features for both Nitro Reels and the main reels. The Nitro Multiplier m",
+      "params": {}
+    },
+    {
+      "name": "Nitro Booster",
+      "trigger": null,
+      "when": null,
+      "effects": "maximum 8 rows. The game has Nitro Reels, Nitro Multipliers, big symbols, and a Nitro Booster generating different kind of features for both Nitro Reels and the main reels. The Nitro Multiplier multiplies all wins in view. \n\nThe expansion of the reels triggers the Nitro Booster to activate, and at the maximum 8 rows additional wins continue to trigger the Nitro Booster. The Nitro Booster can award Nitro features in terms of Nitro Match, Ni",
+      "params": {}
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.; Super Spin (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): 1 spin which is played with Max Rows and Both Ways activated at the cost of __X03_MULTIPLIER__ the selected bet.; Nitro Booster (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): 1 spin where the Nitro Booster always provides 2 features when activated at the cost of __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): 1 spin with more than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Spin",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "1 spin which is played with Max Rows and Both Ways activated at the cost of __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Nitro Booster",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "1 spin where the Nitro Booster always provides 2 features when activated at the cost of __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "1 spin with more than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 50000.0,
+    "max_win_notes": "Max exposure 50000.0x; max win single spin 50000.0x; Maximum win €None",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/nitropolis4/build-267441/assets/translation/nitropolis4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10188-nitropolis4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Nitropolis 4\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Standard 4 rows and 4,096 ways to win and expansions up to 8 rows with 262,144 ways to win, where features can add additional ways.\nJackpot No\nReels 6 reels\nRows 4 rows\nMax exposure 50000 x\nMax win single spin 50000 x\n\nGame description\nThe 4 clans from Nitropolis are now back! They have struck a deal of a temporary truce and work together to defeat Nitro Wolf and bring unorder to the city once again. It is not worth starting the fight though until a source of Nitro is secured. Luckily Sir Pugsalot did some"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/nitropolis4/build-267441/assets/translation/nitropolis4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10188-nitropolis4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 6 column, 4 rows slot with all ways wins. Avalanches make the reels expand up to the maximum 8 rows. The game has Nitro Reels, Nitro Multipliers, big symbols, and a Nitro Booster generating different kind of features for both Nitro Reels and the main reels."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/nitropolis4/build-267441/assets/translation/nitropolis4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10188-nitropolis4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nSuper Bonus: Guarantees a game round with entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet. All free spins are played with Max Rows and Both Ways activated.\nBonus: Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.\nSuper Spin: 1 spin which is played with Max Rows and Both Ways activated at the cost of __X03_MULTIPLIER__ the selected bet.\nNitro Booster: 1 spin where the Nitro Booster always provides 2 features when activated at the cost of __X02_MULTIPLIER__ the selected bet.\nBonus Hunt: 1 spin with more than double the chance to trigger the bonus game"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/nitropolis4/build-267441/assets/translation/nitropolis4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10188-nitropolis4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nThe 4 clans from Nitropolis are now back! They have struck a deal of a temporary truce and work together to defeat Nitro Wolf and bring unorder to the city once again. It is not worth starting the fight though until a source of Nitro is secured. Luckily Sir Pugsalot did some scouting in the airship and found an old oil platform not too far from the shore, so this is where the clans have set up a new base. \n\nNitropolis 4 is a 6 column, 4 rows slot with all ways wins. Avalanches make the reels expand up to the maximum 8 rows. The game has Nitro Reels, Nitro Multipliers, big symbols, and a Nitro Booster generating different kind of features for both Nitro Reels and the main reels. The Nitro Multiplier multiplies all wins in view. \n\nThe expansion of the reels triggers the Nitro Booster to act"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/nitropolis4/build-267441/assets/translation/nitropolis4-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10188-nitropolis4-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Nitropolis 4\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Standard 4 rows and 4,096 ways to win and expansions up to 8 rows with 262,144 ways to win, where features can add additional ways.\nJackpot No\nReels 6 reels\nRows 4 rows\nMax exposure 50000 x\nMax win single spin 50000 x\n\nGame description\nThe 4 clans from Nitropolis are now back! They have struck a deal of a temporary truce and work together to defeat Nitro Wolf and bring unorder to the city once again. It is not worth starting the fight though until a source of Nitro is secured. Luckily Sir Pugsalot did some scouting in the airship and found an old oil platform not too far from the shore, so this is where the clans have set up a new base. \n\nNitropolis 4 is a 6 column, 4 rows slot with all ways wins. Avalanches make the reels expand up to the maximum 8 rows. The game has Nitro Reels, Nitro Mu"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/nitropolis-4/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10188; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-nitropolis-4.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

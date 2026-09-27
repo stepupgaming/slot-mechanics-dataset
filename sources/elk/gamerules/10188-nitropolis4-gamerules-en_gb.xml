@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+
+<!--Words not translated in this game
+Nitropolis 4
+Nitro Booster
+Nitro Multiplier
+Nitro Reels
+Nitro
+Both Ways (feature name written with initial captial letter)
+Max Rows (feature name written with initial captial letter)
+Garbage Collect (feature name written with initial captial letter)
+Nitro Wild (feature name written with initial captial letter)
+Nitro Match (feature name written with initial captial letter)
+Nitro Upgrade (feature name written with initial captial letter)
+Nitro Appear (feature name written with initial captial letter)
+Redrop (feature name written with initial captial letter. Translated when small letters in describing text)
+Wild 
+wild (partly translated e.g. wild symbol becomes wild-symbol in Swedish)
+Super
+Mega
+Epic
+Free Spins
+Avalanche
+-->
+
+<!--Copy to gfx game specific text-assets-->
+<gfx key="OfTxt">OF</gfx>
+<gfx key="PlayedInTotal">PLAYED IN TOTAL</gfx>
+<gfx key="StartTxt">START</gfx>
+<gfx key="TotalWinTxt">Total Win</gfx>
+
+<gfx key="SafetyLevelTxt">SAFETY LEVEL</gfx>
+<gfx key="MaxWinIntroTxt">WIN UP TO 50,000x YOUR BET!</gfx>
+<gfx key="SuperBonusChanceTxt">+SUPER BONUS CHANCE</gfx>
+<gfx key="BigSymbolsSubTxt">BIG SYMBOLS</gfx>
+<gfx key="BonusSymbolSubTxt">BONUS SYMBOL</gfx>
+<gfx key="WildSymbolSubTxt">WILD SYMBOL</gfx>
+<gfx key="SafetyLevelsSubTxt">SAFTEY LEVELS</gfx>
+<gfx key="ActivatedTxt">ACTIVATED</gfx>
+<gfx key="SuperBonusSubTxt">SUPER BONUS</gfx>
+
+<!--Intro-->
+
+<!-- game documentation --> 
+<entry key="gdd-description">The 4 clans from Nitropolis are now back! They have struck a deal of a temporary truce and work together to defeat Nitro Wolf and bring unorder to the city once again. It is not worth starting the fight though until a source of Nitro is secured. Luckily Sir Pugsalot did some scouting in the airship and found an old oil platform not too far from the shore, so this is where the clans have set up a new base. 
+
+
+Nitropolis 4 is a 6 column, 4 rows slot with all ways wins. Avalanches make the reels expand up to the maximum 8 rows. The game has Nitro Reels, Nitro Multipliers, big symbols, and a Nitro Booster generating different kind of features for both Nitro Reels and the main reels. The Nitro Multiplier multiplies all wins in view. 
+
+The expansion of the reels triggers the Nitro Booster to activate, and at the maximum 8 rows additional wins continue to trigger the Nitro Booster. The Nitro Booster can award Nitro features in terms of Nitro Match, Nitro Upgrade and Nitro Wild, or main reel features such as Nitro Appear, Redrop, Both Ways, Max Rows and Garbage Collect.
+
+Three bonus symbols trigger the free spins bonus game in which all Nitro Reels are sticky.
+</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+
+<entry key="gdd-payline">Nitropolis 4 has up to 262,144 ways to win but Nitro Reels add additional ways. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">Three or more bonus symbols trigger the bonus game with free spins. Free spins start at 4 rows. Every free spin initiated that results in a win advances the safety level one row, and every new free spin starts at the current active safety level.
+
+All Nitro Reels are sticky during the bonus game. 
+
+Three bonus symbols of which one is a super bonus symbol trigger the Super Bonus Game which is played with Max Rows and Both Ways activated.</entry> <!-- Translate Super Bonus Game into local language using initial capital letter to strengthen the message -->
+
+<!--Key Features texts-->
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Standard 4 rows and 4,096 ways to win and expansions up to 8 rows with 262,144 ways to win, where features can add additional ways.</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 reels</entry>
+<entry key="gdd-kf-rows">4 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The wild symbol substitutes for any symbol except the bonus and super bonus symbols.</entry>
+<entry key="gdd-sfs-2">Nitro Reels cover two symbol positions and contain 4, 6, 8, 10 or 12 1x1 payout symbols.</entry>
+<entry key="gdd-sfs-3">Big Nitro Reels cover six symbol positions and contain 2, 3, 4, 5 or 6 2x2 payout symbols.</entry>
+<entry key="gdd-sfs-4">The Nitro Multiplier is a blocker in itself but multiplies all wins in view.</entry>
+<entry key="gdd-sfs-5">Three or more bonus symbols trigger the Free Spins bonus game. All Nitro Reels are sticky during the free spins. Free spins can be retriggered.</entry>
+<entry key="gdd-sfs-6">A combination of bonus symbols and a super bonus symbol triggers the Super Bonus Game which is played with Max Rows and Both Ways activated.</entry> <!-- Translate Super Bonus Game into local language using initial capital letter to strengthen the message -->
+
+
+<!--X-iter UI button text-->
+<entry key="gdd-xiterbutton-1">Bonus Hunt</entry> <!-- Translate into local language using initial capital letter to strengthen the message -->
+<entry key="gdd-xiterbutton-2">Nitro Booster</entry>
+<entry key="gdd-xiterbutton-3">Super Spin</entry>
+<entry key="gdd-xiterbutton-4">Bonus</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus</entry> 
+
+<!--X-iter UI texts-->
+<entry key="X01B1">Bonus Hunt!</entry> <!-- Translate Bonus Hunts into local language using initial capital letter to strengthen the message -->
+<entry key="X01B2">More than double the chance to trigger the bonus game!</entry>
+<entry key="X02B1">Nitro Booster!</entry>
+<entry key="X02B2">One spin with 2 guaranteed features every time the Nitro Booster activates.</entry>
+<entry key="X03B1">Super Spin!</entry> <!-- Translate Super Spin into local language using initial capital letter to strengthen the message -->
+<entry key="X03B2">One spin with Max Rows and Both Ways activated.</entry>
+<entry key="X04B1">Bonus!</entry>
+<entry key="X04B2">One spin with guaranteed entry to the bonus game!</entry>
+<entry key="X04B3">Sticky Nitro Reels!</entry>
+<entry key="X05B1">Super Bonus!</entry> <!-- Translate Super Bonus into local language using initial capital letter to strengthen the message -->
+<entry key="X05B2">One spin with guaranteed entry to the super bonus game!</entry>
+<entry key="X05B3">Sticky Nitro Reels, Max Rows and Both Ways!</entry>
+	
+<!--Paytable-->
+<entry key="paytableNitroBooster">The Nitro Booster adds features to the main reels. There are 8 different features.</entry>
+
+<entry key="paytableRedrop">All Nitro Reels, Nitro Multiplier, wild symbols and bonus symbols are kept. Symbols are removed, new symbols drop in and all reels respin.</entry>
+
+<entry key="paytableBothWays">Winnings are paid out from left to right, and from right to left.</entry>
+
+<entry key="paytableMaxRow">Expands the game up to the maximum 8 rows.</entry>
+
+<entry key="paytableGarbageCollect">All instances of a randomly selected symbol in view are removed.</entry>
+
+<entry key="paytableNitroAppear">A Nitro Reel in any size is placed and replaces existing symbols in view during the ongoing spin.</entry>
+
+<entry key="paytableNitroWild">An existing Nitro Reel in view is filled with wild symbols.</entry>
+
+<entry key="paytableNitroUpgrade">An existing Nitro Reel in view is upgraded and additional symbols are added to the Nitro Reel.</entry>
+
+<entry key="paytableNitroMatch">An existing Nitro Reel in view is matched with a symbol in view and the Nitro Reel is filled with that symbol.</entry>
+
+
+<entry key="paytableNitroReels">Nitro Reels cover two symbol positions and contain 4, 6, 8, 10 or 12 1x1 payout symbols. Big Nitro Reels cover six symbol positions and contain 2, 3, 4, 5 or 6 2x2 payout symbols.</entry>
+
+<entry key="paytableNitroMultiplier">A Nitro Multiplier cover two symbol positions and multiplies all wins in view.</entry>
+
+<entry key="paytableWildSymbol">The wild symbol substitutes for any symbol except the bonus and the super bonus symbols. A payline of all wilds pays as the highest value symbol.</entry>
+
+<entry key="paytableAvalanche">All symbols which are part of a win explode and leave space for additional symbol drops, and an additional row of symbols is added at the top up to a maximum of 8 rows. Nitro Reels and Nitro Multipliers that are part of a win respin. The avalanche feature continues as long as new winning combinations appear.</entry>
+
+<entry key="paytableBigSymbols">Super symbols of size 2x2 and Mega symbols of size 3x3 may appear in any spin or symbol drop.</entry> 
+
+<entry key="paytableBonusSymbol">Three or more bonus symbols trigger the free spins bonus game. All Nitro Reels are sticky during the free spins. Free spins can be retriggered.</entry>
+
+<entry key="paytableSafetyLevels">In the bonus game the safety level advances one row for every new free spin initiated that results in a win. Every new free spin starts at the current active safety level.</entry>
+<entry key="paytableSuperBonus">A combination of bonus symbols and a super bonus symbol triggers the Super Bonus Game which is played with Max Rows and Both Ways activated.</entry> <!-- Translate Super Bonus Game into local language using initial capital letter to strengthen the message -->
+
+
+
+<!--Gamerules-->
+<entry key="gamerule">Nitropolis 4 is a 6 column, 4 rows slot with spinning reels and dropping symbols. The columns can expand upwards to a maximum of 8 rows.</entry>
+	
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Wins begin with the leftmost reel and pay left to right only on consecutive reels. In case of Both Ways the wins can also begin with the rightmost reel and pay right to left only on consecutive reels. Only the highest win per active payline is paid out.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+    <entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry> <!--Translate Settings into local language using initial capital letter since it is a name of a button-->
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Nitropolis 4 is played in two modes; normal mode and bonus mode with free spins.</entry>
+
+<entry key="gamerule">All spins in normal mode start with 4 rows and 4,096 ways to win.</entry>
+
+<entry key="gamerule">A Nitro Reel always covers two symbol positions and contains 4, 6, 8, 10 or 12 identical 1x1 payout symbols. A big Nitro Reel always covers six symbol positions and contains 2, 3, 4, 5 or 6 identical 2x2 payout symbols.</entry>
+
+<entry key="gamerule">A Nitro Reel can contain a super bonus symbol and is then only counted as one 1x1 symbol regardless of the size indicator of the Nitro Reel. The number of ways to win resets to the previous number when the super bonus symbol spins out.</entry>
+
+<entry key="gamerule">The wild symbol and all low, mid and high value symbols exist in three sizes; standard 1x1, Super 2x2 and Mega 3x3. All big symbols are counted as consisting of the number of 1x1 symbol instances it covers, e.g. a Super 2x2 consists of 4 standard 1x1 symbols.</entry>
+
+<entry key="gamerule">Empty spaces occurring below big symbols and below big Nitro Reels are filled with 1x1 sized symbols of the same type as the big symbol.</entry>
+
+<entry key="gamerule">The wild symbol substitutes for any symbol except the bonus and the super bonus symbols. A payline of all wilds pays as the highest value symbol.</entry>
+
+<entry key="gamerule">A Nitro Multiplier is a blocker that can appear in a Nitro Reel, and holds a value of x4, x6, x8, x10 or x12. It multiplies all wins in view and is multiplicative in case there are several Nitro Multipliers in view. 
+The Nitro Multiplier is only counted as one 1x1 symbol regardless of the size indicator of the Nitro Reel. The number of ways to win resets to the previous number when the Nitro Multiplier symbol spins out.</entry>
+
+<entry key="gamerule">All wins in the current symbol spin/drop are collected and thereafter all symbols which were part of a winning combination explode except for the Nitro Reels. The remaining symbols fall vertically until they reach a resting position, an additional row is added at the top and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear.</entry>
+
+<entry key="gamerule">Nitro Reels and Nitro Multipliers that are part of a winning combination are kept and respin during the symbol refill.</entry>
+
+<entry key="gamerule">Each additional symbol drop will add an additional row of symbols, up to a maximum of 8 rows, increasing the number of ways to win. The number of ways to win increases as the number of rows increases. The number of ways to win also increases as the number of Nitro Reels and the quantity of symbols inside the Nitro Reels increase.</entry>
+
+<entry key="gamerule">The Nitro Booster consists of two screens which may award features prior to the main reels stop, when the Nitro Booster moves upwards and in conjunction with a win when the reels are fully expanded. There are 8 features; 5 affect the main reels and 3 affect the Nitro Reels.</entry>
+
+<entry key="gamerule">The Nitro Booster features affecting the main reels are: Both Ways, Redrop, Max Rows, Garbage Collect and Nitro Appear.</entry>
+
+<entry key="gamerule">The Nitro Booster features affecting the Nitro Reels are: Nitro Wild, Nitro Upgrade and Nitro Match.</entry>
+
+<entry key="gamerule">The Redrop feature is activated when there are no more wins. Bonus symbols, wild symbols, Nitro Multiplier and Nitro Reels remain during the Redrop. The Nitro Reels respin and new symbols drop in from above to fill up the current active number of rows. Only 1 Redrop feature can trigger at a time.</entry>
+
+<entry key="gamerule">The Both Ways feature activates when it lands. Subsequently all ways connections then pay from left to right starting from the leftmost reel, and from right to left starting from the rightmost reel. The Both Ways feature remains active throughout the Avalanche cycle in normal mode. The Both Ways feature remains active for the remaining free spins when activated in bonus mode. Only 1 Both Ways feature can be triggered in normal mode and bonus mode respectively.</entry>
+
+<entry key="gamerule">The Max Rows feature activates when it lands, expanding the reels up to maximum 8 rows. Only 1 Max Rows feature can be triggered in normal mode and bonus mode respectively.</entry>
+
+<entry key="gamerule">The Garbage Collect feature randomly selects one symbol and removes all instances of it from view prior to gravity and symbol refill. Nitro Reels that contained the selected symbol will respin.</entry>
+
+<entry key="gamerule">The Nitro Appear feature randomly places a Nitro Reel or a big Nitro Reel of any size during the ongoing spin. The Nitro Reel replaces the existing symbols on the selected positions.</entry>
+
+<entry key="gamerule">The Nitro Wild feature randomly selects an existing Nitro Reel in view and fills it with wild symbols. In case there are no Nitro Reels currently in view, the feature will be kept pending in the Nitro Booster until either a Nitro Reel appears or the game round ends.</entry>
+
+<entry key="gamerule">The Nitro Upgrade feature randomly selects an existing Nitro Reel in view and increases its ways value. Upgrading Nitro Reels with symbols increase the number of symbols within the Nitro Reel. Upgrading Nitro Reels with a multiplier increases the multiplier value within the Nitro Reel. In case there are no Nitro Reels currently in view, the feature will be kept pending in the Nitro Booster until either a Nitro Reel appears or the game round ends.</entry>
+
+<entry key="gamerule">The Nitro Match feature is activated when the reels stop, or when the symbol refill is complete. It randomly selects an existing Nitro Reel in view and matches it with another symbol in view to create a win. If no winning match is possible the selected Nitro Reel will be matched with an adjacent Nitro Reel. If that is not possible either it will be matched with the highest value symbol on the adjacent reel(s). In case there are no Nitro Reels currently in view, the feature will be kept pending in the Nitro Booster until either a Nitro Reel appears or the game round ends.</entry>
+
+<entry key="gamerule">A combination of three or more bonus symbols during normal mode triggers the bonus mode with free spins. The Super Bonus Game will be triggered in case at least one of the bonus symbols is a super bonus symbol.
+3 bonus symbols: 8 free spins
+4 bonus symbols: 12 free spins
+5 bonus symbols: 16 free spins
+6 bonus symbols: 20 free spins
+</entry> <!-- Translate Super Bonus Game into local language using initial capital letter to strengthen the message -->
+
+<entry key="gamerule">Super bonus symbols can only appear in a Nitro Reel. A super bonus symbol will only be counted as one no matter the Nitro Reel's size indicator. The number of ways to win resets to the previous number when the super bonus symbol spins out.</entry>
+
+<entry key="gamerule">The Both Ways and Max Rows features become deactivated in case they are active when Bonus mode is triggered.</entry>
+
+<entry key="gamerule">The free spins bonus game always starts with the safety level set to 4 rows. Every winning free spin advances the safety level one row. Nitro Reels and Big Nitro Reels may advance the safety level several rows at once if they are stacked above the level that a regular win provides.</entry>
+
+<entry key="gamerule">The advancement of the safety level occurs after the payout. The next free spin starts from the new safety level. The safety level can at most advance 4 rows resulting in a total of 8 rows.</entry>
+
+<entry key="gamerule">During free spins, all Nitro Reels are kept and remain in play for the remaining free spins.</entry>
+
+<entry key="gamerule">The Super Bonus game is played with Max Rows and Both Ways activated.</entry> <!-- Translate Super Bonus Game into local language using initial capital letter to strengthen the message -->
+
+<entry key="gamerule">Three or more bonus symbols during bonus mode award additional free spins. The number of additional free spins is determined in the same way as when initially triggering the bonus game. The Super Bonus Game is triggered in case at least one of the bonus symbols is a super bonus symbol.</entry> <!-- Translate Super Bonus Game into local language using initial capital letter to strengthen the message -->
+
+<entry key="gamerule">The free spins bonus game ends when no free spins remain or when the maximum win has been reached.</entry>
+
+<entry key="gamerule">Winnings are paid out at the end of the bonus mode.</entry>
+
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+
+<entry key="gamerule">A game round ends if the maximum win is reached.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Nitropolis 4 is __RTP__.</entry>
+
+<entry key="gamerule">The game has a maximum win of __TBB__ the placed bet.</entry>
+    <entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+    <entry key="gamerule" tags="lastupdated">Last updated 2025.05.08</entry>
+
+<!-- X-iter rules -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+<entry key="xiter-rule" tags="X05">Super Bonus: Guarantees a game round with entry to the super bonus game at the cost of __X05_MULTIPLIER__ the selected bet. All free spins are played with Max Rows and Both Ways activated.</entry> <!-- Translate Super Bonus into local language using initial capital letter to strengthen the message -->
+<entry key="xiter-rule" tags="X04">Bonus: Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X03">Super Spin: 1 spin which is played with Max Rows and Both Ways activated at the cost of __X03_MULTIPLIER__ the selected bet.</entry> <!-- Translate Super Spin into local language using initial capital letter to strengthen the message -->
+<entry key="xiter-rule" tags="X02">Nitro Booster: 1 spin where the Nitro Booster always provides 2 features when activated at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X01">Bonus Hunt: 1 spin with more than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry> <!-- Translate Bonus Hunt into local language using initial capital letter to strengthen the message -->
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Nitropolis 4 is __RTP__.</entry>
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">
+Last updated 2022-12-05</entry>
+
+<!--Dialogs-->	
+
+</translation>

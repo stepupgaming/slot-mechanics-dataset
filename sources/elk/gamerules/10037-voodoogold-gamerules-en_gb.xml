@@ -1,0 +1,152 @@
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+	<gfx key="paytableBonusGame">BONUS GAME</gfx>
+	<gfx key="paytablePaylinesHeadline">WAYS TO WIN</gfx>
+	<gfx key="paytableBonusSymbolHeadline">BONUS SYMBOL</gfx>
+	<gfx key="paytableAvalancheHeadline">AVALANCHE</gfx>
+	<gfx key="paytableBombHeadline">BOMB</gfx> 
+	<gfx key="paytableDualBombHeadline">DUAL BOMB</gfx>
+	<gfx key="paytableWildHeadline">WILD SYMBOL</gfx>
+	<gfx key="paytableStickyWildHeadline">STICKY WILDS</gfx>
+	<gfx key="paytableSafetyLevelsHeadline">SAFETY LEVELS</gfx>
+	<gfx key="paytableFreeSpinsHeadline">FREE DROPS</gfx>
+	<gfx key="paytableBigSymbolsHeadline">BIG SYMBOLS</gfx>
+	<gfx key="winUpTxt">WIN UP TO</gfx>
+	<gfx key="coinsTxt">COINS</gfx>	
+	<gfx key="totalWinTxt">Total win</gfx>
+	<gfx key="safetyLevelTxt">Safety Levels</gfx>
+	<gfx key="activatedTxt">ACTIVATED</gfx>
+	<gfx key="ofTxt">OF</gfx>
+	<gfx key="playedInTotalTxt">played in total</gfx>
+	<gfx key="startTxt">Start</gfx>
+
+<!--Intro-->
+	
+<!--Paytable-->
+	<entry key="paytableBonusSymbol">Three or more bonus symbols trigger the free drops bonus game. Free drops can be retriggered.</entry>
+	<entry key="paytableBomb">A single bonus symbol triggers the Bomb feature. This explodes surrounding symbols.</entry>
+	<entry key="paytableDualBomb">Two bonus symbols trigger the Dual Bomb feature. This explodes symbols along a straight line between the bombs, together with all identical symbol instances in view.</entry>
+	<entry key="paytableAvalanche">All symbols which are part of a win explode and leave space for additional symbols to drop. An additional row of symbols is added at the top up to a maximum of 8 rows. The avalanche feature continues as long as new winning combinations appear.</entry>
+	<entry key="paytableSafetyLevel">The bonus game starts with the safety level set to 4 rows. A winning free drop moves the safety level up one row. The next free drop starts from that level. The safety level never decreases during an ongoing bonus game.</entry>
+	<entry key="paytableBigSymbols">Super, mega and epic symbols of sizes 2x2, 3x3 and 4x4 may drop down in any symbol drop. Big symbols will activate once they reach the bottom.</entry>
+	<entry key="paytableVoodoo">Empty spaces below big symbols are filled with wilds.</entry>
+	<entry key="paytableWildTxt">Wild symbols substitute for any symbol except the bonus symbol.</entry>
+	<entry key="paytableStickyWildsTxt">During the bonus game all wilds are collected and kept at the bottom when a free drop ends. They become sticky and remain in play for the remaining free drops.</entry>
+
+<!--Gamerules-->
+	<entry key="1-rulehead">Game rules</entry>
+	<entry key="1-rules">
+	<![CDATA[
+1. Voodoo Gold is a 6 column, 4 rows slot with dropping symbols and up to 262,144 ways to win. The columns may expand upwards to a total of 8 rows.
+
+2. The game offers several bet levels for each currency.
+
+3. Each bet is 100 coins.
+
+4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+]]>
+	</entry>
+	<entry key="2-rulehead">Game rules</entry>
+	<entry key="2-rules">
+	<![CDATA[
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins. The player can change preference in Settings.
+
+9. Voodoo Gold is played in two modes; Normal mode and Bonus mode with free drops.
+
+10. All symbol drops in Normal mode starts with 4 rows and up to 4,096 ways to win.
+
+11. All low, mid and high value symbols exist in four sizes; standard 1x1, super 2x2, mega 3x3 and epic 4x4. All big symbols are counted as consisting of the number of 1x1 symbol instances it covers, e.g. super 2x2 consists of 4 standard 1x1 symbols.
+]]>
+</entry>
+<entry key="3-rulehead">Game rules</entry>
+	<entry key="3-rules">
+	<![CDATA[
+12. Big symbols will activate only when they reach the bottom. Empty spaces below big symbols are filled with wilds.
+
+13. The winnings in the current symbol drop are collected before the symbols in the winning combinations explode to give space for additional symbols to drop down. This drop will add an additional row of symbols at the top, resulting in a potential increase in number of ways to win. The new result is paid out accordingly and the avalanche feature continues as long as new winning combinations appear. The maximum number of rows are 8 with a maximum of 262,144 ways to win.
+]]>
+</entry>
+<entry key="4-rulehead">Game rules</entry>
+	<entry key="4-rules">
+	<![CDATA[
+14. The potential number of ways to win increases as the number of rows increases. 
+4 rows: 4,096 ways to win
+5 rows: 15,625 ways to win
+6 rows: 46,656 ways to win
+7 rows: 117,649 ways to win
+8 rows: 262,144 ways to win
+
+15. Big symbols which are not activated reduce the number of ways to win. 
+
+16. The wild symbol substitutes for any symbol except the bonus symbol. In the bonus game all wilds become sticky at the end of a free drop and they remain sticky for the remaining free drops.
+]]>
+</entry>
+<entry key="5-rulehead">Game rules</entry>
+	<entry key="5-rules">
+	<![CDATA[
+17. A single bonus symbol triggers the Bomb feature after winning combinations have been collected. Up to 12 symbols within a diamond-shaped area around the bonus symbol explode and give space for additional symbols to drop down. This drop will add an additional row of symbols at the top up to a maximum of 8 rows.
+
+18. Two bonus symbols trigger the Dual Bomb feature after winning combinations have been collected. All symbols touched by a straight line drawn between the bonus symbols, and all active symbol instances of the touched symbols explode, giving space for additional symbols to drop down. This drop will add an additional row of symbols at the top up to a maximum of 8 rows. 
+]]>
+</entry>
+<entry key="6-rulehead">Game rules</entry>
+	<entry key="6-rules">
+	<![CDATA[
+19. Neither the Bomb nor the Dual Bomb feature has an affect on inactive big symbols. In the instance of a Dual Bomb line touching an inactive big symbol all active instances of that symbol will explode, independent of size. 
+
+20. Neither the Bomb nor the Dual Bomb feature has an affect on wild symbols.
+
+21. Bonus symbols appear in all columns. A column may contain up to one bonus symbol.
+
+22. A combination of three or more bonus symbols during Normal mode triggers the Bonus mode with free drops.
+3 bonus symbols: 6 free drops
+4 bonus symbols: 9 free drops
+5 bonus symbols: 12 free drops
+6 bonus symbols: 15 free drops.
+]]>
+</entry>
+<entry key="7-rulehead">Game rules</entry>
+	<entry key="7-rules">
+	<![CDATA[
+23. Three or more bonus symbols during Bonus mode retrigger additional free drops. The number of additional free drops is determined in the same way as when initially triggering the bonus game.
+
+24. The free drops bonus game always starts with the safety level set to 4 rows.
+
+25. A winning free drop moves the safety level up one row. The advancement of the safety level occurs after the payout. The next free drop starts from the new safety level.
+
+26. A safety level never moves down during an ongoing free drops bonus game.
+
+27. The maximum safety level is 8 with a maximum of 262,144 ways to win.
+]]>
+</entry>
+<entry key="8-rulehead">Game rules</entry>
+	<entry key="8-rules">
+	<![CDATA[
+28. The free drops bonus game ends when no free drops remain or when the maximum win has been reached.
+
+29. Winnings are paid out at the end of the bonus game.	
+
+30. No bets can be changed during an ongoing symbol drop or in Bonus mode.
+
+31. The theoretical payout (RTP) in Voodoo Gold is 96.1%
+
+32. The game has a maximum win of 500,000 coins.
+
+33. In the event of malfunction all bets and wins are void.
+
+   
+Last updated 2021-05-10
+	]]></entry>
+
+<!--Dialogs-->	
+
+</translation>

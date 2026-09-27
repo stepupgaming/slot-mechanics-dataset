@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--====================
+***** GAMESPECIFIC *****
+=====================-->
+
+<!--Words not translated in this game
+
+Pug Thugs
+Wild
+Wilds
+BIG WIN
+SUPER WIN
+MEGA WIN
+EPIC WIN
+THUG LIFE
+Nitro Reels
+Nitro Insane (Name of feature)
+Nitro Wild (Name of feature)
+Nitro Match (Name of feature)
+Collect (Name of feature)
+Coin Rain (Name of feature)
+Nitro Wolf
+Respin
+
+
+-->
+
+<!-- Feature Screen (removed from not translated list) -->
+<!-- Copy to gfx game specific text-assets -->
+<gfx key="paytableBonusTxt">BONUS</gfx>
+<gfx key="paytableSuperBonusTxt">SUPER BONUS</gfx>
+<gfx key="paytableBonusSymbolTxt">BONUS SYMBOL</gfx>
+<gfx key="paytableBonusGameTxt">BONUS GAME</gfx>
+<gfx key="paytableFreeDropsTxt">FREE SPINS</gfx>
+<gfx key="paytableWildSymbolSubTxt">WILD SYMBOL</gfx>
+<gfx key="paytableWildSymbolsSubTxt">WILD SYMBOLS</gfx>
+<gfx key="CoinsTxt">COINS</gfx>
+<gfx key="OfTxt">OF</gfx>
+<gfx key="PlayedInTotalTxt">Played in Total</gfx>
+<gfx key="SkipIntroTxt">SKIP INTRO</gfx>
+<gfx key="StartTxt">START</gfx>
+<gfx key="SymbolPayoutTxt">SYMBOL PAYOUT</gfx>
+<gfx key="SymbolPaytableTxt">PAYTABLE</gfx>
+<gfx key="FeaturesTxt">FEATURES</gfx>
+<gfx key="TotalWinTxt">Total Win</gfx>
+<gfx key="WinUpToTxt">WIN UP TO</gfx>
+<gfx key="WinLinesTxt">PAYLINES</gfx><!-- changed from WIN LINES 2024 03 08 -->
+<gfx key="MultipleWinLinesTxt">MULTIPLE PAYLINES</gfx><!-- changed from WIN LINES 2024 03 08 -->
+<gfx key="MultipleWinLinesTxt">CONNECTING PAYLINES</gfx><!-- changed from WIN LINES 2024 03 08 -->
+<gfx key="FourWinLineDirectionsTxt">FOUR PAYLINE DIRECTIONS</gfx><!-- changed from WIN LINES 2024 03 08 -->
+
+<!--==========================
+***** Game Documentation *****
+===========================-->
+
+<entry key="gdd-description">They might appear weak and stupid, but don't underestimate the Pug Thugs! Cunning and smart, the Pug Thugs secretly pull the strings behind the scenes in the city of Nitropolis. After years of living as outcasts in the wild outside of the city, the Pug Thugs are back in their airship, dominating the skies above the skyline. Exploiting their air supremacy, the Pug Thugs are constantly watching. Constantly searching. They see everything that is going on in the city below. When the Nitro Wolf is up to something, the Pug Thugs are the first to know. And knowledge is power.
+
+Pug Thugs is a 6 column, 6 rows slot with spinning reels and connecting paylines originating from all 4 sides of the game grid. Central game features are the Nitro Reels which can be upgraded, the four Feature Screens that trigger features randomly, the Nitro Insane feature and the Free Spins Bonus Game.
+
+Three or more bonus symbols anywhere on the game grid trigger the Bonus Game. If at least one of the bonus symbols is a super bonus symbol, the super bonus game is triggered.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Pug Thugs has connecting paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">Three or more bonus symbols anywhere on the game grid trigger the Free Spins Bonus Game. If at least one of the bonus symbols is a super bonus symbol, the super bonus game is triggered. More than three bonus symbols award additional free spins.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Connecting paylines</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 reels</entry>
+<entry key="gdd-kf-rows">6 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!--=======================
+***** Special Symbols *****
+========================-->
+
+<entry key="gdd-sfs-1">The Nitro Reels are two or more stacked symbols inside one symbol. A Nitro Reel can spawn inside the central 4 x 4 area of the grid either by two or more crossing win lines, by a random Nitro Reel spawn, or by the Nitro Insane feature.</entry>
+
+<entry key="gdd-sfs-2">Three or more bonus symbols anywhere on the game grid trigger the Free Spins Bonus Game. If at least one of the bonus symbols is a super bonus symbol, the super bonus game is triggered. More than three bonus symbols award more free spins.</entry>
+
+<entry key="gdd-sfs-3">If at least one of the bonus symbols triggering the bonus game is a super bonus symbol, the super bonus game is triggered.</entry><!-- Changed 2024 03 08 -->
+
+<entry key="gdd-sfs-4">The wild symbol substitutes for any symbol except the bonus symbol, the super bonus symbol, and the coin symbols. A payline of only wild symbols pays as the highest value symbol.</entry><!-- Changed 2024 03 08, added 'the' before superbonus and coin, also changed to 'coin symbols' instead of 'coin symbol' -->
+
+<entry key="gdd-sfs-5">Coin symbols contribute with their value times the current bet level when collected. If a coin symbol appears inside a Nitro Reel, the value is multiplied by the Nitro Reel's size indicator.</entry><!-- Changed 2024 03 08 -->
+
+<!--======================
+***** X-iter Buttons *****
+=======================-->
+
+<entry key="gdd-xiterbutton-1">Bonus Hunt!</entry>
+<entry key="gdd-xiterbutton-2">Nitro Insane!</entry><!-- Changed 2024 03 08, X02 is now Nitro Insane (like X03 was before) -->
+<entry key="gdd-xiterbutton-3">Nitro Insane plus Feature!</entry><!-- Changed 2024 03 08, X03 is now Nitro Insane and one random feature -->
+<entry key="gdd-xiterbutton-4">Bonus Game!</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus!</entry>
+
+<!--=======================
+***** X-iter UI Texts *****
+========================-->
+
+<entry key="X01B1">Bonus Hunt!</entry>
+<entry key="X01B2">More than TRIPLE the chance to trigger the bonus game!</entry>
+<entry key="X02B1">Nitro Insane!</entry><!-- Changed 2024 03 08, X02 is now Nitro Insane (like X03 was before) -->
+<entry key="X02B2">One spin with guaranteed trigger of the Nitro Insane feature!</entry><!-- Changed 2024 03 08, X02 is now Nitro Insane (like X03 was before) -->
+<entry key="X03B1">Nitro Insane plus Feature!</entry><!-- Changed 2024 03 08, X03 is now Nitro Insane and one random feature -->
+<entry key="X03B2">One spin with guaranteed trigger of the Nitro Insane feature and one random Feature Screen!</entry><!-- Changed 2024 03 08, X03 is now Nitro Insane and one random feature -->
+<entry key="X04B1">Bonus Game!</entry>
+<entry key="X04B2">One spin with guaranteed entry to the Bonus Game!</entry>
+<!--entry key="X04B3">Every spin starts with Nitro Insane!</entry-->
+<entry key="X05B1">Super Bonus!</entry>
+<entry key="X05B2">One spin with guaranteed entry to the Super Bonus!</entry>
+<!--entry key="X05B3">All Nitro Reels are kept sticky!</entry-->
+
+<!--================
+***** Paytable *****
+=================-->
+
+<!-- Pugs. It's all about the Pugs! -->
+<entry key="paytablePugs">Cunning and smart by nature. Meet the alpha pug and the Pug Thugs clan of Nitropolis.</entry>
+
+<!--Paylines-->
+<entry key="paytablePaylines">Pug Thugs features connecting paylines that can start from all 4 sides of the game grid.</entry>
+<entry key="paytableRespins">All winning symbols and Nitro Reels on the game grid respin after a win.</entry><!-- Changed to new wording 2024 03 08 -->
+
+
+<!--Bonus Game-->
+<entry key="paytableBonus">Three bonus symbols trigger the bonus game with free spins. If at least one of the bonus symbols is a super bonus symbol, the super bonus game is triggered.</entry>
+<entry key="paytableMoreBonus">More than three bonus symbols award additional free spins.</entry>
+
+<!--Nitro Features-->
+<entry key="paytableNitroFeatureScreen">The four Feature Screens may trigger features at random.</entry>
+<entry key="paytableScreenFeatures">The features appearing in the Feature Screens are Make Big, Collect with a chance of Coin Rain, Nitro Wild and Nitro Match.</entry>
+<entry key="paytableFeatures">The Nitro Insane feature may randomly trigger at the beginning of any spin.</entry>
+
+<!--Nitro Reels-->
+<entry key="paytableNitroReels">A Nitro Reel is a special symbol that contains a stack of symbols covering only one symbol position.</entry>
+<entry key="paytableNitroReelUpgrade">Nitro Reels can be upgraded, adding symbols to the stack.</entry>
+
+<entry key="paytableNitroReelArea">Nitro Reels can only appear inside the central 4 x 4 area of the game grid.</entry>
+
+<entry key="paytableNitroReelCreation">Nitro Reels may spawn randomly in any spin or respin, by a feature or by two or more crossing win lines.</entry>
+<!--=================
+***** Gamerules *****
+==================-->
+
+<!--General Rules-->
+<entry key="gamerule">Pug Thugs is a 6 column, 6 rows slot with spinning reels and connecting paylines originating from all 4 sides of the game grid.</entry>
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">Paylines begin with the first column or row of symbols from one of the four directions (left, top, right or bottom) and only pay through connecting symbols either straight or diagonally. Three or more connecting symbols are required. No gaps between the symbols on the paylines are allowed. Only the longest payline per active payline is paid out.</entry>
+
+<entry key="gamerule">All winning symbols and Nitro Reels on the game grid respin after a win.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Pug Thugs is played in two modes; normal mode and bonus mode with free spins.</entry>
+
+<entry key="gamerule">The wild symbol substitutes for any symbol except the bonus symbol, the super bonus symbol, and the coin symbols. A payline of only wild symbols pays as the highest value symbol.</entry>
+
+<!--Nitro Reels-->
+<entry key="gamerule">A Nitro Reel only covers one symbol position but contains a stack of symbols. The size indicator on the Nitro Reel indicates the number of symbols in the stack.</entry>
+
+<!-- ADDED -->
+<entry key="gamerule">Intersecting paylines create a Nitro Reel in the intersecting position after the payout. If there is already a Nitro Reel in that position, that Nitro Reel will be upgraded.</entry>
+
+<entry key="gamerule">Nitro Reels can be upgraded to have a bigger size indicator that contains additional symbols in the symbol stack. The maximum size indicator is 8.</entry>
+
+<entry key="gamerule">Nitro Reels that contain a bonus symbol or a super bonus symbol temporarily deactivates the size indicator of the Nitro Reel and represents only one symbol instance.</entry>
+
+<entry key="gamerule">Nitro Reels containing coin symbols contribute the number of coins represented by the size indicator when collected.</entry>
+
+<entry key="gamerule">All Nitro Reels will land on the same symbol after respins.</entry>
+
+
+<!--Feature Screen-->
+<entry key="gamerule">The four Feature Screens in the corners of the game grid may randomly trigger their respective feature. Several features can be triggered at the same time.</entry>
+
+<entry key="gamerule">The Feature Screens can trigger the Make Big, Collect, Nitro Wild and Nitro Match features. The Collect, Nitro Wild and Nitro Match features will stay active in the Feature Screens until used or the spin ends.</entry>
+
+<entry key="gamerule">The Make Big feature will expand a random symbol on the game grid until it covers 2 x 2, 3 x 3 or 4 x 4 symbol positions.</entry>
+
+<entry key="gamerule">The Collect feature is activated prior to the win evaluation, and it collects the values of all coins currently on the game grid and keeps the accumulated value on the screen. The coin symbols respin after a collect and can then land on either a coin symbol or a payout symbol. The process of collect and respin is repeated until there are no more coin symbols on the game grid. The total accumulated value times the current active bet is paid out once the feature has ended.</entry>
+
+<entry key="gamerule">At the start of the Collect feature, a Coin Rain feature may randomly be triggered. Coin Rain will scatter additional coins on the grid.</entry>
+
+<entry key="gamerule">The Nitro Wild feature will convert one or more Nitro Reels on the game grid into Nitro Reels containing wild symbols.</entry>
+
+<entry key="gamerule">The Nitro Match feature will select a random symbol on the game grid and match all Nitro Reels on the game grid with the selected symbol.</entry>
+
+<entry key="gamerule">If more than one of the four feature screens stop on a feature at the same time, they are always activated in the same order. First Make Big followed by Collect, Nitro Match, and finally Nitro Wild. The Collect, Nitro Match and Nitro Wild features are kept during potential subsequent respins if they can't be activated.</entry>
+
+<!--Nitro Insane-->
+<entry key="gamerule">The Nitro Insane feature may randomly be triggered at the beginning of any spin.</entry>
+<entry key="gamerule">Nitro Insane places a random number of Nitro Reels inside the central 4 x 4 area of the game grid prior to the other reels stop.</entry>
+
+<!--Bonus Game-->
+<entry key="gamerule">Three or more bonus symbols anywhere on the reels trigger the Free Spins Bonus Game.</entry>
+
+<entry key="gamerule">The feature screens are cleared for every new free spin.</entry>
+
+<entry key="gamerule">A Nitro Insane feature is triggered in the beginning of every free spin in the bonus game.</entry>
+
+<entry key="gamerule">There are no super bonus symbols in the bonus game.</entry>
+
+<entry key="gamerule">Landing more than three bonus symbols award a boosted Bonus Game with more free spins from the start.</entry>
+<entry key="gamerule">If at least one of the triggering bonus symbols is a super bonus symbol, the Super Bonus Game is triggered.</entry>
+
+<entry key="gamerule">All Nitro Reels are kept sticky and remain in play for the remaining free spins during the super bonus game.</entry>
+
+<!-- Added 2023 03 22 -->
+<entry key="gamerule">Three or more bonus symbols during Bonus mode retrigger additional free spins.</entry>
+
+<entry key="gamerule">The bonus mode starts once potential respins and activated features have been played through. Features that are not yet activated are deleted.</entry>
+<entry key="gamerule">The Bonus Game ends when no spins remain or when the win cap has been reached.</entry>
+<entry key="gamerule">Winnings are paid out at the end of the Bonus Game.</entry>
+
+<!--PaymentRules-->
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">The theoretical payout (RTP) in Pug Thugs is __RTP__</entry>
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">Last updated 2024-03-22</entry>
+
+<!--====================
+***** X-iter rules *****
+=====================-->
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus:
+One spin with guaranteed entry to the Super Bonus Game where all Nitro Reels are kept sticky at the cost of __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">Bonus Game:
+One spin with guaranteed entry to the Bonus Game where each free spin starts with a Nitro Insane feature at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">Nitro Insane plus Feature:
+One spin with guaranteed trigger of the Nitro Insane feature and one random Feature Screen at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">Nitro Insane:
+One spin with guaranteed trigger of the Nitro Insane feature at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">Bonus Hunt:
+More than TRIPLE the chance to trigger the Bonus Game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Pug Thugs is __RTP__.</entry>
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-03-22</entry>
+</translation>

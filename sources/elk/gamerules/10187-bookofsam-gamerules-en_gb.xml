@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--Words not translated in this game for all languages. Words marked with an asterisk need to be translated for Bulgarian if present in a text body
+Book of Sam
+Wild *
+Wilds *
+BIG WIN
+SUPER WIN
+MEGA WIN
+EPIC WIN
+ELECTRIC WIN
+Electric Treat
+Free Spin *
+Free Spins *
+Respin *
+Respins *
+Spin *
+Spins *
+-->
+
+<!--Copy to gfx game specific text-assets-->
+<gfx key="paytableBonusGameTxt">BONUS GAME</gfx>
+<gfx key="paytableWildSymbolSubTxt">WILD SYMBOL</gfx>
+<gfx key="paytableElectricTreatsTxt">ELECTRIC TREATS</gfx>
+<gfx key="paytableExpandingSymbolsTxt">EXPANDING SYMBOLS</gfx>
+<gfx key="paytableFeatureSymbolsTxt">FEATURE SYMBOLS</gfx>
+<gfx key="paytableScatterPayTxt">WITH SCATTER PAY</gfx>
+<gfx key="CoinsTxt">COINS</gfx>
+<gfx key="MultiplierTxt">MULTIPLIER</gfx>
+<gfx key="MultipliersTxt">MULTIPLIERS</gfx>
+<gfx key="OfTxt">OF</gfx>
+<gfx key="PlayedInTotalTxt">Played in Total</gfx>
+<gfx key="SkipIntroTxt">SKIP INTRO</gfx>
+<gfx key="StartTxt">START</gfx>
+<gfx key="SymbolPayoutTxt">SYMBOL PAYOUT</gfx>
+<gfx key="TotalWinTxt">Total Win</gfx>
+<gfx key="WinUpToTxt">WIN UP TO</gfx>
+
+
+<!-- game documentation --> 
+<entry key="gdd-description">Our favourite electrician Sam welcomes you to fabulous Sam Vegas! Have a wonderful stay in this amazing city together with the returning characters Sam, Sandra and Maggie. Here you will find yourself in an ancient Egyptian setting, in combination with modern Sam Vegas where anything can happen.
+
+Book of Sam is a 5 reel, 3 rows slot with spinning reels and 10 pay lines. Central game features are the three characters with their unique Electric Treats and the bonus game with Free Spins.
+
+A win on Maggie will trigger the Maggie Electric Treat. It consists of a redrop where all low value symbols, together with the cat and Maggie symbols are removed, and new symbols drop in.
+
+A win on Sandra will trigger the Sandra Electric Treat. Sandra will increase the multiplier and trigger Respins.
+
+A win on Sam will trigger the Sam Electric Treat. Sam will add a book symbol and trigger Respins. If the Sam Electric Treat is triggered during a bonus game, the added book symbol will also be an expanding Wild symbol.
+
+Book symbols are sticky during Respins.
+</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+
+<entry key="gdd-payline">Book of Sam has 10 paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">
+Three or more book symbols trigger the bonus game with Free Spins and expanding symbols.
+
+If the bonus game is triggered with three, four or five books, one, two or three random symbols are turned into expanding symbols respectively.
+
+At least two instances of a high value expanding symbol, or at least three instances of a low value expanding symbol, on individual reels are required to trigger the scatter pay feature.
+
+If the Sam Electric Treat is triggered during a bonus game, Sam will add a book symbol that also is an expanding Wild symbol.
+
+Three, four or five books during a Free Spin will retrigger the bonus game, awarding more Free Spins and one, two or three expanding symbols respectively, up to a maximum of five expanding symbols.
+
+Electric Treats can be triggered during a Free Spin.
+
+The Electric Treat will only be active during Respins.
+</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">10 pay lines</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">5 reels</entry>
+<entry key="gdd-kf-rows">3 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The Wild book symbol substitutes for any symbol. Three or more book symbols trigger the bonus game with Free Spins.</entry>
+<entry key="gdd-sfs-2">Two or more Maggie symbols will trigger the Maggie Electric Treat. It consists of a redrop where all low value symbols, together with the cat and Maggie symbols are removed, and new symbols drop in.</entry>
+<entry key="gdd-sfs-3">Two or more Sandra symbols will trigger the Sandra Electric Treat, increasing the multiplier and awarding Respins. If the Sandra Electric Treat is triggered during a bonus game, the multiplier will be sticky, but only active during Respins triggered by Sandra.</entry>
+<entry key="gdd-sfs-4">Two or more Sam symbols trigger the Sam Electric Treat, spawning an electric book and award Respins. If the Sam Electric Treat is triggered during a bonus game, the added book symbol will also be an expanding Wild symbol.</entry>
+<entry key="gdd-sfs-5">In the bonus game you get one or more expanding scatter symbols that can trigger the scatter pay feature.</entry>
+
+<entry key="gdd-xiterbutton-1">Bonus Hunt!</entry>
+<entry key="gdd-xiterbutton-2">Electric Treat!</entry>
+<entry key="gdd-xiterbutton-3">Expanding Symbols!</entry>
+<entry key="gdd-xiterbutton-4">Bonus Game!</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus!</entry>
+
+
+<!--X-iter UI texts-->
+<entry key="X01B1">Bonus Hunt!</entry>
+<entry key="X01B2">More than double the chance to trigger the bonus game!</entry>
+<entry key="X02B1">Electric Treat!</entry>
+<entry key="X02B2">One Spin with one guaranteed Electric Treat!</entry>
+<entry key="X03B1">Expanding Symbols!</entry>
+<entry key="X03B2">One Spin where all symbols are expanding symbols!</entry>
+<entry key="X04B1">Bonus Game!</entry>
+<entry key="X04B2">One Spin with guaranteed entry to the bonus game!</entry>
+<entry key="X05B1">Super Bonus!</entry>
+<entry key="X05B2">One Spin with guaranteed entry to the super bonus game where all symbols are expanding symbols!</entry>
+
+
+<!--Intro-->
+	
+<!--Paytable-->
+<entry key="paytableSam">A win on two or more Sam symbols trigger the Sam Electric Treat. Respins and a book symbol on a random position is awarded.</entry>
+<entry key="paytableSandra">A win on two or more Sandra symbols trigger the Sandra Electric Treat. Respins and an increased multiplier is awarded.</entry>
+<entry key="paytableMaggie">A win on Maggie trigger the Maggie Electric Treat. All low value symbols, together with the cat and Maggie symbols are removed, and new symbols are dropped in their place.</entry>
+<entry key="paytableBonusGame">BONUS GAME</entry>
+<entry key="paytableFreeSpins">Three or more book symbols trigger the bonus game with eight Free Spins. One or more expanding symbols are selected at the beginning of the bonus game. Free Spins can be retriggered and will award one or more expanding symbols, up to a maximum of five, and four Free Spins</entry>
+<entry key="paytableScatterPay">Three, four or five book symbols award one, two or three expanding symbols respectively that can trigger the scatter pay feature.</entry>
+
+
+<!--Gamerules-->
+<!--General rules-->
+<entry key="gamerule">Book of Sam is a 5 reel, 3 rows slot with spinning reels and 10 paylines.</entry>
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">Wins begin with the first leftmost reel and only pay from left to right on consecutive reels. No gaps between the reels are allowed. Only the longest payline per active payline is paid out.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+    <entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry> <!--Translate Settings into local language using initial capital letter since it is a name of a button-->
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+
+<entry key="gamerule">Book of Sam is played in two modes; Normal mode and Bonus mode with Free Spins.</entry>
+
+<entry key="gamerule">The Wild book symbol substitute for any symbol.</entry>
+<entry key="gamerule">A payline of only Wild symbols pay as the highest value symbol.</entry>
+
+
+<!--Sam, Sandra and Maggie Electric Treats-->
+<entry key="gamerule">Two or more Maggie symbols will trigger the Maggie Electric Treat. It consists of a redrop where all low value symbols, together with the cat and Maggie symbols are removed, and new symbols drop in.</entry>
+<entry key="gamerule">Maggie will not remove expanding symbols.</entry>
+<entry key="gamerule">Two or more Sandra symbols will trigger the Sandra Electric Treat, increasing the multiplier and awarding Respins.</entry>
+<entry key="gamerule">Two or more Sam symbols trigger the Sam Electric Treat, spawning a book symbol and awarding Respins.</entry>
+<entry key="gamerule">If the Sam Electric Treat is triggered during a bonus game, the added book symbol will also be an expanding Wild symbol.</entry>
+<entry key="gamerule">Book symbols are sticky during Respins.</entry>
+
+
+<!--Bonus game with Free Spins-->
+<entry key="gamerule">Three or more book symbols during Normal mode trigger the Bonus mode with Free Spins and expanding symbols.</entry>
+<entry key="gamerule">Three, four or five book symbols that trigger the bonus game will also add one, two or three expanding symbols respectively.</entry>
+<entry key="gamerule">Three or more book symbols during a Free Spin will retrigger the bonus game, awarding more Free Spins and one or more expanding symbols up to a maximum of five expanding symbols.</entry>
+<entry key="gamerule">At least two instances of a high value expanding symbol, or at least three instances of a low value expanding symbol, on individual reels are required to trigger the scatter pay feature. After potential payline wins the expanding symbols expand to cover the whole reels and pay out a scatter win.</entry>
+<entry key="gamerule">Electric Treats can be triggered during the bonus game.</entry>
+<entry key="gamerule">Sandra's multiplier value is persistent throughout an entire bonus game, but it will only be active during an Electric Treat. After the Electric Treat, the multiplier will be deactivated. It will be reactivated by a new Electric Treat.</entry>
+
+<entry key="gamerule">If the Sam Electric Treat is triggered during a bonus game, the book symbol will also be an expanding Wild symbol during the Respins.</entry>
+<entry key="gamerule">The free spins bonus game ends when no free spins remain or when the win cap has been reached.</entry>
+<entry key="gamerule">Winnings are paid out at the end of the bonus mode.</entry>
+
+<!--PaymentRules-->
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">The theoretical payout (RTP) in Book of Sam is __RTP__.</entry>
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+    <entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+    <entry key="gamerule" tags="lastupdated">Last updated 2025.05.08</entry>
+<!--X-iter-->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+<entry key="xiter-rule" tags="X05">Super Bonus:
+One Spin with guaranteed entry to the super bonus game where all symbols are expanding symbols at the cost of __X05_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X04">Bonus Game:
+One Spin with guaranteed entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X03">Expanding Symbols:
+One Spin where all symbols are expanding symbols at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X02">Electric Treat:
+One Spin with a guaranteed Electric Treat at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule" tags="X01">Bonus Hunt:
+More than double the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+<entry key="xiter-rule">
+The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Book of Sam is __RTP__.</entry>
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+<entry key="xiter-rule" tags="lastupdated">
+Last updated 2022-10-25</entry>
+
+<!--Dialogs-->	
+
+</translation>

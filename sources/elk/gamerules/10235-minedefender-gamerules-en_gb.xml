@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation language="en_gb">
+
+
+
+<!-- TRANSLATIONS INFO ======================================================================== -->
+<!--
+
+Do NOT translate the following:
+===============================
+wild / Wild / WILD
+bonus / Bonus / BONUS
+super bonus / Super Bonus / SUPER BONUS
+MAX WIN
+
+BOSS
+MINI BOSS
+FINAL BOSS
+HERO
+
+Can be translated if better:
+===========================
+ENEMY / ENEMIES
+
+AMMO
+SPREAD SHOT
+LIFE    (always in singular !)
+MALFUNCTION
+MYSTERY / MYSTERY BOX
+PUSHBACK
+BOMB
+LASER
+AIRSTRIKE
+
+-->
+
+
+<!-- ================= GAME DESCRIPTION DOCUMENT TEXT ========================================= -->
+
+<entry key="gdd-description">
+Mine Defender is a slot with 5 columns, 6 rows, dropping symbols, scatter wins and Hero drops with a battle between the Hero and the enemies trying to defeat each other.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+
+<entry key="gdd-payline">Wins are paid for any group of 7 or more identical symbols scattered all over the grid.</entry>
+
+<entry key="gdd-bonusgame">The Bonus game is triggered by collecting 3 Bonus symbols. The Bonus game is played with 10 columns in a cirlce as radiuses around the hero.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Scattered symbols of 7 or more</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">5 columns</entry>
+<entry key="gdd-kf-rows">6 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Special symbols -->
+<entry key="gdd-sfs-1">The regular Wild symbol substitutes for any payout symbol.</entry>
+<entry key="gdd-sfs-2">3 collected Bonus symbols trigger the Bonus game.</entry>
+<entry key="gdd-sfs-3">Enemy with 1 life.</entry>
+<entry key="gdd-sfs-4">Enemy with 2 life.</entry>
+<entry key="gdd-sfs-5">Enemy with 3 life.</entry>
+<entry key="gdd-sfs-6">2x2 Mini Boss enemy with 10 life.</entry>
+<entry key="gdd-sfs-7">3x3 Final Boss enemy with 50 life.</entry>
+
+<entry key="gdd-sfs-8">The Life symbol adds a life to the Hero. Max is 3.</entry>
+<entry key="gdd-sfs-9">The Shot symbol adds 1 shot to the Hero. Max is 3.</entry>
+<entry key="gdd-sfs-10">The Spread symbol upgrades shot to 3 projectiles.</entry>
+
+<entry key="gdd-sfs-11">Mystery box symbol reveals features or enemies.</entry>
+<entry key="gdd-sfs-12">The Coin symbol gives an instant pay of its value multiplied with the global multiplier.</entry>
+<entry key="gdd-sfs-13">The Multiplier symbol adds its value to the global multiplier.</entry>
+
+<entry key="gdd-sfs-14">The Airstrike feature symbol deals 3 damage to each of 1-6 enemy positions, including bosses.</entry>
+<entry key="gdd-sfs-15">The Laser feature deals 3 damage to all enemies and bosses in a straight line.</entry>
+<entry key="gdd-sfs-16">The Pushback symbol feature moves enemies and bosses 1 step back away from the Hero.</entry>
+<entry key="gdd-sfs-17">The Bomb symbol feature deals 3 damage to all enemies and bosses on the grid.</entry>
+
+
+<entry key="gdd-xiterbutton-5">MAXED AMMO BONUS</entry>                         <!-- TRANSLATE, keep "BONUS" -->
+<entry key="gdd-xiterbutton-4">BUY BONUS</entry>                                <!-- TRANSLATE, keep "BONUS" -->
+<entry key="gdd-xiterbutton-3">MAXED AMMO</entry>                               <!-- TRANSLATE -->
+<entry key="gdd-xiterbutton-2">HERO DROPS</entry>                               <!-- TRANSLATE, keep "HERO" -->
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>                               <!-- TRANSLATE, keep "BONUS" -->
+
+
+
+<!--================= PAYTABLE PAGES =========================================================-->
+
+<!-- PAGE 1 -->
+
+
+<!-- PAGE 2 -->
+<!-- HERO DROPS -->
+<entry key="ActivationTxt1">Hero drops trigger when enemies enter the game. Shoot them to keep the action going!</entry>
+
+<entry key="ActivationTxt2">New enemies and symbols will keep dropping until either the Hero or the Final Boss is defeated. Shoot to defend against enemies, collect equipment, features and other win symbols.</entry>
+
+
+<!-- PAGE 3 -->
+<!-- MASS ATTACK BONUS GAME -->
+<entry key="BonusTxt1">Collecting 3 bonus symbols triggers the Mass Attack bonus game.</entry>
+<entry key="BonusTxt2">The bonus game is played on a circular grid with the Hero at the center. The Hero's life is refilled to 3, and enemies and symbols move toward the center from all directions.</entry>
+
+
+<!-- PAGE 4 -->
+<!-- FINAL BOSS -->
+<entry key="FinalBossTxt1">Defeat 50 enemies to trigger the Final Boss mode!</entry>
+<entry key="FinalBossTxt2">Battle the Final Boss, collect coins and multipliers. The Final Boss carries a Trophy coin that pays out, times the global multiplier, once it is defeated and the game ends.</entry>
+
+
+<!-- PAGE 5 -->
+<!-- ENEMIES -->
+<entry key="EnemiesTxt1">Enemies on the bottom row attack the Hero causing him to lose 1 life. When attacking, enemies may malfunction and destroy themselves and other enemies on the same row.</entry>
+<entry key="Alt_EnemiesTxt1">Enemies on the bottom row attack the Hero causing him to lose 1 life. If the Hero gets defeated, the game ends. When attacking, enemies may instead malfunction and destroy themselves and other enemies on the same row.</entry>
+<entry key="Level1Txt">Enemies have 1 life.</entry>
+<entry key="Level2Txt">Enemies have 2 life.</entry>
+<entry key="Level3Txt">Enemies have 3 life.</entry>
+<entry key="MiniBossTxt">A 2x2 enemy with 10 life. Carries a Trophy coin.</entry>
+<entry key="FinalBossTxt">A 3x3 enemy with 50 life, carrying a Trophy coin. Spawns when the Hero defeats 50 enemies. </entry>
+
+<!-- Alternative text -->
+<entry key="ALT_MiniBossTxt">A 2x2 enemy with 10 life. Carries a trophy coin to be collected when defeated.</entry>
+<entry key="ALT_FinalBossTxt">A 3x3 enemy with 50 life carrying a Trophy coin to be collected when defeated. Spawns when the Hero defeats 50 enemies.</entry>
+
+<!-- PAGE 6 -->
+<!-- FEATURES -->
+<entry key="LifeTxt">Adds 1 life to the Hero. Max 3.</entry>
+<entry key="ShotTxt">Adds 1 shot to the Hero. Refills for each shooting round. Max 3.</entry>
+<entry key="SpreadTxt">Upgrades shot to 3 projectiles.</entry>
+
+
+<!-- PAGE 7 -->
+<!-- FEATURES -->
+<entry key="WildTxt">Substitutes for any payout symbol.</entry>
+<entry key="MysteryTxt">Reveals features, enemies or Wild symbols.</entry>
+<entry key="CoinTxt">Pays instantly and is multiplied by the global multiplier.</entry>
+<entry key="MultiplierTxt">Adds to the global multiplier.</entry>
+
+
+<!-- PAGE 8 -->
+<!-- FEATURES -->
+<entry key="AirstrikeTxt">Deals 3 damage to each of 1-6 enemy positions, including bosses.</entry>
+<entry key="LaserTxt">Deals 3 damage to all enemies and bosses in a straight line.</entry>
+<entry key="PushbackTxt">Moves enemies and bosses 1 step back away from the Hero.</entry>
+<entry key="BombTxt">Deals 3 damage to all enemies and bosses on the grid.</entry>
+
+
+<!-- PAGE 9 -->
+<entry key="SymbolPayoutTxt">7 or more identical symbols anywhere on the grid pay out.</entry>  
+
+
+
+<!-- ================ GAMERULES ============================================================= -->
+
+
+<!-- * UNIQUE INIT -->
+<entry key="gamerule">Mine Defender is a slot with 5 columns, 6 rows, dropping symbols, scatter wins and Hero drops with a battle between the Hero and the enemies trying to defeat each other.</entry>
+
+<!-- * GENERAL INIT -->
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+<entry key="gamerule">A winning combination consists of at least 7 identical symbols scattered anywhere. Only the largest amount of such identical symbols is paid out.</entry>
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Winnings and winning combinations are paid out according to the paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in settings.</entry>
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+<entry key="gamerule">The game is played in two modes, normal mode and bonus mode.</entry>
+<entry key="gamerule">The Wild symbols substitute for any payout symbol.</entry>
+<entry key="gamerule_alt">The Wild symbols substitute for any payout symbol. A winning combination of only Wild symbols pays as the highest payout symbol.</entry>
+
+
+<!-- * GAME SPECIFIC -->
+
+<entry key="gamerule">A game round starts with a new set of symbols filling the grid, a reset global multiplier, one Hero life and one shot.</entry>
+
+<entry key="gamerule">Symbols drop onto the grid, feature symbols are collected, used and replaced with new symbols. Wins are evaluated, paid out, and the winning symbols removed. Remaining symbols on the grid drop by gravity, and empty spaces are filled with new symbols coming from above. The cycle repeats while the player continues to win.</entry>
+
+<entry key="gamerule">As symbols drop, enemies may enter the grid randomly. This triggers Hero drops where the Hero and his enemies try to defeat each other in battle.</entry>
+<entry key="gamerule">In Hero drops, enemies are shot at by the Hero. Defeated enemies are replaced with feature or payout symbols before any win evaluation happens. After evaluation, enemies on the bottom row will attack the Hero. Other enemies walk one step closer to the bottom of the screen, unless blocked. In case there are no wins at all, all payout symbols are removed and new symbols drop in.</entry>
+
+*** FEATURE SYMBOLS *********************
+
+<entry key="gamerule">A life symbol add one life to the Hero, up to a maximum of 3.</entry>
+<entry key="gamerule">A shot symbol increases the number of shots the Hero can fire in each shooting round. The maximum number of shots is 3.</entry>
+<entry key="gamerule">A spread symbol enables the Hero to shoot 3 projectiles for each shot in shooting rounds.</entry>
+<entry key="gamerule">A bonus symbol is collected towards a bonus game trigger.</entry>
+<entry key="gamerule">A coin symbol pays an instant win of the displayed value multiplied by the bet and by the global multiplier.</entry>
+<entry key="gamerule">A multiplier symbol adds to the global multiplier. The first multiplier symbol collected sets the global multiplier to the value of the symbol collected. All winning combinations and instant coin wins are multiplied by this value.</entry>
+<entry key="gamerule">A mystery symbol spawn an enemy, a feature or a Wild symbol.</entry>
+
+
+*** ENEMIES ******************************
+
+<entry key="gamerule">Enemies can enter the grid at any position. They have 1, 2, or 3 life. Enemies move 1 row towards the Hero during each cycle provided there is an empty space to move to.</entry>
+<entry key="gamerule">Enemies hit by a shot from the Hero lose 1 life and enemies with no life left are defeated.</entry>
+<entry key="gamerule">Enemies at the bottom row will attack the Hero and be destroyed or, instead, randomly malfunction and destroy themselves and all other enemies or Mini Boss on the same row.</entry>
+<entry key="gamerule">A defeated or destroyed enemy is replaced by a feature or payout symbol.</entry>
+<entry key="gamerule">When the Hero is attacked by an enemy he loses 1 life. If the Hero has no remaining life he is defeated and the game ends.</entry>
+
+
+*** HERO *********************************
+
+<entry key="gamerule">The Hero shoots at enemies on the row closest to him. The spread symbol lets the Hero shoot 3 projectiles at once. The direction of the projectiles may vary, and will not always hit an enemy.</entry>
+
+
+*** FEATURE WEAPONS **********************
+
+<entry key="gamerule">The pushback feature moves all enemies one step back. If there is a symbol behind the enemy, the symbol and the enemy will switch places. If an enemy is pushed off the grid it will be defeated. A Mini Boss or a Final Boss will survive and re-enter the grid when possible.</entry>
+
+<entry key="gamerule">The laser feature fires a beam that defeats all enemies in one column. A Mini Boss or Final Boss that is hit by the laser will lose 3 life.</entry>
+
+<entry key="gamerule">The airstrike feature hits 1 to 6 enemies, that are defeated. A Mini Boss or Final Boss loses 3 life for each hit from the airstrike.</entry>
+
+<entry key="gamerule">The bomb feature defeats all enemies on the grid and causes any Mini Boss or Final Boss to lose 3 life.</entry>
+
+
+*** MINI BOSS ****************************
+
+<entry key="gamerule">Mini Bosses randomly appear on the grid as 2x2 sized enemies with 10 life and a trophy coin.</entry>
+<entry key="gamerule">When a Mini Boss is defeated, it is removed from the grid and pays its trophy coin multiplied by the global multiplier.</entry>
+<entry key="gamerule">A Mini Boss will not be destroyed after attacking the Hero, it will be ready to attack again in the next cycle.</entry>
+<entry key="gamerule">The Mini Boss can appear in the base game only.</entry>
+
+
+*** BONUS GAME ***************************
+
+<entry key="gamerule">Collecting 3 bonus symbols triggers the bonus game.</entry>
+<entry key="gamerule">Any multipliers, shots and spread collected in the base game remain when entering the bonus game. Hero life is set to 3.</entry>
+<entry key="gamerule">The bonus game is played on a circular grid with 10 radii and 5 concentric rows with the Hero at the center. In the horizontal direction (left and right) the number of rows is 4. Each symbol moves along a radius from the outer to the inner row of the circle. Enemies attack the Hero from the inner row, in the same way as from the lowest row in the base game.</entry>
+<entry key="gamerule">The bonus game ends when either the Hero is defeated, or the Final Boss mode is triggered. </entry>
+<entry key="gamerule">The laser feature in bonus game fires the laser beam along two opposing radii in both directions.</entry>
+
+
+*** FINAL BOSS mode **********************
+
+<entry key="gamerule">The Final Boss battle is triggered when 50 enemies including Mini Boss  have been defeated in total, which may happen in base mode or in bonus mode.</entry>
+<entry key="gamerule">The Final Boss battle is played on a 5x6 grid with only enemies, coins and multipliers present. A large, 3x3 sized Final Boss with 50 life and a trophy coin will appear.</entry>
+<entry key="gamerule">The Final Boss is not destroyed after attacking. It will be ready to attack again in the next cycle.</entry>
+<entry key="gamerule">The Final Boss battle continues until either the Final Boss or the Hero is defeated and the game ends.</entry>
+<entry key="gamerule">Defeating the Final Boss pays its trophy coin multiplied by the global multiplier.</entry> 
+
+
+* General End *******************************
+<entry key="gamerule">Winnings are paid out at the end of a game round.</entry>
+<entry key="gamerule">The maximum total win in a game round is capped at __TBB__ the placed bet.</entry>
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">No bets can be changed during a game round.</entry>
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">Last updated 2025-02-24</entry>
+
+
+
+<!-- ================ X-ITER GAMERULES ====================================================== -->
+
+<entry key="xiter-rule">The X-iter feature offers buy-in to different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">MAXED AMMO BONUS:                                     <!-- Keep "BONUS", keep or translate "MAXED" -->
+Play a game round with a guaranteed Bonus game starting with max ammunition of 3 shots for the Hero. Cost is __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">BONUS:                                           <!-- Keep "Bonus" -->
+Buy a game round triggering the Bonus game. Cost is __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">MAXED AMMO:                                <!-- Keep or Translate -->
+Play a game round with enemies guaranteed to enter with max ammunition of 3 shots for the Hero. Cost is __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">HERO DROPS:                                      <!-- Keep Hero -->
+Play a game round with guaranteed enemies activating a Hero Drops battle. Cost is __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X01">BONUS HUNT:                                      <!-- Keep "Bonus", Translate "Hunt" -->
+Buy a game round with more than triple the chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">An X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.</entry>
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes are __RTP__.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+<entry key="xiter-rule">All game rules apply in X-iter mode.</entry>
+<entry key="xiter-rule" tags="lastupdated">Last updated 2025-02-24</entry>
+
+
+<!-- X-iter dialogs -->
+<entry key="X05B1">MAXED AMMO BONUS</entry>                                            <!-- Keep "BONUS" -->
+<entry key="X05B2">Play a Bonus game starting with max ammunition</entry>              <!-- Keep "Bonus" -->
+<entry key="X05B3">3 shots</entry>                                                     <!-- TRANSLATE -->
+<entry key="X05B3">Plays until Hero is defeated or entering the Final Boss mode</entry>        <!-- TRANSLATE -->
+
+<entry key="X04B1">BUY BONUS</entry>                                                   <!-- TRANSLATE, keep "BONUS" -->
+<entry key="X04B2">Guaranteed bonus game</entry>
+<entry key="X04B2">Plays until Hero is defeated or entering the Final Boss mode</entry>        <!-- TRANSLATE, keep "Final Boss" -->
+
+<entry key="X03B1">MAXED AMMO</entry>                                                  <!-- TRANSLATE -->
+<entry key="X03B2">Battle between the Hero and Enemies</entry>
+<entry key="X03B3">Starts with max ammunition of 3 shots</entry>
+
+<entry key="X02B1">HERO DROPS</entry>                                                  <!-- TRANSLATE, keep "Hero" -->
+<entry key="X02B2">Battle between the Hero and Enemies</entry>                         <!-- TRANSLATE, keep "Hero" -->
+
+<entry key="X01B1">BONUS HUNT</entry>                                                  <!-- TRANSLATE, keep "BONUS" -->
+<entry key="X01B2">More than triple the chance to trigger the Bonus game</entry>       <!-- TRANSLATE, keep "Bonus" -->
+
+
+<!-- X-iter Onboarding -->
+<entry key="xiterOnboardingMode">Select mode!</entry>                                  <!-- TRANSLATE --> 
+<entry key="xiterOnboardingBet">Cost.</entry>                                          <!-- TRANSLATE -->  
+<entry key="xiterOnboardingBet_2">Total bet.</entry>                                   <!-- TRANSLATE -->    <!-- Backup alternative text -->
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry>                                  <!-- TRANSLATE -->    <!-- Backup alternative text -->
+<entry key="xiterOnboardingSpin">Press spin!</entry>                                   <!-- TRANSLATE -->  
+
+
+</translation>
+

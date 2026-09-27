@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:47:26Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Fish and Bird",
+    "slug": "elk-fish-and-bird",
+    "provider_game_id": "10246",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10246&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/fishandbird/build-285131/assets/translation/fishandbird-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 4,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 4 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "All ways 3 or more"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Global Multiplier",
+        "behavior": "the global multiplier by the amount stated on the bird.\nCollecting a Prize fish gives an instant pay of its value multiplied with the global multiplier.\nAll paying symbols except wild exist in four sizes; standard 1x1, super 2x2, mega 3x3 and epic 4x4.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Fish and Bird: paid spin on 4x4. All ways 3 or more. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x4. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: All ways 3 or more",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "All ways 3 or more",
+    "notes": "eference in settings.\nWinnings are presented in the player's currency.\nThe game is played in two modes, normal mode and bonus mode.\nThe Wild symbols substitute for any payout symbol.\nA game round starts with a new set of symbols spun in on the grid, and a reset global multiplier.\nThe multipl"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Super Bonus",
+        "trigger": "Super Bonus symbol triggers the Super Bonus game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "us symbol triggers the Bonus game.\nCollecting a Super Bonus symbol triggers the Super Bonus game.\nCollecting a Bird increases the global multiplier by the amount stated on the bird.\nCollecting a Prize fish gives an instant pay of its value multiplied with the global multiplier.\nAll paying symbols except wild exist in four sizes; standard 1x1, super 2x2, mega 3x3 and epic 4x4. All big symbols are counted as consisting of the number of 1x1 symbol instances it covers, e.g super 2x2 consists of 4 standard 1x1 symbols.\nSpreading wilds comes in 2",
+        "end_condition": "The bonus game ends when no Collectors are on the grid.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "us symbol triggers the Bonus game.\nCollecting a Super Bonus symbol triggers the Super Bonus game.\nCollecting a Bird increases the global multiplier by the amount stated on the bird.\nCollecting a Prize fish gives an instant pay of its value multiplied with the global multiplier.\nAll paying symbols except wild exist in four sizes; standard 1x1, super 2x2, mega 3x3 and epic 4x4. All big symbols are c",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Fish and Bird."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Play a game round with a guaranteed Super Bonus. Cost is __X05_MULTIPLIER__ the selected bet.; Bonus (__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round triggering the Bonus game. Cost is __X04_MULTIPLIER__ the selected bet.; Big Fish (__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Play a game round with a guaranteed big fish. Cost is __X03_MULTIPLIER__ the selected bet.; Spreading Wild (__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Play a game round with a guaranteed Spreading Wild. Cost is __X02_MULTIPLIER__ the selected bet.; Bonus Hunt (__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)): Buy a game round with more than triple the chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nAn X-iter feature is purchased by pressi",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X05_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Play a game round with a guaranteed Super Bonus. Cost is __X05_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": null,
+        "cost_text": "__X04_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round triggering the Bonus game. Cost is __X04_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Big Fish",
+        "cost_multiplier": null,
+        "cost_text": "__X03_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Play a game round with a guaranteed big fish. Cost is __X03_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Spreading Wild",
+        "cost_multiplier": null,
+        "cost_text": "__X02_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Play a game round with a guaranteed Spreading Wild. Cost is __X02_MULTIPLIER__ the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": null,
+        "cost_text": "__X01_MULTIPLIER__ the selected bet (runtime; not numeric in help XML)",
+        "effects": "Buy a game round with more than triple the chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nAn X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode showing the cost in the player's currency, and pressing the Spin button.\nThe X-iter features can only be activated in the base game.\nThe theoretical payout (RTP) for all X-iter game modes are __RTP__.\nThe minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.\nAll game rules apply in X-iter mode.\nLast updated 2025-05-14",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/fishandbird/build-285131/assets/translation/fishandbird-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10246-fishandbird-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Fish and Bird\nProduct category Casino\nGame type Slot\nClient HTML5\nLines All ways 3 or more\nJackpot No\nReels 4 columns\nRows 4 rows\n\nGame description\nFish and Bird is a 4 columns by 4 rows all ways win slot with a collector row and multiplier row.\nAll ways wins with 256 ways\nThe Bonus game is triggered by collecting a Bonus symbol.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/fishandbird/build-285131/assets/translation/fishandbird-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10246-fishandbird-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "is a 4 columns by 4 rows all ways win slot with a collector row and multiplier row.\nAll ways wins with 256 ways\nThe Bonus game is triggered by collecting a Bonus symbol.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/fishandbird/build-285131/assets/translation/fishandbird-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10246-fishandbird-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers buy-in to different game modes.\nSUPER BONUS: \nPlay a game round with a guaranteed Super Bonus. Cost is __X05_MULTIPLIER__ the selected bet.\nBONUS: \nBuy a game round triggering the Bonus game. Cost is __X04_MULTIPLIER__ the selected bet.\nBIG FISH: \nPlay a game round with a guaranteed big fish. Cost is __X03_MULTIPLIER__ the selected bet.\nSPREADING WILD: \nPlay a game round with a guaranteed Spreading Wild. Cost is __X02_MULTIPLIER__ the selected bet.\nBONUS HUNT: \nBuy a game round with more than triple the chance to trigger a Bonus game. Cost is __X01_MULTIPLIER__ the selected bet.\nAn X-iter feature is purchased by pressing the X-iter button, selecting X-iter mode sho"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/fishandbird/build-285131/assets/translation/fishandbird-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10246-fishandbird-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Game description\nFish and Bird is a 4 columns by 4 rows all ways win slot with a collector row and multiplier row.\nAll ways wins with 256 ways\nThe Bonus game is triggered by collecting a Bonus symbol.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.\nWilds and Bonus symbols substitute for any payout symbol.\nCollecting a Bonus symbol triggers the Bonus game.\nCollecting a Super Bonus symbol triggers the Super Bonus game.\nCollecting a Bird increases the glob"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/fishandbird/build-285131/assets/translation/fishandbird-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10246-fishandbird-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Key features\nName in English Fish and Bird\nProduct category Casino\nGame type Slot\nClient HTML5\nLines All ways 3 or more\nJackpot No\nReels 4 columns\nRows 4 rows\n\nGame description\nFish and Bird is a 4 columns by 4 rows all ways win slot with a collector row and multiplier row.\nAll ways wins with 256 ways\nThe Bonus game is triggered by collecting a Bonus symbol.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.\nWilds and Bonus symbols substitute for any payout symbol.\nCollecting a Bonus symbol triggers the Bonus game.\nCollecting a Super Bonu"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/fish-and-bird/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:47:26Z",
+      "quote_or_excerpt": "Demo launcher gameid=10246; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy option cost multipliers are runtime placeholders in help XML",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-fish-and-bird.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

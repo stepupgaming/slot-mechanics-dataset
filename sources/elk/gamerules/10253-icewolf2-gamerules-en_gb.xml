@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--==============================================
+***** WORDS NOT TO TRANSLATE if not required *****
+==================================================
+
+- Ice Wolf 2
+- Wild
+- Wilds
+
+==============================
+***** Game documentation *****
+===========================-->
+
+<entry key="gdd-description">Ice Wolf 2 is a 6 column, 3-7 rows video slot game.
+
+The game grid consists of three reel sections.
+The topmost reel section is one row referred to as the feature row.
+The feature row is a section with feature symbols and empty symbols.
+Beneath the feature row there is a three row reel section referred to as the ice section.
+Beneath the ice section there is a three row reel section referred to as the main section.
+Beneath the main section there is a Wolf Den feature section.
+When a new game round starts, all symbol positions in the feature row and the ice section are covered by ice.
+Symbols covered by ice are inactive and do not participate in wins or otherwise impact the game.
+Ice is cleared when symbols beneath the ice are contributing to a win or by triggering wolf features.
+The game has all ways to win - between 729 and 100,842 ways depending on the amount of ice remaining. This accounts for the leftmost cell of the feature row only having non paying feature symbols.
+
+Key game features include respins, expanding grid, feature row, wilds, sticky wilds, multipliers, "Ice Wolf" feature, "Howling Wolf" feature, "Golden Wolf" feature, and a Bonus game that unlocks the "Wolf Den" feature.</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.</entry>
+<entry key="gdd-payline">The game has 6 columns and 3 to 7 rows with 729 to 100,842 ways to win.</entry>
+<entry key="gdd-bonusgame">One Bonus symbol cleared of ice at the end of Normal mode triggers the Bonus game with Wolf Spins. The state of the ice persists between Wolf Spins.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">3 to 7 rows with 729 to 100,842 ways to win.</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">6 columns</entry><!-- Changed to columns 2025 11 05 -->
+<entry key="gdd-kf-rows">3 rows, expandable to 7 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!--=======================
+***** Special symbols *****
+========================-->
+
+<entry key="gdd-sfs-1">The Wild symbol appears on all rows of columns 2-6. It substitutes for any symbol except the Bonus, the '+1 Spin', the Multiplier, the Ice Wolf, the Howling Wolf and the Golden Wolf symbols. The Wild symbol can have a multiplier. Wild symbols are sticky for the duration of the game round as long as they are covered by ice.</entry>
+
+<entry key="gdd-sfs-2">The Golden Wild symbol appears on columns 3-6, on all rows except the feature row. It substitutes for any symbol except the Bonus, the '+1 Spin', the Multiplier, the Ice Wolf, the Howling Wolf and the Golden Wolf symbols. The Golden Wild symbol can have a multiplier. Golden Wild symbols are sticky for the duration of the game round.</entry>
+
+<entry key="gdd-sfs-3">The Multiplier symbol only appears in the feature row. Multiplier symbols not blocked by ice multiply all wins with their displayed value regardless of their positions.</entry>
+
+<entry key="gdd-sfs-4">The Bonus symbol only appears in the feature row in Normal mode. One Bonus symbol cleared of ice at the end of Normal mode triggers the Bonus game with Wolf Spins.</entry>
+
+<entry key="gdd-sfs-5">The '+1 Spin' symbol only appears in the feature row in Bonus mode. Each '+1 Spin' symbol cleared of ice at the end of a Wolf Spin awards an additional Wolf Spin.</entry>
+
+<entry key="gdd-sfs-6">The Howling Wolf appears on columns 2-6, on the three lowest rows. Before win evaluation, the Howling Wolf turns to the left or right, howls, and clears all ice in a highlighted 90° cone shaped area (45° up and 45° down) originating from the Howling Wolf symbol position. Any Wild symbols inside the cone shaped area get an increased multiplier. After howling, the Howling Wolf symbol converts into a Wild symbol.</entry>
+
+<entry key="gdd-sfs-7">The Ice Wolf symbol appears on columns 2-6, on all rows except the feature row. Ice Wolf symbols may also appear from the Wolf Den beneath of the game grid in Bonus mode. The Ice Wolf feature triggers if an Ice Wolf symbol is cleared of ice at the end of a spin, awarding a respin with all such Ice Wolves sticky. Before the reels stop, a wolf runs along each column with a sticky Ice Wolf symbol, clearing all ice in the affected columns. All symbols from the Ice Wolf symbol position and up, except those in the feature row, are converted into into Wild symbols. Any passed symbols that already are Wild symbols, including in the feature row, get an increased multiplier.</entry>
+
+<entry key="gdd-sfs-8">The Golden Wolf appears in the feature row on columns 2-5. Landing a Golden Wolf symbol will always trigger the Golden Wolf feature prior to win evaluation. The Golden Wolf feature affects three columns: the column with the Golden Wolf symbol and those immediately adjacent. A wolf runs along each affected column from the top row and downwards, clearing all ice in the affected columns. All symbols on the middle column below the Golden Wolf symbol position are converted into Wild symbols. Wild symbols left by the Golden Wolf may have an initial multiplier. Any passed symbols (on all three affected columns) that are already Wild symbols get an increased multiplier.</entry>
+
+<entry key="gdd-sfs-9">Wild multipliers are always increased in increments of 1, or starting from x2 if the Wild symbol lacked a previous multiplier.</entry>
+
+<!--======================
+***** X-iter buttons *****
+=======================-->
+
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>
+<entry key="gdd-xiterbutton-2">CALL OF THE WILD</entry>
+<entry key="gdd-xiterbutton-3">ICE BREAKER</entry>
+<entry key="gdd-xiterbutton-4">BONUS</entry>
+<entry key="gdd-xiterbutton-5">SUPER BONUS</entry>
+
+<!--================
+***** PAYTABLE *****
+=================-->
+
+<!-- INTRO -->
+<!-- All translations for intro are found among the Short Texts -->
+
+
+<!-- Page 2 - The Game Grid -->
+
+<entry key="paytableGameGrid">The columns of Ice Wolf 2 are divided into three reel sections; the feature row, the ice section and the main section. The feature row and ice section reels are activated as the ice is cleared. Winning symbols clear the ice above.</entry>
+
+<!-- Page 2 - The Game Play -->
+
+<entry key="paytableGamePlay">Keep winning and trigger wolf features to clear the ice, unlocking additional features and more - up to 100,842 - ways to win. Each win awards a respin.</entry>
+
+<!-- Page 3 - The Feature Row -->
+
+<entry key="paytableFeatureRow">The feature row is a reel section at the top of the game grid, containing only features and empty symbols.</entry>
+
+<!-- Page 3 - The Wolf Den -->
+
+<entry key="paytableWolfDen">Trigger the Bonus game to activate the Wolf Den beneath the game grid - allowing for even more wolves in each spin!</entry>
+
+
+<!-- Page 4 - Feature Symbols -->
+
+<entry key="paytableWildSymbol">The Wild symbol and the Golden Wild symbol substitute for any paying symbol. Both may have multipliers. Golden Wilds are always sticky. Regular Wilds are sticky while covered by ice.</entry>
+
+<entry key="paytableMultiplierSymbol">Multiplier symbols with values x2, x3, x5, x10, and x50 may appear in the feature row. Active Multiplier symbols affect all wins regardless of their positions.</entry>
+
+<entry key="paytableHowlingWolfSymbol">The Howling Wolf turns to the left or right and howls, clearing ice and upgrading Wild symbols in a cone shaped area.</entry>
+
+<entry key="paytableIceWolfSymbol">The Ice Wolf symbol awards a respin and launches a running wolf that clears ice and places or upgrades Wild symbols along the column.</entry>
+
+<entry key="paytableGoldenWolfSymbol">The Golden Wolf symbol activates a pack of wolves that clears the ice on three columns simultaneously, placing or upgrading Wild symbols.</entry>
+
+
+<!-- Page 5 Bonus Game -->
+
+<entry key="paytableBonusSymbol">Trigger the Bonus game with an active Bonus symbol in the feature row.</entry>
+
+<entry key="paytableBonusGame">The Bonus game awards 5 Wolf Spins and unlocks the Wolf Den feature which may award up to 4 additional Ice Wolf symbols each spin. The state of the ice persists between Wolf Spins.</entry>
+
+<entry key="paytableRetriggerSymbol">An active '+1 Spin' symbol awards an additional Wolf Spin.</entry>
+
+
+<!-- Page 6 and 7 - SYMBOL PAYOUT -->
+
+<!--=================
+***** Gamerules *****
+==================-->
+
+<!--=========
+General rules
+==========-->
+
+<entry key="gamerule">Ice Wolf 2 is a 6 column, 3-7 rows video slot game.</entry>
+<entry key="gamerule">The game has all ways to win - between 729 and 100,842 ways depending on the amount of ice remaining. This accounts for the leftmost cell of the feature row only having non paying feature symbols.</entry>
+
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry> <!-- don't touch __MINBADEFBMODE__ or __MAXBADEFBMODE__ -->
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry> <!-- don't touch __CPBB__ -->
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the Spin button.</entry>
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+<entry key="gamerule" tags="autospin-losslimit">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the bet level, loss limit and the number of game rounds to be played automatically.</entry>
+<entry key="gamerule">Winnings and winning combinations are paid out according to the Paytable.</entry>
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry>
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<!--=======
+Normal mode
+========-->
+
+<entry key="gamerule">The game grid consists of three reel sections.</entry>
+<entry key="gamerule">The topmost reel section is one row referred to as the feature row.</entry>
+<entry key="gamerule">The feature row is a section with feature symbols and empty symbols.</entry>
+<entry key="gamerule">In Normal mode, the feature symbols that can land in the feature row are Wild symbols, Multiplier symbols, Bonus symbols, and Golden Wolf symbols.</entry>
+<entry key="gamerule">In Bonus mode, Bonus symbols in the feature row are replaced by '+1 Spin' symbols.</entry>
+<entry key="gamerule">Beneath the feature row there is a three row reel section referred to as the ice section.</entry>
+
+<entry key="gamerule">When a new game round starts, all symbol positions in the feature row and the ice section are covered by ice.</entry>
+<entry key="gamerule">Symbols covered by ice are inactive and do not participate in wins or otherwise impact the game.</entry>
+
+<entry key="_gamerule">Ice is cleared when symbols beneath the ice are contributing to a win or by triggering wolf features. </entry>
+
+<entry key="gamerule">Beneath the ice section there is a three row reel section referred to as the main section.</entry>
+<entry key="gamerule">All symbol positions in the main section are active.</entry>
+
+<entry key="gamerule">Symbols that are freed of ice become active and can participate in wins or otherwise impact the game.</entry>
+<entry key="gamerule">A Golden Wolf symbol landing on the feature row will clear the ice on its own symbol position and on the two symbol positions immediately adjacent, activating itself.</entry>
+
+<entry key="gamerule">Beneath the main section there is a feature section referred to as the Wolf Den.</entry>
+<entry key="gamerule">The Wolf Den is covered by ice when a new game round starts.</entry>
+<entry key="gamerule">The Wolf Den feature section is activated during Bonus mode.</entry>
+
+<entry key="gamerule">After the reels stop, a pre-evaluation detects winning combinations considering only the symbols currently active. The spin is over when no winning combinations are found and no respins are awarded.</entry>
+<entry key="gamerule">If one or more winning combinations are found during pre-evaluation, the winning symbols clear a number of ice blocks on their respective columns. The amount of ice cleared corresponds to the number of winning symbols, column by column.</entry>
+
+<entry key="gamerule">When ice has been cleared after pre-evaluation, the win evaluation is executed. The win evaluation will consider every active symbol, but not trigger further clearing of ice.</entry>
+<entry key="gamerule">Each evaluation containing a win triggers a respin of all reels after the payout. Active Ice Wolf symbols will trigger the Ice Wolf feature.</entry>
+<entry key="gamerule">A game round ends once there are no more winning combinations or Ice Wolves that award respins, at the end of Bonus mode, or when the win cap is reached.</entry>
+<entry key="gamerule">Cleared ice does not reappear until the next game round.</entry>
+
+<!-- Wild Symbols -->
+<entry key="gamerule">Wild symbols (with a silver backplate and golden text) and Golden Wild symbols (with a golden backplate and silver text) substitute for any paying symbol. Golden Wild symbols may land with a multiplier of x2, x3, or x5.</entry><!-- added the specific multiplier values -->
+<entry key="gamerule">Both kinds of Wild symbols have their multiplier increased whenever affected by a wolf feature. Wild multipliers are always increased in increments of 1.</entry>
+<entry key="gamerule">A Wild symbol without an existing multiplier affected by a wolf feature will get an x2 multiplier.</entry>
+<entry key="gamerule">The Wild symbol appears on columns 2-6, on all reel sections.</entry>
+<entry key="gamerule">The Golden Wild symbol appears on columns 3-6, on all reel sections except the feature row.</entry>
+
+<!-- Wild Symbol Stickyness -->
+<entry key="gamerule">Wild symbols blocked by ice will remain sticky until the ice is cleared, or the start of a new game round.</entry>
+<entry key="gamerule">Golden Wild symbols are sticky and only spin out at the start of a new game round.</entry>
+
+<!-- Sticky Symbols -->
+<entry key="gamerule">The feature row may contain sticky symbols that persist between respins, only spinning out at the start of Bonus mode, between Wolf Spins during Bonus mode, and between game rounds.</entry>
+<entry key="gamerule">Wild symbols in the feature row are sticky between respins until they have contributed to a win.</entry>
+<entry key="gamerule">Multiplier symbols in the feature row are sticky between respins.</entry>
+<entry key="gamerule">The Bonus and '+1 Spin' symbols remain sticky between respins. They both trigger once there are no more respins and spin out in the following Bonus game Wolf Spin.</entry>
+<entry key="gamerule">At the start of Bonus mode, and between Wolf Spins during Bonus mode, only Golden Wild and Wild symbols covered by ice do not spin out.</entry>
+
+<!-- Howling Wolf -->
+<entry key="gamerule">The Howling Wolf appears on columns 2-6, on the main section.</entry>
+<entry key="gamerule">Before win evaluation, the Howling Wolf turns to the left or right, howls, and clears all ice in a 90° cone shaped area (45° up and 45° down) originating from the Howling Wolf symbol position. Any Wild symbols inside the cone shaped area get an increased multiplier.</entry>
+<entry key="gamerule">After howling, before the pre-evaluation, the Howling Wolf symbol is converted into a Wild symbol.</entry>
+
+<!-- Ice Wolf -->
+<entry key="gamerule">The Ice Wolf symbol appears on columns 2-6, on the main section and on the ice section.</entry>
+<entry key="gamerule">Ice Wolf symbols may also appear from the Wolf Den in Bonus mode.</entry>
+<entry key="gamerule">The Ice Wolf feature triggers if an Ice Wolf symbol is active at the end of a spin, awarding an Ice Wolf respin, keeping all active Ice Wolf symbols sticky.</entry>
+<entry key="gamerule">During the Ice Wolf respin, before the reels stop, a wolf runs along each column with an active Ice Wolf symbol, clearing all ice in the affected columns.</entry>
+<entry key="gamerule">All symbols from the active Ice Wolf symbol position and up, in the main section and the ice section, are converted into Wild symbols.</entry>
+<entry key="gamerule">Wild symbols that are passed by the running wolf, including Wild symbols in the feature row, get an increased multiplier.</entry>
+
+<!-- Golden Wolf -->
+<entry key="gamerule">The Golden Wolf appears on columns 2-5 in the feature row.</entry>
+<entry key="gamerule">Landing a Golden Wolf symbol will always trigger the Golden Wolf feature prior to win evaluation. The Golden Wolf feature affects three columns: the column with the Golden Wolf symbol and those immediately adjacent.</entry>
+<entry key="gamerule">During the Golden Wolf feature, a wolf runs along each affected column from the feature row and downwards, clearing all ice in the affected columns. All symbols below the Golden Wolf symbol position are converted into Wild symbols.</entry>
+<entry key="gamerule">Wild symbols left by the Golden Wolf may have an initial multiplier of x2, x3, or x5.</entry><!-- added the specific multiplier values -->
+<entry key="gamerule">Any passed symbols (on all three affected columns) that are already Wild symbols get an increased multiplier.</entry>
+
+<!-- Multiplier Symbols -->
+<entry key="gamerule">Multiplier symbols only appear in the feature row.</entry>
+<entry key="gamerule">Active Multiplier symbols multiply all wins with their displayed value regardless of their positions.</entry>
+<entry key="gamerule">Possible values of Multiplier symbols are x2, x3, x5, x10, and x50.</entry>
+<entry key="gamerule">Multiplier symbols cannot themselves create or be part of winning combinations.</entry>
+<entry key="gamerule">The total multiplier of a win is the sum of the values of all active Multiplier symbols, plus the sum of the values of all multiplier Wild symbols in the winning combination.</entry>
+
+<!-- Bonus -->
+<entry key="gamerule">The Bonus symbol only appears in the feature row in Normal mode.</entry>
+<entry key="gamerule">One active Bonus symbol at the end of Normal mode triggers the Bonus game with Wolf Spins.</entry>
+<entry key="gamerule">The Bonus game is triggered once there are no respins left.</entry>
+<entry key="gamerule">Only one instance of the Bonus symbol can land during a game round.</entry>
+<entry key="gamerule">5 Wolf Spins are awarded at the start of the Bonus game.</entry>
+<entry key="gamerule">The '+1 Spin' symbol only appears in Bonus mode, and only in the feature row.</entry>
+<entry key="gamerule">Each active '+1 Spin' symbol at the end of a Wolf Spin awards an additional Wolf Spin.</entry>
+
+<!-- Wolf Den -->
+<entry key="gamerule">Entering Bonus mode unlocks the Wolf Den feature section beneath the reel sections.</entry>
+<entry key="gamerule">Each spin in Bonus mode may activate the Wolf Den feature.</entry>
+<entry key="gamerule">The Wolf Den feature may activate up to 4 Ice Wolf symbols in the Wolf Den on columns 2-5, triggering immediately after the reels have stopped.</entry><!-- Changed to columns 2025 11 05 -->
+
+<entry key="gamerule">During the Wolf Den feature, wolves run along each column with an active Ice Wolf symbol in the Wolf Den, clearing all ice in the affected columns.</entry>
+
+<entry key="gamerule">All symbols from the active Ice Wolf symbol position and up, in the main section and the ice section, are converted into Wild symbols.</entry>
+<entry key="gamerule">Wild symbols that are passed by the running wolf, including Wild symbols in the feature row, get an increased multiplier.</entry>
+
+<entry key="gamerule">Active Ice Wolf symbols in the Wolf Den do not award respins.</entry>
+
+<!-- General Rules -->
+<entry key="gamerule">Wins begin with the first leftmost column and only pay from left to right on consecutive columns. No gaps between the columns are allowed. Only the longest payline per active payline is paid out. An active payline is defined as the longest winning symbol combination.</entry>
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+<entry key="gamerule">The theoretical payout (RTP) is __RTP__.</entry> <!-- don't translate (RTP) if possible, and don't touch __RTP__ -->
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry> <!-- don't touch __TBB__ -->
+<entry key="gamerule" tags="mwp">The probability to hit the maximum total win in the game is __MWP__.</entry>
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+<entry key="gamerule" tags="lastupdated">Last updated 2025-11-03</entry>
+
+
+<!--====================
+***** X-iter rules *****
+=====================-->
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">SUPER BONUS
+One spin with a guaranteed Super Bonus trigger with all ice cleared at the cost of __X05_MULTIPLIER__ the selected bet.</entry> <!-- don't touch __X05_MULTIPLIER__ -->
+
+<entry key="xiter-rule" tags="X04">BONUS
+One spin with a guaranteed Bonus game trigger at the cost of __X04_MULTIPLIER__ the selected bet.</entry> <!-- don't touch __X04_MULTIPLIER__ -->
+
+<entry key="xiter-rule" tags="X03">ICE BREAKER
+One spin with all ice cleared at the cost of __X03_MULTIPLIER__ the selected bet.</entry> <!-- don't touch __X03_MULTIPLIER__ -->
+
+<entry key="xiter-rule" tags="X02">CALL OF THE WILD
+One spin with a guaranteed wolf feature trigger at the cost of __X02_MULTIPLIER__ the selected bet.</entry> <!-- don't touch __X02_MULTIPLIER__ -->
+
+<entry key="xiter-rule" tags="X01">BONUS HUNT
+One spin with more than TRIPLE the chance to trigger the Bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry> <!-- don't touch __X01_MULTIPLIER__ -->
+
+
+<!--X-iter UI texts-->
+<entry key="X01B1">BONUS HUNT</entry>
+<entry key="X01B2">One spin with more than TRIPLE the chance to trigger the Bonus game!</entry>
+
+<entry key="X02B1">CALL OF THE WILD</entry>
+<entry key="X02B2">One spin with a guaranteed wolf feature trigger!</entry>
+
+<entry key="X03B1">ICE BREAKER</entry>
+<entry key="X03B2">One spin with all ice cleared!</entry>
+<entry key="X03B3">100,842 ways to win!</entry>
+
+<entry key="X04B1">BONUS</entry>
+<entry key="X04B2">One spin with a guaranteed Bonus game trigger!</entry>
+<entry key="X04B3">Unlock the Wolf Den for 5 Wolf Spins.</entry>
+
+<entry key="X05B1">SUPER BONUS</entry>
+<entry key="X05B2">One spin with a guaranteed Super Bonus trigger with all ice cleared!</entry>
+<entry key="X05B3">100,842 ways to win!</entry>
+<entry key="X05B4">Unlock the Wolf Den for 5 Wolf Spins.</entry>
+
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry> <!-- don't touch __MINBABMODE__ or __MAXBABMODE__ -->
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes is __RTP__.</entry> <!-- don't touch __RTP__ -->
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2025-11-03</entry>
+
+</translation>

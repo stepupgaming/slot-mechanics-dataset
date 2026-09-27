@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- English en_gb -->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+
+<!--Words not translated in this game
+Rogue Rats
+Nitro
+NPD
+Road Warrior
+-->
+<!--
+Note for translators:
+“Nitro Well” - well refers to a mechanical oil well that you might find in the desert/wastelands.
+“Nitro Blob” - blob refers to a bubble-like entity not dissimilar from Rover (The Prisoner).
+“Turret” - turret refers to an elevated artillery position, where a gun can be mounted.
+“MAX WIN coin” should be translated with “MAX WIN” in capital letters”
+-->
+
+<!--Copy to gfx game specific text-assets-->
+<!-- To be used as part of “Win up to 25,000x your bet!" on an intro screen, so please reorganize win and bet if they should be placed in opposite order in a language -->
+<!-- <gfx key="WinUpToIntroTxt">WIN UP TO</gfx>
+<gfx key="YourBetIntroTxt">YOUR BET!</gfx>
+<gfx key="GoodLuckTxt">GOOD LUCK!</gfx>
+<gfx key="HaveFunTxt">HAVE FUN!</gfx> -->
+
+<gfx key="StartTxt">START</gfx>
+<gfx key="OfTxt">OF</gfx>
+<gfx key="TotalWinTxt">TOTAL WIN</gfx>
+<gfx key="PlayedInTotal">PLAYED IN TOTAL</gfx>
+
+<gfx key="PaytableTxt">PAYTABLE</gfx>
+<gfx key="WinUpToTxt">WIN UP TO</gfx>
+<gfx key="CoinsTxt">COINS</gfx>
+<gfx key="SymbolPayoutTxt">SYMBOL PAYOUT</gfx>
+
+<gfx key="HavocHeadSubTxt">WREAK HAVOC</gfx>
+<gfx key="RuleHeadSubTxt">RULE THE WASTELAND</gfx>
+<gfx key="BonusHeadSubTxt">BONUS GAME</gfx>
+
+<gfx key="InfiniteSubTxt">INFINITE GAME GRID</gfx>
+<gfx key="CollectSubTxt">SYMBOL COLLECTION</gfx>
+
+<gfx key="FuelSubTxt">NITRO FUEL GAUGE</gfx>
+<gfx key="BoostSubTxt">NITRO FUEL BOOST</gfx>
+
+<gfx key="MultiplierSubTxt">NITRO MULTIPLIER</gfx>
+<gfx key="RadarSubTxt">NPD RADAR</gfx>
+
+<gfx key="UpgradeSubTxt">NITRO BLOB</gfx>
+<gfx key="CoinsSubTxt">COINS</gfx><!-- NEW -->
+<gfx key="NewVehicleSubTxt">NEW VEHICLE</gfx>
+<gfx key="FuelSubTxt">NITRO FUEL</gfx><!-- NEW -->
+
+<gfx key="MissileSubTxt">MISSILE SILO</gfx>
+<gfx key="TurretSubTxt">TURRET</gfx>
+
+<gfx key="BonusSubTxt">BONUS SYMBOL</gfx>
+<gfx key="SuperBonusSubTxt">SUPER BONUS</gfx>
+
+<!--Copy to gfx game specific text-->
+<entry key="BonusGameSubTitle">BONUS GAME</entry>
+
+<!--X-iter UI texts-->
+<entry key="X01B1">Bonus Hunt</entry>
+<entry key="X01B2">Start with 1 Bonus Symbol already collected.</entry>
+<entry key="X01B3">More than 4 times the chance to trigger the bonus game!</entry>
+
+<entry key="X02B1">Nitro Rally</entry>
+<entry key="X02B2">Start with an extended visible area for the rat.</entry>
+<entry key="X02B3">Start with double the amount of fuel.</entry><!-- Alternative Text 1 x02b3.1 -->
+
+<entry key="X03B1">Road Warrior</entry>
+<entry key="X03B2">Start with double the amount of fuel.</entry><!-- Alternative Text 2 x03b2.1 -->
+<entry key="X03B3">Only Coin Wins!</entry>
+
+<entry key="X04B1">Bonus</entry>
+<entry key="X04B2">Guarantees a game round with entry to the bonus game.</entry>
+<entry key="X04B3">3 Free Spins</entry>
+
+<entry key="X05B1">Super Bonus</entry>
+<entry key="X05B2">Guarantees a game round with entry to the super bonus game.</entry>
+<entry key="X05B3">3 Free Spins</entry>
+<entry key="X05B4">Each free spin starts with Nitro Fuel Boost!</entry>
+
+<!--Paytable-->
+
+<!-- PAGE 1 -->
+
+<!-- PAGE 2 -->
+<entry key="paytableInfiniteTxt">The game is played over an infinitely large grid.</entry>
+
+<entry key="paytableCollectingTxt">Collect payout symbols matching the color of the rat’s vehicle.</entry>
+
+<!-- PAGE 3 -->
+<entry key="paytableFuelTxt">Each positional movement consumes fuel. Gain extra fuel by picking up payout symbols or shooting at feature symbols!</entry>
+
+<entry key="paytableBoostTxt">Maxing out the Nitro Fuel Gauge awards a temporary boost where fuel is limitless until the next coin pickup!</entry>
+
+<!-- PAGE 4 -->
+<entry key="paytableMultiplierTxt">An active Nitro Multiplier is applied to coins and payout symbols matching the color of the rat’s vehicle. A new higher multiplier value is prepared but locked once a Nitro Multiplier is activated. </entry>
+
+<entry key="paytableRadarTxt">Shoot the NPD Radar to activate the locked multiplier!</entry>
+
+<!-- PAGE 5 -->
+<entry key="paytableBlobTxt">Shooting a Nitro Blob upgrades visible payout symbols to a higher payout level.</entry> <!-- Alternative text 10 p5blob.2 -->
+
+<entry key="paytableCoinsTxt">Collect coins by destroying NPD Cruisers and NPD Helicopters. Feeling lucky? You might just find a Police HQ or even the MAX WIN coin!</entry><!-- Alternative text 11 p5coins.1-->
+
+<entry key="paytableNewVehicleTxt">Grab a New Vehicle to change symbol color to collect.</entry>
+
+<entry key="paytableWellTxt">Refill the fuel tank by grabbing a Nitro Well or raiding a Fuel Depot!</entry>
+
+<!-- PAGE 6 -->
+<entry key="paytableMissileTxt">Shooting at the Missile silo launches a missile that increases the rat’s visible area.</entry><!-- Alternative text 14 p6missile.1 -->
+
+<entry key="paytableTurretTxt">Drive onto a Turret to reach features further away!</entry>
+
+<!-- PAGE 7 -->
+<entry key="paytableBonusSymbolTxt">Collect 2 bonus symbols to trigger the free spins bonus game. 3 Free Spins are awarded.</entry>
+
+<entry key="paytableSuperBonusSymbolTxt">Two collected bonus symbols of which at least one is a super bonus symbol trigger the super bonus game. 3 Free Spins are awarded where each free spin starts with a Nitro Fuel Boost!</entry>
+
+<!--Game documentation-->
+<entry key="gdd-description">
+The group hatches a plan to take back Nitropolis. Mad Rat Tommy is sent to scout out the patrol routes of the Nitro Wolf Police division on the desert outskirts of the city limits, and pick up scrap parts to be used in the creation of a war machine for the oncoming assault.
+
+Rogue Rats is a 7 row by 7 column cluster game that may expand to show an additional part of the symbol grid. Expansion occurs either when activating a Turret symbol or by activating a Missile Silo. These features expands the rat’s visible area allowing the rat to discover and collect clusters of payout symbols and feature symbols further away.
+
+Core game features:
+The rat drives a vehicle around on the infinite game grid collecting payout symbols and triggering features as long as the fuel gauge is not empty. Each positional movement consumes fuel.
+
+The rat only sees the inner 5x5 grid (the rat's view) while the player also sees symbols on the periphery. What appears in the rat's field of vision determines the direction the rat drives.
+
+Collecting 2 bonus symbols awards the free spins bonus game. Collecting a super bonus symbol and any other bonus or super bonus symbol awards the free spins super bonus game.
+</entry>
+
+<entry key="gdd-gameview">Bet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing.</entry>
+
+<entry key="gdd-payline">Wins are generated by the rat collecting horizontally or vertically adjacent clusters of payout symbols of the same color as its current vehicle, resulting in a varying number of ways to win. The RTP for all wins is the same and the RTP of the game is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">A combination of two bonus symbols in normal mode triggers the bonus mode with free spins.</entry>
+
+<!--Key Features texts-->
+<entry key="gdd-kf-productcategory">Casino</entry>
+<entry key="gdd-kf-gametype">Slot</entry>
+<entry key="gdd-kf-lines">Cluster wins</entry>
+<entry key="gdd-kf-jackpot">No</entry>
+<entry key="gdd-kf-reels">7 columns</entry>
+<entry key="gdd-kf-rows">7 rows</entry>
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!--Special symbols-->
+<entry key="gdd-sfs-1"> There are four types of payout symbols that are color-matched to each type of vehicle the rat can drive. Only payout symbols that have the same color as the vehicle are valid for collection. The payout symbols may be upgraded to higher payout levels.</entry>
+
+<entry key="gdd-sfs-2">Grabbing a Nitro Well symbol or Nitro Fuel Depot symbol adds fuel to the Nitro Fuel Gauge.</entry>
+
+<entry key="gdd-sfs-3">Grabbing a Nitro Well symbol or Nitro Fuel Depot symbol adds fuel to the Nitro Fuel Gauge.</entry>
+
+<entry key="gdd-sfs-4">Et Nitro Blob-symbol opgraderer alle udbetalingssymboler i samme farve som rottens køretøj til det næste, højere gevinstniveau.</entry><!-- Alternative text 19 gddsfs4.2 -->
+
+<entry key="gdd-sfs-5">The Missile Silo symbol increases the rat’s visible area for a short period of time.</entry>
+
+<entry key="gdd-sfs-6">The rat can grab a New Vehicle symbol on the game grid, and then the rat starts collecting payout symbols of the same color as the New Vehicle.</entry>
+
+<entry key="gdd-sfs-7">The rat shooting a NPD Radar symbol activates the currently locked Nitro Multiplier and then locks in a new higher multiplier.</entry>
+
+<entry key="gdd-sfs-8">Two bonus symbols trigger the free spins bonus game.</entry>
+
+<entry key="gdd-sfs-9">A super bonus symbol in combination with any other bonus symbol triggers the super bonus game.</entry>
+
+<entry key="gdd-sfs-10">NPD Cruiser symbols are coins with different values.</entry> <!-- Alternative text 20 gddsfs10.1 -->
+
+<entry key="gdd-sfs-11">NPD Helicopter symbols are 2x2 coins with different values</entry> <!-- Alternative text 21 gddsfs11.1 -->
+
+<entry key="gdd-sfs-12">Police HQ symbols are 3x3 coins with the MAX WIN coin as a special coin symbol being the most valuable.</entry> <!-- Alternative text 22 gddsfs12.1 -->
+
+<entry key="gdd-sfs-13">MAX WIN coin is a special coin symbol awarding the remaining amount required to reach the maximum win when the rat shoots it.</entry> <!-- Alternative text 23 gddsfs13.1 -->
+
+<entry key="gdd-sfs-14">The rat driving onto a Turret symbol allows the rat to reach features further away.</entry>
+
+<!--X-iter UI button text-->
+<entry key="gdd-xiterbutton-1">Bonus Hunt</entry>
+<entry key="gdd-xiterbutton-2">Nitro Rally</entry>
+<entry key="gdd-xiterbutton-3">Road Warrior</entry>
+<entry key="gdd-xiterbutton-4">Bonus</entry>
+<entry key="gdd-xiterbutton-5">Super Bonus</entry>
+
+<!--Gamerules-->
+<entry key="gamerule">Rogue Rats is a 7 row by 7 column cluster game that may expand to show additional parts of the symbol grid.</entry>
+
+<entry key="gamerule">All spins in normal mode start with all 4 colored payout symbols at payout level 1 and with a game grid size of 7 rows by 7 columns.</entry>  <!-- Alternative 24 ruleSpinstart.1 -->
+
+<entry key="gamerule">The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule">A game round starts on the selected bet level when the player hits the spin button.</entry>
+
+<entry key="gamerule" tags="autospin">The game can be played automatically by activating Auto Spin. Hold down the spin button or use the Auto Spin button to set the number of game rounds to be played automatically.</entry>
+
+<entry key="gamerule">Winnings and winning combinations are paid out according to the paytable.</entry>
+
+<entry key="gamerule" tags="coins">Winnings are presented in the player's currency or in coins. The player can change preference in Settings.</entry> <!--Translate Settings into local language using initial capital letter since it is a name of a button-->
+
+<entry key="gamerule" tags="no-coins">Winnings are presented in the player's currency.</entry>
+
+<entry key="gamerule">Rogue Rats is played in two modes; normal mode and bonus mode with free spins.</entry>
+
+<entry key="gamerule">The game is played over a sparsely populated infinitely large game grid.</entry>
+
+<entry key="gamerule">Wins are generated by the rat moving around on an infinite game grid collecting horizontally or vertically adjacent payout symbol clusters and activating feature symbols.</entry>
+
+<entry key="gamerule">The rat moves using one of four different colored vehicles, and collects payout symbols of the same color as the vehicle. Only payout symbols of the same color as the active vehicle can be collected. The rat may switch vehicles during a game round, which changes the color of payout symbols that the rat can collect.</entry>
+
+<entry key="gamerule">The rat only sees the inner 5x5 grid (the rat's view) while the player also sees symbols on the periphery. The area that the rat sees can increase during the game round. What appears in the rat's field of vision determines the direction the rat drives.</entry>
+
+<entry key="gamerule">A game round starts with a randomly selected vehicle with a certain amount of fuel. Each positional movement consumes fuel, but collecting feature symbols and collecting payout symbols award additional fuel in the Nitro Fuel Gauge.</entry>
+
+<entry key="gamerule">The game round ends when the Nitro Fuel Gauge is emptied and no immediate collection of feature or payout symbols is possible, and no bonus game is pending.</entry>
+
+<entry key="gamerule">A cluster of payout symbols matching the color of the rat's current vehicle is collected when the rat is horizontally or vertically adjacent to the cluster.
+Clusters of the 4 colored payout symbols may cause the rat to change direction.</entry>
+
+<entry key="gamerule">The rat scatter collects all feature symbols except the Turret symbol, so they do not affect the direction of the rat's movement. The Turret symbol can cause the rat to change direction as it requires direct contact to be collected.</entry>
+
+<entry key="gamerule">Clusters of payout symbols that do not match the color of the rat’s vehicle are treated as blockers, and may cause the rat to change direction.</entry>
+
+<entry key="gamerule">The value of a cluster of payout symbols is determined by the symbol type, current active payout level and the number of symbols in the cluster. The Nitro Multiplier is applied to the total value of the cluster if it is active.</entry>
+
+<entry key="gamerule">The NPD Radar symbol activates the currently locked multiplier when shot at by the rat. The unlocked multiplier value replaces the active Nitro Multiplier, and then a new higher multiplier value is locked in. The NPD Radar symbol is destroyed in the process. </entry>
+
+<entry key="gamerule">The Nitro Blob symbol upgrades visible payout symbols to a higher payout level when shot at by the rat. Payout symbols are upgraded to a maximum level of 6, and the upgrade remains throughout the game round. The Nitro Blob symbol is destroyed in the process.</entry> <!-- Alternative 26 ruleBlob.2 -->
+
+<entry key="gamerule">NPD Cruiser, NPD Helicopter and Police HQ symbols award an instant coin win when shot at by the rat. The value of the coin is multiplied by the current active bet value and the Nitro Multiplier if it is active. The symbol is destroyed in the process.</entry>
+
+<entry key="gamerule">The MAX WIN coin awards the remaining amount required to reach the maximum win when the rat shoots it.</entry>
+
+<entry key="gamerule">The rat can grab a New Vehicle symbol on the game grid, and then the rat starts collecting payout symbols of the same color as the New Vehicle. The old vehicle is destroyed in the process.</entry>
+
+<entry key="gamerule">The Nitro Well symbol and Nitro Fuel Depot symbol add additional fuel to the Nitro Fuel Gauge when the rat grabs it. The symbol is destroyed in the process.</entry>
+
+<entry key="gamerule">The Missile Silo symbol expands the rat’s visible area when shot at by the rat. An activated Missile Silo symbol cannot be reactivated.</entry>  <!-- Alternative text 30 ruleMissile.1 -->
+
+<entry key="gamerule">The Turret symbol expands the rat’s visible area outwards to discover distant feature symbols when the rat moves onto it. All feature symbols except Nitro Wells and New Vehicles that are within the rat’s visible area are scatter collected. The rat’s visible area is reset to its size before the Turret was activated once the scatter collect is completed. However, the rat may retain knowledge of the location of the closest matching payout symbol cluster revealed during the Turret feature in case there is not already a matching payout symbol cluster within the rat’s visible area. An activated Turret symbol cannot be reactivated.</entry>
+
+<entry key="gamerule">The Nitro Fuel Gauge shows the current amount of fuel the rat’s vehicle has and how far the rat’s vehicle can move. Filling the Nitro Fuel Gauge completely awards the Nitro Fuel Boost where no fuel is consumed for a short period of time.</entry>
+
+<entry key="gamerule">The Nitro Multiplier shows the current active multiplier applied to all wins of colored payout symbol clusters. The Nitro Multiplier is empty at the start of a game round, but is replaced each time a NPD Radar symbol is activated by the rat.
+The Nitro Multiplier also applies to coin wins generated by NPD Cruiser, NPD Helicopter and Police HQ symbols.</entry>
+
+<entry key="gamerule">Two bonus symbols trigger bonus mode with free spins. The super bonus game is triggered when at least one of the two bonus symbols is a super bonus symbol. 3 free spins are awarded.</entry>
+
+<entry key="gamerule">A pending bonus or super bonus game starts when the Nitro Fuel Gauge is emptied and no immediate collection of feature symbols or payout symbol clusters is possible.</entry>
+
+<entry key="gamerule">The super bonus game awards free spins where each spin starts with a Nitro Fuel Boost.
+It is possible to retrigger the bonus game or super bonus game awarding 3 additional free spins.
+It is possible to upgrade an ongoing bonus game to a super bonus game.</entry>
+
+<entry key="gamerule">The payout level of the colored payout symbols and the current active Nitro Multiplier are carried over into the free spins bonus game or super bonus game.</entry>
+
+<entry key="gamerule">The payout level of the colored payout symbols, the current active Nitro Multiplier and the collection of additional bonus symbols are all persistent during the remaining free spins.</entry>
+
+<entry key="gamerule">The free spins bonus game ends when no free spins remain or when the win cap has been reached.</entry>
+
+<entry key="gamerule">Winnings are paid out at the end of the bonus mode.</entry>
+
+<entry key="gamerule">No bets can be changed during an ongoing game round.</entry>
+
+<entry key="gamerule">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule">The theoretical payout (RTP) in Rogue Rats is __RTP__.</entry>
+
+<entry key="gamerule">The game will be capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule">In the event of malfunction all bets and wins are void.</entry>
+
+<entry key="gamerule" tags="lastupdated">Last updated 2024-01-31</entry>
+
+<!-- X-iter rules -->
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus: Guarantees a game round with entry to the super bonus game where each free spin starts with Nitro Fuel Boost at the cost of __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X04">Bonus: Guarantees a game round with entry to the bonus game at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X03">Road Warrior: One spin with double the amount of starting fuel from the start, paying symbols are removed and coins are more frequent at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule" tags="X02">Nitro Rally: One spin played with extended visible area for the rat, and with double the amount of starting fuel at the cost of __X02_MULTIPLIER__ the selected bet.</entry>  <!-- Alternative text 40 xRule2.1 -->
+
+<entry key="xiter-rule" tags="X01">Bonus Hunt: One spin with 1 bonus symbol already collected, and with more than 4 times the chance to trigger the bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Rogue Rats is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-01-31</entry>
+
+<!--Dialogs-->
+
+</translation>

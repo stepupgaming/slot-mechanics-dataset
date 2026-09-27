@@ -9,8 +9,10 @@ from __future__ import annotations
 import json
 import re
 import urllib.parse
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 PDF_DIR = ROOT / "sources" / "elk" / "pdfs"
@@ -19,6 +21,8 @@ GAMES = ROOT / "games"
 SLUG_MAP = json.loads((ROOT / "sources" / "elk" / "slug_to_id.json").read_text())
 EXTRACTED_AT = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 CDN = "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/"
+GAMERULES_DIR = ROOT / "sources" / "elk" / "gamerules"
+THUMBS = ROOT / "thumbs"
 
 # pdf stem / id -> slug (prefer primary slug when skins share id)
 ID_TO_SLUG = {}
@@ -141,6 +145,11 @@ def parse_grid(text: str, kf: dict) -> dict:
     if m:
         rows, cols = int(m.group(1)), int(m.group(2))
         layout_notes_parts.append(f"Official Game Description: {rows} rows by {cols} columns")
+    elif re.search(r"(\d+)\s*rows?\s+and\s+(\d+)(?:-(\d+))?\s*columns?", text, re.I):
+        m = re.search(r"(\d+)\s*rows?\s+and\s+(\d+)(?:-(\d+))?\s*columns?", text, re.I)
+        rows = int(m.group(1))
+        cols = int(m.group(3) or m.group(2))
+        layout_notes_parts.append(f"Official Game Description: {m.group(0)}")
     else:
         m = re.search(
             r"(\d+)\s*(?:column|columns|reels?)\s*(?:by|,|and)\s*(\d+)\s*(?:row|rows)",
@@ -216,6 +225,24 @@ def parse_grid(text: str, kf: dict) -> dict:
             cols = int(m.group(1))
             layout_notes_parts.append(f"columns {m.group(1)} expanding up to {m.group(2)}")
 
+    # "slot with 5 columns, 7 rows" / "5 columns, 6 rows"
+    if cols is None or rows is None:
+        m = re.search(r"(\d+)\s*columns?,\s*(\d+)\s*rows?", text, re.I)
+        if m:
+            if cols is None:
+                cols = int(m.group(1))
+            if rows is None:
+                rows = int(m.group(2))
+            layout_notes_parts.append(f"Official help: {m.group(1)} columns, {m.group(2)} rows")
+    if cols is None or rows is None:
+        m = re.search(r"(\d+)\s*reels?\s+(\d+)\s*rows?", text, re.I)
+        if m:
+            if cols is None:
+                cols = int(m.group(1))
+            if rows is None:
+                rows = int(m.group(2))
+            layout_notes_parts.append(f"Official help: {m.group(1)} reels, {m.group(2)} rows")
+
     return {
         "rows": rows,
         "cols": cols,
@@ -252,16 +279,31 @@ def parse_win_system(text: str, kf: dict) -> dict:
             if re.search(r"A winning cluster consists of[^.]+\.", text, re.I)
             else (lines or "Cluster wins")
         )
+    elif re.search(r"scatter(?:ed)?\s*(?:win|pay|pays|symbols)|scatter pay", blob, re.I):
+        win_type = "other"
+        direction = None
+        m = re.search(r"(\d+)\s+or more identical symbols", blob, re.I)
+        if not m:
+            m = re.search(r"(?:group|symbols) of (\d+)\s+or more", blob, re.I)
+        if not m:
+            m = re.search(r"Scattered symbols of (\d+)\s+or more", blob, re.I)
+        if m:
+            min_symbols = int(m.group(1))
+        notes = clean_ws(lines or "Scatter pays (identical symbols anywhere on the grid)")
     elif re.search(r"Collector Wins|collector", lines, re.I) and re.search(
         r"collector", text[:2000], re.I
     ):
         win_type = "other"
         direction = None
         notes = lines or "Collector wins (path-to-collector)"
-    elif re.search(r"ways to win|all-?ways|all win ways", blob, re.I):
+    elif re.search(r"poker hand|poker style", blob, re.I):
+        win_type = "other"
+        direction = None
+        notes = lines or "Poker-hand evaluation"
+    elif re.search(r"ways to win|all-?ways|all win ways|connecting win ways", blob, re.I):
         win_type = "ways"
         direction = "left_to_right"
-        m = re.search(r"([\d,]+)\s*ways to win", blob, re.I)
+        m = re.search(r"([\d,]+)\s*(?:ways to win|connecting win ways)", blob, re.I)
         if m:
             ways_count = int(m.group(1).replace(",", ""))
         m = re.search(r"Up to\s+([\d,]+)\s*ways", blob, re.I)
@@ -336,18 +378,25 @@ def parse_xiter(text: str) -> tuple[dict, list[dict]]:
     if not found:
         # fallback: inline "Name: ... at the cost of Nx"
         for m in re.finditer(
-            r"([A-Z][A-Za-z0-9][A-Za-z0-9 !']{1,40}):\s*(.+?(?:cost of|Cost is)\s*([\d.]+)\s*x[^.]*\.)",
+            r"([A-Z][A-Za-z0-9][A-Za-z0-9 !']{1,40}):\s*(.+?(?:cost of|Cost is)\s*(?:[\d.]+|__X\d+_MULTIPLIER__)\s*(?:x|the selected bet)[^.]*\.)",
             sec,
             re.S,
         ):
             name = clean_ws(m.group(1)).title().replace("Bonus Hunt!", "Bonus Hunt")
             body = clean_ws(m.group(2))
-            cost = float(m.group(3))
+            cm = re.search(r"(?:cost of|Cost is)\s*([\d.]+)\s*x", body, re.I)
+            ph = re.search(r"(?:cost of|Cost is)\s*(__X\d+_MULTIPLIER__)", body, re.I)
+            cost = float(cm.group(1)) if cm else None
+            cost_text = (
+                f"{cost:g}x the selected bet"
+                if cost is not None
+                else f"{ph.group(1)} the selected bet (runtime; not numeric in help XML)"
+            )
             buy["options"].append(
                 {
                     "name": name.rstrip("!"),
                     "cost_multiplier": cost,
-                    "cost_text": f"{cost:g}x the selected bet",
+                    "cost_text": cost_text,
                     "effects": body[:800],
                     "rtp_when_bought_note": None,
                 }
@@ -361,15 +410,21 @@ def parse_xiter(text: str) -> tuple[dict, list[dict]]:
                 continue
             body = clean_ws(m.group(2))
             cm = re.search(r"(?:cost of|Cost is)\s*([\d.]+)\s*x", body, re.I)
-            if not cm:
+            ph = re.search(r"(?:cost of|Cost is)\s*(__X\d+_MULTIPLIER__)\s*(?:the selected bet)?", body, re.I)
+            if cm:
+                cost = float(cm.group(1))
+                cost_text = f"{cost:g}x the selected bet"
+            elif ph:
+                cost = None
+                cost_text = f"{ph.group(1)} the selected bet (runtime; not numeric in help XML)"
+            else:
                 continue
-            cost = float(cm.group(1))
             nice = name.title().replace("Bonus Hunt!", "Bonus Hunt")
             buy["options"].append(
                 {
                     "name": nice.rstrip("!"),
                     "cost_multiplier": cost,
-                    "cost_text": f"{cost:g}x the selected bet",
+                    "cost_text": cost_text,
                     "effects": body[:900],
                     "rtp_when_bought_note": None,
                 }
@@ -427,7 +482,11 @@ def parse_xiter(text: str) -> tuple[dict, list[dict]]:
                 "when": "Base game only",
                 "cost_text": buy["notes"],
                 "effects": "; ".join(
-                    f"{o['name']} ({o['cost_multiplier']:g}x): {o['effects'][:160]}"
+                    (
+                        f"{o['name']} ({o['cost_multiplier']:g}x): {o['effects'][:160]}"
+                        if o.get("cost_multiplier") is not None
+                        else f"{o['name']} ({o.get('cost_text') or 'cost n/a'}): {o['effects'][:160]}"
+                    )
                     for o in buy["options"]
                 )[:2000],
                 "params": {"base_game_only": True, "mode_count": len(buy["options"])},
@@ -632,12 +691,25 @@ def parse_symbols(text: str) -> dict:
 
     # Wild
     m = re.search(
-        r"(The wild symbol substitutes for any symbol except[^.]*\.)",
+        r"(The wild symbols? substitutes? for any (?:paying )?symbol(?! except)[^.]*\.)",
+        text,
+        re.I,
+    )
+    if not m:
+        m = re.search(
+            r"(The wild symbol substitutes for any symbol except[^.]*\.)",
+            text,
+            re.I,
+        )
+    if m:
+        add("wilds", "Wild", m.group(1))
+    m = re.search(
+        r"(The charged Wild symbol[^.]*\.(?:[^.]*\.){0,1})",
         text,
         re.I,
     )
     if m:
-        add("wilds", "Wild", m.group(1))
+        add("wilds", "Charged Wild", m.group(1), {"charges": 3})
     m = re.search(
         r"(The multiplier wild symbol substitutes[^.]*\.(?:[^.]*multiplier[^.]*\.)?)",
         text,
@@ -849,6 +921,280 @@ def confidence_block(grid, win, bonus, buy, symbols) -> dict:
     }
 
 
+
+def gamerules_xml_to_text(xml_path: Path, title: str) -> tuple[str, dict]:
+    """Convert official client gamerules XML into PDF-like Game Description text."""
+    root = ET.parse(xml_path).getroot()
+    by: dict[str, list[str]] = {}
+    gfx: dict[str, str] = {}
+    for e in root.iter():
+        if e.tag == "entry":
+            k = e.get("key") or ""
+            v = (e.text or "").strip()
+            if v:
+                by.setdefault(k, []).append(v)
+        elif e.tag == "gfx":
+            k = e.get("key") or ""
+            v = (e.text or "").strip()
+            if k and v:
+                gfx[k] = v
+
+    lines: list[str] = []
+    lines.append("Key features")
+    lines.append(f"Name in English {title}")
+    lines.append("Product category Casino")
+    lines.append("Game type Slot")
+    lines.append("Client HTML5")
+    if by.get("gdd-kf-lines"):
+        lines.append(f"Lines {by['gdd-kf-lines'][0]}")
+    if by.get("gdd-kf-jackpot"):
+        lines.append(f"Jackpot {by['gdd-kf-jackpot'][0]}")
+    if by.get("gdd-kf-reels"):
+        lines.append(f"Reels {by['gdd-kf-reels'][0]}")
+    if by.get("gdd-kf-rows"):
+        lines.append(f"Rows {by['gdd-kf-rows'][0]}")
+
+    maxwin = None
+    for v in list(gfx.values()) + [x for vs in by.values() for x in vs]:
+        m = re.search(r"WIN UP TO\s+([\d,\.]+)\s*x", v, re.I)
+        if m:
+            maxwin = float(m.group(1).replace(",", ""))
+            break
+    if maxwin:
+        lines.append(f"Max exposure {int(maxwin) if maxwin == int(maxwin) else maxwin} x")
+        lines.append(f"Max win single spin {int(maxwin) if maxwin == int(maxwin) else maxwin} x")
+
+    lines.append("")
+    lines.append("Game description")
+    for key in ("gdd-description", "gdd-payline", "gdd-bonusgame", "gdd-gameview"):
+        for v in by.get(key, []):
+            lines.append(v)
+    for i in range(1, 30):
+        for v in by.get(f"gdd-sfs-{i}", []):
+            lines.append(v)
+
+    lines.append("")
+    lines.append("Game rules")
+    for v in by.get("gamerule", []):
+        # Drop pure placeholder RTP lines noise? keep — parsers may use structure
+        lines.append(v)
+
+    lines.append("")
+    lines.append("X-iter rules")
+    for v in by.get("xiter-rule", []):
+        lines.append(v)
+
+    # Paytable / Txt feature blurbs
+    for k, vals in by.items():
+        if k.startswith("paytable") or k.startswith("Txt"):
+            for v in vals:
+                if len(v) > 40:
+                    lines.append(v)
+
+    meta = {"maxwin": maxwin, "gfx": gfx, "entry_keys": sorted(by.keys())}
+    return "\n".join(lines), meta
+
+
+def build_record_from_text(
+    slug: str,
+    meta: dict,
+    text: str,
+    *,
+    source_url: str,
+    local_path: str,
+    source_type: str = "official_demo_rules",
+) -> dict | None:
+    text = flatten(text)
+    if sum(c.isalpha() for c in text) < 800:
+        return None
+
+    kf = parse_key_features(text)
+    gid = meta["id"]
+    title = meta["title"]
+    if kf.get("name") and len(kf["name"]) < 80 and not kf["name"].lower().startswith("reels"):
+        title = kf["name"]
+
+    grid = parse_grid(text, kf)
+    win = parse_win_system(text, kf)
+    avalanche = parse_avalanche(text)
+    expanding_present = bool(re.search(r"expand", text, re.I))
+    symbols = parse_symbols(text)
+    bonus = parse_bonus_modes(text, title)
+    buy, xiter_feats = parse_xiter(text)
+    features = build_features(text, avalanche, xiter_feats)
+    base_loop = build_base_loop(title, text, grid, win, avalanche, bonus)
+
+    max_win = kf.get("max_win_spin") or kf.get("max_exposure")
+    rtp = kf.get("rtp")
+    if rtp is None:
+        m = re.search(r"theoretical payout \(RTP\).*?([\d.]+)\s*%", text, re.I)
+        if m:
+            rtp = float(m.group(1))
+
+    evidence = []
+    for pat in [
+        r"Key features[\s\S]{0,600}",
+        r"(?:is a \d+[^.]*\.(?:[^.]*\.){0,2})",
+        r"X-iter rules[\s\S]{0,700}",
+        r"Game description[\s\S]{0,800}",
+    ]:
+        m = re.search(pat, text, re.I)
+        if m:
+            evidence.append(
+                {
+                    "source_type": source_type,
+                    "url": source_url,
+                    "local_path": local_path,
+                    "extracted_at": EXTRACTED_AT,
+                    "quote_or_excerpt": clean_ws(m.group(0))[:1200],
+                }
+            )
+    evidence.append(
+        {
+            "source_type": source_type,
+            "url": source_url,
+            "local_path": local_path,
+            "extracted_at": EXTRACTED_AT,
+            "quote_or_excerpt": clean_ws(text[:900]),
+        }
+    )
+    evidence.append(
+        {
+            "source_type": "provider_marketing",
+            "url": meta.get("page_url"),
+            "local_path": None,
+            "extracted_at": EXTRACTED_AT,
+            "quote_or_excerpt": f"Demo launcher gameid={gid}; mechanics taken from official client gamerules XML / Game Description, not marketing copy.",
+        }
+    )
+
+    unknowns = []
+    if not grid.get("rows") or not grid.get("cols"):
+        unknowns.append("grid.rows/cols incomplete")
+    if win.get("type") == "unknown":
+        unknowns.append("win_system.type")
+    if not bonus.get("modes"):
+        unknowns.append("bonus_free_spins.modes")
+    if buy.get("available") and not buy.get("options"):
+        unknowns.append("feature_buy.options incomplete")
+    if buy.get("available") and buy.get("options") and any(o.get("cost_multiplier") is None for o in buy["options"]):
+        unknowns.append("feature_buy option cost multipliers are runtime placeholders in help XML")
+    if rtp is None:
+        unknowns.append("rtp_percent not numeric in help XML (placeholder __RTP__)")
+    if max_win is None:
+        unknowns.append("max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)")
+    unknowns.append("Exact paytable symbol values not in help text extract")
+    unknowns.append("release_year not stated in official help text")
+
+    conf = confidence_block(grid, win, bonus, buy, symbols)
+    if rtp is None or max_win is None:
+        conf["numeric_limits"] = "medium"
+    if buy.get("available") and (
+        not buy.get("options") or any(o.get("cost_multiplier") is None for o in buy["options"])
+    ):
+        conf["feature_buy"] = "medium"
+
+    thumb = f"thumbs/elk-{slug}.webp"
+    rec = {
+        "schema_version": "1.1.0",
+        "updated_at": EXTRACTED_AT,
+        "identity": {
+            "provider": "Elk Studios",
+            "title": title,
+            "slug": f"elk-{slug}",
+            "provider_game_id": gid,
+            "release_year": None,
+            "demo_url": meta.get("demo_url"),
+            "slotcatalog_url": None,
+            "official_info_url": source_url,
+        },
+        "grid": grid,
+        "win_system": win,
+        "reel_behavior": {
+            "cascades_or_tumbles": avalanche,
+            "respins": {
+                "present": bool(re.search(r"\brespin", text, re.I)),
+                "how_it_works": excerpt_around(text, r"\brespin", 250),
+            },
+            "expanding_reels": {
+                "present": expanding_present,
+                "how_it_works": excerpt_around(text, r"expand(?:s|ing|ed)? up to", 250),
+            },
+            "other": [],
+        },
+        "symbols": symbols,
+        "base_game_loop": base_loop,
+        "bonus_free_spins": bonus,
+        "features": features,
+        "feature_buy": buy,
+        "ante_bet": {
+            "available": False,
+            "cost_multiplier": None,
+            "effects": None,
+            "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present.",
+        },
+        "numeric_limits": {
+            "max_win_multiplier": max_win,
+            "max_win_notes": clean_ws(
+                f"Max exposure {kf.get('max_exposure')}x; max win single spin {kf.get('max_win_spin')}x; "
+                f"Maximum win €{kf.get('maximum_win_eur')}"
+            )
+            if max_win
+            else "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+            "rtp_percent": rtp,
+            "rtp_notes": f"Theoretical RTP {rtp}% (base and X-iter when stated). Min bet €{kf.get('min_bet')}, max bet €{kf.get('max_bet')}."
+            if rtp
+            else "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+            "hit_frequency_notes": f"Hit frequency {kf['hit_frequency']}% (official key features table)"
+            if kf.get("hit_frequency")
+            else None,
+        },
+        "confidence": conf,
+        "evidence": evidence,
+        "unknowns": unknowns,
+        "thumbnail": thumb,
+        "thumbnail_attribution": "ELK Studios",
+    }
+    return rec
+
+
+def fetch_thumb(slug: str, meta: dict) -> bool:
+    """Download provider logo/thumb into thumbs/elk-{slug}.webp."""
+    THUMBS.mkdir(parents=True, exist_ok=True)
+    dest = THUMBS / f"elk-{slug}.webp"
+    if dest.exists() and dest.stat().st_size > 1000:
+        return True
+    url = meta.get("thumb_url")
+    if not url:
+        return False
+    try:
+        from io import BytesIO
+        from PIL import Image
+
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        data = urllib.request.urlopen(req, timeout=30).read()
+        im = Image.open(BytesIO(data)).convert("RGBA")
+        w, h = im.size
+        if w > 640:
+            im = im.resize((640, int(h * 640 / w)), Image.Resampling.LANCZOS)
+        im.save(dest, "WEBP", quality=85)
+        return dest.exists()
+    except Exception as e:
+        print(f"thumb fail {slug}: {e}")
+        return False
+
+
+def quality_ok(rec: dict) -> tuple[bool, str]:
+    if not rec["grid"].get("rows") or not rec["grid"].get("cols"):
+        return False, "incomplete grid"
+    if rec["win_system"]["type"] == "unknown":
+        return False, "unknown win system"
+    if len(rec["base_game_loop"]["phases"]) < 3:
+        return False, "thin base loop"
+    # Prefer rebuildable bonus when help mentions free drops/spins
+    return True, "ok"
+
+
 def build_record(slug: str, meta: dict, pdf_path: Path, txt_path: Path) -> dict | None:
     text = flatten(txt_path.read_text(errors="replace"))
     if sum(c.isalpha() for c in text) < 800:
@@ -996,9 +1342,14 @@ def build_record(slug: str, meta: dict, pdf_path: Path, txt_path: Path) -> dict 
 
 def main():
     TXT_DIR.mkdir(parents=True, exist_ok=True)
+    GAMERULES_DIR.mkdir(parents=True, exist_ok=True)
     written = []
     skipped = []
-    # Map pdf -> slug via id prefix
+    thumbs_ok = 0
+
+    existing = {p.name for p in GAMES.glob("elk-*.json")}
+
+    # --- PDF path (existing) ---
     for pdf in sorted(PDF_DIR.glob("*.pdf")):
         m = re.match(r"(\d+)-", pdf.name)
         if not m:
@@ -1009,8 +1360,9 @@ def main():
         if not slug:
             skipped.append({"pdf": pdf.name, "reason": f"no slug for id {gid}"})
             continue
-        if slug in SKIP_SLUGS:
-            skipped.append({"pdf": pdf.name, "reason": "skip ryze (already gold)"})
+        out_name = f"elk-{slug}.json"
+        if out_name in existing or slug in SKIP_SLUGS:
+            skipped.append({"pdf": pdf.name, "reason": "skip existing", "slug": slug})
             continue
         txt = TXT_DIR / (pdf.stem + ".txt")
         if not txt.exists():
@@ -1021,24 +1373,94 @@ def main():
         if not rec:
             skipped.append({"pdf": pdf.name, "reason": "thin text"})
             continue
-        # Quality gate: need grid + win type + base loop phases + evidence
-        if not rec["grid"].get("rows") or not rec["grid"].get("cols"):
-            skipped.append({"pdf": pdf.name, "reason": "incomplete grid", "slug": slug})
+        ok, reason = quality_ok(rec)
+        if not ok:
+            skipped.append({"pdf": pdf.name, "reason": reason, "slug": slug})
             continue
-        if rec["win_system"]["type"] == "unknown":
-            skipped.append({"pdf": pdf.name, "reason": "unknown win system", "slug": slug})
-            continue
-        if len(rec["base_game_loop"]["phases"]) < 3:
-            skipped.append({"pdf": pdf.name, "reason": "thin base loop", "slug": slug})
-            continue
-        out = GAMES / f"elk-{slug}.json"
+        out = GAMES / out_name
         out.write_text(json.dumps(rec, indent=2, ensure_ascii=False) + "\n")
         written.append(slug)
-        print(f"wrote elk-{slug}.json")
+        existing.add(out_name)
+        if fetch_thumb(slug, meta):
+            thumbs_ok += 1
+        print(f"wrote elk-{slug}.json (pdf)")
 
-    report = {"written": written, "skipped": skipped, "count": len(written)}
+    # --- Official client gamerules XML path ---
+    fetch_log_path = ROOT / "sources" / "elk" / "gamerules_fetch_log.json"
+    gr_items = []
+    if fetch_log_path.exists():
+        gr_items = json.loads(fetch_log_path.read_text()).get("ok", [])
+
+    for item in gr_items:
+        if not item.get("ok"):
+            continue
+        # Prefer primary slug (first)
+        slug = item["slugs"][0]
+        # Prefer canonical when multiple
+        for cand in item["slugs"]:
+            if cand in SLUG_MAP and not cand.endswith("-mobile") and "html5" not in cand:
+                slug = cand
+                break
+        out_name = f"elk-{slug}.json"
+        if out_name in existing or slug in SKIP_SLUGS:
+            skipped.append({"gamerules": item.get("path"), "reason": "skip existing", "slug": slug})
+            continue
+        # Quality prefilter: need substantial rules text
+        if item.get("alpha", 0) < 800 or item.get("gamerule_count", 0) < 5:
+            skipped.append({"gamerules": item.get("path"), "reason": "thin gamerules", "slug": slug,
+                            "alpha": item.get("alpha"), "gamerule_count": item.get("gamerule_count")})
+            continue
+        xml_path = ROOT / item["path"]
+        if not xml_path.exists():
+            skipped.append({"gamerules": item.get("path"), "reason": "missing xml", "slug": slug})
+            continue
+        meta = SLUG_MAP[slug]
+        title = meta["title"]
+        text_body, gr_meta = gamerules_xml_to_text(xml_path, title)
+        # Persist derived text for evidence/debug
+        txt_path = TXT_DIR / f"{item['id']}-{item['gamename']}-gamerules-en_gb.txt"
+        txt_path.write_text(text_body)
+        rec = build_record_from_text(
+            slug,
+            meta,
+            text_body,
+            source_url=item["url"],
+            local_path=str(xml_path.relative_to(ROOT)),
+            source_type="official_demo_rules",
+        )
+        if not rec:
+            skipped.append({"gamerules": item.get("path"), "reason": "thin text after convert", "slug": slug})
+            continue
+        # Inject maxwin from gfx meta if key features missed it
+        if rec["numeric_limits"]["max_win_multiplier"] is None and gr_meta.get("maxwin"):
+            rec["numeric_limits"]["max_win_multiplier"] = gr_meta["maxwin"]
+            rec["numeric_limits"]["max_win_notes"] = f"From official help gfx WIN UP TO {gr_meta['maxwin']:g}x YOUR BET"
+            if rec["confidence"]["numeric_limits"] == "medium" and rec["numeric_limits"].get("rtp_percent"):
+                rec["confidence"]["numeric_limits"] = "high"
+            elif rec["numeric_limits"]["max_win_multiplier"] and not rec["numeric_limits"].get("rtp_percent"):
+                rec["confidence"]["numeric_limits"] = "medium"
+        ok, reason = quality_ok(rec)
+        if not ok:
+            skipped.append({"gamerules": item.get("path"), "reason": reason, "slug": slug})
+            continue
+        out = GAMES / out_name
+        out.write_text(json.dumps(rec, indent=2, ensure_ascii=False) + "\n")
+        written.append(slug)
+        existing.add(out_name)
+        if fetch_thumb(slug, meta):
+            thumbs_ok += 1
+        print(f"wrote elk-{slug}.json (gamerules)")
+
+    report = {
+        "written": sorted(written),
+        "skipped_sample": skipped[:40],
+        "skipped_count": len(skipped),
+        "count": len(written),
+        "thumbs": thumbs_ok,
+        "source": "pdf+gamerules_xml",
+    }
     (ROOT / "sources" / "elk" / "parse_report.json").write_text(json.dumps(report, indent=2) + "\n")
-    print(json.dumps(report, indent=2))
+    print(json.dumps({k: report[k] for k in ("count", "thumbs", "written", "skipped_count")}, indent=2))
 
 
 if __name__ == "__main__":

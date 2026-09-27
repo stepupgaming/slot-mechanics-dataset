@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--English en_gb-->
+<translation language="en_gb">
+
+<!--GAMESPECIFIC**********************************-->
+<!--Copy to gfx game specific text-assets-->
+
+<!--Words not translated in this game
+Walking Wild
+Matador
+Toro
+Wild Toro
+Berzerk
+Silver Matador
+Gold Matador
+100% Win
+Expanding Matador Respins
+Toro Goes Berzerk
+Expanding Matador Respins
+Super Expanding Matador Respins
+Insane Expanding Matador Respins
+
+-->
+
+
+<!--Intro-->
+	
+<!--Paytable-->
+<entry key="paytableWildSymbol">The wild symbol substitutes for any symbol except the Matador and Toro.</entry>
+<entry key="paytableSilverMatador">The Silver Matador is a Walking Wild that awards respins as it moves.</entry>
+<entry key="paytableGoldMatador">The Gold Matador is a Walking Wild with a progressive multiplier that increases as it moves and awards respins.</entry>
+<entry key="paytableToroGoesBerzerk">Toro is a Walking Wild that awards respins as he moves. During the Toro Goes Berzerk feature Toro leaves wild symbols behind as he knocks off and defeats Matadors.</entry>
+<entry key="paytableMatadorRespins">One or more Matadors in view trigger the Expanding Matador Respins. The Matador symbols move leftwards until they spin out from the first reel, generating one respin for each step.</entry>
+<entry key="paytableExpandingReels">Each Matador adds an additional row of symbols, up to a maximum of 8 rows.</entry>
+<entry key="paytableKnockOut">When Toro knocks off Gold Matadors he absorbs their multipliers and becomes a Walking Multiplier Wild. Toro’s multiplier value then increases as he walks leftwards and awards respins.</entry>
+<entry key="paytableToroMultiplier">Additional Toro symbols appearing during respins inherit the current multiplier from the Toro already in view.</entry>
+<entry key="paytableToroFeature">Wild Toro Feature</entry>
+<entry key="paytableMatadorFeature">Matador Feature</entry>
+<entry key="paytableMultiplierFeature">Multiplier Feature</entry>
+<entry key="paytableConnectingPaylines">Connecting Paylines</entry>
+
+
+
+<!--Copy to gfx game specific text-assets-->
+<gfx key="YouWon">You Won</gfx>
+<gfx key="WildSymbols">Wild Symbols</gfx>
+<gfx key="MultiplierRespins">Multiplier Respins</gfx>
+<gfx key="ToroMultipliers">Toro Multipliers</gfx>
+
+
+
+	
+<!--X-iter UI texts-->
+<entry key="X01B1">No dead spins, only wins!</entry>
+
+<entry key="X02B1">Sticky Wilds!</entry>
+<entry key="X02B2">Guaranteed Matador!</entry>
+
+<entry key="X03B1">Toro Goes Berzerk!</entry>
+<entry key="X03B2">Guaranteed Toro!</entry>
+<entry key="X03B3">Guaranteed Matador!</entry>
+
+<entry key="X04B1">3 spins!</entry>
+<entry key="X04B2">Sticky Wilds!</entry>
+<entry key="X04B3">Persistent Expansions!</entry>
+<entry key="X04B4">Guaranteed Matador!</entry>
+
+<entry key="X05B1">3 spins!</entry>
+<entry key="X05B2">Sticky Wilds!</entry>
+<entry key="X05B3">Persistent Super Multipliers!</entry>
+<entry key="X05B4">Persistent Expansions!</entry>
+<entry key="X05B5">Guaranteed Matador!</entry>
+
+
+
+<!--Gamerules-->
+<entry key="gamerules">
+	<![CDATA[
+1. Wild Toro II is a 5 reel, 5 rows slot with spinning reels, expanding reels and up to 502 connecting paylines. 
+	
+2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.
+
+3. Each bet is __CPBB__ coins.
+
+4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.
+
+5. A game round starts on the selected bet level when the player hits the Spin button.
+
+6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.
+
+7. Winnings and winning combinations are paid out according to the Paytable.
+
+8. Winnings are presented in the player's currency or in coins (if available in the applicable jurisdiction). The player can change preference in Settings.
+
+9. Wild Toro II is played in two modes; Normal mode and Bonus mode where Toro goes Berzerk and attacks Matadors. 
+
+10. All spins in Normal mode start with 5 rows and 259 ways to win. 
+
+11. The wild symbol substitutes for any symbol except the Matadors and Toro.
+
+12. A payline of only wild symbols pay as the highest value symbol.
+
+13. Toro is a Walking Wild symbol that only appears on reel 5. The Toro moves leftwards until he spins out from the first reel, generating one respin for each step.
+ 
+14. There are three different Matadors: black, silver and gold. All of them appear on reel 2, 3, 4 and 5 and they all trigger the Expanding Matador Respins.
+
+15. During the Expanding Matador Respins, the Matador symbols move leftwards until they spin out from the first reel, generating one respin for each step.
+
+16. The black Matador is a Walking blocker symbol, the Silver Matador is a Walking Wild symbol and the Gold Matador is a Walking Multiplier Wild symbol. The Gold Matador´s multiplier is randomly set and increases for every step he takes.
+
+17. Additional Matadors appearing during an ongoing Expanding Matador Respins might prolong the respins. All Expanding Matador Respins end when a Toro appears or when no Matadors remain in view.
+
+18. Each Matador will add an additional row of symbols, up to a maximum of 8 rows. The number of connecting paylines increases as the number of rows increases.
+5 rows: 259 connecting paylines.
+6 rows: 340 connecting paylines.
+7 rows: 421 connecting paylines.
+8 rows: 502 connecting paylines.
+
+19. Landing a Toro when Matadors are in view or landing one or more Matadors when the Toro is in view, trigger the Toro Goes Berzerk feature.
+
+20. During the Toro Goes Berzerk feature, Toro moves vertically and then horizontally to knock all Matadors off, leaving wild symbols behind. Toro continues to attack until all Matadors are defeated. 
+
+21. Toro starts by attacking Matadors on the same reel. He then looks to the right and continues to attack to the right as long as there are additional Matadors or until reel 5 is reached. He finally looks to the left and attacks all Matadors on his left side. 
+
+22. When a Toro knocks off one or more Gold Matadors, their multiplier values are added and absorbed by the attacking Toro who becomes a Walking Multiplier Wild. Toro's multiplier value then increases as he walks leftwards and awards respins.
+
+23. Only one Toro is actively attacking Matadors at a time. He will stay active until he leaves the screen, even though there might be more than one Toro on the reels. 
+
+24. Additional Toro symbols appearing during respins inherit the current multiplier from the Toro already in view. All Toro symbols in view get the same multiplier as the active Toro in case Gold Matadors are knocked off.
+
+25. If multiple Gold Matadors or multiple Toro symbols with multipliers contribute to the same payline, their respective multipliers are added. 
+
+26. Bonus mode ends when no Toro or Matadors symbols are in view.
+
+27. Winnings are paid out at the end of the bonus mode.
+
+28. No bets can be changed during an ongoing game round.
+
+29. A game round ends if the maximum win is reached.
+
+30. The theoretical payout (RTP) in Wild Toro Ⅱ is __RTP__.
+
+31. The game has a maximum win of __TBB__ the placed bet.
+
+32. In the event of malfunction all bets and wins are void.
+   
+Last updated 2022-01-13
+	]]></entry>
+
+<entry key="xiter-rule">The X-iter feature offers several different game modes.</entry>
+
+<entry key="xiter-rule" tags="X01">100% Win: 
+Guarantees a winning game round with all dead spins removed at the cost of 5x the selected bet. </entry>
+
+<entry key="xiter-rule" tags="X02">Sticky Wilds: 
+1 spin with a guaranteed Expanding Matador Respins feature at the cost of 25x the selected bet. All wild symbols that appear during the respins remain Sticky.</entry>
+
+<entry key="xiter-rule" tags="X03">Bonus: 
+Guarantees the Toro Goes Berzerk feature at the cost of 100x the selected bet. </entry>
+
+<entry key="xiter-rule" tags="X04">Big Bonus:
+3 spins with at least 1 Expanding Matador Respins feature at the cost of 250x the selected bet. All wild symbols that appear during respins remain Sticky during an ongoing respin feature.The achieved level of expansion remains persistent between spins.</entry>
+
+<entry key="xiter-rule" tags="X05">Super Bonus:
+3 spins with at least 1 Expanding Matador Respins feature at the cost of 500x the selected bet. All wild symbols that appear during respins remain Sticky during an ongoing respin feature. An achieved level of expansion remains persistent between spins. The highest multiplier value achieved in a spin is added to any Gold Matador multiplier that appears in the following spin. </entry>
+
+
+
+<entry key="xiter-rule">The X-iter features can only be activated in the base game.</entry>
+
+<entry key="xiter-rule">The minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule">The theoretical payout (RTP) for all X-iter game modes in Wild Toro Ⅱ is __RTP__.</entry>
+
+<entry key="xiter-rule">All game rules apply for the X-iter features as well.</entry>
+
+<entry key="xiter-rule" tags="lastupdated">Last updated 2024-02-06</entry>
+
+
+<!--Dialogs-->	
+
+</translation>
