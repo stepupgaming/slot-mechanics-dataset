@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Gator Hunters",
+    "slug": "nolimit-gator-hunters",
+    "provider_game_id": "GatorHunters",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/GatorHunters",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/gator-hunters"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "Official 5-5-5-5-5-5."
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": null,
+    "notes": "Scatter Wins 8+; remove and drop."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "8+ wins remove and drop."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Revolver",
+        "how_it_works": "On no Eater and no wins: cylinder picks bullet or empty. Bullet adds to total win mult applied to current spin win. Max 6 Revolvers. Normal/Super/Super Fire types. Bullets purple 2–8× through white 1000–2000×."
+      },
+      {
+        "name": "Eater",
+        "how_it_works": "One at a time on no wins. Normal: remove random symbol type all instances → Wild. Super: same + Wild mult 2/3/10× additive on scatter wins."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild (from Eater)",
+        "behavior": "Normal or Super Eater transform; Super has 2/3/10×.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3→10 Swamp; 4→12 Frenzy; 5→15 Gator; 6→18 Apex. During FS 2–6 Bonus → +3/5/7/10/15 spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Total win multiplier (Revolver)",
+        "behavior": "Persists in FS; applies only on spins where a Revolver selects a bullet.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Revolver / Super / Super Fire",
+        "behavior": "Bullet cylinders with escalating re-spin rules.",
+        "params": {}
+      },
+      {
+        "name": "Eater / Super Eater",
+        "behavior": "Clear symbol type → Wild.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Pay-anywhere 8+ on 6×5 with Eaters then Revolvers. 3–6 Bonus → Swamp 10 / Frenzy 12 / Gator 15 / Apex 18 with 1–4 upgrades. Boosters 2.5×/90×/400×/1,200×. Extra Spin keeps mult+Revolvers. Cap 25,000×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional Bonus/Revolver Roll/Super Fire/Massacre.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Cascade + Eater/Revolver",
+        "order": 2,
+        "what_happens": "8+ pays; Eater if dead; Revolvers if no Eater.",
+        "ends_when": "Resolved",
+        "state_changes": "Total mult"
+      },
+      {
+        "name": "Bonus / Extra",
+        "order": 3,
+        "what_happens": "3–6 Bonus → FS; else Extra Spin.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Pay-anywhere; Revolver mult on bullet hits.",
+    "notes": "CMS."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Swamp Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "10",
+        "retrigger": "2–6 Bonus → +3/5/7/10/15.",
+        "sticky_or_persistent_state": "Total mult kept; 1 of 4 upgrades (Extra Bullet 2×/10×, Super Eater, Super Revolvers).",
+        "progressive_state": "Persistent total mult.",
+        "end_condition": "Spins done or Hunter Becomes Hunted 25,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; 1 upgrade."
+          }
+        ],
+        "effects": "10 FS; 1 upgrade."
+      },
+      {
+        "name": "Frenzy Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "12",
+        "retrigger": "Same Bonus extras.",
+        "sticky_or_persistent_state": "2 upgrades.",
+        "progressive_state": "Persistent mult.",
+        "end_condition": "Spins done or 25,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12 spins; 2 upgrades."
+          }
+        ],
+        "effects": "12 FS; 2 upgrades."
+      },
+      {
+        "name": "Gator Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "15",
+        "retrigger": "Same.",
+        "sticky_or_persistent_state": "3 upgrades.",
+        "progressive_state": "Persistent mult.",
+        "end_condition": "Spins done or 25,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "15 spins; 3 upgrades."
+          }
+        ],
+        "effects": "15 FS; 3 upgrades."
+      },
+      {
+        "name": "Apex Predator Spins",
+        "trigger": "6 Bonus.",
+        "spins_awarded": "18",
+        "retrigger": "Same.",
+        "sticky_or_persistent_state": "All 4 upgrades; Super Revolvers replaced by Super Fire Revolvers.",
+        "progressive_state": "Persistent mult.",
+        "end_condition": "Spins done or 25,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "18 spins; all upgrades + Super Fire."
+          }
+        ],
+        "effects": "18 FS; full upgrades + Super Fire."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2.5,
+      "cost_text": "2.5× bet",
+      "effects": "Bonus reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Revolver Roll",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 90.0,
+      "cost_text": "90× bet",
+      "effects": "Active Super Revolver; mult × base bet; no other symbols.",
+      "params": {}
+    },
+    {
+      "name": "Super Fire Spins",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 400.0,
+      "cost_text": "400× bet",
+      "effects": "Super Fire Revolver with 5 colored bullets; no Bonus.",
+      "params": {}
+    },
+    {
+      "name": "Massacre Spins",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1200.0,
+      "cost_text": "1,200× bet",
+      "effects": "All Revolvers → Super Fire with 1000×/2000× bullets.",
+      "params": {}
+    },
+    {
+      "name": "The Hunter Becomes The Hunted",
+      "trigger": "Cap",
+      "effects": "Max 25,000×.",
+      "params": {
+        "max_win_multiplier": 25000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 2.5,
+        "cost_text": "2.5× bet",
+        "effects": "Bonus reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Revolver Roll",
+        "cost_multiplier": 90.0,
+        "cost_text": "90× bet",
+        "effects": "Guaranteed Super Revolver.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Fire Spins",
+        "cost_multiplier": 400.0,
+        "cost_text": "400× bet",
+        "effects": "Super Fire with 5 bullet colors.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Massacre Spins",
+        "cost_multiplier": 1200.0,
+        "cost_text": "1,200× bet",
+        "effects": "All Super Fire 1000/2000×.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Extra Spin",
+        "cost_multiplier": null,
+        "cost_text": "From mult + remaining Revolvers",
+        "effects": "Keep mult/Revolvers if cost ≤ win.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000.0,
+    "max_win_notes": "25,000×",
+    "rtp_percent": 96.11,
+    "rtp_notes": "96.11% from page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/gator-hunters",
+      "local_path": "sources/nolimit/gator-hunters/cms_features.txt",
+      "extracted_at": "2026-09-27T18:57:05Z",
+      "quote_or_excerpt": "Swamp 10 / Frenzy 12 / Gator 15 / Apex 18; Revolvers/Eaters; max 25000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/gator-hunters",
+      "local_path": "sources/nolimit/gator-hunters/page.html",
+      "extracted_at": "2026-09-27T18:57:05Z",
+      "quote_or_excerpt": "96.11% RTP, 25000 xBet MAX; 5-5-5-5-5-5."
+    }
+  ],
+  "unknowns": [],
+  "thumbnail": "thumbs/nolimit-gator-hunters.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

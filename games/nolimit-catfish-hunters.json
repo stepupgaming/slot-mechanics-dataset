@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:56:27Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Catfish Hunters",
+    "slug": "nolimit-catfish-hunters",
+    "provider_game_id": "CatfishHunters",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/CatfishHunters",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/catfish-hunters"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official 3-3-3-3-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways plus Fish+Electrical Frame collect pays."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Electrical Frames",
+        "how_it_works": "1+ frames each spin start. Fish+frame = Fish win (value × global Fish mult × bet). Global Fish mult starts ×1, doubles per Fish win to ×1024. Eval top→bottom, L→R."
+      },
+      {
+        "name": "Imposter Wild",
+        "how_it_works": "Transforms to Stacy (×2/4/8 global Fish mult), Karen (frames self+adj), Granny (frames all), Cletus (winning regulars→Fish), Bubba (all regulars→Fish)."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Imposter Wild variants",
+        "behavior": "Stacy/Karen/Granny/Cletus/Bubba random transform.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3→8 Dark Water (+1/extra); 4→10 Deep Water; 5→12 Overcharged.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Global Fish multiplier",
+        "behavior": "×1 start; doubles on Fish wins to ×1024; halved each FS spin (min ×1).",
+        "params": {
+          "cap": 1024
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Fish",
+        "behavior": "Values 0.25–100×; pays when framed.",
+        "params": {}
+      },
+      {
+        "name": "xWays",
+        "behavior": "Reveal stacks; FS upgrade can force Fish/Imposter.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "3×5 ways with Electrical Frames + Fish collect (global mult to ×1024) and Imposter Wilds. 3/4/5 Bonus → Dark Water 8 / Deep Water 10 / Overcharged 12 with 1/2/3 upgrades. Boosters 3×/90×/2,000×/5×/60×/400×. Extra Spin keeps frames+mult. Cap 20,000×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional Bonus/Grand/Legend/Fishy boosters.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Spin + Fish/Imposter",
+        "order": 2,
+        "what_happens": "Frames; Imposter transforms; Fish wins; ways.",
+        "ends_when": "Resolved",
+        "state_changes": "Global Fish mult"
+      },
+      {
+        "name": "Bonus / Extra",
+        "order": 3,
+        "what_happens": "3/4/5 Bonus → FS; else Extra Spin.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways + Fish frame collects with global mult.",
+    "notes": "CMS."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Dark Water Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "8 (+1 per extra Bonus)",
+        "retrigger": "Bonus +1 (or +2 if Upgraded Bonus).",
+        "sticky_or_persistent_state": "Global Fish mult from base kept then halved each spin (min ×1); 1 of 3 upgrades.",
+        "progressive_state": "Halving Fish mult.",
+        "end_condition": "Spins done or 20,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 spins; 1 upgrade; carry Fish mult."
+          }
+        ],
+        "effects": "8 FS; 1 upgrade; decaying Fish mult."
+      },
+      {
+        "name": "Deep Water Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "10",
+        "retrigger": "Bonus extras.",
+        "sticky_or_persistent_state": "2 upgrades.",
+        "progressive_state": "Halving Fish mult.",
+        "end_condition": "Spins done or 20,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; 2 upgrades."
+          }
+        ],
+        "effects": "10 FS; 2 upgrades."
+      },
+      {
+        "name": "Overcharged Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "12",
+        "retrigger": "Bonus extras.",
+        "sticky_or_persistent_state": "All 3 upgrades.",
+        "progressive_state": "Halving Fish mult.",
+        "end_condition": "Spins done or 20,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12 spins; all upgrades."
+          }
+        ],
+        "effects": "12 FS; all upgrades."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3.0,
+      "cost_text": "3× bet",
+      "effects": "Bonus reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Grand Catch",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 90.0,
+      "cost_text": "90× bet",
+      "effects": "≥1 Imposter; Fish only 10/20/100×.",
+      "params": {}
+    },
+    {
+      "name": "Legend Catch",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2000.0,
+      "cost_text": "2,000× bet",
+      "effects": "≥2 Imposters; Fish only 100×.",
+      "params": {}
+    },
+    {
+      "name": "Fishy/Fishier/Fishiest",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_text": "5×/60×/400×",
+      "effects": "Global Fish mult start ×8/×128/×1024.",
+      "params": {}
+    },
+    {
+      "name": "Max Win",
+      "trigger": "Cap",
+      "effects": "20,000×.",
+      "params": {
+        "max_win_multiplier": 20000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 3.0,
+        "cost_text": "3× bet",
+        "effects": "Bonus reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Grand Catch",
+        "cost_multiplier": 90.0,
+        "cost_text": "90× bet",
+        "effects": "≥1 Imposter; high Fish only.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Legend Catch",
+        "cost_multiplier": 2000.0,
+        "cost_text": "2,000× bet",
+        "effects": "≥2 Imposters; 100× Fish only.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fishy Spins 8x",
+        "cost_multiplier": 5.0,
+        "cost_text": "5× bet",
+        "effects": "Global Fish ×8.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fishier Spins 128x",
+        "cost_multiplier": 60.0,
+        "cost_text": "60× bet",
+        "effects": "Global Fish ×128.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fishiest Spins 1024x",
+        "cost_multiplier": 400.0,
+        "cost_text": "400× bet",
+        "effects": "Global Fish ×1024.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Extra Spin",
+        "cost_multiplier": null,
+        "cost_text": "From frames + Fish mult",
+        "effects": "Keep frames/mult; new frames only via Karen/Granny.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "20,000×",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96.03% from page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/catfish-hunters",
+      "local_path": "sources/nolimit/catfish-hunters/cms_features.txt",
+      "extracted_at": "2026-09-27T18:56:27Z",
+      "quote_or_excerpt": "Dark Water 8 / Deep 10 / Overcharged 12; Fish frames; max 20000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/catfish-hunters",
+      "local_path": "sources/nolimit/catfish-hunters/page.html",
+      "extracted_at": "2026-09-27T18:56:27Z",
+      "quote_or_excerpt": "96.03% RTP, 20000 xBet MAX; 3-3-3-3-3."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-catfish-hunters.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

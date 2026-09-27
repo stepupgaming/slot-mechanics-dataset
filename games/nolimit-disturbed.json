@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:58:03Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Disturbed",
+    "slug": "nolimit-disturbed",
+    "provider_game_id": "Disturbed",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Disturbed",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/disturbed"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": 2,
+    "rows_max": 4,
+    "layout_notes": "Official 4-2-4-2-4 with 4 Enhancer Cells on top/bottom of reels 2 and 4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays/xSplit; stacked reel-3 characters → Wild."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Disturber enhancer: each Disturber activates a respin; lit features re-trigger; xWays/Wild/split positions do not reset."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Enhancer Cells",
+        "how_it_works": "Up to 4 lit per spin: xWays, xSplit (Mr. Split Wild on reel 3), Wild, Disturber respin, Gravestones (4 may → Angel of Death)."
+      },
+      {
+        "name": "Mrs. Nudge",
+        "how_it_works": "Reel 3 only; nudges fully; +1 win mult per step."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Mr. Split / stacked reel-3",
+        "behavior": "Enhancer Wild; Mr. Split from xSplit cell; full stack on reel 3 → Wild.",
+        "params": {}
+      },
+      {
+        "name": "Mrs. Nudge (xNudge)",
+        "behavior": "Reel 3; nudge +1 mult/step.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3/4/5 → Pre-Op 12/15/20. All Enhancer Cells lit + 3/4/5 → Annihilation 12/15/20. Executioner Scatter (reel 3 in Pre-Op) upgrades to Annihilation +3.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Mrs. Nudge mult",
+        "behavior": "+1 per nudge step.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Gravestones / Dr. Death / Angel of Death",
+        "behavior": "4 lit gravestones + stacked Dr. Death reel 3 → Angel of Death → Six Feet Under max.",
+        "params": {}
+      },
+      {
+        "name": "xGOD",
+        "behavior": "Can award max win instantly.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways on 4-2-4-2-4 with Enhancer Cells (xWays/xSplit/Wild/Disturber/Gravestones), Mrs. Nudge. Ramp Access xBet +100%. 3–5 Scatter → Pre-Op 12/15/20 (1 cell always lit); all cells lit → Annihilation 12/15/20. Angel of Death → Six Feet Under 54,391×. Buys 55–500×.",
+    "phases": [
+      {
+        "name": "Configure Ramp Access",
+        "order": 1,
+        "what_happens": "Optional +100%: top-left cell lit + Scatter reel 1.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×2"
+      },
+      {
+        "name": "Spin + enhancers",
+        "order": 2,
+        "what_happens": "Light cells; Disturber respins; Mrs. Nudge; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": "Features sticky across Disturber"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3–5 Scatter (±all cells) → Pre-Op/Annihilation; Angel path to max.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after splits/ways/nudge.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Pre-Op Spins",
+        "trigger": "3/4/5 Scatter.",
+        "spins_awarded": "12 / 15 / 20",
+        "retrigger": "Disturber → +1 spin; Executioner Scatter → Annihilation +3.",
+        "sticky_or_persistent_state": "1 Enhancer Cell always lit.",
+        "progressive_state": null,
+        "end_condition": "Spins done / upgrade / Six Feet Under 54,391×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12/15/20 spins; 1 cell always lit."
+          }
+        ],
+        "effects": "12/15/20 FS; upgradeable via Executioner."
+      },
+      {
+        "name": "Annihilation Spins",
+        "trigger": "3/4/5 Scatter with all Enhancer Cells lit (or Executioner upgrade).",
+        "spins_awarded": "12 / 15 / 20 (+3 if upgraded mid Pre-Op)",
+        "retrigger": "Disturber extras.",
+        "sticky_or_persistent_state": "All Enhancer Cells lit.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 54,391×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12/15/20 spins; all cells lit."
+          }
+        ],
+        "effects": "12/15/20 FS; all enhancers lit."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Ramp Access xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "+100% bet",
+      "effects": "Top-left Enhancer lit + Scatter reel 1.",
+      "params": {}
+    },
+    {
+      "name": "Angel of Death",
+      "trigger": "4 lit gravestones + stacked Dr. Death reel 3",
+      "when": "during_spin",
+      "effects": "Leads to Six Feet Under max win.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "55×–500× bet",
+      "effects": "Buy Pre-Op / Annihilation variants.",
+      "params": {}
+    },
+    {
+      "name": "Six Feet Under",
+      "trigger": "Cap",
+      "effects": "Max 54,391×.",
+      "params": {
+        "max_win_multiplier": 54391
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "55×–500× bet",
+        "effects": "Buy into Pre-Op / Annihilation.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact line prices inside band not printed."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 2.0,
+    "effects": "Ramp Access +100%: top-left Enhancer lit + Scatter reel 1.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 54391.0,
+    "max_win_notes": "Six Feet Under 54,391× (sheet ~1 in 10M at 96.10%)",
+    "rtp_percent": 96.1,
+    "rtp_notes": "96.10%; Pre-Op RTP share 26.43%, Annihilation 1.18% (sheet).",
+    "hit_frequency_notes": "FS 1 in 398; win 100× 1 in 1298 (sheet)."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/disturbed",
+      "local_path": "sources/nolimit/disturbed/cms_features.txt",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "Pre-Op/Annihilation 12/15/20; Ramp Access +100%; max 54391×."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Disturbed_090523_3caf41f998.pdf",
+      "local_path": "sources/nolimit/disturbed/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "Sheet: 4-2-4-2-4; RTP 96.10%; Annihilation all cells lit."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/disturbed",
+      "local_path": "sources/nolimit/disturbed/page.html",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "96.1% RTP, 54391 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact buy line-item costs",
+    "exact ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-disturbed.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

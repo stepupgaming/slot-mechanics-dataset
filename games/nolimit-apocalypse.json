@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:58:03Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Apocalypse Super xNudge®",
+    "slug": "nolimit-apocalypse",
+    "provider_game_id": "Apocalypse",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Apocalypse",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/apocalypse"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Official 4-4-4-4-4-4. Feasting adds enhanced character rows top/bottom."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Base ways with xNudge; bonus is hold-and-win Hoarding then Feasting collect."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Feasting activates enhanced top/bottom character rows."
+    },
+    "other": [
+      {
+        "name": "xNudge / Super xNudge",
+        "how_it_works": "xNudge Wild reels 2–5: nudge down +1 mult/step (bottom = regular Wild). Super xNudge reels 3–4 same row both: drop+expand full reel; mults add; max Super mult ×8."
+      },
+      {
+        "name": "Hoarding → Feasting",
+        "how_it_works": "Bonus: start 3 spins reset on value symbols; fill columns → Feasting spins (5 Carnage / 10 Doomsday); characters Creator/Triplet/Cutter/Licker/Crawer; persistent chars walk right."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "Reels 2–5; nudge down +1/step.",
+        "params": {}
+      },
+      {
+        "name": "Super xNudge Wild",
+        "behavior": "Reels 3–4 paired same row; drop+expand; mult cap ×8.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3→Carnage; 4→Doomsday; 5→Cataclysm (Doomsday + persistent-only Feasting chars).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xNudge / value symbols",
+        "behavior": "Nudge mults; Hoarding values ×1–×40 × bet.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Value symbols / Feasting characters",
+        "behavior": "Hoarding hold values; Feasting Creator/Triplet/Cutter/Licker/Crawer.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways on 4×6 with xNudge and Super xNudge. xBet 1.5× (>3× Carnage/Doomsday). Super xNudge Feature Spin 50×. 3/4/5 Scatter → Carnage/Doomsday/Cataclysm (Hoarding then Feasting). Buys 80–2,000×. Cap 20,000×.",
+    "phases": [
+      {
+        "name": "Configure xBet/buys",
+        "order": 1,
+        "what_happens": "Optional xBet 1.5× or Super Feature Spin 50×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Spin + nudge",
+        "order": 2,
+        "what_happens": "xNudge/Super resolve; evaluate ways.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3/4/5 Scatter → Hoarding→Feasting modes.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways with Wild mults; bonus via value collect.",
+    "notes": "CMS; page slug apocalypse."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Carnage Spins",
+        "trigger": "3 Scatters.",
+        "spins_awarded": "Hoarding starts at 3 (reset on value); then Feasting 5 spins.",
+        "retrigger": "Value land resets Hoarding to 3; full column +1 Feasting spin.",
+        "sticky_or_persistent_state": "Trigger Scatters → random values; persistent characters may walk.",
+        "progressive_state": "Fill grid → Feasting.",
+        "end_condition": "Feasting done or Total Recall 20,000×.",
+        "phases": [
+          {
+            "name": "Hoarding",
+            "order": 1,
+            "what_happens": "Collect values; 3-spin reset."
+          },
+          {
+            "name": "Feasting",
+            "order": 2,
+            "what_happens": "5 spins; character enhancers."
+          }
+        ],
+        "effects": "Hoarding + 5 Feasting."
+      },
+      {
+        "name": "Doomsday Spins",
+        "trigger": "4 Scatters.",
+        "spins_awarded": "Hoarding then Feasting 10.",
+        "retrigger": "Same Hoarding rules.",
+        "sticky_or_persistent_state": "Same + longer Feasting.",
+        "progressive_state": "Fill → Feasting.",
+        "end_condition": "Feasting done or 20,000×.",
+        "phases": [
+          {
+            "name": "Hoarding",
+            "order": 1,
+            "what_happens": "Collect values."
+          },
+          {
+            "name": "Feasting",
+            "order": 2,
+            "what_happens": "10 spins."
+          }
+        ],
+        "effects": "Hoarding + 10 Feasting."
+      },
+      {
+        "name": "Cataclysm Spins",
+        "trigger": "5 Scatters.",
+        "spins_awarded": "Doomsday framework; Feasting only persistent characters.",
+        "retrigger": "Same.",
+        "sticky_or_persistent_state": "Persistent-only Feasting chars.",
+        "progressive_state": "Fill → Feasting.",
+        "end_condition": "Done or 20,000×.",
+        "phases": [
+          {
+            "name": "Cataclysm",
+            "order": 1,
+            "what_happens": "Doomsday + persistent-only Feasting."
+          }
+        ],
+        "effects": "Top mode; persistent characters only in Feasting."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "1.5× bet",
+      "effects": ">3× Carnage/Doomsday chance.",
+      "params": {}
+    },
+    {
+      "name": "Super xNudge Feature Spin",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 50.0,
+      "cost_text": "50× bet",
+      "effects": "1 spin with 2 Super xNudge same row; can reach Total Recall.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "80×–2,000× bet",
+      "effects": "Buy Carnage/Doomsday/Cataclysm variants.",
+      "params": {}
+    },
+    {
+      "name": "Total Recall",
+      "trigger": "Cap",
+      "effects": "Max 20,000×.",
+      "params": {
+        "max_win_multiplier": 20000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super xNudge Feature Spin",
+        "cost_multiplier": 50.0,
+        "cost_text": "50× bet",
+        "effects": "Guaranteed paired Super xNudge.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "80×–2,000× bet",
+        "effects": "Buy into Carnage/Doomsday/Cataclysm.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact FS buy line prices inside band not printed."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.5,
+    "effects": "xBet 1.5×: more than 3× likely Carnage/Doomsday.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "Total Recall 20,000×",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96.03% from page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/apocalypse",
+      "local_path": "sources/nolimit/apocalypse/cms_features.txt",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "Carnage/Doomsday/Cataclysm Hoarding+Feasting; Super xNudge 50×; max 20000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/apocalypse",
+      "local_path": "sources/nolimit/apocalypse/page.html",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "96.03% RTP, 20000 xBet MAX; 4-4-4-4-4-4."
+    }
+  ],
+  "unknowns": [
+    "exact Nolimit Bonus line-item costs",
+    "exact base ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-apocalypse.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

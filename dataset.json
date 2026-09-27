@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T18:54:59Z",
-  "game_count": 681,
-  "thumbnail_count": 681,
+  "updated_at": "2026-09-27T18:58:26Z",
+  "game_count": 691,
+  "thumbnail_count": 691,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
     "Elk Studios": 94,
     "Slotmill": 61,
-    "Nolimit City": 38,
+    "Nolimit City": 48,
     "Backseat Gaming": 35
   },
   "by_confidence": {
-    "high": 550,
+    "high": 560,
     "low": 28,
     "medium": 103
   },
@@ -30,7 +30,7 @@
       "medium": 1
     },
     "Nolimit City": {
-      "high": 38
+      "high": 48
     },
     "Pragmatic Play": {
       "high": 156,
@@ -4359,6 +4359,32 @@
       "thumbnail": "thumbs/hacksaw-zeus-ze-zecond.webp"
     },
     {
+      "slug": "nolimit-apocalypse",
+      "title": "Apocalypse Super xNudge®",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-apocalypse.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-apocalypse.webp"
+    },
+    {
+      "slug": "nolimit-bangkok-hilton",
+      "title": "Bangkok Hilton",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-bangkok-hilton.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-bangkok-hilton.webp"
+    },
+    {
       "slug": "nolimit-blood-and-shadow-2",
       "title": "Blood & Shadow 2",
       "provider": "Nolimit City",
@@ -4370,6 +4396,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-blood-and-shadow-2.webp"
+    },
+    {
+      "slug": "nolimit-blood-diamond",
+      "title": "Blood Diamond",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-blood-diamond.json",
+      "win_system_type": "ways",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-blood-diamond.webp"
     },
     {
       "slug": "nolimit-blood-shadow",
@@ -4422,6 +4461,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-bushido-ways.webp"
+    },
+    {
+      "slug": "nolimit-catfish-hunters",
+      "title": "Catfish Hunters",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-catfish-hunters.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-catfish-hunters.webp"
     },
     {
       "slug": "nolimit-das-xboot-2wei",
@@ -4489,6 +4541,19 @@
       "thumbnail": "thumbs/nolimit-ding-dong-death.webp"
     },
     {
+      "slug": "nolimit-disturbed",
+      "title": "Disturbed",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-disturbed.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-disturbed.webp"
+    },
+    {
       "slug": "nolimit-duck-hunters-2",
       "title": "Duck Hunters 2",
       "provider": "Nolimit City",
@@ -4500,6 +4565,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-duck-hunters-2.webp"
+    },
+    {
+      "slug": "nolimit-duck-hunters-happy-hour",
+      "title": "Duck Hunters: Happy Hour",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-duck-hunters-happy-hour.json",
+      "win_system_type": "pay_anywhere",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-duck-hunters-happy-hour.webp"
     },
     {
       "slug": "nolimit-duck-hunters",
@@ -4580,6 +4658,32 @@
       "thumbnail": "thumbs/nolimit-fire-in-the-hole.webp"
     },
     {
+      "slug": "nolimit-folsom-prison",
+      "title": "Folsom Prison",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-folsom-prison.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-folsom-prison.webp"
+    },
+    {
+      "slug": "nolimit-gator-hunters",
+      "title": "Gator Hunters",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-gator-hunters.json",
+      "win_system_type": "pay_anywhere",
+      "grid": "5×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-gator-hunters.webp"
+    },
+    {
       "slug": "nolimit-home-of-the-brave",
       "title": "Home of the Brave",
       "provider": "Nolimit City",
@@ -4643,6 +4747,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-land-of-the-free.webp"
+    },
+    {
+      "slug": "nolimit-legion-x",
+      "title": "Legion X",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-legion-x.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-legion-x.webp"
     },
     {
       "slug": "nolimit-mental-2",
@@ -4825,6 +4942,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-true-grit-redemption.webp"
+    },
+    {
+      "slug": "nolimit-ugliest-catch",
+      "title": "Ugliest Catch",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-ugliest-catch.json",
+      "win_system_type": "ways",
+      "grid": "5×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-ugliest-catch.webp"
     },
     {
       "slug": "nolimit-xways-hoarder-2",

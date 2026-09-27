@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:58:03Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Ugliest Catch",
+    "slug": "nolimit-ugliest-catch",
+    "provider_game_id": "UgliestCatch",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/UgliestCatch",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/ugliest-catch"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "5×5 with locked positions; Scatter opens locked positions on its reel. Enhancer Cells top/bottom each reel."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways on opened positions only; xWays 2–4 on locked/enhancer positions."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Scatter opens locked positions on its reel; FS open 6/8/10 enhancer cells."
+    },
+    "other": [
+      {
+        "name": "Kill N' Grill Wild Fishing",
+        "how_it_works": "Base: golden Fisherman Wild in opened enhancer → feature. FS: any Fisherman Wild on open position. Collect Fish Trophy mults × bet (+ Troll level in FS)."
+      },
+      {
+        "name": "Troll Level",
+        "how_it_works": "FS only 2×/3×/10×; every 4th Fisherman Wild collected raises level and +2 spins; multiplies Fish Trophy values."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Fisherman Wild",
+        "behavior": "Triggers Kill N' Grill; advances Troll in FS.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "Opens reel locks. 3→8 Lunker (6 enhancers); 4→9 Hawg (8); 5→10 Honey Hole (10). Extra Scatter in Lunker/Hawg → +2 enhancers +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Fish Trophy / Big Berta / Troll",
+        "behavior": "Trophy 2–5000×; Berta 100–5000×; Troll 2/3/10× in FS.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays / Big Berta",
+        "behavior": "Enhancer reveals; xWays only on locked positions.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways on 5×5 locked grid; Scatter unlocks; Enhancers reveal Wild/Berta/xWays. Boosted xBet +75% Scatter reel 2. Kill N' Grill on golden Fisherman. 3/4/5 Scatter → Lunker 8 / Hawg 9 / Honey Hole 10. Buys 94/300/866/390×. Cap 50,000×.",
+    "phases": [
+      {
+        "name": "Configure Boosted xBet",
+        "order": 1,
+        "what_happens": "Optional +75%: Scatter reel 2.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.75"
+      },
+      {
+        "name": "Spin + unlocks / fishing",
+        "order": 2,
+        "what_happens": "Open locks; enhancers; optional Kill N' Grill.",
+        "ends_when": "Resolved",
+        "state_changes": "Positions open"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3/4/5 Scatter → FS modes.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways on open positions + Kill N' Grill collect.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Lunker Spins",
+        "trigger": "3 Scatters.",
+        "spins_awarded": "8",
+        "retrigger": "Extra Scatter → +2 enhancers +1 spin; Troll every 4th Fisherman +2.",
+        "sticky_or_persistent_state": "6 opened enhancer cells; Troll levels.",
+        "progressive_state": "Troll 2×/3×/10×.",
+        "end_condition": "Spins done or Kiss My GO-TO-HELL 50,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 spins; 6 enhancers open."
+          }
+        ],
+        "effects": "8 FS; 6 enhancers; Troll."
+      },
+      {
+        "name": "Hawg Spins",
+        "trigger": "4 Scatters.",
+        "spins_awarded": "9",
+        "retrigger": "Extra Scatter +2 enhancers +1; Troll +2.",
+        "sticky_or_persistent_state": "8 opened enhancers.",
+        "progressive_state": "Troll levels.",
+        "end_condition": "Spins done or 50,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "9 spins; 8 enhancers."
+          }
+        ],
+        "effects": "9 FS; 8 enhancers."
+      },
+      {
+        "name": "Honey Hole Spins",
+        "trigger": "5 Scatters.",
+        "spins_awarded": "10",
+        "retrigger": "Troll +2.",
+        "sticky_or_persistent_state": "10 opened enhancers.",
+        "progressive_state": "Troll levels.",
+        "end_condition": "Spins done or 50,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; 10 enhancers."
+          }
+        ],
+        "effects": "10 FS; 10 enhancers."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Boosted xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.75,
+      "cost_text": "+75% bet",
+      "effects": "Scatter reel 2 (not in bonus).",
+      "params": {}
+    },
+    {
+      "name": "Kill N' Grill Wild Fishing",
+      "trigger": "Fisherman Wild",
+      "when": "during_spin",
+      "effects": "Collect Fish Trophy/Berta values × bet (× Troll in FS).",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "94× / 300× / 866× / 390×",
+      "effects": "Lunker / Hawg / Honey Hole / Lucky Draw.",
+      "params": {}
+    },
+    {
+      "name": "Kiss My GO-TO-HELL",
+      "trigger": "Cap",
+      "effects": "Max 50,000×.",
+      "params": {
+        "max_win_multiplier": 50000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "8 Lunker Spins",
+        "cost_multiplier": 94.0,
+        "cost_text": "94× bet (max €100)",
+        "effects": "Buy Lunker.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "9 Hawg Spins",
+        "cost_multiplier": 300.0,
+        "cost_text": "300× bet (max €100)",
+        "effects": "Buy Hawg.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "10 Honey Hole Spins",
+        "cost_multiplier": 866.0,
+        "cost_text": "866× bet (max €100)",
+        "effects": "Buy Honey Hole.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Lucky Draw",
+        "cost_multiplier": 390.0,
+        "cost_text": "390× bet (max €100)",
+        "effects": "Random bonus draw.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "CMS also mentions 100–500× band inconsistently with itemized prices."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.75,
+    "effects": "Boosted xBet +75%: Scatter on reel 2.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 50000.0,
+    "max_win_notes": "Kiss My GO-TO-HELL 50,000×",
+    "rtp_percent": 96.11,
+    "rtp_notes": "96.11% from page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/ugliest-catch",
+      "local_path": "sources/nolimit/ugliest-catch/cms_features.txt",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "Lunker 8 / Hawg 9 / Honey Hole 10; Kill N' Grill; buys 94/300/866/390×; max 50000×."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Ugliest_Catch_pd_2b5d658dce.pdf",
+      "local_path": "sources/nolimit/ugliest-catch/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "Official sheet present."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/ugliest-catch",
+      "local_path": "sources/nolimit/ugliest-catch/page.html",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "96.11% RTP, 50000 xBet MAX; 5-5."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count",
+    "Lucky Draw outcome table"
+  ],
+  "thumbnail": "thumbs/nolimit-ugliest-catch.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

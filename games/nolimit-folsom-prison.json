@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:58:03Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Folsom Prison",
+    "slug": "nolimit-folsom-prison",
+    "provider_game_id": "FolsomPrison",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/FolsomPrison",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/folsom-prison"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": 2,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 2-4 (sheet/page). Locked cells; Scatters/Cockroach open positions. Middle two rows key for Scatters/xSplit."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays/xSplit; Hit frequency 22.62% (sheet)."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "2 Scatters unlock middle two rows on reel 5; Cockroach Nest opens locked cells on middle 3 reels."
+    },
+    "other": [
+      {
+        "name": "xSplit / xWays",
+        "how_it_works": "xSplit on central 2 rows reels 2–5 doubles ways; xWays anywhere reveals paying symbol + ways. 2 Scatters alone convert to xWays/xSplit/Wild/Cockroach Nest."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Any reel except 1; substitutes paying symbols.",
+        "params": {}
+      },
+      {
+        "name": "Cockroach Nest",
+        "behavior": "Opens locked cells; can come from Scatter convert.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "Middle two rows reels 2–5 base; reel 5 in Walk The Line. 2 unlock reel 5 middle rows (or convert). 3→8+ Walk The Line; 4→8+ The Chair. xSplit on Scatter → +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays / xSplit",
+        "behavior": "Expand/split ways.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways on locked/expanding Folsom grid with xWays/xSplit/Cockroach. Toast Bet +20% guarantees Scatter reel 2. 3 Scatter → 8+ Walk The Line; 4 → 8+ The Chair. Buys 68–1,500×. Cap 75,000×.",
+    "phases": [
+      {
+        "name": "Configure Toast Bet",
+        "order": 1,
+        "what_happens": "Optional +20%: Scatter reel 2.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.2"
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "Unlocks/converts; xWays/xSplit; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": "Cells open"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3/4 Scatter → Walk The Line / The Chair.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after unlocks/splits.",
+    "notes": "CMS + GameSheet; bonus internals beyond 8+ spins / +1 from split Scatters sparsely detailed."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Walk The Line Spins",
+        "trigger": "3 Scatters.",
+        "spins_awarded": "8+ (xSplit Scatters +1 each)",
+        "retrigger": "xSplit-affected Scatters +1.",
+        "sticky_or_persistent_state": "Scatter on reel 5 during bonus.",
+        "progressive_state": null,
+        "end_condition": "Spins done or Meet your maker 75,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 8+ Walk The Line spins."
+          }
+        ],
+        "effects": "8+ FS; split Scatters add spins."
+      },
+      {
+        "name": "The Chair Spins",
+        "trigger": "4 Scatters.",
+        "spins_awarded": "8+ (xSplit Scatters +1)",
+        "retrigger": "xSplit-affected Scatters +1.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or 75,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 8+ The Chair spins."
+          }
+        ],
+        "effects": "8+ FS top scatter tier."
+      }
+    ],
+    "notes": "Sheet confirms 8+ spin awards; deeper Chair/Walk feature deltas not fully printed on CMS."
+  },
+  "features": [
+    {
+      "name": "Toast Bet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.2,
+      "cost_text": "+20% bet",
+      "effects": "Scatter guaranteed reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "68×–1,500× bet",
+      "effects": "Buy Walk The Line / The Chair variants.",
+      "params": {}
+    },
+    {
+      "name": "Meet your maker",
+      "trigger": "Cap",
+      "effects": "Max 75,000×.",
+      "params": {
+        "max_win_multiplier": 75000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "68×–1,500× bet",
+        "effects": "Buy into Walk The Line / The Chair.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact line prices inside band not printed."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.2,
+    "effects": "Toast Bet +20%: Scatter on reel 2.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 75000.0,
+    "max_win_notes": "Meet your maker 75,000×",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07% page; sheet main RTP 60.84% base share.",
+    "hit_frequency_notes": "Hit freq 22.62%; FS 1 in 195; win 100× 1 in 860 (sheet)."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/folsom-prison",
+      "local_path": "sources/nolimit/folsom-prison/cms_features.txt",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "Walk The Line / The Chair 8+; Toast Bet +20%; buys 68-1500×; max 75000×."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Folsom_Prison_5983536001.pdf",
+      "local_path": "sources/nolimit/folsom-prison/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "Sheet: hit freq 22.62%; FS 1/195."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/folsom-prison",
+      "local_path": "sources/nolimit/folsom-prison/page.html",
+      "extracted_at": "2026-09-27T18:58:03Z",
+      "quote_or_excerpt": "96.07% RTP, 75000 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact Walk The Line vs The Chair mechanical deltas",
+    "exact buy line-item costs",
+    "exact ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-folsom-prison.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Legion X",
+    "slug": "nolimit-legion-x",
+    "provider_game_id": "LegionX",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/LegionX",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/legion-x"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 4,
+    "layout_notes": "Official 3×5; FS add extra row on first and last reels."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways expanded by xWays 2–4 on reels 1 and 5."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Legion X Spins: first and last reel gain an extra row."
+    },
+    "other": [
+      {
+        "name": "Infectious Wild",
+        "how_it_works": "Reels 1&5 only. One: random low on middle → Wild. Two: all lows on middle → Wild."
+      },
+      {
+        "name": "xWays + Infectious Wild",
+        "how_it_works": "Both on 1/5: middle reels become Infectious xWays and Wilds."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "Nudges fully; +1 mult/step; several add.",
+        "params": {}
+      },
+      {
+        "name": "Infectious Wild",
+        "behavior": "Reels 1/5; converts middle lows to Wilds.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 on middle reels → 8 Legion X Spins. +2 xWays → 10 Equestris; +2 Infectious Wild → 10 Fretensis; +1 each → 10 Gemina.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xNudge win multiplier",
+        "behavior": "Increases and remains throughout FS.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays",
+        "behavior": "Reels 1/5; reveal 2–4 same (not Wild/Bonus).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways on 3×5 with xNudge, Infectious Wild, xWays on ends. 3 Bonus middle → 8 Legion X Spins (+row on ends, persistent nudge mult). Variants with xWays/Infectious Wild pairs → 10-spin Equestris/Fretensis/Gemina. Buys 70–1,200×. Cap 31,000×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "xWays/Infectious/Nudge resolve; evaluate ways.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus check",
+        "order": 2,
+        "what_happens": "3 Bonus (±xWays/Infectious) → Legion modes.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways with Wild mults.",
+    "notes": "CMS + GameSheet PDF."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Legion X Spins",
+        "trigger": "3 Bonus on middle reels.",
+        "spins_awarded": "8",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Extra row on reels 1&5; xNudge mult persists.",
+        "progressive_state": "Persistent nudge mult.",
+        "end_condition": "Spins done or No Strength only Honour 31,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 spins; expand ends; sticky nudge mult."
+          }
+        ],
+        "effects": "8 FS; expanded ends; persistent nudge mult."
+      },
+      {
+        "name": "Legion X Equestris Spins",
+        "trigger": "3 Bonus + 2 xWays.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Legion X features with xWays emphasis.",
+        "progressive_state": "Persistent nudge mult.",
+        "end_condition": "Spins done or 31,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins."
+          }
+        ],
+        "effects": "10 FS; xWays-enhanced trigger."
+      },
+      {
+        "name": "Legion X Fretensis Spins",
+        "trigger": "3 Bonus + 2 Infectious Wild.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Infectious Wild enhanced.",
+        "progressive_state": "Persistent nudge mult.",
+        "end_condition": "Spins done or 31,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins."
+          }
+        ],
+        "effects": "10 FS; Infectious-enhanced."
+      },
+      {
+        "name": "Legion X Gemina Spins",
+        "trigger": "3 Bonus + 1 Infectious Wild + 1 xWays.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Combined enhancements.",
+        "progressive_state": "Persistent nudge mult.",
+        "end_condition": "Spins done or 31,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins."
+          }
+        ],
+        "effects": "10 FS; combined trigger."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Infectious Wild / xWays",
+      "trigger": "Symbols on reels 1/5",
+      "when": "during_spin",
+      "effects": "Convert lows / expand ways.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "70×–1,200× bet",
+      "effects": "Buy into Legion bonus modes.",
+      "params": {}
+    },
+    {
+      "name": "No Strength only Honour",
+      "trigger": "Cap",
+      "effects": "Max 31,000×.",
+      "params": {
+        "max_win_multiplier": 31000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "70×–1,200× bet",
+        "effects": "Buy Legion X / Equestris / Fretensis / Gemina.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact line prices inside band not printed."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 31000.0,
+    "max_win_notes": "31,000×",
+    "rtp_percent": 96.04,
+    "rtp_notes": "96.04% from page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/legion-x",
+      "local_path": "sources/nolimit/legion-x/cms_features.txt",
+      "extracted_at": "2026-09-27T18:57:05Z",
+      "quote_or_excerpt": "Legion X 8 / Equestris/Fretensis/Gemina 10; buys 70-1200×; max 31000×."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Legion_X_78651_2579e915e2.pdf",
+      "local_path": "sources/nolimit/legion-x/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:57:05Z",
+      "quote_or_excerpt": "Official sheet confirms modes."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/legion-x",
+      "local_path": "sources/nolimit/legion-x/page.html",
+      "extracted_at": "2026-09-27T18:57:05Z",
+      "quote_or_excerpt": "96.04% RTP, 31000 xBet MAX; 3x5."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count",
+    "exact buy line-item costs"
+  ],
+  "thumbnail": "thumbs/nolimit-legion-x.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

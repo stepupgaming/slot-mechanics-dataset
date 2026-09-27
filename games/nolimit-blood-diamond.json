@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Blood Diamond",
+    "slug": "nolimit-blood-diamond",
+    "provider_game_id": "BloodDiamond",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/BloodDiamond",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/blood-diamond"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Official 4-4-4-4-4; stacked characters up to 4 high."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; stacked symbols count by height covered."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Chained Reels",
+        "how_it_works": "Random: 2+ reels linked so same symbols land adjacent on linked reels. FS guarantees ≥2 chained each spin."
+      },
+      {
+        "name": "xNudge Desire",
+        "how_it_works": "Random base: add 1–5 xNudge Wilds; if on Chained Reel, all chained get xNudge."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "Stacked; nudges fully; +1 mult/step; several add; acts as win mult.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus / Big Bonus",
+        "behavior": "3→5 Oppression (1 Big Bonus upgrade); 4→5 Domination (2 upgrades); 5→5 Enslavement (3 upgrades). Up to 3 Big Bonus per FS spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xNudge / Big Bonus mult",
+        "behavior": "Persistent throughout FS.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Stacked characters",
+        "behavior": "Up to 4 high; count by positions covered.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways on 4-4-4-4-4 with stacks, Chained Reels, xNudge Wild / Desire. 3/4/5 Bonus → Oppression/Domination/Enslavement (all 5 spins) with 1/2/3 Big Bonus upgrades. Boosters 3×/7×/35×/500×. Cap 14,780×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional xBet/Chained/xNudge/Desire.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "Optional chains/Desire; xNudge; evaluate ways.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3/4/5 Bonus → FS.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways with xNudge win mult.",
+    "notes": "CMS."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Oppression Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "5",
+        "retrigger": "Big Bonus upgrades (spins/mult/chains/Desire/Nudge/max win).",
+        "sticky_or_persistent_state": "≥2 reels chained each spin; xNudge/Big Bonus mults persistent; guaranteed Nudge from Big Bonus extras each spin.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or Coronation 14,780×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "5 spins; 1 Big Bonus upgrade at trigger."
+          }
+        ],
+        "effects": "5 FS; 1 upgrade; persistent chains/mults."
+      },
+      {
+        "name": "Domination Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "5",
+        "retrigger": "Big Bonus upgrades.",
+        "sticky_or_persistent_state": "Oppression + 2 Big Bonus upgrades at trigger.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or 14,780×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "5 spins; 2 upgrades."
+          }
+        ],
+        "effects": "5 FS; 2 upgrades."
+      },
+      {
+        "name": "Enslavement Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "5",
+        "retrigger": "Big Bonus upgrades.",
+        "sticky_or_persistent_state": "Oppression + 3 Big Bonus upgrades at trigger.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or 14,780×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "5 spins; 3 upgrades."
+          }
+        ],
+        "effects": "5 FS; 3 upgrades."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3.0,
+      "cost_text": "3× bet",
+      "effects": "Bonus on reel 1 or 2.",
+      "params": {}
+    },
+    {
+      "name": "Chained Reels xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 7.0,
+      "cost_text": "7× bet",
+      "effects": "Guaranteed Chained Reels.",
+      "params": {}
+    },
+    {
+      "name": "xNudge Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 35.0,
+      "cost_text": "35× bet",
+      "effects": "Guaranteed xNudge Wild.",
+      "params": {}
+    },
+    {
+      "name": "xNudge Desire",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 500.0,
+      "cost_text": "500× bet",
+      "effects": "Guaranteed Desire.",
+      "params": {}
+    },
+    {
+      "name": "The Coronation",
+      "trigger": "Cap",
+      "effects": "Max 14,780×.",
+      "params": {
+        "max_win_multiplier": 14780
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBet™",
+        "cost_multiplier": 3.0,
+        "cost_text": "3× bet",
+        "effects": "Bonus reel 1 or 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Chained Reels xBet™",
+        "cost_multiplier": 7.0,
+        "cost_text": "7× bet",
+        "effects": "Guaranteed chains.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xNudge®",
+        "cost_multiplier": 35.0,
+        "cost_text": "35× bet",
+        "effects": "Guaranteed xNudge Wild.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xNudge® Desire",
+        "cost_multiplier": 500.0,
+        "cost_text": "500× bet",
+        "effects": "Guaranteed Desire.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 3.0,
+    "effects": "xBet 3×: Bonus on reel 1 or 2.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 14780.0,
+    "max_win_notes": "The Coronation 14,780×",
+    "rtp_percent": 96.14,
+    "rtp_notes": "96.14% from page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/blood-diamond",
+      "local_path": "sources/nolimit/blood-diamond/cms_features.txt",
+      "extracted_at": "2026-09-27T18:57:05Z",
+      "quote_or_excerpt": "Oppression/Domination/Enslavement 5 spins; chains; Desire; max 14780×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/blood-diamond",
+      "local_path": "sources/nolimit/blood-diamond/page.html",
+      "extracted_at": "2026-09-27T18:57:05Z",
+      "quote_or_excerpt": "96.14% RTP, 14780 xBet MAX; 4-4-4-4-4."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count",
+    "exact Big Bonus upgrade spin/mult values"
+  ],
+  "thumbnail": "thumbs/nolimit-blood-diamond.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

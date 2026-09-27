@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:56:27Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Duck Hunters: Happy Hour",
+    "slug": "nolimit-duck-hunters-happy-hour",
+    "provider_game_id": "DuckHuntersHappyHour",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DuckHuntersHappyHour",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/duck-hunters-happy-hour"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": 6,
+    "layout_notes": "Official rowsReels 4-5-6-6-5-4."
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": null,
+    "notes": "Scatter Wins 8+; position mults to ×8192."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Wins remove; drop; position ×2 on remove; double on re-win."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Bomb",
+        "how_it_works": "3×3 adjacent clear; doubles mults on affected; reveals mid/Wild/Infectious Ways/Bomb. Bonus/Wild unaffected."
+      },
+      {
+        "name": "xWays / Infectious",
+        "how_it_works": "Transform + ×2/4/8 position mult; Infectious expands all same symbols."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Subs except Bonus.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3→7 Duck Hunt; 4→8 Hawk Eye; 5→10 Big Game. +1 Shot → +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Position multipliers",
+        "behavior": "Cap ×8192; persist in FS.",
+        "params": {
+          "cap": 8192
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Bomb",
+        "behavior": "3×3 explode + reveal.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Pay-anywhere 8+ on 4-5-6-6-5-4 with position mults, xWays/Infectious, Bombs. Bonus Booster 2×; Day 8/64; Happy Hour 3,000× (×8 + middle reels full Bombs). 3/4/5 Bonus → Duck Hunt/Hawk Eye/Big Game. Extra Spin. Cap 33,333×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional Bonus Booster / Day / Happy Hour.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Cascade",
+        "order": 2,
+        "what_happens": "8+ pays; Ways; Bombs.",
+        "ends_when": "Dead",
+        "state_changes": "Position mults"
+      },
+      {
+        "name": "Bonus / Extra",
+        "order": 3,
+        "what_happens": "3/4/5 Bonus → FS; else Extra Spin.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Pay-anywhere with position mults.",
+    "notes": "CMS."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Duck Hunt Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "7",
+        "retrigger": "+1/+2 Shots.",
+        "sticky_or_persistent_state": "Position mults; 1 of 3 upgrades.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or Too Drunk To Miss 33,333×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 spins; 1 upgrade."
+          }
+        ],
+        "effects": "7 FS; 1 upgrade."
+      },
+      {
+        "name": "Hawk Eye Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "8",
+        "retrigger": "+1/+2 Shots.",
+        "sticky_or_persistent_state": "2 upgrades.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or 33,333×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 spins; 2 upgrades."
+          }
+        ],
+        "effects": "8 FS; 2 upgrades."
+      },
+      {
+        "name": "Big Game Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "10",
+        "retrigger": "+1/+2 Shots.",
+        "sticky_or_persistent_state": "All 3 upgrades.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or 33,333×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; all upgrades."
+          }
+        ],
+        "effects": "10 FS; all upgrades."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2× bet",
+      "effects": "5× FS chance; Bonus reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Day 8 / Day 64",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_text": "10× / 90×",
+      "effects": "All positions ×8 / ×64.",
+      "params": {}
+    },
+    {
+      "name": "Happy Hour Spins",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3000.0,
+      "cost_text": "3,000× bet",
+      "effects": "Positions ×8; middle two reels full Bombs on initial drop.",
+      "params": {}
+    },
+    {
+      "name": "Too Drunk To Miss",
+      "trigger": "Cap",
+      "effects": "Max 33,333×.",
+      "params": {
+        "max_win_multiplier": 33333
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 2.0,
+        "cost_text": "2× bet",
+        "effects": "Bonus reel 2; 5× FS.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Day 8 Spins",
+        "cost_multiplier": 10.0,
+        "cost_text": "10× bet",
+        "effects": "Positions ×8.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Day 64 Spins",
+        "cost_multiplier": 90.0,
+        "cost_text": "90× bet",
+        "effects": "Positions ×64.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Happy Hour Spins",
+        "cost_multiplier": 3000.0,
+        "cost_text": "3,000× bet",
+        "effects": "×8 + bomb-filled middle reels.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Extra Spin",
+        "cost_multiplier": null,
+        "cost_text": "From position mults",
+        "effects": "Keep mults if cost ≤ win.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Bonus Booster 2× is the FS ante-like option."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 33333.0,
+    "max_win_notes": "Too Drunk To Miss 33,333×",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07% from page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/duck-hunters-happy-hour",
+      "local_path": "sources/nolimit/duck-hunters-happy-hour/cms_features.txt",
+      "extracted_at": "2026-09-27T18:56:27Z",
+      "quote_or_excerpt": "Duck Hunt 7 / Hawk Eye 8 / Big Game 10; Happy Hour 3000×; max 33333×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/duck-hunters-happy-hour",
+      "local_path": "sources/nolimit/duck-hunters-happy-hour/page.html",
+      "extracted_at": "2026-09-27T18:56:27Z",
+      "quote_or_excerpt": "96.07% RTP, 33333 xBet MAX; 4-5-6-6-5-4."
+    }
+  ],
+  "unknowns": [],
+  "thumbnail": "thumbs/nolimit-duck-hunters-happy-hour.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
