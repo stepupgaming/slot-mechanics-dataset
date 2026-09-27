@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:01:58Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Possessed",
+    "slug": "nolimit-possessed",
+    "provider_game_id": "Possessed",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Possessed",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/possessed"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 6,
+    "layout_notes": "Official rowsReels 3-6-6-6-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with Infectious xWays on Cross layout."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "xActivation → respin; fills active area from xCrucifix reel; activates Cross positions stepwise; removes lowest pay from xCrucifix each time."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Cross Wild",
+        "how_it_works": "Wild only middle reel. Joint of Cross → whole Cross Wild ×2; other Cross positions → middle reel Wild with corresponding mult."
+      },
+      {
+        "name": "Infectious xWays®",
+        "how_it_works": "Reveal 2 same pays; infect matching symbols to same size. Regular xWays → 2–3 same pays."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Cross Wild",
+        "behavior": "Middle reel only; Cross joint or arms expand with mult.",
+        "params": {}
+      },
+      {
+        "name": "xNudge® Wild",
+        "behavior": "Present per CMS Wild section context.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3→9 Necromancy (3 Cross pos); 4→12 Atonement (4); 5→15 Beelzebub (all). Extra Scatter +1 spin and may upgrade tier.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Cross Wild mult",
+        "behavior": "×2 at joint; other positions give corresponding mult.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xActivation",
+        "behavior": "1/spin; respin + activate Cross positions; strip lowest from xCrucifix.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Cross grid 3-6-6-6-3; Infectious xWays; xActivation respins open Cross. 3/4/5 Scatter → 9/12/15 Necromancy/Atonement/Beelzebub with 3/4/all Cross positions. Cap 50,000×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "xWays/Infectious; Wild on middle; maybe xActivation respin chain.",
+        "ends_when": "Resolved",
+        "state_changes": "Cross positions / xCrucifix strip"
+      },
+      {
+        "name": "Bonus check",
+        "order": 2,
+        "what_happens": "3–5 Scatter → FS tier (+ upgrade on extra Scatter).",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after infectious expands and Cross wilds.",
+    "notes": "CMS; no buy prices printed."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Necromancy Spins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "9 (+1 and upgrade if 4th)",
+        "retrigger": "Extra Scatter +1 / upgrade.",
+        "sticky_or_persistent_state": "3 Cross positions active.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 50,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "9 spins; 3 Cross lit."
+          }
+        ],
+        "effects": "9 FS."
+      },
+      {
+        "name": "Atonement Spins",
+        "trigger": "4 Scatter (or upgrade).",
+        "spins_awarded": "12 (+1/upgrade if 5th)",
+        "retrigger": "Extra Scatter.",
+        "sticky_or_persistent_state": "4 Cross positions.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12 spins; 4 Cross lit."
+          }
+        ],
+        "effects": "12 FS."
+      },
+      {
+        "name": "Beelzebub Spins",
+        "trigger": "5 Scatter (or upgrade).",
+        "spins_awarded": "15 (+1 if extra)",
+        "retrigger": "+1 on extra Scatter.",
+        "sticky_or_persistent_state": "All Cross positions.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "15 spins; full Cross."
+          }
+        ],
+        "effects": "15 FS."
+      }
+    ],
+    "notes": "xActivation in bonus does not activate Cross positions."
+  },
+  "features": [
+    {
+      "name": "BLASPHEMOUS",
+      "trigger": "Cap",
+      "effects": "Max 50,000×.",
+      "params": {
+        "max_win_multiplier": 50000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy prices in CMS excerpt."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Generic xBet® mentioned without numeric cost."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 50000.0,
+    "max_win_notes": "50,000×",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "medium",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/possessed",
+      "local_path": "sources/nolimit/possessed/cms_features.txt",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "3-6-6-6-3 Cross; Infectious xWays; xActivation respins; 3/4/5 Scatter → 9/12/15 Necromancy/Atonement/Beelzebub; max 50,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/possessed",
+      "local_path": "sources/nolimit/possessed/page.html",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "96.06% RTP, 50000 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "xBet numeric cost",
+    "feature buy availability",
+    "ways_count",
+    "exact Cross position mult table"
+  ],
+  "thumbnail": "thumbs/nolimit-possessed.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

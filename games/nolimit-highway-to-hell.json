@@ -1,0 +1,268 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:00:52Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Highway to Hell",
+    "slug": "nolimit-highway-to-hell",
+    "provider_game_id": "HighwayToHell",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/HighwayToHell",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/highway-to-hell"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 4-4-4-4-4-4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays/xSplit; avalanches unlock Enhancer Cells L→R."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Winning combos explode; new symbols fall. Each win unlocks an Enhancer Cell L→R on bottom of middle 4 reels. Avasplit may +1 size on remaining symbols."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Enhancer Cells",
+        "how_it_works": "Locked under middle 4 reels; unlock L→R on wins; each reveals a symbol; removed → new on next avalanche."
+      },
+      {
+        "name": "Demon",
+        "how_it_works": "Removes random count of size-1 symbols then becomes paying symbol with mult = removed count (or 1× if none). Triggers after wins removed."
+      },
+      {
+        "name": "xNudge® Wild",
+        "how_it_works": "Nudges fully; +1 mult/nudge; absorbs nudged-over mults; will not nudge onto locked Enhancers; can inherit Hellevator mult."
+      },
+      {
+        "name": "Hellevator Booster",
+        "how_it_works": "Persists in bonus; reveals random symbol; immune to Demon; stored mult carries across round."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / xNudge® Wild",
+        "behavior": "Any reel; xNudge fills reel + mult.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter / Hellevator Booster",
+        "behavior": "3 Scatter or Hellevator in base → 8 Hell Spins. In bonus, 3 collected Scatters → +2 spins + another Hellevator.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Hellevator / xNudge / Demon mults",
+        "behavior": "Persist or per-spin as CMS.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Avasplit Effect",
+        "behavior": "After explode, some remaining symbols +1 size.",
+        "params": {}
+      },
+      {
+        "name": "Max Win symbol",
+        "behavior": "God Mode: land on Enhancer for max chase at 3,800×.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6×4 avalanche ways; unlock Enhancers; Demon/xNudge/xWays/xSplit. 3 Scatter/Hellevator → 8 Hell Spins with sticky Hellevator + scatter meter. xBet 2.4×, Bonus Hunt 15×, God Mode 3,800×. Extra Spin after Hell. Cap 20,066×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "xBet / Bonus Hunt / God Mode.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Avalanche loop",
+        "order": 2,
+        "what_happens": "Wins explode; unlock Enhancers; Avasplit; Demon; xNudge.",
+        "ends_when": "No more wins",
+        "state_changes": "Enhancers unlock L→R"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3 Scatter/Hellevator → Hell Spins; optional Extra Spin.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after splits/ways/size; avalanches.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Hell Spins",
+        "trigger": "3 Scatter or Hellevator Booster in base.",
+        "spins_awarded": "8",
+        "retrigger": "Collect 3 Scatters in bonus → +2 spins + Hellevator added.",
+        "sticky_or_persistent_state": "Hellevator persists; stored mult carries; Enhancer symbols reset each spin.",
+        "progressive_state": "Scatter meter; Hellevator mult store.",
+        "end_condition": "Spins done or 20,066×; optional Extra Spin keeps Hellevator mults if cost ≤ prior win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 Hell Spins; Hellevator sticky if landed."
+          }
+        ],
+        "effects": "8 FS; Hellevator + scatter meter."
+      }
+    ],
+    "notes": "xTra Extra Spin priced from Hellevator mults."
+  },
+  "features": [
+    {
+      "name": "xBet™",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2.4,
+      "cost_text": "2.4× bet",
+      "effects": "Guaranteed Bonus symbol reel 1.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Hunt",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 15.0,
+      "cost_text": "15× bet",
+      "effects": "Only blanks / Scatter / Hellevator.",
+      "params": {}
+    },
+    {
+      "name": "God Mode",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 3800.0,
+      "cost_text": "3,800× bet",
+      "effects": "Chase max via Max Win on Enhancer.",
+      "params": {}
+    },
+    {
+      "name": "Extra Spin (xTra)",
+      "trigger": "Offer after Hell Spins",
+      "when": "after_bonus",
+      "cost_text": "Based on Hellevator mults (≤ prior win)",
+      "effects": "One more spin keeping Hellevator mults.",
+      "params": {}
+    },
+    {
+      "name": "Licence and Registration Pls",
+      "trigger": "Cap",
+      "effects": "Max 20,066×.",
+      "params": {
+        "max_win_multiplier": 20066
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBet™",
+        "cost_multiplier": 2.4,
+        "cost_text": "2.4×",
+        "effects": "Bonus symbol reel 1.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": 15.0,
+        "cost_text": "15×",
+        "effects": "Blanks/Scatter/Hellevator only.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "God Mode",
+        "cost_multiplier": 3800.0,
+        "cost_text": "3,800×",
+        "effects": "Max-win chase.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 2.4,
+    "effects": "xBet™ guaranteed Bonus reel 1.",
+    "notes": "Cost is 2.4× total stake style booster."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20066.0,
+    "max_win_notes": "20,066×",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96.03% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/highway-to-hell",
+      "local_path": "sources/nolimit/highway-to-hell/cms_features.txt",
+      "extracted_at": "2026-09-27T19:00:52Z",
+      "quote_or_excerpt": "6×4 avalanche; Enhancer Cells; Demon; Hell Spins 8 from 3 Scatter/Hellevator; xBet 2.4×; Bonus Hunt 15×; God Mode 3800×; max 20,066×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/highway-to-hell",
+      "local_path": "sources/nolimit/highway-to-hell/page.html",
+      "extracted_at": "2026-09-27T19:00:52Z",
+      "quote_or_excerpt": "96.03% RTP, 20066 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count",
+    "Extra Spin pricing formula"
+  ],
+  "thumbnail": "thumbs/nolimit-highway-to-hell.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

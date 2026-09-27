@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:01:58Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Pearl Harbor",
+    "slug": "nolimit-pearl-harbor",
+    "provider_game_id": "PearlHarbor",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/PearlHarbor",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/pearl-harbor"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 7,
+    "rows_min": 7,
+    "rows_max": 7,
+    "layout_notes": "Official rowsReels 7-7-7-7-7-7-7."
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Cluster wins in expanding rectangular active area; xCluster +1 mult per extra unique cluster from 2nd."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Avalanches after wins/xBomb; xCluster increments win mult from 2nd unique cluster."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Active rectangle expands via Target, Colossal, and border/corner xBomb explosions."
+    },
+    "other": [
+      {
+        "name": "xSplit® (samurai swords)",
+        "how_it_works": "1–2 swords H/V; activate in active area after avalanche; may gain swords/×2; pass mult to split symbols; Scatter/Target/xBomb get ×2 when hit."
+      },
+      {
+        "name": "xBomb® Wild",
+        "how_it_works": "Removes up to 10 adjacent (not Bonus); +1 (or split X) to next avalanche mult; border moves active area; corner expands reel+row."
+      },
+      {
+        "name": "Target → Wild",
+        "how_it_works": "Expands active area to include Target then becomes Wild."
+      },
+      {
+        "name": "Colossal 2×2 / 3×3",
+        "how_it_works": "Expands active area; mult ×2/×3; split rules up to 18 symbols."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xBomb® Wild / Target Wild",
+        "behavior": "Substitute (not Bonus); explode/expand.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "1/reel; counts only in active area. 3→Dogfight; 4→Tora! Tora! Tora!. Split scatters feed first bonus (X) mult.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xCluster / xBomb / dial (X)(+)",
+        "behavior": "Cluster and bomb mults in base; cockpit dials in bonus.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Colossal Symbol",
+        "behavior": "2×2 or 3×3 with ×2/×3.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "7×7 cluster with expanding active rectangle, xSplit/xBomb/xCluster/Target/Colossal. Banzai +50%/+100% Scatter odds. 3 Scatter→Dogfight (18 dials); 4→Tora with Midway Pop + Bomb Drop. Cap 41,127×.",
+    "phases": [
+      {
+        "name": "Optional Banzai xBet",
+        "order": 1,
+        "what_happens": "+50% one mid Scatter (~3× Dogfight); +100% two Scatters (~10× Tora).",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.5 or ×2"
+      },
+      {
+        "name": "Avalanche + expand",
+        "order": 2,
+        "what_happens": "Clusters; xSplit; xBomb expand; Targets/Colossals.",
+        "ends_when": "No more wins",
+        "state_changes": "Active area grows; win mult"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3/4 Scatter → Dogfight / Tora cockpit.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Clusters in active area after splits/bombs; xCluster mult.",
+    "notes": "CMS + GameSheet PDF."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Dogfight",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "3 (reset on any dial multiplier)",
+        "retrigger": "Any (X) or (+) dial mult resets to 3.",
+        "sticky_or_persistent_state": "18 instrument dials; (X) stay until (+) lands; end converts leftover (X)→(+).",
+        "progressive_state": "Round mult from sum(+) × product(X). Dogfight Attack on full column.",
+        "end_condition": "No spins / 41,127×.",
+        "phases": [
+          {
+            "name": "Cockpit",
+            "order": 1,
+            "what_happens": "Spin dials; apply (+) then (X) to round mult."
+          }
+        ],
+        "effects": "3+ spins dial mult game."
+      },
+      {
+        "name": "TORA! TORA! TORA!",
+        "trigger": "4 Scatter.",
+        "spins_awarded": "3 (same reset rules)",
+        "retrigger": "Same as Dogfight.",
+        "sticky_or_persistent_state": "Dogfight rules + Midway Pop (mid-row mult pops to top) + Bomb Drop (full row → ship bomb; hit converts).",
+        "progressive_state": "Same dial math.",
+        "end_condition": "No spins / cap.",
+        "phases": [
+          {
+            "name": "Cockpit+",
+            "order": 1,
+            "what_happens": "Dogfight + Midway Pop + Bomb Drop."
+          }
+        ],
+        "effects": "Enhanced dial bonus."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBet® Banzai! +50%",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "+50%",
+      "effects": "Guaranteed mid Scatter; ~3× Dogfight chance.",
+      "params": {}
+    },
+    {
+      "name": "xBet® Banzai! +100%",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "+100%",
+      "effects": "Two Scatters on drop; ~10× Tora chance.",
+      "params": {}
+    },
+    {
+      "name": "Mission Accomplished!",
+      "trigger": "Cap",
+      "effects": "Max 41,127×.",
+      "params": {
+        "max_win_multiplier": 41127
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "CMS documents Banzai ante-style bets; no separate FS buy prices printed."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.5,
+    "effects": "Banzai +50% or +100% (×2) for Scatter guarantees.",
+    "notes": "Two tiers."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 41127.0,
+    "max_win_notes": "41,127×",
+    "rtp_percent": 96.21,
+    "rtp_notes": "96.21% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/pearl-harbor",
+      "local_path": "sources/nolimit/pearl-harbor/cms_features.txt",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "7×7 cluster; expanding active area; xSplit swords; xBomb; xCluster; Target/Colossal; 3 Scatter Dogfight / 4 Tora; Banzai xBet +50%/+100%; max 41,127×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/pearl-harbor",
+      "local_path": "sources/nolimit/pearl-harbor/page.html",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "96.21% RTP, 41127 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Pearl_Harbor_d7a2358dfc.pdf",
+      "local_path": "sources/nolimit/pearl-harbor/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "GameSheet Pearl Harbor."
+    }
+  ],
+  "unknowns": [
+    "exact Dogfight Attack / Bomb Drop hit tables",
+    "min cluster size"
+  ],
+  "thumbnail": "thumbs/nolimit-pearl-harbor.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

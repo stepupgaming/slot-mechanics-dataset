@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:01:58Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Beheaded",
+    "slug": "nolimit-beheaded",
+    "provider_game_id": "Beheaded",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Beheaded",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/beheaded"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 4-4-4-4-4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with tumble; progression upgrades mid→high."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Winning combos and symbols below them fall; new symbols drop in."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Progression Bar",
+        "how_it_works": "Levels need 15/25/50/80/110 collect. Wild +3, high +2, mid +1 per winning symbol. Each level mid→high. Resets each round; overflow carries between levels. 3 Scatters jump to Tzantza (+6) with +2 per skipped level."
+      },
+      {
+        "name": "Soul Wilds",
+        "how_it_works": "Happy (L1, 4 souls)/Sad (L3, 10)/Angry (L5, 18). Zone 1×1/2×2/3×3 with general mult ×1/×2/×3; Scatters in zone +1 FS each."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Soul Wilds (Happy/Sad/Angry)",
+        "behavior": "Soul collectors from dropped highs; activate zone + general mult.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3 dropped → jump to Tzantza path; in Soul zone each +1 FS.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "General multiplier via Soul Wilds",
+        "behavior": "×1/×2/×3 by activated Soul count; resets after event.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Soul Collectors",
+        "behavior": "Collect souls from dropped high pays after wins.",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "Pick A Potion",
+        "behavior": "After Tzantza without max: Butterfly 5–8,000× or Skull gamble for max/lose all.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×4 tumble ways; Progression Bar 5 levels; Soul Wilds unlock by souls. Level-ups award FS (Ayahuasca +2/level, Tzantza +6). Buys 100–500×. Post-Tzantza Pick A Potion. Cap 15,950×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy Ayahuasca (to L3 +6) or Tzantza (to L5 +10) or other 100–500×.",
+        "ends_when": "Spin",
+        "state_changes": "Progress forced"
+      },
+      {
+        "name": "Tumble + progress",
+        "order": 2,
+        "what_happens": "Wins tumble; advance bar; maybe Soul Wilds.",
+        "ends_when": "No wins",
+        "state_changes": "Level / souls"
+      },
+      {
+        "name": "Bonus / potion",
+        "order": 3,
+        "what_happens": "Level FS or Tzantza; optional Pick A Potion.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after tumbles and Soul zones.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Ayahuasca Spins",
+        "trigger": "Progression level-ups through L4 (+2 each) or buy (jump L3 +6).",
+        "spins_awarded": "+2 per level (buy: 6)",
+        "retrigger": "Further level-ups.",
+        "sticky_or_persistent_state": "3 mid symbols replaced by highs.",
+        "progressive_state": "Progression bar.",
+        "end_condition": "Spins done or upgrade to Tzantza / cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "FS with partial mid→high."
+          }
+        ],
+        "effects": "FS; symbol upgrade."
+      },
+      {
+        "name": "Tzantza Spins",
+        "trigger": "Reach L5 (+6 from progress / +10 buy) or 3 Scatters jump.",
+        "spins_awarded": "+6 progress / +10 buy",
+        "retrigger": "Soul-zone Scatters +1 each.",
+        "sticky_or_persistent_state": "All mids → highs; Angry Soul available.",
+        "progressive_state": null,
+        "end_condition": "Spins done; then Pick A Potion if no max.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Full mid→high FS."
+          }
+        ],
+        "effects": "Top FS tier."
+      }
+    ],
+    "notes": "Pick A Potion after Tzantza without max win."
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "100×–500×",
+      "effects": "Ayahuasca / Tzantza and related.",
+      "params": {}
+    },
+    {
+      "name": "Pick A Potion",
+      "trigger": "After Tzantza without max",
+      "when": "after_bonus",
+      "cost_text": null,
+      "effects": "Butterfly 5–8,000× or Skull gamble max/bust.",
+      "params": {}
+    },
+    {
+      "name": "Headful Collection",
+      "trigger": "Cap",
+      "effects": "Max 15,950×.",
+      "params": {
+        "max_win_multiplier": 15950
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Ayahuasca Spins",
+        "cost_multiplier": null,
+        "cost_text": "within 100×–500×",
+        "effects": "Jump to L3 +6 FS.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Tzantza Spins",
+        "cost_multiplier": null,
+        "cost_text": "within 100×–500×",
+        "effects": "Jump to L5 +10 FS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact line prices inside 100–500× not itemized."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15950.0,
+    "max_win_notes": "15,950×",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96.03% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/beheaded",
+      "local_path": "sources/nolimit/beheaded/cms_features.txt",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "5×4 tumble; Progression 15/25/50/80/110; Soul Wilds Happy/Sad/Angry; Ayahuasca/Tzantza; buys 100–500×; Pick A Potion; max 15,950×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/beheaded",
+      "local_path": "sources/nolimit/beheaded/page.html",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "96.03% RTP, 15950 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact buy line costs",
+    "ways_count",
+    "Skull gamble odds formula"
+  ],
+  "thumbnail": "thumbs/nolimit-beheaded.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

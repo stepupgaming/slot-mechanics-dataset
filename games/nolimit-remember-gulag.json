@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:01:58Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Remember Gulag",
+    "slug": "nolimit-remember-gulag",
+    "provider_game_id": "RememberGulag",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/RememberGulag",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/remember-gulag"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "CMS: 6 reels; xWays on 1–2 (base) / 5–6 (FS); xNudge on 3–4. Page meta said 5x5; overridden by CMS reel refs."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays/xSplit/xNudge."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xWays®",
+        "how_it_works": "Reels 1–2 base; 5–6 in Gulag Spins; can reveal pays or double mults."
+      },
+      {
+        "name": "xNudge Wild®",
+        "how_it_works": "Reels 3–4; nudge +1/step; xSplit on xNudge adds more Wild on that reel."
+      },
+      {
+        "name": "xSplit Wilds",
+        "how_it_works": "Split increases xWays mult; transform/expand effects."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild®",
+        "behavior": "Reels 3–4; nudge +1; split adds Wilds.",
+        "params": {}
+      },
+      {
+        "name": "Wild / xSplit Wild",
+        "behavior": "All 6 reels possible for regular Wild.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3+ → Gulag Spins (setup spin for spin count + character mults; one character activated). 4→All Aboard; 5→Double Vodka (double all symbol win mults).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Character / xWays / nudge mults",
+        "behavior": "Setup assigns mults to 4 top characters; Double Vodka doubles.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "6×5 ways; Propaganda Bet +20% for Gulag odds. xWays/xNudge/xSplit. 3+ Scatter → Gulag Spins after setup (4=All Aboard, 5=Double Vodka). Buy 78–486×. Cap 30,000×.",
+    "phases": [
+      {
+        "name": "Optional Propaganda Bet",
+        "order": 1,
+        "what_happens": "+20% stake; harsher base, higher Gulag chance.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.2"
+      },
+      {
+        "name": "Spin + xMechanics",
+        "order": 2,
+        "what_happens": "xWays/xNudge/xSplit; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Gulag setup + FS",
+        "order": 3,
+        "what_happens": "3+ Scatter → setup spin then Gulag mode.",
+        "ends_when": "End",
+        "state_changes": "Character activated"
+      }
+    ],
+    "win_evaluation": "Ways after splits/ways/nudge.",
+    "notes": "CMS + GameSheet; page rows tag 5x5 corrected via CMS 6-reel feature placement."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Gulag Spins",
+        "trigger": "3+ Scatter.",
+        "spins_awarded": "Set by setup spin",
+        "retrigger": null,
+        "sticky_or_persistent_state": "One random top character activated; setup assigns spin count + per-character win mults.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 30,000×.",
+        "phases": [
+          {
+            "name": "Setup",
+            "order": 1,
+            "what_happens": "Determine spins + character mults; pick active character."
+          }
+        ],
+        "effects": "FS with character focus."
+      },
+      {
+        "name": "Gulag Spins: All Aboard",
+        "trigger": "4 Scatter.",
+        "spins_awarded": "Setup",
+        "retrigger": null,
+        "sticky_or_persistent_state": "All Aboard mode (CMS).",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "All Aboard variant."
+          }
+        ],
+        "effects": "Enhanced Gulag."
+      },
+      {
+        "name": "Gulag Spins: Double Vodka",
+        "trigger": "5 Scatter.",
+        "spins_awarded": "Setup",
+        "retrigger": null,
+        "sticky_or_persistent_state": "All symbol win mults doubled.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Double Vodka."
+          }
+        ],
+        "effects": "Doubled symbol mults."
+      }
+    ],
+    "notes": "xWays on reels 5–6 during Gulag."
+  },
+  "features": [
+    {
+      "name": "Propaganda Bet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.2,
+      "cost_text": "+20%",
+      "effects": "Higher Gulag chance; harsher base.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "78×–486×",
+      "effects": "Buy bonus features.",
+      "params": {}
+    },
+    {
+      "name": "Oligarch Status: Achieved",
+      "trigger": "Cap",
+      "effects": "Max 30,000×.",
+      "params": {
+        "max_win_multiplier": 30000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus features",
+        "cost_multiplier": null,
+        "cost_text": "78×–486×",
+        "effects": "Direct bonus entry.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact line items inside band not printed."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.2,
+    "effects": "Propaganda Bet +20%.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 30000.0,
+    "max_win_notes": "30,000×",
+    "rtp_percent": 96.08,
+    "rtp_notes": "96.08% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "medium",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/remember-gulag",
+      "local_path": "sources/nolimit/remember-gulag/cms_features.txt",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "6-reel; Propaganda +20%; xWays/xNudge/xSplit; 3+ Scatter Gulag Spins with setup; 4 All Aboard / 5 Double Vodka; buy 78–486×; max 30,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/remember-gulag",
+      "local_path": "sources/nolimit/remember-gulag/page.html",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "96.08% RTP, 30000 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Remember_Gulag_c76860eb13.pdf",
+      "local_path": "sources/nolimit/remember-gulag/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "GameSheet Remember Gulag."
+    }
+  ],
+  "unknowns": [
+    "exact setup spin tables",
+    "All Aboard exact extra rules",
+    "ways_count",
+    "precise base rows if not 5"
+  ],
+  "thumbnail": "thumbs/nolimit-remember-gulag.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

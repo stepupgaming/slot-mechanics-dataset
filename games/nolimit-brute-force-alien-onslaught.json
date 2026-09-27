@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:00:52Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Brute Force: Alien Onslaught",
+    "slug": "nolimit-brute-force-alien-onslaught",
+    "provider_game_id": "BruteForceAlienOnslaught",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/BruteForceAlienOnslaught",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/brute-force-alien-onslaught"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 5-5-5-5-5-5."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; Wild on reel converts lows→mids."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xNudge® Wilds (4 types)",
+        "how_it_works": "Stacked always nudge fully. Joshua +1/nudge max 7×; Jason +2 max 15×; Jade +5 max 40×; Xylox +1/nudge and collects other wild mults (+1 when nudge done). Bottom random mult adds when fully visible. Meter sums winning xNudge mults."
+      },
+      {
+        "name": "Wild transform",
+        "how_it_works": "Wild randomly transforms all low-paying symbols on its reel into mid-paying."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Joshua / Jason / Jade / Xylox xNudge® Wild",
+        "behavior": "Stacked nudge wilds with type-specific nudge mult caps; Xylox aggregates others.",
+        "params": {}
+      },
+      {
+        "name": "Wild",
+        "behavior": "Transforms lows→mids on its reel.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Red / Blue Scatter",
+        "behavior": "Color mix gates FS mode: ≥2 red of 3→REDemption; ≥3 red of 4→Super REDemption; ≥2 blue of 3→BLU Genesis; ≥3 blue of 4→Super BLU Genesis; 2 red+2 blue→Stellar Punishment. All award 10 spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xNudge type multipliers",
+        "behavior": "Per-type nudge increments + random add-on when fully visible; Xylox collects.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "6×5 ways with 4 xNudge wild types (Joshua/Jason/Jade/Xylox). Red/blue scatters select among 5 FS modes (all 10 spins) with sticky rules. xBoost 4.6×/32×; guaranteed xNudge buys 40×–8000×. Cap 80,000×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "xBoost (Scatter r2) / Super xBoost (Scatter r2+3) / 1–5 guaranteed xNudge.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + nudge",
+        "order": 2,
+        "what_happens": "xNudge wilds fully visible; Wild transforms lows; evaluate ways.",
+        "ends_when": "Resolved",
+        "state_changes": "Meter updated"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3–4 scatters by color → matching FS mode.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after transforms and nudge mults.",
+    "notes": "CMS only; no GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "REDemption Spins",
+        "trigger": "3 Scatter incl. ≥2 red.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Xylox always sticky; Joshua does not land.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 80,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; Xylox sticky."
+          }
+        ],
+        "effects": "10 FS; red-biased sticky set."
+      },
+      {
+        "name": "Super REDemption Spins",
+        "trigger": "4 Scatter incl. ≥3 red.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Xylox sticky; Joshua+Jason do not land.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins."
+          }
+        ],
+        "effects": "10 FS."
+      },
+      {
+        "name": "BLU Genesis Spins",
+        "trigger": "3 Scatter incl. ≥2 blue.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Joshua/Jason/Jade may sticky; Xylox always sticky.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins."
+          }
+        ],
+        "effects": "10 FS."
+      },
+      {
+        "name": "Super BLU Genesis Spins",
+        "trigger": "4 Scatter incl. ≥3 blue.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Joshua/Jason/Jade may sticky; sticky Joshua always on spin 1 and stays; Xylox always sticky.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; sticky Joshua spin 1."
+          }
+        ],
+        "effects": "10 FS."
+      },
+      {
+        "name": "Stellar Punishment Spins",
+        "trigger": "2 red + 2 blue Scatter.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Jade may sticky (sticky Jade always spin 1); Xylox sticky; Joshua+Jason do not land.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins."
+          }
+        ],
+        "effects": "10 FS; mixed scatters."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBoost",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 4.6,
+      "cost_text": "4.6× bet",
+      "effects": "Guaranteed Scatter reel 2; ~8× more likely FS.",
+      "params": {}
+    },
+    {
+      "name": "Super xBoost",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 32.0,
+      "cost_text": "32× bet",
+      "effects": "Guaranteed Scatter reels 2+3; ~54× more likely FS.",
+      "params": {}
+    },
+    {
+      "name": "Guaranteed xNudge xBoost 1–5",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_text": "40× / 220× / 750× / 2,500× / 8,000×",
+      "effects": "Min 1–5 xNudge Wilds.",
+      "params": {}
+    },
+    {
+      "name": "Game Breaker",
+      "trigger": "Cap",
+      "effects": "Max 80,000× ends round.",
+      "params": {
+        "max_win_multiplier": 80000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBoost",
+        "cost_multiplier": 4.6,
+        "cost_text": "4.6×",
+        "effects": "Scatter reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super xBoost",
+        "cost_multiplier": 32.0,
+        "cost_text": "32×",
+        "effects": "Scatter reels 2+3.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "1–5 Guaranteed xNudge",
+        "cost_multiplier": null,
+        "cost_text": "40×–8,000×",
+        "effects": "Min 1–5 xNudge Wilds.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No classic ante; xBoost family used instead."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 80000.0,
+    "max_win_notes": "80,000×",
+    "rtp_percent": 96.01,
+    "rtp_notes": "96.01% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/brute-force-alien-onslaught",
+      "local_path": "sources/nolimit/brute-force-alien-onslaught/cms_features.txt",
+      "extracted_at": "2026-09-27T19:00:52Z",
+      "quote_or_excerpt": "4 xNudge types Joshua(+1/7x)/Jason(+2/15x)/Jade(+5/40x)/Xylox; red/blue scatter FS tiers 10 spins; boosters 4.6×–8000×; max 80,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/brute-force-alien-onslaught",
+      "local_path": "sources/nolimit/brute-force-alien-onslaught/page.html",
+      "extracted_at": "2026-09-27T19:00:52Z",
+      "quote_or_excerpt": "96.01% RTP, 80000 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count",
+    "random bottom mult ranges per wild type"
+  ],
+  "thumbnail": "thumbs/nolimit-brute-force-alien-onslaught.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

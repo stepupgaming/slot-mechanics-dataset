@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:00:52Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Dead Men Walking",
+    "slug": "nolimit-dead-men-walking",
+    "provider_game_id": "DeadMenWalking",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DeadMenWalking",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/dead-men-walking"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official rowsReels 3-3-3-3-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays/xSplit scrolls."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Bonus: 5×5 coin grid."
+    },
+    "other": [
+      {
+        "name": "Fire-pit scrolls",
+        "how_it_works": "Orange xWays (2–4 same symbol); Red Infectious Wild (symbol→all Wild); Grey xSplit (split row, double size → Wild; not self/Bonus)."
+      },
+      {
+        "name": "Dead Man’s March",
+        "how_it_works": "After xNudge fully visible: move 1 left +1 mult; at reel 1 transfer mult to nearest other xNudge; continues until last reaches reel 1."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge® Wild",
+        "behavior": "Stacked; nudge +1; then March left +1/step; transfer at reel 1.",
+        "params": {}
+      },
+      {
+        "name": "Infectious Wild",
+        "behavior": "From red scroll: chosen symbol instances → Wild.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus / Gold Bonus",
+        "behavior": "3/4/5 Bonus → 3/4/5 Dead Man’s Gold; Gold Bonus → Reaper’s Gold same counts. Counted on Bonus board.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xNudge March mult",
+        "behavior": "+1 per nudge and per March step.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Collector coin",
+        "behavior": "Collects all active coin values when collected (Dead Man’s Gold).",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "Cloner / Multiplier / King’s Grace coins",
+        "behavior": "Clone highest; double all; reset spin count. Reaper’s: feature coins trigger on land.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; fire-pit scrolls; xNudge March. 3–5 Bonus → Dead Man’s Gold coin hold-and-win on 5×5; Gold Bonus → Reaper’s Gold (features on land). Boosters 1.5×/2.5×/5×/40×. Extra Spin. Cap 25,313×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Booster 1–4 (bonus odds / gold upgrade / xNudge).",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + scrolls/nudge",
+        "order": 2,
+        "what_happens": "Scroll features; xNudge March; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": "Fire pits ignite"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "Bonus board → Dead Man’s / Reaper’s Gold.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after xWays/xSplit/Wilds; bonus pays coin clusters.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Dead Man’s Gold",
+        "trigger": "3/4/5 Bonus symbols.",
+        "spins_awarded": "3 / 4 / 5",
+        "retrigger": "Coin land keeps spin count; King’s Grace resets to initial.",
+        "sticky_or_persistent_state": "5×5 coins only.",
+        "progressive_state": null,
+        "end_condition": "No spins left or 25,313×; optional Extra Spin.",
+        "phases": [
+          {
+            "name": "Coin grid",
+            "order": 1,
+            "what_happens": "Coins land; 3+ aligned V/H collected; Collector/Cloner/Multiplier/King’s Grace when collected."
+          }
+        ],
+        "effects": "Hold-and-win coins; feature coins on collect."
+      },
+      {
+        "name": "Reaper’s Gold",
+        "trigger": "3/4/5 Gold Bonus.",
+        "spins_awarded": "3 / 4 / 5",
+        "retrigger": "Same coin rules.",
+        "sticky_or_persistent_state": "Feature coins trigger as soon as they land.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Same as Dead Man’s Gold but features on land."
+          }
+        ],
+        "effects": "Enhanced coin features."
+      }
+    ],
+    "notes": "xTra Extra Spin keeps symbol mult state if cost ≤ prior win."
+  },
+  "features": [
+    {
+      "name": "Booster 1",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "1.5×",
+      "effects": "More Dead Man’s Gold; +1–4 Bonus to board when ≥1 lands.",
+      "params": {}
+    },
+    {
+      "name": "Booster 2",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2.5,
+      "cost_text": "2.5×",
+      "effects": "Bonus → Gold Bonus (Reaper’s path).",
+      "params": {}
+    },
+    {
+      "name": "Booster 3",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 5.0,
+      "cost_text": "5×",
+      "effects": "More Reaper’s; +1–4 Gold Bonus when ≥1 lands.",
+      "params": {}
+    },
+    {
+      "name": "Booster 4",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 40.0,
+      "cost_text": "40×",
+      "effects": "Min 1 xNudge Wild.",
+      "params": {}
+    },
+    {
+      "name": "Keep Your Hood On",
+      "trigger": "Cap",
+      "effects": "Max 25,313×.",
+      "params": {
+        "max_win_multiplier": 25313
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Booster 1–4",
+        "cost_multiplier": null,
+        "cost_text": "1.5× / 2.5× / 5× / 40×",
+        "effects": "Bonus odds / gold upgrade / xNudge.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Boosters used instead of classic ante."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25313.0,
+    "max_win_notes": "25,313×",
+    "rtp_percent": 96.2,
+    "rtp_notes": "96.2% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/dead-men-walking",
+      "local_path": "sources/nolimit/dead-men-walking/cms_features.txt",
+      "extracted_at": "2026-09-27T19:00:52Z",
+      "quote_or_excerpt": "5×3; fire-pit scrolls xWays/Infectious Wild/xSplit; xNudge Dead Man’s March; 3–5 Bonus → Dead Man’s Gold 3–5 spins (5×5 coins); Gold Bonus → Reaper’s Gold; boosters 1.5–40×; max 25,313×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/dead-men-walking",
+      "local_path": "sources/nolimit/dead-men-walking/page.html",
+      "extracted_at": "2026-09-27T19:00:52Z",
+      "quote_or_excerpt": "96.2% RTP, 25313 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact coin value table",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-dead-men-walking.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

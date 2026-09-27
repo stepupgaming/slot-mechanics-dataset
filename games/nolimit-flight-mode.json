@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:01:58Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Flight Mode",
+    "slug": "nolimit-flight-mode",
+    "provider_game_id": "FlightMode",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/FlightMode",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/flight-mode"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 4-4-4-4-4-4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; next-multiplier economy with bombs/xHole."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Bombs explode when no wins: clear pays on reel+row; new symbols fall; unlock Max Win symbol on that reel."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xHole™",
+        "how_it_works": "When no wins/Bombs/Multiplier Increasers: suck all main symbols, spit to random positions at next mult; becomes Wild with next mult."
+      },
+      {
+        "name": "Multiplier Increaser",
+        "how_it_works": "On land: add 2/3/4/5/10× to next mult then remove. Golden doubles next mult."
+      },
+      {
+        "name": "xGOD®",
+        "how_it_works": "Can award max win instantly in base or bonus without other features."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / xHole→Wild",
+        "behavior": "Wild any reel; xHole transforms to Wild with next mult.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3/4/5 → 6/9/12 Flee Spins; progress of next mult kept; unlocked Max Win symbols stay.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Next multiplier",
+        "behavior": "Advanced by Increasers; applied via xHole/Wild path.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Bomb",
+        "behavior": "Explode on no-win; clear reel+row pays; unlock Max Win on reel.",
+        "params": {}
+      },
+      {
+        "name": "Max Win symbols (bottom row)",
+        "behavior": "Unlock all 6 via Bombs for max (also God Mode 911×).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6×4 ways; next-mult via Increasers; Bombs unlock Max Win row; xHole reshuffle; xGOD can instant max. 3/4/5 Scatter→6/9/12 Flee Spins. Boosters 3.3×–911×. Cap 5,051×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Scatter 3.3× / xHole 6× / Print 11/90/270× / God Mode 911×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + bombs/xHole",
+        "order": 2,
+        "what_happens": "Wins; else Bombs/Increasers/xHole; unlock Max Win cells.",
+        "ends_when": "Resolved",
+        "state_changes": "Next mult / unlocks"
+      },
+      {
+        "name": "Bonus / Extra Spin",
+        "order": 3,
+        "what_happens": "Flee Spins or Extra Spin offer.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways with next-mult application.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Flee Spins",
+        "trigger": "3/4/5 Scatter.",
+        "spins_awarded": "6 / 9 / 12",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Next mult progress kept; unlocked Max Win symbols stay unlocked.",
+        "progressive_state": "Next multiplier.",
+        "end_condition": "Spins done or 5,051×; optional Extra Spin (no Scatters) if cost ≤ total win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "6/9/12 Flee Spins."
+          }
+        ],
+        "effects": "FS with persistent mult/unlocks."
+      }
+    ],
+    "notes": "Print Spins are paid single spins with starting mult 30/268/911× not FS modes."
+  },
+  "features": [
+    {
+      "name": "Scatter booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 3.3,
+      "cost_text": "3.30×",
+      "effects": "Guaranteed Scatter reel 2.",
+      "params": {}
+    },
+    {
+      "name": "xHole™ booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 6.0,
+      "cost_text": "6×",
+      "effects": "Guaranteed xHole reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Print / Printier / Printiest Spins",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_text": "11× / 90× / 270×",
+      "effects": "Spin starts with 30× / 268× / 911× on each paying symbol.",
+      "params": {}
+    },
+    {
+      "name": "God Mode",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 911.0,
+      "cost_text": "911×",
+      "effects": "Chase max by unlocking all 6 Max Win symbols via Bombs.",
+      "params": {}
+    },
+    {
+      "name": "Extra Spin",
+      "trigger": "Offer",
+      "when": "after_bonus",
+      "cost_text": "From next mult (≤ total win)",
+      "effects": "Keep mult state; no Scatters.",
+      "params": {}
+    },
+    {
+      "name": "Max Win",
+      "trigger": "Cap or 6 Max Win symbols",
+      "effects": "5,051×.",
+      "params": {
+        "max_win_multiplier": 5051
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Scatter",
+        "cost_multiplier": 3.3,
+        "cost_text": "3.30×",
+        "effects": "Scatter reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xHole™",
+        "cost_multiplier": 6.0,
+        "cost_text": "6×",
+        "effects": "xHole reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Print Spins",
+        "cost_multiplier": 11.0,
+        "cost_text": "11×",
+        "effects": "30× starting mult.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Printier Spins",
+        "cost_multiplier": 90.0,
+        "cost_text": "90×",
+        "effects": "268× starting mult.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Printiest Spins",
+        "cost_multiplier": 270.0,
+        "cost_text": "270×",
+        "effects": "911× starting mult.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "God Mode",
+        "cost_multiplier": 911.0,
+        "cost_text": "911×",
+        "effects": "Max-win unlock chase.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Boosters instead of classic ante."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5051.0,
+    "max_win_notes": "5,051×",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/flight-mode",
+      "local_path": "sources/nolimit/flight-mode/cms_features.txt",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "6×4; xHole; Bomb unlocks Max Win symbols; Multiplier Increaser 2–10× / Golden double; 3/4/5 Scatter → 6/9/12 Flee Spins; boosters 3.3–911×; max 5,051×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/flight-mode",
+      "local_path": "sources/nolimit/flight-mode/page.html",
+      "extracted_at": "2026-09-27T19:01:58Z",
+      "quote_or_excerpt": "96.07% RTP, 5051 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact next-mult start value",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-flight-mode.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

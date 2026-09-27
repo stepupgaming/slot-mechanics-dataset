@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:00:52Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "D-Day",
+    "slug": "nolimit-d-day",
+    "provider_game_id": "DDay",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DDay",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/d-day"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 3-4-5-4-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; military features convert/split to Wilds."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Atomic Wild",
+        "how_it_works": "Random position → Wild with mult 10/20/30/50/100 (+1 if already Wild). Always first if multi-feature."
+      },
+      {
+        "name": "Bomber",
+        "how_it_works": "2–5 bombers (1/reel): paying symbols → Wild top→bottom; stops above Anti-Air; existing Wild +1 mult."
+      },
+      {
+        "name": "Stuka",
+        "how_it_works": "Diagonal L→R or R→L; splits paying symbols doubling size; max 7 (1/diagonal)."
+      },
+      {
+        "name": "Panzer",
+        "how_it_works": "2–5 (1/row): lows → Wild except Foot Soldier; existing Wild +1."
+      },
+      {
+        "name": "Howitzer",
+        "how_it_works": "1–7 paying → Wild except Commando/Wild."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Atomic / feature Wilds",
+        "behavior": "From Atomic/Bomber/Panzer/Howitzer with mult rules.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "2 may trigger a base feature (reel-5 Scatter → Atomic). 3/4/5 → Neptune/Invasion/Overlord.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Atomic Wild mult",
+        "behavior": "10/20/30/50/100.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Anti-Air / Foot Soldier / Commando",
+        "behavior": "Block or exempt from Bomber/Panzer/Howitzer transforms.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Irregular 3-4-5-4-3 ways. 2 Scatters may fire Atomic/Bomber/Stuka/Panzer/Howitzer. 3/4/5 → Neptune/Invasion/Overlord (pick 2/3/3 of 5 features; reel-5 Scatter forces Atomic). Boosted xBet +30%. Buys 70–1000×. Cap 55,555×.",
+    "phases": [
+      {
+        "name": "Optional Boosted xBet",
+        "order": 1,
+        "what_happens": "+30% stake; 2× FS chance (not in bonus).",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.3"
+      },
+      {
+        "name": "Spin + war features",
+        "order": 2,
+        "what_happens": "0–2 Scatters may trigger features (Atomic first).",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus pick",
+        "order": 3,
+        "what_happens": "3/4/5 Scatter → pick-reveal feature set for FS.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after splits/Wild transforms.",
+    "notes": "CMS; Lucky Draw buy 235×."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Neptune Spins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Pick 2 of 5 features (1 of 4 if reel-5 Scatter → Atomic auto). Each picked feature activates ≥1×.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 55,555×.",
+        "phases": [
+          {
+            "name": "Pick",
+            "order": 1,
+            "what_happens": "Reveal 2 features (or 1 + Atomic)."
+          }
+        ],
+        "effects": "FS with 2 active war features."
+      },
+      {
+        "name": "Invasion Spins",
+        "trigger": "4 Scatter.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Pick 3 of 5 (2 of 4 if reel-5 → Atomic).",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Pick",
+            "order": 1,
+            "what_happens": "Reveal 3 features."
+          }
+        ],
+        "effects": "FS with 3 features."
+      },
+      {
+        "name": "Overlord Spins",
+        "trigger": "5 Scatter.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Atomic guaranteed; pick 3 of remaining 4.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Pick",
+            "order": 1,
+            "what_happens": "Atomic + pick 3."
+          }
+        ],
+        "effects": "FS with Atomic + 3 features."
+      }
+    ],
+    "notes": "Exact spin counts not printed in CMS (buy prices given)."
+  },
+  "features": [
+    {
+      "name": "Boosted xBet®",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.3,
+      "cost_text": "+30% bet",
+      "effects": "2× more likely FS (not in bonus modes).",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "70× / 250× / 1000× / 235× (Lucky Draw); band 68–2,310×",
+      "effects": "Neptune / Invasion / Overlord / Lucky Draw.",
+      "params": {}
+    },
+    {
+      "name": "Mission Accomplished",
+      "trigger": "Cap",
+      "effects": "Max 55,555×.",
+      "params": {
+        "max_win_multiplier": 55555
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Neptune Spins",
+        "cost_multiplier": 70.0,
+        "cost_text": "70× (max bet €100)",
+        "effects": "Buy Neptune.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Invasion Spins",
+        "cost_multiplier": 250.0,
+        "cost_text": "250×",
+        "effects": "Buy Invasion.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Overlord Spins",
+        "cost_multiplier": 1000.0,
+        "cost_text": "1,000×",
+        "effects": "Buy Overlord.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Lucky Draw",
+        "cost_multiplier": 235.0,
+        "cost_text": "235×",
+        "effects": "Lucky Draw.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "CMS also cites overall buy band 68–2,310×."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.3,
+    "effects": "Boosted xBet +30%: 2× FS chance.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 55555.0,
+    "max_win_notes": "55,555×",
+    "rtp_percent": 96.12,
+    "rtp_notes": "96.12% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/d-day",
+      "local_path": "sources/nolimit/d-day/cms_features.txt",
+      "extracted_at": "2026-09-27T19:00:52Z",
+      "quote_or_excerpt": "3-4-5-4-3; Atomic/Bomber/Stuka/Panzer/Howitzer; 3/4/5 Scatter → Neptune/Invasion/Overlord with pick-reveal; buys 70/250/1000/235×; max 55,555×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/d-day",
+      "local_path": "sources/nolimit/d-day/page.html",
+      "extracted_at": "2026-09-27T19:00:52Z",
+      "quote_or_excerpt": "96.12% RTP, 55555 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact FS spin counts per mode",
+    "Lucky Draw exact contents",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-d-day.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
