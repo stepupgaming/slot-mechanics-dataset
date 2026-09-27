@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:23:31Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Wixx",
+    "slug": "nolimit-wixx",
+    "provider_game_id": "Wixx",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Wixx",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/wixx"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 4,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "4×3 betways."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 4,
+    "direction": "left_to_right",
+    "notes": "Betways; 4-hit on mid crystals triggers booster respin."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "4-hit on Ruby/Topaz/Sapphire → one booster respin; dual 4-hits → super booster respin."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Booster / Super Booster",
+        "how_it_works": "Ruby→Wild stacked; Topaz ×5 crystal pays + stacked; Sapphire stacked + reel 4 only Sapphires; combos combine."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild Ruby",
+        "behavior": "From Ruby booster / super: Rubies→Wilds stacked; some supers fill reel 4 with Wilds.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Topaz ×5",
+        "behavior": "Crystal pays ×5 during Topaz booster / some supers.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Ruby / Topaz / Sapphire",
+        "behavior": "Mid crystals; 4-hit triggers boosters.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "4×3 ways. 4-hit Ruby/Topaz/Sapphire→one booster respin; dual crystal 4-hits→super booster. Cap 2,796×. No traditional FS.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Evaluate ways/4-hits.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Booster respin",
+        "order": 2,
+        "what_happens": "Single or super booster respin with crystal transforms.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after booster transforms.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Wild Ruby Booster",
+        "trigger": "4-hit Ruby.",
+        "spins_awarded": "1 respin",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 1 respin."
+          }
+        ],
+        "effects": "Rubies→Wild stacked."
+      },
+      {
+        "name": "Multiplier Topaz Booster",
+        "trigger": "4-hit Topaz.",
+        "spins_awarded": "1 respin",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 1 respin."
+          }
+        ],
+        "effects": "Crystal pays ×5; Topaz stacked."
+      },
+      {
+        "name": "Sapphire Booster",
+        "trigger": "4-hit Sapphire.",
+        "spins_awarded": "1 respin",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 1 respin."
+          }
+        ],
+        "effects": "Sapphires stacked; reel 4 only Sapphires."
+      },
+      {
+        "name": "Super Booster Ruby+Sapphire",
+        "trigger": "4-hit both Ruby & Sapphire.",
+        "spins_awarded": "1 respin",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 1 respin."
+          }
+        ],
+        "effects": "Rubies→Wild; both stacked; reel 4 Wilds."
+      },
+      {
+        "name": "Super Booster Sapphire+Topaz",
+        "trigger": "4-hit both Sapphire & Topaz.",
+        "spins_awarded": "1 respin",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 1 respin."
+          }
+        ],
+        "effects": "Sapphire/Topaz/Ruby Wild stacked; crystal pays ×5."
+      },
+      {
+        "name": "Super Booster Ruby+Topaz",
+        "trigger": "4-hit both Ruby & Topaz.",
+        "spins_awarded": "1 respin",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 1 respin."
+          }
+        ],
+        "effects": "Ruby+Topaz stacked; Rubies→Wild; crystal pays ×5."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "2,796×.",
+      "params": {
+        "max_win_multiplier": 2796
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 2796.0,
+    "max_win_notes": "2,796×",
+    "rtp_percent": 96.61,
+    "rtp_notes": "96.61.",
+    "hit_frequency_notes": "Hit 18.59%; Booster 1 in 49; 100× 1 in 2040."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Wixx_84571_23468aa36c.pdf",
+      "local_path": "sources/nolimit/wixx/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "4x3; 4-hit boosters/supers; max 2796×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/wixx",
+      "local_path": "sources/nolimit/wixx/cms_features.txt",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count",
+    "feature buy"
+  ],
+  "thumbnail": "thumbs/nolimit-wixx.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

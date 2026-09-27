@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:23:31Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Casino Win Spin",
+    "slug": "nolimit-casino-win-spin",
+    "provider_game_id": "CasinoWinSpin",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/CasinoWinSpin",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/casino-win-spin"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "5×3; Hot Zones on reels 2 and 4."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "20 fixed betlines."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Spin 'til You Win: same symbol in both Hot Zones → respins until win with escalating boosts."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Hot Zone Expanding Wilds",
+        "how_it_works": "Wild in Hot Zone→all Wilds expand; Wilds in both Hot Zones→Expanding Wild reel 3 + all Wilds expand."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Expanding Wild",
+        "behavior": "Covers reel; Hot Zone Wild converts regulars to Expanding; both zones create reel-3 Expanding Wild.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "WinSpin Hot Zones",
+        "behavior": "Reels 2+4; same symbol type→Spin 'til You Win; Wild→Expanding Wilds feature.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 20 lines; Hot Zones 2+4. Same symbol both zones→Spin 'til You Win (L1 trigger→Wild, L2 +×2–5, L3 spreading Wild reel 3; until win). Wild in zone→Expanding Wilds. Cap 2,000×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Check Hot Zones; maybe Expanding Wilds; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Spin 'til You Win",
+        "order": 2,
+        "what_happens": "If same symbol both Hot Zones: escalate respins until win.",
+        "ends_when": "Win or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "20 lines after Hot Zone features.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Spin 'til You Win",
+        "trigger": "Same symbol type in Hot Zones on reels 2 and 4.",
+        "spins_awarded": "Respins until a win (escalating levels)",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "L1: triggering symbols Wild; L2: + random ×2–×5; L3+: spreading Wild reel 3.",
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Start respin ladder."
+          },
+          {
+            "name": "Escalate",
+            "order": 2,
+            "what_happens": "Non-win → next boost level until win."
+          }
+        ],
+        "effects": "Guaranteed-win respin ladder."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Hot Zone Expanding Wilds",
+      "trigger": "Wild in Hot Zone",
+      "effects": "All Wilds→Expanding; both zones→reel 3 Expanding Wild.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "2,000×.",
+      "params": {
+        "max_win_multiplier": 2000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 2000.0,
+    "max_win_notes": "2,000×",
+    "rtp_percent": 96.74,
+    "rtp_notes": "96.74; bonus 52.26; main 44.48.",
+    "hit_frequency_notes": "Hit 28.25%; bonus 1 in 26; 100× 1 in 859."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Casino_Win_Spin_54896_6fa50f876d.pdf",
+      "local_path": "sources/nolimit/casino-win-spin/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "5x3 20 lines; Spin 'til You Win ladder; Expanding Wilds; max 2000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/casino-win-spin",
+      "local_path": "sources/nolimit/casino-win-spin/cms_features.txt",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "feature buy"
+  ],
+  "thumbnail": "thumbs/nolimit-casino-win-spin.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

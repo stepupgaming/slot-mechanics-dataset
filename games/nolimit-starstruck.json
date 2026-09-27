@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:23:31Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Starstruck",
+    "slug": "nolimit-starstruck",
+    "provider_game_id": "Starstruck",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Starstruck",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/starstruck"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Sheet: 5 fixed lines on 5×3 (marketing also cites classic 3×3 feel); stacked Wilds 5 rows high."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 5,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "5 fixed lines."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Multiplying Wilds / Starstruck Hot Zone",
+        "how_it_works": "Stacked Wilds ×2/×3/×5 (×5 middle reel only); Hot Zone middle of reel 2 — Starstruck symbol→pick/click bonus."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Multiplying Wild",
+        "behavior": "Stacked 5-high; ×2/×3/×5 on line (×5 only middle reel); multiple mults multiply each other.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Starstruck symbol",
+        "behavior": "In Hot Zone (middle reel 2) → pick/click bonus 5×–1000× bet.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 5 lines; Multiplying Wilds. Starstruck symbol in Hot Zone reel 2→pick/click 5×–1000×. Cap 1,635×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Evaluate 5 lines with Multiplying Wilds.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Starstruck bonus",
+        "order": 2,
+        "what_happens": "Starstruck in Hot Zone → pick/click cash.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "5 lines after Wild mults.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Starstruck Bonus",
+        "trigger": "Starstruck symbol in Hot Zone (middle position reel 2).",
+        "spins_awarded": "Pick-and-click (not fixed FS)",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Pick-and-click cash awards."
+          }
+        ],
+        "effects": "Pick/click wins from 5× to 1000× bet."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Multiplying Wilds",
+      "trigger": "Wild lands",
+      "effects": "×2/×3/×5; stack/multiply.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "1,635×.",
+      "params": {
+        "max_win_multiplier": 1635
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 1635.0,
+    "max_win_notes": "1,635×",
+    "rtp_percent": 96.19,
+    "rtp_notes": "96.19; bonus 21.48; main 74.71.",
+    "hit_frequency_notes": "Hit 37.10%; Multiplying Wilds 1 in 10; Starstruck 1 in 115; 100× 1 in 1771."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Starstruck_36432_4f4b89dfec.pdf",
+      "local_path": "sources/nolimit/starstruck/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "5 lines 5x3; Hot Zone→pick/click 5-1000×; max 1635×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/starstruck",
+      "local_path": "sources/nolimit/starstruck/cms_features.txt",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "feature buy",
+    "exact pick/click tile count"
+  ],
+  "thumbnail": "thumbs/nolimit-starstruck.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

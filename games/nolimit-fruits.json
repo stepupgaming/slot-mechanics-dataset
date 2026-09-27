@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:23:31Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Fruits",
+    "slug": "nolimit-fruits",
+    "provider_game_id": "Fruits",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Fruits",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/fruits"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 6,
+    "rows_min": 2,
+    "rows_max": 4,
+    "layout_notes": "Sheet: 223333 / adapts orientation; 6-reel area; Lightning Rounds use 4×3."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 116,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "116 fixed lines; L→R landscape or top→bottom portrait."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Sticky Fruit Spins: stick symbols; continue while new winning symbols land."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Mystery Wrappers / Lightning Rounds",
+        "how_it_works": "Random 4–9 Mystery Wrapper overlays; 3+ Lightning Bolts→5 Lightning Rounds on 4×3."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "Lightning Bolt",
+        "behavior": "3+ → 5 Lightning Rounds collect spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Mystery Wrapper",
+        "behavior": "4–9 positions overlay; reveal one symbol; may trigger Sticky Fruit Spins.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6-reel 116 lines (223333). Mystery Wrappers; 4 same on first two reels→Sticky Fruit Spins; 3+ Lightning→5 Lightning Rounds. Cap 2,910×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Maybe Mystery Wrappers; evaluate 116 lines.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Sticky Fruit / Lightning",
+        "order": 2,
+        "what_happens": "Sticky Fruit Spins if 4-same reels 1–2; or Lightning Rounds if 3+ bolts.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "116 lines after orientation.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Lightning Rounds",
+        "trigger": "3+ Lightning Bolt symbols.",
+        "spins_awarded": "5",
+        "retrigger": "Extra spins / upgrade symbols may enhance (uncapped upgrades).",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 5."
+          }
+        ],
+        "effects": "Collect Lightning Bolts on 4×3; payout × bet; upgrades enhance."
+      },
+      {
+        "name": "Sticky Fruit Spins",
+        "trigger": "4 of same symbol on first two reels.",
+        "spins_awarded": "Respins until no new winning symbols",
+        "retrigger": null,
+        "sticky_or_persistent_state": "All symbols stick during respins.",
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award Respins until no new winning symbols."
+          }
+        ],
+        "effects": "Respin while additional winning symbols land."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Mystery Wrappers",
+      "trigger": "Random",
+      "effects": "4–9 overlays reveal one symbol.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "2,910×.",
+      "params": {
+        "max_win_multiplier": 2910
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 2910.0,
+    "max_win_notes": "2,910×",
+    "rtp_percent": 96.23,
+    "rtp_notes": "96.23; bonuses 41.34; main 54.89.",
+    "hit_frequency_notes": "Hit 17.57%; Lightning 1 in 187; Sticky Fruit 1 in 86; Wrapper 1 in 72; 100× 1 in 1496."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Fruits_44511_c7ff8e2aa8.pdf",
+      "local_path": "sources/nolimit/fruits/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "116 lines 223333; 3+ Lightning→5 spins; Sticky Fruit; max 2910×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/fruits",
+      "local_path": "sources/nolimit/fruits/cms_features.txt",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "exact Lightning upgrade symbol values",
+    "feature buy"
+  ],
+  "thumbnail": "thumbs/nolimit-fruits.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

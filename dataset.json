@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T19:21:20Z",
-  "game_count": 819,
-  "thumbnail_count": 819,
+  "updated_at": "2026-09-27T19:23:46Z",
+  "game_count": 826,
+  "thumbnail_count": 826,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
     "Elk Studios": 147,
-    "Nolimit City": 123,
+    "Nolimit City": 130,
     "Slotmill": 61,
     "Backseat Gaming": 35
   },
   "by_confidence": {
-    "high": 688,
+    "high": 695,
     "low": 28,
     "medium": 103
   },
@@ -30,7 +30,7 @@
       "medium": 1
     },
     "Nolimit City": {
-      "high": 123
+      "high": 130
     },
     "Pragmatic Play": {
       "high": 156,
@@ -5282,6 +5282,19 @@
       "thumbnail": "thumbs/nolimit-bushido-ways.webp"
     },
     {
+      "slug": "nolimit-casino-win-spin",
+      "title": "Casino Win Spin",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-casino-win-spin.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-casino-win-spin.webp"
+    },
+    {
       "slug": "nolimit-catfish-hunters",
       "title": "Catfish Hunters",
       "provider": "Nolimit City",
@@ -5293,6 +5306,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-catfish-hunters.webp"
+    },
+    {
+      "slug": "nolimit-coins-of-fortune",
+      "title": "Coins of Fortune",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-coins-of-fortune.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-coins-of-fortune.webp"
     },
     {
       "slug": "nolimit-crazy-ex-girlfriend",
@@ -5529,6 +5555,19 @@
       "thumbnail": "thumbs/nolimit-duck-hunters.webp"
     },
     {
+      "slug": "nolimit-dungeon-quest",
+      "title": "Dungeon Quest",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-dungeon-quest.json",
+      "win_system_type": "paylines",
+      "grid": "7×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-dungeon-quest.webp"
+    },
+    {
       "slug": "nolimit-east-vs-west",
       "title": "East Coast VS West Coast",
       "provider": "Nolimit City",
@@ -5631,6 +5670,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-folsom-prison.webp"
+    },
+    {
+      "slug": "nolimit-fruits",
+      "title": "Fruits",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-fruits.json",
+      "win_system_type": "paylines",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-fruits.webp"
     },
     {
       "slug": "nolimit-gaelic-gold",
@@ -5761,6 +5813,19 @@
       "has_buy": false,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-hot-nudge.webp"
+    },
+    {
+      "slug": "nolimit-ice-ice-yeti",
+      "title": "Ice Ice Yeti",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-ice-ice-yeti.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-ice-ice-yeti.webp"
     },
     {
       "slug": "nolimit-immortal-fruits",
@@ -6296,6 +6361,19 @@
       "thumbnail": "thumbs/nolimit-space-donkey.webp"
     },
     {
+      "slug": "nolimit-starstruck",
+      "title": "Starstruck",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-starstruck.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-starstruck.webp"
+    },
+    {
       "slug": "nolimit-stockholm-syndrome",
       "title": "Stockholm Syndrome",
       "provider": "Nolimit City",
@@ -6619,6 +6697,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-whacked.webp"
+    },
+    {
+      "slug": "nolimit-wixx",
+      "title": "Wixx",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-wixx.json",
+      "win_system_type": "ways",
+      "grid": "3×4",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-wixx.webp"
     },
     {
       "slug": "nolimit-xways-hoarder-2",

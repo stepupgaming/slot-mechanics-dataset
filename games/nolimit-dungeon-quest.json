@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:23:31Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Dungeon Quest",
+    "slug": "nolimit-dungeon-quest",
+    "provider_game_id": "DungeonQuest",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DungeonQuest",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/dungeon-quest"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 5,
+    "rows_min": 7,
+    "rows_max": 7,
+    "layout_notes": "5×7; adjacent-reel pay on 29 fixed betlines."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 29,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "29 fixed betlines; adjacent reel pay (not classic L→R only)."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Power Stone / Gem Forge / Alchemy Spins",
+        "how_it_works": "Random Power Stone 2×2 wild + one Ore→Wild; Gem Forge picks Ore→Gem; 3 Scatters→4 Alchemy Spins sticky Wilds."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Sticky Wild (Alchemy)",
+        "behavior": "Ore→Wild one-by-one; remain for entire Alchemy Spins.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3 → 4 Alchemy Spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Ore / Gem",
+        "behavior": "Low orbs upgraded by Power Stone / Gem Forge / Alchemy.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×7 adjacent 29 lines. Random Power Stone / Gem Forge. 3 Scatters→4 Alchemy Spins (Ore→sticky Wild sequentially). Cap 450×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Maybe Power Stone / Gem Forge; evaluate adjacent lines.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus",
+        "order": 2,
+        "what_happens": "3 Scatters → 4 Alchemy Spins.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "29 adjacent betlines.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Alchemy Spins",
+        "trigger": "3 Scatters.",
+        "spins_awarded": "4",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Focused Ore turns Wild and stays for feature.",
+        "progressive_state": null,
+        "end_condition": "Spins/respins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 4."
+          }
+        ],
+        "effects": "Four spins; one Ore type at a time becomes sticky Wild."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Power Stone",
+      "trigger": "Random",
+      "effects": "2×2 wild + all of one Ore→Wild.",
+      "params": {}
+    },
+    {
+      "name": "Gem Forge",
+      "trigger": "Random",
+      "effects": "One Ore replaces other Ores then → Gem.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "450×.",
+      "params": {
+        "max_win_multiplier": 450
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 450.0,
+    "max_win_notes": "450×",
+    "rtp_percent": 96.27,
+    "rtp_notes": "96.27; bonuses 65.85; main 30.42.",
+    "hit_frequency_notes": "Hit 28.46%; FS 1 in 196; bonus modes 1 in 31; 100× 1 in 1222."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Dungeon_Quest_34981_5cf939705a.pdf",
+      "local_path": "sources/nolimit/dungeon-quest/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "5x7 29 lines; 3 Scatter→4 Alchemy Spins; max 450×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/dungeon-quest",
+      "local_path": "sources/nolimit/dungeon-quest/cms_features.txt",
+      "extracted_at": "2026-09-27T19:23:31Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "feature buy",
+    "exact Ore→Gem mapping table"
+  ],
+  "thumbnail": "thumbs/nolimit-dungeon-quest.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
