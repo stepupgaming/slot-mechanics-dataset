@@ -1,0 +1,383 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:53:03Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Duck Hunters 2",
+    "slug": "nolimit-duck-hunters-2",
+    "provider_game_id": "DuckHunters2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DuckHunters2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/duck-hunters-2"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 5,
+    "rows_min": 6,
+    "rows_max": 6,
+    "layout_notes": "Official rowsReels 6-6-6-6-6 (5 reels × 6 rows)."
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": null,
+    "notes": "Scatter Wins: 8+ matching symbols anywhere; winners remove and drop. Position mults up to ×16,384."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Winning symbols removed; new drop in. Position gets ×2 on remove; existing mult doubles on next win there. Random mults at spin start."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Bomb",
+        "how_it_works": "On no wins: removes self + all above on reel; mult ladder ×2/×4/×8… up the column. All Bombs explode before next collapse. Bonus unaffected."
+      },
+      {
+        "name": "xWays / Infectious xWays",
+        "how_it_works": "Transform to regular and ×2/×4/×8 position mult. Infectious expands all same symbols to same size. Multiple Ways sync symbol."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Substitutes normal paying symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3→7 Duck Hunt; 4→8 Hawk Eye; 5→10 Big Game. Extra +1 Shot → +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Position multipliers",
+        "behavior": "Start random; ×2 on win-remove; double on re-win; Bombs/xWays boost; cap ×16,384. Persist in free spins.",
+        "params": {
+          "cap": 16384
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Bomb",
+        "behavior": "Dead-board trigger; column clear + escalating position mults.",
+        "params": {}
+      },
+      {
+        "name": "Side Hustle",
+        "behavior": "Optional side bets (Kill Santa/Granny/Phil/Gamer/Fanboy/Duck, Max Mult, Double Bonus, Dead Spin).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Pay-anywhere 8+ on 5×6 with position mults (to ×16,384), xWays/Infectious, Bombs. Optional Side Hustles. 3/4/5 Bonus → Duck Hunt 7 / Hawk Eye 8 / Big Game 10 with 1/2/3 random upgrades. Buys: xWays Juicer 500×, Bomb Juicer 2,800×; boosters 3×/30×/10×/90×/800×/4,000×. Extra Spin keeps or halves mults. Cap 40,000×.",
+    "phases": [
+      {
+        "name": "Configure boosters / Side Hustle",
+        "order": 1,
+        "what_happens": "Optional Bonus Booster, Bonus Hunt, Day 8/64/512/2048, Side Hustle sides.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged; position mults may preset"
+      },
+      {
+        "name": "Cascade loop",
+        "order": 2,
+        "what_happens": "8+ pays; remove; mults; xWays/Infectious; Bomb on dead board.",
+        "ends_when": "No wins/Bombs",
+        "state_changes": "Position mults"
+      },
+      {
+        "name": "Bonus / xTra",
+        "order": 3,
+        "what_happens": "3/4/5 Bonus → FS; else Extra Spin if Scatter Win and cost ≤ win.",
+        "ends_when": "Feature or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Pay-anywhere with position mults after each drop.",
+    "notes": "CMS nolimitcity.com/games/duck-hunters-2."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Duck Hunt Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "7 free spins",
+        "retrigger": "Extra +1 Shot → +1; upgraded Extra +2 Shots → +2.",
+        "sticky_or_persistent_state": "Position mults kept. One random upgrade from 6 (Infectious Ways, Upgraded Bomb, +2 Shots, +2 Upgrades, Extra Mults, +1 Spin).",
+        "progressive_state": "Position mults persist.",
+        "end_condition": "Spins done or DUCK MAN RETURNS 40,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 spins; award 1 upgrade; keep mults."
+          }
+        ],
+        "effects": "7 FS; 1 upgrade; persistent mults."
+      },
+      {
+        "name": "Hawk Eye Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "8 free spins",
+        "retrigger": "+1/+2 Shot symbols.",
+        "sticky_or_persistent_state": "Duck Hunt features with 2 random upgrades.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or 40,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 spins; 2 upgrades."
+          }
+        ],
+        "effects": "8 FS; 2 upgrades."
+      },
+      {
+        "name": "Big Game Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "10 free spins",
+        "retrigger": "+1/+2 Shots.",
+        "sticky_or_persistent_state": "Duck Hunt with 3 upgrades.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or 40,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; 3 upgrades."
+          }
+        ],
+        "effects": "10 FS; 3 upgrades."
+      },
+      {
+        "name": "xWays Juicer",
+        "trigger": "Buy 500×.",
+        "spins_awarded": "7 spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Duck Hunt rules; Infectious xWays guaranteed each spin; only Upgraded xWays upgrade.",
+        "progressive_state": null,
+        "end_condition": "7 spins or cap.",
+        "phases": [
+          {
+            "name": "Juicer",
+            "order": 1,
+            "what_happens": "7 spins with guaranteed Infectious xWays."
+          }
+        ],
+        "effects": "Paid Duck Hunt variant."
+      },
+      {
+        "name": "Bomb Juicer",
+        "trigger": "Buy 2,800×.",
+        "spins_awarded": "7 spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Upgraded Bomb guaranteed each spin.",
+        "progressive_state": null,
+        "end_condition": "7 spins or cap.",
+        "phases": [
+          {
+            "name": "Juicer",
+            "order": 1,
+            "what_happens": "7 spins with guaranteed Upgraded Bomb."
+          }
+        ],
+        "effects": "Paid Duck Hunt bomb variant."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Scatter Wins",
+      "trigger": "8+ same",
+      "when": "during_spin",
+      "effects": "Pay; remove; drop; position mults.",
+      "params": {}
+    },
+    {
+      "name": "Bomb",
+      "trigger": "No wins remain",
+      "when": "during_spin",
+      "effects": "Column clear + mult ladder.",
+      "params": {}
+    },
+    {
+      "name": "Side Hustle",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "effects": "Optional fixed side pays on named outcomes.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3.0,
+      "cost_text": "3× bet",
+      "effects": "Bonus on reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Hunt",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 30.0,
+      "cost_text": "30× bet",
+      "effects": "Bonus on initial + each win/Bomb avalanche.",
+      "params": {}
+    },
+    {
+      "name": "Day 8/64/512/2048",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_text": "10×/90×/800×/4,000×",
+      "effects": "All positions start ×8/×64/×512/×2048.",
+      "params": {}
+    },
+    {
+      "name": "DUCK MAN RETURNS",
+      "trigger": "Cap",
+      "effects": "Max 40,000×.",
+      "params": {
+        "max_win_multiplier": 40000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xWays Juicer",
+        "cost_multiplier": 500.0,
+        "cost_text": "500× bet",
+        "effects": "7 Duck Hunt with Infectious xWays each spin.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bomb Juicer",
+        "cost_multiplier": 2800.0,
+        "cost_text": "2,800× bet",
+        "effects": "7 Duck Hunt with Upgraded Bomb each spin.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 3.0,
+        "cost_text": "3× bet",
+        "effects": "Bonus reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": 30.0,
+        "cost_text": "30× bet",
+        "effects": "Bonus each avalanche.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Day 8 Spins",
+        "cost_multiplier": 10.0,
+        "cost_text": "10× bet",
+        "effects": "All positions ×8.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Day 64 Spins",
+        "cost_multiplier": 90.0,
+        "cost_text": "90× bet",
+        "effects": "All positions ×64.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Day 512 Spins",
+        "cost_multiplier": 800.0,
+        "cost_text": "800× bet",
+        "effects": "All positions ×512.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Day 2048 Spins",
+        "cost_multiplier": 4000.0,
+        "cost_text": "4,000× bet",
+        "effects": "All positions ×2048.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Extra Spin",
+        "cost_multiplier": null,
+        "cost_text": "From position mults (full or halved)",
+        "effects": "Post-round if Scatter Win and cost ≤ win; no Bonus.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Boosters/Side Hustle instead of classic xBet."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 40000.0,
+    "max_win_notes": "DUCK MAN RETURNS 40,000×",
+    "rtp_percent": 96.0,
+    "rtp_notes": "96% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/duck-hunters-2",
+      "local_path": "sources/nolimit/duck-hunters-2/cms_features.txt",
+      "extracted_at": "2026-09-27T18:53:03Z",
+      "quote_or_excerpt": "Scatter Wins 8+; Duck Hunt 7 / Hawk Eye 8 / Big Game 10; Juicers 500/2800×; max 40000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/duck-hunters-2",
+      "local_path": "sources/nolimit/duck-hunters-2/page.html",
+      "extracted_at": "2026-09-27T18:53:03Z",
+      "quote_or_excerpt": "96% RTP, 40000 xBet MAX; rowsReels 6-6-6-6-6."
+    }
+  ],
+  "unknowns": [
+    "exact Side Hustle option costs"
+  ],
+  "thumbnail": "thumbs/nolimit-duck-hunters-2.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

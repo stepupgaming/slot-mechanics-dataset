@@ -1,0 +1,311 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:54:41Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Ding Dong Death",
+    "slug": "nolimit-ding-dong-death",
+    "provider_game_id": "DingDongDeath",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DingDongDeath",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/ding-dong-death"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 6,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official 3-3-3-3-3-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xNudge and xSplit Wilds; exact count not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Knock Knock and wins trigger collapses; every 3rd avalanche unlocks a Death Meter level."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Death Meter",
+        "how_it_works": "5 levels; every 3rd avalanche unlocks a level converting a character type to Wilds for the round. L5 first unlock sets global mult ×2 then +1 per later L5; may fire Mental Patient / xSplit Wild / xNudge Wild then re-locks L5."
+      },
+      {
+        "name": "Knock Knock",
+        "how_it_works": "3+ same aligned horizontally with no win → remove, place Mental Patients in middle (keep mult), explode others except Scatter/Wild/Mental Patient → collapse."
+      },
+      {
+        "name": "xNudge Wild",
+        "how_it_works": "Drops to bottom (+1 mult per pass), expands full reel; only split symbols raise mult while expanding; consecutive nudge mults add; applies to wins involving the Wild."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Character Wild",
+        "behavior": "From Death Meter conversions; can become xSplit or xNudge Wild at L5.",
+        "params": {}
+      },
+      {
+        "name": "xNudge Wild",
+        "behavior": "Drop+expand mult rules; can boost global mult in Ding Dong Death Spins when in a win.",
+        "params": {}
+      },
+      {
+        "name": "xSplit Wild",
+        "behavior": "Splits/doubles row except Scatter; doubles xNudge mult if split.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3/4/5 → 7/9/11 Ding Dong Spins; 6 → 13 Ding Dong Death Spins. Scatter in FS → +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Global / xNudge",
+        "behavior": "Death Meter L5 sets/raises global mult; nudge mults add.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Mental Patient",
+        "behavior": "From Knock Knock or L5 feature; wild-like special in collapses.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways cascades on 3×6 with Death Meter (every 3rd avalanche), Knock Knock, xNudge/xSplit. 3–5 Scatter → Ding Dong 7/9/11; 6 → Ding Dong Death 13. Boosters 2×/50×/100×/200×/300×. xTra keeps meter+mult. Cap 14,280×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional Bonus Booster 2×, Death Meter 3/4/5, xNudge Booster 300×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged; meter may preset"
+      },
+      {
+        "name": "Cascade + meter",
+        "order": 2,
+        "what_happens": "Evaluate; Knock Knock; avalanches unlock Death Meter levels/features.",
+        "ends_when": "Resolved",
+        "state_changes": "Meter/global mult"
+      },
+      {
+        "name": "Bonus / xTra",
+        "order": 3,
+        "what_happens": "3–6 Scatter → FS; else Extra Spin if cost ≤ win.",
+        "ends_when": "Feature or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after nudge/split/Knock Knock; global mult from Death Meter.",
+    "notes": "CMS nolimitcity.com/games/ding-dong-death."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Ding Dong Spins",
+        "trigger": "3/4/5 Scatter.",
+        "spins_awarded": "7 / 9 / 11",
+        "retrigger": "Scatter → +1 spin.",
+        "sticky_or_persistent_state": "Death Meter and global win mult do not reset.",
+        "progressive_state": "Meter continues across spins.",
+        "end_condition": "Spins done or Knock Knock Who's There? 14,280×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7/9/11 spins; persistent meter/mult."
+          }
+        ],
+        "effects": "7/9/11 FS; persistent Death Meter."
+      },
+      {
+        "name": "Ding Dong Death Spins",
+        "trigger": "6 Scatter.",
+        "spins_awarded": "13",
+        "retrigger": "Scatter → +1.",
+        "sticky_or_persistent_state": "All Ding Dong features; each unlocked meter level +1 global mult; L5 only +1 (no special feature); xNudge win adds to global mult.",
+        "progressive_state": "Stronger global mult growth.",
+        "end_condition": "Spins done or 14,280×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "13 spins; enhanced meter mult rules."
+          }
+        ],
+        "effects": "13 FS; enhanced Death Meter mult."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Death Meter",
+      "trigger": "Every 3rd avalanche",
+      "when": "during_spin",
+      "effects": "Unlock levels; L5 features/global mult.",
+      "params": {}
+    },
+    {
+      "name": "Knock Knock",
+      "trigger": "3+ same H, no win",
+      "when": "during_spin",
+      "effects": "Mental Patients + explode others → collapse.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2× bet",
+      "effects": "3× more likely Ding Dong / Death Spins.",
+      "params": {}
+    },
+    {
+      "name": "Death Meter 3/4/5",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_text": "50× / 100× / 200×",
+      "effects": "Guaranteed unlock meter level 3/4/5.",
+      "params": {}
+    },
+    {
+      "name": "xNudge Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 300.0,
+      "cost_text": "300× bet",
+      "effects": "xNudge Wild on reel 3 or 4.",
+      "params": {}
+    },
+    {
+      "name": "Knock Knock Who's There?",
+      "trigger": "Cap",
+      "effects": "Max 14,280×.",
+      "params": {
+        "max_win_multiplier": 14280
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 2.0,
+        "cost_text": "2× bet",
+        "effects": "3× FS trigger chance.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Death Meter 3",
+        "cost_multiplier": 50.0,
+        "cost_text": "50× bet",
+        "effects": "Unlock meter level 3.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Death Meter 4",
+        "cost_multiplier": 100.0,
+        "cost_text": "100× bet",
+        "effects": "Unlock meter level 4.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Death Meter 5",
+        "cost_multiplier": 200.0,
+        "cost_text": "200× bet",
+        "effects": "Unlock meter level 5.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xNudge Booster",
+        "cost_multiplier": 300.0,
+        "cost_text": "300× bet",
+        "effects": "xNudge on reel 3 or 4.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xTra Spin",
+        "cost_multiplier": null,
+        "cost_text": "From meter levels + win mult",
+        "effects": "Keep meter/mult if cost ≤ total win.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Bonus Booster 2× is the light per-spin FS boost."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 14280.0,
+    "max_win_notes": "Knock Knock Who's There? 14,280×",
+    "rtp_percent": 96.08,
+    "rtp_notes": "96.08% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/ding-dong-death",
+      "local_path": "sources/nolimit/ding-dong-death/cms_features.txt",
+      "extracted_at": "2026-09-27T18:54:41Z",
+      "quote_or_excerpt": "Ding Dong 7/9/11; Death 13; Death Meter; boosters; max 14280×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/ding-dong-death",
+      "local_path": "sources/nolimit/ding-dong-death/page.html",
+      "extracted_at": "2026-09-27T18:54:41Z",
+      "quote_or_excerpt": "96.08% RTP, 14280 xBet MAX; 3-3-3-3-3-3."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-ding-dong-death.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

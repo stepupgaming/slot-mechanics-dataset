@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:54:10Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "BRICK SNAKE 2000",
+    "slug": "nolimit-brick-snake-2000",
+    "provider_game_id": "BrickSnake2000",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/BrickSnake2000",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/brick-snake-2000"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": 4,
+    "rows_max": 5,
+    "layout_notes": "Official 5×5. Boosted xBet disables bottom row in base (Wild Snek cannot enter disabled row)."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Base ways with xWays; bonus is snake-collect coin mode rather than classic lines."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Moving Wild Snek (base)",
+        "how_it_works": "Lands anywhere; moves 1–5 steps any direction except backwards; path becomes Wilds. On revealed xWays → Wild of that Ways size."
+      },
+      {
+        "name": "Snek bonus movement",
+        "how_it_works": "Sneks move until eat self or Slayer; wrap edges; multiple Sneks oldest-first; max 3 Sneks via Eggs; all dead ends round."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Moving Wild Snek",
+        "behavior": "Base: path Wilds. Bonus: Snek heads collect coins/mults/eggs/slayers/collector/maxwin.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3 or 4 → Snek Spins (3rd/4th convert to Sneks). 5 → Super Snek Spins (3rd/4th → Sneks).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Coin multiplier",
+        "behavior": "Values 1–5,10; eating mult increases coin mult applied to default coins.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Collector 2000",
+        "behavior": "Sums visible coin values each spin start; if eaten, adds to counter then × win mult at eat time. Disappears after 4 uneaten steps; returns next spin.",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "Coin",
+        "behavior": "Defaults 1–5,10,100 × bet; Snek eat adds to win.",
+        "params": {}
+      },
+      {
+        "name": "Egg",
+        "behavior": "New Snek from eater's tail; max 3 Sneks.",
+        "params": {}
+      },
+      {
+        "name": "Slayer",
+        "behavior": "Sticky; max 4; eating kills Snek for next spin.",
+        "params": {}
+      },
+      {
+        "name": "Upgrade (UP)",
+        "behavior": "Eating upgrades Snek Spins → Super Snek after round.",
+        "params": {}
+      },
+      {
+        "name": "MaxWin Coin",
+        "behavior": "Eat → 8,110×; else disappears after 4 steps.",
+        "params": {}
+      },
+      {
+        "name": "xWays",
+        "behavior": "Reveal stacks; interact with Wild Snek path.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×5 ways with Moving Wild Snek (1–5 steps) and xWays. Boosted xBet +5% guarantees Scatter reel 2 and disables bottom row. 3–4 Scatter → Snek Spins; 5 → Super Snek Spins (snake-collect coins/mults/eggs until death). GOD MODE 1,689× / DELUXE 8,360×. Cap 8,110× then optional Double or Nothing to 16,220×.",
+    "phases": [
+      {
+        "name": "Configure Boosted xBet",
+        "order": 1,
+        "what_happens": "Optional +5%: Scatter reel 2; bottom row disabled.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.05"
+      },
+      {
+        "name": "Spin + Wild Snek",
+        "order": 2,
+        "what_happens": "xWays reveal; Wild Snek moves 1–5 leaving Wilds; evaluate ways.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3–4 Scatter → Snek Spins; 5 → Super Snek.",
+        "ends_when": "Feature or end",
+        "state_changes": "Enter snake mode"
+      }
+    ],
+    "win_evaluation": "Base: ways with Wild path. Bonus: coin collects × mults; MAXWIN coin 8110×.",
+    "notes": "CMS; exact Snek Spins round length not a fixed FS count—ends when all Sneks die."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Snek Spins",
+        "trigger": "3 or 4 Scatters.",
+        "spins_awarded": "Snake-collect rounds until all Sneks die (not a fixed FS count on CMS).",
+        "retrigger": "Egg can spawn Sneks (max 3). UP symbol upgrades to Super after round.",
+        "sticky_or_persistent_state": "3rd/4th Scatter → Sneks. Slayers sticky (max 4). Collector 2000 recurs.",
+        "progressive_state": "Coin mult from eaten multipliers; Collector sum.",
+        "end_condition": "All Sneks dead or Max Win / Double or Nothing.",
+        "phases": [
+          {
+            "name": "Snek play",
+            "order": 1,
+            "what_happens": "Sneks move/eat coins/mults/eggs/slayers/collector/maxwin."
+          }
+        ],
+        "effects": "Hold-style snake collect; convertible to Super via UP."
+      },
+      {
+        "name": "Super Snek Spins",
+        "trigger": "5 Scatters (or UP upgrade).",
+        "spins_awarded": "Same snake-until-death framework.",
+        "retrigger": "Eggs.",
+        "sticky_or_persistent_state": "3rd/4th Scatter → Sneks at trigger.",
+        "progressive_state": "Same collect economy.",
+        "end_condition": "All Sneks dead or cap.",
+        "phases": [
+          {
+            "name": "Super Snek",
+            "order": 1,
+            "what_happens": "Enhanced Snek Spins (CMS names mode; extra rules beyond convert scatters not detailed)."
+          }
+        ],
+        "effects": "Top snake bonus mode."
+      }
+    ],
+    "notes": "Fixed free-spin counts not printed; mode ends when Sneks die."
+  },
+  "features": [
+    {
+      "name": "Moving Wild Snek",
+      "trigger": "Snek lands",
+      "when": "during_spin",
+      "effects": "Move 1–5; path Wilds.",
+      "params": {}
+    },
+    {
+      "name": "Boosted xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.05,
+      "cost_text": "+5% bet",
+      "effects": "Scatter reel 2; disable bottom row.",
+      "params": {}
+    },
+    {
+      "name": "GOD MODE",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 1689.0,
+      "cost_text": "1,689× bet",
+      "effects": "MAX on reel 1 + WIN on reel 5 same row → No Win or Max Win.",
+      "params": {}
+    },
+    {
+      "name": "GOD MODE DELUXE",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 8360.0,
+      "cost_text": "8,360× bet",
+      "effects": "Purchase Max Win into Double or Nothing.",
+      "params": {}
+    },
+    {
+      "name": "Double or Nothing",
+      "trigger": "After Max Win",
+      "effects": "50/50 double to 16,220× or lose.",
+      "params": {}
+    },
+    {
+      "name": "Max Win",
+      "trigger": "Cap / MaxWin coin",
+      "effects": "8,110× then optional Double or Nothing.",
+      "params": {
+        "max_win_multiplier": 8110
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosted xBet",
+        "cost_multiplier": 1.05,
+        "cost_text": "+5%",
+        "effects": "Scatter reel 2; bottom row off.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "GOD MODE",
+        "cost_multiplier": 1689.0,
+        "cost_text": "1,689× bet",
+        "effects": "MAX+WIN same row chase.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "GOD MODE DELUXE",
+        "cost_multiplier": 8360.0,
+        "cost_text": "8,360× bet",
+        "effects": "Buy Max Win → Double or Nothing.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Generic Nolimit Bonus buy band not listed beyond GOD modes."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.05,
+    "effects": "Boosted xBet +5%: Scatter reel 2; bottom row disabled.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 8110.0,
+    "max_win_notes": "8,110×; Double or Nothing can reach 16,220× or zero",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96.03% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/brick-snake-2000",
+      "local_path": "sources/nolimit/brick-snake-2000/cms_features.txt",
+      "extracted_at": "2026-09-27T18:54:10Z",
+      "quote_or_excerpt": "Snek/Super Snek; Collector 2000; GOD MODE 1689/8360×; max 8110× + Double or Nothing."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/brick-snake-2000",
+      "local_path": "sources/nolimit/brick-snake-2000/page.html",
+      "extracted_at": "2026-09-27T18:54:10Z",
+      "quote_or_excerpt": "96.03% RTP, 8110 xBet MAX; 5×5."
+    }
+  ],
+  "unknowns": [
+    "exact Super Snek mechanical deltas vs Snek Spins",
+    "exact ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-brick-snake-2000.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

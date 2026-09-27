@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:53:37Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Das xBoot 2wei!",
+    "slug": "nolimit-das-xboot-2wei",
+    "provider_game_id": "DasxBoot2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DasxBoot2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/das-xboot-2wei"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 6,
+    "rows_min": 2,
+    "rows_max": 8,
+    "layout_notes": "Official rowsReels '2-3-4-4-3-2 up to 2-4-8-5-4-2'. Periscope Up grows reel 3 to 8. Binocular over reels 5–6."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays splits from Torpedo Builder; exact base ways not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "xBomb explodes non-winning (except Bonus/Wild); symbols fall; +1 win mult before collapse."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Periscope Up: reel 3 grows to 8; Periscope Wild can nudge full height on hit."
+    },
+    "other": [
+      {
+        "name": "Torpedo Builder",
+        "how_it_works": "Full boat in Binocular (reels 5–6) → 3 spins to fill 4 torpedo parts on reels 2–5 (reels 1&6 closed). Parts add +1–3 xWays or Ways Wild; launch reveals splits. Golden boat → parts only +8/+88."
+      },
+      {
+        "name": "Periscope Up",
+        "how_it_works": "Reel 3 to 8; Periscope Wild; connecting 1–2 + Wild → torpedo shot; hit → nudge full height adding mult per step. Random in base/Wolf Pack; always on in Silent Hunter/Battle."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xBomb Wild",
+        "behavior": "Subs except Bonus; explodes non-winners; +1 mult next collapse; FS mult carries.",
+        "params": {}
+      },
+      {
+        "name": "Periscope Wild",
+        "behavior": "Reel 3; on hit nudges full height with mult per step; miss = single Wild.",
+        "params": {}
+      },
+      {
+        "name": "Ways Wild (Torpedo)",
+        "behavior": "From torpedo parts on reels 3–4; splits on launch.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Reels 1–6. 3→8 Silent Hunter; 4→9 Wolf Pack; 5→10 Battle of the Atlantic. Extra Bonus in FS → +2 spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xBomb / Periscope mults",
+        "behavior": "Add together before pays; persist/grow in bonus modes.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Boat / Golden Boat (Binocular)",
+        "behavior": "Full boat → Torpedo Builder; golden → Golden Torpedo Builder.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways cascades on expanding 6-reel grid with xBomb, Torpedo Builder (Binocular boats), Periscope Up. 3/4/5 Bonus → Silent Hunter 8 / Wolf Pack 9 / Battle 10. Boosters 1.5×/8×/20×/4,500×. Extra Spin keeps mults/torpedo progress. Cap 59,999×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional Bonus 1.5×, Periscope Up 8×, Torpedo 20×, Golden Torpedo 4,500×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Cascade / Torpedo / Periscope",
+        "order": 2,
+        "what_happens": "xBomb collapses; optional Torpedo Builder or Periscope Up sequences.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults/ways"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3/4/5 Bonus → FS modes.",
+        "ends_when": "Feature or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after collapses/torpedo launches/periscope nudges; mults add.",
+    "notes": "CMS; sibling pattern to Das xBoot."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Silent Hunter Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "8",
+        "retrigger": "Extra Bonus → +2.",
+        "sticky_or_persistent_state": "Periscope Up always on; Periscope nudge mult persistent for that hit spin; xBomb mult +1 for remainder of bonus.",
+        "progressive_state": "xBomb mult accumulates.",
+        "end_condition": "Spins done or Nein! 59,999×; optional Extra Spin.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 spins; Periscope always active."
+          }
+        ],
+        "effects": "8 FS; perpetual Periscope; growing xBomb mult."
+      },
+      {
+        "name": "Wolf Pack Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "9",
+        "retrigger": "Extra Bonus → +2.",
+        "sticky_or_persistent_state": "Torpedo tube under 2–5 preloaded size-2; parts leave Wilds; boat launches current torpedo then reloads identical; xBomb mult accumulates; Periscope can trigger randomly.",
+        "progressive_state": "Torpedo enhancements + xBomb mult.",
+        "end_condition": "Spins done or 59,999×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "9 spins; torpedo tube active."
+          }
+        ],
+        "effects": "9 FS; persistent torpedo tube."
+      },
+      {
+        "name": "Battle of the Atlantic Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "10",
+        "retrigger": "Extra Bonus → +2.",
+        "sticky_or_persistent_state": "Silent Hunter Periscope + Wolf Pack Torpedo combined; xBomb mult accumulates.",
+        "progressive_state": "Combined features + xBomb mult.",
+        "end_condition": "Spins done or 59,999×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; both Periscope and Torpedo."
+          }
+        ],
+        "effects": "10 FS; full feature stack."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBomb",
+      "trigger": "xBomb lands",
+      "when": "during_spin",
+      "effects": "Explode non-winners; +1 mult; cascade.",
+      "params": {}
+    },
+    {
+      "name": "Torpedo Builder / Golden",
+      "trigger": "Full/golden boat in Binocular",
+      "when": "during_spin",
+      "effects": "Build and launch xWays/Wild splits.",
+      "params": {}
+    },
+    {
+      "name": "Periscope Up",
+      "trigger": "Random or always in some FS",
+      "when": "during_spin",
+      "effects": "Reel 3→8; Periscope Wild nudge on hit.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "1.5× bet",
+      "effects": "Guaranteed Bonus.",
+      "params": {}
+    },
+    {
+      "name": "Periscope Up Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 8.0,
+      "cost_text": "8× bet",
+      "effects": "Guaranteed Periscope Up.",
+      "params": {}
+    },
+    {
+      "name": "Torpedo Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 20.0,
+      "cost_text": "20× bet",
+      "effects": "Guaranteed Torpedo Builder.",
+      "params": {}
+    },
+    {
+      "name": "Golden Torpedo Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 4500.0,
+      "cost_text": "4,500× bet",
+      "effects": "Guaranteed Golden Torpedo Builder.",
+      "params": {}
+    },
+    {
+      "name": "Nein! Nein! Nein! Nein!",
+      "trigger": "Cap",
+      "effects": "Max 59,999×.",
+      "params": {
+        "max_win_multiplier": 59999
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 1.5,
+        "cost_text": "1.5× bet",
+        "effects": "Guaranteed Bonus.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Periscope Up",
+        "cost_multiplier": 8.0,
+        "cost_text": "8× bet",
+        "effects": "Guaranteed Periscope Up.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Torpedo Booster",
+        "cost_multiplier": 20.0,
+        "cost_text": "20× bet",
+        "effects": "Guaranteed Torpedo Builder.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Golden Torpedo Booster",
+        "cost_multiplier": 4500.0,
+        "cost_text": "4,500× bet",
+        "effects": "Guaranteed Golden Torpedo.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Extra Spin",
+        "cost_multiplier": null,
+        "cost_text": "From mults / torpedo progress",
+        "effects": "After FS if cost ≤ total win.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Boosters used instead of classic xBet."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 59999.0,
+    "max_win_notes": "Nein! Nein! Nein! Nein! 59,999×",
+    "rtp_percent": 95.94,
+    "rtp_notes": "95.94% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/das-xboot-2wei",
+      "local_path": "sources/nolimit/das-xboot-2wei/cms_features.txt",
+      "extracted_at": "2026-09-27T18:53:37Z",
+      "quote_or_excerpt": "Silent Hunter 8 / Wolf Pack 9 / Battle 10; Torpedo/Periscope; boosters; max 59999×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/das-xboot-2wei",
+      "local_path": "sources/nolimit/das-xboot-2wei/page.html",
+      "extracted_at": "2026-09-27T18:53:37Z",
+      "quote_or_excerpt": "95.94% RTP, 59999 xBet MAX; expanding rowsReels."
+    }
+  ],
+  "unknowns": [
+    "exact base ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-das-xboot-2wei.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:53:37Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Home of the Brave",
+    "slug": "nolimit-home-of-the-brave",
+    "provider_game_id": "HomeOfTheBrave",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/HomeOfTheBrave",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/home-of-the-brave"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "4-4-4-4-4 plus Conveyor Belt above and Hot Sauce Reels on far left/right."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xSplit (max 4 splits); exact ways count not on CMS."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Wins/xBomb remove; Conveyor drops into gaps; Hot Sauce triggers before next collapse."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Hot Sauce Reels",
+        "how_it_works": "Triggered by Wild Launch Button; base fills one side partially/fully each spin; FS both sides. Fire xSplit / xBomb / Multiplier RPG (2–5×, 99×) into Launch Wild."
+      },
+      {
+        "name": "Conveyor Belt",
+        "how_it_works": "Wild Launch→Wild Doughnut + Hot Sauce; Wild Doughnut; xNudge Wild Tower (4-high, additive nudge mult); Red Cap→Cap Win Machine; Trash Can dead filler."
+      },
+      {
+        "name": "Cap Win Machine",
+        "how_it_works": "Push for Red Cap rows 30×/20×/15×/10× or Yellow Cap Max Win; collect fallen caps × bet."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild Doughnut / Launch Wild",
+        "behavior": "From conveyor Launch Button; receives RPG mults.",
+        "params": {}
+      },
+      {
+        "name": "xNudge Wild Tower",
+        "behavior": "4-high; nudges to bottom; mult per step additive.",
+        "params": {}
+      },
+      {
+        "name": "xBomb Wild",
+        "behavior": "Subs except Bonus/Red Cap; explodes adjacent President/Alphabet; +mult by value next collapse. Sticky in FS.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3→8 Covfefe; 4→10 Dog Eating. Bonus in Covfefe → +2 and upgrade remaining to Dog Eating.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xBomb / RPG / xNudge",
+        "behavior": "Collapse and nudge mults; RPG 2–5× and 99×.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Red Cap / Yellow Cap",
+        "behavior": "Cap Win Machine; Yellow = Max Win chance.",
+        "params": {}
+      },
+      {
+        "name": "xGOD",
+        "behavior": "Can award max win instantly in base or bonus (sheet highlight).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways cascades on 4-4-4-4-4 with Conveyor + Hot Sauce flanks. Wild Launch, xNudge Tower, xBomb, xSplit, Cap Win Machine, xGOD. 3 Bonus→8 Covfefe; 4→10 Dog Eating. Boosters 1.4×/5×/333×/6,666×. Cap 61,446×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional xBet 1.4×, Deluxe 5×, Satan Spin 333×, Cap God Mode 6,666×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Cascade + Hot Sauce",
+        "order": 2,
+        "what_happens": "Evaluate; Hot Sauce/Conveyor features; xBomb collapses.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus / Cap check",
+        "order": 3,
+        "what_happens": "3/4 Bonus → FS; Red Cap → Cap Win Machine.",
+        "ends_when": "Feature or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after splits/bombs/nudges.",
+    "notes": "CMS + official GameSheet PDF."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Covfefe Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "8",
+        "retrigger": "Bonus → +2 and upgrade remaining to Dog Eating.",
+        "sticky_or_persistent_state": "Both Hot Sauce Reels filled each spin; xBomb Wild Mult sticky.",
+        "progressive_state": "Sticky xBomb mult.",
+        "end_condition": "Spins done or President Evil 61,446×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 spins; dual Hot Sauce; sticky xBomb."
+          }
+        ],
+        "effects": "8 FS; dual Hot Sauce; sticky xBomb; upgradeable."
+      },
+      {
+        "name": "Dog Eating Spins",
+        "trigger": "4 Bonus (or upgrade from Covfefe).",
+        "spins_awarded": "10 (or remaining Covfefe+2)",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Both Hot Sauce filled; guaranteed Wild Launch each spin on conveyor; sticky xBomb mult.",
+        "progressive_state": "Sticky xBomb.",
+        "end_condition": "Spins done or 61,446×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; guaranteed Launch each spin."
+          }
+        ],
+        "effects": "10 FS; guaranteed Launch; dual Hot Sauce."
+      }
+    ],
+    "notes": "Sheet also names Dog Meat Spins (CMS: Dog Eating Spins)."
+  },
+  "features": [
+    {
+      "name": "Hot Sauce / Conveyor",
+      "trigger": "Wild Launch / drops",
+      "when": "during_spin",
+      "effects": "xSplit/xBomb/RPG; nudge tower; Cap machine.",
+      "params": {}
+    },
+    {
+      "name": "xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.4,
+      "cost_text": "1.4× bet",
+      "effects": "Bonus on reel 2.",
+      "params": {}
+    },
+    {
+      "name": "xBet Deluxe",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 5.0,
+      "cost_text": "5× bet",
+      "effects": "Bonus reel 2 + Wild Launch on conveyor.",
+      "params": {}
+    },
+    {
+      "name": "The Satan Spin",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 333.0,
+      "cost_text": "333× bet",
+      "effects": "Wild Launch + both Hot Sauce fully filled.",
+      "params": {}
+    },
+    {
+      "name": "Cap Win Machine God Mode",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 6666.0,
+      "cost_text": "6,666× bet",
+      "effects": "Guaranteed Cap Win Machine spin.",
+      "params": {}
+    },
+    {
+      "name": "President Evil",
+      "trigger": "Cap",
+      "effects": "Max 61,446×.",
+      "params": {
+        "max_win_multiplier": 61446
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBet™",
+        "cost_multiplier": 1.4,
+        "cost_text": "1.4× bet",
+        "effects": "Bonus reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xBet™ Deluxe",
+        "cost_multiplier": 5.0,
+        "cost_text": "5× bet",
+        "effects": "Bonus + Wild Launch.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "The Satan Spin",
+        "cost_multiplier": 333.0,
+        "cost_text": "333× bet",
+        "effects": "Launch + full Hot Sauce both sides.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "The Cap Win Machine (God Mode)",
+        "cost_multiplier": 6666.0,
+        "cost_text": "6,666× bet",
+        "effects": "Guaranteed Cap Win Machine.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.4,
+    "effects": "xBet 1.4×: Bonus on reel 2. Deluxe 5× also available.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 61446.0,
+    "max_win_notes": "President Evil 61,446× (sheet: 1 in ~13.8M at 96%)",
+    "rtp_percent": 96.0,
+    "rtp_notes": "96.00%; DX0 95.16%; DX1 94.11%; DX2 92.04%. Base 61.65% / Bonus 34.35%.",
+    "hit_frequency_notes": "FS 1 in 246; win 100× 1 in 1084 (sheet)."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/home-of-the-brave",
+      "local_path": "sources/nolimit/home-of-the-brave/cms_features.txt",
+      "extracted_at": "2026-09-27T18:53:37Z",
+      "quote_or_excerpt": "Covfefe 8 / Dog Eating 10; Hot Sauce; Cap Machine; boosters; max 61446×."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Home_Of_The_Brave_09264_c6a7dd0a55.pdf",
+      "local_path": "sources/nolimit/home-of-the-brave/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:53:37Z",
+      "quote_or_excerpt": "RTP 96/95.16/94.11/92.04; max 61446×; 4-4-4-4-4."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/home-of-the-brave",
+      "local_path": "sources/nolimit/home-of-the-brave/page.html",
+      "extracted_at": "2026-09-27T18:53:37Z",
+      "quote_or_excerpt": "96% RTP, 61446 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count",
+    "xGOD concrete trigger odds"
+  ],
+  "thumbnail": "thumbs/nolimit-home-of-the-brave.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

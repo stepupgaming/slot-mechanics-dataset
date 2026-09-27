@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:53:03Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Duck Hunters",
+    "slug": "nolimit-duck-hunters",
+    "provider_game_id": "DuckHunters",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DuckHunters",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/duck-hunters"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 5-5-5-5-5-5."
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": null,
+    "notes": "Scatter Wins 8+; position mults to ×8,192."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Wins remove; drop; position ×2 on remove; double on re-win."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Bomb",
+        "how_it_works": "Explodes adjacent regulars in 3×3; doubles symbol size on affected positions. Bonus/Wild unaffected. Upgraded Bomb in FS uses 5×5."
+      },
+      {
+        "name": "xWays / Infectious",
+        "how_it_works": "Transform + ×2/×4/×8 position mult; Infectious expands all same symbols."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Substitutes; unaffected by Bomb.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3→7 Duck Hunt (1 upgrade); 4→8 Hawk Eye (2); 5→10 Big Game (all 3). +1 Shot → +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Position multipliers",
+        "behavior": "×2 on remove; double on re-win; cap ×8192; persist in FS.",
+        "params": {
+          "cap": 8192
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Bomb",
+        "behavior": "3×3 adjacent clear + size double; FS upgrade 5×5.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Pay-anywhere 8+ on 6×5 with position mults (to ×8192), xWays/Infectious, Bombs. xBet 2× (5× FS chance, Bonus reel 2). Day 2/64/1024 boosters. 3/4/5 Bonus → Duck Hunt/Hawk Eye/Big Game. Extra Spin keeps mults. Cap 30,000×.",
+    "phases": [
+      {
+        "name": "Configure xBet/boosters",
+        "order": 1,
+        "what_happens": "Optional xBet 2× or Day 2/64/1024.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Cascade loop",
+        "order": 2,
+        "what_happens": "8+ pays; mults; Ways; Bomb.",
+        "ends_when": "Dead board",
+        "state_changes": "Position mults"
+      },
+      {
+        "name": "Bonus / Extra Spin",
+        "order": 3,
+        "what_happens": "3/4/5 Bonus → FS; else Extra Spin if cost ≤ win.",
+        "ends_when": "Feature or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Pay-anywhere with position mults.",
+    "notes": "CMS nolimitcity.com/games/duck-hunters."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Duck Hunt Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "7",
+        "retrigger": "Extra +1 Shot → +1; Extra +2 Shots upgrade → +2.",
+        "sticky_or_persistent_state": "Position mults kept; 1 of 3 upgrades (Infectious Ways, Upgraded Bomb 5×5, Extra +2 Shots).",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or Sky is the Limit 30,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 spins; 1 upgrade."
+          }
+        ],
+        "effects": "7 FS; 1 upgrade."
+      },
+      {
+        "name": "Hawk Eye Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "8",
+        "retrigger": "+1/+2 Shots.",
+        "sticky_or_persistent_state": "2 upgrades.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or 30,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 spins; 2 upgrades."
+          }
+        ],
+        "effects": "8 FS; 2 upgrades."
+      },
+      {
+        "name": "Big Game Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "10",
+        "retrigger": "+1/+2 Shots.",
+        "sticky_or_persistent_state": "All 3 upgrades.",
+        "progressive_state": "Persistent mults.",
+        "end_condition": "Spins done or 30,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 spins; all upgrades."
+          }
+        ],
+        "effects": "10 FS; all upgrades."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2× bet",
+      "effects": "5× FS chance; Bonus on reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Day 2 Spins",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2.8,
+      "cost_text": "2.8× bet",
+      "effects": "All positions start ×2.",
+      "params": {}
+    },
+    {
+      "name": "Day 64 Spins",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 90.0,
+      "cost_text": "90× bet",
+      "effects": "All positions ×64.",
+      "params": {}
+    },
+    {
+      "name": "Day 1024 Spins",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3000.0,
+      "cost_text": "3,000× bet",
+      "effects": "All positions ×1024.",
+      "params": {}
+    },
+    {
+      "name": "Sky is the Limit",
+      "trigger": "Cap",
+      "effects": "Max 30,000×.",
+      "params": {
+        "max_win_multiplier": 30000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBet™",
+        "cost_multiplier": 2.0,
+        "cost_text": "2× bet",
+        "effects": "5× FS chance; Bonus reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Day 2 Spins",
+        "cost_multiplier": 2.8,
+        "cost_text": "2.8× bet",
+        "effects": "Positions ×2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Day 64 Spins",
+        "cost_multiplier": 90.0,
+        "cost_text": "90× bet",
+        "effects": "Positions ×64.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Day 1024 Spins",
+        "cost_multiplier": 3000.0,
+        "cost_text": "3,000× bet",
+        "effects": "Positions ×1024.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Extra Spin",
+        "cost_multiplier": null,
+        "cost_text": "From position mults",
+        "effects": "Keep mults; no Bonus; if cost ≤ prior win.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 2.0,
+    "effects": "xBet 2×: Bonus reel 2; 5× more likely Free Spins.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 30000.0,
+    "max_win_notes": "Sky is the Limit 30,000×",
+    "rtp_percent": 96.05,
+    "rtp_notes": "96.05% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/duck-hunters",
+      "local_path": "sources/nolimit/duck-hunters/cms_features.txt",
+      "extracted_at": "2026-09-27T18:53:03Z",
+      "quote_or_excerpt": "Duck Hunt 7 / Hawk Eye 8 / Big Game 10; xBet 2×; Day boosters; max 30000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/duck-hunters",
+      "local_path": "sources/nolimit/duck-hunters/page.html",
+      "extracted_at": "2026-09-27T18:53:03Z",
+      "quote_or_excerpt": "96.05% RTP, 30000 xBet MAX; 5-5-5-5-5-5."
+    }
+  ],
+  "unknowns": [],
+  "thumbnail": "thumbs/nolimit-duck-hunters.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
