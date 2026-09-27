@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Three Samurai",
@@ -159,8 +159,23 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Dragons Luck",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 10x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Free Spins",
+        "cost_multiplier": 75.0,
+        "cost_text": "75x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 75x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 10.0x, 75.0x. Evidence: sources/slotmill/demo-help/demo-help-three-samurai.json"
   },
   "ante_bet": {
     "available": null,
@@ -176,7 +191,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -184,7 +199,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -201,6 +216,20 @@
       "local_path": "sources/slotmill/product_sheet_three-samurai.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Sharpen your swords and join the Three Samurai on a quest for gold!\n\nThree Samurai is a five-reel video slot with 3 rows of symbols and 20 bet lines in the base game and 4\nsymbols rows and 40 bet lines during the bonus features. The Dragons Luck random feature during the base\ngame exposes the fourth row of symbols thereby increasing the number of bet lines to 40 and transforms\none of the high value symbols into a wild to maximize the win potential.\n\nBonus symbols on reels 1, 3 and 5 triggers the Samurai Free Spins feature where the player gets to choose\nbetween 10 spins with a 2x multiplier, 8 spins with 3x, 6 spins with 5x or a random pick which can be any\ncombination factors. During Free Spins the selected Samurai is stacked and filling an entire reel twice will\nturn the stacked symbol o"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://three-samurai.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-three-samurai.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Dragons Luck=10x; Free Spins=75x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-three-samurai.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Three Samurai"
     }
   ],
   "unknowns": [

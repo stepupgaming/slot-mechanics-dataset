@@ -1,0 +1,79 @@
+{
+  "slug": "slotmill-three-samurai",
+  "captured_at": "2026-09-27T14:42:14-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19012,
+    "demo_url": "https://three-samurai.slotmill.com/",
+    "main_js": "https://three-samurai.slotmill.com/main.c9bcad0fcccb072396f6.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Three Samurai",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Dragons Luck",
+        "api_name": "Dragons Luck",
+        "cost_multiplier": 10,
+        "prop_value": "10xb",
+        "amounts_sample": [
+          "2.00",
+          "3.00",
+          "5.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Free Spins",
+        "api_name": "Free Spins",
+        "cost_multiplier": 75,
+        "prop_value": "75xb",
+        "amounts_sample": [
+          "15.00",
+          "22.50",
+          "37.50"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "Dragons Luck",
+        "multiplier": 10
+      },
+      {
+        "id": 2,
+        "name": "Free Spins",
+        "multiplier": 75
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "10xb",
+    "BuyBonus2": "75xb",
+    "BuyBonusNames": [
+      "Dragons Luck",
+      "Free Spins"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

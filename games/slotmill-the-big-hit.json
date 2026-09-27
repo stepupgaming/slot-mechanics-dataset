@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "The Big Hit",
@@ -142,8 +142,37 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Feature",
+        "cost_multiplier": 30.0,
+        "cost_text": "30x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 30x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Dynamite Re-spin",
+        "cost_multiplier": 35.0,
+        "cost_text": "35x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 35x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Dynamite Free Game",
+        "cost_multiplier": 110.0,
+        "cost_text": "110x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 110x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Dynamite Express Free Game",
+        "cost_multiplier": 400.0,
+        "cost_text": "400x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 400x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 30.0x, 35.0x, 110.0x, 400.0x. Evidence: sources/slotmill/demo-help/demo-help-the-big-hit.json"
   },
   "ante_bet": {
     "available": null,
@@ -159,7 +188,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -167,7 +196,7 @@
     "symbols": "medium",
     "bonus_free_spins": "low",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -184,6 +213,20 @@
       "local_path": "sources/slotmill/product_sheet_the-big-hit.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Can you pull off ‘The Big Hit’?\n\nThe Big Hit will be Slotmills to date most volatile videoslot with a max win of 20 000 x bet! As the title\nsuggests, the setting is a bank heist and just like the real world its about staying away from being caught\nas long as possible. The game has a 5×4 symbol grid, 40 betlines and three bonus features which all award\nunlimited re-spins with wilds and multipliers. The longer you can can keep the bonus game running, the\nhigher the multipliers, the more wilds and the more win potential at the end.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two\nintegrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is an enhanced\nauto-play with a play-through of two game rounds per second, and Fa"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://big-hit.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-the-big-hit.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Feature=30x; Dynamite Re-spin=35x; Dynamite Free Game=110x; Super Dynamite Express Free Game=400x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-the-big-hit.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Big Hit"
     }
   ],
   "unknowns": [

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Fruit Smash",
@@ -186,8 +186,30 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "FruitSmash",
+        "cost_multiplier": 5.0,
+        "cost_text": "5x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 5x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "FrenzyBonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 500x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 5.0x, 100.0x, 500.0x. Evidence: sources/slotmill/demo-help/demo-help-fruit-smash.json"
   },
   "ante_bet": {
     "available": null,
@@ -211,7 +233,7 @@
     "symbols": "medium",
     "bonus_free_spins": "high",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -228,6 +250,20 @@
       "local_path": "sources/slotmill/product_sheet_fruit-smash.pdf",
       "extracted_at": "2026-09-27T18:36:08Z",
       "quote_or_excerpt": "Land 3 Bonus Symbols to trigger 10 Free Spins which can be re-triggered awarding 5 extra | Land 3 Bonus Symbols to trigger 10 Free Spins"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://fruit-smash.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-fruit-smash.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: FruitSmash=5x; Bonus=100x; FrenzyBonus=500x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-fruit-smash.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Fruit Smash"
     }
   ],
   "unknowns": [

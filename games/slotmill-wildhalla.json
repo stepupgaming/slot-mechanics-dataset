@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Wildhalla",
@@ -154,14 +154,36 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 40x",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 300x",
+        "cost_multiplier": 300.0,
+        "cost_text": "300x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 300x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 40.0x, 100.0x, 300.0x. Evidence: sources/slotmill/demo-help/demo-help-wildhalla.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 2.0,
+    "effects": "Xtra-Bet™ raises Base Bet by 100% (total cost 2× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=2.0xb and/or extraAmounts÷amounts ratio=2.0; increase_pct=100.0. Evidence: sources/slotmill/demo-help/demo-help-wildhalla.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 10000.0,
@@ -171,7 +193,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -179,7 +201,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -189,6 +211,20 @@
       "local_path": "sources/slotmill/wildhalla.html",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 5x4\nPaylines: 40\nRTP (%): Variant 1: 96.05% | Variant 2: 94.16%\nMax win; x Bet: 10 000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Wild Multiplier\nSpecial Symbols: Multiplier Wild, Wild Reset\nVolatility (variance): Very High\nGame URL: \"https://wildhalla.slotmill.com\"\nThe drums are pounding, the longships are ready, and a band of completely unqualified Vikings are charging headfirst toward Valhalla.\n\nAxes fly, shields break, and common sense is left far behind in this chaotic Norse adventure. Every time a Wild appears, another fearless warrior joins the charge, marching across the reels in search of glory, riches, and a spectacularly heroic death.\n\nSet on a 5x4 reel layout with 40 paylines, the battlefield is packed with roaming Wilds, growing multipliers, and enough Viking chaos to make Odin himself nervous. Whether your warriors earn eternal glory or simply run straight into disaster, massive wins of up to 10,000x your bet await those brave enough to jo"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://wildhalla.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-wildhalla.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=40x; Fast Track option 2=100x; Fast Track option 3=300x | Xtra-Bet: ExtraBet=2.0xb, increase=100.0%, cost_multiplier=2.0"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-wildhalla.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Wildhalla"
     }
   ],
   "unknowns": [

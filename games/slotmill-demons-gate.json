@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Demon's Gate",
@@ -162,14 +162,36 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 6x",
+        "cost_multiplier": 6.0,
+        "cost_text": "6x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 6x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 400x",
+        "cost_multiplier": 400.0,
+        "cost_text": "400x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 400x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 6.0x, 100.0x, 400.0x. Evidence: sources/slotmill/demo-help/demo-help-demons-gate.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 2.0,
+    "effects": "Xtra-Bet™ raises Base Bet by 100% (total cost 2× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=2.0xb and/or extraAmounts÷amounts ratio=2.0; increase_pct=100.0. Evidence: sources/slotmill/demo-help/demo-help-demons-gate.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 10000.0,
@@ -179,7 +201,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
@@ -187,7 +209,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -204,6 +226,20 @@
       "local_path": "sources/slotmill/product_sheet_demons-gate.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Demon's Gate\n\nDemon's Gate sends a lone demon slayer into the heart of darkness, the deeper you push, the bigger the rewards.\nA 5x5 Cluster Pays slot built around a Roaming Multiplier Wild that grows with every win and can reach x100, with a\nmax payout of 10,000x your bet waiting on the other side.\n\nThe Multiplier Wild is your weapon of choice, land it in a cluster, it multiplies the win, steps up in value, then moves\nto a new position ready to strike again. Every hit builds on the last, and the momentum carries. Free Spins send\nyou deeper into the gate across five stages, each one unlocked by collecting Bonus Symbols and each one arming\nyou with a more powerful Wild. It anchors the reels throughout, resetting to the current stage multiplier, x3 to\nstart, x100 if you fight your way to Stag"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://demons-gate.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-demons-gate.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=6x; Fast Track option 2=100x; Fast Track option 3=400x | Xtra-Bet: ExtraBet=2.0xb, increase=100.0%, cost_multiplier=2.0"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-demons-gate.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Demon's Gate"
     }
   ],
   "unknowns": [

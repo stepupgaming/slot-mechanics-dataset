@@ -1,0 +1,116 @@
+{
+  "slug": "slotmill-dead-mans-crew",
+  "captured_at": "2026-09-27T14:42:56-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "client": "dead-mans-crew",
+    "gameid": 19095,
+    "demo_url": "https://dead-mans-crew.slotmill.com/",
+    "method": "GET freeplay gameinit via client= subdomain; buyBonus[].multiplier + cfg.props ExtraBet"
+  },
+  "game_name": "Dead Man's Crew",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track option 1",
+        "api_name": "0",
+        "cost_multiplier": 5,
+        "prop_value": "5xb",
+        "amounts_sample": [
+          "1.00",
+          "2.00",
+          "3.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fast Track option 2",
+        "api_name": "1",
+        "cost_multiplier": 20,
+        "prop_value": "20xb",
+        "amounts_sample": [
+          "4.00",
+          "8.00",
+          "12.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Fast Track option 3",
+        "api_name": "2",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Fast Track option 4",
+        "api_name": "3",
+        "cost_multiplier": 500,
+        "prop_value": "500xb",
+        "amounts_sample": [
+          "100.00",
+          "200.00",
+          "300.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "0",
+        "multiplier": 5
+      },
+      {
+        "id": 2,
+        "name": "1",
+        "multiplier": 20
+      },
+      {
+        "id": 3,
+        "name": "2",
+        "multiplier": 100
+      },
+      {
+        "id": 4,
+        "name": "3",
+        "multiplier": 500
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": true,
+    "cost_multiplier": 1.5,
+    "increase_pct": 50.0,
+    "chance_x": null,
+    "prop_ExtraBet": "1.5xb",
+    "amounts_ratio": 1.5,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "5xb",
+    "BuyBonus2": "20xb",
+    "BuyBonus3": "100xb",
+    "BuyBonus4": "500xb",
+    "BuyBonusNames": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "ExtraBet": "1.5xb"
+  },
+  "api_code": 0
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "slotmill-shadow-of-dominion",
+  "captured_at": "2026-09-27T14:43:01-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "client": "shadow-of-dominion",
+    "gameid": 19093,
+    "demo_url": "https://shadow-of-dominion.slotmill.com/",
+    "method": "GET freeplay gameinit via client= subdomain; buyBonus[].multiplier + cfg.props ExtraBet"
+  },
+  "game_name": "Shadow of Dominion",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track option 1",
+        "api_name": "0",
+        "cost_multiplier": 10,
+        "prop_value": "10xb",
+        "amounts_sample": [
+          "2.00",
+          "4.00",
+          "6.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fast Track option 2",
+        "api_name": "1",
+        "cost_multiplier": 50,
+        "prop_value": "50xb",
+        "amounts_sample": [
+          "10.00",
+          "20.00",
+          "30.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Fast Track option 3",
+        "api_name": "2",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Fast Track option 4",
+        "api_name": "3",
+        "cost_multiplier": 400,
+        "prop_value": "400xb",
+        "amounts_sample": [
+          "80.00",
+          "160.00",
+          "240.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "0",
+        "multiplier": 10
+      },
+      {
+        "id": 2,
+        "name": "1",
+        "multiplier": 50
+      },
+      {
+        "id": 3,
+        "name": "2",
+        "multiplier": 100
+      },
+      {
+        "id": 4,
+        "name": "3",
+        "multiplier": 400
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": true,
+    "cost_multiplier": 2.0,
+    "increase_pct": 100.0,
+    "chance_x": null,
+    "prop_ExtraBet": "2.0xb",
+    "amounts_ratio": 2.0,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "10xb",
+    "BuyBonus2": "50xb",
+    "BuyBonus3": "100xb",
+    "BuyBonus4": "400xb",
+    "BuyBonusNames": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "ExtraBet": "2.0xb"
+  },
+  "api_code": 0
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Money Jar 2",
@@ -137,8 +137,44 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "2 wilds",
+        "cost_multiplier": 8.0,
+        "cost_text": "8x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 8x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "3 wilds",
+        "cost_multiplier": 20.0,
+        "cost_text": "20x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 20x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "2 jars",
+        "cost_multiplier": 25.0,
+        "cost_text": "25x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 25x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 500x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 8.0x, 20.0x, 25.0x, 100.0x, 500.0x. Evidence: sources/slotmill/demo-help/demo-help-money-jar-2.json"
   },
   "ante_bet": {
     "available": null,
@@ -154,7 +190,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -162,7 +198,7 @@
     "symbols": "medium",
     "bonus_free_spins": "low",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -179,6 +215,20 @@
       "local_path": "sources/slotmill/product_sheet_money-jar-2.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Double the Fun: Introducing Money Jar 2!\n\nGet ready to dive back into the enchanting world of Money Jar with our highly anticipated follow-up, Money\nJar 2. Inspired by the iconic 1930's \"Betty Boop\" comic style, this game takes everything you loved about\nthe original and amplifies it to new heights.\n\nFeaturing two exciting bonus games and the chance to trigger the Super mode bonus, Money Jar 2 offers\nan enhanced gaming experience. The Extra Win Feature and Respin Feature are back, but this time, Payers,\nMagnets & Dealers can land, extending the Respin feature and creating massive potential for wins.\n\nThe heart of the game remains the coveted Money Jar symbol, triggering the bonus game where you'll get\nto choose which Bonus game you want to play. With a maximum win of 25,000 times your bet,"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://money-jar-2.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-money-jar-2.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: 2 wilds=8x; 3 wilds=20x; 2 jars=25x; Bonus=100x; Super Bonus=500x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-money-jar-2.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Money Jar 2"
     }
   ],
   "unknowns": [

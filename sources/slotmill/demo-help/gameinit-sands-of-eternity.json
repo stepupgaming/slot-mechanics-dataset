@@ -1,0 +1,666 @@
+{
+  "code": 0,
+  "data": {
+    "betAmounts": {
+      "amounts": [
+        "0.20",
+        "0.40",
+        "0.60",
+        "0.80",
+        "1.00",
+        "1.20",
+        "1.60",
+        "2.00",
+        "3.00",
+        "4.00",
+        "5.00",
+        "6.00",
+        "8.00",
+        "10.00",
+        "15.00",
+        "20.00",
+        "30.00",
+        "40.00"
+      ],
+      "buyBonus": [
+        {
+          "amounts": [
+            "1.00",
+            "2.00",
+            "3.00",
+            "4.00",
+            "5.00",
+            "6.00",
+            "8.00",
+            "10.00",
+            "15.00",
+            "20.00",
+            "25.00",
+            "30.00",
+            "40.00",
+            "50.00",
+            "75.00",
+            "100.00",
+            "150.00",
+            "200.00"
+          ],
+          "id": 1,
+          "multiplier": 5,
+          "name": "100%Win"
+        },
+        {
+          "amounts": [
+            "3.00",
+            "6.00",
+            "9.00",
+            "12.00",
+            "15.00",
+            "18.00",
+            "24.00",
+            "30.00",
+            "45.00",
+            "60.00",
+            "75.00",
+            "90.00",
+            "120.00",
+            "150.00",
+            "225.00",
+            "300.00",
+            "450.00",
+            "600.00"
+          ],
+          "id": 2,
+          "multiplier": 15,
+          "name": "Expansion"
+        },
+        {
+          "amounts": [
+            "18.00",
+            "36.00",
+            "54.00",
+            "72.00",
+            "90.00",
+            "108.00",
+            "144.00",
+            "180.00",
+            "270.00",
+            "360.00",
+            "450.00",
+            "540.00",
+            "720.00",
+            "900.00",
+            "1350.00",
+            "1800.00",
+            "2700.00",
+            "3600.00"
+          ],
+          "id": 3,
+          "multiplier": 90,
+          "name": "Bonus"
+        }
+      ],
+      "defaultAmount": "1.00",
+      "roundDecimals": {
+        "prize": 3,
+        "wallet": 2
+      }
+    },
+    "currencyDisplay": "EUR",
+    "game": {
+      "gameid": 19015,
+      "name": "Sands of Eternity",
+      "title": null,
+      "subgroup": null,
+      "currency": "<omitted 683 chars>",
+      "category": "Casino",
+      "type": "Slot",
+      "variant": "Sands",
+      "model": "M1",
+      "status": "Active",
+      "orgSettings": {
+        "hideTopRounds": false,
+        "hideRTPXtraBet": false,
+        "Denoms": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.1,0.2,0.4,0.6,0.8,1,1.2,1.6,2,3,4,5,6,8,10,15,20,30,40;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "burstMode": true,
+        "showGameFunctionsInPaytable": false,
+        "maxAutoPlay": 0,
+        "quickSpin": true,
+        "quickStop": true,
+        "extraBet": true,
+        "DefaultDenom": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:1;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "useGameHistoryV2": false,
+        "enableInactivityTracking": false,
+        "hideRTPFeatureSplash": false,
+        "hideGameHistory": false,
+        "featureBuy": true,
+        "showTotalAutoplayBet": false,
+        "minGameDuration": 0,
+        "showPaytableAfterFeatureSplash": false,
+        "hideRTPBuyFeature": false,
+        "autoPlay": true,
+        "useTopWagersV2": false,
+        "publicReplay": true
+      },
+      "draws": "<omitted>",
+      "cfg": {
+        "gameId": 19015,
+        "cfgId": 1,
+        "status": "Frozen",
+        "validFrom": null,
+        "validUntil": null,
+        "checksum": "2D9124C653FE96D52F7C312C44891B906B81BA792C3C8B560B24FB2D003039C9F3CF967E8A7D272C32A49BBD78EAFAA5EC5491DE97429830316EC485E4FB7938",
+        "props": [
+          {
+            "prop": "BuyBonus1",
+            "value": "5xb"
+          },
+          {
+            "prop": "BuyBonus2",
+            "value": "15xb"
+          },
+          {
+            "prop": "BuyBonus3",
+            "value": "90xb"
+          },
+          {
+            "prop": "BuyBonusNames",
+            "value": [
+              "100%Win",
+              "Expansion",
+              "Bonus"
+            ]
+          },
+          {
+            "prop": "CapWin",
+            "value": "7500xb"
+          },
+          {
+            "prop": "Cheats",
+            "value": [
+              [
+                "/none",
+                "none"
+              ]
+            ]
+          },
+          {
+            "prop": "DON",
+            "value": "CollectB"
+          },
+          {
+            "prop": "Denoms",
+            "value": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:0.2,1,2,4,6,8,10,12,16,20,30,40,50,60,80,100,120,150,160,200,300,400,500,600,750,800,900,1000,1200,1500,1600,1800,2000,2400,2500,3000,3200,4000,4500,5000,6000,7500,8000,9000,10000,12000,15000,16000,20000,22500,24000,25000,30000,32000,37500,40000,45000,50000,60000,75000,80000,100000,112500,120000,150000,160000,200000,225000,250000,300000,400000,450000,500000,600000,750000,800000,1000000,1500000,2000000,2500000,3000000,3750000,4000000,5000000,6000000,7500000,10000000,15000000,25000000;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.02,0.1,0.2,0.4,0.6,0.8,1,1.2,1.6,2,3,4,5,6,8,10,15,20,30,40,50,75,100,150,200,300,500;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500"
+          },
+          {
+            "prop": "Feature",
+            "value": ""
+          },
+          {
+            "prop": "IconTypes",
+            "value": [
+              "N",
+              "W",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "S"
+            ]
+          },
+          {
+            "prop": "Icons",
+            "value": [
+              "XX",
+              "W",
+              "H1",
+              "H2",
+              "H3",
+              "M1",
+              "M2",
+              "M3",
+              "L1",
+              "L2",
+              "L3",
+              "FS"
+            ]
+          },
+          {
+            "prop": "MaxCoins",
+            "value": 1
+          },
+          {
+            "prop": "MinCoins",
+            "value": 1
+          },
+          {
+            "prop": "NormalOri",
+            "value": [
+              "LR"
+            ]
+          },
+          {
+            "prop": "NumberOfReels",
+            "value": 6
+          },
+          {
+            "prop": "Paylines",
+            "value": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "prop": "PrizeDivisor",
+            "value": 20
+          },
+          {
+            "prop": "Prizes",
+            "value": [
+              [
+                "H1",
+                "15",
+                "20",
+                "30",
+                "60"
+              ],
+              [
+                "H2",
+                "10",
+                "15",
+                "20",
+                "30"
+              ],
+              [
+                "H3",
+                "10",
+                "15",
+                "20",
+                "30"
+              ],
+              [
+                "M1",
+                "4",
+                "6",
+                "8",
+                "10"
+              ],
+              [
+                "M2",
+                "4",
+                "6",
+                "8",
+                "10"
+              ],
+              [
+                "M3",
+                "4",
+                "6",
+                "8",
+                "10"
+              ],
+              [
+                "L1",
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              [
+                "L2",
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              [
+                "L3",
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              [
+                "FS",
+                "-1",
+                "-1",
+                "-1",
+                "-1",
+                "-1",
+                "-1"
+              ]
+            ]
+          },
+          {
+            "prop": "SpecialPrize1",
+            "value": ""
+          },
+          {
+            "prop": "SpecialPrizeTypes",
+            "value": [
+              "Variant"
+            ]
+          },
+          {
+            "prop": "SpecialPrizes",
+            "value": [
+              "Bonus"
+            ]
+          },
+          {
+            "prop": "WindowHeight",
+            "value": 6
+          },
+          {
+            "prop": "client",
+            "value": "sands-of-eternity"
+          }
+        ],
+        "admin": false,
+        "initial": false,
+        "removed": false,
+        "frozen": true
+      },
+      "gameId": 19015
+    },
+    "payTable": [
+      [
+        "H1",
+        [
+          3,
+          "0.75"
+        ],
+        [
+          4,
+          "1.00"
+        ],
+        [
+          5,
+          "1.50"
+        ],
+        [
+          6,
+          "3.00"
+        ]
+      ],
+      [
+        "H2",
+        [
+          3,
+          "0.50"
+        ],
+        [
+          4,
+          "0.75"
+        ],
+        [
+          5,
+          "1.00"
+        ],
+        [
+          6,
+          "1.50"
+        ]
+      ],
+      [
+        "H3",
+        [
+          3,
+          "0.50"
+        ],
+        [
+          4,
+          "0.75"
+        ],
+        [
+          5,
+          "1.00"
+        ],
+        [
+          6,
+          "1.50"
+        ]
+      ],
+      [
+        "M1",
+        [
+          3,
+          "0.20"
+        ],
+        [
+          4,
+          "0.30"
+        ],
+        [
+          5,
+          "0.40"
+        ],
+        [
+          6,
+          "0.50"
+        ]
+      ],
+      [
+        "M2",
+        [
+          3,
+          "0.20"
+        ],
+        [
+          4,
+          "0.30"
+        ],
+        [
+          5,
+          "0.40"
+        ],
+        [
+          6,
+          "0.50"
+        ]
+      ],
+      [
+        "M3",
+        [
+          3,
+          "0.20"
+        ],
+        [
+          4,
+          "0.30"
+        ],
+        [
+          5,
+          "0.40"
+        ],
+        [
+          6,
+          "0.50"
+        ]
+      ],
+      [
+        "L1",
+        [
+          3,
+          "0.10"
+        ],
+        [
+          4,
+          "0.15"
+        ],
+        [
+          5,
+          "0.20"
+        ],
+        [
+          6,
+          "0.25"
+        ]
+      ],
+      [
+        "L2",
+        [
+          3,
+          "0.10"
+        ],
+        [
+          4,
+          "0.15"
+        ],
+        [
+          5,
+          "0.20"
+        ],
+        [
+          6,
+          "0.25"
+        ]
+      ],
+      [
+        "L3",
+        [
+          3,
+          "0.10"
+        ],
+        [
+          4,
+          "0.15"
+        ],
+        [
+          5,
+          "0.20"
+        ],
+        [
+          6,
+          "0.25"
+        ]
+      ],
+      [
+        "F1",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ],
+      [
+        "FS",
+        [
+          3,
+          "9"
+        ],
+        [
+          4,
+          "12"
+        ],
+        [
+          5,
+          "15"
+        ],
+        [
+          6,
+          "18"
+        ]
+      ]
+    ],
+    "pending": {
+      "name": "report",
+      "size": 0,
+      "next": "",
+      "header": null,
+      "data": [],
+      "offset": 0
+    },
+    "prepaids": {
+      "consumed": 0,
+      "amount": 0,
+      "gameparams": null,
+      "more": false,
+      "count": 0,
+      "wa": 0,
+      "wc": "EUR",
+      "consumebefore": null,
+      "descr": null,
+      "ref": null,
+      "total": 0,
+      "currency": "EUR",
+      "ba": 0,
+      "rejectable": false
+    },
+    "serverApi": "https://freeplayapi.slotmill.com",
+    "skin": "default",
+    "tournamentInfo": [],
+    "user": {
+      "userid": "2609271842098670023",
+      "type": "Player",
+      "balance": {
+        "currency": "EUR",
+        "cash": "4000.00",
+        "bonus": "0.00",
+        "free": "0.00",
+        "points": "0.00",
+        "real": "4000.00"
+      },
+      "org": "SlotMill",
+      "currency": "EUR",
+      "nickname": "2609271842098670001",
+      "email": "",
+      "gender": null,
+      "birthdate": null,
+      "language": "en",
+      "country": "",
+      "domain": null,
+      "sessid": "2609271842098670024B6770D98DC7546A46632B491803152270E3EBC0B77F79EBCE6C8B2574A3C127883B5099ACFB562045231156FDC939AC4672B7647475D60634EC128270DC679F1",
+      "nativeSessid": "26092718420926700010FAF5FC044872F614071FDAB031662899B8AB59B24C60B36774B97621C6FDFD02287462079F8C5179B7EFE7C8FC9A4D754143DCD79F9582F9D2836AC8CC2F4F9",
+      "avatar": null,
+      "level": null,
+      "custom": null,
+      "admin": false,
+      "userProps": {
+        "id": {
+          "domain": "SlotMill",
+          "externalid": "2609271842098670001",
+          "integration": "Stub",
+          "nativeid": "2609271842098670001",
+          "org": "SlotMill",
+          "userid": "2609271842098670023",
+          "walletid": "SlotMill"
+        },
+        "main": {
+          "address1": "",
+          "address2": "",
+          "address3": "",
+          "avatar": "m21",
+          "country": "",
+          "currency": "EUR",
+          "domain": "SlotMill_SlotMill",
+          "email": "",
+          "firstname": "",
+          "gamesetup": "Default",
+          "gender": "male",
+          "lastname": "",
+          "middlename": "",
+          "mobile": "",
+          "nickname": "2609271842098670001",
+          "org": "SlotMill",
+          "phone": "",
+          "picture": "m21",
+          "status": "Active",
+          "type": "Player",
+          "zip": ""
+        }
+      },
+      "levelId": 106
+    }
+  },
+  "fn": "gameinit"
+}

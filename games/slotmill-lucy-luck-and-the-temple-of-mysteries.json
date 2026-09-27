@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Lucy Luck and the Temple of Mysteries",
@@ -141,8 +141,37 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 3x",
+        "cost_multiplier": 3.0,
+        "cost_text": "3x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 3x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 50x",
+        "cost_multiplier": 50.0,
+        "cost_text": "50x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 50x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 250x",
+        "cost_multiplier": 250.0,
+        "cost_text": "250x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 250x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 3.0x, 50.0x, 100.0x, 250.0x. Evidence: sources/slotmill/demo-help/demo-help-lucy-luck-and-the-temple-of-mysteries.json"
   },
   "ante_bet": {
     "available": null,
@@ -158,7 +187,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -166,7 +195,7 @@
     "symbols": "low",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -183,6 +212,20 @@
       "local_path": "sources/slotmill/product_sheet_lucy-luck-and-the-temple-of-mysteries.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Embark on a Journey for Hidden Mysteries\n\nJoin Lucy Luck on an exhilarating expedition to the Temple of Mysteries nestled in Nepal’s majestic\nmountains. In this thrilling slot adventure, you can trigger wins reaching 10,000x your bet by matching 8 or\nmore symbols and unveiling the secrets held by the enigmatic Mystery Symbols.\n\nThe Mystery Symbols, found in both the Base Game and Free Spins, are the gatekeepers to various rewards.\nAccumulate 8 or more to reveal paying symbols, special features, or the highly sought-after Mystery Coin,\noffering heart-pounding bet multipliers up to 1000x. Experience the anticipation of Free Spins or elevate\nthe excitement with Super Free Spins, where Mystery Symbols persist until they reach 8 or the bonus\nconcludes.\n\nUnravel the mysteries within the Nepalese"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://temple-of-mysteries.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-lucy-luck-and-the-temple-of-mysteries.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=3x; Fast Track option 2=50x; Fast Track option 3=100x; Fast Track option 4=250x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-lucy-luck-and-the-temple-of-mysteries.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Lucy Luck and the Temple Of Mysteries"
     }
   ],
   "unknowns": [

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Brew Brothers",
@@ -155,14 +155,50 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 10x",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 10x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 30x",
+        "cost_multiplier": 30.0,
+        "cost_text": "30x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 30x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 90x",
+        "cost_multiplier": 90.0,
+        "cost_text": "90x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 90x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 300x",
+        "cost_multiplier": 300.0,
+        "cost_text": "300x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 300x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 600x",
+        "cost_multiplier": 600.0,
+        "cost_text": "600x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 600x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 10.0x, 30.0x, 90.0x, 300.0x, 600.0x. Evidence: sources/slotmill/demo-help/demo-help-brew-brothers.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 1.5,
+    "effects": "Xtra-Bet™ raises Base Bet by 50% (total cost 1.5× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=1.5xb and/or extraAmounts÷amounts ratio=1.5; increase_pct=50.0. Evidence: sources/slotmill/demo-help/demo-help-brew-brothers.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 12000.0,
@@ -172,7 +208,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -180,7 +216,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -197,6 +233,20 @@
       "local_path": "sources/slotmill/product_sheet_brew-brothers.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Journey into the Wild North!\n\nDeep within the untouched northern woodlands, Brew Brothers are busy crafting their legendary beverage\nin this captivating slot game. These two hillbilly siblings invite you into their world of rustic adventures,\npromising an experience that’s as wild as it gets.\n\nWith an opportunity to win an incredible 12,000 times your bet, the Brew Brothers slot is a rollercoaster of\nexcitement. Keep an eye out for the Wild symbols featuring powerful multipliers, boosting your wins to\nastonishing heights.\nTrigger the Free Spins feature and brace yourself for the sticky wilds that cling to the reels, amplifying your\nchances of landing substantial wins. And watch out for Old Betty, the Wild adder, injecting an element of\nmagic into your gameplay.\n\nJoin the escapade with the "
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://brew-brothers.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-brew-brothers.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=10x; Fast Track option 2=30x; Fast Track option 3=90x; Fast Track option 4=300x; Fast Track option 5=600x | Xtra-Bet: ExtraBet=1.5xb, increase=50.0%, cost_multiplier=1.5"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-brew-brothers.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Brew Brothers"
     }
   ],
   "unknowns": [

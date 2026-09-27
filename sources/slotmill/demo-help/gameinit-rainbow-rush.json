@@ -1,0 +1,801 @@
+{
+  "code": 0,
+  "data": {
+    "betAmounts": {
+      "amounts": [
+        "0.20",
+        "0.40",
+        "0.60",
+        "0.80",
+        "1.00",
+        "1.20",
+        "1.60",
+        "2.00",
+        "2.40",
+        "3.00",
+        "4.00",
+        "5.00",
+        "6.00",
+        "8.00",
+        "10.00",
+        "12.00",
+        "16.00",
+        "20.00",
+        "25.00",
+        "30.00",
+        "40.00",
+        "50.00",
+        "60.00",
+        "70.00",
+        "80.00"
+      ],
+      "buyBonus": [
+        {
+          "amounts": [
+            "4.00",
+            "8.00",
+            "12.00",
+            "16.00",
+            "20.00",
+            "24.00",
+            "32.00",
+            "40.00",
+            "48.00",
+            "60.00",
+            "80.00",
+            "100.00",
+            "120.00",
+            "160.00",
+            "200.00",
+            "240.00",
+            "320.00",
+            "400.00",
+            "500.00",
+            "600.00",
+            "800.00",
+            "1000.00",
+            "1200.00",
+            "1400.00",
+            "1600.00"
+          ],
+          "id": 1,
+          "multiplier": 20,
+          "name": "1"
+        },
+        {
+          "amounts": [
+            "12.00",
+            "24.00",
+            "36.00",
+            "48.00",
+            "60.00",
+            "72.00",
+            "96.00",
+            "120.00",
+            "144.00",
+            "180.00",
+            "240.00",
+            "300.00",
+            "360.00",
+            "480.00",
+            "600.00",
+            "720.00",
+            "960.00",
+            "1200.00",
+            "1500.00",
+            "1800.00",
+            "2400.00",
+            "3000.00",
+            "3600.00",
+            "4200.00",
+            "4800.00"
+          ],
+          "id": 2,
+          "multiplier": 60,
+          "name": "2"
+        },
+        {
+          "amounts": [
+            "20.00",
+            "40.00",
+            "60.00",
+            "80.00",
+            "100.00",
+            "120.00",
+            "160.00",
+            "200.00",
+            "240.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "600.00",
+            "800.00",
+            "1000.00",
+            "1200.00",
+            "1600.00",
+            "2000.00",
+            "2500.00",
+            "3000.00",
+            "4000.00",
+            "5000.00",
+            "6000.00",
+            "7000.00",
+            "8000.00"
+          ],
+          "id": 3,
+          "multiplier": 100,
+          "name": "3"
+        },
+        {
+          "amounts": [
+            "80.00",
+            "160.00",
+            "240.00",
+            "320.00",
+            "400.00",
+            "480.00",
+            "640.00",
+            "800.00",
+            "960.00",
+            "1200.00",
+            "1600.00",
+            "2000.00",
+            "2400.00",
+            "3200.00",
+            "4000.00",
+            "4800.00",
+            "6400.00",
+            "8000.00",
+            "10000.00",
+            "12000.00",
+            "16000.00",
+            "20000.00",
+            "24000.00",
+            "28000.00",
+            "32000.00"
+          ],
+          "id": 4,
+          "multiplier": 400,
+          "name": "4"
+        }
+      ],
+      "defaultAmount": "1.00",
+      "roundDecimals": {
+        "prize": 3,
+        "wallet": 2
+      }
+    },
+    "currencyDisplay": "EUR",
+    "game": {
+      "gameid": 19085,
+      "name": "Rainbow Rush",
+      "title": null,
+      "subgroup": null,
+      "currency": "<omitted 683 chars>",
+      "category": "Casino",
+      "type": "Slot",
+      "variant": "SinCity",
+      "model": "M1",
+      "status": "Active",
+      "orgSettings": {
+        "hideTopRounds": false,
+        "hideRTPXtraBet": false,
+        "Denoms": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.01,0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15,0.2,0.25,0.3,0.4,0.5,0.6,0.8,1,1.25,1.5,2,2.5,3,3.5,4;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "burstMode": true,
+        "showGameFunctionsInPaytable": false,
+        "maxAutoPlay": 0,
+        "quickSpin": true,
+        "quickStop": true,
+        "extraBet": true,
+        "DefaultDenom": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.05;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "useGameHistoryV2": false,
+        "enableInactivityTracking": false,
+        "hideRTPFeatureSplash": false,
+        "hideGameHistory": false,
+        "featureBuy": true,
+        "showTotalAutoplayBet": false,
+        "minGameDuration": 0,
+        "showPaytableAfterFeatureSplash": false,
+        "hideRTPBuyFeature": false,
+        "autoPlay": true,
+        "useTopWagersV2": false,
+        "publicReplay": true
+      },
+      "draws": "<omitted>",
+      "cfg": {
+        "gameId": 19085,
+        "cfgId": 1,
+        "status": "Frozen",
+        "validFrom": null,
+        "validUntil": null,
+        "checksum": "7C701B9B64A8DAAB7D305F6AF644A1BB8A99BDC5F5711E2F33E685181E6DE8FF5A20737D2B576E2C9983205C462D6385C9EDF3EE67DCB218BD0906FAE7A1A9CE",
+        "props": [
+          {
+            "prop": "BuyBonus1",
+            "value": "20xb"
+          },
+          {
+            "prop": "BuyBonus2",
+            "value": "60xb"
+          },
+          {
+            "prop": "BuyBonus3",
+            "value": "100xb"
+          },
+          {
+            "prop": "BuyBonus4",
+            "value": "400xb"
+          },
+          {
+            "prop": "BuyBonusNames",
+            "value": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          {
+            "prop": "CapWin",
+            "value": "12000xb"
+          },
+          {
+            "prop": "Cheats",
+            "value": [
+              [
+                "/none",
+                "none"
+              ]
+            ]
+          },
+          {
+            "prop": "DON",
+            "value": "CollectB"
+          },
+          {
+            "prop": "Denoms",
+            "value": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:0.1,0.2,0.3,0.4,0.5,0.6,0.8,1,1.2,1.5,2,2.5,3,4,5,6,8,10,12,12.5,15,20,25,30,35,40,45,50,60,75,80,90,100,120,125,150,160,180,200,225,240,250,300,350,375,400,450,500,600,625,750,800,900,1000,1200,1250,1500,1600,1750,1875,2000,2250,2400,2500,3000,3500,3750,4000,4500,5000,5250,6000,7000,7500,8000,10000,11250,12000,12500,15000,16000,20000,22500,25000,30000,35000,40000,50000,60000,62500,70000,75000,80000,100000,125000,150000,175000,200000,250000,300000,375000,500000,750000;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.01,0.02,0.03,0.04,0.05,0.06,0.08,0.1,0.12,0.15,0.2,0.25,0.3,0.4,0.5,0.6,0.8,1,1.25,1.5,2,2.5,3,3.5,4,5,7.5,10,15;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500"
+          },
+          {
+            "prop": "Feature",
+            "value": ""
+          },
+          {
+            "prop": "IconTypes",
+            "value": [
+              "N",
+              "W",
+              "W",
+              "W",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "S",
+              "S"
+            ]
+          },
+          {
+            "prop": "Icons",
+            "value": [
+              "BL",
+              "W1",
+              "W2",
+              "W3",
+              "H1",
+              "H2",
+              "H3",
+              "M1",
+              "M2",
+              "M3",
+              "L1",
+              "L2",
+              "L3",
+              "L4",
+              "FS1",
+              "FS2"
+            ]
+          },
+          {
+            "prop": "MaxCoins",
+            "value": 1
+          },
+          {
+            "prop": "MinCoins",
+            "value": 1
+          },
+          {
+            "prop": "NormalOri",
+            "value": [
+              "LR"
+            ]
+          },
+          {
+            "prop": "NumberOfReels",
+            "value": 5
+          },
+          {
+            "prop": "Paylines",
+            "value": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              [
+                4,
+                4,
+                4,
+                4,
+                4
+              ],
+              [
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              [
+                0,
+                1,
+                2,
+                1,
+                0
+              ],
+              [
+                5,
+                4,
+                3,
+                4,
+                5
+              ],
+              [
+                4,
+                5,
+                5,
+                5,
+                4
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                3,
+                4,
+                3
+              ],
+              [
+                4,
+                5,
+                4,
+                5,
+                4
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                2,
+                1,
+                2
+              ],
+              [
+                3,
+                2,
+                3,
+                2,
+                3
+              ],
+              [
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              [
+                5,
+                4,
+                5,
+                4,
+                5
+              ]
+            ]
+          },
+          {
+            "prop": "PrizeDivisor",
+            "value": 20
+          },
+          {
+            "prop": "ProbReels",
+            "value": [
+              [
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "prop": "WindowHeight",
+            "value": 6
+          },
+          {
+            "prop": "client",
+            "value": "rainbow-rush"
+          }
+        ],
+        "admin": false,
+        "initial": false,
+        "removed": false,
+        "frozen": true
+      },
+      "gameId": 19085
+    },
+    "payTable": [
+      [
+        "F1",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ],
+      [
+        "W1",
+        [
+          3,
+          "2.00"
+        ],
+        [
+          4,
+          "8.00"
+        ],
+        [
+          5,
+          "20.00"
+        ]
+      ],
+      [
+        "W2",
+        [
+          3,
+          "2.00"
+        ],
+        [
+          4,
+          "8.00"
+        ],
+        [
+          5,
+          "20.00"
+        ]
+      ],
+      [
+        "W3",
+        [
+          3,
+          "2.00"
+        ],
+        [
+          4,
+          "8.00"
+        ],
+        [
+          5,
+          "20.00"
+        ]
+      ],
+      [
+        "H1",
+        [
+          3,
+          "2.00"
+        ],
+        [
+          4,
+          "8.00"
+        ],
+        [
+          5,
+          "20.00"
+        ]
+      ],
+      [
+        "H2",
+        [
+          3,
+          "1.50"
+        ],
+        [
+          4,
+          "6.00"
+        ],
+        [
+          5,
+          "15.00"
+        ]
+      ],
+      [
+        "H3",
+        [
+          3,
+          "1.40"
+        ],
+        [
+          4,
+          "6.00"
+        ],
+        [
+          5,
+          "14.00"
+        ]
+      ],
+      [
+        "M1",
+        [
+          3,
+          "1.20"
+        ],
+        [
+          4,
+          "5.00"
+        ],
+        [
+          5,
+          "12.00"
+        ]
+      ],
+      [
+        "M2",
+        [
+          3,
+          "1.00"
+        ],
+        [
+          4,
+          "4.00"
+        ],
+        [
+          5,
+          "10.00"
+        ]
+      ],
+      [
+        "M3",
+        [
+          3,
+          "0.70"
+        ],
+        [
+          4,
+          "2.50"
+        ],
+        [
+          5,
+          "7.00"
+        ]
+      ],
+      [
+        "L1",
+        [
+          3,
+          "0.50"
+        ],
+        [
+          4,
+          "1.50"
+        ],
+        [
+          5,
+          "4.50"
+        ]
+      ],
+      [
+        "L2",
+        [
+          3,
+          "0.40"
+        ],
+        [
+          4,
+          "1.20"
+        ],
+        [
+          5,
+          "4.00"
+        ]
+      ],
+      [
+        "L3",
+        [
+          3,
+          "0.40"
+        ],
+        [
+          4,
+          "1.20"
+        ],
+        [
+          5,
+          "4.00"
+        ]
+      ],
+      [
+        "L4",
+        [
+          3,
+          "0.40"
+        ],
+        [
+          4,
+          "1.20"
+        ],
+        [
+          5,
+          "4.00"
+        ]
+      ],
+      [
+        "FS",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ]
+    ],
+    "pending": {
+      "name": "report",
+      "size": 0,
+      "next": "",
+      "header": null,
+      "data": [],
+      "offset": 0
+    },
+    "prepaids": {
+      "consumed": 0,
+      "amount": 0,
+      "gameparams": null,
+      "more": false,
+      "count": 0,
+      "wa": 0,
+      "wc": "EUR",
+      "consumebefore": null,
+      "descr": null,
+      "ref": null,
+      "total": 0,
+      "currency": "EUR",
+      "ba": 0,
+      "rejectable": false
+    },
+    "serverApi": "https://freeplayapi.slotmill.com",
+    "skin": "default",
+    "tournamentInfo": [],
+    "user": {
+      "userid": "2609271842082770005",
+      "type": "Player",
+      "balance": {
+        "currency": "EUR",
+        "cash": "8000.00",
+        "bonus": "0.00",
+        "free": "0.00",
+        "points": "0.00",
+        "real": "8000.00"
+      },
+      "org": "SlotMill",
+      "currency": "EUR",
+      "nickname": "2609271842082770001",
+      "email": "",
+      "gender": null,
+      "birthdate": null,
+      "language": "en",
+      "country": "",
+      "domain": null,
+      "sessid": "260927184208277000681B204217022D95191315D2EE8B79F699C06FF4277781130E7A88070FC71F6BD428F12CD7494A28592C660D2D5025CDA51A53D51CD401A9C83A737086347725B",
+      "nativeSessid": "2609271842084870001F25D1F075F14155F54996DEF65C2348D7CD9C34B94B5DC8F93E3B1C5B5A34C0AFD6E59A85C7144D074F9A845BFE27BE2B65F8260693790D399386DA2833D637F",
+      "avatar": null,
+      "level": null,
+      "custom": null,
+      "admin": false,
+      "userProps": {
+        "id": {
+          "domain": "SlotMill",
+          "externalid": "2609271842082770001",
+          "integration": "Stub",
+          "nativeid": "2609271842082770001",
+          "org": "SlotMill",
+          "userid": "2609271842082770005",
+          "walletid": "SlotMill"
+        },
+        "main": {
+          "address1": "",
+          "address2": "",
+          "address3": "",
+          "avatar": "m21",
+          "country": "",
+          "currency": "EUR",
+          "domain": "SlotMill_SlotMill",
+          "email": "",
+          "firstname": "",
+          "gamesetup": "Default",
+          "gender": "male",
+          "lastname": "",
+          "middlename": "",
+          "mobile": "",
+          "nickname": "2609271842082770001",
+          "org": "SlotMill",
+          "phone": "",
+          "picture": "m21",
+          "status": "Active",
+          "type": "Player",
+          "zip": ""
+        }
+      },
+      "levelId": 106
+    }
+  },
+  "fn": "gameinit"
+}

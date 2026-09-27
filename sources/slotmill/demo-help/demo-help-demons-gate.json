@@ -1,0 +1,97 @@
+{
+  "slug": "slotmill-demons-gate",
+  "captured_at": "2026-09-27T14:42:58-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "client": "demons-gate",
+    "gameid": 19087,
+    "demo_url": "https://demons-gate.slotmill.com/",
+    "method": "GET freeplay gameinit via client= subdomain; buyBonus[].multiplier + cfg.props ExtraBet"
+  },
+  "game_name": "Demon's Gate",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track option 1",
+        "api_name": "1",
+        "cost_multiplier": 6,
+        "prop_value": "6xb",
+        "amounts_sample": [
+          "1.20",
+          "2.40",
+          "3.60"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fast Track option 2",
+        "api_name": "2",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Fast Track option 3",
+        "api_name": "3",
+        "cost_multiplier": 400,
+        "prop_value": "400xb",
+        "amounts_sample": [
+          "80.00",
+          "160.00",
+          "240.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "1",
+        "multiplier": 6
+      },
+      {
+        "id": 2,
+        "name": "2",
+        "multiplier": 100
+      },
+      {
+        "id": 3,
+        "name": "3",
+        "multiplier": 400
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": true,
+    "cost_multiplier": 2.0,
+    "increase_pct": 100.0,
+    "chance_x": null,
+    "prop_ExtraBet": "2.0xb",
+    "amounts_ratio": 2.0,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "6xb",
+    "BuyBonus2": "100xb",
+    "BuyBonus3": "400xb",
+    "BuyBonusNames": [
+      "1",
+      "2",
+      "3"
+    ],
+    "ExtraBet": "2.0xb"
+  },
+  "api_code": 0
+}

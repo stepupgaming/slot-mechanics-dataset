@@ -1,0 +1,98 @@
+{
+  "slug": "slotmill-coin-quest",
+  "captured_at": "2026-09-27T14:41:51-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19019,
+    "demo_url": "https://coin-quest.slotmill.com/",
+    "main_js": "https://coin-quest.slotmill.com/main.7b57d6bbc4b14999dcc9.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Coin Quest",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Re-spin",
+        "api_name": "Re-spin",
+        "cost_multiplier": 40,
+        "prop_value": "40xb",
+        "amounts_sample": [
+          "8.00",
+          "16.00",
+          "24.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Free Spin",
+        "api_name": "Free Spin",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Super Free Spin",
+        "api_name": "Super Free Spin",
+        "cost_multiplier": 480,
+        "prop_value": "480xb",
+        "amounts_sample": [
+          "96.00",
+          "192.00",
+          "288.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "Re-spin",
+        "multiplier": 40
+      },
+      {
+        "id": 2,
+        "name": "Free Spin",
+        "multiplier": 100
+      },
+      {
+        "id": 3,
+        "name": "Super Free Spin",
+        "multiplier": 480
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "40xb",
+    "BuyBonus2": "100xb",
+    "BuyBonus3": "480xb",
+    "BuyBonusNames": [
+      "Re-spin",
+      "Free Spin",
+      "Super Free Spin"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

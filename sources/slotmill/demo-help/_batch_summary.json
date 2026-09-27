@@ -1,0 +1,985 @@
+[
+  {
+    "slug": "slotmill-brew-brothers",
+    "status": "ok",
+    "gameid": 19036,
+    "n_buy": 5,
+    "buy_mults": [
+      10,
+      30,
+      90,
+      300,
+      600
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-brew-brothers.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-brew-brothers.json"
+  },
+  {
+    "slug": "slotmill-brew-brothers-xmas-brew",
+    "status": "ok",
+    "gameid": 19051,
+    "n_buy": 5,
+    "buy_mults": [
+      10,
+      30,
+      100,
+      375,
+      750
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-brew-brothers-xmas-brew.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-brew-brothers-xmas-brew.json"
+  },
+  {
+    "slug": "slotmill-carnival-joker",
+    "status": "ok",
+    "gameid": 9007,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-carnival-joker.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-carnival-joker.json"
+  },
+  {
+    "slug": "slotmill-cash-pandas",
+    "status": "ok",
+    "gameid": 19028,
+    "n_buy": 4,
+    "buy_mults": [
+      10,
+      70,
+      200,
+      400
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-cash-pandas.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-cash-pandas.json"
+  },
+  {
+    "slug": "slotmill-chilli-bandits",
+    "status": "ok",
+    "gameid": 19026,
+    "n_buy": 3,
+    "buy_mults": [
+      10,
+      40,
+      80
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-chilli-bandits.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-chilli-bandits.json"
+  },
+  {
+    "slug": "slotmill-coin-quest",
+    "status": "ok",
+    "gameid": 19019,
+    "n_buy": 3,
+    "buy_mults": [
+      40,
+      100,
+      480
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-coin-quest.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-coin-quest.json"
+  },
+  {
+    "slug": "slotmill-coin-quest-2",
+    "status": "ok",
+    "gameid": 19025,
+    "n_buy": 5,
+    "buy_mults": [
+      5,
+      40,
+      100,
+      500,
+      140
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-coin-quest-2.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-coin-quest-2.json"
+  },
+  {
+    "slug": "slotmill-coins-and-cannons",
+    "status": "ok",
+    "gameid": 19047,
+    "n_buy": 3,
+    "buy_mults": [
+      40,
+      100,
+      500
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-coins-and-cannons.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-coins-and-cannons.json"
+  },
+  {
+    "slug": "slotmill-crazy-crops",
+    "status": "ok",
+    "gameid": 19067,
+    "n_buy": 3,
+    "buy_mults": [
+      25,
+      100,
+      200
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-crazy-crops.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-crazy-crops.json"
+  },
+  {
+    "slug": "slotmill-dark-forge",
+    "status": "ok",
+    "gameid": 19089,
+    "n_buy": 5,
+    "buy_mults": [
+      7,
+      40,
+      100,
+      150,
+      300
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-dark-forge.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-dark-forge.json"
+  },
+  {
+    "slug": "slotmill-dead-mans-crew",
+    "status": "ok",
+    "gameid": 19095,
+    "n_buy": 4,
+    "buy_mults": [
+      5,
+      20,
+      100,
+      500
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-dead-mans-crew.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-dead-mans-crew.json",
+    "via": "client"
+  },
+  {
+    "slug": "slotmill-deadmansdrop",
+    "status": "ok",
+    "gameid": 19069,
+    "n_buy": 5,
+    "buy_mults": [
+      8,
+      40,
+      80,
+      100,
+      400
+    ],
+    "xtra_mult": 2.0,
+    "xtra_increase_pct": 100.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-deadmansdrop.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-deadmansdrop.json"
+  },
+  {
+    "slug": "slotmill-demons-gate",
+    "status": "ok",
+    "gameid": 19087,
+    "n_buy": 3,
+    "buy_mults": [
+      6,
+      100,
+      400
+    ],
+    "xtra_mult": 2.0,
+    "xtra_increase_pct": 100.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-demons-gate.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-demons-gate.json",
+    "via": "client"
+  },
+  {
+    "slug": "slotmill-drunken-sailors",
+    "status": "ok",
+    "gameid": 19017,
+    "n_buy": 3,
+    "buy_mults": [
+      15,
+      70,
+      260
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-drunken-sailors.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-drunken-sailors.json"
+  },
+  {
+    "slug": "slotmill-emberfall",
+    "status": "ok",
+    "gameid": 19053,
+    "n_buy": 5,
+    "buy_mults": [
+      5,
+      40,
+      100,
+      250,
+      500
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-emberfall.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-emberfall.json"
+  },
+  {
+    "slug": "slotmill-emberfall40k",
+    "status": "ok",
+    "gameid": 19075,
+    "n_buy": 5,
+    "buy_mults": [
+      40,
+      100,
+      500,
+      375,
+      1000
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-emberfall40k.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-emberfall40k.json"
+  },
+  {
+    "slug": "slotmill-emperors-rise",
+    "status": "ok",
+    "gameid": 19040,
+    "n_buy": 3,
+    "buy_mults": [
+      8,
+      80,
+      300
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-emperors-rise.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-emperors-rise.json"
+  },
+  {
+    "slug": "slotmill-eternal-dawn",
+    "status": "ok",
+    "gameid": 19061,
+    "n_buy": 3,
+    "buy_mults": [
+      40,
+      100,
+      400
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-eternal-dawn.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-eternal-dawn.json"
+  },
+  {
+    "slug": "slotmill-eternal-dusk",
+    "status": "ok",
+    "gameid": 19057,
+    "n_buy": 3,
+    "buy_mults": [
+      40,
+      100,
+      500
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-eternal-dusk.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-eternal-dusk.json"
+  },
+  {
+    "slug": "slotmill-fortune-pandas",
+    "status": "ok",
+    "gameid": 19059,
+    "n_buy": 5,
+    "buy_mults": [
+      30,
+      40,
+      80,
+      100,
+      400
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-fortune-pandas.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-fortune-pandas.json"
+  },
+  {
+    "slug": "slotmill-fruit-smash",
+    "status": "ok",
+    "gameid": 19016,
+    "n_buy": 3,
+    "buy_mults": [
+      5,
+      100,
+      500
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-fruit-smash.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-fruit-smash.json"
+  },
+  {
+    "slug": "slotmill-gem-rush",
+    "status": "ok",
+    "gameid": 19024,
+    "n_buy": 4,
+    "buy_mults": [
+      10,
+      40,
+      100,
+      400
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-gem-rush.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-gem-rush.json"
+  },
+  {
+    "slug": "slotmill-gods-of-glory",
+    "status": "ok",
+    "gameid": 19049,
+    "n_buy": 4,
+    "buy_mults": [
+      50,
+      100,
+      300,
+      600
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-gods-of-glory.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-gods-of-glory.json"
+  },
+  {
+    "slug": "slotmill-golden-scrolls",
+    "status": "ok",
+    "gameid": 19032,
+    "n_buy": 4,
+    "buy_mults": [
+      20,
+      60,
+      100,
+      400
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-golden-scrolls.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-golden-scrolls.json"
+  },
+  {
+    "slug": "slotmill-king-of-the-streets",
+    "status": "ok",
+    "gameid": 19063,
+    "n_buy": 3,
+    "buy_mults": [
+      40,
+      100,
+      500
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-king-of-the-streets.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-king-of-the-streets.json"
+  },
+  {
+    "slug": "slotmill-last-man-standing",
+    "status": "ok",
+    "gameid": 19055,
+    "n_buy": 4,
+    "buy_mults": [
+      30,
+      100,
+      200,
+      400
+    ],
+    "xtra_mult": 2.0,
+    "xtra_increase_pct": 100.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-last-man-standing.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-last-man-standing.json"
+  },
+  {
+    "slug": "slotmill-lucky-lucifer",
+    "status": "ok",
+    "gameid": 19010,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-lucky-lucifer.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-lucky-lucifer.json"
+  },
+  {
+    "slug": "slotmill-lucy-luck-and-the-crimson-diamond",
+    "status": "ok",
+    "gameid": 19031,
+    "n_buy": 3,
+    "buy_mults": [
+      4,
+      100,
+      400
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-lucy-luck-and-the-crimson-diamond.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-lucy-luck-and-the-crimson-diamond.json"
+  },
+  {
+    "slug": "slotmill-lucy-luck-and-the-temple-of-mysteries",
+    "status": "ok",
+    "gameid": 19033,
+    "n_buy": 4,
+    "buy_mults": [
+      3,
+      50,
+      100,
+      250
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-lucy-luck-and-the-temple-of-mysteries.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-lucy-luck-and-the-temple-of-mysteries.json"
+  },
+  {
+    "slug": "slotmill-merlins-fortune",
+    "status": "ok",
+    "gameid": 19014,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-merlins-fortune.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-merlins-fortune.json"
+  },
+  {
+    "slug": "slotmill-money-jar",
+    "status": "ok",
+    "gameid": 19022,
+    "n_buy": 4,
+    "buy_mults": [
+      5,
+      20,
+      30,
+      100
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-money-jar.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-money-jar.json"
+  },
+  {
+    "slug": "slotmill-money-jar-2",
+    "status": "ok",
+    "gameid": 19030,
+    "n_buy": 5,
+    "buy_mults": [
+      8,
+      20,
+      25,
+      100,
+      500
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-money-jar-2.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-money-jar-2.json"
+  },
+  {
+    "slug": "slotmill-neon-dreams",
+    "status": "ok",
+    "gameid": 19009,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-neon-dreams.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-neon-dreams.json"
+  },
+  {
+    "slug": "slotmill-outlaws",
+    "status": "ok",
+    "gameid": 19008,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-outlaws.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-outlaws.json"
+  },
+  {
+    "slug": "slotmill-quest-for-coins",
+    "status": "ok",
+    "gameid": 19079,
+    "n_buy": 5,
+    "buy_mults": [
+      7,
+      40,
+      100,
+      180,
+      500
+    ],
+    "xtra_mult": 2.0,
+    "xtra_increase_pct": 100.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-quest-for-coins.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-quest-for-coins.json"
+  },
+  {
+    "slug": "slotmill-raging-riches",
+    "status": "ok",
+    "gameid": 19045,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-raging-riches.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-raging-riches.json"
+  },
+  {
+    "slug": "slotmill-ragnarok",
+    "status": "ok",
+    "gameid": 19038,
+    "n_buy": 5,
+    "buy_mults": [
+      5,
+      25,
+      100,
+      200,
+      400
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50,
+    "xtra_chance": 3,
+    "help_path": "sources/slotmill/demo-help/demo-help-ragnarok.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-ragnarok.json"
+  },
+  {
+    "slug": "slotmill-ragnarok-40k",
+    "status": "ok",
+    "gameid": 19065,
+    "n_buy": 5,
+    "buy_mults": [
+      25,
+      100,
+      350,
+      400,
+      1000
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-ragnarok-40k.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-ragnarok-40k.json"
+  },
+  {
+    "slug": "slotmill-ragnarok-gold",
+    "status": "ok",
+    "gameid": 9005,
+    "n_buy": 5,
+    "buy_mults": [
+      30,
+      100,
+      350,
+      400,
+      1000
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-ragnarok-gold.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-ragnarok-gold.json"
+  },
+  {
+    "slug": "slotmill-rainbow-rush",
+    "status": "ok",
+    "gameid": 19085,
+    "n_buy": 4,
+    "buy_mults": [
+      20,
+      60,
+      100,
+      400
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-rainbow-rush.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-rainbow-rush.json"
+  },
+  {
+    "slug": "slotmill-reel-rampage",
+    "status": "ok",
+    "gameid": 19073,
+    "n_buy": 4,
+    "buy_mults": [
+      10,
+      50,
+      100,
+      400
+    ],
+    "xtra_mult": 2.0,
+    "xtra_increase_pct": 100.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-reel-rampage.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-reel-rampage.json"
+  },
+  {
+    "slug": "slotmill-ribs-golden-crypt",
+    "status": "ok",
+    "gameid": 19097,
+    "n_buy": 4,
+    "buy_mults": [
+      30,
+      100,
+      250,
+      500
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-ribs-golden-crypt.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-ribs-golden-crypt.json",
+    "via": "client"
+  },
+  {
+    "slug": "slotmill-sands-of-eternity",
+    "status": "ok",
+    "gameid": 19015,
+    "n_buy": 3,
+    "buy_mults": [
+      5,
+      15,
+      90
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-sands-of-eternity.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-sands-of-eternity.json"
+  },
+  {
+    "slug": "slotmill-sands-of-eternity-2",
+    "status": "ok",
+    "gameid": 19041,
+    "n_buy": 3,
+    "buy_mults": [
+      15,
+      100,
+      300
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-sands-of-eternity-2.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-sands-of-eternity-2.json"
+  },
+  {
+    "slug": "slotmill-season-of-fortune",
+    "status": "ok",
+    "gameid": 19081,
+    "n_buy": 3,
+    "buy_mults": [
+      40,
+      100,
+      500
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-season-of-fortune.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-season-of-fortune.json"
+  },
+  {
+    "slug": "slotmill-shadow-of-dominion",
+    "status": "ok",
+    "gameid": 19093,
+    "n_buy": 4,
+    "buy_mults": [
+      10,
+      50,
+      100,
+      400
+    ],
+    "xtra_mult": 2.0,
+    "xtra_increase_pct": 100.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-shadow-of-dominion.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-shadow-of-dominion.json",
+    "via": "client"
+  },
+  {
+    "slug": "slotmill-shark-frenzy",
+    "status": "ok",
+    "gameid": 19027,
+    "n_buy": 3,
+    "buy_mults": [
+      15,
+      100,
+      200
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-shark-frenzy.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-shark-frenzy.json"
+  },
+  {
+    "slug": "slotmill-star-spell",
+    "status": "ok",
+    "gameid": 19003,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-star-spell.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-star-spell.json"
+  },
+  {
+    "slug": "slotmill-super-fruit-smash",
+    "status": "ok",
+    "gameid": 19023,
+    "n_buy": 4,
+    "buy_mults": [
+      5,
+      40,
+      100,
+      450
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-super-fruit-smash.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-super-fruit-smash.json"
+  },
+  {
+    "slug": "slotmill-sweet-spotz",
+    "status": "ok",
+    "gameid": 19029,
+    "n_buy": 4,
+    "buy_mults": [
+      2,
+      10,
+      100,
+      400
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-sweet-spotz.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-sweet-spotz.json"
+  },
+  {
+    "slug": "slotmill-the-big-hit",
+    "status": "ok",
+    "gameid": 19021,
+    "n_buy": 4,
+    "buy_mults": [
+      30,
+      35,
+      110,
+      400
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-the-big-hit.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-the-big-hit.json"
+  },
+  {
+    "slug": "slotmill-three-samurai",
+    "status": "ok",
+    "gameid": 19012,
+    "n_buy": 2,
+    "buy_mults": [
+      10,
+      75
+    ],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-three-samurai.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-three-samurai.json"
+  },
+  {
+    "slug": "slotmill-thunder-wheel",
+    "status": "ok",
+    "gameid": 19013,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-thunder-wheel.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-thunder-wheel.json"
+  },
+  {
+    "slug": "slotmill-tiki-thunder",
+    "status": "ok",
+    "gameid": 19083,
+    "n_buy": 5,
+    "buy_mults": [
+      30,
+      100,
+      350,
+      400,
+      1000
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-tiki-thunder.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-tiki-thunder.json"
+  },
+  {
+    "slug": "slotmill-tyrants-fall",
+    "status": "ok",
+    "gameid": 19039,
+    "n_buy": 3,
+    "buy_mults": [
+      5,
+      100,
+      300
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-tyrants-fall.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-tyrants-fall.json"
+  },
+  {
+    "slug": "slotmill-ultra-fruit-smash",
+    "status": "ok",
+    "gameid": 19077,
+    "n_buy": 5,
+    "buy_mults": [
+      40,
+      80,
+      100,
+      250,
+      500
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-ultra-fruit-smash.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-ultra-fruit-smash.json"
+  },
+  {
+    "slug": "slotmill-vegas-gold",
+    "status": "ok",
+    "gameid": 19011,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-vegas-gold.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-vegas-gold.json"
+  },
+  {
+    "slug": "slotmill-vikings-creed",
+    "status": "ok",
+    "gameid": 19007,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-vikings-creed.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-vikings-creed.json"
+  },
+  {
+    "slug": "slotmill-wild-bison-stampede",
+    "status": "ok",
+    "gameid": 9003,
+    "n_buy": 5,
+    "buy_mults": [
+      30,
+      40,
+      80,
+      100,
+      400
+    ],
+    "xtra_mult": 1.5,
+    "xtra_increase_pct": 50.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-wild-bison-stampede.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-wild-bison-stampede.json"
+  },
+  {
+    "slug": "slotmill-wildfire",
+    "status": "ok",
+    "gameid": 19005,
+    "n_buy": 0,
+    "buy_mults": [],
+    "xtra_mult": null,
+    "xtra_increase_pct": null,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-wildfire.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-wildfire.json"
+  },
+  {
+    "slug": "slotmill-wildhalla",
+    "status": "ok",
+    "gameid": 19091,
+    "n_buy": 3,
+    "buy_mults": [
+      40,
+      100,
+      300
+    ],
+    "xtra_mult": 2.0,
+    "xtra_increase_pct": 100.0,
+    "xtra_chance": null,
+    "help_path": "sources/slotmill/demo-help/demo-help-wildhalla.json",
+    "raw_path": "sources/slotmill/demo-help/gameinit-wildhalla.json",
+    "via": "client"
+  }
+]

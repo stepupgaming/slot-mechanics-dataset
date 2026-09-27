@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Ribs' Golden Crypt",
@@ -179,14 +179,43 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 30x",
+        "cost_multiplier": 30.0,
+        "cost_text": "30x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 30x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 250x",
+        "cost_multiplier": 250.0,
+        "cost_text": "250x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 250x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 500x",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 500x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 30.0x, 100.0x, 250.0x, 500.0x. Evidence: sources/slotmill/demo-help/demo-help-ribs-golden-crypt.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 1.5,
+    "effects": "Xtra-Bet™ raises Base Bet by 50% (total cost 1.5× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=1.5xb and/or extraAmounts÷amounts ratio=1.5; increase_pct=50.0. Evidence: sources/slotmill/demo-help/demo-help-ribs-golden-crypt.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 10000.0,
@@ -196,7 +225,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
@@ -204,7 +233,7 @@
     "symbols": "low",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -214,6 +243,20 @@
       "local_path": "sources/slotmill/ribs-golden-crypt.html",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: Cluster Pays / Avalanche, grid 6×6\nPaylines: N/A — Cluster Pays\nRTP (%): Variant 1: 96 | Variant 2: 94\nMax win; x Bet: 10,000x\nBonus Features: Free Spins, Super Mode, Win Multiplier, Multiplier Meteor\nSpecial Symbols: Multiplier Meteor Symbol, Free Spins Symbol\nVolatility (variance): Very High\nGame URL: \"https://ribs-golden-crypt.slotmill.com\"\nStep into the mysterious Golden Crypt of Ribs, a quirky skeleton with a questionable past and motives. Deep beneath the ground sits Ribs' Golden Crypt, the place where he keeps his rather impressive treasure collection. The only problem? Ribs has misplaced his keys.\n\nRibs Golden Crypt is a 6×6 Cluster Pay Avalanche slot packed with explosive wins, Giant Symbols, powerful Multiplier Meteors, and a maximum win of 10,000x your bet.\n\nMatch 5 or more identical symbols to create a Cluster win. Winning symbols explode, making room for new symbols to drop and creating more opportunities for the Avalanche to continue. Every spin with a cluster win also creates a Wild Symbol in a random empty position"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://ribs-golden-crypt.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-ribs-golden-crypt.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=30x; Fast Track option 2=100x; Fast Track option 3=250x; Fast Track option 4=500x | Xtra-Bet: ExtraBet=1.5xb, increase=50.0%, cost_multiplier=1.5"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-ribs-golden-crypt.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Ribs' Golden Crypt"
     }
   ],
   "unknowns": [

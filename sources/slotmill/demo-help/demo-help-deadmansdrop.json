@@ -1,0 +1,137 @@
+{
+  "slug": "slotmill-deadmansdrop",
+  "captured_at": "2026-09-27T14:41:53-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19069,
+    "demo_url": "https://dead-mans-drop.slotmill.com/",
+    "main_js": "https://dead-mans-drop.slotmill.com/main.5d0b8dc3ff904ec43a55.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Dead Man's Drop",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track option 1",
+        "api_name": "1",
+        "cost_multiplier": 8,
+        "prop_value": "8xb",
+        "amounts_sample": [
+          "1.60",
+          "3.20",
+          "4.80"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fast Track option 2",
+        "api_name": "2",
+        "cost_multiplier": 40,
+        "prop_value": "40xb",
+        "amounts_sample": [
+          "8.00",
+          "16.00",
+          "24.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Fast Track option 3",
+        "api_name": "3",
+        "cost_multiplier": 80,
+        "prop_value": "80xb",
+        "amounts_sample": [
+          "16.00",
+          "32.00",
+          "48.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Fast Track option 4",
+        "api_name": "4",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Fast Track option 5",
+        "api_name": "5",
+        "cost_multiplier": 400,
+        "prop_value": "400xb",
+        "amounts_sample": [
+          "80.00",
+          "160.00",
+          "240.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "1",
+        "multiplier": 8
+      },
+      {
+        "id": 2,
+        "name": "2",
+        "multiplier": 40
+      },
+      {
+        "id": 3,
+        "name": "3",
+        "multiplier": 80
+      },
+      {
+        "id": 4,
+        "name": "4",
+        "multiplier": 100
+      },
+      {
+        "id": 5,
+        "name": "5",
+        "multiplier": 400
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": true,
+    "cost_multiplier": 2.0,
+    "increase_pct": 100.0,
+    "chance_x": null,
+    "prop_ExtraBet": "2xb",
+    "amounts_ratio": 2.0,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "8xb",
+    "BuyBonus2": "40xb",
+    "BuyBonus3": "80xb",
+    "BuyBonus4": "100xb",
+    "BuyBonus5": "400xb",
+    "BuyBonusNames": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "ExtraBet": "2xb"
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

@@ -1,0 +1,1527 @@
+{
+  "code": 0,
+  "data": {
+    "betAmounts": {
+      "amounts": [
+        "0.20",
+        "0.40",
+        "0.60",
+        "0.80",
+        "1.00",
+        "1.20",
+        "1.60",
+        "2.00",
+        "3.00",
+        "4.00",
+        "5.00",
+        "6.00",
+        "8.00",
+        "10.00",
+        "15.00",
+        "20.00",
+        "30.00",
+        "40.00",
+        "50.00",
+        "60.00",
+        "80.00",
+        "100.00"
+      ],
+      "buyBonus": [
+        {
+          "amounts": [
+            "2.00",
+            "4.00",
+            "6.00",
+            "8.00",
+            "10.00",
+            "12.00",
+            "16.00",
+            "20.00",
+            "30.00",
+            "40.00",
+            "50.00",
+            "60.00",
+            "80.00",
+            "100.00",
+            "150.00",
+            "200.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "600.00",
+            "800.00",
+            "1000.00"
+          ],
+          "id": 1,
+          "multiplier": 10,
+          "name": "0"
+        },
+        {
+          "amounts": [
+            "10.00",
+            "20.00",
+            "30.00",
+            "40.00",
+            "50.00",
+            "60.00",
+            "80.00",
+            "100.00",
+            "150.00",
+            "200.00",
+            "250.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "750.00",
+            "1000.00",
+            "1500.00",
+            "2000.00",
+            "2500.00",
+            "3000.00",
+            "4000.00",
+            "5000.00"
+          ],
+          "id": 2,
+          "multiplier": 50,
+          "name": "1"
+        },
+        {
+          "amounts": [
+            "20.00",
+            "40.00",
+            "60.00",
+            "80.00",
+            "100.00",
+            "120.00",
+            "160.00",
+            "200.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "600.00",
+            "800.00",
+            "1000.00",
+            "1500.00",
+            "2000.00",
+            "3000.00",
+            "4000.00",
+            "5000.00",
+            "6000.00",
+            "8000.00",
+            "10000.00"
+          ],
+          "id": 3,
+          "multiplier": 100,
+          "name": "2"
+        },
+        {
+          "amounts": [
+            "80.00",
+            "160.00",
+            "240.00",
+            "320.00",
+            "400.00",
+            "480.00",
+            "640.00",
+            "800.00",
+            "1200.00",
+            "1600.00",
+            "2000.00",
+            "2400.00",
+            "3200.00",
+            "4000.00",
+            "6000.00",
+            "8000.00",
+            "12000.00",
+            "16000.00",
+            "20000.00",
+            "24000.00",
+            "32000.00",
+            "40000.00"
+          ],
+          "id": 4,
+          "multiplier": 400,
+          "name": "3"
+        }
+      ],
+      "defaultAmount": "1.00",
+      "extraAmounts": [
+        "0.40",
+        "0.80",
+        "1.20",
+        "1.60",
+        "2.00",
+        "2.40",
+        "3.20",
+        "4.00",
+        "6.00",
+        "8.00",
+        "10.00",
+        "12.00",
+        "16.00",
+        "20.00",
+        "30.00",
+        "40.00",
+        "60.00",
+        "80.00",
+        "100.00",
+        "120.00",
+        "160.00",
+        "200.00"
+      ],
+      "roundDecimals": {
+        "prize": 3,
+        "wallet": 2
+      }
+    },
+    "currencyDisplay": "EUR",
+    "game": {
+      "gameid": 19093,
+      "name": "Shadow of Dominion",
+      "title": null,
+      "subgroup": null,
+      "currency": "<omitted>",
+      "category": "Casino",
+      "type": "Slot",
+      "variant": "ShadowOfDominion96",
+      "model": "M1",
+      "status": "Active",
+      "orgSettings": {
+        "hideTopRounds": false,
+        "hideRTPXtraBet": false,
+        "burstMode": true,
+        "showGameFunctionsInPaytable": false,
+        "maxAutoPlay": 0,
+        "quickSpin": true,
+        "quickStop": true,
+        "extraBet": true,
+        "useGameHistoryV2": false,
+        "enableInactivityTracking": false,
+        "hideRTPFeatureSplash": false,
+        "hideGameHistory": false,
+        "featureBuy": true,
+        "showTotalAutoplayBet": false,
+        "BetAmounts": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.1,0.2,0.4,0.6,0.8,1,1.2,1.6,2,3,4,5,6,8,10,15,20,30,40,50,60,80,100;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "minGameDuration": 0,
+        "showPaytableAfterFeatureSplash": false,
+        "hideRTPBuyFeature": false,
+        "DefaultBetAmount": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:1;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "autoPlay": true,
+        "useTopWagersV2": false,
+        "publicReplay": true
+      },
+      "draws": "<omitted>",
+      "cfg": {
+        "gameId": 19093,
+        "cfgId": 1,
+        "status": "Frozen",
+        "validFrom": null,
+        "validUntil": null,
+        "checksum": "4A13466FC6B92E08548DA12D10CA87A2BFAF1D3F0E787CB14D9BBEB9C427452954577CF7FAA34B5127979E172CB72D6B239A5D892F8374C27234C0A40DF4E57E",
+        "props": [
+          {
+            "prop": "BetAmounts",
+            "value": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:1,2,4,6,8,10,12,16,20,30,40,50,60,80,100,120,150,160,200,300,400,500,600,800,900,1000,1200,1500,1600,1800,2000,2400,2500,3000,3200,4000,4500,5000,6000,7500,8000,9000,10000,12000,15000,16000,20000,22500,24000,25000,30000,32000,40000,45000,50000,60000,75000,80000,90000,100000,120000,150000,160000,200000,225000,250000,300000,400000,450000,500000,600000,750000,800000,1000000,1200000,1500000,1600000,2000000,2500000,3000000,4000000,5000000,6000000,7500000,10000000,15000000;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.1,0.2,0.4,0.6,0.8,1,1.2,1.6,2,3,4,5,6,8,10,15,20,30,40,50,60,80,100,150,200,300;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500"
+          },
+          {
+            "prop": "BuyBonus1",
+            "value": "10xb"
+          },
+          {
+            "prop": "BuyBonus2",
+            "value": "50xb"
+          },
+          {
+            "prop": "BuyBonus3",
+            "value": "100xb"
+          },
+          {
+            "prop": "BuyBonus4",
+            "value": "400xb"
+          },
+          {
+            "prop": "BuyBonusNames",
+            "value": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          {
+            "prop": "CapWin",
+            "value": "10000xb"
+          },
+          {
+            "prop": "Cheats",
+            "value": [
+              [
+                "/none",
+                "none"
+              ]
+            ]
+          },
+          {
+            "prop": "DON",
+            "value": "CollectB"
+          },
+          {
+            "prop": "ExtraBet",
+            "value": "2.0xb"
+          },
+          {
+            "prop": "IconTypes",
+            "value": [
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "S",
+              "S",
+              "S"
+            ]
+          },
+          {
+            "prop": "Icons",
+            "value": [
+              "H1",
+              "M1",
+              "M2",
+              "M3",
+              "M4",
+              "L1",
+              "L2",
+              "L3",
+              "L4",
+              "FS1",
+              "FS2",
+              "UP"
+            ]
+          },
+          {
+            "prop": "NumberOfReels",
+            "value": 6
+          },
+          {
+            "prop": "Paylines",
+            "value": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "prop": "RTP",
+            "value": 96
+          },
+          {
+            "prop": "WindowHeight",
+            "value": 6
+          },
+          {
+            "prop": "client",
+            "value": "shadow-of-dominion"
+          }
+        ],
+        "admin": false,
+        "initial": false,
+        "removed": false,
+        "frozen": true
+      },
+      "gameId": 19093
+    },
+    "payTable": [
+      [
+        "H1",
+        [
+          8,
+          "0.50"
+        ],
+        [
+          9,
+          "0.50"
+        ],
+        [
+          10,
+          "0.75"
+        ],
+        [
+          11,
+          "0.75"
+        ],
+        [
+          12,
+          "0.75"
+        ],
+        [
+          13,
+          "1.00"
+        ],
+        [
+          14,
+          "1.00"
+        ],
+        [
+          15,
+          "1.00"
+        ],
+        [
+          16,
+          "1.00"
+        ],
+        [
+          17,
+          "1.00"
+        ],
+        [
+          18,
+          "1.00"
+        ],
+        [
+          19,
+          "3.00"
+        ],
+        [
+          20,
+          "3.00"
+        ],
+        [
+          21,
+          "3.00"
+        ],
+        [
+          22,
+          "3.00"
+        ],
+        [
+          23,
+          "3.00"
+        ],
+        [
+          24,
+          "3.00"
+        ],
+        [
+          25,
+          "6.00"
+        ],
+        [
+          26,
+          "6.00"
+        ],
+        [
+          27,
+          "6.00"
+        ],
+        [
+          28,
+          "6.00"
+        ],
+        [
+          29,
+          "6.00"
+        ],
+        [
+          30,
+          "6.00"
+        ],
+        [
+          31,
+          "25.00"
+        ],
+        [
+          32,
+          "25.00"
+        ],
+        [
+          33,
+          "25.00"
+        ],
+        [
+          34,
+          "25.00"
+        ],
+        [
+          35,
+          "25.00"
+        ],
+        [
+          36,
+          "500.00"
+        ]
+      ],
+      [
+        "M1",
+        [
+          8,
+          "0.25"
+        ],
+        [
+          9,
+          "0.25"
+        ],
+        [
+          10,
+          "0.35"
+        ],
+        [
+          11,
+          "0.35"
+        ],
+        [
+          12,
+          "0.35"
+        ],
+        [
+          13,
+          "0.75"
+        ],
+        [
+          14,
+          "0.75"
+        ],
+        [
+          15,
+          "0.75"
+        ],
+        [
+          16,
+          "0.75"
+        ],
+        [
+          17,
+          "0.75"
+        ],
+        [
+          18,
+          "0.75"
+        ],
+        [
+          19,
+          "2.00"
+        ],
+        [
+          20,
+          "2.00"
+        ],
+        [
+          21,
+          "2.00"
+        ],
+        [
+          22,
+          "2.00"
+        ],
+        [
+          23,
+          "2.00"
+        ],
+        [
+          24,
+          "2.00"
+        ],
+        [
+          25,
+          "4.00"
+        ],
+        [
+          26,
+          "4.00"
+        ],
+        [
+          27,
+          "4.00"
+        ],
+        [
+          28,
+          "4.00"
+        ],
+        [
+          29,
+          "4.00"
+        ],
+        [
+          30,
+          "4.00"
+        ],
+        [
+          31,
+          "20.00"
+        ],
+        [
+          32,
+          "20.00"
+        ],
+        [
+          33,
+          "20.00"
+        ],
+        [
+          34,
+          "20.00"
+        ],
+        [
+          35,
+          "20.00"
+        ],
+        [
+          36,
+          "100.00"
+        ]
+      ],
+      [
+        "M2",
+        [
+          8,
+          "0.25"
+        ],
+        [
+          9,
+          "0.25"
+        ],
+        [
+          10,
+          "0.35"
+        ],
+        [
+          11,
+          "0.35"
+        ],
+        [
+          12,
+          "0.35"
+        ],
+        [
+          13,
+          "0.75"
+        ],
+        [
+          14,
+          "0.75"
+        ],
+        [
+          15,
+          "0.75"
+        ],
+        [
+          16,
+          "0.75"
+        ],
+        [
+          17,
+          "0.75"
+        ],
+        [
+          18,
+          "0.75"
+        ],
+        [
+          19,
+          "2.00"
+        ],
+        [
+          20,
+          "2.00"
+        ],
+        [
+          21,
+          "2.00"
+        ],
+        [
+          22,
+          "2.00"
+        ],
+        [
+          23,
+          "2.00"
+        ],
+        [
+          24,
+          "2.00"
+        ],
+        [
+          25,
+          "4.00"
+        ],
+        [
+          26,
+          "4.00"
+        ],
+        [
+          27,
+          "4.00"
+        ],
+        [
+          28,
+          "4.00"
+        ],
+        [
+          29,
+          "4.00"
+        ],
+        [
+          30,
+          "4.00"
+        ],
+        [
+          31,
+          "15.00"
+        ],
+        [
+          32,
+          "15.00"
+        ],
+        [
+          33,
+          "15.00"
+        ],
+        [
+          34,
+          "15.00"
+        ],
+        [
+          35,
+          "15.00"
+        ],
+        [
+          36,
+          "80.00"
+        ]
+      ],
+      [
+        "M3",
+        [
+          8,
+          "0.20"
+        ],
+        [
+          9,
+          "0.20"
+        ],
+        [
+          10,
+          "0.30"
+        ],
+        [
+          11,
+          "0.30"
+        ],
+        [
+          12,
+          "0.30"
+        ],
+        [
+          13,
+          "0.50"
+        ],
+        [
+          14,
+          "0.50"
+        ],
+        [
+          15,
+          "0.50"
+        ],
+        [
+          16,
+          "0.50"
+        ],
+        [
+          17,
+          "0.50"
+        ],
+        [
+          18,
+          "0.50"
+        ],
+        [
+          19,
+          "2.00"
+        ],
+        [
+          20,
+          "2.00"
+        ],
+        [
+          21,
+          "2.00"
+        ],
+        [
+          22,
+          "2.00"
+        ],
+        [
+          23,
+          "2.00"
+        ],
+        [
+          24,
+          "2.00"
+        ],
+        [
+          25,
+          "3.50"
+        ],
+        [
+          26,
+          "3.50"
+        ],
+        [
+          27,
+          "3.50"
+        ],
+        [
+          28,
+          "3.50"
+        ],
+        [
+          29,
+          "3.50"
+        ],
+        [
+          30,
+          "3.50"
+        ],
+        [
+          31,
+          "10.00"
+        ],
+        [
+          32,
+          "10.00"
+        ],
+        [
+          33,
+          "10.00"
+        ],
+        [
+          34,
+          "10.00"
+        ],
+        [
+          35,
+          "10.00"
+        ],
+        [
+          36,
+          "60.00"
+        ]
+      ],
+      [
+        "M4",
+        [
+          8,
+          "0.20"
+        ],
+        [
+          9,
+          "0.20"
+        ],
+        [
+          10,
+          "0.30"
+        ],
+        [
+          11,
+          "0.30"
+        ],
+        [
+          12,
+          "0.30"
+        ],
+        [
+          13,
+          "0.50"
+        ],
+        [
+          14,
+          "0.50"
+        ],
+        [
+          15,
+          "0.50"
+        ],
+        [
+          16,
+          "0.50"
+        ],
+        [
+          17,
+          "0.50"
+        ],
+        [
+          18,
+          "0.50"
+        ],
+        [
+          19,
+          "2.00"
+        ],
+        [
+          20,
+          "2.00"
+        ],
+        [
+          21,
+          "2.00"
+        ],
+        [
+          22,
+          "2.00"
+        ],
+        [
+          23,
+          "2.00"
+        ],
+        [
+          24,
+          "2.00"
+        ],
+        [
+          25,
+          "3.50"
+        ],
+        [
+          26,
+          "3.50"
+        ],
+        [
+          27,
+          "3.50"
+        ],
+        [
+          28,
+          "3.50"
+        ],
+        [
+          29,
+          "3.50"
+        ],
+        [
+          30,
+          "3.50"
+        ],
+        [
+          31,
+          "7.00"
+        ],
+        [
+          32,
+          "7.00"
+        ],
+        [
+          33,
+          "7.00"
+        ],
+        [
+          34,
+          "7.00"
+        ],
+        [
+          35,
+          "7.00"
+        ],
+        [
+          36,
+          "40.00"
+        ]
+      ],
+      [
+        "L1",
+        [
+          8,
+          "0.10"
+        ],
+        [
+          9,
+          "0.10"
+        ],
+        [
+          10,
+          "0.20"
+        ],
+        [
+          11,
+          "0.20"
+        ],
+        [
+          12,
+          "0.20"
+        ],
+        [
+          13,
+          "0.30"
+        ],
+        [
+          14,
+          "0.30"
+        ],
+        [
+          15,
+          "0.30"
+        ],
+        [
+          16,
+          "0.30"
+        ],
+        [
+          17,
+          "0.30"
+        ],
+        [
+          18,
+          "0.30"
+        ],
+        [
+          19,
+          "1.25"
+        ],
+        [
+          20,
+          "1.25"
+        ],
+        [
+          21,
+          "1.25"
+        ],
+        [
+          22,
+          "1.25"
+        ],
+        [
+          23,
+          "1.25"
+        ],
+        [
+          24,
+          "1.25"
+        ],
+        [
+          25,
+          "2.50"
+        ],
+        [
+          26,
+          "2.50"
+        ],
+        [
+          27,
+          "2.50"
+        ],
+        [
+          28,
+          "2.50"
+        ],
+        [
+          29,
+          "2.50"
+        ],
+        [
+          30,
+          "2.50"
+        ],
+        [
+          31,
+          "5.00"
+        ],
+        [
+          32,
+          "5.00"
+        ],
+        [
+          33,
+          "5.00"
+        ],
+        [
+          34,
+          "5.00"
+        ],
+        [
+          35,
+          "5.00"
+        ],
+        [
+          36,
+          "25.00"
+        ]
+      ],
+      [
+        "L2",
+        [
+          8,
+          "0.10"
+        ],
+        [
+          9,
+          "0.10"
+        ],
+        [
+          10,
+          "0.20"
+        ],
+        [
+          11,
+          "0.20"
+        ],
+        [
+          12,
+          "0.20"
+        ],
+        [
+          13,
+          "0.30"
+        ],
+        [
+          14,
+          "0.30"
+        ],
+        [
+          15,
+          "0.30"
+        ],
+        [
+          16,
+          "0.30"
+        ],
+        [
+          17,
+          "0.30"
+        ],
+        [
+          18,
+          "0.30"
+        ],
+        [
+          19,
+          "1.25"
+        ],
+        [
+          20,
+          "1.25"
+        ],
+        [
+          21,
+          "1.25"
+        ],
+        [
+          22,
+          "1.25"
+        ],
+        [
+          23,
+          "1.25"
+        ],
+        [
+          24,
+          "1.25"
+        ],
+        [
+          25,
+          "2.50"
+        ],
+        [
+          26,
+          "2.50"
+        ],
+        [
+          27,
+          "2.50"
+        ],
+        [
+          28,
+          "2.50"
+        ],
+        [
+          29,
+          "2.50"
+        ],
+        [
+          30,
+          "2.50"
+        ],
+        [
+          31,
+          "5.00"
+        ],
+        [
+          32,
+          "5.00"
+        ],
+        [
+          33,
+          "5.00"
+        ],
+        [
+          34,
+          "5.00"
+        ],
+        [
+          35,
+          "5.00"
+        ],
+        [
+          36,
+          "20.00"
+        ]
+      ],
+      [
+        "L3",
+        [
+          8,
+          "0.05"
+        ],
+        [
+          9,
+          "0.05"
+        ],
+        [
+          10,
+          "0.15"
+        ],
+        [
+          11,
+          "0.15"
+        ],
+        [
+          12,
+          "0.15"
+        ],
+        [
+          13,
+          "0.25"
+        ],
+        [
+          14,
+          "0.25"
+        ],
+        [
+          15,
+          "0.25"
+        ],
+        [
+          16,
+          "0.25"
+        ],
+        [
+          17,
+          "0.25"
+        ],
+        [
+          18,
+          "0.25"
+        ],
+        [
+          19,
+          "1.00"
+        ],
+        [
+          20,
+          "1.00"
+        ],
+        [
+          21,
+          "1.00"
+        ],
+        [
+          22,
+          "1.00"
+        ],
+        [
+          23,
+          "1.00"
+        ],
+        [
+          24,
+          "1.00"
+        ],
+        [
+          25,
+          "2.00"
+        ],
+        [
+          26,
+          "2.00"
+        ],
+        [
+          27,
+          "2.00"
+        ],
+        [
+          28,
+          "2.00"
+        ],
+        [
+          29,
+          "2.00"
+        ],
+        [
+          30,
+          "2.00"
+        ],
+        [
+          31,
+          "4.00"
+        ],
+        [
+          32,
+          "4.00"
+        ],
+        [
+          33,
+          "4.00"
+        ],
+        [
+          34,
+          "4.00"
+        ],
+        [
+          35,
+          "4.00"
+        ],
+        [
+          36,
+          "15.00"
+        ]
+      ],
+      [
+        "L4",
+        [
+          8,
+          "0.05"
+        ],
+        [
+          9,
+          "0.05"
+        ],
+        [
+          10,
+          "0.15"
+        ],
+        [
+          11,
+          "0.15"
+        ],
+        [
+          12,
+          "0.15"
+        ],
+        [
+          13,
+          "0.25"
+        ],
+        [
+          14,
+          "0.25"
+        ],
+        [
+          15,
+          "0.25"
+        ],
+        [
+          16,
+          "0.25"
+        ],
+        [
+          17,
+          "0.25"
+        ],
+        [
+          18,
+          "0.25"
+        ],
+        [
+          19,
+          "1.00"
+        ],
+        [
+          20,
+          "1.00"
+        ],
+        [
+          21,
+          "1.00"
+        ],
+        [
+          22,
+          "1.00"
+        ],
+        [
+          23,
+          "1.00"
+        ],
+        [
+          24,
+          "1.00"
+        ],
+        [
+          25,
+          "2.00"
+        ],
+        [
+          26,
+          "2.00"
+        ],
+        [
+          27,
+          "2.00"
+        ],
+        [
+          28,
+          "2.00"
+        ],
+        [
+          29,
+          "2.00"
+        ],
+        [
+          30,
+          "2.00"
+        ],
+        [
+          31,
+          "4.00"
+        ],
+        [
+          32,
+          "4.00"
+        ],
+        [
+          33,
+          "4.00"
+        ],
+        [
+          34,
+          "4.00"
+        ],
+        [
+          35,
+          "4.00"
+        ],
+        [
+          36,
+          "10.00"
+        ]
+      ],
+      [
+        "FS1",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ],
+      [
+        "FS2",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ],
+      [
+        "UP",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ]
+    ],
+    "pending": {
+      "name": "report",
+      "size": 0,
+      "next": "",
+      "header": null,
+      "data": [],
+      "offset": 0
+    },
+    "prepaids": {
+      "consumed": 0,
+      "amount": 0,
+      "gameparams": null,
+      "more": false,
+      "count": 0,
+      "wa": 0,
+      "wc": "EUR",
+      "consumebefore": null,
+      "descr": null,
+      "ref": null,
+      "total": 0,
+      "currency": "EUR",
+      "ba": 0,
+      "rejectable": false
+    },
+    "serverApi": "https://freeplayapi.slotmill.com",
+    "skin": "default",
+    "tournamentInfo": [],
+    "user": {
+      "userid": "2609271843001370028",
+      "type": "Player",
+      "balance": {
+        "currency": "EUR",
+        "cash": "10000.00",
+        "bonus": "0.00",
+        "free": "0.00",
+        "points": "0.00",
+        "real": "10000.00"
+      },
+      "org": "SlotMill",
+      "currency": "EUR",
+      "nickname": "2609271843001370001",
+      "email": "",
+      "gender": null,
+      "birthdate": null,
+      "language": "en",
+      "country": "",
+      "domain": null,
+      "sessid": "2609271843001370031C0BECCB771F15868FB38A5B6CD45AC46EFE9AA78CB6E7A50FCC55074F04C4FD9729F9204448A21AC8665D397251F06A0DA2A9CFAE8C452E4900905B3C67B0A26",
+      "nativeSessid": "26092718430066700013F0022248444F35FFD315B68F925D867C455EC51CEA317D0740CEE30287876A0D4D0598604B65D5B472C803F5374FA03056E8F56E43D906CC7879E84C568D478",
+      "avatar": null,
+      "level": null,
+      "custom": null,
+      "admin": false,
+      "userProps": {
+        "id": {
+          "domain": "SlotMill",
+          "externalid": "2609271843001370001",
+          "integration": "Stub",
+          "nativeid": "2609271843001370001",
+          "org": "SlotMill",
+          "userid": "2609271843001370028",
+          "walletid": "SlotMill"
+        },
+        "main": {
+          "address1": "",
+          "address2": "",
+          "address3": "",
+          "avatar": "m21",
+          "country": "",
+          "currency": "EUR",
+          "domain": "SlotMill_SlotMill",
+          "email": "",
+          "firstname": "",
+          "gamesetup": "Default",
+          "gender": "male",
+          "lastname": "",
+          "middlename": "",
+          "mobile": "",
+          "nickname": "2609271843001370001",
+          "org": "SlotMill",
+          "phone": "",
+          "picture": "m21",
+          "status": "Active",
+          "type": "Player",
+          "zip": ""
+        }
+      },
+      "levelId": 106
+    }
+  },
+  "fn": "gameinit"
+}

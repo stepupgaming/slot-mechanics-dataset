@@ -1,0 +1,117 @@
+{
+  "slug": "slotmill-rainbow-rush",
+  "captured_at": "2026-09-27T14:42:08-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19085,
+    "demo_url": "https://rainbow-rush.slotmill.com/",
+    "main_js": "https://rainbow-rush.slotmill.com/main.0502e7be9ef3ea1061ed.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Rainbow Rush",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track option 1",
+        "api_name": "1",
+        "cost_multiplier": 20,
+        "prop_value": "20xb",
+        "amounts_sample": [
+          "4.00",
+          "8.00",
+          "12.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fast Track option 2",
+        "api_name": "2",
+        "cost_multiplier": 60,
+        "prop_value": "60xb",
+        "amounts_sample": [
+          "12.00",
+          "24.00",
+          "36.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Fast Track option 3",
+        "api_name": "3",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Fast Track option 4",
+        "api_name": "4",
+        "cost_multiplier": 400,
+        "prop_value": "400xb",
+        "amounts_sample": [
+          "80.00",
+          "160.00",
+          "240.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "1",
+        "multiplier": 20
+      },
+      {
+        "id": 2,
+        "name": "2",
+        "multiplier": 60
+      },
+      {
+        "id": 3,
+        "name": "3",
+        "multiplier": 100
+      },
+      {
+        "id": 4,
+        "name": "4",
+        "multiplier": 400
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "20xb",
+    "BuyBonus2": "60xb",
+    "BuyBonus3": "100xb",
+    "BuyBonus4": "400xb",
+    "BuyBonusNames": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

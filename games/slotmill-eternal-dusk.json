@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Eternal Dusk /",
@@ -155,14 +155,36 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 40x",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 500x",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 500x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 40.0x, 100.0x, 500.0x. Evidence: sources/slotmill/demo-help/demo-help-eternal-dusk.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 1.5,
+    "effects": "Xtra-Bet™ raises Base Bet by 50% (total cost 1.5× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=1.5xb and/or extraAmounts÷amounts ratio=1.5; increase_pct=50.0. Evidence: sources/slotmill/demo-help/demo-help-eternal-dusk.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 10000.0,
@@ -172,7 +194,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -180,7 +202,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -197,6 +219,20 @@
       "local_path": "sources/slotmill/product_sheet_eternal-dusk.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Eternal Dusk\n\nEternal Dusk beckons you into a realm of mystery—a thrilling 5×4 video slot with 30 Bet Lines and electrifying\nfeatures. With a maximum win of 10,000x your bet, the shadows conceal boundless rewards!\n\nUnleash the Wild Surge, where up to 10 Wild symbols with multipliers as high as x10 can illuminate the reels in an\ninstant. Watch as Wild multipliers combine to create even greater wins!\n\nTrigger the Free Spins Bonus by landing 3 or more Bonus Symbols, summoning a powerful Golden Roaming Wild\nthat shifts positions before every spin. Advance through five stages of Free Spins by collecting Bonus Symbols,\nunlocking rising multipliers for legendary wins!\n\nStep into the twilight and uncover the treasures that await in the shadows!\n\nIn response to evolving player preferences in gamepl"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://eternal-dusk.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-eternal-dusk.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=40x; Fast Track option 2=100x; Fast Track option 3=500x | Xtra-Bet: ExtraBet=1.5xb, increase=50.0%, cost_multiplier=1.5"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-eternal-dusk.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Eternal Dusk"
     }
   ],
   "unknowns": [

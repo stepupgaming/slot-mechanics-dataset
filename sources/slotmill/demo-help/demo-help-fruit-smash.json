@@ -1,0 +1,98 @@
+{
+  "slug": "slotmill-fruit-smash",
+  "captured_at": "2026-09-27T14:41:58-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19016,
+    "demo_url": "https://fruit-smash.slotmill.com/",
+    "main_js": "https://fruit-smash.slotmill.com/main.5edb91abc206a7ae502c.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Fruit Smash",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "FruitSmash",
+        "api_name": "FruitSmash",
+        "cost_multiplier": 5,
+        "prop_value": "5xb",
+        "amounts_sample": [
+          "1.00",
+          "2.00",
+          "2.50"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Bonus",
+        "api_name": "Bonus",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "50.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "FrenzyBonus",
+        "api_name": "FrenzyBonus",
+        "cost_multiplier": 500,
+        "prop_value": "500xb",
+        "amounts_sample": [
+          "100.00",
+          "200.00",
+          "250.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "FruitSmash",
+        "multiplier": 5
+      },
+      {
+        "id": 2,
+        "name": "Bonus",
+        "multiplier": 100
+      },
+      {
+        "id": 3,
+        "name": "FrenzyBonus",
+        "multiplier": 500
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "5xb",
+    "BuyBonus2": "100xb",
+    "BuyBonus3": "500xb",
+    "BuyBonusNames": [
+      "FruitSmash",
+      "Bonus",
+      "FrenzyBonus"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

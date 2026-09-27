@@ -1,0 +1,118 @@
+{
+  "slug": "slotmill-reel-rampage",
+  "captured_at": "2026-09-27T14:42:08-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19073,
+    "demo_url": "https://reel-rampage.slotmill.com/",
+    "main_js": "https://reel-rampage.slotmill.com/main.4010bed3303b397a981b.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Reel Rampage",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track option 1",
+        "api_name": "1",
+        "cost_multiplier": 10,
+        "prop_value": "10xb",
+        "amounts_sample": [
+          "2.00",
+          "4.00",
+          "6.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fast Track option 2",
+        "api_name": "2",
+        "cost_multiplier": 50,
+        "prop_value": "50xb",
+        "amounts_sample": [
+          "10.00",
+          "20.00",
+          "30.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Fast Track option 3",
+        "api_name": "3",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Fast Track option 4",
+        "api_name": "4",
+        "cost_multiplier": 400,
+        "prop_value": "400xb",
+        "amounts_sample": [
+          "80.00",
+          "160.00",
+          "240.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "1",
+        "multiplier": 10
+      },
+      {
+        "id": 2,
+        "name": "2",
+        "multiplier": 50
+      },
+      {
+        "id": 3,
+        "name": "3",
+        "multiplier": 100
+      },
+      {
+        "id": 4,
+        "name": "4",
+        "multiplier": 400
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": true,
+    "cost_multiplier": 2.0,
+    "increase_pct": 100.0,
+    "chance_x": null,
+    "prop_ExtraBet": "2.0xb",
+    "amounts_ratio": 2.0,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "10xb",
+    "BuyBonus2": "50xb",
+    "BuyBonus3": "100xb",
+    "BuyBonus4": "400xb",
+    "BuyBonusNames": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ExtraBet": "2.0xb"
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

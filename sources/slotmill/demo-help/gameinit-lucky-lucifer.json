@@ -1,0 +1,1317 @@
+{
+  "code": 0,
+  "data": {
+    "betAmounts": {
+      "amounts": [
+        "0.20",
+        "0.30",
+        "0.50",
+        "0.80",
+        "1.00",
+        "1.50",
+        "2.00",
+        "3.00",
+        "5.00",
+        "8.00",
+        "10.00",
+        "12.50",
+        "15.00",
+        "20.00",
+        "30.00"
+      ],
+      "buyBonusAmounts": [
+        "16.00",
+        "24.00",
+        "40.00",
+        "64.00",
+        "80.00",
+        "120.00",
+        "160.00",
+        "240.00",
+        "400.00",
+        "640.00",
+        "800.00",
+        "1000.00",
+        "1200.00",
+        "1600.00",
+        "2400.00"
+      ],
+      "defaultAmount": "1.00",
+      "roundDecimals": {
+        "prize": 3,
+        "wallet": 2
+      }
+    },
+    "currencyDisplay": "EUR",
+    "game": {
+      "gameid": 19010,
+      "name": "Lucky Lucifer",
+      "title": null,
+      "subgroup": null,
+      "currency": "<omitted 683 chars>",
+      "category": "Casino",
+      "type": "Slot",
+      "variant": "Lucifer",
+      "model": "M1",
+      "status": "Active",
+      "orgSettings": {
+        "hideTopRounds": false,
+        "hideRTPXtraBet": false,
+        "Denoms": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.0025,0.005,0.0075,0.0125,0.02,0.025,0.0375,0.05,0.075,0.125,0.2,0.25,0.3125,0.375,0.5,0.75;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "burstMode": true,
+        "showGameFunctionsInPaytable": false,
+        "maxAutoPlay": 0,
+        "quickSpin": true,
+        "quickStop": true,
+        "extraBet": true,
+        "DefaultDenom": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.025;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "useGameHistoryV2": false,
+        "enableInactivityTracking": false,
+        "hideRTPFeatureSplash": false,
+        "hideGameHistory": false,
+        "featureBuy": true,
+        "showTotalAutoplayBet": false,
+        "minGameDuration": 0,
+        "showPaytableAfterFeatureSplash": false,
+        "hideRTPBuyFeature": false,
+        "autoPlay": true,
+        "useTopWagersV2": false,
+        "publicReplay": true
+      },
+      "draws": "<omitted>",
+      "cfg": {
+        "gameId": 19010,
+        "cfgId": 1,
+        "status": "Frozen",
+        "validFrom": null,
+        "validUntil": null,
+        "checksum": "23EB545E64583C5370226D84764D8AB52AB0400F78DFA424422952C765013B623245CF077DB3375EF5C6BFE2D563B3142996D3059A249D24360E0F34B24D2CD2",
+        "props": [
+          {
+            "prop": "BuyBonus",
+            "value": "80xb"
+          },
+          {
+            "prop": "CapWin",
+            "value": "10000xb"
+          },
+          {
+            "prop": "Cheats",
+            "value": [
+              [
+                "/none",
+                "none"
+              ]
+            ]
+          },
+          {
+            "prop": "DON",
+            "value": "Collect"
+          },
+          {
+            "prop": "Denoms",
+            "value": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:0.025,0.05,0.075,0.125,0.2,0.25,0.375,0.5,0.75,1.25,2,2.5,3.125,3.75,5,6.25,7.5,10,11.25,12.5,15,18.75,20,25,30,31.25,37.5,40,50,56.25,62.5,75,100,112.5,125,150,156.25,187.5,200,250,300,312.5,375,400,468.75,500,562.5,625,750,937.5,1000,1125,1250,1500,1875,2000,2500,2812.5,3125,3750,4000,5000,5625,6250,7500,10000,11250,12500,15000,15625,18750,25000,37500,50000,62500,75000,93750,100000,125000,150000,187500,250000,375000;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.0025,0.005,0.0075,0.0125,0.02,0.025,0.0375,0.05,0.075,0.125,0.2,0.25,0.3125,0.375,0.5,0.75,1.25,1.875,2.5,3.75,5,7.5;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500"
+          },
+          {
+            "prop": "Feature",
+            "value": ""
+          },
+          {
+            "prop": "FeatureConfig",
+            "value": ""
+          },
+          {
+            "prop": "IconTypes",
+            "value": [
+              "S",
+              "W",
+              "W",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N"
+            ]
+          },
+          {
+            "prop": "Icons",
+            "value": [
+              "FS",
+              "W",
+              "WX",
+              "H1",
+              "H2",
+              "H3",
+              "M1",
+              "M2",
+              "M3",
+              "M4",
+              "L1",
+              "L2",
+              "L3",
+              "L4"
+            ]
+          },
+          {
+            "prop": "MaxCoins",
+            "value": 1
+          },
+          {
+            "prop": "MinCoins",
+            "value": 1
+          },
+          {
+            "prop": "NormalOri",
+            "value": [
+              "LR"
+            ]
+          },
+          {
+            "prop": "NumberOfReels",
+            "value": 5
+          },
+          {
+            "prop": "Paylines",
+            "value": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              [
+                3,
+                2,
+                1,
+                2,
+                3
+              ],
+              [
+                2,
+                1,
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                3,
+                2,
+                1
+              ],
+              [
+                3,
+                2,
+                3,
+                2,
+                3
+              ],
+              [
+                2,
+                1,
+                2,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2,
+                3,
+                2
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                2,
+                2,
+                1,
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                2,
+                3,
+                3
+              ],
+              [
+                2,
+                2,
+                3,
+                2,
+                2
+              ],
+              [
+                1,
+                1,
+                2,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                3,
+                3,
+                0,
+                3,
+                3
+              ],
+              [
+                3,
+                3,
+                1,
+                3,
+                3
+              ],
+              [
+                2,
+                2,
+                0,
+                2,
+                2
+              ],
+              [
+                0,
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                3,
+                1,
+                1
+              ],
+              [
+                3,
+                1,
+                3,
+                1,
+                3
+              ],
+              [
+                2,
+                0,
+                2,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                0,
+                2,
+                0
+              ],
+              [
+                1,
+                3,
+                1,
+                3,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                2,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                3,
+                3,
+                2
+              ],
+              [
+                3,
+                2,
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                1,
+                1,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                2,
+                2,
+                2,
+                0
+              ],
+              [
+                1,
+                3,
+                3,
+                3,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                3,
+                1,
+                1,
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "prop": "PrizeDivisor",
+            "value": 1
+          },
+          {
+            "prop": "Prizes",
+            "value": [
+              [
+                "FS",
+                "-1",
+                "-1",
+                "-1"
+              ],
+              [
+                "H1",
+                "80",
+                "200",
+                "1200"
+              ],
+              [
+                "H2",
+                "60",
+                "100",
+                "800"
+              ],
+              [
+                "H3",
+                "40",
+                "80",
+                "600"
+              ],
+              [
+                "M1",
+                "24",
+                "60",
+                "200"
+              ],
+              [
+                "M2",
+                "24",
+                "60",
+                "200"
+              ],
+              [
+                "M3",
+                "20",
+                "40",
+                "120"
+              ],
+              [
+                "M4",
+                "20",
+                "40",
+                "120"
+              ],
+              [
+                "L1",
+                "16",
+                "32",
+                "100"
+              ],
+              [
+                "L2",
+                "12",
+                "24",
+                "80"
+              ],
+              [
+                "L3",
+                "8",
+                "16",
+                "60"
+              ],
+              [
+                "L4",
+                "4",
+                "12",
+                "40"
+              ]
+            ]
+          },
+          {
+            "prop": "Reels",
+            "value": [
+              [
+                "H2",
+                "L3",
+                "L2",
+                "L1",
+                "H2",
+                "M1",
+                "M3",
+                "L4",
+                "L3",
+                "L2",
+                "H3",
+                "L1",
+                "M2",
+                "L2",
+                "L3",
+                "H2",
+                "M3",
+                "H3",
+                "L1",
+                "H2",
+                "M4",
+                "H3",
+                "M1",
+                "L3",
+                "L1",
+                "M2",
+                "L2",
+                "L4",
+                "M3",
+                "M1",
+                "L2",
+                "L4",
+                "L1",
+                "M2",
+                "L3",
+                "L4",
+                "L2",
+                "H1",
+                "M4",
+                "M2",
+                "L4",
+                "M3",
+                "M1",
+                "H1",
+                "M2",
+                "L3",
+                "L4",
+                "M3",
+                "M1",
+                "FS",
+                "H3",
+                "M4",
+                "M2",
+                "M1",
+                "M3",
+                "M4",
+                "L2",
+                "L1",
+                "L3",
+                "L4",
+                "H1",
+                "FS",
+                "H3",
+                "W",
+                "H2",
+                "L3",
+                "L2",
+                "L1",
+                "M3",
+                "M4",
+                "FS",
+                "M2",
+                "M1",
+                "L3",
+                "FS",
+                "L4",
+                "M4",
+                "H1",
+                "M3",
+                "L1",
+                "H2",
+                "M4",
+                "H1",
+                "M1",
+                "L2",
+                "H3",
+                "L1",
+                "L4",
+                "M4",
+                "M2"
+              ],
+              [
+                "L1",
+                "M1",
+                "H1",
+                "M3",
+                "H3",
+                "H2",
+                "M2",
+                "L3",
+                "H1",
+                "M4",
+                "M1",
+                "L1",
+                "W",
+                "L2",
+                "H2",
+                "L4",
+                "M3",
+                "L3",
+                "M2",
+                "L2",
+                "M1",
+                "L1",
+                "M2",
+                "L4",
+                "M4",
+                "M1",
+                "H1",
+                "H2",
+                "M4",
+                "L4",
+                "L1",
+                "L3",
+                "M4",
+                "H2",
+                "M3",
+                "L4",
+                "H3",
+                "M1",
+                "L2",
+                "H2",
+                "L1",
+                "M3",
+                "M4",
+                "L3",
+                "M1",
+                "L1",
+                "H1",
+                "L2",
+                "H3",
+                "L4",
+                "H1",
+                "L1",
+                "M3",
+                "M2",
+                "L2",
+                "L4",
+                "L3",
+                "M4",
+                "H3",
+                "M3",
+                "M2",
+                "L4",
+                "L1",
+                "L3",
+                "M4",
+                "H3",
+                "L2",
+                "M3",
+                "M2",
+                "M1",
+                "L4",
+                "L2",
+                "L3",
+                "W",
+                "L1",
+                "M4",
+                "L3",
+                "M2",
+                "L2",
+                "M3",
+                "L4",
+                "M2",
+                "H2",
+                "L2",
+                "M1",
+                "H3",
+                "L3"
+              ],
+              [
+                "M4",
+                "M1",
+                "L3",
+                "L4",
+                "L1",
+                "L2",
+                "H3",
+                "H2",
+                "M3",
+                "M1",
+                "H3",
+                "H2",
+                "M4",
+                "M2",
+                "FS",
+                "L3",
+                "L4",
+                "L2",
+                "H2",
+                "M3",
+                "L4",
+                "L1",
+                "L2",
+                "M4",
+                "M2",
+                "M3",
+                "H3",
+                "H2",
+                "M4",
+                "L3",
+                "L1",
+                "M3",
+                "FS",
+                "M1",
+                "M2",
+                "L2",
+                "L1",
+                "L3",
+                "M4",
+                "L4",
+                "W",
+                "L1",
+                "H1",
+                "M3",
+                "M1",
+                "L2",
+                "L3",
+                "H1",
+                "M2",
+                "L4",
+                "L1",
+                "L3",
+                "M2",
+                "L4",
+                "M3",
+                "L2",
+                "H3",
+                "L4",
+                "M2",
+                "H2",
+                "L3",
+                "M4",
+                "H1",
+                "FS",
+                "M2",
+                "L2",
+                "H3",
+                "M1",
+                "W",
+                "M4",
+                "L1",
+                "H1",
+                "M1",
+                "M4",
+                "L3",
+                "M3",
+                "M1",
+                "M2",
+                "L2",
+                "L1",
+                "L3",
+                "H3",
+                "M3",
+                "L2",
+                "L4",
+                "M1",
+                "H1",
+                "L1",
+                "H2",
+                "L4"
+              ],
+              [
+                "L4",
+                "H1",
+                "M2",
+                "M3",
+                "M1",
+                "L3",
+                "L1",
+                "M3",
+                "W",
+                "L4",
+                "H3",
+                "M3",
+                "L3",
+                "M1",
+                "H2",
+                "M3",
+                "M4",
+                "H1",
+                "L2",
+                "L1",
+                "M1",
+                "L4",
+                "M2",
+                "L1",
+                "M3",
+                "L4",
+                "M1",
+                "M4",
+                "L3",
+                "M2",
+                "H1",
+                "L2",
+                "M3",
+                "L1",
+                "M1",
+                "L2",
+                "L3",
+                "M2",
+                "H2",
+                "M1",
+                "L4",
+                "L1",
+                "M2",
+                "H3",
+                "L3",
+                "H2",
+                "L4",
+                "L2",
+                "H3",
+                "M1",
+                "L1",
+                "M4",
+                "M3",
+                "M2",
+                "L4",
+                "M1",
+                "H3",
+                "L3",
+                "L2",
+                "L4",
+                "H1",
+                "L1",
+                "M4",
+                "M2",
+                "L3",
+                "L2",
+                "H2",
+                "M2",
+                "M4",
+                "L2",
+                "M3",
+                "L4",
+                "H3",
+                "L1",
+                "M4",
+                "W",
+                "L2",
+                "L1",
+                "H2",
+                "M4",
+                "H1",
+                "L3",
+                "H3",
+                "M4",
+                "H2",
+                "L2",
+                "L3"
+              ],
+              [
+                "H1",
+                "M4",
+                "M2",
+                "L2",
+                "L1",
+                "H3",
+                "L3",
+                "M1",
+                "M3",
+                "H3",
+                "H2",
+                "M4",
+                "L3",
+                "M1",
+                "L4",
+                "M4",
+                "M3",
+                "M1",
+                "M2",
+                "M4",
+                "L1",
+                "L4",
+                "L2",
+                "H1",
+                "M4",
+                "H3",
+                "L2",
+                "L3",
+                "L4",
+                "H1",
+                "H2",
+                "M2",
+                "L3",
+                "L2",
+                "H1",
+                "M1",
+                "L4",
+                "M2",
+                "M4",
+                "L2",
+                "H2",
+                "M1",
+                "FS",
+                "H3",
+                "M3",
+                "L3",
+                "H2",
+                "L2",
+                "M2",
+                "M1",
+                "L4",
+                "M3",
+                "L3",
+                "L1",
+                "L2",
+                "L4",
+                "M3",
+                "L3",
+                "L1",
+                "H3",
+                "FS",
+                "M2",
+                "M3",
+                "L1",
+                "H3",
+                "L4",
+                "H2",
+                "M2",
+                "W",
+                "L4",
+                "M3",
+                "L1",
+                "M1",
+                "L2",
+                "L3",
+                "FS",
+                "M2",
+                "L1",
+                "H1",
+                "M4",
+                "L2",
+                "M1",
+                "L4",
+                "L1",
+                "H2",
+                "M4",
+                "M3",
+                "L1",
+                "FS",
+                "L3"
+              ]
+            ]
+          },
+          {
+            "prop": "SpecialPrize1",
+            "value": ""
+          },
+          {
+            "prop": "SpecialPrizeTypes",
+            "value": [
+              "Variant"
+            ]
+          },
+          {
+            "prop": "SpecialPrizes",
+            "value": [
+              "Bonus"
+            ]
+          },
+          {
+            "prop": "TicketBatch",
+            "value": "2104242031050100001,47151F825A55BF34803B3AF6DF6346CFCA5C2A82"
+          },
+          {
+            "prop": "TicketBatchB",
+            "value": "2106011442280100001"
+          },
+          {
+            "prop": "WindowHeight",
+            "value": 4
+          },
+          {
+            "prop": "client",
+            "value": "lucky-lucifer"
+          }
+        ],
+        "admin": false,
+        "initial": false,
+        "removed": false,
+        "frozen": true
+      },
+      "gameId": 19010
+    },
+    "payTable": [
+      [
+        "FS",
+        [
+          3,
+          "Bonus"
+        ],
+        [
+          4,
+          "Bonus"
+        ],
+        [
+          5,
+          "Bonus"
+        ]
+      ],
+      [
+        "H1",
+        [
+          3,
+          "2.00"
+        ],
+        [
+          4,
+          "5.00"
+        ],
+        [
+          5,
+          "30.00"
+        ]
+      ],
+      [
+        "H2",
+        [
+          3,
+          "1.50"
+        ],
+        [
+          4,
+          "2.50"
+        ],
+        [
+          5,
+          "20.00"
+        ]
+      ],
+      [
+        "H3",
+        [
+          3,
+          "1.00"
+        ],
+        [
+          4,
+          "2.00"
+        ],
+        [
+          5,
+          "15.00"
+        ]
+      ],
+      [
+        "M1",
+        [
+          3,
+          "0.60"
+        ],
+        [
+          4,
+          "1.50"
+        ],
+        [
+          5,
+          "5.00"
+        ]
+      ],
+      [
+        "M2",
+        [
+          3,
+          "0.60"
+        ],
+        [
+          4,
+          "1.50"
+        ],
+        [
+          5,
+          "5.00"
+        ]
+      ],
+      [
+        "M3",
+        [
+          3,
+          "0.50"
+        ],
+        [
+          4,
+          "1.00"
+        ],
+        [
+          5,
+          "3.00"
+        ]
+      ],
+      [
+        "M4",
+        [
+          3,
+          "0.50"
+        ],
+        [
+          4,
+          "1.00"
+        ],
+        [
+          5,
+          "3.00"
+        ]
+      ],
+      [
+        "L1",
+        [
+          3,
+          "0.40"
+        ],
+        [
+          4,
+          "0.80"
+        ],
+        [
+          5,
+          "2.50"
+        ]
+      ],
+      [
+        "L2",
+        [
+          3,
+          "0.30"
+        ],
+        [
+          4,
+          "0.60"
+        ],
+        [
+          5,
+          "2.00"
+        ]
+      ],
+      [
+        "L3",
+        [
+          3,
+          "0.20"
+        ],
+        [
+          4,
+          "0.40"
+        ],
+        [
+          5,
+          "1.50"
+        ]
+      ],
+      [
+        "L4",
+        [
+          3,
+          "0.10"
+        ],
+        [
+          4,
+          "0.30"
+        ],
+        [
+          5,
+          "1.00"
+        ]
+      ]
+    ],
+    "pending": {
+      "name": "report",
+      "size": 0,
+      "next": "",
+      "header": null,
+      "data": [],
+      "offset": 0
+    },
+    "prepaids": {
+      "consumed": 0,
+      "amount": 0,
+      "gameparams": null,
+      "more": false,
+      "count": 0,
+      "wa": 0,
+      "wc": "EUR",
+      "consumebefore": null,
+      "descr": null,
+      "ref": null,
+      "total": 0,
+      "currency": "EUR",
+      "ba": 0,
+      "rejectable": false
+    },
+    "serverApi": "https://freeplayapi.slotmill.com",
+    "skin": "default",
+    "tournamentInfo": [],
+    "user": {
+      "userid": "2609271842017270042",
+      "type": "Player",
+      "balance": {
+        "currency": "EUR",
+        "cash": "3000.00",
+        "bonus": "0.00",
+        "free": "0.00",
+        "points": "0.00",
+        "real": "3000.00"
+      },
+      "org": "SlotMill",
+      "currency": "EUR",
+      "nickname": "2609271842017270002",
+      "email": "",
+      "gender": null,
+      "birthdate": null,
+      "language": "en",
+      "country": "",
+      "domain": null,
+      "sessid": "26092718420172700444A13955E5E85B6BD7A7B04048252CA02BC8FF535EDB5F6587232B420C2B393A0FBF72820B3C4C592356A85AF05099381E8E898B7CC2F39C56640838FD15214FC",
+      "nativeSessid": "2609271842015070002F34137DC10E3A4397DE5EA4173100B48DEF7C9884FE41A7636B624ED2B6540786E94558FD11A938BDB42CF0A867052D84C890687EC63BA8B08614767331195A4",
+      "avatar": null,
+      "level": null,
+      "custom": null,
+      "admin": false,
+      "userProps": {
+        "id": {
+          "domain": "SlotMill",
+          "externalid": "2609271842017270002",
+          "integration": "Stub",
+          "nativeid": "2609271842017270002",
+          "org": "SlotMill",
+          "userid": "2609271842017270042",
+          "walletid": "SlotMill"
+        },
+        "main": {
+          "address1": "",
+          "address2": "",
+          "address3": "",
+          "avatar": "m12",
+          "country": "",
+          "currency": "EUR",
+          "domain": "SlotMill_SlotMill",
+          "email": "",
+          "firstname": "",
+          "gamesetup": "Default",
+          "gender": "male",
+          "lastname": "",
+          "middlename": "",
+          "mobile": "",
+          "nickname": "2609271842017270002",
+          "org": "SlotMill",
+          "phone": "",
+          "picture": "m12",
+          "status": "Active",
+          "type": "Player",
+          "zip": ""
+        }
+      },
+      "levelId": 106
+    }
+  },
+  "fn": "gameinit"
+}

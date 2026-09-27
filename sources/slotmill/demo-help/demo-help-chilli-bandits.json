@@ -1,0 +1,98 @@
+{
+  "slug": "slotmill-chilli-bandits",
+  "captured_at": "2026-09-27T14:41:51-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19026,
+    "demo_url": "https://chilli-bandits.slotmill.com/",
+    "main_js": "https://chilli-bandits.slotmill.com/main.c80d01a3923fc89f0729.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Chilli Bandits",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Buy Guaranteed Scatter",
+        "api_name": "Buy Guaranteed Scatter",
+        "cost_multiplier": 10,
+        "prop_value": "10xb",
+        "amounts_sample": [
+          "2.00",
+          "3.00",
+          "4.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Buy Guaranteed Wilds",
+        "api_name": "Buy Guaranteed Wilds",
+        "cost_multiplier": 40,
+        "prop_value": "40xb",
+        "amounts_sample": [
+          "8.00",
+          "12.00",
+          "16.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Buy Bonus",
+        "api_name": "Buy Bonus",
+        "cost_multiplier": 80,
+        "prop_value": "80xb",
+        "amounts_sample": [
+          "16.00",
+          "24.00",
+          "32.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "Buy Guaranteed Scatter",
+        "multiplier": 10
+      },
+      {
+        "id": 2,
+        "name": "Buy Guaranteed Wilds",
+        "multiplier": 40
+      },
+      {
+        "id": 3,
+        "name": "Buy Bonus",
+        "multiplier": 80
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "10xb",
+    "BuyBonus2": "40xb",
+    "BuyBonus3": "80xb",
+    "BuyBonusNames": [
+      "Buy Guaranteed Scatter",
+      "Buy Guaranteed Wilds",
+      "Buy Bonus"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

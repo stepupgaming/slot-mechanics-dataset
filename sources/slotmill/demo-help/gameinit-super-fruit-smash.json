@@ -1,0 +1,841 @@
+{
+  "code": 0,
+  "data": {
+    "betAmounts": {
+      "amounts": [
+        "0.20",
+        "0.30",
+        "0.40",
+        "0.50",
+        "0.80",
+        "1.00",
+        "1.20",
+        "1.50",
+        "2.00",
+        "2.50",
+        "3.00",
+        "4.00",
+        "5.00",
+        "6.00",
+        "8.00",
+        "10.00",
+        "15.00",
+        "20.00",
+        "25.00",
+        "30.00",
+        "40.00",
+        "50.00"
+      ],
+      "buyBonus": [
+        {
+          "amounts": [
+            "1.00",
+            "1.50",
+            "2.00",
+            "2.50",
+            "4.00",
+            "5.00",
+            "6.00",
+            "7.50",
+            "10.00",
+            "12.50",
+            "15.00",
+            "20.00",
+            "25.00",
+            "30.00",
+            "40.00",
+            "50.00",
+            "75.00",
+            "100.00",
+            "125.00",
+            "150.00",
+            "200.00",
+            "250.00"
+          ],
+          "id": 1,
+          "multiplier": 5,
+          "name": "FruitSmash"
+        },
+        {
+          "amounts": [
+            "8.00",
+            "12.00",
+            "16.00",
+            "20.00",
+            "32.00",
+            "40.00",
+            "48.00",
+            "60.00",
+            "80.00",
+            "100.00",
+            "120.00",
+            "160.00",
+            "200.00",
+            "240.00",
+            "320.00",
+            "400.00",
+            "600.00",
+            "800.00",
+            "1000.00",
+            "1200.00",
+            "1600.00",
+            "2000.00"
+          ],
+          "id": 2,
+          "multiplier": 40,
+          "name": "Countdown Wild"
+        },
+        {
+          "amounts": [
+            "20.00",
+            "30.00",
+            "40.00",
+            "50.00",
+            "80.00",
+            "100.00",
+            "120.00",
+            "150.00",
+            "200.00",
+            "250.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "600.00",
+            "800.00",
+            "1000.00",
+            "1500.00",
+            "2000.00",
+            "2500.00",
+            "3000.00",
+            "4000.00",
+            "5000.00"
+          ],
+          "id": 3,
+          "multiplier": 100,
+          "name": "Bonus"
+        },
+        {
+          "amounts": [
+            "90.00",
+            "135.00",
+            "180.00",
+            "225.00",
+            "360.00",
+            "450.00",
+            "540.00",
+            "675.00",
+            "900.00",
+            "1125.00",
+            "1350.00",
+            "1800.00",
+            "2250.00",
+            "2700.00",
+            "3600.00",
+            "4500.00",
+            "6750.00",
+            "9000.00",
+            "11250.00",
+            "13500.00",
+            "18000.00",
+            "22500.00"
+          ],
+          "id": 4,
+          "multiplier": 450,
+          "name": "FrenzyBonus"
+        }
+      ],
+      "defaultAmount": "1.00",
+      "roundDecimals": {
+        "prize": 3,
+        "wallet": 2
+      }
+    },
+    "currencyDisplay": "EUR",
+    "game": {
+      "gameid": 19023,
+      "name": "Super Fruit Smash",
+      "title": null,
+      "subgroup": null,
+      "currency": "<omitted 683 chars>",
+      "category": "Casino",
+      "type": "Slot",
+      "variant": "Fruit2",
+      "model": "M1",
+      "status": "Active",
+      "orgSettings": {
+        "hideTopRounds": false,
+        "hideRTPXtraBet": false,
+        "Denoms": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.1,0.2,0.3,0.4,0.5,0.8,1,1.2,1.5,2,2.5,3,4,5,6,8,10,15,20,25,30,40,50;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "burstMode": true,
+        "showGameFunctionsInPaytable": false,
+        "maxAutoPlay": 0,
+        "quickSpin": true,
+        "quickStop": true,
+        "extraBet": true,
+        "DefaultDenom": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:1;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "useGameHistoryV2": false,
+        "enableInactivityTracking": false,
+        "hideRTPFeatureSplash": false,
+        "hideGameHistory": false,
+        "featureBuy": true,
+        "showTotalAutoplayBet": false,
+        "minGameDuration": 0,
+        "showPaytableAfterFeatureSplash": false,
+        "hideRTPBuyFeature": false,
+        "autoPlay": true,
+        "useTopWagersV2": false,
+        "publicReplay": true
+      },
+      "draws": "<omitted>",
+      "cfg": {
+        "gameId": 19023,
+        "cfgId": 1,
+        "status": "Frozen",
+        "validFrom": null,
+        "validUntil": null,
+        "checksum": "72448E4E8E9E4502D3B20CD8FEE7043CA957FFD7322E10FE0288E24FC6B64B051CBF33BF1F25DF63E1F2070E439B06D0A285EBF778C8E192FC67962928CFB878",
+        "props": [
+          {
+            "prop": "BuyBonus1",
+            "value": "5xb"
+          },
+          {
+            "prop": "BuyBonus2",
+            "value": "40xb"
+          },
+          {
+            "prop": "BuyBonus3",
+            "value": "100xb"
+          },
+          {
+            "prop": "BuyBonus4",
+            "value": "450xb"
+          },
+          {
+            "prop": "BuyBonusNames",
+            "value": [
+              "FruitSmash",
+              "Countdown Wild",
+              "Bonus",
+              "FrenzyBonus"
+            ]
+          },
+          {
+            "prop": "CapWin",
+            "value": "12000xb"
+          },
+          {
+            "prop": "Cheats",
+            "value": [
+              [
+                "/none",
+                "none"
+              ]
+            ]
+          },
+          {
+            "prop": "DON",
+            "value": "CollectB"
+          },
+          {
+            "prop": "Denoms",
+            "value": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:1,2,3,4,5,8,10,12,15,20,25,30,40,50,60,80,100,120,150,200,250,300,400,450,500,600,750,800,1000,1200,1250,1500,1600,1800,2000,2250,2400,2500,3000,3750,4000,4500,5000,6000,7500,8000,9000,10000,12000,12500,15000,16000,20000,22500,24000,25000,30000,37500,40000,45000,50000,60000,75000,80000,100000,112500,120000,125000,150000,160000,200000,225000,250000,300000,400000,450000,500000,600000,750000,800000,1000000,1250000,1500000,2000000,2500000,3000000,3750000,4000000,5000000,6000000,7500000,10000000,15000000;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.1,0.2,0.3,0.4,0.5,0.8,1,1.2,1.5,2,2.5,3,4,5,6,8,10,15,20,25,30,40,50,75,100,150,200,300;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500"
+          },
+          {
+            "prop": "Feature",
+            "value": ""
+          },
+          {
+            "prop": "IconTypes",
+            "value": [
+              "N",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "W"
+            ]
+          },
+          {
+            "prop": "Icons",
+            "value": [
+              "NONE",
+              "H1",
+              "H2",
+              "H3",
+              "H4",
+              "H5",
+              "M1",
+              "M2",
+              "M3",
+              "M4",
+              "M5",
+              "FS1",
+              "FS2",
+              "W"
+            ]
+          },
+          {
+            "prop": "MaxCoins",
+            "value": 1
+          },
+          {
+            "prop": "MinCoins",
+            "value": 1
+          },
+          {
+            "prop": "NormalOri",
+            "value": [
+              "LR"
+            ]
+          },
+          {
+            "prop": "NumberOfReels",
+            "value": 6
+          },
+          {
+            "prop": "Paylines",
+            "value": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "prop": "PrizeDivisor",
+            "value": 10
+          },
+          {
+            "prop": "WindowHeight",
+            "value": 6
+          },
+          {
+            "prop": "client",
+            "value": "super-fruit-smash"
+          }
+        ],
+        "admin": false,
+        "initial": false,
+        "removed": false,
+        "frozen": true
+      },
+      "gameId": 19023
+    },
+    "payTable": [
+      [
+        "FS1",
+        [
+          3,
+          "8"
+        ]
+      ],
+      [
+        "FS2",
+        [
+          3,
+          "8"
+        ]
+      ],
+      [
+        "FW",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ],
+      [
+        "H1",
+        [
+          8,
+          "0.60"
+        ],
+        [
+          9,
+          "0.90"
+        ],
+        [
+          10,
+          "1.50"
+        ],
+        [
+          11,
+          "3.50"
+        ],
+        [
+          12,
+          "6.00"
+        ],
+        [
+          13,
+          "9.00"
+        ],
+        [
+          14,
+          "15.00"
+        ],
+        [
+          15,
+          "25.00"
+        ],
+        [
+          16,
+          "40.00"
+        ]
+      ],
+      [
+        "H2",
+        [
+          8,
+          "0.50"
+        ],
+        [
+          9,
+          "0.70"
+        ],
+        [
+          10,
+          "1.20"
+        ],
+        [
+          11,
+          "3.00"
+        ],
+        [
+          12,
+          "5.00"
+        ],
+        [
+          13,
+          "8.00"
+        ],
+        [
+          14,
+          "12.00"
+        ],
+        [
+          15,
+          "18.00"
+        ],
+        [
+          16,
+          "25.00"
+        ]
+      ],
+      [
+        "H3",
+        [
+          8,
+          "0.50"
+        ],
+        [
+          9,
+          "0.70"
+        ],
+        [
+          10,
+          "1.20"
+        ],
+        [
+          11,
+          "2.50"
+        ],
+        [
+          12,
+          "4.00"
+        ],
+        [
+          13,
+          "7.00"
+        ],
+        [
+          14,
+          "10.00"
+        ],
+        [
+          15,
+          "15.00"
+        ],
+        [
+          16,
+          "20.00"
+        ]
+      ],
+      [
+        "H4",
+        [
+          8,
+          "0.40"
+        ],
+        [
+          9,
+          "0.50"
+        ],
+        [
+          10,
+          "0.90"
+        ],
+        [
+          11,
+          "1.50"
+        ],
+        [
+          12,
+          "3.00"
+        ],
+        [
+          13,
+          "5.00"
+        ],
+        [
+          14,
+          "9.00"
+        ],
+        [
+          15,
+          "12.00"
+        ],
+        [
+          16,
+          "18.00"
+        ]
+      ],
+      [
+        "H5",
+        [
+          8,
+          "0.40"
+        ],
+        [
+          9,
+          "0.50"
+        ],
+        [
+          10,
+          "0.90"
+        ],
+        [
+          11,
+          "1.50"
+        ],
+        [
+          12,
+          "3.00"
+        ],
+        [
+          13,
+          "5.00"
+        ],
+        [
+          14,
+          "9.00"
+        ],
+        [
+          15,
+          "12.00"
+        ],
+        [
+          16,
+          "18.00"
+        ]
+      ],
+      [
+        "M1",
+        [
+          8,
+          "0.30"
+        ],
+        [
+          9,
+          "0.40"
+        ],
+        [
+          10,
+          "0.70"
+        ],
+        [
+          11,
+          "1.00"
+        ],
+        [
+          12,
+          "1.80"
+        ],
+        [
+          13,
+          "3.00"
+        ],
+        [
+          14,
+          "6.00"
+        ],
+        [
+          15,
+          "10.00"
+        ],
+        [
+          16,
+          "15.00"
+        ]
+      ],
+      [
+        "M2",
+        [
+          8,
+          "0.30"
+        ],
+        [
+          9,
+          "0.40"
+        ],
+        [
+          10,
+          "0.70"
+        ],
+        [
+          11,
+          "1.00"
+        ],
+        [
+          12,
+          "1.80"
+        ],
+        [
+          13,
+          "3.00"
+        ],
+        [
+          14,
+          "6.00"
+        ],
+        [
+          15,
+          "10.00"
+        ],
+        [
+          16,
+          "15.00"
+        ]
+      ],
+      [
+        "M3",
+        [
+          8,
+          "0.20"
+        ],
+        [
+          9,
+          "0.30"
+        ],
+        [
+          10,
+          "0.60"
+        ],
+        [
+          11,
+          "0.90"
+        ],
+        [
+          12,
+          "1.50"
+        ],
+        [
+          13,
+          "2.50"
+        ],
+        [
+          14,
+          "5.00"
+        ],
+        [
+          15,
+          "8.00"
+        ],
+        [
+          16,
+          "12.00"
+        ]
+      ],
+      [
+        "M4",
+        [
+          8,
+          "0.20"
+        ],
+        [
+          9,
+          "0.30"
+        ],
+        [
+          10,
+          "0.60"
+        ],
+        [
+          11,
+          "0.90"
+        ],
+        [
+          12,
+          "1.50"
+        ],
+        [
+          13,
+          "2.50"
+        ],
+        [
+          14,
+          "5.00"
+        ],
+        [
+          15,
+          "8.00"
+        ],
+        [
+          16,
+          "12.00"
+        ]
+      ],
+      [
+        "M5",
+        [
+          8,
+          "0.20"
+        ],
+        [
+          9,
+          "0.30"
+        ],
+        [
+          10,
+          "0.60"
+        ],
+        [
+          11,
+          "0.90"
+        ],
+        [
+          12,
+          "1.50"
+        ],
+        [
+          13,
+          "2.50"
+        ],
+        [
+          14,
+          "5.00"
+        ],
+        [
+          15,
+          "8.00"
+        ],
+        [
+          16,
+          "12.00"
+        ]
+      ]
+    ],
+    "pending": {
+      "name": "report",
+      "size": 0,
+      "next": "",
+      "header": null,
+      "data": [],
+      "offset": 0
+    },
+    "prepaids": {
+      "consumed": 0,
+      "amount": 0,
+      "gameparams": null,
+      "more": false,
+      "count": 0,
+      "wa": 0,
+      "wc": "EUR",
+      "consumebefore": null,
+      "descr": null,
+      "ref": null,
+      "total": 0,
+      "currency": "EUR",
+      "ba": 0,
+      "rejectable": false
+    },
+    "serverApi": "https://freeplayapi.slotmill.com",
+    "skin": "default",
+    "tournamentInfo": [],
+    "user": {
+      "userid": "2609271842123870029",
+      "type": "Player",
+      "balance": {
+        "currency": "EUR",
+        "cash": "5000.00",
+        "bonus": "0.00",
+        "free": "0.00",
+        "points": "0.00",
+        "real": "5000.00"
+      },
+      "org": "SlotMill",
+      "currency": "EUR",
+      "nickname": "2609271842123870002",
+      "email": "",
+      "gender": null,
+      "birthdate": null,
+      "language": "en",
+      "country": "",
+      "domain": null,
+      "sessid": "2609271842123870033A60DE9CA7C0D7008A5965EC2995AAC91B1C71F477BEE1432EC37165D53A738101AC4238E53DE6272C6F81FDC597F77C222F4BCFF66AEA1FA7ABD8536E8A150C8",
+      "nativeSessid": "260927184212007000243B6D091AE9C94F23765280093B06C6A1815C20C1C5B852220DD774C48C444FAD5AC5B4AAC2596C03CD981DE57C221AFAC2574CD7FAFD48EBE02B24D4E4BD63B",
+      "avatar": null,
+      "level": null,
+      "custom": null,
+      "admin": false,
+      "userProps": {
+        "id": {
+          "domain": "SlotMill",
+          "externalid": "2609271842123870002",
+          "integration": "Stub",
+          "nativeid": "2609271842123870002",
+          "org": "SlotMill",
+          "userid": "2609271842123870029",
+          "walletid": "SlotMill"
+        },
+        "main": {
+          "address1": "",
+          "address2": "",
+          "address3": "",
+          "avatar": "m22",
+          "country": "",
+          "currency": "EUR",
+          "domain": "SlotMill_SlotMill",
+          "email": "",
+          "firstname": "",
+          "gamesetup": "Default",
+          "gender": "male",
+          "lastname": "",
+          "middlename": "",
+          "mobile": "",
+          "nickname": "2609271842123870002",
+          "org": "SlotMill",
+          "phone": "",
+          "picture": "m22",
+          "status": "Active",
+          "type": "Player",
+          "zip": ""
+        }
+      },
+      "levelId": 106
+    }
+  },
+  "fn": "gameinit"
+}

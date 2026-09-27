@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Coin Quest",
@@ -181,8 +181,30 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Re-spin",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Free Spin",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Free Spin",
+        "cost_multiplier": 480.0,
+        "cost_text": "480x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 480x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 40.0x, 100.0x, 480.0x. Evidence: sources/slotmill/demo-help/demo-help-coin-quest.json"
   },
   "ante_bet": {
     "available": null,
@@ -206,7 +228,7 @@
     "symbols": "medium",
     "bonus_free_spins": "high",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -223,6 +245,20 @@
       "local_path": "sources/slotmill/product_sheet_coin-quest.pdf",
       "extracted_at": "2026-09-27T18:36:08Z",
       "quote_or_excerpt": "awarding 5 respectively 8 Free Spins"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://coin-quest.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-coin-quest.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Re-spin=40x; Free Spin=100x; Super Free Spin=480x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-coin-quest.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Coin Quest"
     }
   ],
   "unknowns": [

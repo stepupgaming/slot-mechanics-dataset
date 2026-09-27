@@ -1,0 +1,1747 @@
+{
+  "code": 0,
+  "data": {
+    "betAmounts": {
+      "amounts": [
+        "0.20",
+        "0.40",
+        "0.60",
+        "0.80",
+        "1.00",
+        "1.20",
+        "1.60",
+        "2.00",
+        "2.40",
+        "3.00",
+        "4.00",
+        "5.00",
+        "6.00",
+        "8.00",
+        "10.00",
+        "12.00",
+        "16.00",
+        "20.00",
+        "25.00",
+        "30.00",
+        "40.00",
+        "50.00",
+        "60.00"
+      ],
+      "buyBonus": [
+        {
+          "amounts": [
+            "0.60",
+            "1.20",
+            "1.80",
+            "2.40",
+            "3.00",
+            "3.60",
+            "4.80",
+            "6.00",
+            "7.20",
+            "9.00",
+            "12.00",
+            "15.00",
+            "18.00",
+            "24.00",
+            "30.00",
+            "36.00",
+            "48.00",
+            "60.00",
+            "75.00",
+            "90.00",
+            "120.00",
+            "150.00",
+            "180.00"
+          ],
+          "id": 1,
+          "multiplier": 3,
+          "name": "1"
+        },
+        {
+          "amounts": [
+            "10.00",
+            "20.00",
+            "30.00",
+            "40.00",
+            "50.00",
+            "60.00",
+            "80.00",
+            "100.00",
+            "120.00",
+            "150.00",
+            "200.00",
+            "250.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "600.00",
+            "800.00",
+            "1000.00",
+            "1250.00",
+            "1500.00",
+            "2000.00",
+            "2500.00",
+            "3000.00"
+          ],
+          "id": 2,
+          "multiplier": 50,
+          "name": "2"
+        },
+        {
+          "amounts": [
+            "20.00",
+            "40.00",
+            "60.00",
+            "80.00",
+            "100.00",
+            "120.00",
+            "160.00",
+            "200.00",
+            "240.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "600.00",
+            "800.00",
+            "1000.00",
+            "1200.00",
+            "1600.00",
+            "2000.00",
+            "2500.00",
+            "3000.00",
+            "4000.00",
+            "5000.00",
+            "6000.00"
+          ],
+          "id": 3,
+          "multiplier": 100,
+          "name": "3"
+        },
+        {
+          "amounts": [
+            "50.00",
+            "100.00",
+            "150.00",
+            "200.00",
+            "250.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "600.00",
+            "750.00",
+            "1000.00",
+            "1250.00",
+            "1500.00",
+            "2000.00",
+            "2500.00",
+            "3000.00",
+            "4000.00",
+            "5000.00",
+            "6250.00",
+            "7500.00",
+            "10000.00",
+            "12500.00",
+            "15000.00"
+          ],
+          "id": 4,
+          "multiplier": 250,
+          "name": "4"
+        }
+      ],
+      "defaultAmount": "1.00",
+      "roundDecimals": {
+        "prize": 3,
+        "wallet": 2
+      }
+    },
+    "currencyDisplay": "EUR",
+    "game": {
+      "gameid": 19033,
+      "name": "Lucy Luck and the Temple Of Mysteries",
+      "title": null,
+      "subgroup": null,
+      "currency": "<omitted 683 chars>",
+      "category": "Casino",
+      "type": "Slot",
+      "variant": "Mystery",
+      "model": "M1",
+      "status": "Active",
+      "orgSettings": {
+        "hideTopRounds": false,
+        "hideRTPXtraBet": false,
+        "Denoms": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.1,0.2,0.4,0.6,0.8,1,1.2,1.6,2,2.4,3,4,5,6,8,10,12,16,20,25,30,40,50,60;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "burstMode": true,
+        "showGameFunctionsInPaytable": false,
+        "maxAutoPlay": 0,
+        "quickSpin": true,
+        "quickStop": true,
+        "extraBet": true,
+        "DefaultDenom": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:1;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "useGameHistoryV2": false,
+        "enableInactivityTracking": false,
+        "hideRTPFeatureSplash": false,
+        "hideGameHistory": false,
+        "featureBuy": true,
+        "showTotalAutoplayBet": false,
+        "minGameDuration": 0,
+        "showPaytableAfterFeatureSplash": false,
+        "hideRTPBuyFeature": false,
+        "autoPlay": true,
+        "useTopWagersV2": false,
+        "publicReplay": true
+      },
+      "draws": "<omitted>",
+      "cfg": {
+        "gameId": 19033,
+        "cfgId": 1,
+        "status": "Frozen",
+        "validFrom": null,
+        "validUntil": null,
+        "checksum": "BECAA56787D3522A6F0885DA992361D3DD932CD9AB33119AF7A7EFE797DF4A0EC9600C1FF9A5BBCED243914FF78CB31481A9611553C53025E2569FCB42D9D17B",
+        "props": [
+          {
+            "prop": "BuyBonus1",
+            "value": "3xb"
+          },
+          {
+            "prop": "BuyBonus2",
+            "value": "50xb"
+          },
+          {
+            "prop": "BuyBonus3",
+            "value": "100xb"
+          },
+          {
+            "prop": "BuyBonus4",
+            "value": "250xb"
+          },
+          {
+            "prop": "BuyBonusNames",
+            "value": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          {
+            "prop": "CapWin",
+            "value": "10000xb"
+          },
+          {
+            "prop": "Cheats",
+            "value": [
+              [
+                "/none",
+                "none"
+              ]
+            ]
+          },
+          {
+            "prop": "CoinExFeatureReels",
+            "value": [
+              [
+                "CNS2",
+                "CNS1",
+                "CNS2",
+                "CNS1",
+                "CNS2",
+                "CNS1",
+                "CNL500",
+                "CNS2",
+                "CNM5",
+                "CNS2",
+                "CNS1",
+                "CNM3",
+                "CNS1",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNS1",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNS2",
+                "CNM3",
+                "CNS1",
+                "CNS1",
+                "CNS1",
+                "CNM7",
+                "CNS1",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNS2",
+                "CNL100",
+                "CNM3",
+                "CNL10",
+                "CNS2",
+                "CNM5",
+                "CNS1",
+                "CNM3",
+                "CNS1",
+                "CNS2",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNS1",
+                "CNS2",
+                "CNM3",
+                "CNL20",
+                "CNS2",
+                "CNS2",
+                "CNS1",
+                "CNS2",
+                "CNM5",
+                "CNS1",
+                "CNL1000",
+                "CNL10",
+                "CNM3",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNS1",
+                "CNS2",
+                "CNS1",
+                "CNS2",
+                "CNM7",
+                "CNS1",
+                "CNS2",
+                "CNM3",
+                "CNL50",
+                "CNS2",
+                "CNM3",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNS1",
+                "CNS1",
+                "CNS1",
+                "CNM3",
+                "CNS2",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNS1",
+                "CNS2",
+                "CNS2",
+                "CNM3",
+                "CNS2",
+                "CNS1",
+                "CNS1",
+                "CNL200",
+                "CNM5",
+                "CNS1",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNS2",
+                "CNS2",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNM3"
+              ]
+            ]
+          },
+          {
+            "prop": "CoinFSFeatureReels",
+            "value": [
+              [
+                "CNM5",
+                "CNS2",
+                "CNS2",
+                "CNM7",
+                "CNM5",
+                "CNS2",
+                "CNM5",
+                "CNM3",
+                "CNS2",
+                "CNM5",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNM7",
+                "CNM5",
+                "CNM3",
+                "CNS2",
+                "CNM5",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNM5",
+                "CNM3",
+                "CNM7",
+                "CNS2",
+                "CNS2",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNM5",
+                "CNS2",
+                "CNM5",
+                "CNS2",
+                "CNS2",
+                "CNM5",
+                "CNM5",
+                "CNS1",
+                "MUL_CN10",
+                "CNM3",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNL20",
+                "CNM3",
+                "CNS1",
+                "CNS2",
+                "CNM5",
+                "CNS2",
+                "CNL10",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNL10",
+                "CNM3",
+                "CNM7",
+                "MUL_CN2",
+                "CNS2",
+                "CNM3",
+                "CNM7",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNM7",
+                "CNM5",
+                "CNL20",
+                "MUL_CN3",
+                "CNS2",
+                "CNM5",
+                "CNM3",
+                "CNM5",
+                "CNS2",
+                "CNM5",
+                "CNM3",
+                "CNM5",
+                "CNS2",
+                "CNM5",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNM3",
+                "CNM7",
+                "CNL10",
+                "CNM7",
+                "CNM5",
+                "CNS2",
+                "CNS2",
+                "CNM5",
+                "CNM5",
+                "CNS2",
+                "CNM3",
+                "CNM5",
+                "EX_SPIN",
+                "CNM3",
+                "CNM5",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNM3",
+                "CNM5",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "CNM3",
+                "CNM3",
+                "CNS2",
+                "CNL20",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNM5",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "CNS1",
+                "CNM5",
+                "CNM5",
+                "CNS1",
+                "CNM3",
+                "CNM3",
+                "CNS2",
+                "ADD_CN",
+                "CNM3",
+                "CNM3",
+                "MUL_CN5",
+                "CNS2",
+                "MUL_CN7",
+                "CNM3",
+                "CNL20",
+                "CNM7",
+                "CNM5",
+                "CNM3",
+                "CNM5",
+                "CNL20",
+                "CNM7",
+                "CNM3",
+                "CNM7",
+                "CNM3",
+                "CNM5",
+                "CNM3",
+                "CNM7",
+                "CNS2",
+                "CNM3",
+                "CNL500",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNM7",
+                "CNL10",
+                "CNM3",
+                "CNL10",
+                "CNM7",
+                "CNM3",
+                "CNM5",
+                "CNL20",
+                "CNM7",
+                "CNS1",
+                "CNS2",
+                "CNS2",
+                "CNL100",
+                "CNS2",
+                "CNL10",
+                "MUL_CN2",
+                "CNS2",
+                "CNM3",
+                "CNS2",
+                "CNM7",
+                "CNM7",
+                "ADD_CN",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNM5",
+                "CNS2",
+                "CNM3",
+                "CNS2",
+                "CNM5",
+                "CNM7",
+                "CNS2",
+                "CNM3",
+                "CNL10",
+                "CNM7",
+                "CNS2",
+                "CNM3",
+                "CNM7",
+                "CNM5",
+                "CNS2",
+                "CNM3",
+                "CNM5",
+                "CNS2",
+                "CNL10",
+                "CNS2",
+                "CNS2",
+                "CNM5",
+                "CNL10",
+                "CNM5",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "ADD_CN",
+                "CNL10",
+                "CNS2",
+                "CNS2",
+                "CNL50",
+                "CNS2",
+                "CNS2",
+                "CNL20",
+                "CNL10",
+                "CNM3",
+                "CNM5",
+                "CNM3",
+                "CNM7",
+                "CNS2",
+                "CNM3",
+                "CNS1",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNM7",
+                "CNM3",
+                "CNM3",
+                "CNL1000",
+                "CNS2",
+                "CNM3",
+                "CNM5",
+                "CNL200",
+                "CNM7",
+                "CNS2",
+                "CNM7",
+                "CNL10",
+                "CNS2",
+                "CNM5",
+                "CNM3",
+                "CNM5",
+                "CNS2",
+                "CNM7",
+                "CNM3",
+                "CNM3",
+                "CNM5",
+                "CNM5",
+                "CNM3",
+                "CNM3",
+                "CNM3",
+                "CNM3",
+                "CNM3",
+                "CNS1",
+                "CNL50",
+                "CNS2",
+                "CNL10",
+                "CNS2",
+                "CNS2",
+                "CNM3",
+                "CNL10",
+                "CNS2",
+                "CNM5"
+              ]
+            ]
+          },
+          {
+            "prop": "CoinMainFeatureReels",
+            "value": [
+              [
+                "CNS2",
+                "CNS2",
+                "CNM3",
+                "CNM5",
+                "CNS1",
+                "CNS2",
+                "CNM7",
+                "CNS2",
+                "CNS1",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNS2",
+                "CNL100",
+                "CNM5",
+                "CNM5",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNS2",
+                "CNS2",
+                "CNS2",
+                "CNS1",
+                "CNS1",
+                "CNL20",
+                "CNS2",
+                "CNL1000",
+                "CNS1",
+                "CNS1",
+                "CNS2",
+                "CNM5",
+                "CNM3",
+                "CNM3",
+                "CNS1",
+                "ADD_CN",
+                "CNM3",
+                "CNM3",
+                "CNM5",
+                "CNL10",
+                "CNM3",
+                "MUL_CN2",
+                "CNS2",
+                "CNL20",
+                "CNL10",
+                "CNS2",
+                "CNM5",
+                "CNM7",
+                "CNM5",
+                "CNM3",
+                "CNM7",
+                "CNS2",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "CNM5",
+                "CNS2",
+                "CNM3",
+                "MUL_CN7",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "CNM5",
+                "CNM5",
+                "CNS1",
+                "CNS2",
+                "MUL_CN10",
+                "CNS2",
+                "CNL10",
+                "CNM3",
+                "CNM3",
+                "CNM7",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNS1",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNM5",
+                "CNM3",
+                "CNL10",
+                "MUL_CN3",
+                "CNS2",
+                "CNL10",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNM7",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "CNL10",
+                "CNS1",
+                "CNM7",
+                "CNM5",
+                "CNM5",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNL10",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "CNM5",
+                "CNM3",
+                "CNL10",
+                "CNS2",
+                "CNS2",
+                "CNM3",
+                "CNS1",
+                "CNM5",
+                "CNM3",
+                "CNM3",
+                "CNS1",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNS1",
+                "CNS2",
+                "CNM7",
+                "CNS1",
+                "MUL_CN2",
+                "CNM5",
+                "CNS2",
+                "CNS2",
+                "CNS2",
+                "CNM5",
+                "CNS1",
+                "CNS2",
+                "CNL50",
+                "CNM7",
+                "CNS2",
+                "CNS2",
+                "CNM5",
+                "CNL10",
+                "CNS2",
+                "CNS2",
+                "CNM5",
+                "CNS1",
+                "CNM3",
+                "CNL10",
+                "CNM3",
+                "CNS2",
+                "CNS2",
+                "CNM7",
+                "CNS2",
+                "CNM7",
+                "CNL20",
+                "CNM3",
+                "CNM3",
+                "CNM7",
+                "CNS2",
+                "CNS2",
+                "CNS1",
+                "CNS1",
+                "CNM7",
+                "CNM5",
+                "CNM5",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNM3",
+                "CNM7",
+                "ADD_CN",
+                "CNM3",
+                "CNM5",
+                "CNM5",
+                "CNM5",
+                "CNM5",
+                "CNM3",
+                "CNM5",
+                "CNS1",
+                "CNS2",
+                "CNM5",
+                "CNL10",
+                "CNM7",
+                "CNS2",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNM3",
+                "CNS1",
+                "CNS2",
+                "CNM3",
+                "CNM5",
+                "CNS1",
+                "CNL50",
+                "CNM3",
+                "CNM3",
+                "CNM5",
+                "CNL500",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNM3",
+                "CNM3",
+                "MUL_CN5",
+                "CNM5",
+                "CNS2",
+                "CNS1",
+                "CNM7",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNM7",
+                "CNM3",
+                "CNM3",
+                "CNS2",
+                "CNM7",
+                "CNS2",
+                "CNL20",
+                "CNM3",
+                "CNM5",
+                "CNM3",
+                "CNM5",
+                "ADD_CN",
+                "CNM3",
+                "CNM5",
+                "CNM3",
+                "CNS1",
+                "CNS2",
+                "CNS2",
+                "CNS1",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNL200",
+                "CNM5",
+                "CNM5",
+                "CNS2",
+                "CNM3",
+                "CNM5",
+                "CNM3",
+                "CNS2",
+                "CNL10",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNM3",
+                "CNS1",
+                "CNM5",
+                "CNM7",
+                "CNM3",
+                "CNM5",
+                "CNM5",
+                "CNM3",
+                "CNM7",
+                "CNS2",
+                "CNS2",
+                "CNS2",
+                "CNM3",
+                "CNS1",
+                "CNS2",
+                "CNM7",
+                "CNM3",
+                "CNS2",
+                "CNM3",
+                "CNS2",
+                "CNM3"
+              ]
+            ]
+          },
+          {
+            "prop": "DON",
+            "value": "CollectB"
+          },
+          {
+            "prop": "Denoms",
+            "value": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:1,2,4,6,8,10,12,16,20,24,30,40,50,60,80,100,120,150,160,200,240,250,300,400,500,600,750,800,900,1000,1200,1500,1600,1800,2000,2400,2500,3000,3200,3600,4000,4500,4800,5000,6000,7500,8000,9000,10000,12000,12500,15000,16000,18000,20000,24000,25000,30000,32000,37500,40000,45000,48000,50000,60000,75000,80000,90000,100000,112500,120000,150000,160000,200000,225000,240000,250000,300000,320000,400000,450000,500000,600000,750000,800000,1000000,1200000,1250000,1500000,2000000,2500000,3000000,3750000,4000000,5000000,6000000,7500000,10000000,15000000;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.1,0.2,0.4,0.6,0.8,1,1.2,1.6,2,2.4,3,4,5,6,8,10,12,16,20,25,30,40,50,60,75,100,150,200,300;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500"
+          },
+          {
+            "prop": "Feature",
+            "value": ""
+          },
+          {
+            "prop": "IconTypes",
+            "value": [
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "S",
+              "S"
+            ]
+          },
+          {
+            "prop": "Icons",
+            "value": [
+              "BL",
+              "H1",
+              "M1",
+              "M2",
+              "M3",
+              "M4",
+              "L1",
+              "L2",
+              "L3",
+              "L4",
+              "FS1",
+              "FS2"
+            ]
+          },
+          {
+            "prop": "MaxCoins",
+            "value": 1
+          },
+          {
+            "prop": "MinCoins",
+            "value": 1
+          },
+          {
+            "prop": "NormalOri",
+            "value": [
+              "LR"
+            ]
+          },
+          {
+            "prop": "NumberOfReels",
+            "value": 6
+          },
+          {
+            "prop": "Paylines",
+            "value": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "prop": "PrizeDivisor",
+            "value": 10
+          },
+          {
+            "prop": "ProbReels",
+            "value": [
+              [
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "prop": "WindowHeight",
+            "value": 6
+          },
+          {
+            "prop": "client",
+            "value": "temple-of-mysteries"
+          }
+        ],
+        "admin": false,
+        "initial": false,
+        "removed": false,
+        "frozen": true
+      },
+      "gameId": 19033
+    },
+    "payTable": [
+      [
+        "F1",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ],
+      [
+        "H1",
+        [
+          8,
+          "1.00"
+        ],
+        [
+          9,
+          "1.00"
+        ],
+        [
+          10,
+          "2.00"
+        ],
+        [
+          11,
+          "2.00"
+        ],
+        [
+          12,
+          "10.00"
+        ],
+        [
+          13,
+          "10.00"
+        ],
+        [
+          14,
+          "25.00"
+        ],
+        [
+          15,
+          "25.00"
+        ],
+        [
+          16,
+          "50.00"
+        ],
+        [
+          17,
+          "50.00"
+        ],
+        [
+          18,
+          "100.00"
+        ],
+        [
+          19,
+          "100.00"
+        ],
+        [
+          20,
+          "200.00"
+        ],
+        [
+          21,
+          "200.00"
+        ],
+        [
+          22,
+          "500.00"
+        ],
+        [
+          23,
+          "500.00"
+        ],
+        [
+          24,
+          "1000.00"
+        ]
+      ],
+      [
+        "M1",
+        [
+          8,
+          "0.80"
+        ],
+        [
+          9,
+          "0.80"
+        ],
+        [
+          10,
+          "1.60"
+        ],
+        [
+          11,
+          "1.60"
+        ],
+        [
+          12,
+          "5.00"
+        ],
+        [
+          13,
+          "5.00"
+        ],
+        [
+          14,
+          "12.50"
+        ],
+        [
+          15,
+          "12.50"
+        ],
+        [
+          16,
+          "25.00"
+        ],
+        [
+          17,
+          "25.00"
+        ],
+        [
+          18,
+          "50.00"
+        ],
+        [
+          19,
+          "50.00"
+        ],
+        [
+          20,
+          "100.00"
+        ],
+        [
+          21,
+          "100.00"
+        ],
+        [
+          22,
+          "200.00"
+        ],
+        [
+          23,
+          "200.00"
+        ],
+        [
+          24,
+          "400.00"
+        ]
+      ],
+      [
+        "M2",
+        [
+          8,
+          "0.70"
+        ],
+        [
+          9,
+          "0.70"
+        ],
+        [
+          10,
+          "1.40"
+        ],
+        [
+          11,
+          "1.40"
+        ],
+        [
+          12,
+          "4.00"
+        ],
+        [
+          13,
+          "4.00"
+        ],
+        [
+          14,
+          "10.00"
+        ],
+        [
+          15,
+          "10.00"
+        ],
+        [
+          16,
+          "20.00"
+        ],
+        [
+          17,
+          "20.00"
+        ],
+        [
+          18,
+          "40.00"
+        ],
+        [
+          19,
+          "40.00"
+        ],
+        [
+          20,
+          "80.00"
+        ],
+        [
+          21,
+          "80.00"
+        ],
+        [
+          22,
+          "160.00"
+        ],
+        [
+          23,
+          "160.00"
+        ],
+        [
+          24,
+          "320.00"
+        ]
+      ],
+      [
+        "M3",
+        [
+          8,
+          "0.60"
+        ],
+        [
+          9,
+          "0.60"
+        ],
+        [
+          10,
+          "1.20"
+        ],
+        [
+          11,
+          "1.20"
+        ],
+        [
+          12,
+          "3.60"
+        ],
+        [
+          13,
+          "3.60"
+        ],
+        [
+          14,
+          "9.00"
+        ],
+        [
+          15,
+          "9.00"
+        ],
+        [
+          16,
+          "18.00"
+        ],
+        [
+          17,
+          "18.00"
+        ],
+        [
+          18,
+          "36.00"
+        ],
+        [
+          19,
+          "36.00"
+        ],
+        [
+          20,
+          "72.00"
+        ],
+        [
+          21,
+          "72.00"
+        ],
+        [
+          22,
+          "140.00"
+        ],
+        [
+          23,
+          "140.00"
+        ],
+        [
+          24,
+          "280.00"
+        ]
+      ],
+      [
+        "M4",
+        [
+          8,
+          "0.50"
+        ],
+        [
+          9,
+          "0.50"
+        ],
+        [
+          10,
+          "1.00"
+        ],
+        [
+          11,
+          "1.00"
+        ],
+        [
+          12,
+          "3.00"
+        ],
+        [
+          13,
+          "3.00"
+        ],
+        [
+          14,
+          "7.50"
+        ],
+        [
+          15,
+          "7.50"
+        ],
+        [
+          16,
+          "15.00"
+        ],
+        [
+          17,
+          "15.00"
+        ],
+        [
+          18,
+          "30.00"
+        ],
+        [
+          19,
+          "30.00"
+        ],
+        [
+          20,
+          "60.00"
+        ],
+        [
+          21,
+          "60.00"
+        ],
+        [
+          22,
+          "120.00"
+        ],
+        [
+          23,
+          "120.00"
+        ],
+        [
+          24,
+          "240.00"
+        ]
+      ],
+      [
+        "L1",
+        [
+          8,
+          "0.40"
+        ],
+        [
+          9,
+          "0.40"
+        ],
+        [
+          10,
+          "0.90"
+        ],
+        [
+          11,
+          "0.90"
+        ],
+        [
+          12,
+          "2.00"
+        ],
+        [
+          13,
+          "2.00"
+        ],
+        [
+          14,
+          "5.00"
+        ],
+        [
+          15,
+          "5.00"
+        ],
+        [
+          16,
+          "10.00"
+        ],
+        [
+          17,
+          "10.00"
+        ],
+        [
+          18,
+          "20.00"
+        ],
+        [
+          19,
+          "20.00"
+        ],
+        [
+          20,
+          "40.00"
+        ],
+        [
+          21,
+          "40.00"
+        ],
+        [
+          22,
+          "80.00"
+        ],
+        [
+          23,
+          "80.00"
+        ],
+        [
+          24,
+          "160.00"
+        ]
+      ],
+      [
+        "L2",
+        [
+          8,
+          "0.30"
+        ],
+        [
+          9,
+          "0.30"
+        ],
+        [
+          10,
+          "0.80"
+        ],
+        [
+          11,
+          "0.80"
+        ],
+        [
+          12,
+          "1.80"
+        ],
+        [
+          13,
+          "1.80"
+        ],
+        [
+          14,
+          "4.50"
+        ],
+        [
+          15,
+          "4.50"
+        ],
+        [
+          16,
+          "9.00"
+        ],
+        [
+          17,
+          "9.00"
+        ],
+        [
+          18,
+          "18.00"
+        ],
+        [
+          19,
+          "18.00"
+        ],
+        [
+          20,
+          "36.00"
+        ],
+        [
+          21,
+          "36.00"
+        ],
+        [
+          22,
+          "72.00"
+        ],
+        [
+          23,
+          "72.00"
+        ],
+        [
+          24,
+          "140.00"
+        ]
+      ],
+      [
+        "L3",
+        [
+          8,
+          "0.30"
+        ],
+        [
+          9,
+          "0.30"
+        ],
+        [
+          10,
+          "0.70"
+        ],
+        [
+          11,
+          "0.70"
+        ],
+        [
+          12,
+          "1.60"
+        ],
+        [
+          13,
+          "1.60"
+        ],
+        [
+          14,
+          "4.00"
+        ],
+        [
+          15,
+          "4.00"
+        ],
+        [
+          16,
+          "8.00"
+        ],
+        [
+          17,
+          "8.00"
+        ],
+        [
+          18,
+          "16.00"
+        ],
+        [
+          19,
+          "16.00"
+        ],
+        [
+          20,
+          "32.00"
+        ],
+        [
+          21,
+          "32.00"
+        ],
+        [
+          22,
+          "64.00"
+        ],
+        [
+          23,
+          "64.00"
+        ],
+        [
+          24,
+          "120.00"
+        ]
+      ],
+      [
+        "L4",
+        [
+          8,
+          "0.30"
+        ],
+        [
+          9,
+          "0.30"
+        ],
+        [
+          10,
+          "0.60"
+        ],
+        [
+          11,
+          "0.60"
+        ],
+        [
+          12,
+          "1.50"
+        ],
+        [
+          13,
+          "1.50"
+        ],
+        [
+          14,
+          "3.50"
+        ],
+        [
+          15,
+          "3.50"
+        ],
+        [
+          16,
+          "7.00"
+        ],
+        [
+          17,
+          "7.00"
+        ],
+        [
+          18,
+          "14.00"
+        ],
+        [
+          19,
+          "14.00"
+        ],
+        [
+          20,
+          "28.00"
+        ],
+        [
+          21,
+          "28.00"
+        ],
+        [
+          22,
+          "56.00"
+        ],
+        [
+          23,
+          "56.00"
+        ],
+        [
+          24,
+          "110.00"
+        ]
+      ],
+      [
+        "FS",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ]
+    ],
+    "pending": {
+      "name": "report",
+      "size": 0,
+      "next": "",
+      "header": null,
+      "data": [],
+      "offset": 0
+    },
+    "prepaids": {
+      "consumed": 0,
+      "amount": 0,
+      "gameparams": null,
+      "more": false,
+      "count": 0,
+      "wa": 0,
+      "wc": "EUR",
+      "consumebefore": null,
+      "descr": null,
+      "ref": null,
+      "total": 0,
+      "currency": "EUR",
+      "ba": 0,
+      "rejectable": false
+    },
+    "serverApi": "https://freeplayapi.slotmill.com",
+    "skin": "default",
+    "tournamentInfo": [],
+    "user": {
+      "userid": "2609271842020170001",
+      "type": "Player",
+      "balance": {
+        "currency": "EUR",
+        "cash": "6000.00",
+        "bonus": "0.00",
+        "free": "0.00",
+        "points": "0.00",
+        "real": "6000.00"
+      },
+      "org": "SlotMill",
+      "currency": "EUR",
+      "nickname": "2609271842020170001",
+      "email": "",
+      "gender": null,
+      "birthdate": null,
+      "language": "en",
+      "country": "",
+      "domain": null,
+      "sessid": "2609271842020170002D09FB313F28D9D566C8977B11E77C736C4B950AA0A90FF059A17848E302265C96468432E1B064F104AFD67C21760A3A09FEFB7BE0BD7F4FCBCADC71DF57B68ED",
+      "nativeSessid": "2609271842023870001370A9B2CD00A44DA064869724387644EBDB5AEC36AC34902702C38938E2BBED6530B9EC38F82E98750A67737E52A44314F6533B69F1D05D380097614E294907B",
+      "avatar": null,
+      "level": null,
+      "custom": null,
+      "admin": false,
+      "userProps": {
+        "id": {
+          "domain": "SlotMill",
+          "externalid": "2609271842020170001",
+          "integration": "Stub",
+          "nativeid": "2609271842020170001",
+          "org": "SlotMill",
+          "userid": "2609271842020170001",
+          "walletid": "SlotMill"
+        },
+        "main": {
+          "address1": "",
+          "address2": "",
+          "address3": "",
+          "avatar": "m1",
+          "country": "",
+          "currency": "EUR",
+          "domain": "SlotMill_SlotMill",
+          "email": "",
+          "firstname": "",
+          "gamesetup": "Default",
+          "gender": "male",
+          "lastname": "",
+          "middlename": "",
+          "mobile": "",
+          "nickname": "2609271842020170001",
+          "org": "SlotMill",
+          "phone": "",
+          "picture": "m1",
+          "status": "Active",
+          "type": "Player",
+          "zip": ""
+        }
+      },
+      "levelId": 106
+    }
+  },
+  "fn": "gameinit"
+}

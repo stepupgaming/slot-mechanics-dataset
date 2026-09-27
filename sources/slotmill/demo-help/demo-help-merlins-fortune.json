@@ -1,0 +1,69 @@
+{
+  "slug": "slotmill-merlins-fortune",
+  "captured_at": "2026-09-27T14:42:04-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19014,
+    "demo_url": "https://merlins-fortune.slotmill.com/",
+    "main_js": "https://merlins-fortune.slotmill.com/main.8d16be60fb091cdeb6af.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Merlin's Fortune",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track 80x",
+        "api_name": null,
+        "cost_multiplier": 80.0,
+        "prop_value": "80xb",
+        "amounts_sample": [],
+        "source": "cfg.props BuyBonus*"
+      },
+      {
+        "id": 2,
+        "name": "Fast Track 15x",
+        "api_name": null,
+        "cost_multiplier": 15.0,
+        "prop_value": "15xb",
+        "amounts_sample": [],
+        "source": "cfg.props BuyBonus*"
+      },
+      {
+        "id": 3,
+        "name": "Fast Track 5x",
+        "api_name": null,
+        "cost_multiplier": 5.0,
+        "prop_value": "5xb",
+        "amounts_sample": [],
+        "source": "cfg.props BuyBonus*"
+      }
+    ],
+    "buyBonus_raw": [],
+    "note": "buyBonus array empty; multipliers from cfg.props BuyBonus*"
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "80xb",
+    "BuyBonus2": "15xb",
+    "BuyBonus3": "5xb"
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

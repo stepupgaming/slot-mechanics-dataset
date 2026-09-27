@@ -1,0 +1,136 @@
+{
+  "slug": "slotmill-money-jar-2",
+  "captured_at": "2026-09-27T14:42:04-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19030,
+    "demo_url": "https://money-jar-2.slotmill.com/",
+    "main_js": "https://money-jar-2.slotmill.com/main.7bbe4d8091505e23301c.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Money Jar 2",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "2 wilds",
+        "api_name": "2 wilds",
+        "cost_multiplier": 8,
+        "prop_value": "8xb",
+        "amounts_sample": [
+          "1.60",
+          "3.20",
+          "4.80"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "3 wilds",
+        "api_name": "3 wilds",
+        "cost_multiplier": 20,
+        "prop_value": "20xb",
+        "amounts_sample": [
+          "4.00",
+          "8.00",
+          "12.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "2 jars",
+        "api_name": "2 jars",
+        "cost_multiplier": 25,
+        "prop_value": "25xb",
+        "amounts_sample": [
+          "5.00",
+          "10.00",
+          "15.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Bonus",
+        "api_name": "Bonus",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Super Bonus",
+        "api_name": "Super Bonus",
+        "cost_multiplier": 500,
+        "prop_value": "500xb",
+        "amounts_sample": [
+          "100.00",
+          "200.00",
+          "300.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "2 wilds",
+        "multiplier": 8
+      },
+      {
+        "id": 2,
+        "name": "3 wilds",
+        "multiplier": 20
+      },
+      {
+        "id": 3,
+        "name": "2 jars",
+        "multiplier": 25
+      },
+      {
+        "id": 4,
+        "name": "Bonus",
+        "multiplier": 100
+      },
+      {
+        "id": 5,
+        "name": "Super Bonus",
+        "multiplier": 500
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "8xb",
+    "BuyBonus2": "20xb",
+    "BuyBonus3": "25xb",
+    "BuyBonus4": "100xb",
+    "BuyBonus5": "500xb",
+    "BuyBonusNames": [
+      "2 wilds",
+      "3 wilds",
+      "2 jars",
+      "Bonus",
+      "Super Bonus"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "slotmill-wildfire",
+  "captured_at": "2026-09-27T14:42:18-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19005,
+    "demo_url": "https://wildfire.slotmill.com/",
+    "main_js": "https://wildfire.slotmill.com/main.8cf4085eddc5d208d81e.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Wildfire",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [],
+    "buyBonus_raw": []
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {},
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

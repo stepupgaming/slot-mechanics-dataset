@@ -1,0 +1,38 @@
+{
+  "slug": "slotmill-carnival-joker",
+  "captured_at": "2026-09-27T14:41:49-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 9007,
+    "demo_url": "https://carnival-joker.slotmill.com/",
+    "main_js": "https://carnival-joker.slotmill.com/main.ee74dd6fe36439827cc0.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Carnival Joker",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [],
+    "buyBonus_raw": []
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": true,
+    "cost_multiplier": 1.5,
+    "increase_pct": 50.0,
+    "chance_x": null,
+    "prop_ExtraBet": "1.5xb",
+    "amounts_ratio": 1.5,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "ExtraBet": "1.5xb"
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

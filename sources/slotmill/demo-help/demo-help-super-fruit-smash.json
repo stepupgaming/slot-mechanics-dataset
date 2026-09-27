@@ -1,0 +1,117 @@
+{
+  "slug": "slotmill-super-fruit-smash",
+  "captured_at": "2026-09-27T14:42:12-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19023,
+    "demo_url": "https://super-fruit-smash.slotmill.com/",
+    "main_js": "https://super-fruit-smash.slotmill.com/main.604179889caa239fee0d.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Super Fruit Smash",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "FruitSmash",
+        "api_name": "FruitSmash",
+        "cost_multiplier": 5,
+        "prop_value": "5xb",
+        "amounts_sample": [
+          "1.00",
+          "1.50",
+          "2.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Countdown Wild",
+        "api_name": "Countdown Wild",
+        "cost_multiplier": 40,
+        "prop_value": "40xb",
+        "amounts_sample": [
+          "8.00",
+          "12.00",
+          "16.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Bonus",
+        "api_name": "Bonus",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "30.00",
+          "40.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "FrenzyBonus",
+        "api_name": "FrenzyBonus",
+        "cost_multiplier": 450,
+        "prop_value": "450xb",
+        "amounts_sample": [
+          "90.00",
+          "135.00",
+          "180.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "FruitSmash",
+        "multiplier": 5
+      },
+      {
+        "id": 2,
+        "name": "Countdown Wild",
+        "multiplier": 40
+      },
+      {
+        "id": 3,
+        "name": "Bonus",
+        "multiplier": 100
+      },
+      {
+        "id": 4,
+        "name": "FrenzyBonus",
+        "multiplier": 450
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "5xb",
+    "BuyBonus2": "40xb",
+    "BuyBonus3": "100xb",
+    "BuyBonus4": "450xb",
+    "BuyBonusNames": [
+      "FruitSmash",
+      "Countdown Wild",
+      "Bonus",
+      "FrenzyBonus"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

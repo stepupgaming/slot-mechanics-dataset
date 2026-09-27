@@ -1,0 +1,36 @@
+{
+  "slug": "slotmill-vegas-gold",
+  "captured_at": "2026-09-27T14:42:16-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19011,
+    "demo_url": "https://vegas-gold.slotmill.com/",
+    "main_js": "https://vegas-gold.slotmill.com/main.9084fdbfa17bc12759d9.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Vegas Gold",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [],
+    "buyBonus_raw": []
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {},
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

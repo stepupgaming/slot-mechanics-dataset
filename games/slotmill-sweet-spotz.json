@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Sweet Spotz",
@@ -161,8 +161,37 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Any Giant Symbols",
+        "cost_multiplier": 2.0,
+        "cost_text": "2x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 2x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Instant 2x2",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 10x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Instant 3x3",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Instant 3x3 with random initial multiplier",
+        "cost_multiplier": 400.0,
+        "cost_text": "400x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 400x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 2.0x, 10.0x, 100.0x, 400.0x. Evidence: sources/slotmill/demo-help/demo-help-sweet-spotz.json"
   },
   "ante_bet": {
     "available": null,
@@ -186,7 +215,7 @@
     "symbols": "medium",
     "bonus_free_spins": "high",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -203,6 +232,20 @@
       "local_path": "sources/slotmill/product_sheet_sweet-spotz.pdf",
       "extracted_at": "2026-09-27T18:36:08Z",
       "quote_or_excerpt": "Three+ cupcakes triggers the Free Spin"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://sweet-spotz.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-sweet-spotz.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Any Giant Symbols=2x; Buy Instant 2x2=10x; Buy Instant 3x3=100x; Buy Instant 3x3 with random initial multiplier=400x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-sweet-spotz.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Sweet Spotz"
     }
   ],
   "unknowns": [

@@ -1,0 +1,1125 @@
+{
+  "code": 0,
+  "data": {
+    "betAmounts": {
+      "amounts": [
+        "0.20",
+        "0.40",
+        "0.60",
+        "0.80",
+        "1.00",
+        "1.20",
+        "1.60",
+        "2.00",
+        "2.40",
+        "3.00",
+        "4.00",
+        "5.00",
+        "6.00",
+        "8.00",
+        "10.00",
+        "12.00",
+        "16.00",
+        "20.00",
+        "25.00",
+        "30.00",
+        "40.00",
+        "50.00",
+        "60.00"
+      ],
+      "buyBonus": [
+        {
+          "amounts": [
+            "5.00",
+            "10.00",
+            "15.00",
+            "20.00",
+            "25.00",
+            "30.00",
+            "40.00",
+            "50.00",
+            "60.00",
+            "75.00",
+            "100.00",
+            "125.00",
+            "150.00",
+            "200.00",
+            "250.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "625.00",
+            "750.00",
+            "1000.00",
+            "1250.00",
+            "1500.00"
+          ],
+          "id": 1,
+          "multiplier": 25,
+          "name": "1"
+        },
+        {
+          "amounts": [
+            "20.00",
+            "40.00",
+            "60.00",
+            "80.00",
+            "100.00",
+            "120.00",
+            "160.00",
+            "200.00",
+            "240.00",
+            "300.00",
+            "400.00",
+            "500.00",
+            "600.00",
+            "800.00",
+            "1000.00",
+            "1200.00",
+            "1600.00",
+            "2000.00",
+            "2500.00",
+            "3000.00",
+            "4000.00",
+            "5000.00",
+            "6000.00"
+          ],
+          "id": 2,
+          "multiplier": 100,
+          "name": "2"
+        },
+        {
+          "amounts": [
+            "70.00",
+            "140.00",
+            "210.00",
+            "280.00",
+            "350.00",
+            "420.00",
+            "560.00",
+            "700.00",
+            "840.00",
+            "1050.00",
+            "1400.00",
+            "1750.00",
+            "2100.00",
+            "2800.00",
+            "3500.00",
+            "4200.00",
+            "5600.00",
+            "7000.00",
+            "8750.00",
+            "10500.00",
+            "14000.00",
+            "17500.00",
+            "21000.00"
+          ],
+          "id": 3,
+          "multiplier": 350,
+          "name": "3"
+        },
+        {
+          "amounts": [
+            "80.00",
+            "160.00",
+            "240.00",
+            "320.00",
+            "400.00",
+            "480.00",
+            "640.00",
+            "800.00",
+            "960.00",
+            "1200.00",
+            "1600.00",
+            "2000.00",
+            "2400.00",
+            "3200.00",
+            "4000.00",
+            "4800.00",
+            "6400.00",
+            "8000.00",
+            "10000.00",
+            "12000.00",
+            "16000.00",
+            "20000.00",
+            "24000.00"
+          ],
+          "id": 4,
+          "multiplier": 400,
+          "name": "4"
+        },
+        {
+          "amounts": [
+            "200.00",
+            "400.00",
+            "600.00",
+            "800.00",
+            "1000.00",
+            "1200.00",
+            "1600.00",
+            "2000.00",
+            "2400.00",
+            "3000.00",
+            "4000.00",
+            "5000.00",
+            "6000.00",
+            "8000.00",
+            "10000.00",
+            "12000.00",
+            "16000.00",
+            "20000.00",
+            "25000.00",
+            "30000.00",
+            "40000.00",
+            "50000.00",
+            "60000.00"
+          ],
+          "id": 5,
+          "multiplier": 1000,
+          "name": "5"
+        }
+      ],
+      "defaultAmount": "1.00",
+      "extraAmounts": [
+        "0.30",
+        "0.60",
+        "0.90",
+        "1.20",
+        "1.50",
+        "1.80",
+        "2.40",
+        "3.00",
+        "3.60",
+        "4.50",
+        "6.00",
+        "7.50",
+        "9.00",
+        "12.00",
+        "15.00",
+        "18.00",
+        "24.00",
+        "30.00",
+        "37.50",
+        "45.00",
+        "60.00",
+        "75.00",
+        "90.00"
+      ],
+      "roundDecimals": {
+        "prize": 3,
+        "wallet": 2
+      }
+    },
+    "currencyDisplay": "EUR",
+    "game": {
+      "gameid": 19065,
+      "name": "Ragnarok40k",
+      "title": null,
+      "subgroup": null,
+      "currency": "<omitted 683 chars>",
+      "category": "Casino",
+      "type": "Slot",
+      "variant": "Ragnarok40k96",
+      "model": "M1",
+      "status": "Active",
+      "orgSettings": {
+        "hideTopRounds": false,
+        "hideRTPXtraBet": false,
+        "Denoms": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.1,0.2,0.4,0.6,0.8,1,1.2,1.6,2,2.4,3,4,5,6,8,10,12,16,20,25,30,40,50,60;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "burstMode": true,
+        "showGameFunctionsInPaytable": false,
+        "maxAutoPlay": 0,
+        "quickSpin": true,
+        "quickStop": true,
+        "extraBet": true,
+        "DefaultDenom": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:EUR*10;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:1;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500",
+        "useGameHistoryV2": false,
+        "enableInactivityTracking": false,
+        "hideRTPFeatureSplash": false,
+        "hideGameHistory": false,
+        "featureBuy": true,
+        "showTotalAutoplayBet": false,
+        "minGameDuration": 0,
+        "showPaytableAfterFeatureSplash": false,
+        "hideRTPBuyFeature": false,
+        "autoPlay": true,
+        "useTopWagersV2": false,
+        "publicReplay": true
+      },
+      "draws": "<omitted>",
+      "cfg": {
+        "gameId": 19065,
+        "cfgId": 1,
+        "status": "Frozen",
+        "validFrom": null,
+        "validUntil": null,
+        "checksum": "01B5D1B55AF97F4E2A608DFE69CDA8F076C8A00727D1D4D9CB2C58715B282F2D845FFDDCBC8EBA8EEB9BC7FED42FB8F252C5ABC751AA2334D42981A458B695C5",
+        "props": [
+          {
+            "prop": "BuyBonus1",
+            "value": "25xb"
+          },
+          {
+            "prop": "BuyBonus2",
+            "value": "100xb"
+          },
+          {
+            "prop": "BuyBonus3",
+            "value": "350xb"
+          },
+          {
+            "prop": "BuyBonus4",
+            "value": "400xb"
+          },
+          {
+            "prop": "BuyBonus5",
+            "value": "1000xb"
+          },
+          {
+            "prop": "BuyBonusNames",
+            "value": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ]
+          },
+          {
+            "prop": "CapWin",
+            "value": "40000xb"
+          },
+          {
+            "prop": "Cheats",
+            "value": [
+              [
+                "/none",
+                "none"
+              ]
+            ]
+          },
+          {
+            "prop": "DON",
+            "value": "CollectB"
+          },
+          {
+            "prop": "Denoms",
+            "value": "AZN,BAM,BGN,BRL,NZD,PEN:EUR*2;\nSOS:EUR*600;\nXOF:EUR*650;\nCRC:EUR*700;\nGC6,PLN:EUR*3;\nVES:EUR*800;\nBYN:EUR*3.5;\nGL1,KRW:EUR*1000;\nAED:EUR*4;\nCNY,GEL,GLD,ILS,MYR,RON,TMT,TND:EUR*5;\nGC11,IQD:EUR*1500;\nBOB:EUR*7;\nGHS:EUR*7.5;\nBIF,CDF,GC2,MMK,TZ1:EUR*2000;\nGTQ:EUR*8;\nSVC:EUR*9;\nTZS:EUR*2500;\nDKK,GC7,GC8,HKD,HRK,MAD,MXN,NOK,SEK,ST3,SZ1:EUR*10;\nTJS:EUR*11;\nNAD,TRY,ZAR:EUR*15;\nTWS:EUR*3900;\nCOP,MNT,TW1,TW2,UGX:EUR*4000;\nKWD:EUR*0.35;\nDOGE,MVR,mLTC:EUR*16;\nKHR:EUR*4300;\nmBTC:EUR*0.05;\nEGP:EUR*19;\nIDR:EUR*5000;\nMDL,PHP,ZMW:EUR*20;\nCUP,CZK,HNL:EUR*25;\nPYG:EUR*7000;\nTTP,TW3,TWD,UAH:EUR*30;\nGOC:1,2,4,6,8,10,12,16,20,24,30,40,50,60,80,100,120,150,160,200,240,250,300,400,500,600,750,800,900,1000,1200,1500,1600,1800,2000,2400,2500,3000,3200,3600,4000,4500,4800,5000,6000,7500,8000,9000,10000,12000,12500,15000,16000,18000,20000,24000,25000,30000,32000,37500,40000,45000,48000,50000,60000,75000,80000,90000,100000,112500,120000,150000,160000,200000,225000,240000,250000,300000,320000,400000,450000,500000,600000,750000,800000,1000000,1200000,1250000,1500000,2000000,2500000,3000000,3750000,4000000,5000000,6000000,7500000,10000000,15000000;\nTHB:EUR*35;\nOMR:EUR*0.4;\nGC10,GC3,GC4,GCC,UZS:EUR*10000;\nNIO,TPP,UYU:EUR*40;\nDOP,INR,uBTC:EUR*50;\nVND:EUR*15000;\nETB,MKD:EUR*60;\nMZN:EUR*65;\nGC9:EUR*20000;\nGL2:EUR*25000;\nBDT,FC5,FCC,FICO,ISK,JPY,KES,KGS,LKR,PKR,RUB,TICO,TIX:EUR*100;\nRSD:EUR*120;\nSSP:EUR*125;\nmETH:EUR*0.5;\nDZD,HTG,NPR:EUR*140;\nJOD:EUR*0.75;\nGC.,IRR:EUR*50000;\nGC5:EUR*200;\nARS:EUR*250;\nCAD,CHF,EEGP,EUR,FC10,FUN,GBP,GGP,GIP,IMP,JEP,PAB,PGSC,RC1,SC.,SC1,SC11,SC4,SC5,SC6,SC7,SC8,SC9,SCC,SPIN,SS1,SWPC,USD,USDT:0.1,0.2,0.4,0.6,0.8,1,1.2,1.6,2,2.4,3,4,5,6,8,10,12,16,20,25,30,40,50,60,75,100,150,200,300;\naARS:EUR*300;\nAUD,BND,SGD:EUR*1.5;\nHUF:EUR*400;\nAOA:EUR*440;\nAMD,BC1,CLP,EPGP,FC9,GC1,KZT,LUKC,NGN,PGGC,XAF:EUR*500"
+          },
+          {
+            "prop": "ExtraBet",
+            "value": "1.5xb"
+          },
+          {
+            "prop": "Feature",
+            "value": ""
+          },
+          {
+            "prop": "IconTypes",
+            "value": [
+              "N",
+              "W",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "N",
+              "S"
+            ]
+          },
+          {
+            "prop": "Icons",
+            "value": [
+              "BL",
+              "W",
+              "H1",
+              "M1",
+              "M2",
+              "M3",
+              "L1",
+              "L2",
+              "L3",
+              "FS"
+            ]
+          },
+          {
+            "prop": "MaxCoins",
+            "value": 1
+          },
+          {
+            "prop": "MinCoins",
+            "value": 1
+          },
+          {
+            "prop": "NormalOri",
+            "value": [
+              "LR"
+            ]
+          },
+          {
+            "prop": "NumberOfReels",
+            "value": 5
+          },
+          {
+            "prop": "Paylines",
+            "value": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "prop": "PrizeDivisor",
+            "value": 20
+          },
+          {
+            "prop": "ProbReels",
+            "value": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "prop": "WindowHeight",
+            "value": 5
+          },
+          {
+            "prop": "client",
+            "value": "ragnarok-40k"
+          }
+        ],
+        "admin": false,
+        "initial": false,
+        "removed": false,
+        "frozen": true
+      },
+      "gameId": 19065
+    },
+    "payTable": [
+      [
+        "H1",
+        [
+          5,
+          "0.40"
+        ],
+        [
+          6,
+          "0.80"
+        ],
+        [
+          7,
+          "1.20"
+        ],
+        [
+          8,
+          "2.00"
+        ],
+        [
+          9,
+          "4.00"
+        ],
+        [
+          10,
+          "6.00"
+        ],
+        [
+          11,
+          "9.00"
+        ],
+        [
+          12,
+          "12.50"
+        ],
+        [
+          13,
+          "12.50"
+        ],
+        [
+          14,
+          "12.50"
+        ],
+        [
+          15,
+          "12.50"
+        ],
+        [
+          16,
+          "12.50"
+        ],
+        [
+          17,
+          "12.50"
+        ],
+        [
+          18,
+          "12.50"
+        ],
+        [
+          19,
+          "12.50"
+        ],
+        [
+          20,
+          "12.50"
+        ],
+        [
+          21,
+          "12.50"
+        ],
+        [
+          22,
+          "12.50"
+        ],
+        [
+          23,
+          "12.50"
+        ],
+        [
+          24,
+          "12.50"
+        ],
+        [
+          25,
+          "12.50"
+        ]
+      ],
+      [
+        "M1",
+        [
+          5,
+          "0.35"
+        ],
+        [
+          6,
+          "0.60"
+        ],
+        [
+          7,
+          "0.90"
+        ],
+        [
+          8,
+          "1.50"
+        ],
+        [
+          9,
+          "3.00"
+        ],
+        [
+          10,
+          "5.00"
+        ],
+        [
+          11,
+          "7.00"
+        ],
+        [
+          12,
+          "9.00"
+        ],
+        [
+          13,
+          "9.00"
+        ],
+        [
+          14,
+          "9.00"
+        ],
+        [
+          15,
+          "9.00"
+        ],
+        [
+          16,
+          "9.00"
+        ],
+        [
+          17,
+          "9.00"
+        ],
+        [
+          18,
+          "9.00"
+        ],
+        [
+          19,
+          "9.00"
+        ],
+        [
+          20,
+          "9.00"
+        ],
+        [
+          21,
+          "9.00"
+        ],
+        [
+          22,
+          "9.00"
+        ],
+        [
+          23,
+          "9.00"
+        ],
+        [
+          24,
+          "9.00"
+        ],
+        [
+          25,
+          "9.00"
+        ]
+      ],
+      [
+        "M2",
+        [
+          5,
+          "0.30"
+        ],
+        [
+          6,
+          "0.50"
+        ],
+        [
+          7,
+          "0.80"
+        ],
+        [
+          8,
+          "1.20"
+        ],
+        [
+          9,
+          "2.50"
+        ],
+        [
+          10,
+          "4.00"
+        ],
+        [
+          11,
+          "6.00"
+        ],
+        [
+          12,
+          "8.00"
+        ],
+        [
+          13,
+          "8.00"
+        ],
+        [
+          14,
+          "8.00"
+        ],
+        [
+          15,
+          "8.00"
+        ],
+        [
+          16,
+          "8.00"
+        ],
+        [
+          17,
+          "8.00"
+        ],
+        [
+          18,
+          "8.00"
+        ],
+        [
+          19,
+          "8.00"
+        ],
+        [
+          20,
+          "8.00"
+        ],
+        [
+          21,
+          "8.00"
+        ],
+        [
+          22,
+          "8.00"
+        ],
+        [
+          23,
+          "8.00"
+        ],
+        [
+          24,
+          "8.00"
+        ],
+        [
+          25,
+          "8.00"
+        ]
+      ],
+      [
+        "M3",
+        [
+          5,
+          "0.25"
+        ],
+        [
+          6,
+          "0.45"
+        ],
+        [
+          7,
+          "0.70"
+        ],
+        [
+          8,
+          "1.00"
+        ],
+        [
+          9,
+          "2.00"
+        ],
+        [
+          10,
+          "3.50"
+        ],
+        [
+          11,
+          "5.00"
+        ],
+        [
+          12,
+          "7.00"
+        ],
+        [
+          13,
+          "7.00"
+        ],
+        [
+          14,
+          "7.00"
+        ],
+        [
+          15,
+          "7.00"
+        ],
+        [
+          16,
+          "7.00"
+        ],
+        [
+          17,
+          "7.00"
+        ],
+        [
+          18,
+          "7.00"
+        ],
+        [
+          19,
+          "7.00"
+        ],
+        [
+          20,
+          "7.00"
+        ],
+        [
+          21,
+          "7.00"
+        ],
+        [
+          22,
+          "7.00"
+        ],
+        [
+          23,
+          "7.00"
+        ],
+        [
+          24,
+          "7.00"
+        ],
+        [
+          25,
+          "7.00"
+        ]
+      ],
+      [
+        "L1",
+        [
+          5,
+          "0.15"
+        ],
+        [
+          6,
+          "0.30"
+        ],
+        [
+          7,
+          "0.50"
+        ],
+        [
+          8,
+          "0.75"
+        ],
+        [
+          9,
+          "1.25"
+        ],
+        [
+          10,
+          "2.50"
+        ],
+        [
+          11,
+          "4.00"
+        ],
+        [
+          12,
+          "6.00"
+        ],
+        [
+          13,
+          "6.00"
+        ],
+        [
+          14,
+          "6.00"
+        ],
+        [
+          15,
+          "6.00"
+        ],
+        [
+          16,
+          "6.00"
+        ],
+        [
+          17,
+          "6.00"
+        ],
+        [
+          18,
+          "6.00"
+        ],
+        [
+          19,
+          "6.00"
+        ],
+        [
+          20,
+          "6.00"
+        ],
+        [
+          21,
+          "6.00"
+        ],
+        [
+          22,
+          "6.00"
+        ],
+        [
+          23,
+          "6.00"
+        ],
+        [
+          24,
+          "6.00"
+        ],
+        [
+          25,
+          "6.00"
+        ]
+      ],
+      [
+        "L2",
+        [
+          5,
+          "0.15"
+        ],
+        [
+          6,
+          "0.30"
+        ],
+        [
+          7,
+          "0.50"
+        ],
+        [
+          8,
+          "0.75"
+        ],
+        [
+          9,
+          "1.25"
+        ],
+        [
+          10,
+          "2.50"
+        ],
+        [
+          11,
+          "4.00"
+        ],
+        [
+          12,
+          "5.50"
+        ],
+        [
+          13,
+          "5.50"
+        ],
+        [
+          14,
+          "5.50"
+        ],
+        [
+          15,
+          "5.50"
+        ],
+        [
+          16,
+          "5.50"
+        ],
+        [
+          17,
+          "5.50"
+        ],
+        [
+          18,
+          "5.50"
+        ],
+        [
+          19,
+          "5.50"
+        ],
+        [
+          20,
+          "5.50"
+        ],
+        [
+          21,
+          "5.50"
+        ],
+        [
+          22,
+          "5.50"
+        ],
+        [
+          23,
+          "5.50"
+        ],
+        [
+          24,
+          "5.50"
+        ],
+        [
+          25,
+          "5.50"
+        ]
+      ],
+      [
+        "L3",
+        [
+          5,
+          "0.15"
+        ],
+        [
+          6,
+          "0.30"
+        ],
+        [
+          7,
+          "0.50"
+        ],
+        [
+          8,
+          "0.75"
+        ],
+        [
+          9,
+          "1.25"
+        ],
+        [
+          10,
+          "2.50"
+        ],
+        [
+          11,
+          "4.00"
+        ],
+        [
+          12,
+          "5.00"
+        ],
+        [
+          13,
+          "5.00"
+        ],
+        [
+          14,
+          "5.00"
+        ],
+        [
+          15,
+          "5.00"
+        ],
+        [
+          16,
+          "5.00"
+        ],
+        [
+          17,
+          "5.00"
+        ],
+        [
+          18,
+          "5.00"
+        ],
+        [
+          19,
+          "5.00"
+        ],
+        [
+          20,
+          "5.00"
+        ],
+        [
+          21,
+          "5.00"
+        ],
+        [
+          22,
+          "5.00"
+        ],
+        [
+          23,
+          "5.00"
+        ],
+        [
+          24,
+          "5.00"
+        ],
+        [
+          25,
+          "5.00"
+        ]
+      ],
+      [
+        "FS",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ],
+      [
+        "W",
+        [
+          1,
+          "PaytableWild"
+        ]
+      ]
+    ],
+    "pending": {
+      "name": "report",
+      "size": 0,
+      "next": "",
+      "header": null,
+      "data": [],
+      "offset": 0
+    },
+    "prepaids": {
+      "consumed": 0,
+      "amount": 0,
+      "gameparams": null,
+      "more": false,
+      "count": 0,
+      "wa": 0,
+      "wc": "EUR",
+      "consumebefore": null,
+      "descr": null,
+      "ref": null,
+      "total": 0,
+      "currency": "EUR",
+      "ba": 0,
+      "rejectable": false
+    },
+    "serverApi": "https://freeplayapi.slotmill.com",
+    "skin": "default",
+    "tournamentInfo": [],
+    "user": {
+      "userid": "2609271842066870009",
+      "type": "Player",
+      "balance": {
+        "currency": "EUR",
+        "cash": "6000.00",
+        "bonus": "0.00",
+        "free": "0.00",
+        "points": "0.00",
+        "real": "6000.00"
+      },
+      "org": "SlotMill",
+      "currency": "EUR",
+      "nickname": "2609271842066870003",
+      "email": "",
+      "gender": null,
+      "birthdate": null,
+      "language": "en",
+      "country": "",
+      "domain": null,
+      "sessid": "2609271842066870012D5069C1FCA83AA7335222926FB388ED6764BF89B33FBB701F2FA6D210F02AB895F8025C0C074E29C1E17E09BDCDDEDAF2F8076C90BFCD22F138D602FE14A3209",
+      "nativeSessid": "26092718420641700037ED323FC4B5650FF1C0258580233B349EBCA586899AF88B76F7B332AD1444BB01030739BB425584931E69BC5B249B2A49F60E0228E76F748E51224463F737CCA",
+      "avatar": null,
+      "level": null,
+      "custom": null,
+      "admin": false,
+      "userProps": {
+        "id": {
+          "domain": "SlotMill",
+          "externalid": "2609271842066870003",
+          "integration": "Stub",
+          "nativeid": "2609271842066870003",
+          "org": "SlotMill",
+          "userid": "2609271842066870009",
+          "walletid": "SlotMill"
+        },
+        "main": {
+          "address1": "",
+          "address2": "",
+          "address3": "",
+          "avatar": "m23",
+          "country": "",
+          "currency": "EUR",
+          "domain": "SlotMill_SlotMill",
+          "email": "",
+          "firstname": "",
+          "gamesetup": "Default",
+          "gender": "male",
+          "lastname": "",
+          "middlename": "",
+          "mobile": "",
+          "nickname": "2609271842066870003",
+          "org": "SlotMill",
+          "phone": "",
+          "picture": "m23",
+          "status": "Active",
+          "type": "Player",
+          "zip": ""
+        }
+      },
+      "levelId": 106
+    }
+  },
+  "fn": "gameinit"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Wild Bison Stampede",
@@ -167,14 +167,50 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 30x",
+        "cost_multiplier": 30.0,
+        "cost_text": "30x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 30x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 40x",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 80x",
+        "cost_multiplier": 80.0,
+        "cost_text": "80x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 80x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 400x",
+        "cost_multiplier": 400.0,
+        "cost_text": "400x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 400x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 30.0x, 40.0x, 80.0x, 100.0x, 400.0x. Evidence: sources/slotmill/demo-help/demo-help-wild-bison-stampede.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 1.5,
+    "effects": "Xtra-Bet™ raises Base Bet by 50% (total cost 1.5× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=1.5xb and/or extraAmounts÷amounts ratio=1.5; increase_pct=50.0. Evidence: sources/slotmill/demo-help/demo-help-wild-bison-stampede.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 6688.0,
@@ -192,7 +228,7 @@
     "symbols": "medium",
     "bonus_free_spins": "high",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -209,6 +245,20 @@
       "local_path": "sources/slotmill/product_sheet_wild-bison-stampede.pdf",
       "extracted_at": "2026-09-27T18:36:08Z",
       "quote_or_excerpt": "three Bonus symbols to trigger the Free Spins"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://wild-bison-stampede.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-wild-bison-stampede.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=30x; Fast Track option 2=40x; Fast Track option 3=80x; Fast Track option 4=100x; Fast Track option 5=400x | Xtra-Bet: ExtraBet=1.5xb, increase=50.0%, cost_multiplier=1.5"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-wild-bison-stampede.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Wild Bison Stampede"
     }
   ],
   "unknowns": [

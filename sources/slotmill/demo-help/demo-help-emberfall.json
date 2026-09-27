@@ -1,0 +1,137 @@
+{
+  "slug": "slotmill-emberfall",
+  "captured_at": "2026-09-27T14:41:56-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19053,
+    "demo_url": "https://emberfall.slotmill.com/",
+    "main_js": "https://emberfall.slotmill.com/main.ccafcaf6c8d562e5002f.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Emberfall",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track option 1",
+        "api_name": "1",
+        "cost_multiplier": 5,
+        "prop_value": "5xb",
+        "amounts_sample": [
+          "1.00",
+          "2.00",
+          "3.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fast Track option 2",
+        "api_name": "2",
+        "cost_multiplier": 40,
+        "prop_value": "40xb",
+        "amounts_sample": [
+          "8.00",
+          "16.00",
+          "24.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Fast Track option 3",
+        "api_name": "3",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Fast Track option 4",
+        "api_name": "4",
+        "cost_multiplier": 250,
+        "prop_value": "250xb",
+        "amounts_sample": [
+          "50.00",
+          "100.00",
+          "150.00"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Fast Track option 5",
+        "api_name": "5",
+        "cost_multiplier": 500,
+        "prop_value": "500xb",
+        "amounts_sample": [
+          "100.00",
+          "200.00",
+          "300.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "1",
+        "multiplier": 5
+      },
+      {
+        "id": 2,
+        "name": "2",
+        "multiplier": 40
+      },
+      {
+        "id": 3,
+        "name": "3",
+        "multiplier": 100
+      },
+      {
+        "id": 4,
+        "name": "4",
+        "multiplier": 250
+      },
+      {
+        "id": 5,
+        "name": "5",
+        "multiplier": 500
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": true,
+    "cost_multiplier": 1.5,
+    "increase_pct": 50.0,
+    "chance_x": null,
+    "prop_ExtraBet": "1.5xb",
+    "amounts_ratio": 1.5,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "5xb",
+    "BuyBonus2": "40xb",
+    "BuyBonus3": "100xb",
+    "BuyBonus4": "250xb",
+    "BuyBonus5": "500xb",
+    "BuyBonusNames": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "ExtraBet": "1.5xb"
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

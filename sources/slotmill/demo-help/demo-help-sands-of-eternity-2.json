@@ -1,0 +1,99 @@
+{
+  "slug": "slotmill-sands-of-eternity-2",
+  "captured_at": "2026-09-27T14:42:10-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19041,
+    "demo_url": "https://sands-of-eternity-2.slotmill.com/",
+    "main_js": "https://sands-of-eternity-2.slotmill.com/main.9590b879aae43fe0541c.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Sands Of Eternity 2",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track option 1",
+        "api_name": "1",
+        "cost_multiplier": 15,
+        "prop_value": "15xb",
+        "amounts_sample": [
+          "3.00",
+          "6.00",
+          "9.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fast Track option 2",
+        "api_name": "2",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "40.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Fast Track option 3",
+        "api_name": "3",
+        "cost_multiplier": 300,
+        "prop_value": "300xb",
+        "amounts_sample": [
+          "60.00",
+          "120.00",
+          "180.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "1",
+        "multiplier": 15
+      },
+      {
+        "id": 2,
+        "name": "2",
+        "multiplier": 100
+      },
+      {
+        "id": 3,
+        "name": "3",
+        "multiplier": 300
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": true,
+    "cost_multiplier": 1.5,
+    "increase_pct": 50.0,
+    "chance_x": null,
+    "prop_ExtraBet": "1.5xb",
+    "amounts_ratio": 1.5,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "15xb",
+    "BuyBonus2": "100xb",
+    "BuyBonus3": "300xb",
+    "BuyBonusNames": [
+      "1",
+      "2",
+      "3"
+    ],
+    "ExtraBet": "1.5xb"
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

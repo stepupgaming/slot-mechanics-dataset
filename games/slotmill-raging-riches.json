@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:57Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Raging Riches",
@@ -141,15 +141,15 @@
     }
   ],
   "feature_buy": {
-    "available": null,
+    "available": false,
     "options": [],
-    "notes": null
+    "notes": "Freeplay gameinit returned no buyBonus options; Fast Track not configured for this title."
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 1.5,
+    "effects": "Xtra-Bet™ raises Base Bet by 50% (total cost 1.5× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=1.5xb and/or extraAmounts÷amounts ratio=1.5; increase_pct=50.0. Evidence: sources/slotmill/demo-help/demo-help-raging-riches.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 5533.0,
@@ -159,7 +159,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -184,6 +184,20 @@
       "local_path": "sources/slotmill/product_sheet_raging-riches.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Raging Riches\n\nIntroducing the “Slotmill Legends” series, where classic-style slots meet modern excitement with the debut title\nRaging Riches, a game designed to capture the essence of traditional video slot while offering thrilling new\nfeatures. Set against the breathtaking backdrop of the North American prairies, this 4-5-5-5-4 video slot with up to\n5488 Bet Ways takes you on an adventure filled with roaring excitement and fantastic opportunities for massive\nwins.\n\nUnleash the fury of the Free Spins Bonus, where landing 3 or more Bonus unlock a realm of endless possibilities.\nWild symbols come to life with random multipliers of x2 or x3, significantly boosting your winnings. Anticipation\nbuilds with each spin as the ”UP symbol” can expand the reels, adding extra rows, increasing Bet Ways"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://raging-riches.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-raging-riches.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Xtra-Bet: ExtraBet=1.5xb, increase=50.0%, cost_multiplier=1.5"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-raging-riches.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Raging Riches"
     }
   ],
   "unknowns": [

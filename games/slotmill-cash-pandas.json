@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Cash Pandas",
@@ -139,8 +139,37 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Any Giant Symbols",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 10x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Instant 2x2",
+        "cost_multiplier": 70.0,
+        "cost_text": "70x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 70x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Instant 3x3",
+        "cost_multiplier": 200.0,
+        "cost_text": "200x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 200x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Instant 3x3 with random initial multiplier",
+        "cost_multiplier": 400.0,
+        "cost_text": "400x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 400x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 10.0x, 70.0x, 200.0x, 400.0x. Evidence: sources/slotmill/demo-help/demo-help-cash-pandas.json"
   },
   "ante_bet": {
     "available": null,
@@ -156,7 +185,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
@@ -164,7 +193,7 @@
     "symbols": "medium",
     "bonus_free_spins": "low",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -181,6 +210,20 @@
       "local_path": "sources/slotmill/product_sheet_cash-pandas.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Raccoon Rampage: Cash Pandas Unleashed\n\nCash Pandas is an Avalanche cluster game with a 7×7 symbol grid set in a New-York back-street alley where\nthe raccoons or “Cash Pandas” are going nuts in their search for riches. The base game features both Wilds,\nGiant Symbols and power-ups, whilst the bonus game adds Giant Wilds and an un-capped win multiplier\nthat spices things up considerately. RTP of the game is 96,16% and maximum win is 10,000 times your bet.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have\ntwo integrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is an enhanced\nauto-play with a play-through of two game rounds per second, and Fast Track offers players the option to\nget directly into the bonus features o"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://cash-pandas.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-cash-pandas.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Any Giant Symbols=10x; Buy Instant 2x2=70x; Buy Instant 3x3=200x; Buy Instant 3x3 with random initial multiplier=400x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-cash-pandas.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Cash Pandas"
     }
   ],
   "unknowns": [

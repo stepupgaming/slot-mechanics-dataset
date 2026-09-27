@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:44:07Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Lucky Lucifer",
@@ -107,9 +107,17 @@
     }
   ],
   "feature_buy": {
-    "available": null,
-    "options": [],
-    "notes": null
+    "available": true,
+    "options": [
+      {
+        "name": "Fast Track 80x",
+        "cost_multiplier": 80.0,
+        "cost_text": "80x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 80x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit cfg.props BuyBonus* (buyBonus array empty): 80x. Evidence: sources/slotmill/demo-help/demo-help-lucky-lucifer.json"
   },
   "ante_bet": {
     "available": null,
@@ -125,7 +133,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -133,7 +141,7 @@
     "symbols": "medium",
     "bonus_free_spins": "low",
     "features": "high",
-    "feature_buy": "low",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -150,6 +158,20 @@
       "local_path": "sources/slotmill/product_sheet_lucky-lucifer.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Multiplier Bonanza!\n\nLucky Lucifer is a 5-reel, 40 bet line video slot with a maximum win of 10,000 times bet! The base game\nfeatures a random Trailing Wild feature awarding 1-7 wilds. Three Bonus symbols triggers the bonus feature\nduring which multipliers are accumulated and the total multiplier value at the end of the feature is\nmultiplied with the bet. In addition to coins with multiplier values, the Lucifer and Succubus symbols award\npersistent multiplier enhancing features. The Succubus symbols will after each remaining spin collect\nmultipliers in two different patterns until they themselves are collected by Lucifer or the Bonus feature is\nover. The Lucifer symbol will collect all multipliers on the reels after each spin for the remainder of the\nfeature. Land any symbol (Lifelines exc"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://lucky-lucifer.slotmill.com",
+      "local_path": "sources/slotmill/demo-help/demo-help-lucky-lucifer.json",
+      "extracted_at": "2026-09-27T18:44:07Z",
+      "quote_or_excerpt": "Fast Track from cfg.props: 80x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-lucky-lucifer.json",
+      "extracted_at": "2026-09-27T18:44:07Z",
+      "quote_or_excerpt": "Raw freeplay gameinit cfg.props BuyBonus*. game=Lucky Lucifer"
     }
   ],
   "unknowns": [

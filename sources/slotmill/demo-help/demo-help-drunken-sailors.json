@@ -1,0 +1,98 @@
+{
+  "slug": "slotmill-drunken-sailors",
+  "captured_at": "2026-09-27T14:41:55-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19017,
+    "demo_url": "https://drunken-sailors.slotmill.com/",
+    "main_js": "https://drunken-sailors.slotmill.com/main.ab0517abce4fb0e27c97.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Drunken Sailors",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Re-spin",
+        "api_name": "Re-spin",
+        "cost_multiplier": 15,
+        "prop_value": "15xb",
+        "amounts_sample": [
+          "3.00",
+          "6.00",
+          "9.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Free Spin",
+        "api_name": "Free Spin",
+        "cost_multiplier": 70,
+        "prop_value": "70xb",
+        "amounts_sample": [
+          "14.00",
+          "28.00",
+          "42.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Super Free Spin",
+        "api_name": "Super Free Spin",
+        "cost_multiplier": 260,
+        "prop_value": "260xb",
+        "amounts_sample": [
+          "52.00",
+          "104.00",
+          "156.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "Re-spin",
+        "multiplier": 15
+      },
+      {
+        "id": 2,
+        "name": "Free Spin",
+        "multiplier": 70
+      },
+      {
+        "id": 3,
+        "name": "Super Free Spin",
+        "multiplier": 260
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "15xb",
+    "BuyBonus2": "70xb",
+    "BuyBonus3": "260xb",
+    "BuyBonusNames": [
+      "Re-spin",
+      "Free Spin",
+      "Super Free Spin"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

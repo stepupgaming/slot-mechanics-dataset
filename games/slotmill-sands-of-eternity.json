@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Sands of Eternity",
@@ -180,8 +180,30 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly. Product sheet: Fast Track with three different feature buy options (exact cost multipliers not stated on sheet)."
+    "options": [
+      {
+        "name": "100%Win",
+        "cost_multiplier": 5.0,
+        "cost_text": "5x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 5x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Expansion",
+        "cost_multiplier": 15.0,
+        "cost_text": "15x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 15x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 90.0,
+        "cost_text": "90x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 90x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 5.0x, 15.0x, 90.0x. Evidence: sources/slotmill/demo-help/demo-help-sands-of-eternity.json"
   },
   "ante_bet": {
     "available": null,
@@ -205,7 +227,7 @@
     "symbols": "medium",
     "bonus_free_spins": "high",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -222,6 +244,20 @@
       "local_path": "sources/slotmill/product_sheet_sands-of-eternity-2.pdf",
       "extracted_at": "2026-09-27T18:36:08Z",
       "quote_or_excerpt": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://sands-of-eternity.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-sands-of-eternity.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: 100%Win=5x; Expansion=15x; Bonus=90x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-sands-of-eternity.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Sands of Eternity"
     }
   ],
   "unknowns": [

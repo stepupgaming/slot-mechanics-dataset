@@ -1,0 +1,136 @@
+{
+  "slug": "slotmill-coin-quest-2",
+  "captured_at": "2026-09-27T14:41:51-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19025,
+    "demo_url": "https://coin-quest-2.slotmill.com/",
+    "main_js": "https://coin-quest-2.slotmill.com/main.756b8371bb3f8834a32c.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Coin Quest 2",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "1+ Power-up",
+        "api_name": "1+ Power-up",
+        "cost_multiplier": 5,
+        "prop_value": "5xb",
+        "amounts_sample": [
+          "1.00",
+          "1.50",
+          "2.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "2+ Power-up",
+        "api_name": "2+ Power-up",
+        "cost_multiplier": 40,
+        "prop_value": "40xb",
+        "amounts_sample": [
+          "8.00",
+          "12.00",
+          "16.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Buy Bonus",
+        "api_name": "Buy Bonus",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "20.00",
+          "30.00",
+          "40.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Buy Super Bonus",
+        "api_name": "Buy Super Bonus",
+        "cost_multiplier": 500,
+        "prop_value": "500xb",
+        "amounts_sample": [
+          "100.00",
+          "150.00",
+          "200.00"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Gamble Super Bonus",
+        "api_name": "Gamble Super Bonus",
+        "cost_multiplier": 140,
+        "prop_value": "140xb",
+        "amounts_sample": [
+          "28.00",
+          "42.00",
+          "56.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "1+ Power-up",
+        "multiplier": 5
+      },
+      {
+        "id": 2,
+        "name": "2+ Power-up",
+        "multiplier": 40
+      },
+      {
+        "id": 3,
+        "name": "Buy Bonus",
+        "multiplier": 100
+      },
+      {
+        "id": 4,
+        "name": "Buy Super Bonus",
+        "multiplier": 500
+      },
+      {
+        "id": 5,
+        "name": "Gamble Super Bonus",
+        "multiplier": 140
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "5xb",
+    "BuyBonus2": "40xb",
+    "BuyBonus3": "100xb",
+    "BuyBonus4": "500xb",
+    "BuyBonus5": "140xb",
+    "BuyBonusNames": [
+      "1+ Power-up",
+      "2+ Power-up",
+      "Buy Bonus",
+      "Buy Super Bonus",
+      "Gamble Super Bonus"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

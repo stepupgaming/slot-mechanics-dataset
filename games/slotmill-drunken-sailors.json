@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:29Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Drunken Sailors",
@@ -142,8 +142,30 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Re-spin",
+        "cost_multiplier": 15.0,
+        "cost_text": "15x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 15x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Free Spin",
+        "cost_multiplier": 70.0,
+        "cost_text": "70x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 70x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Free Spin",
+        "cost_multiplier": 260.0,
+        "cost_text": "260x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 260x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 15.0x, 70.0x, 260.0x. Evidence: sources/slotmill/demo-help/demo-help-drunken-sailors.json"
   },
   "ante_bet": {
     "available": null,
@@ -167,7 +189,7 @@
     "symbols": "low",
     "bonus_free_spins": "high",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -184,6 +206,20 @@
       "local_path": "sources/slotmill/product_sheet_drunken-sailors.txt",
       "extracted_at": "2026-09-27T18:36:29Z",
       "quote_or_excerpt": "Up to 12 Free Spins can be won during which Mystery Symbols are Sticky. There is also a Super Free Spin which is triggered by landing the Mystery symbol on reel 3 together with 3 bonus symbols."
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://drunken-sailors.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-drunken-sailors.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Re-spin=15x; Free Spin=70x; Super Free Spin=260x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-drunken-sailors.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Drunken Sailors"
     }
   ],
   "unknowns": [

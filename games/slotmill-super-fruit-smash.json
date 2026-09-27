@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Super Fruit Smash",
@@ -161,8 +161,37 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "FruitSmash",
+        "cost_multiplier": 5.0,
+        "cost_text": "5x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 5x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Countdown Wild",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "FrenzyBonus",
+        "cost_multiplier": 450.0,
+        "cost_text": "450x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 450x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 5.0x, 40.0x, 100.0x, 450.0x. Evidence: sources/slotmill/demo-help/demo-help-super-fruit-smash.json"
   },
   "ante_bet": {
     "available": null,
@@ -178,7 +207,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
@@ -186,7 +215,7 @@
     "symbols": "low",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -203,6 +232,20 @@
       "local_path": "sources/slotmill/product_sheet_super-fruit-smash.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "More fruits and features with Super Fruit Smash!\n\nSuper Fruit Smash is an evolution of our immensely popular 'Fruit Smash', where we have listened to player\nfeedback and made the game even more fun and exciting to play. Still an avalanche game with a 6x6 symbol\ngrid and based on matching symbols, but with new features and a doubled max win of 12000x bet!\n\nIn Super Fruit Smash we introduce Countdown Wilds that not only stay between avalanches but also come\nas a giant symbol and contain a multiplier. In addition, giant symbols can appear randomly at any time not\nonly at the beginning of a spin. In Super Free Spins at least one Giant Symbol with a multiplier is guaranteed\nin each new spin. Another key change in Super Fruit Smash is that the multiplier values are multiplied with\neach other ins"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://super-fruit-smash.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-super-fruit-smash.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: FruitSmash=5x; Countdown Wild=40x; Bonus=100x; FrenzyBonus=450x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-super-fruit-smash.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Super Fruit Smash"
     }
   ],
   "unknowns": [

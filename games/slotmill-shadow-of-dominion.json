@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Shadow Of Dominion",
@@ -199,14 +199,43 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 10x",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 10x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 50x",
+        "cost_multiplier": 50.0,
+        "cost_text": "50x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 50x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 400x",
+        "cost_multiplier": 400.0,
+        "cost_text": "400x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 400x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 10.0x, 50.0x, 100.0x, 400.0x. Evidence: sources/slotmill/demo-help/demo-help-shadow-of-dominion.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 2.0,
+    "effects": "Xtra-Bet™ raises Base Bet by 100% (total cost 2× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=2.0xb and/or extraAmounts÷amounts ratio=2.0; increase_pct=100.0. Evidence: sources/slotmill/demo-help/demo-help-shadow-of-dominion.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 10000.0,
@@ -216,7 +245,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
@@ -224,7 +253,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -234,6 +263,20 @@
       "local_path": "sources/slotmill/shadow-of-dominion.html",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 6x6 Scatter Pay\nPaylines: 8+ Scatter Pay\nRTP (%): Variant 1: 96.12% | Variant 2: 94.07%\nMax win; x Bet: 10 000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Progressive Multiplier, Giant Symbols, Dominion Respins\nSpecial Symbols: Bonus Symbols, Upgrade Symbol\nVolatility (variance): High\nGame URL: \"https://shadow-of-dominion.slotmill.com\"\nStep into the shadows and seize control of the Dominion\n\nShadow of Dominion delivers an action-packed battle of cascading wins, Giant Symbols, and Dominion Respins. Every Avalanche drives your multiplier higher, turning each victory into an opportunity for even greater rewards.\n\nBuilt on a dynamic 6-row Avalanche grid, wins are formed by matching 8 or more symbols, triggering cascading combinations that can rapidly build momentum. Every tumble and respin increases the win multiplier, while Giant Symbols can supercharge it even further, creating the potential for massive chain reactions and a maximum win of 10,000x your bet.\n\nThe action reaches new heights with Dominion Respins, where collect"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://shadow-of-dominion.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-shadow-of-dominion.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=10x; Fast Track option 2=50x; Fast Track option 3=100x; Fast Track option 4=400x | Xtra-Bet: ExtraBet=2.0xb, increase=100.0%, cost_multiplier=2.0"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-shadow-of-dominion.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Shadow of Dominion"
     }
   ],
   "unknowns": [

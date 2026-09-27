@@ -1,0 +1,56 @@
+{
+  "slug": "slotmill-thunder-wheel",
+  "captured_at": "2026-09-27T14:42:14-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19013,
+    "demo_url": "https://thunder-wheel.slotmill.com/",
+    "main_js": "https://thunder-wheel.slotmill.com/main.52fd7bb76f9fd1e6e0eb.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Thunder Wheel",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Fast Track 60x",
+        "api_name": null,
+        "cost_multiplier": 60.0,
+        "prop_value": "60xb",
+        "amounts_sample": [],
+        "source": "cfg.props BuyBonus*"
+      }
+    ],
+    "buyBonus_raw": [],
+    "note": "buyBonus array empty; multipliers from cfg.props BuyBonus*"
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "60xb",
+    "FSExtraSpins": [
+      2,
+      2,
+      2,
+      2,
+      1
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

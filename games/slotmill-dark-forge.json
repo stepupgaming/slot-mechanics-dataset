@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Dark Forge",
@@ -140,14 +140,50 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 7x",
+        "cost_multiplier": 7.0,
+        "cost_text": "7x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 7x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 40x",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 150x",
+        "cost_multiplier": 150.0,
+        "cost_text": "150x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 150x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 300x",
+        "cost_multiplier": 300.0,
+        "cost_text": "300x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 300x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 7.0x, 40.0x, 100.0x, 150.0x, 300.0x. Evidence: sources/slotmill/demo-help/demo-help-dark-forge.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 1.5,
+    "effects": "Xtra-Bet™ raises Base Bet by 50% (total cost 1.5× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=1.5xb and/or extraAmounts÷amounts ratio=1.5; increase_pct=50.0. Evidence: sources/slotmill/demo-help/demo-help-dark-forge.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 20000.0,
@@ -165,7 +201,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -182,6 +218,20 @@
       "local_path": "sources/slotmill/product_sheet_dark-forge.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Dark Forge\n\nDeep within a raging volcano, a demon-forged master bends fire and metal to its will. In Dark Forge, every spin\nfeeds the furnace, and every win fuels the chaos.\n\nThis 4-5-5-5-4 reel layout slot is built on a network of 2,000 betways, delivering relentless, high-volatility action\nwith a maximum win of 20,000x your bet waiting to erupt.\n\nAt the heart of the game lies the Doubling Multiplier Meter, a volatile engine that grows with every win. Each step\nforward intensifies the potential, but the real power comes from the Lightning Symbols. Strike them, and multiplier\nsteps are removed, accelerating progression and pushing the meter into explosive territory.\n\nThe forge doesn’t just build power, it unleashes it. As the multiplier surges, wins can escalate rapidly, turning\nsteady gai"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://dark-forge.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-dark-forge.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=7x; Fast Track option 2=40x; Fast Track option 3=100x; Fast Track option 4=150x; Fast Track option 5=300x | Xtra-Bet: ExtraBet=1.5xb, increase=50.0%, cost_multiplier=1.5"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-dark-forge.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Dark Forge"
     }
   ],
   "unknowns": [

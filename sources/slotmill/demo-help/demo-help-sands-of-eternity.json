@@ -1,0 +1,98 @@
+{
+  "slug": "slotmill-sands-of-eternity",
+  "captured_at": "2026-09-27T14:42:09-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19015,
+    "demo_url": "https://sands-of-eternity.slotmill.com/",
+    "main_js": "https://sands-of-eternity.slotmill.com/main.29c718be8d98ef7f1faa.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Sands of Eternity",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "100%Win",
+        "api_name": "100%Win",
+        "cost_multiplier": 5,
+        "prop_value": "5xb",
+        "amounts_sample": [
+          "1.00",
+          "2.00",
+          "3.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Expansion",
+        "api_name": "Expansion",
+        "cost_multiplier": 15,
+        "prop_value": "15xb",
+        "amounts_sample": [
+          "3.00",
+          "6.00",
+          "9.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Bonus",
+        "api_name": "Bonus",
+        "cost_multiplier": 90,
+        "prop_value": "90xb",
+        "amounts_sample": [
+          "18.00",
+          "36.00",
+          "54.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "100%Win",
+        "multiplier": 5
+      },
+      {
+        "id": 2,
+        "name": "Expansion",
+        "multiplier": 15
+      },
+      {
+        "id": 3,
+        "name": "Bonus",
+        "multiplier": 90
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "5xb",
+    "BuyBonus2": "15xb",
+    "BuyBonus3": "90xb",
+    "BuyBonusNames": [
+      "100%Win",
+      "Expansion",
+      "Bonus"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

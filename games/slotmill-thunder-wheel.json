@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:44:07Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Thunder Wheel",
@@ -140,9 +140,17 @@
     }
   ],
   "feature_buy": {
-    "available": null,
-    "options": [],
-    "notes": null
+    "available": true,
+    "options": [
+      {
+        "name": "Fast Track 60x",
+        "cost_multiplier": 60.0,
+        "cost_text": "60x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 60x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit cfg.props BuyBonus* (buyBonus array empty): 60x. Evidence: sources/slotmill/demo-help/demo-help-thunder-wheel.json"
   },
   "ante_bet": {
     "available": null,
@@ -166,7 +174,7 @@
     "symbols": "medium",
     "bonus_free_spins": "high",
     "features": "high",
-    "feature_buy": "low",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -183,6 +191,20 @@
       "local_path": "sources/slotmill/product_sheet_thunder-wheel.pdf",
       "extracted_at": "2026-09-27T18:36:08Z",
       "quote_or_excerpt": "Three Bonus Symbols trigger Free Spins"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://thunder-wheel.slotmill.com",
+      "local_path": "sources/slotmill/demo-help/demo-help-thunder-wheel.json",
+      "extracted_at": "2026-09-27T18:44:07Z",
+      "quote_or_excerpt": "Fast Track from cfg.props: 60x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-thunder-wheel.json",
+      "extracted_at": "2026-09-27T18:44:07Z",
+      "quote_or_excerpt": "Raw freeplay gameinit cfg.props BuyBonus*. game=Thunder Wheel"
     }
   ],
   "unknowns": [

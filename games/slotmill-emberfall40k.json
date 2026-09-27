@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Emberfall 40k",
@@ -191,14 +191,50 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 40x",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 500x",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 500x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 375x",
+        "cost_multiplier": 375.0,
+        "cost_text": "375x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 375x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 1000x",
+        "cost_multiplier": 1000.0,
+        "cost_text": "1000x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 1000x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 40.0x, 100.0x, 500.0x, 375.0x, 1000.0x. Evidence: sources/slotmill/demo-help/demo-help-emberfall40k.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 1.5,
+    "effects": "Xtra-Bet™ raises Base Bet by 50% (total cost 1.5× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=1.5xb and/or extraAmounts÷amounts ratio=1.5; increase_pct=50.0. Evidence: sources/slotmill/demo-help/demo-help-emberfall40k.json"
   },
   "numeric_limits": {
     "max_win_multiplier": null,
@@ -208,7 +244,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -216,7 +252,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -233,6 +269,20 @@
       "local_path": "sources/slotmill/product_sheet_emberfall40k.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Emberfall 40k\n\nThe fiery Scatter Pays sensation returns, now blazing hotter than ever with a scorching 40,000x max win!\n\nSet on a molten 6×6 grid, Emberfall 40k brings back the explosive action you love, where every win powers the\nProgressive Win Multiplier, doubling with each consecutive win to unlock incredible reward potential. Giant\nSymbols up to 4×4 crash onto the reels, igniting massive payouts and thrilling chain reactions with every spin.\n\nThe heat intensifies in Free Spins, where the multiplier does not reset between spins, building the potential for\ntruly legendary rewards. Then, step into the Super Bonus, where a Giant Symbol lands on every spin, supercharging\nthe grid for fiery wins.\n\nBut the inferno reaches its peak in the Super Mode Super Bonus, where 3×3, 4×4, or multiple 2×"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://emberfall-40k.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-emberfall40k.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=40x; Fast Track option 2=100x; Fast Track option 3=500x; Fast Track option 4=375x; Fast Track option 5=1000x | Xtra-Bet: ExtraBet=1.5xb, increase=50.0%, cost_multiplier=1.5"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-emberfall40k.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Emberfall40k"
     }
   ],
   "unknowns": [

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Gem Rush",
@@ -180,8 +180,37 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Buy full-ways",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 10x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy full-ways with x3 multiplier",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Bonus with full-ways free spins",
+        "cost_multiplier": 400.0,
+        "cost_text": "400x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 400x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 10.0x, 40.0x, 100.0x, 400.0x. Evidence: sources/slotmill/demo-help/demo-help-gem-rush.json"
   },
   "ante_bet": {
     "available": null,
@@ -197,7 +226,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
@@ -205,7 +234,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -222,6 +251,20 @@
       "local_path": "sources/slotmill/product_sheet_gem-rush.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "There's a Gem Rush going on! Have you got your shovel?\n\nGem Rush is an avalanche Video Slot set in an old gold mine. The 5x7 symbol grid can give up to 16,807 bet\nways and the game has a maximum win of 10,000 times bet. The base game starts with up to 15 stone\nblocks at the bottom of the grid which can be crushed by the dynamite feature making space for more\npaying symbols. The progressive Win Multiplier combined with six different Power-Ups features that are\ntriggered randomly increase the excitement and chances to win.\n\nFree Spins are triggered by 3+ bonus symbols and are played with the full symbol grid and 16,807 bet ways.\nThe progressive Win Multiplier does not reset between game rounds during Free Spins which combined\nwith a full stack of Power-Ups result in a crazy win potential.\n\nI"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://gem-rush.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-gem-rush.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Buy full-ways=10x; Buy full-ways with x3 multiplier=40x; Buy Bonus=100x; Buy Bonus with full-ways free spins=400x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-gem-rush.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Gem Rush"
     }
   ],
   "unknowns": [

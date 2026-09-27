@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Lucy Luck and the Quest for Coins",
@@ -162,14 +162,50 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 7x",
+        "cost_multiplier": 7.0,
+        "cost_text": "7x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 7x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 40x",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 180x",
+        "cost_multiplier": 180.0,
+        "cost_text": "180x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 180x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 500x",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 500x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 7.0x, 40.0x, 100.0x, 180.0x, 500.0x. Evidence: sources/slotmill/demo-help/demo-help-quest-for-coins.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 2.0,
+    "effects": "Xtra-Bet™ raises Base Bet by 100% (total cost 2× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=2xb and/or extraAmounts÷amounts ratio=2.0; increase_pct=100.0. Evidence: sources/slotmill/demo-help/demo-help-quest-for-coins.json"
   },
   "numeric_limits": {
     "max_win_multiplier": null,
@@ -179,7 +215,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
@@ -187,7 +223,7 @@
     "symbols": "low",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -204,6 +240,20 @@
       "local_path": "sources/slotmill/product_sheet_quest-for-coins.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Lucy Luck and the Quest for Coins\n\nJoin Lucy Luck on her latest adventure as she returns for an all-new quest overflowing with hidden chests,\ncascading wins, and mountains of coins. Lucy Luck and the Quest for Coins is Lucy’s most feature-packed\nadventure to date, an action-packed cluster slot where every win shatters layers of blocks to uncover secret spaces\nand treasure-filled chests beneath. Featuring Coin Cluster™, coin wins merge together to create even bigger\nrewards before fresh avalanches bring new opportunities.\n\nCharge up Lucy’s meter with every winning symbol to unleash explosive sprays of coins and wilds, pushing the\noverall multiplier higher with each step. The free spins bonus takes the adventure further as progress carries over\nbetween rounds, letting multipliers and uncover"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://quest-for-coins.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-quest-for-coins.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=7x; Fast Track option 2=40x; Fast Track option 3=100x; Fast Track option 4=180x; Fast Track option 5=500x | Xtra-Bet: ExtraBet=2xb, increase=100.0%, cost_multiplier=2.0"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-quest-for-coins.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Lucy Luck and the Quest for Coins"
     }
   ],
   "unknowns": [

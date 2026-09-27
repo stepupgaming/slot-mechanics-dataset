@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Rainbow Rush",
@@ -149,14 +149,43 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 20x",
+        "cost_multiplier": 20.0,
+        "cost_text": "20x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 20x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 60x",
+        "cost_multiplier": 60.0,
+        "cost_text": "60x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 60x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 400x",
+        "cost_multiplier": 400.0,
+        "cost_text": "400x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 400x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 20.0x, 60.0x, 100.0x, 400.0x. Evidence: sources/slotmill/demo-help/demo-help-rainbow-rush.json"
   },
   "ante_bet": {
-    "available": true,
+    "available": false,
     "cost_multiplier": null,
     "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round. orgSettings.extraBet true but freeplay gameinit returned no extraAmounts; not treating as available."
   },
   "numeric_limits": {
     "max_win_multiplier": 12000.0,
@@ -166,7 +195,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -174,7 +203,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -191,6 +220,20 @@
       "local_path": "sources/slotmill/product_sheet_rainbow-rush.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Rainbow Rush\n\nStep into a lively Irish wonderland filled with rolling green hills, shimmering rainbows, and pots of gold in this\nvibrant new video slot. Set on a 5×6 reel layout with 20 magical paylines, the game offers the chance for truly\nlegendary wins of up to 12,000x your bet. Leading the charge are the Rainbow Wilds, bursting with colour and luck.\nThese Wilds expand downward, transforming every position they cover into a Wild symbol. As the rainbow grows,\nso does the reward, with multipliers increasing up to an impressive x6.\n\nFollow the trail of gold into the Golden Pots Free Spins feature, where Rainbow Wilds appear more frequently,\nlighting up the reels with Irish fortune. For those truly blessed by luck, Super Free Spins can be triggered — turning\nall Rainbow Wilds into radiant G"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://rainbow-rush.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-rainbow-rush.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=20x; Fast Track option 2=60x; Fast Track option 3=100x; Fast Track option 4=400x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-rainbow-rush.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Rainbow Rush"
     }
   ],
   "unknowns": [

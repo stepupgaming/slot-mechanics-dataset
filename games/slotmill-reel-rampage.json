@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Reel Rampage",
@@ -173,14 +173,43 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "options": [
+      {
+        "name": "Fast Track 10x",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 10x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 50x",
+        "cost_multiplier": 50.0,
+        "cost_text": "50x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 50x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 100x",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Fast Track 400x",
+        "cost_multiplier": 400.0,
+        "cost_text": "400x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 400x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 10.0x, 50.0x, 100.0x, 400.0x. Evidence: sources/slotmill/demo-help/demo-help-reel-rampage.json"
   },
   "ante_bet": {
     "available": true,
-    "cost_multiplier": null,
-    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
-    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+    "cost_multiplier": 2.0,
+    "effects": "Xtra-Bet™ raises Base Bet by 100% (total cost 2× bet). Wins are evaluated on the Base Bet amount, not the Xtra-Bet amount. Cannot be combined with Fast Track™. Increases the chance of triggering the Free Spins bonus (exact chance multiplier not captured for this title).",
+    "notes": "From freeplay gameinit cfg.props ExtraBet=2.0xb and/or extraAmounts÷amounts ratio=2.0; increase_pct=100.0. Evidence: sources/slotmill/demo-help/demo-help-reel-rampage.json"
   },
   "numeric_limits": {
     "max_win_multiplier": 15000.0,
@@ -190,7 +219,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
@@ -198,7 +227,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -215,6 +244,20 @@
       "local_path": "sources/slotmill/product_sheet_reel-rampage.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Reel Rampage\n\nReel Rampage puts you behind the wheel in a full-throttle 5x4 slot set in a world gone off the rails—where the only\nrule is win or get wrecked. With explosive volatility and a max payout of 15,000x your bet, every spin feels like a\nshot of pure nitrous.\nStacked Symbols are your ticket to chaos—land one on reel 1, watch it nudge into place, and fire up the Nitrous\nRespin feature. It’s a high-risk, high-reward ride where premium symbols lock in, multipliers build, and the longer\nyou last, the harder it hits.\n\nModifiers fuel the rampage—upgrade symbols, add new ones, or charge the multiplier to pile on the pressure. In\nFree Spins, the action ramps up even further with guaranteed nudges and a Multiplier Meter that never resets.\nTrigger Super Free Spins, and the mayhem hits top ge"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://reel-rampage.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-reel-rampage.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: Fast Track option 1=10x; Fast Track option 2=50x; Fast Track option 3=100x; Fast Track option 4=400x | Xtra-Bet: ExtraBet=2.0xb, increase=100.0%, cost_multiplier=2.0"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-reel-rampage.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Reel Rampage"
     }
   ],
   "unknowns": [

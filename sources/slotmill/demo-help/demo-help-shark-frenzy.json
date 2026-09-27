@@ -1,0 +1,98 @@
+{
+  "slug": "slotmill-shark-frenzy",
+  "captured_at": "2026-09-27T14:42:11-0400",
+  "source": {
+    "api": "https://freeplayapi.slotmill.com/game.web/service",
+    "fn": "gameinit",
+    "gameid": 19027,
+    "demo_url": "https://shark-frenzy.slotmill.com/",
+    "main_js": "https://shark-frenzy.slotmill.com/main.1428a61cc5260eeeb9a8.js",
+    "method": "GET query params freeplay gameinit; buyBonus[].multiplier + cfg.props ExtraBet/BuyBonus*"
+  },
+  "game_name": "Shark Frenzy",
+  "orgSettings": {
+    "featureBuy": true,
+    "extraBet": true
+  },
+  "fast_track": {
+    "options": [
+      {
+        "id": 1,
+        "name": "Buy Guaranteed Shark",
+        "api_name": "Buy Guaranteed Shark",
+        "cost_multiplier": 15,
+        "prop_value": "15xb",
+        "amounts_sample": [
+          "4.50",
+          "6.75",
+          "9.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Buy Bonus",
+        "api_name": "Buy Bonus",
+        "cost_multiplier": 100,
+        "prop_value": "100xb",
+        "amounts_sample": [
+          "30.00",
+          "45.00",
+          "60.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Buy Super bonus",
+        "api_name": "Buy Super bonus",
+        "cost_multiplier": 200,
+        "prop_value": "200xb",
+        "amounts_sample": [
+          "60.00",
+          "90.00",
+          "120.00"
+        ]
+      }
+    ],
+    "buyBonus_raw": [
+      {
+        "id": 1,
+        "name": "Buy Guaranteed Shark",
+        "multiplier": 15
+      },
+      {
+        "id": 2,
+        "name": "Buy Bonus",
+        "multiplier": 100
+      },
+      {
+        "id": 3,
+        "name": "Buy Super bonus",
+        "multiplier": 200
+      }
+    ]
+  },
+  "xtra_bet": {
+    "org_enabled": true,
+    "extraAmounts_present": false,
+    "cost_multiplier": null,
+    "increase_pct": null,
+    "chance_x": null,
+    "prop_ExtraBet": null,
+    "amounts_ratio": null,
+    "client_getIncrease": null,
+    "client_getChance": null
+  },
+  "props_buy_related": {
+    "BuyBonus1": "15xb",
+    "BuyBonus2": "100xb",
+    "BuyBonus3": "200xb",
+    "BuyBonusNames": [
+      "Buy Guaranteed Shark",
+      "Buy Bonus",
+      "Buy Super bonus"
+    ]
+  },
+  "meta_error": null,
+  "api_code": 0,
+  "api_msg": null
+}

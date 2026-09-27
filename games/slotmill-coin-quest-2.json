@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:36:08Z",
+  "updated_at": "2026-09-27T18:43:49Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Coin Quest 2",
@@ -149,8 +149,44 @@
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly. Product sheet: Gamble feature in Fast Track to gamble for Super Bonus at a lower price (exact cost not stated)."
+    "options": [
+      {
+        "name": "1+ Power-up",
+        "cost_multiplier": 5.0,
+        "cost_text": "5x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 5x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "2+ Power-up",
+        "cost_multiplier": 40.0,
+        "cost_text": "40x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 40x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 100x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Super Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 500x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Gamble Super Bonus",
+        "cost_multiplier": 140.0,
+        "cost_text": "140x bet",
+        "effects": "Fast Track™ guarantees a game round triggering this feature at the cost of 140x the selected bet (charged per spin while active).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Fast Track™ buy costs from freeplay gameinit buyBonus[].multiplier / cfg.props BuyBonus*: 5.0x, 40.0x, 100.0x, 500.0x, 140.0x. Evidence: sources/slotmill/demo-help/demo-help-coin-quest-2.json"
   },
   "ante_bet": {
     "available": null,
@@ -166,7 +202,7 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
@@ -174,7 +210,7 @@
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
-    "feature_buy": "medium",
+    "feature_buy": "high",
     "numeric_limits": "high"
   },
   "evidence": [
@@ -191,6 +227,20 @@
       "local_path": "sources/slotmill/product_sheet_coin-quest-2.pdf",
       "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "The Quest continues!\n\nCoin Quest 2 is a sequel to our most popular game to date which was released earlier this year and once\nagain we have captured player feedback e.g. by increasing the bonus frequency.\n\nJust like its predecessor, Coin Quest 2 is a cluster slot featuring our unique and trademarked Coin\nCluster® feature. The gameplay has been enhanced and there are two bonus features – Free Spins and\nSuper Free Spins. The symbol grid has also been increased to 6×6 and the added power-up symbols\nincluding Wilds, Coins and Transform symbols warrants great player experience and excitement.\n\nWith Coin Quest 2 we introduce a Gamble feature in Fast Track whereby players can gamble for the Super\nBonus at a lower price. The RTP is set at 96,18% and the maximum win is 15,000 times bet.\n\nIn respons"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://coin-quest-2.slotmill.com/",
+      "local_path": "sources/slotmill/demo-help/demo-help-coin-quest-2.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Fast Track: 1+ Power-up=5x; 2+ Power-up=40x; Buy Bonus=100x; Buy Super Bonus=500x; Gamble Super Bonus=140x"
+    },
+    {
+      "source_type": "demo_client_config",
+      "url": "https://freeplayapi.slotmill.com/game.web/service?fn=gameinit",
+      "local_path": "sources/slotmill/demo-help/gameinit-coin-quest-2.json",
+      "extracted_at": "2026-09-27T18:43:49Z",
+      "quote_or_excerpt": "Raw freeplay gameinit; buyBonus + ExtraBet props. game=Coin Quest 2"
     }
   ],
   "unknowns": [
