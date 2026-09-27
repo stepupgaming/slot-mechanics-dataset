@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T19:06:41Z",
-  "game_count": 766,
-  "thumbnail_count": 766,
+  "updated_at": "2026-09-27T19:10:10Z",
+  "game_count": 781,
+  "thumbnail_count": 781,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
     "Elk Studios": 147,
-    "Nolimit City": 70,
+    "Nolimit City": 85,
     "Slotmill": 61,
     "Backseat Gaming": 35
   },
   "by_confidence": {
-    "high": 635,
+    "high": 650,
     "low": 28,
     "medium": 103
   },
@@ -30,7 +30,7 @@
       "medium": 1
     },
     "Nolimit City": {
-      "high": 70
+      "high": 85
     },
     "Pragmatic Play": {
       "high": 156,
@@ -5100,6 +5100,32 @@
       "thumbnail": "thumbs/nolimit-beheaded.webp"
     },
     {
+      "slug": "nolimit-benji-killed-in-vegas",
+      "title": "Benji Killed In Vegas",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-benji-killed-in-vegas.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-benji-killed-in-vegas.webp"
+    },
+    {
+      "slug": "nolimit-bizarre",
+      "title": "Bizarre",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-bizarre.json",
+      "win_system_type": "ways",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-bizarre.webp"
+    },
+    {
       "slug": "nolimit-blood-and-shadow-2",
       "title": "Blood & Shadow 2",
       "provider": "Nolimit City",
@@ -5150,6 +5176,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-book-of-shadows.webp"
+    },
+    {
+      "slug": "nolimit-breakout",
+      "title": "Breakout",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-breakout.json",
+      "win_system_type": "ways",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-breakout.webp"
     },
     {
       "slug": "nolimit-brick-snake-2000",
@@ -5267,6 +5306,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-das-xboot.webp"
+    },
+    {
+      "slug": "nolimit-dead-dead-or-deader",
+      "title": "Dead, Dead Or Deader",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-dead-dead-or-deader.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-dead-dead-or-deader.webp"
     },
     {
       "slug": "nolimit-dead-men-walking",
@@ -5490,6 +5542,19 @@
       "thumbnail": "thumbs/nolimit-gator-hunters.webp"
     },
     {
+      "slug": "nolimit-gluttony",
+      "title": "Gluttony",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-gluttony.json",
+      "win_system_type": "ways",
+      "grid": "5×5",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-gluttony.webp"
+    },
+    {
       "slug": "nolimit-golden-shower",
       "title": "Golden Shower",
       "provider": "Nolimit City",
@@ -5540,6 +5605,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-infectious-5-xways.webp"
+    },
+    {
+      "slug": "nolimit-jingle-balls",
+      "title": "Jingle Balls",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-jingle-balls.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-jingle-balls.webp"
     },
     {
       "slug": "nolimit-kenneth-must-die",
@@ -5633,6 +5711,19 @@
       "thumbnail": "thumbs/nolimit-mental.webp"
     },
     {
+      "slug": "nolimit-nine-to-five",
+      "title": "Nine To Five",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-nine-to-five.json",
+      "win_system_type": "ways",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-nine-to-five.webp"
+    },
+    {
       "slug": "nolimit-outsourced-2-balkan-engineering",
       "title": "Outsourced 2 - Balkan Engineering",
       "provider": "Nolimit City",
@@ -5644,6 +5735,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-outsourced-2-balkan-engineering.webp"
+    },
+    {
+      "slug": "nolimit-outsourced-payday",
+      "title": "Outsourced: Payday",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-outsourced-payday.json",
+      "win_system_type": "other",
+      "grid": "1×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-outsourced-payday.webp"
     },
     {
       "slug": "nolimit-outsourced",
@@ -5737,6 +5841,19 @@
       "thumbnail": "thumbs/nolimit-remember-gulag.webp"
     },
     {
+      "slug": "nolimit-rock-bottom",
+      "title": "Rock Bottom",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-rock-bottom.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-rock-bottom.webp"
+    },
+    {
       "slug": "nolimit-san-quentin-2-death-row",
       "title": "San Quentin 2: Death Row",
       "provider": "Nolimit City",
@@ -5776,6 +5893,32 @@
       "thumbnail": "thumbs/nolimit-san-quentin.webp"
     },
     {
+      "slug": "nolimit-seamen",
+      "title": "Seamen",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-seamen.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-seamen.webp"
+    },
+    {
+      "slug": "nolimit-skate-or-die",
+      "title": "Skate or Die",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-skate-or-die.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-skate-or-die.webp"
+    },
+    {
       "slug": "nolimit-soaked-by-seamen",
       "title": "Soaked By Seamen",
       "provider": "Nolimit City",
@@ -5787,6 +5930,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-soaked-by-seamen.webp"
+    },
+    {
+      "slug": "nolimit-stockholm-syndrome",
+      "title": "Stockholm Syndrome",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-stockholm-syndrome.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-stockholm-syndrome.webp"
     },
     {
       "slug": "nolimit-supersized",
@@ -5826,6 +5982,32 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-tanked.webp"
+    },
+    {
+      "slug": "nolimit-the-border",
+      "title": "The Border",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-the-border.json",
+      "win_system_type": "clusters",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-the-border.webp"
+    },
+    {
+      "slug": "nolimit-the-crypt-2",
+      "title": "The Crypt 2",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-the-crypt-2.json",
+      "win_system_type": "ways",
+      "grid": "7×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-the-crypt-2.webp"
     },
     {
       "slug": "nolimit-tombstone-begins",
@@ -5930,6 +6112,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-ugliest-catch.webp"
+    },
+    {
+      "slug": "nolimit-whacked",
+      "title": "Whacked!",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-whacked.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-whacked.webp"
     },
     {
       "slug": "nolimit-xways-hoarder-2",

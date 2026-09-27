@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:08:45Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Jingle Balls",
+    "slug": "nolimit-jingle-balls",
+    "provider_game_id": "JingleBalls",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/JingleBalls",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/jingle-balls"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 6,
+    "rows_min": 3,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 3-3-4-4-5-5."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays/xSplit/xNudge."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Wish Upon a Star unlocks reel 5; progressive rows 3-3-4-4-5-5."
+    },
+    "other": [
+      {
+        "name": "xNudge® Wild",
+        "how_it_works": "Reels 3–4 base/Spirit; +1/nudge; additive; xSplit adds Wild."
+      },
+      {
+        "name": "xSplit® Wild",
+        "how_it_works": "Reels 5–6 base / 1–2 Spirit; split L/R; doubles Ways mult; Scatter→expanding Wild if not triggering FS."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / xNudge / xSplit Wild",
+        "behavior": "As CMS.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3+→Spirit Spins (setup); 4→All Aboard; 5→Double Joy (double char mults); +1 spin each in FS; 3 in FS→All Aboard upgrade.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Character / nudge / top-reel boosts",
+        "behavior": "Setup assigns char mults; top reel +1/+2/double (or +2/+4/double in Double Joy).",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Irregular 3-3-4-4-5-5 ways; Wish Upon Star +50% (Scatter reel 2 + unlock reel 5). 3+ Scatter→Spirit Spins after setup; 4 All Aboard; 5 Double Joy. Buys 60/270/486/187.2×. Cap 12,250×.",
+    "phases": [
+      {
+        "name": "Optional Wish Upon Star / buy",
+        "order": 1,
+        "what_happens": "+50% or bonus buy.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.5"
+      },
+      {
+        "name": "Spin + xMechanics",
+        "order": 2,
+        "what_happens": "xNudge/xSplit/xWays.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Spirit Spins",
+        "order": 3,
+        "what_happens": "Setup then FS tier.",
+        "ends_when": "End",
+        "state_changes": "Active characters"
+      }
+    ],
+    "win_evaluation": "Ways after splits/nudges.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Spirit Spins",
+        "trigger": "3+ Scatter.",
+        "spins_awarded": "Set by setup spin",
+        "retrigger": "Scatter +1; collect 3→All Aboard.",
+        "sticky_or_persistent_state": "One random top character active (all if 4+); setup char mults.",
+        "progressive_state": "Top-reel mult boosts persist.",
+        "end_condition": "Spins done or 12,250×.",
+        "phases": [
+          {
+            "name": "Setup",
+            "order": 1,
+            "what_happens": "Decide spins + char mults; pick active char."
+          }
+        ],
+        "effects": "FS with character focus."
+      },
+      {
+        "name": "Spirit Spins: All Aboard",
+        "trigger": "4 Scatter (or upgrade).",
+        "spins_awarded": "Setup",
+        "retrigger": "Scatter +1.",
+        "sticky_or_persistent_state": "All characters active.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "All Aboard."
+          }
+        ],
+        "effects": "All chars."
+      },
+      {
+        "name": "Spirit Spins: Double Joy",
+        "trigger": "5 Scatter.",
+        "spins_awarded": "Setup",
+        "retrigger": "Scatter +1.",
+        "sticky_or_persistent_state": "Char win mults doubled in setup and FS.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Double Joy."
+          }
+        ],
+        "effects": "Doubled mults."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Wish Upon a Star",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "+50%",
+      "effects": "Scatter reel 2; reel 5 unlocked (not in bonus).",
+      "params": {}
+    },
+    {
+      "name": "Spirit Spins buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 60.0,
+      "cost_text": "60×",
+      "effects": "Buy Spirit Spins.",
+      "params": {}
+    },
+    {
+      "name": "All Aboard buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 270.0,
+      "cost_text": "270×",
+      "effects": "Buy All Aboard.",
+      "params": {}
+    },
+    {
+      "name": "Double Joy buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 486.0,
+      "cost_text": "486×",
+      "effects": "Buy Double Joy.",
+      "params": {}
+    },
+    {
+      "name": "Lucky Draw",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 187.2,
+      "cost_text": "187.2×",
+      "effects": "Lucky Draw.",
+      "params": {}
+    },
+    {
+      "name": "Time for Vacation",
+      "trigger": "Cap",
+      "effects": "Max 12,250×.",
+      "params": {
+        "max_win_multiplier": 12250
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Spirit / All Aboard / Double Joy / Lucky Draw",
+        "cost_multiplier": null,
+        "cost_text": "60× / 270× / 486× / 187.2×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Band also cited 75–1370×."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.5,
+    "effects": "Wish Upon a Star +50%.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12250.0,
+    "max_win_notes": "12,250×",
+    "rtp_percent": 96.1,
+    "rtp_notes": "96.1% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/jingle-balls",
+      "local_path": "sources/nolimit/jingle-balls/cms_features.txt",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "3-3-4-4-5-5; Wish Upon Star +50%; xNudge 3-4; xSplit 5-6; 3+ Scatter Spirit Spins setup; 4 All Aboard / 5 Double Joy; buys 60/270/486/187.2×; max 12,250×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/jingle-balls",
+      "local_path": "sources/nolimit/jingle-balls/page.html",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "96.1% RTP, 12250 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Jingle_Balls_96024_174a5cb920.pdf",
+      "local_path": "sources/nolimit/jingle-balls/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "exact setup spin tables",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-jingle-balls.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

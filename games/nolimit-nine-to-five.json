@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:09:53Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Nine To Five",
+    "slug": "nolimit-nine-to-five",
+    "provider_game_id": "NineToFive",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/NineToFive",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/nine-to-five"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Official 5x4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; Wilds/Scatters reels 2–5 only."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xNudge® Wild",
+        "how_it_works": "Reels 2–5; fully visible +0–9 extra nudges; mults multiply together."
+      },
+      {
+        "name": "Green/Red Wild",
+        "how_it_works": "Green: active Wild mult 1–5×; Red: dead."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge / Green Wild",
+        "behavior": "As CMS; Red Wild dead.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "Reels 2–5; 3→10 Middle Management; 4→12 Ivory Tower.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Round win mult (Layoff/Lawsuit/Tech)",
+        "behavior": "Middle Mgmt: Layoff +1 / Lawsuit −1 (1–9999); Ivory: Tech Layoff adds then doubles next; Ctrl+Alt+Del ÷4 next Tech. Applied end of round.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Overtime",
+        "behavior": "+1 spin; ≥2 Overtime in Middle Mgmt upgrades to Ivory Tower.",
+        "params": {}
+      },
+      {
+        "name": "Mega symbol",
+        "behavior": "Fully stacked → instant max (also God Mode 1370×).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×4 ways; xBet +10% blocks last reel for Scatter odds. 3 Scatter→10 Middle Management; 4→12 Ivory Tower. Buys 75/200/1370/125×. Cap 9,217×.",
+    "phases": [
+      {
+        "name": "Optional xBet/buy",
+        "order": 1,
+        "what_happens": "+10% or FS/God/Lucky buys.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.1"
+      },
+      {
+        "name": "Spin + nudge/wilds",
+        "order": 2,
+        "what_happens": "xNudge; Green/Red wilds.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Office FS",
+        "order": 3,
+        "what_happens": "Middle Management / Ivory Tower.",
+        "ends_when": "End",
+        "state_changes": "Round mult"
+      }
+    ],
+    "win_evaluation": "Ways; round mult at end of FS.",
+    "notes": "CMS + GameSheet. xGOD origin title."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Middle Management Spins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "10",
+        "retrigger": "Overtime +1; ≥2 Overtime→Ivory upgrade.",
+        "sticky_or_persistent_state": "Layoff/Lawsuit adjust win mult 1–9999; Tech Layoff seed doubles on Layoff.",
+        "progressive_state": "Win mult.",
+        "end_condition": "Spins done or 9,217×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Middle Management."
+          }
+        ],
+        "effects": "10 FS."
+      },
+      {
+        "name": "Ivory Tower Spins",
+        "trigger": "4 Scatter (or upgrade).",
+        "spins_awarded": "12",
+        "retrigger": "Overtime +1.",
+        "sticky_or_persistent_state": "Tech Layoff / Ctrl+Alt+Del economy; mult 1–9999 end apply.",
+        "progressive_state": "Tech Layoff value.",
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12 Ivory Tower."
+          }
+        ],
+        "effects": "12 FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBet®",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.1,
+      "cost_text": "+10%",
+      "effects": "Last reel blocked; >2× FS odds.",
+      "params": {}
+    },
+    {
+      "name": "Middle Management buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 75.0,
+      "cost_text": "75×",
+      "effects": "10 Middle Management.",
+      "params": {}
+    },
+    {
+      "name": "Ivory Tower buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 200.0,
+      "cost_text": "200×",
+      "effects": "12 Ivory Tower.",
+      "params": {}
+    },
+    {
+      "name": "GOD MODE",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 1370.0,
+      "cost_text": "1,370×",
+      "effects": "Chase Mega symbol max.",
+      "params": {}
+    },
+    {
+      "name": "Lucky Draw",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 125.0,
+      "cost_text": "125×",
+      "effects": "Lucky Draw.",
+      "params": {}
+    },
+    {
+      "name": "Big Win Not Found",
+      "trigger": "Cap or Mega stacked",
+      "effects": "Max 9,217×.",
+      "params": {
+        "max_win_multiplier": 9217
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "FS / God / Lucky",
+        "cost_multiplier": null,
+        "cost_text": "75× / 200× / 1,370× / 125×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.1,
+    "effects": "xBet +10% blocks last reel.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 9217.0,
+    "max_win_notes": "9,217×",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96.03% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/nine-to-five",
+      "local_path": "sources/nolimit/nine-to-five/cms_features.txt",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "5×4; xBet +10% blocks last reel; xNudge 2-5 (+0-9 extra); 3 Scatter→10 Middle Management; 4→12 Ivory Tower; buys 75/200/1370/125×; max 9,217×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/nine-to-five",
+      "local_path": "sources/nolimit/nine-to-five/page.html",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "96.03% RTP, 9217 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Nine_To_Five_3b4eeeb2a9.pdf",
+      "local_path": "sources/nolimit/nine-to-five/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-nine-to-five.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

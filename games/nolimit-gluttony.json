@@ -1,0 +1,272 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:09:53Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Gluttony",
+    "slug": "nolimit-gluttony",
+    "provider_game_id": "Gluttony",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Gluttony",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/gluttony"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 5-5-5-5-5."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xZone adjacency mults; avalanches in FS."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Wild Pot sticky avalanche in FS; FEDCON progression respins on level-up."
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Golden Bell Spins +2 respins; FEDCON level-up respin."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xZone® / XZ-Sauce",
+        "how_it_works": "+1 adj mult V/H/Diag; FEDCON: Sauce inner only."
+      },
+      {
+        "name": "Wild Pot",
+        "how_it_works": "FS reels 2–5: collect nearby food for sticky mult (+1 low/+2 mid/Wild); FEDCON inner + outer collect."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Wild Pot",
+        "behavior": "Wild Pot sticky after collect.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Silver / Golden Bell",
+        "behavior": "3 Silver→8 Order Up; 1G+2S→10 Double Up ×2; 2G+1S→12 Quadruple ×4; 3G→FEDCON +6; Golden +2 spins & ×2 mult.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Bell / xZone / Fat Bastard",
+        "behavior": "FEDCON levels +1 Fat Bastard mult; Bell ×2 chain.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "FEDCON progression",
+        "behavior": "Levels at 20/30/40/50 weighted wins; +2 spins +1 Fat Bastard + respin.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "5×5 ways; xZone. Silver/Golden Bell combos gate Order Up / Double / Quadruple / FEDCON. Wild Pot in FS. Buys 100–1,000×. Cap 32,000×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Bonus buy 100–1000×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + xZone",
+        "order": 2,
+        "what_happens": "xZone; maybe Golden Bell Spins path.",
+        "ends_when": "Resolved",
+        "state_changes": "Mult"
+      },
+      {
+        "name": "Kitchen FS / FEDCON",
+        "order": 3,
+        "what_happens": "Order/Double/Quadruple/FEDCON.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways with zone/bell/Fat Bastard mults.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Order Up!",
+        "trigger": "3 Silver Bells.",
+        "spins_awarded": "8",
+        "retrigger": "Golden upgrades (+2 spins ×2 mult); at ×4 + Golden → FEDCON +6.",
+        "sticky_or_persistent_state": "No retrigger otherwise.",
+        "progressive_state": "Bell mult.",
+        "end_condition": "Spins done or 32,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 Order Up."
+          }
+        ],
+        "effects": "8 FS."
+      },
+      {
+        "name": "Double Up!",
+        "trigger": "1 Golden + 2 Silver.",
+        "spins_awarded": "10",
+        "retrigger": "Golden upgrades.",
+        "sticky_or_persistent_state": "Starts ×2.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Double Up."
+          }
+        ],
+        "effects": "10 FS ×2."
+      },
+      {
+        "name": "Quadruple Up!",
+        "trigger": "2 Golden + 1 Silver.",
+        "spins_awarded": "12",
+        "retrigger": "Golden→FEDCON.",
+        "sticky_or_persistent_state": "Starts ×4.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12 Quadruple."
+          }
+        ],
+        "effects": "12 FS ×4."
+      },
+      {
+        "name": "FEDCON 1",
+        "trigger": "3 Golden (or upgrade).",
+        "spins_awarded": "+6 (then +2 per level)",
+        "retrigger": "Level-ups.",
+        "sticky_or_persistent_state": "Wins from Fat Bastard; Golden on outer ×2 outer; Sauce/Wild Pot inner rules.",
+        "progressive_state": "Levels 2–5 at 20/30/40/50.",
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "FEDCON progression."
+          }
+        ],
+        "effects": "Progression FS."
+      }
+    ],
+    "notes": "Golden Bell Spins are base respins path to FEDCON."
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "100×–1,000×",
+      "effects": "Buy bonus features.",
+      "params": {}
+    },
+    {
+      "name": "Heart Attack",
+      "trigger": "Cap",
+      "effects": "Max 32,000×.",
+      "params": {
+        "max_win_multiplier": 32000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus features",
+        "cost_multiplier": null,
+        "cost_text": "100×–1,000×",
+        "effects": "Direct bonus.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact lines not printed."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 32000.0,
+    "max_win_notes": "32,000×",
+    "rtp_percent": 96.09,
+    "rtp_notes": "96.09% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/gluttony",
+      "local_path": "sources/nolimit/gluttony/cms_features.txt",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "5×5; xZone; Silver/Golden Bell scatters→Order Up/Double/Quadruple/FEDCON; Wild Pot; buys 100–1000×; max 32,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/gluttony",
+      "local_path": "sources/nolimit/gluttony/page.html",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "96.09% RTP, 32000 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Gluttony_a63976f577.pdf",
+      "local_path": "sources/nolimit/gluttony/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "exact buy lines",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-gluttony.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

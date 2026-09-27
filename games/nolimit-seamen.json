@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:08:45Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Seamen",
+    "slug": "nolimit-seamen",
+    "provider_game_id": "Seamen",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Seamen",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/seamen"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 4,
+    "rows_min": 3,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 3-5-5-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with position multipliers."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Win Respins: clear wins, +1 position mult, +1 Fire Frame; bombs respin empties when no wins."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Fire Frames",
+        "how_it_works": "+1 mult; winning frames +2."
+      },
+      {
+        "name": "Bombs",
+        "how_it_works": "Coconut +5–100; Cross clears row+col; Naval Mine clears lows."
+      },
+      {
+        "name": "Molotov Fire",
+        "how_it_works": "→Wild + Fire Frames on column."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Molotov→Wild",
+        "behavior": "Transforms to Wild + column frames.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3→5 Rigged; 4→7 Super Rigged; keep position mults.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Position multipliers",
+        "behavior": "Climb via wins/frames/bombs; kept in FS.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "3-5-5-3 ways; Win Respins + Fire Frames; bombs/Molotov. 3/4 Bonus→5/7 Rigged. Boosters 2.5/9/80/2000×. Cap 20,000×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Bonus/Load/Coconut boosters.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Win Respin / Bomb loop",
+        "order": 2,
+        "what_happens": "Wins respin with mults; else bombs.",
+        "ends_when": "Resolved",
+        "state_changes": "Position mults"
+      },
+      {
+        "name": "Rigged / Extra Spin",
+        "order": 3,
+        "what_happens": "FS or Extra Spin keeping mults/frames/Bonus.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways with position mults.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Rigged Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "5",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Position mults kept.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 20,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "5 Rigged."
+          }
+        ],
+        "effects": "5 FS."
+      },
+      {
+        "name": "Super Rigged Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "7",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Position mults; more Fire Frames avg.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 Super Rigged."
+          }
+        ],
+        "effects": "7 FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2.5,
+      "cost_text": "2.5×",
+      "effects": "Bonus top 2nd-left reel.",
+      "params": {}
+    },
+    {
+      "name": "Big / Bigger Load",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_text": "9× / 80×",
+      "effects": "All positions ×3 / ×6.",
+      "params": {}
+    },
+    {
+      "name": "Coconut Spins",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2000.0,
+      "cost_text": "2,000×",
+      "effects": "Coconuts on all positions.",
+      "params": {}
+    },
+    {
+      "name": "Riding Moby-Dick",
+      "trigger": "Cap",
+      "effects": "Max 20,000×.",
+      "params": {
+        "max_win_multiplier": 20000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosters",
+        "cost_multiplier": null,
+        "cost_text": "2.5× / 9× / 80× / 2,000×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "20,000×",
+    "rtp_percent": 96.04,
+    "rtp_notes": "96.04% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/seamen",
+      "local_path": "sources/nolimit/seamen/cms_features.txt",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "3-5-5-3; Win Respins + Fire Frames; Coconut/Cross/Naval bombs; Molotov; 3/4 Bonus→5/7 Rigged; boosters 2.5–2000×; max 20,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/seamen",
+      "local_path": "sources/nolimit/seamen/page.html",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "96.04% RTP, 20000 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-seamen.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

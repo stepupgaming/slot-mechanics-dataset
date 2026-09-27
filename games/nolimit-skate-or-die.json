@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:09:53Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Skate or Die",
+    "slug": "nolimit-skate-or-die",
+    "provider_game_id": "SkateOrDie",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/SkateOrDie",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/skate-or-die"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official rowsReels 3-3-3-3-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xZone/xNudge + Extra Sauce Row mults."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Extra Sauce Row",
+        "how_it_works": "Top mults 2/3/4/10/none per reel; updates each spin; feeds xZone Wild / xNudge."
+      },
+      {
+        "name": "Crasher Game (xCrash)",
+        "how_it_works": "After ≥30× (or full Crasher stack 30×), optional cash-out crash; dumpster=max; grave=lose all."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xZone™ Wild / xNudge® / xNudge Supreme",
+        "behavior": "xZone applies Sauce mult to adj; xNudge +1/step + Sauce; Supreme sums all Sauce (Boneyard).",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3→10 Face Plant (1 guaranteed xZone Wild/spin); 4→10 Dead Meat (2); 5→10 Boneyard (2 + Supreme).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Sauce / xZone / xNudge",
+        "behavior": "Overlapping summed.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Crasher Game symbol",
+        "behavior": "Full stack → 30× + crash option; partial dead.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; Extra Sauce Row; xZone/xNudge. 3/4/5 Scatter→10 Face Plant/Dead Meat/Boneyard. Optional Crasher after ≥30×. Buys 30–1,000×. Cap 30,000×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Bonus buy 30–1000×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + sauce/zone/nudge",
+        "order": 2,
+        "what_happens": "Evaluate with Sauce row.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "FS / Crasher",
+        "order": 3,
+        "what_happens": "Face Plant tiers or crash gamble.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways with sauce/zone/nudge mults.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Face Plant Spins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Guaranteed 1 xZone Wild/spin.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 30,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Face Plant."
+          }
+        ],
+        "effects": "10 FS."
+      },
+      {
+        "name": "Dead Meat Spins",
+        "trigger": "4 Scatter.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "2 guaranteed xZone Wilds/spin.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Dead Meat."
+          }
+        ],
+        "effects": "10 FS."
+      },
+      {
+        "name": "Boneyard Spins",
+        "trigger": "5 Scatter.",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": "2 xZone Wilds/spin; xNudge Supreme available.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Boneyard."
+          }
+        ],
+        "effects": "10 FS Supreme."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "30×–1,000×",
+      "effects": "Buy bonus features.",
+      "params": {}
+    },
+    {
+      "name": "Crasher Game",
+      "trigger": "≥30× win or full Crasher stack",
+      "when": "after_win",
+      "cost_text": "Risk current win",
+      "effects": "Cash out before crash; dumpster=max; grave=lose.",
+      "params": {}
+    },
+    {
+      "name": "Max Win",
+      "trigger": "Cap / Crasher dumpster",
+      "effects": "Max 30,000×.",
+      "params": {
+        "max_win_multiplier": 30000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus features",
+        "cost_multiplier": null,
+        "cost_text": "30×–1,000×",
+        "effects": "Direct bonus.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact lines not printed."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 30000.0,
+    "max_win_notes": "30,000×",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96.03% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/skate-or-die",
+      "local_path": "sources/nolimit/skate-or-die/cms_features.txt",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "5×3; Extra Sauce Row; xZone/xNudge; 3/4/5 Scatter→10 Face Plant/Dead Meat/Boneyard; Crasher Game; buys 30–1000×; max 30,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/skate-or-die",
+      "local_path": "sources/nolimit/skate-or-die/page.html",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "96.03% RTP, 30000 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact buy lines",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-skate-or-die.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

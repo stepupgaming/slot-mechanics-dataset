@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:08:45Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "The Crypt 2",
+    "slug": "nolimit-the-crypt-2",
+    "provider_game_id": "TheCrypt2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TheCrypt2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/the-crypt-2"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": 7,
+    "layout_notes": "CMS: 6 reels × 7 rows; top 3 locked until Forsaken Fingers. Page meta 4-4-4-4-4-4 reflects active rows."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays; cascades on unlocked rows."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Wins explode; new fall; locked positions stay."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Forsaken Fingers unlock nearest locked row positions on reel + adjacent."
+    },
+    "other": [
+      {
+        "name": "xNudge® Wild",
+        "how_it_works": "Nudges to bottom; mult by steps; additive; applies only to its wins."
+      },
+      {
+        "name": "Eye Collector / Spider",
+        "how_it_works": "Collector: eyes from Dead Legends; every 5 eyes +1 total win mult → Wild. Spider (needs Collector): +4/8/12 eyes → Wild."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge / Forsaken→Wild / Collector→Wild / Spider→Wild",
+        "behavior": "As CMS.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter / Red Moon Scatter",
+        "behavior": "3+→Entombed; +2/+3 spins per Scatter/Red Moon.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Total win / xNudge / eye mult",
+        "behavior": "Eyes +1 total mult per 5; persist unlocked + total mult in FS.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Eye Collector",
+        "behavior": "Collects eyes; Spider feeds it.",
+        "params": {}
+      },
+      {
+        "name": "Gem progression (FS)",
+        "behavior": "4 gems per Dead Legend level; level up +2 spins; eyes double per level.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "6×7 locked-top cascades; Forsaken Fingers unlock; Eye Collector/Spider; xNudge. 3+ Scatter→Entombed with gem levels. Boosters 2/20/30/90/199×. Cap 31,248×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Bonus/Forsaken/xWays/xNudge/Eye boosters.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Cascade + unlock",
+        "order": 2,
+        "what_happens": "Wins; Fingers; eyes; nudge.",
+        "ends_when": "Resolved",
+        "state_changes": "Unlocks / total mult"
+      },
+      {
+        "name": "Entombed Spins",
+        "order": 3,
+        "what_happens": "FS with gem levels.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after unlocks/nudge.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Entombed Spins",
+        "trigger": "3+ Scatter.",
+        "spins_awarded": "+2 per Scatter / +3 per Red Moon",
+        "retrigger": "Level up +2 spins.",
+        "sticky_or_persistent_state": "Unlocked positions + total win mult persist; Dead Legend eye counts double each level.",
+        "progressive_state": "Gem levels (4 gems each).",
+        "end_condition": "Spins done or 31,248×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Entombed with progression."
+          }
+        ],
+        "effects": "FS progression."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2×",
+      "effects": "3× Entombed odds.",
+      "params": {}
+    },
+    {
+      "name": "Forsaken Fingers booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 20.0,
+      "cost_text": "20×",
+      "effects": "Min 3 Forsaken Fingers.",
+      "params": {}
+    },
+    {
+      "name": "xWays + 7 Rows",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 30.0,
+      "cost_text": "30×",
+      "effects": "≥2 xWays; 7 active rows.",
+      "params": {}
+    },
+    {
+      "name": "xNudge + 7 Rows",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 90.0,
+      "cost_text": "90×",
+      "effects": "≥1 Nudge; 7 rows.",
+      "params": {}
+    },
+    {
+      "name": "Eye Collector + 7 Rows",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 199.0,
+      "cost_text": "199×",
+      "effects": "Eye Collector + Spider; 7 rows.",
+      "params": {}
+    },
+    {
+      "name": "In Memoriam",
+      "trigger": "Cap",
+      "effects": "Max 31,248×.",
+      "params": {
+        "max_win_multiplier": 31248
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosters",
+        "cost_multiplier": null,
+        "cost_text": "2×–199×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 31248.0,
+    "max_win_notes": "31,248×",
+    "rtp_percent": 96.1,
+    "rtp_notes": "96.1% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/the-crypt-2",
+      "local_path": "sources/nolimit/the-crypt-2/cms_features.txt",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "6×7 (top 3 locked); cascades; Forsaken Fingers; Eye Collector/Spider; 3+ Scatter Entombed; boosters 2–199×; max 31,248×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/the-crypt-2",
+      "local_path": "sources/nolimit/the-crypt-2/page.html",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "96.1% RTP, 31248 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact base active rows default",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-the-crypt-2.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

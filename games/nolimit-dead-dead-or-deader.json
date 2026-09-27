@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:09:53Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Dead, Dead Or Deader",
+    "slug": "nolimit-dead-dead-or-deader",
+    "provider_game_id": "DeadDeadOrDeader",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DeadDeadOrDeader",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/dead-dead-or-deader"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official rowsReels 3-3-3-3-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; Wild mult by reel order L→R max 5×."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Hanging: sticky xNudge respin; Deadlock: another sticky respin with doubled mult; Dropout: no respin / revert mult."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xNudge® Wild",
+        "how_it_works": "Reels 2–4; +1/nudge additive; then Hanging/Deadlock/Dropout."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / xNudge® Wild",
+        "behavior": "Wilds reel-order mult 1–5×; 2 Scatters→Wilds with that mult.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "Reels 2–5; 3→12 Dead; 4→12 Deader; reel5 Scatter in Dead upgrades +2.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Wild / xNudge / Dead doubling",
+        "behavior": "Dead: sticky nudge mult doubled before next spin; Deader: tripled.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Casket",
+        "behavior": "Full stack any reel → instant max; partial dead 0.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; reel Wild mults; xNudge Hanging/Deadlock/Dropout. 3 Scatter→12 Dead (double sticky nudge); 4→12 Deader (triple). xBet 1.5×; nudge buys 7/799×. Cap 19,349×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "xBet or 1/3 xNudge guarantee.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + hang path",
+        "order": 2,
+        "what_happens": "Wilds/xNudge; maybe Hanging respins.",
+        "ends_when": "Resolved",
+        "state_changes": "Nudge mult"
+      },
+      {
+        "name": "Dead / Deader",
+        "order": 3,
+        "what_happens": "12 FS tier.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after wild/nudge mults.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Dead Spins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "12",
+        "retrigger": "Scatter reel 5 → Deader +2.",
+        "sticky_or_persistent_state": "xNudge sticky ≥1 spin; mult doubled before next spin.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 19,349×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12 Dead Spins."
+          }
+        ],
+        "effects": "12 FS."
+      },
+      {
+        "name": "Deader Spins",
+        "trigger": "4 Scatter (or upgrade).",
+        "spins_awarded": "12",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Same sticky but mult tripled.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12 Deader."
+          }
+        ],
+        "effects": "12 FS triple."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBet™",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "1.5×",
+      "effects": "Scatter reel 2.",
+      "params": {}
+    },
+    {
+      "name": "1 xNudge® Wild",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 7.0,
+      "cost_text": "7×",
+      "effects": "1 xNudge on mid 3.",
+      "params": {}
+    },
+    {
+      "name": "3 xNudge® Wilds",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 799.0,
+      "cost_text": "799×",
+      "effects": "3 xNudge Wilds.",
+      "params": {}
+    },
+    {
+      "name": "Just Die Already",
+      "trigger": "Cap or stacked Casket",
+      "effects": "Max 19,349×.",
+      "params": {
+        "max_win_multiplier": 19349
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosters",
+        "cost_multiplier": null,
+        "cost_text": "1.5× / 7× / 799×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "No direct FS buy prices printed."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.5,
+    "effects": "xBet Scatter reel 2.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 19349.0,
+    "max_win_notes": "19,349×",
+    "rtp_percent": 96.09,
+    "rtp_notes": "96.09% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/dead-dead-or-deader",
+      "local_path": "sources/nolimit/dead-dead-or-deader/cms_features.txt",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "5×3; Wild mult by reel 1–5×; xNudge Hanging/Deadlock/Dropout; 3 Scatter→12 Dead; 4→12 Deader; boosters 1.5/7/799×; max 19,349×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/dead-dead-or-deader",
+      "local_path": "sources/nolimit/dead-dead-or-deader/page.html",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "96.09% RTP, 19349 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "ways_count",
+    "FS direct buy availability"
+  ],
+  "thumbnail": "thumbs/nolimit-dead-dead-or-deader.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

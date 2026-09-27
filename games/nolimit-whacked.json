@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:08:45Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Whacked!",
+    "slug": "nolimit-whacked",
+    "provider_game_id": "Whacked",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Whacked",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/whacked"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official rowsReels 3-3-3-3-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways base; Whacked Spins collect per-reel counters."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Lock 'n' Load",
+        "how_it_works": "Wins load bullets; at 6 bullets + no wins, fire at highs → overlay Wilds; unused saved if ≤5 highs."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Overlay Wild (Lock n Load)",
+        "behavior": "Replaces hit high characters.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3→Whacked Spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xNudge in Whacked Spins",
+        "behavior": "×1/2/3 by land +1/nudge; × reel collected value.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Per-reel counters",
+        "behavior": "Start ×1 bet each reel; coins/xWays/xNudge add; sum at end (or multiply in Russian Roulette).",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "xRevolver",
+        "behavior": "Coin / xWays (3 coins 1–20×) / xNudge / Russian Roulette.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; Lock n Load 6-bullet Wild overlays. 3 Scatter→Whacked Spins (start 3, reset on collect; per-reel sums). Russian Roulette multiplies reel totals. Buy 88×. Cap 11,912×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy Whacked Spins 88×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×88"
+      },
+      {
+        "name": "Spin + Lock n Load",
+        "order": 2,
+        "what_happens": "Wins load cylinder; fire when full.",
+        "ends_when": "Resolved",
+        "state_changes": "Bullets"
+      },
+      {
+        "name": "Whacked Spins",
+        "order": 3,
+        "what_happens": "Collect coins/xWays/xNudge; maybe Russian Roulette.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways base; bonus sums (or products) reel counters.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Whacked Spins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "3 (reset to 3 on any collect)",
+        "retrigger": "Coin/xWays/xNudge reset to 3.",
+        "sticky_or_persistent_state": "Each reel starts ×1 bet collected.",
+        "progressive_state": "Per-reel counters.",
+        "end_condition": "No spins / Russian Roulette end / 11,912×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "3 Whacked Spins; reel counters ×1."
+          }
+        ],
+        "effects": "Hold-style collect."
+      },
+      {
+        "name": "Russian Roulette",
+        "trigger": "xRevolver awards it.",
+        "spins_awarded": "Reset to 3 once (no further resets)",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Reel winnings multiply together instead of sum.",
+        "progressive_state": null,
+        "end_condition": "Spins done.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Product mode."
+          }
+        ],
+        "effects": "Multiply reel totals."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 88.0,
+      "cost_text": "88×",
+      "effects": "Buy Whacked Spins.",
+      "params": {}
+    },
+    {
+      "name": "Last Man Standing",
+      "trigger": "Cap",
+      "effects": "Max 11,912×.",
+      "params": {
+        "max_win_multiplier": 11912
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Whacked Spins",
+        "cost_multiplier": 88.0,
+        "cost_text": "88×",
+        "effects": "Direct bonus.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 11912.0,
+    "max_win_notes": "11,912×",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/whacked",
+      "local_path": "sources/nolimit/whacked/cms_features.txt",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "5×3; Lock n Load cylinder; 3 Scatter→Whacked Spins (hold-and-win style); Russian Roulette; buy 88×; max 11,912×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/whacked",
+      "local_path": "sources/nolimit/whacked/page.html",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "96.07% RTP, 11912 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Whacked_23052333_8734f4e52b.pdf",
+      "local_path": "sources/nolimit/whacked/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:08:45Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "ways_count",
+    "coin value table beyond xWays 1–20"
+  ],
+  "thumbnail": "thumbs/nolimit-whacked.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:09:53Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Bizarre",
+    "slug": "nolimit-bizarre",
+    "provider_game_id": "Bizarre",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Bizarre",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/bizarre"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 4-4-4-4-4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xSplit; Chimera sticky Wilds."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Chimera pre-spin: mid 3 reels respin while Wild/extra-spin land; Coinage respins empty coin cells."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Chimera setup",
+        "how_it_works": "Mid reels spin for Wild/extra/+spins until clean; sticky Wilds; split Wild gets sticky mult."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Sticky Wild (Chimera)",
+        "behavior": "Middle Scatter→Wild sticky; Super Chimera all Scatters→sticky Wilds.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter / Super Scatter",
+        "behavior": "3→3 Chimera; 2+Super→3 Super Chimera; also via Coinage collect.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Coin / split Wild mults",
+        "behavior": "Coinage 1–1000×; split Wild mult sticky in FS.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Collector (Coinage)",
+        "behavior": "Takes all coin values; used Collectors remain for later Collectors.",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "Coinage",
+        "behavior": "200× buy: coins+specials only; xSplit doubles row coins/collectors.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×4 ways; 3 Scatter→3 Chimera (setup sticky Wilds); 2+Super→3 Super Chimera. Coinage 200× hold-style. xBoost 2×; Bonus Hunt 30×. Cap 20,000×.",
+    "phases": [
+      {
+        "name": "Optional booster/Coinage",
+        "order": 1,
+        "what_happens": "xBoost / Bonus Hunt / Coinage.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "Evaluate; maybe trigger Chimera.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Chimera / Extra Spin",
+        "order": 3,
+        "what_happens": "FS with sticky Wilds; optional Extra Spin.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways; Coinage sums coin mults × bet.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Chimera Spins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "3 (+ from setup numbers)",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Mid Scatter→sticky Wild; setup Wilds sticky; split Wild mult sticky.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 20,000×; optional Extra Spin.",
+        "phases": [
+          {
+            "name": "Setup",
+            "order": 1,
+            "what_happens": "Mid-3 respin for Wilds/extra spins."
+          }
+        ],
+        "effects": "3+ FS."
+      },
+      {
+        "name": "Super Chimera Spins",
+        "trigger": "2 Scatter + Super Scatter.",
+        "spins_awarded": "3",
+        "retrigger": null,
+        "sticky_or_persistent_state": "All Scatters→sticky Wilds + Chimera rules.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "3 Super Chimera."
+          }
+        ],
+        "effects": "3 FS all sticky."
+      }
+    ],
+    "notes": "Coinage can chain into Chimera/Super after ending."
+  },
+  "features": [
+    {
+      "name": "xBoost",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2×",
+      "effects": "Scatter reel 2 (maybe Super); 3× Chimera odds.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Hunt",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 30.0,
+      "cost_text": "30×",
+      "effects": "49× Chimera odds; only Scatter/empty (max 1 Super).",
+      "params": {}
+    },
+    {
+      "name": "Coinage",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 200.0,
+      "cost_text": "200×",
+      "effects": "Coins+specials hold feature.",
+      "params": {}
+    },
+    {
+      "name": "Monsters On The Loose",
+      "trigger": "Cap",
+      "effects": "Max 20,000×.",
+      "params": {
+        "max_win_multiplier": 20000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBoost / Hunt / Coinage",
+        "cost_multiplier": null,
+        "cost_text": "2× / 30× / 200×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "20,000×",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/bizarre",
+      "local_path": "sources/nolimit/bizarre/cms_features.txt",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "5×4; 3 Scatter→3 Chimera; 2+Super→3 Super Chimera; Coinage 200×; xBoost 2×; Bonus Hunt 30×; max 20,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/bizarre",
+      "local_path": "sources/nolimit/bizarre/page.html",
+      "extracted_at": "2026-09-27T19:09:53Z",
+      "quote_or_excerpt": "96.06% RTP, 20000 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "ways_count",
+    "base xSplit land rules"
+  ],
+  "thumbnail": "thumbs/nolimit-bizarre.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
