@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:38:27Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Nitropolis 5",
+    "slug": "elk-nitropolis-5",
+    "provider_game_id": "10215",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10215&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10215-Nitropolis%205_GameDescription_MGA_en_gb.pdf"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": 8,
+    "layout_notes": "Official Game Description: 6 columns by 4 rows; rows expand up to 8; Avalanche expands reels upwards to max 8 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 262144,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "8 rows with 262,144 ways to win, where features can add\n additional ways."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "All wins in the current symbol spin/drop except NPD Holding Cell feature\nwins are collected and thereafter all symbols which were part of a\nwinning combination explode except for the Nitro Reels. The remaining\n\nsymbols fall vertically until they reach a resting position, an additional row\nis added at the top and new symbols drop in to fill the empty spaces. The\nAvalanche feature continues as long as new winning combinations\nappear."
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "ls such as Nitro Match, Nitro\nUpgrade and Nitro Wild. In addition, it can award Respin, Both Ways and Max\nRows features, and finally landing 3 Boss Battle coins awards entry to the\nhighly potent Boss Battle feature!\n\nGame view\nBet amount and balance are always displayed in the info bar at the bottom of\nthe game view in the currency th"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "polis 5 is a 6 column, 4 row slot with all-ways pays. Avalanches make\nthe reels expand up to the maximum 8 rows. The game has Nitro Reels, Nitro\nMultipliers, big symbols, and a Nitro Booster generating different kinds of\nfeatures for both Nitro Reels and the main reels. The Nitro Multiplier\nmultiplies all wins in view.\n\nThe NPD Holding Cell"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the\n bonus and super bonus symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Three or more bonus symbols trigger the Free Spins\n bonus game.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      },
+      {
+        "name": "Super Bonus",
+        "behavior": "the super bonus symbol or a multiplier are not\naffected, and do not activate the feature.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Nitro Multiplier",
+        "behavior": "The Nitro Multiplier\nmultiplies all wins in view.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Nitro Reel",
+        "behavior": "A Nitro Reel may spin or drop\n into the game grid and trigger a row increase in order to accommodate\n its size on its landed position.\n The minimum bet is € 0.20, and the maximum bet is € 50.",
+        "params": {}
+      },
+      {
+        "name": "Nitro Booster",
+        "behavior": "The Nitro Booster can award several special features: NPD Police Reports\nfeatures in terms of Rogue Rats, Dirty Dawgs, Gritty Kitty and Pug Thugs. It\ncan also award feature boosts to Nitro Reels such as Nitro Match, Nitro\nUpgrade and Nitro Wild. In addition, it can award Respin, Both Ways and Max\nRows features, and finally landing 3 Boss Battle coins awards entry to the\nhighly potent Boss Battle feature!\n\nGame view\nBet amount and balance are always displayed in the info bar at the bottom of\nthe game view in the currency that the player has chosen.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Nitropolis 5: paid spin on 4x6 (expands to 8 rows). 8 rows with 262,144 ways to win, where features can add\n additional ways.. Avalanche/tumble after wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x6 (expands to 8 rows). Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 8 rows with 262,144 ways to win, where features can add\n additional ways.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "All wins in the current symbol spin/drop except NPD Holding Cell feature\nwins are collected and thereafter all symbols which were part of a\nwinning combination explode except for the Nitro Reels. The remaining\n\nsymbols fall vertically until they reach a resting position, an additional row\nis added at the top and new symbols drop in to fill the empty spaces. The\nAvalanche feature continues as long as new winning combinations\nappear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "8 rows with 262,144 ways to win, where features can add\n additional ways.",
+    "notes": "ce in Settings.\n Winnings are presented in the player's currency.\n Nitropolis 5 is played in two modes; normal mode and bonus mode with\n free spins.\n Wins begin with the leftmost reel and pay left-to-right only on\n\nconsecutive reels. In case of Both Ways being active, the wins can also\nbegin"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more bonus symbols trigger the bonus game",
+        "spins_awarded": "8 free spins",
+        "retrigger": "Free spins can be retriggered.",
+        "sticky_or_persistent_state": "Nitro Reels sticky/persistent during free spins",
+        "progressive_state": null,
+        "effects": "y free spin.\n\nGame features\n\nBonus game\nThree or more bonus symbols trigger the bonus game with free spins. Free\nspins start at 4 rows. Every free spin initiated that results in a win advances\nthe safety level one row, and every new free spin starts at the current active\nsafety level.\n\nAll Nitro Reels are sticky during the bonus game. Max Row and Both Ways\ntriggering within the bonus game remain active for the remainder of the\nbonus game.\n\nThree bonus symbols of which one is a super bonus symbol trigger the\nSuper Bonus Game which is played with Max Rows and Both Ways activated,\nand NPD Holding",
+        "end_condition": "the bonus mode is triggered or the game round\nends.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. Persistent state: Nitro Reels sticky/persistent during free spins.",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "8 free spins"
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "super bonus symbol trigger the\nSuper Bonus Game which is played with Max Rows and Both Ways activated,\nand NPD Holding Cell triggering every free spin.",
+        "spins_awarded": "8 free spins",
+        "retrigger": "Free spins can be retriggered.",
+        "sticky_or_persistent_state": "Nitro Reels sticky/persistent during free spins",
+        "progressive_state": null,
+        "effects": "iggered.\n A combination of bonus symbols and a super bonus\n symbol triggers the Super Bonus Game which is played\n with Max Rows and Both Ways activated, and NPD\n Holding Cell triggering every free spin.\n\nGame features\n\nBonus game\nThree or more bonus symbols trigger the bonus game with free spins. Free\nspins start at 4 rows. Every free spin initiated that results in a win advances\nthe safety level one row, and every new free spin starts at the current active\nsafety level.\n\nAll Nitro Reels are sticky during the bonus game. Max Row and Both Wa",
+        "end_condition": "the bonus mode is triggered or the game round\nends.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "iggered.\n A combination of bonus symbols and a super bonus\n symbol triggers the Super Bonus Game which is played\n with Max Rows and Both Ways activated, and NPD\n Holding Cell triggering every free spin.\n\nGame features\n\nBonus game\nThree or more bonus symbols trigger the bonus game with free spins. Free\nspins start at 4 rows. Every free spin initiated that results in a win advances\nthe safety level ",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "8 free spins"
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Nitropolis 5."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "All wins in the current symbol spin/drop except NPD Holding Cell feature\nwins are collected and thereafter all symbols which were part of a\nwinning combination explode except for the Nitro Reels. The remaining\n\nsymbols fall vertically until they reach a resting position, an additional row\nis added at the top and new symbols drop in to fill the empty spaces. The\nAvalanche feature continues as long as new winning combinations\nappear.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Expanding grid",
+      "trigger": "Feature/bomb/clear-board events as described",
+      "when": "Base and bonus",
+      "effects": "polis 5 is a 6 column, 4 row slot with all-ways pays. Avalanches make\nthe reels expand up to the maximum 8 rows. The game has Nitro Reels, Nitro\nMultipliers, big symbols, and a Nitro Booster generating different kinds of\nfeatures for both Nitro Reels and the main reels. The Nitro Multiplier",
+      "params": {}
+    },
+    {
+      "name": "Nitro Booster",
+      "trigger": null,
+      "when": null,
+      "effects": "maximum 8 rows. The game has Nitro Reels, Nitro\nMultipliers, big symbols, and a Nitro Booster generating different kinds of\nfeatures for both Nitro Reels and the main reels. The Nitro Multiplier\nmultiplies all wins in view.\n\nThe NPD Holding Cell feature is randomly activated and switches up the\ngame with a special win feature.\n\nThe Nitro Booster can award several special features: NPD Police Reports\nfeatures in terms of Rogue Rats, Dirty D",
+      "params": {}
+    },
+    {
+      "name": "NPD Holding Cell",
+      "trigger": null,
+      "when": null,
+      "effects": "eels and the main reels. The Nitro Multiplier\nmultiplies all wins in view.\n\nThe NPD Holding Cell feature is randomly activated and switches up the\ngame with a special win feature.\n\nThe Nitro Booster can award several special features: NPD Police Reports\nfeatures in terms of Rogue Rats, Dirty Dawgs, Gritty Kitty and Pug Thugs. It\ncan also award feature boosts to Nitro Reels such as Nitro Match, Nitro\nUpgrade and Nitro Wild. In addition, it can",
+      "params": {}
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game. Min X-iter cost €0.60, max €25,000.00.. Theoretical RTP for all X-iter game modes is .0%",
+      "effects": "NPD 4EVA (25x); Gang Warfare (10x); Bonus Hunt (3x)",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 3
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x the selected bet",
+        "effects": "Guaranteed entry to the super bonus game at the cost of 500x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x the selected bet",
+        "effects": "Guaranteed entry to the super bonus game at the cost of 500x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      },
+      {
+        "name": "NPD 4EVA",
+        "cost_multiplier": 25.0,
+        "cost_text": "25x the selected bet",
+        "effects": "Guarantees a game round that triggers the NPD Holding Cell feature at the cost of 25x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      },
+      {
+        "name": "Gang Warfare",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x the selected bet",
+        "effects": "One spin where the Nitro Booster is full of features at the cost of 10x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": 3.0,
+        "cost_text": "3x the selected bet",
+        "effects": "One spin with more than 4 times the chance to trigger the bonus game at the cost of 3x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game. Min X-iter cost €0.60, max €25,000.00.. Theoretical RTP for all X-iter game modes is .0%"
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in the official Game Description; X-iter covers paid feature entry."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 50000.0,
+    "max_win_notes": "capped at 50 000x",
+    "rtp_percent": 94.0,
+    "rtp_notes": "Theoretical RTP 94.0% (base and X-iter when stated). Min bet €0.2, max bet €50.0.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10215-Nitropolis%205_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10215-Nitropolis 5_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Key features\nFunction Value\nName in\n Nitropolis 5\nEnglish\nELK Game\n 10215\nid\nProduct\n Casino\ncategory\nGame type Slot\nClient HTML5\nTheoretical\n 94.0%\nRTP\n Standard 4 rows and 4,096 ways to win and expansions up to\nLines 8 rows with 262,144 ways to win, where features can add\n additional ways.\nJackpot No\nReels 6 reels\nRows 4 rows\nHit\n 18.1%\nfrequency\nMin bet € 0.20\nMax bet € 50.00\nMax\n 50 000x max bet\nexposure\nMax win\n 50 000x max bet\nsingle spin\nMaximum\n € 2,500,000.00\nwin\n\nGame description\n\nNitropolis is rioting! Our favorite recurring gang of mutated house pets return\nto face off against the authoritaria"
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10215-Nitropolis%205_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10215-Nitropolis 5_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "is a 6 column, 4 row slot with all-ways pays. Avalanches make\nthe reels expand up to the maximum 8 rows. The game has Nitro Reels, Nitro\nMultipliers, big symbols, and a Nitro Booster generating different kinds of\nfeatures for both Nitro Reels and the main reels."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10215-Nitropolis%205_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10215-Nitropolis 5_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\n\nSuper Bonus: Guaranteed entry to the super bonus game at the cost of 500x\nthe selected bet. All free spins are played with Max Rows and Both Ways\nactivated, and NPD Holding Cell triggering every free spin.\n\nBonus: Guaranteed entry to the bonus game at the cost of 100x the selected\nbet.\n\nNPD 4EVA: Guarantees a game round that triggers the NPD Holding Cell\nfeature at the cost of 25x the selected bet.\n\nGang Warfare: One spin where the Nitro Booster is full of features at the cost\nof 10x the selected bet.\n\nBonus Hunt: One spin with more than 4 times the chance to trigger the\nbonus game at the cost of 3x the selected bet.\n\nThe X-iter featu"
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10215-Nitropolis%205_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/pdfs/10215-Nitropolis 5_GameDescription_MGA_en_gb.pdf",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Game rules\n Nitropolis 5 is a 6 column, 4 rows slot with spinning reels and dropping\n symbols. The columns can expand upwards to a maximum of 8 rows.\n Each additional symbol drop will add an additional row of symbols, up to\n a maximum of 8 rows, increasing the number of ways to win. The number\n of ways to win increases as the number of rows increases. The number of\n ways to win also increases as the number of Nitro Reels and the quantity\n of symbols inside the Nitro Reels increase. A Nitro Reel may spin or drop\n into the game grid and trigger a row increase in order to accommodate\n its size on its landed position.\n The minimum bet is € 0.20, and the maximum bet is € 50.00.\n Each bet is 100 coins.\n A game round starts on the selected bet level when the player hits the\n spin button.\n The game can be played automatically by activating Auto Spin. Hold\n down the spin button or use the Auto Sp"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/nitropolis-5/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Demo launcher gameid=10215; mechanics taken from Game Description PDF, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "Exact paytable symbol values (PDF references paytable; numeric paytable not in text extract)",
+    "release_year not stated in Game Description PDF"
+  ],
+  "thumbnail": "thumbs/elk-nitropolis-5.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

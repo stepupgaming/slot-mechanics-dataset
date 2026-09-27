@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:38:27Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Valhall Gold",
+    "slug": "elk-valhall-gold",
+    "provider_game_id": "10201",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10201&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10201-Valhall%20Gold_GameDescription_MGA_en_gb.pdf"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": 9,
+    "layout_notes": "Official Game Description: 6 columns by 4 rows; Avalanche expands reels upwards to max 9 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 531441,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "win"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "ory Casino\nGame type Slot\nClient HTML5\nTheoretical RTP 94.0%\n 4,096 ways to win expanding up to 531,441 ways to\nLines\n win\nJackpot No\nReels 6 reels\nRows 4 rows\nHit frequency 21.0%\nMin bet € 0.20\nMax bet € 100.00\nMax exposure 25 000x max bet\nMax win single\n 25 000x max bet\nspin\nMaximum win € 2,500,000.00\n\nGame description\n\nDo not miss the final"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the\n bonus, Loki, inactive Odin’s Raven and Thor wild\n symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Three or more bonus symbols trigger the free drops\n bonus game.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Loki",
+        "behavior": "A Loki symbol drops in as a blocker but provides multifarious features to\neach successive win evaluation. The Loki features include a multiplier,\nactivation of both ways evaluation, adding spike frames to existing symbols,\nand upgrading of existing symbols.\n\nThe Thor wild symbol drops in as a 2x2 wild, and is sticky for the remainder\nof the current drop.",
+        "params": {}
+      },
+      {
+        "name": "Odin's Ravens",
+        "behavior": "Odin’s Ravens drop in as blockers, but turn wild when at least two are\npresent.\n\nA Loki symbol drops in as a blocker but provides multifarious features to\neach successive win evaluation.",
+        "params": {}
+      },
+      {
+        "name": "Thor Wild",
+        "behavior": "The Thor wild symbol drops in as a 2x2 wild, and is sticky for the remainder\nof the current drop.",
+        "params": {}
+      },
+      {
+        "name": "Spike",
+        "behavior": "Spike symbols replicate\nin the direction of the spikes when the symbol is part of a win. Spike\nreplications can cause chain reactions.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Valhall Gold: paid spin on 4x6. win. Avalanche/tumble after wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: win",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "Winning symbols explode/are removed; remaining symbols fall; new symbols drop in. Continues while new wins appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "win",
+    "notes": "ence in Settings.\nWinnings are presented in the player's currency.\nValhall Gold is played in two modes; normal mode and bonus mode with\nfree drops.\nAll low, mid and high value symbols exist in four sizes; standard 1x1,\nSuper 2x2, Mega 3x3 and Epic 4x4. All big symbols are counted as\nconsisti"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more bonus symbols trigger the bonus game",
+        "spins_awarded": "10 free drops",
+        "retrigger": "Free drops can be retriggered.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "s game\nA combination of three or more bonus symbols in normal mode triggers the\nbonus mode with free drops.\n\nButton clarifications\nButton Name\n\n Menu\n\n Bet levels\n\n Spin\n\n Auto spin\n\n Lobby\n\n Paytable\n\n Rules\n\n Settings\n\n Replay\n\n Promotions\n\nGame rules\n Valhall Gold is a 6 reel, 4 rows slot with dropping symbols. The columns\n can expand upwards to a maximum of 9 rows.\n Each additional symbol drop will add an additional row of symbols, up to\n a maximum of 9 rows, increasing the number of ways to win. The number\n of ways to win increases as the number of rows increases.\n 4 rows: 4,096 ways to w",
+        "end_condition": "The free drops bonus game ends when no free drops remain or when\nthe win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "10 free drops"
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": "10 free drops",
+        "retrigger": "Free drops can be retriggered.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "ral different game modes.\n\nSuper Bonus: Guarantees a game round with entry to a super bonus game\nwith at least 10 free drops, and Loki’s inventory fully active at the cost of\n500x the selected bet.\n\nBonus: Guarantees a game round with entry to the bonus game at the cost of\n100x the selected bet.\n\nTrickster Loki: One drop with a guaranteed Loki symbol at the cost of 25x the\nselected bet.\n\nBig Block: One drop with a guaranteed big symbol at the cost of 5x the\nselected bet.\n\nBonus Hunt: One drop with more than double the chance to trigger the",
+        "end_condition": "The free drops bonus game ends when no free drops remain or when\nthe win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "ral different game modes.\n\nSuper Bonus: Guarantees a game round with entry to a super bonus game\nwith at least 10 free drops, and Loki’s inventory fully active at the cost of\n500x the selected bet.\n\nBonus: Guarantees a game round with entry to the bonus game at the cost of\n100x the selected bet.\n\nTrickster Loki: One drop with a guaranteed Loki symbol at the cost of 25x the\nselected bet.\n\nBig Block",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "10 free drops"
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Valhall Gold."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "Winning symbols removed; remaining fall; new symbols drop in.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Expanding grid",
+      "trigger": "Feature/bomb/clear-board events as described",
+      "when": "Base and bonus",
+      "effects": "ory Casino\nGame type Slot\nClient HTML5\nTheoretical RTP 94.0%\n 4,096 ways to win expanding up to 531,441 ways to\nLines\n win\nJackpot No\nReels 6 reels\nRows 4 rows\nHit frequency 21.0%\nMin bet € 0.20\nMax bet € 100.00\nMax exposure 25 000x max bet\nMax win single\n 25 000x max bet\nspin\nMaximum win € 2,5",
+      "params": {}
+    },
+    {
+      "name": "Spike replication",
+      "trigger": null,
+      "when": null,
+      "effects": "ards up to the\nmaximum 9 rows.\n\nPaying symbols may have a spiked frame on them. Spike symbols replicate\nin the direction of the spikes when the symbol is part of a win. Spike\nreplications can cause chain reactions.\n\nOdin’s Ravens drop in as blockers, but turn wild when at least two are\npresent.\n\nA Loki symbol drops in as a blocker but provides multifarious features to\neach successive win evaluation. The Loki features include a multiplier,\nactivation",
+      "params": {}
+    },
+    {
+      "name": "Loki's inventory",
+      "trigger": null,
+      "when": null,
+      "effects": "and is sticky for the remainder\nof the current drop.\n\nThe bonus game introduces Loki’s inventory, where subsequent Loki\nfeatures are saved for future activations without Loki needing to be present -\nelevating each remaining free drop.\n\nGame view\nBet amount and balance are always displayed in the info bar at the bottom of\nthe game view in the currency that the player has chosen. This information is\nalways available throughout the gaming sessio",
+      "params": {}
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game. Min X-iter cost €0.40, max €50,000.00.. Theoretical RTP for all X-iter game modes is .0%",
+      "effects": "Super Bonus (500x); Bonus (100x); Trickster Loki (25x); Big Block (5x); Bonus Hunt (2x)",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x the selected bet",
+        "effects": "Guarantees a game round with entry to a super bonus game with at least 10 free drops, and Loki’s inventory fully active at the cost of 500x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x the selected bet",
+        "effects": "Guarantees a game round with entry to the bonus game at the cost of 100x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Trickster Loki",
+        "cost_multiplier": 25.0,
+        "cost_text": "25x the selected bet",
+        "effects": "One drop with a guaranteed Loki symbol at the cost of 25x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Big Block",
+        "cost_multiplier": 5.0,
+        "cost_text": "5x the selected bet",
+        "effects": "One drop with a guaranteed big symbol at the cost of 5x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": 2.0,
+        "cost_text": "2x the selected bet",
+        "effects": "One drop with more than double the chance to trigger the bonus game at the cost of 2x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game. Min X-iter cost €0.40, max €50,000.00.. Theoretical RTP for all X-iter game modes is .0%"
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in the official Game Description; X-iter covers paid feature entry."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000.0,
+    "max_win_notes": "Max exposure 25000.0x; max win single spin 25000.0x; Maximum win €2500000.0",
+    "rtp_percent": 94.0,
+    "rtp_notes": "Theoretical RTP 94.0% (base and X-iter when stated). Min bet €0.2, max bet €100.0.",
+    "hit_frequency_notes": "Hit frequency 21.0% (official key features table)"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10201-Valhall%20Gold_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10201-Valhall Gold_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Key features\nFunction Value\nName in English Valhall Gold\nELK Game id 10201\nProduct category Casino\nGame type Slot\nClient HTML5\nTheoretical RTP 94.0%\n 4,096 ways to win expanding up to 531,441 ways to\nLines\n win\nJackpot No\nReels 6 reels\nRows 4 rows\nHit frequency 21.0%\nMin bet € 0.20\nMax bet € 100.00\nMax exposure 25 000x max bet\nMax win single\n 25 000x max bet\nspin\nMaximum win € 2,500,000.00\n\nGame description\n\nDo not miss the final chapter of the Gold Series!\n\nIn Valhall Gold players will join Kane Steele on his final adventure as he sets\nout to discover the ultimate treasure - a prize so valuable that it h"
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10201-Valhall%20Gold_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10201-Valhall Gold_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "is a 6 column, 4 row slot with dropping symbols. Symbol wins\ntrigger the avalanche feature that expands the reels upwards up to the\nmaximum 9 rows.\n\nPaying symbols may have a spiked frame on them."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10201-Valhall%20Gold_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10201-Valhall Gold_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\n\nSuper Bonus: Guarantees a game round with entry to a super bonus game\nwith at least 10 free drops, and Loki’s inventory fully active at the cost of\n500x the selected bet.\n\nBonus: Guarantees a game round with entry to the bonus game at the cost of\n100x the selected bet.\n\nTrickster Loki: One drop with a guaranteed Loki symbol at the cost of 25x the\nselected bet.\n\nBig Block: One drop with a guaranteed big symbol at the cost of 5x the\nselected bet.\n\nBonus Hunt: One drop with more than double the chance to trigger the\nbonus game at the cost of 2x the selected bet.\n\nThe X-iter features can only be activated in the base game.\n\nThe minimum X-"
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10201-Valhall%20Gold_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/pdfs/10201-Valhall Gold_GameDescription_MGA_en_gb.pdf",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Game rules\n Valhall Gold is a 6 reel, 4 rows slot with dropping symbols. The columns\n can expand upwards to a maximum of 9 rows.\n Each additional symbol drop will add an additional row of symbols, up to\n a maximum of 9 rows, increasing the number of ways to win. The number\n of ways to win increases as the number of rows increases.\n 4 rows: 4,096 ways to win\n 5 rows: 15,625 ways to win\n 6 rows: 46,656 ways to win\n 7 rows: 117,649 ways to win\n 8 rows: 262,144 ways to win\n 9 rows: 531,441 ways to win\n All drops in normal mode start with 4 rows and 4,096 ways to win.\n The minimum bet is € 0.20, and the maximum bet is € 100.00.\n Each bet is 100 coins.\n Wins begin with the first leftmost reel and only pay from left to right on\n consecutive reels. No gaps between the reels are allowed. Only the\n longest payline per active payline is paid out.\n A game round starts on the selected bet level when"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/valhall-gold/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Demo launcher gameid=10201; mechanics taken from Game Description PDF, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "Exact paytable symbol values (PDF references paytable; numeric paytable not in text extract)",
+    "release_year not stated in Game Description PDF"
+  ],
+  "thumbnail": "thumbs/elk-valhall-gold.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:38:27Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Pirots",
+    "slug": "elk-pirots",
+    "provider_game_id": "10184",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10184&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10184-Pirots_GameDescription_MGA_en_gb.pdf"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": 5,
+    "rows_max": 8,
+    "layout_notes": "Official Game Description: 5 rows by 5 columns; expands up to 8 rows by 8 columns; schema has rows_min/rows_max; cols variable upper=8 noted in layout_notes (no cols_min/cols_max)"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "horizontal_or_vertical",
+    "notes": "vary based on the\nLines\n position of the birds."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "ne they can get their feathers on!\n\nPirots is a 5 row by 5 column slot that can expand up to 8 rows by 8 columns.\nCentral game features are the four birds that move and collect symbols\ngenerating symbol wins, the symbol collection that awards feature symbols,\nand the free drops bonus game.\n\nGame view\nBet amount and balance are always displa"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Pirots: paid spin on 5x5 (expands to 8 rows). vary based on the\nLines\n position of the birds.. Avalanche/tumble after wins. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 5x5 (expands to 8 rows). Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: vary based on the\nLines\n position of the birds.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "Winning symbols explode/are removed; remaining symbols fall; new symbols drop in. Continues while new wins appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "vary based on the\nLines\n position of the birds.",
+    "notes": "eference in Settings.\n Winnings are presented in the player's currency.\n Pirots is played in two modes; normal mode and bonus mode with free\n drops.\n All game rounds in normal mode start with a grid size of 5 rows and 5\n columns.\n\nThe maximum grid size is 8 rows and 8 columns.\nBirds move and"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "Three bonus symbols collected by the birds during a game round trigger the free drop bonus game. The grid size, the symbol collection and the win level of the gems are persistent during the bonus game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Grid size, symbol collection progress and win level are persistent during the bonus game.",
+        "progressive_state": null,
+        "effects": "Three bonus symbols collected by the birds during a game round trigger the free drop bonus game. The grid size, the symbol collection and the win level of the gems are persistent during the bonus game.",
+        "end_condition": "Ends when no free drops remain or win cap reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "The bonus game with free drops is triggered if the\n             birds collect three bonus symbols during a game\n             round.",
+            "ends_when": "First free drop",
+            "state_changes": "Bonus active"
+          },
+          {
+            "name": "Free drop loop",
+            "order": 2,
+            "what_happens": "Play free drops with persistent collection/grid state as described",
+            "ends_when": "No free drops or win cap",
+            "state_changes": "State persists"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings",
+            "ends_when": "Done",
+            "state_changes": "Return to base"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Played with maximum grid size; upgrade symbols upgrade all gems (per Super Bonus X-iter / rules).",
+        "progressive_state": null,
+        "effects": "l different game modes.\n\nSUPER BONUS:\nGuarantees a game round with entry to the super bonus game. All free drops\nare played with the maximum grid size, and all upgrade symbols upgrade all\ngems at the cost of 500x the selected bet.\n\nBONUS:\nGuarantees a game round with entry to the bonus game at the cost of 100x\nthe selected bet.\n\nMAXIMUM GRID SIZE:\nOne drop that is played with the maximum grid size at the cost of 25x the\nselected bet.\n\nFEATURE BONANZA:\nOne drop with a guaranteed full symbol collection triggering a feature award\nat the cost o",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "l different game modes.\n\nSUPER BONUS:\nGuarantees a game round with entry to the super bonus game. All free drops\nare played with the maximum grid size, and all upgrade symbols upgrade all\ngems at the cost of 500x the selected bet.\n\nBONUS:\nGuarantees a game round with entry to the bonus game at the cost of 100x\nthe selected bet.\n\nMAXIMUM GRID SIZE:\nOne drop that is played with the maximum grid size",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Pirots."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "Winning symbols removed; remaining fall; new symbols drop in.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Expanding grid",
+      "trigger": "Feature/bomb/clear-board events as described",
+      "when": "Base and bonus",
+      "effects": "ne they can get their feathers on!\n\nPirots is a 5 row by 5 column slot that can expand up to 8 rows by 8 columns.\nCentral game features are the four birds that move and collect symbols\ngenerating symbol wins, the symbol collection that awards feature symbols,\nand the free drops bonus game.",
+      "params": {}
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game. Min X-iter cost €0.60, max €50,000.00.. Theoretical RTP for all X-iter game modes is .0%",
+      "effects": "Super Bonus (500x); Bonus (100x); Maximum Grid Size (25x); Feature Bonanza (10x); Bonus Hunt (3x)",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x the selected bet",
+        "effects": "Guarantees a game round with entry to the super bonus game. All free drops are played with the maximum grid size, and all upgrade symbols upgrade all gems at the cost of 500x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x the selected bet",
+        "effects": "Guarantees a game round with entry to the bonus game at the cost of 100x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Maximum Grid Size",
+        "cost_multiplier": 25.0,
+        "cost_text": "25x the selected bet",
+        "effects": "One drop that is played with the maximum grid size at the cost of 25x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Feature Bonanza",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x the selected bet",
+        "effects": "One drop with a guaranteed full symbol collection triggering a feature award at the cost of 10x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": 3.0,
+        "cost_text": "3x the selected bet",
+        "effects": "One drop with quadruple the chance to trigger the bonus game at the cost of 3x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game. Min X-iter cost €0.60, max €50,000.00.. Theoretical RTP for all X-iter game modes is .0%"
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in the official Game Description; X-iter covers paid feature entry."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Max exposure 10000.0x; max win single spin 10000.0x; Maximum win €1000000.0",
+    "rtp_percent": 94.0,
+    "rtp_notes": "Theoretical RTP 94.0% (base and X-iter when stated). Min bet €0.2, max bet €100.0.",
+    "hit_frequency_notes": "Hit frequency 26.8% (official key features table)"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10184-Pirots_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10184-Pirots_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Key features\nFunction Value\nName in\n Pirots\nEnglish\nELK Game id 10184\nProduct\n Casino\ncategory\nGame type Slot\nClient HTML5\nTheoretical\n 94.0%\nRTP\n The number of possible paylines vary based on the\nLines\n position of the birds.\nJackpot No\nReels 5 columns\nRows 5 rows\nHit frequency 26.8%\nMin bet € 0.20\nMax bet € 100.00\nMax exposure 10 000x max bet\nMax win single\n 10 000x max bet\nspin\nMaximum win € 1,000,000.00\n\nGame description\n\"There is treasure ahoy, me hearties! Every bird on deck!\" captain Redfeather\nroars through the smoke from the explosion that sunk the pirate ship. \"Under\na black flag we sail! Keep y"
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10184-Pirots_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10184-Pirots_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "is a 5 row by 5 column slot that can expand up to 8 rows by 8 columns.\nCentral game features are the four birds that move and collect symbols\ngenerating symbol wins, the symbol collection that awards feature symbols,\nand the free drops bonus game.\n\nGame view\nBet amount and balance are always displayed in the info bar at the bottom of\nthe game view in the currency that the player has chosen."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10184-Pirots_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10184-Pirots_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\n\nSUPER BONUS:\nGuarantees a game round with entry to the super bonus game. All free drops\nare played with the maximum grid size, and all upgrade symbols upgrade all\ngems at the cost of 500x the selected bet.\n\nBONUS:\nGuarantees a game round with entry to the bonus game at the cost of 100x\nthe selected bet.\n\nMAXIMUM GRID SIZE:\nOne drop that is played with the maximum grid size at the cost of 25x the\nselected bet.\n\nFEATURE BONANZA:\nOne drop with a guaranteed full symbol collection triggering a feature award\nat the cost of 10x the selected bet.\n\nBONUS HUNT:\nOne drop with quadruple the chance to trigger the bonus game at the cost of\n3x the s"
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10184-Pirots_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/pdfs/10184-Pirots_GameDescription_MGA_en_gb.pdf",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Game rules\n Pirots is a 5 row by 5 column slot with dropping symbols. The game can\n expand the grid up to a maximum of 8 rows by 8 columns.\n The minimum bet is € 0.20, and the maximum bet is € 100.00.\n Each bet is 100 coins.\n Wins are generated by a bird moving and collecting orthogonally\n adjacent paying symbols.\n Paying symbols consist of gems of the same color as the moving bird,\n coins and wild symbols.\n A bird can only collect orthogonally adjacent symbols.\n A game round starts on the selected bet level when the player hits the\n Spin button.\n The game can be played automatically by activating Auto Spin. Hold\n down the Spin button or use the Auto Spin button to set the number of\n game rounds to be played automatically.\n The game can be played automatically by activating Auto Spin. Hold\n down the spin button or use the Auto Spin button to set the bet level,\n loss limit and the number"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/pirots/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Demo launcher gameid=10184; mechanics taken from Game Description PDF, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "Exact paytable symbol values (PDF references paytable; numeric paytable not in text extract)",
+    "release_year not stated in Game Description PDF",
+    "Exact initial free-drop count for Bonus/Super Bonus not stated as a fixed integer in Game Description (collection-triggered; +free drops on retrigger during bonus)"
+  ],
+  "thumbnail": "thumbs/elk-pirots.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

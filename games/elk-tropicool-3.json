@@ -1,0 +1,343 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:38:27Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Tropicool 3",
+    "slug": "elk-tropicool-3",
+    "provider_game_id": "10212",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10212&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10212-Tropicool%203_GameDescription_MGA_en_gb.pdf"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 columns by 6 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 46656,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "46,656 ways to win"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Locked Wild",
+        "behavior": "The Locked Wild feature symbol is a Wild symbol charged to last for 3\nwinnings. It is removed after the last win.\nLocked Wild symbols remain in the main grid between free drops in the\nbonus game.",
+        "params": {
+          "charges": 3
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 or more Bonus symbols trigger the bonus game.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Elmo",
+        "behavior": "the Elmo\nsymbol reaching the leftmost column.\n\nThe bonus game is triggered by 3 or more Bonus symbols to run 6 or more\nfree drops with persistent multiplier.\n\nGame view\nBet amount and balance are always displayed in the info bar at the bottom of\nthe game view in the currency that the player has chosen.",
+        "params": {}
+      },
+      {
+        "name": "Mystery",
+        "behavior": "The Mystery symbol reveals the symbol at the end of a\n drop.\n\n The Extra Drops symbol adds more free drops in the\n bonus game.",
+        "params": {}
+      },
+      {
+        "name": "Row Swap",
+        "behavior": "The Row Swap feature symbol replaces all symbols on a line to one and\nthe same symbol. One of the paying symbols on the line is selected to\nreplace all other symbols on the same line.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Tropicool 3: paid spin on 6x6. 46,656 ways to win. Avalanche/tumble after wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 6x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 46,656 ways to win",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "Winning symbols explode/are removed; remaining symbols fall; new symbols drop in. Continues while new wins appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "46,656 ways to win",
+    "notes": "erence in Settings.\n Winnings are presented in the player's currency.\n The game is played in two modes; normal mode and bonus mode with\n free drops.\n The Wild symbols substitute for any paying symbol. A winning\n combination of only Wild symbols pays as the highest paying symbol.\n The COOL Re"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more Bonus symbols trigger the bonus game.",
+        "spins_awarded": "6 free drops",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Locked Wilds persistent over free drops; Win multipliers persistent over free drops",
+        "progressive_state": null,
+        "effects": "",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award 6 or more free drops. Persistent state: Locked Wilds persistent over free drops; Win multipliers persistent over free drops.",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "6 free drops"
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": "6 free drops",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Locked Wilds persistent over free drops; Win multipliers persistent over free drops",
+        "progressive_state": null,
+        "effects": "d Wild symbols in the\nmain grid remain between free drops until fully used.\nThe Super Bonus game triggers when 3 or more bonus symbols and the\n\n Elmo symbol are visible in the main grid. One Elmo symbol is always\n visible in the main grid. Elmo symbol are sticky between free drops.\n Winnings are paid out at the end of a game round.\n The maximum total win in a game round is capped at 25 000x the placed\n bet.\n A game round is immediately ended when the win cap is reached, and\n the wins collected so far will be paid out.\n No bets can be change",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "d Wild symbols in the\nmain grid remain between free drops until fully used.\nThe Super Bonus game triggers when 3 or more bonus symbols and the\n\n Elmo symbol are visible in the main grid. One Elmo symbol is always\n visible in the main grid. Elmo symbol are sticky between free drops.\n Winnings are paid out at the end of a game round.\n The maximum total win in a game round is capped at 25 000x the pl",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "6 free drops"
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Tropicool 3."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "Winning symbols removed; remaining fall; new symbols drop in.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Elmo's Revenge",
+      "trigger": null,
+      "when": null,
+      "effects": "atures remain\ntogether with the Row Swap mechanics and Mystery symbols. The new\nElmo's Revenge feature triggers a complete COOL Reel drop When the Elmo\nsymbol reaching the leftmost column.\n\nThe bonus game is triggered by 3 or more Bonus symbols to run 6 or more\nfree drops with persistent multiplier.\n\nGame view\nBet amount and balance are always displayed in the info bar at the bottom of\nthe game view in the currency that the player has chose",
+      "params": {}
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game. Min X-iter cost €0.60, max €50,000.00.. Theoretical RTP for all X-iter game modes is .0%",
+      "effects": "Super Bonus (500x); Bonus (100x); Elmo'S Revenge (50x); Locked Wilds (25x); Bonus Hunt (3x)",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x the selected bet",
+        "effects": "Buy a game round triggering the Bonus game, with a guaranteed Elmo symbol in view. Cost is 500x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x the selected bet",
+        "effects": "Buy a game round triggering the Bonus game. Cost is 100x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Elmo'S Revenge",
+        "cost_multiplier": 50.0,
+        "cost_text": "50x the selected bet",
+        "effects": "Buy a game round with and guaranteed Elmo symbol. Cost is 50x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Locked Wilds",
+        "cost_multiplier": 25.0,
+        "cost_text": "25x the selected bet",
+        "effects": "Buy a game round with 3 Locked Wilds initially dropping into the grid. Cost is 25x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": 3.0,
+        "cost_text": "3x the selected bet",
+        "effects": "Buy a game round with more than triple the chance to trigger the bonus game. Cost is 3x the selected bet.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is .0%"
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game. Min X-iter cost €0.60, max €50,000.00.. Theoretical RTP for all X-iter game modes is .0%"
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in the official Game Description; X-iter covers paid feature entry."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000.0,
+    "max_win_notes": "Max exposure 25000.0x; max win single spin 25000.0x; Maximum win €2500000.0",
+    "rtp_percent": 94.0,
+    "rtp_notes": "Theoretical RTP 94.0% (base and X-iter when stated). Min bet €0.2, max bet €100.0.",
+    "hit_frequency_notes": "Hit frequency 28.0% (official key features table)"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10212-Tropicool%203_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10212-Tropicool 3_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Key features\nFunction Value\nName in English Tropicool 3\nELK Game id 10212\nProduct category Casino\nGame type Slot\nClient HTML5\nTheoretical RTP 94.0%\nLines 46,656 ways to win\nJackpot No\nReels 6 columns\nRows 6 rows\nHit frequency 28.0%\nMin bet € 0.20\nMax bet € 100.00\nMax exposure 25 000x max bet\nMax win single\n 25 000x max bet\nspin\nMaximum win € 2,500,000.00\n\nGame description\n\nTropicool is back and with an enhanced set of features, still with the same\ncharacteristic theme and superior COOL Reel mechanics.\n\nTropicool 3 is a 6 columns by 6 rows slot with dropping symbols, rolling\nsymbols, all win ways, charged"
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10212-Tropicool%203_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10212-Tropicool 3_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "is a 6 columns by 6 rows slot with dropping symbols, rolling\nsymbols, all win ways, charged feature COOL Reel and Elmo the sloth that\nactivates a complete COOL Reel drop. The feature COOL Reel contains of 3\nrows to provide more feature symbols. The Locked Wild features remain\ntogether with the Row Swap mechanics and Mystery symbols."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10212-Tropicool%203_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/txt/10212-Tropicool 3_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers buy-in to different game modes.\n\nSUPER BONUS:\nBuy a game round triggering the Bonus game, with a guaranteed Elmo\nsymbol in view. Cost is 500x the selected bet.\n\nBUY BONUS:\nBuy a game round triggering the Bonus game. Cost is 100x the selected bet.\n\nELMO'S REVENGE:\nBuy a game round with and guaranteed Elmo symbol. Cost is 50x the\nselected bet.\n\nLOCKED WILDS:\nBuy a game round with 3 Locked Wilds initially dropping into the grid. Cost is\n25x the selected bet.\n\nBONUS HUNT:\nBuy a game round with more than triple the chance to trigger the bonus\ngame. Cost is 3x the selected bet.\n\nAn X-iter feature is purchased by pressing the X-iter button, selecting X-iter\nmode showing t"
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10212-Tropicool%203_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/pdfs/10212-Tropicool 3_GameDescription_MGA_en_gb.pdf",
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Game rules\n Tropicool 3 is a 6 columns and 6 rows slot with dropping symbols and up\n to 46656 connecting paylines.\n The minimum bet is € 0.20, the maximum bet is € 100.00.\n Each bet is 100 coins.\n Wins begin with the first leftmost reel and only pay from left to right on\n consecutive reels. No gaps between the reels are allowed. Only the\n longest payline per active payline is paid out.\n A game round starts on the selected bet level when the player hits the\n Spin button.\n The game can be played automatically by activating Auto Spin. Hold\n down the Spin button or use the Auto Spin button to set the number of\n game rounds to be played automatically.\n The game can be played automatically by activating Auto Spin. Hold\n down the spin button or use the Auto Spin button to set the bet level,\n loss limit and the number of game rounds to be played automatically.\n Winnings and winning combinations"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/tropicool-3/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:38:27Z",
+      "quote_or_excerpt": "Demo launcher gameid=10212; mechanics taken from Game Description PDF, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "Exact paytable symbol values (PDF references paytable; numeric paytable not in text extract)",
+    "release_year not stated in Game Description PDF"
+  ],
+  "thumbnail": "thumbs/elk-tropicool-3.webp",
+  "thumbnail_attribution": "ELK Studios"
+}
