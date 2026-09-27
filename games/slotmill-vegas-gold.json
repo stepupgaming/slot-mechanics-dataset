@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Vegas Gold",
+    "slug": "slotmill-vegas-gold",
+    "provider_game_id": "vegas-gold",
+    "release_year": 2021,
+    "demo_url": "https://vegas-gold.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/vegas-gold"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 3x3 -> 5x3 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 3,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: Matching 3+ symbols"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline / progressive win multiplier: spin → evaluate wins → multiplier grows with wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 3 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      },
+      {
+        "name": "progressive_multiplier",
+        "what_happens": "Progressive Win Multiplier referenced on official page.",
+        "order": 3,
+        "ends_when": null,
+        "state_changes": "Win multiplier grows across consecutive wins in the cascade chain"
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 3 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "Bonus Wheel Symbol",
+        "behavior": "during re-spins. The Wheel of Free Spins determine the number of Free Spins awarded.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Progressive Win Multiplier",
+        "behavior": "Progressive Win Multiplier referenced on official page.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "The Wheel of Free Spins determine the number of Free Spins awarded. during re-spins. The Wheel of Free Spins determine the number of Free Spins awarded.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Freespins with respins and a progressive multiplier",
+      "trigger": null,
+      "effects": "Progressive Win Multiplier referenced on official page.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have integrated an exciting feature; “Burst Mode”.",
+      "params": {},
+      "when": "any time / auto-play"
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000.0,
+    "max_win_notes": "Official Max win; x Bet: 5 000 x",
+    "rtp_percent": 96.36,
+    "rtp_notes": "96,36 %",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/vegas-gold",
+      "local_path": "sources/slotmill/vegas-gold.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 3x3 -> 5x3 Video Slot\nPaylines: Matching 3+ symbols\nRTP (%): 96,36 %\nMax win; x Bet: 5 000 x\nBonus Features: Freespins with respins and a progressive multiplier\nSpecial Symbols: Bonus Wheel Symbol\nVolatility (variance): High\nGame URL: \"https://vegas-gold.slotmill.com\"\nVegas Gold is a 15 reel video slot where 6 of the reels are unlocked during re-spins and hold access to the bonus feature. The game is based on matching symbols with a re-spin functionality triggered by 3 identical symbols and continuing as long as additional matching symbols appear.\n\nThe Free Spin bonus feature is triggered by two scatter symbols present on the 6 reels that are unlocked during re-spins. The Wheel of Free Spins determine the number of Free Spins awarded. All 15 reels are active during Free Spins as is the re-spin functionality. Free spins start with a 2x win multiplier and for every “new” spin it is increased by 1x giving players wicked win potential!\n\nDesigned and built for"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_vegas-gold.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Wicked win potential!\n\nVegas Gold is a 15-reel video slot where 6 of the reels are unlocked during re-spins and hold access to the\nbonus feature. The game is based on matching symbols with a re-spin functionality triggered by 3 identical\nsymbols and continuing as long as additional matching symbols appear.\n\nThe Free Spin bonus feature is triggered by two scatter symbols present on the 6 reels that are unlocked\nduring re-spins. The Wheel of Free Spins determine the number of Free Spins awarded. All 15 reels are\nactive during Free Spins as is the re-spin functionality. Free spins start with a 2x win multiplier and for every\n“new” spin it is increased by 1x giving players wicked win potential!\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two\ni"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-vegas-gold.webp",
+  "thumbnail_attribution": "Slotmill"
+}

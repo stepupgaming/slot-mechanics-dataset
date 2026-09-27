@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Fortune Pandas",
+    "slug": "slotmill-fortune-pandas",
+    "provider_game_id": "fortune-pandas",
+    "release_year": 2025,
+    "demo_url": "https://fortune-pandas.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/fortune-pandas"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x4 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 20"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 20 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 20 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wilds",
+        "behavior": "This 5×4 slot features 20 paylines and is packed with Wild surprises.",
+        "params": {}
+      },
+      {
+        "name": "Stacked Wilds",
+        "behavior": "This 5×4 slot features 20 paylines and is packed with Wild surprises.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus symbol",
+        "behavior": "Landing three bonus symbols unlocks the Free Spins round, where players spin a coin to determine their fate.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Landing three bonus symbols unlocks the Free Spins round, where players spin a coin to determine their fate.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Yes",
+      "trigger": null,
+      "effects": "Yes listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 6688.0,
+    "max_win_notes": "Official Max win; x Bet: 6688x",
+    "rtp_percent": 96.01,
+    "rtp_notes": "Variant 1: 96.01 Variant 2: 94.03",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/fortune-pandas",
+      "local_path": "sources/slotmill/fortune-pandas.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x4 Video Slot\nPaylines: 20\nRTP (%): Variant 1: 96.01 Variant 2: 94.03\nMax win; x Bet: 6688x\nBonus Features: Yes\nSpecial Symbols: Wilds, Stacked Wilds, Bonus symbol\nVolatility (variance): High\nGame URL: \"https://fortune-pandas.slotmill.com\"\nThis 5×4 slot features 20 paylines and is packed with Wild surprises. Single or Stacked Wilds can randomly appear on the reels, boosting winning potential with each spin.\n\nLanding three bonus symbols unlocks the Free Spins round, where players spin a coin to determine their fate.\n\nWill it be Sticky Wilds that lock in place, Stacked Wilds that expand and hold, or the powerful Super Free Spins where both features combine for even greater rewards!\n\nWith up to 6688x your bet to be won, the fortunes of the Pandas awaits!"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_fortune-pandas.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Fortune Pandas\n\nThis 5×4 slot features 20 paylines and is packed with Wild surprises. Single or Stacked Wilds can randomly appear\non the reels, boosting winning potential with each spin.\n\nLanding three bonus symbols unlocks the Free Spins round, where players spin a coin to determine their fate.\n\nWill it be Sticky Wilds that lock in place, Stacked Wilds that expand and hold, or the powerful Super Free Spins\nwhere both features combine for even greater rewards!\n\nWith up to 6688x your bet to be won, the fortunes of the Pandas awaits!\n\nGAME SPECIFICATIONS\n Game Name / Release Date           Fortune Pandas / 25 March 2025\n Game ID                            fortune-pandas\n Game URL                           \"https://fortune-pandas.slotmill.com\"\n Game Type                          5x4 Video Slo"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-fortune-pandas.webp",
+  "thumbnail_attribution": "Slotmill"
+}

@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Tiki Thunder",
+    "slug": "slotmill-tiki-thunder",
+    "provider_game_id": "tiki-thunder",
+    "release_year": 2026,
+    "demo_url": "https://tiki-thunder.slomill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/tiki-thunder"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x5 Video Slot"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Official Paylines field: 5+ cluster pay"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Each consecutive win charges the Multiplier Meter, driving your rewards higher as the island’s raw energy builds with every avalanche."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill cluster-pays / avalanche/cascade: spin → evaluate wins → avalanche while wins continue.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+        "order": 2,
+        "ends_when": "All current winning clusters identified",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Each consecutive win charges the Multiplier Meter, driving your rewards higher as the island’s raw energy builds with every avalanche.",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      }
+    ],
+    "win_evaluation": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Each consecutive win charges the Multiplier Meter, driving your rewards higher as the island’s raw energy builds with every avalanche.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 40000.0,
+    "max_win_notes": "Official Max win; x Bet: 40000x",
+    "rtp_percent": 96.1,
+    "rtp_notes": "Variant 1: 96.10 | Variant 2: 94.07",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "low",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/tiki-thunder",
+      "local_path": "sources/slotmill/tiki-thunder.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x5 Video Slot\nPaylines: 5+ cluster pay\nRTP (%): Variant 1: 96.10 | Variant 2: 94.07\nMax win; x Bet: 40000x\nVolatility (variance): Very High\nGame URL: \"https://tiki-thunder.slomill.com\"\nA powerful new adventure erupts on a volcanic island in the Pacific, delivering explosive cluster action and electrifying win potential.\n\nSet on a dynamic 5×5 grid, Tiki Thunder fuels the action with thrilling cluster pays, where every winning combination clears the way for new symbols to cascade in. Each consecutive win charges the Multiplier Meter, driving your rewards higher as the island’s raw energy builds with every avalanche.\n\nBut the island holds ancient secrets. As the Multiplier Meter advances, powerful bonus features awaken. Activate the Gold Mask, spawning 1–3 Wilds directly onto the play area to supercharge your wins and ignite massive payout opportunities. Push even further and"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_tiki-thunder.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Tiki Thunder\n\nA powerful new adventure erupts on a volcanic island in the Pacific, delivering explosive cluster action and\nelectrifying win potential.\n\nSet on a dynamic 5×5 grid, Tiki Thunder fuels the action with thrilling cluster pays, where every winning\ncombination clears the way for new symbols to cascade in. Each consecutive win charges the Multiplier Meter,\ndriving your rewards higher as the island’s raw energy builds with every avalanche.\n\nBut the island holds ancient secrets. As the Multiplier Meter advances, powerful bonus features awaken. Activate\nthe Gold Mask, spawning 1–3 Wilds directly onto the play area to supercharge your wins and ignite massive payout\nopportunities. Push even further and unlock Lava Surge, a volatile boost that leaps you past multiplier levels,\naccelerati"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Very High"
+  ],
+  "thumbnail": "thumbs/slotmill-tiki-thunder.webp",
+  "thumbnail_attribution": "Slotmill"
+}

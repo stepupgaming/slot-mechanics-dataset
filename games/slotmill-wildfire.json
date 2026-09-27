@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Wildfire",
+    "slug": "slotmill-wildfire",
+    "provider_game_id": "wildfire",
+    "release_year": 2020,
+    "demo_url": "https://wildfire.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/wildfire"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 3x3 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 5,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 5 - fixed"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 5 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 5 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Wildfire is the first game in the Slotmill ClassicsTM series with high-paced gameplay and classic casino symbols.",
+        "params": {}
+      },
+      {
+        "name": "Golden Wild",
+        "behavior": "Wildfire is the first game in the Slotmill ClassicsTM series with high-paced gameplay and classic casino symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "The Joker is Wild which in combination with the Re-Spin feature creates exciting win potential in both the base game and Free Spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "The Joker is Wild which in combination with the Re-Spin feature creates exciting win potential in both the base game and Free Spins.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Medium"
+  },
+  "features": [
+    {
+      "name": "Respins",
+      "trigger": null,
+      "effects": "Respins listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins w. multiplier",
+      "trigger": null,
+      "effects": "The Joker is Wild which in combination with the Re-Spin feature creates exciting win potential in both the base game and Free Spins.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have integrated an exciting feature; “Burst Mode”.",
+      "params": {},
+      "when": "any time / auto-play"
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 1875.0,
+    "max_win_notes": "Official Max win; x Bet: 1 875 x / 93 750",
+    "rtp_percent": 96.11,
+    "rtp_notes": "96,11 %",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/wildfire",
+      "local_path": "sources/slotmill/wildfire.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 3x3 Video Slot\nPaylines: 5 - fixed\nRTP (%): 96,11 %\nMax win; x Bet: 1 875 x / 93 750\nBonus Features: Respins, Free Spins w. multiplier\nSpecial Symbols: Wild, Golden Wild, Scatter\nVolatility (variance): Medium\nGame URL: \"https://wildfire.slotmill.com\"\nWildfire is the first game in the Slotmill ClassicsTM series with high-paced gameplay and classic casino symbols. The Joker is Wild which in combination with the Re-Spin feature creates exciting win potential in both the base game and Free Spins. The Wheel of Free-Spins determines the number of Free Spins (3-10) with a Golden Wild on the reels, each increasing the win multiplier by 1x and landing two Golden Wilds award an additional Free Spin.\n\nDesigned and built for mobile first, all Slotmill games are lightweight ensuring short load times and the UI is optimized for small screens. High end graphics, animations and sounds combined with well balanced mathematics translate into an optimum pla"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_wildfire.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Feature packed, classic 3-reel slot\nWildfire is the first game in the Slotmill ClassicsTM series with high-paced gameplay and classic casino\nsymbols. The Joker is Wild which in combination with the Re-Spin feature creates exciting win\npotential in both the base game and Free Spins. The Wheel of Free-Spins determines the number of\nFree Spins (3-10) with a Golden Wild on the reels, each increasing the win multiplier by 1x and landing\ntwo Golden Wilds award an additional Free Spin.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have\ntwo integrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is\nan enhanced auto-play with a play-through of two game rounds per second, and Fast Track\noffers players the option to get directly "
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "volatility from official specs: Medium",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-wildfire.webp",
+  "thumbnail_attribution": "Slotmill"
+}

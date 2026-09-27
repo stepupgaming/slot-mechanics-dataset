@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Starspell",
+    "slug": "slotmill-star-spell",
+    "provider_game_id": "starspell",
+    "release_year": 2020,
+    "demo_url": "https://starspell.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/star-spell"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x3 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 10,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 10 - fixed"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 10 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 10 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "sticky wild",
+        "behavior": "Expanding Wilds appear on reels 2, 3 and 4 triggering a free re-spin.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Expanding",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": "Volatility (official): Low"
+  },
+  "features": [
+    {
+      "name": "Re-spin and 2x/3x win multipliers",
+      "trigger": null,
+      "effects": "Re-spin and 2x/3x win multipliers listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have integrated an exciting feature; “Burst Mode”.",
+      "params": {},
+      "when": "any time / auto-play"
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 1200.0,
+    "max_win_notes": "Official Max win; x Bet: 1 200 / 120 000",
+    "rtp_percent": 96.17,
+    "rtp_notes": "96,17 %",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/star-spell",
+      "local_path": "sources/slotmill/star-spell.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x3 Video Slot\nPaylines: 10 - fixed\nRTP (%): 96,17 %\nMax win; x Bet: 1 200 / 120 000\nBonus Features: Re-spin and 2x/3x win multipliers\nSpecial Symbols: Expanding, sticky wild\nVolatility (variance): Low\nGame URL: \"https://starspell.slotmill.com\"\nStarSpell is a 5-reel video slot with 10 bet lines where you can win two-ways – left to right or right to left on each bet line. Expanding Wilds appear on reels 2, 3 and 4 triggering a free re-spin. The wilds are sticky during the re-spin and additional wilds trigger another re-spin. A 2x win multiplier is applied to wins if two wilds are present and a 3x multiplier is applied to wins if three wilds are present. All 10 bet lines are always active, and players simply set their desired bet per spin in the casino currency. StarSpell is a low volatile game with a maximum win of 1,200 times bet or 120,000 Euro at max bet. The default bet levels can be customized for each operator.\n\nDesigned and b"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_star-spell.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "High-paced enchanting video slot\nStarSpell is a 5-reel video slot with 10 bet lines where you can win two-ways – left to right or right to\nleft on each bet line. Expanding Wilds appear on reels 2, 3 and 4 triggering a free re-spin. The wilds are\nsticky during the re-spin and additional wilds trigger another re-spin. A 2x win multiplier is applied to\nwins if two wilds are present and a 3x multiplier is applied to wins if three wilds are present. All 10 bet\nlines are always active, and players simply set their desired bet per spin in the casino currency. StarSpell\nis a low volatile game with a maximum win of 1,200 times bet or 120,000 Euro at max bet. The default\nbet levels can be customized for each operator.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmil"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "volatility from official specs: Low"
+  ],
+  "thumbnail": "thumbs/slotmill-star-spell.webp",
+  "thumbnail_attribution": "Slotmill"
+}

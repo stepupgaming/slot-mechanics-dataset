@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Neon Dreams",
+    "slug": "slotmill-neon-dreams",
+    "provider_game_id": "neon-dreams",
+    "release_year": 2021,
+    "demo_url": "https://neon-dreams.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/neon-dreams"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 3x3 Video Slot"
+  },
+  "win_system": {
+    "type": "unknown",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Official Paylines field: Matching Symbols"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": null,
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "N/A",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Respins with increasing win multiplier",
+      "trigger": null,
+      "effects": "Respins with increasing win multiplier listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have integrated an exciting feature; “Burst Mode”.",
+      "params": {},
+      "when": "any time / auto-play"
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000.0,
+    "max_win_notes": "Official Max win; x Bet: 5000 x / 125 000",
+    "rtp_percent": 96.2,
+    "rtp_notes": "96,20 %",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "low",
+    "base_game_loop": "low",
+    "symbols": "low",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/neon-dreams",
+      "local_path": "sources/slotmill/neon-dreams.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 3x3 Video Slot\nPaylines: Matching Symbols\nRTP (%): 96,20 %\nMax win; x Bet: 5000 x / 125 000\nBonus Features: Respins with increasing win multiplier\nSpecial Symbols: N/A\nVolatility (variance): High\nGame URL: \"https://neon-dreams.slotmill.com\"\nNeon Dreams is a 9-reel video slot based on matching symbols. Minimum three matching symbols are required for a win, and four matching symbols awards a free re-spin of the non-matching reels. The Neon Dreams bonus feature is triggered with five matching symbols and is based on collecting additional symbols of the type that triggered the bonus (trigger symbol).\n\nDuring the Neon Dreams bonus feature, a progression metre with win multipliers is presented. Each trigger symbol moves the player one step towards the multipliers which are dynamic and increase in value for every star symbol collected (until activated). A re-spin is awarded every time at least one trigger symbol lands on the reels and"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_neon-dreams.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Matching Symbols to strike gold\n\nNeon Dreams is a 9-reel video slot based on matching symbols. Minimum three matching symbols are\nrequired for a win, and four matching symbols awards a free re-spin of the non-matching reels. The Neon\nDreams bonus feature is triggered with five matching symbols and is based on collecting additional\nsymbols of the type that triggered the bonus (trigger symbol).\n\nDuring the Neon Dreams bonus feature, a progression metre with win multipliers is presented. Each trigger\nsymbol moves the player one step towards the multipliers which are dynamic and increase in value for\nevery star symbol collected (until activated). A re-spin is awarded every time at least one trigger symbol\nlands on the reels and a lifeline extends the bonus feature. A lifeline grants one extra "
+    }
+  ],
+  "unknowns": [
+    "win_system exact type from Paylines field ambiguous",
+    "full paytable / symbol pays not on marketing page",
+    "volatility from official specs: High"
+  ],
+  "thumbnail": "thumbs/slotmill-neon-dreams.webp",
+  "thumbnail_attribution": "Slotmill"
+}

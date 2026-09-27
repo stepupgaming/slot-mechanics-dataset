@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Sweet Spotz",
+    "slug": "slotmill-sweet-spotz",
+    "provider_game_id": "sweet-spotz",
+    "release_year": 2023,
+    "demo_url": "https://sweet-spotz.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/sweet-spotz"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 6x6 Video Slot"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Official Paylines field: 5+ cluster pays"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Sweet Spotz is a feature packed, avalanche cluster slot from Slotmill with a 6 x 6 grid of luscious symbols."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill cluster-pays / avalanche/cascade: spin → evaluate wins → avalanche while wins continue.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+        "order": 2,
+        "ends_when": "All current winning clusters identified",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Sweet Spotz is a feature packed, avalanche cluster slot from Slotmill with a 6 x 6 grid of luscious symbols.",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      }
+    ],
+    "win_evaluation": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Cupcake Wild",
+        "behavior": "The jumping cupcake wilds combined with Multiplier Sweet Spotz with unlimited increasing win multipliers makes the game insanely fun and exciting with a max-win of a whopping 10,000 times your bet.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Mystery Transform",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Three+ cupcakes triggers the Free Spin Bonus during which the Sweet Spotz multipliers are sticky creating a crazy win potential!",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Jumping Cupcake Wilds",
+      "trigger": null,
+      "effects": "The jumping cupcake wilds combined with Multiplier Sweet Spotz with unlimited increasing win multipliers makes the game insanely fun and exciting with a max-win of a whopping 10,000 times your bet.",
+      "params": {}
+    },
+    {
+      "name": "Multiplier Sweet Spotz",
+      "trigger": null,
+      "effects": "The jumping cupcake wilds combined with Multiplier Sweet Spotz with unlimited increasing win multipliers makes the game insanely fun and exciting with a max-win of a whopping 10,000 times your bet.",
+      "params": {}
+    },
+    {
+      "name": "Mystery Transform",
+      "trigger": null,
+      "effects": "During both the base game and the bonus game a Mystery Transform symbol can appear, selecting up to 10 symbols which are transformed into a random symbol.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Sweet Spotz is a feature packed, avalanche cluster slot from Slotmill with a 6 x 6 grid of luscious symbols.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10000 x",
+    "rtp_percent": 95.48,
+    "rtp_notes": "95,48%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/sweet-spotz",
+      "local_path": "sources/slotmill/sweet-spotz.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): 95,48%\nMax win; x Bet: 10000 x\nBonus Features: Jumping Cupcake Wilds, Multiplier Sweet Spotz, Mystery Transform\nSpecial Symbols: Mystery Transform, Cupcake Wild\nVolatility (variance): High\nGame URL: \"https://sweet-spotz.slotmill.com\"\nSweet Spotz is a feature packed, avalanche cluster slot from Slotmill with a 6 x 6 grid of luscious symbols.\n\nThe jumping cupcake wilds combined with Multiplier Sweet Spotz with unlimited increasing win multipliers makes the game insanely fun and exciting with a max-win of a whopping 10,000 times your bet.\n\nDuring both the base game and the bonus game a Mystery Transform symbol can appear, selecting up to 10 symbols which are transformed into a random symbol.\n\nThree+ cupcakes triggers the Free Spin Bonus during which the Sweet Spotz multipliers are sticky creating a crazy win potential!\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two integra"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_sweet-spotz.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Experience the Sugar High!\n\nSweet Spotz is a feature packed, avalanche cluster slot from Slotmill with a 6 x 6 grid of luscious symbols.\nThe jumping cupcake wilds combined with Multiplier Sweet Spotz with unlimited increasing win multipliers\nmakes the game insanely fun and exciting with a max-win of a whopping 10,000 times your bet.\n\nDuring both the base game and the bonus game a Mystery Transform symbol can appear, selecting up to\n10 symbols which are transformed into a random symbol. Three+ cupcakes triggers the Free Spin Bonus\nduring which the Sweet Spotz multipliers are sticky creating a crazy win potential!\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have\ntwo integrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mo"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-sweet-spotz.webp",
+  "thumbnail_attribution": "Slotmill"
+}

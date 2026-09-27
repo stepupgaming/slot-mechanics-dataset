@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Vikings Creed",
+    "slug": "slotmill-vikings-creed",
+    "provider_game_id": "vikings-creed",
+    "release_year": 2020,
+    "demo_url": "https://vikings-creed.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/vikings-creed"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x3 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 20 - fixed"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 20 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 20 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The Viking symbol is a Walking Wild substituting for all symbols except Scatters and awards a 2x win multiplier .",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "three reel positions the Free Spin bonus holds massive win potential.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": 6,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Three+ scattered Crow-symbols award 6 Free Spins with Expanding Walking Wilds . three reel positions the Free Spin bonus holds massive win potential.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Walking Wilds",
+      "trigger": null,
+      "effects": "Adding to the excitement in the base game is the “Wild Berserk” feature which randomly place 3-5 Walking Wilds on the reels.",
+      "params": {}
+    },
+    {
+      "name": "Wild Berserk",
+      "trigger": null,
+      "effects": "Adding to the excitement in the base game is the “Wild Berserk” feature which randomly place 3-5 Walking Wilds on the reels.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins w. Expanding Walking Wilds",
+      "trigger": "three reel positions the Free Spin bonus holds massive win potential.",
+      "effects": "Three+ scattered Crow-symbols award 6 Free Spins with Expanding Walking Wilds .",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have integrated an exciting feature; “Burst Mode”.",
+      "params": {},
+      "when": "any time / auto-play"
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000.0,
+    "max_win_notes": "Official Max win; x Bet: 5 000 x / 250 000",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96,03 %",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/vikings-creed",
+      "local_path": "sources/slotmill/vikings-creed.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x3 Video Slot\nPaylines: 20 - fixed\nRTP (%): 96,03 %\nMax win; x Bet: 5 000 x / 250 000\nBonus Features: Walking Wilds, Wild Berserk, Free Spins w. Expanding Walking Wilds\nSpecial Symbols: Wild, Scatter\nVolatility (variance): High\nGame URL: \"https://vikings-creed.slotmill.com\"\nVikings Creed is a feature packed slot with a maximum win of 5000 times bet. The Viking symbol is a Walking Wild substituting for all symbols except Scatters and awards a 2x win multiplier . Wilds can appear on any reel triggering a Free Re-Spin during which it moves one position to the left. Additional re-spins are awarded until the last Wild reach the left-most reel. Adding to the excitement in the base game is the “Wild Berserk” feature which randomly place 3-5 Walking Wilds on the reels.\n\nThree+ scattered Crow-symbols award 6 Free Spins with Expanding Walking Wilds . By covering all three reel positions the Free Spin bonus holds massive win potential.\n\nDesigned and built for mobile first"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_vikings-creed.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Walking Wilds and Wild Berserk Feature\n\nVikings Creed is a feature packed slot with a maximum win of 5000 times bet. The Viking symbol is a\nWalking Wild substituting for all symbols except Scatters and awards a 2x win multiplier. Wilds can\nappear on any reel triggering a Free Re-Spin during which it moves one position to the left. Additional\nre-spins are awarded until the last Wild reach the left-most reel. Adding to the excitement in the base\ngame is the “Wild Berserk” feature which randomly place 3-5 Walking Wilds on the reels.\n\nThree+ scattered Crow-symbols award 6 Free Spins with Expanding Walking Wilds. By covering all\nthree reel positions the Free Spin bonus holds massive win potential.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have\ntwo"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-vikings-creed.webp",
+  "thumbnail_attribution": "Slotmill"
+}

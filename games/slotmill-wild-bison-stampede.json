@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Wild Bison Stampede",
+    "slug": "slotmill-wild-bison-stampede",
+    "provider_game_id": "wild-bison-stampede",
+    "release_year": 2026,
+    "demo_url": "https://wild-bison-stampede.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/wild-bison-stampede"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x4"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 40,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 40"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wilds",
+        "behavior": "Charge Across the Prairie for Wild Wins!",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus Symbols",
+        "behavior": "symbols to trigger the Free Spins feature, then spin the bonus wheel to discover your reward.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land three Bonus symbols to trigger the Free Spins feature, then spin the bonus wheel to discover your reward. symbols to trigger the Free Spins feature, then spin the bonus wheel to discover your reward.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Medium-High"
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "symbols to trigger the Free Spins feature, then spin the bonus wheel to discover your reward.",
+      "effects": "Land three Bonus symbols to trigger the Free Spins feature, then spin the bonus wheel to discover your reward.",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins",
+      "trigger": "symbols to trigger the Free Spins feature, then spin the bonus wheel to discover your reward.",
+      "effects": "Land three Bonus symbols to trigger the Free Spins feature, then spin the bonus wheel to discover your reward.",
+      "params": {}
+    },
+    {
+      "name": "Sticky Wilds",
+      "trigger": null,
+      "effects": "Sticky Wilds listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Nudging Wilds",
+      "trigger": null,
+      "effects": "Nudging Wilds listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "Stampede your way to wins of up to 6688x your bet In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode,’ ‘Fast Track,’ and ‘Xtra-Bet.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "Stampede your way to wins of up to 6688x your bet In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode,’ ‘Fast Track,’ and ‘Xtra-Bet.",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "Stampede your way to wins of up to 6688x your bet In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode,’ ‘Fast Track,’ and ‘Xtra-Bet.",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 6688.0,
+    "max_win_notes": "Official Max win; x Bet: 66 88x",
+    "rtp_percent": 96.01,
+    "rtp_notes": "Variant 1: 96.01% | Variant 2: 94.03%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/wild-bison-stampede",
+      "local_path": "sources/slotmill/wild-bison-stampede.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x4\nPaylines: 40\nRTP (%): Variant 1: 96.01% | Variant 2: 94.03%\nMax win; x Bet: 66 88x\nBonus Features: Free Spins, Super Free Spins, Sticky Wilds, Nudging Wilds\nSpecial Symbols: Bonus Symbols, Wilds\nVolatility (variance): Medium-High\nGame URL: \"https://wild-bison-stampede.slotmill.com\"\nCharge Across the Prairie for Wild Wins!\n\nSet against the untamed American prairie, Wild Bison Stampede is a 5×4 slot with 20 paylines, where mighty Bison Wilds can appear as Single or Stacked Wilds to boost your winning potential with every spin. Land three Bonus symbols to trigger the Free Spins feature, then spin the bonus wheel to discover your reward.\n\nWill you unleash Sticky Bison Wilds that lock into place, Stacked Bison Wilds that expand and stay on the reels, or the powerful Super Free Spins, where both features combine for even bigger winning opportunities? With majestic wildlife including eagles, wolves, and other iconic prairie animals surrounding the action, every spin captures "
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_wild-bison-stampede.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Wild Bison Stampede\n\nCharge Across the Prairie for Wild Wins!\n\nSet against the untamed American prairie, Wild Bison Stampede is a 5×4 slot with 20 paylines, where mighty Bison\nWilds can appear as Single or Stacked Wilds to boost your winning potential with every spin.Land three Bonus\nsymbols to trigger the Free Spins feature, then spin the bonus wheel to discover your reward.\n\nWill you unleash Sticky Bison Wilds that lock into place, Stacked Bison Wilds that expand and stay on the reels, or\nthe powerful Super Free Spins, where both features combine for even bigger winning opportunities? With majestic\nwildlife including eagles, wolves, and other iconic prairie animals surrounding the action, every spin captures the\nspirit of the wild frontier. Stampede your way to wins of up to 6688x your b"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Medium-High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-wild-bison-stampede.webp",
+  "thumbnail_attribution": "Slotmill"
+}

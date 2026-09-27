@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:32:38Z",
+  "updated_at": "2026-09-27T18:33:20Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Carnival Joker",
@@ -147,13 +147,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "low",
     "numeric_limits": "high"
@@ -178,7 +178,8 @@
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
-    "volatility from official specs: Medium-High"
+    "volatility from official specs: Medium-High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-carnival-joker.webp",
   "thumbnail_attribution": "Slotmill"

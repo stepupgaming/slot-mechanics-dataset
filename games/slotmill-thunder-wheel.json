@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Thunder Wheel",
+    "slug": "slotmill-thunder-wheel",
+    "provider_game_id": "thunder-wheel",
+    "release_year": 2021,
+    "demo_url": "https://thunder-wheel.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/thunder-wheel"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 4,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 4x4 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 256,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 256"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 256 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 256 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The base game features a random wild feature which can expand up to a maximum 3×3 symbol size.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus Symbol",
+        "behavior": "expand and additional Free Spins are awarded.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Thunder Wheel Symbol",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Three Bonus Symbols trigger Free Spins during which a Roaming Wild is present, changing position with each spin. expand and additional Free Spins are awarded.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "expand and additional Free Spins are awarded.",
+      "effects": "Three Bonus Symbols trigger Free Spins during which a Roaming Wild is present, changing position with each spin.",
+      "params": {}
+    },
+    {
+      "name": "Thunder Wheel",
+      "trigger": null,
+      "effects": "Thunder wheel is a Greek mythology themed 4-reel, 4 symbol row video slot with 256 betways.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have integrated an exciting feature; “Burst Mode”.",
+      "params": {},
+      "when": "any time / auto-play"
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10 000 x",
+    "rtp_percent": 96.08,
+    "rtp_notes": "96,08%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/thunder-wheel",
+      "local_path": "sources/slotmill/thunder-wheel.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 4x4 Video Slot\nBetways: 256\nRTP (%): 96,08%\nMax win; x Bet: 10 000 x\nBonus Features: Free Spins, Thunder Wheel\nSpecial Symbols: Wild, Bonus Symbol, Thunder Wheel Symbol\nVolatility (variance): Very High\nGame URL: \"https://thunder-wheel.slotmill.com\"\nThunder wheel is a Greek mythology themed 4-reel, 4 symbol row video slot with 256 betways. The base game features a random wild feature which can expand up to a maximum 3×3 symbol size.\n\nThree Bonus Symbols trigger Free Spins during which a Roaming Wild is present, changing position with each spin. The Bonus symbols are collected during Free Spins and at certain thresholds the size of the Roaming Wild expand and additional Free Spins are awarded.\n\nThe Thunder Wheel feature is triggered by minimum two Thunder Wheel symbols. The Thunder Wheel consist of four rings and four Thunder Wheel symbols are required to activate all of them. The Thunder Wheel can pay up to 9999x bet!\n\nDesigned and buil"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_thunder-wheel.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Unlock the power of the Thunder Wheel!\n\nThunder wheel is a Greek mythology themed 4reel, 4 symbol row video slot with 256 betways. The base\ngame features a random wild feature which can expand up to a maximum 3×3 symbol size. Three Bonus\nSymbols trigger Free Spins during which a Roaming Wild is present, changing position with each spin. The\nBonus symbols are collected during Free Spins and at certain thresholds the size of the Roaming Wild\nexpand and additional Free Spins are awarded.\n\nThe Thunder Wheel feature is triggered by minimum two Thunder Wheel symbols. The Thunder Wheel\nconsist of four rings and four Thunder Wheel symbols are required to activate all of them. The Thunder\nWheel can pay up to 9999 x.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-thunder-wheel.webp",
+  "thumbnail_attribution": "Slotmill"
+}

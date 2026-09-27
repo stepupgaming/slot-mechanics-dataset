@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Ribs' Golden Crypt",
+    "slug": "slotmill-ribs-golden-crypt",
+    "provider_game_id": "ribs-golden-crypt",
+    "release_year": 2026,
+    "demo_url": "https://ribs-golden-crypt.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/ribs-golden-crypt"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: Cluster Pays / Avalanche, grid 6×6"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Official Paylines field: N/A — Cluster Pays"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Ribs Golden Crypt is a 6×6 Cluster Pay Avalanche slot packed with explosive wins, Giant Symbols, powerful Multiplier Meteors, and a maximum win of 10,000x your bet."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill cluster-pays / avalanche/cascade: spin → evaluate wins → avalanche while wins continue.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Winning clusters of matching adjacent symbols are evaluated.",
+        "order": 2,
+        "ends_when": "All current winning clusters identified",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Ribs Golden Crypt is a 6×6 Cluster Pay Avalanche slot packed with explosive wins, Giant Symbols, powerful Multiplier Meteors, and a maximum win of 10,000x your bet.",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      }
+    ],
+    "win_evaluation": "Winning clusters of matching adjacent symbols are evaluated.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Multiplier Meteor Symbol",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      },
+      {
+        "name": "Free Spins Symbol",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Find 3, 4, or 5 Bonus Keys to unlock 8, 10, or 12 Free Spins.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Find 3, 4, or 5 Bonus Keys to unlock 8, 10, or 12 Free Spins.",
+      "params": {}
+    },
+    {
+      "name": "Super Mode",
+      "trigger": null,
+      "effects": "Super Mode listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Win Multiplier",
+      "trigger": null,
+      "effects": "Ribs brings engaging features such as Giant Symbols that arrive carrying multipliers from x2 to x10, adding their value to the Win Multiplier whenever they contribute to a win.",
+      "params": {}
+    },
+    {
+      "name": "Multiplier Meteor",
+      "trigger": null,
+      "effects": "Ribs Golden Crypt is a 6×6 Cluster Pay Avalanche slot packed with explosive wins, Giant Symbols, powerful Multiplier Meteors, and a maximum win of 10,000x your bet.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Ribs Golden Crypt is a 6×6 Cluster Pay Avalanche slot packed with explosive wins, Giant Symbols, powerful Multiplier Meteors, and a maximum win of 10,000x your bet.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode,’ ‘Fast Track,’ and ‘Xtra-Bet.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode,’ ‘Fast Track,’ and ‘Xtra-Bet.",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode,’ ‘Fast Track,’ and ‘Xtra-Bet.",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10,000x",
+    "rtp_percent": 96.0,
+    "rtp_notes": "Variant 1: 96 | Variant 2: 94",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "low",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/ribs-golden-crypt",
+      "local_path": "sources/slotmill/ribs-golden-crypt.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: Cluster Pays / Avalanche, grid 6×6\nPaylines: N/A — Cluster Pays\nRTP (%): Variant 1: 96 | Variant 2: 94\nMax win; x Bet: 10,000x\nBonus Features: Free Spins, Super Mode, Win Multiplier, Multiplier Meteor\nSpecial Symbols: Multiplier Meteor Symbol, Free Spins Symbol\nVolatility (variance): Very High\nGame URL: \"https://ribs-golden-crypt.slotmill.com\"\nStep into the mysterious Golden Crypt of Ribs, a quirky skeleton with a questionable past and motives. Deep beneath the ground sits Ribs' Golden Crypt, the place where he keeps his rather impressive treasure collection. The only problem? Ribs has misplaced his keys.\n\nRibs Golden Crypt is a 6×6 Cluster Pay Avalanche slot packed with explosive wins, Giant Symbols, powerful Multiplier Meteors, and a maximum win of 10,000x your bet.\n\nMatch 5 or more identical symbols to create a Cluster win. Winning symbols explode, making room for new symbols to drop and creating more opportunities for the Avalanche to continue. Every spin with a cluster win also creates a Wild Symbol in a random empty position"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-ribs-golden-crypt.webp",
+  "thumbnail_attribution": "Slotmill"
+}

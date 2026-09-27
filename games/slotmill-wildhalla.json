@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Wildhalla",
+    "slug": "slotmill-wildhalla",
+    "provider_game_id": "wildhalla",
+    "release_year": 2026,
+    "demo_url": "https://wildhalla.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/wildhalla"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x4"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 40,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 40"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Multiplier Wild",
+        "behavior": "Every time a Wild appears, another fearless warrior joins the charge, marching across the reels in search of glory, riches, and a spectacularly heroic death.",
+        "params": {}
+      },
+      {
+        "name": "Wild Reset",
+        "behavior": "Every time a Wild appears, another fearless warrior joins the charge, marching across the reels in search of glory, riches, and a spectacularly heroic death.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Free Spins referenced on official page; exact trigger counts not always stated on marketing page.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Free Spins Bonus",
+      "trigger": null,
+      "effects": "Free Spins Bonus listed on official Slotmill game page; exact trigger counts often not on marketing page.",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins Bonus",
+      "trigger": null,
+      "effects": "Free Spins Bonus listed on official Slotmill game page; exact trigger counts often not on marketing page.",
+      "params": {}
+    },
+    {
+      "name": "Wild Multiplier",
+      "trigger": null,
+      "effects": "Wild Multiplier listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode,’ ‘Fast Track,’ and ‘Xtra-Bet.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode,’ ‘Fast Track,’ and ‘Xtra-Bet.",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode,’ ‘Fast Track,’ and ‘Xtra-Bet.",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10 000x",
+    "rtp_percent": 96.05,
+    "rtp_notes": "Variant 1: 96.05% | Variant 2: 94.16%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/wildhalla",
+      "local_path": "sources/slotmill/wildhalla.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x4\nPaylines: 40\nRTP (%): Variant 1: 96.05% | Variant 2: 94.16%\nMax win; x Bet: 10 000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Wild Multiplier\nSpecial Symbols: Multiplier Wild, Wild Reset\nVolatility (variance): Very High\nGame URL: \"https://wildhalla.slotmill.com\"\nThe drums are pounding, the longships are ready, and a band of completely unqualified Vikings are charging headfirst toward Valhalla.\n\nAxes fly, shields break, and common sense is left far behind in this chaotic Norse adventure. Every time a Wild appears, another fearless warrior joins the charge, marching across the reels in search of glory, riches, and a spectacularly heroic death.\n\nSet on a 5x4 reel layout with 40 paylines, the battlefield is packed with roaming Wilds, growing multipliers, and enough Viking chaos to make Odin himself nervous. Whether your warriors earn eternal glory or simply run straight into disaster, massive wins of up to 10,000x your bet await those brave enough to jo"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-wildhalla.webp",
+  "thumbnail_attribution": "Slotmill"
+}

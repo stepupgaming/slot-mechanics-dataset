@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Golden Scrolls",
+    "slug": "slotmill-golden-scrolls",
+    "provider_game_id": "golden-scrolls",
+    "release_year": 2023,
+    "demo_url": "https://golden-scrolls.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/golden-scrolls"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x6 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 20"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 20 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 20 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Expanding Wilds",
+        "behavior": "At the heart of this captivating adventure are the Expanding Wild Scrolls which extends downward, turning every covered position into a Wild symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus symbols",
+        "behavior": "Delve deeper into the mysteries with Free Spins, where Wild Scrolls are more plentiful.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Delve deeper into the mysteries with Free Spins, where Wild Scrolls are more plentiful.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Delve deeper into the mysteries with Free Spins, where Wild Scrolls are more plentiful.",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins",
+      "trigger": null,
+      "effects": "Delve deeper into the mysteries with Free Spins, where Wild Scrolls are more plentiful.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12000.0,
+    "max_win_notes": "Official Max win; x Bet: 12 000x",
+    "rtp_percent": 95.2,
+    "rtp_notes": "Variant 1: 95.20 | Variant 2: 94.10",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/golden-scrolls",
+      "local_path": "sources/slotmill/golden-scrolls.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x6 Video Slot\nBetways: 20\nRTP (%): Variant 1: 95.20 | Variant 2: 94.10\nMax win; x Bet: 12 000x\nBonus Features: Free Spins, Super Free Spins\nSpecial Symbols: Expanding Wilds, Bonus symbols\nVolatility (variance): Very High\nGame URL: \"https://golden-scrolls.slotmill.com\"\nStep into the mesmerizing world of ancient Egypt with our thrilling new video slot, “Golden Scrolls.” This 5×6 slot game boasts 20 enchanting bet lines and offers the potential for monumental wins, reaching up to an astonishing 12,000 times your initial bet.\n\nAt the heart of this captivating adventure are the Expanding Wild Scrolls which extends downward, turning every covered position into a Wild symbol. With each expansion, the multiplier grows, up to an x6.\n\nDelve deeper into the mysteries with Free Spins, where Wild Scrolls are more plentiful. Plus, don’t miss the chance to trigger Super Free Spins, where all Wilds transform into the coveted Golden Expanding Wild Scrolls that expand both"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_golden-scrolls.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Embark on an Ancient Adventure!\nStep into the mesmerizing world of ancient Egypt with our thrilling new video slot, “Golden Scrolls.” This\n5×6 slot game boasts 20 enchanting bet lines and offers the potential for monumental wins, reaching up to\nan astonishing 12,000 times your initial bet.\n\nAt the heart of this captivating adventure are the Expanding Wild Scrolls which extends downward, turning\nevery covered position into a Wild symbol. With each expansion, the multiplier grows, up to an x6.\nDelve deeper into the mysteries with Free Spins, where Wild Scrolls are more plentiful. Plus, don’t miss the\nchance to trigger Super Free Spins, where all Wilds transform into the coveted Golden Expanding Wild\nScrolls that expand both ways.\nUnearth the treasures of the ancients in “Golden Scrolls” and "
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-golden-scrolls.webp",
+  "thumbnail_attribution": "Slotmill"
+}

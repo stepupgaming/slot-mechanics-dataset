@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Shark Frenzy",
+    "slug": "slotmill-shark-frenzy",
+    "provider_game_id": "shark-frenzy",
+    "release_year": 2023,
+    "demo_url": "https://shark-frenzy.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/shark-frenzy"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "5-reel 5-row Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 30,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 30 bet lines"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 30 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 30 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Keep an eye out for the Shark Collector Wild symbol and get ready to respin your way to victory by collecting treasures worth up to 500x your bet!So, what are you waiting for?",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Experience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases with each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": 10,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Experience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases with each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Medium - High"
+  },
+  "features": [
+    {
+      "name": "Respin Frenzy",
+      "trigger": null,
+      "effects": "Experience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases with each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!",
+      "params": {}
+    },
+    {
+      "name": "Free Spins bonus",
+      "trigger": null,
+      "effects": "Experience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases with each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins Bonus",
+      "trigger": null,
+      "effects": "Experience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases with each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7777.0,
+    "max_win_notes": "Official Max win; x Bet: 7777 x",
+    "rtp_percent": 96.13,
+    "rtp_notes": "96,13%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "medium",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/shark-frenzy",
+      "local_path": "sources/slotmill/shark-frenzy.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5-reel 5-row Video Slot\nPaylines: 30 bet lines\nRTP (%): 96,13%\nMax win; x Bet: 7777 x\nBonus Features: Respin Frenzy, Free Spins bonus, Super Free Spins Bonus\nSpecial Symbols: Bonus, Wild\nVolatility (variance): Medium - High\nGame URL: \"https://shark-frenzy.slotmill.com\"\nDive into the depths of Shark Frenzy, the thrilling ocean-themed video slot that’s making waves!\n\nExperience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases with each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!\n\nKeep an eye out for the Shark Collector Wild symbol and get ready to respin your way to victory by collecting treasures worth up to 500x your bet!So, what are you waiting for? Jump in and experience the ultimate underwater adventure with Shark Frenzy!\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing feature"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_shark-frenzy.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Dive into the depths of Shark Frenzy\n\nDive into the depths of Shark Frenzy, the thrilling ocean-themed video slot that’s making waves!\n\nExperience the excitement of Respin Frenzy and up to 10 Free Spins, where the respin multiplier increases\nwith each respin during Free Spins, providing the potential for even bigger wins – up to 7777x your bet!\nKeep an eye out for the Shark Collector Wild symbol and get ready to respin your way to victory by collecting\ntreasures worth up to 500x your bet!So, what are you waiting for? Jump in and experience the ultimate\nunderwater adventure with Shark Frenzy!\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have\ntwo integrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is an enhanced\naut"
+    }
+  ],
+  "unknowns": [
+    "grid rows/cols not parsed from Game Type",
+    "full paytable / symbol pays not on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Medium - High"
+  ],
+  "thumbnail": "thumbs/slotmill-shark-frenzy.webp",
+  "thumbnail_attribution": "Slotmill"
+}

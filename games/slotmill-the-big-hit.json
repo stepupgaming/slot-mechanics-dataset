@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "The Big Hit",
+    "slug": "slotmill-the-big-hit",
+    "provider_game_id": "big-hit",
+    "release_year": 2022,
+    "demo_url": "https://big-hit.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/the-big-hit"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x4 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 40,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 40"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The game has a 5×4 symbol grid, 40 betlines and three bonus features which all award unlimited re-spins with wilds and multipliers.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "The game has a 5×4 symbol grid, 40 betlines and three bonus features which all award unlimited re-spins with wilds and multipliers.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Big Hit",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      },
+      {
+        "name": "Heist",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      },
+      {
+        "name": "Nitro Boost",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      },
+      {
+        "name": "Bag of Frames",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Crowd Control Feature",
+      "trigger": null,
+      "effects": "Crowd Control Feature listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Heist Respins",
+      "trigger": null,
+      "effects": "Heist Respins listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Getaway Bonus & A.P.B Bonus",
+      "trigger": null,
+      "effects": "Getaway Bonus & A.P.B Bonus listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "Official Max win; x Bet: 20 000 x",
+    "rtp_percent": 96.21,
+    "rtp_notes": "96,21%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/the-big-hit",
+      "local_path": "sources/slotmill/the-big-hit.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x4 Video Slot\nBetways: 40\nRTP (%): 96,21%\nMax win; x Bet: 20 000 x\nBonus Features: Crowd Control Feature, Heist Respins, Getaway Bonus & A.P.B Bonus\nSpecial Symbols: Wild, Big Hit, Heist, Bonus, Nitro Boost, Bag of Frames\nVolatility (variance): Very High\nGame URL: \"https://big-hit.slotmill.com\"\nThe Big Hit will be Slotmills to date most volatile videoslot with a max win of 20 000 x bet! As the title suggests, the setting is a bank heist and just like the real world its about staying away from being caught as long as possible. The game has a 5×4 symbol grid, 40 betlines and three bonus features which all award unlimited re-spins with wilds and multipliers. The longer you can can keep the bonus game running, the higher the multipliers, the more wilds and the more win potential at the end.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is an enhanced "
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_the-big-hit.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Can you pull off ‘The Big Hit’?\n\nThe Big Hit will be Slotmills to date most volatile videoslot with a max win of 20 000 x bet! As the title\nsuggests, the setting is a bank heist and just like the real world its about staying away from being caught\nas long as possible. The game has a 5×4 symbol grid, 40 betlines and three bonus features which all award\nunlimited re-spins with wilds and multipliers. The longer you can can keep the bonus game running, the\nhigher the multipliers, the more wilds and the more win potential at the end.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two\nintegrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is an enhanced\nauto-play with a play-through of two game rounds per second, and Fa"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Very High"
+  ],
+  "thumbnail": "thumbs/slotmill-the-big-hit.webp",
+  "thumbnail_attribution": "Slotmill"
+}

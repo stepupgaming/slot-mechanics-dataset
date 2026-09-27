@@ -78,9 +78,9 @@ Live counts are always in `dataset.json` → `by_provider` / `by_confidence` / `
 | **Pragmatic Play** | **250** (~156 high / ~94 medium) | Expanded from ~42. High = text-extractable official rules PDFs (yesplay.bet CDN + kertn GameRules mirrors). Medium = SlotCatalog when PDF missing or image-only. |
 | **Hacksaw Gaming** | ~203 | Official `en-us-gameinfo.html` dumps (mostly high). |
 | **Backseat Gaming** | **35** (all high) | Independent studio on Hacksaw OpenRGS. Same `en-us-gameinfo.html` CDN path; `identity.provider` = **Backseat Gaming**, slug prefix `backseat-`. |
-| **Elk Studios** | 1 high gold (Ryze from official Game Description PDF) | More titles only when Game Description PDFs parse cleanly. |
-| **Slotmill** | 1 high gold (Ragnarok from product sheet + official page) | Full catalog deferred until FS trigger/costs are rules-backed. |
-| **Nolimit City** | 7 (1 upgraded to high gold: Book of Shadows; others still medium stubs pending official sheets) | Official game sheets / pages preferred; SlotCatalog stubs not expanded this turn. |
+| **Elk Studios** | 1 (1 high: Ryze from Game Description PDF) | Expand only with official Game Description PDFs. |
+| **Slotmill** | 58 (12 high with concrete bonus rules; 46 medium from official pages/sheets pending FS costs/triggers) | Product sheets + game pages; confidence capped when FS trigger/award unknown. |
+| **Nolimit City** | 7 (1 high gold Book of Shadows; 6 medium stubs) | Official sheets preferred; no new SlotCatalog stubs this turn. |
 
 Priority while collecting: official rules/gameinfo first, SlotCatalog only to fill gaps without inventing mechanics.
 

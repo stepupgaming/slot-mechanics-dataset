@@ -1,0 +1,234 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Sands of Eternity",
+    "slug": "slotmill-sands-of-eternity",
+    "provider_game_id": "sands-of-eternity",
+    "release_year": 2021,
+    "demo_url": "https://sands-of-eternity.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/sands-of-eternity"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 6x3 -> 6x6 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 729,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 729 -> 46656"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Sands of Eternity is an Egyptian-themed avalanche slot with 6 reels, 6 rows and maximum 46 656 betways!"
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline / avalanche/cascade / progressive win multiplier: spin → evaluate wins → avalanche while wins continue → multiplier grows with wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 729 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Sands of Eternity is an Egyptian-themed avalanche slot with 6 reels, 6 rows and maximum 46 656 betways!",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      },
+      {
+        "name": "progressive_multiplier",
+        "what_happens": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.",
+        "order": 4,
+        "ends_when": null,
+        "state_changes": "Win multiplier grows across consecutive wins in the cascade chain"
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 729 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The special features includes; “Wild Scarab” which release a wild symbol when the stone block explode, “Eye of Horus” that removes all low paying symbols increasing the high symbol win potential, and “Golden Scarab” which place a 2×2 jumbo-wild in a random position on the grid.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus Symbol",
+        "behavior": "20 736. Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Progressive Win Multiplier",
+        "behavior": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": 18,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols. 20 736. Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "20 736. Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.",
+      "effects": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.",
+      "params": {}
+    },
+    {
+      "name": "Wild Scarab",
+      "trigger": null,
+      "effects": "The special features includes; “Wild Scarab” which release a wild symbol when the stone block explode, “Eye of Horus” that removes all low paying symbols increasing the high symbol win potential, and “Golden Scarab” which place a 2×2 jumbo-wild in a random position on the grid.",
+      "params": {}
+    },
+    {
+      "name": "Eye of Horus",
+      "trigger": null,
+      "effects": "The special features includes; “Wild Scarab” which release a wild symbol when the stone block explode, “Eye of Horus” that removes all low paying symbols increasing the high symbol win potential, and “Golden Scarab” which place a 2×2 jumbo-wild in a random position on the grid.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Sands of Eternity is an Egyptian-themed avalanche slot with 6 reels, 6 rows and maximum 46 656 betways!",
+      "params": {}
+    },
+    {
+      "name": "Progressive Win Multiplier",
+      "trigger": "Each consecutive win in cascade",
+      "effects": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "The Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "The maximum win is 7 500x bet and the game offers “Fast Track” with three different feature buy options.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7500.0,
+    "max_win_notes": "Official Max win; x Bet: 7 500 x",
+    "rtp_percent": 96.16,
+    "rtp_notes": "96,16%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/sands-of-eternity",
+      "local_path": "sources/slotmill/sands-of-eternity.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 6x3 -> 6x6 Video Slot\nBetways: 729 -> 46656\nRTP (%): 96,16%\nMax win; x Bet: 7 500 x\nBonus Features: Free Spins, Wild Scarab, Eye of Horus\nSpecial Symbols: Wild, Bonus Symbol\nVolatility (variance): High\nGame URL: \"https://sands-of-eternity.slotmill.com\"\nSands of Eternity is an Egyptian-themed avalanche slot with 6 reels, 6 rows and maximum 46 656 betways! The starting grid is 6 x 3 symbols in a jigsaw pattern with 729 betways. Winning and adjacent blocker symbols are removed and make room for new symbols that fall into place in an avalanche motion triggering new win opportunities.\n\nSands of Eternity holds a random Expansion feature in the base game which increase the number of betways to 20 736. Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.\n\nEach corner position of the symbol grid holds special features that can be unleashed boosting the win potential. The special features includes; “Wild "
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_sands-of-eternity.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Explore the wonders of Ancient Egypt!\n\nSands of Eternity is an Egyptianthemed avalanche slot with 6 reels, 6 rows and maximum 46 656 betways ! The\nstarting grid is 6 x 3 symbols in a jigsaw pattern with 729 betways. Winning and adjacent blocker symbols are\nremoved and make room for new symbols that fall into place in an avalanche motion triggering new win\nopportunities.\n\nSands of Eternity holds a random Expansion feature in the base game which increase the number of betways to\n20 736. Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.\n\nEach corner position of the symbol grid holds special features t hat can be unleashed boosting the win potential.\nThe special features include “Wild Scarab” which release a wild symbol when the stone block explo"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: High"
+  ],
+  "thumbnail": "thumbs/slotmill-sands-of-eternity.webp",
+  "thumbnail_attribution": "Slotmill"
+}

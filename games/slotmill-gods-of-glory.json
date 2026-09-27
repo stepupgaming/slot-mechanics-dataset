@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Gods of Glory",
+    "slug": "slotmill-gods-of-glory",
+    "provider_game_id": "gods-of-glory",
+    "release_year": 2024,
+    "demo_url": "https://gods-of-glory.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/gods-of-glory"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x6 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 40,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 40"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Expanding Wilds",
+        "behavior": "Central to this epic adventure are the two types of Expanding Wilds.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Unlock the true glory of Olympus with Free Spins, where the Expanding Wilds appear more frequently, and ascend to the pinnacle of the gods with Super Free Spins, where all Wilds transform into the revered Fully Expanding Wild, expanding in both directions.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Yes",
+      "trigger": null,
+      "effects": "Yes listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "”  In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "”  In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet.",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "”  In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet.",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000.0,
+    "max_win_notes": "Official Max win; x Bet: 15000x",
+    "rtp_percent": 96.08,
+    "rtp_notes": "Variant 1: 96.08 | Variant 2: 94.13",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/gods-of-glory",
+      "local_path": "sources/slotmill/gods-of-glory.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x6 Video Slot\nPaylines: 40\nRTP (%): Variant 1: 96.08 | Variant 2: 94.13\nMax win; x Bet: 15000x\nBonus Features: Yes\nSpecial Symbols: Expanding Wilds\nVolatility (variance): High\nGame URL: \"https://gods-of-glory.slotmill.com\"\nEnter the legendary realm of Ancient Greece with our exhilarating new video slot, “ Gods of Glory “. This 5×6 slot game features 40 bet lines and offers the chance to achieve heavenly wins, up to an extraordinary 15,000 times your bet!\n\nCentral to this epic adventure are the two types of Expanding Wilds. The first type surges downward, turning each covered position into a Wild symbol. The second type appears fully expanded, covering an entire reel with divine power. Each of these Wilds has a chance to be blessed with a multiplier, randomly enhancing your winnings by 2x to a mighty 10x.\n\nPrepare for the awe-inspiring Synced Reels, where two or more reels synchronize, landing identical symbols"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_gods-of-glory.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Gods of Glory\n\nEnter the legendary realm of Ancient Greece with our exhilarating new video slot, \"Gods of Glory.\" This 5x6 slot game\nfeatures 40 bet lines and offers the chance to achieve heavenly wins, up to an extraordinary 15,000 times your bet!\n\nCentral to this epic adventure are the two types of Expanding Wilds. The first type surges downward, turning each\ncovered position into a Wild symbol. The second type appears fully expanded, covering an entire reel with divine\npower. Each of these Wilds has a chance to be blessed with a multiplier, randomly enhancing your winnings by 2x to\na mighty 10x.\n\nPrepare for the awe-inspiring Synced Reels, where two or more reels synchronize, landing identical symbols across\nthem for even greater chances of hitting legendary combinations.\nUnlock the tru"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-gods-of-glory.webp",
+  "thumbnail_attribution": "Slotmill"
+}

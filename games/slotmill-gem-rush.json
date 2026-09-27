@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Gem Rush",
+    "slug": "slotmill-gem-rush",
+    "provider_game_id": "gem-rush",
+    "release_year": 2022,
+    "demo_url": "https://gem-rush.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/gem-rush"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x7 Video Slot"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Official Paylines field: 16,807 betways"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Gem Rush is an avalanche Video Slot set in an old gold mine."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill avalanche/cascade / progressive win multiplier: spin → evaluate wins → avalanche while wins continue → multiplier grows with wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated as ways-to-win per official Betways/Paylines field.",
+        "order": 2,
+        "ends_when": "All ways scored",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Gem Rush is an avalanche Video Slot set in an old gold mine.",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      },
+      {
+        "name": "progressive_multiplier",
+        "what_happens": "The progressive Win Multiplier combined with six different Power-Ups features that are triggered randomly increase the excitement and chances to win.",
+        "order": 4,
+        "ends_when": null,
+        "state_changes": "Win multiplier grows across consecutive wins in the cascade chain"
+      }
+    ],
+    "win_evaluation": "Wins evaluated as ways-to-win per official Betways/Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Progressive Win Multiplier",
+        "behavior": "The progressive Win Multiplier combined with six different Power-Ups features that are triggered randomly increase the excitement and chances to win.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Free Spins are triggered by 3+ bonus symbols and are played with the full symbol grid and 16,807 bet ways. Free Spins are triggered by 3+ bonus symbols and are played with the full symbol grid and 16,807 bet ways.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Freespins",
+      "trigger": null,
+      "effects": "Freespins listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Freespins with 10x win multiplier",
+      "trigger": null,
+      "effects": "Freespins with 10x win multiplier listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Full Expansion",
+      "trigger": null,
+      "effects": "Full Expansion listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Full Expansion with 3x win multiplier",
+      "trigger": null,
+      "effects": "Full Expansion with 3x win multiplier listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Gem Rush is an avalanche Video Slot set in an old gold mine.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10 000 x",
+    "rtp_percent": 96.1,
+    "rtp_notes": "96,10%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/gem-rush",
+      "local_path": "sources/slotmill/gem-rush.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x7 Video Slot\nPaylines: 16,807 betways\nRTP (%): 96,10%\nMax win; x Bet: 10 000 x\nBonus Features: Freespins, Freespins with 10x win multiplier, Full Expansion, Full Expansion with 3x win multiplier\nVolatility (variance): High\nGame URL: \"https://gem-rush.slotmill.com\"\nGem Rush is an avalanche Video Slot set in an old gold mine. The 5×7 symbol grid can give up to 16,807 bet ways and the game has a maximum win of 10,000 times bet. The base game starts with up to 15 stone blocks at the bottom of the grid which can be crushed by the dynamite feature making space for more paying symbols. The progressive Win Multiplier combined with six different Power-Ups features that are triggered randomly increase the excitement and chances to win.\n\nFree Spins are triggered by 3+ bonus symbols and are played with the full symbol grid and 16,807 bet ways. The progressive Win Multiplier does not reset between game rounds during Free Spins which combined with a full stack of P"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_gem-rush.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "There's a Gem Rush going on! Have you got your shovel?\n\nGem Rush is an avalanche Video Slot set in an old gold mine. The 5x7 symbol grid can give up to 16,807 bet\nways and the game has a maximum win of 10,000 times bet. The base game starts with up to 15 stone\nblocks at the bottom of the grid which can be crushed by the dynamite feature making space for more\npaying symbols. The progressive Win Multiplier combined with six different Power-Ups features that are\ntriggered randomly increase the excitement and chances to win.\n\nFree Spins are triggered by 3+ bonus symbols and are played with the full symbol grid and 16,807 bet ways.\nThe progressive Win Multiplier does not reset between game rounds during Free Spins which combined\nwith a full stack of Power-Ups result in a crazy win potential.\n\nI"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-gem-rush.webp",
+  "thumbnail_attribution": "Slotmill"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:32:38Z",
+  "updated_at": "2026-09-27T18:33:20Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Dead Man's Drop",
@@ -155,13 +155,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -187,7 +187,8 @@
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Very High"
+    "volatility from official specs: Very High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-deadmansdrop.webp",
   "thumbnail_attribution": "Slotmill"

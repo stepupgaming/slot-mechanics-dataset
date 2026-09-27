@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:33:20Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Sands of Eternity 2",
+    "slug": "slotmill-sands-of-eternity-2",
+    "provider_game_id": "sands-of-eternity-2",
+    "release_year": 2024,
+    "demo_url": "https://sands-of-eternity-2.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/sands-of-eternity-2"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 6x3->7 Video Slot"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Official Paylines field: 729-117649 Bet Ways"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Sands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up to 117,649 bet ways."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill avalanche/cascade: spin → evaluate wins → avalanche while wins continue.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated as ways-to-win per official Betways/Paylines field.",
+        "order": 2,
+        "ends_when": "All ways scored",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Sands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up to 117,649 bet ways.",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      }
+    ],
+    "win_evaluation": "Wins evaluated as ways-to-win per official Betways/Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "These include “Rays of Ra,” which releases wild symbols, and “Shift of Thoth,” which converts symbols into the same symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus Symbol",
+        "behavior": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": 8,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Medium-High"
+  },
+  "features": [
+    {
+      "name": "Free Spins Bonus",
+      "trigger": null,
+      "effects": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins Bonus",
+      "trigger": null,
+      "effects": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Sands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up to 117,649 bet ways.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘Fast Track ,’ and ‘ Xtra-Bet .’  Burst Mode functions as an enhanced auto-play, completing two game rounds per second.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘Fast Track ,’ and ‘ Xtra-Bet .’  Burst Mode functions as an enhanced auto-play, completing two game rounds per second.",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘Fast Track ,’ and ‘ Xtra-Bet .’  Burst Mode functions as an enhanced auto-play, completing two game rounds per second.",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000.0,
+    "max_win_notes": "Official Max win; x Bet: 15000x",
+    "rtp_percent": 96.1,
+    "rtp_notes": "Variant 1: 96.10 | Variant 2: 94.09",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/sands-of-eternity-2",
+      "local_path": "sources/slotmill/sands-of-eternity-2.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 6x3->7 Video Slot\nPaylines: 729-117649 Bet Ways\nRTP (%): Variant 1: 96.10 | Variant 2: 94.09\nMax win; x Bet: 15000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus\nSpecial Symbols: Wild, Bonus Symbol\nVolatility (variance): Medium-High\nGame URL: \"https://sands-of-eternity-2.slotmill.com\"\nSands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up to 117,649 bet ways. The game starts with a unique 6 x 3 symbol grid arranged in a jigsaw pattern, offering 729 initial bet ways. Winning symbols and adjacent blockers are removed, allowing new symbols to cascade down in an avalanche motion, creating new win opportunities and increasing the number of bet ways.\n\nIn the base game, a random Expansion feature can activate, increasing the number of bet ways even further. Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.\n\nEach corner position of t"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_sands-of-eternity-2.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Sands of Eternity 2\n\nSands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up\nto 117,649 bet ways. The game starts with a unique 6 x 3 symbol grid arranged in a jigsaw pattern, offering\n729 initial bet ways. Winning symbols and adjacent blockers are removed, allowing new symbols to cascade\ndown in an avalanche motion, creating new win opportunities and increasing the number of bet ways.\n\nIn the base game, a random Expansion feature can activate, increasing the number of bet ways even further.\nLanding three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode,\nboosting the win multiplier with every win.\n\nEach corner position of the symbol grid holds special features that can significantly enhance win potent"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Medium-High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+  ],
+  "thumbnail": "thumbs/slotmill-sands-of-eternity-2.webp",
+  "thumbnail_attribution": "Slotmill"
+}

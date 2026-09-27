@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Money Jar",
+    "slug": "slotmill-money-jar",
+    "provider_game_id": "money-jar",
+    "release_year": 2022,
+    "demo_url": "https://money-jar.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/money-jar"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 6x6 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 46,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 46,656"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 46 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 46 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Countdown Wilds",
+      "trigger": null,
+      "effects": "Countdown Wilds can be sticky and extend the respin feature.The core of the game is the Money Jar symbol which trigger the bonus game where it collects multiplier coins and Magnets.The Special symbols “Payer”, “Doubler” and “Magnet” creates extra excitement with their unique features.",
+      "params": {}
+    },
+    {
+      "name": "Win Respins",
+      "trigger": null,
+      "effects": "Win Respins listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Extra Chance",
+      "trigger": null,
+      "effects": "Extra Chance listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Money Jar Bonus Game",
+      "trigger": null,
+      "effects": "Money Jar Bonus Game listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "Official Max win; x Bet: 20 000 x",
+    "rtp_percent": 96.09,
+    "rtp_notes": "96,09%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "low",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/money-jar",
+      "local_path": "sources/slotmill/money-jar.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 6x6 Video Slot\nBetways: 46,656\nRTP (%): 96,09%\nMax win; x Bet: 20 000 x\nBonus Features: Countdown Wilds, Win Respins, Extra Chance, Money Jar Bonus Game\nVolatility (variance): Very High\nGame URL: \"https://money-jar.slotmill.com\"\nMoney Jar is a 1930´s “Betty Boop” comic style inspired, high paced Videoslot with 46,656 betways and a chance to win up to 20,000 times bet!\n\nThe game holds an Extra Win Feature as well as a Respin Feature where all winning symbols can turn into a Wild or a Money Jar symbol. Countdown Wilds can be sticky and extend the respin feature.The core of the game is the Money Jar symbol which trigger the bonus game where it collects multiplier coins and Magnets.The Special symbols “Payer”, “Doubler” and “Magnet” creates extra excitement with their unique features.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing featur"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_money-jar.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Collect coins with Money Jar!\n\nMoney Jar is a 1930´s “Betty Boop” comic style inspired, high paced Videoslot with 46,656 betways and a\nchance to win up to 20,000 times bet! The game holds an Extra Win Feature as well as a Respin Feature\nwhere all winning symbols can turn into a Wild or a Money Jar symbol. Countdown Wilds can be sticky and\nextend the respin feature. The core of the game is the Money Jar symbol which trigger the bonus game\nwhere it collects multiplier coins and Magnets. The Special symbols “Payer”, “Doubler” and “Magnet”\ncreates extra excitement with their unique features.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have\ntwo integrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is an enhanced\nauto-pl"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Very High"
+  ],
+  "thumbnail": "thumbs/slotmill-money-jar.webp",
+  "thumbnail_attribution": "Slotmill"
+}

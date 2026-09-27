@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:32:38Z",
+  "updated_at": "2026-09-27T18:33:20Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Coins and Cannons",
@@ -178,13 +178,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
+    "overall": "medium",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "high",
+    "bonus_free_spins": "low",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -209,7 +209,8 @@
     "full paytable / symbol pays not on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: High"
+    "volatility from official specs: High",
+    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
   ],
   "thumbnail": "thumbs/slotmill-coins-and-cannons.webp",
   "thumbnail_attribution": "Slotmill"
