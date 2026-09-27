@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:05Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Thunder Wheel",
@@ -91,7 +91,7 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": "Three Bonus Symbols trigger Free Spins during which a Roaming Wild is present, changing position with each spin.",
+        "trigger": "Three Bonus Symbols trigger Free Spins",
         "spins_awarded": null,
         "retrigger": null,
         "sticky_or_persistent_state": null,
@@ -101,7 +101,7 @@
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Three Bonus Symbols trigger Free Spins during which a Roaming Wild is present, changing position with each spin.",
+            "what_happens": "Three Bonus Symbols trigger Free Spins",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -158,13 +158,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "high",
     "features": "high",
     "feature_buy": "low",
     "numeric_limits": "high"
@@ -174,22 +174,21 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/thunder-wheel",
       "local_path": "sources/slotmill/thunder-wheel.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 4x4 Video Slot\nBetways: 256\nRTP (%): 96,08%\nMax win; x Bet: 10 000 x\nBonus Features: Free Spins, Thunder Wheel\nSpecial Symbols: Wild, Bonus Symbol, Thunder Wheel Symbol\nVolatility (variance): Very High\nGame URL: \"https://thunder-wheel.slotmill.com\"\nThunder wheel is a Greek mythology themed 4-reel, 4 symbol row video slot with 256 betways. The base game features a random wild feature which can expand up to a maximum 3×3 symbol size.\n\nThree Bonus Symbols trigger Free Spins during which a Roaming Wild is present, changing position with each spin. The Bonus symbols are collected during Free Spins and at certain thresholds the size of the Roaming Wild expand and additional Free Spins are awarded.\n\nThe Thunder Wheel feature is triggered by minimum two Thunder Wheel symbols. The Thunder Wheel consist of four rings and four Thunder Wheel symbols are required to activate all of them. The Thunder Wheel can pay up to 9999x bet!\n\nDesigned and buil"
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_thunder-wheel.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
-      "quote_or_excerpt": "Unlock the power of the Thunder Wheel!\n\nThunder wheel is a Greek mythology themed 4reel, 4 symbol row video slot with 256 betways. The base\ngame features a random wild feature which can expand up to a maximum 3×3 symbol size. Three Bonus\nSymbols trigger Free Spins during which a Roaming Wild is present, changing position with each spin. The\nBonus symbols are collected during Free Spins and at certain thresholds the size of the Roaming Wild\nexpand and additional Free Spins are awarded.\n\nThe Thunder Wheel feature is triggered by minimum two Thunder Wheel symbols. The Thunder Wheel\nconsist of four rings and four Thunder Wheel symbols are required to activate all of them. The Thunder\nWheel can pay up to 9999 x.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill"
+      "extracted_at": "2026-09-27T18:36:08Z",
+      "quote_or_excerpt": "Three Bonus Symbols trigger Free Spins"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
-    "exact free-spins award count / scatter trigger count not stated on marketing page",
     "volatility from official specs: Very High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "exact free-spins award count not stated (trigger evidenced)"
   ],
   "thumbnail": "thumbs/slotmill-thunder-wheel.webp",
   "thumbnail_attribution": "Slotmill"

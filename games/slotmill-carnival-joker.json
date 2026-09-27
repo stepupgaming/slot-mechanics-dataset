@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:05Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Carnival Joker",
@@ -165,7 +165,7 @@
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "medium",
     "features": "high",
     "feature_buy": "low",
     "numeric_limits": "high"
@@ -175,23 +175,22 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/carnival-joker",
       "local_path": "sources/slotmill/carnival-joker.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 5x4 -> 7 Video Slot\nBetways: Betways 2000 -> 5488\nRTP (%): Variant 1: 96,08% | Variant 2: 94,11%\nMax win; x Bet: Variant 1: 5533x Variant 2: 5402x\nBonus Features: Free Spins Bonus, Fortune Frenzy Bonus\nVolatility (variance): Medium-High\nGame URL: \"https://carnival-joker.slotmill.com\"\nStep right into the dazzling world of Carnival Joker! Set against a vibrant carnival backdrop, this 4-5-5-5-4 video slot with up to 5488 Bet Ways delivers a spectacular show packed with thrilling features and fantastic opportunities for massive wins.\n\nUnleash the excitement of the Free Spins Bonus, where landing 3 or more Bonus symbols unlocks a world of endless possibilities. Wild symbols spring into action with random multipliers of x2 or x3, giving your winnings an extra boost. The show gets even bigger as the “UP” symbol can expand the reels, adding extra rows, increasing Bet Ways and boosting your win potential.\n\nBut the carnival excitement doesn’t stop there. Enter the Fortune Frenzy B"
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_carnival-joker.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Carnival Joker\n\nStep right into the dazzling world of Carnival Joker! Set against a vibrant carnival backdrop, this 4-5-5-5-4 video slot\nwith up to 5488 Bet Ways delivers a spectacular show packed with thrilling features and fantastic opportunities for\nmassive wins.\n\nUnleash the excitement of the Free Spins Bonus, where landing 3 or more Bonus symbols unlocks a world of\nendless possibilities. Wild symbols spring into action with random multipliers of x2 or x3, giving your winnings an\nextra boost. The show gets even bigger as the “UP” symbol can expand the reels, adding extra rows, increasing Bet\nWays and boosting your win potential.\n\nBut the carnival excitement doesn’t stop there. Enter the Fortune Frenzy Bonus by collecting 6 Coin symbols and\nexperience the ultimate prize-filled spectacle"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
-    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "volatility from official specs: Medium-High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "Xtra-Bet cost multiplier not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-carnival-joker.webp",
   "thumbnail_attribution": "Slotmill"

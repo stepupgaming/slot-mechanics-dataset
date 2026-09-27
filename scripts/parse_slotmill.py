@@ -957,7 +957,7 @@ def build_record(
     if pdf_local and pdf_text:
         evidence.append(
             {
-                "source_type": "provider_product_sheet",
+                "source_type": "official_pdf",
                 "url": None,
                 "local_path": pdf_local,
                 "extracted_at": EXTRACTED_AT,

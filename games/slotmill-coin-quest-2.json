@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:05Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Coin Quest 2",
@@ -150,7 +150,7 @@
   "feature_buy": {
     "available": true,
     "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly. Product sheet: Gamble feature in Fast Track to gamble for Super Bonus at a lower price (exact cost not stated)."
   },
   "ante_bet": {
     "available": null,
@@ -172,7 +172,7 @@
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "medium",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -182,23 +182,22 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/coin-quest-2",
       "local_path": "sources/slotmill/coin-quest-2.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): 96,18%\nMax win; x Bet: 15 000 x\nBonus Features: Free Spins, Super Free Spins\nSpecial Symbols: Coin Quest Bonus\nVolatility (variance): High\nGame URL: \"https://coin-quest-2.slotmill.com\"\nCoin Quest 2 is a sequel to our most popular game to date which was released earlier this year and once again we have captured player feedback e.g. by increasing the bonus frequency.\n\nJust like its predecessor, Coin Quest 2 is a cluster slot featuring our unique and trademarked Coin Cluster® feature. The gameplay has been enhanced and there are two bonus features – Free Spins and Super Free Spins. The symbol grid has also been increased to 6×6 and the added power-up symbols including Wilds, Coins and Transform symbols warrants great player experience and excitement.\n\nWith Coin Quest 2 we introduce a Gamble feature in Fast Track whereby players can gamble for the Super Bonus at a lower price."
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_coin-quest-2.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "The Quest continues!\n\nCoin Quest 2 is a sequel to our most popular game to date which was released earlier this year and once\nagain we have captured player feedback e.g. by increasing the bonus frequency.\n\nJust like its predecessor, Coin Quest 2 is a cluster slot featuring our unique and trademarked Coin\nCluster® feature. The gameplay has been enhanced and there are two bonus features – Free Spins and\nSuper Free Spins. The symbol grid has also been increased to 6×6 and the added power-up symbols\nincluding Wilds, Coins and Transform symbols warrants great player experience and excitement.\n\nWith Coin Quest 2 we introduce a Gamble feature in Fast Track whereby players can gamble for the Super\nBonus at a lower price. The RTP is set at 96,18% and the maximum win is 15,000 times bet.\n\nIn respons"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
-    "Fast Track buy cost not stated on marketing page (not invented)",
     "volatility from official specs: High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "Fast Track buy cost not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-coin-quest-2.webp",
   "thumbnail_attribution": "Slotmill"

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:05Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Ribs' Golden Crypt",
@@ -202,7 +202,7 @@
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "medium",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -212,17 +212,16 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/ribs-golden-crypt",
       "local_path": "sources/slotmill/ribs-golden-crypt.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: Cluster Pays / Avalanche, grid 6×6\nPaylines: N/A — Cluster Pays\nRTP (%): Variant 1: 96 | Variant 2: 94\nMax win; x Bet: 10,000x\nBonus Features: Free Spins, Super Mode, Win Multiplier, Multiplier Meteor\nSpecial Symbols: Multiplier Meteor Symbol, Free Spins Symbol\nVolatility (variance): Very High\nGame URL: \"https://ribs-golden-crypt.slotmill.com\"\nStep into the mysterious Golden Crypt of Ribs, a quirky skeleton with a questionable past and motives. Deep beneath the ground sits Ribs' Golden Crypt, the place where he keeps his rather impressive treasure collection. The only problem? Ribs has misplaced his keys.\n\nRibs Golden Crypt is a 6×6 Cluster Pay Avalanche slot packed with explosive wins, Giant Symbols, powerful Multiplier Meteors, and a maximum win of 10,000x your bet.\n\nMatch 5 or more identical symbols to create a Cluster win. Winning symbols explode, making room for new symbols to drop and creating more opportunities for the Avalanche to continue. Every spin with a cluster win also creates a Wild Symbol in a random empty position"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
-    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
-    "Fast Track buy cost not stated on marketing page (not invented)",
     "volatility from official specs: Very High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "Xtra-Bet cost multiplier not stated on marketing page or product sheet (not invented)",
+    "Fast Track buy cost not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-ribs-golden-crypt.webp",
   "thumbnail_attribution": "Slotmill"

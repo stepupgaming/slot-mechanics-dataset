@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:02Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Sands of Eternity",
@@ -105,17 +105,17 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
-        "spins_awarded": 8,
+        "trigger": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus",
+        "spins_awarded": null,
         "retrigger": null,
         "sticky_or_persistent_state": null,
         "progressive_state": null,
-        "effects": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.",
+        "effects": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols. Up to 18 free spins (per product sheet; exact award may vary).",
         "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "what_happens": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -181,7 +181,7 @@
   "feature_buy": {
     "available": true,
     "options": [],
-    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly. Product sheet: Fast Track with three different feature buy options (exact cost multipliers not stated on sheet)."
   },
   "ante_bet": {
     "available": null,
@@ -213,21 +213,21 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/sands-of-eternity",
       "local_path": "sources/slotmill/sands-of-eternity.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 6x3 -> 6x6 Video Slot\nBetways: 729 -> 46656\nRTP (%): 96,16%\nMax win; x Bet: 7 500 x\nBonus Features: Free Spins, Wild Scarab, Eye of Horus\nSpecial Symbols: Wild, Bonus Symbol\nVolatility (variance): High\nGame URL: \"https://sands-of-eternity.slotmill.com\"\nSands of Eternity is an Egyptian-themed avalanche slot with 6 reels, 6 rows and maximum 46 656 betways! The starting grid is 6 x 3 symbols in a jigsaw pattern with 729 betways. Winning and adjacent blocker symbols are removed and make room for new symbols that fall into place in an avalanche motion triggering new win opportunities.\n\nSands of Eternity holds a random Expansion feature in the base game which increase the number of betways to 20 736. Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus symbols.\n\nEach corner position of the symbol grid holds special features that can be unleashed boosting the win potential. The special features includes; “Wild "
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_sands-of-eternity-2.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
-      "quote_or_excerpt": "Sands of Eternity 2\n\nSands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up\nto 117,649 bet ways. The game starts with a unique 6 x 3 symbol grid arranged in a jigsaw pattern, offering\n729 initial bet ways. Winning symbols and adjacent blockers are removed, allowing new symbols to cascade\ndown in an avalanche motion, creating new win opportunities and increasing the number of bet ways.\n\nIn the base game, a random Expansion feature can activate, increasing the number of bet ways even further.\nLanding three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode,\nboosting the win multiplier with every win.\n\nEach corner position of the symbol grid holds special features that can significantly enhance win potent"
+      "extracted_at": "2026-09-27T18:36:08Z",
+      "quote_or_excerpt": "Up to 18 Free Spins with a Progressive Win Multiplier can be awarded by landing 3+ bonus"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
-    "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: High"
+    "volatility from official specs: High",
+    "Fast Track buy cost not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-sands-of-eternity.webp",
   "thumbnail_attribution": "Slotmill"

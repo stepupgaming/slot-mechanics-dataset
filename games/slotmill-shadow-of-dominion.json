@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:05Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Shadow Of Dominion",
@@ -222,7 +222,7 @@
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "medium",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -232,17 +232,16 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/shadow-of-dominion",
       "local_path": "sources/slotmill/shadow-of-dominion.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 6x6 Scatter Pay\nPaylines: 8+ Scatter Pay\nRTP (%): Variant 1: 96.12% | Variant 2: 94.07%\nMax win; x Bet: 10 000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Progressive Multiplier, Giant Symbols, Dominion Respins\nSpecial Symbols: Bonus Symbols, Upgrade Symbol\nVolatility (variance): High\nGame URL: \"https://shadow-of-dominion.slotmill.com\"\nStep into the shadows and seize control of the Dominion\n\nShadow of Dominion delivers an action-packed battle of cascading wins, Giant Symbols, and Dominion Respins. Every Avalanche drives your multiplier higher, turning each victory into an opportunity for even greater rewards.\n\nBuilt on a dynamic 6-row Avalanche grid, wins are formed by matching 8 or more symbols, triggering cascading combinations that can rapidly build momentum. Every tumble and respin increases the win multiplier, while Giant Symbols can supercharge it even further, creating the potential for massive chain reactions and a maximum win of 10,000x your bet.\n\nThe action reaches new heights with Dominion Respins, where collect"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
-    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
-    "Fast Track buy cost not stated on marketing page (not invented)",
     "volatility from official specs: High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "Xtra-Bet cost multiplier not stated on marketing page or product sheet (not invented)",
+    "Fast Track buy cost not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-shadow-of-dominion.webp",
   "thumbnail_attribution": "Slotmill"

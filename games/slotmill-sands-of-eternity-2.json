@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:02Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Sands of Eternity 2",
@@ -92,7 +92,7 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
+        "trigger": "three bonus symbols awards 8 Free Spins",
         "spins_awarded": 8,
         "retrigger": null,
         "sticky_or_persistent_state": null,
@@ -102,7 +102,7 @@
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.",
+            "what_happens": "three bonus symbols awards 8 Free Spins",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -201,22 +201,22 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/sands-of-eternity-2",
       "local_path": "sources/slotmill/sands-of-eternity-2.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 6x3->7 Video Slot\nPaylines: 729-117649 Bet Ways\nRTP (%): Variant 1: 96.10 | Variant 2: 94.09\nMax win; x Bet: 15000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus\nSpecial Symbols: Wild, Bonus Symbol\nVolatility (variance): Medium-High\nGame URL: \"https://sands-of-eternity-2.slotmill.com\"\nSands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up to 117,649 bet ways. The game starts with a unique 6 x 3 symbol grid arranged in a jigsaw pattern, offering 729 initial bet ways. Winning symbols and adjacent blockers are removed, allowing new symbols to cascade down in an avalanche motion, creating new win opportunities and increasing the number of bet ways.\n\nIn the base game, a random Expansion feature can activate, increasing the number of bet ways even further. Landing three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode, boosting the win multiplier with every win.\n\nEach corner position of t"
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_sands-of-eternity-2.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
-      "quote_or_excerpt": "Sands of Eternity 2\n\nSands of Eternity 2 is an enthralling Egyptian-themed avalanche slot featuring 6 reels and 7 rows, with up\nto 117,649 bet ways. The game starts with a unique 6 x 3 symbol grid arranged in a jigsaw pattern, offering\n729 initial bet ways. Winning symbols and adjacent blockers are removed, allowing new symbols to cascade\ndown in an avalanche motion, creating new win opportunities and increasing the number of bet ways.\n\nIn the base game, a random Expansion feature can activate, increasing the number of bet ways even further.\nLanding three bonus symbols awards 8 Free Spins, during which there is a chance to trigger Super Mode,\nboosting the win multiplier with every win.\n\nEach corner position of the symbol grid holds special features that can significantly enhance win potent"
+      "extracted_at": "2026-09-27T18:36:08Z",
+      "quote_or_excerpt": "three bonus symbols awards 8 Free Spins"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
-    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
-    "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Medium-High"
+    "volatility from official specs: Medium-High",
+    "Xtra-Bet cost multiplier not stated on marketing page or product sheet (not invented)",
+    "Fast Track buy cost not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-sands-of-eternity-2.webp",
   "thumbnail_attribution": "Slotmill"

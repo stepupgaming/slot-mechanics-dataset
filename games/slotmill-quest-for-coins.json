@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:05Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Lucy Luck and the Quest for Coins",
@@ -185,7 +185,7 @@
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "medium",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -195,24 +195,23 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/quest-for-coins",
       "local_path": "sources/slotmill/quest-for-coins.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): Variant 1: 96.01 | Variant 2: 94.02\nMax win; x Bet: 20000\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Coin Clusters\nVolatility (variance): Very High\nGame URL: \"https://quest-for-coins.slotmill.com\"\nJoin Lucy Luck on her latest adventure as she returns for an all-new quest overflowing with hidden chests, cascading wins, and mountains of coins. Lucy Luck and the Quest for Coins is Lucy’s most feature-packed adventure to date, an action-packed cluster slot where every win shatters layers of blocks to uncover secret spaces and treasure-filled chests beneath. Featuring Coin Cluster™, coin wins merge together to create even bigger rewards before fresh avalanches bring new opportunities.\n\nCharge up Lucy’s meter with every winning symbol to unleash explosive sprays of coins and wilds, pushing the overall multiplier higher with each step. The free spins bonus takes the adventure further as prog"
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_quest-for-coins.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Lucy Luck and the Quest for Coins\n\nJoin Lucy Luck on her latest adventure as she returns for an all-new quest overflowing with hidden chests,\ncascading wins, and mountains of coins. Lucy Luck and the Quest for Coins is Lucy’s most feature-packed\nadventure to date, an action-packed cluster slot where every win shatters layers of blocks to uncover secret spaces\nand treasure-filled chests beneath. Featuring Coin Cluster™, coin wins merge together to create even bigger\nrewards before fresh avalanches bring new opportunities.\n\nCharge up Lucy’s meter with every winning symbol to unleash explosive sprays of coins and wilds, pushing the\noverall multiplier higher with each step. The free spins bonus takes the adventure further as progress carries over\nbetween rounds, letting multipliers and uncover"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
-    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
-    "Fast Track buy cost not stated on marketing page (not invented)",
     "volatility from official specs: Very High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "Xtra-Bet cost multiplier not stated on marketing page or product sheet (not invented)",
+    "Fast Track buy cost not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-quest-for-coins.webp",
   "thumbnail_attribution": "Slotmill"

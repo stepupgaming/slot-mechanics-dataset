@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:05Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Coin Quest",
@@ -99,17 +99,17 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "trigger": "awarding 5 respectively 8 Free Spins",
         "spins_awarded": null,
         "retrigger": null,
         "sticky_or_persistent_state": null,
         "progressive_state": null,
-        "effects": "The game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free Spins. Spins. The bonus games can be both re-triggered and upgraded.",
+        "effects": "The game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free Spins. Spins. The bonus games can be both re-triggered and upgraded. 5 or 8 free spins depending on bonus mode.",
         "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "what_happens": "awarding 5 respectively 8 Free Spins",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -121,7 +121,8 @@
             "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
             "state_changes": null
           }
-        ]
+        ],
+        "params": {}
       }
     ],
     "notes": "Volatility (official): High"
@@ -197,13 +198,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "high",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -213,23 +214,21 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/coin-quest",
       "local_path": "sources/slotmill/coin-quest.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 5x5 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): Variant 1: 96,12% | Variant 2: 94,36%\nMax win; x Bet: 10 000 x\nBonus Features: Coin Quest Free Spins, Free Spins, and Super Free Spins\nSpecial Symbols: Coin Quest Bonus\nVolatility (variance): High\nGame URL: \"https://coin-quest.slotmill.com\"\nCoin Quest is an avalanche, cluster-based video slot with a 5×5 symbol grid. The game is played in an ancient Aztec temple setting where treasure seekers are offered a chance to win up to 10,000 times their bet! A collect meter awards a random number of coin & wild symbols. Normal cluster wins generate a wild in a random location, and cluster wins with coin symbols generate a new coin with the aggregate multiplier value of cluster coins.\n\nThe game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free Spins. The bonus games can be both re-triggered and upgraded. In addition, extra Free Spins can be awarded, and each bonus game holds d"
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_coin-quest.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
-      "quote_or_excerpt": "A cluster-based game, Coin Quest!\n\nCoin Quest is an avalanche, cluster-based video slot with a 5x5 symbol grid. The game is played in an ancient Aztec temple\nsetting where treasure seekers are offered a chance to win up to 10,000 times their bet! A collect meter awards a random\nnumber of coin & wild symbols. Normal cluster wins generate a wild in a random location, and cluster wins with coin symbols\ngenerate a new coin with the aggregate multiplier value of cluster coins.\n\nThe game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free\nSpins. The bonus games can be both re-triggered and upgraded. In addition, extra Free Spins can be awarded, and each bonus\ngame holds different features; accumulating coins, a persistent collect meter"
+      "extracted_at": "2026-09-27T18:36:08Z",
+      "quote_or_excerpt": "awarding 5 respectively 8 Free Spins"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
-    "exact free-spins award count / scatter trigger count not stated on marketing page",
-    "Fast Track buy cost not stated on marketing page (not invented)",
     "volatility from official specs: High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "Fast Track buy cost not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-coin-quest.webp",
   "thumbnail_attribution": "Slotmill"

@@ -79,7 +79,7 @@ Live counts are always in `dataset.json` → `by_provider` / `by_confidence` / `
 | **Hacksaw Gaming** | ~203 | Official `en-us-gameinfo.html` dumps (mostly high). |
 | **Backseat Gaming** | **35** (all high) | Independent studio on Hacksaw OpenRGS. Same `en-us-gameinfo.html` CDN path; `identity.provider` = **Backseat Gaming**, slug prefix `backseat-`. |
 | **Elk Studios** | 1 (1 high: Ryze from Game Description PDF) | Expand only with official Game Description PDFs. |
-| **Slotmill** | **61** (~57 high / ~4 medium) | Official slotmill.com/games pages (specs + marketing copy) + product sheets when linked. Schema 1.1 `base_game_loop`, Burst Mode / Fast Track / Xtra-Bet with official definitions. |
+| **Slotmill** | **61** (**16 high** / **45 medium**) | Official pages + product sheets. High only when FS trigger/award evidenced in sheet/copy; Fast Track/Xtra-Bet *costs* not stated in public sheets (left null, medium when FS also vague). |
 | **Nolimit City** | 7 high gold (schema 1.1.0 + base_game_loop) | Upgraded all stubs from official GameSheets / CMS features; sheets under sources/nolimit/. |
 
 Priority while collecting: official rules/gameinfo first, SlotCatalog only to fill gaps without inventing mechanics.

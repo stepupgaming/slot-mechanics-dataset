@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:05Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Dead Man's Drop",
@@ -173,7 +173,7 @@
     "reel_behavior": "high",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "medium",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -183,24 +183,23 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/deadmansdrop",
       "local_path": "sources/slotmill/deadmansdrop.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: Cluster Pays\nRTP (%): Variant 1: 96,07% | Variant 2: 94,09%\nMax win; x Bet: 20000\nVolatility (variance): Very High\nGame URL: https://dead-mans-drop.slotmill.com/\nDead Man’s Drop is a fast-paced 6x6 Avalanche slot that throws you into the heart of a ghost pirate adventure, where every spin can lead to massive wins of up to 20,000x your bet!\n\nAt the center of the action are Multiplier Wilds - they double in value with every win they’re part of, merge when connected, and can climb all the way to x1000, creating serious payout potential. Every avalanche brings new chances to land clusters and trigger explosive chain reactions.\n\nFree Spins turn up the pressure, locking in your best Wilds, while Super Free Spins give you a head start with Wilds already in play. The gameplay is fast, dynamic, and built for players who want big swings and even bigger rewards"
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_deadmansdrop.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Dead Man's Drop\n\nDead Man’s Drop is a fast-paced 6x6 Avalanche slot that throws you into the heart of a ghost pirate adventure,\nwhere every spin can lead to massive wins of up to 20,000x your bet!\n\nAt the center of the action are Multiplier Wilds - they double in value with every win they’re part of, merge when\nconnected, and can climb all the way to x1000, creating serious payout potential. Every avalanche brings new\nchances to land clusters and trigger explosive chain reactions.\nFree Spins turn up the pressure, locking in your best Wilds, while Super Free Spins give you a head start with Wilds\nalready in play. The gameplay is fast, dynamic, and built for players who want big swings and even bigger rewards.\n\nDead Man’s Drop is a ghost-pirate thrill ride built for those who crave high seas"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
-    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
-    "Fast Track buy cost not stated on marketing page (not invented)",
     "volatility from official specs: Very High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "Xtra-Bet cost multiplier not stated on marketing page or product sheet (not invented)",
+    "Fast Track buy cost not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-deadmansdrop.webp",
   "thumbnail_attribution": "Slotmill"

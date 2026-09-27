@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:02Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Dead Man's Crew",
@@ -102,7 +102,7 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": null,
+        "trigger": "trigger 8 Free Spins — and this time, the Wild multipliers stay with the Crew from spin to spin",
         "spins_awarded": 8,
         "retrigger": null,
         "sticky_or_persistent_state": null,
@@ -112,7 +112,7 @@
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "what_happens": "trigger 8 Free Spins — and this time, the Wild multipliers stay with the Crew from spin to spin",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -217,22 +217,22 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/dead-mans-crew",
       "local_path": "sources/slotmill/dead-mans-crew.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 5+ Cluster Pay\nRTP (%): Variant 1: 96.07% | Variant 2: 94.09%\nMax win; x Bet: 10 000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Wild Multiplier\nSpecial Symbols: Wild Scatter, Feature Hotspot, Crew Features, Extra Spins\nVolatility (variance): Very High\nGame URL: \"https://dead-mans-crew.slomill.com\"\nRaise a glass and join the Dead Man’s Crew\n\nDead Man’s Crew brings the crew ashore for a night of wild celebrations, cascading wins, and plenty of treasure-fuelled chaos. Between adventures, the crew has taken over the tavern — and with growing Wild Scatter multipliers, powerful Crew Features, and a maximum win of 10,000x your bet, the party can get seriously rewarding.\n\nPlayed on a 6×6 Avalanche grid, wins are formed by matching 5 or more identical symbols, sending winning symbols crashing away and making room for new ones. Wild Scatters join the action as substitutes and grow their multiplier every time they contribute to a win, while multiple Wilds can combine their multipliers to make ea"
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_dead-mans-crew.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
-      "quote_or_excerpt": "Dead Man's Crew\n\nRaise a glass and join the Dead Man’s Crew\n\nDead Man’s Crew brings the crew ashore for a night of wild celebrations, cascading wins, and plenty of treasure-\nfuelled chaos. Between adventures, the crew has taken over the tavern — and with growing Wild Scatter\nmultipliers, powerful Crew Features, and a maximum win of 10,000x your bet, the party can get seriously\nrewarding.\n\nPlayed on a 6×6 Avalanche grid, wins are formed by matching 5 or more identical symbols, sending winning\nsymbols crashing away and making room for new ones. Wild Scatters join the action as substitutes and grow their\nmultiplier every time they contribute to a win, while multiple Wilds can combine their multipliers to make each\nwinning cluster worth even more.\n\nThe tavern gets even rowdier when Feature Hot"
+      "extracted_at": "2026-09-27T18:36:08Z",
+      "quote_or_excerpt": "trigger 8 Free Spins — and this time, the Wild multipliers stay with the Crew from spin to spin"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
-    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
-    "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: Very High"
+    "volatility from official specs: Very High",
+    "Xtra-Bet cost multiplier not stated on marketing page or product sheet (not invented)",
+    "Fast Track buy cost not stated on marketing page or product sheet (not invented)"
   ],
   "thumbnail": "thumbs/slotmill-dead-mans-crew.webp",
   "thumbnail_attribution": "Slotmill"

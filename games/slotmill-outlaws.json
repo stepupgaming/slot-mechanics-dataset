@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:34:02Z",
+  "updated_at": "2026-09-27T18:36:08Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Outlaws",
@@ -85,17 +85,17 @@
     "modes": [
       {
         "name": "Free Spins",
-        "trigger": "Three+ Scatter symbols award 8, 10 or 12 Free Spins with Sticky Wilds and a moving crosshair .",
-        "spins_awarded": 12,
+        "trigger": "Three+ Scatter symbols award 8, 10 or 12 Free Spins",
+        "spins_awarded": null,
         "retrigger": null,
         "sticky_or_persistent_state": null,
         "progressive_state": null,
-        "effects": "Three+ Scatter symbols award 8, 10 or 12 Free Spins with Sticky Wilds and a moving crosshair . Three wilds on a reel during Free Spins awards 2 additional spins.",
+        "effects": "Three+ Scatter symbols award 8, 10 or 12 Free Spins with Sticky Wilds and a moving crosshair . Three wilds on a reel during Free Spins awards 2 additional spins. 8, 10 or 12 free spins by scatter count.",
         "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
         "phases": [
           {
             "name": "trigger",
-            "what_happens": "Three+ Scatter symbols award 8, 10 or 12 Free Spins with Sticky Wilds and a moving crosshair .",
+            "what_happens": "Three+ Scatter symbols award 8, 10 or 12 Free Spins",
             "order": 1,
             "ends_when": null,
             "state_changes": null
@@ -107,7 +107,8 @@
             "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
             "state_changes": null
           }
-        ]
+        ],
+        "params": {}
       }
     ],
     "notes": "Volatility (official): Medium-High"
@@ -180,15 +181,15 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/outlaws",
       "local_path": "sources/slotmill/outlaws.html",
-      "extracted_at": "2026-09-27T18:34:02Z",
+      "extracted_at": "2026-09-27T18:34:23Z",
       "quote_or_excerpt": "Game Type: 5x3 Video Slot\nPaylines: 20 - fixed\nRTP (%): 96,03 %\nMax win; x Bet: 5 000 x / 250 000\nBonus Features: Wilds, Free Spins w. Sticky Wilds & Multipliers\nSpecial Symbols: Wild, Scatter\nVolatility (variance): Medium-High\nGame URL: \"https://outlaws.slotmill.com\"\nOutlaws is a cowboy-themed, five-reel slot with 20-betlines. The “Wanted” symbol is Wild and appears on reels 2, 3 and 4, substituting for all symbols except Scatters. A random “Dynamite Blast” feature in the base game reveals treasures (money bags, multipliers and Scatters) hidden behind adjacent symbols.\n\nThree+ Scatter symbols award 8, 10 or 12 Free Spins with Sticky Wilds and a moving crosshair . If the crosshair lands on a Wild, a 2x multiplier is awarded and for every additional time the crosshair lands on the same wild, the multiplier is increased by 1x. If the crosshair lands on any other symbol it may turn it into a wild. The win multipliers on each betline are added together and mu"
     },
     {
-      "source_type": "provider_product_sheet",
+      "source_type": "official_pdf",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_outlaws.pdf",
-      "extracted_at": "2026-09-27T18:34:02Z",
-      "quote_or_excerpt": "Action packed cowboy adventure\n\nOutlaws is a cowboy-themed, five-reel slot with 20-betlines. The “Wanted” symbol is Wild and appears on\nreels 2, 3 and 4, substituting for all symbols except Scatters. A random “Dynamite Blast” feature in the base\ngame reveals treasures (money bags, multipliers and Scatters) hidden behind adjacent symbols.\n\nThree+ Scatter symbols award 8, 10 or 12 Free Spins with Sticky Wilds and a moving crosshair. If the\ncrosshair lands on a Wild, a 2x multiplier is awarded and for every additional time the crosshair lands on\nthe same wild, the multiplier is increased by 1x. If the crosshair lands on any other symbol it may turn it\ninto a wild. The win multipliers on each betline are added together and multiplied with the betline win.\nThree wilds on a reel during Free Spin"
+      "extracted_at": "2026-09-27T18:36:08Z",
+      "quote_or_excerpt": "Three+ Scatter symbols award 8, 10 or 12 Free Spins"
     }
   ],
   "unknowns": [
