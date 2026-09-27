@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Commander of Tridents",
+    "slug": "backseat-commander-of-tridents",
+    "provider_game_id": "1290",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1290&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1290/1.11.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "EXPANDING WILD TRIDENTS",
+        "behavior": "When a Trident symbol lands it will expand to cover the whole reel, if the expanded symbol would be part of at least one winning combination after expanding.\n\n Trident symbols and expanded Tridents substitute for all other symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "MYSTERY GATES",
+        "behavior": "Mystery Gates are full-sized revealing symbols that show either one of the regular paying symbols or a Golden Chest.\n\n If a Mystery Gate symbol lands partially outside of the game view, it will nudge into view so that it fully covers the reel.\n\n If at least 3 Mystery Gates land at the same time, the revealed symbols will be treated as if they were connected from left to right and therefore create winning combinations even if there are other non-winning symbols between them. When 3 or more Mystery Gates have revealed their symbols, if there is more than one winning combination on the same payline, for example by having separate wins that includes symbols revealed by Mystery Gates and symbols which were not revealed, the longest winning combination will be selected. If the length is the same, the win created by revealed symbols will be used.\n\n All Mystery Gates reveal the same symbol. Mystery Gates cannot reveal Trident symbols or BONUS symbols.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "POSEIDON'S TREASURE",
+        "behavior": "This feature occurs when Mystery Gates reveal Golden Chest symbols. At the start of the feature, all Golden Chests open and each position spins to reveal either a Bronze, Silver or Gold Coin, a Multiplier symbol or a Gather symbol.\n\n Coins are cash prizes based on your current bet that show a value from 1 to 1000.\n\n Bronze Coins can have the following values: 1, 2, 3, 5\n\n Silver Coins can have the following values: 10\n\n Gold Coins can have the following values: 100, 250, 500, 1000\n\n The Multiplier symbol reveals a multiplier value that can be 2x, 3x, 5x or 10x. This value is then applied to all Coins and Gather symbols.\n\n The Gather symbol gathers the value of all Coins and other Gather symbols. After gathering, another spin reveal occurs on each position except activated Gather symbols so that new Coins, Gather symbols or Multiplier symbols can appear. The Gather symbol will take on the total value of all gathered Coins and other Gather symbols. Each Gather symbol cannot activate more than once.\n\n At the end of the feature, the value of all Coins and Gather symbols will be added together and the total value will be multiplied by your bet to determine the final awarded win.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS FEATURE",
+        "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time in the base game.",
+        "spins_awarded": "award 10 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "The bonus feature is triggered by landing 3, 4 or 5 BONUS scatter symbols at the same time in the base game.\n\n 3 BONUS symbols award 10 free spins.\n\n 4 BONUS symbols award 12 free spins.\n\n 5 BONUS symbols award 14 free spins.\n\n In this feature all Mystery Gates are sticky for the remainder of the bonus after landing.\n\n Above each reel is a Reel Multiplier that starts inactive at 0x. When a Golden Temple symbol lands on a reel, the Reel Multiplier is increased by the value shown on the symbol.\n\n Golden Temple symbols can have one of the following values: 2x, 3x, 5x, 10x\n\n When a Reel Multiplier is no longer at 0x it is activated.\n\n All winning combinations are multiplied by the values of the activated Reel Multipliers above each reel that is included in the win. If more than one activated Reel Multipliers would be applied to a win, their values are added together before multiplying the winning amount.\n\n Reel Multipliers are also applied to all Coins and Gather symbols in the Poseidon’s Treasure feature before summing the total value.\n\n SPECIAL SYMBOLS\n\n BONUS symbols do not appear in the Bonus Feature. Only one BONUS symbol can appear on a reel at a time."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "EXPANDING WILD TRIDENTS",
+      "trigger": null,
+      "effects": "When a Trident symbol lands it will expand to cover the whole reel, if the expanded symbol would be part of at least one winning combination after expanding.\n\n Trident symbols and expanded Tridents substitute for all other symbols in the paytable.",
+      "params": {}
+    },
+    {
+      "name": "MYSTERY GATES",
+      "trigger": null,
+      "effects": "Mystery Gates are full-sized revealing symbols that show either one of the regular paying symbols or a Golden Chest.\n\n If a Mystery Gate symbol lands partially outside of the game view, it will nudge into view so that it fully covers the reel.\n\n If at least 3 Mystery Gates land at the same time, the revealed symbols will be treated as if they were connected from left to right and therefore create winning combinations even if there are other non-winning symbols between them. When 3 or more Mystery Gates have revealed their symbols, if there is more than one winning combination on the same payline, for example by having separate wins that includes symbols revealed by Mystery Gates and symbols which were not revealed, the longest winning combination will be selected. If the length is the same, the win created by revealed symbols will be used.\n\n All Mystery Gates reveal the same symbol. Mystery Gates cannot reveal Trident symbols or BONUS symbols.",
+      "params": {}
+    },
+    {
+      "name": "POSEIDON'S TREASURE",
+      "trigger": null,
+      "effects": "This feature occurs when Mystery Gates reveal Golden Chest symbols. At the start of the feature, all Golden Chests open and each position spins to reveal either a Bronze, Silver or Gold Coin, a Multiplier symbol or a Gather symbol.\n\n Coins are cash prizes based on your current bet that show a value from 1 to 1000.\n\n Bronze Coins can have the following values: 1, 2, 3, 5\n\n Silver Coins can have the following values: 10\n\n Gold Coins can have the following values: 100, 250, 500, 1000\n\n The Multiplier symbol reveals a multiplier value that can be 2x, 3x, 5x or 10x. This value is then applied to all Coins and Gather symbols.\n\n The Gather symbol gathers the value of all Coins and other Gather symbols. After gathering, another spin reveal occurs on each position except activated Gather symbols so that new Coins, Gather symbols or Multiplier symbols can appear. The Gather symbol will take on the total value of all gathered Coins and other Gather symbols. Each Gather symbol cannot activate more than once.\n\n At the end of the feature, the value of all Coins and Gather symbols will be added together and the total value will be multiplied by your bet to determine the final awarded win.",
+      "params": {}
+    },
+    {
+      "name": "BONUS FEATURE",
+      "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time in the base game.",
+      "effects": "The bonus feature is triggered by landing 3, 4 or 5 BONUS scatter symbols at the same time in the base game.\n\n 3 BONUS symbols award 10 free spins.\n\n 4 BONUS symbols award 12 free spins.\n\n 5 BONUS symbols award 14 free spins.\n\n In this feature all Mystery Gates are sticky for the remainder of the bonus after landing.\n\n Above each reel is a Reel Multiplier that starts inactive at 0x. When a Golden Temple symbol lands on a reel, the Reel Multiplier is increased by the value shown on the symbol.\n\n Golden Temple symbols can have one of the following values: 2x, 3x, 5x, 10x\n\n When a Reel Multiplier is no longer at 0x it is activated.\n\n All winning combinations are multiplied by the values of the activated Reel Multipliers above each reel that is included in the win. If more than one activated Reel Multipliers would be applied to a win, their values are added together before multiplying the winning amount.\n\n Reel Multipliers are also applied to all Coins and Gather symbols in the Poseidon’s Treasure feature before summing the total value.\n\n SPECIAL SYMBOLS\n\n BONUS symbols do not appear in the Bonus Feature. Only one BONUS symbol can appear on a reel at a time.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1290/1.11.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/commander-of-tridents/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Come and behold the wonders of the ocean! Commander of Tridents is a 5-reel, 5-row paylines game that takes players into the mystical kingdom of Poseidon and his underwater realm. This game features wild tridents, magnificent sea creatures and splendid treasures waiting to be discovered! The max win is 15000 times your bet and can be achieved in the base game and in the Bonus Feature.\n\n FEATURES\n\n EXPANDING WILD TRIDENTS\n\n When a Trident symbol lands it will expand to cover the whole reel, if the expanded symbol would be part of at least one winning combination after expanding"
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

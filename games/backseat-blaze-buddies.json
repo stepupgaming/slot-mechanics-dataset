@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Blaze Buddies",
+    "slug": "backseat-blaze-buddies",
+    "provider_game_id": "1664",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1664&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1664/1.15.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 20. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "This modifier transforms the dragon symbol it’s applied to into a golden wild symbol. If the dragon symbol is expanded, the entire expanded reel becomes wild.\n\n Wild dragon symbols substitute for all symbols in the paytable.\n\n Wild dragon symbols can only land during bonus games."
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Expanded Dragon",
+        "behavior": "This modifier ensures that the dragon symbol, when applied, always lands as a fully expanded reel, except if it's a golden wild symbol.\n\n Only one type of dragon can get the Expanded Dragon modifier and this modifier can be picked only once during a bonus game.\n\n Dragons with Expanded Dragon modifier cannot land more than once per reel and can only land during the bonus games.",
+        "params": {}
+      },
+      {
+        "name": "Wild Dragon",
+        "behavior": "This modifier transforms the dragon symbol it’s applied to into a golden wild symbol. If the dragon symbol is expanded, the entire expanded reel becomes wild.\n\n Wild dragon symbols substitute for all symbols in the paytable.\n\n Wild dragon symbols can only land during bonus games.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "DRAGON’S DELIGHT Bonus",
+        "behavior": "Trigger the DRAGON’S DELIGHT bonus by landing 3 BONUS scatter symbols at the same time in the BASE GAME.\n\n Start this bonus game with 3 picks and at least 10 free spins. This bonus feature maintains the mechanics of the base game and has the added bonus of the Pick Mechanic. Every time you land BONUS scatter symbols on reels 1 and 5 at the same time you are granted an additional pick, up to 6 in total.",
+        "params": {}
+      },
+      {
+        "name": "BLAZE OF GLORY Bonus",
+        "behavior": "Trigger the BLAZE OF GLORY bonus by landing 4 or 5 BONUS scatter symbols at the same time in the BASE GAME.\n\n Start this bonus game with 4 or 5 picks and at least 10 free spins. This bonus feature maintains the mechanics of the base game and has the added bonus of the Pick Mechanic. Every time you land BONUS scatter symbols on reels 1 and 5 at the same time you are granted an additional pick, up to 6 in total.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Dragon Multiplier",
+        "behavior": "This modifier adds a multiplier to the dragons symbol it’s applied to.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, or 100x.\n\n Multipliers on a single payline are added together.\n\n Dragons with multipliers can only land during bonus games.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "PICK MECHANIC",
+        "behavior": "Central to the game is the Pick Mechanic. In the beginning of the bonus games or following a retrigger, players get to pick a number of eggs that can award dragon symbol modifiers or 2, 3 or 4 extra spins.\n\n Extra spins can only be picked once when there are 3 initial picks available. It is possible to get more free spins from additional picks after the retrigger or when 4 or more picks are available outright.\n\n The dragon symbol modifiers are applied to the four dragon symbols for the duration of the bonus game. All 3 modifiers can be applied to a single dragon.\n\n There are 3 types of modifiers:",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS & RETRIGGER",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "In the base game BONUS scatter symbols can land on all reels. In bonus games they appear only on reels 1 and 5.\n\n Landing BONUS scatter symbols during bonus games on reels 1 and 5 grants an additional pick for up to 6 in total. After 6 picks have been made no more BONUS scatter symbols will appear on the grid."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "PICK MECHANIC",
+      "trigger": null,
+      "effects": "Central to the game is the Pick Mechanic. In the beginning of the bonus games or following a retrigger, players get to pick a number of eggs that can award dragon symbol modifiers or 2, 3 or 4 extra spins.\n\n Extra spins can only be picked once when there are 3 initial picks available. It is possible to get more free spins from additional picks after the retrigger or when 4 or more picks are available outright.\n\n The dragon symbol modifiers are applied to the four dragon symbols for the duration of the bonus game. All 3 modifiers can be applied to a single dragon.\n\n There are 3 types of modifiers:",
+      "params": {}
+    },
+    {
+      "name": "Expanded Dragon",
+      "trigger": null,
+      "effects": "This modifier ensures that the dragon symbol, when applied, always lands as a fully expanded reel, except if it's a golden wild symbol.\n\n Only one type of dragon can get the Expanded Dragon modifier and this modifier can be picked only once during a bonus game.\n\n Dragons with Expanded Dragon modifier cannot land more than once per reel and can only land during the bonus games.",
+      "params": {}
+    },
+    {
+      "name": "Wild Dragon",
+      "trigger": null,
+      "effects": "This modifier transforms the dragon symbol it’s applied to into a golden wild symbol. If the dragon symbol is expanded, the entire expanded reel becomes wild.\n\n Wild dragon symbols substitute for all symbols in the paytable.\n\n Wild dragon symbols can only land during bonus games.",
+      "params": {}
+    },
+    {
+      "name": "Dragon Multiplier",
+      "trigger": null,
+      "effects": "This modifier adds a multiplier to the dragons symbol it’s applied to.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, or 100x.\n\n Multipliers on a single payline are added together.\n\n Dragons with multipliers can only land during bonus games.",
+      "params": {}
+    },
+    {
+      "name": "DRAGON’S DELIGHT Bonus",
+      "trigger": null,
+      "effects": "Trigger the DRAGON’S DELIGHT bonus by landing 3 BONUS scatter symbols at the same time in the BASE GAME.\n\n Start this bonus game with 3 picks and at least 10 free spins. This bonus feature maintains the mechanics of the base game and has the added bonus of the Pick Mechanic. Every time you land BONUS scatter symbols on reels 1 and 5 at the same time you are granted an additional pick, up to 6 in total.",
+      "params": {}
+    },
+    {
+      "name": "BLAZE OF GLORY Bonus",
+      "trigger": null,
+      "effects": "Trigger the BLAZE OF GLORY bonus by landing 4 or 5 BONUS scatter symbols at the same time in the BASE GAME.\n\n Start this bonus game with 4 or 5 picks and at least 10 free spins. This bonus feature maintains the mechanics of the base game and has the added bonus of the Pick Mechanic. Every time you land BONUS scatter symbols on reels 1 and 5 at the same time you are granted an additional pick, up to 6 in total.",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS & RETRIGGER",
+      "trigger": null,
+      "effects": "In the base game BONUS scatter symbols can land on all reels. In bonus games they appear only on reels 1 and 5.\n\n Landing BONUS scatter symbols during bonus games on reels 1 and 5 grants an additional pick for up to 6 in total. After 6 picks have been made no more BONUS scatter symbols will appear on the grid.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_expand_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win in this game is 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1664/1.15.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/blaze-buddies/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Blaze Buddies is a 5-reel, 4-row paylines game featuring 4 cute dragon friends! They can be boosted by 3 distinct modifiers - Wild Dragon, Expanded Dragon and Dragon Multiplier. These modifiers along with Extra Spins can be acquired during a picking phase before the bonus games start or after landing 2 BONUS symbols on reels 1 and 5 at the same time during a bonus game.\n\n The maximum win in this game is 10,000 times your bet, and can be achieved in the bonus games.\n\n FEATURES\n\n PICK MECHANIC\n\n Central to the game is the Pick Mechanic. In the beginning of the bonus games or fol"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

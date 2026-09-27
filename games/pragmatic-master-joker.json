@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Master Joker",
+    "slug": "pragmatic-master-joker",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Master-Joker-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "anywhere",
+    "notes": "Symbols pay anywhere per official GAME RULES"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "This symbol is WILD and substitutes for all symbols.\n WILD symbol appears only on reel 3.",
+        "params": {}
+      },
+      {
+        "name": "WILD",
+        "behavior": "Whenever a WILD symbol is involved in a win the MULTIPLIER WHEEL FEATURE is triggered.\n The wheel spins and awards a multiplier for the total win of the spin of 2x, 3x, 5x, 10x, 15x, 25x, 50x or 100x.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            5,
+            10,
+            15,
+            25,
+            50,
+            100
+          ]
+        }
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": 96.51,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.51%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "medium",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Master-Joker-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Master-Joker.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\nSymbols pay anywhere on the screen. The total number of the same symbol on the screen at the end of a spin\n determines the value of the win.\n\n 5 - 100 5 - 50 5 - 25 5 - 15\n 4 - 50 4 - 25 4 - 15 4 - 10\n 3 - 15 3 - 10 3-8 3-5\n\n 5 - 12 5 - 10 5-8\n 4-8 4-5 4-3\n 3-4 3-2 3-1\n\n This symbol is WILD and substitutes for all symbols.\n WILD symbol appears only on reel 3.\n\n Whenever a WILD symbol is involved in a win the MULTIPLIER WHEEL FEATURE is triggered.\n The wheel spins and awards a multiplier for the total win of the spin of 2x, 3x, 5x, 10x, 15x, 25x, 50x or 100x.\n\n VOLATILITY\n\nHigh volatility games pay out less often on average but the chance to hit big wins in a short time span is hig"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier"
+  ]
+}

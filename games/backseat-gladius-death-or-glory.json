@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Gladius Death or Glory",
+    "slug": "backseat-gladius-death-or-glory",
+    "provider_game_id": "1807",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1807&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1807/1.15.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n A win is formed by the sum of collected values from cash prizes multiplied by your bet amount."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "SHIELD SYMBOL",
+        "behavior": "The Shield symbols reveal Bronze, Silver or Gold Coins and have a chance of revealing Multiplier, Collector or BONUS symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 1, 2, 3, 4\n\n Silver Coins can have the following values: 5, 10, 25, 50\n\n Gold Coins can have the following values: 100, 250, 500, 1000\n\n After all Coins and special symbols have been revealed, empty Collector symbols will activate and collect the values of all Coins and store their total value. Collector symbols don’t collect the values of other Collector symbols. Collected Coins will transform into Shield symbols again and reveal new Coins or special symbols. This process repeats until no empty Collector symbols are available on the grid.\n\n After all Coins and Collector symbols have been revealed and collected, the Multiplier symbols will activate and multiply all Coins and Collector symbols with one of the following values: x2, x3, x4, x5, x10, x20.\n\n At the end of the spin all Coins and Collector symbols will be added together and multiplied with your bet amount to determine the final awarded win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      },
+      {
+        "name": "DEATH OR GLORY Bonus",
+        "behavior": "Trigger the DEATH OR GLORY bonus by landing 3 BONUS scatter symbols at the same time in the base game.\n\n Shield symbols become sticky and reveal new Coins, Multiplier or Collector symbols on each spin. BONUS symbols are not available during this bonus.\n\n The bonus has 3 refilling lives that reset every time a new Shield symbol lands. Each life represents one spin. Once all 3 lives are consumed without a new reset, the Bonus ends.\n\n SPECIAL SYMBOLS",
+        "params": {}
+      },
+      {
+        "name": "BONUS SYMBOL",
+        "behavior": "BONUS symbols can land organically or get revealed by Shield symbols and are only available in the base game",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "DEAD SYMBOL",
+        "behavior": "These symbols are dead and have no effect:",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SHIELD SYMBOL",
+      "trigger": null,
+      "effects": "The Shield symbols reveal Bronze, Silver or Gold Coins and have a chance of revealing Multiplier, Collector or BONUS symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 1, 2, 3, 4\n\n Silver Coins can have the following values: 5, 10, 25, 50\n\n Gold Coins can have the following values: 100, 250, 500, 1000\n\n After all Coins and special symbols have been revealed, empty Collector symbols will activate and collect the values of all Coins and store their total value. Collector symbols don’t collect the values of other Collector symbols. Collected Coins will transform into Shield symbols again and reveal new Coins or special symbols. This process repeats until no empty Collector symbols are available on the grid.\n\n After all Coins and Collector symbols have been revealed and collected, the Multiplier symbols will activate and multiply all Coins and Collector symbols with one of the following values: x2, x3, x4, x5, x10, x20.\n\n At the end of the spin all Coins and Collector symbols will be added together and multiplied with your bet amount to determine the final awarded win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "DEATH OR GLORY Bonus",
+      "trigger": null,
+      "effects": "Trigger the DEATH OR GLORY bonus by landing 3 BONUS scatter symbols at the same time in the base game.\n\n Shield symbols become sticky and reveal new Coins, Multiplier or Collector symbols on each spin. BONUS symbols are not available during this bonus.\n\n The bonus has 3 refilling lives that reset every time a new Shield symbol lands. Each life represents one spin. Once all 3 lives are consumed without a new reset, the Bonus ends.\n\n SPECIAL SYMBOLS",
+      "params": {}
+    },
+    {
+      "name": "BONUS SYMBOL",
+      "trigger": null,
+      "effects": "BONUS symbols can land organically or get revealed by Shield symbols and are only available in the base game",
+      "params": {}
+    },
+    {
+      "name": "DEAD SYMBOL",
+      "trigger": null,
+      "effects": "These symbols are dead and have no effect:",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_shield_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum win in this game is 15,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1807/1.15.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/gladius-death-or-glory/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Gladius: Death or Glory is a 5-reel, 5-row game that throws you into the heart of the arena, where only the strongest survive. Wins are awarded by collecting coins which multiply your bet. Watch for the Shield Symbol, which unlocks powerful wins! Will you seize glory or fall in battle? The arena awaits!\n\n The maximum win in this game is 15,000 times your bet and can be achieved in all game modes.\n\n FEATURES\n\n SHIELD SYMBOL\n\n The Shield symbols reveal Bronze, Silver or Gold Coins and have a chance of revealing Multiplier, Collector or BONUS symbols.\n\n All Coins are cash prizes "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Reel Banks",
+    "slug": "pragmatic-reel-banks",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/Reel-Banks.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 25,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Left-to-right adjacent / paylines per official rules"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "• 9 Regular symbols\n • 1 Wild symbol pay\n • 1 bonus symbol: pays only with collect symbol, can be on all reels\n • 1 Collect symbol: pays win points from bonus symbols on the screen and present\n only on reel 5\n • 6 free game modifier symbols can be on all reels:\n • Collect:\n • Collect all\n • Multiply\n • Multiply all\n • Add spins\n • Add all\n\fGame Information\nBase Game:",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "MONEY",
+        "behavior": "• Wins paid by win lines\n• Wins paid by collected bonus coins\n• Bonus coins can appear on the screen on any reel, each coin can has value in range 1 –\n500TB. Bonus coins win is the sum of all coins values and paid only when ‘Collect’ symbol\nalso present on the screen.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive multiplier/collection described in effects",
+        "effects": "are awarded when there is at least one bonus coin present on each reel.\nHere, the collect mechanic is removed and updated with new in-game modifiers\nthat can increase coin values, award extra spins, multiply wins, and collect all bank\nvalues, providing players with huge win potential.\n\fGame Information\n\nScreen size:\n\n • regular\n • Screen size 5x4\n\n18 Symbols:\n\n • 9 Regular symbols\n • 1 Wild symbol pay\n • 1 bonus symbol: pays only with collect symbol, can be on all reels\n • 1 Collect symbol: pays win points from bonus symbols on the screen and present\n only on reel 5\n • 6 free game modifier symbols can be on all reels:\n • Collect:\n • Collect all\n • Multiply\n • Multiply all\n • Add spins\n • Add all\n\fGame Information\nBase Game:\n\n• Wins paid by win lines\n• Wins paid by collected bonus coins\n• Bonus coins can appear on the screen on any reel, each coin can has value in range 1 –\n500TB. Bonus coins win is the sum of all coins values and paid only when ‘Collect’ symbol\nalso present on the screen.\n\nFree Game:\n\n• Free game triggered when at least one bonus coin symbol present on each reel. For\n each reel appears bank which contains initial value corresponding to the award sum of\n the each reel.\nThese banks are never empty.\n• Wins paid by win lines\n• During the free game ‘Collect’ symbol (12) does not appear, only bonus coin symbols.\n• The following symbols can appear randomly on the screen (called as modifiers):\n • Bonus coin value 1 – 500 (remains the same 13) (adds value to the corresponding\n reel’s bank)\n • Collect bank => 14 (pays the bank amount from the same reel)\n • Add spins => 15 (adds 3 free spins)\n • Multiply bank => 16 (multiplies reel’s bank on provided amount)\n • Multiply all banks => 17 (multiplies all banks on provided amount)\n • Collect all banks => 18 (pays from all banks)\n • Add to all banks => 19 (adds provided amount to all banks)\n\f\f\f\f\f\f\f\f\f\f\f\f\fTHANK YOU"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "are awarded when there is at least one bonus coin present on each reel.\nHere, the collect mechanic is removed and updated with new in-game modifiers\nthat can increase coin values, award extra spins, multiply wins, and collect all bank\nvalues, providing players with huge win potential.\n\fGame Information\n\nScreen size:\n\n • regular\n • Screen size 5x4\n\n18 Symbols:\n\n • 9 Regular symbols\n • 1 Wild symbol pay\n • 1 bonus symbol: pays only with collect symbol, can be on all reels\n • 1 Collect symbol: pays win points from bonus symbols on the screen and present\n only on reel 5\n • 6 free game modifier symbols can be on all reels:\n • Collect:\n • Collect all\n • Multiply\n • Multiply all\n • Add spins\n • Add all\n\fGame Information\nBase Game:\n\n• Wins paid by win lines\n• Wins paid by collected bonus coins\n• Bonus coins can appear on the screen on any reel, each coin can has value in range 1 –\n500TB. Bonus coins win is the sum of all coins values and paid only when ‘Collect’ symbol\nalso present on the screen.\n\nFree Game:\n\n• Free game triggered when at least one bonus coin symbol present on each reel. For\n each reel appears bank which contains initial value corresponding to the award sum of\n the each reel.\nThese banks are never empty.\n• Wins paid by win lines\n• During the free game ‘Collect’ symbol (12) does not appear, only bonus coin symbols.\n• The following symbols can appear randomly on the screen (called as modifiers):\n • Bonus coin value 1 – 500 (remains the same 13) (adds value to the corresponding\n reel’s bank)\n • Collect bank => 14 (pays the bank amount from the same reel)\n • Add spins => 15 (adds 3 free spins)\n • Multiply bank => 16 (multiplies reel’s bank on provided amount)\n • Multiply all banks => 17 (multiplies all banks on provided amount)\n • Collect all banks => 18 (pays from all banks)\n • Add to all banks => 19 (adds provided amount to all banks)\n\f\f\f\f\f\f\f\f\f\f\f\f\fTHANK YOU",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/Reel-Banks.pdf",
+      "local_path": "sources/pragmatic/pdfs/Reel-Banks.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME OVERVIEW\n\f\fGame Description\nWhat riches are hidden away in the safe? Find out in Reel Banks™.\n\nPlayed across a 5×4 layout, the slot takes players into the heart of a bank with\nsymbols depicting money, gold and lucky sevens, which must form matching\ncombinations across the title’s 25 paylines to award a win.\n\nPlayers are assisted in unlocking these wins with wilds that substitute all other\nsymbols in game, except for scatters. Additionally, collect symbols are there to\ngather instant cash prizes on the reels.\n\nFree spins are awarded when there is at least one bonus coin present on each reel.\nHere, the collect mechanic is removed and updated with new in-game modifiers\nthat can increase co"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Clumsy Cowboys",
+    "slug": "backseat-clumsy-cowboys",
+    "provider_game_id": "1653",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1653&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1653/1.10.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 20. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD SYMBOL",
+        "behavior": "Wild Multiplier symbols can land only on reels 2, 3 and 4 and always carry multipliers of 2x, 3x, 5x or 10x.\n\n When more than one Wild Multiplier symbol participates in the same winning combination their multipliers are added together before being applied to the win. During the bonus games Wild Multipliers are always sticky!",
+        "params": {}
+      },
+      {
+        "name": "STICK THEM UP Bonus",
+        "behavior": "Trigger the STICK THEM UP Bonus with 10 free spins by landing 3 BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus game all Wild Multipliers become sticky! Landing BONUS symbols on reels 1 and 5 at the same time grants 2 extra spins and removes the next lowest available paying symbol from the reels!",
+        "params": {}
+      },
+      {
+        "name": "SHERIFF’S SHOWDOWN Bonus",
+        "behavior": "Trigger the SHERIFF’S SHOWDOWN Bonus with 10 free spins by landing 4 BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus game all Wild Multipliers become sticky! All low-paying symbols are removed from the reels from the start of the bonus. Landing BONUS symbols on reels 1 and 5 at the same time grants 2 extra spins and removes the next lowest available paying symbol from the reels.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SYMBOL REMOVAL",
+        "behavior": "This core feature of the game is focused on removing the lowest available paying symbol from sequential spins. This happens in the bonus games when scatters land on reels 1 and 5! Symbols are removed from lowest to highest paying, and always start from 10, then J, then Q, and so on.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS & RETRIGGER",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "In the base game scatter symbols can land on reels 2-5. In free spins they appear only on reels 1 and 5.\n\n Landing scatters during bonus games on reels 1 and 5 at the same time also provides 2 additional free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SYMBOL REMOVAL",
+      "trigger": null,
+      "effects": "This core feature of the game is focused on removing the lowest available paying symbol from sequential spins. This happens in the bonus games when scatters land on reels 1 and 5! Symbols are removed from lowest to highest paying, and always start from 10, then J, then Q, and so on.",
+      "params": {}
+    },
+    {
+      "name": "WILD SYMBOL",
+      "trigger": null,
+      "effects": "Wild Multiplier symbols can land only on reels 2, 3 and 4 and always carry multipliers of 2x, 3x, 5x or 10x.\n\n When more than one Wild Multiplier symbol participates in the same winning combination their multipliers are added together before being applied to the win. During the bonus games Wild Multipliers are always sticky!",
+      "params": {}
+    },
+    {
+      "name": "STICK THEM UP Bonus",
+      "trigger": null,
+      "effects": "Trigger the STICK THEM UP Bonus with 10 free spins by landing 3 BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus game all Wild Multipliers become sticky! Landing BONUS symbols on reels 1 and 5 at the same time grants 2 extra spins and removes the next lowest available paying symbol from the reels!",
+      "params": {}
+    },
+    {
+      "name": "SHERIFF’S SHOWDOWN Bonus",
+      "trigger": null,
+      "effects": "Trigger the SHERIFF’S SHOWDOWN Bonus with 10 free spins by landing 4 BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus game all Wild Multipliers become sticky! All low-paying symbols are removed from the reels from the start of the bonus. Landing BONUS symbols on reels 1 and 5 at the same time grants 2 extra spins and removes the next lowest available paying symbol from the reels.",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS & RETRIGGER",
+      "trigger": null,
+      "effects": "In the base game scatter symbols can land on reels 2-5. In free spins they appear only on reels 1 and 5.\n\n Landing scatters during bonus games on reels 1 and 5 at the same time also provides 2 additional free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_wild_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_wild_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1653/1.10.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/clumsy-cowboys/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Join Harry and Ryan in an adventure across the wild west! Clumsy Cowboys features a 5-reel, 4-row grid with payline wins. Central to the game is the Symbol Removal mechanic that removes the lowest paying symbol from the grid following retriggers in the bonus games. This increases the chances of landing higher paying symbols. Together with sticky Wild Multipliers in the bonus games this has the potential for big wins!\n\n The maximum win in this game is 12,500x times your bet, and can be achieved only in the bonus games.\n\n FEATURES\n\n SYMBOL REMOVAL\n\n This core feature of the game"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

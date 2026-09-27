@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Space Zoo",
+    "slug": "backseat-space-zoo",
+    "provider_game_id": "1524",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1524&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1524/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wheel of Fortune",
+        "behavior": "When the Wheel of Fortune-symbol lands it triggers the Wheel of Fortune feature with 1 - 3 spins. Each spin can award various features which are then applied to the grid. After the feature is complete, the Wheel of Fortune-symbol turns into a WILD symbol.\n\n In the BASE GAME the Wheel of Fortune can spawn wilds, upgrade low-paying symbols to a high-paying symbol, award a Global Multiplier or add Cash Prizes. In the BONUS GAME it can also award additional free spins.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Global Multiplier",
+        "behavior": "Activates a Global Multiplier with 2x, 3x or 5x, boosting all wins for the current spin. If multiple Global Multiplier features are awarded, they get added together. In the BONUS GAME the multiplier remains until the end of the round.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Cash Prizes",
+        "behavior": "Cash Prizes are dollar bills with fixed values. They are added behind the symbols and are collected when a winning combination occurs on the positions that hold Cash Prizes.\n\n The values are: 2x, 5x, 10x, 25x, 50x, 75x, 100x, 250x, 500x and 1000x.\n\n In the BONUS GAME the Cash Prizes remain sticky until the end of the round.\n\n If additional Cash Prizes occur, they will be applied to any unoccupied spots on the grid, ensuring no overlap or replacement of existing prizes",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "Symbol Upgrade",
+        "behavior": "Upgrades all low-paying symbols to a new, randomly selected high-paying symbol for the current spin.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Extra Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Awards 2-5 additional free spins in the BONUS GAME."
+      },
+      {
+        "name": "BONUS GAME",
+        "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the BASE GAME.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Trigger the BONUS GAME with 10, 12 or 14 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the BASE GAME.\n\n During the BONUS GAME, the Wheel of Fortune feature activates more frequently. The Global Multiplier and Cash Prizes remain through the BONUS GAME. Cash Prizes disappear after being collected.\n\n The Wheel of Fortune can also award additional free spins.\n\n SPECIAL SYMBOLS\n\n The BONUS symbol does not appear during the BONUS GAME.\n WILD symbols substitute for all symbols in the paytable and appear in both the BASE GAME and BONUS GAME.\n Wheel of Fortune-symbols appear in both the BASE GAME and BONUS GAME."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Wheel of Fortune",
+      "trigger": null,
+      "effects": "When the Wheel of Fortune-symbol lands it triggers the Wheel of Fortune feature with 1 - 3 spins. Each spin can award various features which are then applied to the grid. After the feature is complete, the Wheel of Fortune-symbol turns into a WILD symbol.\n\n In the BASE GAME the Wheel of Fortune can spawn wilds, upgrade low-paying symbols to a high-paying symbol, award a Global Multiplier or add Cash Prizes. In the BONUS GAME it can also award additional free spins.",
+      "params": {}
+    },
+    {
+      "name": "Symbol Upgrade",
+      "trigger": null,
+      "effects": "Upgrades all low-paying symbols to a new, randomly selected high-paying symbol for the current spin.",
+      "params": {}
+    },
+    {
+      "name": "Global Multiplier",
+      "trigger": null,
+      "effects": "Activates a Global Multiplier with 2x, 3x or 5x, boosting all wins for the current spin. If multiple Global Multiplier features are awarded, they get added together. In the BONUS GAME the multiplier remains until the end of the round.",
+      "params": {}
+    },
+    {
+      "name": "Cash Prizes",
+      "trigger": null,
+      "effects": "Cash Prizes are dollar bills with fixed values. They are added behind the symbols and are collected when a winning combination occurs on the positions that hold Cash Prizes.\n\n The values are: 2x, 5x, 10x, 25x, 50x, 75x, 100x, 250x, 500x and 1000x.\n\n In the BONUS GAME the Cash Prizes remain sticky until the end of the round.\n\n If additional Cash Prizes occur, they will be applied to any unoccupied spots on the grid, ensuring no overlap or replacement of existing prizes",
+      "params": {}
+    },
+    {
+      "name": "Extra Free Spins",
+      "trigger": null,
+      "effects": "Awards 2-5 additional free spins in the BONUS GAME.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME",
+      "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the BASE GAME.",
+      "effects": "Trigger the BONUS GAME with 10, 12 or 14 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the BASE GAME.\n\n During the BONUS GAME, the Wheel of Fortune feature activates more frequently. The Global Multiplier and Cash Prizes remain through the BONUS GAME. Cash Prizes disappear after being collected.\n\n The Wheel of Fortune can also award additional free spins.\n\n SPECIAL SYMBOLS\n\n The BONUS symbol does not appear during the BONUS GAME.\n WILD symbols substitute for all symbols in the paytable and appear in both the BASE GAME and BONUS GAME.\n Wheel of Fortune-symbols appear in both the BASE GAME and BONUS GAME.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_wheel_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1524/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/space-zoo/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Come with us and take a walk into the depths of space! In this 5-reel, 4-row paylines game you will share the vacuum with some kooky animal astronaut friends! Space Zoo features a special Wheel of Fortune mechanic that will take your experience to new frontiers.\n\n The maximum win in this game is 10,000x times your bet, and can be achieved only in the bonus games.\n\n FEATURES\n\n Wheel of Fortune\n\n When the Wheel of Fortune-symbol lands it triggers the Wheel of Fortune feature with 1 - 3 spins. Each spin can award various features which are then applied to the grid. After the feat"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

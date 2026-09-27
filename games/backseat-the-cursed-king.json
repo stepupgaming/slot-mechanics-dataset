@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "The Cursed King",
+    "slug": "backseat-the-cursed-king",
+    "provider_game_id": "1472",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1472&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1472/1.13.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Cursed King Wild Reels",
+        "behavior": "When the Pharaoh symbol lands on a reel and there is at least one winning combination on the grid, it expands into a full Cursed King Wild Reel with one of the following possible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n Only one Pharaoh symbol can land on a reel at a time.\n\n Cursed Kings are fully wild and substitute for all other symbols in the paytable. Any winning combination that includes a Cursed King is multiplied by the multiplier value of that Cursed King. If a winning combination includes more than one Cursed King, their values are added together before being applied to the win.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME",
+        "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Trigger the bonus game with 3, 4 or 5 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.\n\n During the bonus game, all expanded Cursed King Wild Reels are persistent and stay on the reels. While a Cursed King is on the reels, you are awarded re-spins that do not count against your awarded free spins.\n\n At the start of each spin, all Cursed Kings move a step either left or right to an adjacent reel. If two Cursed Kings move into each other, they merge into one and combine their multipliers.\n\n If a Cursed King moves over the left or right edge of the grid, it is removed from the reels.\n\n SPECIAL SYMBOLS\n\n The BONUS symbol does not appear during the bonus game.\n The Wild symbol substitutes for all symbols in the paytable and appears in both the base and bonus game."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Cursed King Wild Reels",
+      "trigger": null,
+      "effects": "When the Pharaoh symbol lands on a reel and there is at least one winning combination on the grid, it expands into a full Cursed King Wild Reel with one of the following possible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n Only one Pharaoh symbol can land on a reel at a time.\n\n Cursed Kings are fully wild and substitute for all other symbols in the paytable. Any winning combination that includes a Cursed King is multiplied by the multiplier value of that Cursed King. If a winning combination includes more than one Cursed King, their values are added together before being applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME",
+      "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.",
+      "effects": "Trigger the bonus game with 3, 4 or 5 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.\n\n During the bonus game, all expanded Cursed King Wild Reels are persistent and stay on the reels. While a Cursed King is on the reels, you are awarded re-spins that do not count against your awarded free spins.\n\n At the start of each spin, all Cursed Kings move a step either left or right to an adjacent reel. If two Cursed Kings move into each other, they merge into one and combine their multipliers.\n\n If a Cursed King moves over the left or right edge of the grid, it is removed from the reels.\n\n SPECIAL SYMBOLS\n\n The BONUS symbol does not appear during the bonus game.\n The Wild symbol substitutes for all symbols in the paytable and appears in both the base and bonus game.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_mummy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1472/1.13.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/the-cursed-king/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Fear the fallen Cursed King! In this 5-reel, 5-row paylines game you will delve into the ancient pyramids in search of the Pharaohs' lost treasure. But beware of the dangers that lie in wait!\n\n The max win in this game is 12,500 times your bet and can be achieved in all game modes.\n\n FEATURES\n\n Cursed King Wild Reels\n\n When the Pharaoh symbol lands on a reel and there is at least one winning combination on the grid, it expands into a full Cursed King Wild Reel with one of the following possible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n Only one Pharaoh"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

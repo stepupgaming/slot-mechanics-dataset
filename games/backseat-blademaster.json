@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Blademaster",
+    "slug": "backseat-blademaster",
+    "provider_game_id": "1412",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1412&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1412/1.10.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "BLADEMASTER",
+        "behavior": "The Blademaster feature can occur randomly during both the base game and bonus game. When the feature activates, 2-5 Wild Multipliers will appear on the reels (at most 1 per reel). In the base game, the value of each Wild Multiplier can be x2, x3, x4, x5, or x10. If the feature occurs during the bonus game, the sum of the Wild Multipliers will be equal to the total of the Global Multiplier.\n\nWild Multipliers multiply any winning combination they are part of. If more than one Wild Multiplier is part of the same winning combination their values are multiplied with each other and then applied to the win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      },
+      {
+        "name": "GLOBAL MULTIPLIER",
+        "behavior": "The bonus game has a progressive Global Multiplier. It starts at x2 and can be increased up to a maximum of x50 by landing Blue Flag symbols. Blue Flags can have the following values: +2, +3, +4, +5, +10. Each spin in the bonus game will have a Wild Multiplier equal to the Global Multiplier appear on one randomly selected reel, unless the Blademaster feature activates. When the Blademaster feature occurs the Global Multiplier will instead be split into 2-5 Wild Multiplier symbols that spread onto the reels!",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            50
+          ]
+        }
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS",
+        "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Trigger the bonus game with 10, 12 or 14 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.\n\n Land Blue Flags to boost the Global Multiplier. When the Blademaster feature activates, the Global Multiplier is split into 2 to 5 multiplicative Wild Multipliers! Their combined value equals the Global Multiplier.\n\n Landing 3 BONUS symbols at the same time during the bonus game awards 5 additional spins!\n\n SPECIAL SYMBOLS\n\n Wild symbols can be landed in the base game and bonus game. Wild symbols substitute for all other paying symbols."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "BLADEMASTER",
+      "trigger": null,
+      "effects": "The Blademaster feature can occur randomly during both the base game and bonus game. When the feature activates, 2-5 Wild Multipliers will appear on the reels (at most 1 per reel). In the base game, the value of each Wild Multiplier can be x2, x3, x4, x5, or x10. If the feature occurs during the bonus game, the sum of the Wild Multipliers will be equal to the total of the Global Multiplier.\n\nWild Multipliers multiply any winning combination they are part of. If more than one Wild Multiplier is part of the same winning combination their values are multiplied with each other and then applied to the win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "GLOBAL MULTIPLIER",
+      "trigger": null,
+      "effects": "The bonus game has a progressive Global Multiplier. It starts at x2 and can be increased up to a maximum of x50 by landing Blue Flag symbols. Blue Flags can have the following values: +2, +3, +4, +5, +10. Each spin in the bonus game will have a Wild Multiplier equal to the Global Multiplier appear on one randomly selected reel, unless the Blademaster feature activates. When the Blademaster feature occurs the Global Multiplier will instead be split into 2-5 Wild Multiplier symbols that spread onto the reels!",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          50
+        ]
+      }
+    },
+    {
+      "name": "BONUS",
+      "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.",
+      "effects": "Trigger the bonus game with 10, 12 or 14 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.\n\n Land Blue Flags to boost the Global Multiplier. When the Blademaster feature activates, the Global Multiplier is split into 2 to 5 multiplicative Wild Multipliers! Their combined value equals the Global Multiplier.\n\n Landing 3 BONUS symbols at the same time during the bonus game awards 5 additional spins!\n\n SPECIAL SYMBOLS\n\n Wild symbols can be landed in the base game and bonus game. Wild symbols substitute for all other paying symbols.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "free_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 13000,
+    "max_win_notes": "maximum win in this game is 13,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1412/1.10.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/blademaster/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Welcome to Blademaster! In this 5-reel, 5-row paylines game you'll have a chance to encounter the Blademaster himself! Step into the arena of deadly combat and test your mettle!\n\n The maximum win in this game is 13,000 times your bet and can be achieved in the base game and bonus game.\n\n FEATURES\n\n BLADEMASTER\n\n The Blademaster feature can occur randomly during both the base game and bonus game. When the feature activates, 2-5 Wild Multipliers will appear on the reels (at most 1 per reel). In the base game, the value of each Wild Multiplier can be x2, x3, x4, x5, or x10. If th"
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

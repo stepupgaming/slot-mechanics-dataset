@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Ghostly Hallows",
+    "slug": "backseat-ghostly-hallows",
+    "provider_game_id": "2113",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2113&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2113/1.5.6/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Before each spin, up to 5 multipliers can appear in random positions behind the grid, with at least 1 guaranteed in bonus games. If a winning combination lands on a multiplier, it’s removed from the grid and collected into the cannon beside the grid, adding to any multiplier already stored.\n\n The multipliers can have one of the following values: 2x, 4x, 8x, 16x, 32x, 64x, 128x, 256x, 512x or 1024x.\n\n If there is a Cannon symbol on the grid it will activate and apply the multiplier stored in the cannon to the Tumble win.\n\n The Cannon symbol activates only if there is a winning combination and a stored multiplier in the cannon beside the grid.\n\n If no Cannon symbols activate, all stored multipliers are lost and reset at the start of the next spin - except when they are persistent in the bonus games."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "BONUS SCATTER SYMBOL",
+        "behavior": "The Bonus scatter symbol can only land in the base game. Only one Bonus scatter symbol can land per reel.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "CANNON FEATURE",
+        "behavior": "Before each spin, up to 5 multipliers can appear in random positions behind the grid, with at least 1 guaranteed in bonus games. If a winning combination lands on a multiplier, it’s removed from the grid and collected into the cannon beside the grid, adding to any multiplier already stored.\n\n The multipliers can have one of the following values: 2x, 4x, 8x, 16x, 32x, 64x, 128x, 256x, 512x or 1024x.\n\n If there is a Cannon symbol on the grid it will activate and apply the multiplier stored in the cannon to the Tumble win.\n\n The Cannon symbol activates only if there is a winning combination and a stored multiplier in the cannon beside the grid.\n\n If no Cannon symbols activate, all stored multipliers are lost and reset at the start of the next spin - except when they are persistent in the bonus games.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "TUMBLE WIN",
+        "behavior": "All wins are added to the total Tumble Win above the grid. The total Tumble Win amount is awarded at the end of every spin.",
+        "params": {}
+      },
+      {
+        "name": "CANNON SYMBOL",
+        "behavior": "Only one Cannon symbol can land per spin.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - CANNON OF THE DAMNED",
+        "trigger": "landing 3 Bonus scatter symbols at the same time in the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Trigger the Cannon of the Damned bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n This bonus game follows all base game mechanics. In addition the multiplier stored in the cannon is persistent until triggered by a Cannon symbol."
+      },
+      {
+        "name": "BONUS GAME - GHOSTLY PIRATE’S TRAIL",
+        "trigger": "landing 4 Bonus scatter symbols at the same time in the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Trigger the Ghostly Pirate’s Trail bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n This bonus game follows all base game mechanics. In addition the multiplier stored in the cannon is persistent throughout the whole bonus game.\n\n SPECIAL SYMBOLS"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TUMBLE WIN",
+      "trigger": null,
+      "effects": "All wins are added to the total Tumble Win above the grid. The total Tumble Win amount is awarded at the end of every spin.",
+      "params": {}
+    },
+    {
+      "name": "CANNON FEATURE",
+      "trigger": null,
+      "effects": "Before each spin, up to 5 multipliers can appear in random positions behind the grid, with at least 1 guaranteed in bonus games. If a winning combination lands on a multiplier, it’s removed from the grid and collected into the cannon beside the grid, adding to any multiplier already stored.\n\n The multipliers can have one of the following values: 2x, 4x, 8x, 16x, 32x, 64x, 128x, 256x, 512x or 1024x.\n\n If there is a Cannon symbol on the grid it will activate and apply the multiplier stored in the cannon to the Tumble win.\n\n The Cannon symbol activates only if there is a winning combination and a stored multiplier in the cannon beside the grid.\n\n If no Cannon symbols activate, all stored multipliers are lost and reset at the start of the next spin - except when they are persistent in the bonus games.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - CANNON OF THE DAMNED",
+      "trigger": "landing 3 Bonus scatter symbols at the same time in the base game.",
+      "effects": "Trigger the Cannon of the Damned bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n This bonus game follows all base game mechanics. In addition the multiplier stored in the cannon is persistent until triggered by a Cannon symbol.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - GHOSTLY PIRATE’S TRAIL",
+      "trigger": "landing 4 Bonus scatter symbols at the same time in the base game.",
+      "effects": "Trigger the Ghostly Pirate’s Trail bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n This bonus game follows all base game mechanics. In addition the multiplier stored in the cannon is persistent throughout the whole bonus game.\n\n SPECIAL SYMBOLS",
+      "params": {}
+    },
+    {
+      "name": "CANNON SYMBOL",
+      "trigger": null,
+      "effects": "Only one Cannon symbol can land per spin.",
+      "params": {}
+    },
+    {
+      "name": "BONUS SCATTER SYMBOL",
+      "trigger": null,
+      "effects": "The Bonus scatter symbol can only land in the base game. Only one Bonus scatter symbol can land per reel.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_trigger_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000,
+    "max_win_notes": "maximum achievable win in this game is 20 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2113/1.5.6/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/ghostly-hallows/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Set sail for the afterlife in Ghostly Hallows! This 6-reel, 5-row cascade game with all-scatter wins haunts the high seas with eerie Multiplier ghost clouds that linger behind symbols. When wins land on top of them, their power is gathered into the Cannon - and once the Cannon symbol strikes, it fires, blasting the collected multiplier across your tumble win for a spine-rattling payout!\n\n The max win in this game is 20 000 times your bet and can be achieved in all game modes.\n\n FEATURES\n\n TUMBLE WIN\n\n All wins are added to the total Tumble Win above the grid. The total Tumble "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

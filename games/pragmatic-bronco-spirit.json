@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:02:21Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Bronco Spirit",
+    "slug": "pragmatic-bronco-spirit",
+    "provider_game_id": null,
+    "release_year": 2020,
+    "demo_url": null,
+    "slotcatalog_url": "https://slotcatalog.com/en/slots/Bronco-Spirit",
+    "official_info_url": null
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "SlotCatalog Layout: 5-4"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 75,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "SlotCatalog betways: 75"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Free Spins tagged on SlotCatalog; exact rules not taken from official paytable in this record."
+      }
+    ],
+    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins Mode Choosing",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Random Wilds / Additional Wilds",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "RTP range",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Scatter symbols",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Spin Cycle",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Symbols collection (Energy)",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Wild",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 1472.0,
+    "max_win_notes": "SlotCatalog Max Win: x1472.00",
+    "rtp_percent": 96.58,
+    "rtp_notes": "SlotCatalog RTP tag: 96.58% RTP Ranges!",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "medium",
+    "win_system": "medium",
+    "reel_behavior": "low",
+    "symbols": "low",
+    "bonus_free_spins": "low",
+    "features": "medium",
+    "feature_buy": "low",
+    "numeric_limits": "medium"
+  },
+  "evidence": [
+    {
+      "source_type": "slotcatalog",
+      "url": "https://slotcatalog.com/en/slots/Bronco-Spirit",
+      "local_path": "sources/slotcatalog/Bronco-Spirit.html",
+      "extracted_at": "2026-09-27T05:02:21Z",
+      "quote_or_excerpt": "Layout:5-4; Betways:75; RTP:96.58% RTP Ranges!; MaxWin:x1472.00; Features:Free Spins, Free Spins Mode Choosing, Random Wilds / Additional Wilds, RTP range, Scatter symbols, Spin Cycle, Symbols collection (Energy), Wild"
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins exact rules",
+    "feature_buy.cost_multiplier",
+    "symbols details"
+  ]
+}

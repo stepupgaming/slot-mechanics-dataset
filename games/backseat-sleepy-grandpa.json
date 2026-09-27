@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Sleepy Grandpa",
+    "slug": "backseat-sleepy-grandpa",
+    "provider_game_id": "1301",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1301&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1301/1.20.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 26,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 26. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "TRACTOR FEATURE",
+        "behavior": "If a Farmer symbol or a Gold Farmer symbol lands in the grid but no Dirt symbols land at the same time, there is a chance to trigger the Tractor feature. The Tractor feature will plow the field and remove all symbols except any Bonus symbols and Farmer/Gold Farmer symbols that were already present in the grid. The Tractor will leave 1 - 10 Dirt symbols behind it, which will activate the Dig feature.\n\n The Tractor feature is present in both the base game and the bonus game.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "DIG FEATURE",
+        "behavior": "When at least one Farmer symbol and at least one Dirt symbol land at the same time, the Farmer digs up the Dirt! A Coin with one of the possible values 1x, 2x, 3x, 5x, 10x, 25x, 50x, 75x, 100x, 250x, 500x, 1000x will be uncovered and added to the Farmer symbol.\n\n One Farmer symbol per reel can land at the same time. If multiple Farmer symbols land each Farmer will dig up each Dirt symbol one time.\n\n When all Dirt symbols have been dug up, all Farmer symbol values will be added together and finally multiply the player’s bet to form the payout.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME",
+        "trigger": null,
+        "spins_awarded": "award 10 free spins\n\n 4 BONUS scatter symbols will award 12 free spins\n\n 5 BONUS scatter symbols will award 15 free spins\n\n Only one BONUS scatter symbol can land on each individual reel",
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Land BONUS scatter symbols at the same time in the base game to activate the bonus game.\n\n 3 BONUS scatter symbols will award 10 free spins\n\n 4 BONUS scatter symbols will award 12 free spins\n\n 5 BONUS scatter symbols will award 15 free spins\n\n Only one BONUS scatter symbol can land on each individual reel.\n\n In the bonus game there is a chance the Gold Farmer symbol lands! A Gold Farmer symbol activates the Dig feature if at least one Dirt symbol lands at the same time. The Gold Farmer will immediately become sticky and stay in the same position throughout the entire bonus game. Only one Gold Farmer can appear in a bonus game.\n\n In the bonus game there is a Global Multiplier Bar with the Multiplier levels x2, x3, x5 and x10, as well as 4 empty positions for Farmer or Gold Farmer symbols to fill. The Gold Farmer is collected and fills one position every spin. When a Farmer symbol lands, it is added to one of the empty positions. When 4 positions have been filled the Global Multiplier levels up to the next Multiplier level.\n\n Each time the Global Multiplier levels up you are awarded 3 additional free spins.\n\n The Global Multiplier level is applied to all wins, and to all Coins that are dug up in the grid."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "DIG FEATURE",
+      "trigger": null,
+      "effects": "When at least one Farmer symbol and at least one Dirt symbol land at the same time, the Farmer digs up the Dirt! A Coin with one of the possible values 1x, 2x, 3x, 5x, 10x, 25x, 50x, 75x, 100x, 250x, 500x, 1000x will be uncovered and added to the Farmer symbol.\n\n One Farmer symbol per reel can land at the same time. If multiple Farmer symbols land each Farmer will dig up each Dirt symbol one time.\n\n When all Dirt symbols have been dug up, all Farmer symbol values will be added together and finally multiply the player’s bet to form the payout.",
+      "params": {}
+    },
+    {
+      "name": "TRACTOR FEATURE",
+      "trigger": null,
+      "effects": "If a Farmer symbol or a Gold Farmer symbol lands in the grid but no Dirt symbols land at the same time, there is a chance to trigger the Tractor feature. The Tractor feature will plow the field and remove all symbols except any Bonus symbols and Farmer/Gold Farmer symbols that were already present in the grid. The Tractor will leave 1 - 10 Dirt symbols behind it, which will activate the Dig feature.\n\n The Tractor feature is present in both the base game and the bonus game.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME",
+      "trigger": null,
+      "effects": "Land BONUS scatter symbols at the same time in the base game to activate the bonus game.\n\n 3 BONUS scatter symbols will award 10 free spins\n\n 4 BONUS scatter symbols will award 12 free spins\n\n 5 BONUS scatter symbols will award 15 free spins\n\n Only one BONUS scatter symbol can land on each individual reel.\n\n In the bonus game there is a chance the Gold Farmer symbol lands! A Gold Farmer symbol activates the Dig feature if at least one Dirt symbol lands at the same time. The Gold Farmer will immediately become sticky and stay in the same position throughout the entire bonus game. Only one Gold Farmer can appear in a bonus game.\n\n In the bonus game there is a Global Multiplier Bar with the Multiplier levels x2, x3, x5 and x10, as well as 4 empty positions for Farmer or Gold Farmer symbols to fill. The Gold Farmer is collected and fills one position every spin. When a Farmer symbol lands, it is added to one of the empty positions. When 4 positions have been filled the Global Multiplier levels up to the next Multiplier level.\n\n Each time the Global Multiplier levels up you are awarded 3 additional free spins.\n\n The Global Multiplier level is applied to all wins, and to all Coins that are dug up in the grid.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "free_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1301/1.20.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/sleepy-grandpa/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Welcome to the tranquil world of Sleepy Grandpa, a farmer who yearns for hidden treasures… and naps. Sleepy Grandpa is a 5-reel, 4-row paylines game featuring valuable hidden Coins, farm animals and an exciting bonus game. The max win in this game is 10,000 times your bet, and can be reached in both the base game and the bonus game.\n\n FEATURES\n\n DIG FEATURE\n\n When at least one Farmer symbol and at least one Dirt symbol land at the same time, the Farmer digs up the Dirt! A Coin with one of the possible values 1x, 2x, 3x, 5x, 10x, 25x, 50x, 75x, 100x, 250x, 500x, 1000x will be u"
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

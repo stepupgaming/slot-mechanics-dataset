@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Lord Venom",
+    "slug": "backseat-lord-venom",
+    "provider_game_id": "1255",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1255&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1255/1.29.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "JUNGLE BUSH",
+        "behavior": "The Jungle Bush symbol is a revealing symbol that shows one of the other paying symbols when it lands. All Jungle Bush symbols reveal the same symbol.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS FEATURE",
+        "trigger": "Landing 3 BONUS symbols at the same time during the Bonus Feature award 5 additional free spins.",
+        "spins_awarded": "award 12 free spins",
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Landing at least 3 BONUS scatter symbols at the same time in the base game activates the Bonus Feature.\n\n 3 BONUS symbols award 12 free spins.\n\n 4 BONUS symbols award 14 free spins.\n\n 5 BONUS symbols award 16 free spins.\n\n During the Bonus Feature, Jungle Bush symbols can also reveal Golden Egg symbols. Each Golden Egg symbol will show a multiplier value between x1 - x10, x25, x50, x100 or x200. Golden Egg multipliers are progressively added to the global Win Multiplier and kept through the Bonus Feature.\n\n The Win Multiplier multiplies the value of all winning lines with the currently shown multiplier!\n\n Landing 3 BONUS symbols at the same time during the Bonus Feature award 5 additional free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "JUNGLE BUSH",
+      "trigger": null,
+      "effects": "The Jungle Bush symbol is a revealing symbol that shows one of the other paying symbols when it lands. All Jungle Bush symbols reveal the same symbol.",
+      "params": {}
+    },
+    {
+      "name": "BONUS FEATURE",
+      "trigger": "Landing 3 BONUS symbols at the same time during the Bonus Feature award 5 additional free spins.",
+      "effects": "Landing at least 3 BONUS scatter symbols at the same time in the base game activates the Bonus Feature.\n\n 3 BONUS symbols award 12 free spins.\n\n 4 BONUS symbols award 14 free spins.\n\n 5 BONUS symbols award 16 free spins.\n\n During the Bonus Feature, Jungle Bush symbols can also reveal Golden Egg symbols. Each Golden Egg symbol will show a multiplier value between x1 - x10, x25, x50, x100 or x200. Golden Egg multipliers are progressively added to the global Win Multiplier and kept through the Bonus Feature.\n\n The Win Multiplier multiplies the value of all winning lines with the currently shown multiplier!\n\n Landing 3 BONUS symbols at the same time during the Bonus Feature award 5 additional free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "free_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1255/1.29.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/lord-venom/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Welcome to the jungle! Lord Venom is a 5-reel, 5-row paylines game with a colorful and atmospheric jungle theme, with payline wins and a max win of 15,000 times your bet!\n\n FEATURES\n\n JUNGLE BUSH\n\n The Jungle Bush symbol is a revealing symbol that shows one of the other paying symbols when it lands. All Jungle Bush symbols reveal the same symbol.\n\n BONUS FEATURE\n\n Landing at least 3 BONUS scatter symbols at the same time in the base game activates the Bonus Feature.\n\n 3 BONUS symbols award 12 free spins.\n\n 4 BONUS symbols award 14 free spins.\n\n 5 BONUS symbols award 16 free sp"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Infernus",
+    "slug": "backseat-infernus",
+    "provider_game_id": "1724",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1724&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1724/1.11.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 2,
+    "cols": 2,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 2x2 from About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD SYMBOL",
+        "behavior": "The Wild symbol substitutes for all symbols in the paytable.\n\n Wild symbols are only available in sizes 2x2, 3x3, 4x4 or 5x5 forming a WILD BLOCK.\n\n Each WILD BLOCK has a number of multiplier revealing heads, depending on the size:\n\n 2x2 - 2 heads\n\n 3x3 - 3 heads\n\n 4x4 - 4 heads\n\n 5x5 - 5 heads\n\n All heads reveal multipliers which are then added together into a single multiplier for the whole WILD BLOCK.\n\n The possible multiplier values for each head are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, or 100x.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      {
+        "name": "INFERNO’S GATE Bonus",
+        "behavior": "Trigger the INFERNO’S GATE bonus with 10 free spins by landing 3 BONUS scatter symbols at the same time in the BASE GAME.\n\n You have an increased chance of landing WILD BLOCKS in this bonus.",
+        "params": {}
+      },
+      {
+        "name": "CERBERUS’ RAGE Bonus",
+        "behavior": "Trigger the CERBERUS’ RAGE bonus with 10 free spins by landing 4 BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus all WILD BLOCKS become sticky. A bigger WILD BLOCK can replace a smaller one.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD SYMBOL",
+      "trigger": null,
+      "effects": "The Wild symbol substitutes for all symbols in the paytable.\n\n Wild symbols are only available in sizes 2x2, 3x3, 4x4 or 5x5 forming a WILD BLOCK.\n\n Each WILD BLOCK has a number of multiplier revealing heads, depending on the size:\n\n 2x2 - 2 heads\n\n 3x3 - 3 heads\n\n 4x4 - 4 heads\n\n 5x5 - 5 heads\n\n All heads reveal multipliers which are then added together into a single multiplier for the whole WILD BLOCK.\n\n The possible multiplier values for each head are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, or 100x.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "name": "INFERNO’S GATE Bonus",
+      "trigger": null,
+      "effects": "Trigger the INFERNO’S GATE bonus with 10 free spins by landing 3 BONUS scatter symbols at the same time in the BASE GAME.\n\n You have an increased chance of landing WILD BLOCKS in this bonus.",
+      "params": {}
+    },
+    {
+      "name": "CERBERUS’ RAGE Bonus",
+      "trigger": null,
+      "effects": "Trigger the CERBERUS’ RAGE bonus with 10 free spins by landing 4 BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus all WILD BLOCKS become sticky. A bigger WILD BLOCK can replace a smaller one.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_blocks_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum win in this game is 15,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1724/1.11.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/infernus/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Infernus is a 5-reel, 5-row game with paylines with a unique WILD BLOCK feature! You can land wild symbols in various sizes: 2x2, 3x3, 4x4 or 5x5. Each size brings an extra head which reveals it’s own multiplier, eventually merging into a total WILD BLOCK multiplier.\n\n The maximum win in this game is 15,000 times your bet, and can be achieved in all game modes.\n\n FEATURES\n\n WILD SYMBOL\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n Wild symbols are only available in sizes 2x2, 3x3, 4x4 or 5x5 forming a WILD BLOCK.\n\n Each WILD BLOCK has a number of multiplier "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Honey Honey Honey",
+    "slug": "pragmatic-honey-honey-honey",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Honey-Honey-Honey-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Left-to-right adjacent / paylines per official rules"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "STICKY STREAK\n A random 3 of a kind win combination of paying symbols appears. The symbols from the win combination remain in\nplace and respins are triggered. Whenever a new symbol of the same kind as the held symbols hits it is also held and\n a new respin is triggered. Respins end when no new symbol of the same kind hits. When respins end all winning\n combinations are paid."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "This symbol is WILD and This is the BONUS symbol. It\n substitutes for all symbols except appears on reels 1, 3 and 5.\n for BONUS.\n Hit 3 BONUS symbols to\n WILD symbol is present on all reels. trigger the FREE SPINS\n 5 - 500 feature.\n 4 - 200\n 3 - 50\n 2-2",
+        "params": {}
+      },
+      {
+        "name": "WILD",
+        "behavior": "HONEY WILDS\n When the HONEY WILDS feature is triggered 5 to 10 WILD symbols are randomly placed on the reels.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": "Feature can not be retriggered.",
+        "sticky_or_persistent_state": "Persistent/sticky state described in effects",
+        "progressive_state": null,
+        "effects": "Guarantees that 3 BONUS symbols hit to win the FREE SPINS feature.\n\n Special reels are in play during RANDOM SPIN FEATURES.\n\n FREE SPINS FEATURE\n Hit 3 BONUS symbols to trigger the FREE SPINS feature.\n At the beginning of the FREE SPINS feature choose one out of two options:\n\n STICKY STREAK FREE SPINS\n 8 free spins are awarded.\n During the feature a fully expanded WILD symbol is always present on reel 3.\n At every spin if there is a win combination with regular paying symbols all the winning symbols are held and\n a respin is triggered. Whenever a new symbol of the same kind as the held symbols hits it is also held and a\n new respin is triggered. Respins end when no new symbol of the same kind hits. When respins end all\n winning combinations are paid.\n Feature can not be retriggered.\n Special reels are in play during the feature.\n\n HONEY QUEEN COLOSSAL SPINS\n 5 free spins are awarded.\n During the feature colossal symbols of 2x2 or 3x3 can hit.\n At any spin, there is a chance that all wins of the spin will be multiplied 2x.\n Feature can not be retriggered.\n Special reels are in play during the feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Guarantees that 3 BONUS symbols hit to win the FREE SPINS feature.\n\n Special reels are in play during RANDOM SPIN FEATURES.\n\n FREE SPINS FEATURE\n Hit 3 BONUS symbols to trigger the FREE SPINS feature.\n At the beginning of the FREE SPINS feature choose one out of two options:\n\n STICKY STREAK FREE SPINS\n 8 free spins are awarded.\n During the feature a fully expanded WILD symbol is always present on reel 3.\n At every spin if there is a win combination with regular paying symbols all the winning symbols are held and\n a respin is triggered. Whenever a new symbol of the same kind as the held symbols hits it is also held and a\n new respin is triggered. Respins end when no new symbol of the same kind hits. When respins end all\n winning combinations are paid.\n Feature can not be retriggered.\n Special reels are in play during the feature.\n\n HONEY QUEEN COLOSSAL SPINS\n 5 free spins are awarded.\n During the feature colossal symbols of 2x2 or 3x3 can hit.\n At any spin, there is a chance that all wins of the spin will be multiplied 2x.\n Feature can not be retriggered.\n Special reels are in play during the feature.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": 96.5,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.5%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Honey-Honey-Honey-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Honey-Honey-Honey.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n All symbols pay from left to right on adjacent reels starting from the leftmost reel.\n\n 5 - 400 5 - 300 5 - 200 5 - 200 5 - 150\n 4 - 200 4 - 100 4 - 80 4 - 80 4 - 40\n 3 - 40 3 - 30 3 - 20 3 - 20 3-8\n 2-2\n 5 - 150 5 - 100 5 - 100 5 - 100\n 4 - 40 4 - 10 4 - 10 4 - 10\n 3-8 3-4 3-4 3-4\n\n This symbol is WILD and This is the BONUS symbol. It\n substitutes for all symbols except appears on reels 1, 3 and 5.\n for BONUS.\n Hit 3 BONUS symbols to\n WILD symbol is present on all reels. trigger the FREE SPINS\n 5 - 500 feature.\n 4 - 200\n 3 - 50\n 2-2\n\n RANDOM SPIN FEATURES\n In the base game, at any spin, a choice of 1 out of 3 bees can randomly appear. Select one of the\n bees to trigger a random "
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier"
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Home of Thor",
+    "slug": "backseat-home-of-thor",
+    "provider_game_id": "1815",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1815&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1815/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "After a winning combination occurs, the squares behind the winning symbols will be highlighted.\n\n If there is a Mjölnir symbol on the grid it will activate any highlighted squares after winning combinations have been awarded. When activated, squares will reveal either matching paying symbols on all squares or Coin cash prizes. When Coin cash prizes are revealed, there is also a chance that Multiplier, Collector, and +FS symbols will be revealed alongside them.\n\n The Mjölnir symbol can only land once per spin, including tumbles.\n\n Any new winning combinations caused by symbols revealed by Mjölnir don’t highlight squares behind them.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 1, 2, 5\n\n Silver Coins can have the following values: 10, 25, 50, 75\n\n Gold Coins can have the following values: 100, 500, 1000\n\n After all Coins and special symbols have been revealed, Multiplier symbols will activate and add their value to the Global multiplier. Multiplier symbols can have one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x.\n\n After all Multiplier symbols have been activated and added to the Global multiplier, new Coins or special symbols will be revealed in their places.\n\n In the bonus games +FS symbols can also be revealed. After all Multiplier symbols have been activated, +FS symbols will be activated and award one of the following values: +1, +2 and +3.\n\n After all Coins and specia"
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "ODIN’S WATCH",
+        "behavior": "Trigger the ODIN’S WATCH bonus with 10 free spins by landing 3 RAVENS BONUS scatter symbols at the same time in the base game.\n\n Base game mechanics are followed. In addition the Global multiplier remains persistent for the entire duration of the bonus round! Highlighted squares remain highlighted between spins until they are activated by the Mjölnir symbol.\n\n Additional free spins can be awarded by +FS symbols revealed from highlighted squares.",
+        "params": {}
+      },
+      {
+        "name": "VALHALLA",
+        "behavior": "Trigger the VALHALLA bonus with 10 free spins by landing 3 HOME OF THOR BONUS scatter symbols at the same time in the base game.\n\n Base game mechanics are followed. In addition the Global multiplier remains persistent for the entire duration of the bonus round! Highlighted squares remain highlighted throughout the whole bonus, even after being activated by the Mjölnir symbol.\n\n Additional free spins can be awarded by +FS symbols revealed from highlighted squares.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "TOTAL WIN BAR",
+        "behavior": "All wins are collected in the Total Win Bar above the grid during each round. The Global multiplier is added to the Total Win Bar at the end of a spin in sequence, multiplying the collected win amount.",
+        "params": {}
+      },
+      {
+        "name": "GLOBAL MULTIPLIER",
+        "behavior": "The Global multiplier can be increased by Multiplier symbols and gets reset back to 1x on every new spin.",
+        "params": {}
+      },
+      {
+        "name": "SYMBOL TRANSFORMATION",
+        "behavior": "After a winning combination occurs, the squares behind the winning symbols will be highlighted.\n\n If there is a Mjölnir symbol on the grid it will activate any highlighted squares after winning combinations have been awarded. When activated, squares will reveal either matching paying symbols on all squares or Coin cash prizes. When Coin cash prizes are revealed, there is also a chance that Multiplier, Collector, and +FS symbols will be revealed alongside them.\n\n The Mjölnir symbol can only land once per spin, including tumbles.\n\n Any new winning combinations caused by symbols revealed by Mjölnir don’t highlight squares behind them.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 1, 2, 5\n\n Silver Coins can have the following values: 10, 25, 50, 75\n\n Gold Coins can have the following values: 100, 500, 1000\n\n After all Coins and special symbols have been revealed, Multiplier symbols will activate and add their value to the Global multiplier. Multiplier symbols can have one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x.\n\n After all Multiplier symbols have been activated and added to the Global multiplier, new Coins or special symbols will be revealed in their places.\n\n In the bonus games +FS symbols can also be revealed. After all Multiplier symbols have been activated, +FS symbols will be activated and award one of the following values: +1, +2 and +3.\n\n After all Coins and special symbols have been revealed, empty Collector symbols will activate and collect the values of all Coins and store their total value. Collector symbols don’t collect the values of other Collector symbols. Collected Coins will reveal new Coins or special symbols. This process repeats until no empty Collector symbols are available on the grid.\n\n At the end of the spin all Coins and Collector symbols will be added together and multiplied with your bet amount to determine the final cash prize, which ",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TOTAL WIN BAR",
+      "trigger": null,
+      "effects": "All wins are collected in the Total Win Bar above the grid during each round. The Global multiplier is added to the Total Win Bar at the end of a spin in sequence, multiplying the collected win amount.",
+      "params": {}
+    },
+    {
+      "name": "GLOBAL MULTIPLIER",
+      "trigger": null,
+      "effects": "The Global multiplier can be increased by Multiplier symbols and gets reset back to 1x on every new spin.",
+      "params": {}
+    },
+    {
+      "name": "SYMBOL TRANSFORMATION",
+      "trigger": null,
+      "effects": "After a winning combination occurs, the squares behind the winning symbols will be highlighted.\n\n If there is a Mjölnir symbol on the grid it will activate any highlighted squares after winning combinations have been awarded. When activated, squares will reveal either matching paying symbols on all squares or Coin cash prizes. When Coin cash prizes are revealed, there is also a chance that Multiplier, Collector, and +FS symbols will be revealed alongside them.\n\n The Mjölnir symbol can only land once per spin, including tumbles.\n\n Any new winning combinations caused by symbols revealed by Mjölnir don’t highlight squares behind them.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 1, 2, 5\n\n Silver Coins can have the following values: 10, 25, 50, 75\n\n Gold Coins can have the following values: 100, 500, 1000\n\n After all Coins and special symbols have been revealed, Multiplier symbols will activate and add their value to the Global multiplier. Multiplier symbols can have one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x.\n\n After all Multiplier symbols have been activated and added to the Global multiplier, new Coins or special symbols will be revealed in their places.\n\n In the bonus games +FS symbols can also be revealed. After all Multiplier symbols have been activated, +FS symbols will be activated and award one of the following values: +1, +2 and +3.\n\n After all Coins and special symbols have been revealed, empty Collector symbols will activate and collect the values of all Coins and store their total value. Collector symbols don’t collect the values of other Collector symbols. Collected Coins will reveal new Coins or special symbols. This process repeats until no empty Collector symbols are available on the grid.\n\n At the end of the spin all Coins and Collector symbols will be added together and multiplied with your bet amount to determine the final cash prize, which ",
+      "params": {}
+    },
+    {
+      "name": "ODIN’S WATCH",
+      "trigger": null,
+      "effects": "Trigger the ODIN’S WATCH bonus with 10 free spins by landing 3 RAVENS BONUS scatter symbols at the same time in the base game.\n\n Base game mechanics are followed. In addition the Global multiplier remains persistent for the entire duration of the bonus round! Highlighted squares remain highlighted between spins until they are activated by the Mjölnir symbol.\n\n Additional free spins can be awarded by +FS symbols revealed from highlighted squares.",
+      "params": {}
+    },
+    {
+      "name": "VALHALLA",
+      "trigger": null,
+      "effects": "Trigger the VALHALLA bonus with 10 free spins by landing 3 HOME OF THOR BONUS scatter symbols at the same time in the base game.\n\n Base game mechanics are followed. In addition the Global multiplier remains persistent for the entire duration of the bonus round! Highlighted squares remain highlighted throughout the whole bonus, even after being activated by the Mjölnir symbol.\n\n Additional free spins can be awarded by +FS symbols revealed from highlighted squares.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_hammer_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1815/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/home-of-thor/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n In Home of Thor, the power of the gods surges with every spin! Explore a 6-reel, 5-row game with cluster wins where winning connections ignite radiant highlighted squares. And when Thor’s legendary hammer lands, watch as these squares magically convert into sparkling Coin cash prizes or morph into any of the paying symbols.\n\n The max win in this game is 15,000x your bet and can be achieved in all game modes.\n\n FEATURES\n\n TOTAL WIN BAR\n\n All wins are collected in the Total Win Bar above the grid during each round. The Global multiplier is added to the Total Win Bar at the end o"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

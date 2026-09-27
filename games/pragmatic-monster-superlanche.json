@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Monster Superlanche",
+    "slug": "pragmatic-monster-superlanche",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Monster-Superlanche-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": "anywhere",
+    "notes": "Symbols pay anywhere per official GAME RULES"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "WINNING SYMBOLS TUMBLE\n After every spin, all symbols from all winning combinations and all SCATTERS lock on the screen and\n non winning symbols disappear. All remaining symbols fall to the bottom and empty positions are\n replaced with new symbols coming from above.\n If more symbols of the same type or SCATTERS are added to existing winning combinations they will also remain\n on the screen and tumbling will continue.\n Tumbling ends when there are no new symbols added to the existing winning combinations.\n All wins are added to the players balance after all the tumbles have ended.\nAt every spin a random multiplier appears on top of each reel. Whenever a reel is filled with winning symbols at the\n end of a tumbling sequence, the multiplier from that reel is applied to the win of all winning combinations on the\n screen, except for SCATTER pays. When more multipliers apply their values add to each other.\n Possible multipliers are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 40x, 50x, 75x or 100x."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "6 2000 This is the SCATTER symbol.\n 5 100 Hit 4 or more SCATTER symbols\n 4 60 to trigger the FREE SPINS feature.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "FREE SPINS\n Hit 4, 5 or 6 SCATTER symbols anywhere on the screen to trigger 8, 12 or 20 free spins respectively.\nDuring the FREE SPINS round, whenever a multiplier is applied to a win, it's value is added also to a total multiplier\n meter. Whenever a new multiplier is achieved during the round, the total multiplier value is also added to\n the multiplier of that spin.\n Hit 3, 4, 5 or 6 SCATTER symbols anywhere on the screen to trigger 3, 8, 12 or 20 free spins respectively.\n Special reels are in play during the feature.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Hit 4, 5 or 6 SCATTER symbols anywhere on the screen to trigger 8, 12 or 20 free spins respectively.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive multiplier/collection described in effects",
+        "effects": "Hit 4, 5 or 6 SCATTER symbols anywhere on the screen to trigger 8, 12 or 20 free spins respectively.\nDuring the FREE SPINS round, whenever a multiplier is applied to a win, it's value is added also to a total multiplier\n meter. Whenever a new multiplier is achieved during the round, the total multiplier value is also added to\n the multiplier of that spin.\n Hit 3, 4, 5 or 6 SCATTER symbols anywhere on the screen to trigger 3, 8, 12 or 20 free spins respectively.\n Special reels are in play during the feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "Hit 4, 5 or 6 SCATTER symbols anywhere on the screen to trigger 8, 12 or 20 free spins respectively.",
+      "effects": "Hit 4, 5 or 6 SCATTER symbols anywhere on the screen to trigger 8, 12 or 20 free spins respectively.\nDuring the FREE SPINS round, whenever a multiplier is applied to a win, it's value is added also to a total multiplier\n meter. Whenever a new multiplier is achieved during the round, the total multiplier value is also added to\n the multiplier of that spin.\n Hit 3, 4, 5 or 6 SCATTER symbols anywhere on the screen to trigger 3, 8, 12 or 20 free spins respectively.\n Special reels are in play during the feature.",
+      "params": {}
+    },
+    {
+      "name": "Ante Bet",
+      "trigger": null,
+      "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 25x - the chance to win the free spin round naturally is higher. More SCATTER symbols are\n present on the reels. The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+      "params": {}
+    },
+    {
+      "name": "Buy Free Spins",
+      "trigger": null,
+      "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it for 100x current total bet.\n When buying the FREE SPINS round, on the triggering spin 4, 5 or 6 SCATTERS can hit randomly.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Buy Free Spins",
+        "cost_multiplier": 100.0,
+        "cost_text": "buying it for 100x",
+        "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it for 100x current total bet.\n When buying the FREE SPINS round, on the triggering spin 4, 5 or 6 SCATTERS can hit randomly.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.25,
+    "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 25x - the chance to win the free spin round naturally is higher. More SCATTER symbols are\n present on the reels. The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+    "notes": "Inferred from official ante: 25x bet multiplier vs 20x normal (=1.25x total bet cost)"
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000.0,
+    "max_win_notes": "maximum win amount is limited to 5,000x bet",
+    "rtp_percent": 96.03,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.03%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Monster-Superlanche-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Monster-Superlanche.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n Symbols pay anywhere on the screen.\n The total number of the same symbol on the screen at the end of a spin determines the value of the win.\n\n 20 - 30 3000 20 - 30 2000 20 - 30 1500 20 - 30 1000\n 18 - 19 500 18 - 19 400 18 - 19 300 18 - 19 250\n 16 - 17 250 16 - 17 200 16 - 17 150 16 - 17 120\n 14 - 15 120 14 - 15 100 14 - 15 75 14 - 15 60\n 12 - 13 80 12 - 13 60 12 - 13 50 12 - 13 40\n 10 - 11 40 10 - 11 30 10 - 11 25 10 - 11 20\n 8 - 9 30 8 - 9 20 8 - 9 15 8 - 9 12\n\n 20 - 30 500 20 - 30 300 20 - 30 300 20 - 30 200 20 - 30 200\n 18 - 19 200 18 - 19 150 18 - 19 150 18 - 19 100 18 - 19 100\n 16 - 17 100 16 - 17 75 16 - 17 75 16 - 17 50 16 - 17 50\n 14 - 15 40 14 - 15 30 14 - 15 30 14 - 15"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols"
+  ]
+}

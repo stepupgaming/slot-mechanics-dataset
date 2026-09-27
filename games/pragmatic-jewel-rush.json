@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Jewel Rush",
+    "slug": "pragmatic-jewel-rush",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/Jewel-Rush.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Connected blocks / cluster pays per official rules"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Tumbling:\n • After a win, the symbols that have been part of the win will disappear and the symbols above will fall down and\n take their place.\n • The game will then play this new matrix of symbols as a new game with no cost to the player (tumbling respin).\n This process may be repeated until there is no win.\n • [SCATTER] symbols do not tumble and FG will be calculated at the end of the spin (after all tumblings )"
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "MULTIPLIER",
+        "behavior": "Free Game:\n • 3 or more scatters at base game gives 10 FS\n • During FS 3 or more scatter will give additional FS. For 3: +10, for 4: +11, for 5: +12 etc.\n • In FS, each block involved in a win has a chance to carry a MULT.\n • After the spin finishes, the win of the block is multiplied by the total value of the multiplier landed within that\n block.\n • Landing more than one Multiplier symbol will compound the multiplier.\n • Max multiplier is 256\n\f\f\f\f\f\f\f\f\f\f\f\f\f\fTHANK YOU",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": ", where wild multiplier values are tripled\nfor each win they are a part of to create lucrative prizes\n\fGame Information\n\nScreen size:\n\n • Screen size 7x7\n • Bet multiplier x20\n • Symbols pay if connected horizontally or vertically\n\n8 Symbols:\n\n • 7 Regular symbols\n • 1 Scatter\n\fGame Information\n\nTumbling:\n • After a win, the symbols that have been part of the win will disappear and the symbols above will fall down and\n take their place.\n • The game will then play this new matrix of symbols as a new game with no cost to the player (tumbling respin).\n This process may be repeated until there is no win.\n • [SCATTER] symbols do not tumble and FG will be calculated at the end of the spin (after all tumblings )\n\nFree Game:\n • 3 or more scatters at base game gives 10 FS\n • During FS 3 or more scatter will give additional FS. For 3: +10, for 4: +11, for 5: +12 etc.\n • In FS, each block involved in a win has a chance to carry a MULT.\n • After the spin finishes, the win of the block is multiplied by the total value of the multiplier landed within that\n block.\n • Landing more than one Multiplier symbol will compound the multiplier.\n • Max multiplier is 256\n\f\f\f\f\f\f\f\f\f\f\f\f\f\fTHANK YOU"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": ", where wild multiplier values are tripled\nfor each win they are a part of to create lucrative prizes\n\fGame Information\n\nScreen size:\n\n • Screen size 7x7\n • Bet multiplier x20\n • Symbols pay if connected horizontally or vertically\n\n8 Symbols:\n\n • 7 Regular symbols\n • 1 Scatter\n\fGame Information\n\nTumbling:\n • After a win, the symbols that have been part of the win will disappear and the symbols above will fall down and\n take their place.\n • The game will then play this new matrix of symbols as a new game with no cost to the player (tumbling respin).\n This process may be repeated until there is no win.\n • [SCATTER] symbols do not tumble and FG will be calculated at the end of the spin (after all tumblings )\n\nFree Game:\n • 3 or more scatters at base game gives 10 FS\n • During FS 3 or more scatter will give additional FS. For 3: +10, for 4: +11, for 5: +12 etc.\n • In FS, each block involved in a win has a chance to carry a MULT.\n • After the spin finishes, the win of the block is multiplied by the total value of the multiplier landed within that\n block.\n • Landing more than one Multiplier symbol will compound the multiplier.\n • Max multiplier is 256\n\f\f\f\f\f\f\f\f\f\f\f\f\f\fTHANK YOU",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/Jewel-Rush.pdf",
+      "local_path": "sources/pragmatic/pdfs/Jewel-Rush.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME OVERVIEW\n\f\fGame Description (for Players)\n\nGemstones reveal multipliers in Jewel Rush™.\n\nPlayed across 7×7 reels, various gemstones glisten across the reels with five adjacent\nmatching symbols or more needed to create a winning cluster. Once landed, these wins\nare removed from play to trigger a cascade of new symbols to fall from the top of the\ngame board.\n\nWhenever a cluster of symbols is created, there is the chance to be awarded a wild\nmultiplier that can have its multiplier increased for every additional win it is a part of.\nThree scatters are needed to unlock 10 free spins, where wild multiplier values are tripled\nfor each win they are a part of to create lucrative prizes\n\fGame Inf"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Barrel Bonanza",
+    "slug": "backseat-barrel-bonanza",
+    "provider_game_id": "1506",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1506&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1506/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Going Bananas",
+        "behavior": "When the Going Bananas feature triggers, Kong throws 1 to 5 wild barrels to random positions on the reels that reveal a random multiplier when they land. There are 3 tiers of barrels: Low, Medium and High.\n\n Low tier barrels can have the values: WILD, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x.\n\n Medium tier barrels can have the values: 5x, 10x, 15x, 20x, 25x, 30x, 35x, 40x, 45x, 50x.\n\n High tier barrels can have the values: 30x, 40x, 50x, 75x, 100x.\n\n If a barrel lands on another barrel already present on the reels, it bounces and duplicates so that two barrels fly to new spots on the reel. If either of those barrels hit another barrel, it repeats until all barrels land on a space that is not occupied by another barrel.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME",
+        "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Trigger the bonus game with 10, 12 or 14 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.\n\n During the bonus game, all barrels remain sticky and reveal a new random value from their tier on every spin.\n\n The Going Bananas feature activates more frequently during the bonus game.\n\n SPECIAL SYMBOLS\n\n The BONUS symbol does not appear during the bonus game.\n Barrel symbols substitute for all symbols in the paytable and appear in both the base and bonus game."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Going Bananas",
+      "trigger": null,
+      "effects": "When the Going Bananas feature triggers, Kong throws 1 to 5 wild barrels to random positions on the reels that reveal a random multiplier when they land. There are 3 tiers of barrels: Low, Medium and High.\n\n Low tier barrels can have the values: WILD, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x.\n\n Medium tier barrels can have the values: 5x, 10x, 15x, 20x, 25x, 30x, 35x, 40x, 45x, 50x.\n\n High tier barrels can have the values: 30x, 40x, 50x, 75x, 100x.\n\n If a barrel lands on another barrel already present on the reels, it bounces and duplicates so that two barrels fly to new spots on the reel. If either of those barrels hit another barrel, it repeats until all barrels land on a space that is not occupied by another barrel.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME",
+      "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.",
+      "effects": "Trigger the bonus game with 10, 12 or 14 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.\n\n During the bonus game, all barrels remain sticky and reveal a new random value from their tier on every spin.\n\n The Going Bananas feature activates more frequently during the bonus game.\n\n SPECIAL SYMBOLS\n\n The BONUS symbol does not appear during the bonus game.\n Barrel symbols substitute for all symbols in the paytable and appear in both the base and bonus game.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_throw_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1506/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/barrel-bonanza/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Welcome to the party in the jungle, but beware of barrels falling from the sky! In this 5-reel, 4-row paylines game you will jump into the fruity world of Kong and his beloved barrels.\n\n The max win in this game is 10,000 times your bet and can be achieved in all game modes.\n\n FEATURES\n\n Going Bananas\n\n When the Going Bananas feature triggers, Kong throws 1 to 5 wild barrels to random positions on the reels that reveal a random multiplier when they land. There are 3 tiers of barrels: Low, Medium and High.\n\n Low tier barrels can have the values: WILD, 2x, 3x, 4x, 5x, 6x, 7x, 8x"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:02:21Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Dragon Kingdom Eyes of Fire",
+    "slug": "pragmatic-dragon-kingdom-eyes-of-fire",
+    "provider_game_id": null,
+    "release_year": 2021,
+    "demo_url": null,
+    "slotcatalog_url": "https://slotcatalog.com/en/slots/Dragon-Kingdom-Eyes-of-Fire",
+    "official_info_url": null
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "SlotCatalog Layout: 3-3"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 5,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "SlotCatalog betways: 5"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+  },
+  "features": [
+    {
+      "name": "Level Up",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Multiplier",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Random multiplier",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "RTP range",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Wild",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 1250.0,
+    "max_win_notes": "SlotCatalog Max Win: x1250.00",
+    "rtp_percent": 95.49,
+    "rtp_notes": "SlotCatalog RTP tag: 95.49% RTP Ranges!",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "medium",
+    "win_system": "medium",
+    "reel_behavior": "low",
+    "symbols": "low",
+    "bonus_free_spins": "low",
+    "features": "medium",
+    "feature_buy": "low",
+    "numeric_limits": "medium"
+  },
+  "evidence": [
+    {
+      "source_type": "slotcatalog",
+      "url": "https://slotcatalog.com/en/slots/Dragon-Kingdom-Eyes-of-Fire",
+      "local_path": "sources/slotcatalog/Dragon-Kingdom-Eyes-Of-Fire.html",
+      "extracted_at": "2026-09-27T05:02:21Z",
+      "quote_or_excerpt": "Layout:3-3; Betways:5; RTP:95.49% RTP Ranges!; MaxWin:x1250.00; Features:Level Up, Multiplier, Random multiplier, RTP range, Wild"
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins exact rules",
+    "feature_buy.cost_multiplier",
+    "symbols details"
+  ]
+}

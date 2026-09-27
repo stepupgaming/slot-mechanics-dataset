@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Cowboy Coins",
+    "slug": "pragmatic-cowboy-coins",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/Cowboy-Coins.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways / Megaways adjacent left-to-right"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "The free spins round awards three respins that are reset every time a new symbol lands during the\nbonus game. Here, a central board of wins is landed with four different features around the\noutside offering multiple upgrades to increase their size. Dynamite multipliers give random\nsymbols and Money Bags award more cash prizes, Safes collect prizes, and Badges multiply all\nwins gained so far!\n\fGame Information\n16 symbols:"
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "Free Game:\n• When on screen 3 or more than 3 Scatter symbol appears over the reel window then FG is triggered.\n• When FG Round starts initially player is awarded with 3 spins.3 spins is the initial spin reset value.\n• Whenever any additional symbol comes over the reel window the spins are again reset to it's initial\n value.\n• On FG game has only money symbols, no ways win\n• The FG symbols that triggered the FG converts to either into Regular Coin Symbol and/or into Super\n Coin Symbol.\n• The mechanism for Collector/Super Collector Symbol, Payer/Super Payer is same in FG also as it was\n in base game\n\fGame Information",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "MONEY",
+        "behavior": "• 10 Regular symbols\n • 1 Scatter: doesn’t pay, 3 or more symbols triggers Free Spins\n • 5(+5 super type) Money symbol: don’t pay as regular\n • Coin symbol(base and super type for free game)\n • Payer symbol (base and super type for free game)\n • Collector symbol(base and super type for free)\n • Double Booster symbol (only free game)\n • Multi Collector symbol (only free game)",
+        "params": {}
+      },
+      {
+        "name": "MONEY",
+        "behavior": "Free Game:\n• When on screen 3 or more than 3 Scatter symbol appears over the reel window then FG is triggered.\n• When FG Round starts initially player is awarded with 3 spins.3 spins is the initial spin reset value.\n• Whenever any additional symbol comes over the reel window the spins are again reset to it's initial\n value.\n• On FG game has only money symbols, no ways win\n• The FG symbols that triggered the FG converts to either into Regular Coin Symbol and/or into Super\n Coin Symbol.\n• The mechanism for Collector/Super Collector Symbol, Payer/Super Payer is same in FG also as it was\n in base game\n\fGame Information",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive multiplier/collection described in effects",
+        "effects": "round awards three respins that are reset every time a new symbol lands during the\nbonus game. Here, a central board of wins is landed with four different features around the\noutside offering multiple upgrades to increase their size. Dynamite multipliers give random\nsymbols and Money Bags award more cash prizes, Safes collect prizes, and Badges multiply all\nwins gained so far!\n\fGame Information\n16 symbols:\n\n • 10 Regular symbols\n • 1 Scatter: doesn’t pay, 3 or more symbols triggers Free Spins\n • 5(+5 super type) Money symbol: don’t pay as regular\n • Coin symbol(base and super type for free game)\n • Payer symbol (base and super type for free game)\n • Collector symbol(base and super type for free)\n • Double Booster symbol (only free game)\n • Multi Collector symbol (only free game)\n\nScreen overview:\n\n• Megaways\n• 2304 ways left to right\n• Bet multiplier 20\n\fGame Information\nBase Game:\n\n• Base Game Feature : Coin Symbol must be present either with Payer/Collector Symbol or with both.\n• Coin Symbol and Collector Symbol comes with the multiplier on them, the collector symbol will\n collect all the multipliers present on Coin Symbols and add it's value with it's own multiplier.\n• Coin Symbol and Payer Symbol comes with the multiplier on them, the payer symbol will pay all the\n multipliers present on Coin Symbols that is, it will add it's own multiplier value to each of the coin\n symbol present.\n• The sum of all the multipliers present over the reel window is the total multiplier value for that screen.\n• The total multiplier value* total bet is the total win for BG feature.\n\nFree Game:\n• When on screen 3 or more than 3 Scatter symbol appears over the reel window then FG is triggered.\n• When FG Round starts initially player is awarded with 3 spins.3 spins is the initial spin reset value.\n• Whenever any additional symbol comes over the reel window the spins are again reset to it's initial\n value.\n• On FG game has only money symbols, no ways win\n• The FG symbols that triggered the FG converts to either into Regular Coin Symbol and/or into Super\n Coin Symbol.\n• The mechanism for Collector/Super Collector Symbol, Payer/Super Payer is same in FG also as it was\n in base game\n\fGame Information\n\n• The Double Booster/ Super Double Booster Symbol mechanism is that it randomly choses 2 to 5 coins\n and doubles their multiplier value present on them. The Super Double Booster doesn’t become dead\n after the spin instead it keeps on doubling the Coin Values with every passing spin.\n• The Multi Collector/Super Multi Collector Symbol mechanism is: It randomly selects a single coin\n symbol and collects that value multiple times ( 2 to 30 times) and added with it's own value.\n• The order of execution for the game is in anti clockwise direction that first left reel is executed then,\n bottom reel then, right reel and then top reel.\n• In the left/ right reel the execution order is top to bottom direction while in top/bottom reels the\n execution order is in left to right directio"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "round awards three respins that are reset every time a new symbol lands during the\nbonus game. Here, a central board of wins is landed with four different features around the\noutside offering multiple upgrades to increase their size. Dynamite multipliers give random\nsymbols and Money Bags award more cash prizes, Safes collect prizes, and Badges multiply all\nwins gained so far!\n\fGame Information\n16 symbols:\n\n • 10 Regular symbols\n • 1 Scatter: doesn’t pay, 3 or more symbols triggers Free Spins\n • 5(+5 super type) Money symbol: don’t pay as regular\n • Coin symbol(base and super type for free game)\n • Payer symbol (base and super type for free game)\n • Collector symbol(base and super type for free)\n • Double Booster symbol (only free game)\n • Multi Collector symbol (only free game)\n\nScreen overview:\n\n• Megaways\n• 2304 ways left to right\n• Bet multiplier 20\n\fGame Information\nBase Game:\n\n• Base Game Feature : Coin Symbol must be present either with Payer/Collector Symbol or with both.\n• Coin Symbol and Collector Symbol comes with the multiplier on them, the collector symbol will\n collect all the multipliers present on Coin Symbols and add it's value with it's own multiplier.\n• Coin Symbol and Payer Symbol comes with the multiplier on them, the payer symbol will pay all the\n multipliers present on Coin Symbols that is, it will add it's own multiplier value to each of the coin\n symbol present.\n• The sum of all the multipliers present over the reel window is the total multiplier value for that screen.\n• The total multiplier value* total bet is the total win for BG feature.\n\nFree Game:\n• When on screen 3 or more than 3 Scatter symbol appears over the reel window then FG is triggered.\n• When FG Round starts initially player is awarded with 3 spins.3 spins is the initial spin reset value.\n• Whenever any additional symbol comes over the reel window the spins are again reset to it's initial\n value.\n• On FG game has only money symbols, no ways win\n• The FG symbols that triggered ",
+      "params": {}
+    },
+    {
+      "name": "Money Symbol",
+      "trigger": null,
+      "effects": ": don’t pay as regular\n • Coin symbol(base and super type for free game)\n • Payer symbol (base and super type for free game)\n • Collector symbol(base and super type for free)\n • Double Booster symbol (only free game)\n • Multi Collector symbol (only free game)\n\nScreen overview:\n\n• Megaways\n• 2304 ways left to right\n• Bet multiplier 20\n\fGame Information\nBase Game:\n\n• Base Game Feature : Coin Symbol must be present either with Payer/Collector Symbol or with both.\n• Coin Symbol and Collector Symbol comes with the multiplier on them, the collector symbol will\n collect all the multipliers present on Coin Symbols and add it's value with it's own multiplier.\n• Coin Symbol and Payer Symbol comes with the multiplier on them, the payer symbol will pay all the\n multipliers present on Coin Symbols that is, it will add it's own multiplier value to each of the coin\n symbol present.\n• The sum of all the multipliers present over the reel window is the total multiplier value for that screen.\n• The total multiplier value* total bet is the total win for BG feature.\n\nFree Game:\n• When on screen 3 or more than 3 Scatter symbol appears over the reel window then FG is triggered.\n• When FG Round starts initially player is awarded with 3 spins.3 spins is the initial spin reset value.\n• Whenever any additional symbol comes over the reel window the spins are again reset to it's initial\n value.\n• On FG game has only money symbols, no ways win\n• The FG symbols that triggered the FG converts to either into Regular Coin Symbol and/or into Super\n Coin Symbol.\n• The mechanism for Collector/Super Collector Symbol, Payer/Super Payer is same in FG also as it was\n in base game\n\fGame Information\n\n• The Double Booster/ Super Double Booster Symbol mechanism is that it randomly choses 2 to 5 coins\n and doubles their multiplier value present on them. The Super Double Booster doesn’t become dead\n after the spin instead it keeps on doubling the Coin Values with every passing spin.\n• The Multi Collector/Super Multi Collector Symbol mechanism is: It randomly selects a single coin\n symbol and collects that value multiple times ( 2 to 30 times) and added with it's own value.\n• The order of execution for the game is in anti clockwise direction that first left reel is executed then,\n bottom reel then, right reel and then top reel.\n• In the left/ right reel the execution order is top to bottom direction while in top/bottom reels the\n execution order is in left to right direction.\n• The sum of all the multip",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/Cowboy-Coins.pdf",
+      "local_path": "sources/pragmatic/pdfs/Cowboy-Coins.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME OVERVIEW\n\f\fGame Description (for Players)\nCollect bounties in Cowboy Coins™.\n\nThis western-themed slot has symbols in keeping with the cowboy aesthetic that must form\nmatching combinations across the title’s six reels and 20 paylines to unlock a win.\n\nThe free spins round awards three respins that are reset every time a new symbol lands during the\nbonus game. Here, a central board of wins is landed with four different features around the\noutside offering multiple upgrades to increase their size. Dynamite multipliers give random\nsymbols and Money Bags award more cash prizes, Safes collect prizes, and Badges multiply all\nwins gained so far!\n\fGame Information\n16 symbols:\n\n • 10 Regular sym"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

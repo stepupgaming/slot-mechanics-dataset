@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Wild West Gold Blazing Bounty",
+    "slug": "pragmatic-wild-west-gold-blazing-bounty",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Wild-West-Gold-Blazing-Bounty-rules.pdf"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official rules: played on a 5x5 grid"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Connected blocks / cluster pays per official rules"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "This is the WILD symbol and substitutes for all symbols except for SCATTER.\n WILD symbol hits with a random multiplier of x2, x3 or x5.\n Multipliers apply to all winning combinations that they are part of. If more than one WILD is part\n of the same winning combination, their multipliers add to each other.\n The same WILD can be part of multiple winning combinations.",
+        "params": {}
+      },
+      {
+        "name": "WILD",
+        "behavior": "FREE SPINS\n Hit 3 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.\nIf the round is triggered with 3 SCATTER symbols, possible multiplier values for WILD symbols are x2, x3 or x5. If the\n round is triggered with 4 SCATTER symbols, possible multiplier values for WILD symbols are x2, x5 or x10. If the\n round is triggered with 5 SCATTER symbols, possible multiplier values for WILD symbols are x10, x15 or x25.\n During the round any WILD symbol that hits remains on the screen until the end of the round.\n Feature cannot be retriggered.\n Special reels are in play during the feature.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "This is the SCATTER symbol.\n It can appear on all reels.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "FREE SPINS\n Hit 3 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.\nIf the round is triggered with 3 SCATTER symbols, possible multiplier values for WILD symbols are x2, x3 or x5. If the\n round is triggered with 4 SCATTER symbols, possible multiplier values for WILD symbols are x2, x5 or x10. If the\n round is triggered with 5 SCATTER symbols, possible multiplier values for WILD symbols are x10, x15 or x25.\n During the round any WILD symbol that hits remains on the screen until the end of the round.\n Feature cannot be retriggered.\n Special reels are in play during the feature.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Hit 3 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.",
+        "spins_awarded": "win 10 free spins.",
+        "retrigger": "Feature cannot be retriggered.",
+        "sticky_or_persistent_state": "Persistent/sticky state described in effects",
+        "progressive_state": null,
+        "effects": "Hit 3 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.\nIf the round is triggered with 3 SCATTER symbols, possible multiplier values for WILD symbols are x2, x3 or x5. If the\n round is triggered with 4 SCATTER symbols, possible multiplier values for WILD symbols are x2, x5 or x10. If the\n round is triggered with 5 SCATTER symbols, possible multiplier values for WILD symbols are x10, x15 or x25.\n During the round any WILD symbol that hits remains on the screen until the end of the round.\n Feature cannot be retriggered.\n Special reels are in play during the feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "Hit 3 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.",
+      "effects": "Hit 3 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.\nIf the round is triggered with 3 SCATTER symbols, possible multiplier values for WILD symbols are x2, x3 or x5. If the\n round is triggered with 4 SCATTER symbols, possible multiplier values for WILD symbols are x2, x5 or x10. If the\n round is triggered with 5 SCATTER symbols, possible multiplier values for WILD symbols are x10, x15 or x25.\n During the round any WILD symbol that hits remains on the screen until the end of the round.\n Feature cannot be retriggered.\n Special reels are in play during the feature.",
+      "params": {}
+    },
+    {
+      "name": "Ante Bet",
+      "trigger": null,
+      "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 40x - the chance to win the FREE SPINS round naturally is five times higher. More SCATTER\n symbols are present on the reels. The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+      "params": {}
+    },
+    {
+      "name": "Buy Free Spins",
+      "trigger": null,
+      "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it.\n Pay 100x total bet to trigger the FREE SPINS feature with 3, 4 or 5 SCATTER symbols\n guaranteed to hit randomly on the triggering spin.\n\f Pay 500x total bet to trigger the SUPER FREE SPINS feature with 5 SCATTER symbols\n guaranteed to hit on the triggering spin.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Buy Free Spins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it.\n Pay 100x total bet to trigger the FREE SPINS feature with 3, 4 or 5 SCATTER symbols\n guaranteed to hit randomly on the triggering spin.\n\f Pay 500x total bet to trigger the SUPER FREE SPINS feature with 5 SCATTER symbols\n guaranteed to hit on the triggering spin.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 40x - the chance to win the FREE SPINS round naturally is five times higher. More SCATTER\n symbols are present on the reels. The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7500.0,
+    "max_win_notes": "maximum win amount is limited to 7500X bet",
+    "rtp_percent": 96.48,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.48%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Wild-West-Gold-Blazing-Bounty-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Wild-West-Gold-Blazing-Bounty.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n All symbols pay in blocks of minimum 5 symbols connected horizontally or vertically.\n The game is played on a 5x5 grid of symbols.\n\n 13 - 25 1500 13 - 25 750 13 - 25 450 13 - 25 360 13 - 25 300 13 - 25 240\n 8 - 12 800 8 - 12 260 8 - 12 150 8 - 12 80 8 - 12 45 8 - 12 36\n 5 - 7 200 5 - 7 75 5 - 7 60 5 - 7 45 5 - 7 30 5 - 7 27\n\n 13 - 25 140 13 - 25 120 13 - 25 70 13 - 25 40\n 8 - 12 30 8 - 12 27 8 - 12 23 8 - 12 23\n 5 - 7 15 5 - 7 11 5-7 8 5-7 8\n\n This is the SCATTER symbol.\n It can appear on all reels.\n\n WILD WITH MULTIPLIERS\n\n 25 - 1500\n\n This is the WILD symbol and substitutes for all symbols except for SCATTER.\n WILD symbol hits with a random multiplier of x2, x3 or x5.\n Multipli"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier"
+  ]
+}

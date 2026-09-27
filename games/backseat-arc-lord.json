@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Arc Lord",
+    "slug": "backseat-arc-lord",
+    "provider_game_id": "2130",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2130&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2130/1.8.5/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "The global multiplier is displayed next to the reels and multiplies all wins. It starts at x1 and increases by x1 on every tumble win.\n\n In the base game it gets reset back to x1 at the start of every spin."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "ZEUS WILD REEL",
+        "behavior": "When the Zeus symbol lands it triggers and spawns between 1 and 5 Wild reels on the grid.\n\n After it has been activated, the Zeus symbol acts as a regular Wild symbol, substituting for all other symbols in the paytable.\n\n The Zeus symbol can land in all game modes and maximum one unactivated Zeus symbol can be present on the grid at the same time.",
+        "params": {}
+      },
+      {
+        "name": "BONUS SCATTER SYMBOL",
+        "behavior": "The Bonus scatter symbol can only land in base game. Only one Bonus scatter symbol can land per reel.\n\n The Bonus scatter symbol cannot be on the same reel at the same time as a Zeus Wild reel.\n\n The Bonus scatter acts like a FS symbol",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "GLOBAL MULTIPLIER",
+        "behavior": "The global multiplier is displayed next to the reels and multiplies all wins. It starts at x1 and increases by x1 on every tumble win.\n\n In the base game it gets reset back to x1 at the start of every spin.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "WHEEL OF FORTUNE",
+        "behavior": "When Thunderstrike Bonus or Lord of Lightning Bonus are triggered, the player will have the chance to gamble for a chance to win additional free spins and a higher initial global multiplier.\n\n The player can gamble up to 3 times or collect the currently awarded free spins and global multiplier at any time before a gamble.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - THUNDERSTRIKE",
+        "trigger": "landing 3 Bonus scatter symbols at the same time in the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Trigger the Thunderstrike bonus with 10 starting free spins and a x1 initial global multiplier by landing 3 Bonus scatter symbols at the same time in the base game. \n\n This bonus follows all base game mechanics. In addition the global multiplier starts at x1 and is persistent throughout the whole bonus, increasing by x1 on every tumble win.\n\n Each gambling round results in the following amount of free spins and initial global multiplier based on the outcome:\n\n First gamble:\n\n Collect: 10 free spins / x1 initial global multiplier\n\n Gamble Win: 15 free spins / x5 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n Second gamble:\n\n Collect: 15 free spins / x5 initial global multiplier\n\n Gamble Win: 20 free spins / x10 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n Third gamble:\n\n Collect: 20 free spins / x10 initial global multiplier\n\n Gamble Win: 25 free spins / x15 initial global multiplier\n\n Gamble Loss: 0 free spins"
+      },
+      {
+        "name": "BONUS GAME - LORD OF LIGHTNING",
+        "trigger": "landing 4 Bonus scatter symbols at the same time in the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Trigger the Lord of Lightning bonus with 15 starting free spins and a x5 initial global multiplier by landing 4 Bonus scatter symbols at the same time in the base game. \n\n This bonus follows all base game mechanics. In addition the global multiplier starts at x5 and is persistent throughout the whole bonus, increasing by x1 on every tumble win.\n\n Each gambling round results in the following amount of free spins and initial global multiplier based on the outcome:\n\n First gamble:\n\n Collect: 15 free spins / x5 initial global multiplier\n\n Gamble Win: 20 free spins / x10 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n Second gamble:\n\n Collect: 20 free spins / x10 initial global multiplier\n\n Gamble Win: 25 free spins / x15 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n Third gamble:\n\n Collect: 25 free spins / x15 initial global multiplier\n\n Gamble Win: 30 free spins / x20 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n SPECIAL SYMBOLS"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "ZEUS WILD REEL",
+      "trigger": null,
+      "effects": "When the Zeus symbol lands it triggers and spawns between 1 and 5 Wild reels on the grid.\n\n After it has been activated, the Zeus symbol acts as a regular Wild symbol, substituting for all other symbols in the paytable.\n\n The Zeus symbol can land in all game modes and maximum one unactivated Zeus symbol can be present on the grid at the same time.",
+      "params": {}
+    },
+    {
+      "name": "GLOBAL MULTIPLIER",
+      "trigger": null,
+      "effects": "The global multiplier is displayed next to the reels and multiplies all wins. It starts at x1 and increases by x1 on every tumble win.\n\n In the base game it gets reset back to x1 at the start of every spin.",
+      "params": {
+        "multiplier_values_mentioned": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "WHEEL OF FORTUNE",
+      "trigger": null,
+      "effects": "When Thunderstrike Bonus or Lord of Lightning Bonus are triggered, the player will have the chance to gamble for a chance to win additional free spins and a higher initial global multiplier.\n\n The player can gamble up to 3 times or collect the currently awarded free spins and global multiplier at any time before a gamble.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - THUNDERSTRIKE",
+      "trigger": "landing 3 Bonus scatter symbols at the same time in the base game.",
+      "effects": "Trigger the Thunderstrike bonus with 10 starting free spins and a x1 initial global multiplier by landing 3 Bonus scatter symbols at the same time in the base game. \n\n This bonus follows all base game mechanics. In addition the global multiplier starts at x1 and is persistent throughout the whole bonus, increasing by x1 on every tumble win.\n\n Each gambling round results in the following amount of free spins and initial global multiplier based on the outcome:\n\n First gamble:\n\n Collect: 10 free spins / x1 initial global multiplier\n\n Gamble Win: 15 free spins / x5 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n Second gamble:\n\n Collect: 15 free spins / x5 initial global multiplier\n\n Gamble Win: 20 free spins / x10 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n Third gamble:\n\n Collect: 20 free spins / x10 initial global multiplier\n\n Gamble Win: 25 free spins / x15 initial global multiplier\n\n Gamble Loss: 0 free spins",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - LORD OF LIGHTNING",
+      "trigger": "landing 4 Bonus scatter symbols at the same time in the base game.",
+      "effects": "Trigger the Lord of Lightning bonus with 15 starting free spins and a x5 initial global multiplier by landing 4 Bonus scatter symbols at the same time in the base game. \n\n This bonus follows all base game mechanics. In addition the global multiplier starts at x5 and is persistent throughout the whole bonus, increasing by x1 on every tumble win.\n\n Each gambling round results in the following amount of free spins and initial global multiplier based on the outcome:\n\n First gamble:\n\n Collect: 15 free spins / x5 initial global multiplier\n\n Gamble Win: 20 free spins / x10 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n Second gamble:\n\n Collect: 20 free spins / x10 initial global multiplier\n\n Gamble Win: 25 free spins / x15 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n Third gamble:\n\n Collect: 25 free spins / x15 initial global multiplier\n\n Gamble Win: 30 free spins / x20 initial global multiplier\n\n Gamble Loss: 0 free spins\n\n SPECIAL SYMBOLS",
+      "params": {}
+    },
+    {
+      "name": "BONUS SCATTER SYMBOL",
+      "trigger": null,
+      "effects": "The Bonus scatter symbol can only land in base game. Only one Bonus scatter symbol can land per reel.\n\n The Bonus scatter symbol cannot be on the same reel at the same time as a Zeus Wild reel.\n\n The Bonus scatter acts like a FS symbol",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000,
+    "max_win_notes": "maximum achievable win in this game is 25 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2130/1.8.5/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/arc-lord/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Ascend to Olympus in Arc Lord! This 5-reel, 5-row game with payline wins crackles with divine energy as the mighty Zeus symbol summons 1 - 5 Wild Reels with every strike. Symbols that are part of a winning combination are removed from the grid and new symbols drop in their place. Each tumble fuels the storm, raising the global multiplier by x1 for thunderous wins worthy of the gods! Gamble on the Wheel of Fortune for extra spins and a higher global multiplier for bigger wins!\n\n The max win in this game is 25 000x your bet and can be achieved only in the bonus games.\n\n FEATURES"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

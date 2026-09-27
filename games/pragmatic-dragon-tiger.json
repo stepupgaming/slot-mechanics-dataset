@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:02:21Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Dragon Tiger",
+    "slug": "pragmatic-dragon-tiger",
+    "provider_game_id": null,
+    "release_year": 2017,
+    "demo_url": null,
+    "slotcatalog_url": "https://slotcatalog.com/en/slots/Dragon-Tiger-Habanero",
+    "official_info_url": null
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "unknown",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": null
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+  },
+  "features": [
+    {
+      "name": "Dragon Tiger Game",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "RTP range",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "SlotCatalog Max Win: N/A",
+    "rtp_percent": 96.27,
+    "rtp_notes": "SlotCatalog RTP tag: 96.27% RTP Ranges!",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "low",
+    "win_system": "low",
+    "reel_behavior": "low",
+    "symbols": "low",
+    "bonus_free_spins": "low",
+    "features": "medium",
+    "feature_buy": "low",
+    "numeric_limits": "medium"
+  },
+  "evidence": [
+    {
+      "source_type": "slotcatalog",
+      "url": "https://slotcatalog.com/en/slots/Dragon-Tiger-Habanero",
+      "local_path": "sources/slotcatalog/Dragon-Tiger.html",
+      "extracted_at": "2026-09-27T05:02:21Z",
+      "quote_or_excerpt": "Layout:N-A; Betways:N/A; RTP:96.27% RTP Ranges!; MaxWin:N/A; Features:Dragon Tiger Game, RTP range"
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins exact rules",
+    "feature_buy.cost_multiplier",
+    "grid.rows/cols",
+    "symbols details",
+    "win_system.type"
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Barn Festival",
+    "slug": "pragmatic-barn-festival",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Barn-Festival-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": "anywhere",
+    "notes": "Symbols pay anywhere per official GAME RULES"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. The remaining symbols fall to the bottom of the screen and the empty positions are\n replaced with new symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played."
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "MONEY SYMBOLS AS WIN MULTIPLIERS\nWhenever exactly 3 MONEY symbols hit either together or through multiple tumbles their values transform into win\n multipliers that add together and apply to the win of all subsequent tumbles in that cycle. MONEY symbols that hit\n after the 3rd will also have their value transformed into win multipliers, adding to the total win multiplier.\n When exactly 3 MONEY symbols hit as the initial result of a spin, before any tumble, if that result has no win, the\nvalues on those MONEY symbols transform into multipliers, they are added together, set on the side, and the game\n respins all symbols on the screen until at least one winning combination hits. All wins resulting from this will be\nmultiplied by the previously collected win multiplier. During these respins and subsequent tumbles, special reels are\n in play that do not contain any MONEY symbols."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "MONEY",
+        "behavior": "This is the MONEY SYMBOL. It can appear on all reels.\n On each spin the MONEY SYMBOL takes a random value from\n a predefined set between 1x, 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x,\n 15x, 20x, 25x, 50x, 100x, 250x or 500x total bet.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            10,
+            12,
+            15,
+            20,
+            25,
+            50,
+            100,
+            250,
+            500
+          ]
+        }
+      },
+      {
+        "name": "MONEY",
+        "behavior": "MONEY SYMBOLS AS WIN MULTIPLIERS\nWhenever exactly 3 MONEY symbols hit either together or through multiple tumbles their values transform into win\n multipliers that add together and apply to the win of all subsequent tumbles in that cycle. MONEY symbols that hit\n after the 3rd will also have their value transformed into win multipliers, adding to the total win multiplier.\n When exactly 3 MONEY symbols hit as the initial result of a spin, before any tumble, if that result has no win, the\nvalues on those MONEY symbols transform into multipliers, they are added together, set on the side, and the game\n respins all symbols on the screen until at least one winning combination hits. All wins resulting from this will be\nmultiplied by the previously collected win multiplier. During these respins and subsequent tumbles, special reels are\n in play that do not contain any MONEY symbols.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Tumble Feature",
+      "trigger": null,
+      "effects": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. The remaining symbols fall to the bottom of the screen and the empty positions are\n replaced with new symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.\n\n This is the MONEY SYMBOL. It can appear on all reels.\n On each spin the MONEY SYMBOL takes a random value from\n a predefined set between 1x, 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x,\n 15x, 20x, 25x, 50x, 100x, 250x or 500x total bet.\n\n MONEY SYMBOLS AS WIN MULTIPLIERS\nWhenever exactly 3 MONEY symbols hit either together or through multiple tumbles their values transform into win\n multipliers that add together and apply to the win of all subsequent tumbles in that cycle. MONEY symbols that hit\n after the 3rd will also have their value transformed into win multipliers, adding to the total win multiplier.\n When exactly 3 MONEY symbols hit as the initial result of a spin, before any tumble, if that result has no win, the\nvalues on those MONEY symbols transform into multipliers, they are added together, set on the side, and the game\n respins all symbols on the screen until at least one winning combination hits. All wins resulting from this will be\nmultiplied by the previously collected win multiplier. During these respins and subsequent tumbles, special reels are\n in play that do not contain any MONEY symbols.\n\n MONEY RESPIN FEATURE\n Hit 4 or more MONEY symbol together or through multiple tumbles to trigger the MONEY RESPIN feature.\n When the feature starts, the base game reels are replaced with a grid of 4x5 positions.\nDuring the round, only MONEY SYMBOLS and special symbols spin and can stop on any open position on the grid.\n The round starts with the MONEY SYMBOLS hit in the base game in the same position.\n Start with 3 respins. All symbols that hit after each respin remain on the screen until the end of the\n round. Whenever any symbol hits, the number of respins is reset back to 3.\n The round ends when there are no more respins left or the screen has been fully filled.\n At the end of the round all amounts collected so far are awarded.\n\n The following symbols can hit during the respin round:\n\n MONEY symbols with random initial values.\n This is the ADD VALUE symbol. Whenever it hits it adds a random value from the same set as ",
+      "params": {}
+    },
+    {
+      "name": "Money Symbol",
+      "trigger": null,
+      "effects": ". It can appear on all reels.\n On each spin the MONEY SYMBOL takes a random value from\n a predefined set between 1x, 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x,\n 15x, 20x, 25x, 50x, 100x, 250x or 500x total bet.\n\n MONEY SYMBOLS AS WIN MULTIPLIERS\nWhenever exactly 3 MONEY symbols hit either together or through multiple tumbles their values transform into win\n multipliers that add together and apply to the win of all subsequent tumbles in that cycle. MONEY symbols that hit\n after the 3rd will also have their value transformed into win multipliers, adding to the total win multiplier.\n When exactly 3 MONEY symbols hit as the initial result of a spin, before any tumble, if that result has no win, the\nvalues on those MONEY symbols transform into multipliers, they are added together, set on the side, and the game\n respins all symbols on the screen until at least one winning combination hits. All wins resulting from this will be\nmultiplied by the previously collected win multiplier. During these respins and subsequent tumbles, special reels are\n in play that do not contain any MONEY symbols.\n\n MONEY RESPIN FEATURE\n Hit 4 or more MONEY symbol together or through multiple tumbles to trigger the MONEY RESPIN feature.\n When the feature starts, the base game reels are replaced with a grid of 4x5 positions.\nDuring the round, only MONEY SYMBOLS and special symbols spin and can stop on any open position on the grid.\n The round starts with the MONEY SYMBOLS hit in the base game in the same position.\n Start with 3 respins. All symbols that hit after each respin remain on the screen until the end of the\n round. Whenever any symbol hits, the number of respins is reset back to 3.\n The round ends when there are no more respins left or the screen has been fully filled.\n At the end of the round all amounts collected so far are awarded.\n\n The following symbols can hit during the respin round:\n\n MONEY symbols with random initial values.\n This is the ADD VALUE symbol. Whenever it hits it adds a random value from the same set as MONEY\n symbol to the value of all MONEY symbols currently on the screen. After adding, it transforms into a\n MONEY symbol with the value equal to the one it has added.\n This is the MULTIPLY symbol. Whenever it hits it multiplies the values of 2 to 5 MONEY symbols on the\n screen randomly by a random multiplier of x2, x3, x4 or x5. After multiplying it transforms into a MONEY\n symbol with a value of as many total bets as the multiplier it had.\n This is the COLLECT symbol",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "maximum win amount is limited to 20,000x bet",
+    "rtp_percent": 96.45,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.45%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Barn-Festival-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Barn-Festival.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n Symbols pay anywhere on the screen. The total number of the same symbol\n on the screen at the end of the spin determines the value of the win.\n\n 12 + 1000 12 + 500 12 + 300 12 + 240 12 + 200\n 10-11 500 10-11 200 10-11 100 10-11 40 10-11 30\n 8-9 200 8-9 50 8-9 40 8-9 30 8-9 20\n\n 12 + 160 12 + 100 12 + 80 12 + 40\n 10-11 24 10 - 11 20 10 - 11 18 10 - 11 15\n 8-9 16 8 - 9 10 8-9 8 8-9 5\n\n TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. The remaining symbols fall to the bottom of the screen and the empty positions are\n replaced with new symbols coming from above.\n Tumbling will continue until no more winn"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols"
+  ]
+}

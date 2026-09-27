@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Sweet Bonanza Super Scatter",
+    "slug": "pragmatic-sweet-bonanza-super-scatter",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Sweet-Bonanza-Super-Scatter-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": "anywhere",
+    "notes": "Symbols pay anywhere per official GAME RULES"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\n disappear. The remaining symbols fall to the bottom of the screen and the empty positions are replaced\n with new symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble. There's\n no limit to the number of possible tumbles.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "6 2000 This is the SCATTER symbol.\n 5 100 SCATTER symbol is present on all reels.\n 4 60 SCATTER pays on any position.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "SUPER SCATTER\n This is the SUPER SCATTER symbol.\n It can appear on all reels.\n Combinations of 4 or more of SCATTER and\n SUPER SCATTER trigger the FREE SPINS feature.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "MULTIPLIER",
+        "behavior": "This is the MULTIPLIER symbol.\n 100x It is present on the reels only during the FREE SPINS feature and\n it stays on the screen until the end of the tumbling sequence.",
+        "params": {
+          "multiplier_values_mentioned": [
+            100
+          ]
+        }
+      },
+      {
+        "name": "MULTIPLIER",
+        "behavior": "Whenever a MULTIPLIER symbol hits, it takes a random multiplier value of 2x, 3x, 4x, 5x, 6x, 8x,\n 10x, 12x, 15x, 20x, 25x, 50x or 100x.\n When the tumbling sequence ends, the values of all MULTIPLIER symbols on the screen are added\n together and the total win of the sequence is multiplied by the final value.\n The SUPER SCATTER symbol does not appear during the FREE SPINS round.\n Special reels are in play during the feature.\n\f MAX WIN\nThe maximum win amount is limited to 50,000x bet in both base game and free spins. If the total win of a FREE SPINS\n round reaches 50,000x bet the round immediately ends, win is awarded and all remaining free spins are forfeited.",
+        "params": {
+          "multiplier_values_mentioned": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            10,
+            12,
+            15,
+            20,
+            25,
+            50,
+            100
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Hit 4 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.",
+        "spins_awarded": "win 10 free spins.",
+        "retrigger": "uring the FREE SPINS ROUND, 5 additional free spins are awarded.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Hit 4 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n\n This is the MULTIPLIER symbol.\n 100x It is present on the reels only during the FREE SPINS feature and\n it stays on the screen until the end of the tumbling sequence.\n\n Whenever a MULTIPLIER symbol hits, it takes a random multiplier value of 2x, 3x, 4x, 5x, 6x, 8x,\n 10x, 12x, 15x, 20x, 25x, 50x or 100x.\n When the tumbling sequence ends, the values of all MULTIPLIER symbols on the screen are added\n together and the total win of the sequence is multiplied by the final value.\n The SUPER SCATTER symbol does not appear during the FREE SPINS round.\n Special reels are in play during the feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "Hit 4 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.",
+      "effects": "Hit 4 or more SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n\n This is the MULTIPLIER symbol.\n 100x It is present on the reels only during the FREE SPINS feature and\n it stays on the screen until the end of the tumbling sequence.\n\n Whenever a MULTIPLIER symbol hits, it takes a random multiplier value of 2x, 3x, 4x, 5x, 6x, 8x,\n 10x, 12x, 15x, 20x, 25x, 50x or 100x.\n When the tumbling sequence ends, the values of all MULTIPLIER symbols on the screen are added\n together and the total win of the sequence is multiplied by the final value.\n The SUPER SCATTER symbol does not appear during the FREE SPINS round.\n Special reels are in play during the feature.",
+      "params": {}
+    },
+    {
+      "name": "Tumble Feature",
+      "trigger": null,
+      "effects": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\n disappear. The remaining symbols fall to the bottom of the screen and the empty positions are replaced\n with new symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble. There's\n no limit to the number of possible tumbles.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.\n\n SUPER SCATTER\n This is the SUPER SCATTER symbol.\n It can appear on all reels.\n Combinations of 4 or more of SCATTER and\n SUPER SCATTER trigger the FREE SPINS feature.\n\nCombinations of 4 or more SCATTER or SUPER SCATTER, with at least one SUPER SCATTER included, pay as follows:\n 1 SUPER SCATTER in combinations of 3 or more SCATTERS of any kind pays 100x total bet.\n 2 SUPER SCATTER in combinations of 3 or more SCATTERS of any kind pays 500x total bet.\n 3 SUPER SCATTER in combinations of 3 or more SCATTERS of any kind pays 5,000x total bet.\n 4 SUPER SCATTER in combinations of 4 or more SCATTERS of any kind pays 50,000x total bet.",
+      "params": {}
+    },
+    {
+      "name": "Ante Bet",
+      "trigger": null,
+      "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 25x - the chance to win the free spins feature naturally is double.\n The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+      "params": {}
+    },
+    {
+      "name": "Buy Free Spins",
+      "trigger": null,
+      "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it.\n There are two options to buy the FREE SPINS:\n Pay 100x total bet to trigger the FREE SPINS feature with 4 or more SCATTER symbols\n guaranteed to hit on the triggering spin.\nPay 500x total bet to trigger the SUPER FREE SPINS feature with 4 or more SCATTER symbols guaranteed to hit on the\n triggering spin. In this mode all multiplier symbols carry a multiplier of minimum 20x.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Buy Free Spins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it.\n There are two options to buy the FREE SPINS:\n Pay 100x total bet to trigger the FREE SPINS feature with 4 or more SCATTER symbols\n guaranteed to hit on the triggering spin.\nPay 500x total bet to trigger the SUPER FREE SPINS feature with 4 or more SCATTER symbols guaranteed to hit on the\n triggering spin. In this mode all multiplier symbols carry a multiplier of minimum 20x.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.25,
+    "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 25x - the chance to win the free spins feature naturally is double.\n The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+    "notes": "Inferred from official ante: 25x bet multiplier vs 20x normal (=1.25x total bet cost)"
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 50000.0,
+    "max_win_notes": "maximum win amount is limited to 50,000x bet",
+    "rtp_percent": 96.51,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.51%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Sweet-Bonanza-Super-Scatter-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Sweet-Bonanza-Super-Scatter.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n Symbols pay anywhere on the screen. The total number of the same symbol on the screen at the\n end of a spin determines the value of the win.\n\n 12+ 1000 12+ 500 12+ 300 12+ 240\n 10 - 11 500 10 - 11 200 10 - 11 100 10 - 11 40\n 8 - 9 200 8 - 9 50 8 - 9 40 8 - 9 30\n\n 12+ 200 12+ 160 12+ 100 12+ 80 12+ 40\n 10 - 11 30 10 - 11 24 10 - 11 20 10 - 11 18 10 - 11 15\n 8 - 9 20 8 - 9 16 8 - 9 10 8-9 8 8-9 5\n\n 6 2000 This is the SCATTER symbol.\n 5 100 SCATTER symbol is present on all reels.\n 4 60 SCATTER pays on any position.\n\n TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\n disappear. The remaining symbols fall to the bott"
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier",
+    "grid.rows/cols"
+  ]
+}

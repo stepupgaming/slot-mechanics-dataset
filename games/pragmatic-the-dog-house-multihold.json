@@ -1,22 +1,22 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-27T04:44:19Z",
+  "updated_at": "2026-09-27T05:06:38Z",
   "identity": {
     "provider": "Pragmatic Play",
     "title": "The Dog House Multihold",
     "slug": "pragmatic-the-dog-house-multihold",
     "provider_game_id": null,
-    "release_year": 2023,
+    "release_year": null,
     "demo_url": null,
-    "slotcatalog_url": "https://slotcatalog.com/en/slots/The-Dog-House-Multihold",
-    "official_info_url": null
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/The-Dog-House-Multihold.pdf"
   },
   "grid": {
-    "rows": 3,
-    "cols": 5,
+    "rows": null,
+    "cols": null,
     "rows_min": null,
     "rows_max": null,
-    "layout_notes": "SlotCatalog Layout: 5-3"
+    "layout_notes": null
   },
   "win_system": {
     "type": "paylines",
@@ -24,28 +24,50 @@
     "ways_count": null,
     "min_symbols_for_win": null,
     "direction": "left_to_right",
-    "notes": "SlotCatalog betways: 20"
+    "notes": "Left-to-right adjacent / paylines per official rules"
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "respins": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "expanding_reels": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "other": []
   },
   "symbols": {
     "wilds": [],
-    "scatters": [],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "Played across 5×3 reels, familiar symbols return with different breeds of dogs, bones and collars needing to be landed\nacross the title’s 20 paylines to award a win. Three scatter symbols award seven free spins where any multiplier wilds\nlanded are held throughout play.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "During the thrilling free spins round, additional scatter symbols landed are collected with three of these needed to award\na retrigger of up to three spins. This retrigger also grants an extra play screen, onto which all previously held wild\nmultipliers are transferred. This process can be repeated until there are a total of four individual game boards in play at\none time!\n\fGame Information\n14 symbols:",
+        "params": {}
+      }
+    ],
     "multipliers": [],
-    "collectors": [],
+    "collectors": [
+      {
+        "name": "MONEY",
+        "behavior": "During the thrilling free spins round, additional scatter symbols landed are collected with three of these needed to award\na retrigger of up to three spins. This retrigger also grants an extra play screen, onto which all previously held wild\nmultipliers are transferred. This process can be repeated until there are a total of four individual game boards in play at\none time!\n\fGame Information\n14 symbols:",
+        "params": {}
+      },
+      {
+        "name": "MONEY",
+        "behavior": "• 3 FG give 7 Free Spins.\n• Wilds and its multipliers are sticky on the latest unlocked screen.\n• SC symbol are collected during free spins:\n • Each 3 SC level up the free game and award 1-3 additional free spins.\n • Each level up gives +1 screen.\n • The wilds and its multipliers are copied to the same positions from the last screen to the new\n unlocked screen\n • The existing wilds will be kept sticky on all the screens until end of FS\n • The new wilds will be sticky only on the latest screen.\n • It is possible to level up twice on the same spin (level 1 → level 3 or level 2 → level 4):\n • additional free spins will be awarded twice\n • wilds and multipliers will be copied from the initial screen to both unlocked screens\n • new wilds will be sticky only on the one latest screen\n\f\f\f\f\f\f\f\f\f\f\f\f\f\fTHANK YOU",
+        "params": {}
+      }
+    ],
     "specials": []
   },
   "bonus_free_spins": {
@@ -54,92 +76,26 @@
         "name": "Free Spins",
         "trigger": null,
         "spins_awarded": null,
-        "retrigger": null,
-        "sticky_or_persistent_state": null,
+        "retrigger": "ee of these needed to award\na retrigger of up to three spins.",
+        "sticky_or_persistent_state": "Persistent/sticky state described in effects",
         "progressive_state": null,
-        "effects": "Free Spins tagged on SlotCatalog; exact rules not taken from official paytable in this record."
+        "effects": "where any multiplier wilds\nlanded are held throughout play.\n\nDuring the thrilling free spins round, additional scatter symbols landed are collected with three of these needed to award\na retrigger of up to three spins. This retrigger also grants an extra play screen, onto which all previously held wild\nmultipliers are transferred. This process can be repeated until there are a total of four individual game boards in play at\none time!\n\fGame Information\n14 symbols:\n\n • 11 Regular symbols\n • 1 Wild\n • 2 Scatter\n\nScreen overview:\n\n• 5x3 – screen size\n• 20 win lines, pay left-to-right\n• 20 bet multiplier\n• up to 4 additional screens during free game\n\nScatter (1):\n\n • Pays\n • Appears in the base game only\n • Appears on reels 1, 3, 5\n • Triggers Free Game\n\fGame Information\nScatter(2):\n\n• Doesn’t pay\n• Re-triggers Free Game\n• Appears in the free game only\n• Appears on the last unlocked screen only\n• Appears on all reels\n• Doesn’t appear on level #4\n\nWild:\n• Doesn’t pay\n• It substitutes for all symbols except Scatters\n• Appears in the base and free game.\n• Appears on reels 2, 3, 4\n• Has multipliers (x2, x3)\n• Wilds are sticky on Free Spins\n\fGame Information\nBase Game:\n\n• Each wild has a multiplier (x2, x3).\n• If a wild is involved in a win line, the win will be multiplied on the multiplier.\n• If more than 1 wild is part of winning combination, their multipliers will be summed up\n\nFree Game:\n\n• 3 FG give 7 Free Spins.\n• Wilds and its multipliers are sticky on the latest unlocked screen.\n• SC symbol are collected during free spins:\n • Each 3 SC level up the free game and award 1-3 additional free spins.\n • Each level up gives +1 screen.\n • The wilds and its multipliers are copied to the same positions from the last screen to the new\n unlocked screen\n • The existing wilds will be kept sticky on all the screens until end of FS\n • The new wilds will be sticky only on the latest screen.\n • It is possible to level up twice on the same spin (level 1 → level 3 or level 2 → level 4):\n • additional free spins will be awarded twice\n • wilds and multipliers will be copied from the initial screen to both unlocked screens\n • new wilds will be sticky only on the one latest screen\n\f\f\f\f\f\f\f\f\f\f\f\f\f\fTHANK YOU"
       }
     ],
-    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+    "notes": null
   },
   "features": [
     {
-      "name": "Additional Free Spins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Buy Feature",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
       "name": "Free Spins",
       "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Multiplier",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Random multiplier",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Reelset Changing",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "RTP range",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Scatter symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Sticky Wilds",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Symbols collection (Energy)",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Wild",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Wilds with multipliers",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "effects": "where any multiplier wilds\nlanded are held throughout play.\n\nDuring the thrilling free spins round, additional scatter symbols landed are collected with three of these needed to award\na retrigger of up to three spins. This retrigger also grants an extra play screen, onto which all previously held wild\nmultipliers are transferred. This process can be repeated until there are a total of four individual game boards in play at\none time!\n\fGame Information\n14 symbols:\n\n • 11 Regular symbols\n • 1 Wild\n • 2 Scatter\n\nScreen overview:\n\n• 5x3 – screen size\n• 20 win lines, pay left-to-right\n• 20 bet multiplier\n• up to 4 additional screens during free game\n\nScatter (1):\n\n • Pays\n • Appears in the base game only\n • Appears on reels 1, 3, 5\n • Triggers Free Game\n\fGame Information\nScatter(2):\n\n• Doesn’t pay\n• Re-triggers Free Game\n• Appears in the free game only\n• Appears on the last unlocked screen only\n• Appears on all reels\n• Doesn’t appear on level #4\n\nWild:\n• Doesn’t pay\n• It substitutes for all symbols except Scatters\n• Appears in the base and free game.\n• Appears on reels 2, 3, 4\n• Has multipliers (x2, x3)\n• Wilds are sticky on Free Spins\n\fGame Information\nBase Game:\n\n• Each wild has a multiplier (x2, x3).\n• If a wild is involved in a win line, the win will be multiplied on the multiplier.\n• If more than 1 wild is part of winning combination, their multipliers will be summed up\n\nFree Game:\n\n• 3 FG give 7 Free Spins.\n• Wilds and its multipliers are sticky on the latest unlocked screen.\n• SC symbol are collected during free spins:\n • Each 3 SC level up the free game and award 1-3 additional free spins.\n • Each level up gives +1 screen.\n • The wilds and its multipliers are copied to the same positions from the last screen to the new\n unlocked screen\n • The existing wilds will be kept sticky on all the screens until end of FS\n • The new wilds will be sticky only on the latest screen.\n • It is possible to level up twice on the same spin (level 1 → level 3 or level 2 → level 4):\n ",
       "params": {}
     }
   ],
   "feature_buy": {
-    "available": true,
+    "available": false,
     "options": [],
-    "notes": "Buy Feature tagged on SlotCatalog; cost multiplier unknown without official rules."
+    "notes": null
   },
   "ante_bet": {
     "available": false,
@@ -148,36 +104,35 @@
     "notes": null
   },
   "numeric_limits": {
-    "max_win_multiplier": 9000.0,
-    "max_win_notes": "SlotCatalog Max Win tag: x9000.00",
-    "rtp_percent": 95.14,
-    "rtp_notes": "SlotCatalog RTP tag: 95.14% (may be one of several operator configs)",
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": null,
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "medium",
-    "win_system": "medium",
-    "reel_behavior": "low",
-    "symbols": "low",
-    "bonus_free_spins": "low",
-    "features": "medium",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
     "feature_buy": "low",
-    "numeric_limits": "medium"
+    "numeric_limits": "low"
   },
   "evidence": [
     {
-      "source_type": "slotcatalog",
-      "url": "https://slotcatalog.com/en/slots/The-Dog-House-Multihold",
-      "local_path": "sources/slotcatalog/The-Dog-House-Multihold.html",
-      "extracted_at": "2026-09-27T04:44:19Z",
-      "quote_or_excerpt": "Free Spins Free Spins No Wagering 5 Free Spins 10 Free Spins 20 Free Spins 30 Free Spins 50 Free Spins 100 Free Spins 150 Free Spins 200 Free Spins Casino Best Online Casinos New Online Casinos Mobile Online Casinos High Roller Casinos Bitcoin / Crypto Casinos Best Payout Online Casinos Real Money Casinos Fast Withdrawal Casinos Live Casino Online Real Money Live Casinos Casino RTP Scam casinos Safe Online Casinos Blackjack Casinos Sweepstakes Casinos $1 Minimum Deposit Casinos Best VPN-Friendly"
+      "source_type": "official_pdf",
+      "url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/The-Dog-House-Multihold.pdf",
+      "local_path": "sources/pragmatic/pdfs/The-Dog-House-Multihold.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME OVERVIEW\n\f\fGame Description (for Players)\nFetch an upgraded version of a player favourite in The Dog House Multihold™\n\nPlayed across 5×3 reels, familiar symbols return with different breeds of dogs, bones and collars needing to be landed\nacross the title’s 20 paylines to award a win. Three scatter symbols award seven free spins where any multiplier wilds\nlanded are held throughout play.\n\nDuring the thrilling free spins round, additional scatter symbols landed are collected with three of these needed to award\na retrigger of up to three spins. This retrigger also grants an extra play screen, onto which all previously held wild\nmultipliers are transferred. This process can be repeated unti"
     }
   ],
   "unknowns": [
-    "symbols detailed behaviors",
-    "bonus_free_spins trigger exact counts unless present in excerpt",
-    "feature_buy.cost_multiplier",
-    "numeric_limits only from SlotCatalog tags not official PDF"
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
   ]
 }

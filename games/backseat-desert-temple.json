@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Desert Temple",
+    "slug": "backseat-desert-temple",
+    "provider_game_id": "1630",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1630&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1630/1.13.6/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "At the start of each spin or new cascade, there is a chance that a cluster of 5 or more Mystery Symbols land on the grid, all of which transform into the same High or Low-paying symbol. Transformed symbols will also have a Symbol Multiplier if the symbol type already has a Symbol Multiplier applied."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "TEMPLE OF TEMPTATION",
+        "behavior": "Trigger the TEMPLE OF TEMPTATION bonus game with 10 free spins by landing 4 BONUS scatter symbols at the same time in the BASE GAME.\n\n All Symbol Multipliers persist for the entire duration of the bonus.\n\n Landing 3 BONUS symbols at the same time in the bonus game awards +10 free spins.",
+        "params": {}
+      },
+      {
+        "name": "FORTUNE OF PHARAOHS",
+        "behavior": "Trigger the FORTUNE OF PHARAOHS bonus game with 10 free spins by landing 5 BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus all symbols start with a x4 Symbol Multiplier. All Symbol Multipliers persist for the entire duration of the bonus.\n\n Landing 3 BONUS symbols at the same time in the bonus game awards +10 free spins.",
+        "params": {
+          "multiplier_values_mentioned": [
+            4
+          ]
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "SYMBOL MULTIPLIERS",
+        "behavior": "Winning combinations are formed by clusters of 5+ of the same symbols connected horizontally or vertically. After a winning combination occurs, all symbols of the winning type receive a Symbol Multiplier that starts at x2 and doubles after each subsequent winning combination on that symbol type in the same spin. The highest possible value for each Symbol Multiplier is x1024.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            1024
+          ]
+        }
+      },
+      {
+        "name": "MYSTERY SYMBOLS",
+        "behavior": "At the start of each spin or new cascade, there is a chance that a cluster of 5 or more Mystery Symbols land on the grid, all of which transform into the same High or Low-paying symbol. Transformed symbols will also have a Symbol Multiplier if the symbol type already has a Symbol Multiplier applied.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SYMBOL MULTIPLIERS",
+      "trigger": null,
+      "effects": "Winning combinations are formed by clusters of 5+ of the same symbols connected horizontally or vertically. After a winning combination occurs, all symbols of the winning type receive a Symbol Multiplier that starts at x2 and doubles after each subsequent winning combination on that symbol type in the same spin. The highest possible value for each Symbol Multiplier is x1024.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          1024
+        ]
+      }
+    },
+    {
+      "name": "MYSTERY SYMBOLS",
+      "trigger": null,
+      "effects": "At the start of each spin or new cascade, there is a chance that a cluster of 5 or more Mystery Symbols land on the grid, all of which transform into the same High or Low-paying symbol. Transformed symbols will also have a Symbol Multiplier if the symbol type already has a Symbol Multiplier applied.",
+      "params": {}
+    },
+    {
+      "name": "TEMPLE OF TEMPTATION",
+      "trigger": null,
+      "effects": "Trigger the TEMPLE OF TEMPTATION bonus game with 10 free spins by landing 4 BONUS scatter symbols at the same time in the BASE GAME.\n\n All Symbol Multipliers persist for the entire duration of the bonus.\n\n Landing 3 BONUS symbols at the same time in the bonus game awards +10 free spins.",
+      "params": {}
+    },
+    {
+      "name": "FORTUNE OF PHARAOHS",
+      "trigger": null,
+      "effects": "Trigger the FORTUNE OF PHARAOHS bonus game with 10 free spins by landing 5 BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus all symbols start with a x4 Symbol Multiplier. All Symbol Multipliers persist for the entire duration of the bonus.\n\n Landing 3 BONUS symbols at the same time in the bonus game awards +10 free spins.",
+      "params": {
+        "multiplier_values_mentioned": [
+          4
+        ]
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_feature_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1630/1.13.6/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/desert-temple/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Enter the Temple of Temptation! Desert Temple is a 7-reel, 7-row game with cluster wins. Mystery symbols will help you get big clusters and build up each symbol’s multiplier, leading to huge wins!\n\n The maximum win can be achieved in the bonus games.\n\n FEATURES\n\n SYMBOL MULTIPLIERS\n\n Winning combinations are formed by clusters of 5+ of the same symbols connected horizontally or vertically. After a winning combination occurs, all symbols of the winning type receive a Symbol Multiplier that starts at x2 and doubles after each subsequent winning combination on that symbol type in"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:02:21Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Cash Patrol",
+    "slug": "pragmatic-cash-patrol",
+    "provider_game_id": null,
+    "release_year": 2022,
+    "demo_url": null,
+    "slotcatalog_url": "https://slotcatalog.com/en/slots/Cash-Patrol",
+    "official_info_url": null
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "SlotCatalog Layout: 5-3"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 25,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "SlotCatalog betways: 25"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Respins tagged on SlotCatalog."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Free Spins tagged on SlotCatalog; exact rules not taken from official paytable in this record."
+      }
+    ],
+    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+  },
+  "features": [
+    {
+      "name": "Cash Collector",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Expanding Symbols",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins Multiplier",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Respins",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "RTP range",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Scatter symbols",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Wild",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10500.0,
+    "max_win_notes": "SlotCatalog Max Win: x10500.00",
+    "rtp_percent": 95.5,
+    "rtp_notes": "SlotCatalog RTP tag: 95.5% RTP Ranges!",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "medium",
+    "win_system": "medium",
+    "reel_behavior": "low",
+    "symbols": "low",
+    "bonus_free_spins": "low",
+    "features": "medium",
+    "feature_buy": "low",
+    "numeric_limits": "medium"
+  },
+  "evidence": [
+    {
+      "source_type": "slotcatalog",
+      "url": "https://slotcatalog.com/en/slots/Cash-Patrol",
+      "local_path": "sources/slotcatalog/Cash-Patrol.html",
+      "extracted_at": "2026-09-27T05:02:21Z",
+      "quote_or_excerpt": "Layout:5-3; Betways:25; RTP:95.5% RTP Ranges!; MaxWin:x10500.00; Features:Cash Collector, Expanding Symbols, Free Spins, Free Spins Multiplier, Respins, RTP range, Scatter symbols, Wild"
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins exact rules",
+    "feature_buy.cost_multiplier",
+    "symbols details"
+  ]
+}

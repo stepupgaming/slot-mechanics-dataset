@@ -1,42 +1,42 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-27T04:44:19Z",
+  "updated_at": "2026-09-27T05:06:38Z",
   "identity": {
     "provider": "Pragmatic Play",
     "title": "Wisdom of Athena",
     "slug": "pragmatic-wisdom-of-athena",
     "provider_game_id": null,
-    "release_year": 2023,
+    "release_year": null,
     "demo_url": null,
-    "slotcatalog_url": "https://slotcatalog.com/en/slots/Wisdom-of-Athena",
-    "official_info_url": null
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/Wisdom-of-Athena.pdf"
   },
   "grid": {
-    "rows": 5,
-    "cols": 6,
+    "rows": null,
+    "cols": null,
     "rows_min": null,
     "rows_max": null,
-    "layout_notes": "SlotCatalog Layout: 6-5"
+    "layout_notes": null
   },
   "win_system": {
-    "type": "pay_anywhere",
+    "type": "unknown",
     "payline_count": null,
     "ways_count": null,
     "min_symbols_for_win": null,
-    "direction": "anywhere",
-    "notes": "SlotCatalog betways: Scatter Pays"
+    "direction": null,
+    "notes": null
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
-      "present": true,
-      "how_it_works": "Cascading/tumble tagged on SlotCatalog"
+      "present": false,
+      "how_it_works": null
     },
     "respins": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "expanding_reels": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "other": []
@@ -49,107 +49,69 @@
     "specials": []
   },
   "bonus_free_spins": {
-    "modes": [],
-    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": "During free game 3+ Scatters retrigger 5 extra free spins\n\nMultiplier:\n\n • Both base game and free game\n • Multipliers on the screen are added up together\n • Accumulative at free game.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "• 1 special symbol (Multiplier)\n\fGame Information\nScatter:\n\n • Pays on Free Game trigger\n • Appears on both base game and free game\n • Appears at any reel\n • During base game 4+ Scatters trigger free game with 10 free spins\n • During free game 3+ Scatters retrigger 5 extra free spins\n\nMultiplier:\n\n • Both base game and free game\n • Multipliers on the screen are added up together\n • Accumulative at free game. At the end of free spin (including tumbling session) the multipliers on\n the screen are added to the Outer Multiplier. In other words Outer Multiplier goes up by every free\n spin multipliers (even if there is no win at free spin)\n • ◦ Every free spin at the end of the tumbling session is awarded by win multiplied with Outer\n Multiplier\n • ◦ Multiplier possible values: 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50, 60, 80, 100, 150, 200, 300, 400,\n\fGame Information\nUnlocking cells:\n\n • Both base game and free game start with the fully locked first row\n • Unlocked positions remain unlocked for the whole free game\n • Need 1 Tumble for unlocking Reel1 top postion.\n • Need 3 more Tumble for unlocking Reel2 top position\n • Need 6 more Tumble for unlocking Reel3 top position\n • Need 9 more Tumble for unlocking Reel4 top position\n • Need 12 more Tumble for unlocking Reel5 top position\n • Need 15 more Tumble for unlocking Reel6 top position\n\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\fTHANK YOU"
+      }
+    ],
+    "notes": null
   },
   "features": [
     {
-      "name": "Avalanche",
+      "name": "Free Spins",
       "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Bonus Bet",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Buy Feature",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Cascading",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Random multiplier",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Reelset Changing",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "RTP range",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Scatter Pays",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Wilds with multipliers",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "effects": "• 1 special symbol (Multiplier)\n\fGame Information\nScatter:\n\n • Pays on Free Game trigger\n • Appears on both base game and free game\n • Appears at any reel\n • During base game 4+ Scatters trigger free game with 10 free spins\n • During free game 3+ Scatters retrigger 5 extra free spins\n\nMultiplier:\n\n • Both base game and free game\n • Multipliers on the screen are added up together\n • Accumulative at free game. At the end of free spin (including tumbling session) the multipliers on\n the screen are added to the Outer Multiplier. In other words Outer Multiplier goes up by every free\n spin multipliers (even if there is no win at free spin)\n • ◦ Every free spin at the end of the tumbling session is awarded by win multiplied with Outer\n Multiplier\n • ◦ Multiplier possible values: 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50, 60, 80, 100, 150, 200, 300, 400,\n\fGame Information\nUnlocking cells:\n\n • Both base game and free game start with the fully locked first row\n • Unlocked positions remain unlocked for the whole free game\n • Need 1 Tumble for unlocking Reel1 top postion.\n • Need 3 more Tumble for unlocking Reel2 top position\n • Need 6 more Tumble for unlocking Reel3 top position\n • Need 9 more Tumble for unlocking Reel4 top position\n • Need 12 more Tumble for unlocking Reel5 top position\n • Need 15 more Tumble for unlocking Reel6 top position\n\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\fTHANK YOU",
       "params": {}
     }
   ],
   "feature_buy": {
-    "available": true,
+    "available": false,
     "options": [],
-    "notes": "Buy Feature tagged on SlotCatalog; cost multiplier unknown without official rules."
+    "notes": null
   },
   "ante_bet": {
-    "available": true,
+    "available": false,
     "cost_multiplier": null,
     "effects": null,
-    "notes": "Bonus Bet/Ante tagged on SlotCatalog"
+    "notes": null
   },
   "numeric_limits": {
-    "max_win_multiplier": 5000.0,
-    "max_win_notes": "SlotCatalog Max Win tag: x5000.00",
-    "rtp_percent": 96.07,
-    "rtp_notes": "SlotCatalog RTP tag: 96.07% (may be one of several operator configs)",
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": null,
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "medium",
-    "win_system": "medium",
-    "reel_behavior": "low",
-    "symbols": "low",
-    "bonus_free_spins": "low",
-    "features": "medium",
+    "win_system": "low",
+    "reel_behavior": "medium",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
     "feature_buy": "low",
-    "numeric_limits": "medium"
+    "numeric_limits": "low"
   },
   "evidence": [
     {
-      "source_type": "slotcatalog",
-      "url": "https://slotcatalog.com/en/slots/Wisdom-of-Athena",
-      "local_path": "sources/slotcatalog/Wisdom-of-Athena.html",
-      "extracted_at": "2026-09-27T04:44:19Z",
-      "quote_or_excerpt": "Free Spins Free Spins No Wagering 5 Free Spins 10 Free Spins 20 Free Spins 30 Free Spins 50 Free Spins 100 Free Spins 150 Free Spins 200 Free Spins Casino Best Online Casinos New Online Casinos Mobile Online Casinos High Roller Casinos Bitcoin / Crypto Casinos Best Payout Online Casinos Real Money Casinos Fast Withdrawal Casinos Live Casino Online Real Money Live Casinos Casino RTP Scam casinos Safe Online Casinos Blackjack Casinos Sweepstakes Casinos $1 Minimum Deposit Casinos Best VPN-Friendly"
+      "source_type": "official_pdf",
+      "url": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic120/GameRulesEN/Wisdom-of-Athena.pdf",
+      "local_path": "sources/pragmatic/pdfs/Wisdom-of-Athena.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME OVERVIEW\n\f\fGame Description (for Players)\n\nGreek Gods descend on the reels to cast their power in Wisdom of Athena™.\n\nPlayed across 5×6 reels, this pay anywhere slot requires at least eight matching\nsymbols to be present anywhere on the reels to trigger a win. These are then removed\nfrom play, triggering a cascade of new symbols to fall from the top of the game board\nand providing more opportunity to create additional wins. Each tumble created helps\nto reveal an extra reel.\n\nIn the exciting free spins round, multipliers that are landed are held throughout the 10\nspins awarded, with the game offering the possibility of more than one multiplier to be\nadded and increasing the amount won. H"
     }
   ],
   "unknowns": [
-    "symbols detailed behaviors",
-    "bonus_free_spins trigger exact counts unless present in excerpt",
-    "feature_buy.cost_multiplier",
-    "numeric_limits only from SlotCatalog tags not official PDF"
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent",
+    "win_system.type"
   ]
 }

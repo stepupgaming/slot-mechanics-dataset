@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:02:21Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Candy Pop",
+    "slug": "pragmatic-candy-pop",
+    "provider_game_id": null,
+    "release_year": 2018,
+    "demo_url": null,
+    "slotcatalog_url": "https://slotcatalog.com/en/slots/Candy-Pop-Spadegaming",
+    "official_info_url": null
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "SlotCatalog Layout: 6-6"
+  },
+  "win_system": {
+    "type": "unknown",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": null
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Respins tagged on SlotCatalog."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+  },
+  "features": [
+    {
+      "name": "Bonus Game",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Bonus symbols",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Cluster Pays",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Respins",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    },
+    {
+      "name": "Symbols collection (Energy)",
+      "trigger": null,
+      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "SlotCatalog Max Win: N/A",
+    "rtp_percent": 97.0,
+    "rtp_notes": "SlotCatalog RTP tag: 97%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "medium",
+    "grid": "medium",
+    "win_system": "low",
+    "reel_behavior": "low",
+    "symbols": "low",
+    "bonus_free_spins": "low",
+    "features": "medium",
+    "feature_buy": "low",
+    "numeric_limits": "medium"
+  },
+  "evidence": [
+    {
+      "source_type": "slotcatalog",
+      "url": "https://slotcatalog.com/en/slots/Candy-Pop-Spadegaming",
+      "local_path": "sources/slotcatalog/Candy-Pop.html",
+      "extracted_at": "2026-09-27T05:02:21Z",
+      "quote_or_excerpt": "Layout:6-6; Betways:Cluster pays; RTP:97%; MaxWin:N/A; Features:Bonus Game, Bonus symbols, Cluster Pays, Respins, Symbols collection (Energy)"
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins exact rules",
+    "feature_buy.cost_multiplier",
+    "symbols details",
+    "win_system.type"
+  ]
+}

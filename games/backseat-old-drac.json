@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Old Drac",
+    "slug": "backseat-old-drac",
+    "provider_game_id": "1932",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1932&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1932/1.12.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Cascades/tumbles mentioned in About/Features; see feature texts for details."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "THE GARLIC HUNT",
+        "behavior": "Trigger The Garlic Hunt bonus with 10 free spins by landing 4 Drac Bonus scatter symbols at the same time in the base game.\n\n In the bonus game, there is a progression ladder to increase the minimum possible value of landed Garlic symbol multipliers.\n\n The ladder has 4 levels and you reach each subsequent level by collecting additional Drac Bonus scatter symbols.\n\n Level 1: Unlocked by collecting an additional 2 Drac Bonus scatter symbols. 5x minimum multiplier value.\n\n Level 2: Unlocked by collecting an additional 3 Drac Bonus scatter symbols. 10x minimum multiplier value.\n\n Level 3: Unlocked by collecting an additional 3 Drac Bonus scatter symbols. 25x minimum multiplier value.\n\n Level 4: Unlocked by collecting an additional 5 Drac Bonus scatter symbols. 100x minimum multiplier value.\n\n Each spin that awards an advancement in levels on the ladder rewards players with 5 extra free spins.",
+        "params": {}
+      },
+      {
+        "name": "DRAC ATTACK",
+        "behavior": "Trigger the Drac Attack bonus with 10 free spins by landing 5 Drac Bonus scatter symbols at the same time in the base game.\n\n This bonus follows the same rules as The Garlic Hunt bonus, but you start on a random level between 1 and 4 on the progression ladder.\n\n Each spin that awards an advancement in levels on the ladder rewards players with 5 extra free spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "GARLIC SYMBOLS",
+        "behavior": "Garlic symbols are multiplier symbols which are collected in the Total Win Bar once the grid is settled and no new wins occur. If more than one Garlic symbol is activated at the same time, their values are collected in the Total Win Bar and added together. The sum of all collected Garlic multipliers will multiply the total win amount before the win is awarded.\n\n Garlic symbols can have one of the following possible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x.\n\n Garlic symbols are only activated if there is at least one winning combination on the grid.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "TOTAL WIN BAR",
+        "behavior": "All wins are collected in the Total Win Bar above the grid during each round. Any multipliers revealed by Garlic symbols are added together and the result is applied to the collected win amount.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TOTAL WIN BAR",
+      "trigger": null,
+      "effects": "All wins are collected in the Total Win Bar above the grid during each round. Any multipliers revealed by Garlic symbols are added together and the result is applied to the collected win amount.",
+      "params": {}
+    },
+    {
+      "name": "GARLIC SYMBOLS",
+      "trigger": null,
+      "effects": "Garlic symbols are multiplier symbols which are collected in the Total Win Bar once the grid is settled and no new wins occur. If more than one Garlic symbol is activated at the same time, their values are collected in the Total Win Bar and added together. The sum of all collected Garlic multipliers will multiply the total win amount before the win is awarded.\n\n Garlic symbols can have one of the following possible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x.\n\n Garlic symbols are only activated if there is at least one winning combination on the grid.",
+      "params": {}
+    },
+    {
+      "name": "THE GARLIC HUNT",
+      "trigger": null,
+      "effects": "Trigger The Garlic Hunt bonus with 10 free spins by landing 4 Drac Bonus scatter symbols at the same time in the base game.\n\n In the bonus game, there is a progression ladder to increase the minimum possible value of landed Garlic symbol multipliers.\n\n The ladder has 4 levels and you reach each subsequent level by collecting additional Drac Bonus scatter symbols.\n\n Level 1: Unlocked by collecting an additional 2 Drac Bonus scatter symbols. 5x minimum multiplier value.\n\n Level 2: Unlocked by collecting an additional 3 Drac Bonus scatter symbols. 10x minimum multiplier value.\n\n Level 3: Unlocked by collecting an additional 3 Drac Bonus scatter symbols. 25x minimum multiplier value.\n\n Level 4: Unlocked by collecting an additional 5 Drac Bonus scatter symbols. 100x minimum multiplier value.\n\n Each spin that awards an advancement in levels on the ladder rewards players with 5 extra free spins.",
+      "params": {}
+    },
+    {
+      "name": "DRAC ATTACK",
+      "trigger": null,
+      "effects": "Trigger the Drac Attack bonus with 10 free spins by landing 5 Drac Bonus scatter symbols at the same time in the base game.\n\n This bonus follows the same rules as The Garlic Hunt bonus, but you start on a random level between 1 and 4 on the progression ladder.\n\n Each spin that awards an advancement in levels on the ladder rewards players with 5 extra free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_dynamite_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_dynamite_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1932/1.12.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/old-drac/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Dare to face Old Drac! In this 6-reel, 5-row drop cascades game with all-scatter wins, exploding Garlic symbols unveil multipliers that boost your tumble win. Land Drac Bonus scatter symbols to climb the 4-level Garlic Ladder, locking in ever-bigger guaranteed Garlic multipliers!\n\n The max win in this game is 12 500x your bet and can be achieved in The Garlic Hunt and Drac Attack bonus games.\n\n FEATURES\n\n TOTAL WIN BAR\n\n All wins are collected in the Total Win Bar above the grid during each round. Any multipliers revealed by Garlic symbols are added together and the result is "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

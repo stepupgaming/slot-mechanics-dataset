@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Old Gun",
+    "slug": "backseat-old-gun",
+    "provider_game_id": "1568",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1568&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1568/1.16.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "DYNAMITE DAVE’S LONG FUSE",
+        "behavior": "Activate this bonus game with 10 free spins by landing 4 BONUS scatter symbols at the same time in the base game.\n\n In the bonus game, there is a progression ladder to increase the minimum possible value of landed Dynamite symbol multipliers.\n\n The ladder has 5 levels and you reach each subsequent level by collecting additional BONUS symbols.\n\n In this version of the bonus game, you start at Level 0.\n\n Level 0: Unlocked from the start. 2x minimum multiplier value.\n\n Level 1: Unlocked by collecting an additional 2 BONUS symbols. 5x minimum multiplier value.\n\n Level 2: Unlocked by collecting an additional 3 BONUS symbols. 10x minimum multiplier value.\n\n Level 3: Unlocked by collecting an additional 3 BONUS symbols. 25x minimum multiplier value.\n\n Level 4: Unlocked by collecting an additional 5 BONUS symbols. 100x minimum multiplier value.\n\n Each spin that awards an advancement in levels on the ladder rewards players with 5 extra free spins.",
+        "params": {}
+      },
+      {
+        "name": "DYNAMITE DAVE’S SHORT FUSE",
+        "behavior": "Activate this bonus game with 10 free spins by landing 5 BONUS scatter symbols at the same time in the base game.\n\n This bonus game mimics DYNAMITE DAVE’S LONG FUSE but with a random starting point on the multiplier progression ladder.\n\n In this version of the bonus game, you may start the multiplier progression ladder at Level 1, Level 2, Level 3, or Level 4.\n\n The rules for advancing up the ladder are the same as in DYNAMITE DAVE’S LONG FUSE.\n\n Each spin that awards an advancement in levels on the ladder rewards players with 5 extra free spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "DYNAMITE SYMBOLS",
+        "behavior": "Dynamite symbols are multiplier symbols which are collected in the total win bar once the grid is settled and no new wins occur. If more than one Dynamite symbol is activated at the same time, their values are collected in the total win bar and added together. The sum of all collected Dynamite multipliers will multiply the total win amount before the win is awarded.\n\n Dynamite symbols can have one of the following possible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x.\n\n Dynamite symbols are only activated if there is at least one winning combination on the grid.",
+        "params": {}
+      },
+      {
+        "name": "FIRE IN THE HOLE!",
+        "behavior": "During a spin in the base game there is a random chance that the FIRE IN THE HOLE! Feature triggers and awards a higher multiplier value for any landed Dynamite symbols, based on the progression ladder from the bonus games!",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "TOTAL WIN BAR",
+        "behavior": "All wins are summarized in a total win bar above the grid and paid out at the end of each spin.\n\n All winning symbols are removed and new symbols drop in to fill in the empty spaces. This continues until no new wins occur.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TOTAL WIN BAR",
+      "trigger": null,
+      "effects": "All wins are summarized in a total win bar above the grid and paid out at the end of each spin.\n\n All winning symbols are removed and new symbols drop in to fill in the empty spaces. This continues until no new wins occur.",
+      "params": {}
+    },
+    {
+      "name": "DYNAMITE SYMBOLS",
+      "trigger": null,
+      "effects": "Dynamite symbols are multiplier symbols which are collected in the total win bar once the grid is settled and no new wins occur. If more than one Dynamite symbol is activated at the same time, their values are collected in the total win bar and added together. The sum of all collected Dynamite multipliers will multiply the total win amount before the win is awarded.\n\n Dynamite symbols can have one of the following possible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x.\n\n Dynamite symbols are only activated if there is at least one winning combination on the grid.",
+      "params": {}
+    },
+    {
+      "name": "FIRE IN THE HOLE!",
+      "trigger": null,
+      "effects": "During a spin in the base game there is a random chance that the FIRE IN THE HOLE! Feature triggers and awards a higher multiplier value for any landed Dynamite symbols, based on the progression ladder from the bonus games!",
+      "params": {}
+    },
+    {
+      "name": "DYNAMITE DAVE’S LONG FUSE",
+      "trigger": null,
+      "effects": "Activate this bonus game with 10 free spins by landing 4 BONUS scatter symbols at the same time in the base game.\n\n In the bonus game, there is a progression ladder to increase the minimum possible value of landed Dynamite symbol multipliers.\n\n The ladder has 5 levels and you reach each subsequent level by collecting additional BONUS symbols.\n\n In this version of the bonus game, you start at Level 0.\n\n Level 0: Unlocked from the start. 2x minimum multiplier value.\n\n Level 1: Unlocked by collecting an additional 2 BONUS symbols. 5x minimum multiplier value.\n\n Level 2: Unlocked by collecting an additional 3 BONUS symbols. 10x minimum multiplier value.\n\n Level 3: Unlocked by collecting an additional 3 BONUS symbols. 25x minimum multiplier value.\n\n Level 4: Unlocked by collecting an additional 5 BONUS symbols. 100x minimum multiplier value.\n\n Each spin that awards an advancement in levels on the ladder rewards players with 5 extra free spins.",
+      "params": {}
+    },
+    {
+      "name": "DYNAMITE DAVE’S SHORT FUSE",
+      "trigger": null,
+      "effects": "Activate this bonus game with 10 free spins by landing 5 BONUS scatter symbols at the same time in the base game.\n\n This bonus game mimics DYNAMITE DAVE’S LONG FUSE but with a random starting point on the multiplier progression ladder.\n\n In this version of the bonus game, you may start the multiplier progression ladder at Level 1, Level 2, Level 3, or Level 4.\n\n The rules for advancing up the ladder are the same as in DYNAMITE DAVE’S LONG FUSE.\n\n Each spin that awards an advancement in levels on the ladder rewards players with 5 extra free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_dynamite_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_dynamite_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1568/1.16.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/old-gun/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Light the fuse and take cover! Old Gun is a 6-reel, 5-row all-scatter game where the aim is to stack your wins and blow them to new heights with the help of Dynamite!\n\n So pull on your best cowboy boots, don your wide-brimmed hat, and join us in this explosive adventure together with Dynamite Dave!\n\n The max win in this game is 12,500x your bet and can be achieved in all game modes.\n\n FEATURES\n\n TOTAL WIN BAR\n\n All wins are summarized in a total win bar above the grid and paid out at the end of each spin.\n\n All winning symbols are removed and new symbols drop in to fill in the"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

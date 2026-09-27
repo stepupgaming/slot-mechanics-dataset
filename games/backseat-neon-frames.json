@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Neon Frames",
+    "slug": "backseat-neon-frames",
+    "provider_game_id": "1995",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1995&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1995/1.11.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "A Wild symbol highlights the position it initially lands on and applies its multiplier there. If it lands on an already highlighted position, its multiplier is added to the existing total.\n\n Wild symbols can have one of the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x or 100x.\n\n If highlighted positions participate in a winning combination their multipliers are added together and applied to the win.\n\n When a Trigger symbol lands on the grid, it activates at the end of the spin (after all tumbles) and transforms every symbol on highlighted positions into Wild symbols—unless they’re already a Wild symbol. The Trigger symbol itself also becomes a Wild symbol."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "NEON FRAMES",
+        "behavior": "A Wild symbol highlights the position it initially lands on and applies its multiplier there. If it lands on an already highlighted position, its multiplier is added to the existing total.\n\n Wild symbols can have one of the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x or 100x.\n\n If highlighted positions participate in a winning combination their multipliers are added together and applied to the win.\n\n When a Trigger symbol lands on the grid, it activates at the end of the spin (after all tumbles) and transforms every symbol on highlighted positions into Wild symbols—unless they’re already a Wild symbol. The Trigger symbol itself also becomes a Wild symbol.",
+        "params": {}
+      },
+      {
+        "name": "BERRY WILD BURST",
+        "behavior": "Trigger the Berry Wild Burst bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n Base game mechanics are followed. In addition highlighted squares remain on the grid until being activated by the Trigger symbol.",
+        "params": {}
+      },
+      {
+        "name": "WILD SYMBOL",
+        "behavior": "The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      },
+      {
+        "name": "TRIGGER SYMBOL",
+        "behavior": "The Trigger symbol substitutes the symbols in all highlighted squares with Wild symbols when activated. Only 1 Trigger symbol can be visible on the grid at a time. Trigger symbols can’t land together with Bonus scatter symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "STRAWBERRY BONANZA",
+        "behavior": "Trigger the Strawberry Bonanza bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n Base game mechanics are followed. In addition, highlighted squares remain persistent for the entire duration of the bonus.\n\n SPECIAL SYMBOLS",
+        "params": {}
+      },
+      {
+        "name": "BONUS SYMBOL",
+        "behavior": "The Bonus scatter symbol can only land in the base game.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "NEON FRAMES",
+      "trigger": null,
+      "effects": "A Wild symbol highlights the position it initially lands on and applies its multiplier there. If it lands on an already highlighted position, its multiplier is added to the existing total.\n\n Wild symbols can have one of the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x or 100x.\n\n If highlighted positions participate in a winning combination their multipliers are added together and applied to the win.\n\n When a Trigger symbol lands on the grid, it activates at the end of the spin (after all tumbles) and transforms every symbol on highlighted positions into Wild symbols—unless they’re already a Wild symbol. The Trigger symbol itself also becomes a Wild symbol.",
+      "params": {}
+    },
+    {
+      "name": "BERRY WILD BURST",
+      "trigger": null,
+      "effects": "Trigger the Berry Wild Burst bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n Base game mechanics are followed. In addition highlighted squares remain on the grid until being activated by the Trigger symbol.",
+      "params": {}
+    },
+    {
+      "name": "STRAWBERRY BONANZA",
+      "trigger": null,
+      "effects": "Trigger the Strawberry Bonanza bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n Base game mechanics are followed. In addition, highlighted squares remain persistent for the entire duration of the bonus.\n\n SPECIAL SYMBOLS",
+      "params": {}
+    },
+    {
+      "name": "WILD SYMBOL",
+      "trigger": null,
+      "effects": "The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    },
+    {
+      "name": "TRIGGER SYMBOL",
+      "trigger": null,
+      "effects": "The Trigger symbol substitutes the symbols in all highlighted squares with Wild symbols when activated. Only 1 Trigger symbol can be visible on the grid at a time. Trigger symbols can’t land together with Bonus scatter symbols.",
+      "params": {}
+    },
+    {
+      "name": "BONUS SYMBOL",
+      "trigger": null,
+      "effects": "The Bonus scatter symbol can only land in the base game.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1995/1.11.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/neon-frames/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Plug into the pulse of Neon Frames! In this 6‑reel, 5‑row drop‑cascades cluster game, multiplier‑charged Wild symbols illuminate their landing spots, adding their multiplier to them. When the Trigger symbol strikes, it electrifies every highlighted square with Wild symbols—unleashing a dazzling neon cascade of wins!\n\n The max win in this game is 15 000x your bet and can be achieved only in the bonus games.\n\n FEATURES\n\n NEON FRAMES\n\n A Wild symbol highlights the position it initially lands on and applies its multiplier there. If it lands on an already highlighted position, its "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

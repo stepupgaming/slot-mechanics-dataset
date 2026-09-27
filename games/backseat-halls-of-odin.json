@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Halls of Odin",
+    "slug": "backseat-halls-of-odin",
+    "provider_game_id": "1901",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1901&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1901/1.15.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "When the Eye symbol is revealed by the Mystery Gates they open and can reveal Coins, +FS or Collector symbols.\n\n +FS symbols can only be revealed during the bonus games and grant their value as additional free spins. They can come with values of +1, +2 or +3.\n\n All cash prizes are paid as a multiple of your bet and are added to your win for the spin. They come in 3 tiers:\n\n Bronze Coins can have the following values: 1x, 2x, 5x\n\n Silver Coins can have the following values: 10x, 15x, 20x, 25x, 50x\n\n Gold Coins can have the following values: 100x, 250x, 500x, 1000x\n\n The Collector symbol collects all cash prizes and the values of other Collector symbols on the screen before respinning only the cash prize positions. Collected Collector symbols keep their initial value."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "MYSTERY NUDGE GATES",
+        "behavior": "Mystery Gates are 4-height symbols that can land partially outside the reels and then nudge up or down until they cover the full reel. Mystery Gates can land anywhere on the grid. When this happens the global multiplier increases by +1. Gates move up or down (1 tile at a time) in order to cover their entire reel in the fastest way possible. Every time a Mystery Gate nudges up or down the global multiplier increases by +1. After a gate covers its entire reel it opens to reveal any type of paying symbol, Wild symbols or Eye symbols. Eye symbols reveal coins and special symbols.\n\n Multiple gates at the same time always reveal the same type of symbol.",
+        "params": {}
+      },
+      {
+        "name": "ODIN’S TRIAL",
+        "behavior": "Trigger the Odin's Trial bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n Base game mechanics are followed with an increased chance to land Mystery Gates. In addition the Mystery Gates become sticky and reveal paying symbols, Wild symbols or Eye symbols on each spin. The global multiplier is persistent for the entire duration of the bonus round.\n\n Additional +1, +2 or +3 free spins can be awarded by revealing the +FS symbol from the coin feature.",
+        "params": {}
+      },
+      {
+        "name": "FURY OF THE GODS",
+        "behavior": "Trigger the Fury of the Gods bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n Base game mechanics are followed with an increased chance to land Mystery Gates. In addition the Mystery Gates become sticky and reveal high paying symbols, Wild symbols or Eye symbols on each spin. The global multiplier is persistent for the entire duration of the bonus round.\n\n Additional +1, +2 or +3 free spins can be awarded by revealing the +FS symbol from the coin feature.\n\n SPECIAL SYMBOLS",
+        "params": {}
+      },
+      {
+        "name": "WILD SYMBOL",
+        "behavior": "The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "GLOBAL MULTIPLIER",
+        "behavior": "The Global multiplier starts at 1x. Every time a Mystery gate lands the global multiplier increases by +1. When a gate nudges up or down the global multiplier also increases by +1. During the bonus games it is persistent for the entire duration of the bonus round.\n\n At the end of the spin the values of all coins and Collector symbols will be added together and multiplied with your bet amount to determine the final cash prize, which will be added to the Total Win.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "COIN FEATURE",
+        "behavior": "When the Eye symbol is revealed by the Mystery Gates they open and can reveal Coins, +FS or Collector symbols.\n\n +FS symbols can only be revealed during the bonus games and grant their value as additional free spins. They can come with values of +1, +2 or +3.\n\n All cash prizes are paid as a multiple of your bet and are added to your win for the spin. They come in 3 tiers:\n\n Bronze Coins can have the following values: 1x, 2x, 5x\n\n Silver Coins can have the following values: 10x, 15x, 20x, 25x, 50x\n\n Gold Coins can have the following values: 100x, 250x, 500x, 1000x\n\n The Collector symbol collects all cash prizes and the values of other Collector symbols on the screen before respinning only the cash prize positions. Collected Collector symbols keep their initial value.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MYSTERY NUDGE GATES",
+      "trigger": null,
+      "effects": "Mystery Gates are 4-height symbols that can land partially outside the reels and then nudge up or down until they cover the full reel. Mystery Gates can land anywhere on the grid. When this happens the global multiplier increases by +1. Gates move up or down (1 tile at a time) in order to cover their entire reel in the fastest way possible. Every time a Mystery Gate nudges up or down the global multiplier increases by +1. After a gate covers its entire reel it opens to reveal any type of paying symbol, Wild symbols or Eye symbols. Eye symbols reveal coins and special symbols.\n\n Multiple gates at the same time always reveal the same type of symbol.",
+      "params": {}
+    },
+    {
+      "name": "COIN FEATURE",
+      "trigger": null,
+      "effects": "When the Eye symbol is revealed by the Mystery Gates they open and can reveal Coins, +FS or Collector symbols.\n\n +FS symbols can only be revealed during the bonus games and grant their value as additional free spins. They can come with values of +1, +2 or +3.\n\n All cash prizes are paid as a multiple of your bet and are added to your win for the spin. They come in 3 tiers:\n\n Bronze Coins can have the following values: 1x, 2x, 5x\n\n Silver Coins can have the following values: 10x, 15x, 20x, 25x, 50x\n\n Gold Coins can have the following values: 100x, 250x, 500x, 1000x\n\n The Collector symbol collects all cash prizes and the values of other Collector symbols on the screen before respinning only the cash prize positions. Collected Collector symbols keep their initial value.",
+      "params": {}
+    },
+    {
+      "name": "GLOBAL MULTIPLIER",
+      "trigger": null,
+      "effects": "The Global multiplier starts at 1x. Every time a Mystery gate lands the global multiplier increases by +1. When a gate nudges up or down the global multiplier also increases by +1. During the bonus games it is persistent for the entire duration of the bonus round.\n\n At the end of the spin the values of all coins and Collector symbols will be added together and multiplied with your bet amount to determine the final cash prize, which will be added to the Total Win.",
+      "params": {}
+    },
+    {
+      "name": "ODIN’S TRIAL",
+      "trigger": null,
+      "effects": "Trigger the Odin's Trial bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n Base game mechanics are followed with an increased chance to land Mystery Gates. In addition the Mystery Gates become sticky and reveal paying symbols, Wild symbols or Eye symbols on each spin. The global multiplier is persistent for the entire duration of the bonus round.\n\n Additional +1, +2 or +3 free spins can be awarded by revealing the +FS symbol from the coin feature.",
+      "params": {}
+    },
+    {
+      "name": "FURY OF THE GODS",
+      "trigger": null,
+      "effects": "Trigger the Fury of the Gods bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n Base game mechanics are followed with an increased chance to land Mystery Gates. In addition the Mystery Gates become sticky and reveal high paying symbols, Wild symbols or Eye symbols on each spin. The global multiplier is persistent for the entire duration of the bonus round.\n\n Additional +1, +2 or +3 free spins can be awarded by revealing the +FS symbol from the coin feature.\n\n SPECIAL SYMBOLS",
+      "params": {}
+    },
+    {
+      "name": "WILD SYMBOL",
+      "trigger": null,
+      "effects": "The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_nudge_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1901/1.15.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/halls-of-odin/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n In Halls of Odin, the power of the god roars with every spin! Explore a 5-reel, 4-row payline game with the chance to land Mystery Gates. These gates then nudge up or down one tile at a time to cover their entire reel in the fastest way possible, increasing the global multiplier by +1 for each nudge. Once a gate fully covers its reel, it opens to reveal a paying symbol, Wild symbols or Eye symbols which reveal coins and special symbols , filling the entire reel with that same symbol. If multiple gates are present at the same time, they always reveal the same symbol.\n\n The max "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

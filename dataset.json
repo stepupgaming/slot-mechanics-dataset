@@ -1,18 +1,23 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "game_count": 252,
+  "updated_at": "2026-09-27T05:06:57Z",
+  "game_count": 495,
   "by_provider": {
+    "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
-    "Nolimit City": 7,
-    "Pragmatic Play": 42
+    "Backseat Gaming": 35,
+    "Nolimit City": 7
   },
   "by_confidence": {
+    "high": 365,
     "low": 28,
-    "high": 209,
-    "medium": 15
+    "medium": 102
   },
   "by_provider_confidence": {
+    "Backseat Gaming": {
+      "high": 35
+    },
     "Hacksaw Gaming": {
       "low": 28,
       "high": 174,
@@ -22,17 +27,261 @@
       "medium": 7
     },
     "Pragmatic Play": {
-      "high": 35,
-      "medium": 7
+      "high": 156,
+      "medium": 94
     }
   },
   "games": [
+    {
+      "slug": "backseat-arc-lord",
+      "title": "Arc Lord",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-arc-lord.json"
+    },
+    {
+      "slug": "backseat-banana-farm",
+      "title": "Banana Farm",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-banana-farm.json"
+    },
+    {
+      "slug": "backseat-barrel-bonanza",
+      "title": "Barrel Bonanza",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-barrel-bonanza.json"
+    },
+    {
+      "slug": "backseat-blademaster",
+      "title": "Blademaster",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-blademaster.json"
+    },
+    {
+      "slug": "backseat-blaze-buddies",
+      "title": "Blaze Buddies",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-blaze-buddies.json"
+    },
+    {
+      "slug": "backseat-chicken-man",
+      "title": "Chicken Man",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-chicken-man.json"
+    },
+    {
+      "slug": "backseat-chocolate-rocket",
+      "title": "Chocolate Rocket",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-chocolate-rocket.json"
+    },
+    {
+      "slug": "backseat-clumsy-cowboys",
+      "title": "Clumsy Cowboys",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-clumsy-cowboys.json"
+    },
+    {
+      "slug": "backseat-commander-of-tridents",
+      "title": "Commander of Tridents",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-commander-of-tridents.json"
+    },
+    {
+      "slug": "backseat-crystal-robot",
+      "title": "Crystal Robot",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-crystal-robot.json"
+    },
+    {
+      "slug": "backseat-desert-temple",
+      "title": "Desert Temple",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-desert-temple.json"
+    },
+    {
+      "slug": "backseat-diamond-mole",
+      "title": "Diamond Mole",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-diamond-mole.json"
+    },
+    {
+      "slug": "backseat-fireborn",
+      "title": "Fireborn",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-fireborn.json"
+    },
+    {
+      "slug": "backseat-ghostly-hallows",
+      "title": "Ghostly Hallows",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-ghostly-hallows.json"
+    },
+    {
+      "slug": "backseat-gladius-death-or-glory",
+      "title": "Gladius Death or Glory",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-gladius-death-or-glory.json"
+    },
+    {
+      "slug": "backseat-halls-of-odin",
+      "title": "Halls of Odin",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-halls-of-odin.json"
+    },
+    {
+      "slug": "backseat-home-of-thor",
+      "title": "Home of Thor",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-home-of-thor.json"
+    },
+    {
+      "slug": "backseat-hoot-shot-the-sheriff",
+      "title": "Hoot Shot The Sheriff",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-hoot-shot-the-sheriff.json"
+    },
+    {
+      "slug": "backseat-infernus",
+      "title": "Infernus",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-infernus.json"
+    },
+    {
+      "slug": "backseat-lord-venom",
+      "title": "Lord Venom",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-lord-venom.json"
+    },
+    {
+      "slug": "backseat-mystery-bats",
+      "title": "Mystery Bats",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-mystery-bats.json"
+    },
+    {
+      "slug": "backseat-neon-frames",
+      "title": "Neon Frames",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-neon-frames.json"
+    },
+    {
+      "slug": "backseat-old-drac",
+      "title": "Old Drac",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-old-drac.json"
+    },
+    {
+      "slug": "backseat-old-gun",
+      "title": "Old Gun",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-old-gun.json"
+    },
+    {
+      "slug": "backseat-pirate-bonanza-2",
+      "title": "Pirate Bonanza 2",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-pirate-bonanza-2.json"
+    },
+    {
+      "slug": "backseat-pirate-bonanza",
+      "title": "Pirate Bonanza",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-pirate-bonanza.json"
+    },
+    {
+      "slug": "backseat-pirate-rocket",
+      "title": "Pirate Rocket",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-pirate-rocket.json"
+    },
+    {
+      "slug": "backseat-power-pops",
+      "title": "Power Pops",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-power-pops.json"
+    },
+    {
+      "slug": "backseat-pyrofox",
+      "title": "Pyrofox",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-pyrofox.json"
+    },
+    {
+      "slug": "backseat-roman-bonanza",
+      "title": "Roman Bonanza",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-roman-bonanza.json"
+    },
+    {
+      "slug": "backseat-shadow-strike",
+      "title": "Shadow Strike",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-shadow-strike.json"
+    },
+    {
+      "slug": "backseat-sleepy-grandpa",
+      "title": "Sleepy Grandpa",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-sleepy-grandpa.json"
+    },
+    {
+      "slug": "backseat-space-zoo",
+      "title": "Space Zoo",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-space-zoo.json"
+    },
+    {
+      "slug": "backseat-super-twins",
+      "title": "Super Twins",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-super-twins.json"
+    },
+    {
+      "slug": "backseat-the-cursed-king",
+      "title": "The Cursed King",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-the-cursed-king.json"
+    },
     {
       "slug": "hacksaw-2-wild-2-die",
       "title": "2 Wild 2 Die",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-2-wild-2-die.json"
     },
     {
@@ -40,7 +289,6 @@
       "title": "3 Cursed Chests",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-3-cursed-chests.json"
     },
     {
@@ -48,7 +296,6 @@
       "title": "3 Magic Piggy Banks Hold & Win",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-3-magic-piggy-banks-hold-win.json"
     },
     {
@@ -56,7 +303,6 @@
       "title": "Aiko and the Wind Spirit",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-aiko-and-the-wind-spirit.json"
     },
     {
@@ -64,7 +310,6 @@
       "title": "Aliens Among Us",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-aliens-among-us.json"
     },
     {
@@ -72,7 +317,6 @@
       "title": "Alpha Eagle",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-alpha-eagle.json"
     },
     {
@@ -80,7 +324,6 @@
       "title": "Arizona James and the Lost Relics",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-arizona-james-and-the-lost-relics.json"
     },
     {
@@ -88,7 +331,6 @@
       "title": "Army of Ares",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-army-of-ares.json"
     },
     {
@@ -96,7 +338,6 @@
       "title": "Aztec Twist",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-aztec-twist.json"
     },
     {
@@ -104,7 +345,6 @@
       "title": "Bash Bros",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-bash-bros.json"
     },
     {
@@ -112,7 +352,6 @@
       "title": "Beam Boys",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-beam-boys.json"
     },
     {
@@ -120,7 +359,6 @@
       "title": "Beast Below",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-beast-below.json"
     },
     {
@@ -128,7 +366,6 @@
       "title": "Benny The Beer",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-benny-the-beer.json"
     },
     {
@@ -136,7 +373,6 @@
       "title": "Bloodthirst",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-bloodthirst.json"
     },
     {
@@ -144,7 +380,6 @@
       "title": "Booze Bash",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-booze-bash.json"
     },
     {
@@ -152,7 +387,6 @@
       "title": "Born Wild",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-born-wild.json"
     },
     {
@@ -160,7 +394,6 @@
       "title": "Bouncy Bombs",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "ways",
       "path": "games/hacksaw-bouncy-bombs.json"
     },
     {
@@ -168,7 +401,6 @@
       "title": "Break Bones",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-break-bones.json"
     },
     {
@@ -176,7 +408,6 @@
       "title": "Buffalo Stack ‘n’ Sync",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-buffalo-stack-n-sync.json"
     },
     {
@@ -184,7 +415,6 @@
       "title": "Bullets and Bounty",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-bullets-and-bounty.json"
     },
     {
@@ -192,7 +422,6 @@
       "title": "Canny the Can and the Book of Time",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "pay_anywhere",
       "path": "games/hacksaw-canny-the-can-and-the-book-of-time.json"
     },
     {
@@ -200,7 +429,6 @@
       "title": "Cash Compass",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-cash-compass.json"
     },
     {
@@ -208,7 +436,6 @@
       "title": "Cash Crew",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-cash-crew.json"
     },
     {
@@ -216,7 +443,6 @@
       "title": "Cash Crooks",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-cash-crooks.json"
     },
     {
@@ -224,7 +450,6 @@
       "title": "Cash Quest",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-cash-quest.json"
     },
     {
@@ -232,7 +457,6 @@
       "title": "Chaos Crew 2",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-chaos-crew-2.json"
     },
     {
@@ -240,7 +464,6 @@
       "title": "Chaos Crew 3",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-chaos-crew-3.json"
     },
     {
@@ -248,7 +471,6 @@
       "title": "Chaos Crew",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-chaos-crew.json"
     },
     {
@@ -256,7 +478,6 @@
       "title": "Circle of Life",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-circle-of-life.json"
     },
     {
@@ -264,7 +485,6 @@
       "title": "Cloud Princess",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-cloud-princess.json"
     },
     {
@@ -272,7 +492,6 @@
       "title": "Cubes 2",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-cubes-2.json"
     },
     {
@@ -280,7 +499,6 @@
       "title": "Cubes",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "ways",
       "path": "games/hacksaw-cubes.json"
     },
     {
@@ -288,7 +506,6 @@
       "title": "Cup Heroes",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-cup-heroes.json"
     },
     {
@@ -296,7 +513,6 @@
       "title": "Cursed Crypt",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "ways",
       "path": "games/hacksaw-cursed-crypt.json"
     },
     {
@@ -304,7 +520,6 @@
       "title": "Cursed Seas",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-cursed-seas.json"
     },
     {
@@ -312,7 +527,6 @@
       "title": "Dandy Diamonds",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-dandy-diamonds.json"
     },
     {
@@ -320,7 +534,6 @@
       "title": "Danny Dollar",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-danny-dollar.json"
     },
     {
@@ -328,7 +541,6 @@
       "title": "Dark Spiral",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-dark-spiral.json"
     },
     {
@@ -336,7 +548,6 @@
       "title": "Dark Summoning",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-dark-summoning.json"
     },
     {
@@ -344,7 +555,6 @@
       "title": "Dawn of Kings",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-dawn-of-kings.json"
     },
     {
@@ -352,7 +562,6 @@
       "title": "Dead By Noon",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-dead-by-noon.json"
     },
     {
@@ -360,7 +569,6 @@
       "title": "Deal With Death",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-deal-with-death.json"
     },
     {
@@ -368,7 +576,6 @@
       "title": "Death Becomes You",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-death-becomes-you.json"
     },
     {
@@ -376,7 +583,6 @@
       "title": "Densho",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-densho.json"
     },
     {
@@ -384,7 +590,6 @@
       "title": "Divine Drop",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-divine-drop.json"
     },
     {
@@ -392,7 +597,6 @@
       "title": "Donny And Danny",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-donny-and-danny.json"
     },
     {
@@ -400,7 +604,6 @@
       "title": "Donny Dough",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-donny-dough.json"
     },
     {
@@ -408,7 +611,6 @@
       "title": "Donut Division",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-donut-division.json"
     },
     {
@@ -416,7 +618,6 @@
       "title": "Dork Unit",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-dork-unit.json"
     },
     {
@@ -424,7 +625,6 @@
       "title": "Dorks of the Deep",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-dorks-of-the-deep.json"
     },
     {
@@ -432,7 +632,6 @@
       "title": "Double Rainbow",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-double-rainbow.json"
     },
     {
@@ -440,7 +639,6 @@
       "title": "Dr Zappo",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-dr-zappo.json"
     },
     {
@@ -448,7 +646,6 @@
       "title": "Dragon’s Domain",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-dragons-domain.json"
     },
     {
@@ -456,7 +653,6 @@
       "title": "Drop 'Em",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-drop-em.json"
     },
     {
@@ -464,7 +660,6 @@
       "title": "Duel At Dawn",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-duel-at-dawn.json"
     },
     {
@@ -472,7 +667,6 @@
       "title": "Dusk Princess",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-dusk-princess.json"
     },
     {
@@ -480,7 +674,6 @@
       "title": "Dynasty of Death",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-dynasty-of-death.json"
     },
     {
@@ -488,7 +681,6 @@
       "title": "Epic Bullets & Bounty",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-epic-bullets-bounty.json"
     },
     {
@@ -496,7 +688,6 @@
       "title": "Epic Ze Zeus",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-epic-le-zeus.json"
     },
     {
@@ -504,7 +695,6 @@
       "title": "Eternal Duel",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-eternal-duel.json"
     },
     {
@@ -512,7 +702,6 @@
       "title": "Evil Eyes",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-evil-eyes.json"
     },
     {
@@ -520,7 +709,6 @@
       "title": "Eye of Medusa",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-eye-of-medusa.json"
     },
     {
@@ -528,7 +716,6 @@
       "title": "Eye of the Panda",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-eye-of-the-panda.json"
     },
     {
@@ -536,7 +723,6 @@
       "title": "Fear the Dark",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "clusters",
       "path": "games/hacksaw-fear-the-dark.json"
     },
     {
@@ -544,7 +730,6 @@
       "title": "Feel the Beat",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-feel-the-beat.json"
     },
     {
@@ -552,7 +737,6 @@
       "title": "Fighter Pit",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-fighter-pit.json"
     },
     {
@@ -560,7 +744,6 @@
       "title": "Fire My Laser",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-fire-my-laser.json"
     },
     {
@@ -568,7 +751,6 @@
       "title": "Fist of Destruction Megamultiplier",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-fist-of-destruction-megamultiplier.json"
     },
     {
@@ -576,7 +758,6 @@
       "title": "Fist of Destruction",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-fist-of-destruction.json"
     },
     {
@@ -584,7 +765,6 @@
       "title": "Forest Fortune",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-forest-fortune.json"
     },
     {
@@ -592,7 +772,6 @@
       "title": "Frank's Farm",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-franks-farm.json"
     },
     {
@@ -600,7 +779,6 @@
       "title": "Fred's Food Truck",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-freds-food-truck.json"
     },
     {
@@ -608,7 +786,6 @@
       "title": "FRKN Bananas",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-frkn-bananas.json"
     },
     {
@@ -616,7 +793,6 @@
       "title": "Fruit Duel",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-fruit-duel.json"
     },
     {
@@ -624,7 +800,6 @@
       "title": "Frutz",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "medium",
-      "win_system": "unknown",
       "path": "games/hacksaw-frutz.json"
     },
     {
@@ -632,7 +807,6 @@
       "title": "Get The Cheese",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-get-the-cheese.json"
     },
     {
@@ -640,7 +814,6 @@
       "title": "Gladiator Legends",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-gladiator-legends.json"
     },
     {
@@ -648,7 +821,6 @@
       "title": "Great Game Rockies",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-great-game-rockies.json"
     },
     {
@@ -656,7 +828,6 @@
       "title": "Great Game Serengeti",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-great-game-serengeti.json"
     },
     {
@@ -664,7 +835,6 @@
       "title": "Gronk’s Gems",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-gronks-gems.json"
     },
     {
@@ -672,7 +842,6 @@
       "title": "Grug Make Fire",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-grug-make-fire.json"
     },
     {
@@ -680,7 +849,6 @@
       "title": "Hand of Anubis",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-hand-of-anubis.json"
     },
     {
@@ -688,7 +856,6 @@
       "title": "Harvest Wilds",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-harvest-wilds.json"
     },
     {
@@ -696,7 +863,6 @@
       "title": "Hop 'N' Pop",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-hop-n-pop.json"
     },
     {
@@ -704,7 +870,6 @@
       "title": "Hot Ross",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-hot-ross.json"
     },
     {
@@ -712,7 +877,6 @@
       "title": "Hounds of Hell",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-hounds-of-hell.json"
     },
     {
@@ -720,7 +884,6 @@
       "title": "Immortal Desire",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-immortal-desire.json"
     },
     {
@@ -728,7 +891,6 @@
       "title": "Iron Sight",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-iron-sight.json"
     },
     {
@@ -736,7 +898,6 @@
       "title": "Itero",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-itero.json"
     },
     {
@@ -744,7 +905,6 @@
       "title": "Jaws of Justice",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-jaws-of-justice.json"
     },
     {
@@ -752,7 +912,6 @@
       "title": "Jelly Slice",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-jelly-slice.json"
     },
     {
@@ -760,7 +919,6 @@
       "title": "Joker Bombs",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "pay_anywhere",
       "path": "games/hacksaw-joker-bombs.json"
     },
     {
@@ -768,7 +926,6 @@
       "title": "Keep 'Em Cool",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-keep-em-cool.json"
     },
     {
@@ -776,7 +933,6 @@
       "title": "Keep 'Em",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-keep-em.json"
     },
     {
@@ -784,7 +940,6 @@
       "title": "King Carrot",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-king-carrot.json"
     },
     {
@@ -792,7 +947,6 @@
       "title": "Klowns",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-klowns.json"
     },
     {
@@ -800,7 +954,6 @@
       "title": "Le Bandit Hold & Win",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-le-bandit-hold-win.json"
     },
     {
@@ -808,7 +961,6 @@
       "title": "Le Bandit Miami Hustle",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-bandit-miami-hustle.json"
     },
     {
@@ -816,7 +968,6 @@
       "title": "Le Bandit",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-bandit.json"
     },
     {
@@ -824,7 +975,6 @@
       "title": "Le Bruno",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-bruno.json"
     },
     {
@@ -832,7 +982,6 @@
       "title": "Le Bunny",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-le-bunny.json"
     },
     {
@@ -840,7 +989,6 @@
       "title": "Le Catcher",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-le-catcher.json"
     },
     {
@@ -848,7 +996,6 @@
       "title": "Le Cowboy",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-le-cowboy.json"
     },
     {
@@ -856,7 +1003,6 @@
       "title": "Le Digger",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-digger.json"
     },
     {
@@ -864,7 +1010,6 @@
       "title": "Le Fisherman",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-le-fisherman.json"
     },
     {
@@ -872,7 +1017,6 @@
       "title": "Le Football Fan",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-football-fan.json"
     },
     {
@@ -880,7 +1024,6 @@
       "title": "Le Granny",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-granny.json"
     },
     {
@@ -888,7 +1031,6 @@
       "title": "Le Hooligan",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-hooligan.json"
     },
     {
@@ -896,7 +1038,6 @@
       "title": "Le King",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-le-king.json"
     },
     {
@@ -904,7 +1045,6 @@
       "title": "Le Pharaoh",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-le-pharaoh.json"
     },
     {
@@ -912,7 +1052,6 @@
       "title": "Le Prechaun",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-le-prechaun.json"
     },
     {
@@ -920,7 +1059,6 @@
       "title": "Le Rapper",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-rapper.json"
     },
     {
@@ -928,7 +1066,6 @@
       "title": "Le Santa",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-le-santa.json"
     },
     {
@@ -936,7 +1073,6 @@
       "title": "Le Sortudo",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-le-sortudo.json"
     },
     {
@@ -944,7 +1080,6 @@
       "title": "Le Vampire",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-vampire.json"
     },
     {
@@ -952,7 +1087,6 @@
       "title": "Le Viking",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-le-viking.json"
     },
     {
@@ -960,7 +1094,6 @@
       "title": "Le Zeus",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-le-zeus.json"
     },
     {
@@ -968,7 +1101,6 @@
       "title": "Let It Snow",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-let-it-snow.json"
     },
     {
@@ -976,7 +1108,6 @@
       "title": "Life and Death",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-life-and-death.json"
     },
     {
@@ -984,7 +1115,6 @@
       "title": "Magic Piggy Og",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-magic-piggy-og.json"
     },
     {
@@ -992,7 +1122,6 @@
       "title": "Magic Piggy",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-magic-piggy.json"
     },
     {
@@ -1000,7 +1129,6 @@
       "title": "Marlin Masters Atlantis",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-marlin-masters-atlantis.json"
     },
     {
@@ -1008,7 +1136,6 @@
       "title": "Marlin Masters Og",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-marlin-masters-og.json"
     },
     {
@@ -1016,7 +1143,6 @@
       "title": "Marlin Masters The Big Haul",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-marlin-masters-the-big-haul.json"
     },
     {
@@ -1024,7 +1150,6 @@
       "title": "Marlin Masters",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-marlin-masters.json"
     },
     {
@@ -1032,7 +1157,6 @@
       "title": "Max Win Machine",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-max-win-machine.json"
     },
     {
@@ -1040,7 +1164,6 @@
       "title": "Mayan Stackways",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-mayan-stackways.json"
     },
     {
@@ -1048,7 +1171,6 @@
       "title": "Miami Mayhem",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-miami-mayhem.json"
     },
     {
@@ -1056,7 +1178,6 @@
       "title": "Mighty Masks",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-mighty-masks.json"
     },
     {
@@ -1064,7 +1185,6 @@
       "title": "Mines Supreme",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-mines-supreme.json"
     },
     {
@@ -1072,7 +1192,6 @@
       "title": "Minted Mike",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-minted-mike.json"
     },
     {
@@ -1080,7 +1199,6 @@
       "title": "Munchy Milo",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-munchy-milo.json"
     },
     {
@@ -1088,7 +1206,6 @@
       "title": "Mystery Motel",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-mystery-motel.json"
     },
     {
@@ -1096,7 +1213,6 @@
       "title": "Nitro Nights",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-nitro-nights.json"
     },
     {
@@ -1104,7 +1220,6 @@
       "title": "Octo Attack",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-octo-attack.json"
     },
     {
@@ -1112,7 +1227,6 @@
       "title": "Om Nom",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-om-nom.json"
     },
     {
@@ -1120,7 +1234,6 @@
       "title": "Orb of Destiny",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-orb-of-destiny.json"
     },
     {
@@ -1128,7 +1241,6 @@
       "title": "Outlaws Inc",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-outlaws-inc.json"
     },
     {
@@ -1136,7 +1248,6 @@
       "title": "Phoenix DuelReels",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-phoenix-duelreels.json"
     },
     {
@@ -1144,7 +1255,6 @@
       "title": "Power of Ten",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-power-of-ten.json"
     },
     {
@@ -1152,7 +1262,6 @@
       "title": "Pray for Six",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "ways",
       "path": "games/hacksaw-pray-for-six.json"
     },
     {
@@ -1160,7 +1269,6 @@
       "title": "Pray For Three",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-pray-for-three.json"
     },
     {
@@ -1168,7 +1276,6 @@
       "title": "Pug Life",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-pug-life.json"
     },
     {
@@ -1176,7 +1283,6 @@
       "title": "Rad Maxx",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-rad-maxx.json"
     },
     {
@@ -1184,7 +1290,6 @@
       "title": "Rage of Egypt",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-rage-of-egypt.json"
     },
     {
@@ -1192,7 +1297,6 @@
       "title": "Rainbow Princess",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-rainbow-princess.json"
     },
     {
@@ -1200,7 +1304,6 @@
       "title": "Red Rascal",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-red-rascal.json"
     },
     {
@@ -1208,7 +1311,6 @@
       "title": "Reign of Rome",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-reign-of-rome.json"
     },
     {
@@ -1216,7 +1318,6 @@
       "title": "RIP City",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-rip-city.json"
     },
     {
@@ -1224,7 +1325,6 @@
       "title": "Rise of Fortuna",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-rise-of-fortuna.json"
     },
     {
@@ -1232,7 +1332,6 @@
       "title": "Rise of Ymir",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-rise-of-ymir.json"
     },
     {
@@ -1240,7 +1339,6 @@
       "title": "Rocket Reels",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-rocket-reels.json"
     },
     {
@@ -1248,7 +1346,6 @@
       "title": "Ronin StackWays",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-ronin-stackways.json"
     },
     {
@@ -1256,7 +1353,6 @@
       "title": "Rotten",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-rotten.json"
     },
     {
@@ -1264,7 +1360,6 @@
       "title": "Rusty & Curly",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-rusty-curly.json"
     },
     {
@@ -1272,7 +1367,6 @@
       "title": "Sand And Ashes",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-sand-and-ashes.json"
     },
     {
@@ -1280,7 +1374,6 @@
       "title": "Secret Order",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-secret-order.json"
     },
     {
@@ -1288,7 +1381,6 @@
       "title": "Shadows Inc",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-shadows-inc.json"
     },
     {
@@ -1296,7 +1388,6 @@
       "title": "Shaolin Master",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-shaolin-master.json"
     },
     {
@@ -1304,7 +1395,6 @@
       "title": "SixSixSix",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-sixsixsix.json"
     },
     {
@@ -1312,7 +1402,6 @@
       "title": "Slayers Inc",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-slayers-inc.json"
     },
     {
@@ -1320,7 +1409,6 @@
       "title": "Smoking Dragon",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-smoking-dragon.json"
     },
     {
@@ -1328,7 +1416,6 @@
       "title": "Snow Slingers",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-snow-slingers.json"
     },
     {
@@ -1336,7 +1423,6 @@
       "title": "Spear of Athena",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-spear-of-athena.json"
     },
     {
@@ -1344,7 +1430,6 @@
       "title": "Spinman",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-spinman.json"
     },
     {
@@ -1352,7 +1437,6 @@
       "title": "Stack 'Em",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-stack-em.json"
     },
     {
@@ -1360,7 +1444,6 @@
       "title": "Steamrunners",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-steamrunners.json"
     },
     {
@@ -1368,7 +1451,6 @@
       "title": "Stick 'Em",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-stick-em.json"
     },
     {
@@ -1376,7 +1458,6 @@
       "title": "Stormborn",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-stormborn.json"
     },
     {
@@ -1384,7 +1465,6 @@
       "title": "Stormforged",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-stormforged.json"
     },
     {
@@ -1392,7 +1472,6 @@
       "title": "Strength of Hercules",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-strength-of-hercules.json"
     },
     {
@@ -1400,7 +1479,6 @@
       "title": "Sun Princess",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-sun-princess.json"
     },
     {
@@ -1408,7 +1486,6 @@
       "title": "Supernova Galaxy Orbs",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-supernova-galaxy-orbs.json"
     },
     {
@@ -1416,7 +1493,6 @@
       "title": "Superstar Sevens",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-superstar-sevens.json"
     },
     {
@@ -1424,7 +1500,6 @@
       "title": "Supreme Zeus",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-supreme-zeus.json"
     },
     {
@@ -1432,7 +1507,6 @@
       "title": "Tai The Toad",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-tai-the-toad.json"
     },
     {
@@ -1440,7 +1514,6 @@
       "title": "Tasty Treats",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "pay_anywhere",
       "path": "games/hacksaw-tasty-treats.json"
     },
     {
@@ -1448,7 +1521,6 @@
       "title": "Temple of Torment",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-temple-of-torment.json"
     },
     {
@@ -1456,7 +1528,6 @@
       "title": "The Bomb",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-the-bomb.json"
     },
     {
@@ -1464,7 +1535,6 @@
       "title": "The Bowery Boys",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-the-bowery-boys.json"
     },
     {
@@ -1472,7 +1542,6 @@
       "title": "The Count",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-the-count.json"
     },
     {
@@ -1480,7 +1549,6 @@
       "title": "The Haunted Circus",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-the-haunted-circus.json"
     },
     {
@@ -1488,7 +1556,6 @@
       "title": "The Luxe",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-the-luxe.json"
     },
     {
@@ -1496,7 +1563,6 @@
       "title": "The Respinners",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-the-respinners.json"
     },
     {
@@ -1504,7 +1570,6 @@
       "title": "The Wildwood Curse",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-the-wildwood-curse.json"
     },
     {
@@ -1512,7 +1577,6 @@
       "title": "Tiger Legends",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-tiger-legends.json"
     },
     {
@@ -1520,7 +1584,6 @@
       "title": "Time Spinners",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-time-spinners.json"
     },
     {
@@ -1528,7 +1591,6 @@
       "title": "Toshi Video Club",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-toshi-video-club.json"
     },
     {
@@ -1536,7 +1598,6 @@
       "title": "Toshi Ways Club",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "ways",
       "path": "games/hacksaw-toshi-ways-club.json"
     },
     {
@@ -1544,7 +1605,6 @@
       "title": "Tres Pinatas Hold & Win",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-tres-pinatas-hold-win.json"
     },
     {
@@ -1552,7 +1612,6 @@
       "title": "Twisted Lab RotoGrid",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-twisted-lab-rotogrid.json"
     },
     {
@@ -1560,7 +1619,6 @@
       "title": "Ultimate Slot of America",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-ultimate-slot-of-america.json"
     },
     {
@@ -1568,7 +1626,6 @@
       "title": "Undead Fortune",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-undead-fortune.json"
     },
     {
@@ -1576,7 +1633,6 @@
       "title": "Vending Machine",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-vending-machine.json"
     },
     {
@@ -1584,7 +1640,6 @@
       "title": "Wanted Dead or a Wild",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-wanted-dead-or-a-wild.json"
     },
     {
@@ -1592,7 +1647,6 @@
       "title": "Wanted Salvation",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-wanted-salvation.json"
     },
     {
@@ -1600,7 +1654,6 @@
       "title": "Warrior Ways",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-warrior-ways.json"
     },
     {
@@ -1608,7 +1661,6 @@
       "title": "Wings of Horus",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-wings-of-horus.json"
     },
     {
@@ -1616,7 +1668,6 @@
       "title": "Wishbringer",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-wishbringer.json"
     },
     {
@@ -1624,7 +1675,6 @@
       "title": "Xmas Drop",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/hacksaw-xmas-drop.json"
     },
     {
@@ -1632,7 +1682,6 @@
       "title": "Xpander",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/hacksaw-xpander.json"
     },
     {
@@ -1640,7 +1689,6 @@
       "title": "Ze Zeus",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/hacksaw-ze-zeus.json"
     },
     {
@@ -1648,7 +1696,6 @@
       "title": "Zeus Ze Zecond",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
-      "win_system": "paylines",
       "path": "games/hacksaw-zeus-ze-zecond.json"
     },
     {
@@ -1656,7 +1703,6 @@
       "title": "Blood & Shadow",
       "provider": "Nolimit City",
       "confidence_overall": "medium",
-      "win_system": "ways",
       "path": "games/nolimit-blood-shadow.json"
     },
     {
@@ -1664,7 +1710,6 @@
       "title": "Book of Shadows",
       "provider": "Nolimit City",
       "confidence_overall": "medium",
-      "win_system": "paylines",
       "path": "games/nolimit-book-of-shadows.json"
     },
     {
@@ -1672,7 +1717,6 @@
       "title": "Deadwood xNudge",
       "provider": "Nolimit City",
       "confidence_overall": "medium",
-      "win_system": "ways",
       "path": "games/nolimit-deadwood-xnudge.json"
     },
     {
@@ -1680,7 +1724,6 @@
       "title": "Kiss My Chainsaw",
       "provider": "Nolimit City",
       "confidence_overall": "medium",
-      "win_system": "unknown",
       "path": "games/nolimit-kiss-my-chainsaw.json"
     },
     {
@@ -1688,7 +1731,6 @@
       "title": "Mental",
       "provider": "Nolimit City",
       "confidence_overall": "medium",
-      "win_system": "ways",
       "path": "games/nolimit-mental.json"
     },
     {
@@ -1696,7 +1738,6 @@
       "title": "Punk Rocker",
       "provider": "Nolimit City",
       "confidence_overall": "medium",
-      "win_system": "ways",
       "path": "games/nolimit-punk-rocker.json"
     },
     {
@@ -1704,39 +1745,328 @@
       "title": "Tombstone RIP",
       "provider": "Nolimit City",
       "confidence_overall": "medium",
-      "win_system": "ways",
       "path": "games/nolimit-tombstone-rip.json"
+    },
+    {
+      "slug": "pragmatic-3-buzzing-wilds",
+      "title": "3 Buzzing Wilds",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-3-buzzing-wilds.json"
+    },
+    {
+      "slug": "pragmatic-3-dancing-monkeys",
+      "title": "3 Dancing Monkeys",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-3-dancing-monkeys.json"
+    },
+    {
+      "slug": "pragmatic-3-magic-eggs",
+      "title": "3 Magic Eggs",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-3-magic-eggs.json"
+    },
+    {
+      "slug": "pragmatic-5-frozen-charms-megaways",
+      "title": "5 Frozen Charms Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-5-frozen-charms-megaways.json"
     },
     {
       "slug": "pragmatic-5-lions-dance",
       "title": "5 Lions Dance",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/pragmatic-5-lions-dance.json"
+    },
+    {
+      "slug": "pragmatic-5-lions-megaways-2",
+      "title": "5 Lions Megaways 2",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-5-lions-megaways-2.json"
     },
     {
       "slug": "pragmatic-5-lions-megaways",
       "title": "5 Lions Megaways",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/pragmatic-5-lions-megaways.json"
+    },
+    {
+      "slug": "pragmatic-5-lions-reborn",
+      "title": "5 Lions Reborn",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-5-lions-reborn.json"
+    },
+    {
+      "slug": "pragmatic-5-rabbits-megaways",
+      "title": "5 Rabbits Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-5-rabbits-megaways.json"
+    },
+    {
+      "slug": "pragmatic-6-jokers",
+      "title": "6 Jokers",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-6-jokers.json"
+    },
+    {
+      "slug": "pragmatic-7-clovers-of-fortune",
+      "title": "7 Clovers of Fortune",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-7-clovers-of-fortune.json"
+    },
+    {
+      "slug": "pragmatic-777-rush",
+      "title": "777 Rush",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-777-rush.json"
+    },
+    {
+      "slug": "pragmatic-777-wheel-blitz",
+      "title": "777 Wheel Blitz",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-777-wheel-blitz.json"
+    },
+    {
+      "slug": "pragmatic-8-golden-dragon-challenge",
+      "title": "8 Golden Dragon Challenge",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-8-golden-dragon-challenge.json"
+    },
+    {
+      "slug": "pragmatic-888-bonanza",
+      "title": "888 Bonanza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-888-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-888-gold",
+      "title": "888 Gold",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-888-gold.json"
+    },
+    {
+      "slug": "pragmatic-african-elephant",
+      "title": "African Elephant",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-african-elephant.json"
+    },
+    {
+      "slug": "pragmatic-aladdin-and-the-sorcerer",
+      "title": "Aladdin and the Sorcerer",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-aladdin-and-the-sorcerer.json"
+    },
+    {
+      "slug": "pragmatic-alien-invaders",
+      "title": "Alien Invaders",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-alien-invaders.json"
+    },
+    {
+      "slug": "pragmatic-amazing-money-machine",
+      "title": "Amazing Money Machine",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-amazing-money-machine.json"
+    },
+    {
+      "slug": "pragmatic-anaconda-gold",
+      "title": "Anaconda Gold",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-anaconda-gold.json"
+    },
+    {
+      "slug": "pragmatic-ancient-island-megaways",
+      "title": "Ancient Island Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-ancient-island-megaways.json"
+    },
+    {
+      "slug": "pragmatic-angel-vs-sinner-eternal-battle",
+      "title": "Angel Vs Sinner Eternal Battle",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-angel-vs-sinner-eternal-battle.json"
+    },
+    {
+      "slug": "pragmatic-angel-vs-sinner",
+      "title": "Angel vs Sinner",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-angel-vs-sinner.json"
+    },
+    {
+      "slug": "pragmatic-animal-magic-1000",
+      "title": "Animal Magic 1000",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-animal-magic-1000.json"
+    },
+    {
+      "slug": "pragmatic-anime-cosplay-vs",
+      "title": "Anime Cosplay VS",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-anime-cosplay-vs.json"
+    },
+    {
+      "slug": "pragmatic-anime-mecha-megaways",
+      "title": "Anime Mecha Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-anime-mecha-megaways.json"
+    },
+    {
+      "slug": "pragmatic-argonauts",
+      "title": "Argonauts",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-argonauts.json"
+    },
+    {
+      "slug": "pragmatic-aztec-blaze",
+      "title": "Aztec Blaze",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-aztec-blaze.json"
+    },
+    {
+      "slug": "pragmatic-aztec-bonanza",
+      "title": "Aztec Bonanza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-aztec-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-aztec-gems-deluxe",
+      "title": "Aztec Gems Deluxe",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-aztec-gems-deluxe.json"
+    },
+    {
+      "slug": "pragmatic-aztec-gems-megaways",
+      "title": "Aztec Gems Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-aztec-gems-megaways.json"
     },
     {
       "slug": "pragmatic-aztec-gems",
       "title": "Aztec Gems",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-aztec-gems.json"
+    },
+    {
+      "slug": "pragmatic-aztec-powernudge",
+      "title": "Aztec Powernudge",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-aztec-powernudge.json"
+    },
+    {
+      "slug": "pragmatic-aztec-smash",
+      "title": "Aztec Smash",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-aztec-smash.json"
+    },
+    {
+      "slug": "pragmatic-badge-blitz",
+      "title": "Badge Blitz",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-badge-blitz.json"
+    },
+    {
+      "slug": "pragmatic-bali-dragon",
+      "title": "Bali Dragon",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-bali-dragon.json"
+    },
+    {
+      "slug": "pragmatic-bandit-megaways",
+      "title": "Bandit Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-bandit-megaways.json"
+    },
+    {
+      "slug": "pragmatic-barbar",
+      "title": "Barbar",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-barbar.json"
+    },
+    {
+      "slug": "pragmatic-barn-festival",
+      "title": "Barn Festival",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-barn-festival.json"
+    },
+    {
+      "slug": "pragmatic-barnyard-megahays-megaways",
+      "title": "Barnyard Megahays Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-barnyard-megahays-megaways.json"
+    },
+    {
+      "slug": "pragmatic-battle-ground-zero-megaways",
+      "title": "Battle Ground Zero Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-battle-ground-zero-megaways.json"
+    },
+    {
+      "slug": "pragmatic-bear-crazy",
+      "title": "Bear Crazy",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-bear-crazy.json"
+    },
+    {
+      "slug": "pragmatic-bee-keeper",
+      "title": "Bee Keeper",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-bee-keeper.json"
+    },
+    {
+      "slug": "pragmatic-beware-the-deep-megaways",
+      "title": "Beware The Deep Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-beware-the-deep-megaways.json"
     },
     {
       "slug": "pragmatic-big-bass-amazon-xtreme",
       "title": "Big Bass Amazon Xtreme",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-big-bass-amazon-xtreme.json"
     },
     {
@@ -1744,39 +2074,223 @@
       "title": "Big Bass Bonanza 1000",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-big-bass-bonanza-1000.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-bonanza-hold-spinner",
+      "title": "Big Bass Bonanza Hold & Spinner",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-bass-bonanza-hold-spinner.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-bonanza-megaways",
+      "title": "Big Bass Bonanza Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-bass-bonanza-megaways.json"
     },
     {
       "slug": "pragmatic-big-bass-bonanza",
       "title": "Big Bass Bonanza",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-big-bass-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-christmas-bash",
+      "title": "Big Bass Christmas Bash",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-bass-christmas-bash.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-crash",
+      "title": "Big Bass Crash",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-bass-crash.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-day-at-races",
+      "title": "Big Bass Day at Races",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-bass-day-at-races.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-floats-my-boat",
+      "title": "Big Bass Floats My Boat",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-bass-floats-my-boat.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-halloween",
+      "title": "Big Bass Halloween",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-bass-halloween.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-keeping-it-reel",
+      "title": "Big Bass Keeping it Reel",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-bass-keeping-it-reel.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-secrets-of-the-golden-lake",
+      "title": "Big Bass Secrets of the Golden Lake",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-big-bass-secrets-of-the-golden-lake.json"
     },
     {
       "slug": "pragmatic-big-bass-splash",
       "title": "Big Bass Splash",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-big-bass-splash.json"
+    },
+    {
+      "slug": "pragmatic-big-bass-the-gold-ness-monster",
+      "title": "Big Bass & The Gold Ness Monster",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-bass-the-gold-ness-monster.json"
+    },
+    {
+      "slug": "pragmatic-big-burger-load-it-up-with-xtra-cheese",
+      "title": "Big Burger Load it up with Xtra Cheese",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-burger-load-it-up-with-xtra-cheese.json"
+    },
+    {
+      "slug": "pragmatic-big-juan",
+      "title": "Big Juan",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-big-juan.json"
+    },
+    {
+      "slug": "pragmatic-bigger-bass-blizzard",
+      "title": "Bigger Bass Blizzard",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-bigger-bass-blizzard.json"
     },
     {
       "slug": "pragmatic-bigger-bass-bonanza",
       "title": "Bigger Bass Bonanza",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-bigger-bass-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-black-bull",
+      "title": "Black Bull",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-black-bull.json"
+    },
+    {
+      "slug": "pragmatic-blade-fangs",
+      "title": "Blade & Fangs",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-blade-fangs.json"
+    },
+    {
+      "slug": "pragmatic-blazing-wilds-megaways",
+      "title": "Blazing Wilds Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-blazing-wilds-megaways.json"
+    },
+    {
+      "slug": "pragmatic-bomb-bonanza",
+      "title": "Bomb Bonanza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-bomb-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-book-of-fallen",
+      "title": "Book of Fallen",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-book-of-fallen.json"
+    },
+    {
+      "slug": "pragmatic-book-of-golden-sands",
+      "title": "Book of Golden Sands",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-book-of-golden-sands.json"
+    },
+    {
+      "slug": "pragmatic-book-of-kingdoms",
+      "title": "Book of Kingdoms",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-book-of-kingdoms.json"
+    },
+    {
+      "slug": "pragmatic-book-of-tut-megaways",
+      "title": "Book of Tut Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-book-of-tut-megaways.json"
+    },
+    {
+      "slug": "pragmatic-book-of-vikings",
+      "title": "Book of Vikings",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-book-of-vikings.json"
+    },
+    {
+      "slug": "pragmatic-bounty-gold",
+      "title": "Bounty Gold",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-bounty-gold.json"
+    },
+    {
+      "slug": "pragmatic-bounty-hunter",
+      "title": "Bounty Hunter",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-bounty-hunter.json"
+    },
+    {
+      "slug": "pragmatic-brick-house-bonanza",
+      "title": "Brick House Bonanza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-brick-house-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-bronco-spirit",
+      "title": "Bronco Spirit",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-bronco-spirit.json"
+    },
+    {
+      "slug": "pragmatic-bubble-wild",
+      "title": "Bubble Wild",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-bubble-wild.json"
     },
     {
       "slug": "pragmatic-buffalo-king-megaways",
       "title": "Buffalo King Megaways",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/pragmatic-buffalo-king-megaways.json"
     },
     {
@@ -1784,55 +2298,517 @@
       "title": "Buffalo King Slot",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/pragmatic-buffalo-king-slot.json"
+    },
+    {
+      "slug": "pragmatic-buffalo-king",
+      "title": "Buffalo King",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-buffalo-king.json"
+    },
+    {
+      "slug": "pragmatic-candy-blitz-bombs",
+      "title": "Candy Blitz Bombs",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-candy-blitz-bombs.json"
+    },
+    {
+      "slug": "pragmatic-candy-blitz",
+      "title": "Candy Blitz",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-candy-blitz.json"
+    },
+    {
+      "slug": "pragmatic-candy-jar-clusters",
+      "title": "Candy Jar Clusters",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-candy-jar-clusters.json"
+    },
+    {
+      "slug": "pragmatic-candy-pop",
+      "title": "Candy Pop",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-candy-pop.json"
+    },
+    {
+      "slug": "pragmatic-candy-rush",
+      "title": "Candy Rush",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-candy-rush.json"
+    },
+    {
+      "slug": "pragmatic-candy-stars",
+      "title": "Candy Stars",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-candy-stars.json"
+    },
+    {
+      "slug": "pragmatic-cappadocia",
+      "title": "Cappadocia",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-cappadocia.json"
+    },
+    {
+      "slug": "pragmatic-cash-bonanza",
+      "title": "Cash Bonanza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-cash-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-cash-box",
+      "title": "Cash Box",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-cash-box.json"
+    },
+    {
+      "slug": "pragmatic-cash-chips",
+      "title": "Cash Chips",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-cash-chips.json"
+    },
+    {
+      "slug": "pragmatic-cash-elevator",
+      "title": "Cash Elevator",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-cash-elevator.json"
+    },
+    {
+      "slug": "pragmatic-cash-patrol",
+      "title": "Cash Patrol",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-cash-patrol.json"
+    },
+    {
+      "slug": "pragmatic-castle-of-fire",
+      "title": "Castle of Fire",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-castle-of-fire.json"
+    },
+    {
+      "slug": "pragmatic-chase-for-glory",
+      "title": "Chase for Glory",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-chase-for-glory.json"
+    },
+    {
+      "slug": "pragmatic-chests-of-cai-shen",
+      "title": "Chests of Cai Shen",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-chests-of-cai-shen.json"
+    },
+    {
+      "slug": "pragmatic-chicken-chase",
+      "title": "Chicken Chase",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-chicken-chase.json"
+    },
+    {
+      "slug": "pragmatic-chicken-drop",
+      "title": "Chicken Drop",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-chicken-drop.json"
+    },
+    {
+      "slug": "pragmatic-chicken",
+      "title": "Chicken+",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-chicken.json"
+    },
+    {
+      "slug": "pragmatic-chilli-heat-megaways",
+      "title": "Chilli Heat Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-chilli-heat-megaways.json"
+    },
+    {
+      "slug": "pragmatic-chilli-heat-spicy-spins",
+      "title": "Chilli Heat Spicy Spins",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-chilli-heat-spicy-spins.json"
+    },
+    {
+      "slug": "pragmatic-christmas-big-bass-bonanza",
+      "title": "Christmas Big Bass Bonanza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-christmas-big-bass-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-christmas-carol-megaways",
+      "title": "Christmas Carol Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-christmas-carol-megaways.json"
     },
     {
       "slug": "pragmatic-cleocatra",
       "title": "Cleocatra",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-cleocatra.json"
+    },
+    {
+      "slug": "pragmatic-clover-gold",
+      "title": "Clover Gold",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-clover-gold.json"
+    },
+    {
+      "slug": "pragmatic-club-tropicana",
+      "title": "Club Tropicana",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-club-tropicana.json"
+    },
+    {
+      "slug": "pragmatic-colossal-cash-zone",
+      "title": "Colossal Cash Zone",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-colossal-cash-zone.json"
+    },
+    {
+      "slug": "pragmatic-cosmic-cash",
+      "title": "Cosmic Cash",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-cosmic-cash.json"
+    },
+    {
+      "slug": "pragmatic-cosmic-clusters",
+      "title": "Cosmic Clusters",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-cosmic-clusters.json"
+    },
+    {
+      "slug": "pragmatic-country-farming",
+      "title": "Country Farming",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-country-farming.json"
+    },
+    {
+      "slug": "pragmatic-cowboy-coins",
+      "title": "Cowboy Coins",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-cowboy-coins.json"
     },
     {
       "slug": "pragmatic-cowboys-gold",
       "title": "Cowboys Gold",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-cowboys-gold.json"
+    },
+    {
+      "slug": "pragmatic-crown-of-fire",
+      "title": "Crown of Fire",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-crown-of-fire.json"
+    },
+    {
+      "slug": "pragmatic-crystal-cavern-megaways",
+      "title": "Crystal Cavern Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-crystal-cavern-megaways.json"
+    },
+    {
+      "slug": "pragmatic-curse-of-the-werewolf-megaways",
+      "title": "Curse of the Werewolf Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-curse-of-the-werewolf-megaways.json"
+    },
+    {
+      "slug": "pragmatic-cyber-heist",
+      "title": "Cyber Heist",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-cyber-heist.json"
+    },
+    {
+      "slug": "pragmatic-cyclops-smash",
+      "title": "Cyclops Smash",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-cyclops-smash.json"
+    },
+    {
+      "slug": "pragmatic-dance-party",
+      "title": "Dance Party",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-dance-party.json"
+    },
+    {
+      "slug": "pragmatic-day-of-dead",
+      "title": "Day of Dead",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-day-of-dead.json"
+    },
+    {
+      "slug": "pragmatic-demon-pots",
+      "title": "Demon Pots",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-demon-pots.json"
+    },
+    {
+      "slug": "pragmatic-diamond-cascade",
+      "title": "Diamond Cascade",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-diamond-cascade.json"
+    },
+    {
+      "slug": "pragmatic-diamonds-of-egypt",
+      "title": "Diamonds Of Egypt",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-diamonds-of-egypt.json"
+    },
+    {
+      "slug": "pragmatic-ding-dong-christmas-bells",
+      "title": "Ding Dong Christmas Bells",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-ding-dong-christmas-bells.json"
+    },
+    {
+      "slug": "pragmatic-down-the-rails",
+      "title": "Down the Rails",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-down-the-rails.json"
+    },
+    {
+      "slug": "pragmatic-drago-jewels-of-fortune",
+      "title": "Drago – Jewels of Fortune",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-drago-jewels-of-fortune.json"
+    },
+    {
+      "slug": "pragmatic-dragon-hero",
+      "title": "Dragon Hero",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-dragon-hero.json"
+    },
+    {
+      "slug": "pragmatic-dragon-hot-hold-and-spin",
+      "title": "Dragon Hot Hold and Spin",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-dragon-hot-hold-and-spin.json"
+    },
+    {
+      "slug": "pragmatic-dragon-kingdom-eyes-of-fire",
+      "title": "Dragon Kingdom Eyes of Fire",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-dragon-kingdom-eyes-of-fire.json"
+    },
+    {
+      "slug": "pragmatic-dragon-tiger",
+      "title": "Dragon Tiger",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-dragon-tiger.json"
+    },
+    {
+      "slug": "pragmatic-drill-that-gold",
+      "title": "Drill That Gold",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-drill-that-gold.json"
+    },
+    {
+      "slug": "pragmatic-egg-rush",
+      "title": "Egg Rush",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-egg-rush.json"
+    },
+    {
+      "slug": "pragmatic-el-dorado-the-city-of-gold-megaways",
+      "title": "El Dorado The City of Gold Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-el-dorado-the-city-of-gold-megaways.json"
+    },
+    {
+      "slug": "pragmatic-elemental-gems-megaways",
+      "title": "Elemental Gems Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-elemental-gems-megaways.json"
+    },
+    {
+      "slug": "pragmatic-empty-the-bank",
+      "title": "Empty the Bank",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-empty-the-bank.json"
+    },
+    {
+      "slug": "pragmatic-excalibur-unleashed",
+      "title": "Excalibur Unleashed",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-excalibur-unleashed.json"
+    },
+    {
+      "slug": "pragmatic-extra-juicy-megaways",
+      "title": "Extra Juicy Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-extra-juicy-megaways.json"
+    },
+    {
+      "slug": "pragmatic-extra-juicy",
+      "title": "Extra Juicy",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-extra-juicy.json"
+    },
+    {
+      "slug": "pragmatic-eye-of-cleopatra",
+      "title": "Eye of Cleopatra",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-eye-of-cleopatra.json"
+    },
+    {
+      "slug": "pragmatic-eye-of-the-storm",
+      "title": "Eye of the Storm",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-eye-of-the-storm.json"
+    },
+    {
+      "slug": "pragmatic-fat-panda",
+      "title": "Fat Panda",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-fat-panda.json"
+    },
+    {
+      "slug": "pragmatic-fire-archer",
+      "title": "Fire Archer",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-fire-archer.json"
+    },
+    {
+      "slug": "pragmatic-fire-strike-2",
+      "title": "Fire Strike 2",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-fire-strike-2.json"
     },
     {
       "slug": "pragmatic-fire-strike-slot",
       "title": "Fire Strike Slot",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-fire-strike-slot.json"
+    },
+    {
+      "slug": "pragmatic-fish-eye",
+      "title": "Fish Eye",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-fish-eye.json"
+    },
+    {
+      "slug": "pragmatic-fishin-reels",
+      "title": "Fishin’ Reels",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-fishin-reels.json"
     },
     {
       "slug": "pragmatic-floating-dragon-hold-and-spin",
       "title": "Floating Dragon Hold and Spin",
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
-      "win_system": "paylines",
       "path": "games/pragmatic-floating-dragon-hold-and-spin.json"
+    },
+    {
+      "slug": "pragmatic-floating-dragon-megaways-hold-spin",
+      "title": "Floating Dragon Megaways Hold & Spin",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-floating-dragon-megaways-hold-spin.json"
+    },
+    {
+      "slug": "pragmatic-floating-dragon",
+      "title": "Floating Dragon",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-floating-dragon.json"
+    },
+    {
+      "slug": "pragmatic-fruit-party-2",
+      "title": "Fruit Party 2",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-fruit-party-2.json"
     },
     {
       "slug": "pragmatic-fruit-party",
       "title": "Fruit Party",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/pragmatic-fruit-party.json"
+    },
+    {
+      "slug": "pragmatic-fruit-rainbow",
+      "title": "Fruit Rainbow",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-fruit-rainbow.json"
+    },
+    {
+      "slug": "pragmatic-fury-of-odin-megaways",
+      "title": "Fury of Odin Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-fury-of-odin-megaways.json"
     },
     {
       "slug": "pragmatic-gates-of-hades",
       "title": "Gates of Hades",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/pragmatic-gates-of-hades.json"
     },
     {
@@ -1840,23 +2816,62 @@
       "title": "Gates of Olympus 1000",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "pay_anywhere",
       "path": "games/pragmatic-gates-of-olympus-1000.json"
+    },
+    {
+      "slug": "pragmatic-gates-of-olympus-super-scatter",
+      "title": "Gates of Olympus Super Scatter",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-gates-of-olympus-super-scatter.json"
     },
     {
       "slug": "pragmatic-gates-of-olympus",
       "title": "Gates of Olympus",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "pay_anywhere",
       "path": "games/pragmatic-gates-of-olympus.json"
+    },
+    {
+      "slug": "pragmatic-gems-bonanza",
+      "title": "Gems Bonanza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-gems-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-gods-of-giza",
+      "title": "Gods of Giza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-gods-of-giza.json"
+    },
+    {
+      "slug": "pragmatic-gold-party",
+      "title": "Gold Party",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-gold-party.json"
+    },
+    {
+      "slug": "pragmatic-gorilla-mayhem",
+      "title": "Gorilla Mayhem",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-gorilla-mayhem.json"
+    },
+    {
+      "slug": "pragmatic-great-rhino-deluxe",
+      "title": "Great Rhino Deluxe",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-great-rhino-deluxe.json"
     },
     {
       "slug": "pragmatic-great-rhino-megaways-slot",
       "title": "Great Rhino Megaways Slot",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/pragmatic-great-rhino-megaways-slot.json"
     },
     {
@@ -1864,87 +2879,356 @@
       "title": "Great Rhino",
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
-      "win_system": "paylines",
       "path": "games/pragmatic-great-rhino.json"
+    },
+    {
+      "slug": "pragmatic-happy-hooves",
+      "title": "Happy Hooves",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-happy-hooves.json"
+    },
+    {
+      "slug": "pragmatic-heart-of-rio",
+      "title": "Heart of Rio",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-heart-of-rio.json"
+    },
+    {
+      "slug": "pragmatic-honey-honey-honey",
+      "title": "Honey Honey Honey",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-honey-honey-honey.json"
+    },
+    {
+      "slug": "pragmatic-hot-chilli",
+      "title": "Hot Chilli",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-hot-chilli.json"
+    },
+    {
+      "slug": "pragmatic-hot-fiesta",
+      "title": "Hot Fiesta",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-hot-fiesta.json"
     },
     {
       "slug": "pragmatic-hot-to-burn-extreme",
       "title": "Hot to Burn Extreme",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-hot-to-burn-extreme.json"
+    },
+    {
+      "slug": "pragmatic-hot-to-burn-hold-spin",
+      "title": "Hot to Burn Hold & Spin",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-hot-to-burn-hold-spin.json"
+    },
+    {
+      "slug": "pragmatic-jane-hunter-and-the-mask-of-montezuma",
+      "title": "Jane Hunter and the mask of Montezuma",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-jane-hunter-and-the-mask-of-montezuma.json"
+    },
+    {
+      "slug": "pragmatic-jasmine-dreams",
+      "title": "Jasmine Dreams",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-jasmine-dreams.json"
+    },
+    {
+      "slug": "pragmatic-jewel-rush",
+      "title": "Jewel Rush",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-jewel-rush.json"
+    },
+    {
+      "slug": "pragmatic-john-hunter-and-the-book-of-tut-respin",
+      "title": "John Hunter and the Book of Tut Respin",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-john-hunter-and-the-book-of-tut-respin.json"
     },
     {
       "slug": "pragmatic-john-hunter-and-the-book-of-tut",
       "title": "John Hunter and the Book of Tut",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-john-hunter-and-the-book-of-tut.json"
+    },
+    {
+      "slug": "pragmatic-joker-s-jewels-hot",
+      "title": "Joker’s Jewels Hot",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-joker-s-jewels-hot.json"
+    },
+    {
+      "slug": "pragmatic-joker-s-jewels-wild",
+      "title": "Joker’s Jewels Wild",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-joker-s-jewels-wild.json"
+    },
+    {
+      "slug": "pragmatic-juicy-fruits",
+      "title": "Juicy Fruits",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-juicy-fruits.json"
+    },
+    {
+      "slug": "pragmatic-kingdom-of-the-dead",
+      "title": "Kingdom of the Dead",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-kingdom-of-the-dead.json"
     },
     {
       "slug": "pragmatic-lucky-lightning",
       "title": "Lucky Lightning",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/pragmatic-lucky-lightning.json"
+    },
+    {
+      "slug": "pragmatic-lucky-s-wild-pub",
+      "title": "Lucky’s Wild Pub",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-lucky-s-wild-pub.json"
+    },
+    {
+      "slug": "pragmatic-lucky-tiger",
+      "title": "Lucky Tiger",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-lucky-tiger.json"
     },
     {
       "slug": "pragmatic-madame-destiny-megaways",
       "title": "Madame Destiny Megaways",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/pragmatic-madame-destiny-megaways.json"
+    },
+    {
+      "slug": "pragmatic-magic-money-maze",
+      "title": "Magic Money Maze",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-magic-money-maze.json"
+    },
+    {
+      "slug": "pragmatic-mahjong-wins-super-scatter",
+      "title": "Mahjong Wins Super Scatter",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-mahjong-wins-super-scatter.json"
+    },
+    {
+      "slug": "pragmatic-majestic-express-gold-run",
+      "title": "Majestic Express Gold Run",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-majestic-express-gold-run.json"
+    },
+    {
+      "slug": "pragmatic-mammoth-gold-megaways",
+      "title": "Mammoth Gold Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-mammoth-gold-megaways.json"
+    },
+    {
+      "slug": "pragmatic-master-joker",
+      "title": "Master Joker",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-master-joker.json"
+    },
+    {
+      "slug": "pragmatic-might-of-ra",
+      "title": "Might of Ra",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-might-of-ra.json"
     },
     {
       "slug": "pragmatic-money-mouse-slot",
       "title": "Money Mouse Slot",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-money-mouse-slot.json"
+    },
+    {
+      "slug": "pragmatic-money-stacks",
+      "title": "Money Stacks",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-money-stacks.json"
+    },
+    {
+      "slug": "pragmatic-monster-superlanche",
+      "title": "Monster Superlanche",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-monster-superlanche.json"
+    },
+    {
+      "slug": "pragmatic-muertos-multiplier-megaways",
+      "title": "Muertos Multiplier Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-muertos-multiplier-megaways.json"
+    },
+    {
+      "slug": "pragmatic-mummy-s-jewels",
+      "title": "Mummy’s Jewels",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-mummy-s-jewels.json"
     },
     {
       "slug": "pragmatic-mustang-gold",
       "title": "Mustang Gold",
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
-      "win_system": "paylines",
       "path": "games/pragmatic-mustang-gold.json"
+    },
+    {
+      "slug": "pragmatic-mysterious-egypt",
+      "title": "Mysterious Egypt",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-mysterious-egypt.json"
+    },
+    {
+      "slug": "pragmatic-mystery-of-the-orient",
+      "title": "Mystery of the Orient",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-mystery-of-the-orient.json"
+    },
+    {
+      "slug": "pragmatic-octobeer-fortunes",
+      "title": "Octobeer Fortunes",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-octobeer-fortunes.json"
     },
     {
       "slug": "pragmatic-peak-power",
       "title": "Peak Power",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-peak-power.json"
+    },
+    {
+      "slug": "pragmatic-piggy-bankers",
+      "title": "Piggy Bankers",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-piggy-bankers.json"
+    },
+    {
+      "slug": "pragmatic-pompeii-megareels-megaways",
+      "title": "Pompeii Megareels Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-pompeii-megareels-megaways.json"
     },
     {
       "slug": "pragmatic-power-of-thor-megaways",
       "title": "Power of Thor Megaways",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/pragmatic-power-of-thor-megaways.json"
+    },
+    {
+      "slug": "pragmatic-pyramid-king",
+      "title": "Pyramid King",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-pyramid-king.json"
+    },
+    {
+      "slug": "pragmatic-queen-of-gods",
+      "title": "Queen of Gods",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-queen-of-gods.json"
+    },
+    {
+      "slug": "pragmatic-reel-banks",
+      "title": "Reel Banks",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-reel-banks.json"
     },
     {
       "slug": "pragmatic-release-the-kraken-2",
       "title": "Release the Kraken 2",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-release-the-kraken-2.json"
+    },
+    {
+      "slug": "pragmatic-release-the-kraken",
+      "title": "Release the Kraken",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-release-the-kraken.json"
+    },
+    {
+      "slug": "pragmatic-return-of-the-dead",
+      "title": "Return of the Dead",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-return-of-the-dead.json"
+    },
+    {
+      "slug": "pragmatic-rocket-blast-megaways",
+      "title": "Rocket Blast Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-rocket-blast-megaways.json"
+    },
+    {
+      "slug": "pragmatic-secret-city-gold",
+      "title": "Secret City Gold",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-secret-city-gold.json"
+    },
+    {
+      "slug": "pragmatic-shield-of-sparta",
+      "title": "Shield of Sparta",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-shield-of-sparta.json"
+    },
+    {
+      "slug": "pragmatic-starlight-christmas",
+      "title": "Starlight Christmas",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-starlight-christmas.json"
     },
     {
       "slug": "pragmatic-starlight-princess-1000",
       "title": "Starlight Princess 1000",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "pay_anywhere",
       "path": "games/pragmatic-starlight-princess-1000.json"
     },
     {
@@ -1952,39 +3236,104 @@
       "title": "Starlight Princess",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "pay_anywhere",
       "path": "games/pragmatic-starlight-princess.json"
+    },
+    {
+      "slug": "pragmatic-sticky-bees",
+      "title": "Sticky Bees",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-sticky-bees.json"
+    },
+    {
+      "slug": "pragmatic-sugar-rush-1000",
+      "title": "Sugar Rush 1000",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-sugar-rush-1000.json"
+    },
+    {
+      "slug": "pragmatic-sugar-rush-xmas",
+      "title": "Sugar Rush Xmas",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-sugar-rush-xmas.json"
     },
     {
       "slug": "pragmatic-sugar-rush",
       "title": "Sugar Rush",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "clusters",
       "path": "games/pragmatic-sugar-rush.json"
+    },
+    {
+      "slug": "pragmatic-super-7s",
+      "title": "Super 7s",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-super-7s.json"
+    },
+    {
+      "slug": "pragmatic-super-joker",
+      "title": "Super Joker",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-super-joker.json"
+    },
+    {
+      "slug": "pragmatic-sweet-bonanza-1000",
+      "title": "Sweet Bonanza 1000",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-sweet-bonanza-1000.json"
+    },
+    {
+      "slug": "pragmatic-sweet-bonanza-super-scatter",
+      "title": "Sweet Bonanza Super Scatter",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-sweet-bonanza-super-scatter.json"
+    },
+    {
+      "slug": "pragmatic-sweet-bonanza-xmas",
+      "title": "Sweet Bonanza Xmas",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-sweet-bonanza-xmas.json"
     },
     {
       "slug": "pragmatic-sweet-bonanza",
       "title": "Sweet Bonanza",
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
-      "win_system": "pay_anywhere",
       "path": "games/pragmatic-sweet-bonanza.json"
+    },
+    {
+      "slug": "pragmatic-sword-of-ares",
+      "title": "Sword of Ares",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-sword-of-ares.json"
+    },
+    {
+      "slug": "pragmatic-temujin-treasures",
+      "title": "Temujin Treasures",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-temujin-treasures.json"
     },
     {
       "slug": "pragmatic-the-dog-house-megaways",
       "title": "The Dog House Megaways",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "ways",
       "path": "games/pragmatic-the-dog-house-megaways.json"
     },
     {
       "slug": "pragmatic-the-dog-house-multihold",
       "title": "The Dog House Multihold",
       "provider": "Pragmatic Play",
-      "confidence_overall": "medium",
-      "win_system": "paylines",
+      "confidence_overall": "high",
       "path": "games/pragmatic-the-dog-house-multihold.json"
     },
     {
@@ -1992,7 +3341,6 @@
       "title": "The Dog House",
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
-      "win_system": "paylines",
       "path": "games/pragmatic-the-dog-house.json"
     },
     {
@@ -2000,31 +3348,132 @@
       "title": "The Hand of Midas",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-the-hand-of-midas.json"
+    },
+    {
+      "slug": "pragmatic-the-knight-king",
+      "title": "The Knight King",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-the-knight-king.json"
+    },
+    {
+      "slug": "pragmatic-the-red-queen",
+      "title": "The Red Queen",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-the-red-queen.json"
+    },
+    {
+      "slug": "pragmatic-tiny-toads",
+      "title": "Tiny Toads",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-tiny-toads.json"
+    },
+    {
+      "slug": "pragmatic-tree-of-riches",
+      "title": "Tree of Riches",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-tree-of-riches.json"
+    },
+    {
+      "slug": "pragmatic-triple-pot-gold",
+      "title": "Triple Pot Gold",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-triple-pot-gold.json"
+    },
+    {
+      "slug": "pragmatic-tropical-tiki",
+      "title": "Tropical Tiki",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-tropical-tiki.json"
+    },
+    {
+      "slug": "pragmatic-wild-beach-party",
+      "title": "Wild Beach Party",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-beach-party.json"
+    },
+    {
+      "slug": "pragmatic-wild-bison-charge",
+      "title": "Wild Bison Charge",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-bison-charge.json"
+    },
+    {
+      "slug": "pragmatic-wild-booster",
+      "title": "Wild Booster",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-booster.json"
+    },
+    {
+      "slug": "pragmatic-wild-west-duels",
+      "title": "Wild West Duels",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-west-duels.json"
+    },
+    {
+      "slug": "pragmatic-wild-west-gold-blazing-bounty",
+      "title": "Wild West Gold Blazing Bounty",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-west-gold-blazing-bounty.json"
+    },
+    {
+      "slug": "pragmatic-wild-west-gold-megaways",
+      "title": "Wild West Gold Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-west-gold-megaways.json"
     },
     {
       "slug": "pragmatic-wild-west-gold",
       "title": "Wild West Gold",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-wild-west-gold.json"
+    },
+    {
+      "slug": "pragmatic-wild-wild-bananas",
+      "title": "Wild Wild Bananas",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-wild-bananas.json"
+    },
+    {
+      "slug": "pragmatic-wild-wild-riches-megaways",
+      "title": "Wild Wild Riches Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-wild-riches-megaways.json"
+    },
+    {
+      "slug": "pragmatic-wild-wild-riches",
+      "title": "Wild Wild Riches",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-wild-riches.json"
     },
     {
       "slug": "pragmatic-wisdom-of-athena-1000",
       "title": "Wisdom of Athena 1000",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "pay_anywhere",
       "path": "games/pragmatic-wisdom-of-athena-1000.json"
     },
     {
       "slug": "pragmatic-wisdom-of-athena",
       "title": "Wisdom of Athena",
       "provider": "Pragmatic Play",
-      "confidence_overall": "medium",
-      "win_system": "pay_anywhere",
+      "confidence_overall": "high",
       "path": "games/pragmatic-wisdom-of-athena.json"
     },
     {
@@ -2032,7 +3481,6 @@
       "title": "Wolf Gold",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-wolf-gold.json"
     },
     {
@@ -2040,8 +3488,14 @@
       "title": "Zeus vs Hades Gods of War",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "win_system": "paylines",
       "path": "games/pragmatic-zeus-vs-hades-gods-of-war.json"
+    },
+    {
+      "slug": "pragmatic-zombie-carnival",
+      "title": "Zombie Carnival",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-zombie-carnival.json"
     }
   ]
 }

@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Diamond Mole",
+    "slug": "backseat-diamond-mole",
+    "provider_game_id": "2096",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2096&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2096/1.9.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "The Diamond Wild symbol substitutes for all symbols in the paytable.\n\n The Diamond Wild symbol becomes sticky when landing and does not tumble. If it participates in any winning combinations its multiplier doubles up to 2048x.\n\n The Diamond Wild symbol lands with a 1x initial multiplier, except in the Pursuit of Diamonds bonus, where all Diamond Wild symbols land with a 2x initial multiplier.\n\n A maximum of 5 Diamond Wild symbols can be present on the grid at the same time.\n\n If more than one Diamond Wild symbols with multipliers participate in the same winning combination, their multipliers are added together before being applied to the win."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "DIAMOND WILD SYMBOL",
+        "behavior": "The Diamond Wild symbol substitutes for all symbols in the paytable.\n\n The Diamond Wild symbol becomes sticky when landing and does not tumble. If it participates in any winning combinations its multiplier doubles up to 2048x.\n\n The Diamond Wild symbol lands with a 1x initial multiplier, except in the Pursuit of Diamonds bonus, where all Diamond Wild symbols land with a 2x initial multiplier.\n\n A maximum of 5 Diamond Wild symbols can be present on the grid at the same time.\n\n If more than one Diamond Wild symbols with multipliers participate in the same winning combination, their multipliers are added together before being applied to the win.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "BONUS SCATTER SYMBOL",
+        "behavior": "The Bonus scatter symbol can only land in the base game. Only one Bonus scatter symbol can land per reel.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - THE DIAMOND TRAIL",
+        "trigger": "landing 3 Bonus scatter symbols at the same time in the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Trigger The Diamond Trail bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n This bonus follows base game mechanics. In addition to that, 3 guaranteed Diamond Wild symbols land on the first spin. Diamond Wild symbols remain sticky throughout the bonus round."
+      },
+      {
+        "name": "BONUS GAME - PURSUIT OF DIAMONDS",
+        "trigger": "landing 4 Bonus scatter symbols at the same time in the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Trigger the Pursuit of Diamonds bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n This bonus follows the same mechanics as in The Diamond Trail bonus except that 4 guaranteed Diamond Wild symbols land on the first spin and all Diamond Wild symbols land with a 2x initial multiplier.\n\n SPECIAL SYMBOLS"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "DIAMOND WILD SYMBOL",
+      "trigger": null,
+      "effects": "The Diamond Wild symbol substitutes for all symbols in the paytable.\n\n The Diamond Wild symbol becomes sticky when landing and does not tumble. If it participates in any winning combinations its multiplier doubles up to 2048x.\n\n The Diamond Wild symbol lands with a 1x initial multiplier, except in the Pursuit of Diamonds bonus, where all Diamond Wild symbols land with a 2x initial multiplier.\n\n A maximum of 5 Diamond Wild symbols can be present on the grid at the same time.\n\n If more than one Diamond Wild symbols with multipliers participate in the same winning combination, their multipliers are added together before being applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - THE DIAMOND TRAIL",
+      "trigger": "landing 3 Bonus scatter symbols at the same time in the base game.",
+      "effects": "Trigger The Diamond Trail bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n This bonus follows base game mechanics. In addition to that, 3 guaranteed Diamond Wild symbols land on the first spin. Diamond Wild symbols remain sticky throughout the bonus round.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - PURSUIT OF DIAMONDS",
+      "trigger": "landing 4 Bonus scatter symbols at the same time in the base game.",
+      "effects": "Trigger the Pursuit of Diamonds bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n This bonus follows the same mechanics as in The Diamond Trail bonus except that 4 guaranteed Diamond Wild symbols land on the first spin and all Diamond Wild symbols land with a 2x initial multiplier.\n\n SPECIAL SYMBOLS",
+      "params": {}
+    },
+    {
+      "name": "BONUS SCATTER SYMBOL",
+      "trigger": null,
+      "effects": "The Bonus scatter symbol can only land in the base game. Only one Bonus scatter symbol can land per reel.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000,
+    "max_win_notes": "maximum achievable win in this game is 25 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2096/1.9.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/diamond-mole/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Dig deep for dazzling riches in Diamond Mole! In this 6-reel, 6-row drop-cascades cluster game, sticky Diamond Wild symbols keep tunneling through wins - doubling their multiplier with every connection up to a massive 2048x. Unearth the diamonds, strike the reels, and let the Mole lead you to buried fortune!\n\n The max win in this game is 25 000x your bet and can be achieved in all game modes.\n\n FEATURES\n\n DIAMOND WILD SYMBOL\n\n The Diamond Wild symbol substitutes for all symbols in the paytable.\n\n The Diamond Wild symbol becomes sticky when landing and does not tumble. If it pa"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

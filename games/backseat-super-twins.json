@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Super Twins",
+    "slug": "backseat-super-twins",
+    "provider_game_id": "1651",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1651&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1651/1.15.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD SYMBOL",
+        "behavior": "The Wild symbol substitutes for all symbols in the paytable. In Floating Free Bonus all landed Wilds become floating and change their position on the grid on every spin. In Staying Stuck Bonus all landed Wilds become sticky and remain in place until the end of the bonus.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Floating Free Bonus",
+        "behavior": "Trigger the Floating Free bonus game by landing 3 Mushroom BONUS scatter symbols at the same time in the BASE GAME.\n\n The Super Wheel will determine the amount of Free Spins awarded and the Global Multiplier for the bonus game.\n\n Wilds in this bonus are floating and change their position on every spin.\n\n Landing 3 Mushroom BONUS symbols at the same time in the bonus game activates the Super Wheel again for additional Free Spins and another Global Multiplier value that is added to the previous value.\n\n Only one type of scatter symbols can be present on the reels at the same time.",
+        "params": {}
+      },
+      {
+        "name": "Staying Stuck Bonus",
+        "behavior": "Trigger the Staying Stuck bonus game by landing 3 Star BONUS scatter symbols at the same time in the BASE GAME.\n\n The Super Wheel will determine the amount of free spins awarded and the global multiplier for the bonus game.\n\n Wilds in this bonus are sticky throughout the entire round.\n\n Landing 3 Star BONUS symbols at the same time in the bonus game activates the Super Wheel again for additional Free Spins and another Global Multiplier value that is added to the previous value.\n\n Only one type of scatter symbols can be present on the reels at the same time.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "SUPER WHEEL",
+        "behavior": "At the start of each bonus game, you will spin the Super Wheel to determine your starting point in the bonus! The Wheel has two sections that spin at the same time and will award both a Global Multiplier value and a certain number of Free Spins!\n\n The inner section determines your Global Multiplier for the bonus and can give one of the following values: 2x, 3x, 5x, 8x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n The outer section determines your number of Free Spins for the bonus and can award one of the following values: 5, 8, 10, 15 or 20",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER WHEEL",
+      "trigger": null,
+      "effects": "At the start of each bonus game, you will spin the Super Wheel to determine your starting point in the bonus! The Wheel has two sections that spin at the same time and will award both a Global Multiplier value and a certain number of Free Spins!\n\n The inner section determines your Global Multiplier for the bonus and can give one of the following values: 2x, 3x, 5x, 8x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n The outer section determines your number of Free Spins for the bonus and can award one of the following values: 5, 8, 10, 15 or 20",
+      "params": {}
+    },
+    {
+      "name": "WILD SYMBOL",
+      "trigger": null,
+      "effects": "The Wild symbol substitutes for all symbols in the paytable. In Floating Free Bonus all landed Wilds become floating and change their position on the grid on every spin. In Staying Stuck Bonus all landed Wilds become sticky and remain in place until the end of the bonus.",
+      "params": {}
+    },
+    {
+      "name": "Floating Free Bonus",
+      "trigger": null,
+      "effects": "Trigger the Floating Free bonus game by landing 3 Mushroom BONUS scatter symbols at the same time in the BASE GAME.\n\n The Super Wheel will determine the amount of Free Spins awarded and the Global Multiplier for the bonus game.\n\n Wilds in this bonus are floating and change their position on every spin.\n\n Landing 3 Mushroom BONUS symbols at the same time in the bonus game activates the Super Wheel again for additional Free Spins and another Global Multiplier value that is added to the previous value.\n\n Only one type of scatter symbols can be present on the reels at the same time.",
+      "params": {}
+    },
+    {
+      "name": "Staying Stuck Bonus",
+      "trigger": null,
+      "effects": "Trigger the Staying Stuck bonus game by landing 3 Star BONUS scatter symbols at the same time in the BASE GAME.\n\n The Super Wheel will determine the amount of free spins awarded and the global multiplier for the bonus game.\n\n Wilds in this bonus are sticky throughout the entire round.\n\n Landing 3 Star BONUS symbols at the same time in the bonus game activates the Super Wheel again for additional Free Spins and another Global Multiplier value that is added to the previous value.\n\n Only one type of scatter symbols can be present on the reels at the same time.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_wild_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_floating_wild_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum win in this game is 12,500 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1651/1.15.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/super-twins/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Join the mouse brothers Twitch and Tails for an adventure like no other from the safety of their home to the back alleys and streets of the city! ! Super Twins is a 5-reel, 4-row game with payline wins and two exciting bonus games! Spin the Super Wheel to determine your Global Multiplier and number of Free Spins in the bonus games!\n\n The maximum win in this game is 12,500 times your bet, and can be achieved in all modes.\n\n FEATURES\n\n SUPER WHEEL\n\n At the start of each bonus game, you will spin the Super Wheel to determine your starting point in the bonus! The Wheel has two sec"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

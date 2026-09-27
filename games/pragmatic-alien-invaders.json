@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Alien Invaders",
+    "slug": "pragmatic-alien-invaders",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Alien-Invaders-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "unknown",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": null
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all\n winning symbols disappear. The remaining symbols fall towards the bottom of the screen and\n the empty positions are replaced with new symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.\n This is the WILD symbol and substitutes for all symbols for the\n purpose of winning combinations except for SCATTER.\n It can appear on reel 3 during the base game and on reels 2, 3 and 4 during the FREE SPINS feature.\n The WILD symbol is inactive and does not substitute unless it hits or reaches the bottom, marked row.\n Above the marked row it is shown as inactive and it becomes active once it reaches the bottom row.\n 3-3\n 2-2 The WILD symbol can carry a random multiplier of 1x, 2x, 3x, 5x, 10x or 25x.\n 1-1"
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all\n winning symbols disappear. The remaining symbols fall towards the bottom of the screen and\n the empty positions are replaced with new symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.\n This is the WILD symbol and substitutes for all symbols for the\n purpose of winning combinations except for SCATTER.\n It can appear on reel 3 during the base game and on reels 2, 3 and 4 during the FREE SPINS feature.\n The WILD symbol is inactive and does not substitute unless it hits or reaches the bottom, marked row.\n Above the marked row it is shown as inactive and it becomes active once it reaches the bottom row.\n 3-3\n 2-2 The WILD symbol can carry a random multiplier of 1x, 2x, 3x, 5x, 10x or 25x.\n 1-1",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            5,
+            10,
+            25
+          ]
+        }
+      },
+      {
+        "name": "WILD",
+        "behavior": "WIN MULTIPLIER FEATURE\n Every spin starts with a multiplier of 1x. Every 10 symbols that explode during tumbles or are exploded by a\n SCATTER add +1x to the win multiplier. The multiplier that WILD symbols carry is also added to the win multiplier\n when a WILD symbol reaches the bottom marked row. The current win multiplier applies to the winning\n combinations as they happen.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "This is the SCATTER symbol. It can appear on all reels.\n Whenever the SCATTER symbol hits or reaches the bottom, marked row it explodes along with all\n symbols immediately adjacent to it horizontally, vertically and diagonally. Symbols exploded like this\n are considered winning combinations and pay for how many they are according to their paytable.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "FREE SPINS\nHit 3 or more SCATTER symbols across a base game spin and all tumbles resulted from it to trigger the FREE SPINS\n feature and win 7 free spins plus an additional 3 for each SCATTER symbol beyond the 3rd.\n The amount of symbols hitting on each reel during the FREE SPINS round always starts with 3 and\n after every spin it might randomly increase by 1 on a random reel, up to maximum 5 on a reel. Those\n reels will then stay at that size until the end of the round.\n All increases of the win multiplier achieved during any free spin persist throughout the round.\n Any SCATTER symbol that hits or reaches the bottom, marked reel during the round, awards 1 additional free spin.\n The WILD symbol in the FREE SPINS feature can carry a random multiplier of 1x, 2x, 3x, 5x, 10x, 25x, 50x or 100x.\n Special reels are in play during the feature.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            5,
+            10,
+            25,
+            50,
+            100
+          ]
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Hit 3 or more SCATTER symbols across a base game spin and all tumbles resulted from it to trigger the FREE SPINS\n feature and win 7 free spins plus an additional 3 for each SCATTER symbol beyond the 3rd.",
+        "spins_awarded": "win 7 free spins plus an additional 3 for each SCATTER symbol beyond the 3rd.",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Persistent/sticky state described in effects",
+        "progressive_state": "Progressive multiplier/collection described in effects",
+        "effects": "Hit 3 or more SCATTER symbols across a base game spin and all tumbles resulted from it to trigger the FREE SPINS\n feature and win 7 free spins plus an additional 3 for each SCATTER symbol beyond the 3rd.\n The amount of symbols hitting on each reel during the FREE SPINS round always starts with 3 and\n after every spin it might randomly increase by 1 on a random reel, up to maximum 5 on a reel. Those\n reels will then stay at that size until the end of the round.\n All increases of the win multiplier achieved during any free spin persist throughout the round.\n Any SCATTER symbol that hits or reaches the bottom, marked reel during the round, awards 1 additional free spin.\n The WILD symbol in the FREE SPINS feature can carry a random multiplier of 1x, 2x, 3x, 5x, 10x, 25x, 50x or 100x.\n Special reels are in play during the feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "Hit 3 or more SCATTER symbols across a base game spin and all tumbles resulted from it to trigger the FREE SPINS\n feature and win 7 free spins plus an additional 3 for each SCATTER symbol beyond the 3rd.",
+      "effects": "Hit 3 or more SCATTER symbols across a base game spin and all tumbles resulted from it to trigger the FREE SPINS\n feature and win 7 free spins plus an additional 3 for each SCATTER symbol beyond the 3rd.\n The amount of symbols hitting on each reel during the FREE SPINS round always starts with 3 and\n after every spin it might randomly increase by 1 on a random reel, up to maximum 5 on a reel. Those\n reels will then stay at that size until the end of the round.\n All increases of the win multiplier achieved during any free spin persist throughout the round.\n Any SCATTER symbol that hits or reaches the bottom, marked reel during the round, awards 1 additional free spin.\n The WILD symbol in the FREE SPINS feature can carry a random multiplier of 1x, 2x, 3x, 5x, 10x, 25x, 50x or 100x.\n Special reels are in play during the feature.",
+      "params": {}
+    },
+    {
+      "name": "Tumble Feature",
+      "trigger": null,
+      "effects": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all\n winning symbols disappear. The remaining symbols fall towards the bottom of the screen and\n the empty positions are replaced with new symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.\n This is the WILD symbol and substitutes for all symbols for the\n purpose of winning combinations except for SCATTER.\n It can appear on reel 3 during the base game and on reels 2, 3 and 4 during the FREE SPINS feature.\n The WILD symbol is inactive and does not substitute unless it hits or reaches the bottom, marked row.\n Above the marked row it is shown as inactive and it becomes active once it reaches the bottom row.\n 3-3\n 2-2 The WILD symbol can carry a random multiplier of 1x, 2x, 3x, 5x, 10x or 25x.\n 1-1\n\n This is the SCATTER symbol. It can appear on all reels.\n Whenever the SCATTER symbol hits or reaches the bottom, marked row it explodes along with all\n symbols immediately adjacent to it horizontally, vertically and diagonally. Symbols exploded like this\n are considered winning combinations and pay for how many they are according to their paytable.\n\n WIN MULTIPLIER FEATURE\n Every spin starts with a multiplier of 1x. Every 10 symbols that explode during tumbles or are exploded by a\n SCATTER add +1x to the win multiplier. The multiplier that WILD symbols carry is also added to the win multiplier\n when a WILD symbol reaches the bottom marked row. The current win multiplier applies to the winning\n combinations as they happen.",
+      "params": {}
+    },
+    {
+      "name": "Ante Bet",
+      "trigger": null,
+      "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 25x - the chance to win the FREE SPINS round naturally is doubled. More SCATTER symbols\n are present on the reels. The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+      "params": {}
+    },
+    {
+      "name": "Buy Free Spins",
+      "trigger": null,
+      "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it.\n Pay 65x total bet to trigger the FREE SPINS feature.\n Pay 400x total bet to trigger the SUPER FREE SPINS feature. In the SUPER FREE SPINS feature,\n the win multiplier starts at 50x.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Buy Free Spins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it.\n Pay 65x total bet to trigger the FREE SPINS feature.\n Pay 400x total bet to trigger the SUPER FREE SPINS feature. In the SUPER FREE SPINS feature,\n the win multiplier starts at 50x.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.25,
+    "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 25x - the chance to win the FREE SPINS round naturally is doubled. More SCATTER symbols\n are present on the reels. The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+    "notes": "Inferred from official ante: 25x bet multiplier vs 20x normal (=1.25x total bet cost)"
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000.0,
+    "max_win_notes": "maximum win amount is limited to 5,000x bet",
+    "rtp_percent": 96.5,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.5%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "low",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Alien-Invaders-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Alien-Invaders.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n The game is played on a grid of 5 vertical reels with 3, 4 or 5 symbols randomly hitting on\n each reel at every spin. The bottom row of symbols is always marked.\n Wins occur when 3 or more symbols of the same type hit on the bottom, marked row of the reels.\n When that happens, the reels that have winning symbols on them become active and all instances of\n the winning symbol on the active reels count for creating winning combinations.\n\n Pays 20 for each symbol in the winning combination. Pays 2 for each symbol in the winning combination.\n\n Pays 10 for each symbol in the winning combination. Pays 1 for each symbol in the winning combination.\n\n Pays 5 for each symbol in the winning "
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier",
+    "grid.rows/cols",
+    "win_system.type"
+  ]
+}

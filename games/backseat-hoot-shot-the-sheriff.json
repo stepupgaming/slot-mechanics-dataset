@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Hoot Shot The Sheriff",
+    "slug": "backseat-hoot-shot-the-sheriff",
+    "provider_game_id": "1809",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1809&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1809/1.16.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "The Global multiplier gets increased by 1 on each cascade triggered by a win."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "MIDNIGHT GUN FIGHT",
+        "behavior": "Trigger the MIDNIGHT GUN FIGHT bonus with 10 free spins by landing 3 BONUS scatter symbols at the same time in the base game.\n\n Base game mechanics are followed and the Global multiplier remains persistent for the entire duration of the bonus round!\n\n Landing 3 BONUS scatter symbols during the bonus awards 5 additional free spins.",
+        "params": {}
+      },
+      {
+        "name": "SHERIFF’S HOOTOUT",
+        "behavior": "Trigger the SHERIFF’S HOOTOUT bonus with 10 free spins by landing 4 BONUS scatter symbols at the same time in the base game.\n\n Base game mechanics are followed and Sheriff’s badge symbols multiply the Global multiplier which is persistent for the entire duration of the bonus!\n\n Landing 3 BONUS scatter symbols during the bonus awards 5 additional free spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "TOTAL WIN BAR",
+        "behavior": "All wins are collected in the Total Win Bar outside the grid during each round. Sheriff’s badge multipliers and the Global multiplier are added to the Total Win Bar at the end of a spin in sequence, multiplying each other, and the result is applied to the collected win amount.",
+        "params": {}
+      },
+      {
+        "name": "GLOBAL MULTIPLIER",
+        "behavior": "The Global multiplier gets increased by 1 on each cascade triggered by a win.",
+        "params": {}
+      },
+      {
+        "name": "SHERIFF’S BADGE SYMBOL",
+        "behavior": "The Sheriff’s badge symbol reveals a multiplier which is collected in the Total Win Bar at the end of the spin. Multipliers multiply each other when collected in the Total Win Bar.\n\n The possible multiplier values are: x2, x3, x4, x5 or x10.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TOTAL WIN BAR",
+      "trigger": null,
+      "effects": "All wins are collected in the Total Win Bar outside the grid during each round. Sheriff’s badge multipliers and the Global multiplier are added to the Total Win Bar at the end of a spin in sequence, multiplying each other, and the result is applied to the collected win amount.",
+      "params": {}
+    },
+    {
+      "name": "GLOBAL MULTIPLIER",
+      "trigger": null,
+      "effects": "The Global multiplier gets increased by 1 on each cascade triggered by a win.",
+      "params": {}
+    },
+    {
+      "name": "SHERIFF’S BADGE SYMBOL",
+      "trigger": null,
+      "effects": "The Sheriff’s badge symbol reveals a multiplier which is collected in the Total Win Bar at the end of the spin. Multipliers multiply each other when collected in the Total Win Bar.\n\n The possible multiplier values are: x2, x3, x4, x5 or x10.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "MIDNIGHT GUN FIGHT",
+      "trigger": null,
+      "effects": "Trigger the MIDNIGHT GUN FIGHT bonus with 10 free spins by landing 3 BONUS scatter symbols at the same time in the base game.\n\n Base game mechanics are followed and the Global multiplier remains persistent for the entire duration of the bonus round!\n\n Landing 3 BONUS scatter symbols during the bonus awards 5 additional free spins.",
+      "params": {}
+    },
+    {
+      "name": "SHERIFF’S HOOTOUT",
+      "trigger": null,
+      "effects": "Trigger the SHERIFF’S HOOTOUT bonus with 10 free spins by landing 4 BONUS scatter symbols at the same time in the base game.\n\n Base game mechanics are followed and Sheriff’s badge symbols multiply the Global multiplier which is persistent for the entire duration of the bonus!\n\n Landing 3 BONUS scatter symbols during the bonus awards 5 additional free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_multi_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000,
+    "max_win_notes": "maximum achievable win in this game is 25 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1809/1.16.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/hoot-shot-the-sheriff/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Hoot Shot the Sheriff takes you to the wild, wild west with Hoot, the sharpest-shooting owl in town! Dive into 6-reel, 5-row drop cascades game with all-scatter wins, where each tumble increases your Global multiplier. Keep your eyes on the shiny Sheriff’s Badge multipliers, boosting your wins with every tumble. Can you outshoot the sheriff and fly off with the loot? Saddle up—it’s time for a hootin’ good showdown!\n\n The max win in this game is 25 000x your bet and can be achieved in all game modes except base game.\n\n FEATURES\n\n TOTAL WIN BAR\n\n All wins are collected in the To"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

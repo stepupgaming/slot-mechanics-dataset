@@ -23,59 +23,170 @@
   ],
   "additionalProperties": false,
   "properties": {
-    "schema_version": { "type": "string", "const": "1.0.0" },
-    "updated_at": { "type": "string", "format": "date-time" },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
     "identity": {
       "type": "object",
-      "required": ["provider", "title", "slug"],
+      "required": [
+        "provider",
+        "title",
+        "slug"
+      ],
       "additionalProperties": false,
       "properties": {
         "provider": {
           "type": "string",
-          "enum": ["Pragmatic Play", "Hacksaw Gaming", "Nolimit City", "Other"]
+          "enum": [
+            "Pragmatic Play",
+            "Hacksaw Gaming",
+            "Backseat Gaming",
+            "Nolimit City",
+            "Other"
+          ]
         },
-        "title": { "type": "string", "minLength": 1 },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
         "slug": {
           "type": "string",
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "description": "URL-safe kebab-case id; also used as games/<slug>.json filename"
         },
-        "provider_game_id": { "type": ["string", "null"] },
-        "release_year": { "type": ["integer", "null"], "minimum": 1990, "maximum": 2100 },
-        "demo_url": { "type": ["string", "null"], "format": "uri" },
-        "slotcatalog_url": { "type": ["string", "null"], "format": "uri" },
-        "official_info_url": { "type": ["string", "null"], "format": "uri" }
+        "provider_game_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "release_year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1990,
+          "maximum": 2100
+        },
+        "demo_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "slotcatalog_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "official_info_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        }
       }
     },
     "grid": {
       "type": "object",
-      "required": ["rows", "cols"],
+      "required": [
+        "rows",
+        "cols"
+      ],
       "additionalProperties": false,
       "properties": {
-        "rows": { "type": ["integer", "null"], "minimum": 1 },
-        "cols": { "type": ["integer", "null"], "minimum": 1 },
-        "rows_min": { "type": ["integer", "null"] },
-        "rows_max": { "type": ["integer", "null"] },
-        "layout_notes": { "type": ["string", "null"] }
+        "rows": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "cols": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "rows_min": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "rows_max": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "layout_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "win_system": {
       "type": "object",
-      "required": ["type"],
+      "required": [
+        "type"
+      ],
       "additionalProperties": false,
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["paylines", "ways", "pay_anywhere", "clusters", "other", "unknown"]
+          "enum": [
+            "paylines",
+            "ways",
+            "pay_anywhere",
+            "clusters",
+            "other",
+            "unknown"
+          ]
         },
-        "payline_count": { "type": ["integer", "null"] },
-        "ways_count": { "type": ["integer", "null"] },
-        "min_symbols_for_win": { "type": ["integer", "null"] },
+        "payline_count": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "ways_count": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "min_symbols_for_win": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
         "direction": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "description": "e.g. left_to_right, both_ways, anywhere"
         },
-        "notes": { "type": ["string", "null"] }
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "reel_behavior": {
@@ -86,35 +197,72 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "present": { "type": ["boolean", "null"] },
-            "how_it_works": { "type": ["string", "null"] }
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "how_it_works": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
           }
         },
         "respins": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "present": { "type": ["boolean", "null"] },
-            "how_it_works": { "type": ["string", "null"] }
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "how_it_works": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
           }
         },
         "expanding_reels": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "present": { "type": ["boolean", "null"] },
-            "how_it_works": { "type": ["string", "null"] }
+            "present": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "how_it_works": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
           }
         },
         "other": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["name", "how_it_works"],
+            "required": [
+              "name",
+              "how_it_works"
+            ],
             "additionalProperties": false,
             "properties": {
-              "name": { "type": "string" },
-              "how_it_works": { "type": "string" }
+              "name": {
+                "type": "string"
+              },
+              "how_it_works": {
+                "type": "string"
+              }
             }
           }
         }
@@ -124,11 +272,21 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "wilds": { "$ref": "#/$defs/symbolList" },
-        "scatters": { "$ref": "#/$defs/symbolList" },
-        "multipliers": { "$ref": "#/$defs/symbolList" },
-        "collectors": { "$ref": "#/$defs/symbolList" },
-        "specials": { "$ref": "#/$defs/symbolList" }
+        "wilds": {
+          "$ref": "#/$defs/symbolList"
+        },
+        "scatters": {
+          "$ref": "#/$defs/symbolList"
+        },
+        "multipliers": {
+          "$ref": "#/$defs/symbolList"
+        },
+        "collectors": {
+          "$ref": "#/$defs/symbolList"
+        },
+        "specials": {
+          "$ref": "#/$defs/symbolList"
+        }
       }
     },
     "bonus_free_spins": {
@@ -139,32 +297,86 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["name"],
+            "required": [
+              "name"
+            ],
             "additionalProperties": false,
             "properties": {
-              "name": { "type": "string" },
-              "trigger": { "type": ["string", "null"] },
-              "spins_awarded": { "type": ["string", "null"], "description": "Free-text because many games use ranges or meters" },
-              "retrigger": { "type": ["string", "null"] },
-              "sticky_or_persistent_state": { "type": ["string", "null"] },
-              "progressive_state": { "type": ["string", "null"] },
-              "effects": { "type": ["string", "null"] }
+              "name": {
+                "type": "string"
+              },
+              "trigger": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "spins_awarded": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Free-text because many games use ranges or meters"
+              },
+              "retrigger": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sticky_or_persistent_state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "progressive_state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effects": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
             }
           }
         },
-        "notes": { "type": ["string", "null"] }
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "features": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "additionalProperties": false,
         "properties": {
-          "name": { "type": "string" },
-          "trigger": { "type": ["string", "null"] },
-          "effects": { "type": ["string", "null"] },
+          "name": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "effects": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "params": {
             "type": "object",
             "additionalProperties": true
@@ -176,35 +388,88 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "available": { "type": ["boolean", "null"] },
+        "available": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
         "options": {
           "type": "array",
           "items": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "name": { "type": ["string", "null"] },
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
               "cost_multiplier": {
-                "type": ["number", "null"],
+                "type": [
+                  "number",
+                  "null"
+                ],
                 "description": "Cost as multiple of total bet; null if not stated in source"
               },
-              "cost_text": { "type": ["string", "null"] },
-              "effects": { "type": ["string", "null"] },
-              "rtp_when_bought_note": { "type": ["string", "null"] }
+              "cost_text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effects": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rtp_when_bought_note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
             }
           }
         },
-        "notes": { "type": ["string", "null"] }
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "ante_bet": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "available": { "type": ["boolean", "null"] },
-        "cost_multiplier": { "type": ["number", "null"] },
-        "effects": { "type": ["string", "null"] },
-        "notes": { "type": ["string", "null"] }
+        "available": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "cost_multiplier": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "effects": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "numeric_limits": {
@@ -212,32 +477,73 @@
       "additionalProperties": false,
       "properties": {
         "max_win_multiplier": {
-          "type": ["number", "null"],
+          "type": [
+            "number",
+            "null"
+          ],
           "description": "Max win as multiple of bet from official rules text only"
         },
-        "max_win_notes": { "type": ["string", "null"] },
+        "max_win_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "rtp_percent": {
-          "type": ["number", "null"],
+          "type": [
+            "number",
+            "null"
+          ],
           "description": "Only if a concrete RTP number appears in official rules (not a template placeholder)"
         },
-        "rtp_notes": { "type": ["string", "null"] },
-        "hit_frequency_notes": { "type": ["string", "null"] }
+        "rtp_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hit_frequency_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "confidence": {
       "type": "object",
-      "required": ["overall"],
+      "required": [
+        "overall"
+      ],
       "additionalProperties": false,
       "properties": {
-        "overall": { "$ref": "#/$defs/confidenceLevel" },
-        "grid": { "$ref": "#/$defs/confidenceLevel" },
-        "win_system": { "$ref": "#/$defs/confidenceLevel" },
-        "reel_behavior": { "$ref": "#/$defs/confidenceLevel" },
-        "symbols": { "$ref": "#/$defs/confidenceLevel" },
-        "bonus_free_spins": { "$ref": "#/$defs/confidenceLevel" },
-        "features": { "$ref": "#/$defs/confidenceLevel" },
-        "feature_buy": { "$ref": "#/$defs/confidenceLevel" },
-        "numeric_limits": { "$ref": "#/$defs/confidenceLevel" }
+        "overall": {
+          "$ref": "#/$defs/confidenceLevel"
+        },
+        "grid": {
+          "$ref": "#/$defs/confidenceLevel"
+        },
+        "win_system": {
+          "$ref": "#/$defs/confidenceLevel"
+        },
+        "reel_behavior": {
+          "$ref": "#/$defs/confidenceLevel"
+        },
+        "symbols": {
+          "$ref": "#/$defs/confidenceLevel"
+        },
+        "bonus_free_spins": {
+          "$ref": "#/$defs/confidenceLevel"
+        },
+        "features": {
+          "$ref": "#/$defs/confidenceLevel"
+        },
+        "feature_buy": {
+          "$ref": "#/$defs/confidenceLevel"
+        },
+        "numeric_limits": {
+          "$ref": "#/$defs/confidenceLevel"
+        }
       }
     },
     "evidence": {
@@ -245,7 +551,10 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["source_type", "extracted_at"],
+        "required": [
+          "source_type",
+          "extracted_at"
+        ],
         "additionalProperties": false,
         "properties": {
           "source_type": {
@@ -260,32 +569,63 @@
               "other"
             ]
           },
-          "url": { "type": ["string", "null"] },
-          "local_path": { "type": ["string", "null"] },
-          "extracted_at": { "type": "string", "format": "date-time" },
-          "quote_or_excerpt": { "type": ["string", "null"] }
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "local_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "extracted_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "quote_or_excerpt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
         }
       }
     },
     "unknowns": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     }
   },
   "$defs": {
     "confidenceLevel": {
       "type": "string",
-      "enum": ["high", "medium", "low"]
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
     },
     "symbolList": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["name", "behavior"],
+        "required": [
+          "name",
+          "behavior"
+        ],
         "additionalProperties": false,
         "properties": {
-          "name": { "type": "string" },
-          "behavior": { "type": "string" },
+          "name": {
+            "type": "string"
+          },
+          "behavior": {
+            "type": "string"
+          },
           "params": {
             "type": "object",
             "additionalProperties": true

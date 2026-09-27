@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Mystery Bats",
+    "slug": "backseat-mystery-bats",
+    "provider_game_id": "1895",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1895&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1895/1.13.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "BONUS scatter symbols can never land above the Mystery Bat symbol, even after tumbles."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "NIGHTFALL",
+        "behavior": "Trigger the NIGHTFALL bonus with 10 free spins by landing 3 BONUS scatter symbols at the same time in the base game.\n\n During this bonus game you have an increased chance of landing Mystery Bat symbols.\n\n Landing 3 BONUS scatter symbols at the same time during the bonus awards 10 additional free spins.",
+        "params": {}
+      },
+      {
+        "name": "THE SWARM",
+        "behavior": "Trigger the THE SWARM bonus with 10 free spins by landing 4 BONUS scatter symbols at the same time in the base game.\n\n You get at least 1 guaranteed Mystery Bat symbol on every spin.\n\n Landing 3 BONUS scatter symbols at the same time during the bonus awards 10 additional free spins.\n\n SPECIAL SYMBOLS",
+        "params": {}
+      },
+      {
+        "name": "BONUS SCATTER SYMBOL",
+        "behavior": "BONUS scatter symbols can never land above the Mystery Bat symbol, even after tumbles.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "SYMBOL TRANSFORMATION",
+        "behavior": "At the end of the tumble, Mystery Bat symbols activate from left to right and fly upwards to the top of the grid, transforming every symbol in their way into the same paying symbol.\n\n Each transformed symbol receives a random multiplier with one of the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x.\n\n Multipliers participating in a winning combination are added together and applied to the win.\n\n Only one Mystery Bat symbol can be present per reel at the same time.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "TOTAL WIN BAR",
+        "behavior": "All wins are collected in the Total Win Bar outside the grid during each round.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TOTAL WIN BAR",
+      "trigger": null,
+      "effects": "All wins are collected in the Total Win Bar outside the grid during each round.",
+      "params": {}
+    },
+    {
+      "name": "SYMBOL TRANSFORMATION",
+      "trigger": null,
+      "effects": "At the end of the tumble, Mystery Bat symbols activate from left to right and fly upwards to the top of the grid, transforming every symbol in their way into the same paying symbol.\n\n Each transformed symbol receives a random multiplier with one of the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x.\n\n Multipliers participating in a winning combination are added together and applied to the win.\n\n Only one Mystery Bat symbol can be present per reel at the same time.",
+      "params": {}
+    },
+    {
+      "name": "NIGHTFALL",
+      "trigger": null,
+      "effects": "Trigger the NIGHTFALL bonus with 10 free spins by landing 3 BONUS scatter symbols at the same time in the base game.\n\n During this bonus game you have an increased chance of landing Mystery Bat symbols.\n\n Landing 3 BONUS scatter symbols at the same time during the bonus awards 10 additional free spins.",
+      "params": {}
+    },
+    {
+      "name": "THE SWARM",
+      "trigger": null,
+      "effects": "Trigger the THE SWARM bonus with 10 free spins by landing 4 BONUS scatter symbols at the same time in the base game.\n\n You get at least 1 guaranteed Mystery Bat symbol on every spin.\n\n Landing 3 BONUS scatter symbols at the same time during the bonus awards 10 additional free spins.\n\n SPECIAL SYMBOLS",
+      "params": {}
+    },
+    {
+      "name": "BONUS SCATTER SYMBOL",
+      "trigger": null,
+      "effects": "BONUS scatter symbols can never land above the Mystery Bat symbol, even after tumbles.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_bat_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000,
+    "max_win_notes": "maximum achievable win in this game is 25 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1895/1.13.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/mystery-bats/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Step into the shadows of Mystery Bats! In this 6-reel, 5-row drop cascades game with all-scatter wins, the elusive Mystery Bat takes flight - transforming every symbol it touches into an identical paying symbol for monstrous chain reactions. Can you let the bats guide you to the hidden fortunes lurking in the dark?\n\n The max win in this game is 25 000x your bet and can be achieved in all game modes.\n\n FEATURES\n\n TOTAL WIN BAR\n\n All wins are collected in the Total Win Bar outside the grid during each round.\n\n SYMBOL TRANSFORMATION\n\n At the end of the tumble, Mystery Bat symbols"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

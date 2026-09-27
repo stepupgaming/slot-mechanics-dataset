@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Fireborn",
+    "slug": "backseat-fireborn",
+    "provider_game_id": "1368",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1368&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1368/1.15.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD SYMBOLS",
+        "behavior": "The Wild symbol substitutes for all High & Low Symbols and can have multipliers attached to them by Gold and Green Dragons. Wild Multipliers multiply all connected paylines, and if multiple Wild Multipliers appear on the same payline, their values are added together before being applied to the win. In the bonus, all Wilds and Red Dragon Wild reels become sticky until the end of the bonus game.",
+        "params": {}
+      },
+      {
+        "name": "RED DRAGON",
+        "behavior": "The Red Dragon expands into a full Wild reel, revealing a multiplier that can be x2, x3, x5, x10, x25, x50, or x100. It can land in both the base and bonus games.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            5,
+            10,
+            25,
+            50,
+            100
+          ]
+        }
+      },
+      {
+        "name": "BLUE DRAGON",
+        "behavior": "The Blue Dragon breathes fire in one of four directions (left, right, up, down), transforming regular symbols into Wild Symbols. The Blue Dragon then transforms into a Wild symbol itself. It can land in both the base and bonus games.",
+        "params": {}
+      },
+      {
+        "name": "GREEN DRAGON",
+        "behavior": "The Green Dragon reveals a multiplier and adds it to all Wilds and Wild reels on the grid. The multiplier can be x2, x3, x5, x10, x25, x50, or x100. The Green Dragon can only land in the bonus game and cannot land if no Wild symbols or Wild reels are present on the grid.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            5,
+            10,
+            25,
+            50,
+            100
+          ]
+        }
+      },
+      {
+        "name": "GOLD DRAGON",
+        "behavior": "The Gold Dragon shoots a random number of golden fireballs (minimum 1, maximum 5) at Wilds or Wild reels and doubles their multipliers. It can target the same or different symbols with each shot. The Gold Dragon can only land in the bonus game and cannot land if no Wild symbols or Wild reels are present on the grid.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS",
+        "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Trigger the bonus game with 10, 12 or 14 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.\n\n In the bonus game there is a higher chance of landing Red and Blue Dragons than in the base game. You may also be fortunate enough to see a Green or Gold Dragon!\n\n SPECIAL SYMBOLS\n\n The BONUS symbol does not appear during the bonus game."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD SYMBOLS",
+      "trigger": null,
+      "effects": "The Wild symbol substitutes for all High & Low Symbols and can have multipliers attached to them by Gold and Green Dragons. Wild Multipliers multiply all connected paylines, and if multiple Wild Multipliers appear on the same payline, their values are added together before being applied to the win. In the bonus, all Wilds and Red Dragon Wild reels become sticky until the end of the bonus game.",
+      "params": {}
+    },
+    {
+      "name": "RED DRAGON",
+      "trigger": null,
+      "effects": "The Red Dragon expands into a full Wild reel, revealing a multiplier that can be x2, x3, x5, x10, x25, x50, or x100. It can land in both the base and bonus games.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          5,
+          10,
+          25,
+          50,
+          100
+        ]
+      }
+    },
+    {
+      "name": "BLUE DRAGON",
+      "trigger": null,
+      "effects": "The Blue Dragon breathes fire in one of four directions (left, right, up, down), transforming regular symbols into Wild Symbols. The Blue Dragon then transforms into a Wild symbol itself. It can land in both the base and bonus games.",
+      "params": {}
+    },
+    {
+      "name": "GREEN DRAGON",
+      "trigger": null,
+      "effects": "The Green Dragon reveals a multiplier and adds it to all Wilds and Wild reels on the grid. The multiplier can be x2, x3, x5, x10, x25, x50, or x100. The Green Dragon can only land in the bonus game and cannot land if no Wild symbols or Wild reels are present on the grid.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          5,
+          10,
+          25,
+          50,
+          100
+        ]
+      }
+    },
+    {
+      "name": "GOLD DRAGON",
+      "trigger": null,
+      "effects": "The Gold Dragon shoots a random number of golden fireballs (minimum 1, maximum 5) at Wilds or Wild reels and doubles their multipliers. It can target the same or different symbols with each shot. The Gold Dragon can only land in the bonus game and cannot land if no Wild symbols or Wild reels are present on the grid.",
+      "params": {}
+    },
+    {
+      "name": "BONUS",
+      "trigger": "landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.",
+      "effects": "Trigger the bonus game with 10, 12 or 14 free spins by landing 3, 4 or 5 BONUS scatter symbols at the same time during the base game.\n\n In the bonus game there is a higher chance of landing Red and Blue Dragons than in the base game. You may also be fortunate enough to see a Green or Gold Dragon!\n\n SPECIAL SYMBOLS\n\n The BONUS symbol does not appear during the bonus game.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "free_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum win in this game is 15,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1368/1.15.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/fireborn/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Welcome to Fireborn, a mythical journey into the world of dragons! In this 5-reel, 5-row game you'll encounter majestic Gold, Red, Green, and Blue Dragons, each with unique powers and features. Get ready to embark on an unforgettable adventure!\n\n The maximum win in this game is 15,000 times your bet and can be achieved in the base game and bonus game.\n\n FEATURES\n\n WILD SYMBOLS\n\n The Wild symbol substitutes for all High & Low Symbols and can have multipliers attached to them by Gold and Green Dragons. Wild Multipliers multiply all connected paylines, and if multiple Wild Multip"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

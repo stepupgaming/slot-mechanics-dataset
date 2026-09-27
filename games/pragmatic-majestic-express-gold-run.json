@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Majestic Express Gold Run",
+    "slug": "pragmatic-majestic-express-gold-run",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Majestic-Express-Gold-Run-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Left-to-right adjacent / paylines per official rules"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "This symbol is WILD and substitutes\n This is the SCATTER symbol. for all symbols except for SCATTER,\n It appears on reels 1, 3 and 5. MONEY and COLLECT symbols.\n It can appear on reels 1, 2, 3 and 4",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "This symbol is WILD and substitutes\n This is the SCATTER symbol. for all symbols except for SCATTER,\n It appears on reels 1, 3 and 5. MONEY and COLLECT symbols.\n It can appear on reels 1, 2, 3 and 4",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "FREE SPINS\n Hit 3 SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.\n The MONEY and TRAIN MONEY symbol collection feature is also possible during the round.\n The feature cannot be retriggered.\n Special reels are in play during the feature.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "MONEY",
+        "behavior": "MONEY SYMBOL COLLECTION\n This is the MONEY symbol.\n It can appear on reels 1, 2, 3 and 4.\n Whenever it hits it takes a random value from a predefined set.\n Possible values are: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x or 15x total bet.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15
+          ]
+        }
+      },
+      {
+        "name": "MONEY",
+        "behavior": "These are the TRAIN MONEY symbols.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Hit 3 SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.",
+        "spins_awarded": "win 10 free spins.",
+        "retrigger": "The feature cannot be retriggered.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Hit 3 SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.\n The MONEY and TRAIN MONEY symbol collection feature is also possible during the round.\n The feature cannot be retriggered.\n Special reels are in play during the feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "Hit 3 SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.",
+      "effects": "Hit 3 SCATTER symbols to trigger the FREE SPINS feature and win 10 free spins.\n The MONEY and TRAIN MONEY symbol collection feature is also possible during the round.\n The feature cannot be retriggered.\n Special reels are in play during the feature.",
+      "params": {}
+    },
+    {
+      "name": "Money Symbol",
+      "trigger": null,
+      "effects": "COLLECTION\n This is the MONEY symbol.\n It can appear on reels 1, 2, 3 and 4.\n Whenever it hits it takes a random value from a predefined set.\n Possible values are: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x or 15x total bet.\n\n These are the TRAIN MONEY symbols.\n\n These are the COLLECT and SUPER COLLECT symbols. They can hit only on reel 5.\n Whenever a COLLECT or SUPER COLLECT symbol hits along with MONEY or TRAIN MONEY symbols on\n other reels, the values of all MONEY or TRAIN MONEY symbols are collected and paid.\n The value of each TRAIN MONEY symbol is determined through a train animation of its color, with a random number of\ncarts, each cart carrying a random value from a predefined set. Possible values on carts are: 1x, 1.5x, 2x, 3x, 4x, 5x, 6x, 7x,\n 8x, 20x (MINI), 50x (MINOR), 500x (MAJOR) or 5000x (GRAND), multiplied by total bet.\n When a SUPER COLLECT symbol hits along with TRAIN MONEY symbols on other reels after the values of the trains are\n determined, a new golden train animation appears with a random number of carts each carrying a 1x multiplier. After the\n animation, the amount of all TRAIN MONEY symbols on the screen are multiplied by the total multiplier and paid.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Buy Free Spins",
+        "cost_multiplier": 100.0,
+        "cost_text": "buying it for 100x",
+        "effects": "BUY FEATURE\n The MONEY SYMBOL COLLECTION feature round can be instantly triggered from the\n base game by buying it for 100x current total bet.\n When buying the MONEY SYMBOL COLLECTION feature, on the triggering spin, a COLLECT\n symbol or SUPER COLLECT symbol is guaranteed to hit randomly alongside with minimum\n\f 2 TRAIN MONEY symbols of different colors.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "maximum win amount is limited to 20,000x bet",
+    "rtp_percent": 96.5,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.5%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Majestic-Express-Gold-Run-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Majestic-Express-Gold-Run.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n All symbols pay from left to right on adjacent reels starting from the leftmost reel.\n\n 5 - 300 5 - 240 5 - 200 5 - 160 5 - 120\n 4 - 80 4 - 60 4 - 60 4 - 40 4 - 40\n 3 - 20 3 - 16 3 - 16 3 - 10 3 - 10\n\n 5 - 40 5 - 40 5 - 20 5 - 20 5 - 20\n 4 - 20 4 - 20 4 - 10 4 - 10 4 - 10\n 3-4 3-4 3-2 3-2 3-2\n\n This symbol is WILD and substitutes\n This is the SCATTER symbol. for all symbols except for SCATTER,\n It appears on reels 1, 3 and 5. MONEY and COLLECT symbols.\n It can appear on reels 1, 2, 3 and 4\n\n MONEY SYMBOL COLLECTION\n This is the MONEY symbol.\n It can appear on reels 1, 2, 3 and 4.\n Whenever it hits it takes a random value from a predefined set.\n Possible values are: 1x, 2x, 3x, 4x"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols"
+  ]
+}

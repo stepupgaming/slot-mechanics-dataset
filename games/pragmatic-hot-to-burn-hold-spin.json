@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Hot to Burn Hold & Spin",
+    "slug": "pragmatic-hot-to-burn-hold-spin",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Hot-to-Burn-Hold-and-Spin-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Left-to-right adjacent / paylines per official rules"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "These are the MONEY SYMBOLS. They can appear on all reels.\n Each spin, MONEY SYMBOLS take a random value from a predefined set. When 5 or more MONEY SYMBOLS hit,\n they trigger the HOLD AND SPIN feature.\n HOLD AND SPIN FEATURE\nThe HOLD AND SPIN FEATURE starts after all win combinations for the lines are paid. The normal symbols fade away and only the\nmoney symbols that triggered the feature remain. The normal reels are replaced with special reels containing only money symbols an\n empty spaces.\n You start with 4 respins. All money symbols that hit after each respin remain on the screen until the end of the round. Every time at\n least one money symbol hits, the number of respins is reset to 4. The round continues until respins are finished or all positions on t\n screen are filled with money symbols.\n When the MONEY RESPIN feature is complete, the values of all money symbols are added and the game pays the total amount.\n If during the HOLD AND SPIN FEATURE the screen is filled with money symbols, the BIG MONEY WHEEL BONUS is triggered.\n The wheel spins awarding a random prize or a blank. Possible prizes are:\n 10x, 20x, 30x, 40x, 50x, 60x, 70x, 80x, 90x, 100x, 200x, 300x, 400x, 500x, 600x, 700x, 800x, 900x, 1000x, 2000x or 5000x.\nWhenever a value is awarded, the wheel spins again. Whenever a blank is awarded the round ends. After all wheel spins finish, all pri\n awarded by the HOLD AND SPIN FEATURE and the MONEY WHEEL BONUS are added together and pay."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "This is the WILD symbol and substitutes for all symbols except\n 5 - 5000\n MONEY symbol and SCATTER symbol.\n 4 - 1000\n During at any spin WILD symbols can appear at random\n 3 - 100\n positions on the screen.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "This is the WILD symbol and substitutes for all symbols except\n 5 - 5000\n MONEY symbol and SCATTER symbol.\n 4 - 1000\n During at any spin WILD symbols can appear at random\n 3 - 100\n positions on the screen.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "5 - 2000\n This is the SCATTER symbol.\n 4 - 400\n SCATTER pays on any position.\n 3 - 20",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "MONEY",
+        "behavior": "This is the WILD symbol and substitutes for all symbols except\n 5 - 5000\n MONEY symbol and SCATTER symbol.\n 4 - 1000\n During at any spin WILD symbols can appear at random\n 3 - 100\n positions on the screen.",
+        "params": {}
+      },
+      {
+        "name": "MONEY",
+        "behavior": "These are the MONEY SYMBOLS. They can appear on all reels.\n Each spin, MONEY SYMBOLS take a random value from a predefined set. When 5 or more MONEY SYMBOLS hit,\n they trigger the HOLD AND SPIN feature.\n HOLD AND SPIN FEATURE\nThe HOLD AND SPIN FEATURE starts after all win combinations for the lines are paid. The normal symbols fade away and only the\nmoney symbols that triggered the feature remain. The normal reels are replaced with special reels containing only money symbols an\n empty spaces.\n You start with 4 respins. All money symbols that hit after each respin remain on the screen until the end of the round. Every time at\n least one money symbol hits, the number of respins is reset to 4. The round continues until respins are finished or all positions on t\n screen are filled with money symbols.\n When the MONEY RESPIN feature is complete, the values of all money symbols are added and the game pays the total amount.\n If during the HOLD AND SPIN FEATURE the screen is filled with money symbols, the BIG MONEY WHEEL BONUS is triggered.\n The wheel spins awarding a random prize or a blank. Possible prizes are:\n 10x, 20x, 30x, 40x, 50x, 60x, 70x, 80x, 90x, 100x, 200x, 300x, 400x, 500x, 600x, 700x, 800x, 900x, 1000x, 2000x or 5000x.\nWhenever a value is awarded, the wheel spins again. Whenever a blank is awarded the round ends. After all wheel spins finish, all pri\n awarded by the HOLD AND SPIN FEATURE and the MONEY WHEEL BONUS are added together and pay.",
+        "params": {
+          "multiplier_values_mentioned": [
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            90,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900,
+            1000,
+            2000,
+            5000
+          ]
+        }
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Money Symbol",
+      "trigger": null,
+      "effects": "and SCATTER symbol.\n 4 - 1000\n During at any spin WILD symbols can appear at random\n 3 - 100\n positions on the screen.\n\n 5 - 2000\n This is the SCATTER symbol.\n 4 - 400\n SCATTER pays on any position.\n 3 - 20\n\n These are the MONEY SYMBOLS. They can appear on all reels.\n Each spin, MONEY SYMBOLS take a random value from a predefined set. When 5 or more MONEY SYMBOLS hit,\n they trigger the HOLD AND SPIN feature.\n HOLD AND SPIN FEATURE\nThe HOLD AND SPIN FEATURE starts after all win combinations for the lines are paid. The normal symbols fade away and only the\nmoney symbols that triggered the feature remain. The normal reels are replaced with special reels containing only money symbols an\n empty spaces.\n You start with 4 respins. All money symbols that hit after each respin remain on the screen until the end of the round. Every time at\n least one money symbol hits, the number of respins is reset to 4. The round continues until respins are finished or all positions on t\n screen are filled with money symbols.\n When the MONEY RESPIN feature is complete, the values of all money symbols are added and the game pays the total amount.\n If during the HOLD AND SPIN FEATURE the screen is filled with money symbols, the BIG MONEY WHEEL BONUS is triggered.\n The wheel spins awarding a random prize or a blank. Possible prizes are:\n 10x, 20x, 30x, 40x, 50x, 60x, 70x, 80x, 90x, 100x, 200x, 300x, 400x, 500x, 600x, 700x, 800x, 900x, 1000x, 2000x or 5000x.\nWhenever a value is awarded, the wheel spins again. Whenever a blank is awarded the round ends. After all wheel spins finish, all pri\n awarded by the HOLD AND SPIN FEATURE and the MONEY WHEEL BONUS are added together and pay.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "maximum win amount is limited to 20000X bet",
+    "rtp_percent": 94.65,
+    "rtp_notes": "From official rules PDF: theoretical RTP 94.65%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Hot-to-Burn-Hold-and-Spin-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Hot-to-Burn-Hold-and-Spin.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n All symbols pay from left to right on adjacent reels starting from the leftmost reel.\n\n 5 - 5000 5 - 500 5 - 200 5 - 200\n 4 - 1000 4 - 200 4 - 50 4 - 50\n 3 - 100 3 - 50 3 - 20 3 - 20\n\n 5 - 50\n 5 - 200 5 - 50 5 - 50\n 4 - 10\n 4 - 50 4 - 10 4 - 10\n 3-2\n 3 - 20 3-2 3-2\n 2-1\n\n This is the WILD symbol and substitutes for all symbols except\n 5 - 5000\n MONEY symbol and SCATTER symbol.\n 4 - 1000\n During at any spin WILD symbols can appear at random\n 3 - 100\n positions on the screen.\n\n 5 - 2000\n This is the SCATTER symbol.\n 4 - 400\n SCATTER pays on any position.\n 3 - 20\n\n These are the MONEY SYMBOLS. They can appear on all reels.\n Each spin, MONEY SYMBOLS take a random value from a predefi"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols"
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Crystal Robot",
+    "slug": "backseat-crystal-robot",
+    "provider_game_id": "1709",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1709&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1709/1.10.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD SYMBOL",
+        "behavior": "The Wild symbol substitutes for all symbols in the paytable. Wild symbols land with a multiplier which is taken from the symbol and added to the Global Multiplier.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x and 100x",
+        "params": {}
+      },
+      {
+        "name": "WILD REEL",
+        "behavior": "When the Mystery symbol lands on the grid it expands into a Wild reel where a multiplier is revealed before getting added to the Global Multiplier.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x and 100x\n\n If the multiplier is greater or equal than 10, the orange robot appears. Otherwise the grey robot shows up instead.\n\n The Mystery symbol can land in the BASE game and in the OVERCLOCKED bonus.\n\n The WILD reel pays and functions like a regular WILD symbol.",
+        "params": {}
+      },
+      {
+        "name": "RAMPAGE Bonus",
+        "behavior": "Trigger the RAMPAGE bonus with 10 free spins by landing 3 Robot head BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus Wild symbols become sticky! Mystery symbols will NOT appear in this bonus. The global multiplier is persistent for the entire duration of the bonus round.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "OVERCLOCKED Bonus",
+        "behavior": "Trigger the OVERCLOCKED bonus with 10 free spins by landing 3 Robot hand BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus Mystery symbols have an increased chance to land! The global multiplier is persistent for the entire duration of the bonus round.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "GLOBAL MULTIPLIER",
+        "behavior": "The Global Multiplier is present in all game modes and multiplies all grid wins. In the bonus games the Global Multiplier is persistent for the entire duration of the bonus round.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD SYMBOL",
+      "trigger": null,
+      "effects": "The Wild symbol substitutes for all symbols in the paytable. Wild symbols land with a multiplier which is taken from the symbol and added to the Global Multiplier.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x and 100x",
+      "params": {}
+    },
+    {
+      "name": "WILD REEL",
+      "trigger": null,
+      "effects": "When the Mystery symbol lands on the grid it expands into a Wild reel where a multiplier is revealed before getting added to the Global Multiplier.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x and 100x\n\n If the multiplier is greater or equal than 10, the orange robot appears. Otherwise the grey robot shows up instead.\n\n The Mystery symbol can land in the BASE game and in the OVERCLOCKED bonus.\n\n The WILD reel pays and functions like a regular WILD symbol.",
+      "params": {}
+    },
+    {
+      "name": "GLOBAL MULTIPLIER",
+      "trigger": null,
+      "effects": "The Global Multiplier is present in all game modes and multiplies all grid wins. In the bonus games the Global Multiplier is persistent for the entire duration of the bonus round.",
+      "params": {}
+    },
+    {
+      "name": "RAMPAGE Bonus",
+      "trigger": null,
+      "effects": "Trigger the RAMPAGE bonus with 10 free spins by landing 3 Robot head BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus Wild symbols become sticky! Mystery symbols will NOT appear in this bonus. The global multiplier is persistent for the entire duration of the bonus round.",
+      "params": {}
+    },
+    {
+      "name": "OVERCLOCKED Bonus",
+      "trigger": null,
+      "effects": "Trigger the OVERCLOCKED bonus with 10 free spins by landing 3 Robot hand BONUS scatter symbols at the same time in the BASE GAME.\n\n In this bonus Mystery symbols have an increased chance to land! The global multiplier is persistent for the entire duration of the bonus round.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_feature_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum win in this game is 12,500 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1709/1.10.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/crystal-robot/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Crystal Robot is a 5-reel, 5-row game with paylines, global multiplier and expanding Wild reels! Wild symbols and Wild reels carry a multiplier which is added to the Global Multiplier.\n\n The maximum win in this game is 12,500 times your bet, and can be achieved in all game modes.\n\n FEATURES\n\n WILD SYMBOL\n\n The Wild symbol substitutes for all symbols in the paytable. Wild symbols land with a multiplier which is taken from the symbol and added to the Global Multiplier.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x and 100x\n\n WILD REEL\n\n When "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

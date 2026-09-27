@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Power Pops",
+    "slug": "backseat-power-pops",
+    "provider_game_id": "2015",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2015&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2015/1.12.8/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "After landing the Lollipop symbols reveal a multiplier.\n\n In the base game Lollipop symbols activate only if there is a winning combination on the grid, while in the bonus games they always activate and reveal a multiplier.\n\n Lollipop symbols come in 4 tiers with different possible multipliers: \n\n Blue lollipop: 2x, 3x, 4x, 5x.\n\n Green lollipop: 6x, 7x, 8x, 9x, 10x.\n\n Purple lollipop: 15x, 20x, 25x, 50x, 75x.\n\n Red lollipop: 100x, 250x, 500x, 1000x.\n\n The multiplier revealed is then added to the reel multiplier below the reel the Lollipop symbol landed on.\n\n The reel multipliers apply to all wins that have at least one winning symbol on that reel. If a winning connection has symbols from multiple reels with a multiplier, these multipliers are added together before being applied to the win.\n\n Only one Lollipop symbol can land per reel at the same time. Оnce they are activated and their multiplier is removed the used Lollipop symbols remain on the grid. This allows for new Lollipop symbols to land on the same reel during tumbles."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "BONUS SYMBOL",
+        "behavior": "The Bonus scatter symbol can land in all game modes. Only one Bonus scatter symbol can land per reel.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "LOLLIPOP MULTIPLIERS",
+        "behavior": "After landing the Lollipop symbols reveal a multiplier.\n\n In the base game Lollipop symbols activate only if there is a winning combination on the grid, while in the bonus games they always activate and reveal a multiplier.\n\n Lollipop symbols come in 4 tiers with different possible multipliers: \n\n Blue lollipop: 2x, 3x, 4x, 5x.\n\n Green lollipop: 6x, 7x, 8x, 9x, 10x.\n\n Purple lollipop: 15x, 20x, 25x, 50x, 75x.\n\n Red lollipop: 100x, 250x, 500x, 1000x.\n\n The multiplier revealed is then added to the reel multiplier below the reel the Lollipop symbol landed on.\n\n The reel multipliers apply to all wins that have at least one winning symbol on that reel. If a winning connection has symbols from multiple reels with a multiplier, these multipliers are added together before being applied to the win.\n\n Only one Lollipop symbol can land per reel at the same time. Оnce they are activated and their multiplier is removed the used Lollipop symbols remain on the grid. This allows for new Lollipop symbols to land on the same reel during tumbles.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "DEAD SYMBOL",
+        "behavior": "The Dead symbol is a non-paying symbol which is available only in the initial Lollipop spin in the Lollipop Blast bonus game.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - SUGAR POP",
+        "trigger": "landing 3 Bonus scatter symbols at the same time in the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Trigger Sugar Pop bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n During this bonus game base game mechanics are followed and you have an increased chance of landing Lollipop symbols and reel multipliers remain persistent for the entire duration of the bonus.\n\n Landing 3 Bonus scatter symbols at the same time during the bonus awards 10 additional free spins."
+      },
+      {
+        "name": "BONUS GAME - LOLLIPOP BLAST",
+        "trigger": "landing 4 Bonus scatter symbols at the same time in the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Trigger the Lollipop Blast bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n This bonus follows the same mechanics as the Sugar Pop bonus. In addition you get 1 initial Lollipop spin which guarantees a Lollipop symbol landing on all reels. All other symbols are Dead during that spin.\n\n Landing 3 Bonus scatter symbols at the same time during the bonus awards 10 additional free spins.\n\n SPECIAL SYMBOLS"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "LOLLIPOP MULTIPLIERS",
+      "trigger": null,
+      "effects": "After landing the Lollipop symbols reveal a multiplier.\n\n In the base game Lollipop symbols activate only if there is a winning combination on the grid, while in the bonus games they always activate and reveal a multiplier.\n\n Lollipop symbols come in 4 tiers with different possible multipliers: \n\n Blue lollipop: 2x, 3x, 4x, 5x.\n\n Green lollipop: 6x, 7x, 8x, 9x, 10x.\n\n Purple lollipop: 15x, 20x, 25x, 50x, 75x.\n\n Red lollipop: 100x, 250x, 500x, 1000x.\n\n The multiplier revealed is then added to the reel multiplier below the reel the Lollipop symbol landed on.\n\n The reel multipliers apply to all wins that have at least one winning symbol on that reel. If a winning connection has symbols from multiple reels with a multiplier, these multipliers are added together before being applied to the win.\n\n Only one Lollipop symbol can land per reel at the same time. Оnce they are activated and their multiplier is removed the used Lollipop symbols remain on the grid. This allows for new Lollipop symbols to land on the same reel during tumbles.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SUGAR POP",
+      "trigger": "landing 3 Bonus scatter symbols at the same time in the base game.",
+      "effects": "Trigger Sugar Pop bonus with 10 free spins by landing 3 Bonus scatter symbols at the same time in the base game.\n\n During this bonus game base game mechanics are followed and you have an increased chance of landing Lollipop symbols and reel multipliers remain persistent for the entire duration of the bonus.\n\n Landing 3 Bonus scatter symbols at the same time during the bonus awards 10 additional free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - LOLLIPOP BLAST",
+      "trigger": "landing 4 Bonus scatter symbols at the same time in the base game.",
+      "effects": "Trigger the Lollipop Blast bonus with 10 free spins by landing 4 Bonus scatter symbols at the same time in the base game.\n\n This bonus follows the same mechanics as the Sugar Pop bonus. In addition you get 1 initial Lollipop spin which guarantees a Lollipop symbol landing on all reels. All other symbols are Dead during that spin.\n\n Landing 3 Bonus scatter symbols at the same time during the bonus awards 10 additional free spins.\n\n SPECIAL SYMBOLS",
+      "params": {}
+    },
+    {
+      "name": "DEAD SYMBOL",
+      "trigger": null,
+      "effects": "The Dead symbol is a non-paying symbol which is available only in the initial Lollipop spin in the Lollipop Blast bonus game.",
+      "params": {}
+    },
+    {
+      "name": "BONUS SYMBOL",
+      "trigger": null,
+      "effects": "The Bonus scatter symbol can land in all game modes. Only one Bonus scatter symbol can land per reel.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_lollipop_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 30000,
+    "max_win_notes": "maximum achievable win in this game is 30 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2015/1.12.8/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/power-pops/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Enter a world of candy and sweetness! Power Pops is a 6-reel, 5-row cascade game with all-scatter wins. The Lollipop symbols sweeten your experience by revealing a multiplier upon landing, adding it to the reel multiplier below which applies to all wins connected to that reel!\n\n The max win in this game is 30 000x your bet and can be achieved in the bonus games.\n\n FEATURES\n\n LOLLIPOP MULTIPLIERS\n\n After landing the Lollipop symbols reveal a multiplier.\n\n In the base game Lollipop symbols activate only if there is a winning combination on the grid, while in the bonus games they"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

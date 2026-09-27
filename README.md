@@ -21,8 +21,12 @@ scripts/                            # parsers used to build records
 # list high-confidence Pragmatic titles
 jq -r '.games[] | select(.provider=="Pragmatic Play" and .confidence_overall=="high") | .title' dataset.json
 
+# list Backseat Gaming titles
+jq -r '.games[] | select(.provider=="Backseat Gaming") | .title' dataset.json
+
 # load one game
 jq . games/pragmatic-gates-of-olympus.json
+jq . games/backseat-lord-venom.json
 
 # validate (requires jsonschema)
 python -c "import json,glob; from jsonschema import Draft202012Validator as V; s=json.load(open('schema/slot-mechanics.schema.json')); v=V(s); \
@@ -32,6 +36,7 @@ python -c "import json,glob; from jsonschema import Draft202012Validator as V; s
 Example records:
 
 - `games/hacksaw-chaos-crew.json` — official Hacksaw gameinfo (paylines, Cranky Cat wild multipliers, meter free spins)
+- `games/backseat-lord-venom.json` — official OpenRGS/Hacksaw CDN gameinfo (Backseat studio; Jungle Bush / Golden Egg bonus)
 - `games/pragmatic-gates-of-olympus.json` — official rules PDF (pay anywhere, tumble, multipliers, ante, buy)
 - `games/pragmatic-sugar-rush.json` — official rules PDF (7×7 clusters, multiplier spots, free spins)
 
@@ -39,7 +44,7 @@ Example records:
 
 | Level | Meaning |
 | --- | --- |
-| **high** | Core mechanics extracted from the game’s own Info / Rules / Paytable (Hacksaw `en-us-gameinfo.html`, or Pragmatic official rules PDF). Quotes stored under `evidence` and usually mirrored in `sources/`. |
+| **high** | Core mechanics extracted from the game’s own Info / Rules / Paytable (Hacksaw / Backseat `en-us-gameinfo.html`, or Pragmatic official rules PDF). Quotes stored under `evidence` and usually mirrored in `sources/`. |
 | **medium** | Secondary sources with concrete mechanic text or structured tags (e.g. SlotCatalog layout/betways/feature lists). Useful for discovery; verify before relying on buy costs / exact triggers. |
 | **low** | Partial parse, missing grid/win system, or tags without rule text. See `unknowns`. |
 
@@ -56,13 +61,16 @@ Confidence is also set **per major section** (`confidence.grid`, `confidence.fea
 
 ## Providers in this release
 
-Priority order used while collecting:
+Live counts are always in `dataset.json` → `by_provider` / `by_confidence` / `by_provider_confidence`. Snapshot for this expansion:
 
-1. **Pragmatic Play** — official rules PDFs where text-extractable; SlotCatalog for a few titles whose PDFs were image-only.
-2. **Hacksaw Gaming** — full set of local official `en-us-gameinfo.html` dumps (high confidence for most titles).
-3. **Nolimit City** — smaller SlotCatalog seed batch (medium); official sheets to be expanded.
+| Provider | Records | Notes |
+| --- | --- | --- |
+| **Pragmatic Play** | **250** (~156 high / ~94 medium) | Expanded from ~42. High = text-extractable official rules PDFs (yesplay.bet CDN + kertn GameRules mirrors). Medium = SlotCatalog when PDF missing or image-only. |
+| **Hacksaw Gaming** | ~203 | Official `en-us-gameinfo.html` dumps (mostly high). |
+| **Backseat Gaming** | **35** (all high) | Independent studio on Hacksaw OpenRGS. Same `en-us-gameinfo.html` CDN path; `identity.provider` = **Backseat Gaming**, slug prefix `backseat-`. |
+| **Nolimit City** | 7 | SlotCatalog seed batch (medium); official sheets to be expanded. |
 
-See `dataset.json` → `by_provider` / `by_confidence` / `by_provider_confidence` for live counts.
+Priority while collecting: official rules/gameinfo first, SlotCatalog only to fill gaps without inventing mechanics.
 
 ## Schema highlights
 
@@ -79,17 +87,22 @@ Each `games/*.json` includes:
 - `numeric_limits` — max win / RTP notes
 - `confidence`, `evidence`, `unknowns`
 
+Provider enum includes `Pragmatic Play`, `Hacksaw Gaming`, `Backseat Gaming`, `Nolimit City`, `Other`.
+
 ## Regenerating
 
 ```bash
 # Hacksaw (requires /workspace/hacksaw-info/pages from prior scrape)
 python3 scripts/parse_hacksaw.py
 
+# Backseat Gaming (OpenRGS gameinfo under sources/backseat/pages/)
+python3 scripts/parse_backseat.py
+
 # Pragmatic (requires PDFs under sources/pragmatic/pdfs/)
 python3 scripts/parse_pragmatic_pdfs.py
 ```
 
-Then rebuild the index by re-running the validation/index script used in this repo’s build process (or regenerate `dataset.json` from `games/*.json`).
+Then rebuild `dataset.json` / `dataset-full.json` from `games/*.json` (see counts in the index).
 
 ## License / use
 
@@ -97,8 +110,9 @@ Mechanics text is transcribed/summarized from publicly available game info and r
 
 ## Blockers / known gaps
 
-- Hacksaw static gameinfo often leaves RTP and feature-buy **prices** as `{placeholders}` → those fields stay `null`.
-- Some Pragmatic rules PDFs are image-only (no text layer); those titles fall back to SlotCatalog (medium) until OCR/official HTML is added.
+- Hacksaw / Backseat static gameinfo often leaves RTP and feature-buy **prices** as `{placeholders}` → those fields stay `null`.
+- Some Pragmatic rules PDFs are image-only (no text layer), e.g. Sweet Bonanza / The Dog House on common CDN mirrors; those titles stay SlotCatalog (medium) until OCR/official HTML is added.
+- Yesplay / kertn PDF catalogs are incomplete vs the full Pragmatic library; SlotCatalog fills the rest to the 250 target without inventing mechanics.
+- A few very new Backseat titles on BigWinBoard had no Hacksaw launcher/`gameid` yet (or used a non-Hacksaw demo host) → omitted until official `en-us-gameinfo.html` is available.
 - Nolimit official in-game help HTML is not yet bulk-mirrored; current Nolimit rows are medium/SlotCatalog.
 - Interactive demo Info pages sometimes need a real browser session (age gates / JS shells).
-

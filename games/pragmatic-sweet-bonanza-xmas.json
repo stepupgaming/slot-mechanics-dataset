@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Sweet Bonanza Xmas",
+    "slug": "pragmatic-sweet-bonanza-xmas",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Sweet-Bonanza-Xmas-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": "anywhere",
+    "notes": "Symbols pay anywhere per official GAME RULES"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. The remaining symbols fall to the bottom of the screen and the empty positions are\n replaced with symbols coming from above."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "6 2000 This is the SCATTER symbol.\n 5 100 SCATTER symbol is present on all reels.\n 4 60 SCATTER pays on any position.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "Bet multiplier 25x - the chance to win free spins naturally is doubled. More SCATTER symbols are present on the\n reels. The FREE SPINS PURCHASE FEATURE is disabled.",
+        "params": {
+          "multiplier_values_mentioned": [
+            25
+          ]
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "MULTIPLIER",
+        "behavior": "100x\n This is the MULTIPLIER symbol. is present on the reels only during the FREE SPINS\n ROUND and it stays on the screen until the end of the tumbling sequence.",
+        "params": {
+          "multiplier_values_mentioned": [
+            100
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen\n or a FREE SPINS ROUND has been purchased.",
+        "spins_awarded": "starts with 10 free spins.",
+        "retrigger": "uring the FREE SPINS ROUND, 5 additional free spins are awarded.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen\n or a FREE SPINS ROUND has been purchased.\n The round starts with 10 free spins.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n\n 100x\n This is the MULTIPLIER symbol. is present on the reels only during the FREE SPINS\n ROUND and it stays on the screen until the end of the tumbling sequence.\n\n Whenever a symbol hits, it takes a random multiplier value from 2x to 100x.\n\n When the tumbling sequence ends, the values of all symbols on the screen are added together\n and the total win of the sequence is multiplied by the final value.\n\n Special reels are in play during the FREE SPINS ROUND."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen\n or a FREE SPINS ROUND has been purchased.",
+      "effects": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen\n or a FREE SPINS ROUND has been purchased.\n The round starts with 10 free spins.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n\n 100x\n This is the MULTIPLIER symbol. is present on the reels only during the FREE SPINS\n ROUND and it stays on the screen until the end of the tumbling sequence.\n\n Whenever a symbol hits, it takes a random multiplier value from 2x to 100x.\n\n When the tumbling sequence ends, the values of all symbols on the screen are added together\n and the total win of the sequence is multiplied by the final value.\n\n Special reels are in play during the FREE SPINS ROUND.",
+      "params": {}
+    },
+    {
+      "name": "Tumble Feature",
+      "trigger": null,
+      "effects": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. The remaining symbols fall to the bottom of the screen and the empty positions are\n replaced with symbols coming from above.\n\nTumbling will continue until no more winning combinations appear as a result of a tumble. There's no limit to the\n number of possible tumbles.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.",
+      "params": {}
+    },
+    {
+      "name": "Ante Bet",
+      "trigger": null,
+      "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 20x - gives the ability to purchase a FREE SPINS ROUND by paying a value equal to 100x total bet.\n\nBet multiplier 25x - the chance to win free spins naturally is doubled. More SCATTER symbols are present on the\n reels. The FREE SPINS PURCHASE FEATURE is disabled.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Buy Free Spins",
+        "cost_multiplier": 100.0,
+        "cost_text": "paying a value equal to 100x",
+        "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 20x - gives the ability to purchase a FREE SPINS ROUND by paying a value equal to 100x total bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.25,
+    "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 20x - gives the ability to purchase a FREE SPINS ROUND by paying a value equal to 100x total bet.\n\nBet multiplier 25x - the chance to win free spins naturally is doubled. More SCATTER symbols are present on the\n reels. The FREE SPINS PURCHASE FEATURE is disabled.",
+    "notes": "Inferred from official ante: 25x bet multiplier vs 20x normal (=1.25x total bet cost)"
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Sweet-Bonanza-Xmas-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Sweet-Bonanza-Xmas.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n Symbols pay anywhere on the screen. The total number of the same symbol on the screen at the\n end of a spin determines the value of the win.\n\n 12+ 1000 12+ 500 12+ 300 12+ 240\n 10 - 11 500 10 - 11 200 10 - 11 100 10 - 11 40\n 8 - 9 200 8 - 9 50 8 - 9 40 8 - 9 30\n\n 12+ 200 12+ 160 12+ 100 12+ 80 12+ 40\n 10 - 11 30 10 - 11 24 10 - 11 20 10 - 11 18 10 - 11 15\n 8 - 9 20 8 - 9 16 8 - 9 10 8-9 8 8-9 5\n\n 6 2000 This is the SCATTER symbol.\n 5 100 SCATTER symbol is present on all reels.\n 4 60 SCATTER pays on any position.\n\n ANTE BET\n\nThe player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

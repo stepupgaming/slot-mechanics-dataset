@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:06:38Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Christmas Carol Megaways",
+    "slug": "pragmatic-christmas-carol-megaways",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Christmas-Carol-Megaways-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "variable reel heights described in rules"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 2,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways / Megaways adjacent left-to-right"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\n disappear. The remaining symbols fall to the bottom of the screen and the empty positions are replaced with new\n symbols coming from above. New symbols are of the same size as the initial spin result, before tumbles.\n Tumbling will continue until no more winning combinations appear as a result of a tumble.\n All wins are added to the player's balance after all the tumbles resulted from a base spin have been played."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "This symbol is WILD and substitutes\n Wins awarded for left to right adjacent\n for all symbols except for . symbol combinations of any size.\n WILD symbol appears only on Reels 1 and 6 can have up to 7 symbols. Reels 2, 3, 4 and 5\n reels 2, 3, 4 and 5, on the top row. can have up to 8 symbols. The top row of reels 2 to 5 spins\n independently from right to left. In total the maximum\n number of possible ways to win is 200704.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "FREE SPINS RULES\n This is the SCATTER symbol. It appears on all reels.\n Hit 4 or more SCATTER symbols anywhere on the reels\n to trigger the FREE SPINS ROUND\nDuring the FREE SPINS FEATURE every tumble increases the win multiplier by 1x. After every tumble the win of that\n tumble is multiplied by the current win multiplier.\n At the beginning of the FREE SPINS ROUND choose one out of 4 options:\n 4 SCATTERS 5 SCATTERS 6 SCATTERS\n15 free spins, starting multiplier 1x 19 free spins, starting multiplier 1x 23 free spins, starting multiplier 1x\n10 free spins, starting multiplier 5x 14 free spins, starting multiplier 5x 18 free spins, starting multiplier 5x\n5 free spins, starting multiplier 10x 9 free spins, starting multiplier 10x 13 free spins, starting multiplier 10x",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            5,
+            10
+          ]
+        }
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "Random number of free spins, random starting multiplier.\n Hit 3 Scatter symbols during the FREE SPINS ROUNDS to trigger 5 more free spins. No limits!",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Hit 4 or more SCATTER symbols anywhere on the reels\n to trigger the FREE SPINS ROUND\nDuring the FREE SPINS FEATURE every tumble increases the win multiplier by 1x.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive multiplier/collection described in effects",
+        "effects": "This is the SCATTER symbol. It appears on all reels.\n Hit 4 or more SCATTER symbols anywhere on the reels\n to trigger the FREE SPINS ROUND\nDuring the FREE SPINS FEATURE every tumble increases the win multiplier by 1x. After every tumble the win of that\n tumble is multiplied by the current win multiplier.\n At the beginning of the FREE SPINS ROUND choose one out of 4 options:\n 4 SCATTERS 5 SCATTERS 6 SCATTERS\n15 free spins, starting multiplier 1x 19 free spins, starting multiplier 1x 23 free spins, starting multiplier 1x\n10 free spins, starting multiplier 5x 14 free spins, starting multiplier 5x 18 free spins, starting multiplier 5x\n5 free spins, starting multiplier 10x 9 free spins, starting multiplier 10x 13 free spins, starting multiplier 10x\n\n Random number of free spins, random starting multiplier.\n Hit 3 Scatter symbols during the FREE SPINS ROUNDS to trigger 5 more free spins. No limits!\n\n Special reels are in play during FREE SPINS feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "Hit 4 or more SCATTER symbols anywhere on the reels\n to trigger the FREE SPINS ROUND\nDuring the FREE SPINS FEATURE every tumble increases the win multiplier by 1x.",
+      "effects": "This is the SCATTER symbol. It appears on all reels.\n Hit 4 or more SCATTER symbols anywhere on the reels\n to trigger the FREE SPINS ROUND\nDuring the FREE SPINS FEATURE every tumble increases the win multiplier by 1x. After every tumble the win of that\n tumble is multiplied by the current win multiplier.\n At the beginning of the FREE SPINS ROUND choose one out of 4 options:\n 4 SCATTERS 5 SCATTERS 6 SCATTERS\n15 free spins, starting multiplier 1x 19 free spins, starting multiplier 1x 23 free spins, starting multiplier 1x\n10 free spins, starting multiplier 5x 14 free spins, starting multiplier 5x 18 free spins, starting multiplier 5x\n5 free spins, starting multiplier 10x 9 free spins, starting multiplier 10x 13 free spins, starting multiplier 10x\n\n Random number of free spins, random starting multiplier.\n Hit 3 Scatter symbols during the FREE SPINS ROUNDS to trigger 5 more free spins. No limits!\n\n Special reels are in play during FREE SPINS feature.",
+      "params": {}
+    },
+    {
+      "name": "Tumble Feature",
+      "trigger": null,
+      "effects": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\n disappear. The remaining symbols fall to the bottom of the screen and the empty positions are replaced with new\n symbols coming from above. New symbols are of the same size as the initial spin result, before tumbles.\n Tumbling will continue until no more winning combinations appear as a result of a tumble.\n All wins are added to the player's balance after all the tumbles resulted from a base spin have been played.",
+      "params": {}
+    },
+    {
+      "name": "Ante Bet",
+      "trigger": null,
+      "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game\n behaves differently. The possible values are:\n Bet multiplier 20x - Normal Play\n Bet multiplier 25x - The chance to win FREE SPINS naturally is doubled. More SCATTER\n symbols are present on the reels.\n The maximum win amount is limited to 20,000x bet. If the total win of a FREE SPINS ROUND reaches 20,000x the\n round immediately ends, win is awarded and all remaining free spins are forfeited",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.25,
+    "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game\n behaves differently. The possible values are:\n Bet multiplier 20x - Normal Play\n Bet multiplier 25x - The chance to win FREE SPINS naturally is doubled. More SCATTER\n symbols are present on the reels.\n The maximum win amount is limited to 20,000x bet. If the total win of a FREE SPINS ROUND reaches 20,000x the\n round immediately ends, win is awarded and all remaining free spins are forfeited",
+    "notes": "Inferred from official ante: 25x bet multiplier vs 20x normal (=1.25x total bet cost)"
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "maximum win amount is limited to 20,000x bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cdn.yesplay.bet/assets/documents/pragmatic-play-Christmas-Carol-Megaways-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Christmas-Carol-Megaways.pdf",
+      "extracted_at": "2026-09-27T05:06:38Z",
+      "quote_or_excerpt": "GAME RULES\n All symbols pay from left to right on adjacent reels starting from the leftmost reel\n\n 6 - 1000\n 6 - 100 6 - 50 6 - 40 6 - 30\n 5 - 500\n 5 - 50 5 - 20 5 - 16 5 - 12\n 4 - 200\n 4 - 40 4 - 10 4 - 10 4-8\n 3 - 40\n 3 - 20 3-6 3-6 3-4\n 2 - 20\n 6 - 30 6 - 30 6 - 20 6 - 20 6 - 20\n 5 - 12 5 - 12 5-8 5-8 5-8\n 4-8 4-8 4-4 4-4 4-4\n 3-4 3-4 3-2 3-2 3-2\n Ways to win\n\n This symbol is WILD and substitutes\n Wins awarded for left to right adjacent\n for all symbols except for . symbol combinations of any size.\n WILD symbol appears only on Reels 1 and 6 can have up to 7 symbols. Reels 2, 3, 4 and 5\n reels 2, 3, 4 and 5, on the top row. can have up to 8 symbols. The top row of reels 2 to 5 spins\n indep"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

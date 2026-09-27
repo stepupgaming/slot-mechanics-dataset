@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T05:05:30Z",
+  "identity": {
+    "provider": "Backseat Gaming",
+    "title": "Chicken Man",
+    "slug": "backseat-chicken-man",
+    "provider_game_id": "1659",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1659&channel=desktop&language=en&partner=demo&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1659/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD SYMBOL",
+        "behavior": "The Wild Symbol substitutes for all symbols in the paytable.\n\n When multiple wild symbols participate in the same win line their multipliers are added together.\n\n In the bonus games, Wild symbols are collected, leaving a highlighted tile on the grid with a starting multiplier of 2x. If a Wild is collected from an already highlighted tile, its multiplier doubles.\n\n In the PAYOUT SPIN, Wild symbols will inherit the multiplier of any highlighted tiles they land on.",
+        "params": {}
+      },
+      {
+        "name": "COLLECTION PHASE",
+        "behavior": "This bonus game starts with a collection phase where only non-paying and wild symbols can appear on the grid.\n\n The player starts with 3 lives and loses 1 life each time no wilds land. Landing at least 1 wild symbol refreshes the lives back to 3.\n\n Wilds are collected and the tiles they land on receive a 2x multiplier, which doubles each time a new wild lands on the same tile. The collection phase ends after 3 consecutive dead spins.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "EGGVENGER’S ASSEMBLE",
+        "behavior": "Trigger the EGGVENGER’S ASSEMBLE bonus game by landing 3 SAFE scatter symbols at the same time in the BASE GAME.",
+        "params": {}
+      },
+      {
+        "name": "SUPER EGGSPLOSION",
+        "behavior": "Trigger the SUPER EGGSPLOSION bonus game by landing 3 BANK scatter symbols at the same time in the BASE GAME.\n\n This bonus has the same mechanics as the EGGVENGER'S ASSEMBLE bonus, with one exception!\n\n The bonus starts with a super spin, where only non-paying or multiplier symbols can land. Every tile has a chance of receiving a starting multiplier of 2x, 3x, 4x, 5x or 10x.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "PAYOUT SPIN",
+        "behavior": "All available wilds appear on the grid randomly in the one and only free spin and receive the multiplier from the tile they land on.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD SYMBOL",
+      "trigger": null,
+      "effects": "The Wild Symbol substitutes for all symbols in the paytable.\n\n When multiple wild symbols participate in the same win line their multipliers are added together.\n\n In the bonus games, Wild symbols are collected, leaving a highlighted tile on the grid with a starting multiplier of 2x. If a Wild is collected from an already highlighted tile, its multiplier doubles.\n\n In the PAYOUT SPIN, Wild symbols will inherit the multiplier of any highlighted tiles they land on.",
+      "params": {}
+    },
+    {
+      "name": "EGGVENGER’S ASSEMBLE",
+      "trigger": null,
+      "effects": "Trigger the EGGVENGER’S ASSEMBLE bonus game by landing 3 SAFE scatter symbols at the same time in the BASE GAME.",
+      "params": {}
+    },
+    {
+      "name": "COLLECTION PHASE",
+      "trigger": null,
+      "effects": "This bonus game starts with a collection phase where only non-paying and wild symbols can appear on the grid.\n\n The player starts with 3 lives and loses 1 life each time no wilds land. Landing at least 1 wild symbol refreshes the lives back to 3.\n\n Wilds are collected and the tiles they land on receive a 2x multiplier, which doubles each time a new wild lands on the same tile. The collection phase ends after 3 consecutive dead spins.",
+      "params": {}
+    },
+    {
+      "name": "PAYOUT SPIN",
+      "trigger": null,
+      "effects": "All available wilds appear on the grid randomly in the one and only free spin and receive the multiplier from the tile they land on.",
+      "params": {}
+    },
+    {
+      "name": "SUPER EGGSPLOSION",
+      "trigger": null,
+      "effects": "Trigger the SUPER EGGSPLOSION bonus game by landing 3 BANK scatter symbols at the same time in the BASE GAME.\n\n This bonus has the same mechanics as the EGGVENGER'S ASSEMBLE bonus, with one exception!\n\n The bonus starts with a super spin, where only non-paying or multiplier symbols can land. Every tile has a chance of receiving a starting multiplier of 2x, 3x, 4x, 5x or 10x.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "mod_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum win in this game is 12,500x your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1659/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/backseat/pages/chicken-man/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T05:05:30Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Chicken Man is a 5-reel, 5-row paylines game. Its main feature is the collection phase where wilds are collected and tiles they land on are highlighted and receive a multiplier starting at 2x. After the collection phase is over, all collected wilds land in the one and only free spin and receive the multiplier of the tile they land on.\n\n The maximum win in this game is 12,500x your bet, and can be achieved in the bonus games.\n\n FEATURES\n\n WILD SYMBOL\n\n The Wild Symbol substitutes for all symbols in the paytable.\n\n When multiple wild symbols participate in the same win line thei"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}
