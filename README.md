@@ -79,8 +79,8 @@ Live counts are always in `dataset.json` → `by_provider` / `by_confidence` / `
 | **Hacksaw Gaming** | ~203 | Official `en-us-gameinfo.html` dumps (mostly high). |
 | **Backseat Gaming** | **35** (all high) | Independent studio on Hacksaw OpenRGS. Same `en-us-gameinfo.html` CDN path; `identity.provider` = **Backseat Gaming**, slug prefix `backseat-`. |
 | **Elk Studios** | 1 (1 high: Ryze from Game Description PDF) | Expand only with official Game Description PDFs. |
-| **Slotmill** | 58 (12 high with concrete bonus rules; 46 medium from official pages/sheets pending FS costs/triggers) | Product sheets + game pages; confidence capped when FS trigger/award unknown. |
-| **Nolimit City** | 7 (1 high gold Book of Shadows; 6 medium stubs) | Official sheets preferred; no new SlotCatalog stubs this turn. |
+| **Slotmill** | **61** (~57 high / ~4 medium) | Official slotmill.com/games pages (specs + marketing copy) + product sheets when linked. Schema 1.1 `base_game_loop`, Burst Mode / Fast Track / Xtra-Bet with official definitions. |
+| **Nolimit City** | 7 high gold (schema 1.1.0 + base_game_loop) | Upgraded all stubs from official GameSheets / CMS features; sheets under sources/nolimit/. |
 
 Priority while collecting: official rules/gameinfo first, SlotCatalog only to fill gaps without inventing mechanics.
 
@@ -110,6 +110,9 @@ python3 scripts/parse_hacksaw.py
 # Backseat Gaming (OpenRGS gameinfo under sources/backseat/pages/)
 python3 scripts/parse_backseat.py
 
+# Slotmill (fetches official game pages listed in sources/slotmill/game_urls.txt)
+python3 scripts/parse_slotmill.py
+
 # Pragmatic (requires PDFs under sources/pragmatic/pdfs/)
 python3 scripts/parse_pragmatic_pdfs.py
 ```
@@ -126,7 +129,7 @@ Mechanics text is transcribed/summarized from publicly available game info and r
 - Some Pragmatic rules PDFs are image-only (no text layer), e.g. Sweet Bonanza / The Dog House on common CDN mirrors; those titles stay SlotCatalog (medium) until OCR/official HTML is added.
 - Yesplay / kertn PDF catalogs are incomplete vs the full Pragmatic library; SlotCatalog fills the rest to the 250 target without inventing mechanics.
 - A few very new Backseat titles on BigWinBoard had no Hacksaw launcher/`gameid` yet (or used a non-Hacksaw demo host) → omitted until official `en-us-gameinfo.html` is available.
-- Nolimit official in-game help HTML is not yet bulk-mirrored; current Nolimit rows are medium/SlotCatalog.
+- Nolimit City: 7 gold records rebuilt from official affiliate GameSheets (fan-cdn) and CMS feature blurbs; GameSheet PDFs/txt under sources/nolimit/<slug>/.
 - Interactive demo Info pages sometimes need a real browser session (age gates / JS shells).
 
 

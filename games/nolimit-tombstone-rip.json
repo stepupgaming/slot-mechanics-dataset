@@ -1,174 +1,311 @@
 {
-  "schema_version": "1.0.0",
-  "updated_at": "2026-09-27T04:44:50Z",
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:35:38Z",
   "identity": {
     "provider": "Nolimit City",
-    "title": "Tombstone RIP",
+    "title": "Tombstone R.I.P",
     "slug": "nolimit-tombstone-rip",
-    "provider_game_id": null,
+    "provider_game_id": "TombstoneRip",
     "release_year": 2022,
-    "demo_url": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TombstoneRip",
     "slotcatalog_url": "https://slotcatalog.com/en/slots/Tombstone-RIP",
-    "official_info_url": null
+    "official_info_url": "https://nolimitcity.com/games/tombstone-rip"
   },
   "grid": {
-    "rows": 3,
-    "cols": 2,
-    "rows_min": null,
-    "rows_max": null,
-    "layout_notes": "SlotCatalog Layout 2-3"
+    "rows": null,
+    "cols": 5,
+    "rows_min": 1,
+    "rows_max": 3,
+    "layout_notes": "Official sheet layout code 23331 = reel heights 2-3-3-3-1. Last reel is 1 high base but xSplit Wild counts as 2 symbols high, yielding 108 ways (2×3×3×3×2)."
   },
   "win_system": {
     "type": "ways",
     "payline_count": null,
     "ways_count": 108,
     "min_symbols_for_win": null,
-    "direction": null,
-    "notes": "SlotCatalog betways: 108"
+    "direction": "left_to_right",
+    "notes": "108 ways from 2-3-3-3-1 layout with dual-high xSplit on reel 5. Wild multipliers from xNudge/xSplit apply to line/ways wins."
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "respins": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "expanding_reels": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
-    "other": []
+    "other": [
+      {
+        "name": "xNudge Wild",
+        "how_it_works": "Stacked Wild always nudges until fully visible; each nudge step increases the Wild multiplier."
+      },
+      {
+        "name": "xSplit Wild",
+        "how_it_works": "Appears only on the last reel, counts as 2 symbols high, and splits symbols to the left in half."
+      },
+      {
+        "name": "xRIP",
+        "how_it_works": "If total win for the spin is less than the base stake, payout is zeroed (no payout)."
+      }
+    ]
   },
   "symbols": {
-    "wilds": [],
-    "scatters": [],
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "Stacked Wild nudges fully into view; each nudge increases Wild multiplier. Multipliers from multiple Wild types increase the bonus-mode win multiplier and remain for the entire bonus round.",
+        "params": {}
+      },
+      {
+        "name": "xSplit Wild",
+        "behavior": "Only on last reel; 2 symbols high; cuts symbols to the left in half (splits them).",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Hang 'Em High Scatter",
+        "behavior": "3 Hang 'Em High Scatters trigger 8 Hang 'Em High Freespins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      },
+      {
+        "name": "Boothill Scatter",
+        "behavior": "3 Hang 'Em High Scatters plus a Boothill Scatter trigger 10 Boothill Freespins.",
+        "params": {}
+      }
+    ],
     "multipliers": [],
     "collectors": [],
-    "specials": []
+    "specials": [
+      {
+        "name": "Cowboy (Boothill)",
+        "behavior": "During Boothill Freespins only Cowboy symbols land on the last reel; matching symbols elsewhere transform to Wilds. Each spin a random Cowboy gets a 5x–999x multiplier.",
+        "params": {
+          "multiplier_values_mentioned": [
+            5,
+            999
+          ]
+        }
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on a 2-3-3-3-1 ways grid. xNudge Wilds nudge fully into view adding multiplier per step; xSplit Wild on reel 5 can split symbols leftward. After wins are evaluated, xRIP voids any total win below the base stake. Enhanced Bet (+10%) guarantees a Scatter. Optional Nolimit Bonus buy enters Hang 'Em High or Boothill free spins.",
+    "phases": [
+      {
+        "name": "Stake / Enhanced Bet",
+        "order": 1,
+        "what_happens": "Player sets base stake. Optional Enhanced Bet increases stake by 10% and guarantees a Scatter on the spin.",
+        "ends_when": "Bet confirmed",
+        "state_changes": "If Enhanced Bet on, stake *= 1.10 and Scatter guaranteed"
+      },
+      {
+        "name": "Spin reels",
+        "order": 2,
+        "what_happens": "Reels stop on 2-3-3-3-1 layout. Stacked xNudge Wilds nudge until fully visible, increasing Wild multiplier each step. xSplit Wild may land on reel 5 (2 high) and split symbols to the left.",
+        "ends_when": "All nudges/splits resolved",
+        "state_changes": "Wild multipliers applied to affected wins"
+      },
+      {
+        "name": "Evaluate ways wins",
+        "order": 3,
+        "what_happens": "Award ways wins left-to-right across up to 108 ways, applying Wild multipliers.",
+        "ends_when": "Wins totaled",
+        "state_changes": null
+      },
+      {
+        "name": "xRIP check",
+        "order": 4,
+        "what_happens": "If total win < base stake, xRIP sets payout to zero.",
+        "ends_when": "Payout finalized or zeroed",
+        "state_changes": "Possible void of sub-stake wins"
+      },
+      {
+        "name": "Bonus check",
+        "order": 5,
+        "what_happens": "3 Hang 'Em High Scatters → 8 Hang 'Em High Freespins. 3 Scatters + Boothill Scatter → 10 Boothill Freespins.",
+        "ends_when": "Bonus entered or spin ends",
+        "state_changes": "Enter chosen free-spin mode if triggered"
+      }
+    ],
+    "win_evaluation": "Ways wins evaluated after nudges/splits; then xRIP may void the spin if total win is below base stake.",
+    "notes": "Official affiliate game sheet + CMS feature blurbs on nolimitcity.com/games/tombstone-rip."
   },
   "bonus_free_spins": {
-    "modes": [],
-    "notes": "SlotCatalog secondary source only"
+    "modes": [
+      {
+        "name": "Hang 'Em High Freespins",
+        "trigger": "Land 3 Hang 'Em High Scatter symbols.",
+        "spins_awarded": "8 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Win multiplier increased by all Wild symbol types remains for the entire bonus round.",
+        "progressive_state": "Bonus win multiplier accumulates from Wild types and persists across the 8 spins.",
+        "end_condition": "All awarded free spins completed (or max win El Gordo's Revenge 300,000x reached).",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 8 Hang 'Em High free spins; initialize persistent bonus win multiplier from Wild contributions."
+          },
+          {
+            "name": "Free spin",
+            "order": 2,
+            "what_happens": "Each spin plays with xNudge/xSplit Wilds; Wild types increase the persistent bonus win multiplier."
+          },
+          {
+            "name": "End",
+            "order": 3,
+            "what_happens": "After spins exhausted, return to base; cap at 300,000x base bet."
+          }
+        ],
+        "effects": "8 free spins. Wild symbol types increase a win multiplier that remains for the entire bonus round."
+      },
+      {
+        "name": "Boothill Freespins",
+        "trigger": "Land 3 Hang 'Em High Scatters plus a Boothill Scatter.",
+        "spins_awarded": "10 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "All 10 spins completed or 300,000x max win reached.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 10 Boothill free spins."
+          },
+          {
+            "name": "Cowboy reel + transform",
+            "order": 2,
+            "what_happens": "Only Cowboy symbols land on the last reel; matching symbols elsewhere transform into Wilds. Each spin a random Cowboy receives a 5x–999x multiplier."
+          },
+          {
+            "name": "End",
+            "order": 3,
+            "what_happens": "Return to base after spins or max-win cap."
+          }
+        ],
+        "effects": "10 spins. Last reel Cowboy-only; matching symbols become Wilds; random Cowboy multiplier 5x–999x each spin."
+      }
+    ],
+    "notes": "Exact retrigger rules for extra scatters during Hang 'Em High / Boothill not stated on the affiliate sheet."
   },
   "features": [
     {
-      "name": "Bonus Bet",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
+      "name": "Enhanced Bet",
+      "trigger": "Player enables Enhanced Bet",
+      "when": "before_spin",
+      "cost_multiplier": 1.1,
+      "cost_text": "+10% stake",
+      "effects": "Guarantees a Scatter symbol on the spin. RTP with Enhanced Bet: 96.28% / 94.25% (DX1).",
       "params": {}
     },
     {
-      "name": "Buy Feature",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
+      "name": "xNudge Wilds",
+      "trigger": "Stacked Wild lands partially in view",
+      "when": "during_spin",
+      "effects": "Always nudges fully visible; each nudge increases Wild multiplier.",
       "params": {}
     },
     {
-      "name": "Free Spins",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
+      "name": "xSplit Wilds",
+      "trigger": "xSplit Wild lands on last reel",
+      "when": "during_spin",
+      "effects": "Counts as 2 symbols high; cuts symbols to the left in half.",
       "params": {}
     },
     {
-      "name": "Free Spins Multiplier",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
+      "name": "xRIP",
+      "trigger": "Total win < base stake",
+      "when": "after_win_evaluation",
+      "effects": "No payout for that spin.",
       "params": {}
     },
     {
-      "name": "Multiplier",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
+      "name": "El Gordo's Revenge",
+      "trigger": "Total win reaches cap",
+      "effects": "Max payout 300,000× base bet; round ends at cap.",
+      "params": {
+        "max_win_multiplier": 300000
+      }
     },
     {
-      "name": "Nudge Feature",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Random multiplier",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "RTP range",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Scatter symbols",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Splitting Symbols",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Wild",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "xNudge",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
+      "name": "Nolimit Bonus (Feature Buy)",
+      "trigger": "Player buys bonus",
+      "when": "base_game",
+      "cost_text": "70× to 3000× base bet depending on bonus",
+      "effects": "Buy directly into Hang 'Em High or Boothill (and variants). May be removed in some regulated markets.",
+      "params": {
+        "cost_range_min": 70,
+        "cost_range_max": 3000
+      }
     }
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": null
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "70×–3000× base bet (range across bonus options)",
+        "effects": "Buy straight into one of the different bonus features.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet gives cost range only, not per-mode prices. Feature may be removed in some regulated markets."
   },
   "ante_bet": {
-    "available": null,
-    "cost_multiplier": null,
-    "effects": null,
-    "notes": null
+    "available": true,
+    "cost_multiplier": 1.1,
+    "effects": "Enhanced Bet: +10% stake, guaranteed Scatter. Max bet w. xBet 55 EUR (vs 50 EUR).",
+    "notes": "NLC names this Enhanced Bet / xBet rather than classic ante."
   },
   "numeric_limits": {
     "max_win_multiplier": 300000.0,
-    "max_win_notes": "SlotCatalog x300000.00",
-    "rtp_percent": 94.08,
-    "rtp_notes": "SlotCatalog 94.08%",
-    "hit_frequency_notes": null
+    "max_win_notes": "El Gordo's Revenge — 300,000× base bet (~1 in 130M rounds per sheet)",
+    "rtp_percent": 96.08,
+    "rtp_notes": "Dual RTP 96.08% / 94.08% (DX1). With Enhanced Bet: 96.28% / 94.25% (DX1). Main game RTP 55.99%, free spins 40.08%.",
+    "hit_frequency_notes": "Hit frequency 9.08%; free spins 1 in 194 spins; win 100× 1 in 1014 spins."
   },
   "confidence": {
-    "overall": "medium",
-    "grid": "medium",
-    "win_system": "medium",
-    "reel_behavior": "low",
-    "symbols": "low",
-    "bonus_free_spins": "low",
-    "features": "medium",
-    "feature_buy": "low",
-    "numeric_limits": "medium"
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
   },
   "evidence": [
     {
-      "source_type": "slotcatalog",
-      "url": "https://slotcatalog.com/en/slots/Tombstone-RIP",
-      "local_path": "sources/slotcatalog/Tombstone-RIP.html",
-      "extracted_at": "2026-09-27T04:44:50Z",
-      "quote_or_excerpt": "CASHlib POLi WebMoney Siru Mobile ClickandBuy BLIK Amex Sticpay Klarna Nordea Pay by Mobile PostePay UPI Volt Click2pay Discover Instant Bank Transfer JCB Perfect Money Boku Monero eKonto eCheck Entercash PugglePay Wire Transfer Bancontact Swedbank Teleingreso Brite NetBanking GCash Maya Pay by SMS Casinos Aircash PhonePe MPesa Credit Card DANA Upaycard GrabPay Touch 'n Go QRIS MODO DuitNow UnionPay Bkash ShopeePay Amazon Pay ecoVoucher Wise Telebirr Pay N Play GoPay Inpay TrueMoney Stripe PayU PayForIt ePay Flykk Paytrail VIP Preferred PassimPay Match2Pay Venus Point Ozow Opay UseMyFunds BCA Noda Pay PayNearMe Lottomaticard Directa24 Help2Pay Quickpay Rapipago DEBIN Naranja Mobiamo Pago Fác"
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Tombstone_RIP_300000_fdd1e5157c.pdf",
+      "local_path": "sources/nolimit/tombstone-rip/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                   Enhanced Bet\n                                                                   xNudge Wilds\n                                                           23331   Splitting Wilds\n                                                                   xRip\n                                                                   Hang ‘em high\n                                                                   Boothill Freespins\n\n\n\n\nTOMBSTONE RIP\nSomeone needs to put these outlaws down\nbecause they are out of control. We’ll take\njustice into our own hands in Tombstone\nR.I.P. and hit ‘em where it hurts. The lowlifes\nand gunslingers have no idea what’s coming,\nbut it’ll be a slow and agonizing death.\nTombstone RIP is available with dual RTP setup at 96.08%\nand 94.08% (DX1). With the Enhanced Bet enabled, the\nRTP setup is 96.28% and 94.25% (DX1)\n\fGAME SHEET\n\n\nGame Features\nEnhanced Bet\nBy increasing the basic stake by 10%, you may chase the\ngallows with a guaranteed Scatter symbol. Harsh, but\nhigher reward.\n\nxNudge Wilds\nMake sure to hang on - a stacked Wild symbol will always\nnudge to be fully visible with each nudge inc"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tombstone-rip",
+      "local_path": "sources/nolimit/tombstone-rip/cms_features.txt",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "## Enhanced Bet\nBy increasing the basic stake by 10%, you may chase the gallows with a guaranteed Scatter symbol. Harsh, but higher reward.\n\n## xNudge Wilds\nMake sure to hang on - a stacked Wild symbol will always nudge to be fully visible with each nudge increasing the Wild multiplier.\n\n## xSplit Wilds\nTake cover, xSplit Wild only appears on the last reel and counts as 2 symbols high. When landing it will cut symbols to the left in half.\n\n## xRIP\nThe dead aren’t mourned here; xRIP is triggered by any spin if the total win is less than the base stake, then there is no payout...\n\n## Hang ‘em High Freespins\nThird times the charm - Landing three Hang ‘Em High Scatter symbols will activate 8 Hang ‘Em High Freespins. The win multiplier in the bonus mode will be increased by all Wild symbol types and it will remain for the entire bonus round.\n\n## Boothill Freespins\nHold your horses! This is were things go batshit crazy. Land 3 Scatters plus a Boothill Scatter to trigger 10 spins. Only Cowboy symbols lands on the last reel, but it’ll transform the other of the same symbol to Wilds. It’s time to let them hang and burn in hell - so let’s add a multiplier, from 5x-999x, on a random Cowboy fo"
     }
   ],
   "unknowns": [
-    "official rules text not retrieved",
-    "symbol behaviors",
-    "exact free spins triggers",
-    "feature buy costs"
+    "exact per-option Nolimit Bonus buy prices within 70×–3000× range",
+    "retrigger rules if extra Hang 'Em High / Boothill scatters land during free spins",
+    "exact min symbols for a ways win (typical NLC left-to-right ways assumed)"
   ],
   "thumbnail": "thumbs/nolimit-tombstone-rip.webp",
   "thumbnail_attribution": "SlotCatalog"

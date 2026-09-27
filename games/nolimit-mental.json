@@ -1,22 +1,22 @@
 {
-  "schema_version": "1.0.0",
-  "updated_at": "2026-09-27T04:44:19Z",
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:35:38Z",
   "identity": {
     "provider": "Nolimit City",
     "title": "Mental",
     "slug": "nolimit-mental",
-    "provider_game_id": null,
+    "provider_game_id": "Mental",
     "release_year": 2021,
-    "demo_url": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Mental",
     "slotcatalog_url": "https://slotcatalog.com/en/slots/Mental",
-    "official_info_url": null
+    "official_info_url": "https://nolimitcity.com/games/mental"
   },
   "grid": {
-    "rows": 2,
-    "cols": 3,
-    "rows_min": null,
-    "rows_max": null,
-    "layout_notes": "SlotCatalog Layout: 3-2"
+    "rows": null,
+    "cols": 5,
+    "rows_min": 2,
+    "rows_max": 3,
+    "layout_notes": "Official sheet layout 32323 = reel heights 3-2-3-2-3 (108 ways: 3×2×3×2×3). Fire Frames can split symbols into two parts on 1–13 random positions."
   },
   "win_system": {
     "type": "ways",
@@ -24,167 +24,286 @@
     "ways_count": 108,
     "min_symbols_for_win": null,
     "direction": "left_to_right",
-    "notes": "SlotCatalog betways: 108 [ i ]"
+    "notes": "xWays / Fire Frame splits increase ways. Enhancer Cells can add xWays, xNudge, xSplit when 4 or 6 fire frames appear."
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
-      "present": true,
-      "how_it_works": "Cascading/tumble tagged on SlotCatalog"
+      "present": false,
+      "how_it_works": null
     },
     "respins": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "expanding_reels": {
-      "present": null,
-      "how_it_works": null
+      "present": true,
+      "how_it_works": "Fire Frames split a symbol into two parts (1–13 random positions). xWays via Enhancer Cells expands ways."
     },
-    "other": []
+    "other": [
+      {
+        "name": "Fire Frames",
+        "how_it_works": "1–13 random positions split a symbol into two parts."
+      },
+      {
+        "name": "Enhancer Cells",
+        "how_it_works": "When 4 or 6 fire frames appear, enhancer boosts can include xWays, xNudge, xSplit and other boosters."
+      },
+      {
+        "name": "Mental Transform",
+        "how_it_works": "Spider symbol landing transforms symbols on the reels."
+      }
+    ]
   },
   "symbols": {
     "wilds": [],
-    "scatters": [],
-    "multipliers": [],
+    "scatters": [
+      {
+        "name": "Scorpion",
+        "behavior": "3 Scorpions activate Autopsy Freespins (sticky Fire Frames). Combined with Spider(s) upgrades bonus tier.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      },
+      {
+        "name": "Spider",
+        "behavior": "Triggers Mental Transform when landing. 3 Scorpions + 1 Spider → Lobotomy Freespins. 3 Scorpions + 2 Spiders → Mental Freespins. Sticky in Lobotomy/Mental modes.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Dead Patient / Dead Multiplier",
+        "behavior": "Two Dead Patient symbols can award a random multiplier x5–x9999 on a patient symbol. In Lobotomy, Dead Multiplier transfers to a Patient symbol; in Mental Freespins it never decreases.",
+        "params": {
+          "multiplier_values_mentioned": [
+            5,
+            9999
+          ]
+        }
+      }
+    ],
     "collectors": [],
-    "specials": []
+    "specials": [
+      {
+        "name": "Patient symbols",
+        "behavior": "Receive Dead Multiplier transfers for large wins during Lobotomy/Mental free spins.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on 3-2-3-2-3 ways grid. Fire Frames may split symbols; landing two Dead Patients can roll x5–x9999; Spider triggers Mental Transform; Enhancer Cells fire when 4 or 6 frames appear. 3 Scorpions start Autopsy free spins, upgradable with Spiders to Lobotomy or Mental.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Reels stop on 3-2-3-2-3. Random Fire Frames (1–13) may split symbols into two parts.",
+        "ends_when": "Frames applied",
+        "state_changes": "Ways may increase from splits"
+      },
+      {
+        "name": "Enhancers / transform",
+        "order": 2,
+        "what_happens": "If 4 or 6 Fire Frames appear, Enhancer Cells may add xWays/xNudge/xSplit/boosters. Spider landing triggers Mental Transform.",
+        "ends_when": "Enhancers resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Dead Patient check",
+        "order": 3,
+        "what_happens": "If two Dead Patient symbols land, roll random multiplier x5–x9999 onto a patient symbol.",
+        "ends_when": "Multiplier applied or skipped",
+        "state_changes": null
+      },
+      {
+        "name": "Evaluate ways wins",
+        "order": 4,
+        "what_happens": "Pay left-to-right ways wins on the resulting grid.",
+        "ends_when": "Wins paid",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus trigger",
+        "order": 5,
+        "what_happens": "3 Scorpions → Autopsy (sticky Fire Frames). 3 Scorpions + 1 Spider → Lobotomy. 3 Scorpions + 2 Spiders → Mental Freespins.",
+        "ends_when": "Bonus entered or spin ends",
+        "state_changes": "Enter bonus tier"
+      }
+    ],
+    "win_evaluation": "After Fire Frames, enhancers, and transforms resolve, ways wins are paid; then scatter counts select bonus tier.",
+    "notes": "Exact free-spin counts per Autopsy/Lobotomy/Mental mode are not printed on the affiliate sheet."
   },
   "bonus_free_spins": {
     "modes": [
       {
-        "name": "Free Spins",
-        "trigger": null,
+        "name": "Autopsy Freespins",
+        "trigger": "3 Scorpion symbols.",
+        "spins_awarded": null,
+        "retrigger": "May be upgraded to Lobotomy or Mental Freespins (upgrade path stated; exact extra-spin counts unknown).",
+        "sticky_or_persistent_state": "Sticky Fire Frames for the bonus mode.",
+        "progressive_state": null,
+        "end_condition": "Bonus spins complete, upgrade consumes the mode, or 66,666× max win ends the round.",
+        "phases": [
+          {
+            "name": "Enter Autopsy",
+            "order": 1,
+            "what_happens": "Start bonus with sticky Fire Frames."
+          },
+          {
+            "name": "Play / possible upgrade",
+            "order": 2,
+            "what_happens": "Spins with sticky frames; may upgrade to Lobotomy or Mental if upgrade conditions met."
+          }
+        ],
+        "effects": "Bonus mode with sticky Fire Frames. Upgradeable to Lobotomy or Mental."
+      },
+      {
+        "name": "Lobotomy Freespins",
+        "trigger": "3 Scorpions plus a Spider symbol.",
+        "spins_awarded": null,
+        "retrigger": "May be upgraded to Mental Freespins.",
+        "sticky_or_persistent_state": "Spider symbol is sticky and awards Mental Transform each spin.",
+        "progressive_state": "Dead Multiplier transfers to a Patient symbol for large wins.",
+        "end_condition": "Spins complete, upgrade to Mental, or max-win cap.",
+        "phases": [
+          {
+            "name": "Enter Lobotomy",
+            "order": 1,
+            "what_happens": "Sticky Spider; Mental Transform each spin; Dead Multiplier transfer to Patient."
+          }
+        ],
+        "effects": "Upgraded Autopsy: sticky Spider + Mental Transform each spin + Dead Multiplier to Patient."
+      },
+      {
+        "name": "Mental Freespins",
+        "trigger": "3 Scorpion symbols and 2 Spider symbols.",
         "spins_awarded": null,
         "retrigger": null,
-        "sticky_or_persistent_state": null,
-        "progressive_state": null,
-        "effects": "Free Spins tagged on SlotCatalog; exact rules not taken from official paytable in this record."
+        "sticky_or_persistent_state": "Spider symbols sticky.",
+        "progressive_state": "Dead Multiplier never decreases.",
+        "end_condition": "Spins complete or 66,666× max win (This is mental!!!) ends the round.",
+        "phases": [
+          {
+            "name": "Enter Mental",
+            "order": 1,
+            "what_happens": "Sticky Spiders; Dead Multiplier never decreases."
+          }
+        ],
+        "effects": "Top tier: sticky Spiders; Dead Multiplier never decreases."
       }
     ],
-    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+    "notes": "Affiliate sheet does not state exact free-spin counts for Autopsy/Lobotomy/Mental — left null rather than invented."
   },
   "features": [
     {
-      "name": "Additional Free Spins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Fire Frames",
+      "trigger": "Random on spin",
+      "when": "during_spin",
+      "effects": "1–13 random positions split a symbol into two parts.",
       "params": {}
     },
     {
-      "name": "Buy Feature",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Dead Patient",
+      "trigger": "Land two Dead Patient symbols",
+      "when": "during_spin",
+      "effects": "Chance at random multiplier x5–x9999 on a patient symbol.",
+      "params": {
+        "multiplier_min": 5,
+        "multiplier_max": 9999
+      }
+    },
+    {
+      "name": "Enhancer Cells",
+      "trigger": "4 or 6 fire frames appear",
+      "when": "during_spin",
+      "effects": "Boost with xWays, xNudge, xSplit and other boosters.",
       "params": {}
     },
     {
-      "name": "Free Spins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Mental Transform",
+      "trigger": "Spider lands",
+      "when": "during_spin",
+      "effects": "Symbol transform feature on the reels.",
       "params": {}
     },
     {
-      "name": "Free Spins Multiplier",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
+      "name": "This is mental!!! (max win)",
+      "trigger": "Total win hits cap",
+      "effects": "Max payout 66,666× base bet; game round ends.",
+      "params": {
+        "max_win_multiplier": 66666
+      }
     },
     {
-      "name": "Multiplier",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Nudge Feature",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Random multiplier",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "RTP range",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Scatter symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Splitting Symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Symbol Swap",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Wild",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "xWays",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
+      "name": "Nolimit Bonus (Feature Buy)",
+      "trigger": "Player buys bonus",
+      "when": "base_game",
+      "cost_text": "80× to 1000× base bet",
+      "effects": "Buy into one of the different bonus features. May be removed in some regulated markets.",
+      "params": {
+        "cost_range_min": 80,
+        "cost_range_max": 1000
+      }
     }
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Buy Feature tagged on SlotCatalog; cost multiplier unknown without official rules."
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "80×–1000× base bet (range)",
+        "effects": "Buy straight into Autopsy / Lobotomy / Mental (or variants).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Per-mode prices within range not listed on sheet."
   },
   "ante_bet": {
     "available": false,
     "cost_multiplier": null,
     "effects": null,
-    "notes": null
+    "notes": "No Enhanced Bet / ante described on Mental game sheet."
   },
   "numeric_limits": {
     "max_win_multiplier": 66666.0,
-    "max_win_notes": "SlotCatalog Max Win tag: x66666.00",
-    "rtp_percent": 96.09,
-    "rtp_notes": "SlotCatalog RTP tag: 96.09% (may be one of several operator configs)",
-    "hit_frequency_notes": null
+    "max_win_notes": "66,666× base bet (~1 in 18M spins per sheet)",
+    "rtp_percent": 96.08,
+    "rtp_notes": "Dual RTP 96.08% / 94.20% (DX1). Main 58.16%, free spins 37.93%.",
+    "hit_frequency_notes": "Hit frequency 34.19%; free spins 1 in 216; win 100× 1 in 831."
   },
   "confidence": {
-    "overall": "medium",
-    "grid": "medium",
-    "win_system": "medium",
-    "reel_behavior": "low",
-    "symbols": "low",
-    "bonus_free_spins": "low",
-    "features": "medium",
-    "feature_buy": "low",
-    "numeric_limits": "medium"
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
   },
   "evidence": [
     {
-      "source_type": "slotcatalog",
-      "url": "https://slotcatalog.com/en/slots/Mental",
-      "local_path": "sources/slotcatalog/Mental.html",
-      "extracted_at": "2026-09-27T04:44:19Z",
-      "quote_or_excerpt": "Free Spins Free Spins No Wagering 5 Free Spins 10 Free Spins 20 Free Spins 30 Free Spins 50 Free Spins 100 Free Spins 150 Free Spins 200 Free Spins Casino Best Online Casinos New Online Casinos Mobile Online Casinos High Roller Casinos Bitcoin / Crypto Casinos Best Payout Online Casinos Real Money Casinos Fast Withdrawal Casinos Live Casino Online Real Money Live Casinos Casino RTP Scam casinos Safe Online Casinos Blackjack Casinos Sweepstakes Casinos $1 Minimum Deposit Casinos Best VPN-Friendly"
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Mental_67_75bf3cd416.pdf",
+      "local_path": "sources/nolimit/mental/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                       Autopsy, Mental &\n                                                               32323   Lobotomy Spins\n                                                                       Mental Transform\n                                                                       xWays & xNudge\n\n\n\n\nMENTAL\nIt is mental, truly mental. Located in a\nmental institute, in a part of the country\nwhere no-one except nurses and doctors\nreally dare to visit....\nxWays, xNudge, Dead Patients - the madness never really\nends with this sepia toned master piece. Join Patient-1 to 5\nin this sinister asylum in search of an epiphany and a clear\nmind...\n\nNolimit City is taking it a bit further with the sinister\nthemes and bulking it up with a big load of features - like\nEnhancer reels and potent fire frames.\n\nMental is available with dual RTP setup at 96.08% and\n94.20% (DX1).\n\fGAME SHEET\n\n\n\n\nGame Features\nFire Frames\n1-13 random positions on the reels that will split a symbol\ninto two parts.\n\nDead Patient\nWhenever you land two Dead Patient symbols you’ve got\nthe chance to win a massive random multiplier - ranging\nfrom x5 to x9999 on a "
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/mental",
+      "local_path": "sources/nolimit/mental/cms_features.txt",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "## Dead Patient\nWhenever you land two Dead Patient symbols you’ve got\\nthe chance to win a massive random multiplier - ranging\\nfrom x5 to x9999 on a patient symbol.\n\n## Enhancer Cells\nBoost the chance of wins whenever 4 or 6 fire frames\\nappears. xWays, xNudge, xSplit along with other boosters.\n\n## Mental Transform\nSymbol transform feature whenever the Spider symbol\\nlands on the reels.\n\n## Autopsy Freespins\nActivated by 3 Scorpion symbols and will trigger a bonus\\nmode with sticky Fire Frames. May be upgraded to\\nLobotoy or Mental Freespins.\n\n## Lobotomy Freespins\nActivated by 3 Scorpions plus a Spider symbol. An\\nupgraded version of Autopsy, where the Spider symbol is\\nsticky and award Mental Transform for each spin. Included\\nDead Multiplier that is transferred to a Patient symbol to\\ntrigger some immense wins. May be upgraded to Mental\\nFreespins.\n\n## !!!This is mental!!!\nMax payout of the game is set to 66.666x times the base\\nbet. Trigger this, and the game round will end.\n\n## Mental Freespins\nThis is where things go really mental. Triggered by 3\\nScorpion symbols and 2 spider symbols. Spider symbols\\nare sticky and Dead Multiplier never decrease.\n\n## Nolimit Bonus - Feature"
     }
   ],
   "unknowns": [
-    "symbols detailed behaviors",
-    "bonus_free_spins trigger exact counts unless present in excerpt",
-    "feature_buy.cost_multiplier",
-    "numeric_limits only from SlotCatalog tags not official PDF"
+    "exact spins_awarded for Autopsy / Lobotomy / Mental free-spin modes",
+    "exact upgrade mechanics from Autopsy→Lobotomy→Mental mid-bonus",
+    "per-mode feature buy prices within 80×–1000×"
   ],
   "thumbnail": "thumbs/nolimit-mental.webp",
   "thumbnail_attribution": "SlotCatalog"

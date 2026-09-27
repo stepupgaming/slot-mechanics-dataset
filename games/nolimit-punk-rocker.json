@@ -1,22 +1,22 @@
 {
-  "schema_version": "1.0.0",
-  "updated_at": "2026-09-27T04:44:19Z",
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:35:38Z",
   "identity": {
     "provider": "Nolimit City",
-    "title": "Punk Rocker",
+    "title": "Punk Rocker xWays",
     "slug": "nolimit-punk-rocker",
-    "provider_game_id": null,
-    "release_year": 2020,
-    "demo_url": null,
+    "provider_game_id": "PunkRocker",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/PunkRocker",
     "slotcatalog_url": "https://slotcatalog.com/en/slots/Punk-Rocker",
-    "official_info_url": null
+    "official_info_url": "https://nolimitcity.com/games/punk-rocker"
   },
   "grid": {
-    "rows": 6,
-    "cols": 6,
-    "rows_min": null,
-    "rows_max": null,
-    "layout_notes": "SlotCatalog Layout: 6-6"
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 6,
+    "layout_notes": "Sheet lists 6x3 branding; base starts at 243 ways on a ways grid that can expand up to 6 symbols high via xWays (up to 46,656 ways in bonus). Riot Respin / free spins unlock a 6th reel."
   },
   "win_system": {
     "type": "ways",
@@ -24,134 +24,200 @@
     "ways_count": 243,
     "min_symbols_for_win": null,
     "direction": "left_to_right",
-    "notes": "SlotCatalog betways: 243 [ i ]"
+    "notes": "Starts at 243 win ways; may expand up to 46,656 ways during bonus features. Riot Respin unlocks 6th reel for at least 729 ways. Civil War starts on minimum 729 ways."
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "respins": {
       "present": true,
-      "how_it_works": null
+      "how_it_works": "Riot Respin: triggered by 2 scatters; locked Molotov Wilds; unlocks 6th reel for at least 729 win ways."
     },
     "expanding_reels": {
-      "present": null,
-      "how_it_works": null
+      "present": true,
+      "how_it_works": "xWays mystery symbol holds 2–4 symbols and expands reels up to 6 high (punk characters may super-expand up to 20 high). In free spins xWays always expand to 4 high. 6th reel unlocks in Riot Respin and Anarchy/Civil War free spins."
     },
-    "other": []
+    "other": [
+      {
+        "name": "Molotov Wilds",
+        "how_it_works": "Wilds substitute for any symbol except scatter; expand upwards on the reels."
+      },
+      {
+        "name": "Jumping Wilds (bonus)",
+        "how_it_works": "In Anarchy/Civil War free spins, scatters become Jumping Wilds; may be enhanced by subway train above the reel set."
+      }
+    ]
   },
   "symbols": {
-    "wilds": [],
-    "scatters": [],
+    "wilds": [
+      {
+        "name": "Molotov Wild",
+        "behavior": "Substitutes for any symbol except scatter; expands upwards. Locked during Riot Respin.",
+        "params": {}
+      },
+      {
+        "name": "Jumping Wild",
+        "behavior": "During Anarchy (3 scatters) and Civil War (4 scatters) free spins, scatters become Jumping Wilds for the bonus round.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "2 scatters → Riot Respin. 3 scatters → 8 Anarchy Freespins. 4 scatters → 8 Civil War Freespins.",
+        "params": {}
+      }
+    ],
     "multipliers": [],
     "collectors": [],
-    "specials": []
+    "specials": [
+      {
+        "name": "xWays Mystery Symbol",
+        "behavior": "Holds 2–4 symbols; expands reels up to 6 high. Punk characters may super-expand up to 20 symbols high. In free spins xWays always expand to 4 high.",
+        "params": {
+          "expand_height_base": [
+            2,
+            3,
+            4
+          ],
+          "expand_height_max_character": 20
+        }
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on a ways grid starting at 243 ways. xWays may expand reel heights; Molotov Wilds expand upward. 2 scatters trigger Riot Respin (locked Molotovs + 6th reel). 3 scatters award 8 Anarchy Freespins; 4 scatters award 8 Civil War Freespins. Optional Nolimit Bonus buy into free spins.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Reels stop. xWays mystery symbols expand (2–4 high, characters up to 20). Molotov Wilds may expand upward.",
+        "ends_when": "Expansions resolved",
+        "state_changes": "Ways count may increase"
+      },
+      {
+        "name": "Evaluate ways wins",
+        "order": 2,
+        "what_happens": "Pay left-to-right ways wins on the resulting grid (base 243 ways).",
+        "ends_when": "Wins paid",
+        "state_changes": null
+      },
+      {
+        "name": "Feature check",
+        "order": 3,
+        "what_happens": "2 scatters → Riot Respin with locked Molotov Wilds and unlocked 6th reel (≥729 ways). 3 scatters → Anarchy FS. 4 scatters → Civil War FS.",
+        "ends_when": "Feature entered or spin ends",
+        "state_changes": "Enter respin or free spins"
+      }
+    ],
+    "win_evaluation": "Ways wins after xWays/Molotov expansions; Riot Respin and free spins re-evaluate on expanded reel sets.",
+    "notes": "Sheet math block shows Total RTP 96.01% while intro quotes 96.11%/94.18% dual setup — both preserved in rtp_notes."
   },
   "bonus_free_spins": {
     "modes": [
       {
-        "name": "Free Spins",
-        "trigger": null,
-        "spins_awarded": null,
+        "name": "Riot Respin",
+        "trigger": "Two scatters in the main game.",
+        "spins_awarded": "1 respin (Riot Respin feature)",
         "retrigger": null,
-        "sticky_or_persistent_state": null,
+        "sticky_or_persistent_state": "Molotov Wilds locked; 6th reel unlocked for at least 729 win ways.",
         "progressive_state": null,
-        "effects": "Free Spins tagged on SlotCatalog; exact rules not taken from official paytable in this record."
+        "end_condition": "Respin completes.",
+        "phases": [
+          {
+            "name": "Lock & unlock",
+            "order": 1,
+            "what_happens": "Lock Molotov Wilds; unlock 6th reel (≥729 ways); play the respin."
+          }
+        ],
+        "effects": "Explosive respin with locked Molotov Wilds and unlocked 6th reel (≥729 ways)."
+      },
+      {
+        "name": "Anarchy Freespins",
+        "trigger": "Three scatters.",
+        "spins_awarded": "8 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "6th reel unlocked for the bonus; scatters become Jumping Wilds throughout.",
+        "progressive_state": null,
+        "end_condition": "8 spins complete.",
+        "phases": [
+          {
+            "name": "Enter Anarchy",
+            "order": 1,
+            "what_happens": "Unlock 6th reel; convert scatters to Jumping Wilds for the round; subway train above may enhance Wilds."
+          },
+          {
+            "name": "Play 8 spins",
+            "order": 2,
+            "what_happens": "xWays always expand to 4 high in free spins."
+          }
+        ],
+        "effects": "8 FS on unlocked 6th reel; Jumping Wilds from scatters; xWays expand to 4 high."
+      },
+      {
+        "name": "Civil War Freespins",
+        "trigger": "Four scatters.",
+        "spins_awarded": "8 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Minimum 729 win ways; all 4 scatters become Jumping Wilds.",
+        "progressive_state": null,
+        "end_condition": "8 spins complete.",
+        "phases": [
+          {
+            "name": "Enter Civil War",
+            "order": 1,
+            "what_happens": "8 spins on ≥729 ways; 4 scatters become Jumping Wilds."
+          }
+        ],
+        "effects": "8 FS; ≥729 ways; four Jumping Wilds from the triggering scatters."
       }
     ],
-    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+    "notes": "Retrigger/extra-spin rules during Anarchy/Civil War not stated on sheet. CMS buy blurb mentioning Buffalo Horde is cross-game paste — ignored."
   },
   "features": [
     {
-      "name": "Buy Feature",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "xWays Mystery Symbol",
+      "trigger": "xWays lands",
+      "when": "during_spin",
+      "effects": "Holds 2–4 symbols; expands up to 6 high (characters up to 20). Always 4 high in free spins.",
       "params": {}
     },
     {
-      "name": "Free Spins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Molotov Wilds",
+      "trigger": "Wild lands",
+      "when": "during_spin",
+      "effects": "Substitute except scatter; expand upwards; locked during Riot Respin.",
       "params": {}
     },
     {
-      "name": "Multiplier",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Riot Respin",
+      "trigger": "2 scatters",
+      "when": "after_spin",
+      "effects": "Respin with locked Molotovs and unlocked 6th reel (≥729 ways).",
       "params": {}
     },
     {
-      "name": "Multiway (+1024)",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Mystery symbol",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Random Wilds / Additional Wilds",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Reelset Changing",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Respins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "RTP range",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Scatter symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Stack",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Sticky Wilds",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Wild",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "xWays",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Nolimit Bonus (Feature Buy)",
+      "trigger": "Player buys",
+      "when": "base_game",
+      "effects": "Buy the two Freespins versions (Anarchy / Civil War). May be removed in some regulated markets.",
       "params": {}
     }
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Buy Feature tagged on SlotCatalog; cost multiplier unknown without official rules."
+    "options": [
+      {
+        "name": "Nolimit Bonus — Anarchy / Civil War",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": "Buy either of the two free-spins versions.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Buy costs not listed on Punk Rocker sheet."
   },
   "ante_bet": {
     "available": false,
@@ -161,36 +227,43 @@
   },
   "numeric_limits": {
     "max_win_multiplier": 15072.0,
-    "max_win_notes": "SlotCatalog Max Win tag: x15072.00",
-    "rtp_percent": 96.54,
-    "rtp_notes": "SlotCatalog RTP tag: 96.54% (may be one of several operator configs)",
-    "hit_frequency_notes": null
+    "max_win_notes": "15,072× bet (sheet math). Some secondary sources quote 15,000×.",
+    "rtp_percent": 96.01,
+    "rtp_notes": "Sheet math Total RTP 96.01% (DX1 94.10% / DX3 90.16%). Intro also states dual setup 96.11% and 94.18% (DX1). Main 42.84%, Riot Respin 20.11%, Freespins 33.06%.",
+    "hit_frequency_notes": "Hit frequency 21.38%; freespin 1 in 244; win 100× 1 in 789."
   },
   "confidence": {
-    "overall": "medium",
-    "grid": "medium",
-    "win_system": "medium",
-    "reel_behavior": "low",
-    "symbols": "low",
-    "bonus_free_spins": "low",
-    "features": "medium",
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
     "feature_buy": "low",
-    "numeric_limits": "medium"
+    "numeric_limits": "high",
+    "base_game_loop": "high"
   },
   "evidence": [
     {
-      "source_type": "slotcatalog",
-      "url": "https://slotcatalog.com/en/slots/Punk-Rocker",
-      "local_path": "sources/slotcatalog/Punk-Rocker.html",
-      "extracted_at": "2026-09-27T04:44:19Z",
-      "quote_or_excerpt": "Free Spins Free Spins No Wagering 5 Free Spins 10 Free Spins 20 Free Spins 30 Free Spins 50 Free Spins 100 Free Spins 150 Free Spins 200 Free Spins Casino Best Online Casinos New Online Casinos Mobile Online Casinos High Roller Casinos Bitcoin / Crypto Casinos Best Payout Online Casinos Real Money Casinos Fast Withdrawal Casinos Live Casino Online Real Money Live Casinos Casino RTP Scam casinos Safe Online Casinos Blackjack Casinos Sweepstakes Casinos $1 Minimum Deposit Casinos Best VPN-Friendly"
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Punk_Rocker_66441_3896cb1c88.pdf",
+      "local_path": "sources/nolimit/punk-rocker/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                  Molotov Wilds\n                                                            6x3   Riot Respin\n                                                                  Anarchy Freespins\n                                                                  Civil War Freespins\n\n\n\n\nPUNK ROCKER xWAYS®\nPunk Rocker xWays® is here and packs a\npunch with its arsenal of features packed\ninto noisy and up-tempo slot driven by pure\nadrenaline.\n\nReintroducing the reel expanding feature xWays® as\nwell as scatter triggered features - Riot Respin, Anarchy\nFreespin and the hard to get Civil War Freespins.\n\nThis game also unveils an updated mobile friendly bet\npanel, customised to an even enhanced future of mobile\nfirst game development, accompanied of the new player\nfacing Promo Tool interface.\n\nPunk Rocker xWays® is available with two dual RTP setup\nat 96.11% and 94.18% (DX1).\n\fGAME SHEET\n\n\n\n\nGame Features\nPunk Rocker doesn’t say sorry to anyone.\nA volatile slot with multiple high paying\nfeatures - all triggered by scatters - to bring\nyou a exciting and fun reel experience.\n\nPunk Rocker xWays® initially starts at 243 win ways,\nbut "
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/punk-rocker",
+      "local_path": "sources/nolimit/punk-rocker/cms_features.txt",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "## xWays® Mystery Symbol\nA mystery symbol that holds 2 to 4 symbols that expands the reels, up to 6 symbols high. Punk characters may be super-expanded up to 20 symbols high, for massive wins!\\nxWays® always expand to 4 high in Freespins.\n\n## Molotov Wilds\nWilds that substitutes for any symbol except the scatter, that expands upwards on the reels for massive hits.\n\n## Riot Respin\nThe main game feature, that triggers on two scatters, which allows for an explosive respin with locked Molotov Wilds and a 6th reel that is unlocked for at least 729 win ways.\n\n## Anarchy Freespins\nBring on the mayhem with an unlocked 6th reel over the course of 8 Anarchy Freespins triggered by 3 scatters. The Freespins all scatters becomes Jumping Wild throughout the bonus round, where the Wilds may be enhanced by the subway train above the ordinary reel set.\n\n## Civil War Freespins\nChaos deluxe! 8 Civil War Freespins - triggered by 4 scatters - on a minimum of 729 win ways where all 4 scatters becomes Jumping Wilds. Experience Big Win after Big win....\n\n## Nolimit Bonus - Feature Buy functionality\nNolimit Bonus - allows the players to buy directly into\\nthe Freespin. Choose to buy Buffalo Horde and Prair"
     }
   ],
   "unknowns": [
-    "symbols detailed behaviors",
-    "bonus_free_spins trigger exact counts unless present in excerpt",
-    "feature_buy.cost_multiplier",
-    "numeric_limits only from SlotCatalog tags not official PDF"
+    "exact Nolimit Bonus buy cost multipliers for Anarchy vs Civil War",
+    "retrigger rules during free spins",
+    "precise base reel column count vs '6x3' marketing label (ways math uses expanding heights + optional 6th reel)"
   ],
   "thumbnail": "thumbs/nolimit-punk-rocker.webp",
   "thumbnail_attribution": "SlotCatalog"

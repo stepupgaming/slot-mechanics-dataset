@@ -1,184 +1,263 @@
 {
-  "schema_version": "1.0.0",
-  "updated_at": "2026-09-27T04:44:19Z",
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:35:38Z",
   "identity": {
     "provider": "Nolimit City",
     "title": "Deadwood xNudge",
     "slug": "nolimit-deadwood-xnudge",
-    "provider_game_id": null,
-    "release_year": 2020,
-    "demo_url": null,
-    "slotcatalog_url": "https://slotcatalog.com/en/slots/Deadwood",
-    "official_info_url": null
+    "provider_game_id": "Deadwood",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Deadwood",
+    "slotcatalog_url": "https://slotcatalog.com/en/slots/Deadwood-xNudge",
+    "official_info_url": "https://nolimitcity.com/games/deadwood"
   },
   "grid": {
-    "rows": 4,
-    "cols": 3,
-    "rows_min": null,
-    "rows_max": null,
-    "layout_notes": "SlotCatalog Layout: 3-4"
+    "rows": null,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 4,
+    "layout_notes": "Official sheet layout 34443 = reel heights 3-4-4-4-3 with 4-row-high Hunter xNudge Wilds."
   },
   "win_system": {
     "type": "ways",
     "payline_count": null,
-    "ways_count": 576,
+    "ways_count": null,
     "min_symbols_for_win": null,
     "direction": "left_to_right",
-    "notes": "SlotCatalog betways: 576"
+    "notes": "Ways/line wins; multiple Wild multipliers add together for total Wild multiplier on the line win. Exact base ways count not printed on sheet."
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "respins": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "expanding_reels": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
-    "other": []
+    "other": [
+      {
+        "name": "Hunter xNudge Wild",
+        "how_it_works": "4-row-high Wild on all reels; always nudges fully visible; each nudge +1 Wild multiplier; multiple Wild multipliers add together."
+      },
+      {
+        "name": "Shoot Out",
+        "how_it_works": "Two Sheriff badges → low symbols A–10 become wilds on middle reels."
+      }
+    ]
   },
   "symbols": {
-    "wilds": [],
-    "scatters": [],
+    "wilds": [
+      {
+        "name": "Hunter xNudge Wild",
+        "behavior": "4-row-high Wild on all reels; nudges fully into view; +1 multiplier per nudge step; several Wild multipliers add for total line Wild multiplier. In Hunter Spins at least one Hunter Wild guaranteed each spin.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "Three Scatters award choice of Hunter Spins or Gunslinger Spins (both 8 free spins).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      },
+      {
+        "name": "Sheriff badge",
+        "behavior": "Two Sheriff badges activate Shoot Out (A–10 become wilds on middle reels). During free spins, 2 badges upgrade to Shoot Out Freespins. 2 badges + 3 scatters awards Shoot Out Freespins of chosen mode.",
+        "params": {}
+      }
+    ],
     "multipliers": [],
     "collectors": [],
     "specials": []
   },
+  "base_game_loop": {
+    "summary": "Paid spin on 3-4-4-4-3 grid with Hunter xNudge Wilds that nudge fully into view (+1 mult per step). Two Sheriff badges convert A–10 on middle reels to wilds (Shoot Out). Three Scatters let the player choose Hunter or Gunslinger 8-spin bonuses; Shoot Out can upgrade either.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Reels stop on 3-4-4-4-3. Hunter xNudge Wilds nudge fully visible, +1 multiplier per nudge.",
+        "ends_when": "Nudges done",
+        "state_changes": "Wild multipliers set"
+      },
+      {
+        "name": "Shoot Out check",
+        "order": 2,
+        "what_happens": "If two Sheriff badges land, A–10 on middle reels become wilds.",
+        "ends_when": "Conversions done",
+        "state_changes": "Low symbols → wild on middle reels"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Pay ways/line wins; add multiple Wild multipliers together on the line win.",
+        "ends_when": "Wins paid",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus choice",
+        "order": 4,
+        "what_happens": "3 Scatters → choose Hunter Spins or Gunslinger Spins (8 each). 3 Scatters + double Sheriff → Shoot Out version of chosen mode.",
+        "ends_when": "Mode selected or no trigger",
+        "state_changes": "Enter free spins"
+      }
+    ],
+    "win_evaluation": "After nudges and optional Shoot Out wild conversion, wins pay with summed Wild multipliers.",
+    "notes": "Ignore CMS buy text that incorrectly mentions Buffalo Horde; sheet only says buy Free Spins features."
+  },
   "bonus_free_spins": {
     "modes": [
       {
-        "name": "Free Spins",
-        "trigger": null,
-        "spins_awarded": null,
-        "retrigger": null,
+        "name": "Hunter Spins",
+        "trigger": "Three Scatters; player chooses Hunter Spins.",
+        "spins_awarded": "8 free spins",
+        "retrigger": "Landing 2 Sheriff badges during free spins upgrades to Shoot Out Freespins.",
         "sticky_or_persistent_state": null,
+        "progressive_state": "At least one Hunter Wild guaranteed each spin; multiplier increases for each nudge step.",
+        "end_condition": "Spins complete (unless upgraded to Shoot Out).",
+        "phases": [
+          {
+            "name": "Enter Hunter",
+            "order": 1,
+            "what_happens": "8 spins; guarantee ≥1 Hunter Wild each spin with nudge multipliers."
+          },
+          {
+            "name": "Shoot Out upgrade",
+            "order": 2,
+            "what_happens": "If 2 Sheriff badges land, upgrade to Shoot Out Freespins (A–10 wild on middle reels)."
+          }
+        ],
+        "effects": "8 FS; guaranteed Hunter Wild each spin with nudge multipliers; upgradeable via 2 Sheriff badges."
+      },
+      {
+        "name": "Gunslinger Spins",
+        "trigger": "Three Scatters; player chooses Gunslinger Spins.",
+        "spins_awarded": "8 free spins",
+        "retrigger": "2 Sheriff badges upgrade to Shoot Out Freespins.",
+        "sticky_or_persistent_state": "Unlimited win multiplier that sticks for the entire bonus session.",
+        "progressive_state": "Session win multiplier persists across Gunslinger spins.",
+        "end_condition": "Spins complete or upgraded.",
+        "phases": [
+          {
+            "name": "Enter Gunslinger",
+            "order": 1,
+            "what_happens": "8 spins with sticky unlimited session win multiplier."
+          },
+          {
+            "name": "Shoot Out upgrade",
+            "order": 2,
+            "what_happens": "2 Sheriff badges → Shoot Out Freespins of this mode."
+          }
+        ],
+        "effects": "8 FS; sticky unlimited win multiplier for the session; upgradeable via Sheriff badges."
+      },
+      {
+        "name": "Shoot Out Freespins",
+        "trigger": "Double Sheriff stars with 3 scatters at trigger, or 2 Sheriff badges during Hunter/Gunslinger spins.",
+        "spins_awarded": "Uses chosen Hunter or Gunslinger framework (8 base when triggered with 3 scatters + badges).",
+        "retrigger": null,
+        "sticky_or_persistent_state": "All low win symbols (A–10) on middle reels act as Wilds.",
         "progressive_state": null,
-        "effects": "Free Spins tagged on SlotCatalog; exact rules not taken from official paytable in this record."
+        "end_condition": "Bonus spins complete.",
+        "phases": [
+          {
+            "name": "Shoot Out active",
+            "order": 1,
+            "what_happens": "Play remaining/awarded spins with A–10 as wilds on middle reels under Hunter or Gunslinger rules."
+          }
+        ],
+        "effects": "Upgrade: low symbols on middle reels are wilds for the Shoot Out free spins of the chosen mode."
       }
     ],
-    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+    "notes": "Exact remaining-spin carryover math when upgrading mid-bonus not detailed on sheet."
   },
   "features": [
     {
-      "name": "Bonus symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Hunter xNudge Wild",
+      "trigger": "Wild lands",
+      "when": "during_spin",
+      "effects": "4-high Wild nudges fully visible; +1 mult per nudge; multiple Wild mults add on the line win.",
       "params": {}
     },
     {
-      "name": "Buy Feature",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Shoot Out (base)",
+      "trigger": "Two Sheriff badges",
+      "when": "during_spin",
+      "effects": "A–10 become wilds on middle reels.",
       "params": {}
     },
     {
-      "name": "Expanding Symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Free Spins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Free Spins Mode Choosing",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Guaranteed Wild in Free Spins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Multiplier",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "RTP range",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Scatter symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Sticky Wilds",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Wild",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "xNudge",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Nolimit Bonus (Feature Buy)",
+      "trigger": "Player buys",
+      "when": "base_game",
+      "effects": "Buy Free Spins features. May be removed in some regulated markets.",
       "params": {}
     }
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Buy Feature tagged on SlotCatalog; cost multiplier unknown without official rules."
+    "options": [
+      {
+        "name": "Nolimit Bonus — Free Spins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": "Buy the Free Spins features (Hunter / Gunslinger / Shoot Out variants).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Buy costs not listed on Deadwood sheet."
   },
   "ante_bet": {
-    "available": true,
+    "available": false,
     "cost_multiplier": null,
     "effects": null,
-    "notes": "Bonus Bet/Ante tagged on SlotCatalog"
+    "notes": null
   },
   "numeric_limits": {
     "max_win_multiplier": 13950.0,
-    "max_win_notes": "SlotCatalog Max Win tag: x13950.00",
-    "rtp_percent": 94.15,
-    "rtp_notes": "SlotCatalog RTP tag: 94.15% (may be one of several operator configs)",
-    "hit_frequency_notes": null
+    "max_win_notes": "13,950× bet",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96.03%; DX1 94.15%; DX3 90.13%. Main 58.04%, bonus 37.98%. Dual range also quoted 96.02–96.03%.",
+    "hit_frequency_notes": "Hit frequency 40.17%; freespin 1 in 197; win 100× 1 in 1135."
   },
   "confidence": {
-    "overall": "medium",
-    "grid": "medium",
+    "overall": "high",
+    "grid": "high",
     "win_system": "medium",
-    "reel_behavior": "low",
-    "symbols": "low",
-    "bonus_free_spins": "low",
-    "features": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
     "feature_buy": "low",
-    "numeric_limits": "medium"
+    "numeric_limits": "high",
+    "base_game_loop": "high"
   },
   "evidence": [
     {
-      "source_type": "slotcatalog",
-      "url": "https://slotcatalog.com/en/slots/Deadwood",
-      "local_path": "sources/slotcatalog/Deadwood.html",
-      "extracted_at": "2026-09-27T04:44:19Z",
-      "quote_or_excerpt": "Free Spins Free Spins No Wagering 5 Free Spins 10 Free Spins 20 Free Spins 30 Free Spins 50 Free Spins 100 Free Spins 150 Free Spins 200 Free Spins Casino Best Online Casinos New Online Casinos Mobile Online Casinos High Roller Casinos Bitcoin / Crypto Casinos Best Payout Online Casinos Real Money Casinos Fast Withdrawal Casinos Live Casino Online Real Money Live Casinos Casino RTP Scam casinos Safe Online Casinos Blackjack Casinos Sweepstakes Casinos $1 Minimum Deposit Casinos Best VPN-Friendly"
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/deadwoodxnudgegamesheet_bfbf707412.pdf",
+      "local_path": "sources/nolimit/deadwood/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                             34443\n\n\n\n\nDEADWOOD\nThe Gunslingers are back! Follow the bounty\nhunters in the notorious town of Deadwood,\nwith the narliest quick-draws of the Wild\nWest.\n\nWith a bigger reel area, 34443 and the xNudge Wilds,\nyou will see wins that will make the buckshot seem puny.\nChoose your Freespin mode and hope for the double\nsheriff badges to land, to upgrade the bonus mode to the\nbad ass Shoot Out feature where low wins turns into wilds.\n\nDeadwood is available with a dual RTP setup at a range of\n96.02-96.03% and 94.14-94.15% (DX1).\n\fGAME SHEET\n\n\n\n\nGame Features\nxNudge® Wild is back once again, and now\nwith an extra punch with a 4 reel high reel\narea.\n\nHunter xNudge® Wild\nMeet the bounty hunters of Deadwood - a 4-row high\nWild symbol exists on all reels and will always nudge to\nfully visible. Each nudge increases the Wild multiplier by 1.\nSeveral Wild multipliers add to each other for a total Wild\nmultiplier on the line win for huge wins!\n\nShoot Out\nLanding two Sheriff badges activates the Shoot Out\nfeature, where all low win symbols (A-10) becomes wilds\non the middle reels.\n\nHunter Spins\nThree Scatters awards one of t"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/deadwood",
+      "local_path": "sources/nolimit/deadwood/cms_features.txt",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "## Hunter xNudge® Wild\nMeet the bounty hunters of Deadwood - a 4-row high Wild symbol exists on all reels and will always nudge to fully visible. Each nudge increases the Wild multiplier by 1. Several Wild multipliers add to each other for a total Wild multiplier on the line win for huge wins!\n\n## Shoot Out\nLanding two Sheriff badges activates the Shoot Out feature, where all low win symbols (A-10) becomes wilds on the middle reels.\n\n## Hunter Spins\nThree Scatters awards one of the two bonus modes, both activates 8 free spins. Hunter Spins awards at least one Hunter Wild is guaranteed to land for each spin, where the multiplier increases for each step the wild nudges.\n\n## Gunslinger Spins\nWanna go the more volatile route - challenge the Gunslingers head on and go for the unlimited win multiplier that sticks for the entire bonus session. Remember, landing 2 Sheriff badges during any of the bonus modes, and they will be upgraded to Shoot Out Free Spins!\n\n## Shoot Out feature\nLanding the double sheriff stars together with 3 scatters awards the Shoot Out Freespins Feature of your choice - Hunter or Gunslinger Spins - where all low win symbols on the middle reels will act as Wilds! The "
     }
   ],
   "unknowns": [
-    "symbols detailed behaviors",
-    "bonus_free_spins trigger exact counts unless present in excerpt",
-    "feature_buy.cost_multiplier",
-    "numeric_limits only from SlotCatalog tags not official PDF"
+    "exact base ways_count for 34443 layout",
+    "Nolimit Bonus buy cost multipliers",
+    "exact spin accounting when Shoot Out upgrades mid-bonus"
   ],
   "thumbnail": "thumbs/nolimit-deadwood-xnudge.webp",
   "thumbnail_attribution": "SlotCatalog"

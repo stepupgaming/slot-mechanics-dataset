@@ -1,22 +1,22 @@
 {
-  "schema_version": "1.0.0",
-  "updated_at": "2026-09-27T04:44:19Z",
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:35:38Z",
   "identity": {
     "provider": "Nolimit City",
     "title": "Blood & Shadow",
     "slug": "nolimit-blood-shadow",
-    "provider_game_id": null,
+    "provider_game_id": "BloodAndShadow",
     "release_year": 2023,
-    "demo_url": null,
+    "demo_url": "https://playin.com/embed/v1/demo/BloodAndShadow",
     "slotcatalog_url": "https://slotcatalog.com/en/slots/Blood-and-Shadow",
-    "official_info_url": null
+    "official_info_url": "https://nolimitcity.com/games/blood-and-shadow"
   },
   "grid": {
     "rows": 4,
     "cols": 5,
-    "rows_min": null,
-    "rows_max": null,
-    "layout_notes": "SlotCatalog Layout: 5-4"
+    "rows_min": 4,
+    "rows_max": 5,
+    "layout_notes": "4-4-4-4-4 across 5 reels with Ritual Bar on the bottom row. Cursed Spins expands to a 5×5 reel with only high-paying symbols."
   },
   "win_system": {
     "type": "ways",
@@ -24,140 +24,213 @@
     "ways_count": 1024,
     "min_symbols_for_win": null,
     "direction": "left_to_right",
-    "notes": "SlotCatalog betways: 1024"
+    "notes": "Official site summary: 1024 base ways; xSplit during Cursed Spins multiplies symbol size / ways."
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
       "present": true,
-      "how_it_works": "Cascading/tumble tagged on SlotCatalog"
+      "how_it_works": "Winning combinations are destroyed and remaining symbols tumble down; new symbols fall in."
     },
     "respins": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "expanding_reels": {
-      "present": null,
-      "how_it_works": null
+      "present": true,
+      "how_it_works": "Cursed Spins: reel area becomes 5×5 with only high-paying symbols; Ritual Bar removed."
     },
-    "other": []
+    "other": [
+      {
+        "name": "Ritual Bar",
+        "how_it_works": "5 progression levels (thresholds 20/30/40/60/80). Resets each level-up; excess carries over. Medium wins +1/symbol, high +2/symbol, Scatter +10. Each level removes lowest paying symbol and converts medium→high."
+      },
+      {
+        "name": "Sticky Wild",
+        "how_it_works": "Wilds on reels 2–5. In Candle/Cursed Spins, Wild drops to bottom and stays sticky until part of a win or a new bet."
+      }
+    ]
   },
   "symbols": {
-    "wilds": [],
-    "scatters": [],
+    "wilds": [
+      {
+        "name": "Sticky Wild",
+        "behavior": "Lands on reels 2–5. During Candle Spins / Cursed Spins drops to bottom of reel and remains sticky until it is part of a winning combination or a new bet is made.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "Advances Ritual Bar by +10 each. During Cursed Spins, landing a Scatter gives +1 free spin.",
+        "params": {}
+      }
+    ],
     "multipliers": [],
     "collectors": [],
-    "specials": []
+    "specials": [
+      {
+        "name": "xSplit",
+        "behavior": "Active during Cursed Spins. Splits either the row or the reel; multiplies symbol size by 2. Multiple xSplits can land on the same row but not the same reel.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Paid tumble spin on 4-4-4-4-4 (1024 ways) with Ritual Bar progression. Medium/high wins and Scatters fill the bar through 5 levels (20/30/40/60/80), removing low pays and upgrading medium→high. Level-ups award Candle Spins (+2 until level 4); level 5 enters Cursed Spins (+6 FS, 5×5 high-pays only, xSplit). Optional buys: Baphomet Rite / Cursed Spins / Nolimit Bonus 55–500×.",
+    "phases": [
+      {
+        "name": "Spin & tumble",
+        "order": 1,
+        "what_happens": "Spin 4-4-4-4-4. Pay ways wins; destroy winners; tumble until no wins. Sticky Wilds may land on reels 2–5.",
+        "ends_when": "Tumbles end",
+        "state_changes": null
+      },
+      {
+        "name": "Ritual Bar progress",
+        "order": 2,
+        "what_happens": "Add bar progress: medium winning symbols +1 each, high +2 each, Scatter +10 each. On threshold, level up: remove lowest pay, convert medium→high; carry excess; pay any pending wins before level change.",
+        "ends_when": "Bar updates applied",
+        "state_changes": "Symbol set upgraded; bar level 1–5"
+      },
+      {
+        "name": "Award spins from level-up",
+        "order": 3,
+        "what_happens": "New level (until 4) awards +2 Candle Spins. Advancing to level 5 / Cursed Spins awards +6 free spins and switches to Cursed mode.",
+        "ends_when": "Awards applied",
+        "state_changes": "Enter Candle or Cursed spins"
+      }
+    ],
+    "win_evaluation": "Ways wins paid each tumble; Ritual Bar collects after wins; level-ups happen after plausible wins pay out.",
+    "notes": "No public GameSheet PDF on site (documents.gameSheet=null); mechanics from official CMS feature descriptions on nolimitcity.com/games/blood-and-shadow."
   },
   "bonus_free_spins": {
     "modes": [
       {
-        "name": "Free Spins",
-        "trigger": null,
-        "spins_awarded": null,
-        "retrigger": null,
-        "sticky_or_persistent_state": null,
+        "name": "Candle Spins",
+        "trigger": "Reaching a new Ritual Bar level awards +2 Candle Spins until level 4.",
+        "spins_awarded": "+2 free spins per level-up (levels 1–4)",
+        "retrigger": "Further level-ups award additional +2 Candle Spins until level 4.",
+        "sticky_or_persistent_state": "Wilds drop to bottom and stick until they win or a new bet. Ritual Bar behaves as in base game.",
+        "progressive_state": "Ritual Bar continues progressing toward Cursed Spins.",
+        "end_condition": "Candle spins exhausted or upgrade into Cursed Spins.",
+        "phases": [
+          {
+            "name": "Candle play",
+            "order": 1,
+            "what_happens": "Play awarded spins with sticky bottom Wilds; Ritual Bar still advances."
+          }
+        ],
+        "effects": "+2 FS per level-up through level 4; sticky Wilds; bar still progresses."
+      },
+      {
+        "name": "Cursed Spins",
+        "trigger": "Advancing to Ritual Bar level 5 / Cursed Spins (after pending wins). Buy awards 10 free spins.",
+        "spins_awarded": "+6 free spins when entering via bar; 10 free spins when buying Cursed Spins.",
+        "retrigger": "Landing a Scatter gives +1 free spin.",
+        "sticky_or_persistent_state": "Ritual Bar removed; 5×5 grid with only high-paying symbols; sticky Wilds as in Candle rules; xSplit active.",
         "progressive_state": null,
-        "effects": "Free Spins tagged on SlotCatalog; exact rules not taken from official paytable in this record."
+        "end_condition": "Spins complete or The Pact is Sealed (6,666×) ends the round.",
+        "phases": [
+          {
+            "name": "Enter Cursed",
+            "order": 1,
+            "what_happens": "Remove Ritual Bar; expand to 5×5 high-pays only; enable xSplit; award +6 (natural) or 10 (buy) spins."
+          },
+          {
+            "name": "Play",
+            "order": 2,
+            "what_happens": "Tumble play with xSplit row/reel splits (×2 symbol size); Scatter +1 spin."
+          }
+        ],
+        "effects": "5×5 high-pays; xSplit; sticky Wilds; Scatter retrigger +1; buy gives 10 FS."
       }
     ],
-    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+    "notes": "Baphomet Rite buy jumps Ritual Bar to level 3 and awards +6 Candle Spins with symbol upgrades."
   },
   "features": [
     {
-      "name": "Additional Free Spins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Ritual Bar",
+      "trigger": "Medium/high wins and Scatters",
+      "when": "after_wins",
+      "effects": "5 levels at 20/30/40/60/80; each level removes lowest pay and converts medium→high; excess carries over.",
+      "params": {
+        "thresholds": [
+          20,
+          30,
+          40,
+          60,
+          80
+        ]
+      }
+    },
+    {
+      "name": "Sticky Wild",
+      "trigger": "Wild on reels 2–5",
+      "when": "during_spin",
+      "effects": "In Candle/Cursed: drops to bottom and stays until win or new bet.",
       "params": {}
     },
     {
-      "name": "Avalanche",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "xSplit",
+      "trigger": "During Cursed Spins",
+      "when": "bonus",
+      "effects": "Split row or reel; symbol size ×2. Multiple on same row OK; not same reel.",
       "params": {}
     },
     {
-      "name": "Buy Feature",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Baphomet Rite",
+      "trigger": "Feature buy",
+      "when": "base_game",
+      "cost_text": "Within Nolimit Bonus range (55–500×)",
+      "effects": "Instantly progresses Ritual Bar to level 3; awards +6 Candle Spins; replaces 3 low/medium pays with 3 high pays.",
       "params": {}
     },
     {
-      "name": "Cascading",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
+      "name": "The Pact is Sealed",
+      "trigger": "Total win hits cap",
+      "effects": "Max payout 6,666× base bet; round ends.",
+      "params": {
+        "max_win_multiplier": 6666
+      }
     },
     {
-      "name": "Free Spins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Free Spins Multiplier",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Level Up",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Multiway (+1024)",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Remove Symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "RTP range",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Scatter symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Splitting Symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Sticky Wilds",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Symbols collection (Energy)",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Wild",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
+      "name": "Nolimit Bonus (Feature Buy)",
+      "trigger": "Player buys",
+      "when": "base_game",
+      "cost_text": "55×–500× base bet",
+      "effects": "Buy into bonus features (incl. Baphomet Rite / Cursed Spins). Cursed Spins buy awards 10 FS.",
+      "params": {
+        "cost_range_min": 55,
+        "cost_range_max": 500
+      }
     }
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Buy Feature tagged on SlotCatalog; cost multiplier unknown without official rules."
+    "options": [
+      {
+        "name": "Baphomet Rite",
+        "cost_multiplier": null,
+        "cost_text": "Within 55×–500× range (exact price not stated)",
+        "effects": "Ritual Bar → level 3; +6 Candle Spins; 3 low/medium symbols replaced with high pays.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Cursed Spins",
+        "cost_multiplier": null,
+        "cost_text": "Within 55×–500× range (exact price not stated)",
+        "effects": "Awards 10 free spins in Cursed Spins mode.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Nolimit Bonus — other options",
+        "cost_multiplier": null,
+        "cost_text": "55×–500× base bet (range)",
+        "effects": "Buy into different bonus features in that cost range.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet PDF unavailable; costs only as 55–500× range from CMS feature text."
   },
   "ante_bet": {
     "available": false,
@@ -167,36 +240,43 @@
   },
   "numeric_limits": {
     "max_win_multiplier": 6666.0,
-    "max_win_notes": "SlotCatalog Max Win tag: x6666.00",
-    "rtp_percent": 94.03,
-    "rtp_notes": "SlotCatalog RTP tag: 94.03% (may be one of several operator configs)",
+    "max_win_notes": "The Pact is Sealed — 6,666× base bet",
+    "rtp_percent": null,
+    "rtp_notes": "Exact RTP percent not present in CMS feature payload used for this record.",
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
-    "grid": "medium",
-    "win_system": "medium",
-    "reel_behavior": "low",
-    "symbols": "low",
-    "bonus_free_spins": "low",
-    "features": "medium",
-    "feature_buy": "low",
-    "numeric_limits": "medium"
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
   },
   "evidence": [
     {
-      "source_type": "slotcatalog",
-      "url": "https://slotcatalog.com/en/slots/Blood-and-Shadow",
-      "local_path": "sources/slotcatalog/Blood-and-Shadow.html",
-      "extracted_at": "2026-09-27T04:44:19Z",
-      "quote_or_excerpt": "Free Spins Free Spins No Wagering 5 Free Spins 10 Free Spins 20 Free Spins 30 Free Spins 50 Free Spins 100 Free Spins 150 Free Spins 200 Free Spins Casino Best Online Casinos New Online Casinos Mobile Online Casinos High Roller Casinos Bitcoin / Crypto Casinos Best Payout Online Casinos Real Money Casinos Fast Withdrawal Casinos Live Casino Online Real Money Live Casinos Casino RTP Scam casinos Safe Online Casinos Blackjack Casinos Sweepstakes Casinos $1 Minimum Deposit Casinos Best VPN-Friendly"
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/blood-and-shadow",
+      "local_path": "sources/nolimit/blood-and-shadow/cms_features.txt",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "## Reel Area & Ritual Bar\nThe reel setup is 4-4-4-4-4 rows across 5 reels with a Ritual bar at the bottom row.\nWinning combinations will be destroyed and remaining symbols will tumble down, allowing the new symbols to fall in.\nAt the Ritual Bar, there are 5 levels of progression. The Ritual Bar resets for each level-up. Exceeding collects are carried over to the next level.\n- Level 1: 20 - Level 2: 30 - Level 3: 40 - Level 4: 60 - Level 5: 80\nLanding the Scatter Symbols and winning combinations of medium and high paying symbols advances the Ritual Bar.\n- Medium paying symbol = +1 per winning symbol - High paying symbol = +2 per winning symbol\n- Scatter Symbol = +10 per Scatter symbol\nEach level removes the lowest paying symbol and also converts medium symbols to high paying symbols.\n\n## Candle Spins\nReaching a new level of the Ritual Bar awards +2 Candle Spins till level 4.\n+6 Freespins are awarded when advancing to Cursed Spins.\nBefore any new level, any plausible wins pays out before progressing to the next level. During Candle Spins, the Ritual bar performs the same as in the base game.\n\n## Sticky Wild\nSticky Wilds can only land on reel 2-5.\nCandle Spins/ Cursed Spins: The Wild "
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/blood-and-shadow",
+      "local_path": "sources/nolimit/blood-and-shadow/cms_mechanics_snippets.txt",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "# Blood & Shadow summary\n\nEnter the dark and forbidden world of an abandoned cathedral in Blood & Shadow. Nolimit City invites you to join Shadow Girl as she performs a demonic ritual for eternal youth. The eerie action takes place on a five reel, four row grid that offers 1024 base ways to win, but the board can expand as the ritual progresses. If you are brave enough to face the underworld without spending any actual cash, you can [play for free](https://playin.com/games/blood-and-shadow) right here on Playin.com.\n\n## Base Game Mechanics and Features\n\nThe base game is fueled by a tumbling mechanic where winning combinations disappear so new symbols can fall into place. Every time you score a win with medium or high paying symbols, or land a scatter, you feed the Ritual Bar located at the bottom of the screen. Advancing through the five levels of the Ritual Bar removes lower paying symbols and converts medium symbols into high paying demonic entities. You will also encounter Sticky Wilds that drop to the bottom of the grid and remain there until they contribute to a winning connection.\n\n## Bonus Rounds and Free Spins\n\nProgressing through the Ritual Bar unlocks the game's dynamic f"
     }
   ],
   "unknowns": [
-    "symbols detailed behaviors",
-    "bonus_free_spins trigger exact counts unless present in excerpt",
-    "feature_buy.cost_multiplier",
-    "numeric_limits only from SlotCatalog tags not official PDF"
+    "no public GameSheet PDF (CMS documents.gameSheet is null)",
+    "exact per-option buy prices within 55×–500×",
+    "official RTP / hit frequency figures not in extracted CMS fields"
   ],
   "thumbnail": "thumbs/nolimit-blood-shadow.webp",
   "thumbnail_attribution": "SlotCatalog"

@@ -1,186 +1,303 @@
 {
-  "schema_version": "1.0.0",
-  "updated_at": "2026-09-27T04:44:50Z",
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:35:38Z",
   "identity": {
     "provider": "Nolimit City",
     "title": "Kiss My Chainsaw",
     "slug": "nolimit-kiss-my-chainsaw",
-    "provider_game_id": null,
-    "release_year": 2023,
-    "demo_url": null,
+    "provider_game_id": "KissMyChainsaw",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/KissMyChainsaw",
     "slotcatalog_url": "https://slotcatalog.com/en/slots/Kiss-My-Chainsaw",
-    "official_info_url": null
+    "official_info_url": "https://nolimitcity.com/games/kiss-my-chainsaw"
   },
   "grid": {
     "rows": 4,
     "cols": 5,
-    "rows_min": null,
-    "rows_max": null,
-    "layout_notes": "SlotCatalog Layout 5-4"
+    "rows_min": 4,
+    "rows_max": 5,
+    "layout_notes": "5-reel 4-4-4-4-4 setup that can expand to 5-5-5-5-5 (The Ride / Last Ride add a row → 5×5)."
   },
   "win_system": {
-    "type": "unknown",
+    "type": "ways",
     "payline_count": null,
     "ways_count": null,
     "min_symbols_for_win": null,
-    "direction": null,
-    "notes": "SlotCatalog betways: N/A"
+    "direction": "left_to_right",
+    "notes": "Sheet describes paytable and win ways (ways product of symbol heights). Exact base ways count not printed as a single integer."
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
-      "present": null,
-      "how_it_works": null
+      "present": true,
+      "how_it_works": "Winning combinations are destroyed and remaining symbols tumble down; new symbols fall in. Continues with avalanches; Charged Wilds interact with Gas Can fuel across avalanches."
     },
     "respins": {
-      "present": null,
+      "present": false,
       "how_it_works": null
     },
     "expanding_reels": {
-      "present": null,
-      "how_it_works": null
+      "present": true,
+      "how_it_works": "Bonus modes add a row (4-high → 5-high / 5×5). Chainsaw Larry Spins add an extra enhancer reel."
     },
-    "other": []
+    "other": [
+      {
+        "name": "Burnout",
+        "how_it_works": "Exactly 2 Scatters on the same row: after wins, destroy all symbols including the 2 Scatters and tumble new symbols in."
+      },
+      {
+        "name": "Charged Wild / Gas Can",
+        "how_it_works": "When Charged Wild is part of a win, it spends a Gas Can charge and doubles its multiplier for the next avalanche until gas is empty."
+      }
+    ]
   },
   "symbols": {
-    "wilds": [],
-    "scatters": [],
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Can land on reels 2–5.",
+        "params": {}
+      },
+      {
+        "name": "Charged Wild",
+        "behavior": "On reels 2–5. When part of a win, reduces Gas Can fuel by a charge and doubles its multiplier for the next avalanche until gas empty. During The Ride, can go up to 4× before destroyed.",
+        "params": {
+          "multiplier_cap_during_ride": 4
+        }
+      },
+      {
+        "name": "Chainsaw Larry Wild",
+        "behavior": "Appears only in Chainsaw Larry Spins as a jumping Wild on reels 2–4 each spin.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "Main game: only on reels 1, 3, and 5. Exactly 2 on same row → Burnout tumble. 3 on different rows → 8 spins The Ride. 3 on same row → 9 spins The Last Ride.",
+        "params": {}
+      }
+    ],
     "multipliers": [],
     "collectors": [],
-    "specials": []
+    "specials": [
+      {
+        "name": "xSplit (Chainsaw Larry Spins)",
+        "behavior": "Enhancer: doubles all multipliers between xSplit and Chainsaw Larry; each character symbol split increases win multiplier by +1.",
+        "params": {}
+      },
+      {
+        "name": "Smiley enhancer",
+        "behavior": "Awards +1 spin during Chainsaw Larry Spins.",
+        "params": {}
+      },
+      {
+        "name": "Lucky Feet enhancer",
+        "behavior": "Moves Chainsaw Larry to a different row/position on reels 2–4, leaving a regular Wild. Landing on Charged Wild triggers Afterburner (doubles symbol multipliers on that row; if on initial Charged Wild, all symbols become x2).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on 4-4-4-4-4 ways grid with tumbles. Wilds/Charged Wilds on reels 2–5; Charged Wilds spend Gas Can charges to double multipliers across avalanches. Scatters on 1/3/5: 2 same-row → Burnout full clear; 3 different rows → The Ride (8); 3 same row → The Last Ride (9). During rides, 3 scatters add +3 spins and enter Chainsaw Larry Spins.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Reels stop on 4-4-4-4-4. Evaluate ways wins.",
+        "ends_when": "Initial wins found or none",
+        "state_changes": null
+      },
+      {
+        "name": "Tumble / avalanche",
+        "order": 2,
+        "what_happens": "Destroy winning symbols; tumble down; refill. Charged Wild in a win spends Gas Can charge and doubles its multiplier for next avalanche until empty.",
+        "ends_when": "No more winning combinations",
+        "state_changes": "Gas Can charges may deplete; Charged Wild multipliers update"
+      },
+      {
+        "name": "Burnout check",
+        "order": 3,
+        "what_happens": "If exactly 2 Scatters landed on the same row, after wins destroy all symbols including those Scatters and tumble refill.",
+        "ends_when": "Burnout resolved or skipped",
+        "state_changes": "Full-grid clear tumble"
+      },
+      {
+        "name": "Bonus trigger",
+        "order": 4,
+        "what_happens": "3 Scatters different rows → 8 The Ride. 3 Scatters same row → 9 The Last Ride (guaranteed Scatter on reel 5 during Last Ride).",
+        "ends_when": "Bonus entered or round ends",
+        "state_changes": "Grid expands to 5×5 in ride modes"
+      }
+    ],
+    "win_evaluation": "Ways wins paid each tumble step; Charged Wild multipliers apply across avalanches via Gas Can.",
+    "notes": "From official Kiss My Chainsaw game sheet feature pages + CMS feature blurbs."
   },
   "bonus_free_spins": {
-    "modes": [],
-    "notes": "SlotCatalog secondary source only"
+    "modes": [
+      {
+        "name": "The Ride",
+        "trigger": "3 Scatter symbols on different rows (main game scatters on reels 1,3,5).",
+        "spins_awarded": "8 spins",
+        "retrigger": "Exactly 2 Scatters award +1 spin (same-row pair also triggers Burnout). 3 Scatters award +3 spins and activate Chainsaw Larry Spins.",
+        "sticky_or_persistent_state": "Extra row added → 5×5. Charged Wilds can go up to 4× before destroyed.",
+        "progressive_state": null,
+        "end_condition": "Spins exhausted (or End of the Road 10,900× cap).",
+        "phases": [
+          {
+            "name": "Expand",
+            "order": 1,
+            "what_happens": "Add a row; play on 5×5 with Charged Wild cap 4×."
+          },
+          {
+            "name": "Spin loop",
+            "order": 2,
+            "what_happens": "Tumble play; 2 scatters +1 spin; 3 scatters +3 and enter Chainsaw Larry Spins."
+          }
+        ],
+        "effects": "8 FS on 5×5; Charged Wilds up to 4×; retriggers as above; can enter Chainsaw Larry Spins."
+      },
+      {
+        "name": "The Last Ride",
+        "trigger": "3 Scatter symbols on the same row.",
+        "spins_awarded": "9 spins",
+        "retrigger": "Same as The Ride; 3 Scatters award +3 and activate Chainsaw Larry Spins.",
+        "sticky_or_persistent_state": "Same as The Ride plus guaranteed Scatter on reel 5.",
+        "progressive_state": null,
+        "end_condition": "Spins exhausted or 10,900× cap.",
+        "phases": [
+          {
+            "name": "Enter Last Ride",
+            "order": 1,
+            "what_happens": "Play The Ride rules with guaranteed Scatter on reel 5 for 9 spins."
+          }
+        ],
+        "effects": "9 FS; The Ride rules + guaranteed Scatter on reel 5."
+      },
+      {
+        "name": "Chainsaw Larry Spins",
+        "trigger": "Land 3 Scatter symbols during The Ride or The Last Ride.",
+        "spins_awarded": "+3 spins on activation (added to the ride).",
+        "retrigger": "Smiley enhancer awards +1 spin.",
+        "sticky_or_persistent_state": "Extra enhancer reel added; upgraded Chainsaw Larry Spins paytable. Jumping Chainsaw Larry Wild on reels 2–4 each spin.",
+        "progressive_state": "Jumping onto character symbols +1 win multiplier. xSplit doubles multipliers between xSplit and Larry and +1 per character split. Afterburner can double row (or all-symbol x2) multipliers.",
+        "end_condition": "Ride/Larry spins complete or max-win cap.",
+        "phases": [
+          {
+            "name": "Activate Larry",
+            "order": 1,
+            "what_happens": "Add enhancer reel; upgrade paytable; +3 spins."
+          },
+          {
+            "name": "Jumping Wild + enhancers",
+            "order": 2,
+            "what_happens": "Larry jumps on reels 2–4; reveals Smiley / xSplit / Lucky Feet on his row; character landings +1 mult."
+          }
+        ],
+        "effects": "Enhancer reel + jumping Larry Wild; Smiley/+1 spin, xSplit, Lucky Feet/Afterburner; character hits raise win multiplier."
+      }
+    ],
+    "notes": null
   },
   "features": [
     {
-      "name": "Additional Free Spins",
+      "name": "Wilds & Charged Wilds",
       "trigger": null,
-      "effects": "SlotCatalog feature tag",
+      "when": "during_spin",
+      "effects": "Wilds on reels 2–5. Charged Wild in a win spends Gas Can charge and doubles its multiplier for next avalanche until empty.",
       "params": {}
     },
     {
-      "name": "Avalanche",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
+      "name": "Burnout",
+      "trigger": "Exactly 2 Scatters on the same row",
+      "when": "after_wins",
+      "effects": "Destroy all symbols including the 2 Scatters; tumble refill.",
       "params": {}
     },
     {
-      "name": "Buy Feature",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
+      "name": "xSplit",
+      "trigger": "Enhancer during Chainsaw Larry Spins",
+      "when": "bonus",
+      "effects": "Double multipliers between xSplit and Chainsaw Larry; +1 win mult per character symbol split.",
       "params": {}
     },
     {
-      "name": "Cascading",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
+      "name": "End of the Road",
+      "trigger": "Total win hits cap",
+      "effects": "Max payout 10,900× base bet; round ends and awards the cap.",
+      "params": {
+        "max_win_multiplier": 10900
+      }
     },
     {
-      "name": "Free Spins",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Free Spins Multiplier",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Multiplier",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Reelset Changing",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "RTP range",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Scatter symbols",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Splitting Symbols",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Sticky Wilds",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Wild",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
-    },
-    {
-      "name": "Wilds with multipliers",
-      "trigger": null,
-      "effects": "SlotCatalog feature tag",
-      "params": {}
+      "name": "Nolimit Bonus (Feature Buy)",
+      "trigger": "Player buys",
+      "when": "base_game",
+      "cost_text": "66×–155× base bet",
+      "effects": "Buy into one of the different bonus features. May be removed in some regulated markets.",
+      "params": {
+        "cost_range_min": 66,
+        "cost_range_max": 155
+      }
     }
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": null
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "66×–155× base bet (range)",
+        "effects": "Buy straight into The Ride / Last Ride / related bonus options.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Per-mode prices within 66–155× not itemized on sheet."
   },
   "ante_bet": {
-    "available": null,
+    "available": false,
     "cost_multiplier": null,
     "effects": null,
     "notes": null
   },
   "numeric_limits": {
     "max_win_multiplier": 10900.0,
-    "max_win_notes": "SlotCatalog x10900.00",
-    "rtp_percent": 96.08,
-    "rtp_notes": "SlotCatalog 96.08%",
-    "hit_frequency_notes": null
+    "max_win_notes": "10,900× base bet (1 in 9.4M spins at 96.10% RTP option)",
+    "rtp_percent": 96.1,
+    "rtp_notes": "96.10%, 94.04% (DX1), 92.13% (DX2). Main 63.00%, bonus modes 33.10%.",
+    "hit_frequency_notes": "Hit frequency 28.61%; free spins 1 in 200; win 100× 1 in 1353."
   },
   "confidence": {
-    "overall": "medium",
-    "grid": "medium",
+    "overall": "high",
+    "grid": "high",
     "win_system": "medium",
-    "reel_behavior": "low",
-    "symbols": "low",
-    "bonus_free_spins": "low",
-    "features": "medium",
-    "feature_buy": "low",
-    "numeric_limits": "medium"
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
   },
   "evidence": [
     {
-      "source_type": "slotcatalog",
-      "url": "https://slotcatalog.com/en/slots/Kiss-My-Chainsaw",
-      "local_path": "sources/slotcatalog/Kiss-My-Chainsaw.html",
-      "extracted_at": "2026-09-27T04:44:50Z",
-      "quote_or_excerpt": "SHlib POLi WebMoney Siru Mobile ClickandBuy BLIK Amex Sticpay Klarna Nordea Pay by Mobile PostePay UPI Volt Click2pay Discover Instant Bank Transfer JCB Perfect Money Boku Monero eKonto eCheck Entercash PugglePay Wire Transfer Bancontact Swedbank Teleingreso Brite NetBanking GCash Maya Pay by SMS Casinos Aircash PhonePe MPesa Credit Card DANA Upaycard GrabPay Touch 'n Go QRIS MODO DuitNow UnionPay Bkash ShopeePay Amazon Pay ecoVoucher Wise Telebirr Pay N Play GoPay Inpay TrueMoney Stripe PayU PayForIt ePay Flykk Paytrail VIP Preferred PassimPay Match2Pay Venus Point Ozow Opay UseMyFunds BCA Noda Pay PayNearMe Lottomaticard Directa24 Help2Pay Quickpay Rapipago DEBIN Naranja Mobiamo Pago Fácil"
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Kiss_My_Chainsaw_1104232_f9bceb6c8f.pdf",
+      "local_path": "sources/nolimit/kiss-my-chainsaw/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "4-4-4-4-4\n\n\n\n\n                                  Kiss my Chainsaw                                                                          HIGHLIGHTS & FEATURES\n                                  One quiet summer night, in a town where nothing\n                                                                                                                            • Wilds & Charged Wilds\n                                  really goes on, fate had a different plan for two\n                                  ladies who hitched a ride home.                                                           • The Ride / The Last Ride\n\n                                  Little did they know they'd just gotten friendly                                          • xSplit®\n                                  with Chainsaw Larry, who's known to enjoy the\n                                  sweet and satisfying fragrance of fear and fuel.                                          • Chainsaw Larry Spins\n                                  His weapon of choice? Brum-brum-brum-brum-\n                                  BRRRRRRRRRRRRRRRRRRR.\n                                                                                "
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/kiss-my-chainsaw",
+      "local_path": "sources/nolimit/kiss-my-chainsaw/cms_features.txt",
+      "extracted_at": "2026-09-27T18:35:38Z",
+      "quote_or_excerpt": "## Scatter\nIn the main game, the Scatter symbol can only land on reel 1,3, and 5.\nBurnout is triggered by landing exactly 2 Scatter symbols, both on the same row.\nOnce all winnings are executed, Burnout will destroy all symbols including the 2 Scatter symbols, allowing new symbols to fall in.\nDepending on what row the Scatter symbols land on, one of the bonus modes will be awarded.\n- 3 Scatter symbols on different rows: Activates 8 spins of \"The Ride\".\n- 3 Scatter symbols on the same row: Activates 9 spins of \"The Last Ride\".\n\n## The Ride\nAn extra row is added and the reel area becomes 5x5.\nDuring 'The Ride' Spins, Charged WIlds can go up to 4x before it gets destroyed.\nLanding exactly 2 Scatter Symbols awards +1 spin. If there are only 2 Scatter symbols on the same row, Burnout is triggered.\nLanding 3 Scatter symbols will award +3 spins and activate Chainsaw Larry spins.\n\n## The Last Ride\nGameplay and features from \"The Ride\" are the same, but with a guaranteed Scatter symbol on reel 5.\nLanding 3 Scatter symbols will award +3 spins and activate Chainsaw Larry spins.\n\n## Chainsaw Larry Spins\nLanding 3 Scatter symbols during \"The Ride\" or \"The Last Ride\" will award +3 spins and acti"
     }
   ],
   "unknowns": [
-    "official rules text not retrieved",
-    "symbol behaviors",
-    "exact free spins triggers",
-    "feature buy costs"
+    "exact base ways_count integer for 4-4-4-4-4",
+    "per-mode feature buy prices within 66×–155×",
+    "Gas Can starting charge count"
   ],
   "thumbnail": "thumbs/nolimit-kiss-my-chainsaw.webp",
   "thumbnail_attribution": "SlotCatalog"
