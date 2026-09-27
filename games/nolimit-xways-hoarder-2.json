@@ -1,0 +1,321 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:50:11Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "xWays Hoarder 2",
+    "slug": "nolimit-xways-hoarder-2",
+    "provider_game_id": "XwaysHoarder2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/XwaysHoarder2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/x-ways-hoarder-2"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 6,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official 3-3-3-3-3-3. xWays on middle 4; size expands with connected Ways (up to 12)."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways expanded heavily by xWays sizes 2–12; exact base ways not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Loot Respin: Loot + any special → expand/lock reel 1; specials sticky; unlock + final respin when no new special; Loot again can retrigger."
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "xWays expand by connected count; Loot locks reel 1 during respin."
+    },
+    "other": [
+      {
+        "name": "xSplit Wild / xSplit Nudge",
+        "how_it_works": "xSplit Wild (not reel 1) splits left on row (mult if multi-split); does not split Loot; doubles xWays mult when splitting Ways. xSplit Nudge stacks, nudges stopping before specials, then splits each position left."
+      },
+      {
+        "name": "Radiation Levels",
+        "how_it_works": "In Raid/Plunder: every 3 collected xSplit/xWays/xSplit Nudge → next Radiation level (remove low pays); +1 spin per level; Level 4 → Binge Spins."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xSplit Wild",
+        "behavior": "Any reel except 1; splits left on row; doubles xWays mult if splitting Ways.",
+        "params": {}
+      },
+      {
+        "name": "xSplit Nudge",
+        "behavior": "Except reel 1; stacked nudge then split each row left.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "Any reel except 1. Not split — becomes Super Scatter instead. 3/4/5 → 7/10/13 Raid; if ≥1 Super Scatter → Plunder instead.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      },
+      {
+        "name": "Super Scatter",
+        "behavior": "From split attempt on Scatter; in Plunder its position + below become sticky xSplit; in Raid converts self + regulars below to xSplit.",
+        "params": {}
+      },
+      {
+        "name": "Loot",
+        "behavior": "With any special → Loot Respin.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xWays size / split mult",
+        "behavior": "xWays size 2–12; split shows multiplier when split more than once.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays",
+        "behavior": "Middle 4; reveal random regular (synced if multiple); size 2–4 / 3–8 / 4–12 by 1/2/3 connected on reel.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways on 3×6 with xWays (2–12), xSplit Wild, xSplit Nudge. Loot+special → Loot Respin. 3/4/5 Scatter → 7/10/13 Raid (sticky specials; Radiation levels); ≥1 Super Scatter → Plunder; Radiation L4 → Binge. Boosters 3×/10×/30×. Cap 25,920× (Wafer Thin Mint).",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional xBet 3× (4× FS chance), 1 Guaranteed xSplit Nudge 10×, or Loot Respins 30×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Spin + splits / Loot",
+        "order": 2,
+        "what_happens": "xWays reveal/expand; xSplit/Nudge split left; optional Loot Respin chain.",
+        "ends_when": "Resolved",
+        "state_changes": "Sticky specials if Loot"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3/4/5 Scatter → Raid or Plunder (if Super Scatter).",
+        "ends_when": "Feature or end",
+        "state_changes": "Enter free spins"
+      }
+    ],
+    "win_evaluation": "Ways after xWays/xSplit expansions.",
+    "notes": "CMS; source dir x-ways-hoarder-2; slug matches sibling nolimit-xways-hoarder."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Raid Spins",
+        "trigger": "3/4/5 Scatter (no Super Scatter required).",
+        "spins_awarded": "7 / 10 / 13 free spins",
+        "retrigger": "+1 spin per Radiation level upgrade.",
+        "sticky_or_persistent_state": "xSplit / xWays / xSplit Nudge sticky after landing. Super Scatter converts self + regulars below to xSplit.",
+        "progressive_state": "Radiation levels at 3/6/9/12 collected specials; remove low pays; L4 → Binge.",
+        "end_condition": "Spins done / Binge / Wafer Thin Mint 25,920×.",
+        "phases": [
+          {
+            "name": "Enter Raid",
+            "order": 1,
+            "what_happens": "Award 7/10/13; sticky specials; Radiation tracking."
+          },
+          {
+            "name": "Radiation / Binge",
+            "order": 2,
+            "what_happens": "Every 3 specials → level up +1 spin; L4 enters Binge."
+          }
+        ],
+        "effects": "7/10/13 FS; sticky specials; Radiation → Binge."
+      },
+      {
+        "name": "Plunder Spins",
+        "trigger": "3/4/5 Scatter with ≥1 Super Scatter.",
+        "spins_awarded": "7 / 10 / 13 free spins",
+        "retrigger": "+1 per Radiation level.",
+        "sticky_or_persistent_state": "Super Scatter position + below sticky as xSplit; Radiation as Raid.",
+        "progressive_state": "Radiation levels same as Raid.",
+        "end_condition": "Spins done / Binge / 25,920×.",
+        "phases": [
+          {
+            "name": "Enter Plunder",
+            "order": 1,
+            "what_happens": "7/10/13; sticky xSplit column from Super Scatter."
+          }
+        ],
+        "effects": "Raid-like with sticky Super Scatter xSplit column."
+      },
+      {
+        "name": "Binge Spins",
+        "trigger": "Raid or Plunder reaches Radiation Level 4.",
+        "spins_awarded": "Continues remaining spins at Binge symbol set.",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Only top 2 highest characters + highest object can land.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 25,920×.",
+        "phases": [
+          {
+            "name": "Binge",
+            "order": 1,
+            "what_happens": "Reduced symbol set for remaining spins."
+          }
+        ],
+        "effects": "Final Radiation tier; lean symbol set."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xWays",
+      "trigger": "xWays middle 4",
+      "when": "during_spin",
+      "effects": "Reveal synced regular; expand 2–12 by connected count.",
+      "params": {}
+    },
+    {
+      "name": "xSplit Wild / Nudge",
+      "trigger": "Specials land",
+      "when": "during_spin",
+      "effects": "Split left; double Ways mult; Nudge then split.",
+      "params": {}
+    },
+    {
+      "name": "Loot Respin",
+      "trigger": "Loot + special",
+      "when": "during_spin",
+      "effects": "Lock reel 1; sticky specials; unlock + final respin.",
+      "params": {}
+    },
+    {
+      "name": "xBet booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3.0,
+      "cost_text": "3× bet",
+      "effects": "4× more likely Free Spins.",
+      "params": {}
+    },
+    {
+      "name": "1 Guaranteed xSplit Nudge xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 10.0,
+      "cost_text": "10× bet",
+      "effects": "≥1 xSplit Nudge.",
+      "params": {}
+    },
+    {
+      "name": "Loot Respins xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 30.0,
+      "cost_text": "30× bet",
+      "effects": "Guaranteed Loot Respin.",
+      "params": {}
+    },
+    {
+      "name": "Wafer Thin Mint",
+      "trigger": "Cap",
+      "effects": "Max 25,920×.",
+      "params": {
+        "max_win_multiplier": 25920
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBet™",
+        "cost_multiplier": 3.0,
+        "cost_text": "3× bet",
+        "effects": "4× FS trigger chance.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "1 Guaranteed xSplit Nudge xBet™",
+        "cost_multiplier": 10.0,
+        "cost_text": "10× bet",
+        "effects": "≥1 xSplit Nudge.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Loot Respins xBet™",
+        "cost_multiplier": 30.0,
+        "cost_text": "30× bet",
+        "effects": "Guaranteed Loot Respin.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 3.0,
+    "effects": "xBet 3×: 4× more likely to trigger Free Spins.",
+    "notes": "Additional 10× and 30× boosters available."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25920.0,
+    "max_win_notes": "Wafer Thin Mint 25,920×",
+    "rtp_percent": 96.14,
+    "rtp_notes": "96.14% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/x-ways-hoarder-2",
+      "local_path": "sources/nolimit/x-ways-hoarder-2/cms_features.txt",
+      "extracted_at": "2026-09-27T18:50:11Z",
+      "quote_or_excerpt": "Raid 7/10/13; Plunder; Binge L4; Loot Respin; boosters 3/10/30×; max 25920×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/x-ways-hoarder-2",
+      "local_path": "sources/nolimit/x-ways-hoarder-2/page.html",
+      "extracted_at": "2026-09-27T18:50:11Z",
+      "quote_or_excerpt": "96.14% RTP, 25920 xBet MAX; rowsReels 3-3-3-3-3-3."
+    }
+  ],
+  "unknowns": [
+    "exact base ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-xways-hoarder-2.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

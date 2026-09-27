@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:48:51Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Tombstone Slaughter: El Gordo's Revenge",
+    "slug": "nolimit-tombstone-slaughter",
+    "provider_game_id": "TombstoneSlaughter",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TombstoneSlaughter",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/tombstone-slaughter"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 6,
+    "rows_min": 2,
+    "rows_max": 3,
+    "layout_notes": "Official 2-3-3-3-3-2. Reel 6: only 2-high stacked Revolver/Character; inactive if half symbols land; no lows."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 324,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "324 ways from page (2×3×3×3×3×2)."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xNudge",
+        "how_it_works": "Stacked Wild on middle 4 reels; nudges fully visible; +1 Wild mult per nudge; several add together."
+      },
+      {
+        "name": "Quickdraw / Revolver",
+        "how_it_works": "Full Revolver on last reel fires 3–6 Cylinder features: Backstab/Shootout Wild, xSplit, Infectious xSplit, Justice Wild, Boothill Multiplier (×5–×999)."
+      },
+      {
+        "name": "El Gordo Revenge Meter",
+        "how_it_works": "Levels 1–5; starting xNudge mult 1–5. Bonus on reels 2–5: +1 spin, fill meter spot, +1 future-level mults; 4 Bonus → next level after spins play out."
+      },
+      {
+        "name": "xRIP",
+        "how_it_works": "If total paytable win < base bet, no payout."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "Middle 4 reels; nudge +1 mult; add together.",
+        "params": {}
+      },
+      {
+        "name": "Reel Split Wild",
+        "behavior": "From 2 Slaughter Scatters; splits reel symbols in half.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Slaughter Scatter",
+        "behavior": "Middle 4 reels. 2 → Reel Split Wilds. 3 → 5 Slaughter Spins; 4 → 5 Slaughter with 2 meter spots + upgraded nudge mults 1/4/5/6/7. +Revolver → Massacre.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      },
+      {
+        "name": "Revolver",
+        "behavior": "Last reel only; full Revolver → Quickdraw (3–6 cylinders); during Slaughter upgrades remaining to Massacre +2 spins.",
+        "params": {}
+      },
+      {
+        "name": "Bonus",
+        "behavior": "Reels 2–5 during bonus; +1 spin, fill Revenge meter, +1 future level mults; 4 advance level.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Character / Boothill / Killcount",
+        "behavior": "Last-reel Character random mult 5–99; Boothill ×5–×999; Killcount adds Fibonacci-like mults to future meter levels.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "El Gordo Revenge Meter",
+        "behavior": "Levels 1–5 with escalating starting nudge mult; Killcount / Revenge Level Up from Revolver in bonus.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways on 2-3-3-3-3-2 (324). xNudge on middle 4; 2 Slaughter → xSplit; full Revolver → Quickdraw. 3/4 Slaughter → 5 Slaughter Spins (4 fills 2 meter spots + upgraded nudge); +Revolver → Massacre (sticky Revolver). Boosters: xBet 1.2×, Super xBet 15×, xNudge 35×, xNudge+Revolver 3,000×. Cap 500,000×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional xBet 1.2× (Slaughter reel 2), Super xBet 15× (2 Slaughter), xNudge 35× (2 Wilds), or xNudge+Revolver 3,000×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Spin + Quickdraw",
+        "order": 2,
+        "what_happens": "Nudges; optional 2-scatter splits; full Revolver fires 3–6 cylinder features.",
+        "ends_when": "Resolved",
+        "state_changes": "Wilds/splits/mults"
+      },
+      {
+        "name": "Evaluate + xRIP",
+        "order": 3,
+        "what_happens": "Pay ways; xRIP voids sub-stake totals.",
+        "ends_when": "Payout finalized",
+        "state_changes": "Possible void"
+      },
+      {
+        "name": "Bonus check",
+        "order": 4,
+        "what_happens": "3/4 Slaughter → Slaughter Spins; +Revolver → Massacre.",
+        "ends_when": "Feature or end",
+        "state_changes": "Enter free spins"
+      }
+    ],
+    "win_evaluation": "After nudges/Quickdraw/splits; then xRIP.",
+    "notes": "CMS nolimitcity.com/games/tombstone-slaughter. Affiliate title includes El Gordo's Revenge."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Slaughter Spins",
+        "trigger": "3 Slaughter symbols (or 4 with upgraded meter/nudge).",
+        "spins_awarded": "5 free spins",
+        "retrigger": "Full Revolver upgrades remaining to Massacre and awards +2 spins. Bonus symbols +1 spin and fill meter.",
+        "sticky_or_persistent_state": "Revenge Meter levels 1–5; last reel always full Character (random mult) or Revolver.",
+        "progressive_state": "Meter levels; Killcount/Revenge Level Up from Revolver cylinders.",
+        "end_condition": "Spins done / level progress / El Gordo Revenged 500,000×.",
+        "phases": [
+          {
+            "name": "Enter Slaughter",
+            "order": 1,
+            "what_happens": "5 spins; meter at L1 (or pre-filled if 4 scatters); last reel Character/Revolver."
+          },
+          {
+            "name": "Meter / Massacre upgrade",
+            "order": 2,
+            "what_happens": "Bonus fill meter; Revolver → Massacre +2."
+          }
+        ],
+        "effects": "5 FS; Revenge Meter; Quickdraw cylinders; upgradeable to Massacre."
+      },
+      {
+        "name": "Massacre Spins",
+        "trigger": "3 Slaughter + 1 Revolver (or upgrade from Slaughter); 4+Revolver variant with meter fill.",
+        "spins_awarded": "5 free spins (+2 if upgraded mid-Slaughter)",
+        "retrigger": "Bonus +1 spin / meter fills.",
+        "sticky_or_persistent_state": "Revolver sticky on last reel; all Slaughter features.",
+        "progressive_state": "Revenge Meter as in Slaughter.",
+        "end_condition": "Spins done or 500,000×.",
+        "phases": [
+          {
+            "name": "Enter Massacre",
+            "order": 1,
+            "what_happens": "5 spins; sticky Revolver on reel 6; meter active."
+          }
+        ],
+        "effects": "5 FS; sticky Revolver; full Slaughter + meter features."
+      }
+    ],
+    "notes": "Quickdraw skipped on main-game spin when Massacre bought via Nolimit Bonus."
+  },
+  "features": [
+    {
+      "name": "xNudge",
+      "trigger": "Wild middle 4",
+      "when": "during_spin",
+      "effects": "Nudge fully; +1 Wild mult; add together.",
+      "params": {}
+    },
+    {
+      "name": "Quickdraw",
+      "trigger": "Full Revolver last reel",
+      "when": "during_spin",
+      "effects": "3–6 cylinder features (Wilds/splits/Justice/Boothill).",
+      "params": {}
+    },
+    {
+      "name": "xRIP",
+      "trigger": "Win < base bet",
+      "when": "after_spin",
+      "effects": "No payout.",
+      "params": {}
+    },
+    {
+      "name": "xBet booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.2,
+      "cost_text": "1.2× bet",
+      "effects": "Guaranteed Slaughter on reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Super xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 15.0,
+      "cost_text": "15× bet",
+      "effects": "Guaranteed 2 Slaughter.",
+      "params": {}
+    },
+    {
+      "name": "xNudge Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 35.0,
+      "cost_text": "35× bet",
+      "effects": "Guaranteed 2 xNudge Wilds.",
+      "params": {}
+    },
+    {
+      "name": "xNudge & Revolver Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3000.0,
+      "cost_text": "3,000× bet",
+      "effects": "1 xNudge Wild + 1 fully stacked Revolver.",
+      "params": {}
+    },
+    {
+      "name": "El Gordo Revenged",
+      "trigger": "Cap",
+      "effects": "Max 500,000×.",
+      "params": {
+        "max_win_multiplier": 500000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBet™",
+        "cost_multiplier": 1.2,
+        "cost_text": "1.2× bet",
+        "effects": "Slaughter on reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super xBet™",
+        "cost_multiplier": 15.0,
+        "cost_text": "15× bet",
+        "effects": "2 Slaughter symbols.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xNudge Booster",
+        "cost_multiplier": 35.0,
+        "cost_text": "35× bet",
+        "effects": "2 xNudge Wilds.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xNudge & Revolver Booster",
+        "cost_multiplier": 3000.0,
+        "cost_text": "3,000× bet",
+        "effects": "xNudge + full Revolver.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Named boosters priced on CMS; separate Nolimit Bonus Massacre buy exists (Quickdraw skip note) without price."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.2,
+    "effects": "xBet 1.2× guarantees Slaughter on reel 2. Super xBet 15× also available.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 500000.0,
+    "max_win_notes": "El Gordo Revenged 500,000×",
+    "rtp_percent": 96.0,
+    "rtp_notes": "96% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tombstone-slaughter",
+      "local_path": "sources/nolimit/tombstone-slaughter/cms_features.txt",
+      "extracted_at": "2026-09-27T18:48:51Z",
+      "quote_or_excerpt": "2-3-3-3-3-2; Slaughter/Massacre 5 spins; Quickdraw; Revenge Meter L1-5; max 500,000×; boosters 1.2/15/35/3000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tombstone-slaughter",
+      "local_path": "sources/nolimit/tombstone-slaughter/page.html",
+      "extracted_at": "2026-09-27T18:48:51Z",
+      "quote_or_excerpt": "96% RTP, 500000 xBet MAX; 324 ways."
+    }
+  ],
+  "unknowns": [
+    "exact Nolimit Bonus Massacre buy price",
+    "DX RTP variants"
+  ],
+  "thumbnail": "thumbs/nolimit-tombstone-slaughter.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

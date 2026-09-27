@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:49:26Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "San Quentin Manhunt",
+    "slug": "nolimit-san-quentin-manhunt",
+    "provider_game_id": "SanQuentinManhunt",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/SanQuentinManhunt",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/san-quentin-manhunt"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 6,
+    "rows_min": 1,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 1-3-5-5-3-1. Locked Enhancer Cells above/below each reel; Cake Buster unlocks positions. Locked reels expand as unlocked."
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 7,
+    "direction": null,
+    "notes": "Scatter Wins: 7+ matching symbols anywhere pay; winners remove and drop."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Winning symbols removed; new symbols drop in."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Cake Buster / Bonus unlock locked reel positions and Enhancer Cells."
+    },
+    "other": [
+      {
+        "name": "Multiplier Blocks",
+        "how_it_works": "Per-position mult applies to symbol win; doubles on win / Cell Search / xSplit; cap 128× base, 512× Manhunt."
+      },
+      {
+        "name": "Cell Search",
+        "how_it_works": "On no win: collect lowest object symbols into a Wild with mult per collected; doubles mults on collected positions."
+      },
+      {
+        "name": "Enhancer Cells",
+        "how_it_works": "Top/bottom locked cells per reel; when unlocked reveal Prisoner or feature (not Bonus)."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild (Cake Buster / Cell Search)",
+        "behavior": "From Cake Buster unlock or Cell Search conversion.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Reels 2–5. Any Bonus unlocks Enhancer Cells on its reel. 3 → Sewer Escape; 4 → Manhunt. During bonus 2/3/4 Bonus → +2/+3/+4 spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Multiplier Blocks",
+        "behavior": "Double on win/Cell Search/xSplit up to 128× base / 512× Manhunt; sticky in bonus.",
+        "params": {
+          "cap_base": 128,
+          "cap_manhunt": 512
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Cake Buster",
+        "behavior": "Unlock locked position → Wild; if none locked, random position → Wild.",
+        "params": {}
+      },
+      {
+        "name": "xWays",
+        "behavior": "→ Prisoner revealing 2–4 same; multiple Ways sync symbol.",
+        "params": {}
+      },
+      {
+        "name": "xSplit",
+        "behavior": "Doubles all Multiplier Blocks on its reel; converts to Prisoner.",
+        "params": {}
+      },
+      {
+        "name": "Yard Dealer",
+        "behavior": "Upgrades a random object to higher pay; converts to Prisoner.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Pay-anywhere 7+ on 1-3-5-5-3-1 with tumbles. Per-cell Multiplier Blocks (double to 128×). Features: Cake Buster, xWays, xSplit, Yard Dealer, Cell Search on dead spins. Bonus unlocks enhancers; 3 Bonus → Sewer Escape (setup spins, sticky 2/4/8/16× on locked); 4 → Manhunt (512× cap + corner enhancers). Boosters 2×/20×/100×/2,000×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional Bonus Booster 2×, 2× Bonus 20×, 2× Bonus + Open x64 100×, or 2× Bonus + All x128 2,000×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged"
+      },
+      {
+        "name": "Cascade loop",
+        "order": 2,
+        "what_happens": "Evaluate 7+; remove; drop; apply xWays/xSplit/Yard Dealer/Cake Buster; Cell Search if no win.",
+        "ends_when": "No more wins/features",
+        "state_changes": "Mults/unlocks"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3 Bonus → Sewer Escape; 4 → Manhunt.",
+        "ends_when": "Feature or end",
+        "state_changes": "Enter free spins"
+      }
+    ],
+    "win_evaluation": "Pay-anywhere after cascades; position mults apply; Cell Search on dead board.",
+    "notes": "CMS nolimitcity.com/games/san-quentin-manhunt."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Sewer Escape Spins",
+        "trigger": "3 Bonus symbols.",
+        "spins_awarded": "Set in Bonus Setup Mode; each +1 symbol adds one spin. Extra: 2/3/4 Bonus during feature → +2/+3/+4.",
+        "retrigger": "+2/+3/+4 from 2/3/4 Bonus; +1 symbols in setup.",
+        "sticky_or_persistent_state": "Unlocked enhancers carry from base; unlocked positions stay; Mult Blocks persist (cap 128×). Locked reels get sticky 2×/4×/8×/16×.",
+        "progressive_state": "Multiplier Blocks do not reset between spins.",
+        "end_condition": "Spins done or Jail Break 46,532×.",
+        "phases": [
+          {
+            "name": "Bonus Setup",
+            "order": 1,
+            "what_happens": "Set spin count via +1 symbols; assign sticky mults on locked reels."
+          },
+          {
+            "name": "Sewer play",
+            "order": 2,
+            "what_happens": "Cascade spins with persistent mults/unlocks."
+          }
+        ],
+        "effects": "Setup-determined FS; sticky mults; 128× mult cap."
+      },
+      {
+        "name": "Manhunt Spins",
+        "trigger": "4 Bonus symbols.",
+        "spins_awarded": "Same setup rules as Sewer Escape.",
+        "retrigger": "Same +2/+3/+4 Bonus extras.",
+        "sticky_or_persistent_state": "Sewer features plus Mult Blocks cap 512×; corner Enhancer Cells unlock when their corner reels fully unlocked.",
+        "progressive_state": "Persistent mults up to 512×.",
+        "end_condition": "Spins done or 46,532×.",
+        "phases": [
+          {
+            "name": "Enter Manhunt",
+            "order": 1,
+            "what_happens": "Sewer rules with 512× cap and corner enhancers."
+          }
+        ],
+        "effects": "Sewer Escape+; 512× mult cap; corner enhancers."
+      }
+    ],
+    "notes": "Exact default Bonus Setup spin count not printed on CMS."
+  },
+  "features": [
+    {
+      "name": "Scatter Wins",
+      "trigger": "7+ same symbol",
+      "when": "during_spin",
+      "effects": "Pay anywhere; remove; drop.",
+      "params": {}
+    },
+    {
+      "name": "Multiplier Blocks",
+      "trigger": "Win / Cell Search / xSplit",
+      "when": "during_spin",
+      "effects": "Double position mult to cap.",
+      "params": {}
+    },
+    {
+      "name": "Cell Search",
+      "trigger": "No win",
+      "when": "during_spin",
+      "effects": "Collect lowest objects into Wild; double their mults.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2× bet",
+      "effects": "≥1 Bonus.",
+      "params": {}
+    },
+    {
+      "name": "2x Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 20.0,
+      "cost_text": "20× bet",
+      "effects": "≥2 Bonus.",
+      "params": {}
+    },
+    {
+      "name": "2x Bonus + Open x64",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 100.0,
+      "cost_text": "100× bet",
+      "effects": "≥2 Bonus; unlocked positions start at ×64.",
+      "params": {}
+    },
+    {
+      "name": "2x Bonus + All x128",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2000.0,
+      "cost_text": "2,000× bet",
+      "effects": "≥2 Bonus; all positions start at ×128.",
+      "params": {}
+    },
+    {
+      "name": "Jail Break",
+      "trigger": "Cap",
+      "effects": "Max 46,532×.",
+      "params": {
+        "max_win_multiplier": 46532
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 2.0,
+        "cost_text": "2× bet",
+        "effects": "≥1 Bonus.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "2x Bonus Booster",
+        "cost_multiplier": 20.0,
+        "cost_text": "20× bet",
+        "effects": "≥2 Bonus.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "2x Bonus + Open x64 Booster",
+        "cost_multiplier": 100.0,
+        "cost_text": "100× bet",
+        "effects": "≥2 Bonus; unlocked start ×64.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "2x Bonus + All x128 Booster",
+        "cost_multiplier": 2000.0,
+        "cost_text": "2,000× bet",
+        "effects": "≥2 Bonus; all positions ×128.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Boosters used instead of classic xBet."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 46532.0,
+    "max_win_notes": "Jail Break 46,532×",
+    "rtp_percent": 96.15,
+    "rtp_notes": "96.15% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/san-quentin-manhunt",
+      "local_path": "sources/nolimit/san-quentin-manhunt/cms_features.txt",
+      "extracted_at": "2026-09-27T18:49:26Z",
+      "quote_or_excerpt": "Scatter Wins 7+; Mult Blocks; Sewer Escape / Manhunt; boosters 2/20/100/2000×; max 46532×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/san-quentin-manhunt",
+      "local_path": "sources/nolimit/san-quentin-manhunt/page.html",
+      "extracted_at": "2026-09-27T18:49:26Z",
+      "quote_or_excerpt": "96.15% RTP, 46532 xBet MAX; rowsReels 1-3-5-5-3-1."
+    }
+  ],
+  "unknowns": [
+    "exact default spin count from Bonus Setup Mode before +1 symbols"
+  ],
+  "thumbnail": "thumbs/nolimit-san-quentin-manhunt.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

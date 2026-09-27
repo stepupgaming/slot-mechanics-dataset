@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:49:26Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "True Grit Redemption 2",
+    "slug": "nolimit-true-grit-redemption-2",
+    "provider_game_id": "TrueGrit2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TrueGrit2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/true-grit-redemption-2"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": 2,
+    "rows_max": 4,
+    "layout_notes": "CMS: 6 reels × 4 rows with 6 locked boxes + enhancer row on top. Page rowsReels 2-3-4-4-3-2 reflects locked/visible profile before unlocks."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "winType Ways on page; exact ways count not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Avalanches; new symbols enter with Global Multiplier; Global Mult starts 1×, +1 after win and via specials."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Locked boxes open via xBomb adjacent, xSplit row, Hunter, or bonus triggers."
+    },
+    "other": [
+      {
+        "name": "Enhancer row",
+        "how_it_works": "Top specials (xSplit, xWays, Toxic xWays, Infectious xWays, Rat, Rat King, Hunter) activate when they fall into the reel area during avalanches."
+      },
+      {
+        "name": "Global Multiplier",
+        "how_it_works": "Starts 1×; +1 after a win; also rises from xBomb, Rats, Rat King, Hunter, Redemption Girl win contribution."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xWild",
+        "behavior": "Converts entire reel to Wilds keeping mults; skips Bonus/Reckoning Girl/Rat/Rat King.",
+        "params": {}
+      },
+      {
+        "name": "Redemption Girl",
+        "behavior": "Wild that sums mults from same reel (not Rat mults); if in win, adds its mult to Global for next collapse.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 → 7 Reckoning; 4 → 10 Vengeance; 5 → Redemption Spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Global / symbol multipliers",
+        "behavior": "Global starts 1×; symbols enter at Global; specials add. Hunter +50× to self, all symbols, and Global.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xBomb",
+        "behavior": "Explodes adjacents except Wild/Reckoning Girl/Bonus; +1 win mult next collapse; opens adjacent locked boxes.",
+        "params": {}
+      },
+      {
+        "name": "xSplit",
+        "behavior": "Splits row symbols doubling their mult; opens locked boxes in row; then becomes regular.",
+        "params": {}
+      },
+      {
+        "name": "xWays / Toxic xWays / Infectious xWays",
+        "behavior": "Reveal paying symbol at Global then +2–4× (xWays), +2× to all instances (Toxic), or double all instances (Infectious — Vengeance/Redemption only).",
+        "params": {}
+      },
+      {
+        "name": "Hunter",
+        "behavior": "Enhancer/locked boxes only; +50× to self, all reel symbols, and Global (skips Redemption Girl/Rat/Rat King/Bonus).",
+        "params": {}
+      },
+      {
+        "name": "Rat / Rat King",
+        "behavior": "4+ Rats/Rat Kings remove and add their mults to Global (Rat 1–5×; Rat King 15/20/25×). Split doubles count not mult.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways avalanches on 6×4 with locked boxes + enhancer row. Global Mult climbs; xBomb/xSplit/xWays/Toxic/xWild/Redemption Girl/Hunter/Rats. 3/4/5 Bonus → Reckoning 7 / Vengeance 10 / Redemption (all boxes open). Boosters 1.5×/7.5×/30×/1,869×; optional xTra Extra Spin. Cap 34,000×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional Bonus Booster 1.5×, Gritty 7.5× (Global/symbols 5×), Grittier 30× (20×), Grittiest 1,869× (500×).",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged; Global may be preset"
+      },
+      {
+        "name": "Avalanche loop",
+        "order": 2,
+        "what_happens": "Pay ways; tumble; enhancer specials fall in; open boxes; raise Global.",
+        "ends_when": "No more wins",
+        "state_changes": "Global/boxes/mults"
+      },
+      {
+        "name": "Bonus / xTra check",
+        "order": 3,
+        "what_happens": "3/4/5 Bonus → bonus modes; else optional Extra Spin if cost ≤ prior win.",
+        "ends_when": "Feature or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after each avalanche with symbol and Global multipliers.",
+    "notes": "CMS; Redemption Spins count not printed (only trigger + all boxes open)."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Reckoning Spins",
+        "trigger": "3 Bonus symbols.",
+        "spins_awarded": "7 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Global Mult persists; unlocked boxes stay open for the round.",
+        "progressive_state": "Persistent Global Mult across spins.",
+        "end_condition": "Spins done or 34,000×; optional xTra.",
+        "phases": [
+          {
+            "name": "Enter Reckoning",
+            "order": 1,
+            "what_happens": "7 spins; persistent Global and unlocks."
+          }
+        ],
+        "effects": "7 FS; sticky Global + unlocks."
+      },
+      {
+        "name": "Vengeance Spins",
+        "trigger": "4 Bonus symbols.",
+        "spins_awarded": "10 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Reckoning features; locked boxes on reels 5–6 open at trigger; Infectious xWays in enhancer row.",
+        "progressive_state": "Persistent Global.",
+        "end_condition": "Spins done or 34,000×.",
+        "phases": [
+          {
+            "name": "Enter Vengeance",
+            "order": 1,
+            "what_happens": "10 spins; open reels 5–6 boxes; Infectious xWays available."
+          }
+        ],
+        "effects": "10 FS; open last two reels' boxes; Infectious xWays."
+      },
+      {
+        "name": "Redemption Spins",
+        "trigger": "5 Bonus symbols.",
+        "spins_awarded": "Not printed on CMS (Vengeance features + all locked boxes open).",
+        "retrigger": null,
+        "sticky_or_persistent_state": "All locked boxes opened at trigger; Infectious xWays; persistent Global.",
+        "progressive_state": "Persistent Global.",
+        "end_condition": "Spins done or 34,000×.",
+        "phases": [
+          {
+            "name": "Enter Redemption",
+            "order": 1,
+            "what_happens": "All boxes open; Vengeance feature set."
+          }
+        ],
+        "effects": "Top bonus; all boxes open; Infectious xWays."
+      }
+    ],
+    "notes": "Redemption spin count not stated on CMS."
+  },
+  "features": [
+    {
+      "name": "xBomb",
+      "trigger": "xBomb lands",
+      "when": "during_spin",
+      "effects": "Explode adjacents; +1 next collapse; open adjacent boxes.",
+      "params": {}
+    },
+    {
+      "name": "xSplit / xWays / Toxic / Infectious",
+      "trigger": "Specials from enhancer",
+      "when": "during_spin",
+      "effects": "Row split / reveal paying with mult boosts.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "1.5× bet",
+      "effects": "Bonus on bottom of reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Gritty Spins",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 7.5,
+      "cost_text": "7.5× bet",
+      "effects": "Global + symbols at 5× (except Redemption Girl/Rat/Rat King/Bonus).",
+      "params": {}
+    },
+    {
+      "name": "Grittier Spins",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 30.0,
+      "cost_text": "30× bet",
+      "effects": "Guaranteed 20× Global/symbols.",
+      "params": {}
+    },
+    {
+      "name": "Grittiest Spins",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1869.0,
+      "cost_text": "1,869× bet",
+      "effects": "Guaranteed 500× Global/symbols.",
+      "params": {}
+    },
+    {
+      "name": "xTra Extra Spin",
+      "trigger": "After round if cost ≤ prior win",
+      "when": "after_bonus",
+      "effects": "Keep Global + opened boxes for one more spin.",
+      "params": {}
+    },
+    {
+      "name": "Max Win",
+      "trigger": "Cap",
+      "effects": "34,000×.",
+      "params": {
+        "max_win_multiplier": 34000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 1.5,
+        "cost_text": "1.5× bet",
+        "effects": "Bonus bottom reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Gritty Spins",
+        "cost_multiplier": 7.5,
+        "cost_text": "7.5× bet",
+        "effects": "5× Global/symbols.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Grittier Spins",
+        "cost_multiplier": 30.0,
+        "cost_text": "30× bet",
+        "effects": "20× Global/symbols.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Grittiest Spins",
+        "cost_multiplier": 1869.0,
+        "cost_text": "1,869× bet",
+        "effects": "500× Global/symbols.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xTra Extra Spin",
+        "cost_multiplier": null,
+        "cost_text": "From Global + opened boxes",
+        "effects": "Post-round extra spin if cost ≤ prior win.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Bonus Booster 1.5× is light per-spin guarantee."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 34000.0,
+    "max_win_notes": "34,000× base bet",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/true-grit-redemption-2",
+      "local_path": "sources/nolimit/true-grit-redemption-2/cms_features.txt",
+      "extracted_at": "2026-09-27T18:49:26Z",
+      "quote_or_excerpt": "6×4 locked boxes; Reckoning 7 / Vengeance 10 / Redemption; boosters 1.5/7.5/30/1869×; max 34000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/true-grit-redemption-2",
+      "local_path": "sources/nolimit/true-grit-redemption-2/page.html",
+      "extracted_at": "2026-09-27T18:49:26Z",
+      "quote_or_excerpt": "96.07% RTP, 34000 xBet MAX; rowsReels 2-3-4-4-3-2; winType Ways."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count",
+    "Redemption Spins awarded count"
+  ],
+  "thumbnail": "thumbs/nolimit-true-grit-redemption-2.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

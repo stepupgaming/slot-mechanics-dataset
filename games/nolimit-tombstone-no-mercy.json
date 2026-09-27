@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:48:51Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Tombstone: No Mercy",
+    "slug": "nolimit-tombstone-no-mercy",
+    "provider_game_id": "TombstoneNoMercy",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TombstoneNoMercy",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/tombstone-no-mercy"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": 2,
+    "rows_max": 3,
+    "layout_notes": "Official rowsReels 2-3-3-3-2. Outlaw Wilds are 3-row-high on reels 2-4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 108,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "108 ways from page (2-3-3-3-2)."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Outlaw Wilds (xNudge)",
+        "how_it_works": "3-row-high Wild on reels 2-4; always nudges fully visible; +1 win mult per nudge step. Substitutes except Scatter and Badge."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Outlaw Wild (xNudge)",
+        "behavior": "3-high on reels 2-4; nudge +1 mult/step. Sticky in Justice/Bounty; unlimited sticky mult in Gunslinger.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3 Scatters → 10 Gunslinger Spins. During FS: 1 Scatter +1 spin, 2 Scatters +3 spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      },
+      {
+        "name": "Sheriff Badge / Marshall Badge",
+        "behavior": "Sheriff on reel 1 + Marshall on reel 5 → 3 Justice Spins. Both badges + 3 Scatters → 12 Bounty Spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Outlaw Wild nudge multiplier",
+        "behavior": "Increases by 1 per nudge; unlimited and sticky for entire Gunslinger/Bounty feature.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Ways spin on 2-3-3-3-2 (108). Outlaw xNudge Wilds on middle three (+1 mult/nudge). Optional xBet 2× guarantees Scatter or Outlaw Wild (~2× FS chance). Sheriff+Marshall → 3 Justice (sticky Wilds); 3 Scatters → 10 Gunslinger (sticky unlimited mult); badges+3 Scatters → 12 Bounty. Buys 65–2,310×.",
+    "phases": [
+      {
+        "name": "Configure xBet",
+        "order": 1,
+        "what_happens": "Optional xBet at 2× base: guarantee Scatter or Outlaw Wild; ~2× freespin chance. Pays unaffected.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×2 if xBet"
+      },
+      {
+        "name": "Spin + nudge",
+        "order": 2,
+        "what_happens": "Reels stop; Outlaw Wilds nudge fully visible adding win mult.",
+        "ends_when": "Nudges done",
+        "state_changes": "Wild mult set"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Pay ways with Wild multipliers.",
+        "ends_when": "Wins paid",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus check",
+        "order": 4,
+        "what_happens": "Sheriff+Marshall → Justice 3; 3 Scatters → Gunslinger 10; badges+3 Scatters → Bounty 12.",
+        "ends_when": "Feature or end",
+        "state_changes": "Enter free spins"
+      }
+    ],
+    "win_evaluation": "Ways after nudges with Outlaw Wild multipliers.",
+    "notes": "CMS on nolimitcity.com/games/tombstone-no-mercy. Second xBet (Outlaw Wild-only) has empty CMS description."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Justice Spins",
+        "trigger": "Sheriff Badge on reel 1 and Marshall Badge on reel 5.",
+        "spins_awarded": "3 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Outlaw Wilds stick throughout Justice Spins.",
+        "progressive_state": "Nudge mult +1 per step on sticky Wilds.",
+        "end_condition": "Spins done or No Mercy 16,480×.",
+        "phases": [
+          {
+            "name": "Enter Justice",
+            "order": 1,
+            "what_happens": "3 spins with sticky Outlaw Wilds."
+          }
+        ],
+        "effects": "3 FS; sticky Outlaw Wilds."
+      },
+      {
+        "name": "Gunslinger Spins",
+        "trigger": "3 Scatter symbols.",
+        "spins_awarded": "10 free spins",
+        "retrigger": "1 Scatter → +1 spin; 2 Scatters → +3 spins.",
+        "sticky_or_persistent_state": "Unlimited win multiplier from Outlaw Wild nudges sticks for entire feature.",
+        "progressive_state": "+1 mult per Outlaw nudge step across the bonus.",
+        "end_condition": "Spins done or 16,480×.",
+        "phases": [
+          {
+            "name": "Enter Gunslinger",
+            "order": 1,
+            "what_happens": "10 spins; sticky unlimited Outlaw win mult."
+          }
+        ],
+        "effects": "10 FS; sticky unlimited nudge mult; scatter retriggers."
+      },
+      {
+        "name": "Bounty Spins",
+        "trigger": "Sheriff Badge + 3 Scatters + Marshall Badge.",
+        "spins_awarded": "12 free spins",
+        "retrigger": "1 Scatter → +1; 2 Scatters → +3.",
+        "sticky_or_persistent_state": "Outlaw Wilds stick once landed; nudge mult for each step (Gunslinger+Justice combo).",
+        "progressive_state": "Sticky Wilds + accumulating nudge mult.",
+        "end_condition": "Spins done or 16,480×.",
+        "phases": [
+          {
+            "name": "Enter Bounty",
+            "order": 1,
+            "what_happens": "12 spins combining sticky Wilds and sticky unlimited nudge mult."
+          }
+        ],
+        "effects": "12 FS; sticky Wilds + sticky nudge mult; scatter retriggers."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Outlaw Wilds (xNudge)",
+      "trigger": "Wild lands reels 2-4",
+      "when": "during_spin",
+      "effects": "3-high nudge; +1 mult/step.",
+      "params": {}
+    },
+    {
+      "name": "xBet: Scatter / Outlaw Wild",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2× bet",
+      "effects": "Guaranteed Scatter or Outlaw Wild; ~2× FS chance.",
+      "params": {}
+    },
+    {
+      "name": "xBet: Outlaw Wild",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "effects": "Second xBet option (CMS description empty).",
+      "params": {}
+    },
+    {
+      "name": "No Mercy",
+      "trigger": "Cap",
+      "effects": "Max 16,480×; round ends.",
+      "params": {
+        "max_win_multiplier": 16480
+      }
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "65×–2,310× bet",
+      "effects": "Buy into bonus features.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "65×–2,310× bet",
+        "effects": "Buy into Justice / Gunslinger / Bounty variants.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Nolimit Booster",
+        "cost_multiplier": null,
+        "cost_text": "Per-spin feature cost",
+        "effects": "Activate a specific feature each spin.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact line-item buy prices not printed beyond band."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 2.0,
+    "effects": "xBet 2×: guaranteed Scatter or Outlaw Wild; 2× more likely to activate freespins.",
+    "notes": "Second Outlaw-Wild-only xBet exists but CMS text empty."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 16480.0,
+    "max_win_notes": "No Mercy 16,480×",
+    "rtp_percent": 96.05,
+    "rtp_notes": "96.05% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tombstone-no-mercy",
+      "local_path": "sources/nolimit/tombstone-no-mercy/cms_features.txt",
+      "extracted_at": "2026-09-27T18:48:51Z",
+      "quote_or_excerpt": "Outlaw Wilds xNudge; Justice 3; Gunslinger 10; Bounty 12; xBet 2×; max 16480×; buys 65-2310×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tombstone-no-mercy",
+      "local_path": "sources/nolimit/tombstone-no-mercy/page.html",
+      "extracted_at": "2026-09-27T18:48:51Z",
+      "quote_or_excerpt": "96.05% RTP, 16480 xBet MAX; rowsReels 2-3-3-3-2; 108 ways."
+    }
+  ],
+  "unknowns": [
+    "xBet: Outlaw Wild cost/effects (CMS description null)",
+    "exact Nolimit Bonus line-item costs inside 65–2310×"
+  ],
+  "thumbnail": "thumbs/nolimit-tombstone-no-mercy.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -52329,6 +52329,656 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:50:11Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Punk Rocker 2",
+      "slug": "nolimit-punk-rocker-2",
+      "provider_game_id": "PunkRocker2",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/PunkRocker2",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/punk-rocker-2"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 6,
+      "rows_min": 3,
+      "rows_max": 6,
+      "layout_notes": "Official 3-3-3-3-3-3; Train Enhancers can make all reels 6 high. 46,656 ways at 6^6."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": 46656,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "46,656 ways from page."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": true,
+        "how_it_works": "Riot Respins on 2 Bonus: Bonus→Molotov Wild, lock reels; extra Bonus during respins → +respin after payout."
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "Train enhancer can make all reels 6 high; xWays can super-expand up to 20 high in base."
+      },
+      "other": [
+        {
+          "name": "Jumping Wilds",
+          "how_it_works": "In FS: Jumping / Burning Jumping Wilds reposition each spin; Burning-triggered Wild Mult enhancers persist; mults additive."
+        },
+        {
+          "name": "Train Enhancers",
+          "how_it_works": "Trigger when Jumping/Burning Wild on same reel. Top: Wild Mult, xWays, Molotov, Extra spins, 6-high, Upgrade FS, Enable Bottom. Bottom: Wild Mult, Extra spins, Burning Jumping Wild."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Molotov Wild",
+          "behavior": "Turns all positions above into Wilds; base, Riot Respins, and via FS enhancers.",
+          "params": {}
+        },
+        {
+          "name": "Pipe Bomb Wild",
+          "behavior": "Contains 2–4 Wilds; turns positions above into same-size Pipe Bomb Wilds; base and Riot.",
+          "params": {}
+        },
+        {
+          "name": "Jumping / Burning Jumping Wild",
+          "behavior": "FS only; reposition each spin; Burning makes Wild Mult enhancers persistent.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "2 → Riot Respins. Higher Bonus tiers award DisOBEY / ChAos / Mass Transit BBQ (8 spins each; exact scatter counts not printed on CMS).",
+          "params": {
+            "count_for_trigger": 2
+          }
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Wild Multipliers",
+          "behavior": "Additive; persist when triggered by Burning Jumping Wilds.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "xWays / Super xWays",
+          "behavior": "2–4 same inside; all Ways sync. Base can super-expand to 20 high when 4-high. FS: expand to 4 high with 4/6/8 of same. Mystery Symbol in main and FS.",
+          "params": {}
+        },
+        {
+          "name": "Burning cart",
+          "behavior": "Mass Transit BBQ: stops every spin; if holds Burning Jumping Wild, converts Jumping Wilds on its reel to Burning.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Ways on 3-3-3-3-3-3 (up to 46,656). Molotov/Pipe Bomb Wilds and xWays/Super xWays. xBet 2× guarantees special on reel 2. 2 Bonus → Riot Respins; higher Bonus tiers → DisOBEY (3 Jumping + top train) / ChAos (4 Jumping + both trains) / Mass Transit BBQ (+Burning cart). Buys 100–3,000×. Cap 30,144×.",
+      "phases": [
+        {
+          "name": "Configure xBet",
+          "order": 1,
+          "what_happens": "Optional xBet 2×: guarantee Bonus/xWays/Super xWays/Molotov/Pipe Bomb on reel 2.",
+          "ends_when": "Spin",
+          "state_changes": "Stake ×2"
+        },
+        {
+          "name": "Spin",
+          "order": 2,
+          "what_happens": "Evaluate ways; Molotov/Pipe Bomb/xWays resolve.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus check",
+          "order": 3,
+          "what_happens": "2 Bonus → Riot Respins; higher Bonus → DisOBEY/ChAos/BBQ free spins.",
+          "ends_when": "Feature or end",
+          "state_changes": "Enter feature"
+        }
+      ],
+      "win_evaluation": "Ways wins with Wild/xWays expansions.",
+      "notes": "Exact Bonus counts for DisOBEY/ChAos/BBQ not on CMS — listed as escalating scatter tiers."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Riot Respins",
+          "trigger": "2 Bonus symbols.",
+          "spins_awarded": "Respin mode (not fixed FS count); +1 respin per additional Bonus after payout.",
+          "retrigger": "Additional Bonus during respins → +respin.",
+          "sticky_or_persistent_state": "Bonus→Molotov Wild; reels with Wilds locked.",
+          "progressive_state": null,
+          "end_condition": "No new Bonus / We Want You 30,144×.",
+          "phases": [
+            {
+              "name": "Riot",
+              "order": 1,
+              "what_happens": "Convert Bonus to Molotov; lock wild reels; respin."
+            }
+          ],
+          "effects": "Hold-style respins with Molotov locks."
+        },
+        {
+          "name": "DisOBEY Spins",
+          "trigger": "Bonus scatter tier (exact count not printed).",
+          "spins_awarded": "8 free spins",
+          "retrigger": "Extra spins via Train Enhancers.",
+          "sticky_or_persistent_state": "3 Jumping Wilds + Top Train Enhancer.",
+          "progressive_state": "Additive Wild Mults; Burning makes them persistent.",
+          "end_condition": "Spins done or 30,144×.",
+          "phases": [
+            {
+              "name": "Enter DisOBEY",
+              "order": 1,
+              "what_happens": "8 spins; 3 Jumping Wilds; top train."
+            }
+          ],
+          "effects": "8 FS; 3 Jumping Wilds; top enhancer train."
+        },
+        {
+          "name": "ChAos Spins",
+          "trigger": "Higher Bonus tier than DisOBEY (count not printed).",
+          "spins_awarded": "8 free spins",
+          "retrigger": "Train Extra spins.",
+          "sticky_or_persistent_state": "4 Jumping Wilds + both Train Enhancers.",
+          "progressive_state": "Additive/persistent Wild Mults.",
+          "end_condition": "Spins done or 30,144×.",
+          "phases": [
+            {
+              "name": "Enter ChAos",
+              "order": 1,
+              "what_happens": "8 spins; 4 Jumping; both trains."
+            }
+          ],
+          "effects": "8 FS; 4 Jumping Wilds; dual trains."
+        },
+        {
+          "name": "Mass Transit BBQ Spins",
+          "trigger": "Top Bonus tier (count not printed).",
+          "spins_awarded": "8 free spins",
+          "retrigger": "Train Extra spins.",
+          "sticky_or_persistent_state": "4 Jumping Wilds; both trains; Burning cart every spin.",
+          "progressive_state": "Burning converts Jumping→Burning on cart reel; persistent Wild Mults.",
+          "end_condition": "Spins done or 30,144×.",
+          "phases": [
+            {
+              "name": "Enter BBQ",
+              "order": 1,
+              "what_happens": "8 spins with Burning cart."
+            }
+          ],
+          "effects": "8 FS; dual trains; Burning cart."
+        }
+      ],
+      "notes": "DisOBEY/ChAos/BBQ scatter counts not printed on CMS."
+    },
+    "features": [
+      {
+        "name": "xWays / Super xWays",
+        "trigger": "xWays lands",
+        "when": "during_spin",
+        "effects": "Reveal 2–4 (base up to 20-high super); FS 4/6/8.",
+        "params": {}
+      },
+      {
+        "name": "xBet",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 2.0,
+        "cost_text": "2× bet",
+        "effects": "Guaranteed special on reel 2.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "when": "base_game",
+        "cost_text": "100×–3,000× bet",
+        "effects": "Buy into bonus features.",
+        "params": {}
+      },
+      {
+        "name": "We Want You",
+        "trigger": "Cap",
+        "effects": "Max 30,144×.",
+        "params": {
+          "max_win_multiplier": 30144
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Nolimit Bonus — bonus features",
+          "cost_multiplier": null,
+          "cost_text": "100×–3,000× bet",
+          "effects": "Buy Riot / DisOBEY / ChAos / BBQ variants.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Nolimit Booster",
+          "cost_multiplier": null,
+          "cost_text": "Per-spin feature cost",
+          "effects": "Activate specific feature each spin.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Exact line prices inside band not printed."
+    },
+    "ante_bet": {
+      "available": true,
+      "cost_multiplier": 2.0,
+      "effects": "xBet 2×: special symbol guaranteed on reel 2.",
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 30144.0,
+      "max_win_notes": "We Want You 30,144×",
+      "rtp_percent": 96.06,
+      "rtp_notes": "96.06% from official page title.",
+      "hit_frequency_notes": null
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "medium",
+      "features": "high",
+      "feature_buy": "medium",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/punk-rocker-2",
+        "local_path": "sources/nolimit/punk-rocker-2/cms_features.txt",
+        "extracted_at": "2026-09-27T18:50:11Z",
+        "quote_or_excerpt": "Riot 2 Bonus; DisOBEY/ChAos/BBQ 8 spins; xBet 2×; buys 100-3000×; max 30144×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/punk-rocker-2",
+        "local_path": "sources/nolimit/punk-rocker-2/page.html",
+        "extracted_at": "2026-09-27T18:50:11Z",
+        "quote_or_excerpt": "96.06% RTP, 30144 xBet MAX; 3-3-3-3-3-3; 46,656 ways."
+      }
+    ],
+    "unknowns": [
+      "exact Bonus scatter counts for DisOBEY / ChAos / Mass Transit BBQ",
+      "exact buy line-item costs inside 100–3000×"
+    ],
+    "thumbnail": "thumbs/nolimit-punk-rocker-2.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:50:11Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Punk Rocker 3",
+      "slug": "nolimit-punk-rocker-3",
+      "provider_game_id": "PunkRocker3",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/PunkRocker3",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/punk-rocker-3"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 6,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "3-3-3-3-3-3 with Enhancer Train above and Wild Queue below."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Ways with avalanches; exact ways count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Avalanches; winning Wilds stored in Wild Queue; one Wild from queue added per avalanche. Enhancer Train shifts left each avalanche."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Wild Queue",
+          "how_it_works": "Start with up to 3 Wilds (mult 1–1000×). Holds max 10; overflow adds mult to 10th. Crew Call adds 3 Wilds. Fraternal Kiss clears pays+Wilds then places one Wild with summed mults."
+        },
+        {
+          "name": "Enhancer Train",
+          "how_it_works": "Triggers when Wild under enhancer: Wild Adder, Multiplier 2/3/10×, Wild Cloner, +1 Spin (bonus), xQuake (Die Wende/Mauerfall), Mega Multiplier 50–1000× (Mauerfall)."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Wild (queued)",
+          "behavior": "Mult 1×–10,000× via boosters; participate in wins → queue; one dequeued per avalanche.",
+          "params": {
+            "values_mentioned": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              10,
+              20,
+              100,
+              1000,
+              10000
+            ]
+          }
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "3 → 6 Blitzkrieg; 4 → 8 Die Wende; 5 → 10 Mauerfall. No Bonus during Blitzkrieg.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Wild multipliers",
+          "behavior": "On Wilds in queue/reels; enhancers add; Fraternal Kiss sums.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "xWays",
+          "behavior": "Holds 2–4 of same; all Ways sync.",
+          "params": {}
+        },
+        {
+          "name": "Crew Call",
+          "behavior": "Adds 3 Wilds with random mults to queue then removes itself.",
+          "params": {}
+        },
+        {
+          "name": "Fraternal Kiss",
+          "behavior": "After avalanches if ≥1 Wild on reels or queue: clear regulars+Wilds; place Wild with sum of removed Wild mults.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Avalanche ways on 3×6 with Wild Queue + Enhancer Train. Crew Call / Fraternal Kiss / xWays. 3/4/5 Bonus → Blitzkrieg 6 / Die Wende 8 / Mauerfall 10. Boosters 3×/20×/230×/1,989× seed high Wild mults; Extra Spin post-round. Cap 19,089×.",
+      "phases": [
+        {
+          "name": "Configure boosters",
+          "order": 1,
+          "what_happens": "Optional Bonus Booster 3×, Punk 100× 20×, Punker 1,000× 230×, Punkest 10,000× 1,989× (seed Wild Queue).",
+          "ends_when": "Spin",
+          "state_changes": "Queue seeded"
+        },
+        {
+          "name": "Avalanche loop",
+          "order": 2,
+          "what_happens": "Pay; store Wilds in queue; dequeue one Wild; enhancers if Wild under train; train shifts left; Fraternal Kiss when dead.",
+          "ends_when": "No avalanches / Kiss done",
+          "state_changes": "Queue/mults"
+        },
+        {
+          "name": "Bonus / Extra Spin",
+          "order": 3,
+          "what_happens": "3/4/5 Bonus → bonus; else Extra Spin offer if cost ≤ total win.",
+          "ends_when": "Feature or end",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "Ways each avalanche with Wild multipliers.",
+      "notes": "CMS nolimitcity.com/games/punk-rocker-3."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Blitzkrieg Spins",
+          "trigger": "3 Bonus symbols.",
+          "spins_awarded": "6 free spins",
+          "retrigger": "+1 Spin enhancer per Wild on same reel.",
+          "sticky_or_persistent_state": "End of each spin (incl. trigger spin): all reel Wilds stored in queue; one Wild moved to reels each spin. No Bonus during feature.",
+          "progressive_state": "Wild Queue carries.",
+          "end_condition": "Spins done or 19,089×.",
+          "phases": [
+            {
+              "name": "Enter Blitzkrieg",
+              "order": 1,
+              "what_happens": "6 spins; Wilds banked to queue each spin."
+            }
+          ],
+          "effects": "6 FS; queue banking each spin."
+        },
+        {
+          "name": "Die Wende Spins",
+          "trigger": "4 Bonus symbols.",
+          "spins_awarded": "8 free spins",
+          "retrigger": "+1 Spin enhancer.",
+          "sticky_or_persistent_state": "Blitzkrieg features + xQuake possible in Enhancer Train.",
+          "progressive_state": "Wild Queue.",
+          "end_condition": "Spins done or 19,089×.",
+          "phases": [
+            {
+              "name": "Enter Die Wende",
+              "order": 1,
+              "what_happens": "8 spins; xQuake available."
+            }
+          ],
+          "effects": "8 FS; xQuake enhancer."
+        },
+        {
+          "name": "Mauerfall Spins",
+          "trigger": "5 Bonus symbols.",
+          "spins_awarded": "10 free spins",
+          "retrigger": "+1 Spin enhancer.",
+          "sticky_or_persistent_state": "Die Wende + Mega Multiplier enhancer (50×–1,000×).",
+          "progressive_state": "Wild Queue.",
+          "end_condition": "Spins done or 19,089×.",
+          "phases": [
+            {
+              "name": "Enter Mauerfall",
+              "order": 1,
+              "what_happens": "10 spins; Mega Multiplier available."
+            }
+          ],
+          "effects": "10 FS; xQuake + Mega Multiplier."
+        }
+      ],
+      "notes": null
+    },
+    "features": [
+      {
+        "name": "Wild Queue / Crew Call / Fraternal Kiss",
+        "trigger": "Wilds / symbols",
+        "when": "during_spin",
+        "effects": "Bank, seed, or consolidate Wild multipliers.",
+        "params": {}
+      },
+      {
+        "name": "Enhancer Train",
+        "trigger": "Wild under enhancer",
+        "when": "during_spin",
+        "effects": "Wild Adder/Mult/Cloner/+1/xQuake/Mega Mult.",
+        "params": {}
+      },
+      {
+        "name": "Bonus Booster",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 3.0,
+        "cost_text": "3× bet",
+        "effects": "≥1 Wild with 100× in queue (max 3 Wilds).",
+        "params": {}
+      },
+      {
+        "name": "Punk Spins 100x",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 20.0,
+        "cost_text": "20× bet",
+        "effects": "≥1 Wild 100× in queue.",
+        "params": {}
+      },
+      {
+        "name": "Punker Spins 1,000x",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 230.0,
+        "cost_text": "230× bet",
+        "effects": "≥1 Wild 1,000× in queue.",
+        "params": {}
+      },
+      {
+        "name": "Punkest Spins 10,000x",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 1989.0,
+        "cost_text": "1,989× bet",
+        "effects": "≥1 Wild 10,000× in queue.",
+        "params": {}
+      },
+      {
+        "name": "Extra Spin",
+        "trigger": "After round if cost ≤ total win",
+        "when": "after_bonus",
+        "effects": "Bank Wilds to queue; clear non-Bonus; drop; dequeue Wild; train shifts.",
+        "params": {}
+      },
+      {
+        "name": "Max Win",
+        "trigger": "Cap",
+        "effects": "19,089×.",
+        "params": {
+          "max_win_multiplier": 19089
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Bonus Booster",
+          "cost_multiplier": 3.0,
+          "cost_text": "3× bet",
+          "effects": "≥1×100 Wild in queue.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Punk Spins 100x",
+          "cost_multiplier": 20.0,
+          "cost_text": "20× bet",
+          "effects": "≥1 Wild 100×.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Punker Spins 1,000x",
+          "cost_multiplier": 230.0,
+          "cost_text": "230× bet",
+          "effects": "≥1 Wild 1,000×.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Punkest Spins 10,000x",
+          "cost_multiplier": 1989.0,
+          "cost_text": "1,989× bet",
+          "effects": "≥1 Wild 10,000×.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Extra Spin",
+          "cost_multiplier": null,
+          "cost_text": "From Wilds in queue/reels",
+          "effects": "Post-round extra if cost ≤ win.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": null
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": "Boosters seed Wild Queue instead of classic xBet."
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 19089.0,
+      "max_win_notes": "19,089× base bet",
+      "rtp_percent": 96.04,
+      "rtp_notes": "96.04% from official page title.",
+      "hit_frequency_notes": null
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/punk-rocker-3",
+        "local_path": "sources/nolimit/punk-rocker-3/cms_features.txt",
+        "extracted_at": "2026-09-27T18:50:11Z",
+        "quote_or_excerpt": "Blitzkrieg 6 / Die Wende 8 / Mauerfall 10; boosters 3/20/230/1989×; max 19089×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/punk-rocker-3",
+        "local_path": "sources/nolimit/punk-rocker-3/page.html",
+        "extracted_at": "2026-09-27T18:50:11Z",
+        "quote_or_excerpt": "96.04% RTP, 19089 xBet MAX; rowsReels 3-3-3-3-3-3."
+      }
+    ],
+    "unknowns": [
+      "exact ways_count"
+    ],
+    "thumbnail": "thumbs/nolimit-punk-rocker-3.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T18:35:38Z",
     "identity": {
       "provider": "Nolimit City",
@@ -52844,6 +53494,333 @@
       "per-mode buy prices"
     ],
     "thumbnail": "thumbs/nolimit-san-quentin-2-death-row.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:49:26Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "San Quentin Manhunt",
+      "slug": "nolimit-san-quentin-manhunt",
+      "provider_game_id": "SanQuentinManhunt",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/SanQuentinManhunt",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/san-quentin-manhunt"
+    },
+    "grid": {
+      "rows": null,
+      "cols": 6,
+      "rows_min": 1,
+      "rows_max": 5,
+      "layout_notes": "Official rowsReels 1-3-5-5-3-1. Locked Enhancer Cells above/below each reel; Cake Buster unlocks positions. Locked reels expand as unlocked."
+    },
+    "win_system": {
+      "type": "pay_anywhere",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": 7,
+      "direction": null,
+      "notes": "Scatter Wins: 7+ matching symbols anywhere pay; winners remove and drop."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Winning symbols removed; new symbols drop in."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "Cake Buster / Bonus unlock locked reel positions and Enhancer Cells."
+      },
+      "other": [
+        {
+          "name": "Multiplier Blocks",
+          "how_it_works": "Per-position mult applies to symbol win; doubles on win / Cell Search / xSplit; cap 128× base, 512× Manhunt."
+        },
+        {
+          "name": "Cell Search",
+          "how_it_works": "On no win: collect lowest object symbols into a Wild with mult per collected; doubles mults on collected positions."
+        },
+        {
+          "name": "Enhancer Cells",
+          "how_it_works": "Top/bottom locked cells per reel; when unlocked reveal Prisoner or feature (not Bonus)."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Wild (Cake Buster / Cell Search)",
+          "behavior": "From Cake Buster unlock or Cell Search conversion.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "Reels 2–5. Any Bonus unlocks Enhancer Cells on its reel. 3 → Sewer Escape; 4 → Manhunt. During bonus 2/3/4 Bonus → +2/+3/+4 spins.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Multiplier Blocks",
+          "behavior": "Double on win/Cell Search/xSplit up to 128× base / 512× Manhunt; sticky in bonus.",
+          "params": {
+            "cap_base": 128,
+            "cap_manhunt": 512
+          }
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Cake Buster",
+          "behavior": "Unlock locked position → Wild; if none locked, random position → Wild.",
+          "params": {}
+        },
+        {
+          "name": "xWays",
+          "behavior": "→ Prisoner revealing 2–4 same; multiple Ways sync symbol.",
+          "params": {}
+        },
+        {
+          "name": "xSplit",
+          "behavior": "Doubles all Multiplier Blocks on its reel; converts to Prisoner.",
+          "params": {}
+        },
+        {
+          "name": "Yard Dealer",
+          "behavior": "Upgrades a random object to higher pay; converts to Prisoner.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Pay-anywhere 7+ on 1-3-5-5-3-1 with tumbles. Per-cell Multiplier Blocks (double to 128×). Features: Cake Buster, xWays, xSplit, Yard Dealer, Cell Search on dead spins. Bonus unlocks enhancers; 3 Bonus → Sewer Escape (setup spins, sticky 2/4/8/16× on locked); 4 → Manhunt (512× cap + corner enhancers). Boosters 2×/20×/100×/2,000×.",
+      "phases": [
+        {
+          "name": "Configure boosters",
+          "order": 1,
+          "what_happens": "Optional Bonus Booster 2×, 2× Bonus 20×, 2× Bonus + Open x64 100×, or 2× Bonus + All x128 2,000×.",
+          "ends_when": "Spin",
+          "state_changes": "Stake charged"
+        },
+        {
+          "name": "Cascade loop",
+          "order": 2,
+          "what_happens": "Evaluate 7+; remove; drop; apply xWays/xSplit/Yard Dealer/Cake Buster; Cell Search if no win.",
+          "ends_when": "No more wins/features",
+          "state_changes": "Mults/unlocks"
+        },
+        {
+          "name": "Bonus check",
+          "order": 3,
+          "what_happens": "3 Bonus → Sewer Escape; 4 → Manhunt.",
+          "ends_when": "Feature or end",
+          "state_changes": "Enter free spins"
+        }
+      ],
+      "win_evaluation": "Pay-anywhere after cascades; position mults apply; Cell Search on dead board.",
+      "notes": "CMS nolimitcity.com/games/san-quentin-manhunt."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Sewer Escape Spins",
+          "trigger": "3 Bonus symbols.",
+          "spins_awarded": "Set in Bonus Setup Mode; each +1 symbol adds one spin. Extra: 2/3/4 Bonus during feature → +2/+3/+4.",
+          "retrigger": "+2/+3/+4 from 2/3/4 Bonus; +1 symbols in setup.",
+          "sticky_or_persistent_state": "Unlocked enhancers carry from base; unlocked positions stay; Mult Blocks persist (cap 128×). Locked reels get sticky 2×/4×/8×/16×.",
+          "progressive_state": "Multiplier Blocks do not reset between spins.",
+          "end_condition": "Spins done or Jail Break 46,532×.",
+          "phases": [
+            {
+              "name": "Bonus Setup",
+              "order": 1,
+              "what_happens": "Set spin count via +1 symbols; assign sticky mults on locked reels."
+            },
+            {
+              "name": "Sewer play",
+              "order": 2,
+              "what_happens": "Cascade spins with persistent mults/unlocks."
+            }
+          ],
+          "effects": "Setup-determined FS; sticky mults; 128× mult cap."
+        },
+        {
+          "name": "Manhunt Spins",
+          "trigger": "4 Bonus symbols.",
+          "spins_awarded": "Same setup rules as Sewer Escape.",
+          "retrigger": "Same +2/+3/+4 Bonus extras.",
+          "sticky_or_persistent_state": "Sewer features plus Mult Blocks cap 512×; corner Enhancer Cells unlock when their corner reels fully unlocked.",
+          "progressive_state": "Persistent mults up to 512×.",
+          "end_condition": "Spins done or 46,532×.",
+          "phases": [
+            {
+              "name": "Enter Manhunt",
+              "order": 1,
+              "what_happens": "Sewer rules with 512× cap and corner enhancers."
+            }
+          ],
+          "effects": "Sewer Escape+; 512× mult cap; corner enhancers."
+        }
+      ],
+      "notes": "Exact default Bonus Setup spin count not printed on CMS."
+    },
+    "features": [
+      {
+        "name": "Scatter Wins",
+        "trigger": "7+ same symbol",
+        "when": "during_spin",
+        "effects": "Pay anywhere; remove; drop.",
+        "params": {}
+      },
+      {
+        "name": "Multiplier Blocks",
+        "trigger": "Win / Cell Search / xSplit",
+        "when": "during_spin",
+        "effects": "Double position mult to cap.",
+        "params": {}
+      },
+      {
+        "name": "Cell Search",
+        "trigger": "No win",
+        "when": "during_spin",
+        "effects": "Collect lowest objects into Wild; double their mults.",
+        "params": {}
+      },
+      {
+        "name": "Bonus Booster",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 2.0,
+        "cost_text": "2× bet",
+        "effects": "≥1 Bonus.",
+        "params": {}
+      },
+      {
+        "name": "2x Bonus Booster",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 20.0,
+        "cost_text": "20× bet",
+        "effects": "≥2 Bonus.",
+        "params": {}
+      },
+      {
+        "name": "2x Bonus + Open x64",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 100.0,
+        "cost_text": "100× bet",
+        "effects": "≥2 Bonus; unlocked positions start at ×64.",
+        "params": {}
+      },
+      {
+        "name": "2x Bonus + All x128",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 2000.0,
+        "cost_text": "2,000× bet",
+        "effects": "≥2 Bonus; all positions start at ×128.",
+        "params": {}
+      },
+      {
+        "name": "Jail Break",
+        "trigger": "Cap",
+        "effects": "Max 46,532×.",
+        "params": {
+          "max_win_multiplier": 46532
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Bonus Booster",
+          "cost_multiplier": 2.0,
+          "cost_text": "2× bet",
+          "effects": "≥1 Bonus.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "2x Bonus Booster",
+          "cost_multiplier": 20.0,
+          "cost_text": "20× bet",
+          "effects": "≥2 Bonus.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "2x Bonus + Open x64 Booster",
+          "cost_multiplier": 100.0,
+          "cost_text": "100× bet",
+          "effects": "≥2 Bonus; unlocked start ×64.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "2x Bonus + All x128 Booster",
+          "cost_multiplier": 2000.0,
+          "cost_text": "2,000× bet",
+          "effects": "≥2 Bonus; all positions ×128.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": null
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": "Boosters used instead of classic xBet."
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 46532.0,
+      "max_win_notes": "Jail Break 46,532×",
+      "rtp_percent": 96.15,
+      "rtp_notes": "96.15% from official page title.",
+      "hit_frequency_notes": null
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/san-quentin-manhunt",
+        "local_path": "sources/nolimit/san-quentin-manhunt/cms_features.txt",
+        "extracted_at": "2026-09-27T18:49:26Z",
+        "quote_or_excerpt": "Scatter Wins 7+; Mult Blocks; Sewer Escape / Manhunt; boosters 2/20/100/2000×; max 46532×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/san-quentin-manhunt",
+        "local_path": "sources/nolimit/san-quentin-manhunt/page.html",
+        "extracted_at": "2026-09-27T18:49:26Z",
+        "quote_or_excerpt": "96.15% RTP, 46532 xBet MAX; rowsReels 1-3-5-5-3-1."
+      }
+    ],
+    "unknowns": [
+      "exact default spin count from Bonus Setup Mode before +1 symbols"
+    ],
+    "thumbnail": "thumbs/nolimit-san-quentin-manhunt.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {
@@ -53485,6 +54462,286 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:48:51Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Tombstone: No Mercy",
+      "slug": "nolimit-tombstone-no-mercy",
+      "provider_game_id": "TombstoneNoMercy",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/TombstoneNoMercy",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/tombstone-no-mercy"
+    },
+    "grid": {
+      "rows": null,
+      "cols": 5,
+      "rows_min": 2,
+      "rows_max": 3,
+      "layout_notes": "Official rowsReels 2-3-3-3-2. Outlaw Wilds are 3-row-high on reels 2-4."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": 108,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "108 ways from page (2-3-3-3-2)."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Outlaw Wilds (xNudge)",
+          "how_it_works": "3-row-high Wild on reels 2-4; always nudges fully visible; +1 win mult per nudge step. Substitutes except Scatter and Badge."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Outlaw Wild (xNudge)",
+          "behavior": "3-high on reels 2-4; nudge +1 mult/step. Sticky in Justice/Bounty; unlimited sticky mult in Gunslinger.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "3 Scatters → 10 Gunslinger Spins. During FS: 1 Scatter +1 spin, 2 Scatters +3 spins.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        },
+        {
+          "name": "Sheriff Badge / Marshall Badge",
+          "behavior": "Sheriff on reel 1 + Marshall on reel 5 → 3 Justice Spins. Both badges + 3 Scatters → 12 Bounty Spins.",
+          "params": {}
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Outlaw Wild nudge multiplier",
+          "behavior": "Increases by 1 per nudge; unlimited and sticky for entire Gunslinger/Bounty feature.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": []
+    },
+    "base_game_loop": {
+      "summary": "Ways spin on 2-3-3-3-2 (108). Outlaw xNudge Wilds on middle three (+1 mult/nudge). Optional xBet 2× guarantees Scatter or Outlaw Wild (~2× FS chance). Sheriff+Marshall → 3 Justice (sticky Wilds); 3 Scatters → 10 Gunslinger (sticky unlimited mult); badges+3 Scatters → 12 Bounty. Buys 65–2,310×.",
+      "phases": [
+        {
+          "name": "Configure xBet",
+          "order": 1,
+          "what_happens": "Optional xBet at 2× base: guarantee Scatter or Outlaw Wild; ~2× freespin chance. Pays unaffected.",
+          "ends_when": "Spin",
+          "state_changes": "Stake ×2 if xBet"
+        },
+        {
+          "name": "Spin + nudge",
+          "order": 2,
+          "what_happens": "Reels stop; Outlaw Wilds nudge fully visible adding win mult.",
+          "ends_when": "Nudges done",
+          "state_changes": "Wild mult set"
+        },
+        {
+          "name": "Evaluate wins",
+          "order": 3,
+          "what_happens": "Pay ways with Wild multipliers.",
+          "ends_when": "Wins paid",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus check",
+          "order": 4,
+          "what_happens": "Sheriff+Marshall → Justice 3; 3 Scatters → Gunslinger 10; badges+3 Scatters → Bounty 12.",
+          "ends_when": "Feature or end",
+          "state_changes": "Enter free spins"
+        }
+      ],
+      "win_evaluation": "Ways after nudges with Outlaw Wild multipliers.",
+      "notes": "CMS on nolimitcity.com/games/tombstone-no-mercy. Second xBet (Outlaw Wild-only) has empty CMS description."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Justice Spins",
+          "trigger": "Sheriff Badge on reel 1 and Marshall Badge on reel 5.",
+          "spins_awarded": "3 free spins",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Outlaw Wilds stick throughout Justice Spins.",
+          "progressive_state": "Nudge mult +1 per step on sticky Wilds.",
+          "end_condition": "Spins done or No Mercy 16,480×.",
+          "phases": [
+            {
+              "name": "Enter Justice",
+              "order": 1,
+              "what_happens": "3 spins with sticky Outlaw Wilds."
+            }
+          ],
+          "effects": "3 FS; sticky Outlaw Wilds."
+        },
+        {
+          "name": "Gunslinger Spins",
+          "trigger": "3 Scatter symbols.",
+          "spins_awarded": "10 free spins",
+          "retrigger": "1 Scatter → +1 spin; 2 Scatters → +3 spins.",
+          "sticky_or_persistent_state": "Unlimited win multiplier from Outlaw Wild nudges sticks for entire feature.",
+          "progressive_state": "+1 mult per Outlaw nudge step across the bonus.",
+          "end_condition": "Spins done or 16,480×.",
+          "phases": [
+            {
+              "name": "Enter Gunslinger",
+              "order": 1,
+              "what_happens": "10 spins; sticky unlimited Outlaw win mult."
+            }
+          ],
+          "effects": "10 FS; sticky unlimited nudge mult; scatter retriggers."
+        },
+        {
+          "name": "Bounty Spins",
+          "trigger": "Sheriff Badge + 3 Scatters + Marshall Badge.",
+          "spins_awarded": "12 free spins",
+          "retrigger": "1 Scatter → +1; 2 Scatters → +3.",
+          "sticky_or_persistent_state": "Outlaw Wilds stick once landed; nudge mult for each step (Gunslinger+Justice combo).",
+          "progressive_state": "Sticky Wilds + accumulating nudge mult.",
+          "end_condition": "Spins done or 16,480×.",
+          "phases": [
+            {
+              "name": "Enter Bounty",
+              "order": 1,
+              "what_happens": "12 spins combining sticky Wilds and sticky unlimited nudge mult."
+            }
+          ],
+          "effects": "12 FS; sticky Wilds + sticky nudge mult; scatter retriggers."
+        }
+      ],
+      "notes": null
+    },
+    "features": [
+      {
+        "name": "Outlaw Wilds (xNudge)",
+        "trigger": "Wild lands reels 2-4",
+        "when": "during_spin",
+        "effects": "3-high nudge; +1 mult/step.",
+        "params": {}
+      },
+      {
+        "name": "xBet: Scatter / Outlaw Wild",
+        "trigger": "Player enables",
+        "when": "before_spin",
+        "cost_multiplier": 2.0,
+        "cost_text": "2× bet",
+        "effects": "Guaranteed Scatter or Outlaw Wild; ~2× FS chance.",
+        "params": {}
+      },
+      {
+        "name": "xBet: Outlaw Wild",
+        "trigger": "Player enables",
+        "when": "before_spin",
+        "effects": "Second xBet option (CMS description empty).",
+        "params": {}
+      },
+      {
+        "name": "No Mercy",
+        "trigger": "Cap",
+        "effects": "Max 16,480×; round ends.",
+        "params": {
+          "max_win_multiplier": 16480
+        }
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "when": "base_game",
+        "cost_text": "65×–2,310× bet",
+        "effects": "Buy into bonus features.",
+        "params": {}
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Nolimit Bonus — bonus features",
+          "cost_multiplier": null,
+          "cost_text": "65×–2,310× bet",
+          "effects": "Buy into Justice / Gunslinger / Bounty variants.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Nolimit Booster",
+          "cost_multiplier": null,
+          "cost_text": "Per-spin feature cost",
+          "effects": "Activate a specific feature each spin.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Exact line-item buy prices not printed beyond band."
+    },
+    "ante_bet": {
+      "available": true,
+      "cost_multiplier": 2.0,
+      "effects": "xBet 2×: guaranteed Scatter or Outlaw Wild; 2× more likely to activate freespins.",
+      "notes": "Second Outlaw-Wild-only xBet exists but CMS text empty."
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 16480.0,
+      "max_win_notes": "No Mercy 16,480×",
+      "rtp_percent": 96.05,
+      "rtp_notes": "96.05% from official page title.",
+      "hit_frequency_notes": null
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "medium",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/tombstone-no-mercy",
+        "local_path": "sources/nolimit/tombstone-no-mercy/cms_features.txt",
+        "extracted_at": "2026-09-27T18:48:51Z",
+        "quote_or_excerpt": "Outlaw Wilds xNudge; Justice 3; Gunslinger 10; Bounty 12; xBet 2×; max 16480×; buys 65-2310×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/tombstone-no-mercy",
+        "local_path": "sources/nolimit/tombstone-no-mercy/page.html",
+        "extracted_at": "2026-09-27T18:48:51Z",
+        "quote_or_excerpt": "96.05% RTP, 16480 xBet MAX; rowsReels 2-3-3-3-2; 108 ways."
+      }
+    ],
+    "unknowns": [
+      "xBet: Outlaw Wild cost/effects (CMS description null)",
+      "exact Nolimit Bonus line-item costs inside 65–2310×"
+    ],
+    "thumbnail": "thumbs/nolimit-tombstone-no-mercy.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T18:35:38Z",
     "identity": {
       "provider": "Nolimit City",
@@ -53797,6 +55054,692 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:48:51Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Tombstone Slaughter: El Gordo's Revenge",
+      "slug": "nolimit-tombstone-slaughter",
+      "provider_game_id": "TombstoneSlaughter",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/TombstoneSlaughter",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/tombstone-slaughter"
+    },
+    "grid": {
+      "rows": null,
+      "cols": 6,
+      "rows_min": 2,
+      "rows_max": 3,
+      "layout_notes": "Official 2-3-3-3-3-2. Reel 6: only 2-high stacked Revolver/Character; inactive if half symbols land; no lows."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": 324,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "324 ways from page (2×3×3×3×3×2)."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "xNudge",
+          "how_it_works": "Stacked Wild on middle 4 reels; nudges fully visible; +1 Wild mult per nudge; several add together."
+        },
+        {
+          "name": "Quickdraw / Revolver",
+          "how_it_works": "Full Revolver on last reel fires 3–6 Cylinder features: Backstab/Shootout Wild, xSplit, Infectious xSplit, Justice Wild, Boothill Multiplier (×5–×999)."
+        },
+        {
+          "name": "El Gordo Revenge Meter",
+          "how_it_works": "Levels 1–5; starting xNudge mult 1–5. Bonus on reels 2–5: +1 spin, fill meter spot, +1 future-level mults; 4 Bonus → next level after spins play out."
+        },
+        {
+          "name": "xRIP",
+          "how_it_works": "If total paytable win < base bet, no payout."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xNudge Wild",
+          "behavior": "Middle 4 reels; nudge +1 mult; add together.",
+          "params": {}
+        },
+        {
+          "name": "Reel Split Wild",
+          "behavior": "From 2 Slaughter Scatters; splits reel symbols in half.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Slaughter Scatter",
+          "behavior": "Middle 4 reels. 2 → Reel Split Wilds. 3 → 5 Slaughter Spins; 4 → 5 Slaughter with 2 meter spots + upgraded nudge mults 1/4/5/6/7. +Revolver → Massacre.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        },
+        {
+          "name": "Revolver",
+          "behavior": "Last reel only; full Revolver → Quickdraw (3–6 cylinders); during Slaughter upgrades remaining to Massacre +2 spins.",
+          "params": {}
+        },
+        {
+          "name": "Bonus",
+          "behavior": "Reels 2–5 during bonus; +1 spin, fill Revenge meter, +1 future level mults; 4 advance level.",
+          "params": {}
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Character / Boothill / Killcount",
+          "behavior": "Last-reel Character random mult 5–99; Boothill ×5–×999; Killcount adds Fibonacci-like mults to future meter levels.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "El Gordo Revenge Meter",
+          "behavior": "Levels 1–5 with escalating starting nudge mult; Killcount / Revenge Level Up from Revolver in bonus.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Ways on 2-3-3-3-3-2 (324). xNudge on middle 4; 2 Slaughter → xSplit; full Revolver → Quickdraw. 3/4 Slaughter → 5 Slaughter Spins (4 fills 2 meter spots + upgraded nudge); +Revolver → Massacre (sticky Revolver). Boosters: xBet 1.2×, Super xBet 15×, xNudge 35×, xNudge+Revolver 3,000×. Cap 500,000×.",
+      "phases": [
+        {
+          "name": "Configure boosters",
+          "order": 1,
+          "what_happens": "Optional xBet 1.2× (Slaughter reel 2), Super xBet 15× (2 Slaughter), xNudge 35× (2 Wilds), or xNudge+Revolver 3,000×.",
+          "ends_when": "Spin",
+          "state_changes": "Stake charged"
+        },
+        {
+          "name": "Spin + Quickdraw",
+          "order": 2,
+          "what_happens": "Nudges; optional 2-scatter splits; full Revolver fires 3–6 cylinder features.",
+          "ends_when": "Resolved",
+          "state_changes": "Wilds/splits/mults"
+        },
+        {
+          "name": "Evaluate + xRIP",
+          "order": 3,
+          "what_happens": "Pay ways; xRIP voids sub-stake totals.",
+          "ends_when": "Payout finalized",
+          "state_changes": "Possible void"
+        },
+        {
+          "name": "Bonus check",
+          "order": 4,
+          "what_happens": "3/4 Slaughter → Slaughter Spins; +Revolver → Massacre.",
+          "ends_when": "Feature or end",
+          "state_changes": "Enter free spins"
+        }
+      ],
+      "win_evaluation": "After nudges/Quickdraw/splits; then xRIP.",
+      "notes": "CMS nolimitcity.com/games/tombstone-slaughter. Affiliate title includes El Gordo's Revenge."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Slaughter Spins",
+          "trigger": "3 Slaughter symbols (or 4 with upgraded meter/nudge).",
+          "spins_awarded": "5 free spins",
+          "retrigger": "Full Revolver upgrades remaining to Massacre and awards +2 spins. Bonus symbols +1 spin and fill meter.",
+          "sticky_or_persistent_state": "Revenge Meter levels 1–5; last reel always full Character (random mult) or Revolver.",
+          "progressive_state": "Meter levels; Killcount/Revenge Level Up from Revolver cylinders.",
+          "end_condition": "Spins done / level progress / El Gordo Revenged 500,000×.",
+          "phases": [
+            {
+              "name": "Enter Slaughter",
+              "order": 1,
+              "what_happens": "5 spins; meter at L1 (or pre-filled if 4 scatters); last reel Character/Revolver."
+            },
+            {
+              "name": "Meter / Massacre upgrade",
+              "order": 2,
+              "what_happens": "Bonus fill meter; Revolver → Massacre +2."
+            }
+          ],
+          "effects": "5 FS; Revenge Meter; Quickdraw cylinders; upgradeable to Massacre."
+        },
+        {
+          "name": "Massacre Spins",
+          "trigger": "3 Slaughter + 1 Revolver (or upgrade from Slaughter); 4+Revolver variant with meter fill.",
+          "spins_awarded": "5 free spins (+2 if upgraded mid-Slaughter)",
+          "retrigger": "Bonus +1 spin / meter fills.",
+          "sticky_or_persistent_state": "Revolver sticky on last reel; all Slaughter features.",
+          "progressive_state": "Revenge Meter as in Slaughter.",
+          "end_condition": "Spins done or 500,000×.",
+          "phases": [
+            {
+              "name": "Enter Massacre",
+              "order": 1,
+              "what_happens": "5 spins; sticky Revolver on reel 6; meter active."
+            }
+          ],
+          "effects": "5 FS; sticky Revolver; full Slaughter + meter features."
+        }
+      ],
+      "notes": "Quickdraw skipped on main-game spin when Massacre bought via Nolimit Bonus."
+    },
+    "features": [
+      {
+        "name": "xNudge",
+        "trigger": "Wild middle 4",
+        "when": "during_spin",
+        "effects": "Nudge fully; +1 Wild mult; add together.",
+        "params": {}
+      },
+      {
+        "name": "Quickdraw",
+        "trigger": "Full Revolver last reel",
+        "when": "during_spin",
+        "effects": "3–6 cylinder features (Wilds/splits/Justice/Boothill).",
+        "params": {}
+      },
+      {
+        "name": "xRIP",
+        "trigger": "Win < base bet",
+        "when": "after_spin",
+        "effects": "No payout.",
+        "params": {}
+      },
+      {
+        "name": "xBet booster",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 1.2,
+        "cost_text": "1.2× bet",
+        "effects": "Guaranteed Slaughter on reel 2.",
+        "params": {}
+      },
+      {
+        "name": "Super xBet",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 15.0,
+        "cost_text": "15× bet",
+        "effects": "Guaranteed 2 Slaughter.",
+        "params": {}
+      },
+      {
+        "name": "xNudge Booster",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 35.0,
+        "cost_text": "35× bet",
+        "effects": "Guaranteed 2 xNudge Wilds.",
+        "params": {}
+      },
+      {
+        "name": "xNudge & Revolver Booster",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 3000.0,
+        "cost_text": "3,000× bet",
+        "effects": "1 xNudge Wild + 1 fully stacked Revolver.",
+        "params": {}
+      },
+      {
+        "name": "El Gordo Revenged",
+        "trigger": "Cap",
+        "effects": "Max 500,000×.",
+        "params": {
+          "max_win_multiplier": 500000
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "xBet™",
+          "cost_multiplier": 1.2,
+          "cost_text": "1.2× bet",
+          "effects": "Slaughter on reel 2.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Super xBet™",
+          "cost_multiplier": 15.0,
+          "cost_text": "15× bet",
+          "effects": "2 Slaughter symbols.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "xNudge Booster",
+          "cost_multiplier": 35.0,
+          "cost_text": "35× bet",
+          "effects": "2 xNudge Wilds.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "xNudge & Revolver Booster",
+          "cost_multiplier": 3000.0,
+          "cost_text": "3,000× bet",
+          "effects": "xNudge + full Revolver.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Named boosters priced on CMS; separate Nolimit Bonus Massacre buy exists (Quickdraw skip note) without price."
+    },
+    "ante_bet": {
+      "available": true,
+      "cost_multiplier": 1.2,
+      "effects": "xBet 1.2× guarantees Slaughter on reel 2. Super xBet 15× also available.",
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 500000.0,
+      "max_win_notes": "El Gordo Revenged 500,000×",
+      "rtp_percent": 96.0,
+      "rtp_notes": "96% from official page title.",
+      "hit_frequency_notes": null
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/tombstone-slaughter",
+        "local_path": "sources/nolimit/tombstone-slaughter/cms_features.txt",
+        "extracted_at": "2026-09-27T18:48:51Z",
+        "quote_or_excerpt": "2-3-3-3-3-2; Slaughter/Massacre 5 spins; Quickdraw; Revenge Meter L1-5; max 500,000×; boosters 1.2/15/35/3000×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/tombstone-slaughter",
+        "local_path": "sources/nolimit/tombstone-slaughter/page.html",
+        "extracted_at": "2026-09-27T18:48:51Z",
+        "quote_or_excerpt": "96% RTP, 500000 xBet MAX; 324 ways."
+      }
+    ],
+    "unknowns": [
+      "exact Nolimit Bonus Massacre buy price",
+      "DX RTP variants"
+    ],
+    "thumbnail": "thumbs/nolimit-tombstone-slaughter.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:49:26Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "True Grit Redemption 2",
+      "slug": "nolimit-true-grit-redemption-2",
+      "provider_game_id": "TrueGrit2",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/TrueGrit2",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/true-grit-redemption-2"
+    },
+    "grid": {
+      "rows": 4,
+      "cols": 6,
+      "rows_min": 2,
+      "rows_max": 4,
+      "layout_notes": "CMS: 6 reels × 4 rows with 6 locked boxes + enhancer row on top. Page rowsReels 2-3-4-4-3-2 reflects locked/visible profile before unlocks."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "winType Ways on page; exact ways count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Avalanches; new symbols enter with Global Multiplier; Global Mult starts 1×, +1 after win and via specials."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "Locked boxes open via xBomb adjacent, xSplit row, Hunter, or bonus triggers."
+      },
+      "other": [
+        {
+          "name": "Enhancer row",
+          "how_it_works": "Top specials (xSplit, xWays, Toxic xWays, Infectious xWays, Rat, Rat King, Hunter) activate when they fall into the reel area during avalanches."
+        },
+        {
+          "name": "Global Multiplier",
+          "how_it_works": "Starts 1×; +1 after a win; also rises from xBomb, Rats, Rat King, Hunter, Redemption Girl win contribution."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xWild",
+          "behavior": "Converts entire reel to Wilds keeping mults; skips Bonus/Reckoning Girl/Rat/Rat King.",
+          "params": {}
+        },
+        {
+          "name": "Redemption Girl",
+          "behavior": "Wild that sums mults from same reel (not Rat mults); if in win, adds its mult to Global for next collapse.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "3 → 7 Reckoning; 4 → 10 Vengeance; 5 → Redemption Spins.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Global / symbol multipliers",
+          "behavior": "Global starts 1×; symbols enter at Global; specials add. Hunter +50× to self, all symbols, and Global.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "xBomb",
+          "behavior": "Explodes adjacents except Wild/Reckoning Girl/Bonus; +1 win mult next collapse; opens adjacent locked boxes.",
+          "params": {}
+        },
+        {
+          "name": "xSplit",
+          "behavior": "Splits row symbols doubling their mult; opens locked boxes in row; then becomes regular.",
+          "params": {}
+        },
+        {
+          "name": "xWays / Toxic xWays / Infectious xWays",
+          "behavior": "Reveal paying symbol at Global then +2–4× (xWays), +2× to all instances (Toxic), or double all instances (Infectious — Vengeance/Redemption only).",
+          "params": {}
+        },
+        {
+          "name": "Hunter",
+          "behavior": "Enhancer/locked boxes only; +50× to self, all reel symbols, and Global (skips Redemption Girl/Rat/Rat King/Bonus).",
+          "params": {}
+        },
+        {
+          "name": "Rat / Rat King",
+          "behavior": "4+ Rats/Rat Kings remove and add their mults to Global (Rat 1–5×; Rat King 15/20/25×). Split doubles count not mult.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Ways avalanches on 6×4 with locked boxes + enhancer row. Global Mult climbs; xBomb/xSplit/xWays/Toxic/xWild/Redemption Girl/Hunter/Rats. 3/4/5 Bonus → Reckoning 7 / Vengeance 10 / Redemption (all boxes open). Boosters 1.5×/7.5×/30×/1,869×; optional xTra Extra Spin. Cap 34,000×.",
+      "phases": [
+        {
+          "name": "Configure boosters",
+          "order": 1,
+          "what_happens": "Optional Bonus Booster 1.5×, Gritty 7.5× (Global/symbols 5×), Grittier 30× (20×), Grittiest 1,869× (500×).",
+          "ends_when": "Spin",
+          "state_changes": "Stake charged; Global may be preset"
+        },
+        {
+          "name": "Avalanche loop",
+          "order": 2,
+          "what_happens": "Pay ways; tumble; enhancer specials fall in; open boxes; raise Global.",
+          "ends_when": "No more wins",
+          "state_changes": "Global/boxes/mults"
+        },
+        {
+          "name": "Bonus / xTra check",
+          "order": 3,
+          "what_happens": "3/4/5 Bonus → bonus modes; else optional Extra Spin if cost ≤ prior win.",
+          "ends_when": "Feature or end",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "Ways after each avalanche with symbol and Global multipliers.",
+      "notes": "CMS; Redemption Spins count not printed (only trigger + all boxes open)."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Reckoning Spins",
+          "trigger": "3 Bonus symbols.",
+          "spins_awarded": "7 free spins",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Global Mult persists; unlocked boxes stay open for the round.",
+          "progressive_state": "Persistent Global Mult across spins.",
+          "end_condition": "Spins done or 34,000×; optional xTra.",
+          "phases": [
+            {
+              "name": "Enter Reckoning",
+              "order": 1,
+              "what_happens": "7 spins; persistent Global and unlocks."
+            }
+          ],
+          "effects": "7 FS; sticky Global + unlocks."
+        },
+        {
+          "name": "Vengeance Spins",
+          "trigger": "4 Bonus symbols.",
+          "spins_awarded": "10 free spins",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Reckoning features; locked boxes on reels 5–6 open at trigger; Infectious xWays in enhancer row.",
+          "progressive_state": "Persistent Global.",
+          "end_condition": "Spins done or 34,000×.",
+          "phases": [
+            {
+              "name": "Enter Vengeance",
+              "order": 1,
+              "what_happens": "10 spins; open reels 5–6 boxes; Infectious xWays available."
+            }
+          ],
+          "effects": "10 FS; open last two reels' boxes; Infectious xWays."
+        },
+        {
+          "name": "Redemption Spins",
+          "trigger": "5 Bonus symbols.",
+          "spins_awarded": "Not printed on CMS (Vengeance features + all locked boxes open).",
+          "retrigger": null,
+          "sticky_or_persistent_state": "All locked boxes opened at trigger; Infectious xWays; persistent Global.",
+          "progressive_state": "Persistent Global.",
+          "end_condition": "Spins done or 34,000×.",
+          "phases": [
+            {
+              "name": "Enter Redemption",
+              "order": 1,
+              "what_happens": "All boxes open; Vengeance feature set."
+            }
+          ],
+          "effects": "Top bonus; all boxes open; Infectious xWays."
+        }
+      ],
+      "notes": "Redemption spin count not stated on CMS."
+    },
+    "features": [
+      {
+        "name": "xBomb",
+        "trigger": "xBomb lands",
+        "when": "during_spin",
+        "effects": "Explode adjacents; +1 next collapse; open adjacent boxes.",
+        "params": {}
+      },
+      {
+        "name": "xSplit / xWays / Toxic / Infectious",
+        "trigger": "Specials from enhancer",
+        "when": "during_spin",
+        "effects": "Row split / reveal paying with mult boosts.",
+        "params": {}
+      },
+      {
+        "name": "Bonus Booster",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 1.5,
+        "cost_text": "1.5× bet",
+        "effects": "Bonus on bottom of reel 2.",
+        "params": {}
+      },
+      {
+        "name": "Gritty Spins",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 7.5,
+        "cost_text": "7.5× bet",
+        "effects": "Global + symbols at 5× (except Redemption Girl/Rat/Rat King/Bonus).",
+        "params": {}
+      },
+      {
+        "name": "Grittier Spins",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 30.0,
+        "cost_text": "30× bet",
+        "effects": "Guaranteed 20× Global/symbols.",
+        "params": {}
+      },
+      {
+        "name": "Grittiest Spins",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 1869.0,
+        "cost_text": "1,869× bet",
+        "effects": "Guaranteed 500× Global/symbols.",
+        "params": {}
+      },
+      {
+        "name": "xTra Extra Spin",
+        "trigger": "After round if cost ≤ prior win",
+        "when": "after_bonus",
+        "effects": "Keep Global + opened boxes for one more spin.",
+        "params": {}
+      },
+      {
+        "name": "Max Win",
+        "trigger": "Cap",
+        "effects": "34,000×.",
+        "params": {
+          "max_win_multiplier": 34000
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Bonus Booster",
+          "cost_multiplier": 1.5,
+          "cost_text": "1.5× bet",
+          "effects": "Bonus bottom reel 2.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Gritty Spins",
+          "cost_multiplier": 7.5,
+          "cost_text": "7.5× bet",
+          "effects": "5× Global/symbols.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Grittier Spins",
+          "cost_multiplier": 30.0,
+          "cost_text": "30× bet",
+          "effects": "20× Global/symbols.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Grittiest Spins",
+          "cost_multiplier": 1869.0,
+          "cost_text": "1,869× bet",
+          "effects": "500× Global/symbols.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "xTra Extra Spin",
+          "cost_multiplier": null,
+          "cost_text": "From Global + opened boxes",
+          "effects": "Post-round extra spin if cost ≤ prior win.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": null
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": "Bonus Booster 1.5× is light per-spin guarantee."
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 34000.0,
+      "max_win_notes": "34,000× base bet",
+      "rtp_percent": 96.07,
+      "rtp_notes": "96.07% from official page title.",
+      "hit_frequency_notes": null
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/true-grit-redemption-2",
+        "local_path": "sources/nolimit/true-grit-redemption-2/cms_features.txt",
+        "extracted_at": "2026-09-27T18:49:26Z",
+        "quote_or_excerpt": "6×4 locked boxes; Reckoning 7 / Vengeance 10 / Redemption; boosters 1.5/7.5/30/1869×; max 34000×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/true-grit-redemption-2",
+        "local_path": "sources/nolimit/true-grit-redemption-2/page.html",
+        "extracted_at": "2026-09-27T18:49:26Z",
+        "quote_or_excerpt": "96.07% RTP, 34000 xBet MAX; rowsReels 2-3-4-4-3-2; winType Ways."
+      }
+    ],
+    "unknowns": [
+      "exact ways_count",
+      "Redemption Spins awarded count"
+    ],
+    "thumbnail": "thumbs/nolimit-true-grit-redemption-2.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T18:37:33Z",
     "identity": {
       "provider": "Nolimit City",
@@ -54102,6 +56045,327 @@
     ],
     "thumbnail": "thumbs/nolimit-true-grit-redemption.webp",
     "thumbnail_attribution": "SlotCatalog"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:50:11Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "xWays Hoarder 2",
+      "slug": "nolimit-xways-hoarder-2",
+      "provider_game_id": "XwaysHoarder2",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/XwaysHoarder2",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/x-ways-hoarder-2"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 6,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "Official 3-3-3-3-3-3. xWays on middle 4; size expands with connected Ways (up to 12)."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Ways expanded heavily by xWays sizes 2–12; exact base ways not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": true,
+        "how_it_works": "Loot Respin: Loot + any special → expand/lock reel 1; specials sticky; unlock + final respin when no new special; Loot again can retrigger."
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "xWays expand by connected count; Loot locks reel 1 during respin."
+      },
+      "other": [
+        {
+          "name": "xSplit Wild / xSplit Nudge",
+          "how_it_works": "xSplit Wild (not reel 1) splits left on row (mult if multi-split); does not split Loot; doubles xWays mult when splitting Ways. xSplit Nudge stacks, nudges stopping before specials, then splits each position left."
+        },
+        {
+          "name": "Radiation Levels",
+          "how_it_works": "In Raid/Plunder: every 3 collected xSplit/xWays/xSplit Nudge → next Radiation level (remove low pays); +1 spin per level; Level 4 → Binge Spins."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xSplit Wild",
+          "behavior": "Any reel except 1; splits left on row; doubles xWays mult if splitting Ways.",
+          "params": {}
+        },
+        {
+          "name": "xSplit Nudge",
+          "behavior": "Except reel 1; stacked nudge then split each row left.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "Any reel except 1. Not split — becomes Super Scatter instead. 3/4/5 → 7/10/13 Raid; if ≥1 Super Scatter → Plunder instead.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        },
+        {
+          "name": "Super Scatter",
+          "behavior": "From split attempt on Scatter; in Plunder its position + below become sticky xSplit; in Raid converts self + regulars below to xSplit.",
+          "params": {}
+        },
+        {
+          "name": "Loot",
+          "behavior": "With any special → Loot Respin.",
+          "params": {}
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "xWays size / split mult",
+          "behavior": "xWays size 2–12; split shows multiplier when split more than once.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "xWays",
+          "behavior": "Middle 4; reveal random regular (synced if multiple); size 2–4 / 3–8 / 4–12 by 1/2/3 connected on reel.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Ways on 3×6 with xWays (2–12), xSplit Wild, xSplit Nudge. Loot+special → Loot Respin. 3/4/5 Scatter → 7/10/13 Raid (sticky specials; Radiation levels); ≥1 Super Scatter → Plunder; Radiation L4 → Binge. Boosters 3×/10×/30×. Cap 25,920× (Wafer Thin Mint).",
+      "phases": [
+        {
+          "name": "Configure boosters",
+          "order": 1,
+          "what_happens": "Optional xBet 3× (4× FS chance), 1 Guaranteed xSplit Nudge 10×, or Loot Respins 30×.",
+          "ends_when": "Spin",
+          "state_changes": "Stake charged"
+        },
+        {
+          "name": "Spin + splits / Loot",
+          "order": 2,
+          "what_happens": "xWays reveal/expand; xSplit/Nudge split left; optional Loot Respin chain.",
+          "ends_when": "Resolved",
+          "state_changes": "Sticky specials if Loot"
+        },
+        {
+          "name": "Bonus check",
+          "order": 3,
+          "what_happens": "3/4/5 Scatter → Raid or Plunder (if Super Scatter).",
+          "ends_when": "Feature or end",
+          "state_changes": "Enter free spins"
+        }
+      ],
+      "win_evaluation": "Ways after xWays/xSplit expansions.",
+      "notes": "CMS; source dir x-ways-hoarder-2; slug matches sibling nolimit-xways-hoarder."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Raid Spins",
+          "trigger": "3/4/5 Scatter (no Super Scatter required).",
+          "spins_awarded": "7 / 10 / 13 free spins",
+          "retrigger": "+1 spin per Radiation level upgrade.",
+          "sticky_or_persistent_state": "xSplit / xWays / xSplit Nudge sticky after landing. Super Scatter converts self + regulars below to xSplit.",
+          "progressive_state": "Radiation levels at 3/6/9/12 collected specials; remove low pays; L4 → Binge.",
+          "end_condition": "Spins done / Binge / Wafer Thin Mint 25,920×.",
+          "phases": [
+            {
+              "name": "Enter Raid",
+              "order": 1,
+              "what_happens": "Award 7/10/13; sticky specials; Radiation tracking."
+            },
+            {
+              "name": "Radiation / Binge",
+              "order": 2,
+              "what_happens": "Every 3 specials → level up +1 spin; L4 enters Binge."
+            }
+          ],
+          "effects": "7/10/13 FS; sticky specials; Radiation → Binge."
+        },
+        {
+          "name": "Plunder Spins",
+          "trigger": "3/4/5 Scatter with ≥1 Super Scatter.",
+          "spins_awarded": "7 / 10 / 13 free spins",
+          "retrigger": "+1 per Radiation level.",
+          "sticky_or_persistent_state": "Super Scatter position + below sticky as xSplit; Radiation as Raid.",
+          "progressive_state": "Radiation levels same as Raid.",
+          "end_condition": "Spins done / Binge / 25,920×.",
+          "phases": [
+            {
+              "name": "Enter Plunder",
+              "order": 1,
+              "what_happens": "7/10/13; sticky xSplit column from Super Scatter."
+            }
+          ],
+          "effects": "Raid-like with sticky Super Scatter xSplit column."
+        },
+        {
+          "name": "Binge Spins",
+          "trigger": "Raid or Plunder reaches Radiation Level 4.",
+          "spins_awarded": "Continues remaining spins at Binge symbol set.",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Only top 2 highest characters + highest object can land.",
+          "progressive_state": null,
+          "end_condition": "Spins done or 25,920×.",
+          "phases": [
+            {
+              "name": "Binge",
+              "order": 1,
+              "what_happens": "Reduced symbol set for remaining spins."
+            }
+          ],
+          "effects": "Final Radiation tier; lean symbol set."
+        }
+      ],
+      "notes": null
+    },
+    "features": [
+      {
+        "name": "xWays",
+        "trigger": "xWays middle 4",
+        "when": "during_spin",
+        "effects": "Reveal synced regular; expand 2–12 by connected count.",
+        "params": {}
+      },
+      {
+        "name": "xSplit Wild / Nudge",
+        "trigger": "Specials land",
+        "when": "during_spin",
+        "effects": "Split left; double Ways mult; Nudge then split.",
+        "params": {}
+      },
+      {
+        "name": "Loot Respin",
+        "trigger": "Loot + special",
+        "when": "during_spin",
+        "effects": "Lock reel 1; sticky specials; unlock + final respin.",
+        "params": {}
+      },
+      {
+        "name": "xBet booster",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 3.0,
+        "cost_text": "3× bet",
+        "effects": "4× more likely Free Spins.",
+        "params": {}
+      },
+      {
+        "name": "1 Guaranteed xSplit Nudge xBet",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 10.0,
+        "cost_text": "10× bet",
+        "effects": "≥1 xSplit Nudge.",
+        "params": {}
+      },
+      {
+        "name": "Loot Respins xBet",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 30.0,
+        "cost_text": "30× bet",
+        "effects": "Guaranteed Loot Respin.",
+        "params": {}
+      },
+      {
+        "name": "Wafer Thin Mint",
+        "trigger": "Cap",
+        "effects": "Max 25,920×.",
+        "params": {
+          "max_win_multiplier": 25920
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "xBet™",
+          "cost_multiplier": 3.0,
+          "cost_text": "3× bet",
+          "effects": "4× FS trigger chance.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "1 Guaranteed xSplit Nudge xBet™",
+          "cost_multiplier": 10.0,
+          "cost_text": "10× bet",
+          "effects": "≥1 xSplit Nudge.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Loot Respins xBet™",
+          "cost_multiplier": 30.0,
+          "cost_text": "30× bet",
+          "effects": "Guaranteed Loot Respin.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": null
+    },
+    "ante_bet": {
+      "available": true,
+      "cost_multiplier": 3.0,
+      "effects": "xBet 3×: 4× more likely to trigger Free Spins.",
+      "notes": "Additional 10× and 30× boosters available."
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 25920.0,
+      "max_win_notes": "Wafer Thin Mint 25,920×",
+      "rtp_percent": 96.14,
+      "rtp_notes": "96.14% from official page title.",
+      "hit_frequency_notes": null
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/x-ways-hoarder-2",
+        "local_path": "sources/nolimit/x-ways-hoarder-2/cms_features.txt",
+        "extracted_at": "2026-09-27T18:50:11Z",
+        "quote_or_excerpt": "Raid 7/10/13; Plunder; Binge L4; Loot Respin; boosters 3/10/30×; max 25920×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/x-ways-hoarder-2",
+        "local_path": "sources/nolimit/x-ways-hoarder-2/page.html",
+        "extracted_at": "2026-09-27T18:50:11Z",
+        "quote_or_excerpt": "96.14% RTP, 25920 xBet MAX; rowsReels 3-3-3-3-3-3."
+      }
+    ],
+    "unknowns": [
+      "exact base ways_count"
+    ],
+    "thumbnail": "thumbs/nolimit-xways-hoarder-2.webp",
+    "thumbnail_attribution": "Nolimit City"
   },
   {
     "schema_version": "1.1.0",

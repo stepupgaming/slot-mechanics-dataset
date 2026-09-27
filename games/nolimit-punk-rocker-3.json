@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:50:11Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Punk Rocker 3",
+    "slug": "nolimit-punk-rocker-3",
+    "provider_game_id": "PunkRocker3",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/PunkRocker3",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/punk-rocker-3"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 6,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "3-3-3-3-3-3 with Enhancer Train above and Wild Queue below."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with avalanches; exact ways count not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Avalanches; winning Wilds stored in Wild Queue; one Wild from queue added per avalanche. Enhancer Train shifts left each avalanche."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Wild Queue",
+        "how_it_works": "Start with up to 3 Wilds (mult 1–1000×). Holds max 10; overflow adds mult to 10th. Crew Call adds 3 Wilds. Fraternal Kiss clears pays+Wilds then places one Wild with summed mults."
+      },
+      {
+        "name": "Enhancer Train",
+        "how_it_works": "Triggers when Wild under enhancer: Wild Adder, Multiplier 2/3/10×, Wild Cloner, +1 Spin (bonus), xQuake (Die Wende/Mauerfall), Mega Multiplier 50–1000× (Mauerfall)."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild (queued)",
+        "behavior": "Mult 1×–10,000× via boosters; participate in wins → queue; one dequeued per avalanche.",
+        "params": {
+          "values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            20,
+            100,
+            1000,
+            10000
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 → 6 Blitzkrieg; 4 → 8 Die Wende; 5 → 10 Mauerfall. No Bonus during Blitzkrieg.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Wild multipliers",
+        "behavior": "On Wilds in queue/reels; enhancers add; Fraternal Kiss sums.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays",
+        "behavior": "Holds 2–4 of same; all Ways sync.",
+        "params": {}
+      },
+      {
+        "name": "Crew Call",
+        "behavior": "Adds 3 Wilds with random mults to queue then removes itself.",
+        "params": {}
+      },
+      {
+        "name": "Fraternal Kiss",
+        "behavior": "After avalanches if ≥1 Wild on reels or queue: clear regulars+Wilds; place Wild with sum of removed Wild mults.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Avalanche ways on 3×6 with Wild Queue + Enhancer Train. Crew Call / Fraternal Kiss / xWays. 3/4/5 Bonus → Blitzkrieg 6 / Die Wende 8 / Mauerfall 10. Boosters 3×/20×/230×/1,989× seed high Wild mults; Extra Spin post-round. Cap 19,089×.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional Bonus Booster 3×, Punk 100× 20×, Punker 1,000× 230×, Punkest 10,000× 1,989× (seed Wild Queue).",
+        "ends_when": "Spin",
+        "state_changes": "Queue seeded"
+      },
+      {
+        "name": "Avalanche loop",
+        "order": 2,
+        "what_happens": "Pay; store Wilds in queue; dequeue one Wild; enhancers if Wild under train; train shifts left; Fraternal Kiss when dead.",
+        "ends_when": "No avalanches / Kiss done",
+        "state_changes": "Queue/mults"
+      },
+      {
+        "name": "Bonus / Extra Spin",
+        "order": 3,
+        "what_happens": "3/4/5 Bonus → bonus; else Extra Spin offer if cost ≤ total win.",
+        "ends_when": "Feature or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways each avalanche with Wild multipliers.",
+    "notes": "CMS nolimitcity.com/games/punk-rocker-3."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Blitzkrieg Spins",
+        "trigger": "3 Bonus symbols.",
+        "spins_awarded": "6 free spins",
+        "retrigger": "+1 Spin enhancer per Wild on same reel.",
+        "sticky_or_persistent_state": "End of each spin (incl. trigger spin): all reel Wilds stored in queue; one Wild moved to reels each spin. No Bonus during feature.",
+        "progressive_state": "Wild Queue carries.",
+        "end_condition": "Spins done or 19,089×.",
+        "phases": [
+          {
+            "name": "Enter Blitzkrieg",
+            "order": 1,
+            "what_happens": "6 spins; Wilds banked to queue each spin."
+          }
+        ],
+        "effects": "6 FS; queue banking each spin."
+      },
+      {
+        "name": "Die Wende Spins",
+        "trigger": "4 Bonus symbols.",
+        "spins_awarded": "8 free spins",
+        "retrigger": "+1 Spin enhancer.",
+        "sticky_or_persistent_state": "Blitzkrieg features + xQuake possible in Enhancer Train.",
+        "progressive_state": "Wild Queue.",
+        "end_condition": "Spins done or 19,089×.",
+        "phases": [
+          {
+            "name": "Enter Die Wende",
+            "order": 1,
+            "what_happens": "8 spins; xQuake available."
+          }
+        ],
+        "effects": "8 FS; xQuake enhancer."
+      },
+      {
+        "name": "Mauerfall Spins",
+        "trigger": "5 Bonus symbols.",
+        "spins_awarded": "10 free spins",
+        "retrigger": "+1 Spin enhancer.",
+        "sticky_or_persistent_state": "Die Wende + Mega Multiplier enhancer (50×–1,000×).",
+        "progressive_state": "Wild Queue.",
+        "end_condition": "Spins done or 19,089×.",
+        "phases": [
+          {
+            "name": "Enter Mauerfall",
+            "order": 1,
+            "what_happens": "10 spins; Mega Multiplier available."
+          }
+        ],
+        "effects": "10 FS; xQuake + Mega Multiplier."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Wild Queue / Crew Call / Fraternal Kiss",
+      "trigger": "Wilds / symbols",
+      "when": "during_spin",
+      "effects": "Bank, seed, or consolidate Wild multipliers.",
+      "params": {}
+    },
+    {
+      "name": "Enhancer Train",
+      "trigger": "Wild under enhancer",
+      "when": "during_spin",
+      "effects": "Wild Adder/Mult/Cloner/+1/xQuake/Mega Mult.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3.0,
+      "cost_text": "3× bet",
+      "effects": "≥1 Wild with 100× in queue (max 3 Wilds).",
+      "params": {}
+    },
+    {
+      "name": "Punk Spins 100x",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 20.0,
+      "cost_text": "20× bet",
+      "effects": "≥1 Wild 100× in queue.",
+      "params": {}
+    },
+    {
+      "name": "Punker Spins 1,000x",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 230.0,
+      "cost_text": "230× bet",
+      "effects": "≥1 Wild 1,000× in queue.",
+      "params": {}
+    },
+    {
+      "name": "Punkest Spins 10,000x",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1989.0,
+      "cost_text": "1,989× bet",
+      "effects": "≥1 Wild 10,000× in queue.",
+      "params": {}
+    },
+    {
+      "name": "Extra Spin",
+      "trigger": "After round if cost ≤ total win",
+      "when": "after_bonus",
+      "effects": "Bank Wilds to queue; clear non-Bonus; drop; dequeue Wild; train shifts.",
+      "params": {}
+    },
+    {
+      "name": "Max Win",
+      "trigger": "Cap",
+      "effects": "19,089×.",
+      "params": {
+        "max_win_multiplier": 19089
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 3.0,
+        "cost_text": "3× bet",
+        "effects": "≥1×100 Wild in queue.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Punk Spins 100x",
+        "cost_multiplier": 20.0,
+        "cost_text": "20× bet",
+        "effects": "≥1 Wild 100×.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Punker Spins 1,000x",
+        "cost_multiplier": 230.0,
+        "cost_text": "230× bet",
+        "effects": "≥1 Wild 1,000×.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Punkest Spins 10,000x",
+        "cost_multiplier": 1989.0,
+        "cost_text": "1,989× bet",
+        "effects": "≥1 Wild 10,000×.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Extra Spin",
+        "cost_multiplier": null,
+        "cost_text": "From Wilds in queue/reels",
+        "effects": "Post-round extra if cost ≤ win.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Boosters seed Wild Queue instead of classic xBet."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 19089.0,
+    "max_win_notes": "19,089× base bet",
+    "rtp_percent": 96.04,
+    "rtp_notes": "96.04% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/punk-rocker-3",
+      "local_path": "sources/nolimit/punk-rocker-3/cms_features.txt",
+      "extracted_at": "2026-09-27T18:50:11Z",
+      "quote_or_excerpt": "Blitzkrieg 6 / Die Wende 8 / Mauerfall 10; boosters 3/20/230/1989×; max 19089×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/punk-rocker-3",
+      "local_path": "sources/nolimit/punk-rocker-3/page.html",
+      "extracted_at": "2026-09-27T18:50:11Z",
+      "quote_or_excerpt": "96.04% RTP, 19089 xBet MAX; rowsReels 3-3-3-3-3-3."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-punk-rocker-3.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T18:47:15Z",
-  "game_count": 583,
-  "thumbnail_count": 583,
+  "updated_at": "2026-09-27T18:50:34Z",
+  "game_count": 590,
+  "thumbnail_count": 590,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
     "Slotmill": 61,
     "Backseat Gaming": 35,
-    "Nolimit City": 23,
+    "Nolimit City": 30,
     "Elk Studios": 11
   },
   "by_confidence": {
-    "high": 452,
+    "high": 459,
     "low": 28,
     "medium": 103
   },
@@ -30,7 +30,7 @@
       "medium": 1
     },
     "Nolimit City": {
-      "high": 23
+      "high": 30
     },
     "Pragmatic Play": {
       "high": 156,
@@ -3488,6 +3488,32 @@
       "thumbnail": "thumbs/nolimit-mental.webp"
     },
     {
+      "slug": "nolimit-punk-rocker-2",
+      "title": "Punk Rocker 2",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-punk-rocker-2.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-punk-rocker-2.webp"
+    },
+    {
+      "slug": "nolimit-punk-rocker-3",
+      "title": "Punk Rocker 3",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-punk-rocker-3.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-punk-rocker-3.webp"
+    },
+    {
       "slug": "nolimit-punk-rocker",
       "title": "Punk Rocker xWays",
       "provider": "Nolimit City",
@@ -3512,6 +3538,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-san-quentin-2-death-row.webp"
+    },
+    {
+      "slug": "nolimit-san-quentin-manhunt",
+      "title": "San Quentin Manhunt",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-san-quentin-manhunt.json",
+      "win_system_type": "pay_anywhere",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-san-quentin-manhunt.webp"
     },
     {
       "slug": "nolimit-san-quentin",
@@ -3540,6 +3579,19 @@
       "thumbnail": "thumbs/nolimit-tombstone-begins.webp"
     },
     {
+      "slug": "nolimit-tombstone-no-mercy",
+      "title": "Tombstone: No Mercy",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-tombstone-no-mercy.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-tombstone-no-mercy.webp"
+    },
+    {
       "slug": "nolimit-tombstone-rip",
       "title": "Tombstone R.I.P",
       "provider": "Nolimit City",
@@ -3553,6 +3605,32 @@
       "thumbnail": "thumbs/nolimit-tombstone-rip.webp"
     },
     {
+      "slug": "nolimit-tombstone-slaughter",
+      "title": "Tombstone Slaughter: El Gordo's Revenge",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-tombstone-slaughter.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-tombstone-slaughter.webp"
+    },
+    {
+      "slug": "nolimit-true-grit-redemption-2",
+      "title": "True Grit Redemption 2",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-true-grit-redemption-2.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-true-grit-redemption-2.webp"
+    },
+    {
       "slug": "nolimit-true-grit-redemption",
       "title": "True Grit Redemption",
       "provider": "Nolimit City",
@@ -3564,6 +3642,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-true-grit-redemption.webp"
+    },
+    {
+      "slug": "nolimit-xways-hoarder-2",
+      "title": "xWays Hoarder 2",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-xways-hoarder-2.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-xways-hoarder-2.webp"
     },
     {
       "slug": "nolimit-xways-hoarder",

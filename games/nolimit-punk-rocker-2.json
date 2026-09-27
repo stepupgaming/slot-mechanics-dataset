@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:50:11Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Punk Rocker 2",
+    "slug": "nolimit-punk-rocker-2",
+    "provider_game_id": "PunkRocker2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/PunkRocker2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/punk-rocker-2"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 6,
+    "rows_min": 3,
+    "rows_max": 6,
+    "layout_notes": "Official 3-3-3-3-3-3; Train Enhancers can make all reels 6 high. 46,656 ways at 6^6."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 46656,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "46,656 ways from page."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Riot Respins on 2 Bonus: Bonus→Molotov Wild, lock reels; extra Bonus during respins → +respin after payout."
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Train enhancer can make all reels 6 high; xWays can super-expand up to 20 high in base."
+    },
+    "other": [
+      {
+        "name": "Jumping Wilds",
+        "how_it_works": "In FS: Jumping / Burning Jumping Wilds reposition each spin; Burning-triggered Wild Mult enhancers persist; mults additive."
+      },
+      {
+        "name": "Train Enhancers",
+        "how_it_works": "Trigger when Jumping/Burning Wild on same reel. Top: Wild Mult, xWays, Molotov, Extra spins, 6-high, Upgrade FS, Enable Bottom. Bottom: Wild Mult, Extra spins, Burning Jumping Wild."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Molotov Wild",
+        "behavior": "Turns all positions above into Wilds; base, Riot Respins, and via FS enhancers.",
+        "params": {}
+      },
+      {
+        "name": "Pipe Bomb Wild",
+        "behavior": "Contains 2–4 Wilds; turns positions above into same-size Pipe Bomb Wilds; base and Riot.",
+        "params": {}
+      },
+      {
+        "name": "Jumping / Burning Jumping Wild",
+        "behavior": "FS only; reposition each spin; Burning makes Wild Mult enhancers persistent.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "2 → Riot Respins. Higher Bonus tiers award DisOBEY / ChAos / Mass Transit BBQ (8 spins each; exact scatter counts not printed on CMS).",
+        "params": {
+          "count_for_trigger": 2
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Wild Multipliers",
+        "behavior": "Additive; persist when triggered by Burning Jumping Wilds.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays / Super xWays",
+        "behavior": "2–4 same inside; all Ways sync. Base can super-expand to 20 high when 4-high. FS: expand to 4 high with 4/6/8 of same. Mystery Symbol in main and FS.",
+        "params": {}
+      },
+      {
+        "name": "Burning cart",
+        "behavior": "Mass Transit BBQ: stops every spin; if holds Burning Jumping Wild, converts Jumping Wilds on its reel to Burning.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Ways on 3-3-3-3-3-3 (up to 46,656). Molotov/Pipe Bomb Wilds and xWays/Super xWays. xBet 2× guarantees special on reel 2. 2 Bonus → Riot Respins; higher Bonus tiers → DisOBEY (3 Jumping + top train) / ChAos (4 Jumping + both trains) / Mass Transit BBQ (+Burning cart). Buys 100–3,000×. Cap 30,144×.",
+    "phases": [
+      {
+        "name": "Configure xBet",
+        "order": 1,
+        "what_happens": "Optional xBet 2×: guarantee Bonus/xWays/Super xWays/Molotov/Pipe Bomb on reel 2.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×2"
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "Evaluate ways; Molotov/Pipe Bomb/xWays resolve.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "2 Bonus → Riot Respins; higher Bonus → DisOBEY/ChAos/BBQ free spins.",
+        "ends_when": "Feature or end",
+        "state_changes": "Enter feature"
+      }
+    ],
+    "win_evaluation": "Ways wins with Wild/xWays expansions.",
+    "notes": "Exact Bonus counts for DisOBEY/ChAos/BBQ not on CMS — listed as escalating scatter tiers."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Riot Respins",
+        "trigger": "2 Bonus symbols.",
+        "spins_awarded": "Respin mode (not fixed FS count); +1 respin per additional Bonus after payout.",
+        "retrigger": "Additional Bonus during respins → +respin.",
+        "sticky_or_persistent_state": "Bonus→Molotov Wild; reels with Wilds locked.",
+        "progressive_state": null,
+        "end_condition": "No new Bonus / We Want You 30,144×.",
+        "phases": [
+          {
+            "name": "Riot",
+            "order": 1,
+            "what_happens": "Convert Bonus to Molotov; lock wild reels; respin."
+          }
+        ],
+        "effects": "Hold-style respins with Molotov locks."
+      },
+      {
+        "name": "DisOBEY Spins",
+        "trigger": "Bonus scatter tier (exact count not printed).",
+        "spins_awarded": "8 free spins",
+        "retrigger": "Extra spins via Train Enhancers.",
+        "sticky_or_persistent_state": "3 Jumping Wilds + Top Train Enhancer.",
+        "progressive_state": "Additive Wild Mults; Burning makes them persistent.",
+        "end_condition": "Spins done or 30,144×.",
+        "phases": [
+          {
+            "name": "Enter DisOBEY",
+            "order": 1,
+            "what_happens": "8 spins; 3 Jumping Wilds; top train."
+          }
+        ],
+        "effects": "8 FS; 3 Jumping Wilds; top enhancer train."
+      },
+      {
+        "name": "ChAos Spins",
+        "trigger": "Higher Bonus tier than DisOBEY (count not printed).",
+        "spins_awarded": "8 free spins",
+        "retrigger": "Train Extra spins.",
+        "sticky_or_persistent_state": "4 Jumping Wilds + both Train Enhancers.",
+        "progressive_state": "Additive/persistent Wild Mults.",
+        "end_condition": "Spins done or 30,144×.",
+        "phases": [
+          {
+            "name": "Enter ChAos",
+            "order": 1,
+            "what_happens": "8 spins; 4 Jumping; both trains."
+          }
+        ],
+        "effects": "8 FS; 4 Jumping Wilds; dual trains."
+      },
+      {
+        "name": "Mass Transit BBQ Spins",
+        "trigger": "Top Bonus tier (count not printed).",
+        "spins_awarded": "8 free spins",
+        "retrigger": "Train Extra spins.",
+        "sticky_or_persistent_state": "4 Jumping Wilds; both trains; Burning cart every spin.",
+        "progressive_state": "Burning converts Jumping→Burning on cart reel; persistent Wild Mults.",
+        "end_condition": "Spins done or 30,144×.",
+        "phases": [
+          {
+            "name": "Enter BBQ",
+            "order": 1,
+            "what_happens": "8 spins with Burning cart."
+          }
+        ],
+        "effects": "8 FS; dual trains; Burning cart."
+      }
+    ],
+    "notes": "DisOBEY/ChAos/BBQ scatter counts not printed on CMS."
+  },
+  "features": [
+    {
+      "name": "xWays / Super xWays",
+      "trigger": "xWays lands",
+      "when": "during_spin",
+      "effects": "Reveal 2–4 (base up to 20-high super); FS 4/6/8.",
+      "params": {}
+    },
+    {
+      "name": "xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2× bet",
+      "effects": "Guaranteed special on reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "100×–3,000× bet",
+      "effects": "Buy into bonus features.",
+      "params": {}
+    },
+    {
+      "name": "We Want You",
+      "trigger": "Cap",
+      "effects": "Max 30,144×.",
+      "params": {
+        "max_win_multiplier": 30144
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "100×–3,000× bet",
+        "effects": "Buy Riot / DisOBEY / ChAos / BBQ variants.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Nolimit Booster",
+        "cost_multiplier": null,
+        "cost_text": "Per-spin feature cost",
+        "effects": "Activate specific feature each spin.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact line prices inside band not printed."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 2.0,
+    "effects": "xBet 2×: special symbol guaranteed on reel 2.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 30144.0,
+    "max_win_notes": "We Want You 30,144×",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06% from official page title.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/punk-rocker-2",
+      "local_path": "sources/nolimit/punk-rocker-2/cms_features.txt",
+      "extracted_at": "2026-09-27T18:50:11Z",
+      "quote_or_excerpt": "Riot 2 Bonus; DisOBEY/ChAos/BBQ 8 spins; xBet 2×; buys 100-3000×; max 30144×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/punk-rocker-2",
+      "local_path": "sources/nolimit/punk-rocker-2/page.html",
+      "extracted_at": "2026-09-27T18:50:11Z",
+      "quote_or_excerpt": "96.06% RTP, 30144 xBet MAX; 3-3-3-3-3-3; 46,656 ways."
+    }
+  ],
+  "unknowns": [
+    "exact Bonus scatter counts for DisOBEY / ChAos / Mass Transit BBQ",
+    "exact buy line-item costs inside 100–3000×"
+  ],
+  "thumbnail": "thumbs/nolimit-punk-rocker-2.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
