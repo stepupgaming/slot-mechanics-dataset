@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Dragon Tribe",
+    "slug": "nolimit-dragon-tribe",
+    "provider_game_id": "DragonTribe",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DragonTribe",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/dragon-tribe"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": null,
+    "layout_notes": "Sheet 6×4+ cascading; xWays expand toward 20,736 ways."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 20736,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Cascading ways; up to 20,736 via xWays."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Cascading reels."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "xWays Mystery Symbol holds up to 3 symbols; expands reel height."
+    },
+    "other": [
+      {
+        "name": "xNudge / xWays",
+        "how_it_works": "xNudge Wild drops to bottom (+mult to x6) expands reel; xWays up to 3 symbols."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "Drops to bottom; +mult/step up to x6; expands full reel.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 → 10 Dragon Spins (standard or Extreme); +3 per extra.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays Mystery Symbol",
+        "behavior": "Up to 3 same symbols; expand height; ≤20,736 ways.",
+        "params": {}
+      },
+      {
+        "name": "Dragon Spins Extreme",
+        "behavior": "Same 10+3 but with xNudge + xWays (vs standard xNudge only).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6×4+ cascading ways + xNudge/xWays. 3 Bonus→10 Dragon Spins / Extreme (+3). Buy mentioned without price. Cap ~27,000×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy Dragon Spins (cost not printed).",
+        "ends_when": "Spin",
+        "state_changes": null
+      },
+      {
+        "name": "Spin + cascade",
+        "order": 2,
+        "what_happens": "xWays/xNudge; evaluate ways; cascade.",
+        "ends_when": "Resolved",
+        "state_changes": "Ways/mult"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "3 Bonus → choose/award Dragon Spins or Extreme 10+3.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after xNudge/xWays cascades.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Dragon Spins",
+        "trigger": "3 Bonus symbols.",
+        "spins_awarded": "10 (+3 per extra)",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 10 (+3 per extra)."
+          }
+        ],
+        "effects": "xNudge Wilds in FS."
+      },
+      {
+        "name": "Dragon Spins Extreme",
+        "trigger": "3 Bonus (Extreme choice).",
+        "spins_awarded": "10 (+3 per extra)",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 10 (+3 per extra)."
+          }
+        ],
+        "effects": "xNudge + xWays in FS."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "price not printed",
+      "effects": "Buy Dragon Spins.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "~27,000×.",
+      "params": {
+        "max_win_multiplier": 27000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Dragon Spins",
+        "cost_multiplier": null,
+        "cost_text": "price not printed",
+        "effects": "Buy Dragon Spins.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet: buy available; no ×."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 27000.0,
+    "max_win_notes": "~27,000× simulated",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07/94.41; main 61.54; Dragon Spins 34.53.",
+    "hit_frequency_notes": "Hit 21.57%; Dragon Spins 1 in 224; any xWays&xNudge 1 in 4; 100× 1 in 866."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Dragon_Tribe_37533_9bc398bf7a.pdf",
+      "local_path": "sources/nolimit/dragon-tribe/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "6x4+; 3 Bonus→10+3 Dragon/Extreme; max ~27000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/dragon-tribe",
+      "local_path": "sources/nolimit/dragon-tribe/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "exact buy costs",
+    "how Extreme vs standard is chosen on natural trigger"
+  ],
+  "thumbnail": "thumbs/nolimit-dragon-tribe.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

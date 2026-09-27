@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Poison Eve",
+    "slug": "nolimit-poison-eve",
+    "provider_game_id": "PoisonEve",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/PoisonEve",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/poison-eve"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "5×3."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "5×3; line count not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Expanding Vine Wilds / Liquid Magic / Flower Power",
+        "how_it_works": "Wilds expand full reel; Poison Eve full reel 1→bottles→Eve; Bonus in Hot Zone reel 5→Flower Power portals."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Expanding Vine Wild",
+        "behavior": "Always expands to cover entire reel.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Hot Zone reel 5 → Flower Power portals; extra Bonus → more portals.",
+        "params": {
+          "count_for_trigger": 1
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Liquid Magic",
+        "behavior": "Poison Eve fully on reel 1 → all bottles become Poison Eve (≤2000×).",
+        "params": {}
+      },
+      {
+        "name": "Flower Power",
+        "behavior": "Hot Zone Bonus opens left portal; Hot Zone symbol populates portals & expands that type; Eve can pay 2000× total.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 expanding Wilds. Liquid Magic if Eve full reel 1. Bonus in Hot Zone reel 5→Flower Power portals (expanding symbols). Cap 6,091×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Expanding Wilds; Liquid Magic check; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Flower Power",
+        "order": 2,
+        "what_happens": "Bonus in Hot Zone reel 5 → portals / expanding symbols.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "After expansions / portals.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Flower Power",
+        "trigger": "Bonus symbol in Hot Zone on reel 5.",
+        "spins_awarded": "Portal feature (not fixed N spins)",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Additional Bonus → additional portals.",
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award Portal feature (not fixed N spins)."
+          }
+        ],
+        "effects": "Portals populated by Hot Zone symbol; type expands all reels."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Liquid Magic",
+      "trigger": "Poison Eve fully on reel 1",
+      "effects": "Bottles → Poison Eve; up to 2000×.",
+      "params": {}
+    },
+    {
+      "name": "Expanding Vine Wilds",
+      "trigger": "Wild lands",
+      "effects": "Cover entire reel.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "6,091×.",
+      "params": {
+        "max_win_multiplier": 6091
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy prices on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 6091.0,
+    "max_win_notes": "6,091×",
+    "rtp_percent": 96.08,
+    "rtp_notes": "96.08/94.35; main 27.76; Liquid Magic 21.01; Flower Power 47.32.",
+    "hit_frequency_notes": "Hit 21.29%; Flower Power 1 in 116; 100× 1 in 505."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Poison_Eve_18641_a2a4177272.pdf",
+      "local_path": "sources/nolimit/poison-eve/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "5x3; Flower Power via Hot Zone Bonus; Liquid Magic; max 6091×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/poison-eve",
+      "local_path": "sources/nolimit/poison-eve/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "payline_count",
+    "feature buy",
+    "exact portal count rules"
+  ],
+  "thumbnail": "thumbs/nolimit-poison-eve.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "The Crypt",
+    "slug": "nolimit-the-crypt",
+    "provider_game_id": "TheCrypt",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TheCrypt",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/the-crypt"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": 4,
+    "rows_max": 6,
+    "layout_notes": "4×6; xWays expand up to 6 high → ≤46,656 ways."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; xWays to 46,656; xNudge mults add."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Cascades; FS guarantees ≥1 xWays per initial cascade."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "xWays expand reel height up to 6."
+    },
+    "other": [
+      {
+        "name": "xNudge / xWays / xBet",
+        "how_it_works": "xNudge Wild reels 2–5; xWays 2–3 symbols; xBet 3× bet >5× FS chance."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "Reels 2–5; drop+expand; mult/step; consecutive add. Subs except Scatter.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3→10 Resurrection; +3 per extra Scatter.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays",
+        "behavior": "All reels; expand height; ≤46,656 ways.",
+        "params": {}
+      },
+      {
+        "name": "Dead Rising",
+        "behavior": "Every 4th winning cascade: legend→Wild +2 spins; top-symbol win +1× on symbol.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6×4 ways + xNudge/xWays; xBet 3×. 3 Scatter→10 Resurrection (+3). Buys 100/200/500/225×. Cap 27,000×.",
+    "phases": [
+      {
+        "name": "Optional xBet/buy",
+        "order": 1,
+        "what_happens": "xBet 3× or buy 10/13/16 FS / Lucky Draw 225×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + cascade",
+        "order": 2,
+        "what_happens": "xWays/xNudge; evaluate ways; cascade.",
+        "ends_when": "Resolved",
+        "state_changes": "Ways/mult"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "3+ Scatter → Resurrection Spins.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after xNudge/xWays.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Resurrection Spins",
+        "trigger": "3 Scatters.",
+        "spins_awarded": "10 (+3 per extra Scatter)",
+        "retrigger": "Extra Scatters +3; Dead Rising +2.",
+        "sticky_or_persistent_state": "Converted legend Wilds; top-symbol mults.",
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 10 (+3 per extra Scatter)."
+          }
+        ],
+        "effects": "≥1 xWays each initial cascade; Dead Rising."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3,
+      "cost_text": "3× bet",
+      "effects": ">5× FS chance.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "100–500×",
+      "effects": "10/13/16 Resurrection or Lucky Draw 225×.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "27,000×.",
+      "params": {
+        "max_win_multiplier": 27000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "10 Resurrection",
+        "cost_multiplier": 100,
+        "cost_text": "100×",
+        "effects": "10 FS",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "13 Resurrection",
+        "cost_multiplier": 200,
+        "cost_text": "200×",
+        "effects": "13 FS",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "16 Resurrection",
+        "cost_multiplier": 500,
+        "cost_text": "500×",
+        "effects": "16 FS",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Lucky Draw",
+        "cost_multiplier": 225,
+        "cost_text": "225×",
+        "effects": "Lucky Draw",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 3.0,
+    "effects": "xBet >5× Resurrection chance.",
+    "notes": "Sheet xBet®."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 27000.0,
+    "max_win_notes": "27,000×",
+    "rtp_percent": 96.05,
+    "rtp_notes": "96.05/94.01/92.15; 65.03/31.02 base/bonus.",
+    "hit_frequency_notes": "FS 1 in 328; 100× 1 in 1185."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_The_Crypt_aa2081f2be.pdf",
+      "local_path": "sources/nolimit/the-crypt/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "4x6; 3 Scatter→10+3; xBet 3×; buys 100/200/500/225; max 27000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/the-crypt",
+      "local_path": "sources/nolimit/the-crypt/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "Lucky Draw composition",
+    "base ways before xWays"
+  ],
+  "thumbnail": "thumbs/nolimit-the-crypt.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

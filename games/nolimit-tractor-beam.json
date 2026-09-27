@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Tractor Beam",
+    "slug": "nolimit-tractor-beam",
+    "provider_game_id": "TractorBeam",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TractorBeam",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/tractor-beam"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Sheet 5×3."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "5×3; line count not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Beam 'Em Up! / Clone Attack! / Abduction Spins",
+        "how_it_works": "Random Beam/Clone in base; 3+ Scatters → Abduction Spins 7/9/12."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Stay on reels during Abduction Spins; Scatters abducted for +1 spin each.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3+ → 7/9/12 Abduction Spins; abducted Scatters +1 spin each.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Beam 'Em Up!",
+        "behavior": "Random; beams symbols (sheet).",
+        "params": {}
+      },
+      {
+        "name": "Clone Attack!",
+        "behavior": "Random; clone feature (sheet).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 with random Beam 'Em Up! / Clone Attack!. 3+ Scatters→7/9/12 Abduction Spins (Wilds sticky; abducted Scatter +1). Cap 3,408×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Maybe Beam/Clone; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus",
+        "order": 2,
+        "what_happens": "3+ Scatters → Abduction Spins 7/9/12.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "After random features.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Abduction Spins",
+        "trigger": "3+ Scatters.",
+        "spins_awarded": "7 / 9 / 12",
+        "retrigger": "Each abducted Scatter +1 spin.",
+        "sticky_or_persistent_state": "Wilds always stay.",
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 7 / 9 / 12."
+          }
+        ],
+        "effects": "Symbols may be abducted; Wilds sticky."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Beam 'Em Up!",
+      "trigger": "Random",
+      "effects": "Beam feature.",
+      "params": {}
+    },
+    {
+      "name": "Clone Attack!",
+      "trigger": "Random",
+      "effects": "Clone feature.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "3,408×.",
+      "params": {
+        "max_win_multiplier": 3408
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy prices on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 3408.0,
+    "max_win_notes": "3,408×",
+    "rtp_percent": 96.01,
+    "rtp_notes": "96.01; main 29.97; Beam 14.39; Clone 14.53; Abduction 37.13.",
+    "hit_frequency_notes": "FS 1 in 185; 100× 1 in 1074."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "medium",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Tractor_Beam_35624_ebae981d19.pdf",
+      "local_path": "sources/nolimit/tractor-beam/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "5x3; 3+ Scatter→7/9/12 Abduction; max 3408×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tractor-beam",
+      "local_path": "sources/nolimit/tractor-beam/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "payline_count",
+    "exact Beam/Clone mechanics detail",
+    "feature buy"
+  ],
+  "thumbnail": "thumbs/nolimit-tractor-beam.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

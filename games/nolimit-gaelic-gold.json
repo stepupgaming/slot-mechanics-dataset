@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Gaelic Gold",
+    "slug": "nolimit-gaelic-gold",
+    "provider_game_id": "GaelicGold",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/GaelicGold",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/gaelic-gold"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Classic 3×3; xNudge Wilds on all reels."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "3×3; rainbow lines may be added in FS; base line count not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xNudge Wild / Rainbow Spins",
+        "how_it_works": "3-row Wild all reels always nudge; Pot of Gold middle→5 Rainbow Spins with possible +spins/mult/lines."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "3-row on all reels; always nudge fully; +mult/nudge.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Pot of Gold",
+        "behavior": "Middle position middle reel → 5 Rainbow Spins (may award more spins/mult/rainbow lines).",
+        "params": {
+          "count_for_trigger": 1
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "3×3 xNudge. Pot of Gold center→5 Rainbow Spins (extra spins/mult/rainbow lines possible). Buy available (price unknown). Cap 9,837×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy Rainbow Spins (cost not printed).",
+        "ends_when": "Spin",
+        "state_changes": null
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "xNudge; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "Pot of Gold center → 5 Rainbow Spins.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "After xNudge.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Rainbow Spins",
+        "trigger": "Pot of Gold on middle position middle reel.",
+        "spins_awarded": "5 (+ possible extras)",
+        "retrigger": "Feature may award more spins, extra multiplier, or added rainbow lines.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 5 (+ possible extras)."
+          }
+        ],
+        "effects": "xNudge; possible +spins/mult/rainbow lines."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "price not printed",
+      "effects": "Buy Rainbow Spins.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "9,837×.",
+      "params": {
+        "max_win_multiplier": 9837
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Rainbow Spins",
+        "cost_multiplier": null,
+        "cost_text": "price not printed",
+        "effects": "Buy Rainbow Spins.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet: buy without ×."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 9837.0,
+    "max_win_notes": "9,837×",
+    "rtp_percent": 96.15,
+    "rtp_notes": "96.15/94.42; main 58.08; Rainbow 36.34.",
+    "hit_frequency_notes": "FS 1 in 127; 100× 1 in 990."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Gaelic_Gold_11243_d646da7625.pdf",
+      "local_path": "sources/nolimit/gaelic-gold/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "3x3; Pot of Gold→5 Rainbow Spins; max 9837×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/gaelic-gold",
+      "local_path": "sources/nolimit/gaelic-gold/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "exact buy cost",
+    "base payline_count",
+    "Rainbow Spins upgrade table"
+  ],
+  "thumbnail": "thumbs/nolimit-gaelic-gold.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

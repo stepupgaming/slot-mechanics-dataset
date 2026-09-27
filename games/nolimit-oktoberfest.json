@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Oktoberfest",
+    "slug": "nolimit-oktoberfest",
+    "provider_game_id": "Oktoberfest",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Oktoberfest",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/oktoberfest"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "5×3; 20 fixed betlines (sheet/CMS)."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "20 fixed betlines."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Prost Win-spins: stacked Wilds reels 2+4 → toast Wild reel 3 + two guaranteed win-spins."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Party / Pretzel Party / Bierspins",
+        "how_it_works": "Random Party/Pretzel stacked modes; 3 Scatters→10 Bierspins."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Stacked Wild",
+        "behavior": "Reels 2+4 stacked Wilds trigger Prost Win-spins.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3 → 10 Bierspins; scatters become collectibles for +spins and mult up to 5× / +12 FS.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Party Spins",
+        "behavior": "Random super-stacked mid SYM reels.",
+        "params": {}
+      },
+      {
+        "name": "Pretzel Party Spin",
+        "behavior": "Random; lows (10–A) → Wilds.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 20 lines; Party/Pretzel random; Prost Win-spins on stacked Wilds 2+4. 3 Scatters→10 Bierspins (collect for +spins/mult). Cap 500×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Maybe Party/Pretzel; evaluate; Prost if stacked Wilds 2+4.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus",
+        "order": 2,
+        "what_happens": "3 Scatters → 10 Bierspins.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "20 lines after random features.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bierspins",
+        "trigger": "3 Scatters.",
+        "spins_awarded": "10",
+        "retrigger": "Collected scatters award additional spins (up to +12) and multipliers up to 5×.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 10."
+          }
+        ],
+        "effects": "Scatter collectibles; mult up to 5×."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Party Spins",
+      "trigger": "Random",
+      "effects": "Super-stacked mid symbols.",
+      "params": {}
+    },
+    {
+      "name": "Pretzel Party Spin",
+      "trigger": "Random",
+      "effects": "Lows → Wilds.",
+      "params": {}
+    },
+    {
+      "name": "Prost Win-spins",
+      "trigger": "Stacked Wilds reels 2+4",
+      "effects": "Wild reel 3 + two guaranteed win-spins.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "500×.",
+      "params": {
+        "max_win_multiplier": 500
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy prices on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 500.0,
+    "max_win_notes": "500×",
+    "rtp_percent": 96.75,
+    "rtp_notes": "96.75; Party 13.9%; Prost 26.2%; Bierspins 12.2%.",
+    "hit_frequency_notes": "Sheet hit/volatility notes."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Oktoberfest_38137_12db9cf0af.pdf",
+      "local_path": "sources/nolimit/oktoberfest/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "5x3 20 lines; 3 Scatter→10 Bierspins; max 500×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/oktoberfest",
+      "local_path": "sources/nolimit/oktoberfest/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "feature buy",
+    "exact Bierspins collect table"
+  ],
+  "thumbnail": "thumbs/nolimit-oktoberfest.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

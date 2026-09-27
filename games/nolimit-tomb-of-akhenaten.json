@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Tomb of Akhenaten",
+    "slug": "nolimit-tomb-of-akhenaten",
+    "provider_game_id": "TombOfAkhenaten",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TombOfAkhenaten",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/tomb-of-akhenaten"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 5,
+    "layout_notes": "CMS: 5×3 base 243 ways; Sticky Win Spins expand to 5×5 / 3,125 ways."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 243,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "243 base ways; up to 3,125 via Sticky Win Spins expansion."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Any win → Sticky Win Spins up to 3 levels: +rows then full non-win respin; Pyramid Wilds on last level."
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "First two Sticky Win levels add rows toward 5×5."
+    },
+    "other": [
+      {
+        "name": "Pyramid Wilds",
+        "how_it_works": "Last Sticky Win level: pyramid wheel red tip → column transforms to Pyramid Wild; regular Wild→double."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Pyramid Wild / Double Wild",
+        "behavior": "Pyramid Wild transforms column (except Bonus/Wild); regular Wild→double (counts as 2).",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3+ → Akhenaten Spins: 3→8 spins, each extra Bonus +2 spins; during FS each extra Bonus +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Sticky Win multiplier (FS)",
+        "behavior": "Each Sticky Win Spin raises win mult for rest of bonus.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "5×3 243 ways; any win→Sticky Win Spins (≤3 levels→3125 ways/Pyramid Wilds). 3 Bonus→8 Akhenaten (+2/extra). Buy 8@65× or 12@105×. Cap unknown on CMS.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy 8 spins 65× or 12 spins 105×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + Sticky Win",
+        "order": 2,
+        "what_happens": "Evaluate ways; Sticky Win Spins expand/respins/Pyramid Wilds.",
+        "ends_when": "Resolved",
+        "state_changes": "Ways/mult"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "3+ Bonus → Akhenaten Spins 8+.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after Sticky Win resolution.",
+    "notes": "CMS-rich page (no public GameSheet PDF)."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Akhenaten Spins",
+        "trigger": "3+ Bonus symbols.",
+        "spins_awarded": "8 (+2 per extra Bonus at trigger; +1 per extra Bonus during FS)",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky Win mult persists for bonus.",
+        "progressive_state": "Each Sticky Win Spin increases win multiplier.",
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 8 (+2 per extra Bonus at trigger; +1 per extra Bonus during FS)."
+          }
+        ],
+        "effects": "Sticky Win Spins active; rising mult."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Sticky Win Spins",
+      "trigger": "Any win",
+      "effects": "Up to 3 respin levels; expand to 3125 ways; Pyramid Wild chance.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "65× / 105×",
+      "effects": "8 or 12 Akhenaten Spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "8 Akhenaten Spins",
+        "cost_multiplier": 65,
+        "cost_text": "65×",
+        "effects": "Buy 8 FS",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "12 Akhenaten Spins",
+        "cost_multiplier": 105,
+        "cost_text": "105×",
+        "effects": "Buy 12 FS",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "CMS Feature Buy."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Not stated on CMS features excerpt.",
+    "rtp_percent": null,
+    "rtp_notes": "Not extracted.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "low",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tomb-of-akhenaten",
+      "local_path": "sources/nolimit/tomb-of-akhenaten/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "243→3125 ways; Sticky Win; 3 Bonus→8+2; buy 65×/105×."
+    }
+  ],
+  "unknowns": [
+    "max_win_multiplier",
+    "RTP",
+    "public GameSheet PDF (none linked)"
+  ],
+  "thumbnail": "thumbs/nolimit-tomb-of-akhenaten.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

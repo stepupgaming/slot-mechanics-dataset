@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Space Donkey",
+    "slug": "nolimit-space-donkey",
+    "provider_game_id": "SpaceDonkey",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/SpaceDonkey",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/space-donkey"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": 6,
+    "rows_max": 6,
+    "layout_notes": "Sheet Reels x Rows 6×6."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways/cascades with Abduction Wild; bonus is grid hunt not classic ways FS."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Wins/abductions drop; Trap symbols do not drop in Hide N' Seek."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Abduction Wild / Hellfire / Hide N' Seek",
+        "how_it_works": "Abduction Wild reels 2–6 enhances on wins; 3+ Chopper→Hellfire; 3 Scatter→Hide N' Seek grid."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Abduction Wild",
+        "behavior": "Reels 2–6; on win stays, moves down, abducts paying symbols +1 mult each.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3 → Hide N' Seek (Scatters→Traps on 6×6).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Chopper / Hellfire",
+        "behavior": "3+ Chopper trigger Hellfire directional fire.",
+        "params": {}
+      },
+      {
+        "name": "Aliens / Boosters / Chests",
+        "behavior": "Hide N' Seek / Seek N' Destroy collectibles.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6×6 with Abduction Wild/Hellfire. 3 Scatter→Hide N' Seek; may upgrade/teleport to Seek N' Destroy. Buys 79/272/143×. Cap 14,649×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Hide N' Seek 79× / Seek N' Destroy 272× / Lucky Draw 143×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + cascade",
+        "order": 2,
+        "what_happens": "Abduction Wild / Hellfire; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "3 Scatters → Hide N' Seek (→ Seek N' Destroy via teleport/upgrade).",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "After Abduction/Hellfire resolution.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Hide N' Seek",
+        "trigger": "3 Scatters.",
+        "spins_awarded": "Grid hunt (lives-based, not fixed N)",
+        "retrigger": "Grey Chest may upgrade/teleport to Seek N' Destroy.",
+        "sticky_or_persistent_state": "Traps fixed; column multipliers.",
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "6×6 trap grid; Monkey lives."
+          },
+          {
+            "name": "Collect",
+            "order": 2,
+            "what_happens": "Walk cells; kill Aliens; Boosters/Chests."
+          }
+        ],
+        "effects": "Scatters→Traps; Monkey collects; ends on 0 lives or Monkeypendence / teleport."
+      },
+      {
+        "name": "Seek N' Destroy",
+        "trigger": "Teleport from Hide N' Seek / buy.",
+        "spins_awarded": "Launcher tubes feature (sheet)",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Seek N' Destroy mode."
+          }
+        ],
+        "effects": "Launcher tubes; 100× bet per tube; neighboring-row Alien destroys."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "79×/143×/272×",
+      "effects": "Hide N' Seek / Lucky Draw / Seek N' Destroy.",
+      "params": {}
+    },
+    {
+      "name": "Safe Word",
+      "trigger": "Cap",
+      "effects": "14,649×.",
+      "params": {
+        "max_win_multiplier": 14649
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Hide N' Seek",
+        "cost_multiplier": 79,
+        "cost_text": "79×",
+        "effects": "Buy Hide N' Seek.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Lucky Draw",
+        "cost_multiplier": 143,
+        "cost_text": "143×",
+        "effects": "Lucky Draw.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Seek N' Destroy",
+        "cost_multiplier": 272,
+        "cost_text": "272×",
+        "effects": "Buy Seek N' Destroy.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet also cites 100–500× range header."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 14649.0,
+    "max_win_notes": "14,649×",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07/94.13/92.18; base 69.56; Hide N' Seek 24.83; Seek N' Destroy 1.68.",
+    "hit_frequency_notes": "FS 1 in 298; 100× 1 in 1125."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Space_Donkey_894f8f7531.pdf",
+      "local_path": "sources/nolimit/space-donkey/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "6x6; 3 Scatter→Hide N' Seek; buys 79/272/143; max 14649×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/space-donkey",
+      "local_path": "sources/nolimit/space-donkey/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "Page."
+    }
+  ],
+  "unknowns": [
+    "exact Hide N' Seek starting lives",
+    "Monkeypendence Day spin ladder details",
+    "Lucky Draw composition"
+  ],
+  "thumbnail": "thumbs/nolimit-space-donkey.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

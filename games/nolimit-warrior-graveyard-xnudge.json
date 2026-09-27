@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Warrior Graveyard xNudge",
+    "slug": "nolimit-warrior-graveyard-xnudge",
+    "provider_game_id": "WarriorGraveyard",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/WarriorGraveyard",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/warrior-graveyard"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 6,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Sheet 6×3; 3-row Tombstone xNudge Wilds on reels 2–5."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Paylines (sheet references payline/pay table); exact line count not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xNudge Tombstone Wilds / Warrior Attack",
+        "how_it_works": "3-row Wilds reels 2–5 always nudge fully; 3+ same warrior → Warrior Attack nudge+shift left."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Tombstone Wild",
+        "behavior": "Reels 2–5; 3-row; always nudge fully; mults add on line.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3/4/5 → 8/10/12 Graveyard Spins; 6 → 14 Death Spins; extras +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Warrior Attack",
+        "behavior": "3+ same warrior: nudge cover reel + mult/nudge; symbols shift left; paylines with Tombstones.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6×3 paylines + xNudge. Warrior Attack on 3+ matching warriors. 3/4/5 Scatter→8/10/12 Graveyard; 6→14 Death. Buy into either (price not printed). Cap 9,797×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy Graveyard or Death Spins (cost not on sheet).",
+        "ends_when": "Spin",
+        "state_changes": null
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "xNudge; Warrior Attack if 3+ same warrior; evaluate paylines.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "3–5 Scatter→Graveyard 8/10/12; 6→Death 14.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Paylines after nudges / Warrior Attack.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Graveyard Spins",
+        "trigger": "3/4/5 Scatters.",
+        "spins_awarded": "8 / 10 / 12",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Unlimited sticky Tombstone Wild mult for feature.",
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 8 / 10 / 12."
+          }
+        ],
+        "effects": "Tombstone Wild mult +1 per nudge step; sticks all feature."
+      },
+      {
+        "name": "Death Spins",
+        "trigger": "6 Scatters.",
+        "spins_awarded": "14 (+1 per additional Scatter)",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Tombstone Wilds stick; mult per nudge.",
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 14 (+1 per additional Scatter)."
+          }
+        ],
+        "effects": "Sticky Tombstones; +1 spin per extra Scatter."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Warrior Attack",
+      "trigger": "3+ same warrior",
+      "effects": "Nudge cover + left shift payout.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "Graveyard or Death (price unknown)",
+      "effects": "Buy either bonus.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "9,797×.",
+      "params": {
+        "max_win_multiplier": 9797
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Graveyard or Death Spins",
+        "cost_multiplier": null,
+        "cost_text": "price not printed",
+        "effects": "Buy Graveyard or Death Spins.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet says buy into either; no × costs."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 9797.0,
+    "max_win_notes": "9,797×",
+    "rtp_percent": 96.16,
+    "rtp_notes": "96.16/94.24; main 35.77; Warrior Attack 29.76; Graveyard 29.68; Death 0.94.",
+    "hit_frequency_notes": "Hit 25.07%; Warrior Attack 1 in 136; FS 1 in 205; 100× 1 in 832."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Warrior_Graveyard_x_Nudge_66887_625ddde97d.pdf",
+      "local_path": "sources/nolimit/warrior-graveyard-xnudge/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "6x3; 3/4/5→8/10/12 Graveyard; 6→14 Death; max 9797×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/warrior-graveyard",
+      "local_path": "sources/nolimit/warrior-graveyard/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "Page."
+    }
+  ],
+  "unknowns": [
+    "exact payline_count",
+    "exact buy costs",
+    "Death Spins full delta vs Graveyard"
+  ],
+  "thumbnail": "thumbs/nolimit-warrior-graveyard-xnudge.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

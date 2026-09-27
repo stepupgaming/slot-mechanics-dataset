@@ -85830,6 +85830,214 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Barbarian Fury",
+      "slug": "nolimit-barbarian-fury",
+      "provider_game_id": "BarbarianFury",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/BarbarianFury",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/barbarian-fury"
+    },
+    "grid": {
+      "rows": 4,
+      "cols": 5,
+      "rows_min": 4,
+      "rows_max": 4,
+      "layout_notes": "Sheet 5×4; 4-row xNudge Roaring Wilds on reels 2–4."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Paylines; line count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": true,
+        "how_it_works": "Barbarian Respin: 3+ same Barbarian → nudge fully + lock for respin; Wilds lock too."
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "xNudge / Fury Spins",
+          "how_it_works": "4-row Wilds 2–4 always nudge; Fury Spins from 3+ Scatters with sticky Wild mult; spins = nudges to clear Scatters off reel."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xNudge Roaring Wild",
+          "behavior": "4-row reels 2–4; always nudge fully; +1 mult/nudge; mults add on line.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "3+ → Fury Spins; spin count = nudges needed for Scatters to nudge off reel (+1/nudge); extra Scatters in FS +1/nudge.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Barbarian Respin",
+          "behavior": "3+ same Barbarian: nudge fully, lock, respin with locked Wilds.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×4 xNudge. Barbarian Respin on 3+ matching Barbarians. 3+ Scatters→Fury Spins (spins from Scatter nudges off-reel; sticky Wild mult). Buy Fury 9–20 random spins (price unknown). Cap 8,785×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy Fury Spins with random 9–20 spins (cost not printed).",
+          "ends_when": "Spin",
+          "state_changes": null
+        },
+        {
+          "name": "Spin",
+          "order": 2,
+          "what_happens": "xNudge; maybe Barbarian Respin; evaluate.",
+          "ends_when": "Resolved",
+          "state_changes": "Mults"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3+ Scatters → Fury Spins (nudge-derived count).",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "Paylines after nudge/respin.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Fury Spins",
+          "trigger": "3+ Scatters.",
+          "spins_awarded": "Equal to nudges for Scatters to leave reel (+1 per nudge); buy awards random 9–20",
+          "retrigger": "Additional Scatters +1 spin per nudge.",
+          "sticky_or_persistent_state": "Wild multiplier sticky (does not reset between spins).",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award Equal to nudges for Scatters to leave reel (+1 per nudge); buy awards random 9–20."
+            }
+          ],
+          "effects": "Sticky Wild mult; nudge-based spin economy."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Barbarian Respin",
+        "trigger": "3+ same Barbarian",
+        "effects": "Nudge+lock respin.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "price not printed (9–20 spins)",
+        "effects": "Buy Fury Spins random 9–20.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "8,785×.",
+        "params": {
+          "max_win_multiplier": 8785
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Fury Spins",
+          "cost_multiplier": null,
+          "cost_text": "price not printed; 9–20 spins",
+          "effects": "Buy Fury Spins.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet: buy with random 9–20 spins; no ×."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 8785.0,
+      "max_win_notes": "8,785×",
+      "rtp_percent": 96.06,
+      "rtp_notes": "96.06/94.19; main 49.48; Respin 22.26; Fury 24.32.",
+      "hit_frequency_notes": "Hit 23.92%; FS 1 in 166; 100× 1 in 990."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Barbarian_Fury_77688_708570169e.pdf",
+        "local_path": "sources/nolimit/barbarian-fury/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x4; Fury Spins nudge-count; buy 9-20; max 8785×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/barbarian-fury",
+        "local_path": "sources/nolimit/barbarian-fury/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "exact buy cost",
+      "payline_count"
+    ],
+    "thumbnail": "thumbs/nolimit-barbarian-fury.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T19:01:58Z",
     "identity": {
       "provider": "Nolimit City",
@@ -87464,6 +87672,215 @@
     ],
     "thumbnail": "thumbs/nolimit-blood-shadow.webp",
     "thumbnail_attribution": "SlotCatalog"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Bonus Bunnies",
+      "slug": "nolimit-bonus-bunnies",
+      "provider_game_id": "BonusBunnies",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/BonusBunnies",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/bonus-bunnies"
+    },
+    "grid": {
+      "rows": 4,
+      "cols": 4,
+      "rows_min": 4,
+      "rows_max": 4,
+      "layout_notes": "Sheet 4×4."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "4×4; exact ways/lines not printed — treated as ways-like grid."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Bonus+Wild Expansion",
+          "how_it_works": "Bunny+Wild: Wilds explode vertically; 2 bonus bunnies also horizontal."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Wild",
+          "behavior": "Explodes vertically with Bunny; also horizontally if 2 Bonus Bunnies.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus Bunny",
+          "behavior": "3 → Carrot Link Spins (3 spins; reset on carrot/enhancing bunny).",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Carrot",
+          "behavior": "In Carrot Link Spins: collect carrot/bunny to reset meter; fill reels for bonus mult.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "4×4 with Bunny+Wild expansions. 3 Bonus Bunnies→Carrot Link Spins (3, reset on carrot/bunny). Buy available (price unknown). Cap 6,950×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy Carrot Link Spins (cost not printed).",
+          "ends_when": "Spin",
+          "state_changes": null
+        },
+        {
+          "name": "Spin",
+          "order": 2,
+          "what_happens": "Bonus+Wild Expansion; evaluate.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Bunnies → Carrot Link Spins.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After expansions.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Carrot Link Spins",
+          "trigger": "3 Bonus Bunnies.",
+          "spins_awarded": "3 (reset on carrot or enhancing bunny)",
+          "retrigger": "Carrot or enhancing bunny resets spin meter.",
+          "sticky_or_persistent_state": null,
+          "progressive_state": "Fill reels → bonus multiplier.",
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 3 (reset on carrot or enhancing bunny)."
+            }
+          ],
+          "effects": "Collect carrots/bunnies; fill reels for mult."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Bonus+Wild Expansion",
+        "trigger": "Bunny with Wild",
+        "effects": "Vertical (and horizontal if 2 bunnies) Wild explode.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "price not printed",
+        "effects": "Buy Carrot Link Spins.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "6,950×.",
+        "params": {
+          "max_win_multiplier": 6950
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Carrot Link Spins",
+          "cost_multiplier": null,
+          "cost_text": "price not printed",
+          "effects": "Buy Carrot Link Spins.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Affiliate sheet; no × cost."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 6950.0,
+      "max_win_notes": "6,950×",
+      "rtp_percent": 96.14,
+      "rtp_notes": "96.14/94.22; main 62.45; bonus 33.69.",
+      "hit_frequency_notes": "Bonus 1 in 179; 100× 1 in 868."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Affiliate_Game_Sheet_Slots_Bonus_Bunnies_1_20735c40ee.pdf",
+        "local_path": "sources/nolimit/bonus-bunnies/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "4x4; 3 Bunnies→Carrot Link 3 spins; max 6950×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/bonus-bunnies",
+        "local_path": "sources/nolimit/bonus-bunnies/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "Page."
+      }
+    ],
+    "unknowns": [
+      "exact buy cost",
+      "exact win_system line/ways count",
+      "fill-reel multiplier values"
+    ],
+    "thumbnail": "thumbs/nolimit-bonus-bunnies.webp",
+    "thumbnail_attribution": "Nolimit City"
   },
   {
     "schema_version": "1.1.0",
@@ -92239,6 +92656,233 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Devil's Crossroad",
+      "slug": "nolimit-devils-crossroad",
+      "provider_game_id": "DevilsCrossroad",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/DevilsCrossroad",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/devils-crossroad"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "Crosslink 3-3-3-3-3: four cross sections + center Devil Wild; cascades toward center."
+    },
+    "win_system": {
+      "type": "other",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": null,
+      "notes": "Crosslink Ways; section Cross Multipliers; cascades to center."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Wins removed; symbols fall toward center; new symbols fill."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Cross Wilds / Cross Multiplier / Scatter",
+          "how_it_works": "Adjacent-to-center may Wild; same-kind removals boost section mults; Scatter next to center locks section."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Devil Wild",
+          "behavior": "Center of Crosslink.",
+          "params": {}
+        },
+        {
+          "name": "Cross Wild",
+          "behavior": "Paying symbol next to center may become Wild.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "4 → Redemption Spins; next to center feeds upgrade.",
+          "params": {
+            "count_for_trigger": 4
+          }
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Cross section multiplier",
+          "behavior": "Rises when same-kind removed from other sections.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Bonus coins / Devil coin",
+          "behavior": "Redemption Spins coin features (7 sins + Devil coin).",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Crosslink cascades. 4 Scatters → Redemption Spins (3, reset on coin). Buys 80/250/500×. Cap 13,180×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "80× Redemption / 250× Lucky Draw / 500× Upgraded.",
+          "ends_when": "Spin",
+          "state_changes": "Stake × cost"
+        },
+        {
+          "name": "Spin + cascade",
+          "order": 2,
+          "what_happens": "Crosslink evaluate; Cross Wilds/Mults/Scatter side-effects.",
+          "ends_when": "No cascades",
+          "state_changes": "Section mults"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "4 Scatters → Redemption Spins.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After cascades with section multipliers.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Redemption Spins",
+          "trigger": "4 Scatter symbols.",
+          "spins_awarded": "3 (reset to 3 on coin)",
+          "retrigger": "Coin resets to 3.",
+          "sticky_or_persistent_state": "Full-column coin features; upgrade adds row features.",
+          "progressive_state": "Lust / Scatter-to-center → upgrade bar (4) or all 4 Scatters next to center.",
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 3 (reset to 3 on coin)."
+            }
+          ],
+          "effects": "Coin hold feature with column (and upgraded row) modifiers."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "80×/250×/500×",
+        "effects": "Redemption / Lucky Draw / Upgraded.",
+        "params": {}
+      },
+      {
+        "name": "Debt to be Paid",
+        "trigger": "Cap",
+        "effects": "13,180×.",
+        "params": {
+          "max_win_multiplier": 13180
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Redemption Spins",
+          "cost_multiplier": 80,
+          "cost_text": "80×",
+          "effects": "Buy Redemption.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Lucky Draw",
+          "cost_multiplier": 250,
+          "cost_text": "250×",
+          "effects": "Lucky Draw.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Upgraded Redemption",
+          "cost_multiplier": 500,
+          "cost_text": "500×",
+          "effects": "Upgraded Redemption.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet; max bet €200 on buys."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 13180.0,
+      "max_win_notes": "13,180×",
+      "rtp_percent": 96.06,
+      "rtp_notes": "96.06/94.03/92.07; base/bonus 54.61/41.45.",
+      "hit_frequency_notes": "FS 1 in 189; 100× 1 in 744."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Devils_Crossroad_20242_2365c4fa9f.pdf",
+        "local_path": "sources/nolimit/devils-crossroad/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "3-3-3-3-3 Crosslink; 4 Scatters→Redemption 3; buys 80/250/500; max 13180×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/devils-crossroad",
+        "local_path": "sources/nolimit/devils-crossroad/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS features."
+      }
+    ],
+    "unknowns": [
+      "Lucky Draw composition",
+      "exact Crosslink edge cases"
+    ],
+    "thumbnail": "thumbs/nolimit-devils-crossroad.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T18:54:41Z",
     "identity": {
       "provider": "Nolimit City",
@@ -93343,6 +93987,230 @@
       "Psycho spin count when upgrading from Geez"
     ],
     "thumbnail": "thumbs/nolimit-dj-psycho.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Dragon Tribe",
+      "slug": "nolimit-dragon-tribe",
+      "provider_game_id": "DragonTribe",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/DragonTribe",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/dragon-tribe"
+    },
+    "grid": {
+      "rows": 4,
+      "cols": 6,
+      "rows_min": 4,
+      "rows_max": null,
+      "layout_notes": "Sheet 6×4+ cascading; xWays expand toward 20,736 ways."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": 20736,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Cascading ways; up to 20,736 via xWays."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Cascading reels."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "xWays Mystery Symbol holds up to 3 symbols; expands reel height."
+      },
+      "other": [
+        {
+          "name": "xNudge / xWays",
+          "how_it_works": "xNudge Wild drops to bottom (+mult to x6) expands reel; xWays up to 3 symbols."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xNudge Wild",
+          "behavior": "Drops to bottom; +mult/step up to x6; expands full reel.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "3 → 10 Dragon Spins (standard or Extreme); +3 per extra.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "xWays Mystery Symbol",
+          "behavior": "Up to 3 same symbols; expand height; ≤20,736 ways.",
+          "params": {}
+        },
+        {
+          "name": "Dragon Spins Extreme",
+          "behavior": "Same 10+3 but with xNudge + xWays (vs standard xNudge only).",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "6×4+ cascading ways + xNudge/xWays. 3 Bonus→10 Dragon Spins / Extreme (+3). Buy mentioned without price. Cap ~27,000×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy Dragon Spins (cost not printed).",
+          "ends_when": "Spin",
+          "state_changes": null
+        },
+        {
+          "name": "Spin + cascade",
+          "order": 2,
+          "what_happens": "xWays/xNudge; evaluate ways; cascade.",
+          "ends_when": "Resolved",
+          "state_changes": "Ways/mult"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Bonus → choose/award Dragon Spins or Extreme 10+3.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "Ways after xNudge/xWays cascades.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Dragon Spins",
+          "trigger": "3 Bonus symbols.",
+          "spins_awarded": "10 (+3 per extra)",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 10 (+3 per extra)."
+            }
+          ],
+          "effects": "xNudge Wilds in FS."
+        },
+        {
+          "name": "Dragon Spins Extreme",
+          "trigger": "3 Bonus (Extreme choice).",
+          "spins_awarded": "10 (+3 per extra)",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 10 (+3 per extra)."
+            }
+          ],
+          "effects": "xNudge + xWays in FS."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "price not printed",
+        "effects": "Buy Dragon Spins.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "~27,000×.",
+        "params": {
+          "max_win_multiplier": 27000
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Dragon Spins",
+          "cost_multiplier": null,
+          "cost_text": "price not printed",
+          "effects": "Buy Dragon Spins.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet: buy available; no ×."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 27000.0,
+      "max_win_notes": "~27,000× simulated",
+      "rtp_percent": 96.07,
+      "rtp_notes": "96.07/94.41; main 61.54; Dragon Spins 34.53.",
+      "hit_frequency_notes": "Hit 21.57%; Dragon Spins 1 in 224; any xWays&xNudge 1 in 4; 100× 1 in 866."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Dragon_Tribe_37533_9bc398bf7a.pdf",
+        "local_path": "sources/nolimit/dragon-tribe/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "6x4+; 3 Bonus→10+3 Dragon/Extreme; max ~27000×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/dragon-tribe",
+        "local_path": "sources/nolimit/dragon-tribe/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "exact buy costs",
+      "how Extreme vs standard is chosen on natural trigger"
+    ],
+    "thumbnail": "thumbs/nolimit-dragon-tribe.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {
@@ -96559,6 +97427,203 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Gaelic Gold",
+      "slug": "nolimit-gaelic-gold",
+      "provider_game_id": "GaelicGold",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/GaelicGold",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/gaelic-gold"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 3,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "Classic 3×3; xNudge Wilds on all reels."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "3×3; rainbow lines may be added in FS; base line count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "xNudge Wild / Rainbow Spins",
+          "how_it_works": "3-row Wild all reels always nudge; Pot of Gold middle→5 Rainbow Spins with possible +spins/mult/lines."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xNudge Wild",
+          "behavior": "3-row on all reels; always nudge fully; +mult/nudge.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Pot of Gold",
+          "behavior": "Middle position middle reel → 5 Rainbow Spins (may award more spins/mult/rainbow lines).",
+          "params": {
+            "count_for_trigger": 1
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": []
+    },
+    "base_game_loop": {
+      "summary": "3×3 xNudge. Pot of Gold center→5 Rainbow Spins (extra spins/mult/rainbow lines possible). Buy available (price unknown). Cap 9,837×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy Rainbow Spins (cost not printed).",
+          "ends_when": "Spin",
+          "state_changes": null
+        },
+        {
+          "name": "Spin",
+          "order": 2,
+          "what_happens": "xNudge; evaluate.",
+          "ends_when": "Resolved",
+          "state_changes": "Mults"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "Pot of Gold center → 5 Rainbow Spins.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After xNudge.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Rainbow Spins",
+          "trigger": "Pot of Gold on middle position middle reel.",
+          "spins_awarded": "5 (+ possible extras)",
+          "retrigger": "Feature may award more spins, extra multiplier, or added rainbow lines.",
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 5 (+ possible extras)."
+            }
+          ],
+          "effects": "xNudge; possible +spins/mult/rainbow lines."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "price not printed",
+        "effects": "Buy Rainbow Spins.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "9,837×.",
+        "params": {
+          "max_win_multiplier": 9837
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Rainbow Spins",
+          "cost_multiplier": null,
+          "cost_text": "price not printed",
+          "effects": "Buy Rainbow Spins.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet: buy without ×."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 9837.0,
+      "max_win_notes": "9,837×",
+      "rtp_percent": 96.15,
+      "rtp_notes": "96.15/94.42; main 58.08; Rainbow 36.34.",
+      "hit_frequency_notes": "FS 1 in 127; 100× 1 in 990."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Gaelic_Gold_11243_d646da7625.pdf",
+        "local_path": "sources/nolimit/gaelic-gold/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "3x3; Pot of Gold→5 Rainbow Spins; max 9837×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/gaelic-gold",
+        "local_path": "sources/nolimit/gaelic-gold/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "exact buy cost",
+      "base payline_count",
+      "Rainbow Spins upgrade table"
+    ],
+    "thumbnail": "thumbs/nolimit-gaelic-gold.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T18:57:05Z",
     "identity": {
       "provider": "Nolimit City",
@@ -97154,6 +98219,225 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Golden Genie And The Walking Wilds",
+      "slug": "nolimit-golden-genie",
+      "provider_game_id": "GoldenGenie",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/GoldenGenie",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/golden-genie"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "5×3."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "both",
+      "notes": "Genie Lamps feature pays both ways; base line count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Genie Wishes / Lamps / Parade",
+          "how_it_works": "Aladdin+Lamp→Wilds x2–x10; random Lamps Wild reels 2+4 both-ways; 3 Genie→Parade walking Wilds until none left."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Genie Wild",
+          "behavior": "Walking left in Parade; +mult/step; Golden Genie passes mult when leaving.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Genie",
+          "behavior": "3 → Genie Parade (continues while Genie on reels).",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Genie Wishes",
+          "behavior": "Align Aladdin with lamp → both Wild with random x2–x10.",
+          "params": {}
+        },
+        {
+          "name": "Genie Lamps",
+          "behavior": "Random: reels 2+4 Wild; pays both ways.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×3. Genie Wishes / Genie Lamps random. 3 Genie→Genie Parade (walk left until no Genies). Buy available (price unknown). Cap 9,583×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy Genie Parade (cost not printed).",
+          "ends_when": "Spin",
+          "state_changes": null
+        },
+        {
+          "name": "Spin",
+          "order": 2,
+          "what_happens": "Wishes/Lamps maybe; evaluate.",
+          "ends_when": "Resolved",
+          "state_changes": "Mults"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Genie → Parade until no Genies remain.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After walking Wild resolution.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Genie Parade",
+          "trigger": "3 Genie symbols.",
+          "spins_awarded": "Until no Genie remains (hold-style)",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Walking Genie Wilds; Golden Genie mult handoff.",
+          "progressive_state": "Mult +1 per step left.",
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award Until no Genie remains (hold-style)."
+            }
+          ],
+          "effects": "Walk left; continues while Genie on reels."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Genie Wishes",
+        "trigger": "Aladdin aligned with lamp",
+        "effects": "Both→Wild x2–x10.",
+        "params": {}
+      },
+      {
+        "name": "Genie Lamps",
+        "trigger": "Random",
+        "effects": "Wilds reels 2+4; both-ways pays.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "price not printed",
+        "effects": "Buy Genie Parade.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "9,583×.",
+        "params": {
+          "max_win_multiplier": 9583
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Genie Parade",
+          "cost_multiplier": null,
+          "cost_text": "price not printed",
+          "effects": "Buy Genie Parade.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet: buy without ×."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 9583.0,
+      "max_win_notes": "9,583× (sheet '9583 bet')",
+      "rtp_percent": 96.03,
+      "rtp_notes": "96.03/94.11; main 55.67; bonus 40.36.",
+      "hit_frequency_notes": "Bonus 1 in 190; 100× 1 in 767."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/goldengenie_99f1c163b5.pdf",
+        "local_path": "sources/nolimit/golden-genie/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x3; 3 Genie→Parade; max 9583×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/golden-genie",
+        "local_path": "sources/nolimit/golden-genie/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "exact buy cost",
+      "payline_count"
+    ],
+    "thumbnail": "thumbs/nolimit-golden-genie.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T19:06:27Z",
     "identity": {
       "provider": "Nolimit City",
@@ -97406,6 +98690,208 @@
       "min cluster size"
     ],
     "thumbnail": "thumbs/nolimit-golden-shower.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Harlequin Carnival",
+      "slug": "nolimit-harlequin-carnival",
+      "provider_game_id": "Harlequin",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/Harlequin",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/harlequin-carnival"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "5×3; walking xNudge Harlequin Wilds."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "5×3; line count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": true,
+        "how_it_works": "Harlequin Respins: xNudge Wilds walk left awarding respins until reel 1."
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Harlequin Bonus",
+          "how_it_works": "3 Bonus → 8 Harlequin Bonus spins; guaranteed xNudge Wild reel 5 at x3."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Harlequin xNudge Wild",
+          "behavior": "3-row all reels; always nudge; +mult/nudge; walking left in respins/bonus.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "Collect during respins; 3 Bonus → 8 Harlequin Bonus spins; collect 3 more Bonus Wilds → another Wild reel 5; Bonus Wilds +1 spin.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": []
+    },
+    "base_game_loop": {
+      "summary": "5×3 walking xNudge. Landing Harlequin Wild→Respins (walk left). 3 Bonus→8 Harlequin Bonus (guaranteed Wild reel 5 x3). Buy available (price unknown). Cap 5,861×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy Free Spins (cost not printed).",
+          "ends_when": "Spin",
+          "state_changes": null
+        },
+        {
+          "name": "Spin / Respins",
+          "order": 2,
+          "what_happens": "xNudge; maybe Harlequin Respins; collect Bonus.",
+          "ends_when": "Resolved",
+          "state_changes": "Mults"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Bonus → 8 Harlequin Bonus spins.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After nudge/respins.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Harlequin Bonus",
+          "trigger": "3 Bonus symbols.",
+          "spins_awarded": "8",
+          "retrigger": "Bonus Wilds +1 spin; collect 3 more Bonus Wilds → another xNudge Wild reel 5.",
+          "sticky_or_persistent_state": "Guaranteed Harlequin xNudge Wild reel 5 starting x3; mult +1 per left step.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 8."
+            }
+          ],
+          "effects": "Walking xNudge Wild reel 5."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Harlequin Respins",
+        "trigger": "Harlequin xNudge Wild lands",
+        "effects": "Wilds walk left with respins.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "price not printed",
+        "effects": "Buy Free Spins.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "5,861×.",
+        "params": {
+          "max_win_multiplier": 5861
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Harlequin Bonus / Free Spins",
+          "cost_multiplier": null,
+          "cost_text": "price not printed",
+          "effects": "Buy FS.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet: buy without ×."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 5861.0,
+      "max_win_notes": "5,861×",
+      "rtp_percent": 96.14,
+      "rtp_notes": "96.14/94.29; main 58.99; Harlequin Bonus 37.14.",
+      "hit_frequency_notes": "Hit 28.11%; FS 1 in 181; 100× 1 in 643."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Affiliate_Game_Sheet_Slots_Harlequin_Carnival_a179a03712.pdf",
+        "local_path": "sources/nolimit/harlequin-carnival/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x3; 3 Bonus→8 Harlequin Bonus; max 5861×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/harlequin-carnival",
+        "local_path": "sources/nolimit/harlequin-carnival/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "exact buy cost",
+      "payline_count"
+    ],
+    "thumbnail": "thumbs/nolimit-harlequin-carnival.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {
@@ -97987,6 +99473,598 @@
       "xGOD concrete trigger odds"
     ],
     "thumbnail": "thumbs/nolimit-home-of-the-brave.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Hot 4 Cash",
+      "slug": "nolimit-hot-4-cash",
+      "provider_game_id": "Hot4Cash",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/Hot4Cash",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/hot-4-cash"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "5×3 with 4 Hot Zones (CMS/sheet)."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "both",
+      "notes": "Colossal Spins both-ways; base line count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Hot Zones / Disco Wild",
+          "how_it_works": "4 Hot Zones gate Super Freespins / Colossal / Lucky Wheels; Disco Wild center middle reel spreads."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Disco Wild",
+          "behavior": "Center of middle reel in base; spreads to adjacent.",
+          "params": {}
+        },
+        {
+          "name": "Sticky Wild (Super FS)",
+          "behavior": "Trigger symbols become Sticky Wilds in Super Freespins.",
+          "params": {}
+        }
+      ],
+      "scatters": [],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Hot Zones",
+          "behavior": "Same symbol all 4 zones→7 Super FS; same type 4→Colossal; same color 4→Lucky Wheels.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×3 Hot Zones. Same symbol×4 zones→7 Super Freespins (sticky trigger Wilds). Same type→Colossal Spins; same color→Lucky Wheels (≤1000×). Cap 2,154×.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Disco Wild maybe; evaluate Hot Zones vs features.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Feature",
+          "order": 2,
+          "what_happens": "Super FS 7 / Colossal / Lucky Wheels per Hot Zone pattern.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After Hot Zone resolution.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Super Freespins",
+          "trigger": "Same symbol in all 4 Hot Zones.",
+          "spins_awarded": "7",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Trigger symbols → Sticky Wilds for feature.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 7."
+            }
+          ],
+          "effects": "Sticky Wilds from triggers."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Colossal Spins",
+        "trigger": "4 of same symbol type in Hot Zones",
+        "effects": "Reels 2–4 become one colossal symbol of that type.",
+        "params": {}
+      },
+      {
+        "name": "Lucky Wheels",
+        "trigger": "Same color in all 4 Hot Zones",
+        "effects": "3-level wheel; instant cash up to 1000×.",
+        "params": {}
+      },
+      {
+        "name": "Disco Wild",
+        "trigger": "Center middle reel",
+        "effects": "Spreads adjacent.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "2,154×.",
+        "params": {
+          "max_win_multiplier": 2154
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": false,
+      "options": [],
+      "notes": "No buy prices on sheet."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 2154.0,
+      "max_win_notes": "2,154×",
+      "rtp_percent": null,
+      "rtp_notes": "Sheet dual RTP present; exact % parse from layout noisy.",
+      "hit_frequency_notes": "100× 1 in 11xx (sheet)."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "medium",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Hot4_Cash_21574_7646426c3f.pdf",
+        "local_path": "sources/nolimit/hot-4-cash/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "Hot Zones; Super Freespins 7; Colossal; Lucky Wheels; max 2154×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/hot-4-cash",
+        "local_path": "sources/nolimit/hot-4-cash/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS: Super Freespins 7."
+      }
+    ],
+    "unknowns": [
+      "exact RTP",
+      "payline_count",
+      "feature buy",
+      "Colossal Spins spin count if any"
+    ],
+    "thumbnail": "thumbs/nolimit-hot-4-cash.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Hot Nudge",
+      "slug": "nolimit-hot-nudge",
+      "provider_game_id": "HotNudge",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/HotNudge",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/hot-nudge"
+    },
+    "grid": {
+      "rows": 4,
+      "cols": 5,
+      "rows_min": 4,
+      "rows_max": 4,
+      "layout_notes": "Sheet Reels x Rows 4-4-4-4-4."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Fixed lines implied; line count not on sheet."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Hot Wilds / Hot Symbol Nudge",
+          "how_it_works": "4-row Wilds reels 2–4 nudge on win (+mult/step); 2 matching high on reels 1–2 → nudge remaining reels."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Hot Wild",
+          "behavior": "4-row reels 2–4; nudge fully on win; +1 mult/step; subs except Scatter.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Hot Scatter",
+          "behavior": "3 → 7 Freespins; in FS each Scatter awards extra spins by position.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Hot Symbol Nudge",
+          "behavior": "Two same King/Queen/Jack fully visible on first two reels → nudge that symbol fully on remaining reels.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×4 with Hot Wilds / Hot Symbol Nudge. 3 Scatter→7 FS (extras by Scatter position). Cap 2,413×. Buy not detailed on sheet.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Hot Symbol Nudge if eligible; Hot Wilds nudge on win; evaluate.",
+          "ends_when": "Resolved",
+          "state_changes": "Mults"
+        },
+        {
+          "name": "Bonus",
+          "order": 2,
+          "what_happens": "3 Scatters → 7 Freespins.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After Hot Wild / Symbol Nudge.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Hot Nudge Freespins",
+          "trigger": "3 Scatters.",
+          "spins_awarded": "7",
+          "retrigger": "Each Scatter awards additional FS by reel position (sheet).",
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 7."
+            }
+          ],
+          "effects": "Hot Wilds; Scatter position decides extra FS."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Hot Symbol Nudge",
+        "trigger": "2 matching highs reels 1–2",
+        "effects": "Nudge symbol across remaining reels.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "2,413×.",
+        "params": {
+          "max_win_multiplier": 2413
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": false,
+      "options": [],
+      "notes": "No concrete buy prices on sheet (Action Spins mentioned only)."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 2413.0,
+      "max_win_notes": "2,413×",
+      "rtp_percent": 96.29,
+      "rtp_notes": "96.29/94.16; base/bonus 58.85/17.49.",
+      "hit_frequency_notes": "FS 1 in 167; 100× 1 in 897."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_Sheet_Slots_Hot_Nudge_42976_b7b1053089.pdf",
+        "local_path": "sources/nolimit/hot-nudge/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "4-4-4-4-4; 3 Scatter→7 FS; max 2413×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/hot-nudge",
+        "local_path": "sources/nolimit/hot-nudge/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "Page."
+      }
+    ],
+    "unknowns": [
+      "payline_count",
+      "exact extra FS by Scatter position table",
+      "feature buy availability/prices"
+    ],
+    "thumbnail": "thumbs/nolimit-hot-nudge.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Immortal Fruits",
+      "slug": "nolimit-immortal-fruits",
+      "provider_game_id": "ImmortalFruits",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/ImmortalFruits",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/immortal-fruits"
+    },
+    "grid": {
+      "rows": 4,
+      "cols": 5,
+      "rows_min": 4,
+      "rows_max": 4,
+      "layout_notes": "Sheet 5×4; 50 win-lines; 4-row stacked Wilds on reels 2–4."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": 50,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "50 win-lines."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Stacked Wilds / xWheel",
+          "how_it_works": "4-row stacked Wilds reels 2–4; 3 Scatter/Bonus → xWheel jackpot bonus."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Stacked Wild",
+          "behavior": "4-row on reels 2–4.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter / Bonus",
+          "behavior": "3 → xWheel Jackpot bonus.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "xWheel",
+          "behavior": "Jackpot wheel; sheet cites up to x2500 prize; keep spinning for jackpots.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×4 50 lines with stacked Wilds 2–4. 3 Scatter→xWheel jackpot bonus (≤x2500 cited). Buy xWheel (price unknown). Cap 2,787×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy xWheel (cost not printed).",
+          "ends_when": "Spin",
+          "state_changes": null
+        },
+        {
+          "name": "Spin",
+          "order": 2,
+          "what_happens": "Stacked Wilds; evaluate 50 lines.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Scatter → xWheel.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "50 lines.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "xWheel Jackpots",
+          "trigger": "3 Scatter/Bonus symbols.",
+          "spins_awarded": "Wheel spins (not fixed FS count)",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Enter xWheel bonus."
+            },
+            {
+              "name": "Spin wheel",
+              "order": 2,
+              "what_happens": "Keep spinning for jackpots / x2500."
+            }
+          ],
+          "effects": "Jackpot wheel; up to x2500 cited on sheet."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "price not printed",
+        "effects": "Buy xWheel.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "2,787×.",
+        "params": {
+          "max_win_multiplier": 2787
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "xWheel",
+          "cost_multiplier": null,
+          "cost_text": "price not printed",
+          "effects": "Buy xWheel.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Affiliate sheet; no ×."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 2787.0,
+      "max_win_notes": "2,787×",
+      "rtp_percent": 96.06,
+      "rtp_notes": "96.06/94.08; main 60.97; xWheel 35.09.",
+      "hit_frequency_notes": "Hit 10.95%; xWheel 1 in 205; 100× 1 in 512."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "medium",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Affiliate_Game_Sheet_Slots_Immortal_Fruits_5150425a5a.pdf",
+        "local_path": "sources/nolimit/immortal-fruits/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x4 50 lines; 3 Scatter→xWheel; max 2787×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/immortal-fruits",
+        "local_path": "sources/nolimit/immortal-fruits/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "Page."
+      }
+    ],
+    "unknowns": [
+      "exact buy cost",
+      "full xWheel segment table",
+      "whether Scatter vs Bonus naming"
+    ],
+    "thumbnail": "thumbs/nolimit-immortal-fruits.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {
@@ -99649,6 +101727,196 @@
     ],
     "thumbnail": "thumbs/nolimit-kiss-my-chainsaw.webp",
     "thumbnail_attribution": "SlotCatalog"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Kitchen Drama: Sushi Mania",
+      "slug": "nolimit-kitchen-drama-sushi-mania",
+      "provider_game_id": "KitchenDramaSushiMania",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/KitchenDramaSushiMania",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/kitchen-drama-sushi-mania"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "5×3; 20 fixed betlines; collapsing reels."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": 20,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "20 fixed betlines with collapsing reels."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Collapsing reels on wins; 3+ collapses → Kamisabi Attack."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Bunshin Wilds / Wild Sushi FS",
+          "how_it_works": "Bunshin clones to 2 positions; win with 3 sushi ingredients → 10 Wild Sushi FS."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Wild / Bunshin Wild",
+          "behavior": "Bunshin clones to two random positions.",
+          "params": {}
+        }
+      ],
+      "scatters": [],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Sushi ingredients",
+          "behavior": "Win on combination of three sushi ingredients → Wild Sushi Free Spins.",
+          "params": {}
+        },
+        {
+          "name": "Kamisabi Attack",
+          "behavior": "3+ collapses activate Kamisabi Attack to help more collapses / FS.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×3 20 lines with collapses. Bunshin Wilds; Kamisabi on 3+ collapses. Win with 3 sushi ingredients→10 Wild Sushi FS. Cap 697×.",
+      "phases": [
+        {
+          "name": "Spin + collapses",
+          "order": 1,
+          "what_happens": "Evaluate lines; collapse; Bunshin; Kamisabi if 3+ collapses.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 2,
+          "what_happens": "3-sushi-ingredient win → 10 Wild Sushi FS.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "20 lines after collapses.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Wild Sushi Free Spins",
+          "trigger": "Win with three sushi ingredients (via collapses).",
+          "spins_awarded": "10",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 10."
+            }
+          ],
+          "effects": "May turn sushi ingredients into Wilds."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Bunshin Wilds",
+        "trigger": "Wild",
+        "effects": "Clone to two positions.",
+        "params": {}
+      },
+      {
+        "name": "Kamisabi Attack",
+        "trigger": "3+ collapses",
+        "effects": "Helps more collapses / FS path.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "697× capped.",
+        "params": {
+          "max_win_multiplier": 697
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": false,
+      "options": [],
+      "notes": "No buy on sheet."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 697.0,
+      "max_win_notes": "697× capped",
+      "rtp_percent": null,
+      "rtp_notes": "Sheet math block; exact total RTP parse noisy.",
+      "hit_frequency_notes": "100× 1 in 1708 (sheet)."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "medium",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Kitchen_Drama_Sushi_Mania_15858_591fc48574.pdf",
+        "local_path": "sources/nolimit/kitchen-drama-sushi-mania/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x3 20 lines; Wild Sushi FS 10; max 697×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/kitchen-drama-sushi-mania",
+        "local_path": "sources/nolimit/kitchen-drama-sushi-mania/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "exact total RTP",
+      "feature buy",
+      "precise sushi-ingredient trigger symbol set"
+    ],
+    "thumbnail": "thumbs/nolimit-kitchen-drama-sushi-mania.webp",
+    "thumbnail_attribution": "Nolimit City"
   },
   {
     "schema_version": "1.1.0",
@@ -101377,6 +103645,453 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Misery Mining",
+      "slug": "nolimit-misery-mining",
+      "provider_game_id": "MiseryMining",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/MiseryMining",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/misery-mining"
+    },
+    "grid": {
+      "rows": 7,
+      "cols": 7,
+      "rows_min": 3,
+      "rows_max": 7,
+      "layout_notes": "7×7 max; starts central 3×3; barriers open via xBomb; FS may start 3×3/4×4/5×5."
+    },
+    "win_system": {
+      "type": "clusters",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": null,
+      "notes": "Collapsing mine cluster/cascade style with xBomb; exact cluster size not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Collapses after wins/xBomb; barriers shift; xBomb Mining converts leftover Scatters to bombs if <3 Scatters and no win/xBomb."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "xBomb next to barrier moves barrier +1; play area grows from 3×3."
+      },
+      "other": [
+        {
+          "name": "xBomb / xSize",
+          "how_it_works": "xBomb Wild explodes neighbors +1 collapse mult; xSize expands active area."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xBomb Wild",
+          "behavior": "Subs except Scatter/Super Scatter; explodes neighbors (not those); +1 mult next collapse.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter / Super Scatter",
+          "behavior": "3 Scatter or 1–2 Super Scatter → Misery Freespins (choose Mouse/Rat); start area 3×3/4×4/5×5.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Collapse multiplier",
+          "behavior": "xBomb / xBomb Mining raise mult for following collapses.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Rat mode enhancers",
+          "behavior": "Top row reveals wagons/mults/bombs/super scatters/bag/chest/rat/dwarf.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "7×7 collapsing from 3×3 via xBomb barriers. 3 Scatter or 1–2 Super Scatter→Misery FS (Mouse/Rat). Rat starts 3 spins (reset on wagon/Super Scatter). Buys 66–1000× band. Cap 70,000×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy bonus 66×–1000× (line items not printed).",
+          "ends_when": "Spin",
+          "state_changes": "Stake × cost"
+        },
+        {
+          "name": "Spin + collapses",
+          "order": 2,
+          "what_happens": "Open barriers; xBomb; xBomb Mining; evaluate collapses.",
+          "ends_when": "Resolved",
+          "state_changes": "Area/mult"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Scatter or 1–2 Super Scatter → Mouse/Rat Misery Freespins.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After collapse chain.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Misery Freespins — Rat",
+          "trigger": "3 Scatter or 1–2 Super Scatter (player chooses Rat).",
+          "spins_awarded": "3 (reset to 3 on coin wagon or Super Scatter)",
+          "retrigger": "Coin wagon / Super Scatter reset to 3.",
+          "sticky_or_persistent_state": "Top-row enhancers each spin.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 3 (reset to 3 on coin wagon or Super Scatter)."
+            }
+          ],
+          "effects": "Enhancer row; hold-style resets."
+        },
+        {
+          "name": "Misery Freespins — Mouse",
+          "trigger": "3 Scatter or 1–2 Super Scatter (player chooses Mouse).",
+          "spins_awarded": "Not detailed on sheet",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Mouse mode (details sparse on sheet)."
+            }
+          ],
+          "effects": "Mouse mode mechanics not printed beyond choice."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Collapsing Mine",
+        "trigger": "Always",
+        "effects": "Start 3×3; xBomb opens barriers.",
+        "params": {}
+      },
+      {
+        "name": "xBomb Mining",
+        "trigger": "No win/xBomb and <3 Scatters",
+        "effects": "Leftover Scatters→non-Wild xBombs; explode; +1 mult.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "66×–1000×",
+        "effects": "Buy into bonus features.",
+        "params": {}
+      },
+      {
+        "name": "Le Grande Jaune",
+        "trigger": "Cap",
+        "effects": "70,000×.",
+        "params": {
+          "max_win_multiplier": 70000
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Misery bonus features",
+          "cost_multiplier": null,
+          "cost_text": "66×–1000×",
+          "effects": "Buy into bonus features.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Range only on sheet."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 70000.0,
+      "max_win_notes": "70,000× (~1 in 60M)",
+      "rtp_percent": 96.09,
+      "rtp_notes": "96.09/94.05; main 61.07; bonus 35.02.",
+      "hit_frequency_notes": "Hit 28.57%; FS 1 in 220; 100× 1 in 1251."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "medium",
+      "features": "high",
+      "feature_buy": "medium",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Misery_Mining_23cc407adb.pdf",
+        "local_path": "sources/nolimit/misery-mining/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "7x7 from 3x3; 3 Scatter/Super→Misery FS; Rat 3 spins; buys 66-1000; max 70000×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/misery-mining",
+        "local_path": "sources/nolimit/misery-mining/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "Mouse mode full rules",
+      "exact buy line items",
+      "exact cluster pay rules"
+    ],
+    "thumbnail": "thumbs/nolimit-misery-mining.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Monkey's Gold xPays",
+      "slug": "nolimit-monkeys-gold-xpays",
+      "provider_game_id": "MonkeysGold",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/MonkeysGold",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/monkeys-gold"
+    },
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "rows_min": 6,
+      "rows_max": 6,
+      "layout_notes": "Sheet 6×6; xPays / Colossal Symbols."
+    },
+    "win_system": {
+      "type": "other",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "xPays: win on reels 1–3 triggers payout structure; non-winners disappear / new drops."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Non-winning symbols disappear and trigger new drops (sheet)."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "xPays / Symbol Multiplier / Vine Multiplier",
+          "how_it_works": "xPays on reels 1–3; Symbol Multiplier counted as multiple; Vine Multiplier in FS."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Wild",
+          "behavior": "Inherits symbol multiplier.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "3 → 10 Free Spins; each extra +3. Vine Multiplier in FS.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Symbol / Vine Multiplier",
+          "behavior": "Symbol Mult in base; Vine Mult in FS.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Colossal Symbols / xPays",
+          "behavior": "xPays mechanic + colossal symbols (sheet).",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "6×6 xPays with cascades. 3 Bonus→10 FS (+3/extra) with Vine Multiplier. Buy FS (price not printed). Cap 12,683×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy Monkey's Gold Free Spins (cost not printed).",
+          "ends_when": "Spin",
+          "state_changes": null
+        },
+        {
+          "name": "Spin + xPays drop",
+          "order": 2,
+          "what_happens": "Evaluate xPays; remove non-winners; drop.",
+          "ends_when": "Resolved",
+          "state_changes": "Mults"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Bonus → 10 FS (+3).",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "xPays after drops.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Monkey's Gold Free Spins",
+          "trigger": "3 Bonus symbols.",
+          "spins_awarded": "10 (+3 per extra Bonus)",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 10 (+3 per extra Bonus)."
+            }
+          ],
+          "effects": "Vine Multiplier active in FS."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "price not printed",
+        "effects": "Buy Free Spins.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "12,683×.",
+        "params": {
+          "max_win_multiplier": 12683
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Monkey's Gold Free Spins",
+          "cost_multiplier": null,
+          "cost_text": "price not printed",
+          "effects": "Buy FS.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet mentions buy without × cost."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 12683.0,
+      "max_win_notes": "12,683×",
+      "rtp_percent": 96.02,
+      "rtp_notes": "96.02/94.22; main 57.32; FS 38.70.",
+      "hit_frequency_notes": "Bonus 1 in 188; 100× 1 in 788."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Monkeys_Gold_x_Pays_56445_4a87ea0064.pdf",
+        "local_path": "sources/nolimit/monkeys-gold-xpays/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "6x6 xPays; 3 Bonus→10+3 FS; max 12683×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/monkeys-gold",
+        "local_path": "sources/nolimit/monkeys-gold/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "Page."
+      }
+    ],
+    "unknowns": [
+      "exact buy cost",
+      "full xPays paytable rules",
+      "Vine Multiplier exact formula"
+    ],
+    "thumbnail": "thumbs/nolimit-monkeys-gold-xpays.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T19:14:17Z",
     "identity": {
       "provider": "Nolimit City",
@@ -101896,6 +104611,209 @@
       "ways_count"
     ],
     "thumbnail": "thumbs/nolimit-nine-to-five.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Oktoberfest",
+      "slug": "nolimit-oktoberfest",
+      "provider_game_id": "Oktoberfest",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/Oktoberfest",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/oktoberfest"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "5×3; 20 fixed betlines (sheet/CMS)."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": 20,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "20 fixed betlines."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": true,
+        "how_it_works": "Prost Win-spins: stacked Wilds reels 2+4 → toast Wild reel 3 + two guaranteed win-spins."
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Party / Pretzel Party / Bierspins",
+          "how_it_works": "Random Party/Pretzel stacked modes; 3 Scatters→10 Bierspins."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Stacked Wild",
+          "behavior": "Reels 2+4 stacked Wilds trigger Prost Win-spins.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "3 → 10 Bierspins; scatters become collectibles for +spins and mult up to 5× / +12 FS.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Party Spins",
+          "behavior": "Random super-stacked mid SYM reels.",
+          "params": {}
+        },
+        {
+          "name": "Pretzel Party Spin",
+          "behavior": "Random; lows (10–A) → Wilds.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×3 20 lines; Party/Pretzel random; Prost Win-spins on stacked Wilds 2+4. 3 Scatters→10 Bierspins (collect for +spins/mult). Cap 500×.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Maybe Party/Pretzel; evaluate; Prost if stacked Wilds 2+4.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 2,
+          "what_happens": "3 Scatters → 10 Bierspins.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "20 lines after random features.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Bierspins",
+          "trigger": "3 Scatters.",
+          "spins_awarded": "10",
+          "retrigger": "Collected scatters award additional spins (up to +12) and multipliers up to 5×.",
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 10."
+            }
+          ],
+          "effects": "Scatter collectibles; mult up to 5×."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Party Spins",
+        "trigger": "Random",
+        "effects": "Super-stacked mid symbols.",
+        "params": {}
+      },
+      {
+        "name": "Pretzel Party Spin",
+        "trigger": "Random",
+        "effects": "Lows → Wilds.",
+        "params": {}
+      },
+      {
+        "name": "Prost Win-spins",
+        "trigger": "Stacked Wilds reels 2+4",
+        "effects": "Wild reel 3 + two guaranteed win-spins.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "500×.",
+        "params": {
+          "max_win_multiplier": 500
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": false,
+      "options": [],
+      "notes": "No buy prices on sheet."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 500.0,
+      "max_win_notes": "500×",
+      "rtp_percent": 96.75,
+      "rtp_notes": "96.75; Party 13.9%; Prost 26.2%; Bierspins 12.2%.",
+      "hit_frequency_notes": "Sheet hit/volatility notes."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Oktoberfest_38137_12db9cf0af.pdf",
+        "local_path": "sources/nolimit/oktoberfest/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x3 20 lines; 3 Scatter→10 Bierspins; max 500×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/oktoberfest",
+        "local_path": "sources/nolimit/oktoberfest/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "feature buy",
+      "exact Bierspins collect table"
+    ],
+    "thumbnail": "thumbs/nolimit-oktoberfest.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {
@@ -102705,6 +105623,226 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Owls",
+      "slug": "nolimit-owls",
+      "provider_game_id": "Owls",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/Owls",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/owls"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "5×3; 15 fixed lines."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": 15,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "15 fixed lines."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Scatter Loot / Dream Spins",
+          "how_it_works": "Stacked Scatter reel 3 loot; 3 Scatters on 2/3/4 → one of three 5-spin Dream modes."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Wild",
+          "behavior": "Ember Dream always has stacked Wild reel 3.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "Stacked on reel 3 for Scatter Loot; 3 on reels 2–4 (middle nudges) → Dream Spins.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Ember / Emerald / Frost Dream",
+          "behavior": "Each awards 5 spins transforming set symbols to Wild.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×3 15 lines; Scatter Loot on reel 3. 3 Scatters reels 2–4→random Ember/Emerald/Frost Dream (5 spins each). Cap 1,374×.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Scatter Loot if stacked scatter reel 3; evaluate 15 lines.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 2,
+          "what_happens": "3 Scatters on 2–4 → one Dream mode (5 spins).",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "15 lines.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Ember Dream",
+          "trigger": "3 Scatters reels 2–4 (random among Dreams).",
+          "spins_awarded": "5",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Stacked Wild reel 3.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 5."
+            }
+          ],
+          "effects": "Flame Shard/Chest → Wild each spin."
+        },
+        {
+          "name": "Emerald Dream",
+          "trigger": "3 Scatters reels 2–4.",
+          "spins_awarded": "5",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 5."
+            }
+          ],
+          "effects": "Emerald Shard/Chest set → Wild."
+        },
+        {
+          "name": "Frost Dream",
+          "trigger": "3 Scatters reels 2–4.",
+          "spins_awarded": "5",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 5."
+            }
+          ],
+          "effects": "Frost Owl/Shard/Chest set → Wild."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Scatter Loot",
+        "trigger": "Stacked Scatter fully visible reel 3",
+        "effects": "Scatter payout up to 6–7 hits with Wilds.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "1,374×.",
+        "params": {
+          "max_win_multiplier": 1374
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": false,
+      "options": [],
+      "notes": "No buy on sheet."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 1374.0,
+      "max_win_notes": "1,374×",
+      "rtp_percent": 96.22,
+      "rtp_notes": "96.22; bonus 68.61; main 27.61.",
+      "hit_frequency_notes": "Hit 25.40%; bonus 1 in 104; 100× 1 in 1081."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Owls_24567_8f4afcedd0.pdf",
+        "local_path": "sources/nolimit/owls/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x3 15 lines; Dream Spins 5; max 1374×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/owls",
+        "local_path": "sources/nolimit/owls/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "feature buy",
+      "exact Dream selection weights"
+    ],
+    "thumbnail": "thumbs/nolimit-owls.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T19:01:58Z",
     "identity": {
       "provider": "Nolimit City",
@@ -102949,6 +106087,204 @@
       "min cluster size"
     ],
     "thumbnail": "thumbs/nolimit-pearl-harbor.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Poison Eve",
+      "slug": "nolimit-poison-eve",
+      "provider_game_id": "PoisonEve",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/PoisonEve",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/poison-eve"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "5×3."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "5×3; line count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Expanding Vine Wilds / Liquid Magic / Flower Power",
+          "how_it_works": "Wilds expand full reel; Poison Eve full reel 1→bottles→Eve; Bonus in Hot Zone reel 5→Flower Power portals."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Expanding Vine Wild",
+          "behavior": "Always expands to cover entire reel.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "Hot Zone reel 5 → Flower Power portals; extra Bonus → more portals.",
+          "params": {
+            "count_for_trigger": 1
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Liquid Magic",
+          "behavior": "Poison Eve fully on reel 1 → all bottles become Poison Eve (≤2000×).",
+          "params": {}
+        },
+        {
+          "name": "Flower Power",
+          "behavior": "Hot Zone Bonus opens left portal; Hot Zone symbol populates portals & expands that type; Eve can pay 2000× total.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×3 expanding Wilds. Liquid Magic if Eve full reel 1. Bonus in Hot Zone reel 5→Flower Power portals (expanding symbols). Cap 6,091×.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Expanding Wilds; Liquid Magic check; evaluate.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Flower Power",
+          "order": 2,
+          "what_happens": "Bonus in Hot Zone reel 5 → portals / expanding symbols.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After expansions / portals.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Flower Power",
+          "trigger": "Bonus symbol in Hot Zone on reel 5.",
+          "spins_awarded": "Portal feature (not fixed N spins)",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": "Additional Bonus → additional portals.",
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award Portal feature (not fixed N spins)."
+            }
+          ],
+          "effects": "Portals populated by Hot Zone symbol; type expands all reels."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Liquid Magic",
+        "trigger": "Poison Eve fully on reel 1",
+        "effects": "Bottles → Poison Eve; up to 2000×.",
+        "params": {}
+      },
+      {
+        "name": "Expanding Vine Wilds",
+        "trigger": "Wild lands",
+        "effects": "Cover entire reel.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "6,091×.",
+        "params": {
+          "max_win_multiplier": 6091
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": false,
+      "options": [],
+      "notes": "No buy prices on sheet."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 6091.0,
+      "max_win_notes": "6,091×",
+      "rtp_percent": 96.08,
+      "rtp_notes": "96.08/94.35; main 27.76; Liquid Magic 21.01; Flower Power 47.32.",
+      "hit_frequency_notes": "Hit 21.29%; Flower Power 1 in 116; 100× 1 in 505."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "medium",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Poison_Eve_18641_a2a4177272.pdf",
+        "local_path": "sources/nolimit/poison-eve/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x3; Flower Power via Hot Zone Bonus; Liquid Magic; max 6091×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/poison-eve",
+        "local_path": "sources/nolimit/poison-eve/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "payline_count",
+      "feature buy",
+      "exact portal count rules"
+    ],
+    "thumbnail": "thumbs/nolimit-poison-eve.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {
@@ -106967,6 +110303,250 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Space Donkey",
+      "slug": "nolimit-space-donkey",
+      "provider_game_id": "SpaceDonkey",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/SpaceDonkey",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/space-donkey"
+    },
+    "grid": {
+      "rows": 6,
+      "cols": 6,
+      "rows_min": 6,
+      "rows_max": 6,
+      "layout_notes": "Sheet Reels x Rows 6×6."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Ways/cascades with Abduction Wild; bonus is grid hunt not classic ways FS."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Wins/abductions drop; Trap symbols do not drop in Hide N' Seek."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Abduction Wild / Hellfire / Hide N' Seek",
+          "how_it_works": "Abduction Wild reels 2–6 enhances on wins; 3+ Chopper→Hellfire; 3 Scatter→Hide N' Seek grid."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Abduction Wild",
+          "behavior": "Reels 2–6; on win stays, moves down, abducts paying symbols +1 mult each.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "3 → Hide N' Seek (Scatters→Traps on 6×6).",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Chopper / Hellfire",
+          "behavior": "3+ Chopper trigger Hellfire directional fire.",
+          "params": {}
+        },
+        {
+          "name": "Aliens / Boosters / Chests",
+          "behavior": "Hide N' Seek / Seek N' Destroy collectibles.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "6×6 with Abduction Wild/Hellfire. 3 Scatter→Hide N' Seek; may upgrade/teleport to Seek N' Destroy. Buys 79/272/143×. Cap 14,649×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Hide N' Seek 79× / Seek N' Destroy 272× / Lucky Draw 143×.",
+          "ends_when": "Spin",
+          "state_changes": "Stake × cost"
+        },
+        {
+          "name": "Spin + cascade",
+          "order": 2,
+          "what_happens": "Abduction Wild / Hellfire; evaluate.",
+          "ends_when": "Resolved",
+          "state_changes": "Mults"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3 Scatters → Hide N' Seek (→ Seek N' Destroy via teleport/upgrade).",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After Abduction/Hellfire resolution.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Hide N' Seek",
+          "trigger": "3 Scatters.",
+          "spins_awarded": "Grid hunt (lives-based, not fixed N)",
+          "retrigger": "Grey Chest may upgrade/teleport to Seek N' Destroy.",
+          "sticky_or_persistent_state": "Traps fixed; column multipliers.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "6×6 trap grid; Monkey lives."
+            },
+            {
+              "name": "Collect",
+              "order": 2,
+              "what_happens": "Walk cells; kill Aliens; Boosters/Chests."
+            }
+          ],
+          "effects": "Scatters→Traps; Monkey collects; ends on 0 lives or Monkeypendence / teleport."
+        },
+        {
+          "name": "Seek N' Destroy",
+          "trigger": "Teleport from Hide N' Seek / buy.",
+          "spins_awarded": "Launcher tubes feature (sheet)",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Seek N' Destroy mode."
+            }
+          ],
+          "effects": "Launcher tubes; 100× bet per tube; neighboring-row Alien destroys."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "79×/143×/272×",
+        "effects": "Hide N' Seek / Lucky Draw / Seek N' Destroy.",
+        "params": {}
+      },
+      {
+        "name": "Safe Word",
+        "trigger": "Cap",
+        "effects": "14,649×.",
+        "params": {
+          "max_win_multiplier": 14649
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Hide N' Seek",
+          "cost_multiplier": 79,
+          "cost_text": "79×",
+          "effects": "Buy Hide N' Seek.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Lucky Draw",
+          "cost_multiplier": 143,
+          "cost_text": "143×",
+          "effects": "Lucky Draw.",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Seek N' Destroy",
+          "cost_multiplier": 272,
+          "cost_text": "272×",
+          "effects": "Buy Seek N' Destroy.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet also cites 100–500× range header."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 14649.0,
+      "max_win_notes": "14,649×",
+      "rtp_percent": 96.07,
+      "rtp_notes": "96.07/94.13/92.18; base 69.56; Hide N' Seek 24.83; Seek N' Destroy 1.68.",
+      "hit_frequency_notes": "FS 1 in 298; 100× 1 in 1125."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "medium",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Space_Donkey_894f8f7531.pdf",
+        "local_path": "sources/nolimit/space-donkey/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "6x6; 3 Scatter→Hide N' Seek; buys 79/272/143; max 14649×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/space-donkey",
+        "local_path": "sources/nolimit/space-donkey/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "Page."
+      }
+    ],
+    "unknowns": [
+      "exact Hide N' Seek starting lives",
+      "Monkeypendence Day spin ladder details",
+      "Lucky Draw composition"
+    ],
+    "thumbnail": "thumbs/nolimit-space-donkey.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T19:07:56Z",
     "identity": {
       "provider": "Nolimit City",
@@ -108057,6 +111637,197 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Tesla Jolt",
+      "slug": "nolimit-tesla-jolt",
+      "provider_game_id": "TeslaJolt",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/TeslaJolt",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/tesla-jolt"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "5×3; 20 fixed betlines."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": 20,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "20 fixed betlines."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Tesla Jolt / Charged Wilds / Time-lapse",
+          "how_it_works": "Tesla Jolt on reel 5 random→Wild; FS store Wilds on 2–4; Time-lapse releases +1–3 spins."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Wild / Charged Wild",
+          "behavior": "In Tesla Spins, Wilds on 2–4 stored; at 3 charged, disperse; Time-lapse releases.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "3+ → 10/15/20 Tesla Spins.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Tesla Jolt symbol",
+          "behavior": "Lands reel 5; random symbol→Wild.",
+          "params": {}
+        },
+        {
+          "name": "Time-lapse Trigger",
+          "behavior": "Releases charged Wilds; +1–3 Tesla Spins.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×3 20 lines; Tesla Jolt on reel 5. 3+ Scatters→10/15/20 Tesla Spins with Charged Wilds / Time-lapse. Cap 582×.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Tesla Jolt maybe; evaluate 20 lines.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 2,
+          "what_happens": "3+ Scatters → 10/15/20 Tesla Spins.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "20 fixed lines.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Tesla Spins",
+          "trigger": "3+ Scatters.",
+          "spins_awarded": "10 / 15 / 20",
+          "retrigger": "Time-lapse Trigger +1–3 spins.",
+          "sticky_or_persistent_state": "Charged Wilds stored on reels 2–4 until release.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 10 / 15 / 20."
+            }
+          ],
+          "effects": "Charged Wilds + Time-lapse."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Tesla Jolt",
+        "trigger": "Symbol reel 5",
+        "effects": "Random symbol becomes Wild.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "582× capped.",
+        "params": {
+          "max_win_multiplier": 582
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": false,
+      "options": [],
+      "notes": "No buy on sheet."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 582.0,
+      "max_win_notes": "582× capped",
+      "rtp_percent": 96.61,
+      "rtp_notes": "96.61; main 66.44; FS 30.17.",
+      "hit_frequency_notes": "FS 1 in 141; 100× 1 in 2210."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Tesla_Jolt_72625_0f486e2812.pdf",
+        "local_path": "sources/nolimit/tesla-jolt/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x3 20 lines; 3+→10/15/20 Tesla Spins; max 582×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/tesla-jolt",
+        "local_path": "sources/nolimit/tesla-jolt/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "feature buy",
+      "exact mapping 3/4/5 Scatter → 10/15/20"
+    ],
+    "thumbnail": "thumbs/nolimit-tesla-jolt.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T19:07:56Z",
     "identity": {
       "provider": "Nolimit City",
@@ -108792,6 +112563,243 @@
   },
   {
     "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "The Crypt",
+      "slug": "nolimit-the-crypt",
+      "provider_game_id": "TheCrypt",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/TheCrypt",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/the-crypt"
+    },
+    "grid": {
+      "rows": 4,
+      "cols": 6,
+      "rows_min": 4,
+      "rows_max": 6,
+      "layout_notes": "4×6; xWays expand up to 6 high → ≤46,656 ways."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Ways; xWays to 46,656; xNudge mults add."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": true,
+        "how_it_works": "Cascades; FS guarantees ≥1 xWays per initial cascade."
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "xWays expand reel height up to 6."
+      },
+      "other": [
+        {
+          "name": "xNudge / xWays / xBet",
+          "how_it_works": "xNudge Wild reels 2–5; xWays 2–3 symbols; xBet 3× bet >5× FS chance."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xNudge Wild",
+          "behavior": "Reels 2–5; drop+expand; mult/step; consecutive add. Subs except Scatter.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "3→10 Resurrection; +3 per extra Scatter.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "xWays",
+          "behavior": "All reels; expand height; ≤46,656 ways.",
+          "params": {}
+        },
+        {
+          "name": "Dead Rising",
+          "behavior": "Every 4th winning cascade: legend→Wild +2 spins; top-symbol win +1× on symbol.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "6×4 ways + xNudge/xWays; xBet 3×. 3 Scatter→10 Resurrection (+3). Buys 100/200/500/225×. Cap 27,000×.",
+      "phases": [
+        {
+          "name": "Optional xBet/buy",
+          "order": 1,
+          "what_happens": "xBet 3× or buy 10/13/16 FS / Lucky Draw 225×.",
+          "ends_when": "Spin",
+          "state_changes": "Stake × cost"
+        },
+        {
+          "name": "Spin + cascade",
+          "order": 2,
+          "what_happens": "xWays/xNudge; evaluate ways; cascade.",
+          "ends_when": "Resolved",
+          "state_changes": "Ways/mult"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3+ Scatter → Resurrection Spins.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "Ways after xNudge/xWays.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Resurrection Spins",
+          "trigger": "3 Scatters.",
+          "spins_awarded": "10 (+3 per extra Scatter)",
+          "retrigger": "Extra Scatters +3; Dead Rising +2.",
+          "sticky_or_persistent_state": "Converted legend Wilds; top-symbol mults.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 10 (+3 per extra Scatter)."
+            }
+          ],
+          "effects": "≥1 xWays each initial cascade; Dead Rising."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "xBet",
+        "trigger": "Player",
+        "when": "before_spin",
+        "cost_multiplier": 3,
+        "cost_text": "3× bet",
+        "effects": ">5× FS chance.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "100–500×",
+        "effects": "10/13/16 Resurrection or Lucky Draw 225×.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "27,000×.",
+        "params": {
+          "max_win_multiplier": 27000
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "10 Resurrection",
+          "cost_multiplier": 100,
+          "cost_text": "100×",
+          "effects": "10 FS",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "13 Resurrection",
+          "cost_multiplier": 200,
+          "cost_text": "200×",
+          "effects": "13 FS",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "16 Resurrection",
+          "cost_multiplier": 500,
+          "cost_text": "500×",
+          "effects": "16 FS",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "Lucky Draw",
+          "cost_multiplier": 225,
+          "cost_text": "225×",
+          "effects": "Lucky Draw",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": null
+    },
+    "ante_bet": {
+      "available": true,
+      "cost_multiplier": 3.0,
+      "effects": "xBet >5× Resurrection chance.",
+      "notes": "Sheet xBet®."
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 27000.0,
+      "max_win_notes": "27,000×",
+      "rtp_percent": 96.05,
+      "rtp_notes": "96.05/94.01/92.15; 65.03/31.02 base/bonus.",
+      "hit_frequency_notes": "FS 1 in 328; 100× 1 in 1185."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_The_Crypt_aa2081f2be.pdf",
+        "local_path": "sources/nolimit/the-crypt/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "4x6; 3 Scatter→10+3; xBet 3×; buys 100/200/500/225; max 27000×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/the-crypt",
+        "local_path": "sources/nolimit/the-crypt/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "Lucky Draw composition",
+      "base ways before xWays"
+    ],
+    "thumbnail": "thumbs/nolimit-the-crypt.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
     "updated_at": "2026-09-27T19:13:07Z",
     "identity": {
       "provider": "Nolimit City",
@@ -109032,6 +113040,207 @@
       "exact FS spin counts"
     ],
     "thumbnail": "thumbs/nolimit-the-rave.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Tomb of Akhenaten",
+      "slug": "nolimit-tomb-of-akhenaten",
+      "provider_game_id": "TombOfAkhenaten",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/TombOfAkhenaten",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/tomb-of-akhenaten"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 5,
+      "layout_notes": "CMS: 5×3 base 243 ways; Sticky Win Spins expand to 5×5 / 3,125 ways."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": 243,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "243 base ways; up to 3,125 via Sticky Win Spins expansion."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": true,
+        "how_it_works": "Any win → Sticky Win Spins up to 3 levels: +rows then full non-win respin; Pyramid Wilds on last level."
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "First two Sticky Win levels add rows toward 5×5."
+      },
+      "other": [
+        {
+          "name": "Pyramid Wilds",
+          "how_it_works": "Last Sticky Win level: pyramid wheel red tip → column transforms to Pyramid Wild; regular Wild→double."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Wild / Pyramid Wild / Double Wild",
+          "behavior": "Pyramid Wild transforms column (except Bonus/Wild); regular Wild→double (counts as 2).",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Bonus",
+          "behavior": "3+ → Akhenaten Spins: 3→8 spins, each extra Bonus +2 spins; during FS each extra Bonus +1 spin.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Sticky Win multiplier (FS)",
+          "behavior": "Each Sticky Win Spin raises win mult for rest of bonus.",
+          "params": {}
+        }
+      ],
+      "collectors": [],
+      "specials": []
+    },
+    "base_game_loop": {
+      "summary": "5×3 243 ways; any win→Sticky Win Spins (≤3 levels→3125 ways/Pyramid Wilds). 3 Bonus→8 Akhenaten (+2/extra). Buy 8@65× or 12@105×. Cap unknown on CMS.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy 8 spins 65× or 12 spins 105×.",
+          "ends_when": "Spin",
+          "state_changes": "Stake × cost"
+        },
+        {
+          "name": "Spin + Sticky Win",
+          "order": 2,
+          "what_happens": "Evaluate ways; Sticky Win Spins expand/respins/Pyramid Wilds.",
+          "ends_when": "Resolved",
+          "state_changes": "Ways/mult"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3+ Bonus → Akhenaten Spins 8+.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "Ways after Sticky Win resolution.",
+      "notes": "CMS-rich page (no public GameSheet PDF)."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Akhenaten Spins",
+          "trigger": "3+ Bonus symbols.",
+          "spins_awarded": "8 (+2 per extra Bonus at trigger; +1 per extra Bonus during FS)",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Sticky Win mult persists for bonus.",
+          "progressive_state": "Each Sticky Win Spin increases win multiplier.",
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 8 (+2 per extra Bonus at trigger; +1 per extra Bonus during FS)."
+            }
+          ],
+          "effects": "Sticky Win Spins active; rising mult."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Sticky Win Spins",
+        "trigger": "Any win",
+        "effects": "Up to 3 respin levels; expand to 3125 ways; Pyramid Wild chance.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "65× / 105×",
+        "effects": "8 or 12 Akhenaten Spins.",
+        "params": {}
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "8 Akhenaten Spins",
+          "cost_multiplier": 65,
+          "cost_text": "65×",
+          "effects": "Buy 8 FS",
+          "rtp_when_bought_note": null
+        },
+        {
+          "name": "12 Akhenaten Spins",
+          "cost_multiplier": 105,
+          "cost_text": "105×",
+          "effects": "Buy 12 FS",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "CMS Feature Buy."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": null,
+      "max_win_notes": "Not stated on CMS features excerpt.",
+      "rtp_percent": null,
+      "rtp_notes": "Not extracted.",
+      "hit_frequency_notes": null
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "high",
+      "numeric_limits": "low",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/tomb-of-akhenaten",
+        "local_path": "sources/nolimit/tomb-of-akhenaten/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "243→3125 ways; Sticky Win; 3 Bonus→8+2; buy 65×/105×."
+      }
+    ],
+    "unknowns": [
+      "max_win_multiplier",
+      "RTP",
+      "public GameSheet PDF (none linked)"
+    ],
+    "thumbnail": "thumbs/nolimit-tomb-of-akhenaten.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {
@@ -110551,6 +114760,204 @@
       "full grid rows"
     ],
     "thumbnail": "thumbs/nolimit-tombstone.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Tractor Beam",
+      "slug": "nolimit-tractor-beam",
+      "provider_game_id": "TractorBeam",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/TractorBeam",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/tractor-beam"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 5,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "Sheet 5×3."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "5×3; line count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "Beam 'Em Up! / Clone Attack! / Abduction Spins",
+          "how_it_works": "Random Beam/Clone in base; 3+ Scatters → Abduction Spins 7/9/12."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "Wild",
+          "behavior": "Stay on reels during Abduction Spins; Scatters abducted for +1 spin each.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "3+ → 7/9/12 Abduction Spins; abducted Scatters +1 spin each.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Beam 'Em Up!",
+          "behavior": "Random; beams symbols (sheet).",
+          "params": {}
+        },
+        {
+          "name": "Clone Attack!",
+          "behavior": "Random; clone feature (sheet).",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "5×3 with random Beam 'Em Up! / Clone Attack!. 3+ Scatters→7/9/12 Abduction Spins (Wilds sticky; abducted Scatter +1). Cap 3,408×.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Maybe Beam/Clone; evaluate.",
+          "ends_when": "Resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus",
+          "order": 2,
+          "what_happens": "3+ Scatters → Abduction Spins 7/9/12.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "After random features.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Abduction Spins",
+          "trigger": "3+ Scatters.",
+          "spins_awarded": "7 / 9 / 12",
+          "retrigger": "Each abducted Scatter +1 spin.",
+          "sticky_or_persistent_state": "Wilds always stay.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 7 / 9 / 12."
+            }
+          ],
+          "effects": "Symbols may be abducted; Wilds sticky."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Beam 'Em Up!",
+        "trigger": "Random",
+        "effects": "Beam feature.",
+        "params": {}
+      },
+      {
+        "name": "Clone Attack!",
+        "trigger": "Random",
+        "effects": "Clone feature.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "3,408×.",
+        "params": {
+          "max_win_multiplier": 3408
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": false,
+      "options": [],
+      "notes": "No buy prices on sheet."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 3408.0,
+      "max_win_notes": "3,408×",
+      "rtp_percent": 96.01,
+      "rtp_notes": "96.01; main 29.97; Beam 14.39; Clone 14.53; Abduction 37.13.",
+      "hit_frequency_notes": "FS 1 in 185; 100× 1 in 1074."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "medium",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Tractor_Beam_35624_ebae981d19.pdf",
+        "local_path": "sources/nolimit/tractor-beam/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "5x3; 3+ Scatter→7/9/12 Abduction; max 3408×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/tractor-beam",
+        "local_path": "sources/nolimit/tractor-beam/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "CMS."
+      }
+    ],
+    "unknowns": [
+      "payline_count",
+      "exact Beam/Clone mechanics detail",
+      "feature buy"
+    ],
+    "thumbnail": "thumbs/nolimit-tractor-beam.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {
@@ -112243,6 +116650,232 @@
       "exact buy lines"
     ],
     "thumbnail": "thumbs/nolimit-walk-of-shame.webp",
+    "thumbnail_attribution": "Nolimit City"
+  },
+  {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T19:20:05Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Warrior Graveyard xNudge",
+      "slug": "nolimit-warrior-graveyard-xnudge",
+      "provider_game_id": "WarriorGraveyard",
+      "release_year": null,
+      "demo_url": "https://playin.com/embed/v1/demo/WarriorGraveyard",
+      "slotcatalog_url": null,
+      "official_info_url": "https://nolimitcity.com/games/warrior-graveyard"
+    },
+    "grid": {
+      "rows": 3,
+      "cols": 6,
+      "rows_min": 3,
+      "rows_max": 3,
+      "layout_notes": "Sheet 6×3; 3-row Tombstone xNudge Wilds on reels 2–5."
+    },
+    "win_system": {
+      "type": "paylines",
+      "payline_count": null,
+      "ways_count": null,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "Paylines (sheet references payline/pay table); exact line count not printed."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "xNudge Tombstone Wilds / Warrior Attack",
+          "how_it_works": "3-row Wilds reels 2–5 always nudge fully; 3+ same warrior → Warrior Attack nudge+shift left."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xNudge Tombstone Wild",
+          "behavior": "Reels 2–5; 3-row; always nudge fully; mults add on line.",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Scatter",
+          "behavior": "3/4/5 → 8/10/12 Graveyard Spins; 6 → 14 Death Spins; extras +1 spin.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Warrior Attack",
+          "behavior": "3+ same warrior: nudge cover reel + mult/nudge; symbols shift left; paylines with Tombstones.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "6×3 paylines + xNudge. Warrior Attack on 3+ matching warriors. 3/4/5 Scatter→8/10/12 Graveyard; 6→14 Death. Buy into either (price not printed). Cap 9,797×.",
+      "phases": [
+        {
+          "name": "Optional buy",
+          "order": 1,
+          "what_happens": "Buy Graveyard or Death Spins (cost not on sheet).",
+          "ends_when": "Spin",
+          "state_changes": null
+        },
+        {
+          "name": "Spin",
+          "order": 2,
+          "what_happens": "xNudge; Warrior Attack if 3+ same warrior; evaluate paylines.",
+          "ends_when": "Resolved",
+          "state_changes": "Mults"
+        },
+        {
+          "name": "Bonus",
+          "order": 3,
+          "what_happens": "3–5 Scatter→Graveyard 8/10/12; 6→Death 14.",
+          "ends_when": "End",
+          "state_changes": null
+        }
+      ],
+      "win_evaluation": "Paylines after nudges / Warrior Attack.",
+      "notes": null
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Graveyard Spins",
+          "trigger": "3/4/5 Scatters.",
+          "spins_awarded": "8 / 10 / 12",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Unlimited sticky Tombstone Wild mult for feature.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 8 / 10 / 12."
+            }
+          ],
+          "effects": "Tombstone Wild mult +1 per nudge step; sticks all feature."
+        },
+        {
+          "name": "Death Spins",
+          "trigger": "6 Scatters.",
+          "spins_awarded": "14 (+1 per additional Scatter)",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Tombstone Wilds stick; mult per nudge.",
+          "progressive_state": null,
+          "end_condition": "Spins done or max win.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 14 (+1 per additional Scatter)."
+            }
+          ],
+          "effects": "Sticky Tombstones; +1 spin per extra Scatter."
+        }
+      ]
+    },
+    "features": [
+      {
+        "name": "Warrior Attack",
+        "trigger": "3+ same warrior",
+        "effects": "Nudge cover + left shift payout.",
+        "params": {}
+      },
+      {
+        "name": "Nolimit Bonus Buy",
+        "trigger": "Buy",
+        "cost_text": "Graveyard or Death (price unknown)",
+        "effects": "Buy either bonus.",
+        "params": {}
+      },
+      {
+        "name": "Max win",
+        "trigger": "Cap",
+        "effects": "9,797×.",
+        "params": {
+          "max_win_multiplier": 9797
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Graveyard or Death Spins",
+          "cost_multiplier": null,
+          "cost_text": "price not printed",
+          "effects": "Buy Graveyard or Death Spins.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet says buy into either; no × costs."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": null
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 9797.0,
+      "max_win_notes": "9,797×",
+      "rtp_percent": 96.16,
+      "rtp_notes": "96.16/94.24; main 35.77; Warrior Attack 29.76; Graveyard 29.68; Death 0.94.",
+      "hit_frequency_notes": "Hit 25.07%; Warrior Attack 1 in 136; FS 1 in 205; 100× 1 in 832."
+    },
+    "confidence": {
+      "grid": "high",
+      "win_system": "medium",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "low",
+      "numeric_limits": "high",
+      "base_game_loop": "high",
+      "overall": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Warrior_Graveyard_x_Nudge_66887_625ddde97d.pdf",
+        "local_path": "sources/nolimit/warrior-graveyard-xnudge/GameSheet.pdf",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "6x3; 3/4/5→8/10/12 Graveyard; 6→14 Death; max 9797×."
+      },
+      {
+        "source_type": "provider_marketing",
+        "url": "https://nolimitcity.com/games/warrior-graveyard",
+        "local_path": "sources/nolimit/warrior-graveyard/cms_features.txt",
+        "extracted_at": "2026-09-27T19:20:05Z",
+        "quote_or_excerpt": "Page."
+      }
+    ],
+    "unknowns": [
+      "exact payline_count",
+      "exact buy costs",
+      "Death Spins full delta vs Graveyard"
+    ],
+    "thumbnail": "thumbs/nolimit-warrior-graveyard-xnudge.webp",
     "thumbnail_attribution": "Nolimit City"
   },
   {

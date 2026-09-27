@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Kitchen Drama: Sushi Mania",
+    "slug": "nolimit-kitchen-drama-sushi-mania",
+    "provider_game_id": "KitchenDramaSushiMania",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/KitchenDramaSushiMania",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/kitchen-drama-sushi-mania"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "5×3; 20 fixed betlines; collapsing reels."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "20 fixed betlines with collapsing reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Collapsing reels on wins; 3+ collapses → Kamisabi Attack."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Bunshin Wilds / Wild Sushi FS",
+        "how_it_works": "Bunshin clones to 2 positions; win with 3 sushi ingredients → 10 Wild Sushi FS."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Bunshin Wild",
+        "behavior": "Bunshin clones to two random positions.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Sushi ingredients",
+        "behavior": "Win on combination of three sushi ingredients → Wild Sushi Free Spins.",
+        "params": {}
+      },
+      {
+        "name": "Kamisabi Attack",
+        "behavior": "3+ collapses activate Kamisabi Attack to help more collapses / FS.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 20 lines with collapses. Bunshin Wilds; Kamisabi on 3+ collapses. Win with 3 sushi ingredients→10 Wild Sushi FS. Cap 697×.",
+    "phases": [
+      {
+        "name": "Spin + collapses",
+        "order": 1,
+        "what_happens": "Evaluate lines; collapse; Bunshin; Kamisabi if 3+ collapses.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus",
+        "order": 2,
+        "what_happens": "3-sushi-ingredient win → 10 Wild Sushi FS.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "20 lines after collapses.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Wild Sushi Free Spins",
+        "trigger": "Win with three sushi ingredients (via collapses).",
+        "spins_awarded": "10",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 10."
+          }
+        ],
+        "effects": "May turn sushi ingredients into Wilds."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Bunshin Wilds",
+      "trigger": "Wild",
+      "effects": "Clone to two positions.",
+      "params": {}
+    },
+    {
+      "name": "Kamisabi Attack",
+      "trigger": "3+ collapses",
+      "effects": "Helps more collapses / FS path.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "697× capped.",
+      "params": {
+        "max_win_multiplier": 697
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 697.0,
+    "max_win_notes": "697× capped",
+    "rtp_percent": null,
+    "rtp_notes": "Sheet math block; exact total RTP parse noisy.",
+    "hit_frequency_notes": "100× 1 in 1708 (sheet)."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "medium",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Kitchen_Drama_Sushi_Mania_15858_591fc48574.pdf",
+      "local_path": "sources/nolimit/kitchen-drama-sushi-mania/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "5x3 20 lines; Wild Sushi FS 10; max 697×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/kitchen-drama-sushi-mania",
+      "local_path": "sources/nolimit/kitchen-drama-sushi-mania/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "exact total RTP",
+    "feature buy",
+    "precise sushi-ingredient trigger symbol set"
+  ],
+  "thumbnail": "thumbs/nolimit-kitchen-drama-sushi-mania.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

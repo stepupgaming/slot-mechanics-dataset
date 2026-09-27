@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Owls",
+    "slug": "nolimit-owls",
+    "provider_game_id": "Owls",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Owls",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/owls"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "5×3; 15 fixed lines."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 15,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "15 fixed lines."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Scatter Loot / Dream Spins",
+        "how_it_works": "Stacked Scatter reel 3 loot; 3 Scatters on 2/3/4 → one of three 5-spin Dream modes."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Ember Dream always has stacked Wild reel 3.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "Stacked on reel 3 for Scatter Loot; 3 on reels 2–4 (middle nudges) → Dream Spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Ember / Emerald / Frost Dream",
+        "behavior": "Each awards 5 spins transforming set symbols to Wild.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 15 lines; Scatter Loot on reel 3. 3 Scatters reels 2–4→random Ember/Emerald/Frost Dream (5 spins each). Cap 1,374×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Scatter Loot if stacked scatter reel 3; evaluate 15 lines.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus",
+        "order": 2,
+        "what_happens": "3 Scatters on 2–4 → one Dream mode (5 spins).",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "15 lines.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Ember Dream",
+        "trigger": "3 Scatters reels 2–4 (random among Dreams).",
+        "spins_awarded": "5",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Stacked Wild reel 3.",
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 5."
+          }
+        ],
+        "effects": "Flame Shard/Chest → Wild each spin."
+      },
+      {
+        "name": "Emerald Dream",
+        "trigger": "3 Scatters reels 2–4.",
+        "spins_awarded": "5",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 5."
+          }
+        ],
+        "effects": "Emerald Shard/Chest set → Wild."
+      },
+      {
+        "name": "Frost Dream",
+        "trigger": "3 Scatters reels 2–4.",
+        "spins_awarded": "5",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 5."
+          }
+        ],
+        "effects": "Frost Owl/Shard/Chest set → Wild."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Scatter Loot",
+      "trigger": "Stacked Scatter fully visible reel 3",
+      "effects": "Scatter payout up to 6–7 hits with Wilds.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "1,374×.",
+      "params": {
+        "max_win_multiplier": 1374
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 1374.0,
+    "max_win_notes": "1,374×",
+    "rtp_percent": 96.22,
+    "rtp_notes": "96.22; bonus 68.61; main 27.61.",
+    "hit_frequency_notes": "Hit 25.40%; bonus 1 in 104; 100× 1 in 1081."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Owls_24567_8f4afcedd0.pdf",
+      "local_path": "sources/nolimit/owls/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "5x3 15 lines; Dream Spins 5; max 1374×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/owls",
+      "local_path": "sources/nolimit/owls/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "feature buy",
+    "exact Dream selection weights"
+  ],
+  "thumbnail": "thumbs/nolimit-owls.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

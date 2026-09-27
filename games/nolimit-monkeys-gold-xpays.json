@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Monkey's Gold xPays",
+    "slug": "nolimit-monkeys-gold-xpays",
+    "provider_game_id": "MonkeysGold",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/MonkeysGold",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/monkeys-gold"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": 6,
+    "rows_max": 6,
+    "layout_notes": "Sheet 6×6; xPays / Colossal Symbols."
+  },
+  "win_system": {
+    "type": "other",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "xPays: win on reels 1–3 triggers payout structure; non-winners disappear / new drops."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Non-winning symbols disappear and trigger new drops (sheet)."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xPays / Symbol Multiplier / Vine Multiplier",
+        "how_it_works": "xPays on reels 1–3; Symbol Multiplier counted as multiple; Vine Multiplier in FS."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Inherits symbol multiplier.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 → 10 Free Spins; each extra +3. Vine Multiplier in FS.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Symbol / Vine Multiplier",
+        "behavior": "Symbol Mult in base; Vine Mult in FS.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Colossal Symbols / xPays",
+        "behavior": "xPays mechanic + colossal symbols (sheet).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6×6 xPays with cascades. 3 Bonus→10 FS (+3/extra) with Vine Multiplier. Buy FS (price not printed). Cap 12,683×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy Monkey's Gold Free Spins (cost not printed).",
+        "ends_when": "Spin",
+        "state_changes": null
+      },
+      {
+        "name": "Spin + xPays drop",
+        "order": 2,
+        "what_happens": "Evaluate xPays; remove non-winners; drop.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "3 Bonus → 10 FS (+3).",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "xPays after drops.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Monkey's Gold Free Spins",
+        "trigger": "3 Bonus symbols.",
+        "spins_awarded": "10 (+3 per extra Bonus)",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 10 (+3 per extra Bonus)."
+          }
+        ],
+        "effects": "Vine Multiplier active in FS."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "price not printed",
+      "effects": "Buy Free Spins.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "12,683×.",
+      "params": {
+        "max_win_multiplier": 12683
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Monkey's Gold Free Spins",
+        "cost_multiplier": null,
+        "cost_text": "price not printed",
+        "effects": "Buy FS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet mentions buy without × cost."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12683.0,
+    "max_win_notes": "12,683×",
+    "rtp_percent": 96.02,
+    "rtp_notes": "96.02/94.22; main 57.32; FS 38.70.",
+    "hit_frequency_notes": "Bonus 1 in 188; 100× 1 in 788."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Monkeys_Gold_x_Pays_56445_4a87ea0064.pdf",
+      "local_path": "sources/nolimit/monkeys-gold-xpays/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "6x6 xPays; 3 Bonus→10+3 FS; max 12683×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/monkeys-gold",
+      "local_path": "sources/nolimit/monkeys-gold/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "Page."
+    }
+  ],
+  "unknowns": [
+    "exact buy cost",
+    "full xPays paytable rules",
+    "Vine Multiplier exact formula"
+  ],
+  "thumbnail": "thumbs/nolimit-monkeys-gold-xpays.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

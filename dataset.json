@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T19:14:33Z",
-  "game_count": 797,
-  "thumbnail_count": 797,
+  "updated_at": "2026-09-27T19:21:20Z",
+  "game_count": 819,
+  "thumbnail_count": 819,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
     "Elk Studios": 147,
-    "Nolimit City": 101,
+    "Nolimit City": 123,
     "Slotmill": 61,
     "Backseat Gaming": 35
   },
   "by_confidence": {
-    "high": 666,
+    "high": 688,
     "low": 28,
     "medium": 103
   },
@@ -30,7 +30,7 @@
       "medium": 1
     },
     "Nolimit City": {
-      "high": 101
+      "high": 123
     },
     "Pragmatic Play": {
       "high": 156,
@@ -5087,6 +5087,19 @@
       "thumbnail": "thumbs/nolimit-bangkok-hilton.webp"
     },
     {
+      "slug": "nolimit-barbarian-fury",
+      "title": "Barbarian Fury",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-barbarian-fury.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-barbarian-fury.webp"
+    },
+    {
       "slug": "nolimit-beheaded",
       "title": "Beheaded",
       "provider": "Nolimit City",
@@ -5163,6 +5176,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-blood-shadow.webp"
+    },
+    {
+      "slug": "nolimit-bonus-bunnies",
+      "title": "Bonus Bunnies",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-bonus-bunnies.json",
+      "win_system_type": "ways",
+      "grid": "4×4",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-bonus-bunnies.webp"
     },
     {
       "slug": "nolimit-book-of-shadows",
@@ -5386,6 +5412,19 @@
       "thumbnail": "thumbs/nolimit-deadwood-xnudge.webp"
     },
     {
+      "slug": "nolimit-devils-crossroad",
+      "title": "Devil's Crossroad",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-devils-crossroad.json",
+      "win_system_type": "other",
+      "grid": "3×5",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-devils-crossroad.webp"
+    },
+    {
       "slug": "nolimit-ding-dong-death",
       "title": "Ding Dong Death",
       "provider": "Nolimit City",
@@ -5436,6 +5475,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-dj-psycho.webp"
+    },
+    {
+      "slug": "nolimit-dragon-tribe",
+      "title": "Dragon Tribe",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-dragon-tribe.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-dragon-tribe.webp"
     },
     {
       "slug": "nolimit-duck-hunters-2",
@@ -5581,6 +5633,19 @@
       "thumbnail": "thumbs/nolimit-folsom-prison.webp"
     },
     {
+      "slug": "nolimit-gaelic-gold",
+      "title": "Gaelic Gold",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-gaelic-gold.json",
+      "win_system_type": "paylines",
+      "grid": "3×3",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-gaelic-gold.webp"
+    },
+    {
       "slug": "nolimit-gator-hunters",
       "title": "Gator Hunters",
       "provider": "Nolimit City",
@@ -5607,6 +5672,19 @@
       "thumbnail": "thumbs/nolimit-gluttony.webp"
     },
     {
+      "slug": "nolimit-golden-genie",
+      "title": "Golden Genie And The Walking Wilds",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-golden-genie.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-golden-genie.webp"
+    },
+    {
       "slug": "nolimit-golden-shower",
       "title": "Golden Shower",
       "provider": "Nolimit City",
@@ -5618,6 +5696,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-golden-shower.webp"
+    },
+    {
+      "slug": "nolimit-harlequin-carnival",
+      "title": "Harlequin Carnival",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-harlequin-carnival.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-harlequin-carnival.webp"
     },
     {
       "slug": "nolimit-highway-to-hell",
@@ -5644,6 +5735,45 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-home-of-the-brave.webp"
+    },
+    {
+      "slug": "nolimit-hot-4-cash",
+      "title": "Hot 4 Cash",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-hot-4-cash.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-hot-4-cash.webp"
+    },
+    {
+      "slug": "nolimit-hot-nudge",
+      "title": "Hot Nudge",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-hot-nudge.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-hot-nudge.webp"
+    },
+    {
+      "slug": "nolimit-immortal-fruits",
+      "title": "Immortal Fruits",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-immortal-fruits.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-immortal-fruits.webp"
     },
     {
       "slug": "nolimit-infectious-5-xways",
@@ -5724,6 +5854,19 @@
       "thumbnail": "thumbs/nolimit-kiss-my-chainsaw.webp"
     },
     {
+      "slug": "nolimit-kitchen-drama-sushi-mania",
+      "title": "Kitchen Drama: Sushi Mania",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-kitchen-drama-sushi-mania.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-kitchen-drama-sushi-mania.webp"
+    },
+    {
       "slug": "nolimit-land-of-the-free",
       "title": "Land Of The Free",
       "provider": "Nolimit City",
@@ -5802,6 +5945,32 @@
       "thumbnail": "thumbs/nolimit-mental.webp"
     },
     {
+      "slug": "nolimit-misery-mining",
+      "title": "Misery Mining",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-misery-mining.json",
+      "win_system_type": "clusters",
+      "grid": "7×7",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-misery-mining.webp"
+    },
+    {
+      "slug": "nolimit-monkeys-gold-xpays",
+      "title": "Monkey's Gold xPays",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-monkeys-gold-xpays.json",
+      "win_system_type": "other",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-monkeys-gold-xpays.webp"
+    },
+    {
       "slug": "nolimit-munchies",
       "title": "Munchies",
       "provider": "Nolimit City",
@@ -5826,6 +5995,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-nine-to-five.webp"
+    },
+    {
+      "slug": "nolimit-oktoberfest",
+      "title": "Oktoberfest",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-oktoberfest.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-oktoberfest.webp"
     },
     {
       "slug": "nolimit-outsourced-2-balkan-engineering",
@@ -5867,6 +6049,19 @@
       "thumbnail": "thumbs/nolimit-outsourced.webp"
     },
     {
+      "slug": "nolimit-owls",
+      "title": "Owls",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-owls.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-owls.webp"
+    },
+    {
       "slug": "nolimit-pearl-harbor",
       "title": "Pearl Harbor",
       "provider": "Nolimit City",
@@ -5878,6 +6073,19 @@
       "has_buy": false,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-pearl-harbor.webp"
+    },
+    {
+      "slug": "nolimit-poison-eve",
+      "title": "Poison Eve",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-poison-eve.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-poison-eve.webp"
     },
     {
       "slug": "nolimit-possessed",
@@ -6075,6 +6283,19 @@
       "thumbnail": "thumbs/nolimit-soaked-by-seamen.webp"
     },
     {
+      "slug": "nolimit-space-donkey",
+      "title": "Space Donkey",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-space-donkey.json",
+      "win_system_type": "ways",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-space-donkey.webp"
+    },
+    {
       "slug": "nolimit-stockholm-syndrome",
       "title": "Stockholm Syndrome",
       "provider": "Nolimit City",
@@ -6127,6 +6348,19 @@
       "thumbnail": "thumbs/nolimit-tanked.webp"
     },
     {
+      "slug": "nolimit-tesla-jolt",
+      "title": "Tesla Jolt",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-tesla-jolt.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-tesla-jolt.webp"
+    },
+    {
       "slug": "nolimit-the-border",
       "title": "The Border",
       "provider": "Nolimit City",
@@ -6166,6 +6400,19 @@
       "thumbnail": "thumbs/nolimit-the-crypt-2.webp"
     },
     {
+      "slug": "nolimit-the-crypt",
+      "title": "The Crypt",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-the-crypt.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-the-crypt.webp"
+    },
+    {
       "slug": "nolimit-the-rave",
       "title": "The Rave",
       "provider": "Nolimit City",
@@ -6177,6 +6424,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-the-rave.webp"
+    },
+    {
+      "slug": "nolimit-tomb-of-akhenaten",
+      "title": "Tomb of Akhenaten",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-tomb-of-akhenaten.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-tomb-of-akhenaten.webp"
     },
     {
       "slug": "nolimit-tombstone-begins",
@@ -6242,6 +6502,19 @@
       "has_buy": false,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-tombstone.webp"
+    },
+    {
+      "slug": "nolimit-tractor-beam",
+      "title": "Tractor Beam",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-tractor-beam.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-tractor-beam.webp"
     },
     {
       "slug": "nolimit-true-grit-redemption-2",
@@ -6320,6 +6593,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-walk-of-shame.webp"
+    },
+    {
+      "slug": "nolimit-warrior-graveyard-xnudge",
+      "title": "Warrior Graveyard xNudge",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-warrior-graveyard-xnudge.json",
+      "win_system_type": "paylines",
+      "grid": "3×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-warrior-graveyard-xnudge.webp"
     },
     {
       "slug": "nolimit-whacked",

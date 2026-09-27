@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Harlequin Carnival",
+    "slug": "nolimit-harlequin-carnival",
+    "provider_game_id": "Harlequin",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Harlequin",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/harlequin-carnival"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "5×3; walking xNudge Harlequin Wilds."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "5×3; line count not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Harlequin Respins: xNudge Wilds walk left awarding respins until reel 1."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Harlequin Bonus",
+        "how_it_works": "3 Bonus → 8 Harlequin Bonus spins; guaranteed xNudge Wild reel 5 at x3."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Harlequin xNudge Wild",
+        "behavior": "3-row all reels; always nudge; +mult/nudge; walking left in respins/bonus.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Collect during respins; 3 Bonus → 8 Harlequin Bonus spins; collect 3 more Bonus Wilds → another Wild reel 5; Bonus Wilds +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "5×3 walking xNudge. Landing Harlequin Wild→Respins (walk left). 3 Bonus→8 Harlequin Bonus (guaranteed Wild reel 5 x3). Buy available (price unknown). Cap 5,861×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy Free Spins (cost not printed).",
+        "ends_when": "Spin",
+        "state_changes": null
+      },
+      {
+        "name": "Spin / Respins",
+        "order": 2,
+        "what_happens": "xNudge; maybe Harlequin Respins; collect Bonus.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "3 Bonus → 8 Harlequin Bonus spins.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "After nudge/respins.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Harlequin Bonus",
+        "trigger": "3 Bonus symbols.",
+        "spins_awarded": "8",
+        "retrigger": "Bonus Wilds +1 spin; collect 3 more Bonus Wilds → another xNudge Wild reel 5.",
+        "sticky_or_persistent_state": "Guaranteed Harlequin xNudge Wild reel 5 starting x3; mult +1 per left step.",
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 8."
+          }
+        ],
+        "effects": "Walking xNudge Wild reel 5."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Harlequin Respins",
+      "trigger": "Harlequin xNudge Wild lands",
+      "effects": "Wilds walk left with respins.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "price not printed",
+      "effects": "Buy Free Spins.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "5,861×.",
+      "params": {
+        "max_win_multiplier": 5861
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Harlequin Bonus / Free Spins",
+        "cost_multiplier": null,
+        "cost_text": "price not printed",
+        "effects": "Buy FS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet: buy without ×."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5861.0,
+    "max_win_notes": "5,861×",
+    "rtp_percent": 96.14,
+    "rtp_notes": "96.14/94.29; main 58.99; Harlequin Bonus 37.14.",
+    "hit_frequency_notes": "Hit 28.11%; FS 1 in 181; 100× 1 in 643."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Affiliate_Game_Sheet_Slots_Harlequin_Carnival_a179a03712.pdf",
+      "local_path": "sources/nolimit/harlequin-carnival/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "5x3; 3 Bonus→8 Harlequin Bonus; max 5861×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/harlequin-carnival",
+      "local_path": "sources/nolimit/harlequin-carnival/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "exact buy cost",
+    "payline_count"
+  ],
+  "thumbnail": "thumbs/nolimit-harlequin-carnival.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Devil's Crossroad",
+    "slug": "nolimit-devils-crossroad",
+    "provider_game_id": "DevilsCrossroad",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DevilsCrossroad",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/devils-crossroad"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Crosslink 3-3-3-3-3: four cross sections + center Devil Wild; cascades toward center."
+  },
+  "win_system": {
+    "type": "other",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Crosslink Ways; section Cross Multipliers; cascades to center."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Wins removed; symbols fall toward center; new symbols fill."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Cross Wilds / Cross Multiplier / Scatter",
+        "how_it_works": "Adjacent-to-center may Wild; same-kind removals boost section mults; Scatter next to center locks section."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Devil Wild",
+        "behavior": "Center of Crosslink.",
+        "params": {}
+      },
+      {
+        "name": "Cross Wild",
+        "behavior": "Paying symbol next to center may become Wild.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "4 → Redemption Spins; next to center feeds upgrade.",
+        "params": {
+          "count_for_trigger": 4
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Cross section multiplier",
+        "behavior": "Rises when same-kind removed from other sections.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Bonus coins / Devil coin",
+        "behavior": "Redemption Spins coin features (7 sins + Devil coin).",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Crosslink cascades. 4 Scatters → Redemption Spins (3, reset on coin). Buys 80/250/500×. Cap 13,180×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "80× Redemption / 250× Lucky Draw / 500× Upgraded.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + cascade",
+        "order": 2,
+        "what_happens": "Crosslink evaluate; Cross Wilds/Mults/Scatter side-effects.",
+        "ends_when": "No cascades",
+        "state_changes": "Section mults"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "4 Scatters → Redemption Spins.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "After cascades with section multipliers.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Redemption Spins",
+        "trigger": "4 Scatter symbols.",
+        "spins_awarded": "3 (reset to 3 on coin)",
+        "retrigger": "Coin resets to 3.",
+        "sticky_or_persistent_state": "Full-column coin features; upgrade adds row features.",
+        "progressive_state": "Lust / Scatter-to-center → upgrade bar (4) or all 4 Scatters next to center.",
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award 3 (reset to 3 on coin)."
+          }
+        ],
+        "effects": "Coin hold feature with column (and upgraded row) modifiers."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "80×/250×/500×",
+      "effects": "Redemption / Lucky Draw / Upgraded.",
+      "params": {}
+    },
+    {
+      "name": "Debt to be Paid",
+      "trigger": "Cap",
+      "effects": "13,180×.",
+      "params": {
+        "max_win_multiplier": 13180
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Redemption Spins",
+        "cost_multiplier": 80,
+        "cost_text": "80×",
+        "effects": "Buy Redemption.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Lucky Draw",
+        "cost_multiplier": 250,
+        "cost_text": "250×",
+        "effects": "Lucky Draw.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Upgraded Redemption",
+        "cost_multiplier": 500,
+        "cost_text": "500×",
+        "effects": "Upgraded Redemption.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet; max bet €200 on buys."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 13180.0,
+    "max_win_notes": "13,180×",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06/94.03/92.07; base/bonus 54.61/41.45.",
+    "hit_frequency_notes": "FS 1 in 189; 100× 1 in 744."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Devils_Crossroad_20242_2365c4fa9f.pdf",
+      "local_path": "sources/nolimit/devils-crossroad/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "3-3-3-3-3 Crosslink; 4 Scatters→Redemption 3; buys 80/250/500; max 13180×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/devils-crossroad",
+      "local_path": "sources/nolimit/devils-crossroad/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS features."
+    }
+  ],
+  "unknowns": [
+    "Lucky Draw composition",
+    "exact Crosslink edge cases"
+  ],
+  "thumbnail": "thumbs/nolimit-devils-crossroad.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

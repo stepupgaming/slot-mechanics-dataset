@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Golden Genie And The Walking Wilds",
+    "slug": "nolimit-golden-genie",
+    "provider_game_id": "GoldenGenie",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/GoldenGenie",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/golden-genie"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "5×3."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "both",
+    "notes": "Genie Lamps feature pays both ways; base line count not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Genie Wishes / Lamps / Parade",
+        "how_it_works": "Aladdin+Lamp→Wilds x2–x10; random Lamps Wild reels 2+4 both-ways; 3 Genie→Parade walking Wilds until none left."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Genie Wild",
+        "behavior": "Walking left in Parade; +mult/step; Golden Genie passes mult when leaving.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Genie",
+        "behavior": "3 → Genie Parade (continues while Genie on reels).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Genie Wishes",
+        "behavior": "Align Aladdin with lamp → both Wild with random x2–x10.",
+        "params": {}
+      },
+      {
+        "name": "Genie Lamps",
+        "behavior": "Random: reels 2+4 Wild; pays both ways.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3. Genie Wishes / Genie Lamps random. 3 Genie→Genie Parade (walk left until no Genies). Buy available (price unknown). Cap 9,583×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy Genie Parade (cost not printed).",
+        "ends_when": "Spin",
+        "state_changes": null
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "Wishes/Lamps maybe; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": "Mults"
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "3 Genie → Parade until no Genies remain.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "After walking Wild resolution.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Genie Parade",
+        "trigger": "3 Genie symbols.",
+        "spins_awarded": "Until no Genie remains (hold-style)",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Walking Genie Wilds; Golden Genie mult handoff.",
+        "progressive_state": "Mult +1 per step left.",
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Award Until no Genie remains (hold-style)."
+          }
+        ],
+        "effects": "Walk left; continues while Genie on reels."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Genie Wishes",
+      "trigger": "Aladdin aligned with lamp",
+      "effects": "Both→Wild x2–x10.",
+      "params": {}
+    },
+    {
+      "name": "Genie Lamps",
+      "trigger": "Random",
+      "effects": "Wilds reels 2+4; both-ways pays.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "price not printed",
+      "effects": "Buy Genie Parade.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "9,583×.",
+      "params": {
+        "max_win_multiplier": 9583
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Genie Parade",
+        "cost_multiplier": null,
+        "cost_text": "price not printed",
+        "effects": "Buy Genie Parade.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Sheet: buy without ×."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 9583.0,
+    "max_win_notes": "9,583× (sheet '9583 bet')",
+    "rtp_percent": 96.03,
+    "rtp_notes": "96.03/94.11; main 55.67; bonus 40.36.",
+    "hit_frequency_notes": "Bonus 1 in 190; 100× 1 in 767."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/goldengenie_99f1c163b5.pdf",
+      "local_path": "sources/nolimit/golden-genie/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "5x3; 3 Genie→Parade; max 9583×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/golden-genie",
+      "local_path": "sources/nolimit/golden-genie/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "CMS."
+    }
+  ],
+  "unknowns": [
+    "exact buy cost",
+    "payline_count"
+  ],
+  "thumbnail": "thumbs/nolimit-golden-genie.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

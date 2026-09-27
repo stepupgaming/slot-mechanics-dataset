@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:20:05Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Immortal Fruits",
+    "slug": "nolimit-immortal-fruits",
+    "provider_game_id": "ImmortalFruits",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/ImmortalFruits",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/immortal-fruits"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Sheet 5×4; 50 win-lines; 4-row stacked Wilds on reels 2–4."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 50,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "50 win-lines."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Stacked Wilds / xWheel",
+        "how_it_works": "4-row stacked Wilds reels 2–4; 3 Scatter/Bonus → xWheel jackpot bonus."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Stacked Wild",
+        "behavior": "4-row on reels 2–4.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter / Bonus",
+        "behavior": "3 → xWheel Jackpot bonus.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWheel",
+        "behavior": "Jackpot wheel; sheet cites up to x2500 prize; keep spinning for jackpots.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×4 50 lines with stacked Wilds 2–4. 3 Scatter→xWheel jackpot bonus (≤x2500 cited). Buy xWheel (price unknown). Cap 2,787×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Buy xWheel (cost not printed).",
+        "ends_when": "Spin",
+        "state_changes": null
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "Stacked Wilds; evaluate 50 lines.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus",
+        "order": 3,
+        "what_happens": "3 Scatter → xWheel.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "50 lines.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "xWheel Jackpots",
+        "trigger": "3 Scatter/Bonus symbols.",
+        "spins_awarded": "Wheel spins (not fixed FS count)",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max win.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Enter xWheel bonus."
+          },
+          {
+            "name": "Spin wheel",
+            "order": 2,
+            "what_happens": "Keep spinning for jackpots / x2500."
+          }
+        ],
+        "effects": "Jackpot wheel; up to x2500 cited on sheet."
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "cost_text": "price not printed",
+      "effects": "Buy xWheel.",
+      "params": {}
+    },
+    {
+      "name": "Max win",
+      "trigger": "Cap",
+      "effects": "2,787×.",
+      "params": {
+        "max_win_multiplier": 2787
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xWheel",
+        "cost_multiplier": null,
+        "cost_text": "price not printed",
+        "effects": "Buy xWheel.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Affiliate sheet; no ×."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 2787.0,
+    "max_win_notes": "2,787×",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06/94.08; main 60.97; xWheel 35.09.",
+    "hit_frequency_notes": "Hit 10.95%; xWheel 1 in 205; 100× 1 in 512."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Affiliate_Game_Sheet_Slots_Immortal_Fruits_5150425a5a.pdf",
+      "local_path": "sources/nolimit/immortal-fruits/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "5x4 50 lines; 3 Scatter→xWheel; max 2787×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/immortal-fruits",
+      "local_path": "sources/nolimit/immortal-fruits/cms_features.txt",
+      "extracted_at": "2026-09-27T19:20:05Z",
+      "quote_or_excerpt": "Page."
+    }
+  ],
+  "unknowns": [
+    "exact buy cost",
+    "full xWheel segment table",
+    "whether Scatter vs Bonus naming"
+  ],
+  "thumbnail": "thumbs/nolimit-immortal-fruits.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
