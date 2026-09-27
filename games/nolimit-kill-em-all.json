@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:04:55Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Kill Em All",
+    "slug": "nolimit-kill-em-all",
+    "provider_game_id": "KillEmAll",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/KillEmAll",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/kill-em-all"
+  },
+  "grid": {
+    "rows": 1,
+    "cols": 3,
+    "rows_min": 1,
+    "rows_max": 1,
+    "layout_notes": "Official rowsReels 1-1-1."
+  },
+  "win_system": {
+    "type": "other",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Not classic ways: 3-reel 1-row combat; weapons hit monster lives; chests pay."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Every non-X symbol triggers respin; 3 non-X same spin → 5 Respins."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Hack & Slash",
+        "how_it_works": "Weapons hit monster by hit value; critical −3 lives; leftover hits do not carry to next monster."
+      },
+      {
+        "name": "Monster queue / bosses",
+        "how_it_works": "Trail of monsters; 4th/8th/12th are bosses awarding level-up features + chests."
+      },
+      {
+        "name": "Level-up features",
+        "how_it_works": "Sticky Mult ×2–5, Extra Chests, Weapon Upgrade (max L4), Chest Upgrade, Golden Sword, Attack×3; up to 3 (4 in Domination); max 2 of same."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "Scatter / Super Scatter",
+        "behavior": "3 Scatter→5 Dungeon Smackdown; 2 Scatter+Super→5 Domination. Also via chests.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Sticky / chest multipliers",
+        "behavior": "Sticky ×2–5; chest mult 2–5× bet.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Bonus inventory",
+        "behavior": "Collects Scatter/Super from land or chests.",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "Chests",
+        "behavior": "Always pay; may Mult/Respin/Scatter/Upgrade/Double/Shrink/Silver Sword.",
+        "params": {}
+      },
+      {
+        "name": "X symbol",
+        "behavior": "Does not trigger respin.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "3×1 combat: weapons chip monster lives → chests; bosses grant persistent level-ups. 3 Scatter→5 Smackdown; 2+Super→5 Domination (carry progress; weapon land +1 spin). Boosters 2.2–70×; God Modes 800/2500×. Cap 11,916× (or last monster).",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Scatter/Super/Boss Fight/Boosted Chest/God Mode.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Monster combat",
+        "order": 2,
+        "what_happens": "Respins on non-X; hit lives; kill→chests; bosses→level-ups.",
+        "ends_when": "Round end or bonus",
+        "state_changes": "Lives / inventory / level-ups"
+      },
+      {
+        "name": "Dungeon FS / Extra Spin",
+        "order": 3,
+        "what_happens": "Smackdown/Domination or Extra Spin by kills.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Chest/feature payouts and weapon hit awards; not line/ways.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Dungeon Smackdown Spins",
+        "trigger": "3 Scatters.",
+        "spins_awarded": "5",
+        "retrigger": "Weapon land → +1 spin.",
+        "sticky_or_persistent_state": "Base progressions/features carry.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 11,916×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "5 Smackdown Spins."
+          }
+        ],
+        "effects": "5 FS carry state."
+      },
+      {
+        "name": "Dungeon Domination Spins",
+        "trigger": "2 Scatters + Super Scatter.",
+        "spins_awarded": "5",
+        "retrigger": "Weapon → +1.",
+        "sticky_or_persistent_state": "Carry state; up to 4 level-ups.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "5 Domination Spins."
+          }
+        ],
+        "effects": "5 FS enhanced."
+      }
+    ],
+    "notes": "God Mode Nightmare: 5 spins last monster 9 lives, no respins (800×)."
+  },
+  "features": [
+    {
+      "name": "Bonus Symbol booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2.2,
+      "cost_text": "2.2×",
+      "effects": "Scatter in inventory.",
+      "params": {}
+    },
+    {
+      "name": "Super Bonus Symbol",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 4.0,
+      "cost_text": "4×",
+      "effects": "Super Scatter in inventory.",
+      "params": {}
+    },
+    {
+      "name": "Boss Fight",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 15.0,
+      "cost_text": "15×",
+      "effects": "Start at 1st boss with 1 life.",
+      "params": {}
+    },
+    {
+      "name": "Boosted Chest",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 70.0,
+      "cost_text": "70×",
+      "effects": "Highest chest on each kill.",
+      "params": {}
+    },
+    {
+      "name": "God Mode",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2500.0,
+      "cost_text": "2,500×",
+      "effects": "Spin begins at last monster (9 lives).",
+      "params": {}
+    },
+    {
+      "name": "God Mode Nightmare",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 800.0,
+      "cost_text": "800×",
+      "effects": "5 spins last monster 9 lives; no respins.",
+      "params": {}
+    },
+    {
+      "name": "Total Annihilation",
+      "trigger": "Cap or last monster",
+      "effects": "Max 11,916×.",
+      "params": {
+        "max_win_multiplier": 11916
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosters",
+        "cost_multiplier": null,
+        "cost_text": "2.2×–70×",
+        "effects": "Scatter/Super/Boss/Chest.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "God Modes",
+        "cost_multiplier": null,
+        "cost_text": "800× / 2,500×",
+        "effects": "Last monster chase.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 11916.0,
+    "max_win_notes": "11,916×",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/kill-em-all",
+      "local_path": "sources/nolimit/kill-em-all/cms_features.txt",
+      "extracted_at": "2026-09-27T19:04:55Z",
+      "quote_or_excerpt": "3×1 Hack & Slash; monster queue; chests; 3 Scatter→5 Smackdown; 2+Super→5 Domination; buys 2.2–2500×; max 11,916×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/kill-em-all",
+      "local_path": "sources/nolimit/kill-em-all/page.html",
+      "extracted_at": "2026-09-27T19:04:55Z",
+      "quote_or_excerpt": "96.06% RTP, 11916 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "full Attack Attack Attack text",
+    "exact chest value tables"
+  ],
+  "thumbnail": "thumbs/nolimit-kill-em-all.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

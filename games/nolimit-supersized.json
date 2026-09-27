@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:05:47Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Supersized",
+    "slug": "nolimit-supersized",
+    "provider_game_id": "Supersized",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Supersized",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/supersized"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 5-5-5-5-5."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 3,
+    "direction": "left_to_right",
+    "notes": "Connected Ways: ≥3 matching horizontally or diagonally from leftmost."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Press removes symbols below then new fall; Germinator strips lows in bonus."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Clone inserts copy reel to right; max 10 reels."
+    },
+    "other": [
+      {
+        "name": "Brown Nudge Delight",
+        "how_it_works": "Horizontal expanding Wild to the right on its row (not reel 1)."
+      },
+      {
+        "name": "Press",
+        "how_it_works": "Removes below on reel → becomes Wild at bottom (not if already bottom)."
+      },
+      {
+        "name": "BIG + WIN",
+        "how_it_works": "WIN + N BIG → 15/25/50/100/500× or max at 6 BIG."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Brown Nudge / Press→Wild",
+        "behavior": "Wild not on reel 1; Brown expands right; Press becomes Wild at bottom.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Fatty / Bonus",
+        "behavior": "3 Fatty→3 Fat Spins; 4 Bonus→7 Fatter; 5 Bonus→9 Fattest (+2 per extra Fatty on trigger).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Clone",
+        "behavior": "Copy reel right; becomes dead; max 10 reels.",
+        "params": {}
+      },
+      {
+        "name": "Germinator",
+        "behavior": "Bonus only: remove lowest pay +1 spin; all 10 pays removed → max.",
+        "params": {}
+      },
+      {
+        "name": "BIG / WIN",
+        "behavior": "Instant pays by BIG count with WIN.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×5 Connected Ways; Clone/Press/Brown Nudge/BIG+WIN. 3/4/5 Fatty/Bonus→3/7/9 Fat/Fatter/Fattest Spins. Germinator buys 6/100/1234×; God Mode 2,000×. Cap 12,345×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Fatty / Germinator tiers / God Mode.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + specials",
+        "order": 2,
+        "what_happens": "Clone/Press/Nudge/BIG+WIN; evaluate connections.",
+        "ends_when": "Resolved",
+        "state_changes": "Reel count"
+      },
+      {
+        "name": "Fat Spins",
+        "order": 3,
+        "what_happens": "FS with clone persistence rules by tier.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Connected Ways H/Diag from left; BIG+WIN table.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Fat Spins",
+        "trigger": "3 Fatty.",
+        "spins_awarded": "3",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Cloned area resets to 5 reels each spin.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 12,345×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "3 Fat Spins."
+          }
+        ],
+        "effects": "3 FS."
+      },
+      {
+        "name": "Fatter Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "7",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Clone kept next spin if Clone lands; else reset to 5.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 Fatter."
+          }
+        ],
+        "effects": "7 FS."
+      },
+      {
+        "name": "Fattest Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "9 (+2 per extra Fatty on trigger)",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "9 Fattest."
+          }
+        ],
+        "effects": "9 FS."
+      }
+    ],
+    "notes": "Germinator in bonus can force max if all 10 pays removed."
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 3.0,
+      "cost_text": "3×",
+      "effects": "Fatty reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Germinator Spin",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 6.0,
+      "cost_text": "6×",
+      "effects": "No low pays.",
+      "params": {}
+    },
+    {
+      "name": "Germinator Deluxe",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 100.0,
+      "cost_text": "100×",
+      "effects": "Only top 2 pays (+ specials).",
+      "params": {}
+    },
+    {
+      "name": "Germinator Ultra",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 1234.0,
+      "cost_text": "1,234×",
+      "effects": "Only top pay (+ specials).",
+      "params": {}
+    },
+    {
+      "name": "God Mode",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2000.0,
+      "cost_text": "2,000×",
+      "effects": "Chase 6+ BIG + WIN.",
+      "params": {}
+    },
+    {
+      "name": "Supersized cap",
+      "trigger": "Cap",
+      "effects": "Max 12,345×.",
+      "params": {
+        "max_win_multiplier": 12345
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosters / Germinator / God",
+        "cost_multiplier": null,
+        "cost_text": "3×–2,000×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12345.0,
+    "max_win_notes": "12,345×",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/supersized",
+      "local_path": "sources/nolimit/supersized/cms_features.txt",
+      "extracted_at": "2026-09-27T19:05:47Z",
+      "quote_or_excerpt": "Connected Ways H/Diag; Clone to 10 reels; Brown Nudge/Press/Germinator; 3/4/5 Fatty→3/7/9 Fat Spins; boosters 3–1234×; max 12,345×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/supersized",
+      "local_path": "sources/nolimit/supersized/page.html",
+      "extracted_at": "2026-09-27T19:05:47Z",
+      "quote_or_excerpt": "96.07% RTP, 12345 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "Fatty vs Bonus naming on Fatter trigger",
+    "exact connection paytable"
+  ],
+  "thumbnail": "thumbs/nolimit-supersized.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

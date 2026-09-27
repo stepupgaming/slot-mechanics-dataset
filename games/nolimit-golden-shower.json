@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:06:27Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Golden Shower",
+    "slug": "nolimit-golden-shower",
+    "provider_game_id": "GoldenShower",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/GoldenShower",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/golden-shower"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 5-5-5-5-5-5."
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Cluster wins; matching non-win same symbols → Wild."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "After clusters; Wild Burst / Floater / Drain remove symbols and raise position mults (+2× or double)."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Wild Generation & Burst",
+        "how_it_works": "Non-winning matches of cluster symbol → Wild; if no win with Wilds present, Wilds destroy self+adjacent with +2× on cleared cells."
+      },
+      {
+        "name": "Steam / Floater / Drain",
+        "how_it_works": "Steam upgrades symbol tier; Floater (no win/wilds) clears others + mult; Drain (no win/wilds/floater) clears + random mult upgrades."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Generated Wild",
+        "behavior": "From non-winning cluster matches; may Burst.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3/4/5→6/8/10 Gold Spins; Extra +1 Bonus → +1 spin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Position multipliers",
+        "behavior": "Persistent in FS; Drain can force 999× in 10 Gold.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Steam / Floater / Drain",
+        "behavior": "As CMS; enhanced in higher Gold tiers.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6×5 clusters with Wild gen/burst and Steam/Floater/Drain. 3/4/5 Bonus→6/8/10 Gold Spins (Steam→+Floater→+Drain 999×). Boosters 2–1,969×. Cap 19,999×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Bonus odds or Steamy Print tiers.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Cluster / special loop",
+        "order": 2,
+        "what_happens": "Clusters; Wild gen/burst; Steam/Floater/Drain.",
+        "ends_when": "Resolved",
+        "state_changes": "Position mults"
+      },
+      {
+        "name": "Gold Spins / Extra Spin",
+        "order": 3,
+        "what_happens": "FS tier or Extra Spin keeping mults.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Clusters with position mults.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "6 Gold Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "6",
+        "retrigger": "Extra +1 Bonus → +1.",
+        "sticky_or_persistent_state": "Position mults persist; enhanced Steam (top two occurring).",
+        "progressive_state": null,
+        "end_condition": "Spins done or 19,999×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "6 Gold."
+          }
+        ],
+        "effects": "6 FS."
+      },
+      {
+        "name": "8 Gold Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "8",
+        "retrigger": "+1 on Extra Bonus.",
+        "sticky_or_persistent_state": "+ Floater always picks highest pay with highest occurrence.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 Gold."
+          }
+        ],
+        "effects": "8 FS."
+      },
+      {
+        "name": "10 Gold Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "10",
+        "retrigger": "+1 on Extra Bonus.",
+        "sticky_or_persistent_state": "+ Drain upgrades its position to 999×.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Gold."
+          }
+        ],
+        "effects": "10 FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2×",
+      "effects": "5× more likely Gold Spins.",
+      "params": {}
+    },
+    {
+      "name": "Steamy / Steamier / Steamiest",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_text": "20× / 80× / 1,969×",
+      "effects": "All positions 16× / 64× / 128× (+ guaranteed Drain→999× on Steamiest).",
+      "params": {}
+    },
+    {
+      "name": "Luke Warm",
+      "trigger": "Cap",
+      "effects": "Max 19,999×.",
+      "params": {
+        "max_win_multiplier": 19999
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosters",
+        "cost_multiplier": null,
+        "cost_text": "2× / 20× / 80× / 1,969×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 19999.0,
+    "max_win_notes": "19,999×",
+    "rtp_percent": 96.04,
+    "rtp_notes": "96.04% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/golden-shower",
+      "local_path": "sources/nolimit/golden-shower/cms_features.txt",
+      "extracted_at": "2026-09-27T19:06:27Z",
+      "quote_or_excerpt": "6×5 clusters; Wild Generation/Burst; Steam/Floater/Drain; 3/4/5 Bonus→6/8/10 Gold Spins; boosters 2–1969×; max 19,999×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/golden-shower",
+      "local_path": "sources/nolimit/golden-shower/page.html",
+      "extracted_at": "2026-09-27T19:06:27Z",
+      "quote_or_excerpt": "96.04% RTP, 19999 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "min cluster size"
+  ],
+  "thumbnail": "thumbs/nolimit-golden-shower.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

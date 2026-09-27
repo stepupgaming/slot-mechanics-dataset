@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:06:27Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Outsourced",
+    "slug": "nolimit-outsourced",
+    "provider_game_id": "Outsourced",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Outsourced",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/outsourced"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 4,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 4-4-4-4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays; Print Spins position mults."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Print Spins: pay wins, clear, +1 position mult, respin until no wins."
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Print Spins respins."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xNudge® Wild",
+        "how_it_works": "Always fully visible; +1 mult/nudge; multiple add."
+      },
+      {
+        "name": "MAKS letters",
+        "how_it_works": "M/A/K/S together → instant 5,000×."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge® Wild",
+        "behavior": "Nudge +1 mult/step; additive.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3→3 Sweatshop; 4→5 Sweatiershop; kept base position mults.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Position / nudge mults",
+        "behavior": "Print Spins +1 on win positions.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "M/A/K/S",
+        "behavior": "Instant MAKS WIN.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "4×4 ways; xNudge + Print Spins. 3/4 Scatter→3/5 Sweatshop/Sweatiershop. xBet 1.5× (Scatter reel 2). Bonus buy 60–1,300×; God Mode 1,300× for M/A/K. Cap 5,000×.",
+    "phases": [
+      {
+        "name": "Optional xBet/buy",
+        "order": 1,
+        "what_happens": "xBet or bonus/God Mode buy.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + Print Spins",
+        "order": 2,
+        "what_happens": "xWays/xNudge; Print Spins climb mults.",
+        "ends_when": "No wins",
+        "state_changes": "Position mults"
+      },
+      {
+        "name": "Sweatshop / Extra Spin",
+        "order": 3,
+        "what_happens": "FS or Extra Spin (no Scatters).",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after xWays/nudge/Print mults.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Sweatshop Spins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "3",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Base symbol mults kept.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 5,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "3 Sweatshop."
+          }
+        ],
+        "effects": "3 FS."
+      },
+      {
+        "name": "Sweatiershop Spins",
+        "trigger": "4 Scatter.",
+        "spins_awarded": "5",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Same +2 spins.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "5 Sweatiershop."
+          }
+        ],
+        "effects": "5 FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBet™",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "1.5×",
+      "effects": ">4× Sweatshop odds; Scatter reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "60×–1,300×",
+      "effects": "Direct bonus features.",
+      "params": {}
+    },
+    {
+      "name": "God Mode",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 1300.0,
+      "cost_text": "1,300×",
+      "effects": "Guaranteed M/A/K (chase S for MAKS).",
+      "params": {}
+    },
+    {
+      "name": "MAKS WIN",
+      "trigger": "Cap or M/A/K/S",
+      "effects": "Max 5,000×.",
+      "params": {
+        "max_win_multiplier": 5000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBet / Bonus / God Mode",
+        "cost_multiplier": null,
+        "cost_text": "1.5× / 60×–1,300×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact mid-band buy lines not itemized."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.5,
+    "effects": "xBet™ Scatter reel 2; >4× FS odds.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000.0,
+    "max_win_notes": "5,000×",
+    "rtp_percent": 96.08,
+    "rtp_notes": "96.08% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/outsourced",
+      "local_path": "sources/nolimit/outsourced/cms_features.txt",
+      "extracted_at": "2026-09-27T19:06:27Z",
+      "quote_or_excerpt": "4×4; xNudge; Print Spins; 3/4 Scatter→3/5 Sweatshop/Sweatiershop; xBet 1.5×; buys 60–1300×; MAKS 5,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/outsourced",
+      "local_path": "sources/nolimit/outsourced/page.html",
+      "extracted_at": "2026-09-27T19:06:27Z",
+      "quote_or_excerpt": "96.08% RTP, 5000 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact buy line items",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-outsourced.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

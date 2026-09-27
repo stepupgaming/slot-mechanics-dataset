@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:05:47Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Disorder",
+    "slug": "nolimit-disorder",
+    "provider_game_id": "Disorder",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Disorder",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/disorder"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 6,
+    "rows_min": 3,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 4-3-4-3-4-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with Infectious xWays; Fire Frame splits to max 16."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Fire Frames",
+        "how_it_works": "Split symbol in frame to 2 (max 16); Bonus in frame → Super Bonus."
+      },
+      {
+        "name": "Enhancer Cells",
+        "how_it_works": "Bottom reels 2/4/6 unlock at 4/7/9 Fire Frames (then every +2 reactivates all): Molotov split, Delusion→highest, Paranoia mult 1–999×."
+      },
+      {
+        "name": "xBomb®",
+        "how_it_works": "Explodes adjacent (not Bonus); +1 win mult next."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xBomb® Wild",
+        "behavior": "Sub except Bonus; explode.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus / Super Bonus",
+        "behavior": "Each Bonus +2 spins / Super +3 on trigger and in FS. Tiers by Super count.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Paranoia / win mult",
+        "behavior": "Enhancer 1–999×; Antisocial/Severe keep win mult across spins.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Molotov / Delusion",
+        "behavior": "Enhancer reveals.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Irregular 4-3-4-3-4-3 ways; Fire Frames + Enhancers. Bonus/Super spin economy → Obsessive (≤1 Super), Antisocial (≥2 Super), Severe (4 Super, sticky frames). Boosters 2/4/15×. Cap 23,500×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Bonus/Fire/Enhancer booster.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + frames/enhancers",
+        "order": 2,
+        "what_happens": "Splits; unlock enhancers; xBomb.",
+        "ends_when": "Resolved",
+        "state_changes": "Frames / win mult"
+      },
+      {
+        "name": "Bonus tier",
+        "order": 3,
+        "what_happens": "Obsessive/Antisocial/Severe; optional Extra Spin.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after infectious/splits.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Obsessive Compulsive Spins",
+        "trigger": "3 Bonus with ≤1 Super.",
+        "spins_awarded": "6+ (Bonus +2 / Super +3 each)",
+        "retrigger": "More Bonus/Super; 2–3 Super→upgrade Antisocial; 4 Super→Severe.",
+        "sticky_or_persistent_state": "Win mult + frames reset each spin.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 23,500×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Obsessive FS."
+          }
+        ],
+        "effects": "FS; upgradeable."
+      },
+      {
+        "name": "Antisocial Personality Spins",
+        "trigger": "3 Bonus with ≥2 Super (or upgrade).",
+        "spins_awarded": "8+",
+        "retrigger": "2 Super→Severe upgrade.",
+        "sticky_or_persistent_state": "Win mult does not reset.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Antisocial FS."
+          }
+        ],
+        "effects": "Persistent win mult."
+      },
+      {
+        "name": "Severe Dissociative Identity Spins",
+        "trigger": "4 Super Bonus.",
+        "spins_awarded": "Per Bonus/Super economy",
+        "retrigger": "Bonus/Super extras.",
+        "sticky_or_persistent_state": "Fire Frames sticky; win mult persists.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Severe FS."
+          }
+        ],
+        "effects": "Sticky frames."
+      }
+    ],
+    "notes": "More Fire Frames in bonus than base."
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2×",
+      "effects": "More likely bonus.",
+      "params": {}
+    },
+    {
+      "name": "Fire Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 4.0,
+      "cost_text": "4×",
+      "effects": "More Fire Frames + bonus odds.",
+      "params": {}
+    },
+    {
+      "name": "Enhancer Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 15.0,
+      "cost_text": "15×",
+      "effects": "Guaranteed 9 Fire Frames (+ more); bonus odds.",
+      "params": {}
+    },
+    {
+      "name": "It is Done...",
+      "trigger": "Cap",
+      "effects": "Max 23,500×.",
+      "params": {
+        "max_win_multiplier": 23500
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosters",
+        "cost_multiplier": null,
+        "cost_text": "2× / 4× / 15×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 23500.0,
+    "max_win_notes": "23,500×",
+    "rtp_percent": 96.11,
+    "rtp_notes": "96.11% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/disorder",
+      "local_path": "sources/nolimit/disorder/cms_features.txt",
+      "extracted_at": "2026-09-27T19:05:47Z",
+      "quote_or_excerpt": "4-3-4-3-4-3; Fire Frames split; Enhancer Cells; Obsessive/Antisocial/Severe Dissociative FS; boosters 2/4/15×; max 23,500×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/disorder",
+      "local_path": "sources/nolimit/disorder/page.html",
+      "extracted_at": "2026-09-27T19:05:47Z",
+      "quote_or_excerpt": "96.11% RTP, 23500 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact base spin counts formula",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-disorder.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

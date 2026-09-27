@@ -1,0 +1,300 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:04:55Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Outsourced 2 - Balkan Engineering",
+    "slug": "nolimit-outsourced-2-balkan-engineering",
+    "provider_game_id": "Outsourced2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Outsourced2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/outsourced-2-balkan-engineering"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 4,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 5-5-5-5."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with Infectious xWays size 2–4 (multiplicative)."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Print Spins: winning symbols paid then removed; position mult +1 per Print Spin until no wins."
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Print Spins respin empty win positions."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Infectious xWays®",
+        "how_it_works": "Reveal size 2–4 pay (or blocker); infect all same pays; multi-infect multiplies size."
+      },
+      {
+        "name": "xNudge® Balkan Wild",
+        "how_it_works": "Any position; +1 mult/nudge up to 999×; multiple add; may malfunction as 1×1 Wild."
+      },
+      {
+        "name": "Elevator",
+        "how_it_works": "Base: instant bonus or blocker. Bonus: +1/+2/+7 spins or blocker."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge® Balkan Wild",
+        "behavior": "Nudge mult up to 999×; may malfunction 1×1.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3→4 Tilt Spins; 4→7 Tiltier Spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Position / Balkan nudge mults",
+        "behavior": "Print Spins +1 on win positions; Balkan nudges add.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Elevator",
+        "behavior": "Bonus/blocker or +spins in FS.",
+        "params": {}
+      },
+      {
+        "name": "B/O/O/M",
+        "behavior": "Instant Big Szukcess 11,111×.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "4×5 ways; Infectious xWays; Balkan xNudge to 999×; Print Spins. 3/4 Bonus→4/7 Tilt/Tiltier (keep position mults). Filthiest buy 999× starts ×2. Boosters 1.35–750×; God Mode 1,111×. Cap 11,111×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Bonus/Balkan booster or Print 3/6/8× or God Mode.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + Print Spins",
+        "order": 2,
+        "what_happens": "Infectious/xNudge; wins → Print Spins with rising position mults.",
+        "ends_when": "No wins",
+        "state_changes": "Position mults"
+      },
+      {
+        "name": "Bonus / xTra",
+        "order": 3,
+        "what_happens": "Tilt/Tiltier or Extra Spin keeping mults.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after infectious sizes and nudge mults.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Tilt Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "4",
+        "retrigger": "Elevator may +1/+2/+7.",
+        "sticky_or_persistent_state": "Base position mults kept.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 11,111×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "4 Tilt Spins."
+          }
+        ],
+        "effects": "4 FS."
+      },
+      {
+        "name": "Tiltier Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "7",
+        "retrigger": "Elevator extras.",
+        "sticky_or_persistent_state": "Same as Tilt +3 spins.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 Tiltier Spins."
+          }
+        ],
+        "effects": "7 FS."
+      },
+      {
+        "name": "Filthiest Spins",
+        "trigger": "Buy 999×.",
+        "spins_awarded": "7",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Starts with ×2 on all positions.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 Filthiest with ×2 start."
+          }
+        ],
+        "effects": "7 FS ×2 start."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 1.35,
+      "cost_text": "1.35×",
+      "effects": "Bonus top of 2nd-left reel; >3× Tilt odds.",
+      "params": {}
+    },
+    {
+      "name": "Balkan Bonus Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 13.5,
+      "cost_text": "13.5×",
+      "effects": "Bonus on initial + win respins; >20× Tilt odds.",
+      "params": {}
+    },
+    {
+      "name": "Print Spins 3/6/8×",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_text": "15× / 200× / 750×",
+      "effects": "Start all positions ×3 / ×6 / ×8.",
+      "params": {}
+    },
+    {
+      "name": "Filthiest Spins",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 999.0,
+      "cost_text": "999×",
+      "effects": "7 FS with ×2 start.",
+      "params": {}
+    },
+    {
+      "name": "God Mode",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 1111.0,
+      "cost_text": "1,111×",
+      "effects": "Chase B/O/O/M Big Szukcess.",
+      "params": {}
+    },
+    {
+      "name": "Big Szukcess",
+      "trigger": "Cap or B/O/O/M",
+      "effects": "Max 11,111×.",
+      "params": {
+        "max_win_multiplier": 11111
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus / Balkan boosters",
+        "cost_multiplier": null,
+        "cost_text": "1.35× / 13.5×",
+        "effects": "Bonus guarantees.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Print / Filthiest / God Mode",
+        "cost_multiplier": null,
+        "cost_text": "15×–1,111×",
+        "effects": "Print starts / Filthiest / BOOM chase.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "Boosters used."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 11111.0,
+    "max_win_notes": "11,111×",
+    "rtp_percent": 96.04,
+    "rtp_notes": "96.04% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/outsourced-2-balkan-engineering",
+      "local_path": "sources/nolimit/outsourced-2-balkan-engineering/cms_features.txt",
+      "extracted_at": "2026-09-27T19:04:55Z",
+      "quote_or_excerpt": "Infectious xWays; Balkan xNudge to 999×; Print Spins; 3/4 Bonus→4/7 Tilt/Tiltier; Filthiest 999×; boosters 1.35–750×; God Mode 1111×; max 11,111×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/outsourced-2-balkan-engineering",
+      "local_path": "sources/nolimit/outsourced-2-balkan-engineering/page.html",
+      "extracted_at": "2026-09-27T19:04:55Z",
+      "quote_or_excerpt": "96.04% RTP, 11111 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact ways_count",
+    "Elevator blocker rates"
+  ],
+  "thumbnail": "thumbs/nolimit-outsourced-2-balkan-engineering.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

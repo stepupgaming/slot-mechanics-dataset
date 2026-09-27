@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:06:27Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "AFK Airport Security",
+    "slug": "nolimit-afk-airport-security",
+    "provider_game_id": "AirportSecurity",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/AirportSecurity",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/afk-airport-security"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official rowsReels 3-3-3-3-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; Connecting Flight pays both ways when active."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Feature meter",
+        "how_it_works": "Top meter holds feature symbols that activate airport features (Quarantine, Full Body Scanner, Not My Bag, Arm Slides, Class Upgrade, Extra Seat Space, Full Row Booking, Lithium-ion, Turbulence, Random Security Search, Air-Mile Mult, Connecting Flight)."
+      },
+      {
+        "name": "xZone®",
+        "how_it_works": "+1 mult on every adjacent pay/Wild (V/H/Diag); multiple per row, not same reel."
+      },
+      {
+        "name": "xSplit®",
+        "how_it_works": "Splits symbols increasing ways."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Subs except Bonus; Arm Slides expands Wild to full reel.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3/4/5→7 Economy/Business/First Class (start with 1/2/3 random features).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xZone / Class Upgrade / Air-Mile",
+        "behavior": "Adjacent +1; symbol mult ×3/5/8/10; round mult ×3/5/8/10.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "12 airport features",
+        "behavior": "Meter-driven transforms/splits/shuffles/both-ways as CMS.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; feature meter fires up to 12 airport modifiers + xZone/xSplit. 3/4/5 Bonus→7 Economy/Business/First Class starting with 1/2/3 features (new features +1 spin and stay). Boosters 1.4× / 12× / 4,500×. Cap 19,693×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "Bonus or Mile High Club 3/12 features.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + meter features",
+        "order": 2,
+        "what_happens": "Activate meter features; xZone; evaluate.",
+        "ends_when": "Resolved",
+        "state_changes": "Active features"
+      },
+      {
+        "name": "Class FS",
+        "order": 3,
+        "what_happens": "Economy/Business/First Class.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways (both ways if Connecting Flight).",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Economy Class Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "7",
+        "retrigger": "New feature activate → +1 spin and stays.",
+        "sticky_or_persistent_state": "Starts with 1 random feature.",
+        "progressive_state": "Features accumulate.",
+        "end_condition": "Spins done or 19,693×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 Economy; 1 feature."
+          }
+        ],
+        "effects": "7 FS."
+      },
+      {
+        "name": "Business Class Spins",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "7",
+        "retrigger": "New feature +1.",
+        "sticky_or_persistent_state": "Starts with 2 features.",
+        "progressive_state": "Features accumulate.",
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 Business; 2 features."
+          }
+        ],
+        "effects": "7 FS."
+      },
+      {
+        "name": "First Class Spins",
+        "trigger": "5 Bonus.",
+        "spins_awarded": "7",
+        "retrigger": "New feature +1.",
+        "sticky_or_persistent_state": "Starts with 3 features.",
+        "progressive_state": "Features accumulate.",
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 First Class; 3 features."
+          }
+        ],
+        "effects": "7 FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Bonus Booster",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 1.4,
+      "cost_text": "1.4×",
+      "effects": "Bonus reel 2.",
+      "params": {}
+    },
+    {
+      "name": "3 Mile High Club",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 12.0,
+      "cost_text": "12×",
+      "effects": "Min 3 features.",
+      "params": {}
+    },
+    {
+      "name": "12 Mile High Club",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 4500.0,
+      "cost_text": "4,500×",
+      "effects": "All 12 features.",
+      "params": {}
+    },
+    {
+      "name": "The Captain's Cap",
+      "trigger": "Cap",
+      "effects": "Max 19,693×.",
+      "params": {
+        "max_win_multiplier": 19693
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosters",
+        "cost_multiplier": null,
+        "cost_text": "1.4× / 12× / 4,500×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 19693.0,
+    "max_win_notes": "19,693×",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/afk-airport-security",
+      "local_path": "sources/nolimit/afk-airport-security/cms_features.txt",
+      "extracted_at": "2026-09-27T19:06:27Z",
+      "quote_or_excerpt": "5×3; feature meter with 12 airport features; xZone; 3/4/5 Bonus→7 Economy/Business/First Class; boosters 1.4/12/4500×; max 19,693×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/afk-airport-security",
+      "local_path": "sources/nolimit/afk-airport-security/page.html",
+      "extracted_at": "2026-09-27T19:06:27Z",
+      "quote_or_excerpt": "96.07% RTP, 19693 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "feature meter fill rules",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-afk-airport-security.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

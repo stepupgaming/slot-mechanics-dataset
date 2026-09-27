@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:05:47Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Tanked",
+    "slug": "nolimit-tanked",
+    "provider_game_id": "Tanked",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Tanked",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/tanked"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": 6,
+    "rows_max": 9,
+    "layout_notes": "Official 6x6 expanding to 9x9 in up to 4 steps (via Rocket/Barrel/Big Boom; xBomb+Barrel in booster blast → instant 9×9)."
+  },
+  "win_system": {
+    "type": "other",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "xLoot character collects same-color symbols/wilds/features."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Character movement/collection loop until stuck; then boosters/bombs/booms."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "6×6→8×6/6×8→8×8→9×8/8×9→9×9."
+    },
+    "other": [
+      {
+        "name": "Tank Boosters",
+        "how_it_works": "Rocket/Grenade/Power Drill/Airstrike."
+      },
+      {
+        "name": "Kill Count",
+        "how_it_works": "3 lives per character; death removes color symbols; resurrect next eval."
+      },
+      {
+        "name": "xNudge / xSplit",
+        "how_it_works": "Nudge down to bottom or non-pay; start mult 2 then +1/step; Split doubles sizes + hit mults."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / xNudge® / xBomb®",
+        "behavior": "Collectible wilds; xBomb explodes when stuck; xNudge mult.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3→5 Carnage; 4→7 Carnage Royale; all die same blast→Mayhem upgrade.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Global additive mults",
+        "behavior": "Picked up by any character; +5 Royale / +10 Mayhem overlays.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "MAX WIN 3×3",
+        "behavior": "Full visible → BYOB max.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "6×6→9×9 xLoot tank combat. 3 Bonus→5 Carnage (carry mult/kills/grid); 4→7 Royale (9×9 +5 mult); all die same explosion→Mayhem (9×9 +10, lives=1). xBet 3×; 4 Tank Boosters 40×; God Mode 5,000×. Cap 25,000×.",
+    "phases": [
+      {
+        "name": "Optional booster",
+        "order": 1,
+        "what_happens": "xBet / 4 Tank Boosters / God Mode.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Loot / expand loop",
+        "order": 2,
+        "what_happens": "Collect; boosters; bombs; booms; kill lives.",
+        "ends_when": "Stuck resolved",
+        "state_changes": "Grid / mult / lives"
+      },
+      {
+        "name": "Carnage / Mayhem",
+        "order": 3,
+        "what_happens": "FS tiers or upgrade.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "xLoot collections × additive mults.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Carnage Spins",
+        "trigger": "3 Bonus.",
+        "spins_awarded": "5",
+        "retrigger": "Mayhem upgrade if all characters die same explosion.",
+        "sticky_or_persistent_state": "Mults, kill counts, grid from base.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 25,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "5 Carnage."
+          }
+        ],
+        "effects": "5 FS."
+      },
+      {
+        "name": "Carnage Royale",
+        "trigger": "4 Bonus.",
+        "spins_awarded": "7",
+        "retrigger": "Mayhem upgrade path.",
+        "sticky_or_persistent_state": "Kill counts; grid 9×9; +5 on current mult.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 Royale on 9×9."
+          }
+        ],
+        "effects": "7 FS."
+      },
+      {
+        "name": "Mayhem Spins",
+        "trigger": "All characters die in same explosion (from Carnage/Royale).",
+        "spins_awarded": "Remaining FS",
+        "retrigger": "All die again → +1 spin +10 mult.",
+        "sticky_or_persistent_state": "9×9; +10 mult; all lives=1.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Mayhem upgrade."
+          }
+        ],
+        "effects": "Upgraded FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBet™",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 3.0,
+      "cost_text": "3×",
+      "effects": ">4× bonus chance.",
+      "params": {}
+    },
+    {
+      "name": "4 Tank Boosters",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 40.0,
+      "cost_text": "40×",
+      "effects": "4 random boosters to characters.",
+      "params": {}
+    },
+    {
+      "name": "God Mode",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 5000.0,
+      "cost_text": "5,000×",
+      "effects": "Chase MAX WIN symbol.",
+      "params": {}
+    },
+    {
+      "name": "BYOB",
+      "trigger": "Cap or 3×3 MAX WIN",
+      "effects": "Max 25,000×.",
+      "params": {
+        "max_win_multiplier": 25000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBet / Boosters / God",
+        "cost_multiplier": null,
+        "cost_text": "3× / 40× / 5,000×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 3.0,
+    "effects": "xBet™ >4× bonus odds.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000.0,
+    "max_win_notes": "25,000×",
+    "rtp_percent": 96.04,
+    "rtp_notes": "96.04% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tanked",
+      "local_path": "sources/nolimit/tanked/cms_features.txt",
+      "extracted_at": "2026-09-27T19:05:47Z",
+      "quote_or_excerpt": "6×6→9×9 xLoot; Tank Boosters; Carnage 5 / Royale 7 / Mayhem; xBet 3×; boosters 40×; God Mode 5000×; max 25,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tanked",
+      "local_path": "sources/nolimit/tanked/page.html",
+      "extracted_at": "2026-09-27T19:05:47Z",
+      "quote_or_excerpt": "96.04% RTP, 25000 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "Airstrike full pattern text",
+    "exact life timing"
+  ],
+  "thumbnail": "thumbs/nolimit-tanked.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

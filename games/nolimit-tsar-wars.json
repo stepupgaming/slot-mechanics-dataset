@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:06:27Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Tsar Wars",
+    "slug": "nolimit-tsar-wars",
+    "provider_game_id": "TsarWars",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TsarWars",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/tsar-wars"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": 6,
+    "rows_max": 6,
+    "layout_notes": "Official 6x6."
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Clusters ≥5 connected H/V; avalanche +1 mult per win avalanche."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Winning clusters destroy; new drop; avalanche mult +1 each."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Big Symbols",
+        "how_it_works": "1×1 / 2×2(=4) / 3×3(=9); gaps under big fill with same symbol."
+      },
+      {
+        "name": "Trapped Wild",
+        "how_it_works": "Highlight on symbol → Wild when in win or xBomb remove; sticky to next avalanche."
+      },
+      {
+        "name": "Destruction meter",
+        "how_it_works": "25 win symbols → Destruction Spin (all 3 features ≥1×); meter resets each spin."
+      },
+      {
+        "name": "Wild Rush / Force Shift / xBomb Wild",
+        "how_it_works": "2–5→Wild; 1–3 transform pays; 1–3→xBomb (explode adj except Tsar Side Bonus/Wild; +1 next mult)."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Trapped / xBomb®",
+        "behavior": "As CMS; xBomb before next collapse.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Tsar Side Bonus",
+        "behavior": "During Destruction Spin + meter full → 6 Tsar Side Spins.",
+        "params": {
+          "count_for_trigger": 1
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Avalanche / Revolution mult",
+        "behavior": "+1 per win avalanche; Revolution/Tsar start ×15; meter 30 → +2 spins and double mult.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Destruction meter",
+        "behavior": "Collect 25 win symbols.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "6×6 clusters; big symbols; Trapped Wilds; feature trio. Fill Destruction meter 25→Destruction Spin; refill in that spin→Revolution (pick feature, 5–7 spins ×15) or Tsar Side Bonus→6 Tsar Side (all 3 features/spin). xBoost 5/12/30/60×. Cap 19,775×.",
+    "phases": [
+      {
+        "name": "Optional xBoost",
+        "order": 1,
+        "what_happens": "1–2 features / Destruction Spin / big Trapped Wild.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Avalanche + meter",
+        "order": 2,
+        "what_happens": "Clusters; features; fill Destruction meter.",
+        "ends_when": "Resolved",
+        "state_changes": "Meter / mult"
+      },
+      {
+        "name": "Destruction / Revolution / Tsar Side",
+        "order": 3,
+        "what_happens": "Guaranteed-feature spins then FS choice.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Clusters ≥5 after bombs/transforms.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Destruction Spin",
+        "trigger": "Destruction meter 25 + no more wins.",
+        "spins_awarded": "1",
+        "retrigger": "Refill 25 during it → Revolution or Tsar Side.",
+        "sticky_or_persistent_state": "Wild Rush, Force Shift, xBomb each ≥1×.",
+        "progressive_state": "Meter resets each spin.",
+        "end_condition": "Spin done or upgrade.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Guaranteed triple feature spin."
+          }
+        ],
+        "effects": "Feature-packed spin."
+      },
+      {
+        "name": "Revolution Spins",
+        "trigger": "Meter 25 during Destruction Spin.",
+        "spins_awarded": "5 / 6 / 7 by chosen feature",
+        "retrigger": "Meter 30 → +2 spins + double mult.",
+        "sticky_or_persistent_state": "Chosen feature ≥1×/spin; start ×15.",
+        "progressive_state": "Meter.",
+        "end_condition": "Spins done or 19,775×.",
+        "phases": [
+          {
+            "name": "Pick",
+            "order": 1,
+            "what_happens": "Choose Wild Rush / Force Shift / xBomb."
+          }
+        ],
+        "effects": "5–7 FS."
+      },
+      {
+        "name": "Tsar Side Spins",
+        "trigger": "Tsar Side Bonus during Destruction Spin + meter 25.",
+        "spins_awarded": "6",
+        "retrigger": "Meter 30 → +2 + double mult.",
+        "sticky_or_persistent_state": "All 3 features ≥1×/spin; start ×15.",
+        "progressive_state": "Meter.",
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "6 Tsar Side."
+          }
+        ],
+        "effects": "6 FS all features."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "xBoost 1–4",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_text": "5× / 12× / 30× / 60×",
+      "effects": "1 feature / 2 features / Destruction Spin / ≥1 Trapped Wild 2×2 or 3×3.",
+      "params": {}
+    },
+    {
+      "name": "Bombs Away!",
+      "trigger": "Cap",
+      "effects": "Max 19,775×.",
+      "params": {
+        "max_win_multiplier": 19775
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "xBoost 1–4",
+        "cost_multiplier": null,
+        "cost_text": "5× / 12× / 30× / 60×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 19775.0,
+    "max_win_notes": "19,775×",
+    "rtp_percent": 96.05,
+    "rtp_notes": "96.05% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tsar-wars",
+      "local_path": "sources/nolimit/tsar-wars/cms_features.txt",
+      "extracted_at": "2026-09-27T19:06:27Z",
+      "quote_or_excerpt": "6×6 clusters ≥5; Big 2×2/3×3; Destruction meter 25; Revolution/Tsar Side FS; xBoost 5/12/30/60×; max 19,775×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tsar-wars",
+      "local_path": "sources/nolimit/tsar-wars/page.html",
+      "extracted_at": "2026-09-27T19:06:27Z",
+      "quote_or_excerpt": "96.05% RTP, 19775 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact Revolution spin mapping per feature choice"
+  ],
+  "thumbnail": "thumbs/nolimit-tsar-wars.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
