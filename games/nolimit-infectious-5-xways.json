@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:41:14Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Infectious 5 xWays",
+    "slug": "nolimit-infectious-5-xways",
+    "provider_game_id": "Infectious5",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Infectious5",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/infectious-5-xways"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": 4,
+    "rows_max": null,
+    "layout_notes": "Sheet branding 5×4; xWays expands reel heights (2–3 symbols)."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "xWays/Infectious xWays expand ways. Exact base ways not printed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "xWays holds 2–3 of same symbol expanding height. With Wild → Infectious xWays expands all same-kind symbols on reel to that size."
+    },
+    "other": [
+      {
+        "name": "Infectious xWays",
+        "how_it_works": "Triggered when xWays + Wild; revealed symbol expands matching symbols on the reel to same size."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Ordinary wilds; with xWays trigger Infectious xWays. In Lock n' Load may lock with x2/x3 mult.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 or 4 → choose Toxic Hazard or Lock n' Load (4 awards +1 spin). 5 → Mayhem Mode. Collecting 5 total in feature also enters Mayhem.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays / Infectious xWays",
+        "behavior": "xWays reveals one kind expanding 2–3 high; +Wild → Infectious expansion of matching symbols.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×4 ways spin focused on xWays; Wild+xWays creates Infectious expansion. 3–4 Bonus → choose Toxic Hazard (9/10) or Lock n' Load (7/8); 5 Bonus or collect 5 in feature → Mayhem (12/10). Buy 75–555×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Reels stop; resolve xWays and Infectious xWays with Wilds.",
+        "ends_when": "Expansions done",
+        "state_changes": "Ways increase"
+      },
+      {
+        "name": "Evaluate",
+        "order": 2,
+        "what_happens": "Pay ways wins.",
+        "ends_when": "Paid",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus choice",
+        "order": 3,
+        "what_happens": "3/4 Bonus → choose Toxic Hazard or Lock n' Load; 5 → Mayhem.",
+        "ends_when": "Feature or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "After xWays/Infectious expansions.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Toxic Hazard",
+        "trigger": "3 or 4 Bonus; player chooses Toxic Hazard.",
+        "spins_awarded": "9 spins (10 if triggered with 4 Bonus)",
+        "retrigger": null,
+        "sticky_or_persistent_state": "1–5 random wilds on middle reels each spin (xWays → Infectious likely).",
+        "progressive_state": null,
+        "end_condition": "Spins done or 55,555×.",
+        "phases": [
+          {
+            "name": "Toxic",
+            "order": 1,
+            "what_happens": "Play with random middle wilds each spin."
+          }
+        ],
+        "effects": "More solid Infectious Spins option."
+      },
+      {
+        "name": "Lock n' Load",
+        "trigger": "3 or 4 Bonus; player chooses Lock n' Load.",
+        "spins_awarded": "7 spins (8 if 4 Bonus)",
+        "retrigger": "Locked Wild awards +1 extra spin.",
+        "sticky_or_persistent_state": "All Wilds lock for feature; may get x2/x3; xWays guaranteed Infectious.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Lock",
+            "order": 1,
+            "what_happens": "Locking wilds with optional mults; Infectious on xWays."
+          }
+        ],
+        "effects": "Volatile locking-wild Infectious Spins."
+      },
+      {
+        "name": "Mayhem Mode",
+        "trigger": "5 Bonus from base, or collect total 5 Bonus during Infectious Spins.",
+        "spins_awarded": "12 or 10 spins (sheet lists both; CMS '12 or 10')",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or 55,555×.",
+        "phases": [
+          {
+            "name": "Mayhem",
+            "order": 1,
+            "what_happens": "Top Infectious Spins tier from 5 Bonuses."
+          }
+        ],
+        "effects": "Mayhem Infectious Spins."
+      }
+    ],
+    "notes": "Mayhem lists both 12 and 10 on sheet/CMS — left as stated, not invented."
+  },
+  "features": [
+    {
+      "name": "xWays & Infectious xWays",
+      "trigger": "xWays; +Wild for Infectious",
+      "when": "during_spin",
+      "effects": "Expand 2–3 high; Infectious expands matching symbols on reel.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "75×–555× across 3 bonus features",
+      "effects": "Buy into Toxic / Lock n' Load / Mayhem.",
+      "params": {
+        "cost_range_min": 75,
+        "cost_range_max": 555
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Nolimit Bonus — 3 features",
+        "cost_multiplier": null,
+        "cost_text": "75×–555×",
+        "effects": "Buy one of the three Infectious Spins modes.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Per-mode prices not itemized."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 55555.0,
+    "max_win_notes": "55,555× (~1 in 28M)",
+    "rtp_percent": 96.02,
+    "rtp_notes": "96.02% / 94.27%. Main 61.60%, free spins 34.42%.",
+    "hit_frequency_notes": "Hit frequency 31.34%; free spins 1 in 220; win 100× 1 in 840."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Infectious5_x_Ways_55555x_40abb34459.pdf",
+      "local_path": "sources/nolimit/infectious-5-xways/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:41:14Z",
+      "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                        Infectious xWays\n                                                                  5x4   Infectious Spins\n                                                                        Mayhem Mode\n\n\n\n\nINFECTIOUS 5 xWAYS\n“You either die a hero, or you live long\nenough to see yourself become the villain”\nSay hello to Havoc, Mind Flayer, Torch, Misery and Toxicity\n- in a slot from Nolimit City based on the Infectious xWays\nmechanic that boasts four different bonus modes.\n\nNolimit City is taking it back a notch to only focus on one of\nthe xMechanics - this time its the xWays and the upgraded\nand very explosive version called Infectious xWays.\n\nInfectious 5 xWays is available with dual RTP setup at\n96.02% and 94.27% (DX1).\n\nPut on the silicon suit, light up that firethrower and join the\nboys - and girl - and let the mayhem begin!\n\fGAME SHEET\n\n\n\n\nGame Features\nWilds\nOrdinary wilds, but very potent together with xWays\nsymbol.\n\nxWays & Infectious xWays\nYou’ve seen these before in East Coast vs West Coast - but\nthis game is only dedicated to the Infectious xWays. xWays\nmystery symbol will reveal one symbol of th"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/infectious-5-xways",
+      "local_path": "sources/nolimit/infectious-5-xways/cms_features.txt",
+      "extracted_at": "2026-09-27T18:41:14Z",
+      "quote_or_excerpt": "## Wilds\nOrdinary wilds, but very potent together with xWays symbol.\n\n## xWays & Infectious xWays\nYou’ve seen these before in East Coast vs West Coast - but this game is only dedicated to the Infectious xWays. xWays mystery symbol will reveal one symbol of the same kind, but expand the reels as they hold 2-3 symbols.\\nLand a xWays symbol and a Wild, to trigger the Infectious xWays symbol - where the revealed symbol will also expand any symbol of the same kind on the reel to the same size!\n\n## Infectious Spins\nLand 3 or 4 bonus symbols to trigger the bonus mode - and choose between Toxic Hazard and Lock n’ Load bonus modes. Landing 4 bonus symbols award +1 extra spin in each mode.\n\n## Infectious Spins: Toxic Hazard (9 or 10 spins)\nFor the ones that is looking for a more solid payout from Infectious Spins, where 1-5 random wilds are placed on the middle reels for every spin - which means that landing an xWays means instant Infectious Ways with a good chance of a winning connection!\n\n## Infectious Spins: Lock n’ Load (7 or 8 spins)\nThe more volatile Infectious Spins option, where all Wilds lock in place for the remainder of the feature and awards +1 extra spin. Wilds may be awarded a "
+    }
+  ],
+  "unknowns": [
+    "exact base ways_count",
+    "Mayhem exact spin count (sheet says 12 or 10)",
+    "per-mode buy prices"
+  ],
+  "thumbnail": "thumbs/nolimit-infectious-5-xways.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

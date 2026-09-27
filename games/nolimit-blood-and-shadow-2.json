@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:41:14Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Blood & Shadow 2",
+    "slug": "nolimit-blood-and-shadow-2",
+    "provider_game_id": "BloodAndShadow2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/BloodAndShadow2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/blood-and-shadow-2"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "5×5 with bottom row locked (Wilds unlocking left-to-right per Ritual level) and Ritual Bar beneath."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Tumble ways; xSplit (Dagger/Guillotine) can grow symbol size up to 32×. Exact base ways not stated in CMS."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Winning combinations destroyed; remaining tumble down; new symbols fall in."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Ritual Bar",
+        "how_it_works": "5 levels (20/30/40/60/80). Medium +1, high +2, Scatter +10 per symbol. Level-up removes lowest pays, converts medium→high; excess carries. Resets each new game round. Bottom locked Wilds unlock L→R per level."
+      },
+      {
+        "name": "xSplit Dagger/Guillotine",
+        "how_it_works": "Dagger splits its row; Guillotine splits all symbols below on its reel. Appear with x2 mult; split symbols get multipliers; both become Wild after split. Max symbol size 32×."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Sticky Wild",
+        "behavior": "Can land any reel. In Candle / Reign of Terror: drops to bottom and sticks until part of a win or new bet. Bottom locked row starts filled with Wilds unlocked per Ritual level.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "+10 Ritual Bar each. In Reign of Terror, Scatter awards +1 free spin.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Dagger xSplit",
+        "behavior": "Splits its row; x2 on symbol; becomes Wild after split.",
+        "params": {}
+      },
+      {
+        "name": "Guillotine xSplit",
+        "behavior": "Splits all symbols below on its reel; x2; becomes Wild after split.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Tumble spin on 5×5 with locked bottom Wild row + Ritual Bar. Wins/Scatters fill bar through 5 levels; level-ups upgrade symbol set and unlock bottom Wilds. Levels 1–4 award +2 Candle Spins; level 5 enters Reign of Terror (+6 FS, high-pays only, xSplit). Optional Halifax buy, xBet boosters, Nolimit Bonus 100–500×.",
+    "phases": [
+      {
+        "name": "Spin & tumble",
+        "order": 1,
+        "what_happens": "Spin 5×5; pay ways; tumble until no wins. Sticky/locked Wilds apply.",
+        "ends_when": "Tumbles end",
+        "state_changes": null
+      },
+      {
+        "name": "Ritual Bar",
+        "order": 2,
+        "what_happens": "Add medium/high/Scatter progress; on threshold level-up (pay pending wins first), upgrade pays, unlock next bottom Wild.",
+        "ends_when": "Bar updated",
+        "state_changes": "Level 1–5; symbol set changes"
+      },
+      {
+        "name": "Award spins",
+        "order": 3,
+        "what_happens": "Level-up to ≤4 → +2 Candle Spins. Enter level 5 / Reign of Terror → +6 FS (or buy 10).",
+        "ends_when": "Awards applied",
+        "state_changes": "Enter Candle or Reign of Terror"
+      }
+    ],
+    "win_evaluation": "Ways paid each tumble; Ritual progress after wins; level-ups after pending wins pay.",
+    "notes": "No public GameSheet PDF in CMS; mechanics from official site CMS features."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Candle Spins",
+        "trigger": "New Ritual Bar level awards +2 Candle Spins until level 4.",
+        "spins_awarded": "+2 per level-up (levels 1–4)",
+        "retrigger": "Further level-ups add +2 until level 4.",
+        "sticky_or_persistent_state": "Wilds drop sticky to bottom until win/new bet. Ritual Bar same as base.",
+        "progressive_state": "Bar continues toward Reign of Terror.",
+        "end_condition": "Candle spins exhausted or enter Reign of Terror.",
+        "phases": [
+          {
+            "name": "Candle play",
+            "order": 1,
+            "what_happens": "Play awarded spins with sticky Wilds; bar still progresses."
+          }
+        ],
+        "effects": "+2 FS per level-up through 4; sticky Wilds; bar active."
+      },
+      {
+        "name": "Reign of Terror Spins",
+        "trigger": "Advance to Ritual level 5 (after pending wins). Buy awards 10 FS.",
+        "spins_awarded": "+6 natural; 10 when bought",
+        "retrigger": "Scatter +1 spin.",
+        "sticky_or_persistent_state": "Ritual Bar removed; 5×5 high-pays only; sticky Wilds; Dagger/Guillotine xSplit active.",
+        "progressive_state": null,
+        "end_condition": "Spins done or Enlightenment 16,161×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Remove bar; high-pays only; enable xSplits; award spins."
+          },
+          {
+            "name": "Play",
+            "order": 2,
+            "what_happens": "Tumble with xSplit; Scatter +1."
+          }
+        ],
+        "effects": "High-pays 5×5; xSplit; sticky Wilds; Scatter retrigger."
+      },
+      {
+        "name": "Halifax Gibbet Spins (buy)",
+        "trigger": "Feature buy",
+        "spins_awarded": "+6 Candle Spins; Ritual Bar → level 3",
+        "retrigger": null,
+        "sticky_or_persistent_state": "3 low/medium pays replaced with high pays.",
+        "progressive_state": null,
+        "end_condition": "As Candle Spins",
+        "phases": [
+          {
+            "name": "Buy enter",
+            "order": 1,
+            "what_happens": "Jump bar to level 3; +6 Candle; upgrade 3 symbols to high."
+          }
+        ],
+        "effects": "Instant level-3 Candle package."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Ritual Bar",
+      "trigger": "Medium/high wins & Scatters",
+      "when": "after_wins",
+      "effects": "Thresholds 20/30/40/60/80; upgrade pays; unlock bottom Wilds L→R.",
+      "params": {
+        "thresholds": [
+          20,
+          30,
+          40,
+          60,
+          80
+        ]
+      }
+    },
+    {
+      "name": "xSplit Dagger / Guillotine",
+      "trigger": "During high-feature play",
+      "when": "bonus",
+      "effects": "Row or below-reel splits with x2; become Wild; max size 32×.",
+      "params": {}
+    },
+    {
+      "name": "xBet (Nolimit Booster)",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_multiplier": 2.5,
+      "cost_text": "2.5× base bet",
+      "effects": "3× more likely to trigger Reign of Terror; Ritual Bar always starts at level 1.",
+      "params": {}
+    },
+    {
+      "name": "xBet 2 (Nolimit Booster)",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_multiplier": 66.0,
+      "cost_text": "66× base bet",
+      "effects": "Guaranteed spin at Level 5 with Dagger and Guillotine symbols.",
+      "params": {}
+    },
+    {
+      "name": "Enlightenment",
+      "trigger": "Win hits cap",
+      "effects": "Max 16,161×; round ends.",
+      "params": {
+        "max_win_multiplier": 16161
+      }
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Player buys",
+      "when": "base_game",
+      "cost_text": "100×–500× base bet",
+      "effects": "Buy into different bonus features in that range.",
+      "params": {
+        "cost_range_min": 100,
+        "cost_range_max": 500
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Halifax Gibbet Spins",
+        "cost_multiplier": null,
+        "cost_text": "Within 100×–500×",
+        "effects": "Bar→level 3; +6 Candle; 3 symbols→high.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Reign of Terror Spins",
+        "cost_multiplier": null,
+        "cost_text": "Within 100×–500×",
+        "effects": "Awards 10 free spins in Reign of Terror.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Nolimit Bonus — range",
+        "cost_multiplier": null,
+        "cost_text": "100×–500×",
+        "effects": "Other bonus options in range.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Per-option prices inside range not itemized beyond Halifax/Reign effects."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 2.5,
+    "effects": "xBet booster 2.5× for higher Reign odds (bar starts level 1). Separate xBet 2 at 66× for guaranteed level-5 dagger/guillotine spin.",
+    "notes": "NLC Booster-style ante, not classic 1.25× ante."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 16161.0,
+    "max_win_notes": "Enlightenment 16,161×",
+    "rtp_percent": null,
+    "rtp_notes": "RTP not in CMS feature payload.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/blood-and-shadow-2",
+      "local_path": "sources/nolimit/blood-and-shadow-2/cms_features.txt",
+      "extracted_at": "2026-09-27T18:41:14Z",
+      "quote_or_excerpt": "## Reel Area\n5x5 reel setup with bottom row locked and a Ritual Bar beneath the bottom row. Bottom locked row is filled with Wild symbols and each level progression unlocks a Wild symbol starting from the left\n\nWinning combinations will be destroyed and remaining symbols will tumble down, allowing the new symbols to fall in.\n\n## Ritual Bar\nThere are 5 levels of progressions. The Ritual Bar resets for each level up. Exceeding collection will be carried over.\n\n- Level 1: 20\n- Level 2: 30\n- Level 3: 40\n- Level 4: 60\n- Level 5: 80\n\nLanding the Scatter symbols and winning combinations of medium and high paying symbols advances the Ritual bar.\n\n- Medium paying symbol = +1 per winning symbol\n- High paying symbol = +2 per winning symbol\n- Scatter symbol = +10 per Scatter symbol\n\nEach level removes the lowest paying symbols and also converts medium symbols to high paying symbols.\n\nRitual bar resets for every new game round.\n\n## Candle Spins\nReaching a new level of the Ritual Bar awards +2 Candle Spins till level 4, +6 Free Spins when advancing to Reign of Terror Spins.\n\nBefore any new level, any plausible wins pay out before progressing to the next level.\n\nDuring Candle Spins, the Ritual Ba"
+    }
+  ],
+  "unknowns": [
+    "no public GameSheet PDF",
+    "exact base ways_count",
+    "RTP/hit frequency",
+    "exact per-option buy prices in 100–500×"
+  ],
+  "thumbnail": "thumbs/nolimit-blood-and-shadow-2.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

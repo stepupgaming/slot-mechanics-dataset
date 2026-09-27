@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:41:14Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Mental II",
+    "slug": "nolimit-mental-2",
+    "provider_game_id": "Mental2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Mental2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/mental-2"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "5-reel Mental sequel. Fire Frames (1–13) split symbols ×2; Fire Reels (1–5) split ×3. Enhancer Cells under reels 2/3/4 activate at 4/6/8 Fire Frames."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "xWays / splits expand ways. Base ways not stated as single integer on sheet highlights."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "xMental triggers an extra spin with all Fire Frames + enhancer reveals (xWays/xNudge/xSplit) and possible xHole."
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Fire Frames/Reels split symbols; xWays expands reel height with 3 matching symbols."
+    },
+    "other": [
+      {
+        "name": "Enhancer Cells",
+        "how_it_works": "Bottom of reels 2/3/4; unlock at 4/6/8 Fire Frames (Fire Reel counts as 2–3 frames). Reveal Wild, xSplit, xNudge Wild, Patient, or xWays."
+      },
+      {
+        "name": "xHole",
+        "how_it_works": "Activates only in Fire Frame/Reel on 2nd position of reel 3; scatters regulars/Wilds with size ×2/4/8 then becomes Wild."
+      },
+      {
+        "name": "xMental",
+        "how_it_works": "In Fire Frame/Reel anywhere: extra spin with all Fire Frames + enhancer force + possible xHole."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / xNudge Wild",
+        "behavior": "xNudge always nudges fully visible; +1 win mult per step; mults add; split by xSplit adds +1 to nudge mult.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Cognitive Scatter",
+        "behavior": "Reels 1/3/5 only. 3 → 8 Bloodletting. + Disembodied upgrades.",
+        "params": {}
+      },
+      {
+        "name": "Disembodied Scatter",
+        "behavior": "Reels 2/4 only. Triggers Mental Transform; with Cognitives selects Surgery/ExperiMENTAL. Sticky in Surgery/ExperiMENTAL.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Dead Patient",
+        "behavior": "2 Dead Patients reveal a Patient with mult x5–x9999 reflecting symbol count on reel. Surgery collects highest mult+count; ExperiMENTAL count never decrements.",
+        "params": {
+          "multiplier_values_mentioned": [
+            5,
+            10,
+            15,
+            30,
+            50,
+            100,
+            200,
+            500,
+            1000,
+            9999
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xGod",
+        "behavior": "One on each reel (or God Mode buy) can award max win instantly.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Spin with Fire Frames/Reels splitting symbols; Enhancers at 4/6/8 frames; Dead Patients roll huge mults; Disembodied on 2/4 transforms. 3 Cognitive → Bloodletting 8; +1 Disembodied → Surgery 9; +2 → ExperiMENTAL 10. Extra spins if scatters land in frames/reels. Boosters and buys up to God Mode 6,666×.",
+    "phases": [
+      {
+        "name": "Spin + fire",
+        "order": 1,
+        "what_happens": "Apply Fire Frames (split×2) / Fire Reels (split×3); unlock enhancers; resolve xHole/xMental if in frames.",
+        "ends_when": "Modifiers done",
+        "state_changes": "Ways/heights change"
+      },
+      {
+        "name": "Dead Patient / Transform",
+        "order": 2,
+        "what_happens": "2 Dead Patients → random Patient mult. Disembodied on 2/4 → Mental Transform to xWays/xSplit/Dead Patient/Wild/Patient.",
+        "ends_when": "Done",
+        "state_changes": null
+      },
+      {
+        "name": "Evaluate",
+        "order": 3,
+        "what_happens": "Pay ways wins.",
+        "ends_when": "Paid",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus",
+        "order": 4,
+        "what_happens": "3 Cognitive → Bloodletting 8; +1 Disembodied → Surgery 9; +2 → ExperiMENTAL 10. Frame/Reel scatters add +1/+2 spins.",
+        "ends_when": "Bonus or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "After fire splits, enhancers, xHole/xMental, and transforms.",
+    "notes": "Official Mental2 GameSheet + CMS."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bloodletting Spins",
+        "trigger": "3 Cognitive Scatters (reels 1/3/5).",
+        "spins_awarded": "8 (plus +1 per scatter in Fire Frame, +2 per scatter in Fire Reel)",
+        "retrigger": "1 Disembodied upgrades remaining to Surgery (+1 spin); 2 Disembodied → ExperiMENTAL (+2).",
+        "sticky_or_persistent_state": "Fire Frames and Fire Reels sticky for bonus.",
+        "progressive_state": null,
+        "end_condition": "Spins done, upgrade, or 99,999×.",
+        "phases": [
+          {
+            "name": "Bloodletting",
+            "order": 1,
+            "what_happens": "Sticky fire; play 8+; possible upgrade via Disembodied."
+          }
+        ],
+        "effects": "8 FS sticky fire; upgrade path to Surgery/ExperiMENTAL."
+      },
+      {
+        "name": "Surgery Spins",
+        "trigger": "3 Cognitive + 1 Disembodied, or upgrade from Bloodletting.",
+        "spins_awarded": "9 from natural trigger (or remaining+1 on upgrade)",
+        "retrigger": "New Disembodied upgrades to ExperiMENTAL (+1).",
+        "sticky_or_persistent_state": "Sticky fire + sticky Disembodied triggering Mental Transform each spin.",
+        "progressive_state": "Dead Multiplier collect highest mult + count per Patient; transfers then count decrements.",
+        "end_condition": "Spins done or upgrade/cap.",
+        "phases": [
+          {
+            "name": "Surgery",
+            "order": 1,
+            "what_happens": "Sticky Disembodied Transform each spin; Dead Mult transfer with decrementing count."
+          }
+        ],
+        "effects": "Surgery tier with Dead Mult accounting."
+      },
+      {
+        "name": "ExperiMENTAL Spins",
+        "trigger": "3 Cognitive + 2 Disembodied, or upgrade from Surgery.",
+        "spins_awarded": "10 natural (or remaining+ on upgrade)",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Both Disembodied sticky; Transform each spin.",
+        "progressive_state": "Dead Mult count does not decrement; keeps building.",
+        "end_condition": "Spins done or 99,999×.",
+        "phases": [
+          {
+            "name": "ExperiMENTAL",
+            "order": 1,
+            "what_happens": "Dual sticky Disembodied; non-decrementing Dead Mult buildup."
+          }
+        ],
+        "effects": "Top Mental2 free-spin tier."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Fire Frames & Fire Reels",
+      "trigger": "Random",
+      "when": "during_spin",
+      "effects": "1–13 frames split×2; 1–5 reels split×3; unlock enhancers.",
+      "params": {}
+    },
+    {
+      "name": "xHole™",
+      "trigger": "xHole in Fire on reel3 pos2",
+      "when": "during_spin",
+      "cost_multiplier": 99.0,
+      "cost_text": "Booster 99× guarantees activate",
+      "effects": "Scatter symbols with size ×2/4/8; becomes Wild.",
+      "params": {}
+    },
+    {
+      "name": "xMental™",
+      "trigger": "xMental in any Fire",
+      "when": "during_spin",
+      "cost_multiplier": 3200.0,
+      "cost_text": "Booster 3,200×",
+      "effects": "Extra spin all Fire Frames + forced enhancers.",
+      "params": {}
+    },
+    {
+      "name": "xBet™",
+      "trigger": "Booster",
+      "when": "before_spin",
+      "cost_multiplier": 1.4,
+      "cost_text": "1.4× bet",
+      "effects": "Guaranteed Cognitive Scatter on reel 1.",
+      "params": {}
+    },
+    {
+      "name": "Fire Frames booster",
+      "trigger": "Booster",
+      "when": "before_spin",
+      "cost_multiplier": 6.0,
+      "cost_text": "6× bet",
+      "effects": "Fire Frames on all positions.",
+      "params": {}
+    },
+    {
+      "name": "Death Is Just The Beginning",
+      "trigger": "Cap / xGod all reels",
+      "effects": "Max 99,999×.",
+      "params": {
+        "max_win_multiplier": 99999
+      }
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "Bloodletting 100×; Surgery 250×; Experimental 1,800×; Lucky Draw 330×; God Mode 6,666×",
+      "effects": "Direct bonus entry.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bloodletting Spins",
+        "cost_multiplier": 100.0,
+        "cost_text": "100×",
+        "effects": "Buy Bloodletting.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Surgery Spins",
+        "cost_multiplier": 250.0,
+        "cost_text": "250×",
+        "effects": "Buy Surgery.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Experimental Spins",
+        "cost_multiplier": 1800.0,
+        "cost_text": "1,800×",
+        "effects": "Buy ExperiMENTAL.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Lucky Draw (50/40/10)",
+        "cost_multiplier": 330.0,
+        "cost_text": "330×",
+        "effects": "Random among bonus tiers.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "God Mode",
+        "cost_multiplier": 6666.0,
+        "cost_text": "6,666×",
+        "effects": "Chase max win via xGod on each reel.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Max bet €100 on buys."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.4,
+    "effects": "xBet 1.4× guarantees Cognitive on reel 1. Other boosters: Fire Frames 6×, xHole 99×, xMental 3,200×.",
+    "notes": "Multiple booster antes."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 99999.0,
+    "max_win_notes": "99,999× (~1 in 16M at 96.06%)",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06% / 95.23% DX0 / 94.04% DX1 / 92.02% DX2. Base 57.82% / Bonus 38.24%.",
+    "hit_frequency_notes": "Free spins 1 in 269; win 100× 1 in 993."
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Mental2_93846_pdf_d3651bd208.pdf",
+      "local_path": "sources/nolimit/mental-2/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:41:14Z",
+      "quote_or_excerpt": "NOLIMIT CITY | MENTAL 2\n\n\n                          MENTAL 2\n                          Insanity is doing the same thing over and over again expecting a\n                          different outcome. Mental defined, is a person or their behavior, is\n                          extreme or illogical in some way. Put them together and you’ve got\n                          murderous, deranged daughter who butchered her parents.\n\n                          She gets shipped off the asylum where someone very special is\n                          waiting for her!\n\n                                                                                                                                                    HIGHLIGHTS\n                            • xMental™ | xHole™ | xNudge® | xGod® | xWays® | xBet™ | xSplit®\n                            • Bloodletting Spins | Surgery Spins | ExperiMENTAL Spins | God Mode\n                            • 99,999x Max Win\n\n\n\n                            GENERAL INFORMATION\n\n                            RTP Options                         96.06% , 95.23% (DX0), 94.04% (DX1), 92.02% (DX2)\n\n                            RTP Base Game / Bonus Mode(s)*      57.82% / 38.24%\n\n\n "
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/mental-2",
+      "local_path": "sources/nolimit/mental-2/cms_features.txt",
+      "extracted_at": "2026-09-27T18:41:14Z",
+      "quote_or_excerpt": "## Fire Frames & Fire Reels\nFire Frames: Randomly, 1 to 13 positions on the reels in the main game may turn into a Fire Frame. Any symbol that lands in a Fire Frame will split into 2 parts.\n\nFire Reels: Randomly, 1 to 5 reels in the game may turn into a Fire Reel. Any symbol that lands in a Fire Reel will split into 3 parts.\n\n## Dead Patients\nGets activated when there are 2 Dead Patient symbols.\n\nIt reveals one of the Patient symbols with a random multiplier: x5, x10, x15, x30, x50, x100, x200, x500, x1,000, x9,999.\n\nMultiplier value reflects the symbol count on that reel.\n\n## Enhancer Cells\nEnhancer Cells are located at the bottom of reels 2, 3, and 4. The more Fire Frames that appear, the more Enhancer Cells get activated:\n\n- 4 Fire Frames activate the Reel 2 Enhancer Cell.\n- 6 Fire Frames activate Reel 2 and Reel 4 Enhancer Cells.\n- 8 Fire Frames activate all 3 Enhancer Cells (on reels 2, 3, and 4).\n\nA Fire Reel is considered as 2 or 3 Fire Frames for the Enhancer Cell activation, depending on the size of the reel it’s on.\n\nEach Enhancer Cell can reveal one of below symbols:\n\nWild: The regular Wild symbol.\n\nxSplit®: Splits one symbol on each reel and double those symbols, it spl"
+    }
+  ],
+  "unknowns": [
+    "exact base ways_count / default reel heights"
+  ],
+  "thumbnail": "thumbs/nolimit-mental-2.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

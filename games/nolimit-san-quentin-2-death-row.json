@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:41:14Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "San Quentin 2: Death Row",
+    "slug": "nolimit-san-quentin-2-death-row",
+    "provider_game_id": "SanQuentin2",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/SanQuentin2",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/san-quentin-2-death-row"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": null,
+    "layout_notes": "5-reel ways grid with Enhancer Cells top/bottom per reel (like SQ1). xWays stacks 5 high; dual xWays on a reel → 10 single Wilds."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "xWays / Razor Split expand ways. Base ways integer not in CMS."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Razor Split doubles regular positions (twice if top+bottom). xWays reveals same symbol stacked 5 high; both enhancers xWays → 10 Wilds covering reel."
+    },
+    "other": [
+      {
+        "name": "Enhancer Cells",
+        "how_it_works": "Locked top/bottom; open to top-5 pay / Wild / Razor Split / xWays."
+      },
+      {
+        "name": "Jumping Wilds",
+        "how_it_works": "In Green Mile: jump each spin; Razor Split doubles mult + doubles row positions; split-affected Jumping Wilds also double mult for feature. Mult counts as number of Wilds on position."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Split Wild",
+        "behavior": "Main game any reel; splits all regulars on same reel, not itself.",
+        "params": {}
+      },
+      {
+        "name": "Jumping Wild",
+        "behavior": "Green Mile: 1/2/3 start from 3/4/5 Bonus; optional gamble for more up to 5. 4th/5th start with x2. Jump each spin; Razor Split can double mult for rest of feature.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "1–2 → become Wild + open enhancers on that reel. 3+ → Green Mile Spins. During feature: Bonus on closed-enhancer reel opens cells and becomes Jumping Wild; 2–5 Bonuses award 3–6 extra spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays / Razor Split (enhancer)",
+        "behavior": "xWays: same regular stacked 5; both cells → 10 Wilds. Razor Split doubles positions; splitting Bonus → Wilds + row split.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Paid spin with Split Wilds and Bonus-opened Enhancer Cells. 3–5 Bonuses start Green Mile with 1–3 Jumping Wilds; pre-feature choice to gamble spins for extra Jumping Wilds (max 5). Jumping Wild count sets how many reels keep enhancers active. Buy 100–2500×; xBet 2×/45× for guaranteed scatters.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Reels stop; Split Wilds may split regulars; Bonuses may land.",
+        "ends_when": "Stop",
+        "state_changes": null
+      },
+      {
+        "name": "Enhancers (1–2 Bonus)",
+        "order": 2,
+        "what_happens": "Each Bonus→Wild and opens that reel’s enhancer cells (top-5/Wild/Razor/xWays).",
+        "ends_when": "Resolved",
+        "state_changes": "Ways may expand"
+      },
+      {
+        "name": "Evaluate",
+        "order": 3,
+        "what_happens": "Pay ways wins.",
+        "ends_when": "Paid",
+        "state_changes": null
+      },
+      {
+        "name": "Green Mile",
+        "order": 4,
+        "what_happens": "3/4/5 Bonus → 1/2/3 Jumping Wilds; optional risk 5 spins for extra JW up to 5; then play feature.",
+        "ends_when": "Feature or end",
+        "state_changes": "Enter Green Mile"
+      }
+    ],
+    "win_evaluation": "Ways after splits/enhancers; Green Mile continues with Jumping Wild mults.",
+    "notes": "Spin count for Green Mile start not a fixed integer in CMS (gamble trades 5 spins for extra JW)."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Green Mile Spins",
+        "trigger": "3, 4, or 5 Bonus symbols (1, 2, or 3 starting Jumping Wilds).",
+        "spins_awarded": "Starting spin count not fixed in CMS; player may risk losing 5 spins for an extra Jumping Wild (max 5 JW). Landing 2–5 Bonuses during feature awards 3–6 extra spins.",
+        "retrigger": "2–5 Bonuses → +3 to +6 spins; Bonus on closed enhancer reel opens cells and becomes Jumping Wild.",
+        "sticky_or_persistent_state": "Active enhancer reels randomly drawn at start and persist. JW multipliers from Razor Split persist for feature.",
+        "progressive_state": "Up to 5 Jumping Wilds; 4th/5th start x2; at 5 JW may risk 5 spins vs Max Win choice.",
+        "end_condition": "Spins exhausted or No Escape 200,000× ends feature.",
+        "phases": [
+          {
+            "name": "Pre-feature choice",
+            "order": 1,
+            "what_happens": "Keep current JWs or risk 5 spins for another JW (max 5). JW count sets 3/4/5 reels with active enhancers."
+          },
+          {
+            "name": "Play",
+            "order": 2,
+            "what_happens": "JWs jump; enhancers active on chosen reels; Razor Split can double JW mults and row; Bonuses add spins/JWs."
+          },
+          {
+            "name": "Cap",
+            "order": 3,
+            "what_happens": "At 200,000× award cap and end Green Mile."
+          }
+        ],
+        "effects": "Jumping Wild lockdown sequel with enhancer gamble and 200,000× No Escape cap."
+      }
+    ],
+    "notes": "Initial spin pot size only described via the 5-spin gamble, not a printed base count."
+  },
+  "features": [
+    {
+      "name": "Enhancer Cells",
+      "trigger": "1–2 Bonus or during Green Mile",
+      "when": "during_spin",
+      "effects": "Reveal top-5 / Wild / Razor Split / xWays.",
+      "params": {}
+    },
+    {
+      "name": "Split Wild",
+      "trigger": "Lands in base",
+      "when": "during_spin",
+      "effects": "Splits regulars on its reel.",
+      "params": {}
+    },
+    {
+      "name": "xBet (Nolimit Booster)",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_text": "2× bet (1 guaranteed Scatter) or 45× (2 guaranteed Scatters)",
+      "effects": "Guarantee 1 or 2 Scatters.",
+      "params": {}
+    },
+    {
+      "name": "No Escape",
+      "trigger": "Win hits cap",
+      "effects": "Max 200,000×; Green Mile ends.",
+      "params": {
+        "max_win_multiplier": 200000
+      }
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Player buys",
+      "when": "base_game",
+      "cost_text": "100×–2,500× base bet",
+      "effects": "Buy into different bonus features.",
+      "params": {
+        "cost_range_min": 100,
+        "cost_range_max": 2500
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Nolimit Bonus — Green Mile / variants",
+        "cost_multiplier": null,
+        "cost_text": "100×–2,500×",
+        "effects": "Buy into bonus features in that range.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Per-mode prices not itemized in CMS."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 2.0,
+    "effects": "xBet: 2× for 1 guaranteed Scatter; 45× for 2 guaranteed Scatters.",
+    "notes": "Booster ante options."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 200000.0,
+    "max_win_notes": "No Escape 200,000×",
+    "rtp_percent": null,
+    "rtp_notes": "RTP not in CMS extract.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/san-quentin-2-death-row",
+      "local_path": "sources/nolimit/san-quentin-2-death-row/cms_features.txt",
+      "extracted_at": "2026-09-27T18:41:14Z",
+      "quote_or_excerpt": "## Enhancer Cells\nOn the top and bottom of each reel, there are locked Enhancer Cell positions.\n\nWhen triggered to open, they may reveal: 1 of the 5 top paying symbols, Wild, Razor Split or xWays® symbol.\n\nRazor Split symbol will split all symbols on the regular positions on that reel to double position. If the Razor Split lands on top and bottom Enhancer Cells on the same reel it will split them twice. If the Razor Split symbol splits the Bonus symbol on its reel then the Bonus symbol transforms into Wilds and splits its row respectively.\n\nAll xWays® symbols will reveal the same regular paying symbols and 5 high stacked. When xWays® appears on both active Enhancer Cells on a reel, the entire reel will be covered by 10 single Wilds.\n\n## Split Wild\nIn the main game, Split Wild can land on any reel.\nThe Split Wild will split all the regular symbols on the same reel, the Split Wild will not split itself.\n\n## Bonus Scatter\nThe Bonus symbol can land on any reel. Landing 1 or 2 Bonus symbol in the main game will turn it to Wild and open the Enhancer Cells on its reel.\n\nLanding 3 or more Bonuses will trigger Green Mile Spins.\n\n## Green Mile Spins\n3, 4 or 5 Bonus symbols will trigger Green"
+    }
+  ],
+  "unknowns": [
+    "no GameSheet PDF on page",
+    "base ways_count",
+    "RTP",
+    "exact starting spin count before JW gamble",
+    "per-mode buy prices"
+  ],
+  "thumbnail": "thumbs/nolimit-san-quentin-2-death-row.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
