@@ -1,29 +1,35 @@
 # DESIGN — Slot Mechanics viewer
 
 ## Mode
-Operate. The tool disappears into the lookup task.
+Catalog / Read. Browse and understand games. Presentation quality matters; the data must still be scannable.
+
+## Brief (user)
+Polished public interface for the mechanics dataset. Reference energy of Big Win Board / Casino Guru catalogs, but cleaner, more structured, and better looking. Not a raw admin table. Not purple-glass SaaS.
 
 ## Scene
-Desk work, long sessions, reading dense rules text. Cool neutral surfaces; dark charcoal content area optional but no neon glow.
+Evening desk, researching slots. Deep charcoal canvas, soft elevated panels, warm accent (not neon).
 
-## Color (Restrained)
-- Canvas: `#f4f5f7`
-- Panel / list: `#ffffff`
-- Detail well: `#0f1115` (ink) for long reading contrast, OR stay light — pick one system: **light canvas, white panels, ink text**
-- Text: `#111318` / secondary `#5c6370`
-- Line: `#e4e6eb`
-- Accent (selection + primary links only): `#2563eb`
-- Success/high: `#0f7b4c` · Medium: `#9a6700` · Low: `#b42318`
+## Color
+- Canvas: `#090a0d`
+- Raised: `#12141b`
+- Raised-2: `#181b24`
+- Line: `rgba(255,255,255,0.08)`
+- Text: `#f3f4f6` / muted `#9aa3b5`
+- Accent: `#d4a24c` (warm metal) — selection, primary actions
+- High: `#3ecf8e` · Medium: `#e0b44c` · Low: `#f07178`
 
 ## Type
-One family: system UI stack (`ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`).
-Scale: 12 / 13 / 14 / 16 / 20 / 28. Weights 400 / 500 / 600. Mono only for slugs and JSON paths: `ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`.
+- Display / titles: **Bricolage Grotesque**
+- UI / body: **Source Sans 3**
+- Mono (slugs, JSON): **IBM Plex Mono** only for code paths — wait, IBM Plex is on anti-default list as family; use system mono stack instead for data.
+
+Scale: 12 / 13 / 14 / 16 / 18 / 24 / 40. Weights 400–700. Tracking on large titles −0.03em.
 
 ## Layout
-Full-bleed app shell. Thin top toolbar (title + search + filters). Split: dense list | detail. No hero, no metric scoreboard, no provider pill row as decoration, no nested cards, no glass, no gradient text, no kickers.
+1. Top brand bar + search
+2. Filter chips (providers) + selects
+3. Responsive game **tile grid** (the catalog)
+4. Selecting a game opens a **dossier** (right drawer on desktop, full sheet on mobile): title block, at-a-glance strip, then structured sections (Mechanics · Symbols · Bonus · Sources)
 
-## Components
-Text inputs and selects share one height (36px). List rows are flat, 1px dividers. Selected row: light blue wash + accent text, not thick left border. Detail uses definition grids and section headings with space, not card stacks. Evidence in monospace blocks with muted chrome.
-
-## Motion
-150–200ms ease on selection background only. No page-load choreography.
+## Anti-references
+Previous dark purple glass dashboard; previous light admin toolbar shell.

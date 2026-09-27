@@ -8,7 +8,7 @@ Built for Money / Crypto Marketing workflows under GitHub user [`stepupgaming`](
 
 Live dataset viewer (GitHub Pages): **https://stepupgaming.github.io/slot-mechanics-dataset/**
 
-Operate-mode lookup UI (toolbar + dense list + detail). Search/filter by provider, confidence, win system, tumble/buy/ante. Raw JSON in `games/` and `dataset.json`. Visual system: `DESIGN.md`.
+Polished catalog viewer (game tiles + sticky filters + dossier with Mechanics/Symbols/Bonus/Sources). Search and filter by studio, confidence, win system, tumble/buy/ante. Raw JSON in `games/` / `dataset.json`. Visual system: `DESIGN.md`.
 
 ## Layout
 

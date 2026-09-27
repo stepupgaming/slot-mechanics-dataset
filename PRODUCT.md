@@ -1,9 +1,9 @@
 # Slot Mechanics Dataset
 
-Machine-readable descriptions of how video slots work (grid, win systems, tumbles, symbols, free spins, buys), published at stepupgaming/slot-mechanics-dataset with a public viewer.
+Public, evidence-backed JSON descriptions of how video slots work, plus a browsable catalog viewer.
 
-Audience: the owner (Money / Step Up) and anyone browsing mechanics for product, marketing, or research.
+Audience: researchers, marketers, and builders who need real mechanics (not marketing tags).
 
-Primary job of the viewer: find a game fast, read how it works, open evidence/raw JSON.
+Viewer job: browse the catalog like a premium slot database, open a dossier with structured mechanics, jump to official rules / raw JSON.
 
-Constraints: evidence-backed; do not invent mechanics; GitHub Pages static hosting.
+Tone: confident, clean, game-industry literate — closer to a polished review catalog than an admin console.
