@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:14:17Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Tombstone",
+    "slug": "nolimit-tombstone",
+    "provider_game_id": "Tombstone",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Tombstone",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/tombstone"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 5,
+    "layout_notes": "Page meta 3-5; Outlaw Wilds 3-high on reels 2–4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with Outlaw Wild nudge mults."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Outlaw Wilds",
+        "how_it_works": "3-high reels 2–4; always fully visible; +1 win mult per nudge step; sticky unlimited mult in Gunslinger/Bounty."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Outlaw Wild",
+        "behavior": "Nudge +1/step; sticky in Justice/Gunslinger/Bounty.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter / Sheriff / Marshall Badge",
+        "behavior": "3 Scatter→10 Gunslinger; Sheriff+Marshall reel1+5→3 Justice; Bounty 12 combines both.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Outlaw win mult",
+        "behavior": "Sticky unlimited in Gunslinger/Bounty.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Ways with Outlaw Wilds. Sheriff+Marshall→3 Justice (sticky Outlaws). 3 Scatter→10 Gunslinger (sticky unlimited mult). Bounty 12 combines both. Cap 11,456×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Outlaw nudges.",
+        "ends_when": "Resolved",
+        "state_changes": "Mult"
+      },
+      {
+        "name": "Bonus check",
+        "order": 2,
+        "what_happens": "Justice / Gunslinger / Bounty.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after Outlaw mults.",
+    "notes": "CMS + GameSheet; thinner buy detail."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Justice Spins",
+        "trigger": "Sheriff reel1 + Marshall reel5.",
+        "spins_awarded": "3",
+        "retrigger": null,
+        "sticky_or_persistent_state": "All Outlaw Wilds sticky.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 11,456×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "3 Justice."
+          }
+        ],
+        "effects": "3 FS sticky Outlaws."
+      },
+      {
+        "name": "Gunslinger Spins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "10",
+        "retrigger": "Scatter +spins.",
+        "sticky_or_persistent_state": "Unlimited sticky win mult from Outlaw nudges.",
+        "progressive_state": "Win mult.",
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Gunslinger."
+          }
+        ],
+        "effects": "10 FS sticky mult."
+      },
+      {
+        "name": "Bounty Spins",
+        "trigger": "CMS (combined feature).",
+        "spins_awarded": "12",
+        "retrigger": "Scatter +1.",
+        "sticky_or_persistent_state": "Justice + Gunslinger features combined.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "12 Bounty."
+          }
+        ],
+        "effects": "12 FS combo."
+      }
+    ],
+    "notes": "Bounty trigger exact combo not fully spelled beyond combined features."
+  },
+  "features": [
+    {
+      "name": "Cap",
+      "trigger": "Cap",
+      "effects": "Max 11,456×.",
+      "params": {
+        "max_win_multiplier": 11456
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": "No buy prices in CMS excerpt."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 11456.0,
+    "max_win_notes": "11,456×",
+    "rtp_percent": 96.19,
+    "rtp_notes": "96.19% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tombstone",
+      "local_path": "sources/nolimit/tombstone/cms_features.txt",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "Outlaw Wild nudge; Sheriff+Marshall→3 Justice sticky; 3 Scatter→10 Gunslinger sticky mult; Bounty 12 combined; max 11,456×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tombstone",
+      "local_path": "sources/nolimit/tombstone/page.html",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "96.19% RTP, 11456 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Tombstone_66611_a04f5a9760.pdf",
+      "local_path": "sources/nolimit/tombstone/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "Bounty exact trigger",
+    "feature buy availability",
+    "full grid rows"
+  ],
+  "thumbnail": "thumbs/nolimit-tombstone.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

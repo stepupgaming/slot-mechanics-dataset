@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:13:07Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Roadkill",
+    "slug": "nolimit-roadkill",
+    "provider_game_id": "RoadKill",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/RoadKill",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/roadkill"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official 5x3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; cars vs Jumping Wilds on battle reels 2–4."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Jumping Wilds",
+        "how_it_works": "Papa Bear / Fred Rabbit / Deer Joe on reels 2–4 with unique block/split/trap rules; collectors to 5 upgrade + armored heart."
+      },
+      {
+        "name": "Hilly/Billy cars",
+        "how_it_works": "Green 1 HP / Red 2 HP traverse; fail→damage hearts; hearts empty ends mode."
+      },
+      {
+        "name": "Roadblock",
+        "how_it_works": "20 hits→row Wilds then 3×3 battle Wild."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Jumping Wilds (Papa/Fred/Deer)",
+        "behavior": "As CMS.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "2→Call to Arms (2 hearts); 3→Team Assemble; upgrade path Junkyard.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Papa general mult",
+        "behavior": "Up to 5×; upgrade permanent ×2.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Per-animal / Total Collector",
+        "behavior": "Cap 5 upgrade; Junkyard total→Roadblock at 20.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "5×3 animal-vs-car combat. 2 Scatter Call to Arms; 3→Team Assemble; all Jumping Wilds upgraded→Junkyard Assault + Roadblock. Buys 60/500/200×. Cap 11,091×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Team Assemble/Junkyard/Lucky.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Battle loop",
+        "order": 2,
+        "what_happens": "Cars vs Jumping Wilds; hearts.",
+        "ends_when": "No hearts / trigger FS",
+        "state_changes": "Hearts / collectors"
+      },
+      {
+        "name": "Team Assemble / Junkyard",
+        "order": 3,
+        "what_happens": "Bonus modes.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways with Jumping Wild features.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Call To Arms",
+        "trigger": "2 Scatter.",
+        "spins_awarded": "Until hearts gone",
+        "retrigger": "3rd Scatter→Team Assemble.",
+        "sticky_or_persistent_state": "2 normal hearts.",
+        "progressive_state": null,
+        "end_condition": "No hearts.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Call to Arms."
+          }
+        ],
+        "effects": "Heart mode."
+      },
+      {
+        "name": "Team Assemble",
+        "trigger": "3 Scatters.",
+        "spins_awarded": "Until hearts gone",
+        "retrigger": "All 3 Jumping Wilds upgraded→Junkyard.",
+        "sticky_or_persistent_state": "3 hearts; Red car every 5th.",
+        "progressive_state": "Upgrades.",
+        "end_condition": "No hearts.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Team Assemble."
+          }
+        ],
+        "effects": "FS-like hearts."
+      },
+      {
+        "name": "Junkyard Assault",
+        "trigger": "All Jumping Wilds upgraded.",
+        "spins_awarded": "Until hearts gone",
+        "retrigger": "Roadblock at 20 hits.",
+        "sticky_or_persistent_state": "Red every spin; Total Collector.",
+        "progressive_state": "Roadblock.",
+        "end_condition": "No hearts.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Junkyard."
+          }
+        ],
+        "effects": "Enhanced hearts."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Team Assemble buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 60.0,
+      "cost_text": "60×",
+      "effects": "Buy Team Assemble.",
+      "params": {}
+    },
+    {
+      "name": "Junkyard Assault buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 500.0,
+      "cost_text": "500×",
+      "effects": "Buy Junkyard.",
+      "params": {}
+    },
+    {
+      "name": "Lucky Draw",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 200.0,
+      "cost_text": "200×",
+      "effects": "Lucky Draw.",
+      "params": {}
+    },
+    {
+      "name": "Kings of the Road",
+      "trigger": "Cap",
+      "effects": "Max 11,091×.",
+      "params": {
+        "max_win_multiplier": 11091
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Team / Junkyard / Lucky",
+        "cost_multiplier": null,
+        "cost_text": "60× / 500× / 200×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Band also 100–500×."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 11091.0,
+    "max_win_notes": "11,091×",
+    "rtp_percent": 96.04,
+    "rtp_notes": "96.04% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/roadkill",
+      "local_path": "sources/nolimit/roadkill/cms_features.txt",
+      "extracted_at": "2026-09-27T19:13:07Z",
+      "quote_or_excerpt": "5×3 battle; Jumping Wilds Papa/Fred/Deer; Call to Arms 2 Scatter; Team Assemble 3; Junkyard if upgraded; buys 60/500/200×; max 11,091×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/roadkill",
+      "local_path": "sources/nolimit/roadkill/page.html",
+      "extracted_at": "2026-09-27T19:13:07Z",
+      "quote_or_excerpt": "96.04% RTP, 11091 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Road_Kill_dd538c28fe.pdf",
+      "local_path": "sources/nolimit/roadkill/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:13:07Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "exact base ways",
+    "Roadblock total collector reset timing"
+  ],
+  "thumbnail": "thumbs/nolimit-roadkill.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

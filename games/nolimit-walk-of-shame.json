@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:14:17Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Walk of Shame",
+    "slug": "nolimit-walk-of-shame",
+    "provider_game_id": "WalkOfShame",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/WalkOfShame",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/walk-of-shame"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 3-4-4-4-4."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways; Loaded Wilds ×4."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Loaded Wild",
+        "how_it_works": "Full-reel high on reels 2–5 → Loaded Wild ×4."
+      },
+      {
+        "name": "Walk of Shame",
+        "how_it_works": "Mr.E + Loaded Wild on 3/4/5 → Loaded Wilds step left each spin until reel 2."
+      },
+      {
+        "name": "Mr. E → xSplit",
+        "how_it_works": "In base Mr.E becomes xSplit (not other Scatters); sticky xSplit in All Nighter."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Loaded Wild",
+        "behavior": "×4 from full high stack reels 2–5.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Invitation / Mr. E",
+        "behavior": "3/4 Inv→10/15 One More; +Mr.E→All Nighter same spins; Inv retriggers +1/+3/+5/+7.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Win mult from Loaded Wilds in FS",
+        "behavior": "+1 each Loaded Wild land.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "3-4-4-4-4 ways; Loaded Wilds; Walk of Shame march. 3/4 Invitation→10/15 One More; +Mr.E→All Nighter. Buys 69–314×. Cap 9,822×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Bonus 69–314×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + Loaded/Walk",
+        "order": 2,
+        "what_happens": "Maybe Walk of Shame.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "One More / All Nighter",
+        "order": 3,
+        "what_happens": "FS tiers.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways with Loaded Wild ×4.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "One More!!!",
+        "trigger": "3 or 4 Invitation.",
+        "spins_awarded": "10 / 15",
+        "retrigger": "Inv +1/+3/+5/+7; Mr.E→All Nighter +3.",
+        "sticky_or_persistent_state": "Loaded Wild +1 win mult each.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 9,822×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "One More."
+          }
+        ],
+        "effects": "10/15 FS."
+      },
+      {
+        "name": "All Nighter",
+        "trigger": "Inv + Mr.E (or upgrade).",
+        "spins_awarded": "10 / 15",
+        "retrigger": "Inv extras.",
+        "sticky_or_persistent_state": "Loaded +1 mult; may Walk of Shame; Mr.E sticky xSplit.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "All Nighter."
+          }
+        ],
+        "effects": "Enhanced FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "69×–314×",
+      "effects": "Buy One More/All Nighter.",
+      "params": {}
+    },
+    {
+      "name": "Happily ever after",
+      "trigger": "Cap",
+      "effects": "Max 9,822×.",
+      "params": {
+        "max_win_multiplier": 9822
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus features",
+        "cost_multiplier": null,
+        "cost_text": "69×–314×",
+        "effects": "Direct bonus.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 9822.0,
+    "max_win_notes": "9,822×",
+    "rtp_percent": 96.04,
+    "rtp_notes": "96.04% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/walk-of-shame",
+      "local_path": "sources/nolimit/walk-of-shame/cms_features.txt",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "3-4-4-4-4; Invitation/Mr.E scatters; Loaded Wild ×4; Walk of Shame march; 3/4 Inv→10/15 One More; +Mr.E→All Nighter; buys 69–314×; max 9,822×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/walk-of-shame",
+      "local_path": "sources/nolimit/walk-of-shame/page.html",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "96.04% RTP, 9822 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Walk_Of_Shame_630591cfbd.pdf",
+      "local_path": "sources/nolimit/walk-of-shame/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "exact buy lines"
+  ],
+  "thumbnail": "thumbs/nolimit-walk-of-shame.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

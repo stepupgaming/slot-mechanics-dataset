@@ -1,0 +1,257 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:14:17Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Loner",
+    "slug": "nolimit-loner",
+    "provider_game_id": "Loner",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Loner",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/loner"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official 3 x 5."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with Infectious xWays; Monitor minigames."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Monitors",
+        "how_it_works": "Reels 1/3/5: 1–2 reveal Wild/xSplit/Infectious xWays/Max; 3 reveal Pin The Win / Tick Tick Boom / Shoot Shoot Duck / Max."
+      },
+      {
+        "name": "Big Wild",
+        "how_it_works": "2×2 or 3×3 on reels 2–4; xSplit splits positions."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Big Wild",
+        "behavior": "1×1 from Monitor; 2×2/3×3 stacked.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Pin The Win / Shoot Shoot Duck / Tick Tick Boom",
+        "behavior": "Monitor triple minigames; can award Max.",
+        "params": {}
+      },
+      {
+        "name": "Max Win / xGod",
+        "behavior": "Monitor/minigame Max.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; Monitors gate Wild/xSplit/Infectious or minigames (Pin/Duck/Boom). xBet +50% Monitor reel1; Double Feature 35×. Buys 75–2,604×. Cap 14,999×.",
+    "phases": [
+      {
+        "name": "Optional xBet/buy",
+        "order": 1,
+        "what_happens": "+50% / 35× double / bonus buy.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + Monitors",
+        "order": 2,
+        "what_happens": "Reveal feature or minigame.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Minigame / Max",
+        "order": 3,
+        "what_happens": "Pin/Duck/Boom or xGod.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways; minigame fixed awards.",
+    "notes": "CMS only — bonus is minigame-centric not classic FS."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Pin The Win",
+        "trigger": "3 Monitors reveal it.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Logo moves; corner ends with listed wins; else 1–500× on award.",
+        "progressive_state": null,
+        "end_condition": "Corner hit / Max.",
+        "phases": [
+          {
+            "name": "Play",
+            "order": 1,
+            "what_happens": "Pin board."
+          }
+        ],
+        "effects": "Instant award game."
+      },
+      {
+        "name": "Shoot Shoot Duck",
+        "trigger": "3 Monitors.",
+        "spins_awarded": "5 shots",
+        "retrigger": "Ammo→5.",
+        "sticky_or_persistent_state": "Ducks 1–1000× / Bomb / Van / Max.",
+        "progressive_state": null,
+        "end_condition": "No shots / Max.",
+        "phases": [
+          {
+            "name": "Play",
+            "order": 1,
+            "what_happens": "Duck shoot."
+          }
+        ],
+        "effects": "Shooter mini."
+      },
+      {
+        "name": "Tick Tick Boom",
+        "trigger": "3 Monitors.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Pick target 5–1000× or Max.",
+        "progressive_state": null,
+        "end_condition": "Pick done.",
+        "phases": [
+          {
+            "name": "Play",
+            "order": 1,
+            "what_happens": "Boom pick."
+          }
+        ],
+        "effects": "Pick mini."
+      }
+    ],
+    "notes": "Not traditional free spins."
+  },
+  "features": [
+    {
+      "name": "xBet®",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "+50%",
+      "effects": "Monitor reel 1.",
+      "params": {}
+    },
+    {
+      "name": "Double Feature",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 35.0,
+      "cost_text": "35×",
+      "effects": "Monitors reels 1+3.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "75×–2,604×",
+      "effects": "Buy minigames/features.",
+      "params": {}
+    },
+    {
+      "name": "Max Win",
+      "trigger": "Cap or xGod",
+      "effects": "Max 14,999×.",
+      "params": {
+        "max_win_multiplier": 14999
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Boosters / Bonus buys",
+        "cost_multiplier": null,
+        "cost_text": "1.5× / 35× / 75×–2,604×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact mid lines not printed."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.5,
+    "effects": "xBet Monitor reel 1.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 14999.0,
+    "max_win_notes": "14,999×",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/loner",
+      "local_path": "sources/nolimit/loner/cms_features.txt",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "5×3; Monitors reveal features/minigames; Big Wild 2×2/3×3; xBet +50% / Double 35×; buys 75–2604×; max 14,999×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/loner",
+      "local_path": "sources/nolimit/loner/page.html",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "96.06% RTP, 14999 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "exact buy line items",
+    "ways_count"
+  ],
+  "thumbnail": "thumbs/nolimit-loner.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

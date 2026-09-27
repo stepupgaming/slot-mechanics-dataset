@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:14:17Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "The Cage",
+    "slug": "nolimit-the-cage",
+    "provider_game_id": "TheCage",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TheCage",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/the-cage"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 7,
+    "rows_min": 3,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 3-4-3-4-3-4-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 5184,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "5184 ways base; Title Fight pays both ways."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Wins explode; tumble down then left."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Title Fight 3-3-3-2-2-2-3-3-3."
+    },
+    "other": [
+      {
+        "name": "Roundhouse Kick",
+        "how_it_works": "3–6 same pays diagonal no-win → 1–4 Knockout xBombs."
+      },
+      {
+        "name": "Wild Knockout xBomb®",
+        "how_it_works": "Cross explode; +1 next mult."
+      },
+      {
+        "name": "Title Fight progression",
+        "how_it_works": "Uppercuts reduce fighter HP; beat unlocks belt boosters + spins."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Knockout xBomb®",
+        "behavior": "Cross clear +1 mult.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3→Title Fight Freespins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Win mult",
+        "behavior": "+1 per Knockout explode.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Uppercut",
+        "behavior": "−1 opponent HP in Title Fight.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "7-reel 5184-way avalanche; Roundhouse Kick mining. 3 Scatter→Title Fight both-ways with fighter ladder. Buys 68–498×. Cap 25,000×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Bonus 68–498×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Avalanche + Roundhouse",
+        "order": 2,
+        "what_happens": "Wins/Kick bombs.",
+        "ends_when": "Resolved",
+        "state_changes": "Win mult"
+      },
+      {
+        "name": "Title Fight",
+        "order": 3,
+        "what_happens": "Fighter progression FS.",
+        "ends_when": "End",
+        "state_changes": "Belts"
+      }
+    ],
+    "win_evaluation": "Ways (both-ways in Title Fight).",
+    "notes": "CMS + GameSheet; score 31 but concrete triggers."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Title Fight Freespins",
+        "trigger": "3 Scatter.",
+        "spins_awarded": null,
+        "retrigger": "Beat fighters: +3/+3/+3/+5/… spins.",
+        "sticky_or_persistent_state": "3-3-3-2-2-2-3-3-3 both ways; belt boosters activate per title won.",
+        "progressive_state": "Fighters HP 3/3/4/5/…",
+        "end_condition": "Spins done or 25,000×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Title Fight ladder."
+          }
+        ],
+        "effects": "Progression FS."
+      }
+    ],
+    "notes": "Full fighter list truncated in CMS after fight 5."
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "68×–498×",
+      "effects": "Buy Title Fight.",
+      "params": {}
+    },
+    {
+      "name": "GREATEST OF ALL TIME",
+      "trigger": "Cap",
+      "effects": "Max 25,000×.",
+      "params": {
+        "max_win_multiplier": 25000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus features",
+        "cost_multiplier": null,
+        "cost_text": "68×–498×",
+        "effects": "Direct bonus.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000.0,
+    "max_win_notes": "25,000×",
+    "rtp_percent": 96.05,
+    "rtp_notes": "96.05% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/the-cage",
+      "local_path": "sources/nolimit/the-cage/cms_features.txt",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "3-4-3-4-3-4-3 (5184 ways); Roundhouse Kick; 3 Scatter→Title Fight both-ways; buys 68–498×; max 25,000×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/the-cage",
+      "local_path": "sources/nolimit/the-cage/page.html",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "96.05% RTP, 25000 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_The_Cage_462344d3f6.pdf",
+      "local_path": "sources/nolimit/the-cage/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "full fighter list beyond fight 5",
+    "exact starting spin count"
+  ],
+  "thumbnail": "thumbs/nolimit-the-cage.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

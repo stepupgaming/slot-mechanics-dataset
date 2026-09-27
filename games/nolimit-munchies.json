@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:14:17Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Munchies",
+    "slug": "nolimit-munchies",
+    "provider_game_id": "Munchies",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Munchies",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/munchies"
+  },
+  "grid": {
+    "rows": 1,
+    "cols": 1,
+    "rows_min": 1,
+    "rows_max": 1,
+    "layout_notes": "1–4 single-symbol reels (booster activates 2 or 4); not classic grid."
+  },
+  "win_system": {
+    "type": "other",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Multiplier×bet on non-blank; Linked Wins transfer/add across 2/4 reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Linked Wins",
+        "how_it_works": "On 2/4 reels: higher mult transfers to next; all mults summed."
+      },
+      {
+        "name": "Devour lock",
+        "how_it_works": "Highest mult locks above reels and pays each Devour spin."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Main→10 It’s Alive!!; during Alive→Devour +5 spins/Bonus.",
+        "params": {
+          "count_for_trigger": 1
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Reel multipliers",
+        "behavior": "Blank=0; else ×bet; Devour locks max.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "10,000× symbol",
+        "behavior": "God Mode chase.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "1-reel (or 2/4 via 4×/16×) mult machine. Bonus→10 It’s Alive; Bonus in Alive→Devour (+5/Bonus, lock max mult). God Mode 2,500×. Caps 10k/20k/40k by reel count.",
+    "phases": [
+      {
+        "name": "Configure reels / God",
+        "order": 1,
+        "what_happens": "1 default; 2 reels 4×; 4 reels 16×; God 2500×.",
+        "ends_when": "Spin",
+        "state_changes": "Active reels"
+      },
+      {
+        "name": "Spin mult/blank",
+        "order": 2,
+        "what_happens": "Pay mult or blank.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "It’s Alive / Devour",
+        "order": 3,
+        "what_happens": "FS if Bonus.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Sum of reel mults × bet.",
+    "notes": "CMS only; page RTP missing."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "It's Alive!! Spins",
+        "trigger": "Bonus in main.",
+        "spins_awarded": "10",
+        "retrigger": "Bonus→Devour +5 each.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "end_condition": "Spins done or max.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Alive."
+          }
+        ],
+        "effects": "10 FS."
+      },
+      {
+        "name": "Devour Spins",
+        "trigger": "Bonus during Alive.",
+        "spins_awarded": "+5 per Bonus",
+        "retrigger": "+5/Bonus.",
+        "sticky_or_persistent_state": "Highest mult locked and paid each spin.",
+        "progressive_state": null,
+        "end_condition": "Spins done or max.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Devour."
+          }
+        ],
+        "effects": "Locked mult FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "2 Reels",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 4.0,
+      "cost_text": "4×",
+      "effects": "2 active reels.",
+      "params": {}
+    },
+    {
+      "name": "4 Reels",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 16.0,
+      "cost_text": "16×",
+      "effects": "4 active reels.",
+      "params": {}
+    },
+    {
+      "name": "God Mode",
+      "trigger": "Buy",
+      "when": "before_spin",
+      "cost_multiplier": 2500.0,
+      "cost_text": "2,500×",
+      "effects": "Chase 10,000× symbol.",
+      "params": {}
+    },
+    {
+      "name": "Max Win",
+      "trigger": "Cap by reel count",
+      "effects": "10k/20k/40k.",
+      "params": {
+        "max_win_multiplier": 40000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "2/4 Reels / God",
+        "cost_multiplier": null,
+        "cost_text": "4× / 16× / 2,500×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 40000.0,
+    "max_win_notes": "40,000×",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "medium",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/munchies",
+      "local_path": "sources/nolimit/munchies/cms_features.txt",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "1/2/4 reel multiplier machine; Bonus→10 It’s Alive; +Bonus→Devour; boosters 4/16×; God Mode 2500×; max 10k/20k/40k by reels."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/munchies",
+      "local_path": "sources/nolimit/munchies/page.html",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "None% RTP, 40000 xBet MAX."
+    }
+  ],
+  "unknowns": [
+    "RTP",
+    "exact mult distribution"
+  ],
+  "thumbnail": "thumbs/nolimit-munchies.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:12:23Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Serial",
+    "slug": "nolimit-serial",
+    "provider_game_id": "Serial",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/Serial",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/serial"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 5,
+    "layout_notes": "CMS base 3-3-3-3-3; Search opens enhancers → 3-5-5-5-3. Page meta 3-7 noisy."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with Infectious xWays from enhancers."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Wins sticky; improving respin continues; enhancers open L→R top/bottom per respin."
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Search: enhancers reels 2–4 → 3-5-5-5-3."
+    },
+    "other": [
+      {
+        "name": "Enhancer Cells",
+        "how_it_works": "On respin: xWays 2–4 / xNudge Wild / Wild / characters."
+      },
+      {
+        "name": "xSplit® Wild",
+        "how_it_works": "Reel 5 only 2× Wild; splits row; doubles Scatter spin numbers / xNudge mult / xWays size."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / xNudge / xSplit Wild",
+        "behavior": "Enhancer or reel-5 split.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3→The Search (spins = sum of Scatter numbers); 3+xSplit→The Kill (jumping Wild reel 5 +2).",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xNudge",
+        "behavior": "+1/nudge; doubled if split.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xBizarre",
+        "behavior": "After >18,700×: up to 3× 50/50 for +18,700× each; wrong choice keeps prior.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; sticky win respins open enhancers. 3 Scatter→The Search (3-5-5-5-3); xSplit upgrades The Kill. Buys 78–480×. xBizarre ladder. Cap 74,800×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Bonus 78–480×.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + respin enhancers",
+        "order": 2,
+        "what_happens": "Sticky wins; open cells.",
+        "ends_when": "Resolved",
+        "state_changes": "Enhancers"
+      },
+      {
+        "name": "Search / Kill / xBizarre",
+        "order": 3,
+        "what_happens": "FS or post-win gamble.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after infectious/splits.",
+    "notes": "CMS only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "The Search",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "Sum of Scatter numbers",
+        "retrigger": "xSplit → The Kill +2.",
+        "sticky_or_persistent_state": "Grid 3-5-5-5-3 enhancers open.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 74,800×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Search FS."
+          }
+        ],
+        "effects": "FS expanded."
+      },
+      {
+        "name": "The Kill",
+        "trigger": "3 Scatter + xSplit (or upgrade).",
+        "spins_awarded": "Search count +2",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Search features + jumping Wild reel 5.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "The Kill."
+          }
+        ],
+        "effects": "FS + sticky split wild."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "78×–480×",
+      "effects": "Buy Search/Kill.",
+      "params": {}
+    },
+    {
+      "name": "xBizarre",
+      "trigger": ">18,700×",
+      "when": "after_win",
+      "cost_text": null,
+      "effects": "Up to 3× 50/50 for +18,700×.",
+      "params": {}
+    },
+    {
+      "name": "Cap",
+      "trigger": "Cap",
+      "effects": "Max 74,800×.",
+      "params": {
+        "max_win_multiplier": 74800
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus features",
+        "cost_multiplier": null,
+        "cost_text": "78×–480×",
+        "effects": "Direct bonus.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact lines not printed."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 74800.0,
+    "max_win_notes": "74,800×",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/serial",
+      "local_path": "sources/nolimit/serial/cms_features.txt",
+      "extracted_at": "2026-09-27T19:12:23Z",
+      "quote_or_excerpt": "5×3 enhancers; win respins; 3 Scatter→The Search; +xSplit→The Kill; xBizarre after 18700×; buys 78–480×; max 74,800×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/serial",
+      "local_path": "sources/nolimit/serial/page.html",
+      "extracted_at": "2026-09-27T19:12:23Z",
+      "quote_or_excerpt": "96.07% RTP, 74800 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Serial_688f4d7117.pdf",
+      "local_path": null,
+      "extracted_at": "2026-09-27T19:12:23Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "exact Scatter number ranges",
+    "buy line items"
+  ],
+  "thumbnail": "thumbs/nolimit-serial.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

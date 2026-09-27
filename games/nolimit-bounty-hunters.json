@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:14:17Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Bounty Hunters",
+    "slug": "nolimit-bounty-hunters",
+    "provider_game_id": "BountyHunters",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/BountyHunters",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/bounty-hunters"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official rowsReels 3-3-3-3-3."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways base; Raid/Showdown are hold-style hunter/thug collects."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Mexican Standoff: Bonus on reel1+5 same row → row respin; sticky Wild ×6."
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Raid 4×5 center + side hunters; Showdown 5×5 + Hard Honcho."
+    },
+    "other": [
+      {
+        "name": "Bounty Hunter Wild",
+        "how_it_works": "3-high reels 2–4; nudge +1 mult; additive."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Bounty Hunter Wild",
+        "behavior": "Nudge +1/step.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter / Bonus",
+        "behavior": "Scatter mid 2–4: 3→Raid; Bonus reel1+5 same row with 3 Scatter→Showdown; Bonus1+5→Mexican Standoff.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Hunter / Standoff ×6",
+        "behavior": "Hunters ≤12×; Standoff sticky ×6.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Thug/Boss coins",
+        "behavior": "Raid collect when Hunter faces; Showdown Hard Honcho 6×+.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; Bounty Hunter Wilds. Mexican Standoff row respin. 3 Scatter→Raid Spins; with Bonus row→Showdown. Buys 100/136/850/175×. Cap 52,310×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Raid/Standoff/Showdown/Lucky.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin / Standoff",
+        "order": 2,
+        "what_happens": "Nudge wilds; maybe Mexican Standoff.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Raid / Showdown",
+        "order": 3,
+        "what_happens": "Hunter collect FS.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways; bonus coin×hunter mults.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Mexican Standoff",
+        "trigger": "Bonus reel1+5 same row.",
+        "spins_awarded": "Respins until no new Bonus",
+        "retrigger": "Bonus +respin sticky Wild.",
+        "sticky_or_persistent_state": "Row only; Bonus→sticky Wild ×6.",
+        "progressive_state": null,
+        "end_condition": "No more Bonus / 52,310×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Row Standoff."
+          }
+        ],
+        "effects": "Row respin."
+      },
+      {
+        "name": "Raid Spins",
+        "trigger": "3 Scatter mid.",
+        "spins_awarded": "3 (reset on Thug/Boss)",
+        "retrigger": "Thug/Boss land reset 3.",
+        "sticky_or_persistent_state": "4×5 center + side/bottom Hunters.",
+        "progressive_state": "Coin collects.",
+        "end_condition": "No spins / cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Raid."
+          }
+        ],
+        "effects": "Hold collect."
+      },
+      {
+        "name": "Showdown Spins",
+        "trigger": "3 Scatter + Bonus same row.",
+        "spins_awarded": "3 (reset on Thug)",
+        "retrigger": "Thug reset.",
+        "sticky_or_persistent_state": "5×5 + Hard Honcho 6× + hunters.",
+        "progressive_state": null,
+        "end_condition": "No spins / cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Showdown."
+          }
+        ],
+        "effects": "Boss hold."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Raid buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 100.0,
+      "cost_text": "100×",
+      "effects": "Raid Spins.",
+      "params": {}
+    },
+    {
+      "name": "Mexican Standoff buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 136.0,
+      "cost_text": "136×",
+      "effects": "Standoff.",
+      "params": {}
+    },
+    {
+      "name": "Showdown buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 850.0,
+      "cost_text": "850×",
+      "effects": "Showdown.",
+      "params": {}
+    },
+    {
+      "name": "Lucky Draw",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 175.0,
+      "cost_text": "175×",
+      "effects": "Lucky Draw.",
+      "params": {}
+    },
+    {
+      "name": "Revelations",
+      "trigger": "Cap",
+      "effects": "Max 52,310×.",
+      "params": {
+        "max_win_multiplier": 52310
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Raid / Standoff / Showdown / Lucky",
+        "cost_multiplier": null,
+        "cost_text": "100× / 136× / 850× / 175×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 52310.0,
+    "max_win_notes": "52,310×",
+    "rtp_percent": 96.07,
+    "rtp_notes": "96.07% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/bounty-hunters",
+      "local_path": "sources/nolimit/bounty-hunters/cms_features.txt",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "5×3; Bounty Hunter Wild nudge; Mexican Standoff; 3 Scatter→Raid; +Bonus row→Showdown; buys 100/136/850/175×; max 52,310×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/bounty-hunters",
+      "local_path": "sources/nolimit/bounty-hunters/page.html",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "96.07% RTP, 52310 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Bounty_Hunters_49235e74d3.pdf",
+      "local_path": "sources/nolimit/bounty-hunters/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "full boss behavior table"
+  ],
+  "thumbnail": "thumbs/nolimit-bounty-hunters.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

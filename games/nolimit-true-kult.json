@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:12:23Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "True Kult",
+    "slug": "nolimit-true-kult",
+    "provider_game_id": "TrueKult",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TrueKult",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/true-kult"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official 3-3-3-3-3; 2+ Scatters open reel 6 → 729 ways."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 243,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "243 ways base; 729 when reel 6 open."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "2+ Scatters open reel 6."
+    },
+    "other": [
+      {
+        "name": "Baptism By Fire",
+        "how_it_works": "Stack reveals high Devotee or Scatter (Skull Wild in bonus)."
+      },
+      {
+        "name": "True Believer Wilds",
+        "how_it_works": "3-stack reel 6; lows on 2–5→Wild; becomes Devotee."
+      },
+      {
+        "name": "All Seeing Eye frames",
+        "how_it_works": "Seance 3 / Sacrifice 4 moving frames on reels 2–5 split symbols in frame."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "True Believer / Skull Wild",
+        "behavior": "Reel 6 / +1 spin + frame in FS.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "2+ open reel 6; 3→7 Seance; 4→10 Sacrifice; Seance reel-6 Scatter→Sacrifice.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Tarot Multipliers",
+        "behavior": "Reel 6: ×5/10/15/20/50/99 on Devotee; sticky in Sacrifice.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; Baptism stacks; 2+ Scatter opens reel 6. 3→7 Seance; 4→10 Sacrifice with Eye frames + Tarot. Buys 68/400/234×. Cap 23,237×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "Seance/Sacrifice/Lucky.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin + reel 6",
+        "order": 2,
+        "what_happens": "Maybe open reel 6 / Believer/Tarot.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Seance / Sacrifice",
+        "order": 3,
+        "what_happens": "FS with Eye frames.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways (729 with reel 6).",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "The Seance",
+        "trigger": "3 Scatter.",
+        "spins_awarded": "7",
+        "retrigger": "Skull Wild +1 + extra frame.",
+        "sticky_or_persistent_state": "3 Eye frames; reel 6 open; Tarot saves unused.",
+        "progressive_state": "Tarot counts.",
+        "end_condition": "Spins done or 23,237×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "7 Seance."
+          }
+        ],
+        "effects": "7 FS."
+      },
+      {
+        "name": "Sacrifice Spins",
+        "trigger": "4 Scatter (or Seance reel-6 Scatter).",
+        "spins_awarded": "10",
+        "retrigger": "Skull +1 + frame.",
+        "sticky_or_persistent_state": "4 Eye frames; Tarot sticky remainder.",
+        "progressive_state": "Tarot.",
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Sacrifice."
+          }
+        ],
+        "effects": "10 FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "The Seance buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 68.0,
+      "cost_text": "68×",
+      "effects": "7 Seance.",
+      "params": {}
+    },
+    {
+      "name": "Sacrifice buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 400.0,
+      "cost_text": "400×",
+      "effects": "10 Sacrifice.",
+      "params": {}
+    },
+    {
+      "name": "Lucky Draw",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 234.0,
+      "cost_text": "234×",
+      "effects": "Lucky Draw.",
+      "params": {}
+    },
+    {
+      "name": "Left Hand Path",
+      "trigger": "Cap",
+      "effects": "Max 23,237×.",
+      "params": {
+        "max_win_multiplier": 23237
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Seance / Sacrifice / Lucky",
+        "cost_multiplier": null,
+        "cost_text": "68× / 400× / 234×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 23237.0,
+    "max_win_notes": "23,237×",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/true-kult",
+      "local_path": "sources/nolimit/true-kult/cms_features.txt",
+      "extracted_at": "2026-09-27T19:12:23Z",
+      "quote_or_excerpt": "5×3→729 ways with reel 6; 3 Scatter→7 Seance; 4→10 Sacrifice; Tarot ×5–99; buys 68/400/234×; max 23,237×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/true-kult",
+      "local_path": "sources/nolimit/true-kult/page.html",
+      "extracted_at": "2026-09-27T19:12:23Z",
+      "quote_or_excerpt": "96.06% RTP, 23237 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_True_Kult_b08592029b.pdf",
+      "local_path": "sources/nolimit/true-kult/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:12:23Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [],
+  "thumbnail": "thumbs/nolimit-true-kult.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:13:07Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "East Coast VS West Coast",
+    "slug": "nolimit-east-vs-west",
+    "provider_game_id": "EastVsWest",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/EastVsWest",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/east-vs-west"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official 3x5."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with Infectious xWays / enhancers."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Drive-By Respin on 2 Bonus: one enhancer."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Enhancers",
+        "how_it_works": "xWays, xNudge Wilds, Multipliers, Linked Reels, Infectious xWays (East every spin)."
+      },
+      {
+        "name": "Top bar unlock",
+        "how_it_works": "Bonus in FS +2 spins + unlock position; all 5→Coast to Coast."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "Via West enhancers.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "2→Drive-By; 3–5→East or West Coast (pick on buy); unlock bar→Coast to Coast.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Enhancer multipliers",
+        "behavior": "West Coast enhancer option.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; 2 Bonus Drive-By enhancer respin; 3–5 Bonus→East (Infectious every spin) or West (random enhancer) Coast; unlock 5 bar slots→Coast to Coast (2 enhancers). Buys 80×/420×. Cap 30,618×.",
+    "phases": [
+      {
+        "name": "Optional buy",
+        "order": 1,
+        "what_happens": "80× pick East/West 8 spins or 420× Coast to Coast 12.",
+        "ends_when": "Spin",
+        "state_changes": "Stake × cost"
+      },
+      {
+        "name": "Spin / Drive-By",
+        "order": 2,
+        "what_happens": "Maybe 2 Bonus respin.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Coast FS",
+        "order": 3,
+        "what_happens": "East/West/Coast to Coast.",
+        "ends_when": "End",
+        "state_changes": "Top bar"
+      }
+    ],
+    "win_evaluation": "Ways after enhancers.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "East Coast Spins",
+        "trigger": "3–5 Bonus (East).",
+        "spins_awarded": "8 on buy; natural via 3–5 Bonus",
+        "retrigger": "Bonus +2 + unlock left bar.",
+        "sticky_or_persistent_state": "Infectious xWays every spin; left top bar locks.",
+        "progressive_state": "Bar unlock→Coast to Coast.",
+        "end_condition": "Spins done or 30,618×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "East Coast."
+          }
+        ],
+        "effects": "Infectious FS."
+      },
+      {
+        "name": "West Coast Spins",
+        "trigger": "3–5 Bonus (West).",
+        "spins_awarded": "8 on buy",
+        "retrigger": "Bonus +2 + unlock right bar.",
+        "sticky_or_persistent_state": "One enhancer/spin from set.",
+        "progressive_state": "Bar→Coast to Coast.",
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "West Coast."
+          }
+        ],
+        "effects": "Enhancer FS."
+      },
+      {
+        "name": "Coast to Coast Spins",
+        "trigger": "All 5 top-bar unlocked (or buy 5 Bonus).",
+        "spins_awarded": "12 on buy",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Two enhancers simultaneously.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Coast to Coast."
+          }
+        ],
+        "effects": "Dual enhancer FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Feature Buy East/West",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 80.0,
+      "cost_text": "80×",
+      "effects": "3 Bonus → pick 8 East or West (+chance 4th Bonus +2).",
+      "params": {}
+    },
+    {
+      "name": "Feature Buy Coast to Coast",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 420.0,
+      "cost_text": "420×",
+      "effects": "5 Bonus → 12 Coast to Coast.",
+      "params": {}
+    },
+    {
+      "name": "Cap",
+      "trigger": "Cap",
+      "effects": "Max 30,618×.",
+      "params": {
+        "max_win_multiplier": 30618
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "East/West / Coast to Coast",
+        "cost_multiplier": null,
+        "cost_text": "80× / 420×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 30618.0,
+    "max_win_notes": "30,618×",
+    "rtp_percent": 96.04,
+    "rtp_notes": "96.04% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/east-vs-west",
+      "local_path": "sources/nolimit/east-vs-west/cms_features.txt",
+      "extracted_at": "2026-09-27T19:13:07Z",
+      "quote_or_excerpt": "5×3; Drive-By on 2 Bonus; 3–5 Bonus→East/West Coast; unlock top bar→Coast to Coast; buys 80/420×; max 30,618×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/east-vs-west",
+      "local_path": "sources/nolimit/east-vs-west/page.html",
+      "extracted_at": "2026-09-27T19:13:07Z",
+      "quote_or_excerpt": "96.04% RTP, 30618 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_East_Coast_vs_West_Coast_00420_4cc4340b8d.pdf",
+      "local_path": "sources/nolimit/east-vs-west/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:13:07Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "natural spin counts for 3/4/5 Bonus without buy"
+  ],
+  "thumbnail": "thumbs/nolimit-east-vs-west.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:14:17Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Little Bighorn",
+    "slug": "nolimit-little-bighorn",
+    "provider_game_id": "LittleBighorn",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/LittleBighorn",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/little-bighorn"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": 2,
+    "rows_max": 5,
+    "layout_notes": "Official 2-5x5 style with tall 5-high scalp reel."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with expanding Totem Wilds."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "No Mercy full on reel5→Spirit Call Respin; moves to reel1; reveals Chieftain Wild type."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Scalp Wild (xMount)",
+        "how_it_works": "5-high reel only; soldiers→Wild; nudge expand +1 mult per scalp."
+      },
+      {
+        "name": "Totem Scatter",
+        "how_it_works": "1–2 base→expanding Wild; 3→Scalp FS; in FS expand Wild +1 spin."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Scalp / Totem expanding / Chieftain Wilds",
+        "behavior": "Sitting Bull expand; Crazy Horse +1 mult/land; Two Moon normal.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Totem / No Mercy",
+        "behavior": "3 Totem→8 Scalp FS; 3 Totem+No Mercy→10 Spirit Call; No Mercy alone→Spirit Call Respin.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Scalp sticky win mult",
+        "behavior": "+1 per scalped symbol in Scalp FS.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Irregular grid; Scalp Wild; Totem/No Mercy. Scalp xBet +50%. 3 Totem→8 Scalp FS; +No Mercy→10 Spirit Call. Buys 77–490×. Cap 25,676×.",
+    "phases": [
+      {
+        "name": "Optional Scalp xBet/buy",
+        "order": 1,
+        "what_happens": "+50% or bonus buy.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.5"
+      },
+      {
+        "name": "Spin + scalp/totem",
+        "order": 2,
+        "what_happens": "Maybe Spirit Call Respin.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Scalp / Spirit Call FS",
+        "order": 3,
+        "what_happens": "FS tiers.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after scalp/expand wilds.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Scalp Freespins",
+        "trigger": "3 Totem.",
+        "spins_awarded": "8",
+        "retrigger": "Totem +1; No Mercy→Spirit Call +2.",
+        "sticky_or_persistent_state": "Scalp Wild +1 sticky win mult per scalp.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 25,676×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "8 Scalp FS."
+          }
+        ],
+        "effects": "8 FS."
+      },
+      {
+        "name": "Spirit Call Freespins",
+        "trigger": "3 Totem + No Mercy.",
+        "spins_awarded": "10",
+        "retrigger": "Totem +1.",
+        "sticky_or_persistent_state": "Scalp features + No Mercy sticky reel1→Chieftain each spin.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "10 Spirit Call."
+          }
+        ],
+        "effects": "10 FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Scalp xBet®",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.5,
+      "cost_text": "+50%",
+      "effects": "Totem Scatter reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "77×–490×",
+      "effects": "Buy Scalp/Spirit Call.",
+      "params": {}
+    },
+    {
+      "name": "Firewater Party",
+      "trigger": "Cap",
+      "effects": "Max 25,676×.",
+      "params": {
+        "max_win_multiplier": 25676
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus features",
+        "cost_multiplier": null,
+        "cost_text": "77×–490×",
+        "effects": "Direct bonus.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.5,
+    "effects": "Scalp xBet +50%.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25676.0,
+    "max_win_notes": "25,676×",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/little-bighorn",
+      "local_path": "sources/nolimit/little-bighorn/cms_features.txt",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "2-5×5; Scalp Wild xMount; Totem→Scalp FS 8; +No Mercy→Spirit Call 10; Scalp xBet +50%; buys 77–490×; max 25,676×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/little-bighorn",
+      "local_path": "sources/nolimit/little-bighorn/page.html",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "96.06% RTP, 25676 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Little_Bighorn_47f136b14b.pdf",
+      "local_path": "sources/nolimit/little-bighorn/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "exact column layout",
+    "buy line items"
+  ],
+  "thumbnail": "thumbs/nolimit-little-bighorn.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:13:07Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "The Rave",
+    "slug": "nolimit-the-rave",
+    "provider_game_id": "TheRave",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TheRave",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/the-rave"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": 3,
+    "rows_max": 3,
+    "layout_notes": "Official 3x5."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways with xWays/xSplit enhancers."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Double xWays® Wild",
+        "how_it_works": "Two xWays same reel → stacked Wild 6–11 high."
+      },
+      {
+        "name": "Enhancer Cells",
+        "how_it_works": "2 Scatter→enhancers; Murder 3/4 cells; God is a DJ 5 sticky bottom-mid cells (highs/xWays/Wild/xSplit only)."
+      },
+      {
+        "name": "Mashup/Crossfader/Sidechain",
+        "how_it_works": "Random in Murder; guaranteed each spin in God is a DJ."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild / Double xWays Wild / xSplit Wild",
+        "behavior": "As CMS.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "2→enhancers; 3–4→Murder; 5→God is a DJ; extras upgrade.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xSplit reel mult (God is a DJ)",
+        "behavior": "xSplit on reels 2–4 +2 reel mult.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "5×3 ways; xBet +20% Scatter reel 2. 3–4 Scatter→Murder on Dancefloor (3/4 enhancers); 5→God is a DJ. Buys 68–522×. Cap 41,500×.",
+    "phases": [
+      {
+        "name": "Optional xBet/buy",
+        "order": 1,
+        "what_happens": "+20% or bonus buy.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×1.2"
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "xWays/xSplit/Double Ways.",
+        "ends_when": "Resolved",
+        "state_changes": null
+      },
+      {
+        "name": "Murder / God is a DJ",
+        "order": 3,
+        "what_happens": "FS tiers.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Ways after enhancers.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Murder on the Dancefloor",
+        "trigger": "3–4 Scatter.",
+        "spins_awarded": null,
+        "retrigger": "4th Scatter +1 cell +1 spin; 5th→God is a DJ +2.",
+        "sticky_or_persistent_state": "3 or 4 Enhancer Cells; random Mashup/Crossfader/Sidechain.",
+        "progressive_state": null,
+        "end_condition": "Spins done or 41,500×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Murder FS."
+          }
+        ],
+        "effects": "Enhancer FS."
+      },
+      {
+        "name": "God is a DJ",
+        "trigger": "5 Scatter.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "5 Enhancer Cells sticky; guaranteed Mashup/Sidechain/Crossfader each spin.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "God is a DJ."
+          }
+        ],
+        "effects": "Top FS."
+      }
+    ],
+    "notes": "Exact base spin counts not printed."
+  },
+  "features": [
+    {
+      "name": "xBet",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 1.2,
+      "cost_text": "+20%",
+      "effects": "Scatter reel 2.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "68×–522×",
+      "effects": "Buy bonus features.",
+      "params": {}
+    },
+    {
+      "name": "Busted",
+      "trigger": "Cap",
+      "effects": "Max 41,500×.",
+      "params": {
+        "max_win_multiplier": 41500
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus features",
+        "cost_multiplier": null,
+        "cost_text": "68×–522×",
+        "effects": "Direct bonus.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.2,
+    "effects": "xBet +20%.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 41500.0,
+    "max_win_notes": "41,500×",
+    "rtp_percent": 96.09,
+    "rtp_notes": "96.09% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/the-rave",
+      "local_path": "sources/nolimit/the-rave/cms_features.txt",
+      "extracted_at": "2026-09-27T19:13:07Z",
+      "quote_or_excerpt": "5×3; xBet +20%; Double xWays Wild; 3–4 Scatter Murder; 5→God is a DJ; buys 68–522×; max 41,500×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/the-rave",
+      "local_path": "sources/nolimit/the-rave/page.html",
+      "extracted_at": "2026-09-27T19:13:07Z",
+      "quote_or_excerpt": "96.09% RTP, 41500 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_The_Rave_2c8a181eb5.pdf",
+      "local_path": "sources/nolimit/the-rave/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:13:07Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "exact FS spin counts"
+  ],
+  "thumbnail": "thumbs/nolimit-the-rave.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

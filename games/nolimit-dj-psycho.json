@@ -1,0 +1,262 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:14:17Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "DJ Psycho",
+    "slug": "nolimit-dj-psycho",
+    "provider_game_id": "DjPsycho",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/DjPsycho",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/dj-psycho"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 4,
+    "rows_min": 4,
+    "rows_max": 4,
+    "layout_notes": "Official rowsReels 4-4-4-4."
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 3,
+    "direction": null,
+    "notes": "Clusters ≥3 H/V; Crossed double-value path to Wild."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Winning clusters destroy; new appear."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Beat Bar",
+        "how_it_works": "Per-colour +1 on connect; 1–5 colours armed as FS triggers; sticky in avalanches/FS."
+      },
+      {
+        "name": "xKnob/Break/Bite/Drop/xBPM",
+        "how_it_works": "Feature symbols transform/cross/path/Wild/row size×2."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xKnob→Wild / Crossed→Wild",
+        "behavior": "Second transform → Wild.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Colour / xKnob / general (Psycho)",
+        "behavior": "Geez at colour ×3; Psycho when all ×5; Psycho sticky general mult.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "Beat Bar",
+        "behavior": "Colour progress.",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "Break/Bite/Drop/xBPM",
+        "behavior": "As CMS.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "4×4 clusters; Beat Bar colours. Armed colour ×3→5 Geez Spins; all colours ×5→Psycho (17 if from base). Boosted xBet +235%. Buys 50/77/209/420×. Cap 25,420×.",
+    "phases": [
+      {
+        "name": "Optional Boosted xBet/buy",
+        "order": 1,
+        "what_happens": "+235% or Gees/Psycho buys.",
+        "ends_when": "Spin",
+        "state_changes": "Stake ×3.35"
+      },
+      {
+        "name": "Cluster + Beat Bar",
+        "order": 2,
+        "what_happens": "Features; colour progress.",
+        "ends_when": "Resolved",
+        "state_changes": "Beat Bar"
+      },
+      {
+        "name": "Geez / Psycho",
+        "order": 3,
+        "what_happens": "FS tiers.",
+        "ends_when": "End",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Clusters with crossed/feature transforms.",
+    "notes": "CMS + GameSheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "GEES Spins",
+        "trigger": "Armed colour reaches ×3.",
+        "spins_awarded": "5 (+2 per other colour hitting ×3)",
+        "retrigger": "+2 on other ×3.",
+        "sticky_or_persistent_state": "Beat Bar sticky.",
+        "progressive_state": "Colours→Psycho at all ×5.",
+        "end_condition": "Spins done / Psycho / 25,420×.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "5 Geez."
+          }
+        ],
+        "effects": "5 FS."
+      },
+      {
+        "name": "PSYCHO Spins",
+        "trigger": "All colours ×5 (in Geez or base).",
+        "spins_awarded": "17 if from base; else continue",
+        "retrigger": null,
+        "sticky_or_persistent_state": "General mult sticky; hit guarantees feature next avalanche.",
+        "progressive_state": null,
+        "end_condition": "Spins done or cap.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Psycho Spins."
+          }
+        ],
+        "effects": "Top FS."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Boosted xBet®",
+      "trigger": "Player",
+      "when": "before_spin",
+      "cost_multiplier": 3.35,
+      "cost_text": "+235%",
+      "effects": "3× Geez / >7× Psycho odds.",
+      "params": {}
+    },
+    {
+      "name": "Gees Spinz buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 50.0,
+      "cost_text": "50×",
+      "effects": "Geez Spins.",
+      "params": {}
+    },
+    {
+      "name": "Lucky Draw 1/2",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "77× / 209×",
+      "effects": "Lucky Draws.",
+      "params": {}
+    },
+    {
+      "name": "Psycho Spinz buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_multiplier": 420.0,
+      "cost_text": "420×",
+      "effects": "Psycho Spins.",
+      "params": {}
+    },
+    {
+      "name": "Remixed",
+      "trigger": "Cap",
+      "effects": "Max 25,420×.",
+      "params": {
+        "max_win_multiplier": 25420
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Gees / Lucky / Psycho",
+        "cost_multiplier": null,
+        "cost_text": "50× / 77× / 209× / 420×",
+        "effects": "As CMS.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 3.35,
+    "effects": "Boosted xBet +235%.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25420.0,
+    "max_win_notes": "25,420×",
+    "rtp_percent": 96.05,
+    "rtp_notes": "96.05% (page).",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/dj-psycho",
+      "local_path": "sources/nolimit/dj-psycho/cms_features.txt",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "4×4 clusters ≥3; Beat Bar colours; Geez at ×3; Psycho at all ×5; Boosted xBet +235%; buys 50/77/209/420×; max 25,420×."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/dj-psycho",
+      "local_path": "sources/nolimit/dj-psycho/page.html",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "96.05% RTP, 25420 xBet MAX."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_DJ_Psycho_661b558b8a.pdf",
+      "local_path": "sources/nolimit/dj-psycho/GameSheet.pdf",
+      "extracted_at": "2026-09-27T19:14:17Z",
+      "quote_or_excerpt": "Official GameSheet."
+    }
+  ],
+  "unknowns": [
+    "Psycho spin count when upgrading from Geez"
+  ],
+  "thumbnail": "thumbs/nolimit-dj-psycho.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
