@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T15:35:10Z",
+  "updated_at": "2026-09-27T15:39:14Z",
   "game_count": 495,
   "by_provider": {
     "Pragmatic Play": 250,
@@ -39,7 +39,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-arc-lord.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-banana-farm",
@@ -48,7 +51,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-banana-farm.json",
       "win_system_type": "paylines",
-      "grid": "4x6"
+      "grid": "4\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-barrel-bonanza",
@@ -57,7 +63,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-barrel-bonanza.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-blademaster",
@@ -66,7 +75,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-blademaster.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "backseat-blaze-buddies",
@@ -75,7 +87,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-blaze-buddies.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-chicken-man",
@@ -84,7 +99,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-chicken-man.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-chocolate-rocket",
@@ -93,7 +111,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-chocolate-rocket.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-clumsy-cowboys",
@@ -102,7 +123,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-clumsy-cowboys.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-commander-of-tridents",
@@ -111,7 +135,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-commander-of-tridents.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "backseat-crystal-robot",
@@ -120,7 +147,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-crystal-robot.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-desert-temple",
@@ -128,7 +158,10 @@
       "provider": "Backseat Gaming",
       "confidence_overall": "high",
       "path": "games/backseat-desert-temple.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-diamond-mole",
@@ -137,7 +170,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-diamond-mole.json",
       "win_system_type": "clusters",
-      "grid": "6x6"
+      "grid": "6\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-fireborn",
@@ -146,7 +182,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-fireborn.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-ghostly-hallows",
@@ -155,7 +194,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-ghostly-hallows.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-gladius-death-or-glory",
@@ -163,7 +205,10 @@
       "provider": "Backseat Gaming",
       "confidence_overall": "high",
       "path": "games/backseat-gladius-death-or-glory.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-halls-of-odin",
@@ -172,7 +217,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-halls-of-odin.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-home-of-thor",
@@ -180,7 +228,10 @@
       "provider": "Backseat Gaming",
       "confidence_overall": "high",
       "path": "games/backseat-home-of-thor.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-hoot-shot-the-sheriff",
@@ -188,7 +239,10 @@
       "provider": "Backseat Gaming",
       "confidence_overall": "high",
       "path": "games/backseat-hoot-shot-the-sheriff.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-infernus",
@@ -197,7 +251,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-infernus.json",
       "win_system_type": "paylines",
-      "grid": "2x2"
+      "grid": "2\u00d72",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-lord-venom",
@@ -206,7 +263,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-lord-venom.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-mystery-bats",
@@ -215,7 +275,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-mystery-bats.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-neon-frames",
@@ -224,7 +287,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-neon-frames.json",
       "win_system_type": "clusters",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-old-drac",
@@ -232,7 +298,10 @@
       "provider": "Backseat Gaming",
       "confidence_overall": "high",
       "path": "games/backseat-old-drac.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-old-gun",
@@ -241,7 +310,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-old-gun.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-pirate-bonanza-2",
@@ -250,7 +322,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-pirate-bonanza-2.json",
       "win_system_type": "clusters",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-pirate-bonanza",
@@ -259,7 +334,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-pirate-bonanza.json",
       "win_system_type": "pay_anywhere",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-pirate-rocket",
@@ -268,7 +346,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-pirate-rocket.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-power-pops",
@@ -277,7 +358,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-power-pops.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-pyrofox",
@@ -286,7 +370,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-pyrofox.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-roman-bonanza",
@@ -294,7 +381,10 @@
       "provider": "Backseat Gaming",
       "confidence_overall": "high",
       "path": "games/backseat-roman-bonanza.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-shadow-strike",
@@ -303,7 +393,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-shadow-strike.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-sleepy-grandpa",
@@ -312,7 +405,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-sleepy-grandpa.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "backseat-space-zoo",
@@ -321,7 +417,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-space-zoo.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-super-twins",
@@ -330,7 +429,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-super-twins.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "backseat-the-cursed-king",
@@ -339,7 +441,10 @@
       "confidence_overall": "high",
       "path": "games/backseat-the-cursed-king.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-2-wild-2-die",
@@ -348,7 +453,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-2-wild-2-die.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-3-cursed-chests",
@@ -357,7 +465,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-3-cursed-chests.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-3-magic-piggy-banks-hold-win",
@@ -366,7 +477,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-3-magic-piggy-banks-hold-win.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-aiko-and-the-wind-spirit",
@@ -375,7 +489,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-aiko-and-the-wind-spirit.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-aliens-among-us",
@@ -384,7 +501,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-aliens-among-us.json",
       "win_system_type": "paylines",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-alpha-eagle",
@@ -393,7 +513,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-alpha-eagle.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-arizona-james-and-the-lost-relics",
@@ -402,7 +525,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-arizona-james-and-the-lost-relics.json",
       "win_system_type": "clusters",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-army-of-ares",
@@ -411,7 +537,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-army-of-ares.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-aztec-twist",
@@ -420,7 +549,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-aztec-twist.json",
       "win_system_type": "clusters",
-      "grid": "8x5"
+      "grid": "8\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-bash-bros",
@@ -429,7 +561,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-bash-bros.json",
       "win_system_type": "ways",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-beam-boys",
@@ -437,7 +572,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-beam-boys.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-beast-below",
@@ -446,7 +584,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-beast-below.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-benny-the-beer",
@@ -454,7 +595,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-benny-the-beer.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-bloodthirst",
@@ -463,7 +607,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-bloodthirst.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-booze-bash",
@@ -472,7 +619,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-booze-bash.json",
       "win_system_type": "ways",
-      "grid": "4x6"
+      "grid": "4\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-born-wild",
@@ -481,7 +631,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-born-wild.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-bouncy-bombs",
@@ -490,7 +643,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-bouncy-bombs.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-break-bones",
@@ -499,7 +655,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-break-bones.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-buffalo-stack-n-sync",
@@ -508,7 +667,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-buffalo-stack-n-sync.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-bullets-and-bounty",
@@ -517,7 +679,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-bullets-and-bounty.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-canny-the-can-and-the-book-of-time",
@@ -526,7 +691,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-canny-the-can-and-the-book-of-time.json",
       "win_system_type": "pay_anywhere",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-cash-compass",
@@ -535,7 +703,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-cash-compass.json",
       "win_system_type": "clusters",
-      "grid": "6x6"
+      "grid": "6\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "hacksaw-cash-crew",
@@ -544,7 +715,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-cash-crew.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-cash-crooks",
@@ -553,7 +727,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-cash-crooks.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-cash-quest",
@@ -562,7 +739,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-cash-quest.json",
       "win_system_type": "clusters",
-      "grid": "6x6"
+      "grid": "6\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "hacksaw-chaos-crew-2",
@@ -571,7 +751,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-chaos-crew-2.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-chaos-crew-3",
@@ -580,7 +763,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-chaos-crew-3.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-chaos-crew",
@@ -589,7 +775,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-chaos-crew.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-circle-of-life",
@@ -598,7 +787,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-circle-of-life.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-cloud-princess",
@@ -606,7 +798,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-cloud-princess.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-cubes-2",
@@ -615,7 +810,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-cubes-2.json",
       "win_system_type": "clusters",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-cubes",
@@ -623,7 +821,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
       "path": "games/hacksaw-cubes.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "hacksaw-cup-heroes",
@@ -632,7 +833,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-cup-heroes.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-cursed-crypt",
@@ -640,7 +844,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
       "path": "games/hacksaw-cursed-crypt.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-cursed-seas",
@@ -649,7 +856,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-cursed-seas.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dandy-diamonds",
@@ -658,7 +868,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-dandy-diamonds.json",
       "win_system_type": "paylines",
-      "grid": "2x2"
+      "grid": "2\u00d72",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-danny-dollar",
@@ -667,7 +880,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-danny-dollar.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dark-spiral",
@@ -676,7 +892,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-dark-spiral.json",
       "win_system_type": "ways",
-      "grid": "2x1"
+      "grid": "2\u00d71",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dark-summoning",
@@ -685,7 +904,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-dark-summoning.json",
       "win_system_type": "paylines",
-      "grid": "6x5"
+      "grid": "6\u00d75",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dawn-of-kings",
@@ -694,7 +916,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-dawn-of-kings.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dead-by-noon",
@@ -703,7 +928,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-dead-by-noon.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-deal-with-death",
@@ -712,7 +940,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-deal-with-death.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-death-becomes-you",
@@ -721,7 +952,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-death-becomes-you.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-densho",
@@ -730,7 +964,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-densho.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-divine-drop",
@@ -739,7 +976,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-divine-drop.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-donny-and-danny",
@@ -748,7 +988,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-donny-and-danny.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-donny-dough",
@@ -757,7 +1000,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-donny-dough.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-donut-division",
@@ -766,7 +1012,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-donut-division.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dork-unit",
@@ -775,7 +1024,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-dork-unit.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dorks-of-the-deep",
@@ -784,7 +1036,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-dorks-of-the-deep.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-double-rainbow",
@@ -793,7 +1048,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-double-rainbow.json",
       "win_system_type": "clusters",
-      "grid": "6x7"
+      "grid": "6\u00d77",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dr-zappo",
@@ -802,7 +1060,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-dr-zappo.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dragons-domain",
@@ -810,7 +1071,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-dragons-domain.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-drop-em",
@@ -818,7 +1082,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-drop-em.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-duel-at-dawn",
@@ -827,7 +1094,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-duel-at-dawn.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dusk-princess",
@@ -836,7 +1106,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-dusk-princess.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-dynasty-of-death",
@@ -845,7 +1118,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-dynasty-of-death.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-epic-bullets-bounty",
@@ -854,7 +1130,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-epic-bullets-bounty.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-epic-le-zeus",
@@ -862,7 +1141,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-epic-le-zeus.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-eternal-duel",
@@ -871,7 +1153,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-eternal-duel.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-evil-eyes",
@@ -879,7 +1164,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-evil-eyes.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-eye-of-medusa",
@@ -888,7 +1176,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-eye-of-medusa.json",
       "win_system_type": "ways",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-eye-of-the-panda",
@@ -897,7 +1188,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-eye-of-the-panda.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-fear-the-dark",
@@ -905,7 +1199,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "low",
       "path": "games/hacksaw-fear-the-dark.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-feel-the-beat",
@@ -914,7 +1211,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-feel-the-beat.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-fighter-pit",
@@ -923,7 +1223,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-fighter-pit.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-fire-my-laser",
@@ -932,7 +1235,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-fire-my-laser.json",
       "win_system_type": "ways",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-fist-of-destruction-megamultiplier",
@@ -941,7 +1247,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-fist-of-destruction-megamultiplier.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-fist-of-destruction",
@@ -950,7 +1259,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-fist-of-destruction.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-forest-fortune",
@@ -959,7 +1271,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-forest-fortune.json",
       "win_system_type": "clusters",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "hacksaw-franks-farm",
@@ -967,7 +1282,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-franks-farm.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-freds-food-truck",
@@ -976,7 +1294,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-freds-food-truck.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-frkn-bananas",
@@ -985,7 +1306,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-frkn-bananas.json",
       "win_system_type": "paylines",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-fruit-duel",
@@ -994,7 +1318,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-fruit-duel.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-frutz",
@@ -1003,7 +1330,10 @@
       "confidence_overall": "medium",
       "path": "games/hacksaw-frutz.json",
       "win_system_type": "unknown",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-get-the-cheese",
@@ -1011,7 +1341,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-get-the-cheese.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-gladiator-legends",
@@ -1020,7 +1353,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-gladiator-legends.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-great-game-rockies",
@@ -1029,7 +1365,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-great-game-rockies.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-great-game-serengeti",
@@ -1038,7 +1377,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-great-game-serengeti.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-gronks-gems",
@@ -1046,7 +1388,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-gronks-gems.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-grug-make-fire",
@@ -1055,7 +1400,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-grug-make-fire.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-hand-of-anubis",
@@ -1064,7 +1412,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-hand-of-anubis.json",
       "win_system_type": "clusters",
-      "grid": "6x5"
+      "grid": "6\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-harvest-wilds",
@@ -1073,7 +1424,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-harvest-wilds.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-hop-n-pop",
@@ -1082,7 +1436,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-hop-n-pop.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-hot-ross",
@@ -1091,7 +1448,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-hot-ross.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-hounds-of-hell",
@@ -1100,7 +1460,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-hounds-of-hell.json",
       "win_system_type": "ways",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-immortal-desire",
@@ -1108,7 +1471,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-immortal-desire.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-iron-sight",
@@ -1117,7 +1483,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-iron-sight.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-itero",
@@ -1126,7 +1495,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-itero.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-jaws-of-justice",
@@ -1135,7 +1507,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-jaws-of-justice.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-jelly-slice",
@@ -1143,7 +1518,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-jelly-slice.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-joker-bombs",
@@ -1152,7 +1530,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-joker-bombs.json",
       "win_system_type": "pay_anywhere",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-keep-em-cool",
@@ -1160,7 +1541,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-keep-em-cool.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-keep-em",
@@ -1168,7 +1552,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-keep-em.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-king-carrot",
@@ -1177,7 +1564,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-king-carrot.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-klowns",
@@ -1185,7 +1575,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-klowns.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-bandit-hold-win",
@@ -1194,7 +1587,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-bandit-hold-win.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-bandit-miami-hustle",
@@ -1202,7 +1598,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-le-bandit-miami-hustle.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-bandit",
@@ -1210,7 +1609,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-le-bandit.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-bruno",
@@ -1218,7 +1620,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-le-bruno.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-bunny",
@@ -1227,7 +1632,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-bunny.json",
       "win_system_type": "clusters",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-catcher",
@@ -1236,7 +1644,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-catcher.json",
       "win_system_type": "clusters",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-cowboy",
@@ -1245,7 +1656,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-cowboy.json",
       "win_system_type": "clusters",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-digger",
@@ -1254,7 +1668,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-digger.json",
       "win_system_type": "ways",
-      "grid": "2x2"
+      "grid": "2\u00d72",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-fisherman",
@@ -1263,7 +1680,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-fisherman.json",
       "win_system_type": "clusters",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-football-fan",
@@ -1271,7 +1691,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-le-football-fan.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-granny",
@@ -1279,7 +1702,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-le-granny.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-hooligan",
@@ -1287,7 +1713,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-le-hooligan.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-king",
@@ -1296,7 +1725,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-king.json",
       "win_system_type": "clusters",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-pharaoh",
@@ -1305,7 +1737,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-pharaoh.json",
       "win_system_type": "paylines",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-prechaun",
@@ -1314,7 +1749,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-prechaun.json",
       "win_system_type": "clusters",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-rapper",
@@ -1322,7 +1760,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-le-rapper.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-santa",
@@ -1331,7 +1772,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-santa.json",
       "win_system_type": "clusters",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-sortudo",
@@ -1340,7 +1784,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-sortudo.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-vampire",
@@ -1349,7 +1796,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-vampire.json",
       "win_system_type": "ways",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-viking",
@@ -1358,7 +1808,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-le-viking.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-le-zeus",
@@ -1367,7 +1820,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-le-zeus.json",
       "win_system_type": "paylines",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-let-it-snow",
@@ -1376,7 +1832,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-let-it-snow.json",
       "win_system_type": "clusters",
-      "grid": "6x6"
+      "grid": "6\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "hacksaw-life-and-death",
@@ -1385,7 +1844,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-life-and-death.json",
       "win_system_type": "paylines",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-magic-piggy-og",
@@ -1394,7 +1856,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-magic-piggy-og.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-magic-piggy",
@@ -1403,7 +1868,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-magic-piggy.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-marlin-masters-atlantis",
@@ -1412,7 +1880,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-marlin-masters-atlantis.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-marlin-masters-og",
@@ -1421,7 +1892,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-marlin-masters-og.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-marlin-masters-the-big-haul",
@@ -1430,7 +1904,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-marlin-masters-the-big-haul.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-marlin-masters",
@@ -1439,7 +1916,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-marlin-masters.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-max-win-machine",
@@ -1448,7 +1928,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-max-win-machine.json",
       "win_system_type": "paylines",
-      "grid": "2x1"
+      "grid": "2\u00d71",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-mayan-stackways",
@@ -1456,7 +1939,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-mayan-stackways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-miami-mayhem",
@@ -1465,7 +1951,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-miami-mayhem.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-mighty-masks",
@@ -1474,7 +1963,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-mighty-masks.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-mines-supreme",
@@ -1482,7 +1974,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-mines-supreme.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-minted-mike",
@@ -1491,7 +1986,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-minted-mike.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-munchy-milo",
@@ -1500,7 +1998,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-munchy-milo.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-mystery-motel",
@@ -1509,7 +2010,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-mystery-motel.json",
       "win_system_type": "ways",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "hacksaw-nitro-nights",
@@ -1518,7 +2022,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-nitro-nights.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-octo-attack",
@@ -1526,7 +2033,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-octo-attack.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-om-nom",
@@ -1535,7 +2045,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-om-nom.json",
       "win_system_type": "ways",
-      "grid": "4x4"
+      "grid": "4\u00d74",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-orb-of-destiny",
@@ -1544,7 +2057,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-orb-of-destiny.json",
       "win_system_type": "paylines",
-      "grid": "4x6"
+      "grid": "4\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-outlaws-inc",
@@ -1553,7 +2069,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-outlaws-inc.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-phoenix-duelreels",
@@ -1562,7 +2081,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-phoenix-duelreels.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-power-of-ten",
@@ -1571,7 +2093,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-power-of-ten.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-pray-for-six",
@@ -1580,7 +2105,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-pray-for-six.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-pray-for-three",
@@ -1589,7 +2117,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-pray-for-three.json",
       "win_system_type": "ways",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-pug-life",
@@ -1598,7 +2129,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-pug-life.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-rad-maxx",
@@ -1607,7 +2141,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-rad-maxx.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-rage-of-egypt",
@@ -1616,7 +2153,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-rage-of-egypt.json",
       "win_system_type": "clusters",
-      "grid": "6x5"
+      "grid": "6\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-rainbow-princess",
@@ -1625,7 +2165,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-rainbow-princess.json",
       "win_system_type": "clusters",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-red-rascal",
@@ -1634,7 +2177,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-red-rascal.json",
       "win_system_type": "paylines",
-      "grid": "2x2"
+      "grid": "2\u00d72",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-reign-of-rome",
@@ -1643,7 +2189,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-reign-of-rome.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-rip-city",
@@ -1652,7 +2201,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-rip-city.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-rise-of-fortuna",
@@ -1661,7 +2213,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-rise-of-fortuna.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-rise-of-ymir",
@@ -1670,7 +2225,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-rise-of-ymir.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-rocket-reels",
@@ -1679,7 +2237,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-rocket-reels.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-ronin-stackways",
@@ -1687,7 +2248,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-ronin-stackways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-rotten",
@@ -1696,7 +2260,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-rotten.json",
       "win_system_type": "paylines",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-rusty-curly",
@@ -1705,7 +2272,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-rusty-curly.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-sand-and-ashes",
@@ -1714,7 +2284,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-sand-and-ashes.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-secret-order",
@@ -1723,7 +2296,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-secret-order.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-shadows-inc",
@@ -1732,7 +2308,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-shadows-inc.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-shaolin-master",
@@ -1740,7 +2319,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-shaolin-master.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-sixsixsix",
@@ -1749,7 +2331,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-sixsixsix.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-slayers-inc",
@@ -1758,7 +2343,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-slayers-inc.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-smoking-dragon",
@@ -1767,7 +2355,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-smoking-dragon.json",
       "win_system_type": "ways",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-snow-slingers",
@@ -1776,7 +2367,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-snow-slingers.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-spear-of-athena",
@@ -1785,7 +2379,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-spear-of-athena.json",
       "win_system_type": "paylines",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-spinman",
@@ -1794,7 +2391,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-spinman.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-stack-em",
@@ -1803,7 +2403,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-stack-em.json",
       "win_system_type": "clusters",
-      "grid": "6x5"
+      "grid": "6\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-steamrunners",
@@ -1812,7 +2415,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-steamrunners.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-stick-em",
@@ -1820,7 +2426,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-stick-em.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-stormborn",
@@ -1829,7 +2438,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-stormborn.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-stormforged",
@@ -1838,7 +2450,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-stormforged.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-strength-of-hercules",
@@ -1847,7 +2462,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-strength-of-hercules.json",
       "win_system_type": "ways",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-sun-princess",
@@ -1856,7 +2474,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-sun-princess.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-supernova-galaxy-orbs",
@@ -1865,7 +2486,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-supernova-galaxy-orbs.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-superstar-sevens",
@@ -1874,7 +2498,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-superstar-sevens.json",
       "win_system_type": "clusters",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-supreme-zeus",
@@ -1883,7 +2510,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-supreme-zeus.json",
       "win_system_type": "ways",
-      "grid": "3x2"
+      "grid": "3\u00d72",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-tai-the-toad",
@@ -1892,7 +2522,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-tai-the-toad.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-tasty-treats",
@@ -1901,7 +2534,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-tasty-treats.json",
       "win_system_type": "pay_anywhere",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "hacksaw-temple-of-torment",
@@ -1910,7 +2546,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-temple-of-torment.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-the-bomb",
@@ -1919,7 +2558,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-the-bomb.json",
       "win_system_type": "clusters",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "hacksaw-the-bowery-boys",
@@ -1928,7 +2570,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-the-bowery-boys.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-the-count",
@@ -1937,7 +2582,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-the-count.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-the-haunted-circus",
@@ -1946,7 +2594,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-the-haunted-circus.json",
       "win_system_type": "ways",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-the-luxe",
@@ -1955,7 +2606,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-the-luxe.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-the-respinners",
@@ -1964,7 +2618,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-the-respinners.json",
       "win_system_type": "ways",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-the-wildwood-curse",
@@ -1973,7 +2630,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-the-wildwood-curse.json",
       "win_system_type": "clusters",
-      "grid": "2x2"
+      "grid": "2\u00d72",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-tiger-legends",
@@ -1982,7 +2642,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-tiger-legends.json",
       "win_system_type": "ways",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-time-spinners",
@@ -1991,7 +2654,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-time-spinners.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-toshi-video-club",
@@ -2000,7 +2666,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-toshi-video-club.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-toshi-ways-club",
@@ -2009,7 +2678,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-toshi-ways-club.json",
       "win_system_type": "ways",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-tres-pinatas-hold-win",
@@ -2018,7 +2690,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-tres-pinatas-hold-win.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-twisted-lab-rotogrid",
@@ -2027,7 +2702,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-twisted-lab-rotogrid.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-ultimate-slot-of-america",
@@ -2036,7 +2714,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-ultimate-slot-of-america.json",
       "win_system_type": "clusters",
-      "grid": "2x2"
+      "grid": "2\u00d72",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-undead-fortune",
@@ -2045,7 +2726,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-undead-fortune.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-vending-machine",
@@ -2054,7 +2738,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-vending-machine.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-wanted-dead-or-a-wild",
@@ -2063,7 +2750,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-wanted-dead-or-a-wild.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-wanted-salvation",
@@ -2072,7 +2762,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-wanted-salvation.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-warrior-ways",
@@ -2081,7 +2774,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-warrior-ways.json",
       "win_system_type": "ways",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-wings-of-horus",
@@ -2089,7 +2785,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-wings-of-horus.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-wishbringer",
@@ -2098,7 +2797,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-wishbringer.json",
       "win_system_type": "ways",
-      "grid": "4x6"
+      "grid": "4\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-xmas-drop",
@@ -2107,7 +2809,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-xmas-drop.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-xpander",
@@ -2116,7 +2821,10 @@
       "confidence_overall": "high",
       "path": "games/hacksaw-xpander.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-ze-zeus",
@@ -2124,7 +2832,10 @@
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
       "path": "games/hacksaw-ze-zeus.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "hacksaw-zeus-ze-zecond",
@@ -2133,7 +2844,10 @@
       "confidence_overall": "low",
       "path": "games/hacksaw-zeus-ze-zecond.json",
       "win_system_type": "paylines",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "nolimit-blood-shadow",
@@ -2142,7 +2856,10 @@
       "confidence_overall": "medium",
       "path": "games/nolimit-blood-shadow.json",
       "win_system_type": "ways",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "nolimit-book-of-shadows",
@@ -2151,7 +2868,10 @@
       "confidence_overall": "medium",
       "path": "games/nolimit-book-of-shadows.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "nolimit-deadwood-xnudge",
@@ -2160,7 +2880,10 @@
       "confidence_overall": "medium",
       "path": "games/nolimit-deadwood-xnudge.json",
       "win_system_type": "ways",
-      "grid": "4x3"
+      "grid": "4\u00d73",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "nolimit-kiss-my-chainsaw",
@@ -2169,7 +2892,10 @@
       "confidence_overall": "medium",
       "path": "games/nolimit-kiss-my-chainsaw.json",
       "win_system_type": "unknown",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "nolimit-mental",
@@ -2178,7 +2904,10 @@
       "confidence_overall": "medium",
       "path": "games/nolimit-mental.json",
       "win_system_type": "ways",
-      "grid": "2x3"
+      "grid": "2\u00d73",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "nolimit-punk-rocker",
@@ -2187,7 +2916,10 @@
       "confidence_overall": "medium",
       "path": "games/nolimit-punk-rocker.json",
       "win_system_type": "ways",
-      "grid": "6x6"
+      "grid": "6\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "nolimit-tombstone-rip",
@@ -2196,7 +2928,10 @@
       "confidence_overall": "medium",
       "path": "games/nolimit-tombstone-rip.json",
       "win_system_type": "ways",
-      "grid": "3x2"
+      "grid": "3\u00d72",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-3-buzzing-wilds",
@@ -2204,7 +2939,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-3-buzzing-wilds.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-3-dancing-monkeys",
@@ -2212,7 +2950,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-3-dancing-monkeys.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-3-magic-eggs",
@@ -2221,7 +2962,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-3-magic-eggs.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-5-frozen-charms-megaways",
@@ -2230,7 +2974,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-5-frozen-charms-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-5-lions-dance",
@@ -2238,7 +2985,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-5-lions-dance.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-5-lions-megaways-2",
@@ -2246,7 +2996,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-5-lions-megaways-2.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-5-lions-megaways",
@@ -2254,7 +3008,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-5-lions-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-5-lions-reborn",
@@ -2262,7 +3020,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-5-lions-reborn.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-5-rabbits-megaways",
@@ -2271,7 +3032,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-5-rabbits-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-6-jokers",
@@ -2280,7 +3044,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-6-jokers.json",
       "win_system_type": "pay_anywhere",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-7-clovers-of-fortune",
@@ -2288,7 +3055,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-7-clovers-of-fortune.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-777-rush",
@@ -2297,7 +3067,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-777-rush.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-777-wheel-blitz",
@@ -2306,7 +3079,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-777-wheel-blitz.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-8-golden-dragon-challenge",
@@ -2315,7 +3091,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-8-golden-dragon-challenge.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-888-bonanza",
@@ -2324,7 +3103,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-888-bonanza.json",
       "win_system_type": "ways",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-888-gold",
@@ -2333,7 +3115,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-888-gold.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-african-elephant",
@@ -2341,7 +3126,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-african-elephant.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-aladdin-and-the-sorcerer",
@@ -2350,7 +3138,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-aladdin-and-the-sorcerer.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-alien-invaders",
@@ -2358,7 +3149,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-alien-invaders.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-amazing-money-machine",
@@ -2367,7 +3161,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-amazing-money-machine.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-anaconda-gold",
@@ -2376,7 +3173,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-anaconda-gold.json",
       "win_system_type": "ways",
-      "grid": "4x6"
+      "grid": "4\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-ancient-island-megaways",
@@ -2385,7 +3185,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-ancient-island-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-angel-vs-sinner-eternal-battle",
@@ -2394,7 +3197,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-angel-vs-sinner-eternal-battle.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-angel-vs-sinner",
@@ -2403,7 +3209,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-angel-vs-sinner.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-animal-magic-1000",
@@ -2412,7 +3221,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-animal-magic-1000.json",
       "win_system_type": "pay_anywhere",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-anime-cosplay-vs",
@@ -2421,7 +3233,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-anime-cosplay-vs.json",
       "win_system_type": "paylines",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-anime-mecha-megaways",
@@ -2430,7 +3245,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-anime-mecha-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-argonauts",
@@ -2439,7 +3257,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-argonauts.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-aztec-blaze",
@@ -2447,7 +3268,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-aztec-blaze.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-aztec-bonanza",
@@ -2456,7 +3280,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-aztec-bonanza.json",
       "win_system_type": "ways",
-      "grid": "4x2"
+      "grid": "4\u00d72",
+      "has_tumble": true,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-aztec-gems-deluxe",
@@ -2464,7 +3291,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-aztec-gems-deluxe.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-aztec-gems-megaways",
@@ -2473,7 +3303,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-aztec-gems-megaways.json",
       "win_system_type": "ways",
-      "grid": "8x3"
+      "grid": "8\u00d73",
+      "has_tumble": true,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-aztec-gems",
@@ -2481,7 +3314,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-aztec-gems.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-aztec-powernudge",
@@ -2490,7 +3326,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-aztec-powernudge.json",
       "win_system_type": "pay_anywhere",
-      "grid": "6x6"
+      "grid": "6\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-aztec-smash",
@@ -2499,7 +3338,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-aztec-smash.json",
       "win_system_type": "pay_anywhere",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-badge-blitz",
@@ -2508,7 +3350,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-badge-blitz.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-bali-dragon",
@@ -2517,7 +3362,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-bali-dragon.json",
       "win_system_type": "pay_anywhere",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-bandit-megaways",
@@ -2525,7 +3373,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-bandit-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-barbar",
@@ -2534,7 +3386,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-barbar.json",
       "win_system_type": "pay_anywhere",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-barn-festival",
@@ -2542,7 +3397,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-barn-festival.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-barnyard-megahays-megaways",
@@ -2551,7 +3409,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-barnyard-megahays-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-battle-ground-zero-megaways",
@@ -2560,7 +3421,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-battle-ground-zero-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-bear-crazy",
@@ -2569,7 +3433,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-bear-crazy.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-bee-keeper",
@@ -2578,7 +3445,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-bee-keeper.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-beware-the-deep-megaways",
@@ -2587,7 +3457,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-beware-the-deep-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-big-bass-amazon-xtreme",
@@ -2595,7 +3468,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-big-bass-amazon-xtreme.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-bass-bonanza-1000",
@@ -2603,7 +3479,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-big-bass-bonanza-1000.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-bass-bonanza-hold-spinner",
@@ -2612,7 +3491,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-bass-bonanza-hold-spinner.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-bass-bonanza-megaways",
@@ -2621,7 +3503,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-bass-bonanza-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-big-bass-bonanza",
@@ -2629,7 +3514,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-big-bass-bonanza.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-big-bass-christmas-bash",
@@ -2638,7 +3526,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-bass-christmas-bash.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-bass-crash",
@@ -2646,7 +3537,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-bass-crash.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-big-bass-day-at-races",
@@ -2655,7 +3549,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-bass-day-at-races.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-bass-floats-my-boat",
@@ -2664,7 +3561,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-bass-floats-my-boat.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-bass-halloween",
@@ -2673,7 +3573,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-bass-halloween.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-bass-keeping-it-reel",
@@ -2682,7 +3585,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-bass-keeping-it-reel.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-bass-secrets-of-the-golden-lake",
@@ -2690,7 +3596,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-big-bass-secrets-of-the-golden-lake.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-bass-splash",
@@ -2698,7 +3607,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-big-bass-splash.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-big-bass-the-gold-ness-monster",
@@ -2707,7 +3619,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-bass-the-gold-ness-monster.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-burger-load-it-up-with-xtra-cheese",
@@ -2716,7 +3631,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-burger-load-it-up-with-xtra-cheese.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-big-juan",
@@ -2725,7 +3643,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-big-juan.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-bigger-bass-blizzard",
@@ -2733,7 +3654,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-bigger-bass-blizzard.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-bigger-bass-bonanza",
@@ -2741,7 +3665,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-bigger-bass-bonanza.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-black-bull",
@@ -2749,7 +3676,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-black-bull.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-blade-fangs",
@@ -2758,7 +3688,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-blade-fangs.json",
       "win_system_type": "ways",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-blazing-wilds-megaways",
@@ -2767,7 +3700,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-blazing-wilds-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-bomb-bonanza",
@@ -2775,7 +3711,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-bomb-bonanza.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-book-of-fallen",
@@ -2783,7 +3722,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-book-of-fallen.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-book-of-golden-sands",
@@ -2791,7 +3733,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-book-of-golden-sands.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-book-of-kingdoms",
@@ -2799,7 +3744,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-book-of-kingdoms.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-book-of-tut-megaways",
@@ -2808,7 +3756,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-book-of-tut-megaways.json",
       "win_system_type": "pay_anywhere",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-book-of-vikings",
@@ -2817,7 +3768,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-book-of-vikings.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-bounty-gold",
@@ -2826,7 +3780,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-bounty-gold.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-bounty-hunter",
@@ -2835,7 +3792,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-bounty-hunter.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-brick-house-bonanza",
@@ -2843,7 +3803,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-brick-house-bonanza.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-bronco-spirit",
@@ -2852,7 +3815,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-bronco-spirit.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-bubble-wild",
@@ -2861,7 +3827,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-bubble-wild.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-buffalo-king-megaways",
@@ -2869,7 +3838,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-buffalo-king-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-buffalo-king-slot",
@@ -2877,7 +3850,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-buffalo-king-slot.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-buffalo-king",
@@ -2886,7 +3862,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-buffalo-king.json",
       "win_system_type": "ways",
-      "grid": "4x6"
+      "grid": "4\u00d76",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-candy-blitz-bombs",
@@ -2894,7 +3873,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-candy-blitz-bombs.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-candy-blitz",
@@ -2903,7 +3885,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-candy-blitz.json",
       "win_system_type": "pay_anywhere",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-candy-jar-clusters",
@@ -2912,7 +3897,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-candy-jar-clusters.json",
       "win_system_type": "pay_anywhere",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-candy-pop",
@@ -2921,7 +3909,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-candy-pop.json",
       "win_system_type": "unknown",
-      "grid": "6x6"
+      "grid": "6\u00d76",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-candy-rush",
@@ -2930,7 +3921,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-candy-rush.json",
       "win_system_type": "unknown",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-candy-stars",
@@ -2939,7 +3933,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-candy-stars.json",
       "win_system_type": "ways",
-      "grid": "4x3"
+      "grid": "4\u00d73",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-cappadocia",
@@ -2947,7 +3944,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
       "path": "games/pragmatic-cappadocia.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-cash-bonanza",
@@ -2956,7 +3956,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-cash-bonanza.json",
       "win_system_type": "ways",
-      "grid": "4x6"
+      "grid": "4\u00d76",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-cash-box",
@@ -2965,7 +3968,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-cash-box.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-cash-chips",
@@ -2974,7 +3980,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-cash-chips.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-cash-elevator",
@@ -2982,7 +3991,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-cash-elevator.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-cash-patrol",
@@ -2991,7 +4003,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-cash-patrol.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-castle-of-fire",
@@ -3000,7 +4015,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-castle-of-fire.json",
       "win_system_type": "ways",
-      "grid": "3x6"
+      "grid": "3\u00d76",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-chase-for-glory",
@@ -3009,7 +4027,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-chase-for-glory.json",
       "win_system_type": "ways",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-chests-of-cai-shen",
@@ -3017,7 +4038,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-chests-of-cai-shen.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-chicken-chase",
@@ -3026,7 +4050,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-chicken-chase.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-chicken-drop",
@@ -3035,7 +4062,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-chicken-drop.json",
       "win_system_type": "unknown",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-chicken",
@@ -3043,7 +4073,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
       "path": "games/pragmatic-chicken.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-chilli-heat-megaways",
@@ -3052,7 +4085,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-chilli-heat-megaways.json",
       "win_system_type": "ways",
-      "grid": "8x7"
+      "grid": "8\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-chilli-heat-spicy-spins",
@@ -3060,7 +4096,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-chilli-heat-spicy-spins.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-christmas-big-bass-bonanza",
@@ -3068,7 +4107,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-christmas-big-bass-bonanza.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-christmas-carol-megaways",
@@ -3076,7 +4118,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-christmas-carol-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-cleocatra",
@@ -3084,7 +4130,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-cleocatra.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-clover-gold",
@@ -3092,7 +4141,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-clover-gold.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-club-tropicana",
@@ -3100,7 +4152,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-club-tropicana.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-colossal-cash-zone",
@@ -3109,7 +4164,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-colossal-cash-zone.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-cosmic-cash",
@@ -3117,7 +4175,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-cosmic-cash.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-cosmic-clusters",
@@ -3125,7 +4186,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
       "path": "games/pragmatic-cosmic-clusters.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": true,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-country-farming",
@@ -3134,7 +4198,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-country-farming.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-cowboy-coins",
@@ -3142,7 +4209,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-cowboy-coins.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-cowboys-gold",
@@ -3150,7 +4220,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-cowboys-gold.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-crown-of-fire",
@@ -3158,7 +4231,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-crown-of-fire.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-crystal-cavern-megaways",
@@ -3167,7 +4243,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-crystal-cavern-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-curse-of-the-werewolf-megaways",
@@ -3175,7 +4254,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-curse-of-the-werewolf-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-cyber-heist",
@@ -3184,7 +4267,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-cyber-heist.json",
       "win_system_type": "ways",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-cyclops-smash",
@@ -3193,7 +4279,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-cyclops-smash.json",
       "win_system_type": "pay_anywhere",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-dance-party",
@@ -3201,7 +4290,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-dance-party.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-day-of-dead",
@@ -3210,7 +4302,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-day-of-dead.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-demon-pots",
@@ -3219,7 +4314,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-demon-pots.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-diamond-cascade",
@@ -3227,7 +4325,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-diamond-cascade.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-diamonds-of-egypt",
@@ -3236,7 +4337,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-diamonds-of-egypt.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-ding-dong-christmas-bells",
@@ -3245,7 +4349,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-ding-dong-christmas-bells.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-down-the-rails",
@@ -3253,7 +4360,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-down-the-rails.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-drago-jewels-of-fortune",
@@ -3262,7 +4372,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-drago-jewels-of-fortune.json",
       "win_system_type": "ways",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-dragon-hero",
@@ -3270,7 +4383,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-dragon-hero.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-dragon-hot-hold-and-spin",
@@ -3279,7 +4395,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-dragon-hot-hold-and-spin.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-dragon-kingdom-eyes-of-fire",
@@ -3288,7 +4407,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-dragon-kingdom-eyes-of-fire.json",
       "win_system_type": "paylines",
-      "grid": "3x3"
+      "grid": "3\u00d73",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-dragon-tiger",
@@ -3296,7 +4418,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
       "path": "games/pragmatic-dragon-tiger.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-drill-that-gold",
@@ -3305,7 +4430,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-drill-that-gold.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-egg-rush",
@@ -3314,7 +4442,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-egg-rush.json",
       "win_system_type": "unknown",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-el-dorado-the-city-of-gold-megaways",
@@ -3323,7 +4454,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-el-dorado-the-city-of-gold-megaways.json",
       "win_system_type": "ways",
-      "grid": "8x6"
+      "grid": "8\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-elemental-gems-megaways",
@@ -3332,7 +4466,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-elemental-gems-megaways.json",
       "win_system_type": "ways",
-      "grid": "8x3"
+      "grid": "8\u00d73",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-empty-the-bank",
@@ -3341,7 +4478,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-empty-the-bank.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-excalibur-unleashed",
@@ -3349,7 +4489,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-excalibur-unleashed.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-extra-juicy-megaways",
@@ -3358,7 +4501,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-extra-juicy-megaways.json",
       "win_system_type": "ways",
-      "grid": "7x6"
+      "grid": "7\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-extra-juicy",
@@ -3366,7 +4512,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-extra-juicy.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-eye-of-cleopatra",
@@ -3375,7 +4524,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-eye-of-cleopatra.json",
       "win_system_type": "paylines",
-      "grid": "4x5"
+      "grid": "4\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-eye-of-the-storm",
@@ -3384,7 +4536,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-eye-of-the-storm.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-fat-panda",
@@ -3393,7 +4548,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-fat-panda.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null
     },
     {
       "slug": "pragmatic-fire-archer",
@@ -3401,7 +4559,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-fire-archer.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-fire-strike-2",
@@ -3409,7 +4570,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-fire-strike-2.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-fire-strike-slot",
@@ -3417,7 +4581,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-fire-strike-slot.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-fish-eye",
@@ -3425,7 +4592,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-fish-eye.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-fishin-reels",
@@ -3433,7 +4603,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-fishin-reels.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-floating-dragon-hold-and-spin",
@@ -3442,7 +4615,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-floating-dragon-hold-and-spin.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-floating-dragon-megaways-hold-spin",
@@ -3450,7 +4626,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-floating-dragon-megaways-hold-spin.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-floating-dragon",
@@ -3458,7 +4638,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-floating-dragon.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-fruit-party-2",
@@ -3467,7 +4650,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-fruit-party-2.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-fruit-party",
@@ -3475,7 +4661,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-fruit-party.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-fruit-rainbow",
@@ -3483,7 +4672,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-fruit-rainbow.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-fury-of-odin-megaways",
@@ -3491,7 +4683,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-fury-of-odin-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-gates-of-hades",
@@ -3500,7 +4695,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-gates-of-hades.json",
       "win_system_type": "clusters",
-      "grid": "6x6"
+      "grid": "6\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-gates-of-olympus-1000",
@@ -3508,7 +4706,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-gates-of-olympus-1000.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-gates-of-olympus-super-scatter",
@@ -3516,7 +4717,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-gates-of-olympus-super-scatter.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-gates-of-olympus",
@@ -3524,7 +4728,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-gates-of-olympus.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-gems-bonanza",
@@ -3533,7 +4740,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-gems-bonanza.json",
       "win_system_type": "clusters",
-      "grid": "8x8"
+      "grid": "8\u00d78",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-gods-of-giza",
@@ -3541,7 +4751,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-gods-of-giza.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-gold-party",
@@ -3549,7 +4762,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-gold-party.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-gorilla-mayhem",
@@ -3557,7 +4773,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-gorilla-mayhem.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-great-rhino-deluxe",
@@ -3565,7 +4784,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-great-rhino-deluxe.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-great-rhino-megaways-slot",
@@ -3573,7 +4795,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-great-rhino-megaways-slot.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-great-rhino",
@@ -3582,7 +4808,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-great-rhino.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-happy-hooves",
@@ -3590,7 +4819,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-happy-hooves.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-heart-of-rio",
@@ -3598,7 +4830,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-heart-of-rio.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-honey-honey-honey",
@@ -3606,7 +4841,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-honey-honey-honey.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-hot-chilli",
@@ -3614,7 +4852,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-hot-chilli.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-hot-fiesta",
@@ -3622,7 +4863,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-hot-fiesta.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-hot-to-burn-extreme",
@@ -3630,7 +4874,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-hot-to-burn-extreme.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-hot-to-burn-hold-spin",
@@ -3638,7 +4885,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-hot-to-burn-hold-spin.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-jane-hunter-and-the-mask-of-montezuma",
@@ -3646,7 +4896,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-jane-hunter-and-the-mask-of-montezuma.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-jasmine-dreams",
@@ -3654,7 +4907,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-jasmine-dreams.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-jewel-rush",
@@ -3662,7 +4918,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-jewel-rush.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-john-hunter-and-the-book-of-tut-respin",
@@ -3670,7 +4929,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-john-hunter-and-the-book-of-tut-respin.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-john-hunter-and-the-book-of-tut",
@@ -3678,7 +4940,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-john-hunter-and-the-book-of-tut.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-joker-s-jewels-hot",
@@ -3686,7 +4951,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-joker-s-jewels-hot.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-joker-s-jewels-wild",
@@ -3694,7 +4962,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-joker-s-jewels-wild.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-juicy-fruits",
@@ -3702,7 +4973,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-juicy-fruits.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-kingdom-of-the-dead",
@@ -3710,7 +4984,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-kingdom-of-the-dead.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-lucky-lightning",
@@ -3719,7 +4996,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-lucky-lightning.json",
       "win_system_type": "ways",
-      "grid": "4x4"
+      "grid": "4\u00d74",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-lucky-s-wild-pub",
@@ -3727,7 +5007,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-lucky-s-wild-pub.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-lucky-tiger",
@@ -3735,7 +5018,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-lucky-tiger.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-madame-destiny-megaways",
@@ -3743,7 +5029,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-madame-destiny-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-magic-money-maze",
@@ -3751,7 +5041,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-magic-money-maze.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-mahjong-wins-super-scatter",
@@ -3759,7 +5052,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-mahjong-wins-super-scatter.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-majestic-express-gold-run",
@@ -3767,7 +5063,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-majestic-express-gold-run.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-mammoth-gold-megaways",
@@ -3775,7 +5074,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-mammoth-gold-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-master-joker",
@@ -3783,7 +5086,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-master-joker.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-might-of-ra",
@@ -3791,7 +5097,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-might-of-ra.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-money-mouse-slot",
@@ -3799,7 +5108,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-money-mouse-slot.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-money-stacks",
@@ -3807,7 +5119,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-money-stacks.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-monster-superlanche",
@@ -3815,7 +5130,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-monster-superlanche.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-muertos-multiplier-megaways",
@@ -3823,7 +5141,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-muertos-multiplier-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-mummy-s-jewels",
@@ -3831,7 +5153,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-mummy-s-jewels.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-mustang-gold",
@@ -3840,7 +5165,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-mustang-gold.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-mysterious-egypt",
@@ -3848,7 +5176,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-mysterious-egypt.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-mystery-of-the-orient",
@@ -3856,7 +5187,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-mystery-of-the-orient.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-octobeer-fortunes",
@@ -3864,7 +5198,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-octobeer-fortunes.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-peak-power",
@@ -3872,7 +5209,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-peak-power.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-piggy-bankers",
@@ -3880,7 +5220,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-piggy-bankers.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-pompeii-megareels-megaways",
@@ -3888,7 +5231,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-pompeii-megareels-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-power-of-thor-megaways",
@@ -3896,7 +5243,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-power-of-thor-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-pyramid-king",
@@ -3904,7 +5255,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-pyramid-king.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-queen-of-gods",
@@ -3912,7 +5266,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-queen-of-gods.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-reel-banks",
@@ -3920,7 +5277,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-reel-banks.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-release-the-kraken-2",
@@ -3928,7 +5288,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-release-the-kraken-2.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-release-the-kraken",
@@ -3936,7 +5299,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-release-the-kraken.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-return-of-the-dead",
@@ -3944,7 +5310,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-return-of-the-dead.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-rocket-blast-megaways",
@@ -3952,7 +5321,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-rocket-blast-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-secret-city-gold",
@@ -3960,7 +5332,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-secret-city-gold.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-shield-of-sparta",
@@ -3969,7 +5344,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-shield-of-sparta.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-starlight-christmas",
@@ -3978,7 +5356,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-starlight-christmas.json",
       "win_system_type": "pay_anywhere",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-starlight-princess-1000",
@@ -3986,7 +5367,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-starlight-princess-1000.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-starlight-princess",
@@ -3994,7 +5378,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-starlight-princess.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-sticky-bees",
@@ -4002,7 +5389,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-sticky-bees.json",
-      "win_system_type": "clusters"
+      "win_system_type": "clusters",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-sugar-rush-1000",
@@ -4011,7 +5401,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-sugar-rush-1000.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-sugar-rush-xmas",
@@ -4020,7 +5413,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-sugar-rush-xmas.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-sugar-rush",
@@ -4029,7 +5425,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-sugar-rush.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-super-7s",
@@ -4037,7 +5436,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-super-7s.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-super-joker",
@@ -4045,7 +5447,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-super-joker.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-sweet-bonanza-1000",
@@ -4053,7 +5458,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-sweet-bonanza-1000.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-sweet-bonanza-super-scatter",
@@ -4061,7 +5469,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-sweet-bonanza-super-scatter.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-sweet-bonanza-xmas",
@@ -4069,7 +5480,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-sweet-bonanza-xmas.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-sweet-bonanza",
@@ -4078,7 +5492,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-sweet-bonanza.json",
       "win_system_type": "pay_anywhere",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-sword-of-ares",
@@ -4086,7 +5503,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-sword-of-ares.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-temujin-treasures",
@@ -4094,7 +5514,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-temujin-treasures.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-the-dog-house-megaways",
@@ -4102,7 +5525,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-the-dog-house-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-the-dog-house-multihold",
@@ -4110,7 +5537,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-the-dog-house-multihold.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-the-dog-house",
@@ -4119,7 +5549,10 @@
       "confidence_overall": "medium",
       "path": "games/pragmatic-the-dog-house.json",
       "win_system_type": "paylines",
-      "grid": "3x5"
+      "grid": "3\u00d75",
+      "has_tumble": null,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-the-hand-of-midas",
@@ -4127,7 +5560,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-the-hand-of-midas.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-the-knight-king",
@@ -4135,7 +5571,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-the-knight-king.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-the-red-queen",
@@ -4143,7 +5582,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-the-red-queen.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-tiny-toads",
@@ -4151,7 +5593,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-tiny-toads.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-tree-of-riches",
@@ -4159,7 +5604,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-tree-of-riches.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-triple-pot-gold",
@@ -4167,7 +5615,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-triple-pot-gold.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-tropical-tiki",
@@ -4175,7 +5626,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-tropical-tiki.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-wild-beach-party",
@@ -4184,7 +5638,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-beach-party.json",
       "win_system_type": "clusters",
-      "grid": "7x7"
+      "grid": "7\u00d77",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-wild-bison-charge",
@@ -4192,7 +5649,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-bison-charge.json",
-      "win_system_type": "pay_anywhere"
+      "win_system_type": "pay_anywhere",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-wild-booster",
@@ -4200,7 +5660,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-booster.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-wild-west-duels",
@@ -4208,7 +5671,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-west-duels.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-wild-west-gold-blazing-bounty",
@@ -4217,7 +5683,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-west-gold-blazing-bounty.json",
       "win_system_type": "clusters",
-      "grid": "5x5"
+      "grid": "5\u00d75",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-wild-west-gold-megaways",
@@ -4225,7 +5694,11 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-west-gold-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-wild-west-gold",
@@ -4233,7 +5706,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-west-gold.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-wild-wild-bananas",
@@ -4241,7 +5717,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-wild-bananas.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-wild-wild-riches-megaways",
@@ -4249,7 +5728,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-wild-riches-megaways.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-wild-wild-riches",
@@ -4257,7 +5739,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wild-wild-riches.json",
-      "win_system_type": "ways"
+      "win_system_type": "ways",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-wisdom-of-athena-1000",
@@ -4266,7 +5751,10 @@
       "confidence_overall": "high",
       "path": "games/pragmatic-wisdom-of-athena-1000.json",
       "win_system_type": "pay_anywhere",
-      "grid": "5x6"
+      "grid": "5\u00d76",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true
     },
     {
       "slug": "pragmatic-wisdom-of-athena",
@@ -4274,7 +5762,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wisdom-of-athena.json",
-      "win_system_type": "unknown"
+      "win_system_type": "unknown",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-wolf-gold",
@@ -4282,7 +5773,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-wolf-gold.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-zeus-vs-hades-gods-of-war",
@@ -4290,7 +5784,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-zeus-vs-hades-gods-of-war.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     },
     {
       "slug": "pragmatic-zombie-carnival",
@@ -4298,7 +5795,10 @@
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
       "path": "games/pragmatic-zombie-carnival.json",
-      "win_system_type": "paylines"
+      "win_system_type": "paylines",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false
     }
   ]
 }

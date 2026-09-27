@@ -3,284 +3,567 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Slot Mechanics Dataset</title>
-<meta name="description" content="Browse evidence-backed slot game mechanics: grid, win systems, tumbles, free spins, feature buys."/>
+<title>Slot Mechanics</title>
+<meta name="description" content="Browse how real slots work — grids, win systems, tumbles, free spins, feature buys — with evidence."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
-  :root {
-    color-scheme: dark;
-    --bg: #0b0d10;
-    --panel: #12151a;
-    --panel2: #181c22;
-    --border: #222831;
-    --border2: #2a313c;
-    --text: #e8eaed;
-    --muted: #9aa0a6;
-    --accent: #7cb3ff;
-    --high: #3dd68c;
-    --med: #f5c542;
-    --low: #f07178;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-  }
-  header {
-    padding: 1.1rem 1.25rem 0.85rem;
-    border-bottom: 1px solid var(--border);
-    background: linear-gradient(180deg, #12151a 0%, #0b0d10 100%);
-    position: sticky;
-    top: 0;
-    z-index: 5;
-  }
-  header .wrap { max-width: 1280px; margin: 0 auto; }
-  h1 { font-size: 1.25rem; margin: 0 0 0.25rem; font-weight: 650; letter-spacing: -0.02em; }
-  .sub { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.4; }
-  .sub a { color: var(--accent); text-decoration: none; }
-  .sub a:hover { text-decoration: underline; }
-  .stats {
-    display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.75rem;
-  }
-  .chip {
-    font-size: 0.78rem; color: var(--muted);
-    border: 1px solid var(--border2); background: var(--panel2);
-    border-radius: 999px; padding: 0.28rem 0.65rem;
-  }
-  .chip b { color: var(--text); font-weight: 600; }
-  .controls {
-    display: grid;
-    grid-template-columns: 1fr auto auto auto;
-    gap: 0.5rem;
-    margin-top: 0.85rem;
-  }
-  @media (max-width: 820px) {
-    .controls { grid-template-columns: 1fr 1fr; }
-    .controls input { grid-column: 1 / -1; }
-  }
-  input, select {
-    background: var(--panel);
-    border: 1px solid var(--border2);
-    color: var(--text);
-    border-radius: 10px;
-    padding: 0.55rem 0.7rem;
-    font-size: 0.9rem;
-    outline: none;
-  }
-  input:focus, select:focus { border-color: #4a6a93; }
-  .layout {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 1rem 1.25rem 2.5rem;
-    display: grid;
-    grid-template-columns: minmax(280px, 380px) 1fr;
-    gap: 1rem;
-    align-items: start;
-  }
-  @media (max-width: 900px) {
-    .layout { grid-template-columns: 1fr; }
-  }
-  .list-panel, .detail-panel {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    overflow: hidden;
-    min-height: 420px;
-  }
-  .list-head, .detail-head {
-    padding: 0.7rem 0.9rem;
-    border-bottom: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 0.82rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-  }
-  #game-list {
-    max-height: calc(100vh - 230px);
-    overflow: auto;
-  }
-  .game-row {
-    width: 100%;
-    text-align: left;
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid #1a1f27;
-    color: var(--text);
-    padding: 0.7rem 0.9rem;
-    cursor: pointer;
-    display: grid;
-    gap: 0.2rem;
-  }
-  .game-row:hover { background: #171b22; }
-  .game-row.active { background: #1c2430; box-shadow: inset 3px 0 0 var(--accent); }
-  .game-row .title { font-size: 0.92rem; font-weight: 600; }
-  .game-row .meta { font-size: 0.78rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
-  .badge {
-    display: inline-flex; align-items: center;
-    font-size: 0.7rem; font-weight: 650; text-transform: uppercase;
-    letter-spacing: 0.03em; border-radius: 999px; padding: 0.12rem 0.45rem;
-  }
-  .badge.high { color: #0d2a1c; background: var(--high); }
-  .badge.medium { color: #2a2106; background: var(--med); }
-  .badge.low { color: #2a0d10; background: var(--low); }
-  .detail-body { padding: 1rem 1.05rem 1.4rem; }
-  .empty {
-    color: var(--muted); padding: 2rem 1rem; text-align: center; font-size: 0.95rem;
-  }
-  .detail-title { margin: 0 0 0.2rem; font-size: 1.35rem; letter-spacing: -0.02em; }
-  .detail-provider { color: var(--muted); margin: 0 0 0.9rem; font-size: 0.95rem; }
-  .kv {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 0.35rem 0.75rem;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-  @media (max-width: 560px) { .kv { grid-template-columns: 1fr; } }
-  .kv .k { color: var(--muted); }
-  .kv .v { word-break: break-word; }
-  section.block {
-    margin-top: 1rem;
-    background: var(--panel2);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 0.8rem 0.9rem;
-  }
-  section.block h3 {
-    margin: 0 0 0.55rem;
-    font-size: 0.82rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--muted);
-    font-weight: 650;
-  }
-  pre.quote, .prose {
-    margin: 0;
-    white-space: pre-wrap;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 0.78rem;
-    line-height: 1.45;
-    color: #c8ccd2;
-    max-height: 220px;
-    overflow: auto;
-  }
-  .prose { font-family: inherit; font-size: 0.88rem; max-height: none; }
-  ul.clean { margin: 0; padding-left: 1.1rem; }
-  ul.clean li { margin: 0.25rem 0; font-size: 0.88rem; }
-  .pill-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.35rem; }
-  .pill {
-    border: 1px solid var(--border2); border-radius: 999px;
-    padding: 0.2rem 0.55rem; font-size: 0.75rem; color: #c4c7cc;
-  }
-  .links a { color: var(--accent); font-size: 0.88rem; word-break: break-all; }
-  .err { color: var(--low); padding: 1rem; }
-  footer {
-    max-width: 1280px; margin: 0 auto; padding: 0 1.25rem 2rem;
-    color: var(--muted); font-size: 0.8rem;
-  }
+:root {
+  color-scheme: dark;
+  --bg0: #07080b;
+  --bg1: #0c0e14;
+  --panel: rgba(18, 21, 30, 0.82);
+  --panel-solid: #12151e;
+  --panel-2: #171b26;
+  --line: rgba(255,255,255,0.07);
+  --line-2: rgba(255,255,255,0.12);
+  --text: #f2f4f8;
+  --muted: #8b93a7;
+  --faint: #5c657a;
+  --accent: #8bb4ff;
+  --accent-2: #b794f6;
+  --accent-glow: rgba(139,180,255,0.22);
+  --high: #34d399;
+  --high-bg: rgba(52,211,153,0.12);
+  --med: #fbbf24;
+  --med-bg: rgba(251,191,36,0.12);
+  --low: #f87171;
+  --low-bg: rgba(248,113,113,0.12);
+  --shadow: 0 20px 50px rgba(0,0,0,0.45);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --font: "DM Sans", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg0);
+  color: var(--text);
+  min-height: 100vh;
+  overflow: hidden;
+}
+body::before {
+  content: "";
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(900px 500px at 12% -10%, rgba(139,180,255,0.18), transparent 55%),
+    radial-gradient(700px 420px at 88% 0%, rgba(183,148,246,0.14), transparent 50%),
+    radial-gradient(600px 400px at 70% 100%, rgba(52,211,153,0.06), transparent 45%),
+    linear-gradient(180deg, var(--bg1), var(--bg0));
+}
+.app {
+  position: relative; z-index: 1;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem 1.15rem 1rem;
+  gap: 0.85rem;
+}
+.top {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 0.85rem;
+  align-items: stretch;
+}
+@media (max-width: 980px) {
+  body { overflow: auto; }
+  .app { height: auto; min-height: 100vh; overflow: visible; }
+  .top { grid-template-columns: 1fr; }
+}
+.hero, .filters {
+  background: var(--panel);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.hero {
+  padding: 1.15rem 1.25rem 1.05rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute; right: -40px; top: -50px;
+  width: 180px; height: 180px; border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-glow), transparent 70%);
+  pointer-events: none;
+}
+.kicker {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent);
+  margin-bottom: 0.45rem;
+}
+.kicker i {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent); box-shadow: 0 0 0 4px var(--accent-glow);
+  display: inline-block;
+}
+h1 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.2vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+.lede {
+  margin: 0.45rem 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  max-width: 42ch;
+}
+.lede a { color: var(--accent); text-decoration: none; }
+.lede a:hover { text-decoration: underline; }
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+@media (max-width: 720px) { .metrics { grid-template-columns: repeat(2, 1fr); } }
+.metric {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.65rem 0.7rem;
+}
+.metric .n {
+  font-size: 1.2rem; font-weight: 700; letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.metric .l { margin-top: 0.1rem; font-size: 0.72rem; color: var(--muted); }
+.filters {
+  padding: 0.95rem 1rem;
+  display: grid;
+  gap: 0.65rem;
+  align-content: center;
+}
+.filters-row {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 0.85fr 1fr;
+  gap: 0.5rem;
+}
+@media (max-width: 1100px) {
+  .filters-row { grid-template-columns: 1fr 1fr; }
+}
+.label {
+  display: block; font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--faint); margin-bottom: 0.28rem;
+}
+.field {
+  width: 100%;
+  background: rgba(0,0,0,0.28);
+  border: 1px solid var(--line-2);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 0.62rem 0.75rem;
+  font: 500 0.9rem/1.2 var(--font);
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.field:focus {
+  border-color: rgba(139,180,255,0.55);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+select.field { cursor: pointer; }
+.provider-pills {
+  display: flex; flex-wrap: wrap; gap: 0.35rem;
+}
+.ppill {
+  border: 1px solid var(--line-2);
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.76rem; font-weight: 600;
+  cursor: pointer;
+  transition: .15s ease;
+}
+.ppill:hover { color: var(--text); border-color: rgba(255,255,255,0.2); }
+.ppill.on {
+  color: #0b1020;
+  background: linear-gradient(135deg, #9ec0ff, #d2b8ff);
+  border-color: transparent;
+}
+.main {
+  display: grid;
+  grid-template-columns: minmax(300px, 380px) 1fr;
+  gap: 0.85rem;
+  min-height: 0;
+}
+@media (max-width: 980px) {
+  .main { grid-template-columns: 1fr; }
+}
+.panel {
+  background: var(--panel);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.panel-h {
+  padding: 0.75rem 0.95rem;
+  border-bottom: 1px solid var(--line);
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+.panel-h strong { color: var(--text); font-weight: 650; }
+#game-list {
+  overflow: auto;
+  flex: 1;
+  padding: 0.35rem;
+  scrollbar-width: thin;
+  scrollbar-color: #2a3142 transparent;
+}
+.row {
+  width: 100%;
+  text-align: left;
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+  border-radius: 14px;
+  padding: 0.72rem 0.8rem;
+  cursor: pointer;
+  display: grid;
+  gap: 0.35rem;
+  transition: background .12s, border-color .12s;
+}
+.row:hover { background: rgba(255,255,255,0.035); }
+.row.active {
+  background: linear-gradient(180deg, rgba(139,180,255,0.12), rgba(139,180,255,0.05));
+  border-color: rgba(139,180,255,0.28);
+}
+.row-top {
+  display: flex; justify-content: space-between; gap: 0.6rem; align-items: start;
+}
+.row-title {
+  font-size: 0.95rem; font-weight: 650; letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+.row-sub {
+  display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center;
+  color: var(--muted); font-size: 0.76rem;
+}
+.dot { width: 3px; height: 3px; border-radius: 50%; background: var(--faint); }
+.badge {
+  display: inline-flex; align-items: center;
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 999px; padding: 0.18rem 0.45rem;
+}
+.badge.high { color: var(--high); background: var(--high-bg); }
+.badge.medium { color: var(--med); background: var(--med-bg); }
+.badge.low { color: var(--low); background: var(--low-bg); }
+.tag {
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  padding: 0.12rem 0.42rem;
+  font-size: 0.68rem;
+  color: #b7becf;
+  background: rgba(255,255,255,0.02);
+}
+#detail {
+  overflow: auto;
+  flex: 1;
+  padding: 1.1rem 1.15rem 1.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #2a3142 transparent;
+}
+.empty {
+  height: 100%;
+  min-height: 280px;
+  display: grid; place-items: center;
+  color: var(--muted);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+}
+.detail-head {
+  display: flex; flex-wrap: wrap; justify-content: space-between;
+  gap: 0.8rem; align-items: start;
+  margin-bottom: 1rem;
+}
+.detail-title {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.4vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+}
+.detail-meta {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center;
+}
+.slug {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--faint);
+  background: rgba(0,0,0,0.25);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.15rem 0.4rem;
+}
+.actions { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-2);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.78rem; font-weight: 600;
+  padding: 0.45rem 0.75rem;
+  transition: .15s ease;
+}
+.btn:hover { border-color: rgba(139,180,255,0.4); background: rgba(139,180,255,0.1); }
+.btn.primary {
+  background: linear-gradient(135deg, #8bb4ff, #b794f6);
+  color: #0b1020;
+  border-color: transparent;
+}
+.btn.primary:hover { filter: brightness(1.05); }
+.summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 820px) { .summary { grid-template-columns: repeat(2, 1fr); } }
+.scard {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.85rem 0.9rem;
+  min-height: 84px;
+}
+.scard .s {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--faint); margin-bottom: 0.4rem;
+}
+.scard .v {
+  font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.scard .h {
+  margin-top: 0.25rem; font-size: 0.75rem; color: var(--muted);
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 0.7rem;
+}
+@media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
+.block {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.9rem 0.95rem;
+  margin-bottom: 0.7rem;
+}
+.block h3 {
+  margin: 0 0 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--faint);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.block h3 .sec-conf { text-transform: none; letter-spacing: 0; font-weight: 600; }
+.prose, .quote {
+  margin: 0;
+  white-space: pre-wrap;
+  color: #c9d0df;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+.quote {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  line-height: 1.45;
+  max-height: 200px;
+  overflow: auto;
+  background: rgba(0,0,0,0.22);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.7rem 0.75rem;
+}
+.sym {
+  border-top: 1px solid var(--line);
+  padding: 0.7rem 0 0.15rem;
+}
+.sym:first-of-type { border-top: 0; padding-top: 0; }
+.sym .name { font-weight: 650; font-size: 0.9rem; margin-bottom: 0.25rem; }
+.conf-map {
+  display: flex; flex-wrap: wrap; gap: 0.35rem;
+}
+.chip {
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.72rem;
+  color: #b9c0d0;
+  background: rgba(255,255,255,0.02);
+}
+.chip b { color: var(--text); font-weight: 650; }
+.unknowns { color: var(--med); }
+.err { color: var(--low); }
+.skeleton {
+  height: 14px; border-radius: 8px;
+  background: linear-gradient(90deg, #1a1f2b, #242b3a, #1a1f2b);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite linear;
+  margin: 0.4rem 0;
+}
+@keyframes shimmer { to { background-position: -200% 0; } }
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <h1>Slot Mechanics Dataset</h1>
-    <p class="sub">Evidence-backed how-each-slot-works records. Raw JSON on <a href="https://github.com/stepupgaming/slot-mechanics-dataset">GitHub</a>.</p>
-    <div class="stats" id="stats"></div>
-    <div class="controls">
-      <input id="q" type="search" placeholder="Search title or slug…" autocomplete="off"/>
-      <select id="provider"><option value="">All providers</option></select>
-      <select id="confidence">
-        <option value="">All confidence</option>
-        <option value="high">High</option>
-        <option value="medium">Medium</option>
-        <option value="low">Low</option>
-      </select>
-      <select id="win">
-        <option value="">All win systems</option>
-        <option value="paylines">Paylines</option>
-        <option value="ways">Ways</option>
-        <option value="pay_anywhere">Pay anywhere</option>
-        <option value="clusters">Clusters</option>
-        <option value="other">Other</option>
-        <option value="unknown">Unknown</option>
-      </select>
-    </div>
+<div class="app">
+  <div class="top">
+    <section class="hero">
+      <div class="kicker"><i></i> Step Up · Mechanics DB</div>
+      <h1>How these slots actually work</h1>
+      <p class="lede">Evidence-backed records from official rules and gameinfo — not marketing tags. <a href="https://github.com/stepupgaming/slot-mechanics-dataset" target="_blank" rel="noopener">Source on GitHub</a></p>
+      <div class="metrics" id="metrics"></div>
+    </section>
+    <section class="filters">
+      <div class="filters-row">
+        <div>
+          <label class="label" for="q">Search</label>
+          <input class="field" id="q" type="search" placeholder="Gates of Olympus, chaos-crew…" autocomplete="off"/>
+        </div>
+        <div>
+          <label class="label" for="confidence">Confidence</label>
+          <select class="field" id="confidence">
+            <option value="">Any</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <div>
+          <label class="label" for="win">Win system</label>
+          <select class="field" id="win">
+            <option value="">Any</option>
+            <option value="paylines">Paylines</option>
+            <option value="ways">Ways</option>
+            <option value="pay_anywhere">Pay anywhere</option>
+            <option value="clusters">Clusters</option>
+            <option value="other">Other</option>
+            <option value="unknown">Unknown</option>
+          </select>
+        </div>
+        <div>
+          <label class="label" for="flag">Features</label>
+          <select class="field" id="flag">
+            <option value="">Any</option>
+            <option value="tumble">Has tumble</option>
+            <option value="buy">Feature buy</option>
+            <option value="ante">Ante bet</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <div class="label">Provider</div>
+        <div class="provider-pills" id="providers"></div>
+      </div>
+    </section>
   </div>
-</header>
 
-<div class="layout">
-  <div class="list-panel">
-    <div class="list-head"><span id="list-count">Loading…</span><span>click a game</span></div>
-    <div id="game-list"></div>
-  </div>
-  <div class="detail-panel">
-    <div class="detail-head"><span>Game detail</span><span id="detail-status"></span></div>
-    <div class="detail-body" id="detail">
-      <div class="empty">Pick a game from the list.</div>
-    </div>
+  <div class="main">
+    <aside class="panel">
+      <div class="panel-h"><span><strong id="list-count">—</strong> games</span><span id="list-hint">↑↓ to move</span></div>
+      <div id="game-list"><div class="empty">Loading catalog…</div></div>
+    </aside>
+    <section class="panel">
+      <div class="panel-h"><span>Game detail</span><span id="detail-status"></span></div>
+      <div id="detail"><div class="empty">Select a title to inspect mechanics.</div></div>
+    </section>
   </div>
 </div>
 
-<footer>
-  Official rules preferred. Gaps stay null. Confidence is overall + per section in each record.
-</footer>
-
 <script>
 const state = {
-  index: null,
   games: [],
   filtered: [],
   selected: null,
+  provider: '',
   cache: new Map(),
-  winBySlug: new Map(), // filled lazily from detail; index may not have win type
 };
 
-const el = (id) => document.getElementById(id);
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => (
+  {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]
+));
+const prettyWin = (t) => ({
+  paylines:'Paylines', ways:'Ways', pay_anywhere:'Pay anywhere',
+  clusters:'Clusters', other:'Other', unknown:'Unknown'
+}[t] || (t || '—'));
+const badge = (c) => {
+  const x = (c || 'unknown').toLowerCase();
+  return `<span class="badge ${x}">${x}</span>`;
+};
+const yn = (v) => v === true ? 'Yes' : v === false ? 'No' : '—';
 
-function badge(conf) {
-  const c = (conf || 'unknown').toLowerCase();
-  return `<span class="badge ${c}">${c}</span>`;
-}
-
-function esc(s) {
-  return String(s ?? '').replace(/[&<>"']/g, (ch) => ({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
-  }[ch]));
-}
-
-function renderStats(idx) {
-  const parts = [
-    `<span class="chip"><b>${idx.game_count}</b> games</span>`,
-    ...Object.entries(idx.by_provider || {}).map(([k,v]) => `<span class="chip"><b>${v}</b> ${esc(k)}</span>`),
-    ...Object.entries(idx.by_confidence || {}).map(([k,v]) => `<span class="chip"><b>${v}</b> ${esc(k)}</span>`),
-  ];
-  el('stats').innerHTML = parts.join('');
-  const sel = el('provider');
-  Object.keys(idx.by_provider || {}).sort().forEach((p) => {
-    const o = document.createElement('option');
-    o.value = p; o.textContent = p;
-    sel.appendChild(o);
+function renderMetrics(idx) {
+  const high = (idx.by_confidence || {}).high || 0;
+  const med = (idx.by_confidence || {}).medium || 0;
+  const low = (idx.by_confidence || {}).low || 0;
+  $('metrics').innerHTML = `
+    <div class="metric"><div class="n">${idx.game_count}</div><div class="l">Games</div></div>
+    <div class="metric"><div class="n">${high}</div><div class="l">High confidence</div></div>
+    <div class="metric"><div class="n">${med}</div><div class="l">Medium</div></div>
+    <div class="metric"><div class="n">${Object.keys(idx.by_provider || {}).length}</div><div class="l">Studios</div></div>
+  `;
+  const wrap = $('providers');
+  wrap.innerHTML = `<button type="button" class="ppill on" data-p="">All</button>` +
+    Object.entries(idx.by_provider || {}).sort((a,b)=>b[1]-a[1]).map(([p,n]) =>
+      `<button type="button" class="ppill" data-p="${esc(p)}">${esc(p)} <span style="opacity:.7">${n}</span></button>`
+    ).join('');
+  wrap.querySelectorAll('.ppill').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.provider = btn.dataset.p;
+      wrap.querySelectorAll('.ppill').forEach((b) => b.classList.toggle('on', b.dataset.p === state.provider));
+      applyFilters();
+    });
   });
 }
 
 function applyFilters() {
-  const q = el('q').value.trim().toLowerCase();
-  const provider = el('provider').value;
-  const conf = el('confidence').value;
-  const win = el('win').value;
+  const q = $('q').value.trim().toLowerCase();
+  const conf = $('confidence').value;
+  const win = $('win').value;
+  const flag = $('flag').value;
   state.filtered = state.games.filter((g) => {
-    if (provider && g.provider !== provider) return false;
+    if (state.provider && g.provider !== state.provider) return false;
     if (conf && (g.confidence_overall || '').toLowerCase() !== conf) return false;
+    if (win && (g.win_system_type || 'unknown') !== win) return false;
+    if (flag === 'tumble' && g.has_tumble !== true) return false;
+    if (flag === 'buy' && g.has_buy !== true) return false;
+    if (flag === 'ante' && g.has_ante !== true) return false;
     if (q) {
-      const hay = `${g.title} ${g.slug} ${g.provider}`.toLowerCase();
+      const hay = `${g.title} ${g.slug} ${g.provider} ${g.win_system_type || ''}`.toLowerCase();
       if (!hay.includes(q)) return false;
-    }
-    if (win) {
-      const w = state.winBySlug.get(g.slug) || g.win_system_type;
-      if (!w || w !== win) return false;
     }
     return true;
   });
@@ -288,45 +571,61 @@ function applyFilters() {
 }
 
 function renderList() {
-  const root = el('game-list');
-  el('list-count').textContent = `${state.filtered.length} shown`;
+  const root = $('game-list');
+  $('list-count').textContent = state.filtered.length;
   if (!state.filtered.length) {
-    root.innerHTML = `<div class="empty">No matches.</div>`;
+    root.innerHTML = `<div class="empty">Nothing matches those filters.</div>`;
     return;
   }
   root.innerHTML = state.filtered.map((g) => `
-    <button class="game-row ${state.selected === g.slug ? 'active' : ''}" data-slug="${esc(g.slug)}">
-      <div class="title">${esc(g.title)}</div>
-      <div class="meta">
-        <span>${esc(g.provider)}</span>
+    <button type="button" class="row ${state.selected === g.slug ? 'active' : ''}" data-slug="${esc(g.slug)}">
+      <div class="row-top">
+        <div class="row-title">${esc(g.title)}</div>
         ${badge(g.confidence_overall)}
+      </div>
+      <div class="row-sub">
+        <span>${esc(g.provider)}</span>
+        <span class="dot"></span>
+        <span class="tag">${esc(prettyWin(g.win_system_type))}</span>
+        ${g.grid ? `<span class="tag">${esc(g.grid)}</span>` : ''}
+        ${g.has_tumble ? `<span class="tag">Tumble</span>` : ''}
+        ${g.has_buy ? `<span class="tag">Buy</span>` : ''}
       </div>
     </button>
   `).join('');
-  root.querySelectorAll('.game-row').forEach((btn) => {
+  root.querySelectorAll('.row').forEach((btn) => {
     btn.addEventListener('click', () => selectGame(btn.dataset.slug));
   });
+  // keep active row visible
+  const active = root.querySelector('.row.active');
+  if (active) active.scrollIntoView({ block: 'nearest' });
 }
 
-function pretty(obj) {
-  if (obj == null) return '—';
-  if (typeof obj === 'string') return esc(obj);
-  return `<pre class="quote">${esc(JSON.stringify(obj, null, 2))}</pre>`;
+function sectionConf(conf, key) {
+  if (!conf || !conf[key]) return '';
+  return `<span class="sec-conf badge ${esc(conf[key])}">${esc(conf[key])}</span>`;
 }
 
-function textOrDash(v) {
-  if (v == null || v === '') return '—';
-  return esc(String(v));
-}
-
-function symbolBlock(title, arr) {
-  if (!arr || !arr.length) return '';
-  const items = arr.map((s) => {
-    const name = esc(s.name || 'Symbol');
-    const beh = esc((s.behavior || '').slice(0, 1200));
-    return `<li><b>${name}</b><div class="prose" style="margin-top:0.25rem;color:#c8ccd2">${beh || '—'}</div></li>`;
-  }).join('');
-  return `<section class="block"><h3>${esc(title)}</h3><ul class="clean">${items}</ul></section>`;
+function symbolGroups(symbols) {
+  const groups = [
+    ['Wilds', symbols.wilds],
+    ['Scatters', symbols.scatters],
+    ['Multipliers', symbols.multipliers],
+    ['Collectors', symbols.collectors],
+    ['Specials', symbols.specials],
+  ].filter(([,arr]) => arr && arr.length);
+  if (!groups.length) return '';
+  return groups.map(([title, arr]) => `
+    <div class="block">
+      <h3>${esc(title)}</h3>
+      ${arr.map((s) => `
+        <div class="sym">
+          <div class="name">${esc(s.name || 'Symbol')}</div>
+          <div class="prose">${esc((s.behavior || '').slice(0, 1600) || '—')}</div>
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
 }
 
 function renderDetail(g) {
@@ -338,71 +637,73 @@ function renderDetail(g) {
   const ante = g.ante_bet || {};
   const reel = g.reel_behavior || {};
   const fs = g.bonus_free_spins || {};
-  const symbols = g.symbols || {};
+  const tumble = reel.cascades_or_tumbles || {};
+  const respin = reel.respins || {};
   const features = g.features || [];
   const unknowns = g.unknowns || [];
   const evidence = g.evidence || [];
+  const limits = g.numeric_limits || {};
 
-  if (win.type) state.winBySlug.set(id.slug || state.selected, win.type);
+  const gridLabel = (grid.rows && grid.cols)
+    ? `${grid.rows}×${grid.cols}`
+    : (grid.layout_notes ? String(grid.layout_notes).slice(0, 48) : '—');
 
-  const tumble = reel.cascades_or_tumbles || {};
-  const respin = reel.respins || {};
-
-  el('detail').innerHTML = `
-    <h2 class="detail-title">${esc(id.title || 'Untitled')}</h2>
-    <p class="detail-provider">${esc(id.provider || '')} · ${badge(conf.overall || 'unknown')} · <code>${esc(id.slug || '')}</code></p>
-
-    <div class="kv">
-      <div class="k">Grid</div>
-      <div class="v">${grid.rows && grid.cols ? `${esc(grid.rows)}×${esc(grid.cols)}` : textOrDash(grid.layout_notes)}</div>
-      <div class="k">Win system</div>
-      <div class="v">${esc(win.type || 'unknown')}${win.payline_count ? ` · ${esc(win.payline_count)} lines` : ''}${win.ways_count ? ` · ${esc(win.ways_count)} ways` : ''}${win.min_symbols_for_win ? ` · min ${esc(win.min_symbols_for_win)}` : ''}</div>
-      <div class="k">Tumbles</div>
-      <div class="v">${tumble.present ? 'Yes' : tumble.present === false ? 'No' : '—'}</div>
-      <div class="k">Respins</div>
-      <div class="v">${respin.present ? 'Yes' : respin.present === false ? 'No' : '—'}</div>
-      <div class="k">Feature buy</div>
-      <div class="v">${buy.available === true ? 'Available' : buy.available === false ? 'No' : '—'}</div>
-      <div class="k">Ante</div>
-      <div class="v">${ante.available === true ? 'Available' : ante.available === false ? 'No' : '—'}${ante.cost_multiplier ? ` · ${esc(ante.cost_multiplier)}x` : ''}</div>
+  $('detail').innerHTML = `
+    <div class="detail-head">
+      <div>
+        <h2 class="detail-title">${esc(id.title || 'Untitled')}</h2>
+        <p class="detail-meta">
+          ${esc(id.provider || '')}
+          ${badge(conf.overall || 'unknown')}
+          <span class="slug">${esc(id.slug || '')}</span>
+        </p>
+      </div>
+      <div class="actions">
+        ${id.official_info_url ? `<a class="btn primary" href="${esc(id.official_info_url)}" target="_blank" rel="noopener">Official rules</a>` : ''}
+        ${id.demo_url ? `<a class="btn" href="${esc(id.demo_url)}" target="_blank" rel="noopener">Demo</a>` : ''}
+        ${id.slotcatalog_url ? `<a class="btn" href="${esc(id.slotcatalog_url)}" target="_blank" rel="noopener">SlotCatalog</a>` : ''}
+        <a class="btn" href="./games/${esc(id.slug)}.json" target="_blank" rel="noopener">Raw JSON</a>
+      </div>
     </div>
 
-    <div class="pill-row">
-      ${Object.entries(conf).filter(([k]) => k !== 'overall').map(([k,v]) => `<span class="pill">${esc(k)}: ${esc(v)}</span>`).join('')}
+    <div class="summary">
+      <div class="scard"><div class="s">Grid</div><div class="v">${esc(gridLabel)}</div><div class="h">${esc(grid.layout_notes || 'Layout from rules')}</div></div>
+      <div class="scard"><div class="s">Win system</div><div class="v">${esc(prettyWin(win.type))}</div><div class="h">${win.payline_count ? esc(win.payline_count)+' lines' : win.ways_count ? esc(win.ways_count)+' ways' : win.min_symbols_for_win ? 'min '+esc(win.min_symbols_for_win)+' symbols' : esc(win.direction || '—')}</div></div>
+      <div class="scard"><div class="s">Reel behavior</div><div class="v">${tumble.present ? 'Tumbles' : respin.present ? 'Respins' : 'Standard'}</div><div class="h">Tumble ${yn(tumble.present)} · Respin ${yn(respin.present)}</div></div>
+      <div class="scard"><div class="s">Buy / ante</div><div class="v">${buy.available ? 'Buy on' : ante.available ? 'Ante on' : 'None listed'}</div><div class="h">Buy ${yn(buy.available)} · Ante ${yn(ante.available)}${ante.cost_multiplier ? ' · '+esc(ante.cost_multiplier)+'x' : ''}</div></div>
     </div>
 
-    ${win.notes ? `<section class="block"><h3>Win system notes</h3><pre class="quote">${esc(win.notes)}</pre></section>` : ''}
-    ${tumble.how_it_works ? `<section class="block"><h3>Tumble / cascade</h3><pre class="quote">${esc(tumble.how_it_works)}</pre></section>` : ''}
-    ${fs.notes || (fs.modes && fs.modes.length) ? `<section class="block"><h3>Free spins / bonus</h3>${fs.notes ? `<pre class="quote">${esc(fs.notes)}</pre>` : ''}${pretty(fs.modes)}</section>` : ''}
-    ${features.length ? `<section class="block"><h3>Features</h3>${pretty(features)}</section>` : ''}
-    ${buy.notes || (buy.options && buy.options.length) ? `<section class="block"><h3>Feature buy</h3>${buy.notes ? `<div class="prose">${esc(buy.notes)}</div>` : ''}${pretty(buy.options)}</section>` : ''}
+    <div class="block">
+      <h3>Confidence map</h3>
+      <div class="conf-map">
+        ${Object.entries(conf).map(([k,v]) => `<span class="chip"><b>${esc(k)}</b> ${esc(v)}</span>`).join('') || '—'}
+      </div>
+    </div>
 
-    ${symbolBlock('Wilds', symbols.wilds)}
-    ${symbolBlock('Scatters', symbols.scatters)}
-    ${symbolBlock('Multipliers', symbols.multipliers)}
-    ${symbolBlock('Collectors', symbols.collectors)}
-    ${symbolBlock('Specials', symbols.specials)}
-
-    ${unknowns.length ? `<section class="block"><h3>Unknowns</h3><ul class="clean">${unknowns.map(u => `<li>${esc(u)}</li>`).join('')}</ul></section>` : ''}
-
-    <section class="block links">
-      <h3>Sources</h3>
-      <ul class="clean">
-        ${id.official_info_url ? `<li><a href="${esc(id.official_info_url)}" target="_blank" rel="noopener">Official info</a></li>` : ''}
-        ${id.demo_url ? `<li><a href="${esc(id.demo_url)}" target="_blank" rel="noopener">Demo</a></li>` : ''}
-        ${id.slotcatalog_url ? `<li><a href="${esc(id.slotcatalog_url)}" target="_blank" rel="noopener">SlotCatalog</a></li>` : ''}
-        <li><a href="./games/${esc(id.slug)}.json" target="_blank" rel="noopener">Raw JSON</a></li>
-      </ul>
-      ${evidence.length ? `<div style="margin-top:0.7rem">${evidence.slice(0,3).map(e => `<pre class="quote" style="margin-bottom:0.5rem">${esc((e.quote_or_excerpt || e.excerpt || '').slice(0,800))}\n— ${esc(e.source_type || '')} ${esc(e.url || '')}</pre>`).join('')}</div>` : ''}
-    </section>
+    <div class="grid-2">
+      <div>
+        ${win.notes ? `<div class="block"><h3>Win system ${sectionConf(conf,'win_system')}</h3><pre class="quote">${esc(win.notes)}</pre></div>` : ''}
+        ${tumble.how_it_works ? `<div class="block"><h3>Tumble / cascade ${sectionConf(conf,'reel_behavior')}</h3><pre class="quote">${esc(tumble.how_it_works)}</pre></div>` : ''}
+        ${(fs.notes || (fs.modes && fs.modes.length)) ? `<div class="block"><h3>Free spins / bonus ${sectionConf(conf,'bonus_free_spins')}</h3>${fs.notes ? `<pre class="quote">${esc(fs.notes)}</pre>` : ''}${fs.modes && fs.modes.length ? `<pre class="quote" style="margin-top:.55rem">${esc(JSON.stringify(fs.modes, null, 2))}</pre>` : ''}</div>` : ''}
+        ${features.length ? `<div class="block"><h3>Named features ${sectionConf(conf,'features')}</h3><pre class="quote">${esc(JSON.stringify(features, null, 2))}</pre></div>` : ''}
+        ${(buy.notes || (buy.options && buy.options.length) || ante.notes) ? `<div class="block"><h3>Feature buy & ante ${sectionConf(conf,'feature_buy')}</h3>${buy.notes ? `<div class="prose" style="margin-bottom:.5rem">${esc(buy.notes)}</div>` : ''}${buy.options && buy.options.length ? `<pre class="quote">${esc(JSON.stringify(buy.options, null, 2))}</pre>` : ''}${ante.notes ? `<div class="prose" style="margin-top:.5rem">${esc(ante.notes)}</div>` : ''}</div>` : ''}
+      </div>
+      <div>
+        ${symbolGroups(g.symbols || {})}
+        ${(limits.max_win_multiplier != null || limits.rtp_note || limits.notes) ? `<div class="block"><h3>Limits ${sectionConf(conf,'numeric_limits')}</h3><pre class="quote">${esc(JSON.stringify(limits, null, 2))}</pre></div>` : ''}
+        ${unknowns.length ? `<div class="block"><h3>Unknowns</h3><div class="prose unknowns">${unknowns.map(u => '• '+esc(u)).join('\n')}</div></div>` : ''}
+        ${evidence.length ? `<div class="block"><h3>Evidence</h3>${evidence.slice(0,4).map((e) => `<pre class="quote" style="margin-bottom:.45rem">${esc((e.quote_or_excerpt || e.excerpt || '').slice(0,900))}\n\n— ${esc(e.source_type || '')}${e.url ? ' · '+esc(e.url) : ''}</pre>`).join('')}</div>` : ''}
+      </div>
+    </div>
   `;
 }
 
 async function selectGame(slug) {
+  if (!slug) return;
   state.selected = slug;
   renderList();
-  el('detail-status').textContent = 'Loading…';
-  el('detail').innerHTML = `<div class="empty">Loading ${esc(slug)}…</div>`;
+  $('detail-status').textContent = 'Loading';
+  $('detail').innerHTML = `<div style="padding:1rem"><div class="skeleton" style="width:40%"></div><div class="skeleton" style="width:70%"></div><div class="skeleton" style="width:55%"></div><div class="skeleton" style="width:85%;height:90px;margin-top:1rem"></div></div>`;
   try {
     let g = state.cache.get(slug);
     if (!g) {
@@ -411,44 +712,47 @@ async function selectGame(slug) {
       g = await res.json();
       state.cache.set(slug, g);
     }
-    el('detail-status').textContent = '';
+    $('detail-status').textContent = '';
     renderDetail(g);
-    // Re-apply win filter if set now that we know type
-    if (el('win').value) applyFilters();
     history.replaceState(null, '', `#${encodeURIComponent(slug)}`);
   } catch (err) {
-    el('detail-status').textContent = 'Error';
-    el('detail').innerHTML = `<div class="err">Could not load ${esc(slug)}: ${esc(err.message)}</div>`;
+    $('detail-status').textContent = 'Error';
+    $('detail').innerHTML = `<div class="empty err">Couldn’t load ${esc(slug)}.<br/>${esc(err.message)}</div>`;
   }
+}
+
+function moveSelection(delta) {
+  if (!state.filtered.length) return;
+  const i = Math.max(0, state.filtered.findIndex((g) => g.slug === state.selected));
+  const next = state.filtered[(i + delta + state.filtered.length) % state.filtered.length];
+  selectGame(next.slug);
 }
 
 async function boot() {
-  try {
-    const res = await fetch('./dataset.json');
-    if (!res.ok) throw new Error(`dataset.json HTTP ${res.status}`);
-    const idx = await res.json();
-    state.index = idx;
-    state.games = idx.games || [];
-    renderStats(idx);
-    applyFilters();
-    const hash = decodeURIComponent((location.hash || '').replace(/^#/, ''));
-    if (hash && state.games.some((g) => g.slug === hash)) {
-      selectGame(hash);
-    } else if (state.filtered[0]) {
-      selectGame(state.filtered[0].slug);
-    }
-  } catch (err) {
-    el('list-count').textContent = 'Failed';
-    el('game-list').innerHTML = `<div class="err">${esc(err.message)}</div>`;
-  }
+  const res = await fetch('./dataset.json');
+  if (!res.ok) throw new Error(`dataset.json HTTP ${res.status}`);
+  const idx = await res.json();
+  state.games = idx.games || [];
+  renderMetrics(idx);
+  applyFilters();
+  const hash = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+  if (hash && state.games.some((g) => g.slug === hash)) selectGame(hash);
+  else if (state.filtered[0]) selectGame(state.filtered[0].slug);
 }
 
-['q','provider','confidence','win'].forEach((id) => {
-  el(id).addEventListener('input', applyFilters);
-  el(id).addEventListener('change', applyFilters);
+['q','confidence','win','flag'].forEach((id) => {
+  $(id).addEventListener('input', applyFilters);
+  $(id).addEventListener('change', applyFilters);
+});
+window.addEventListener('keydown', (e) => {
+  if (e.target && ['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName)) return;
+  if (e.key === 'ArrowDown') { e.preventDefault(); moveSelection(1); }
+  if (e.key === 'ArrowUp') { e.preventDefault(); moveSelection(-1); }
 });
 
-boot();
+boot().catch((err) => {
+  $('game-list').innerHTML = `<div class="empty err">${esc(err.message)}</div>`;
+});
 </script>
 </body>
 </html>
