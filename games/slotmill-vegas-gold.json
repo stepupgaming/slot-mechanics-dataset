@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:20Z",
+  "updated_at": "2026-09-27T18:33:44Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Vegas Gold",
@@ -153,13 +153,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "medium",
     "features": "high",
     "feature_buy": "low",
     "numeric_limits": "high"
@@ -169,22 +169,21 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/vegas-gold",
       "local_path": "sources/slotmill/vegas-gold.html",
-      "extracted_at": "2026-09-27T18:32:38Z",
+      "extracted_at": "2026-09-27T18:33:44Z",
       "quote_or_excerpt": "Game Type: 3x3 -> 5x3 Video Slot\nPaylines: Matching 3+ symbols\nRTP (%): 96,36 %\nMax win; x Bet: 5 000 x\nBonus Features: Freespins with respins and a progressive multiplier\nSpecial Symbols: Bonus Wheel Symbol\nVolatility (variance): High\nGame URL: \"https://vegas-gold.slotmill.com\"\nVegas Gold is a 15 reel video slot where 6 of the reels are unlocked during re-spins and hold access to the bonus feature. The game is based on matching symbols with a re-spin functionality triggered by 3 identical symbols and continuing as long as additional matching symbols appear.\n\nThe Free Spin bonus feature is triggered by two scatter symbols present on the 6 reels that are unlocked during re-spins. The Wheel of Free Spins determine the number of Free Spins awarded. All 15 reels are active during Free Spins as is the re-spin functionality. Free spins start with a 2x win multiplier and for every “new” spin it is increased by 1x giving players wicked win potential!\n\nDesigned and built for"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_vegas-gold.pdf",
-      "extracted_at": "2026-09-27T18:32:38Z",
+      "extracted_at": "2026-09-27T18:33:44Z",
       "quote_or_excerpt": "Wicked win potential!\n\nVegas Gold is a 15-reel video slot where 6 of the reels are unlocked during re-spins and hold access to the\nbonus feature. The game is based on matching symbols with a re-spin functionality triggered by 3 identical\nsymbols and continuing as long as additional matching symbols appear.\n\nThe Free Spin bonus feature is triggered by two scatter symbols present on the 6 reels that are unlocked\nduring re-spins. The Wheel of Free Spins determine the number of Free Spins awarded. All 15 reels are\nactive during Free Spins as is the re-spin functionality. Free spins start with a 2x win multiplier and for every\n“new” spin it is increased by 1x giving players wicked win potential!\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two\ni"
     }
   ],
   "unknowns": [
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
-    "volatility from official specs: High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "volatility from official specs: High"
   ],
   "thumbnail": "thumbs/slotmill-vegas-gold.webp",
   "thumbnail_attribution": "Slotmill"

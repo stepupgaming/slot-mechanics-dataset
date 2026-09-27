@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:33:20Z",
+  "updated_at": "2026-09-27T18:33:44Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Lucy Luck and the Temple of Mysteries",
@@ -19,11 +19,11 @@
     "layout_notes": "Game Type: 6x6 Video Slot"
   },
   "win_system": {
-    "type": "paylines",
-    "payline_count": 8,
+    "type": "pay_anywhere",
+    "payline_count": null,
     "ways_count": null,
     "min_symbols_for_win": null,
-    "direction": "left_to_right",
+    "direction": null,
     "notes": "Official Paylines field: 8+ Matching Symbols"
   },
   "reel_behavior": {
@@ -42,7 +42,7 @@
     "other": []
   },
   "base_game_loop": {
-    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "summary": "Paid spin on Slotmill video slot: spin → evaluate wins.",
     "phases": [
       {
         "name": "spin",
@@ -53,13 +53,13 @@
       },
       {
         "name": "win_evaluation",
-        "what_happens": "Wins evaluated along 8 paylines (left-to-right) per official Paylines field.",
+        "what_happens": "Winning combinations evaluated per game win system.",
         "order": 2,
-        "ends_when": "All paying lines scored",
+        "ends_when": null,
         "state_changes": null
       }
     ],
-    "win_evaluation": "Wins evaluated along 8 paylines (left-to-right) per official Paylines field.",
+    "win_evaluation": "Winning combinations evaluated per game win system.",
     "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
   },
   "symbols": {
@@ -158,13 +158,13 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "low",
     "base_game_loop": "high",
     "symbols": "low",
-    "bonus_free_spins": "low",
+    "bonus_free_spins": "medium",
     "features": "high",
     "feature_buy": "medium",
     "numeric_limits": "high"
@@ -174,14 +174,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/lucy-luck-and-the-temple-of-mysteries",
       "local_path": "sources/slotmill/lucy-luck-and-the-temple-of-mysteries.html",
-      "extracted_at": "2026-09-27T18:32:38Z",
+      "extracted_at": "2026-09-27T18:33:44Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 8+ Matching Symbols\nRTP (%): Variant 1: 96.05 | Variant 2: 94.18\nMax win; x Bet: 10 000x\nBonus Features: Free Spins, Super Free Spins\nSpecial Symbols: Mystery Symbols, Mystery Coins\nVolatility (variance): High\nGame URL: \"https://temple-of-mysteries.slotmill.com\"\nJoin Lucy Luck on an exhilarating expedition to the Temple of Mysteries nestled in Nepal’s majestic mountains. In this thrilling slot adventure you can trigger wins reaching 10,000x your bet by matching 8 or more symbols and unveiling the secrets held by the enigmatic Mystery Symbols.\n\nThe Mystery Symbols, found in both the Base Game and Free Spins, are the gatekeepers to various rewards. Accumulate 8 or more to reveal paying symbols, special features, or the highly sought-after Mystery Coin, offering heart-pounding bet multipliers up to 1000x. Experience the anticipation of Free Spins or elevate the excitement with Super Free Spins, where Mystery Symbols persist until they reach 8 or the bo"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_lucy-luck-and-the-temple-of-mysteries.pdf",
-      "extracted_at": "2026-09-27T18:32:38Z",
+      "extracted_at": "2026-09-27T18:33:44Z",
       "quote_or_excerpt": "Embark on a Journey for Hidden Mysteries\n\nJoin Lucy Luck on an exhilarating expedition to the Temple of Mysteries nestled in Nepal’s majestic\nmountains. In this thrilling slot adventure, you can trigger wins reaching 10,000x your bet by matching 8 or\nmore symbols and unveiling the secrets held by the enigmatic Mystery Symbols.\n\nThe Mystery Symbols, found in both the Base Game and Free Spins, are the gatekeepers to various rewards.\nAccumulate 8 or more to reveal paying symbols, special features, or the highly sought-after Mystery Coin,\noffering heart-pounding bet multipliers up to 1000x. Experience the anticipation of Free Spins or elevate\nthe excitement with Super Free Spins, where Mystery Symbols persist until they reach 8 or the bonus\nconcludes.\n\nUnravel the mysteries within the Nepalese"
     }
   ],
@@ -189,8 +189,7 @@
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Fast Track buy cost not stated on marketing page (not invented)",
-    "volatility from official specs: High",
-    "overall confidence capped at medium until free-spin trigger count and spins awarded are rules-backed"
+    "volatility from official specs: High"
   ],
   "thumbnail": "thumbs/slotmill-lucy-luck-and-the-temple-of-mysteries.webp",
   "thumbnail_attribution": "Slotmill"

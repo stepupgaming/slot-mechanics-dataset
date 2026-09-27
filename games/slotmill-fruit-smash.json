@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:32:38Z",
+  "updated_at": "2026-09-27T18:33:44Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Fruit Smash",
@@ -19,11 +19,11 @@
     "layout_notes": "Game Type: 6x6 Video Slot"
   },
   "win_system": {
-    "type": "paylines",
-    "payline_count": 8,
+    "type": "pay_anywhere",
+    "payline_count": null,
     "ways_count": null,
     "min_symbols_for_win": null,
-    "direction": "left_to_right",
+    "direction": null,
     "notes": "Official Paylines field: 8+ Matching Symbols"
   },
   "reel_behavior": {
@@ -42,7 +42,7 @@
     "other": []
   },
   "base_game_loop": {
-    "summary": "Paid spin on Slotmill payline / avalanche/cascade / progressive win multiplier: spin → evaluate wins → avalanche while wins continue → multiplier grows with wins.",
+    "summary": "Paid spin on Slotmill avalanche/cascade / progressive win multiplier: spin → evaluate wins → avalanche while wins continue → multiplier grows with wins.",
     "phases": [
       {
         "name": "spin",
@@ -53,9 +53,9 @@
       },
       {
         "name": "win_evaluation",
-        "what_happens": "Wins evaluated along 8 paylines (left-to-right) per official Paylines field.",
+        "what_happens": "Winning combinations evaluated per game win system.",
         "order": 2,
-        "ends_when": "All paying lines scored",
+        "ends_when": null,
         "state_changes": null
       },
       {
@@ -73,7 +73,7 @@
         "state_changes": "Win multiplier grows across consecutive wins in the cascade chain"
       }
     ],
-    "win_evaluation": "Wins evaluated along 8 paylines (left-to-right) per official Paylines field.",
+    "win_evaluation": "Winning combinations evaluated per game win system.",
     "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
   },
   "symbols": {
@@ -207,14 +207,14 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/fruit-smash",
       "local_path": "sources/slotmill/fruit-smash.html",
-      "extracted_at": "2026-09-27T18:32:38Z",
+      "extracted_at": "2026-09-27T18:33:44Z",
       "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 8+ Matching Symbols\nRTP (%): 96,19%\nMax win; x Bet: 6 000 x\nBonus Features: Free Spins, Fruit Frenzy Free Spins, Random Fruit Smash\nSpecial Symbols: Bonus Symbol\nVolatility (variance): Very High\nGame URL: \"https://fruit-smash.slotmill.com\"\nFruit Smash is an avalanche style game with luscious fruit symbols set in a 6×6 grid formation where 8+ matching symbols are required for a win. In both the base game and in Free Spins there is a Progressive Win Multiplier as well as a random feature placing giant Symbol(s) (2×2, 3×3 or 4×4) onto the grid and that may contain up to a 100x win multiplier. Combined these features boost the excitement and allow for crazy wins in the base game.\n\nLand 3 Bonus Symbols to trigger 10 Free Spins which can be re-triggered awarding 5 extra spins. Randomly Fruit Frenzy super Free Spins can be triggered and which award minimum one giant symbols on the grid for each spin new Free Spin. Fruit Smash offers "
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_fruit-smash.pdf",
-      "extracted_at": "2026-09-27T18:32:38Z",
+      "extracted_at": "2026-09-27T18:33:44Z",
       "quote_or_excerpt": "Let the Fruit Frenzy begin!\n\nFruit Smash is an avalanche style game with luscious fruit symbols set in a 6×6 grid formation where 8+\nmatching symbols are required for a win. In both the base game and in Free Spins there is a Progressive\nWin Multiplier as well as a random feature placing giant Symbol(s) (2×2, 3×3 or 4×4) onto the grid and that\nmay contain up to a 100x win multiplier. Combined, these features boost the excitement and allow for crazy\nwins in the base game.\n\nLand 3 Bonus Symbols to trigger 10 Free Spins which can be re-triggered awarding 5 extra spins. Randomly,\nFruit Frenzy super Free Spins can be triggered and which award minimum one giant symbols on the grid for\neach spin new Free Spin. Fruit Smash offers a maximum win of 6000x bet.\n\nIn response to changing player preferenc"
     }
   ],

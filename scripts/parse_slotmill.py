@@ -202,11 +202,21 @@ def find_sentence(text: str, *needles: str) -> str | None:
 
 
 def parse_grid(game_type: str) -> tuple[int | None, int | None, str | None]:
-    m = re.search(r"(\d+)\s*[xX×]\s*(\d+)", game_type or "")
+    gt = game_type or ""
+    m = re.search(r"(\d+)\s*[xX×]\s*(\d+)", gt)
     if m:
         a, b = int(m.group(1)), int(m.group(2))
         # Slotmill writes cols x rows (5x5, 5x3)
         return b, a, f"Game Type: {game_type}"
+    # e.g. "5-reel 5-row Video Slot"
+    m = re.search(r"(\d+)\s*-\s*reel\s+(\d+)\s*-\s*row", gt, re.I)
+    if m:
+        cols, rows = int(m.group(1)), int(m.group(2))
+        return rows, cols, f"Game Type: {game_type}"
+    m = re.search(r"(\d+)\s*reels?\s*[x×,]?\s*(\d+)\s*rows?", gt, re.I)
+    if m:
+        cols, rows = int(m.group(1)), int(m.group(2))
+        return rows, cols, f"Game Type: {game_type}"
     return None, None, game_type or None
 
 
@@ -226,17 +236,31 @@ def parse_win_system(paylines: str) -> dict:
             "direction": None,
             "notes": notes,
         }
-    if "ways" in p or "megaways" in p:
-        wm = re.search(r"([\d,]+)\s*ways", p)
+    if "matching symbol" in p or "pay anywhere" in p or p.strip() == "matching symbols":
         return {
-            "type": "ways",
+            "type": "pay_anywhere",
             "payline_count": None,
-            "ways_count": int(wm.group(1).replace(",", "")) if wm else None,
+            "ways_count": None,
             "min_symbols_for_win": None,
             "direction": None,
             "notes": notes,
         }
-    m = re.search(r"(\d+)\s*(?:-|–)?\s*(?:fixed)?", paylines or "")
+    if "ways" in p or "megaways" in p or "betway" in p:
+        # Prefer the larger/expanded ways count when range like "2000 -> 5488"
+        nums = [int(x.replace(",", "")) for x in re.findall(r"([\d,]+)", paylines or "")]
+        ways = max(nums) if nums else None
+        wm = re.search(r"([\d,]+)\s*ways", p)
+        if wm:
+            ways = int(wm.group(1).replace(",", ""))
+        return {
+            "type": "ways",
+            "payline_count": None,
+            "ways_count": ways,
+            "min_symbols_for_win": None,
+            "direction": None,
+            "notes": notes,
+        }
+    m = re.search(r"(\d+)\s*(?:-|–)?\s*(?:fixed|bet\s*lines?)?", paylines or "", re.I)
     if m and "cluster" not in p:
         return {
             "type": "paylines",

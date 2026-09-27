@@ -3,28 +3,28 @@
   "updated_at": "2026-09-27T18:33:44Z",
   "identity": {
     "provider": "Slotmill",
-    "title": "Wildhalla",
-    "slug": "slotmill-wildhalla",
-    "provider_game_id": "wildhalla",
+    "title": "Dark Forge",
+    "slug": "slotmill-dark-forge",
+    "provider_game_id": "dark-forge",
     "release_year": 2026,
-    "demo_url": "https://wildhalla.slotmill.com",
+    "demo_url": "https://dark-forge.slotmill.com",
     "slotcatalog_url": null,
-    "official_info_url": "https://slotmill.com/games/wildhalla"
+    "official_info_url": "https://slotmill.com/games/dark-forge"
   },
   "grid": {
-    "rows": 4,
-    "cols": 5,
+    "rows": null,
+    "cols": null,
     "rows_min": null,
     "rows_max": null,
-    "layout_notes": "Game Type: 5x4"
+    "layout_notes": "4,5,5,5,4"
   },
   "win_system": {
-    "type": "paylines",
-    "payline_count": 40,
+    "type": "unknown",
+    "payline_count": null,
     "ways_count": null,
     "min_symbols_for_win": null,
-    "direction": "left_to_right",
-    "notes": "Official Paylines field: 40"
+    "direction": null,
+    "notes": null
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
@@ -41,44 +41,30 @@
     },
     "other": []
   },
-  "base_game_loop": {
-    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
-    "phases": [
-      {
-        "name": "spin",
-        "what_happens": "Player places a bet and spins; symbols land on the grid.",
-        "order": 1,
-        "ends_when": "Reels/grid settle",
-        "state_changes": null
-      },
-      {
-        "name": "win_evaluation",
-        "what_happens": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
-        "order": 2,
-        "ends_when": "All paying lines scored",
-        "state_changes": null
-      }
-    ],
-    "win_evaluation": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
-    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
-  },
+  "base_game_loop": null,
   "symbols": {
-    "wilds": [
+    "wilds": [],
+    "scatters": [
       {
-        "name": "Multiplier Wild",
-        "behavior": "Every time a Wild appears, another fearless warrior joins the charge, marching across the reels in search of glory, riches, and a spectacularly heroic death.",
-        "params": {}
-      },
-      {
-        "name": "Wild Reset",
-        "behavior": "Every time a Wild appears, another fearless warrior joins the charge, marching across the reels in search of glory, riches, and a spectacularly heroic death.",
+        "name": "Scatter Symbols",
+        "behavior": "Fast Track provides players with the option to access the games’ bonus features directly, while Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
         "params": {}
       }
     ],
-    "scatters": [],
     "multipliers": [],
     "collectors": [],
-    "specials": []
+    "specials": [
+      {
+        "name": "Gold Symbols",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      },
+      {
+        "name": "Lightning Symbols",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
   },
   "bonus_free_spins": {
     "modes": [
@@ -125,9 +111,9 @@
       "params": {}
     },
     {
-      "name": "Wild Multiplier",
+      "name": "Multiplier",
       "trigger": null,
-      "effects": "Wild Multiplier listed under Bonus Features on official Slotmill game page.",
+      "effects": "At the heart of the game lies the Doubling Multiplier Meter, a volatile engine that grows with every win.",
       "params": {}
     },
     {
@@ -164,18 +150,18 @@
     "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
   },
   "numeric_limits": {
-    "max_win_multiplier": 10000.0,
-    "max_win_notes": "Official Max win; x Bet: 10 000x",
-    "rtp_percent": 96.05,
-    "rtp_notes": "Variant 1: 96.05% | Variant 2: 94.16%",
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "Official Max win; x Bet: 20000x",
+    "rtp_percent": 96.02,
+    "rtp_notes": "Variant 1: 96.02% | Variant 2: 94.03%",
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "high",
-    "grid": "high",
-    "win_system": "high",
+    "overall": "medium",
+    "grid": "low",
+    "win_system": "medium",
     "reel_behavior": "low",
-    "base_game_loop": "high",
+    "base_game_loop": "low",
     "symbols": "medium",
     "bonus_free_spins": "medium",
     "features": "high",
@@ -185,19 +171,28 @@
   "evidence": [
     {
       "source_type": "provider_marketing",
-      "url": "https://slotmill.com/games/wildhalla",
-      "local_path": "sources/slotmill/wildhalla.html",
+      "url": "https://slotmill.com/games/dark-forge",
+      "local_path": "sources/slotmill/dark-forge.html",
       "extracted_at": "2026-09-27T18:33:44Z",
-      "quote_or_excerpt": "Game Type: 5x4\nPaylines: 40\nRTP (%): Variant 1: 96.05% | Variant 2: 94.16%\nMax win; x Bet: 10 000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Wild Multiplier\nSpecial Symbols: Multiplier Wild, Wild Reset\nVolatility (variance): Very High\nGame URL: \"https://wildhalla.slotmill.com\"\nThe drums are pounding, the longships are ready, and a band of completely unqualified Vikings are charging headfirst toward Valhalla.\n\nAxes fly, shields break, and common sense is left far behind in this chaotic Norse adventure. Every time a Wild appears, another fearless warrior joins the charge, marching across the reels in search of glory, riches, and a spectacularly heroic death.\n\nSet on a 5x4 reel layout with 40 paylines, the battlefield is packed with roaming Wilds, growing multipliers, and enough Viking chaos to make Odin himself nervous. Whether your warriors earn eternal glory or simply run straight into disaster, massive wins of up to 10,000x your bet await those brave enough to jo"
+      "quote_or_excerpt": "Game Type: 4,5,5,5,4\nRTP (%): Variant 1: 96.02% | Variant 2: 94.03%\nMax win; x Bet: 20000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Multiplier\nSpecial Symbols: Gold Symbols, Lightning Symbols, Scatter Symbols\nVolatility (variance): Very High\nGame URL: \"https://dark-forge.slotmill.com\"\nDeep within a raging volcano, a demon-forged master bends fire and metal to its will. In Dark Forge, every spin feeds the furnace, and every win fuels the chaos.\n\nThis 4-5-5-5-4 reel layout slot is built on a network of 2,000 betways, delivering relentless, high-volatility action with a maximum win of 20,000x your bet waiting to erupt.\n\nAt the heart of the game lies the Doubling Multiplier Meter, a volatile engine that grows with every win. Each step forward intensifies the potential, but the real power comes from the Lightning Symbols. Strike them, and multiplier steps are removed, accelerating progression and pushing the meter into explosive territory.\n\nThe forge doesn’t just build power, "
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_dark-forge.pdf",
+      "extracted_at": "2026-09-27T18:33:44Z",
+      "quote_or_excerpt": "Dark Forge\n\nDeep within a raging volcano, a demon-forged master bends fire and metal to its will. In Dark Forge, every spin\nfeeds the furnace, and every win fuels the chaos.\n\nThis 4-5-5-5-4 reel layout slot is built on a network of 2,000 betways, delivering relentless, high-volatility action\nwith a maximum win of 20,000x your bet waiting to erupt.\n\nAt the heart of the game lies the Doubling Multiplier Meter, a volatile engine that grows with every win. Each step\nforward intensifies the potential, but the real power comes from the Lightning Symbols. Strike them, and multiplier\nsteps are removed, accelerating progression and pushing the meter into explosive territory.\n\nThe forge doesn’t just build power, it unleashes it. As the multiplier surges, wins can escalate rapidly, turning\nsteady gai"
     }
   ],
   "unknowns": [
+    "grid rows/cols not parsed from Game Type",
+    "win_system exact type from Paylines field ambiguous",
     "full paytable / symbol pays not on marketing page",
     "exact free-spins award count / scatter trigger count not stated on marketing page",
     "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
     "Fast Track buy cost not stated on marketing page (not invented)",
     "volatility from official specs: Very High"
   ],
-  "thumbnail": "thumbs/slotmill-wildhalla.webp",
+  "thumbnail": "thumbs/slotmill-dark-forge.webp",
   "thumbnail_attribution": "Slotmill"
 }

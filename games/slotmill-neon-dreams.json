@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:32:38Z",
+  "updated_at": "2026-09-27T18:33:44Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Neon Dreams",
@@ -19,7 +19,7 @@
     "layout_notes": "Game Type: 3x3 Video Slot"
   },
   "win_system": {
-    "type": "unknown",
+    "type": "pay_anywhere",
     "payline_count": null,
     "ways_count": null,
     "min_symbols_for_win": null,
@@ -41,7 +41,27 @@
     },
     "other": []
   },
-  "base_game_loop": null,
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill video slot: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Winning combinations evaluated per game win system.",
+        "order": 2,
+        "ends_when": null,
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Winning combinations evaluated per game win system.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
   "symbols": {
     "wilds": [],
     "scatters": [],
@@ -93,11 +113,11 @@
     "hit_frequency_notes": null
   },
   "confidence": {
-    "overall": "medium",
+    "overall": "high",
     "grid": "high",
-    "win_system": "medium",
+    "win_system": "high",
     "reel_behavior": "low",
-    "base_game_loop": "low",
+    "base_game_loop": "high",
     "symbols": "low",
     "bonus_free_spins": "low",
     "features": "high",
@@ -109,19 +129,18 @@
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/neon-dreams",
       "local_path": "sources/slotmill/neon-dreams.html",
-      "extracted_at": "2026-09-27T18:32:38Z",
+      "extracted_at": "2026-09-27T18:33:44Z",
       "quote_or_excerpt": "Game Type: 3x3 Video Slot\nPaylines: Matching Symbols\nRTP (%): 96,20 %\nMax win; x Bet: 5000 x / 125 000\nBonus Features: Respins with increasing win multiplier\nSpecial Symbols: N/A\nVolatility (variance): High\nGame URL: \"https://neon-dreams.slotmill.com\"\nNeon Dreams is a 9-reel video slot based on matching symbols. Minimum three matching symbols are required for a win, and four matching symbols awards a free re-spin of the non-matching reels. The Neon Dreams bonus feature is triggered with five matching symbols and is based on collecting additional symbols of the type that triggered the bonus (trigger symbol).\n\nDuring the Neon Dreams bonus feature, a progression metre with win multipliers is presented. Each trigger symbol moves the player one step towards the multipliers which are dynamic and increase in value for every star symbol collected (until activated). A re-spin is awarded every time at least one trigger symbol lands on the reels and"
     },
     {
       "source_type": "provider_product_sheet",
       "url": null,
       "local_path": "sources/slotmill/product_sheet_neon-dreams.pdf",
-      "extracted_at": "2026-09-27T18:32:38Z",
+      "extracted_at": "2026-09-27T18:33:44Z",
       "quote_or_excerpt": "Matching Symbols to strike gold\n\nNeon Dreams is a 9-reel video slot based on matching symbols. Minimum three matching symbols are\nrequired for a win, and four matching symbols awards a free re-spin of the non-matching reels. The Neon\nDreams bonus feature is triggered with five matching symbols and is based on collecting additional\nsymbols of the type that triggered the bonus (trigger symbol).\n\nDuring the Neon Dreams bonus feature, a progression metre with win multipliers is presented. Each trigger\nsymbol moves the player one step towards the multipliers which are dynamic and increase in value for\nevery star symbol collected (until activated). A re-spin is awarded every time at least one trigger symbol\nlands on the reels and a lifeline extends the bonus feature. A lifeline grants one extra "
     }
   ],
   "unknowns": [
-    "win_system exact type from Paylines field ambiguous",
     "full paytable / symbol pays not on marketing page",
     "volatility from official specs: High"
   ],

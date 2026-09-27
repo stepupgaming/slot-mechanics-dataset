@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "updated_at": "2026-09-27T18:31:25Z",
+  "updated_at": "2026-09-27T18:33:44Z",
   "identity": {
     "provider": "Slotmill",
     "title": "Ragnarok",
@@ -14,229 +14,223 @@
   "grid": {
     "rows": 5,
     "cols": 5,
-    "rows_min": 5,
-    "rows_max": 5,
-    "layout_notes": "Official specs: 5×5 Video Slot / Avalanche Cluster Pays on a 5×5 grid."
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x5 Video Slot"
   },
   "win_system": {
     "type": "clusters",
     "payline_count": null,
     "ways_count": null,
-    "min_symbols_for_win": null,
+    "min_symbols_for_win": 5,
     "direction": null,
-    "notes": "Official Paylines field: '5+ cluster pays'. Marketing copy describes Avalanche Cluster Pays; exact minimum cluster size beyond the '5+' label is not further detailed on the product sheet."
+    "notes": "Official Paylines field: 5+ cluster pays"
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
       "present": true,
-      "how_it_works": "Avalanche: winning clusters explode, paving the way for new symbols; sequence can continue for further wins in the same paid round."
+      "how_it_works": "Trigger avalanches as winning clusters explode, paving the way for new symbols and potentially endless riches."
     },
     "respins": {
-      "present": false,
+      "present": null,
       "how_it_works": null
     },
     "expanding_reels": {
-      "present": false,
+      "present": null,
       "how_it_works": null
     },
-    "other": [
-      {
-        "name": "Giant Symbols",
-        "how_it_works": "Giant Symbols can land on the grid for larger payouts (listed under Bonus Features; exact size/transform rules not fully specified on the public product sheet)."
-      }
-    ]
+    "other": []
   },
   "base_game_loop": {
-    "summary": "5×5 avalanche cluster slot with a progressive win multiplier that doubles on each win in the sequence; Free Spins keep the multiplier active; studio modes Fast Track / Xtra-Bet / Burst Mode available.",
+    "summary": "Paid spin on Slotmill cluster-pays / avalanche/cascade / progressive win multiplier: spin → evaluate wins → avalanche while wins continue → multiplier grows with wins.",
     "phases": [
       {
-        "name": "Spin",
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
         "order": 1,
-        "what_happens": "Player spins the 5×5 grid at the selected bet (optional Xtra-Bet increases chance of bonus)."
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
       },
       {
-        "name": "Cluster evaluate",
+        "name": "win_evaluation",
+        "what_happens": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
         "order": 2,
-        "what_happens": "Winning clusters (5+ cluster pays) are awarded."
+        "ends_when": "All current winning clusters identified",
+        "state_changes": null
       },
       {
-        "name": "Progressive multiplier",
+        "name": "avalanche_cascade",
+        "what_happens": "Step into the mythical world of Ragnarok, where Norse legends come to life in a captivating Avalanche Cluster Pays slot.",
         "order": 3,
-        "what_happens": "Progressive Win Multiplier DOUBLES with each win in the avalanche sequence.",
-        "state_changes": "Multiplier ← multiplier × 2 per win"
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
       },
       {
-        "name": "Avalanche",
+        "name": "progressive_multiplier",
+        "what_happens": "What sets Ragnarok apart is its Progressive Win Multiplier, which DOUBLES with each win, giving the potential for monumental wins!",
         "order": 4,
-        "what_happens": "Winning clusters explode; new symbols enter; repeat evaluate/multiplier/avalanche while wins continue.",
-        "ends_when": "No new winning clusters"
-      },
-      {
-        "name": "Bonus check",
-        "order": 5,
-        "what_happens": "If Free Spins Bonus triggers (exact scatter count not on product sheet) or via Fast Track, enter Free Spins where the progressive multiplier remains active throughout."
+        "ends_when": null,
+        "state_changes": "Win multiplier grows across consecutive wins in the cascade chain"
       }
     ],
-    "win_evaluation": "Cluster wins each avalanche step, scaled by the current progressive multiplier.",
-    "notes": "Exact Free Spins trigger count and starting multiplier value are not printed on the public product sheet / game page specs."
+    "win_evaluation": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
   },
   "symbols": {
     "wilds": [
       {
         "name": "Wilds",
-        "behavior": "Official page: Wilds enhance chances of victory. Listed under Special Symbols as Wilds.",
+        "behavior": "With Wilds enhancing your chances of victory and Free Spins where the multiplier remains active throughout, Ragnarok holds the potential for an unforgettable odyssey through the realms of ancient gods and heroes.",
         "params": {}
       }
     ],
     "scatters": [
       {
         "name": "Bonus",
-        "behavior": "Listed under Special Symbols as Bonus (Free Spins Bonus feature). Exact land counts to trigger are not on the public product sheet.",
+        "behavior": "With Wilds enhancing your chances of victory and Free Spins where the multiplier remains active throughout, Ragnarok holds the potential for an unforgettable odyssey through the realms of ancient gods and heroes.",
         "params": {}
       }
     ],
     "multipliers": [
       {
         "name": "Progressive Win Multiplier",
-        "behavior": "DOUBLES with each win; remains active throughout Free Spins.",
-        "params": {
-          "growth": "double_per_win",
-          "persists_in_free_spins": true
-        }
+        "behavior": "What sets Ragnarok apart is its Progressive Win Multiplier, which DOUBLES with each win, giving the potential for monumental wins!",
+        "params": {}
       }
     ],
     "collectors": [],
-    "specials": [
-      {
-        "name": "Giant Symbols",
-        "behavior": "Can grace the grid with colossal payouts (product sheet / page feature list).",
-        "params": {}
-      }
-    ]
+    "specials": []
   },
   "bonus_free_spins": {
     "modes": [
       {
-        "name": "Free Spins Bonus",
-        "trigger": "Bonus feature trigger (exact symbol count not stated on public product sheet). Fast Track can access bonus features directly.",
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
         "spins_awarded": null,
         "retrigger": null,
-        "sticky_or_persistent_state": "Progressive Win Multiplier remains active throughout Free Spins.",
-        "progressive_state": "Multiplier continues doubling with each win during Free Spins.",
-        "end_condition": null,
-        "effects": "Free Spins play with the progressive multiplier staying active for the feature, enabling larger chained avalanche wins.",
+        "sticky_or_persistent_state": "Progressive win multiplier remains active throughout Free Spins (per official description).",
+        "progressive_state": "Progressive win multiplier remains active throughout Free Spins (per official description).",
+        "effects": "With Wilds enhancing your chances of victory and Free Spins where the multiplier remains active throughout, Ragnarok holds the potential for an unforgettable odyssey through the realms of ancient gods and heroes. With Wilds enhancing your chances of victory and Free Spins where the multiplier remains active throughout, Ragnarok holds the potential for an unforgettable odyssey through the realms of ancient gods and heroes.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
         "phases": [
           {
-            "name": "Free spin avalanche",
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
             "order": 1,
-            "what_happens": "Resolve cluster wins with avalanches; multiplier doubles per win and persists for the feature."
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules and persistent progressive multiplier.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": "Progressive win multiplier remains active throughout Free Spins (per official description)."
           }
         ]
       }
     ],
-    "notes": "Public product sheet lists Free Spins Bonus but does not publish spin counts, retrigger, or scatter thresholds — marked unknown rather than invented."
+    "notes": "Volatility (official): High"
   },
   "features": [
     {
-      "name": "Progressive Win Multiplier",
-      "trigger": "Each win in an avalanche sequence",
-      "effects": "Multiplier DOUBLES with each win; stays active through Free Spins.",
-      "params": {
-        "growth": "×2 per win"
-      }
+      "name": "Free Spins Bonus",
+      "trigger": null,
+      "effects": "With Wilds enhancing your chances of victory and Free Spins where the multiplier remains active throughout, Ragnarok holds the potential for an unforgettable odyssey through the realms of ancient gods and heroes.",
+      "params": {}
     },
     {
       "name": "Giant Symbols",
       "trigger": null,
-      "effects": "Large symbols on the grid for higher payouts.",
+      "effects": "Witness the awe-inspiring power of Giant Symbols, reminiscent of the gods themselves, as they grace the grid with colossal payouts.",
+      "params": {}
+    },
+    {
+      "name": "Progressive Multiplier",
+      "trigger": null,
+      "effects": "What sets Ragnarok apart is its Progressive Win Multiplier, which DOUBLES with each win, giving the potential for monumental wins!",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Trigger avalanches as winning clusters explode, paving the way for new symbols and potentially endless riches.",
       "params": {}
     },
     {
       "name": "Burst Mode",
-      "trigger": "Player opt-in",
-      "effects": "Enhanced auto-play completing two game rounds per second.",
-      "params": {
-        "rounds_per_second": 2
-      }
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet.",
+      "params": {},
+      "when": "any time / auto-play"
     },
     {
       "name": "Fast Track",
-      "trigger": "Player purchase / opt-in",
-      "when": "Base game",
-      "effects": "Access the game’s bonus features directly.",
-      "cost_text": "Cost not stated on public product sheet",
-      "params": {}
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet.",
+      "params": {},
+      "when": "before spin / bonus access"
     },
     {
       "name": "Xtra-Bet",
-      "trigger": "Player opt-in",
-      "when": "Base game",
-      "effects": "Augment bet to increase chance of winning a bonus round.",
-      "cost_text": "Cost multiplier not stated on public product sheet",
-      "params": {}
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet.",
+      "params": {},
+      "when": "base game bet selection"
     }
   ],
   "feature_buy": {
     "available": true,
-    "options": [
-      {
-        "name": "Fast Track",
-        "cost_multiplier": null,
-        "cost_text": "Not stated on public product sheet",
-        "effects": "Direct access to bonus features.",
-        "rtp_when_bought_note": "Page lists RTP variants 96.12% / 94.05% (sheet headline 96.12%)."
-      }
-    ],
-    "notes": "Fast Track is the studio bonus-entry product; exact price not on public sheet."
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
   },
   "ante_bet": {
     "available": true,
     "cost_multiplier": null,
-    "effects": "Xtra-Bet augments the bet to increase bonus-round chance.",
-    "notes": "Exact multiplier not on public product sheet."
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
   },
   "numeric_limits": {
     "max_win_multiplier": 10000.0,
-    "max_win_notes": "Official Max win; x Bet: 10 000x.",
+    "max_win_notes": "Official Max win; x Bet: 10 000x",
     "rtp_percent": 96.12,
-    "rtp_notes": "Product sheet RTP 96.12%. Game page also lists Variant 2: 94.05.",
-    "hit_frequency_notes": "Volatility High. Bet levels 0.20–60."
+    "rtp_notes": "Variant 1: 96.12 | Variant 2: 94.05",
+    "hit_frequency_notes": null
   },
   "confidence": {
     "overall": "high",
     "grid": "high",
     "win_system": "high",
     "reel_behavior": "high",
+    "base_game_loop": "high",
     "symbols": "medium",
-    "bonus_free_spins": "medium",
+    "bonus_free_spins": "high",
     "features": "high",
     "feature_buy": "medium",
-    "numeric_limits": "high",
-    "base_game_loop": "high"
+    "numeric_limits": "high"
   },
   "evidence": [
-    {
-      "source_type": "official_pdf",
-      "url": "https://cms.slotmill.com/uploads/product_sheet_Ragnarok_v1_65c5d3728f.pdf",
-      "local_path": "sources/slotmill/product_sheet_Ragnarok.txt",
-      "extracted_at": "2026-09-27T18:31:25Z",
-      "quote_or_excerpt": "Avalanche Cluster Pays… 5x5 grid… Progressive Win Multiplier, which DOUBLES with each win… Free Spins where the multiplier remains active throughout… Fast Track… Xtra-Bet… Game Type 5x5 Video Slot… Payines 5+ cluster pays… RTP 96.12%… Max win 10 000x."
-    },
     {
       "source_type": "provider_marketing",
       "url": "https://slotmill.com/games/ragnarok",
       "local_path": "sources/slotmill/ragnarok.html",
-      "extracted_at": "2026-09-27T18:31:25Z",
-      "quote_or_excerpt": "Game ID ragnarok; Bonus Features: Free Spins Bonus, Giant Symbols, Progressive Multiplier; Special Symbols: Bonus, Wilds; RTP variants 96.12 / 94.05."
+      "extracted_at": "2026-09-27T18:33:44Z",
+      "quote_or_excerpt": "Game Type: 5x5 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): Variant 1: 96.12 | Variant 2: 94.05\nMax win; x Bet: 10 000x\nBonus Features: Free Spins Bonus, Giant Symbols, Progressive Multiplier\nSpecial Symbols: Bonus, Wilds\nVolatility (variance): High\nGame URL: \"https://ragnarok.slotmill.com\"\nStep into the mythical world of Ragnarok, where Norse legends come to life in a captivating Avalanche Cluster Pays slot. Set against a 5×5 grid, this game invites you to embark on a journey filled with thrilling features and epic rewards.\n\nTrigger avalanches as winning clusters explode, paving the way for new symbols and potentially endless riches. What sets Ragnarok apart is its Progressive Win Multiplier, which DOUBLES with each win, giving the potential for monumental wins!\n\nWitness the awe-inspiring power of Giant Symbols, reminiscent of the gods themselves, as they grace the grid with colossal payouts.\n\nWith Wilds enhancing your chances of victory and Free Spins where the multiplier rem"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_ragnarok.pdf",
+      "extracted_at": "2026-09-27T18:33:44Z",
+      "quote_or_excerpt": "Unleash the Power of Ragnarok!\n\nStep into the mythical world of Ragnarok, where Norse legends come to life in a captivating Avalanche\nCluster Pays slot. Set against a 5x5 grid, this game invites you to embark on a journey filled with thrilling\nfeatures and epic rewards.\n\nTrigger avalanches as winning clusters explode, paving the way for new symbols and potentially endless\nriches. What sets Ragnarok apart is its Progressive Win Multiplier, which DOUBLES with each win, giving\nthe potential for monumental wins!\n\nWitness the awe-inspiring power of Giant Symbols, reminiscent of the gods themselves, as they grace the\ngrid with colossal payouts.\nWith Wilds enhancing your chances of victory and Free Spins where the multiplier remains active\nthroughout, Ragnarok holds the potential for an unforgett"
     }
   ],
   "unknowns": [
-    "Exact minimum cluster size beyond '5+ cluster pays' wording",
-    "Free Spins trigger symbol count and spins awarded",
-    "Free Spins retrigger rules",
-    "Fast Track and Xtra-Bet exact cost multipliers",
-    "Starting value of progressive multiplier",
-    "Giant Symbol exact transform rules"
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: High"
   ],
   "thumbnail": "thumbs/slotmill-ragnarok.webp",
   "thumbnail_attribution": "Slotmill"

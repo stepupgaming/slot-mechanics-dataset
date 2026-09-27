@@ -1,0 +1,624 @@
+{
+  "nolimit-tombstone-rip": {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:33:48Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Tombstone R.I.P",
+      "slug": "nolimit-tombstone-rip",
+      "provider_game_id": "TombstoneRip",
+      "release_year": 2022,
+      "demo_url": "https://playin.com/embed/v1/demo/TombstoneRip",
+      "slotcatalog_url": "https://slotcatalog.com/en/slots/Tombstone-RIP",
+      "official_info_url": "https://nolimitcity.com/games/tombstone-rip"
+    },
+    "grid": {
+      "rows": null,
+      "cols": 5,
+      "rows_min": 1,
+      "rows_max": 3,
+      "layout_notes": "Official sheet layout code 23331 = reel heights 2-3-3-3-1. Last reel is 1 high base but xSplit Wild counts as 2 symbols high, yielding 108 ways (2×3×3×3×2)."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": 108,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "108 ways from 2-3-3-3-1 layout with dual-high xSplit on reel 5. Wild multipliers from xNudge/xSplit apply to line/ways wins."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": false,
+        "how_it_works": null
+      },
+      "other": [
+        {
+          "name": "xNudge Wild",
+          "how_it_works": "Stacked Wild always nudges until fully visible; each nudge step increases the Wild multiplier."
+        },
+        {
+          "name": "xSplit Wild",
+          "how_it_works": "Appears only on the last reel, counts as 2 symbols high, and splits symbols to the left in half."
+        },
+        {
+          "name": "xRIP",
+          "how_it_works": "If total win for the spin is less than the base stake, payout is zeroed (no payout)."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [
+        {
+          "name": "xNudge Wild",
+          "behavior": "Stacked Wild nudges fully into view; each nudge increases Wild multiplier. Multipliers from multiple Wild types increase the bonus-mode win multiplier and remain for the entire bonus round.",
+          "params": {}
+        },
+        {
+          "name": "xSplit Wild",
+          "behavior": "Only on last reel; 2 symbols high; cuts symbols to the left in half (splits them).",
+          "params": {}
+        }
+      ],
+      "scatters": [
+        {
+          "name": "Hang 'Em High Scatter",
+          "behavior": "3 Hang 'Em High Scatters trigger 8 Hang 'Em High Freespins.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        },
+        {
+          "name": "Boothill Scatter",
+          "behavior": "3 Hang 'Em High Scatters plus a Boothill Scatter trigger 10 Boothill Freespins.",
+          "params": {}
+        }
+      ],
+      "multipliers": [],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Cowboy (Boothill)",
+          "behavior": "During Boothill Freespins only Cowboy symbols land on the last reel; matching symbols elsewhere transform to Wilds. Each spin a random Cowboy gets a 5x–999x multiplier.",
+          "params": {
+            "multiplier_values_mentioned": [
+              5,
+              999
+            ]
+          }
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Paid spin on a 2-3-3-3-1 ways grid. xNudge Wilds nudge fully into view adding multiplier per step; xSplit Wild on reel 5 can split symbols leftward. After wins are evaluated, xRIP voids any total win below the base stake. Enhanced Bet (+10%) guarantees a Scatter. Optional Nolimit Bonus buy enters Hang 'Em High or Boothill free spins.",
+      "phases": [
+        {
+          "name": "Stake / Enhanced Bet",
+          "order": 1,
+          "what_happens": "Player sets base stake. Optional Enhanced Bet increases stake by 10% and guarantees a Scatter on the spin.",
+          "ends_when": "Bet confirmed",
+          "state_changes": "If Enhanced Bet on, stake *= 1.10 and Scatter guaranteed"
+        },
+        {
+          "name": "Spin reels",
+          "order": 2,
+          "what_happens": "Reels stop on 2-3-3-3-1 layout. Stacked xNudge Wilds nudge until fully visible, increasing Wild multiplier each step. xSplit Wild may land on reel 5 (2 high) and split symbols to the left.",
+          "ends_when": "All nudges/splits resolved",
+          "state_changes": "Wild multipliers applied to affected wins"
+        },
+        {
+          "name": "Evaluate ways wins",
+          "order": 3,
+          "what_happens": "Award ways wins left-to-right across up to 108 ways, applying Wild multipliers.",
+          "ends_when": "Wins totaled",
+          "state_changes": null
+        },
+        {
+          "name": "xRIP check",
+          "order": 4,
+          "what_happens": "If total win < base stake, xRIP sets payout to zero.",
+          "ends_when": "Payout finalized or zeroed",
+          "state_changes": "Possible void of sub-stake wins"
+        },
+        {
+          "name": "Bonus check",
+          "order": 5,
+          "what_happens": "3 Hang 'Em High Scatters → 8 Hang 'Em High Freespins. 3 Scatters + Boothill Scatter → 10 Boothill Freespins.",
+          "ends_when": "Bonus entered or spin ends",
+          "state_changes": "Enter chosen free-spin mode if triggered"
+        }
+      ],
+      "win_evaluation": "Ways wins evaluated after nudges/splits; then xRIP may void the spin if total win is below base stake.",
+      "notes": "Official affiliate game sheet + CMS feature blurbs on nolimitcity.com/games/tombstone-rip."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Hang 'Em High Freespins",
+          "trigger": "Land 3 Hang 'Em High Scatter symbols.",
+          "spins_awarded": "8 free spins",
+          "retrigger": null,
+          "sticky_or_persistent_state": "Win multiplier increased by all Wild symbol types remains for the entire bonus round.",
+          "progressive_state": "Bonus win multiplier accumulates from Wild types and persists across the 8 spins.",
+          "end_condition": "All awarded free spins completed (or max win El Gordo's Revenge 300,000x reached).",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 8 Hang 'Em High free spins; initialize persistent bonus win multiplier from Wild contributions."
+            },
+            {
+              "name": "Free spin",
+              "order": 2,
+              "what_happens": "Each spin plays with xNudge/xSplit Wilds; Wild types increase the persistent bonus win multiplier."
+            },
+            {
+              "name": "End",
+              "order": 3,
+              "what_happens": "After spins exhausted, return to base; cap at 300,000x base bet."
+            }
+          ],
+          "effects": "8 free spins. Wild symbol types increase a win multiplier that remains for the entire bonus round."
+        },
+        {
+          "name": "Boothill Freespins",
+          "trigger": "Land 3 Hang 'Em High Scatters plus a Boothill Scatter.",
+          "spins_awarded": "10 free spins",
+          "retrigger": null,
+          "sticky_or_persistent_state": null,
+          "progressive_state": null,
+          "end_condition": "All 10 spins completed or 300,000x max win reached.",
+          "phases": [
+            {
+              "name": "Enter",
+              "order": 1,
+              "what_happens": "Award 10 Boothill free spins."
+            },
+            {
+              "name": "Cowboy reel + transform",
+              "order": 2,
+              "what_happens": "Only Cowboy symbols land on the last reel; matching symbols elsewhere transform into Wilds. Each spin a random Cowboy receives a 5x–999x multiplier."
+            },
+            {
+              "name": "End",
+              "order": 3,
+              "what_happens": "Return to base after spins or max-win cap."
+            }
+          ],
+          "effects": "10 spins. Last reel Cowboy-only; matching symbols become Wilds; random Cowboy multiplier 5x–999x each spin."
+        }
+      ],
+      "notes": "Exact retrigger rules for extra scatters during Hang 'Em High / Boothill not stated on the affiliate sheet."
+    },
+    "features": [
+      {
+        "name": "Enhanced Bet",
+        "trigger": "Player enables Enhanced Bet",
+        "when": "before_spin",
+        "cost_multiplier": 1.1,
+        "cost_text": "+10% stake",
+        "effects": "Guarantees a Scatter symbol on the spin. RTP with Enhanced Bet: 96.28% / 94.25% (DX1).",
+        "params": {}
+      },
+      {
+        "name": "xNudge Wilds",
+        "trigger": "Stacked Wild lands partially in view",
+        "when": "during_spin",
+        "effects": "Always nudges fully visible; each nudge increases Wild multiplier.",
+        "params": {}
+      },
+      {
+        "name": "xSplit Wilds",
+        "trigger": "xSplit Wild lands on last reel",
+        "when": "during_spin",
+        "effects": "Counts as 2 symbols high; cuts symbols to the left in half.",
+        "params": {}
+      },
+      {
+        "name": "xRIP",
+        "trigger": "Total win < base stake",
+        "when": "after_win_evaluation",
+        "effects": "No payout for that spin.",
+        "params": {}
+      },
+      {
+        "name": "El Gordo's Revenge",
+        "trigger": "Total win reaches cap",
+        "effects": "Max payout 300,000× base bet; round ends at cap.",
+        "params": {
+          "max_win_multiplier": 300000
+        }
+      },
+      {
+        "name": "Nolimit Bonus (Feature Buy)",
+        "trigger": "Player buys bonus",
+        "when": "base_game",
+        "cost_text": "70× to 3000× base bet depending on bonus",
+        "effects": "Buy directly into Hang 'Em High or Boothill (and variants). May be removed in some regulated markets.",
+        "params": {
+          "cost_range_min": 70,
+          "cost_range_max": 3000
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Nolimit Bonus — bonus features",
+          "cost_multiplier": null,
+          "cost_text": "70×–3000× base bet (range across bonus options)",
+          "effects": "Buy straight into one of the different bonus features.",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Sheet gives cost range only, not per-mode prices. Feature may be removed in some regulated markets."
+    },
+    "ante_bet": {
+      "available": true,
+      "cost_multiplier": 1.1,
+      "effects": "Enhanced Bet: +10% stake, guaranteed Scatter. Max bet w. xBet 55 EUR (vs 50 EUR).",
+      "notes": "NLC names this Enhanced Bet / xBet rather than classic ante."
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 300000.0,
+      "max_win_notes": "El Gordo's Revenge — 300,000× base bet (~1 in 130M rounds per sheet)",
+      "rtp_percent": 96.08,
+      "rtp_notes": "Dual RTP 96.08% / 94.08% (DX1). With Enhanced Bet: 96.28% / 94.25% (DX1). Main game RTP 55.99%, free spins 40.08%.",
+      "hit_frequency_notes": "Hit frequency 9.08%; free spins 1 in 194 spins; win 100× 1 in 1014 spins."
+    },
+    "confidence": {
+      "overall": "high",
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "high",
+      "features": "high",
+      "feature_buy": "medium",
+      "numeric_limits": "high",
+      "base_game_loop": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Tombstone_RIP_300000_fdd1e5157c.pdf",
+        "local_path": "sources/nolimit/tombstone-rip/GameSheet.pdf",
+        "extracted_at": "2026-09-27T18:33:48Z",
+        "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                   Enhanced Bet\n                                                                   xNudge Wilds\n                                                           23331   Splitting Wilds\n                                                                   xRip\n                                                                   Hang ‘em high\n                                                                   Boothill Freespins\n\n\n\n\nTOMBSTONE RIP\nSomeone needs to put these outlaws down\nbecause they are out of control. We’ll take\njustice into our own hands in Tombstone\nR.I.P. and hit ‘em where it hurts. The lowlifes\nand gunslingers have no idea what’s coming,\nbut it’ll be a slow and agonizing death.\nTombstone RIP is available with dual RTP setup at 96.08%\nand 94.08% (DX1). With the Enhanced Bet enabled, the\nRTP setup is 96.28% and 94.25% (DX1)\n\fGAME SHEET\n\n\nGame Features\nEnhanced Bet\nBy increasing the basic stake by 10%, you may chase the\ngallows with a guaranteed Scatter symbol. Harsh, but\nhigher reward.\n\nxNudge Wilds\nMake sure to hang on - a stacked Wild symbol will always\nnudge to be fully visible with each nudge inc"
+      },
+      {
+        "source_type": "official_site",
+        "url": "https://nolimitcity.com/games/tombstone-rip",
+        "local_path": "sources/nolimit/tombstone-rip/cms_features.txt",
+        "extracted_at": "2026-09-27T18:33:48Z",
+        "quote_or_excerpt": "## Enhanced Bet\nBy increasing the basic stake by 10%, you may chase the gallows with a guaranteed Scatter symbol. Harsh, but higher reward.\n\n## xNudge Wilds\nMake sure to hang on - a stacked Wild symbol will always nudge to be fully visible with each nudge increasing the Wild multiplier.\n\n## xSplit Wilds\nTake cover, xSplit Wild only appears on the last reel and counts as 2 symbols high. When landing it will cut symbols to the left in half.\n\n## xRIP\nThe dead aren’t mourned here; xRIP is triggered by any spin if the total win is less than the base stake, then there is no payout...\n\n## Hang ‘em High Freespins\nThird times the charm - Landing three Hang ‘Em High Scatter symbols will activate 8 Hang ‘Em High Freespins. The win multiplier in the bonus mode will be increased by all Wild symbol types and it will remain for the entire bonus round.\n\n## Boothill Freespins\nHold your horses! This is were things go batshit crazy. Land 3 Scatters plus a Boothill Scatter to trigger 10 spins. Only Cowboy symbols lands on the last reel, but it’ll transform the other of the same symbol to Wilds. It’s time to let them hang and burn in hell - so let’s add a multiplier, from 5x-999x, on a random Cowboy fo"
+      }
+    ],
+    "unknowns": [
+      "exact per-option Nolimit Bonus buy prices within 70×–3000× range",
+      "retrigger rules if extra Hang 'Em High / Boothill scatters land during free spins",
+      "exact min symbols for a ways win (typical NLC left-to-right ways assumed)"
+    ],
+    "thumbnail": "thumbs/nolimit-tombstone-rip.webp",
+    "thumbnail_attribution": "SlotCatalog"
+  },
+  "nolimit-mental": {
+    "schema_version": "1.1.0",
+    "updated_at": "2026-09-27T18:33:48Z",
+    "identity": {
+      "provider": "Nolimit City",
+      "title": "Mental",
+      "slug": "nolimit-mental",
+      "provider_game_id": "Mental",
+      "release_year": 2021,
+      "demo_url": "https://playin.com/embed/v1/demo/Mental",
+      "slotcatalog_url": "https://slotcatalog.com/en/slots/Mental",
+      "official_info_url": "https://nolimitcity.com/games/mental"
+    },
+    "grid": {
+      "rows": null,
+      "cols": 5,
+      "rows_min": 2,
+      "rows_max": 3,
+      "layout_notes": "Official sheet layout 32323 = reel heights 3-2-3-2-3 (108 ways: 3×2×3×2×3). Fire Frames can split symbols into two parts on 1–13 random positions."
+    },
+    "win_system": {
+      "type": "ways",
+      "payline_count": null,
+      "ways_count": 108,
+      "min_symbols_for_win": null,
+      "direction": "left_to_right",
+      "notes": "xWays / Fire Frame splits increase ways. Enhancer Cells can add xWays, xNudge, xSplit when 4 or 6 fire frames appear."
+    },
+    "reel_behavior": {
+      "cascades_or_tumbles": {
+        "present": false,
+        "how_it_works": null
+      },
+      "respins": {
+        "present": false,
+        "how_it_works": null
+      },
+      "expanding_reels": {
+        "present": true,
+        "how_it_works": "Fire Frames split a symbol into two parts (1–13 random positions). xWays via Enhancer Cells expands ways."
+      },
+      "other": [
+        {
+          "name": "Fire Frames",
+          "how_it_works": "1–13 random positions split a symbol into two parts."
+        },
+        {
+          "name": "Enhancer Cells",
+          "how_it_works": "When 4 or 6 fire frames appear, enhancer boosts can include xWays, xNudge, xSplit and other boosters."
+        },
+        {
+          "name": "Mental Transform",
+          "how_it_works": "Spider symbol landing transforms symbols on the reels."
+        }
+      ]
+    },
+    "symbols": {
+      "wilds": [],
+      "scatters": [
+        {
+          "name": "Scorpion",
+          "behavior": "3 Scorpions activate Autopsy Freespins (sticky Fire Frames). Combined with Spider(s) upgrades bonus tier.",
+          "params": {
+            "count_for_trigger": 3
+          }
+        },
+        {
+          "name": "Spider",
+          "behavior": "Triggers Mental Transform when landing. 3 Scorpions + 1 Spider → Lobotomy Freespins. 3 Scorpions + 2 Spiders → Mental Freespins. Sticky in Lobotomy/Mental modes.",
+          "params": {}
+        }
+      ],
+      "multipliers": [
+        {
+          "name": "Dead Patient / Dead Multiplier",
+          "behavior": "Two Dead Patient symbols can award a random multiplier x5–x9999 on a patient symbol. In Lobotomy, Dead Multiplier transfers to a Patient symbol; in Mental Freespins it never decreases.",
+          "params": {
+            "multiplier_values_mentioned": [
+              5,
+              9999
+            ]
+          }
+        }
+      ],
+      "collectors": [],
+      "specials": [
+        {
+          "name": "Patient symbols",
+          "behavior": "Receive Dead Multiplier transfers for large wins during Lobotomy/Mental free spins.",
+          "params": {}
+        }
+      ]
+    },
+    "base_game_loop": {
+      "summary": "Paid spin on 3-2-3-2-3 ways grid. Fire Frames may split symbols; landing two Dead Patients can roll x5–x9999; Spider triggers Mental Transform; Enhancer Cells fire when 4 or 6 frames appear. 3 Scorpions start Autopsy free spins, upgradable with Spiders to Lobotomy or Mental.",
+      "phases": [
+        {
+          "name": "Spin",
+          "order": 1,
+          "what_happens": "Reels stop on 3-2-3-2-3. Random Fire Frames (1–13) may split symbols into two parts.",
+          "ends_when": "Frames applied",
+          "state_changes": "Ways may increase from splits"
+        },
+        {
+          "name": "Enhancers / transform",
+          "order": 2,
+          "what_happens": "If 4 or 6 Fire Frames appear, Enhancer Cells may add xWays/xNudge/xSplit/boosters. Spider landing triggers Mental Transform.",
+          "ends_when": "Enhancers resolved",
+          "state_changes": null
+        },
+        {
+          "name": "Dead Patient check",
+          "order": 3,
+          "what_happens": "If two Dead Patient symbols land, roll random multiplier x5–x9999 onto a patient symbol.",
+          "ends_when": "Multiplier applied or skipped",
+          "state_changes": null
+        },
+        {
+          "name": "Evaluate ways wins",
+          "order": 4,
+          "what_happens": "Pay left-to-right ways wins on the resulting grid.",
+          "ends_when": "Wins paid",
+          "state_changes": null
+        },
+        {
+          "name": "Bonus trigger",
+          "order": 5,
+          "what_happens": "3 Scorpions → Autopsy (sticky Fire Frames). 3 Scorpions + 1 Spider → Lobotomy. 3 Scorpions + 2 Spiders → Mental Freespins.",
+          "ends_when": "Bonus entered or spin ends",
+          "state_changes": "Enter bonus tier"
+        }
+      ],
+      "win_evaluation": "After Fire Frames, enhancers, and transforms resolve, ways wins are paid; then scatter counts select bonus tier.",
+      "notes": "Exact free-spin counts per Autopsy/Lobotomy/Mental mode are not printed on the affiliate sheet."
+    },
+    "bonus_free_spins": {
+      "modes": [
+        {
+          "name": "Autopsy Freespins",
+          "trigger": "3 Scorpion symbols.",
+          "spins_awarded": null,
+          "retrigger": "May be upgraded to Lobotomy or Mental Freespins (upgrade path stated; exact extra-spin counts unknown).",
+          "sticky_or_persistent_state": "Sticky Fire Frames for the bonus mode.",
+          "progressive_state": null,
+          "end_condition": "Bonus spins complete, upgrade consumes the mode, or 66,666× max win ends the round.",
+          "phases": [
+            {
+              "name": "Enter Autopsy",
+              "order": 1,
+              "what_happens": "Start bonus with sticky Fire Frames."
+            },
+            {
+              "name": "Play / possible upgrade",
+              "order": 2,
+              "what_happens": "Spins with sticky frames; may upgrade to Lobotomy or Mental if upgrade conditions met."
+            }
+          ],
+          "effects": "Bonus mode with sticky Fire Frames. Upgradeable to Lobotomy or Mental."
+        },
+        {
+          "name": "Lobotomy Freespins",
+          "trigger": "3 Scorpions plus a Spider symbol.",
+          "spins_awarded": null,
+          "retrigger": "May be upgraded to Mental Freespins.",
+          "sticky_or_persistent_state": "Spider symbol is sticky and awards Mental Transform each spin.",
+          "progressive_state": "Dead Multiplier transfers to a Patient symbol for large wins.",
+          "end_condition": "Spins complete, upgrade to Mental, or max-win cap.",
+          "phases": [
+            {
+              "name": "Enter Lobotomy",
+              "order": 1,
+              "what_happens": "Sticky Spider; Mental Transform each spin; Dead Multiplier transfer to Patient."
+            }
+          ],
+          "effects": "Upgraded Autopsy: sticky Spider + Mental Transform each spin + Dead Multiplier to Patient."
+        },
+        {
+          "name": "Mental Freespins",
+          "trigger": "3 Scorpion symbols and 2 Spider symbols.",
+          "spins_awarded": null,
+          "retrigger": null,
+          "sticky_or_persistent_state": "Spider symbols sticky.",
+          "progressive_state": "Dead Multiplier never decreases.",
+          "end_condition": "Spins complete or 66,666× max win (This is mental!!!) ends the round.",
+          "phases": [
+            {
+              "name": "Enter Mental",
+              "order": 1,
+              "what_happens": "Sticky Spiders; Dead Multiplier never decreases."
+            }
+          ],
+          "effects": "Top tier: sticky Spiders; Dead Multiplier never decreases."
+        }
+      ],
+      "notes": "Affiliate sheet does not state exact free-spin counts for Autopsy/Lobotomy/Mental — left null rather than invented."
+    },
+    "features": [
+      {
+        "name": "Fire Frames",
+        "trigger": "Random on spin",
+        "when": "during_spin",
+        "effects": "1–13 random positions split a symbol into two parts.",
+        "params": {}
+      },
+      {
+        "name": "Dead Patient",
+        "trigger": "Land two Dead Patient symbols",
+        "when": "during_spin",
+        "effects": "Chance at random multiplier x5–x9999 on a patient symbol.",
+        "params": {
+          "multiplier_min": 5,
+          "multiplier_max": 9999
+        }
+      },
+      {
+        "name": "Enhancer Cells",
+        "trigger": "4 or 6 fire frames appear",
+        "when": "during_spin",
+        "effects": "Boost with xWays, xNudge, xSplit and other boosters.",
+        "params": {}
+      },
+      {
+        "name": "Mental Transform",
+        "trigger": "Spider lands",
+        "when": "during_spin",
+        "effects": "Symbol transform feature on the reels.",
+        "params": {}
+      },
+      {
+        "name": "This is mental!!! (max win)",
+        "trigger": "Total win hits cap",
+        "effects": "Max payout 66,666× base bet; game round ends.",
+        "params": {
+          "max_win_multiplier": 66666
+        }
+      },
+      {
+        "name": "Nolimit Bonus (Feature Buy)",
+        "trigger": "Player buys bonus",
+        "when": "base_game",
+        "cost_text": "80× to 1000× base bet",
+        "effects": "Buy into one of the different bonus features. May be removed in some regulated markets.",
+        "params": {
+          "cost_range_min": 80,
+          "cost_range_max": 1000
+        }
+      }
+    ],
+    "feature_buy": {
+      "available": true,
+      "options": [
+        {
+          "name": "Nolimit Bonus — bonus features",
+          "cost_multiplier": null,
+          "cost_text": "80×–1000× base bet (range)",
+          "effects": "Buy straight into Autopsy / Lobotomy / Mental (or variants).",
+          "rtp_when_bought_note": null
+        }
+      ],
+      "notes": "Per-mode prices within range not listed on sheet."
+    },
+    "ante_bet": {
+      "available": false,
+      "cost_multiplier": null,
+      "effects": null,
+      "notes": "No Enhanced Bet / ante described on Mental game sheet."
+    },
+    "numeric_limits": {
+      "max_win_multiplier": 66666.0,
+      "max_win_notes": "66,666× base bet (~1 in 18M spins per sheet)",
+      "rtp_percent": 96.08,
+      "rtp_notes": "Dual RTP 96.08% / 94.20% (DX1). Main 58.16%, free spins 37.93%.",
+      "hit_frequency_notes": "Hit frequency 34.19%; free spins 1 in 216; win 100× 1 in 831."
+    },
+    "confidence": {
+      "overall": "high",
+      "grid": "high",
+      "win_system": "high",
+      "reel_behavior": "high",
+      "symbols": "high",
+      "bonus_free_spins": "medium",
+      "features": "high",
+      "feature_buy": "medium",
+      "numeric_limits": "high",
+      "base_game_loop": "high"
+    },
+    "evidence": [
+      {
+        "source_type": "official_pdf",
+        "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Mental_67_75bf3cd416.pdf",
+        "local_path": "sources/nolimit/mental/GameSheet.pdf",
+        "extracted_at": "2026-09-27T18:33:48Z",
+        "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                       Autopsy, Mental &\n                                                               32323   Lobotomy Spins\n                                                                       Mental Transform\n                                                                       xWays & xNudge\n\n\n\n\nMENTAL\nIt is mental, truly mental. Located in a\nmental institute, in a part of the country\nwhere no-one except nurses and doctors\nreally dare to visit....\nxWays, xNudge, Dead Patients - the madness never really\nends with this sepia toned master piece. Join Patient-1 to 5\nin this sinister asylum in search of an epiphany and a clear\nmind...\n\nNolimit City is taking it a bit further with the sinister\nthemes and bulking it up with a big load of features - like\nEnhancer reels and potent fire frames.\n\nMental is available with dual RTP setup at 96.08% and\n94.20% (DX1).\n\fGAME SHEET\n\n\n\n\nGame Features\nFire Frames\n1-13 random positions on the reels that will split a symbol\ninto two parts.\n\nDead Patient\nWhenever you land two Dead Patient symbols you’ve got\nthe chance to win a massive random multiplier - ranging\nfrom x5 to x9999 on a "
+      },
+      {
+        "source_type": "official_site",
+        "url": "https://nolimitcity.com/games/mental",
+        "local_path": "sources/nolimit/mental/cms_features.txt",
+        "extracted_at": "2026-09-27T18:33:48Z",
+        "quote_or_excerpt": "## Dead Patient\nWhenever you land two Dead Patient symbols you’ve got\\nthe chance to win a massive random multiplier - ranging\\nfrom x5 to x9999 on a patient symbol.\n\n## Enhancer Cells\nBoost the chance of wins whenever 4 or 6 fire frames\\nappears. xWays, xNudge, xSplit along with other boosters.\n\n## Mental Transform\nSymbol transform feature whenever the Spider symbol\\nlands on the reels.\n\n## Autopsy Freespins\nActivated by 3 Scorpion symbols and will trigger a bonus\\nmode with sticky Fire Frames. May be upgraded to\\nLobotoy or Mental Freespins.\n\n## Lobotomy Freespins\nActivated by 3 Scorpions plus a Spider symbol. An\\nupgraded version of Autopsy, where the Spider symbol is\\nsticky and award Mental Transform for each spin. Included\\nDead Multiplier that is transferred to a Patient symbol to\\ntrigger some immense wins. May be upgraded to Mental\\nFreespins.\n\n## !!!This is mental!!!\nMax payout of the game is set to 66.666x times the base\\nbet. Trigger this, and the game round will end.\n\n## Mental Freespins\nThis is where things go really mental. Triggered by 3\\nScorpion symbols and 2 spider symbols. Spider symbols\\nare sticky and Dead Multiplier never decrease.\n\n## Nolimit Bonus - Feature"
+      }
+    ],
+    "unknowns": [
+      "exact spins_awarded for Autopsy / Lobotomy / Mental free-spin modes",
+      "exact upgrade mechanics from Autopsy→Lobotomy→Mental mid-bonus",
+      "per-mode feature buy prices within 80×–1000×"
+    ],
+    "thumbnail": "thumbs/nolimit-mental.webp",
+    "thumbnail_attribution": "SlotCatalog"
+  }
+}
