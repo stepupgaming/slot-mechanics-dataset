@@ -21,6 +21,11 @@ GAMES = ROOT / "games"
 SLUG_MAP = json.loads((ROOT / "sources" / "elk" / "slug_to_id.json").read_text())
 EXTRACTED_AT = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 CDN = "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/"
+PDF_URL_OVERRIDES = {
+    # The official legacy product sheet is hosted on ELK's S3 promo bucket,
+    # not the newer CNSI GameDescription CDN.
+    "10010-DJ Wild_ProductSheet.pdf": "https://s3-eu-west-1.amazonaws.com/elkpromo/DJ+W%C3%AFld/DJwild+product+sheet_high+res-2.pdf",
+}
 GAMERULES_DIR = ROOT / "sources" / "elk" / "gamerules"
 THUMBS = ROOT / "thumbs"
 
@@ -78,6 +83,14 @@ def parse_key_features(text: str) -> dict:
         m = re.search(r"ELK Game\s+id\s+(\d+)", text, re.I)
     if m:
         out["id"] = m.group(1)
+    # Product-sheet variant used by a few legacy Elk games.
+    m = re.search(r"Return\s+to\s+player:\s*([\d.]+)\s*%", text, re.I)
+    if m:
+        out["rtp"] = float(m.group(1))
+    m = re.search(r"Exposure:\s*([\d\s,]+)\s*x\s*bet", text, re.I)
+    if m:
+        out["max_exposure"] = float(re.sub(r"[\s,]", "", m.group(1)))
+
     m = re.search(r"Theoretical\s+RTP\s+([\d.]+)\s*%", text, re.I)
     if not m:
         m = re.search(r"Theoretical\s+([\d.]+)\s*%\s*RTP", text, re.I)
@@ -195,6 +208,30 @@ def parse_grid(text: str, kf: dict) -> dict:
             cols = int(m.group(1))
             layout_notes_parts.append(f"columns expand up to {m.group(2)}")
 
+    # Older Elk gamerules use compact forms such as "6 x 8 symbol grid"
+    # and "5 reels, 5-3-1-3-5 rows" rather than the PDF prose forms.
+    # These are official rule statements and are rebuildable dimensions.
+    if rows is None or cols is None:
+        m = re.search(r"(\d+)\s*[x×]\s*(\d+)\s+(?:symbol\s+)?grid", text, re.I)
+        if m:
+            cols = cols or int(m.group(1))
+            rows = rows or int(m.group(2))
+            layout_notes_parts.append(f"Official gamerules: {m.group(1)} x {m.group(2)} symbol grid")
+    if rows is None or cols is None:
+        m = re.search(r"(\d+)\s*reels?\s*(?:,|and)\s*(\d+(?:[-–]\d+)+)\s*rows?", text, re.I)
+        if m:
+            cols = cols or int(m.group(1))
+            profile = m.group(2).replace("–", "-")
+            profile_rows = [int(x) for x in profile.split("-")]
+            rows = rows or max(profile_rows)
+            layout_notes_parts.append(f"Official gamerules: {m.group(1)} reels with row profile {profile}")
+    if rows is None or cols is None:
+        m = re.search(r"(\d+)\s*reels?\s+and\s+(\d+)\s+(?:vertical\s+)?columns?", text, re.I)
+        if m:
+            cols = cols or int(m.group(1))
+            rows = rows or int(m.group(2))
+            layout_notes_parts.append(f"Official gamerules: {m.group(1)} reels and {m.group(2)} vertical columns")
+
     # Fallback to key features
     if rows is None and kf.get("rows"):
         m = re.search(r"(\d+)\s*rows?", kf["rows"], re.I)
@@ -310,6 +347,12 @@ def parse_win_system(text: str, kf: dict) -> dict:
         if m:
             ways_count = int(m.group(1).replace(",", ""))
         notes = lines or "Ways to win"
+    elif re.search(r"connecting\s+win\s+lines?", blob, re.I):
+        win_type = "paylines"
+        direction = "left_to_right"
+        m = re.search(r"(\d+)\s+connecting\s+win\s+lines?", blob, re.I)
+        if m:
+            payline_count = int(m.group(1))
     elif re.search(r"paylines?", blob, re.I):
         win_type = "paylines"
         direction = "left_to_right"
@@ -975,9 +1018,13 @@ def gamerules_xml_to_text(xml_path: Path, title: str) -> tuple[str, dict]:
 
     lines.append("")
     lines.append("Game rules")
-    for v in by.get("gamerule", []):
-        # Drop pure placeholder RTP lines noise? keep — parsers may use structure
-        lines.append(v)
+    # Official Elk XML is not consistent across generations: rules may be
+    # stored under gamerule, gamerules, or numbered 1-rules/2-rules keys.
+    # Include all of them; these are the rebuildable rule text, not marketing.
+    rule_keys = [k for k in by if k in {"gamerule", "gamerules"} or re.fullmatch(r"\d+-rules", k)]
+    for key in sorted(rule_keys, key=lambda k: (int(k.split("-", 1)[0]) if k[0].isdigit() else -1, k)):
+        for v in by[key]:
+            lines.append(v)
 
     lines.append("")
     lines.append("X-iter rules")
@@ -1207,7 +1254,9 @@ def build_record(slug: str, meta: dict, pdf_path: Path, txt_path: Path) -> dict 
     if kf.get("name"):
         title = kf["name"]
 
-    pdf_url = CDN + urllib.parse.quote(pdf_path.name, safe="-_.")
+    pdf_url = PDF_URL_OVERRIDES.get(
+        pdf_path.name, CDN + urllib.parse.quote(pdf_path.name, safe="-_.")
+    )
     grid = parse_grid(text, kf)
     win = parse_win_system(text, kf)
     avalanche = parse_avalanche(text)
@@ -1405,8 +1454,11 @@ def main():
         if out_name in existing or slug in SKIP_SLUGS:
             skipped.append({"gamerules": item.get("path"), "reason": "skip existing", "slug": slug})
             continue
-        # Quality prefilter: need substantial rules text
-        if item.get("alpha", 0) < 800 or item.get("gamerule_count", 0) < 5:
+        # XML generations use several rule-key conventions (gamerule,
+        # gamerules, and numbered N-rules), so the fetch log's legacy
+        # gamerule_count is not a reliable prefilter. The converted text
+        # and the same grid+win+phases quality gate decide below.
+        if item.get("alpha", 0) < 800:
             skipped.append({"gamerules": item.get("path"), "reason": "thin gamerules", "slug": slug,
                             "alpha": item.get("alpha"), "gamerule_count": item.get("gamerule_count")})
             continue

@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:13Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Langley Street 23",
+    "slug": "elk-langley-street-23",
+    "provider_game_id": "10269",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10269&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/langleystreet23/build-349665/assets/translation/langleystreet23-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 rows by 5 columns"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 35,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "35 ways to win"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Three or more bonus symbols trigger the bonus game.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Mystery",
+        "behavior": "The mystery symbols reveal the same payout or wild symbols.\nThe expanding wild symbol expands to cover the entire reel on landing and has two multiplier values.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Langley Street 23: paid spin on 5x5. 35 ways to win. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 5x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 35 ways to win",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "35 ways to win",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/langleystreet23/build-349665/assets/translation/langleystreet23-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10269-langleystreet23-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Langley Street 23\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 35 ways to win\nJackpot No\nReels 5 columns\nRows 5 rows\n\nGame description\nWelcome to Langley Street. A quiet little neighborhood. Houses, people, pets, everything looks ordinary. Your first stop is Langley Street 23. Home to Marvin. \nMarvin believes someone, or something, is watching him. On Langley Street, that’s not the strangest thing to believe.\n\nLangley Street 23 is a 5 row by 5 column slot.\nLangley Street 23 has 5 columns and 5 rows with 35 paylines. The RTP for all paylines is the same and the RTP"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/langleystreet23/build-349665/assets/translation/langleystreet23-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10269-langleystreet23-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "is a 5 row by 5 column slot.\nLangley Street 23 has 5 columns and 5 rows with 35 paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/langleystreet23/build-349665/assets/translation/langleystreet23-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10269-langleystreet23-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "X-iter rules\nCollecting VHS tapes unlocks new features. There are a total of 4 features than can be unlocked.\nThe multiplier adder increases or adds a multiplier value to mystery or wild symbols in the bonus game.\nThe mystery symbols reveal the same payout or wild symbols. Each spin, after it is unlocked, there is a chance that payout symbols become mystery symbols.\nThe expanding wild symbol, when unlocked, expands to cover the entire reel and has two multiplier values. A fight starts where one of the two multiplier values is chosen and applied.\nThe cloning wild symbol, when unlocked, creates a wild symbol in its position and in the adjacent position to the left.\nThe surveillance TV, when unlocked, can"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/langleystreet23/build-349665/assets/translation/langleystreet23-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10269-langleystreet23-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Game description\nWelcome to Langley Street. A quiet little neighborhood. Houses, people, pets, everything looks ordinary. Your first stop is Langley Street 23. Home to Marvin. \nMarvin believes someone, or something, is watching him. On Langley Street, that’s not the strangest thing to believe.\n\nLangley Street 23 is a 5 row by 5 column slot.\nLangley Street 23 has 5 columns and 5 rows with 35 paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.\nThree or more bonus symbols in normal mode trigger the bonus game with bonus spins. There are two bonus modes that a player can trigger, sticky wilds or sticky mystery bonus.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This inform"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/langleystreet23/build-349665/assets/translation/langleystreet23-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10269-langleystreet23-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Langley Street 23\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 35 ways to win\nJackpot No\nReels 5 columns\nRows 5 rows\n\nGame description\nWelcome to Langley Street. A quiet little neighborhood. Houses, people, pets, everything looks ordinary. Your first stop is Langley Street 23. Home to Marvin. \nMarvin believes someone, or something, is watching him. On Langley Street, that’s not the strangest thing to believe.\n\nLangley Street 23 is a 5 row by 5 column slot.\nLangley Street 23 has 5 columns and 5 rows with 35 paylines. The RTP for all paylines is the same and the RTP of the game is defined in the game rules.\nThree or more bonus symbols in normal mode trigger the bonus game with bonus spins. There are two bonus modes that a player can trigger, sticky wilds or sticky mystery bonus.\nBet amount and balance are always displayed in the info bar at the bot"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/langley-street-23/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Demo launcher gameid=10269; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins.modes",
+    "feature_buy.options incomplete",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-langley-street-23.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

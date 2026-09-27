@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:13Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Illogicool",
+    "slug": "elk-illogicool",
+    "provider_game_id": "10069",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10069&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/illogicool/build-211982/assets/translation/illogicool-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 columns by 6 rows"
+  },
+  "win_system": {
+    "type": "other",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Scatter pays (identical symbols anywhere on the grid)"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The Wild symbol substitutes for any symbol except Bonus or Feature symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Super Bonus",
+        "behavior": "The Super Bonus symbol also adds to the Win Multiplier.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Illogicool: paid spin on 6x6. Scatter pays (identical symbols anywhere on the grid). Avalanche/tumble after wins. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 6x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Scatter pays (identical symbols anywhere on the grid)",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "Winning symbols explode/are removed; remaining symbols fall; new symbols drop in. Continues while new wins appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Scatter pays (identical symbols anywhere on the grid)",
+    "notes": "rency or in coins. The player can change preference in Settings.\n\n9. Illogicool is played in two modes, Normal mode and Bonus mode with free drops.\n\n10. Wild symbols substitute for any symbol except any Wild feature symbol, Troubles feature symbol and Bonus or Super Bonus scatter symbols. A"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Super Bonus",
+        "trigger": "Super Bonus symbols appearing anywhere in the main grid in Normal mode trigger the Bonus mode with free drops.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Super Bonus symbols appearing anywhere in the main grid in Normal mode trigger the Bonus mode with free drops.",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "Super Bonus symbols appearing anywhere in the main grid in Normal mode trigger the Bonus mode with free drops.",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Illogicool."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "Winning symbols removed; remaining fall; new symbols drop in.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Super Bonus (500x): Buy a game round with 3-6 Bonus symbols, with at least 2 of them being Super Bonus symbols, triggering the Bonus game. Initial Win Multiplier is at least x10. C; Buy Bonus (100x): Buy a game round with 3-6 Bonus symbols triggering the Bonus game. Cost is 100x the bet.; Troubles (25x): Buy a game round with at least 2 Troubles adjacent to each other triggering the push to sticky mini Troubles. Cost is 25x the bet.; Locked Wilds (10x): Buy a game round with at least 3 Locked Wild symbols in the first drop. Cost is 10x the bet.; Guaranteed Win (5x): Buy a game round with a guaranteed winning combination. Cost is 5x the bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x the selected bet",
+        "effects": "Buy a game round with 3-6 Bonus symbols, with at least 2 of them being Super Bonus symbols, triggering the Bonus game. Initial Win Multiplier is at least x10. Cost is 500x the bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Buy Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x the selected bet",
+        "effects": "Buy a game round with 3-6 Bonus symbols triggering the Bonus game. Cost is 100x the bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Troubles",
+        "cost_multiplier": 25.0,
+        "cost_text": "25x the selected bet",
+        "effects": "Buy a game round with at least 2 Troubles adjacent to each other triggering the push to sticky mini Troubles. Cost is 25x the bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Locked Wilds",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x the selected bet",
+        "effects": "Buy a game round with at least 3 Locked Wild symbols in the first drop. Cost is 10x the bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Guaranteed Win",
+        "cost_multiplier": 5.0,
+        "cost_text": "5x the selected bet",
+        "effects": "Buy a game round with a guaranteed winning combination. Cost is 5x the bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/illogicool/build-211982/assets/translation/illogicool-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10069-illogicool-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Illogicool\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Illogicool is a game with 6 columns and 6 rows slot with the top row acting as a Cool reel, dropping symbols and 46,656 ways to win.\n\n2. The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.\n\n3. Each bet is __CPBB__ coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Au"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/illogicool/build-211982/assets/translation/illogicool-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10069-illogicool-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\n• SUPER BONUS: Buy a game round with 3-6 Bonus symbols, with at least 2 of them being Super Bonus symbols, triggering the Bonus game. Initial Win Multiplier is at least x10. Cost is 500x the bet.\n• BUY BONUS: Buy a game round with 3-6 Bonus symbols triggering the Bonus game. Cost is 100x the bet.\n• TROUBLES: Buy a game round with at least 2 Troubles adjacent to each other triggering the push to sticky mini Troubles. Cost is 25x the bet.\n• LOCKED WILDS: Buy a game round with at least 3 Locked Wild symbols in the first drop. Cost is 10x the bet.\n• GUARANTEED WIN: Buy a game round with a guaranteed winning combination. Cost is 5x the bet."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/illogicool/build-211982/assets/translation/illogicool-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10069-illogicool-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Game description\n\nGame rules\n1. Illogicool is a game with 6 columns and 6 rows slot with the top row acting as a Cool reel, dropping symbols and 46,656 ways to win.\n\n2. The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.\n\n3. Each bet is __CPBB__ coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in the player's curren"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/illogicool/build-211982/assets/translation/illogicool-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10069-illogicool-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Illogicool\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Illogicool is a game with 6 columns and 6 rows slot with the top row acting as a Cool reel, dropping symbols and 46,656 ways to win.\n\n2. The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.\n\n3. Each bet is __CPBB__ coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in the player"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/illogicool/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Demo launcher gameid=10069; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-illogicool.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

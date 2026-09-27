@@ -1,0 +1,262 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:13Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Quackers",
+    "slug": "elk-quackers",
+    "provider_game_id": "10270",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10270&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/quackers/build-343534/assets/translation/quackers-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 columns by 6 rows"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": "horizontal_or_vertical",
+    "notes": "Cluster Wins"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Global Multiplier",
+        "behavior": "the global multiplier when triggered.\nThe dynamite Duck converts payout symbols into Wilds.\nThe princess Duck converts payout symbols of one kind into a more valuable kind.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Coin",
+        "behavior": "The coin symbol is collected and 20 collected coin symbols trigger the coin game.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Quackers: paid spin on 6x6. Cluster Wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 6x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Cluster Wins",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Cluster Wins",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 Bonus symbols is a Super Bonus symbol, the Super Bonus game is triggered.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super Bonus symbol, the Super Bonus game is triggered.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "nus game with Quack Drops.\nIf 1 of 3 Bonus symbols is a Super Bonus symbol, the Super Bonus game is triggered.\nThe coin symbol is collected and 20 collected coin symbols trigger the coin game.\nThe flying Duck increases the global multiplier when triggered.\nThe dynamite Duck converts payout symbols into Wilds.\nThe princess Duck converts payout symbols of one kind into a more valuable kind.\nThe Marilyn Duck adds or increases symbol multipliers to payout symbols.\n\nGame rules\n\nX-iter rules\nQuackers have four different duck characters, each with",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "nus game with Quack Drops.\nIf 1 of 3 Bonus symbols is a Super Bonus symbol, the Super Bonus game is triggered.\nThe coin symbol is collected and 20 collected coin symbols trigger the coin game.\nThe flying Duck increases the global multiplier when triggered.\nThe dynamite Duck converts payout symbols into Wilds.\nThe princess Duck converts payout symbols of one kind into a more valuable kind.\nThe Mari",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Quackers."
+  },
+  "features": [],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/quackers/build-343534/assets/translation/quackers-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10270-quackers-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Quackers\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster Wins\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nQuackers is a 6 column, 6 row slot with dropping symbols and cluster wins. The main features are the coin collector where 20 collected coins trigger a coin game, the four Duck symbols that transform symbols and increase multipliers, and a Bonus game with Quack Drops where the grid is expanded to 8 columns and 8 rows.\nQuackers is a cluster game where 5 or more vertically or horizontally connected identical symbols trigger a win.\nA combination"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/quackers/build-343534/assets/translation/quackers-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10270-quackers-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "is a 6 column, 6 row slot with dropping symbols and cluster wins. The main features are the coin collector where 20 collected coins trigger a coin game, the four Duck symbols that transform symbols and increase multipliers, and a Bonus game with Quack Drops where the grid is expanded to 8 columns and 8 rows.\nQuackers is a cluster game where 5 or more vertically or horizontally connected identical symbols trigger a win."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/quackers/build-343534/assets/translation/quackers-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10270-quackers-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "X-iter rules\nQuackers have four different duck characters, each with a unique feature that triggers before every win evaluation.\nThe Flying Duck increases the global multiplier.\nThe Dynamite Duck converts payout symbols into Wilds.\nThe Princess Duck increases the value of payout symbols.\nThe Marilyn Duck increases symbol multipliers.\nCoins that land in normal mode or bonus mode are collected.\n20 collected Coins trigger the Coin game.\nThe Coin game continues until no hearts remain in the heart counter.\nAs long as new feature symbols land, the Coin game continues.\nThe more coins, chests, and multipliers, the higher the win.\nThe Bonus game is played on an 8 rows, 8 column sized grid.\nDucks are persistent t"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/quackers/build-343534/assets/translation/quackers-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10270-quackers-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Game description\nQuackers is a 6 column, 6 row slot with dropping symbols and cluster wins. The main features are the coin collector where 20 collected coins trigger a coin game, the four Duck symbols that transform symbols and increase multipliers, and a Bonus game with Quack Drops where the grid is expanded to 8 columns and 8 rows.\nQuackers is a cluster game where 5 or more vertically or horizontally connected identical symbols trigger a win.\nA combination of three Bonus symbols in normal mode triggers the Bonus game with Quack Drops.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the i"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/quackers/build-343534/assets/translation/quackers-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10270-quackers-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Quackers\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster Wins\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nQuackers is a 6 column, 6 row slot with dropping symbols and cluster wins. The main features are the coin collector where 20 collected coins trigger a coin game, the four Duck symbols that transform symbols and increase multipliers, and a Bonus game with Quack Drops where the grid is expanded to 8 columns and 8 rows.\nQuackers is a cluster game where 5 or more vertically or horizontally connected identical symbols trigger a win.\nA combination of three Bonus symbols in normal mode triggers the Bonus game with Quack Drops.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winni"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/quackers/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Demo launcher gameid=10270; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy.options incomplete",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-quackers.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

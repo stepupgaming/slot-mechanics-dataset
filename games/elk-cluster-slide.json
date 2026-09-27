@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:13Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Cluster Slide",
+    "slug": "elk-cluster-slide",
+    "provider_game_id": "10055",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10055&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/clusterslide/build-253531/assets/translation/clusterslide-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 8,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 7 columns by 8 rows"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": "horizontal_or_vertical",
+    "notes": "A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "eature Wilds that subsequently execute their function and are then removed. The remaining symbols fall vertically and then slide to the left until they reach a resting position. The new result is played out and new symbols drop in to fill the empty spaces. The cycle continues as long as new winning clusters appear.\n\n11. There are 6 different wild symbols in the game, 1 wild symbol and 5 Feature Wild symbols. All wilds substitute for any symbol except the bonus symbol and Feature Wild symbols.\n\n12."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the bonus symbol and the Feature Wild symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Cluster Slide: paid spin on 8x7. A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.. Avalanche/tumble after wins. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 8x7. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "eature Wilds that subsequently execute their function and are then removed. The remaining symbols fall vertically and then slide to the left until they reach a resting position. The new result is played out and new symbols drop in to fill the empty spaces. The cycle continues as long as new winning clusters appear.\n\n11. There are 6 different wild symbols in the game, 1 wild symbol and 5 Feature Wild symbols. All wilds substitute for any symbol except the bonus symbol and Feature Wild symbols.\n\n12.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected.",
+    "notes": "cy or in coins. The player can change preference in Settings.\n\n9. Cluster Slide is played in two modes; Normal mode and Bonus mode with Wild Drops.\n\n10. The winnings in the current symbol drop are collected and the winning clusters are removed, except for the Feature Wilds that subsequently"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more bonus symbols on the symbol grid trigger Bonus mode with 3 Wild Drops.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "",
+        "end_condition": "The Bonus mode ends when no additional winning clusters appear and the inventory has been emptied or when the maximum win has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": ".\nX-iter 5: Guarantees a game round with 3 or more bonus symbols and entry to a super bonus game at the cost of 300x the selected bet. The super bonus game consists of 5 Wild Drops, each with a different wild symbol pattern. 3 or more bonus symbols on the symbol grid retrigger additional 5 Wild Drops.\nThe X-iter features can only be activated in the base game.\nThe minimum X-iter cost is __MINBABMODE__, and the maximum cost is __MAXBABMODE__.\nThe theoretical payout (RTP) for all X-iter game modes in Cluster Slide is __RTP__.\nAll game rules a",
+        "end_condition": "The Bonus mode ends when no additional winning clusters appear and the inventory has been emptied or when the maximum win has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": ".\nX-iter 5: Guarantees a game round with 3 or more bonus symbols and entry to a super bonus game at the cost of 300x the selected bet. The super bonus game consists of 5 Wild Drops, each with a different wild symbol pattern. 3 or more bonus symbols on the symbol grid retrigger additional 5 Wild Drops.\nThe X-iter features can only be activated in the base game.\nThe minimum X-iter cost is __MINBABMO",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Cluster Slide."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "eature Wilds that subsequently execute their function and are then removed. The remaining symbols fall vertically and then slide to the left until they reach a resting position. The new result is played out and new symbols drop in to fill the empty spaces. The cycle continues as long as new winning clusters appear.\n\n11. There are 6 different wild symbols in the game, 1 wild symbol and 5 Feature Wild symbols. All wilds substitute for any symbol except the bonus symbol and Feature Wild symbols.\n\n12.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/clusterslide/build-253531/assets/translation/clusterslide-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10055-clusterslide-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Cluster Slide\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Cluster Slide is a 7 columns, 8 rows slot with dropping symbols and cluster wins.\n \n2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\n\n3. Each bet is __CPBB__ coins.\n\n4. A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. \n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/clusterslide/build-253531/assets/translation/clusterslide-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10055-clusterslide-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "is a 7 columns, 8 rows slot with dropping symbols and cluster wins.\n \n2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/clusterslide/build-253531/assets/translation/clusterslide-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10055-clusterslide-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\nX-iter 1: Guarantees 3 symbol drops with a multiplier starting at 5x at the cost of 15x the selected bet.\nX-iter 2: Guarantees 3 symbol drops in which the highest paying symbol according to the paytable, the moustache symbol, is collected at the cost of 25x the selected bet. All winning and non-winning moustache symbols are kept inactive and are accumulated at the bottom of the symbol grid between the symbol drops. They remain inactive until the last symbol drop, during which they are activated and payout according to the paytable.\nX-iter 3: Guarantees 3 symbol drops with collected Feature Wild symbols at the cost of 50x the selected b"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/clusterslide/build-253531/assets/translation/clusterslide-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10055-clusterslide-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Game description\n\nGame rules\n1. Cluster Slide is a 7 columns, 8 rows slot with dropping symbols and cluster wins.\n \n2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\n\n3. Each bet is __CPBB__ coins.\n\n4. A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. \n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in the player's currency or in coins. The playe"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/clusterslide/build-253531/assets/translation/clusterslide-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10055-clusterslide-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Cluster Slide\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Cluster Slide is a 7 columns, 8 rows slot with dropping symbols and cluster wins.\n \n2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\n\n3. Each bet is __CPBB__ coins.\n\n4. A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. \n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in the player's currency or in coin"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/cluster-slide/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Demo launcher gameid=10055; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy.options incomplete",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-cluster-slide.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

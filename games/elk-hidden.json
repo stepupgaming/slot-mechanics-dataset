@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:13Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Hidden",
+    "slug": "elk-hidden",
+    "provider_game_id": "10019",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10019&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/hidden/build-259007/assets/translation/hidden-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": null
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": ", Normal mode and Bonus mode with free spins.\n\n10. During Normal mode Flashback Respins randomly appear, covering up to 3 of the middle reels with sticky Wilds. The sticky Wilds can cover reel 2, 3 and 4 and remain for 3 spins. \n\n11. Additional Wilds during Flashback Respins are not sticky.\n\n12. Flashback Respins can not be retrigged"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Hidden: paid spin on 4x5. paylines. Avalanche/tumble after wins. Bonus modes: Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: paylines",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "Winning symbols explode/are removed; remaining symbols fall; new symbols drop in. Continues while new wins appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "paylines",
+    "notes": "the player's currency. The player can change preference in Settings.\n\n9. Hidden is played in two modes, Normal mode and Bonus mode with free spins.\n\n10. During Normal mode Flashback Respins randomly appear, covering up to 3 of the middle reels with sticky Wilds. The sticky Wilds can cover re"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "Bonus symbols trigger the bonus game (see PDF)",
+        "spins_awarded": "5 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "ange preference in Settings.\n\n9. Hidden is played in two modes, Normal mode and Bonus mode with free spins.\n\n10. During Normal mode Flashback Respins randomly appear, covering up to 3 of the middle reels with sticky Wilds. The sticky Wilds can cover reel 2, 3 and 4 and remain for 3 spins. \n\n11. Additional Wilds during Flashback Respins are not sticky.\n\n12. Flashback Respins can not be retrigged within the same spin.\n13. The Wild symbol appears on reel 2, 3 and 4. It substitutes any other symbol except for the magnifier glass (bonus symbol).\n\n14. The magnifier glass is a scatter symbol and appe",
+        "end_condition": "bonus game ends.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award 5 free spins. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "5 free spins"
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Hidden."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "Winning symbols removed; remaining fall; new symbols drop in.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": 96.3,
+    "rtp_notes": "Theoretical RTP 96.3% (base and X-iter when stated). Min bet €None, max bet €None.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/hidden/build-259007/assets/translation/hidden-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10019-hidden-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Hidden\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Hidden is a 5 reel, 4 rows slot with 178 connecting paylines. \n \n2. The game offers several bet levels for each currency.\n\n3. Each bet is 100 coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spi"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/hidden/build-259007/assets/translation/hidden-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10019-hidden-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "is a 5 reel, 4 rows slot with 178 connecting paylines. \n \n2. The game offers several bet levels for each currency."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/hidden/build-259007/assets/translation/hidden-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10019-hidden-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "X-iter rules\nThe Wild symbol substitutes all symbols except the magnifying glass symbol.\n3 Magnifying glass symbols start the Treasure Room Free Spins with 5 spins.\nStarts with 5 spins. For every magnifying glass symbol appearing during the bonus game, 1 extra free spin is generated.\nOne random symbol is selected at the start of the bonus game as the expanding symbol. All occurrences of the selected symbol expand clockwise 2x2 once for every free spin.\nWinning lines pay out and then all non-expanding symbols explode to give space for a second symbol drop. New winning lines are payed out before the next free spin starts.\nFlashback Respins are randomly trigged in-between normal spins. Up to three of the m"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/hidden/build-259007/assets/translation/hidden-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10019-hidden-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Game description\n\nGame rules\n1. Hidden is a 5 reel, 4 rows slot with 178 connecting paylines. \n \n2. The game offers several bet levels for each currency.\n\n3. Each bet is 100 coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in coins or in the player's currency. The player can change preference in Settings.\n\n9. Hidden is played in two modes,"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/hidden/build-259007/assets/translation/hidden-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10019-hidden-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Hidden\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Hidden is a 5 reel, 4 rows slot with 178 connecting paylines. \n \n2. The game offers several bet levels for each currency.\n\n3. Each bet is 100 coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in coins or in the player's currency. The player can change preference in Settings.\n\n9. Hidden is played in two mo"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/hidden/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Demo launcher gameid=10019; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy.options incomplete",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-hidden.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

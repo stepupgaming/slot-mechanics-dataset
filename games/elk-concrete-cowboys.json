@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:58:55Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Concrete Cowboys",
+    "slug": "elk-concrete-cowboys",
+    "provider_game_id": "10259",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10259&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/concretecowboys/build-358006/assets/translation/concretecowboys-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": 5,
+    "rows_max": 8,
+    "layout_notes": "Official Game Description: 5 rows by 5 columns; expands up to 8 rows by 8 columns; schema has rows_min/rows_max; cols variable upper=8 noted in layout_notes (no cols_min/cols_max)"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "horizontal_or_vertical",
+    "notes": "The number of possible paylines vary based on the position of the Collectors."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "brings another Collector into the queue. Each Collector in the queue triggers 1 respin of the minigame.\nThe Ladder symbol is exclusive to the Employee of the Month minigame, where it allows a Collector on its level to climb up 1 level. Ladders are removed after use.\nThe Accumulator symbol is exclusive to the Employee of the Month mini"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "5 rows\n\nGame description\nConcrete Cowboys is a 5 row by 5 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four Collectors that move around the grid collecting gems and feature symbols, the Wrecking Ball meter that counts the number of symbols collected and triggers a Wrecking Ball when the meter is ful"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Concrete Cowboys: paid spin on 5x5 (expands to 8 rows). The number of possible paylines vary based on the position of the Collectors.. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 5x5 (expands to 8 rows). Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: The number of possible paylines vary based on the position of the Collectors.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "The number of possible paylines vary based on the position of the Collectors.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "rts after all features have resolved and there are no more wins to collect.\nThe super bonus game with bonus drops is triggered if one of the three collected Bonus symbols is a super Bonus symbol. The super bonus game starts on 8 rows and 8 columns.\nThe Wild symbol substitutes for any gem at their current respective payout level.\nA collected Transform symbol Transforms a cluster of gems next to the active Collector into the same color as the Collector that collected the Transform symbol. A collected Transform symbol that cannot convert any p",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "rts after all features have resolved and there are no more wins to collect.\nThe super bonus game with bonus drops is triggered if one of the three collected Bonus symbols is a super Bonus symbol. The super bonus game starts on 8 rows and 8 columns.\nThe Wild symbol substitutes for any gem at their current respective payout level.\nA collected Transform symbol Transforms a cluster of gems next to the",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Concrete Cowboys."
+  },
+  "features": [
+    {
+      "name": "Expanding grid",
+      "trigger": "Feature/bomb/clear-board events as described",
+      "when": "Base and bonus",
+      "effects": "5 rows\n\nGame description\nConcrete Cowboys is a 5 row by 5 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four Collectors that move around the grid collecting gems and feature symbols, the Wrecking Ball meter that counts the number of symbols collected",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/concretecowboys/build-358006/assets/translation/concretecowboys-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10259-concretecowboys-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Key features\nName in English Concrete Cowboys\nProduct category Casino\nGame type Slot\nClient HTML5\nLines The number of possible paylines vary based on the position of the Collectors.\nJackpot No\nReels 5 columns\nRows 5 rows\n\nGame description\nConcrete Cowboys is a 5 row by 5 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four Collectors that move around the grid collecting gems and feature symbols, the Wrecking Ball meter that counts the number of symbols collected and triggers a Wrecking Ball when the meter is full, 3 minigames with different mechanics, and a bonus game"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/concretecowboys/build-358006/assets/translation/concretecowboys-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10259-concretecowboys-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "is a 5 row by 5 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four Collectors that move around the grid collecting gems and feature symbols, the Wrecking Ball meter that counts the number of symbols collected and triggers a Wrecking Ball when the meter is full, 3 minigames with different mechanics, and a bonus game.\nWins are generated by the four Collectors collecting horizontally or vertically adjacent gems, Wilds or coins, resulting in a varying number of ways to win."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/concretecowboys/build-358006/assets/translation/concretecowboys-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10259-concretecowboys-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "X-iter rules"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/concretecowboys/build-358006/assets/translation/concretecowboys-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10259-concretecowboys-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Game description\nConcrete Cowboys is a 5 row by 5 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four Collectors that move around the grid collecting gems and feature symbols, the Wrecking Ball meter that counts the number of symbols collected and triggers a Wrecking Ball when the meter is full, 3 minigames with different mechanics, and a bonus game.\nWins are generated by the four Collectors collecting horizontally or vertically adjacent gems, Wilds or coins, resulting in a varying number of ways to win. The RTP for all wins is the same and the RTP of the game is defined in the game rules.\nThree Bonus symbols collected by the Collectors during a game round trigger the bonus game with 5 bonus drops. The grid size, the progress on the symbol collection meter, the colle"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/concretecowboys/build-358006/assets/translation/concretecowboys-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10259-concretecowboys-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Key features\nName in English Concrete Cowboys\nProduct category Casino\nGame type Slot\nClient HTML5\nLines The number of possible paylines vary based on the position of the Collectors.\nJackpot No\nReels 5 columns\nRows 5 rows\n\nGame description\nConcrete Cowboys is a 5 row by 5 column slot that can expand up to 8 rows by 8 columns. Central game features are: The four Collectors that move around the grid collecting gems and feature symbols, the Wrecking Ball meter that counts the number of symbols collected and triggers a Wrecking Ball when the meter is full, 3 minigames with different mechanics, and a bonus game.\nWins are generated by the four Collectors collecting horizontally or vertically adjacent gems, Wilds or coins, resulting in a varying number of ways to win. The RTP for all wins is the same and the RTP of the game is defined in the game rules.\nThree Bonus symbols collected by the Colle"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/concrete-cowboys/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Demo launcher gameid=10259; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy.options incomplete",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-concrete-cowboys.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

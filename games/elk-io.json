@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:13Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Io",
+    "slug": "elk-io",
+    "provider_game_id": "10046",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10046&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/io/build-299712/assets/translation/io-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 144,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways to win"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "ncluded in a winning combination are removed, except for the Charged Wilds. The remaining symbols fall vertically, slide to the left and then right repeatedly until they reach a resting position. The new result is paid out and new symbols drop from above. The avalanche cycle continues as long as new winning combinations appear.\n\n13. When the avalanche cycle ends, the next symbol drop will add one additional row of symbols at the top, resulting in an increased number of ways to win.\n\n14. The number"
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the Laser, Wild Forge, Charged Wild, multiplier wild and bonus symbols.",
+        "params": {}
+      },
+      {
+        "name": "Charged Wild",
+        "behavior": "The Charged Wild symbol has 4 extra lives. It spends a life when it contributes to a win, and becomes a regular wild when it spends its fourth life.",
+        "params": {
+          "charges": 3
+        }
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Io: paid spin on 4x6. Ways to win. Avalanche/tumble after wins. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Ways to win",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "ncluded in a winning combination are removed, except for the Charged Wilds. The remaining symbols fall vertically, slide to the left and then right repeatedly until they reach a resting position. The new result is paid out and new symbols drop from above. The avalanche cycle continues as long as new winning combinations appear.\n\n13. When the avalanche cycle ends, the next symbol drop will add one additional row of symbols at the top, resulting in an increased number of ways to win.\n\n14. The number",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Ways to win",
+    "notes": "er's currency or in coins. The player can change preference in Settings.\n\n9. Io is played in two modes; Normal mode and Bonus mode with free drops.\n\n10. All symbol drops in Normal mode start with 4 rows and 4 096 ways to win.\n\n11. The maximum number of rows are 8 with maximum 262 144 ways to"
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "ncluded in a winning combination are removed, except for the Charged Wilds. The remaining symbols fall vertically, slide to the left and then right repeatedly until they reach a resting position. The new result is paid out and new symbols drop from above. The avalanche cycle continues as long as new winning combinations appear.\n\n13. When the avalanche cycle ends, the next symbol drop will add one additional row of symbols at the top, resulting in an increased number of ways to win.\n\n14. The number",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": 96.0,
+    "rtp_notes": "Theoretical RTP 96.0% (base and X-iter when stated). Min bet €None, max bet €None.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/io/build-299712/assets/translation/io-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10046-io-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Io\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Io is a 6 column, 4 rows slot with dropping symbols and up to 262 144 ways to win. The columns may expand upwards to a total of 8 rows. \n \n2. The game offers several bet levels for each currency.\n\n3. Each bet is 100 coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n6. The game can be played automatically by activating Auto Spin (if available in the ap"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/io/build-299712/assets/translation/io-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10046-io-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "is a 6 column, 4 rows slot with dropping symbols and up to 262 144 ways to win. The columns may expand upwards to a total of 8 rows. \n \n2."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/io/build-299712/assets/translation/io-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10046-io-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "X-iter rules\n3 bonus scatter symbols trigger the free drops bonus game. Free drops can be retriggered.\nThe wild symbol substitutes for any regular symbol. A winning combination of all wilds pays as the highest value symbol.\nA Wild Forge fills an empty space below with a multiplier wild. The value of the multiplier increases every time Wild Forge is used. Wild Forge turns into a multiplier wild when it falls to the bottom.\nThe Charged Wild symbol has 4 extra lives. It spends a life when it contributes to a win. The Charged Wild substitutes for any regular symbol.\nAll symbols which are part of a win, except for Charged Wilds, are removed and leave space for additional symbol drops. An additional row of sy"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/io/build-299712/assets/translation/io-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10046-io-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Game description\n\nGame rules\n1. Io is a 6 column, 4 rows slot with dropping symbols and up to 262 144 ways to win. The columns may expand upwards to a total of 8 rows. \n \n2. The game offers several bet levels for each currency.\n\n3. Each bet is 100 coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in the player's currency or in coins. The pla"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/io/build-299712/assets/translation/io-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10046-io-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Io\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Io is a 6 column, 4 rows slot with dropping symbols and up to 262 144 ways to win. The columns may expand upwards to a total of 8 rows. \n \n2. The game offers several bet levels for each currency.\n\n3. Each bet is 100 coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in the player's currency or in coins. The pl"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/io/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Demo launcher gameid=10046; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins.modes",
+    "feature_buy.options incomplete",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-io.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T18:58:26Z",
-  "game_count": 691,
-  "thumbnail_count": 691,
+  "updated_at": "2026-09-27T19:01:28Z",
+  "game_count": 743,
+  "thumbnail_count": 743,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
-    "Elk Studios": 94,
+    "Elk Studios": 146,
     "Slotmill": 61,
     "Nolimit City": 48,
     "Backseat Gaming": 35
   },
   "by_confidence": {
-    "high": 560,
+    "high": 612,
     "low": 28,
     "medium": 103
   },
@@ -22,7 +22,7 @@
       "high": 35
     },
     "Elk Studios": {
-      "high": 94
+      "high": 146
     },
     "Hacksaw Gaming": {
       "low": 28,
@@ -355,19 +355,6 @@
       "thumbnail": "thumbs/backseat-old-gun.webp"
     },
     {
-      "slug": "backseat-pirate-bonanza-2",
-      "title": "Pirate Bonanza 2",
-      "provider": "Backseat Gaming",
-      "confidence_overall": "high",
-      "path": "games/backseat-pirate-bonanza-2.json",
-      "win_system_type": "clusters",
-      "grid": "5×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/backseat-pirate-bonanza-2.webp"
-    },
-    {
       "slug": "backseat-pirate-bonanza",
       "title": "Pirate Bonanza",
       "provider": "Backseat Gaming",
@@ -379,6 +366,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/backseat-pirate-bonanza.webp"
+    },
+    {
+      "slug": "backseat-pirate-bonanza-2",
+      "title": "Pirate Bonanza 2",
+      "provider": "Backseat Gaming",
+      "confidence_overall": "high",
+      "path": "games/backseat-pirate-bonanza-2.json",
+      "win_system_type": "clusters",
+      "grid": "5×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/backseat-pirate-bonanza-2.webp"
     },
     {
       "slug": "backseat-pirate-rocket",
@@ -511,19 +511,6 @@
       "thumbnail": "thumbs/elk-arcanum.webp"
     },
     {
-      "slug": "elk-ashoka-eternal",
-      "title": "Ashoka Eternal",
-      "provider": "Elk Studios",
-      "confidence_overall": "high",
-      "path": "games/elk-ashoka-eternal.json",
-      "win_system_type": "clusters",
-      "grid": "7×5",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/elk-ashoka-eternal.webp"
-    },
-    {
       "slug": "elk-ashoka",
       "title": "Ashoka",
       "provider": "Elk Studios",
@@ -535,6 +522,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-ashoka.webp"
+    },
+    {
+      "slug": "elk-ashoka-eternal",
+      "title": "Ashoka Eternal",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-ashoka-eternal.json",
+      "win_system_type": "clusters",
+      "grid": "7×5",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-ashoka-eternal.webp"
     },
     {
       "slug": "elk-avalon-gold",
@@ -576,6 +576,58 @@
       "thumbnail": "thumbs/elk-bamboo-pandits.webp"
     },
     {
+      "slug": "elk-birthday",
+      "title": "Birthday!",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-birthday.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-birthday.webp"
+    },
+    {
+      "slug": "elk-black-river-gold",
+      "title": "Black River Gold",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-black-river-gold.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-black-river-gold.webp"
+    },
+    {
+      "slug": "elk-blood-lust",
+      "title": "Blood Lust",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-blood-lust.json",
+      "win_system_type": "other",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-blood-lust.webp"
+    },
+    {
+      "slug": "elk-bompers",
+      "title": "Bompers",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-bompers.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-bompers.webp"
+    },
+    {
       "slug": "elk-bonzos-bananza",
       "title": "Bonzo’s Bananza",
       "provider": "Elk Studios",
@@ -615,6 +667,19 @@
       "thumbnail": "thumbs/elk-book-of-toro.webp"
     },
     {
+      "slug": "elk-boomberries",
+      "title": "Boomberries",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-boomberries.json",
+      "win_system_type": "clusters",
+      "grid": "7×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-boomberries.webp"
+    },
+    {
       "slug": "elk-buffalo-toro",
       "title": "Buffalo Toro",
       "provider": "Elk Studios",
@@ -639,6 +704,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-buggin.webp"
+    },
+    {
+      "slug": "elk-bushido-gold",
+      "title": "Bushido Gold",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-bushido-gold.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-bushido-gold.webp"
     },
     {
       "slug": "elk-catemple",
@@ -667,6 +745,19 @@
       "thumbnail": "thumbs/elk-cathedral-9.webp"
     },
     {
+      "slug": "elk-chi",
+      "title": "Chi",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-chi.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-chi.webp"
+    },
+    {
       "slug": "elk-cluster-kingdom",
       "title": "Cluster Kingdom",
       "provider": "Elk Studios",
@@ -680,17 +771,17 @@
       "thumbnail": "thumbs/elk-cluster-kingdom.webp"
     },
     {
-      "slug": "elk-coba-reborn",
-      "title": "Coba Reborn",
+      "slug": "elk-cluster-slide",
+      "title": "Cluster Slide",
       "provider": "Elk Studios",
       "confidence_overall": "high",
-      "path": "games/elk-coba-reborn.json",
+      "path": "games/elk-cluster-slide.json",
       "win_system_type": "clusters",
-      "grid": "7×7",
+      "grid": "8×7",
       "has_tumble": true,
       "has_buy": true,
       "has_ante": false,
-      "thumbnail": "thumbs/elk-coba-reborn.webp"
+      "thumbnail": "thumbs/elk-cluster-slide.webp"
     },
     {
       "slug": "elk-coba",
@@ -706,6 +797,32 @@
       "thumbnail": "thumbs/elk-coba.webp"
     },
     {
+      "slug": "elk-coba-reborn",
+      "title": "Coba Reborn",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-coba-reborn.json",
+      "win_system_type": "clusters",
+      "grid": "7×7",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-coba-reborn.webp"
+    },
+    {
+      "slug": "elk-concrete-cowboys",
+      "title": "Concrete Cowboys",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-concrete-cowboys.json",
+      "win_system_type": "clusters",
+      "grid": "5×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-concrete-cowboys.webp"
+    },
+    {
       "slug": "elk-crescendo",
       "title": "Crescendo",
       "provider": "Elk Studios",
@@ -717,6 +834,32 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-crescendo.webp"
+    },
+    {
+      "slug": "elk-crusader",
+      "title": "Crusader",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-crusader.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-crusader.webp"
+    },
+    {
+      "slug": "elk-cygnus",
+      "title": "Cygnus",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-cygnus.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-cygnus.webp"
     },
     {
       "slug": "elk-cygnus-2",
@@ -784,19 +927,6 @@
       "thumbnail": "thumbs/elk-cygnus-6.webp"
     },
     {
-      "slug": "elk-cygnus",
-      "title": "Cygnus",
-      "provider": "Elk Studios",
-      "confidence_overall": "high",
-      "path": "games/elk-cygnus.json",
-      "win_system_type": "ways",
-      "grid": "4×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/elk-cygnus.webp"
-    },
-    {
       "slug": "elk-dam-beavers",
       "title": "Dam Beavers",
       "provider": "Elk Studios",
@@ -849,6 +979,19 @@
       "thumbnail": "thumbs/elk-deadeye.webp"
     },
     {
+      "slug": "elk-diablo-reels",
+      "title": "Diablo Reels",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-diablo-reels.json",
+      "win_system_type": "paylines",
+      "grid": "3×3",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-diablo-reels.webp"
+    },
+    {
       "slug": "elk-dirty-dawgs-of-nitropolis",
       "title": "Dirty Dawgs of Nitropolis",
       "provider": "Elk Studios",
@@ -862,6 +1005,32 @@
       "thumbnail": "thumbs/elk-dirty-dawgs-of-nitropolis.webp"
     },
     {
+      "slug": "elk-dj-wild",
+      "title": "DJ WÏLD",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-dj-wild.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-dj-wild.webp"
+    },
+    {
+      "slug": "elk-dream-diver",
+      "title": "Dream Diver",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-dream-diver.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-dream-diver.webp"
+    },
+    {
       "slug": "elk-dropz",
       "title": "Dropz",
       "provider": "Elk Studios",
@@ -873,6 +1042,32 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-dropz.webp"
+    },
+    {
+      "slug": "elk-ecuador-gold",
+      "title": "Ecuador Gold",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-ecuador-gold.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-ecuador-gold.webp"
+    },
+    {
+      "slug": "elk-fate-of-fortune",
+      "title": "Fate of Fortune",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-fate-of-fortune.json",
+      "win_system_type": "paylines",
+      "grid": "5×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-fate-of-fortune.webp"
     },
     {
       "slug": "elk-fish-and-bird",
@@ -966,6 +1161,19 @@
       "thumbnail": "thumbs/elk-grizzly-stampede.webp"
     },
     {
+      "slug": "elk-heist-guys",
+      "title": "Heist Guys",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-heist-guys.json",
+      "win_system_type": "clusters",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-heist-guys.webp"
+    },
+    {
       "slug": "elk-heist-guys-2",
       "title": "Heist Guys 2",
       "provider": "Elk Studios",
@@ -979,17 +1187,69 @@
       "thumbnail": "thumbs/elk-heist-guys-2.webp"
     },
     {
-      "slug": "elk-heist-guys",
-      "title": "Heist Guys",
+      "slug": "elk-hidden",
+      "title": "Hidden",
       "provider": "Elk Studios",
       "confidence_overall": "high",
-      "path": "games/elk-heist-guys.json",
-      "win_system_type": "clusters",
-      "grid": "6×6",
+      "path": "games/elk-hidden.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
       "has_tumble": true,
       "has_buy": true,
       "has_ante": false,
-      "thumbnail": "thumbs/elk-heist-guys.webp"
+      "thumbnail": "thumbs/elk-hidden.webp"
+    },
+    {
+      "slug": "elk-hit-it-big",
+      "title": "Hit It Big",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-hit-it-big.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-hit-it-big.webp"
+    },
+    {
+      "slug": "elk-hit-it-hard",
+      "title": "Hit It Hard",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-hit-it-hard.json",
+      "win_system_type": "paylines",
+      "grid": "3×3",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-hit-it-hard.webp"
+    },
+    {
+      "slug": "elk-ho-ho-tower",
+      "title": "Ho Ho Tower",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-ho-ho-tower.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-ho-ho-tower.webp"
+    },
+    {
+      "slug": "elk-hong-kong-tower",
+      "title": "Hong Kong Tower",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-hong-kong-tower.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-hong-kong-tower.webp"
     },
     {
       "slug": "elk-huff-n-puff-collectr",
@@ -1018,6 +1278,19 @@
       "thumbnail": "thumbs/elk-hula-balua.webp"
     },
     {
+      "slug": "elk-ice-wolf",
+      "title": "Ice Wolf",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-ice-wolf.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-ice-wolf.webp"
+    },
+    {
       "slug": "elk-ice-wolf-2",
       "title": "Ice Wolf 2",
       "provider": "Elk Studios",
@@ -1029,6 +1302,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-ice-wolf-2.webp"
+    },
+    {
+      "slug": "elk-illogicool",
+      "title": "Illogicool",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-illogicool.json",
+      "win_system_type": "other",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-illogicool.webp"
     },
     {
       "slug": "elk-in-the-zone",
@@ -1044,6 +1330,32 @@
       "thumbnail": "thumbs/elk-in-the-zone.webp"
     },
     {
+      "slug": "elk-io",
+      "title": "Io",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-io.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-io.webp"
+    },
+    {
+      "slug": "elk-ivanhoe",
+      "title": "Ivanhoe",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-ivanhoe.json",
+      "win_system_type": "paylines",
+      "grid": "3×3",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-ivanhoe.webp"
+    },
+    {
       "slug": "elk-j-pop",
       "title": "J-POP",
       "provider": "Elk Studios",
@@ -1055,6 +1367,32 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-j-pop.webp"
+    },
+    {
+      "slug": "elk-joker-gems",
+      "title": "Joker Gems",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-joker-gems.json",
+      "win_system_type": "clusters",
+      "grid": "5×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-joker-gems.webp"
+    },
+    {
+      "slug": "elk-kaiju",
+      "title": "Kaiju",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-kaiju.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-kaiju.webp"
     },
     {
       "slug": "elk-katmandu-gold",
@@ -1096,6 +1434,45 @@
       "thumbnail": "thumbs/elk-knight-fight.webp"
     },
     {
+      "slug": "elk-knockout-diamonds",
+      "title": "Knockout Diamonds",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-knockout-diamonds.json",
+      "win_system_type": "paylines",
+      "grid": "2×3",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-knockout-diamonds.webp"
+    },
+    {
+      "slug": "elk-lakes-five",
+      "title": "Lake’s Five",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-lakes-five.json",
+      "win_system_type": "other",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-lakes-five.webp"
+    },
+    {
+      "slug": "elk-langley-street-23",
+      "title": "Langley Street 23",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-langley-street-23.json",
+      "win_system_type": "ways",
+      "grid": "5×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-langley-street-23.webp"
+    },
+    {
       "slug": "elk-man-vs-gator",
       "title": "Man vs Gator",
       "provider": "Elk Studios",
@@ -1122,6 +1499,32 @@
       "thumbnail": "thumbs/elk-mine-defender.webp"
     },
     {
+      "slug": "elk-mystic-orbs",
+      "title": "Mystic Orbs",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-mystic-orbs.json",
+      "win_system_type": "clusters",
+      "grid": "5×5",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-mystic-orbs.webp"
+    },
+    {
+      "slug": "elk-night-trax",
+      "title": "Night Trax",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-night-trax.json",
+      "win_system_type": "paylines",
+      "grid": "4×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-night-trax.webp"
+    },
+    {
       "slug": "elk-nightmaker",
       "title": "Nightmaker",
       "provider": "Elk Studios",
@@ -1133,6 +1536,32 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-nightmaker.webp"
+    },
+    {
+      "slug": "elk-nitropolis",
+      "title": "Nitropolis",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-nitropolis.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-nitropolis.webp"
+    },
+    {
+      "slug": "elk-nitropolis-2",
+      "title": "Nitropolis 2",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-nitropolis-2.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-nitropolis-2.webp"
     },
     {
       "slug": "elk-nitropolis-3",
@@ -1187,19 +1616,6 @@
       "thumbnail": "thumbs/elk-nitropolis-tv.webp"
     },
     {
-      "slug": "elk-nitropolis",
-      "title": "Nitropolis",
-      "provider": "Elk Studios",
-      "confidence_overall": "high",
-      "path": "games/elk-nitropolis.json",
-      "win_system_type": "ways",
-      "grid": "4×6",
-      "has_tumble": false,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/elk-nitropolis.webp"
-    },
-    {
       "slug": "elk-orbitfall",
       "title": "Orbitfall",
       "provider": "Elk Studios",
@@ -1211,6 +1627,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-orbitfall.webp"
+    },
+    {
+      "slug": "elk-oxygen",
+      "title": "Oxygen",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-oxygen.json",
+      "win_system_type": "clusters",
+      "grid": "7×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-oxygen.webp"
     },
     {
       "slug": "elk-oxygen-2",
@@ -1239,19 +1668,6 @@
       "thumbnail": "thumbs/elk-oxygen-3.webp"
     },
     {
-      "slug": "elk-oxygen",
-      "title": "Oxygen",
-      "provider": "Elk Studios",
-      "confidence_overall": "high",
-      "path": "games/elk-oxygen.json",
-      "win_system_type": "clusters",
-      "grid": "7×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/elk-oxygen.webp"
-    },
-    {
       "slug": "elk-pacific-gold",
       "title": "Pacific Gold",
       "provider": "Elk Studios",
@@ -1265,6 +1681,19 @@
       "thumbnail": "thumbs/elk-pacific-gold.webp"
     },
     {
+      "slug": "elk-phoenix-graveyard",
+      "title": "Phoenix Graveyard",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-phoenix-graveyard.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-phoenix-graveyard.webp"
+    },
+    {
       "slug": "elk-phoenix-graveyard-ii",
       "title": "Phoenix Graveyard II",
       "provider": "Elk Studios",
@@ -1276,6 +1705,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-phoenix-graveyard-ii.webp"
+    },
+    {
+      "slug": "elk-pirots",
+      "title": "Pirots",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-pirots.json",
+      "win_system_type": "clusters",
+      "grid": "5×5",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-pirots.webp"
     },
     {
       "slug": "elk-pirots-2",
@@ -1304,6 +1746,19 @@
       "thumbnail": "thumbs/elk-pirots-4.webp"
     },
     {
+      "slug": "elk-pirots-5",
+      "title": "Pirots 5",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-pirots-5.json",
+      "win_system_type": "paylines",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-pirots-5.webp"
+    },
+    {
       "slug": "elk-pirots-x",
       "title": "Pirots X",
       "provider": "Elk Studios",
@@ -1315,19 +1770,6 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-pirots-x.webp"
-    },
-    {
-      "slug": "elk-pirots",
-      "title": "Pirots",
-      "provider": "Elk Studios",
-      "confidence_overall": "high",
-      "path": "games/elk-pirots.json",
-      "win_system_type": "clusters",
-      "grid": "5×5",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/elk-pirots.webp"
     },
     {
       "slug": "elk-pirots3",
@@ -1343,6 +1785,58 @@
       "thumbnail": "thumbs/elk-pirots3.webp"
     },
     {
+      "slug": "elk-platooners",
+      "title": "Platooners",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-platooners.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-platooners.webp"
+    },
+    {
+      "slug": "elk-poltava",
+      "title": "Poltava",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-poltava.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-poltava.webp"
+    },
+    {
+      "slug": "elk-propaganda",
+      "title": "Propaganda",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-propaganda.json",
+      "win_system_type": "clusters",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-propaganda.webp"
+    },
+    {
+      "slug": "elk-propaganda-2",
+      "title": "Propaganda 2",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-propaganda-2.json",
+      "win_system_type": "clusters",
+      "grid": "6×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-propaganda-2.webp"
+    },
+    {
       "slug": "elk-pug-thugs-of-nitropolis",
       "title": "Pug Thugs of NItropolis",
       "provider": "Elk Studios",
@@ -1354,6 +1848,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-pug-thugs-of-nitropolis.webp"
+    },
+    {
+      "slug": "elk-quackers",
+      "title": "Quackers",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-quackers.json",
+      "win_system_type": "clusters",
+      "grid": "6×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-quackers.webp"
     },
     {
       "slug": "elk-rabbit-royale",
@@ -1380,6 +1887,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-reindeer-royale.webp"
+    },
+    {
+      "slug": "elk-respin-circus",
+      "title": "Respin Circus",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-respin-circus.json",
+      "win_system_type": "paylines",
+      "grid": "4×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-respin-circus.webp"
     },
     {
       "slug": "elk-rex-stampede",
@@ -1421,6 +1941,19 @@
       "thumbnail": "thumbs/elk-route-777.webp"
     },
     {
+      "slug": "elk-ryze",
+      "title": "Ryze",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-ryze.json",
+      "win_system_type": "clusters",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-ryze.webp"
+    },
+    {
       "slug": "elk-ryze-2",
       "title": "Ryze 2",
       "provider": "Elk Studios",
@@ -1434,17 +1967,17 @@
       "thumbnail": "thumbs/elk-ryze-2.webp"
     },
     {
-      "slug": "elk-ryze",
-      "title": "Ryze",
+      "slug": "elk-sam-on-the-beach",
+      "title": "Sam on the Beach",
       "provider": "Elk Studios",
       "confidence_overall": "high",
-      "path": "games/elk-ryze.json",
-      "win_system_type": "clusters",
-      "grid": "6×6",
-      "has_tumble": true,
+      "path": "games/elk-sam-on-the-beach.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
       "has_buy": true,
       "has_ante": false,
-      "thumbnail": "thumbs/elk-ryze.webp"
+      "thumbnail": "thumbs/elk-sam-on-the-beach.webp"
     },
     {
       "slug": "elk-shadow-shifter",
@@ -1512,6 +2045,19 @@
       "thumbnail": "thumbs/elk-squeeze.webp"
     },
     {
+      "slug": "elk-stars-of-orion",
+      "title": "Stars of Orion",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-stars-of-orion.json",
+      "win_system_type": "clusters",
+      "grid": "8×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-stars-of-orion.webp"
+    },
+    {
       "slug": "elk-sumo-sumo",
       "title": "Sumo Sumo",
       "provider": "Elk Studios",
@@ -1551,6 +2097,32 @@
       "thumbnail": "thumbs/elk-tahiti-gold.webp"
     },
     {
+      "slug": "elk-the-grand-galore",
+      "title": "The Grand Galore",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-the-grand-galore.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-the-grand-galore.webp"
+    },
+    {
+      "slug": "elk-the-wiz",
+      "title": "The Wiz",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-the-wiz.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-the-wiz.webp"
+    },
+    {
       "slug": "elk-thoro",
       "title": "Thoro",
       "provider": "Elk Studios",
@@ -1577,6 +2149,19 @@
       "thumbnail": "thumbs/elk-tinkerbot.webp"
     },
     {
+      "slug": "elk-toro-7s",
+      "title": "Toro 7s",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-toro-7s.json",
+      "win_system_type": "paylines",
+      "grid": "3×3",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-toro-7s.webp"
+    },
+    {
       "slug": "elk-toro-shogun",
       "title": "Toro Shōgun",
       "provider": "Elk Studios",
@@ -1601,6 +2186,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-toro911.webp"
+    },
+    {
+      "slug": "elk-tropicool",
+      "title": "Tropicool",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-tropicool.json",
+      "win_system_type": "ways",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-tropicool.webp"
     },
     {
       "slug": "elk-tropicool-2",
@@ -1668,17 +2266,43 @@
       "thumbnail": "thumbs/elk-valhall-gold.webp"
     },
     {
-      "slug": "elk-wild-toro-3",
-      "title": "Wild Toro 3",
+      "slug": "elk-valkyrie",
+      "title": "Valkyrie",
       "provider": "Elk Studios",
       "confidence_overall": "high",
-      "path": "games/elk-wild-toro-3.json",
-      "win_system_type": "paylines",
-      "grid": "7×5",
+      "path": "games/elk-valkyrie.json",
+      "win_system_type": "other",
+      "grid": "4×5",
       "has_tumble": false,
       "has_buy": true,
       "has_ante": false,
-      "thumbnail": "thumbs/elk-wild-toro-3.webp"
+      "thumbnail": "thumbs/elk-valkyrie.webp"
+    },
+    {
+      "slug": "elk-vegas-diamonds",
+      "title": "Vegas Diamonds",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-vegas-diamonds.json",
+      "win_system_type": "paylines",
+      "grid": "3×3",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-vegas-diamonds.webp"
+    },
+    {
+      "slug": "elk-voodoo-gold",
+      "title": "Voodoo Gold",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-voodoo-gold.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-voodoo-gold.webp"
     },
     {
       "slug": "elk-wild-toro",
@@ -1692,6 +2316,45 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-wild-toro.webp"
+    },
+    {
+      "slug": "elk-wild-toro-2",
+      "title": "Wild Toro II",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-wild-toro-2.json",
+      "win_system_type": "ways",
+      "grid": "5×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-wild-toro-2.webp"
+    },
+    {
+      "slug": "elk-wild-toro-3",
+      "title": "Wild Toro 3",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-wild-toro-3.json",
+      "win_system_type": "paylines",
+      "grid": "7×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-wild-toro-3.webp"
+    },
+    {
+      "slug": "elk-win-win",
+      "title": "Win Win",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-win-win.json",
+      "win_system_type": "paylines",
+      "grid": "3×3",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-win-win.webp"
     },
     {
       "slug": "elk-world-eaters",
@@ -1718,6 +2381,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/elk-zaplab.webp"
+    },
+    {
+      "slug": "elk-zulu-gold",
+      "title": "Zulu Gold",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-zulu-gold.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/elk-zulu-gold.webp"
     },
     {
       "slug": "hacksaw-2-wild-2-die",
@@ -2045,6 +2721,19 @@
       "thumbnail": "thumbs/hacksaw-cash-quest.webp"
     },
     {
+      "slug": "hacksaw-chaos-crew",
+      "title": "Chaos Crew",
+      "provider": "Hacksaw Gaming",
+      "confidence_overall": "high",
+      "path": "games/hacksaw-chaos-crew.json",
+      "win_system_type": "paylines",
+      "grid": "5×5",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/hacksaw-chaos-crew.webp"
+    },
+    {
       "slug": "hacksaw-chaos-crew-2",
       "title": "Chaos Crew 2",
       "provider": "Hacksaw Gaming",
@@ -2069,19 +2758,6 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/hacksaw-chaos-crew-3.webp"
-    },
-    {
-      "slug": "hacksaw-chaos-crew",
-      "title": "Chaos Crew",
-      "provider": "Hacksaw Gaming",
-      "confidence_overall": "high",
-      "path": "games/hacksaw-chaos-crew.json",
-      "win_system_type": "paylines",
-      "grid": "5×5",
-      "has_tumble": null,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/hacksaw-chaos-crew.webp"
     },
     {
       "slug": "hacksaw-circle-of-life",
@@ -2110,19 +2786,6 @@
       "thumbnail": "thumbs/hacksaw-cloud-princess.webp"
     },
     {
-      "slug": "hacksaw-cubes-2",
-      "title": "Cubes 2",
-      "provider": "Hacksaw Gaming",
-      "confidence_overall": "high",
-      "path": "games/hacksaw-cubes-2.json",
-      "win_system_type": "clusters",
-      "grid": "5×5",
-      "has_tumble": null,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/hacksaw-cubes-2.webp"
-    },
-    {
       "slug": "hacksaw-cubes",
       "title": "Cubes",
       "provider": "Hacksaw Gaming",
@@ -2134,6 +2797,19 @@
       "has_buy": null,
       "has_ante": null,
       "thumbnail": "thumbs/hacksaw-cubes.webp"
+    },
+    {
+      "slug": "hacksaw-cubes-2",
+      "title": "Cubes 2",
+      "provider": "Hacksaw Gaming",
+      "confidence_overall": "high",
+      "path": "games/hacksaw-cubes-2.json",
+      "win_system_type": "clusters",
+      "grid": "5×5",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/hacksaw-cubes-2.webp"
     },
     {
       "slug": "hacksaw-cup-heroes",
@@ -2591,19 +3267,6 @@
       "thumbnail": "thumbs/hacksaw-fire-my-laser.webp"
     },
     {
-      "slug": "hacksaw-fist-of-destruction-megamultiplier",
-      "title": "Fist of Destruction Megamultiplier",
-      "provider": "Hacksaw Gaming",
-      "confidence_overall": "high",
-      "path": "games/hacksaw-fist-of-destruction-megamultiplier.json",
-      "win_system_type": "paylines",
-      "grid": "4×5",
-      "has_tumble": null,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/hacksaw-fist-of-destruction-megamultiplier.webp"
-    },
-    {
       "slug": "hacksaw-fist-of-destruction",
       "title": "Fist of Destruction",
       "provider": "Hacksaw Gaming",
@@ -2615,6 +3278,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/hacksaw-fist-of-destruction.webp"
+    },
+    {
+      "slug": "hacksaw-fist-of-destruction-megamultiplier",
+      "title": "Fist of Destruction Megamultiplier",
+      "provider": "Hacksaw Gaming",
+      "confidence_overall": "high",
+      "path": "games/hacksaw-fist-of-destruction-megamultiplier.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/hacksaw-fist-of-destruction-megamultiplier.webp"
     },
     {
       "slug": "hacksaw-forest-fortune",
@@ -2916,19 +3592,6 @@
       "thumbnail": "thumbs/hacksaw-joker-bombs.webp"
     },
     {
-      "slug": "hacksaw-keep-em-cool",
-      "title": "Keep 'Em Cool",
-      "provider": "Hacksaw Gaming",
-      "confidence_overall": "high",
-      "path": "games/hacksaw-keep-em-cool.json",
-      "win_system_type": "clusters",
-      "grid": null,
-      "has_tumble": null,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/hacksaw-keep-em-cool.webp"
-    },
-    {
       "slug": "hacksaw-keep-em",
       "title": "Keep 'Em",
       "provider": "Hacksaw Gaming",
@@ -2940,6 +3603,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/hacksaw-keep-em.webp"
+    },
+    {
+      "slug": "hacksaw-keep-em-cool",
+      "title": "Keep 'Em Cool",
+      "provider": "Hacksaw Gaming",
+      "confidence_overall": "high",
+      "path": "games/hacksaw-keep-em-cool.json",
+      "win_system_type": "clusters",
+      "grid": null,
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/hacksaw-keep-em-cool.webp"
     },
     {
       "slug": "hacksaw-king-carrot",
@@ -2968,6 +3644,19 @@
       "thumbnail": "thumbs/hacksaw-klowns.webp"
     },
     {
+      "slug": "hacksaw-le-bandit",
+      "title": "Le Bandit",
+      "provider": "Hacksaw Gaming",
+      "confidence_overall": "high",
+      "path": "games/hacksaw-le-bandit.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/hacksaw-le-bandit.webp"
+    },
+    {
       "slug": "hacksaw-le-bandit-hold-win",
       "title": "Le Bandit Hold & Win",
       "provider": "Hacksaw Gaming",
@@ -2992,19 +3681,6 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/hacksaw-le-bandit-miami-hustle.webp"
-    },
-    {
-      "slug": "hacksaw-le-bandit",
-      "title": "Le Bandit",
-      "provider": "Hacksaw Gaming",
-      "confidence_overall": "high",
-      "path": "games/hacksaw-le-bandit.json",
-      "win_system_type": "ways",
-      "grid": null,
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/hacksaw-le-bandit.webp"
     },
     {
       "slug": "hacksaw-le-bruno",
@@ -3267,6 +3943,19 @@
       "thumbnail": "thumbs/hacksaw-life-and-death.webp"
     },
     {
+      "slug": "hacksaw-magic-piggy",
+      "title": "Magic Piggy",
+      "provider": "Hacksaw Gaming",
+      "confidence_overall": "high",
+      "path": "games/hacksaw-magic-piggy.json",
+      "win_system_type": "paylines",
+      "grid": "5×5",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/hacksaw-magic-piggy.webp"
+    },
+    {
       "slug": "hacksaw-magic-piggy-og",
       "title": "Magic Piggy Og",
       "provider": "Hacksaw Gaming",
@@ -3280,17 +3969,17 @@
       "thumbnail": "thumbs/hacksaw-magic-piggy-og.webp"
     },
     {
-      "slug": "hacksaw-magic-piggy",
-      "title": "Magic Piggy",
+      "slug": "hacksaw-marlin-masters",
+      "title": "Marlin Masters",
       "provider": "Hacksaw Gaming",
       "confidence_overall": "high",
-      "path": "games/hacksaw-magic-piggy.json",
+      "path": "games/hacksaw-marlin-masters.json",
       "win_system_type": "paylines",
-      "grid": "5×5",
+      "grid": "4×5",
       "has_tumble": null,
       "has_buy": true,
       "has_ante": true,
-      "thumbnail": "thumbs/hacksaw-magic-piggy.webp"
+      "thumbnail": "thumbs/hacksaw-marlin-masters.webp"
     },
     {
       "slug": "hacksaw-marlin-masters-atlantis",
@@ -3330,19 +4019,6 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/hacksaw-marlin-masters-the-big-haul.webp"
-    },
-    {
-      "slug": "hacksaw-marlin-masters",
-      "title": "Marlin Masters",
-      "provider": "Hacksaw Gaming",
-      "confidence_overall": "high",
-      "path": "games/hacksaw-marlin-masters.json",
-      "win_system_type": "paylines",
-      "grid": "4×5",
-      "has_tumble": null,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/hacksaw-marlin-masters.webp"
     },
     {
       "slug": "hacksaw-max-win-machine",
@@ -4476,19 +5152,6 @@
       "thumbnail": "thumbs/nolimit-catfish-hunters.webp"
     },
     {
-      "slug": "nolimit-das-xboot-2wei",
-      "title": "Das xBoot 2wei!",
-      "provider": "Nolimit City",
-      "confidence_overall": "high",
-      "path": "games/nolimit-das-xboot-2wei.json",
-      "win_system_type": "ways",
-      "grid": null,
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/nolimit-das-xboot-2wei.webp"
-    },
-    {
       "slug": "nolimit-das-xboot",
       "title": "Das xBoot",
       "provider": "Nolimit City",
@@ -4500,6 +5163,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-das-xboot.webp"
+    },
+    {
+      "slug": "nolimit-das-xboot-2wei",
+      "title": "Das xBoot 2wei!",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-das-xboot-2wei.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-das-xboot-2wei.webp"
     },
     {
       "slug": "nolimit-deadwood-rip",
@@ -4554,6 +5230,19 @@
       "thumbnail": "thumbs/nolimit-disturbed.webp"
     },
     {
+      "slug": "nolimit-duck-hunters",
+      "title": "Duck Hunters",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-duck-hunters.json",
+      "win_system_type": "pay_anywhere",
+      "grid": "5×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-duck-hunters.webp"
+    },
+    {
       "slug": "nolimit-duck-hunters-2",
       "title": "Duck Hunters 2",
       "provider": "Nolimit City",
@@ -4578,19 +5267,6 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-duck-hunters-happy-hour.webp"
-    },
-    {
-      "slug": "nolimit-duck-hunters",
-      "title": "Duck Hunters",
-      "provider": "Nolimit City",
-      "confidence_overall": "high",
-      "path": "games/nolimit-duck-hunters.json",
-      "win_system_type": "pay_anywhere",
-      "grid": "5×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/nolimit-duck-hunters.webp"
     },
     {
       "slug": "nolimit-el-paso",
@@ -4619,6 +5295,19 @@
       "thumbnail": "thumbs/nolimit-evil-goblins.webp"
     },
     {
+      "slug": "nolimit-fire-in-the-hole",
+      "title": "Fire in the Hole xBomb",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-fire-in-the-hole.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-fire-in-the-hole.webp"
+    },
+    {
       "slug": "nolimit-fire-in-the-hole-2",
       "title": "Fire in the Hole 2",
       "provider": "Nolimit City",
@@ -4643,19 +5332,6 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-fire-in-the-hole-3.webp"
-    },
-    {
-      "slug": "nolimit-fire-in-the-hole",
-      "title": "Fire in the Hole xBomb",
-      "provider": "Nolimit City",
-      "confidence_overall": "high",
-      "path": "games/nolimit-fire-in-the-hole.json",
-      "win_system_type": "ways",
-      "grid": "3×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/nolimit-fire-in-the-hole.webp"
     },
     {
       "slug": "nolimit-folsom-prison",
@@ -4762,6 +5438,19 @@
       "thumbnail": "thumbs/nolimit-legion-x.webp"
     },
     {
+      "slug": "nolimit-mental",
+      "title": "Mental",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-mental.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-mental.webp"
+    },
+    {
       "slug": "nolimit-mental-2",
       "title": "Mental II",
       "provider": "Nolimit City",
@@ -4775,17 +5464,17 @@
       "thumbnail": "thumbs/nolimit-mental-2.webp"
     },
     {
-      "slug": "nolimit-mental",
-      "title": "Mental",
+      "slug": "nolimit-punk-rocker",
+      "title": "Punk Rocker xWays",
       "provider": "Nolimit City",
       "confidence_overall": "high",
-      "path": "games/nolimit-mental.json",
+      "path": "games/nolimit-punk-rocker.json",
       "win_system_type": "ways",
-      "grid": null,
+      "grid": "3×5",
       "has_tumble": false,
       "has_buy": true,
       "has_ante": false,
-      "thumbnail": "thumbs/nolimit-mental.webp"
+      "thumbnail": "thumbs/nolimit-punk-rocker.webp"
     },
     {
       "slug": "nolimit-punk-rocker-2",
@@ -4814,17 +5503,17 @@
       "thumbnail": "thumbs/nolimit-punk-rocker-3.webp"
     },
     {
-      "slug": "nolimit-punk-rocker",
-      "title": "Punk Rocker xWays",
+      "slug": "nolimit-san-quentin",
+      "title": "San Quentin xWays",
       "provider": "Nolimit City",
       "confidence_overall": "high",
-      "path": "games/nolimit-punk-rocker.json",
+      "path": "games/nolimit-san-quentin.json",
       "win_system_type": "ways",
       "grid": "3×5",
       "has_tumble": false,
       "has_buy": true,
       "has_ante": false,
-      "thumbnail": "thumbs/nolimit-punk-rocker.webp"
+      "thumbnail": "thumbs/nolimit-san-quentin.webp"
     },
     {
       "slug": "nolimit-san-quentin-2-death-row",
@@ -4851,19 +5540,6 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-san-quentin-manhunt.webp"
-    },
-    {
-      "slug": "nolimit-san-quentin",
-      "title": "San Quentin xWays",
-      "provider": "Nolimit City",
-      "confidence_overall": "high",
-      "path": "games/nolimit-san-quentin.json",
-      "win_system_type": "ways",
-      "grid": "3×5",
-      "has_tumble": false,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/nolimit-san-quentin.webp"
     },
     {
       "slug": "nolimit-tombstone-begins",
@@ -4918,19 +5594,6 @@
       "thumbnail": "thumbs/nolimit-tombstone-slaughter.webp"
     },
     {
-      "slug": "nolimit-true-grit-redemption-2",
-      "title": "True Grit Redemption 2",
-      "provider": "Nolimit City",
-      "confidence_overall": "high",
-      "path": "games/nolimit-true-grit-redemption-2.json",
-      "win_system_type": "ways",
-      "grid": "4×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/nolimit-true-grit-redemption-2.webp"
-    },
-    {
       "slug": "nolimit-true-grit-redemption",
       "title": "True Grit Redemption",
       "provider": "Nolimit City",
@@ -4942,6 +5605,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-true-grit-redemption.webp"
+    },
+    {
+      "slug": "nolimit-true-grit-redemption-2",
+      "title": "True Grit Redemption 2",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-true-grit-redemption-2.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-true-grit-redemption-2.webp"
     },
     {
       "slug": "nolimit-ugliest-catch",
@@ -4957,19 +5633,6 @@
       "thumbnail": "thumbs/nolimit-ugliest-catch.webp"
     },
     {
-      "slug": "nolimit-xways-hoarder-2",
-      "title": "xWays Hoarder 2",
-      "provider": "Nolimit City",
-      "confidence_overall": "high",
-      "path": "games/nolimit-xways-hoarder-2.json",
-      "win_system_type": "ways",
-      "grid": "3×6",
-      "has_tumble": false,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/nolimit-xways-hoarder-2.webp"
-    },
-    {
       "slug": "nolimit-xways-hoarder",
       "title": "xWays Hoarder xSplit",
       "provider": "Nolimit City",
@@ -4981,6 +5644,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-xways-hoarder.webp"
+    },
+    {
+      "slug": "nolimit-xways-hoarder-2",
+      "title": "xWays Hoarder 2",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-xways-hoarder-2.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-xways-hoarder-2.webp"
     },
     {
       "slug": "pragmatic-3-buzzing-wilds",
@@ -5048,19 +5724,6 @@
       "thumbnail": "thumbs/pragmatic-5-lions-dance.webp"
     },
     {
-      "slug": "pragmatic-5-lions-megaways-2",
-      "title": "5 Lions Megaways 2",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-5-lions-megaways-2.json",
-      "win_system_type": "ways",
-      "grid": null,
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/pragmatic-5-lions-megaways-2.webp"
-    },
-    {
       "slug": "pragmatic-5-lions-megaways",
       "title": "5 Lions Megaways",
       "provider": "Pragmatic Play",
@@ -5072,6 +5735,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/pragmatic-5-lions-megaways.webp"
+    },
+    {
+      "slug": "pragmatic-5-lions-megaways-2",
+      "title": "5 Lions Megaways 2",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-5-lions-megaways-2.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/pragmatic-5-lions-megaways-2.webp"
     },
     {
       "slug": "pragmatic-5-lions-reborn",
@@ -5269,19 +5945,6 @@
       "thumbnail": "thumbs/pragmatic-ancient-island-megaways.webp"
     },
     {
-      "slug": "pragmatic-angel-vs-sinner-eternal-battle",
-      "title": "Angel Vs Sinner Eternal Battle",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "medium",
-      "path": "games/pragmatic-angel-vs-sinner-eternal-battle.json",
-      "win_system_type": "paylines",
-      "grid": "5×5",
-      "has_tumble": null,
-      "has_buy": true,
-      "has_ante": null,
-      "thumbnail": "thumbs/pragmatic-angel-vs-sinner-eternal-battle.webp"
-    },
-    {
       "slug": "pragmatic-angel-vs-sinner",
       "title": "Angel vs Sinner",
       "provider": "Pragmatic Play",
@@ -5293,6 +5956,19 @@
       "has_buy": true,
       "has_ante": null,
       "thumbnail": "thumbs/pragmatic-angel-vs-sinner.webp"
+    },
+    {
+      "slug": "pragmatic-angel-vs-sinner-eternal-battle",
+      "title": "Angel Vs Sinner Eternal Battle",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-angel-vs-sinner-eternal-battle.json",
+      "win_system_type": "paylines",
+      "grid": "5×5",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null,
+      "thumbnail": "thumbs/pragmatic-angel-vs-sinner-eternal-battle.webp"
     },
     {
       "slug": "pragmatic-animal-magic-1000",
@@ -5373,6 +6049,19 @@
       "thumbnail": "thumbs/pragmatic-aztec-bonanza.webp"
     },
     {
+      "slug": "pragmatic-aztec-gems",
+      "title": "Aztec Gems",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-aztec-gems.json",
+      "win_system_type": "paylines",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-aztec-gems.webp"
+    },
+    {
       "slug": "pragmatic-aztec-gems-deluxe",
       "title": "Aztec Gems Deluxe",
       "provider": "Pragmatic Play",
@@ -5397,19 +6086,6 @@
       "has_buy": null,
       "has_ante": null,
       "thumbnail": "thumbs/pragmatic-aztec-gems-megaways.webp"
-    },
-    {
-      "slug": "pragmatic-aztec-gems",
-      "title": "Aztec Gems",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-aztec-gems.json",
-      "win_system_type": "paylines",
-      "grid": null,
-      "has_tumble": false,
-      "has_buy": false,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-aztec-gems.webp"
     },
     {
       "slug": "pragmatic-aztec-powernudge",
@@ -5581,6 +6257,19 @@
       "thumbnail": "thumbs/pragmatic-big-bass-amazon-xtreme.webp"
     },
     {
+      "slug": "pragmatic-big-bass-bonanza",
+      "title": "Big Bass Bonanza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-big-bass-bonanza.json",
+      "win_system_type": "paylines",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-big-bass-bonanza.webp"
+    },
+    {
       "slug": "pragmatic-big-bass-bonanza-1000",
       "title": "Big Bass Bonanza 1000",
       "provider": "Pragmatic Play",
@@ -5618,19 +6307,6 @@
       "has_buy": null,
       "has_ante": null,
       "thumbnail": "thumbs/pragmatic-big-bass-bonanza-megaways.webp"
-    },
-    {
-      "slug": "pragmatic-big-bass-bonanza",
-      "title": "Big Bass Bonanza",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-big-bass-bonanza.json",
-      "win_system_type": "paylines",
-      "grid": null,
-      "has_tumble": false,
-      "has_buy": false,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-big-bass-bonanza.webp"
     },
     {
       "slug": "pragmatic-big-bass-christmas-bash",
@@ -5984,6 +6660,19 @@
       "thumbnail": "thumbs/pragmatic-bubble-wild.webp"
     },
     {
+      "slug": "pragmatic-buffalo-king",
+      "title": "Buffalo King",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-buffalo-king.json",
+      "win_system_type": "ways",
+      "grid": "4×6",
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null,
+      "thumbnail": "thumbs/pragmatic-buffalo-king.webp"
+    },
+    {
       "slug": "pragmatic-buffalo-king-megaways",
       "title": "Buffalo King Megaways",
       "provider": "Pragmatic Play",
@@ -6010,17 +6699,17 @@
       "thumbnail": "thumbs/pragmatic-buffalo-king-slot.webp"
     },
     {
-      "slug": "pragmatic-buffalo-king",
-      "title": "Buffalo King",
+      "slug": "pragmatic-candy-blitz",
+      "title": "Candy Blitz",
       "provider": "Pragmatic Play",
       "confidence_overall": "medium",
-      "path": "games/pragmatic-buffalo-king.json",
-      "win_system_type": "ways",
-      "grid": "4×6",
-      "has_tumble": null,
-      "has_buy": null,
+      "path": "games/pragmatic-candy-blitz.json",
+      "win_system_type": "pay_anywhere",
+      "grid": "5×6",
+      "has_tumble": true,
+      "has_buy": true,
       "has_ante": null,
-      "thumbnail": "thumbs/pragmatic-buffalo-king.webp"
+      "thumbnail": "thumbs/pragmatic-candy-blitz.webp"
     },
     {
       "slug": "pragmatic-candy-blitz-bombs",
@@ -6034,19 +6723,6 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-candy-blitz-bombs.webp"
-    },
-    {
-      "slug": "pragmatic-candy-blitz",
-      "title": "Candy Blitz",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "medium",
-      "path": "games/pragmatic-candy-blitz.json",
-      "win_system_type": "pay_anywhere",
-      "grid": "5×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": null,
-      "thumbnail": "thumbs/pragmatic-candy-blitz.webp"
     },
     {
       "slug": "pragmatic-candy-jar-clusters",
@@ -6218,6 +6894,19 @@
       "thumbnail": "thumbs/pragmatic-chests-of-cai-shen.webp"
     },
     {
+      "slug": "pragmatic-chicken",
+      "title": "Chicken+",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-chicken.json",
+      "win_system_type": "unknown",
+      "grid": null,
+      "has_tumble": null,
+      "has_buy": null,
+      "has_ante": null,
+      "thumbnail": "thumbs/pragmatic-chicken.webp"
+    },
+    {
       "slug": "pragmatic-chicken-chase",
       "title": "Chicken Chase",
       "provider": "Pragmatic Play",
@@ -6242,19 +6931,6 @@
       "has_buy": true,
       "has_ante": null,
       "thumbnail": "thumbs/pragmatic-chicken-drop.webp"
-    },
-    {
-      "slug": "pragmatic-chicken",
-      "title": "Chicken+",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "medium",
-      "path": "games/pragmatic-chicken.json",
-      "win_system_type": "unknown",
-      "grid": null,
-      "has_tumble": null,
-      "has_buy": null,
-      "has_ante": null,
-      "thumbnail": "thumbs/pragmatic-chicken.webp"
     },
     {
       "slug": "pragmatic-chilli-heat-megaways",
@@ -6725,19 +7401,6 @@
       "thumbnail": "thumbs/pragmatic-excalibur-unleashed.webp"
     },
     {
-      "slug": "pragmatic-extra-juicy-megaways",
-      "title": "Extra Juicy Megaways",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "medium",
-      "path": "games/pragmatic-extra-juicy-megaways.json",
-      "win_system_type": "ways",
-      "grid": "7×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/pragmatic-extra-juicy-megaways.webp"
-    },
-    {
       "slug": "pragmatic-extra-juicy",
       "title": "Extra Juicy",
       "provider": "Pragmatic Play",
@@ -6749,6 +7412,19 @@
       "has_buy": false,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-extra-juicy.webp"
+    },
+    {
+      "slug": "pragmatic-extra-juicy-megaways",
+      "title": "Extra Juicy Megaways",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-extra-juicy-megaways.json",
+      "win_system_type": "ways",
+      "grid": "7×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/pragmatic-extra-juicy-megaways.webp"
     },
     {
       "slug": "pragmatic-eye-of-cleopatra",
@@ -6855,6 +7531,19 @@
       "thumbnail": "thumbs/pragmatic-fishin-reels.webp"
     },
     {
+      "slug": "pragmatic-floating-dragon",
+      "title": "Floating Dragon",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-floating-dragon.json",
+      "win_system_type": "paylines",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-floating-dragon.webp"
+    },
+    {
       "slug": "pragmatic-floating-dragon-hold-and-spin",
       "title": "Floating Dragon Hold and Spin",
       "provider": "Pragmatic Play",
@@ -6881,17 +7570,17 @@
       "thumbnail": "thumbs/pragmatic-floating-dragon-megaways-hold-spin.webp"
     },
     {
-      "slug": "pragmatic-floating-dragon",
-      "title": "Floating Dragon",
+      "slug": "pragmatic-fruit-party",
+      "title": "Fruit Party",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "path": "games/pragmatic-floating-dragon.json",
-      "win_system_type": "paylines",
+      "path": "games/pragmatic-fruit-party.json",
+      "win_system_type": "clusters",
       "grid": null,
-      "has_tumble": false,
+      "has_tumble": true,
       "has_buy": false,
       "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-floating-dragon.webp"
+      "thumbnail": "thumbs/pragmatic-fruit-party.webp"
     },
     {
       "slug": "pragmatic-fruit-party-2",
@@ -6905,19 +7594,6 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-fruit-party-2.webp"
-    },
-    {
-      "slug": "pragmatic-fruit-party",
-      "title": "Fruit Party",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-fruit-party.json",
-      "win_system_type": "clusters",
-      "grid": null,
-      "has_tumble": true,
-      "has_buy": false,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-fruit-party.webp"
     },
     {
       "slug": "pragmatic-fruit-rainbow",
@@ -6959,6 +7635,19 @@
       "thumbnail": "thumbs/pragmatic-gates-of-hades.webp"
     },
     {
+      "slug": "pragmatic-gates-of-olympus",
+      "title": "Gates of Olympus",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-gates-of-olympus.json",
+      "win_system_type": "pay_anywhere",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/pragmatic-gates-of-olympus.webp"
+    },
+    {
       "slug": "pragmatic-gates-of-olympus-1000",
       "title": "Gates of Olympus 1000",
       "provider": "Pragmatic Play",
@@ -6983,19 +7672,6 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/pragmatic-gates-of-olympus-super-scatter.webp"
-    },
-    {
-      "slug": "pragmatic-gates-of-olympus",
-      "title": "Gates of Olympus",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-gates-of-olympus.json",
-      "win_system_type": "pay_anywhere",
-      "grid": null,
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/pragmatic-gates-of-olympus.webp"
     },
     {
       "slug": "pragmatic-gems-bonanza",
@@ -7050,6 +7726,19 @@
       "thumbnail": "thumbs/pragmatic-gorilla-mayhem.webp"
     },
     {
+      "slug": "pragmatic-great-rhino",
+      "title": "Great Rhino",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-great-rhino.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-great-rhino.webp"
+    },
+    {
       "slug": "pragmatic-great-rhino-deluxe",
       "title": "Great Rhino Deluxe",
       "provider": "Pragmatic Play",
@@ -7074,19 +7763,6 @@
       "has_buy": false,
       "has_ante": true,
       "thumbnail": "thumbs/pragmatic-great-rhino-megaways-slot.webp"
-    },
-    {
-      "slug": "pragmatic-great-rhino",
-      "title": "Great Rhino",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "medium",
-      "path": "games/pragmatic-great-rhino.json",
-      "win_system_type": "paylines",
-      "grid": "3×5",
-      "has_tumble": true,
-      "has_buy": false,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-great-rhino.webp"
     },
     {
       "slug": "pragmatic-happy-hooves",
@@ -7219,19 +7895,6 @@
       "thumbnail": "thumbs/pragmatic-jewel-rush.webp"
     },
     {
-      "slug": "pragmatic-john-hunter-and-the-book-of-tut-respin",
-      "title": "John Hunter and the Book of Tut Respin",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-john-hunter-and-the-book-of-tut-respin.json",
-      "win_system_type": "paylines",
-      "grid": null,
-      "has_tumble": false,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-john-hunter-and-the-book-of-tut-respin.webp"
-    },
-    {
       "slug": "pragmatic-john-hunter-and-the-book-of-tut",
       "title": "John Hunter and the Book of Tut",
       "provider": "Pragmatic Play",
@@ -7243,6 +7906,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-john-hunter-and-the-book-of-tut.webp"
+    },
+    {
+      "slug": "pragmatic-john-hunter-and-the-book-of-tut-respin",
+      "title": "John Hunter and the Book of Tut Respin",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-john-hunter-and-the-book-of-tut-respin.json",
+      "win_system_type": "paylines",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-john-hunter-and-the-book-of-tut-respin.webp"
     },
     {
       "slug": "pragmatic-joker-s-jewels-hot",
@@ -7635,19 +8311,6 @@
       "thumbnail": "thumbs/pragmatic-reel-banks.webp"
     },
     {
-      "slug": "pragmatic-release-the-kraken-2",
-      "title": "Release the Kraken 2",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-release-the-kraken-2.json",
-      "win_system_type": "paylines",
-      "grid": null,
-      "has_tumble": false,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/pragmatic-release-the-kraken-2.webp"
-    },
-    {
       "slug": "pragmatic-release-the-kraken",
       "title": "Release the Kraken",
       "provider": "Pragmatic Play",
@@ -7659,6 +8322,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-release-the-kraken.webp"
+    },
+    {
+      "slug": "pragmatic-release-the-kraken-2",
+      "title": "Release the Kraken 2",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-release-the-kraken-2.json",
+      "win_system_type": "paylines",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/pragmatic-release-the-kraken-2.webp"
     },
     {
       "slug": "pragmatic-return-of-the-dead",
@@ -7726,19 +8402,6 @@
       "thumbnail": "thumbs/pragmatic-starlight-christmas.webp"
     },
     {
-      "slug": "pragmatic-starlight-princess-1000",
-      "title": "Starlight Princess 1000",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-starlight-princess-1000.json",
-      "win_system_type": "pay_anywhere",
-      "grid": null,
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/pragmatic-starlight-princess-1000.webp"
-    },
-    {
       "slug": "pragmatic-starlight-princess",
       "title": "Starlight Princess",
       "provider": "Pragmatic Play",
@@ -7752,6 +8415,19 @@
       "thumbnail": "thumbs/pragmatic-starlight-princess.webp"
     },
     {
+      "slug": "pragmatic-starlight-princess-1000",
+      "title": "Starlight Princess 1000",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-starlight-princess-1000.json",
+      "win_system_type": "pay_anywhere",
+      "grid": null,
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/pragmatic-starlight-princess-1000.webp"
+    },
+    {
       "slug": "pragmatic-sticky-bees",
       "title": "Sticky Bees",
       "provider": "Pragmatic Play",
@@ -7763,6 +8439,19 @@
       "has_buy": false,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-sticky-bees.webp"
+    },
+    {
+      "slug": "pragmatic-sugar-rush",
+      "title": "Sugar Rush",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-sugar-rush.json",
+      "win_system_type": "clusters",
+      "grid": "7×7",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-sugar-rush.webp"
     },
     {
       "slug": "pragmatic-sugar-rush-1000",
@@ -7791,19 +8480,6 @@
       "thumbnail": "thumbs/pragmatic-sugar-rush-xmas.webp"
     },
     {
-      "slug": "pragmatic-sugar-rush",
-      "title": "Sugar Rush",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-sugar-rush.json",
-      "win_system_type": "clusters",
-      "grid": "7×7",
-      "has_tumble": true,
-      "has_buy": false,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-sugar-rush.webp"
-    },
-    {
       "slug": "pragmatic-super-7s",
       "title": "Super 7s",
       "provider": "Pragmatic Play",
@@ -7828,6 +8504,19 @@
       "has_buy": false,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-super-joker.webp"
+    },
+    {
+      "slug": "pragmatic-sweet-bonanza",
+      "title": "Sweet Bonanza",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-sweet-bonanza.json",
+      "win_system_type": "pay_anywhere",
+      "grid": "5×6",
+      "has_tumble": true,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-sweet-bonanza.webp"
     },
     {
       "slug": "pragmatic-sweet-bonanza-1000",
@@ -7869,19 +8558,6 @@
       "thumbnail": "thumbs/pragmatic-sweet-bonanza-xmas.webp"
     },
     {
-      "slug": "pragmatic-sweet-bonanza",
-      "title": "Sweet Bonanza",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "medium",
-      "path": "games/pragmatic-sweet-bonanza.json",
-      "win_system_type": "pay_anywhere",
-      "grid": "5×6",
-      "has_tumble": true,
-      "has_buy": false,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-sweet-bonanza.webp"
-    },
-    {
       "slug": "pragmatic-sword-of-ares",
       "title": "Sword of Ares",
       "provider": "Pragmatic Play",
@@ -7908,6 +8584,19 @@
       "thumbnail": "thumbs/pragmatic-temujin-treasures.webp"
     },
     {
+      "slug": "pragmatic-the-dog-house",
+      "title": "The Dog House",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "medium",
+      "path": "games/pragmatic-the-dog-house.json",
+      "win_system_type": "paylines",
+      "grid": "3×5",
+      "has_tumble": null,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-the-dog-house.webp"
+    },
+    {
       "slug": "pragmatic-the-dog-house-megaways",
       "title": "The Dog House Megaways",
       "provider": "Pragmatic Play",
@@ -7932,19 +8621,6 @@
       "has_buy": false,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-the-dog-house-multihold.webp"
-    },
-    {
-      "slug": "pragmatic-the-dog-house",
-      "title": "The Dog House",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "medium",
-      "path": "games/pragmatic-the-dog-house.json",
-      "win_system_type": "paylines",
-      "grid": "3×5",
-      "has_tumble": null,
-      "has_buy": false,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-the-dog-house.webp"
     },
     {
       "slug": "pragmatic-the-hand-of-midas",
@@ -8090,6 +8766,19 @@
       "thumbnail": "thumbs/pragmatic-wild-west-duels.webp"
     },
     {
+      "slug": "pragmatic-wild-west-gold",
+      "title": "Wild West Gold",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wild-west-gold.json",
+      "win_system_type": "paylines",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-wild-west-gold.webp"
+    },
+    {
       "slug": "pragmatic-wild-west-gold-blazing-bounty",
       "title": "Wild West Gold Blazing Bounty",
       "provider": "Pragmatic Play",
@@ -8116,19 +8805,6 @@
       "thumbnail": "thumbs/pragmatic-wild-west-gold-megaways.webp"
     },
     {
-      "slug": "pragmatic-wild-west-gold",
-      "title": "Wild West Gold",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-wild-west-gold.json",
-      "win_system_type": "paylines",
-      "grid": null,
-      "has_tumble": false,
-      "has_buy": true,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-wild-west-gold.webp"
-    },
-    {
       "slug": "pragmatic-wild-wild-bananas",
       "title": "Wild Wild Bananas",
       "provider": "Pragmatic Play",
@@ -8140,19 +8816,6 @@
       "has_buy": false,
       "has_ante": true,
       "thumbnail": "thumbs/pragmatic-wild-wild-bananas.webp"
-    },
-    {
-      "slug": "pragmatic-wild-wild-riches-megaways",
-      "title": "Wild Wild Riches Megaways",
-      "provider": "Pragmatic Play",
-      "confidence_overall": "high",
-      "path": "games/pragmatic-wild-wild-riches-megaways.json",
-      "win_system_type": "ways",
-      "grid": null,
-      "has_tumble": false,
-      "has_buy": false,
-      "has_ante": false,
-      "thumbnail": "thumbs/pragmatic-wild-wild-riches-megaways.webp"
     },
     {
       "slug": "pragmatic-wild-wild-riches",
@@ -8168,17 +8831,17 @@
       "thumbnail": "thumbs/pragmatic-wild-wild-riches.webp"
     },
     {
-      "slug": "pragmatic-wisdom-of-athena-1000",
-      "title": "Wisdom of Athena 1000",
+      "slug": "pragmatic-wild-wild-riches-megaways",
+      "title": "Wild Wild Riches Megaways",
       "provider": "Pragmatic Play",
       "confidence_overall": "high",
-      "path": "games/pragmatic-wisdom-of-athena-1000.json",
-      "win_system_type": "pay_anywhere",
-      "grid": "5×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/pragmatic-wisdom-of-athena-1000.webp"
+      "path": "games/pragmatic-wild-wild-riches-megaways.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": false,
+      "has_ante": false,
+      "thumbnail": "thumbs/pragmatic-wild-wild-riches-megaways.webp"
     },
     {
       "slug": "pragmatic-wisdom-of-athena",
@@ -8192,6 +8855,19 @@
       "has_buy": false,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-wisdom-of-athena.webp"
+    },
+    {
+      "slug": "pragmatic-wisdom-of-athena-1000",
+      "title": "Wisdom of Athena 1000",
+      "provider": "Pragmatic Play",
+      "confidence_overall": "high",
+      "path": "games/pragmatic-wisdom-of-athena-1000.json",
+      "win_system_type": "pay_anywhere",
+      "grid": "5×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/pragmatic-wisdom-of-athena-1000.webp"
     },
     {
       "slug": "pragmatic-wolf-gold",
@@ -8233,19 +8909,6 @@
       "thumbnail": "thumbs/pragmatic-zombie-carnival.webp"
     },
     {
-      "slug": "slotmill-brew-brothers-xmas-brew",
-      "title": "Brew Brothers - Xmas Brew",
-      "provider": "Slotmill",
-      "confidence_overall": "high",
-      "path": "games/slotmill-brew-brothers-xmas-brew.json",
-      "win_system_type": "paylines",
-      "grid": "4×5",
-      "has_tumble": null,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/slotmill-brew-brothers-xmas-brew.webp"
-    },
-    {
       "slug": "slotmill-brew-brothers",
       "title": "Brew Brothers",
       "provider": "Slotmill",
@@ -8257,6 +8920,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/slotmill-brew-brothers.webp"
+    },
+    {
+      "slug": "slotmill-brew-brothers-xmas-brew",
+      "title": "Brew Brothers - Xmas Brew",
+      "provider": "Slotmill",
+      "confidence_overall": "high",
+      "path": "games/slotmill-brew-brothers-xmas-brew.json",
+      "win_system_type": "paylines",
+      "grid": "4×5",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/slotmill-brew-brothers-xmas-brew.webp"
     },
     {
       "slug": "slotmill-carnival-joker",
@@ -8298,19 +8974,6 @@
       "thumbnail": "thumbs/slotmill-chilli-bandits.webp"
     },
     {
-      "slug": "slotmill-coin-quest-2",
-      "title": "Coin Quest 2",
-      "provider": "Slotmill",
-      "confidence_overall": "high",
-      "path": "games/slotmill-coin-quest-2.json",
-      "win_system_type": "clusters",
-      "grid": "6×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": null,
-      "thumbnail": "thumbs/slotmill-coin-quest-2.webp"
-    },
-    {
       "slug": "slotmill-coin-quest",
       "title": "Coin Quest",
       "provider": "Slotmill",
@@ -8322,6 +8985,19 @@
       "has_buy": true,
       "has_ante": null,
       "thumbnail": "thumbs/slotmill-coin-quest.webp"
+    },
+    {
+      "slug": "slotmill-coin-quest-2",
+      "title": "Coin Quest 2",
+      "provider": "Slotmill",
+      "confidence_overall": "high",
+      "path": "games/slotmill-coin-quest-2.json",
+      "win_system_type": "clusters",
+      "grid": "6×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": null,
+      "thumbnail": "thumbs/slotmill-coin-quest-2.webp"
     },
     {
       "slug": "slotmill-coins-and-cannons",
@@ -8623,19 +9299,6 @@
       "thumbnail": "thumbs/slotmill-merlins-fortune.webp"
     },
     {
-      "slug": "slotmill-money-jar-2",
-      "title": "Money Jar 2",
-      "provider": "Slotmill",
-      "confidence_overall": "high",
-      "path": "games/slotmill-money-jar-2.json",
-      "win_system_type": "paylines",
-      "grid": "5×6",
-      "has_tumble": null,
-      "has_buy": true,
-      "has_ante": null,
-      "thumbnail": "thumbs/slotmill-money-jar-2.webp"
-    },
-    {
       "slug": "slotmill-money-jar",
       "title": "Money Jar",
       "provider": "Slotmill",
@@ -8647,6 +9310,19 @@
       "has_buy": true,
       "has_ante": null,
       "thumbnail": "thumbs/slotmill-money-jar.webp"
+    },
+    {
+      "slug": "slotmill-money-jar-2",
+      "title": "Money Jar 2",
+      "provider": "Slotmill",
+      "confidence_overall": "high",
+      "path": "games/slotmill-money-jar-2.json",
+      "win_system_type": "paylines",
+      "grid": "5×6",
+      "has_tumble": null,
+      "has_buy": true,
+      "has_ante": null,
+      "thumbnail": "thumbs/slotmill-money-jar-2.webp"
     },
     {
       "slug": "slotmill-neon-dreams",
@@ -8701,6 +9377,19 @@
       "thumbnail": "thumbs/slotmill-raging-riches.webp"
     },
     {
+      "slug": "slotmill-ragnarok",
+      "title": "Ragnarok",
+      "provider": "Slotmill",
+      "confidence_overall": "high",
+      "path": "games/slotmill-ragnarok.json",
+      "win_system_type": "clusters",
+      "grid": "5×5",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/slotmill-ragnarok.webp"
+    },
+    {
       "slug": "slotmill-ragnarok-40k",
       "title": "Ragnarok 40K",
       "provider": "Slotmill",
@@ -8725,19 +9414,6 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/slotmill-ragnarok-gold.webp"
-    },
-    {
-      "slug": "slotmill-ragnarok",
-      "title": "Ragnarok",
-      "provider": "Slotmill",
-      "confidence_overall": "high",
-      "path": "games/slotmill-ragnarok.json",
-      "win_system_type": "clusters",
-      "grid": "5×5",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/slotmill-ragnarok.webp"
     },
     {
       "slug": "slotmill-rainbow-rush",
@@ -8779,19 +9455,6 @@
       "thumbnail": "thumbs/slotmill-ribs-golden-crypt.webp"
     },
     {
-      "slug": "slotmill-sands-of-eternity-2",
-      "title": "Sands of Eternity 2",
-      "provider": "Slotmill",
-      "confidence_overall": "high",
-      "path": "games/slotmill-sands-of-eternity-2.json",
-      "win_system_type": "ways",
-      "grid": "3×6",
-      "has_tumble": true,
-      "has_buy": true,
-      "has_ante": true,
-      "thumbnail": "thumbs/slotmill-sands-of-eternity-2.webp"
-    },
-    {
       "slug": "slotmill-sands-of-eternity",
       "title": "Sands of Eternity",
       "provider": "Slotmill",
@@ -8803,6 +9466,19 @@
       "has_buy": true,
       "has_ante": null,
       "thumbnail": "thumbs/slotmill-sands-of-eternity.webp"
+    },
+    {
+      "slug": "slotmill-sands-of-eternity-2",
+      "title": "Sands of Eternity 2",
+      "provider": "Slotmill",
+      "confidence_overall": "high",
+      "path": "games/slotmill-sands-of-eternity-2.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/slotmill-sands-of-eternity-2.webp"
     },
     {
       "slug": "slotmill-season-of-fortune",

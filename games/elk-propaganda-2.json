@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:58:55Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Propaganda 2",
+    "slug": "elk-propaganda-2",
+    "provider_game_id": "10276",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10276&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/propaganda2/build-361158/assets/translation/propaganda2-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Key features Rows: 6 rows; Key features Reels: 6 columns"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": "horizontal_or_vertical",
+    "notes": "A winning cluster consists of 5 or more identical symbols connected vertically or horizontally."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 or more Bonus symbols trigger the Bonus game with Bonus drops.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Propaganda 2: paid spin on 6x6. A winning cluster consists of 5 or more identical symbols connected vertically or horizontally.. Bonus modes: Bonus, Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 6x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: A winning cluster consists of 5 or more identical symbols connected vertically or horizontally.",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "A winning cluster consists of 5 or more identical symbols connected vertically or horizontally.",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more Bonus symbols trigger the Bonus game with Bonus drops.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "ame with Bonus drops.\nIf at least one Bonus symbol is a Super Bonus symbol, the Super Bonus game is awarded.\nIn the Super Bonus all features are activated.\n\nThe Mask symbol is collected when a winning cluster is adjacent to a Mask symbol.\nCollecting 6 Mask symbols triggers the Drop Bonus game.\nThe Drop Bonus game plays with 3 spins. Landing one or more symbols resets the spin counter to 3.\nThe game view displays the player balance, bet level, and win amount.\nAll values remain visible throughout the session in both landscape and portrait ori",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "ame with Bonus drops.\nIf at least one Bonus symbol is a Super Bonus symbol, the Super Bonus game is awarded.\nIn the Super Bonus all features are activated.\n\nThe Mask symbol is collected when a winning cluster is adjacent to a Mask symbol.\nCollecting 6 Mask symbols triggers the Drop Bonus game.\nThe Drop Bonus game plays with 3 spins. Landing one or more symbols resets the spin counter to 3.\nThe gam",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "2 bonus mode(s) extracted from official Game Description for Propaganda 2."
+  },
+  "features": [],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/propaganda2/build-361158/assets/translation/propaganda2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10276-propaganda2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Key features\nName in English Propaganda 2\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster Wins\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nPropaganda 2 is a 6 row, 6 column cluster game with increasing global multiplier, dropping symbols, and feature activations.\nThe game is a cluster paying game.\nA winning cluster consists of 5 or more identical symbols connected vertically or horizontally. For each symbol type, only the largest winning cluster is paid in each win evaluation.\nThe RTP is the same throughout the game and the RTP is defined in the game rules.\n3 or more Bonus s"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/propaganda2/build-361158/assets/translation/propaganda2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10276-propaganda2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "is a 6 row, 6 column cluster game with increasing global multiplier, dropping symbols, and feature activations.\nThe game is a cluster paying game.\nA winning cluster consists of 5 or more identical symbols connected vertically or horizontally."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/propaganda2/build-361158/assets/translation/propaganda2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10276-propaganda2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "X-iter rules"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/propaganda2/build-361158/assets/translation/propaganda2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10276-propaganda2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Game description\nPropaganda 2 is a 6 row, 6 column cluster game with increasing global multiplier, dropping symbols, and feature activations.\nThe game is a cluster paying game.\nA winning cluster consists of 5 or more identical symbols connected vertically or horizontally. For each symbol type, only the largest winning cluster is paid in each win evaluation.\nThe RTP is the same throughout the game and the RTP is defined in the game rules.\n3 or more Bonus symbols trigger the Bonus game with Bonus drops.\nIf at least one Bonus symbol is a Super Bonus symbol, the Super Bonus game is awarded.\nIn the Super Bonus all features are activated.\n\nThe Mask symbol is collected when a winning cluster is adjacent to a Mask symbol.\nCollecting 6 Mask symbols triggers the Drop Bonus game.\nThe Drop Bonus game plays with 3 spi"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/propaganda2/build-361158/assets/translation/propaganda2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10276-propaganda2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Key features\nName in English Propaganda 2\nProduct category Casino\nGame type Slot\nClient HTML5\nLines Cluster Wins\nJackpot No\nReels 6 columns\nRows 6 rows\n\nGame description\nPropaganda 2 is a 6 row, 6 column cluster game with increasing global multiplier, dropping symbols, and feature activations.\nThe game is a cluster paying game.\nA winning cluster consists of 5 or more identical symbols connected vertically or horizontally. For each symbol type, only the largest winning cluster is paid in each win evaluation.\nThe RTP is the same throughout the game and the RTP is defined in the game rules.\n3 or more Bonus symbols trigger the Bonus game with Bonus drops.\nIf at least one Bonus symbol is a Super Bonus symbol, the Super Bonus game is awarded.\nIn the Super Bonus all features are activated.\n\nThe Mask symbol is collected when a winning cluster is adjacent to a Mask symbol.\nCollecting 6 Mask symbo"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/propaganda-2/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Demo launcher gameid=10276; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy.options incomplete",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-propaganda-2.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:13Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Crusader",
+    "slug": "elk-crusader",
+    "provider_game_id": "10042",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10042&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/crusader/build-252693/assets/translation/crusader-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 26,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": null
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "appears on reels 1 and 5.\n13. A partial hit of the 1x4 Crusader symbol triggers respins. Each respin nudges the crusader symbol one step upwards or downwards per respin until it is in full view, and then the respins end.\n\n14. The respins continue in case a second 1x4 Crusader hits during an ongoing nudging. The Crusader in full view w"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the Crusader symbol and the expansion symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Crusader: paid spin on 4x5. paylines. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: paylines",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "paylines",
+    "notes": "urrency or in coins. The player can change preference in Settings.\n\n9. Crusader is played in two modes; Normal mode and Bonus mode.\n\n10. Normal mode is played with 5 reels and 4 rows.\n\n11. The wild symbol substitutes for any symbol except the Crusader symbol and the expansion symbol.\n\n12. Th"
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": 96.1,
+    "rtp_notes": "Theoretical RTP 96.1% (base and X-iter when stated). Min bet €None, max bet €None.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/crusader/build-252693/assets/translation/crusader-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10042-crusader-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Crusader\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Crusader is a 5 reel, 4 rows slot with up to 26 paylines. The rows may expand upwards to a total of 12 rows with up to 98 paylines.\n \n2. The game offers several bet levels for each currency.\n\n3. Each bet is 100 coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/crusader/build-252693/assets/translation/crusader-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10042-crusader-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "is a 5 reel, 4 rows slot with up to 26 paylines. The rows may expand upwards to a total of 12 rows with up to 98 paylines.\n \n2."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/crusader/build-252693/assets/translation/crusader-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10042-crusader-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "X-iter rules\nWild symbol substitutes for all symbols except the expansion symbol.\nThe Crusader symbol is wild. A partial hit triggers respins until it has nudged into full view. Two Crusaders in full view trigger Free spins.\nThe expansion symbol expands all the reels upwards to a maximum of 12 rows and awards an additional free spin.\nAll payline shapes can trigger on all available rows in both Normal mode and Bonus mode."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/crusader/build-252693/assets/translation/crusader-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10042-crusader-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Game description\n\nGame rules\n1. Crusader is a 5 reel, 4 rows slot with up to 26 paylines. The rows may expand upwards to a total of 12 rows with up to 98 paylines.\n \n2. The game offers several bet levels for each currency.\n\n3. Each bet is 100 coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in the player's currency or in coins. The player c"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/crusader/build-252693/assets/translation/crusader-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10042-crusader-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Crusader\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Crusader is a 5 reel, 4 rows slot with up to 26 paylines. The rows may expand upwards to a total of 12 rows with up to 98 paylines.\n \n2. The game offers several bet levels for each currency.\n\n3. Each bet is 100 coins.\n\n4. Bet lines are paid from left to right. Only the highest win per active bet line is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are presented in the player's currency or in coins. The p"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/crusader/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Demo launcher gameid=10042; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins.modes",
+    "feature_buy.options incomplete",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-crusader.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

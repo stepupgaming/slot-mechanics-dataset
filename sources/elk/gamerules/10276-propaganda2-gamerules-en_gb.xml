@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<translation language="en_gb" gameid="10276">
+
+<!--GDD TEXT-->
+<entry key="gdd-description">Propaganda 2 is a 6 row, 6 column cluster game with increasing global multiplier, dropping symbols, and feature activations.</entry>
+
+<entry key="gdd-gameview">The game view displays the player balance, bet level, and win amount.
+All values remain visible throughout the session in both landscape and portrait orientations.</entry>
+
+<entry key="gdd-payline">The game is a cluster paying game.
+A winning cluster consists of 5 or more identical symbols connected vertically or horizontally. For each symbol type, only the largest winning cluster is paid in each win evaluation.
+The RTP is the same throughout the game and the RTP is defined in the game rules.</entry>
+
+<entry key="gdd-bonusgame">3 or more Bonus symbols trigger the Bonus game with Bonus drops.
+If at least one Bonus symbol is a Super Bonus symbol, the Super Bonus game is awarded.
+In the Super Bonus all features are activated.
+
+The Mask symbol is collected when a winning cluster is adjacent to a Mask symbol.
+Collecting 6 Mask symbols triggers the Drop Bonus game.
+The Drop Bonus game plays with 3 spins. Landing one or more symbols resets the spin counter to 3.</entry>
+
+<entry key="gdd-kf-productcategory">Casino</entry>
+
+<entry key="gdd-kf-gametype">Slot</entry>
+
+<entry key="gdd-kf-lines">Cluster Wins</entry>
+
+<entry key="gdd-kf-jackpot">No</entry>
+
+<entry key="gdd-kf-reels">6 columns</entry>
+
+<entry key="gdd-kf-rows">6 rows</entry>
+
+<entry key="gdd-kf-maxexposure">__TBB__ max bet</entry>
+
+<entry key="gdd-kf-maxwinsinglespin">__TBB__ max bet</entry>
+
+<!-- Standard Special Symbols -->
+
+<entry key="gdd-sfs-1">Wild symbols substitute for all payout symbols. A cluster consisting only of Wild symbols pays as the highest-paying symbol.</entry>
+
+<entry key="gdd-sfs-2">3 Bonus symbols trigger the Bonus game with 7 Bonus drops.</entry>
+
+<entry key="gdd-sfs-3">If a Super Bonus symbol appears during the Bonus game, the game upgrades to the Super Bonus game and 2 additional Bonus drops are awarded.</entry>
+
+<entry key="gdd-sfs-4">A Mask symbol activates when adjacent to a winning cluster. Collecting 6 Mask symbols triggers the Drop Bonus.</entry>
+
+<!-- Feature Symbols -->
+
+<entry key="gdd-sfs-5">A Wild Strike feature symbol activates when adjacent to a winning cluster. It adds 2, 3, 4, or 5 Wild symbols to the grid and then becomes a Wild symbol.</entry>
+
+<entry key="gdd-sfs-6">A Heart feature symbol activates when adjacent to a winning cluster. The Heart symbol then becomes the selected payout symbol type.</entry>
+
+<!-- Drop Bonus Symbols -->
+
+<entry key="gdd-sfs-7">The Upgrade symbol upgrades all payout symbols to a higher payout symbol type on the game grid and then becomes the payout symbol type.</entry>
+
+<entry key="gdd-sfs-8">The Collect symbol selects a symbol area on the grid, gathers all symbols within the selected area into a single cluster, and then becomes the payout symbol type.</entry>
+
+<!-- Bonus-Game Symbols -->
+
+<entry key="gdd-sfs-9">In the Bonus game, the Add Bonus Drop symbol awards 1 additional Bonus drop.</entry>
+
+
+<!--PAYTABLE TEXT-->
+<gfx key="SuperBonusSubHeader">Super Bonus</gfx>
+
+<gfx key="PropagandaWildSubHeader">Propaganda Wild</gfx>
+
+<gfx key="LoveBombSubHeader">Love Bomb</gfx>
+
+<gfx key="PropagandaWildIntroText">Every winning cluster generates a new Wild. Combine Wilds to create powerful Multiplier Wilds.</gfx>
+
+<!--Paytable Page 2-->
+<entry key="PropagandaWildsBigHeader">Propaganda Wilds</entry>
+
+<entry key="WildGenerationSubHeader">Wild Generation</entry>
+
+<entry key="WildSplitSubHeader">Wild Split</entry>
+
+<entry key="WildMergeSubHeader">Wild Merge</entry>
+
+<entry key="WildGenerationTxT">Each Winning Cluster Generates a Wild Symbol.</entry>
+
+<entry key="WildSplitTxT">Multiplier Wild symbols that connect multiple winning clusters are split into the respective clusters.</entry>
+
+<entry key="WildMergeTxT">Multiple Wild symbols in a winning cluster merge into a Multiplier Wild.</entry>
+
+<!--Paytable Page 3-->
+<entry key="WildSymbolsBigHeader">Wild Symbols</entry>
+
+<entry key="WildSubHeader">Wild</entry>
+
+<entry key="MultiplierWildSubHeader">Multiplier Wild</entry>
+
+<entry key="WildSymbolTxT">Wild symbols substitute for all payout symbols. They do not substitute for Bonus symbols, Bonus Drop symbols, Super Bonus symbols, or feature symbols.</entry>
+
+<entry key="MultiplierWildTxT">Multiplier Wild symbols are applied to their winning clusters before the total multiplier is applied.</entry>
+
+<!--Paytable Page 4-->
+<entry key="MultiplierBigHeader">Multiplier</entry>
+
+<entry key="ClusterPaysSubHeader">Cluster Pays</entry>
+
+<entry key="MultiplierSubHeader">Multiplier</entry>
+
+<entry key="ClusterPaysTxT">A winning cluster consists of 5 or more vertically or horizontally connected identical symbols.</entry>
+
+<entry key="MultiplierTxT">The total multiplier applies to all winning clusters, and each winning symbol increases the total multiplier.</entry>
+
+<!--Paytable Page 5-->
+<entry key="FeaturesBigHeader">Features</entry>
+
+<entry key="WildStrikeSubHeader">Wild Strike</entry>
+
+<entry key="HeartFeatureSubHeader">Heart Feature</entry>
+
+<entry key="FeatureSymbolTxT">Feature symbol activates when adjacent to a winning cluster.</entry>
+
+<entry key="WildStrikeTxT">Adds 2, 3, 4 or 5 Wild symbols to the grid.</entry>
+
+<entry key="HeartFeatureTxT">Selects 1 or more payout symbol types and transforms all of them into one payout symbol type.</entry>
+
+<!--Paytable Page 6-->
+<entry key="LoveBombBigHeader">Love Bomb</entry>
+
+<entry key="LoveBombTxT">Energy attached to feature symbols is added to the Love Bomb energy at the end of a game round.</entry>
+
+<entry key="LoveBombTxT2">The Love Bomb feature activates all feature symbols during a game round or a Bonus drop.</entry>
+
+<!--Paytable Page 7-->
+<entry key="TheDropBigHeader">Drop Bonus</entry>
+
+<entry key="UpgradeSymbolSubHeader">Upgrade Symbol</entry>
+
+<entry key="CollectSymbolSubHeader">Collect Symbol</entry>
+
+<entry key="UpgradeSymbolTxT">The Upgrade symbols upgrade all payout symbols to a higher payout symbol type on the game grid.</entry>
+
+<entry key="CollectSymbolTxT">The Collect symbols gather symbols within a selected area into a single cluster.</entry>
+
+<entry key="DropSpinsTxT">The Drop Bonus game plays with 3 spins. Landing one or more symbols resets the spin counter to 3.</entry>
+
+<entry key="MaskTxT">Collecting 6 Masks triggers the Drop Bonus game. The number of collected Masks is kept between game rounds.</entry>
+
+<!--Paytable Page8-->
+<entry key="BonusGameBigHeader">Bonus Game</entry>
+
+<entry key="BonusSymbolSubHeader">Bonus Symbol</entry>
+
+<entry key="ExtraDropsSubHeader">Extra Drops</entry>
+
+<entry key="BonusMultiplierSubHeader">Bonus Multiplier</entry>
+
+<entry key="BonusSymbolTxT">3 or more Bonus symbols trigger the Bonus game.</entry>
+
+<entry key="ExtraBonusDropTxT">1 additional Bonus drop is awarded by the Add Bonus Drop symbol.</entry>
+
+<entry key="BonusMultiplierTxT">The total multiplier is persistent between Bonus drops in the Bonus game.</entry>
+
+<!--Paytable Page9-->
+<entry key="SuperBonusGameBigHeader">Super Bonus Game</entry>
+
+<entry key="SuperBonusSymbolSubHeader">Super Bonus Symbol</entry>
+
+<entry key="SuperBonusTxT">Triggering a Bonus game with a Super Bonus symbol awards the Super Bonus game, with the Love Bomb feature active during all Bonus drops.</entry>
+
+<!--Paytable Page10-->
+<entry key="SymbolPayoutBigHeader">Symbol Payout</entry>
+
+<!--GAMERULES 
+ Unique Init-->
+<entry key="gamerule-0">Propaganda 2 is a 6 row, 6 column cluster game with increasing global multiplier, dropping symbols, and feature activations.</entry>
+
+<!--General Init-->
+<entry key="gamerule-1">The minimum bet is __MINBADEFBMODE__, the maximum bet is __MAXBADEFBMODE__.</entry>
+
+<entry key="gamerule-2" tags="coins">Each bet is __CPBB__ coins.</entry>
+
+<entry key="gamerule-3">A winning cluster consists of 5 or more identical symbols connected vertically or horizontally. Only the largest cluster of each symbol type is paid.</entry>
+
+<entry key="gamerule-4">A game round starts when the player presses the Spin button.</entry>
+
+<entry key="gamerule-5" tags="autospin">The game can be played automatically using Auto Spin. Hold the Spin button or use the Auto Spin menu to set the number of rounds.</entry>
+
+<entry key="gamerule-6">Winnings and winning combinations are paid according to the Paytable.</entry>
+
+<entry key="gamerule-7" tags="coins">Winnings are shown in the player's currency or in coins. This can be changed in Settings.</entry>
+
+<entry key="gamerule-8" tags="no-coins">Winnings are shown in the player's currency.</entry>
+
+<entry key="gamerule-9">The game is played in two modes: base game and Bonus mode.</entry>
+
+<entry key="gamerule-10">Wild symbols substitute for all payout symbols. They do not substitute for Bonus symbols, Bonus Drop symbols, Super Bonus symbols, or feature symbols. A cluster consisting only of Wild symbols pays as the highest-paying symbol.</entry>
+
+<!--Core Mechanics-->
+<entry key="gamerule-11">Each round begins with a symbol drop filling the grid. Winning symbols are removed, the remaining symbols fall vertically until they reach a resting position, and new symbols drop in to fill the empty spaces. The Avalanche continues as long as new winning combinations appear.</entry>
+
+<entry key="gamerule-12">The global multiplier applies to all winning clusters. Each winning symbol increases the global multiplier by 1. The global multiplier is reset when entering the Bonus game and remains active between Bonus drops.</entry>
+
+<!--Wild Generation-->
+<entry key="gamerule-13">Each winning cluster generates a Wild symbol that appears in one of the empty spaces created after the explosion of the winning symbols.</entry>
+
+<entry key="gamerule-14">The multiplier values of the Wild symbols are added together and applied to the generated Wild symbol, if several Wild symbols contribute to the same winning cluster. Normal Wild symbols are counted as having a multiplier value of 1.</entry>
+
+<!--Feature: Wild Strike-->
+<entry key="gamerule-15">The Wild Strike feature symbol activates when adjacent to a winning cluster.</entry>
+
+<entry key="gamerule-16">The Wild Strike feature adds 2, 3, 4 or 5 Wild symbols onto the grid.</entry>
+
+<entry key="gamerule-17">After activation, the Wild Strike feature symbol becomes a Wild symbol.</entry>
+
+<!--Feature: Heart feature-->
+<entry key="gamerule-18">The Heart feature activates when the Heart symbol is adjacent to a winning cluster.</entry>
+
+<entry key="gamerule-19">When winning symbols are removed and all empty symbol positions are filled, the Heart feature selects 1 or more payout symbol types and transforms all of them into one payout symbol type.</entry>
+
+<entry key="gamerule-20">After activation, the Heart feature symbol becomes the selected payout symbol type.</entry>
+
+<!--Feature: Mask-->
+<entry key="gamerule-21">The Mask symbols are activated when the Mask symbol is adjacent to a winning cluster.</entry>
+
+<entry key="gamerule-22">Activated Masks symbols are collected at the end of the game round and added to the mask symbol inventory.</entry>
+
+<entry key="gamerule-23">Collecting 6 Mask symbols triggers the Drop Bonus game.</entry>
+
+<entry key="gamerule-24">The number of collected Masks symbols is kept between game rounds.</entry>
+
+<entry key="gamerule-25">Mask symbols cannot land during Bonus drops.</entry>
+
+<entry key="gamerule-26">Mask symbols have a different probability of landing depending on how many Mask symbols have been collected.</entry>
+
+<!--Love Bomb feature-->
+<entry key="gamerule-27">The Love Bomb feature can trigger in any base game drop or Bonus drop. Energy attached to feature symbols is added to the Love Bomb energy at the end of a game round.</entry>
+
+<entry key="gamerule-28">The energy of the Love Bomb is kept between game rounds. When triggered, the Love Bomb feature activates all feature symbols during a game round or a Bonus drop. Every game round has the same probability of triggering the Love Bomb feature.</entry>
+
+<!--Bonus Game-->
+<entry key="gamerule-29">3 Bonus symbols trigger the Bonus game with 7 Bonus drops.</entry>
+
+
+<entry key="gamerule-30">In the Bonus game, the Add Bonus Drop symbol awards 1 additional Bonus drop.</entry>
+
+<entry key="gamerule-31">If a Super Bonus symbol appears during the Bonus game, the game upgrades to the Super Bonus game and 2 additional Bonus drops are awarded.</entry>
+
+<entry key="gamerule-32" tags="maxwin">The Bonus game ends when no Bonus drops remain, or when the win cap is reached.</entry>
+
+<entry key="gamerule-33" tags="no-maxwin">The Bonus game ends when no Bonus drops remain.</entry>
+
+<!--Super Bonus Game-->
+<entry key="gamerule-34">The Super Bonus game is triggered when at least one of the Bonus symbols that trigger the Bonus game is a Super Bonus symbol.</entry>
+
+<entry key="gamerule-35">In the Super Bonus game, all feature symbols are activated.</entry>
+
+<entry key="gamerule-36" tags="maxwin">The Super Bonus game ends when no Bonus drops remain, or when the win cap is reached.</entry>
+
+<entry key="gamerule-37" tags="no-maxwin">The Super Bonus game ends when no Bonus drops remain.</entry>
+
+<!--Mini Bonus Game-->
+<entry key="gamerule-38">The Drop Bonus plays with payout symbols, Wild symbols, Collect symbols and Upgrade symbols.</entry>
+
+<entry key="gamerule-39">3 spins are awarded in the Drop Bonus. Landing one or more symbols during the Drop Bonus resets the spin counter to 3.</entry>
+
+<entry key="gamerule-40">All symbols remain on the grid between spins during the Drop Bonus game. The total value of all cluster wins on the game grid is paid out when the Drop Bonus ends.</entry>
+
+<entry key="gamerule-41">The Upgrade symbol upgrades all payout symbols to a higher payout symbol type on the game grid and then becomes the payout symbol type.</entry>
+
+<entry key="gamerule-42">The Collect symbol selects a symbol area on the grid, gathers all symbols within the selected area into a single cluster, and then becomes the payout symbol type.</entry>
+
+<entry key="gamerule-43">Wild symbols add their multiplier value to their respective cluster. If more than 1 Wild symbol contributes to the same cluster, their multiplier values are added together and applied to the cluster.</entry>
+
+<entry key="gamerule-44" tags="maxwin">The Drop Bonus ends when there are no spins remaining or when the win cap is reached.</entry>
+
+<entry key="gamerule-45" tags="no-maxwin">The Drop Bonus ends when no spins remain.</entry>
+
+<entry key="gamerule-46">After the Drop Bonus ends there is a chance to get 1, 2 or 3 mask symbols added to the mask inventory.</entry>
+
+<!--General End-->
+<entry key="gamerule-47">Winnings are paid at the end of the game round.</entry>
+
+<entry key="gamerule-48" tags="maxwin">The maximum total win is capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule-49" tags="mwp">The probability to hit the maximum win is __MWP__.</entry>
+
+<!--don't touch __TBB__-->
+<entry key="gamerule-50" tags="maxwin">The game will be capped at __TBB__ the placed bet.</entry>
+
+<entry key="gamerule-51" tags="maxwin">A game round is immediately ended when the win cap is reached, and the wins collected so far will be paid out.</entry>
+
+<entry key="gamerule-52">No bets can be changed during a game round.</entry>
+
+<entry key="gamerule-53">The theoretical payout (RTP) is __RTP__.</entry>
+
+<entry key="gamerule-54">In the event of malfunction, all bets and wins are void.</entry>
+
+<entry key="gamerule-55" tags="lastupdated">Last updated 2026-09-02</entry>
+
+<!--X-iter Rules-->
+<entry key="xiter-rule-0">The X-iter feature offers buy-in to different game modes.</entry>
+
+<entry key="xiter-rule-1" tags="X05">SUPER BONUS: Guarantees entry to the Super Bonus game with 7 Bonus drops at the cost of __X05_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-2" tags="X04">BONUS GAME: Guarantees entry to the Bonus game with 7 Bonus drops at the cost of __X04_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-3" tags="X03">LOVE BOMB: Guarantees Love Bomb feature on the first drop at the cost of __X03_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-4" tags="X02">MEGA HUNT: Greatly increases the chance to trigger the Bonus game at the cost of __X02_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-5" tags="X01">BONUS HUNT: Increases the chance to trigger the Bonus game at the cost of __X01_MULTIPLIER__ the selected bet.</entry>
+
+<entry key="xiter-rule-6">X-iter modes are purchased by selecting the mode and pressing Spin.</entry>
+
+<entry key="xiter-rule-7">X-iter modes can only be activated in the base game.</entry>
+
+<entry key="xiter-rule-8">The theoretical payout (RTP) for all X-iter modes is __RTP__.</entry>
+
+<entry key="xiter-rule-9">The minimum X-iter cost is __MINBABMODE__, the maximum X-iter cost is __MAXBABMODE__.</entry>
+
+<entry key="xiter-rule-10" tags="lastupdated">Last updated 2026-09-02</entry>
+
+<!--Dialogs
+ X-iter dialogs-->
+<entry key="X05B1">SUPER BONUS GAME</entry>
+<entry key="X05B2">7 Bonus drops</entry>
+<entry key="X05B3">All features activated</entry>
+
+<entry key="X04B1">BONUS GAME</entry>
+<entry key="X04B2">7 Bonus drops</entry>
+
+<entry key="X03B1">LOVE BOMB</entry>
+<entry key="X03B2">All features activated.</entry>
+
+<entry key="X02B1">MEGA BONUS HUNT</entry>
+<entry key="X02B2">More than 10 times the average chance to trigger Bonus game!</entry>
+
+<entry key="X01B1">BONUS HUNT</entry>
+<entry key="X01B2">More than 3 times the average chance to trigger the Bonus game!</entry>
+
+<entry key="gdd-xiterbutton-5">SUPER BONUS GAME</entry>
+<entry key="gdd-xiterbutton-4">BONUS GAME</entry>
+<entry key="gdd-xiterbutton-3">LOVE BOMB</entry>
+<entry key="gdd-xiterbutton-2">MEGA BONUS HUNT</entry>
+<entry key="gdd-xiterbutton-1">BONUS HUNT</entry>
+
+
+
+
+
+
+
+<!--X-iter Onboarding-->
+<entry key="xiterOnboardingMode">Select mode!</entry>
+
+<entry key="xiterOnboardingBet">Cost.</entry>
+
+<entry key="xiterOnboardingBet_2">Total bet.</entry><!--Backup alternative text-->
+
+<entry key="xiterOnboardingBet_3">X-iter bet.</entry><!--Backup alternative text-->
+
+<entry key="xiterOnboardingSpin">Press Spin!</entry>
+
+
+</translation>

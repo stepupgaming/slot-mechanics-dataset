@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T19:00:28Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "DJ WÏLD",
+    "slug": "elk-dj-wild",
+    "provider_game_id": "10010",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10010&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://s3-eu-west-1.amazonaws.com/elkpromo/DJ+W%C3%AFld/DJwild+product+sheet_high+res-2.pdf"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 3 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": null
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "e mix of the night.\n\nDJ WÏLD is a classic 5 reel, 3 row DJ video slot featuring Respins, Sticky Wilds,\nExpanding Wilds and a Jackpot Wild Symbol. This game was built for mobile first and is\nthe first slot ever letting the symbols cover 100% of the mobile screen. The game has\n20 paylines, 10 lines paying left-right and vice versa.\n\nThe"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "DJ WÏLD: paid spin on 3x5. paylines. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 3x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: paylines",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "paylines",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in the official Game Description; X-iter covers paid feature entry."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 1700.0,
+    "max_win_notes": "Max exposure 1700.0x; max win single spin Nonex; Maximum win €None",
+    "rtp_percent": 96.3,
+    "rtp_notes": "Theoretical RTP 96.3% (base and X-iter when stated). Min bet €None, max bet €None.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://s3-eu-west-1.amazonaws.com/elkpromo/DJ+W%C3%AFld/DJwild+product+sheet_high+res-2.pdf",
+      "local_path": "sources/elk/pdfs/10010-DJ Wild_ProductSheet.pdf",
+      "extracted_at": "2026-09-27T19:00:28Z",
+      "quote_or_excerpt": "Best in mobile\n ELK Studios proudly presents the world premier of\n\nDJ WÏLD\nFor one night you are the DJ\nVersion 1.0\n\nWith new Betting Strategy – Optimizer\n\nFor one night you are the DJ! Imagine the crowd filling up the stadium. You\nare in top shape and it’s time to enter the stage. 50,000 fans are screaming\nfor more music. Your gameplay makes the mix of the night.\n\nDJ WÏLD is a classic 5 reel, 3 row DJ video slot featuring Respins, Sticky Wilds,\nExpanding Wilds and a Jackpot Wild Symbol. This game was built for mobile first and is\nthe first slot ever letting the symbols cover 100% of the mobile screen. The game has\n20 paylines, 10 lines paying left-right and vice versa.\n\nThe player is trying to capture DJ WÏLD symbol on reel 1, 2, 4 and 5. Once it hits,\nthe mix intensifies and the symbol expands horizontally or vertically covering 2 or\n3 symbols. After payout, a Respin is triggered with"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/dj-wild/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T19:00:28Z",
+      "quote_or_excerpt": "Demo launcher gameid=10010; mechanics taken from Game Description PDF, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins.modes",
+    "Exact paytable symbol values (PDF references paytable; numeric paytable not in text extract)",
+    "release_year not stated in Game Description PDF"
+  ],
+  "thumbnail": "thumbs/elk-dj-wild.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

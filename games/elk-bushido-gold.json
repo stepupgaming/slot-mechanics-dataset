@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:58:55Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Bushido Gold",
+    "slug": "elk-bushido-gold",
+    "provider_game_id": "10261",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10261&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/bushidogold/build-356436/assets/translation/bushidogold-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 columns by 4 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 16777216,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "4,096 ways to win expanding up to 16,777,216 ways to win"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "old\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 4,096 ways to win expanding up to 16,777,216 ways to win\nJackpot No\nReels 6 columns\nRows 4 rows\n\nGame description\nBushido Gold is a 6 column, 4 rows slot with dropping symbols. The columns may expand upwards to a maximum of 8 rows.\n4,096 ways to win expanding up to 16,777,216 ways t"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The Wild symbol substitutes for any paying symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 or more Bonus symbols trigger the Ninja Drops Bonus game.",
+        "params": {
+          "trigger_threshold": 3
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Bushido Gold: paid spin on 4x6. 4,096 ways to win expanding up to 16,777,216 ways to win. Avalanche/tumble after wins. Bonus modes: Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 4x6. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: 4,096 ways to win expanding up to 16,777,216 ways to win",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "Remove winners and Avalanche",
+        "order": 4,
+        "what_happens": "Winning symbols explode/are removed; remaining symbols fall; new symbols drop in. Continues while new wins appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 5,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 6,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "4,096 ways to win expanding up to 16,777,216 ways to win",
+    "notes": null
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 or more Bonus symbols trigger the Ninja Drops Bonus game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "",
+        "end_condition": "Ends when no free drops/spins remain or when the win cap has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award free drops. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Bushido Gold."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After wins in a drop",
+      "when": "Throughout base and bonus",
+      "effects": "Winning symbols removed; remaining fall; new symbols drop in.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Expanding grid",
+      "trigger": "Feature/bomb/clear-board events as described",
+      "when": "Base and bonus",
+      "effects": "old\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 4,096 ways to win expanding up to 16,777,216 ways to win\nJackpot No\nReels 6 columns\nRows 4 rows\n\nGame description\nBushido Gold is a 6 column, 4 rows slot with dropping symbols. The columns may expand upwards to a maximum of 8 rows.\n4",
+      "params": {}
+    },
+    {
+      "name": "Feature Release",
+      "trigger": null,
+      "when": null,
+      "effects": "symbol after any pending symbol refill and before the win evaluation. The Ninja feature releases throwing stars from the Ninja symbol that will hit between 2 to 10 symbols on the game grid. If a payout symbol is hit, it will be converted into a Wild. If a Cannon symbol is hit, it will be activated. A throwing star can not land on a Wild, on an already activated feature symbol, or a feature symbol that can not be activated.\nThe Cannon symbol",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bushidogold/build-356436/assets/translation/bushidogold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10261-bushidogold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Key features\nName in English Bushido Gold\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 4,096 ways to win expanding up to 16,777,216 ways to win\nJackpot No\nReels 6 columns\nRows 4 rows\n\nGame description\nBushido Gold is a 6 column, 4 rows slot with dropping symbols. The columns may expand upwards to a maximum of 8 rows.\n4,096 ways to win expanding up to 16,777,216 ways to win\n3 or more Bonus symbols trigger the Ninja Drops Bonus game. The player is awarded 6 Ninja Drops for 3 Bonus symbols and +2 Ninja Drops for each additional Bonus symbol that lands.\nBet amount and balance are always displayed"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bushidogold/build-356436/assets/translation/bushidogold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10261-bushidogold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "is a 6 column, 4 rows slot with dropping symbols. The columns may expand upwards to a maximum of 8 rows.\n4,096 ways to win expanding up to 16,777,216 ways to win\n3 or more Bonus symbols trigger the Ninja Drops Bonus game."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bushidogold/build-356436/assets/translation/bushidogold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10261-bushidogold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "X-iter rules\nThe Wild symbol substitutes for any payout symbol. At the end of the round, all Wild symbols will explode, removing or activating symbols.\nThe Ninja symbol is a blocker that can be activated to release throwing stars. Throwing stars will hit 2 to 10 symbols on the game grid. Hit symbols will be activated or turned into Wilds.\nTwo identical symbols at the first and last column on the same row will trigger the Slice feature that will cut symbols in two halves or activate them.\nThe Cannon symbol is a blocker until activated. When activated, the Cannon will shoot a pillar of Wild symbols upwards. Then it converts into a Wild.\nThe golden Cannon always shoot the highest possible pillar of Wilds a"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bushidogold/build-356436/assets/translation/bushidogold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10261-bushidogold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Game description\nBushido Gold is a 6 column, 4 rows slot with dropping symbols. The columns may expand upwards to a maximum of 8 rows.\n4,096 ways to win expanding up to 16,777,216 ways to win\n3 or more Bonus symbols trigger the Ninja Drops Bonus game. The player is awarded 6 Ninja Drops for 3 Bonus symbols and +2 Ninja Drops for each additional Bonus symbol that lands.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in landscape mode, and at the top of the game view when playing in portrait mode.\nThe Wild symbol substitutes for any p"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/bushidogold/build-356436/assets/translation/bushidogold-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10261-bushidogold-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Key features\nName in English Bushido Gold\nProduct category Casino\nGame type Slot\nClient HTML5\nLines 4,096 ways to win expanding up to 16,777,216 ways to win\nJackpot No\nReels 6 columns\nRows 4 rows\n\nGame description\nBushido Gold is a 6 column, 4 rows slot with dropping symbols. The columns may expand upwards to a maximum of 8 rows.\n4,096 ways to win expanding up to 16,777,216 ways to win\n3 or more Bonus symbols trigger the Ninja Drops Bonus game. The player is awarded 6 Ninja Drops for 3 Bonus symbols and +2 Ninja Drops for each additional Bonus symbol that lands.\nBet amount and balance are always displayed in the info bar at the bottom of the game view in the currency that the player has chosen. This information is always available throughout the gaming session. Winnings are displayed in the selected currency in the middle of the info bar at the bottom of the game view when playing in lan"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/bushido-gold/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:58:55Z",
+      "quote_or_excerpt": "Demo launcher gameid=10261; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy.options incomplete",
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-bushido-gold.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

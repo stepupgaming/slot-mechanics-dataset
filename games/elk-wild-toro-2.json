@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:13Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Wild Toro II",
+    "slug": "elk-wild-toro-2",
+    "provider_game_id": "10063",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10063&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/wildtoro2/build-253765/assets/translation/wildtoro2-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 5 columns by 5 rows"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 259,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Ways to win"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "The Toro moves leftwards until he spins out from the first reel, generating one respin for each step.\n \n14. There are three different Matadors: black, silver and gold. All of them appear on reel 2, 3, 4 and 5 and they all trigger the Expanding Matador Respins.\n\n15. During the Expanding Matador Respins, the Matador symbols move leftwar"
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "The wild symbol substitutes for any symbol except the Matadors and Toro.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Wild Toro II: paid spin on 5x5. Ways to win. Bonus modes: Super Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 5x5. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: Ways to win",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Ways to win",
+    "notes": "e jurisdiction). The player can change preference in Settings.\n\n9. Wild Toro II is played in two modes; Normal mode and Bonus mode where Toro goes Berzerk and attacks Matadors. \n\n10. All spins in Normal mode start with 5 rows and 259 ways to win. \n\n11. The wild symbol substitutes for any sym"
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Super Bonus",
+        "trigger": "Super bonus symbol combination triggers the super bonus game",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Super bonus symbol combination triggers the super bonus game",
+        "end_condition": "Bonus mode ends when no Toro or Matadors symbols are in view.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "Super bonus symbol combination triggers the super bonus game",
+            "ends_when": "Free drop/spin loop begins",
+            "state_changes": "Super bonus flags; often max grid / guaranteed features"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins under super-bonus rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "State persists across free drops/spins"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay winnings at end of bonus mode (or on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": null
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Wild Toro II."
+  },
+  "features": [
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "X-iter features can only be activated in the base game.",
+      "effects": "Win (5x): Guarantees a winning game round with all dead spins removed at the cost of 5x the selected bet.; Sticky Wilds (25x): 1 spin with a guaranteed Expanding Matador Respins feature at the cost of 25x the selected bet.; Bonus (100x): Guarantees the Toro Goes Berzerk feature at the cost of 100x the selected bet.; Big Bonus (250x): 3 spins with at least 1 Expanding Matador Respins feature at the cost of 250x the selected bet.; Super Bonus (500x): 3 spins with at least 1 Expanding Matador Respins feature at the cost of 500x the selected bet.",
+      "params": {
+        "base_game_only": true,
+        "mode_count": 5
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Win",
+        "cost_multiplier": 5.0,
+        "cost_text": "5x the selected bet",
+        "effects": "Guarantees a winning game round with all dead spins removed at the cost of 5x the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Sticky Wilds",
+        "cost_multiplier": 25.0,
+        "cost_text": "25x the selected bet",
+        "effects": "1 spin with a guaranteed Expanding Matador Respins feature at the cost of 25x the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x the selected bet",
+        "effects": "Guarantees the Toro Goes Berzerk feature at the cost of 100x the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Big Bonus",
+        "cost_multiplier": 250.0,
+        "cost_text": "250x the selected bet",
+        "effects": "3 spins with at least 1 Expanding Matador Respins feature at the cost of 250x the selected bet.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x the selected bet",
+        "effects": "3 spins with at least 1 Expanding Matador Respins feature at the cost of 500x the selected bet.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": null,
+    "rtp_notes": "RTP is a runtime placeholder (__RTP__) in help XML; not stored as a numeric value.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro2/build-253765/assets/translation/wildtoro2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10063-wildtoro2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Wild Toro II\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Wild Toro II is a 5 reel, 5 rows slot with spinning reels, expanding reels and up to 502 connecting paylines. \n \n2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\n\n3. Each bet is __CPBB__ coins.\n\n4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be playe"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro2/build-253765/assets/translation/wildtoro2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10063-wildtoro2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "is a 5 reel, 5 rows slot with spinning reels, expanding reels and up to 502 connecting paylines. \n \n2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro2/build-253765/assets/translation/wildtoro2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10063-wildtoro2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "X-iter rules\nThe X-iter feature offers several different game modes.\n100% Win: \nGuarantees a winning game round with all dead spins removed at the cost of 5x the selected bet.\nSticky Wilds: \n1 spin with a guaranteed Expanding Matador Respins feature at the cost of 25x the selected bet. All wild symbols that appear during the respins remain Sticky.\nBonus: \nGuarantees the Toro Goes Berzerk feature at the cost of 100x the selected bet.\nBig Bonus:\n3 spins with at least 1 Expanding Matador Respins feature at the cost of 250x the selected bet. All wild symbols that appear during respins remain Sticky during an ongoing respin feature.The achieved level of expansion remains persistent between spins.\nSuper Bonus"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro2/build-253765/assets/translation/wildtoro2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10063-wildtoro2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Game description\n\nGame rules\n1. Wild Toro II is a 5 reel, 5 rows slot with spinning reels, expanding reels and up to 502 connecting paylines. \n \n2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\n\n3. Each bet is __CPBB__ coins.\n\n4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winnings are pr"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/wildtoro2/build-253765/assets/translation/wildtoro2-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10063-wildtoro2-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Wild Toro II\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Wild Toro II is a 5 reel, 5 rows slot with spinning reels, expanding reels and up to 502 connecting paylines. \n \n2. The minimum bet is __MINBADEFBMODE__, and the maximum bet is __MAXBADEFBMODE__.\n\n3. Each bet is __CPBB__ coins.\n\n4. All wins begin with the leftmost reel and pay left to right only on consecutive reels. Only the highest win per active payline is paid out.\n\n5. A game round starts on the selected bet level when the player hits the Spin button.\n\n6. The game can be played automatically by activating Auto Spin (if available in the applicable jurisdiction). Hold down the Spin button or use the Auto Spin button to set the number of game rounds to be played automatically.\n\n7. Winnings and winning combinations are paid out according to the Paytable.\n\n8. Winn"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/wild-toro-2/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Demo launcher gameid=10063; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "rtp_percent not numeric in help XML (placeholder __RTP__)",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-wild-toro-2.webp",
+  "thumbnail_attribution": "ELK Studios"
+}

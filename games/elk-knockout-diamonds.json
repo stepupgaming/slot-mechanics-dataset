@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:57:13Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Knockout Diamonds",
+    "slug": "elk-knockout-diamonds",
+    "provider_game_id": "10052",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10052&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-stage.contentmedia.eu/knockoutdiamonds/build-188325/assets/translation/knockoutdiamonds-gamerules-en_gb.xml"
+  },
+  "grid": {
+    "rows": 2,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 3 columns by 2 rows"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": null
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "tion with symbols on the payline trigger the Ringside Rumble mode with 3 locked respins. \n\n16. During the Ringside Rumble feature, reels 1 and 2 are locked into place and 3 respins are awarded on reel 3. \n\n17. 3 bonus symbols on the payline during Normal or Ringside Rumble mode trigger the Bonus mode with free spins. Knockout Spins wi"
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Knockout Diamonds: paid spin on 2x3. paylines. Bonus modes: Bonus. Round ends on win cap if reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet and hits Spin (or Auto Spin). Optional: activate an X-iter mode from base game only before the drop/spin.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop/spin",
+        "order": 2,
+        "what_happens": "Symbols land on 2x3. Game-specific setup features may fire (birds, Nitro/COOL reels, collectors, etc.).",
+        "ends_when": "All symbols at resting positions / reels stopped",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Evaluate wins: paylines",
+        "ends_when": "Current-drop wins collected (or none)",
+        "state_changes": "Win amounts staged"
+      },
+      {
+        "name": "End-of-drop features",
+        "order": 4,
+        "what_happens": "Resolve end-of-round features (bombs, mystery reveals, row swaps, boosters, etc.) if nothing else can happen; may resume avalanches.",
+        "ends_when": "No further features/wins",
+        "state_changes": "Possible new symbols / expansions"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 5,
+        "what_happens": "If bonus/super-bonus trigger conditions met, enter bonus mode after resolving same-drop features. Otherwise settle base-game wins subject to win cap.",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "paylines",
+    "notes": "it is not permitted to play in credits in the applicable jurisdiction, the game is played in currency only.\n\n6. The payline is paid from left to right. Only the highest win on the payline is paid out.\n7. A game round starts on the selected bet level when the player hits the Spin button.\n\n8."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "3 bonus symbols on the payline during Normal or Ringside Rumble mode trigger the Bonus mode with free spins.",
+        "spins_awarded": "3 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": ". Knockout Diamonds is played in 3 modes; Normal mode, Ringside Rumble mode and Bonus mode with free spins.\n\n12. Wild symbols substitute for any symbol except the bonus symbol. A payline of all wilds pays out according to the paytable.\n13. Multiplier Wild symbols appear on reel 3 and substitute for any symbol except the bonus symbol. The Multiplier Wilds contains either an x2 or x3 multiplier. The Multiplier Wild multiplies the win on the payline according to the value of the symbol. \n\n14. 2 bonus symbols on the payline pay out according to the paytable.\n\n15. Identical symbol sets on reels 1 a",
+        "end_condition": "the Bonus mode ends the player is awarded the win of the collected bonus symbols according to the paytable.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Enter bonus; award 3 free spins. ",
+            "ends_when": "First free drop/spin begins",
+            "state_changes": "free_count set; sticky/persistent flags enabled"
+          },
+          {
+            "name": "Free drop/spin loop",
+            "order": 2,
+            "what_happens": "Play free drops/spins with base mechanics plus bonus-mode persistence/retriggers as described in Game rules.",
+            "ends_when": "No free drops/spins remain or win cap reached",
+            "state_changes": "free_count decremented; possible retriggers"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay bonus-mode winnings at end of bonus (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "3 free spins"
+      }
+    ],
+    "notes": "1 bonus mode(s) extracted from official Game Description for Knockout Diamonds."
+  },
+  "features": [],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "X-iter features can only be activated in the base game."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in official help; X-iter covers paid feature entry when present."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Max win uses runtime placeholder (__TBB__) in help XML; numeric value not extracted.",
+    "rtp_percent": 96.0,
+    "rtp_notes": "Theoretical RTP 96.0% (base and X-iter when stated). Min bet €None, max bet €None.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "medium",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/knockoutdiamonds/build-188325/assets/translation/knockoutdiamonds-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10052-knockoutdiamonds-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Knockout Diamonds\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Knockout Diamonds is a 3 reel, 2 rows slot with one payline.\n\n2. The game offers several bet levels for each currency.\n\n3. Each bet is 1 credit and the bet amount can be set in the bet matrix.\n\n4. The number of available credits depends on the currently available balance and selected bet amount. Balance divided by selected bet level defines the number of available credits rounded down to full credits. \n\n5. If it is not permitted to play in credits in the applicable jurisdicti"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/knockoutdiamonds/build-188325/assets/translation/knockoutdiamonds-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10052-knockoutdiamonds-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "is a 3 reel, 2 rows slot with one payline.\n\n2. The game offers several bet levels for each currency."
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/knockoutdiamonds/build-188325/assets/translation/knockoutdiamonds-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10052-knockoutdiamonds-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "X-iter rules\n3 bonus symbols on the payline trigger the Knockout Spins. 3 free spins are awarded and any win or additional bonus symbol on the payline resets the free spins to 3. Bonus symbols are collected throughout the free spins and pay according to the Knockout Spins paytable. 10 bonus symbols guarantee the maximum win.\nThe Multiplier Wild multiplies the win on the payline by x2 or x3. Wild and Multiplier Wild symbols substitute for any symbol except the bonus symbol.\nIdentical symbol sets on reels 1 and 2 in combination with symbols on the payline trigger the Ringside Rumble. Reels 1 and 2 lock into place and 3 respins are awarded on reel 3.\n3 bonus symbols on the payline during Knockout Spins awa"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/knockoutdiamonds/build-188325/assets/translation/knockoutdiamonds-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10052-knockoutdiamonds-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Game description\n\nGame rules\n1. Knockout Diamonds is a 3 reel, 2 rows slot with one payline.\n\n2. The game offers several bet levels for each currency.\n\n3. Each bet is 1 credit and the bet amount can be set in the bet matrix.\n\n4. The number of available credits depends on the currently available balance and selected bet amount. Balance divided by selected bet level defines the number of available credits rounded down to full credits. \n\n5. If it is not permitted to play in credits in the applicable jurisdiction, the game is played in currency only.\n\n6. The payline is paid from left to right. Only the highest win on the payline is paid out.\n7. A game round starts on the selected bet level when the player hits the Spin button.\n\n8. The game can be played automatically by activating Auto Spin (if available in t"
+    },
+    {
+      "source_type": "official_demo_rules",
+      "url": "https://static-stage.contentmedia.eu/knockoutdiamonds/build-188325/assets/translation/knockoutdiamonds-gamerules-en_gb.xml",
+      "local_path": "sources/elk/gamerules/10052-knockoutdiamonds-gamerules-en_gb.xml",
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Key features\nName in English Knockout Diamonds\nProduct category Casino\nGame type Slot\nClient HTML5\n\nGame description\n\nGame rules\n1. Knockout Diamonds is a 3 reel, 2 rows slot with one payline.\n\n2. The game offers several bet levels for each currency.\n\n3. Each bet is 1 credit and the bet amount can be set in the bet matrix.\n\n4. The number of available credits depends on the currently available balance and selected bet amount. Balance divided by selected bet level defines the number of available credits rounded down to full credits. \n\n5. If it is not permitted to play in credits in the applicable jurisdiction, the game is played in currency only.\n\n6. The payline is paid from left to right. Only the highest win on the payline is paid out.\n7. A game round starts on the selected bet level when the player hits the Spin button.\n\n8. The game can be played automatically by activating Auto Spin (i"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/knockout-diamonds/",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:57:13Z",
+      "quote_or_excerpt": "Demo launcher gameid=10052; mechanics taken from official client gamerules XML / Game Description, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "feature_buy.options incomplete",
+    "max_win_multiplier not numeric in help XML (placeholder __TBB__ or image asset)",
+    "Exact paytable symbol values not in help text extract",
+    "release_year not stated in official help text"
+  ],
+  "thumbnail": "thumbs/elk-knockout-diamonds.webp",
+  "thumbnail_attribution": "ELK Studios"
+}
