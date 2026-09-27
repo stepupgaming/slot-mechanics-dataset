@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Cash Pandas",
+    "slug": "slotmill-cash-pandas",
+    "provider_game_id": "cash-pandas",
+    "release_year": 2023,
+    "demo_url": "https://cash-pandas.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/cash-pandas"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 7x7 Video Slot"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Official Paylines field: 5+ cluster pays"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Cash Pandas is an Avalanche cluster game with a 7×7 symbol grid set in a New-York back-street alley where the raccoons or “Cash Pandas” are going nuts in their search for riches."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill cluster-pays / avalanche/cascade: spin → evaluate wins → avalanche while wins continue.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+        "order": 2,
+        "ends_when": "All current winning clusters identified",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Cash Pandas is an Avalanche cluster game with a 7×7 symbol grid set in a New-York back-street alley where the raccoons or “Cash Pandas” are going nuts in their search for riches.",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      }
+    ],
+    "win_evaluation": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Random Wilds",
+        "behavior": "The base game features both Wilds, Giant Symbols and power-ups, whilst the bonus game adds Giant Wilds and an un-capped win multiplier that spices things up considerately.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Symbol conversion",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      },
+      {
+        "name": "Symbol removal",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Giant Symbols",
+      "trigger": null,
+      "effects": "The base game features both Wilds, Giant Symbols and power-ups, whilst the bonus game adds Giant Wilds and an un-capped win multiplier that spices things up considerately.",
+      "params": {}
+    },
+    {
+      "name": "Power ups",
+      "trigger": null,
+      "effects": "Power ups listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Giant Raccoon Wild Bonus Game",
+      "trigger": null,
+      "effects": "The base game features both Wilds, Giant Symbols and power-ups, whilst the bonus game adds Giant Wilds and an un-capped win multiplier that spices things up considerately.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Cash Pandas is an Avalanche cluster game with a 7×7 symbol grid set in a New-York back-street alley where the raccoons or “Cash Pandas” are going nuts in their search for riches.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10000 x",
+    "rtp_percent": 96.16,
+    "rtp_notes": "96,16%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/cash-pandas",
+      "local_path": "sources/slotmill/cash-pandas.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 7x7 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): 96,16%\nMax win; x Bet: 10000 x\nBonus Features: Giant Symbols, Power ups, Giant Raccoon Wild Bonus Game\nSpecial Symbols: Random Wilds, Symbol conversion, Symbol removal\nVolatility (variance): High\nGame URL: \"https://cash-pandas.slotmill.com\"\nCash Pandas is an Avalanche cluster game with a 7×7 symbol grid set in a New-York back-street alley where the raccoons or “Cash Pandas” are going nuts in their search for riches. The base game features both Wilds, Giant Symbols and power-ups, whilst the bonus game adds Giant Wilds and an un-capped win multiplier that spices things up considerately. RTP of the game is 96,16% and maximum win is 10,000 times your bet.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement-enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is an enhanced auto-play with a play-through of two game rounds per second, and Fast Track offers "
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_cash-pandas.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Raccoon Rampage: Cash Pandas Unleashed\n\nCash Pandas is an Avalanche cluster game with a 7×7 symbol grid set in a New-York back-street alley where\nthe raccoons or “Cash Pandas” are going nuts in their search for riches. The base game features both Wilds,\nGiant Symbols and power-ups, whilst the bonus game adds Giant Wilds and an un-capped win multiplier\nthat spices things up considerately. RTP of the game is 96,16% and maximum win is 10,000 times your bet.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have\ntwo integrated excitement enhancing features; “Burst Mode” and “Fast Track”. Burst Mode is an enhanced\nauto-play with a play-through of two game rounds per second, and Fast Track offers players the option to\nget directly into the bonus features o"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: High"
+  ],
+  "thumbnail": "thumbs/slotmill-cash-pandas.webp",
+  "thumbnail_attribution": "Slotmill"
+}

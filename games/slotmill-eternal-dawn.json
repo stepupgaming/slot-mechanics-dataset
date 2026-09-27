@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Eternal Dawn",
+    "slug": "slotmill-eternal-dawn",
+    "provider_game_id": "eternal-dawn",
+    "release_year": 2025,
+    "demo_url": "https://eternal-dawn.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/eternal-dawn"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x4 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 30,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 30 Lines"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 30 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 30 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Multiplier Wild Symbol",
+        "behavior": "Trigger the Free Spins Bonus by landing 3 or more Bonus Symbols to unlock 5 free spins, where a powerful Wild shifts to a new position on every spin.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Trigger the Free Spins Bonus by landing 3 or more Bonus Symbols to unlock 5 free spins, where a powerful Wild shifts to a new position on every spin.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": 5,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Trigger the Free Spins Bonus by landing 3 or more Bonus Symbols to unlock 5 free spins, where a powerful Wild shifts to a new position on every spin.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Medium/High"
+  },
+  "features": [
+    {
+      "name": "Free Spins Bonus",
+      "trigger": null,
+      "effects": "Trigger the Free Spins Bonus by landing 3 or more Bonus Symbols to unlock 5 free spins, where a powerful Wild shifts to a new position on every spin.",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins Bonus",
+      "trigger": null,
+      "effects": "Trigger the Free Spins Bonus by landing 3 or more Bonus Symbols to unlock 5 free spins, where a powerful Wild shifts to a new position on every spin.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Official Max win; x Bet: 6000",
+    "rtp_percent": 96.08,
+    "rtp_notes": "Variant 1: 96.08 Variant 2: 94.09",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/eternal-dawn",
+      "local_path": "sources/slotmill/eternal-dawn.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x4 Video Slot\nPaylines: 30 Lines\nRTP (%): Variant 1: 96.08 Variant 2: 94.09\nMax win; x Bet: 6000\nBonus Features: Free Spins Bonus, Super Free Spins Bonus\nSpecial Symbols: Bonus, Multiplier Wild Symbol\nVolatility (variance): Medium/High\nGame URL: \"https://eternal-dawn.slotmill.com\"\nBask in Apollo’s golden light and chase legendary wins in this epic 5×4 video slot set in the grandeur of ancient Greece. With 30 Bet Lines and a maximum win of 6,000x your bet, every spin brings you closer to divine riches. Trigger the Free Spins Bonus by landing 3 or more Bonus Symbols to unlock 5 free spins, where a powerful Wild shifts to a new position on every spin. The more Wilds you collect, the higher your multiplier climbs at the end of each stage.\n\nEnter the Super Free Spins and watch the multiplier meter double, reaching up to 20x per Wild. With each stage, new Wilds appear, amplifying your chances of massive wins. Will Apollo’s favor shine upon you? Spin now and claim your celes"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_eternal-dawn.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Eternal Dawn\n\nBask in Apollo’s golden light and chase legendary wins in this epic 5×4 video slot set in the grandeur of ancient\nGreece. With 30 Bet Lines and a maximum win of 6,000x your bet, every spin brings you closer to divine riches.\nTrigger the Free Spins Bonus by landing 3 or more Bonus Symbols to unlock 5 free spins, where a powerful Wild\nshifts to a new position on every spin. The more Wilds you collect, the higher your multiplier climbs at the end of\neach stage.\n\nEnter the Super Free Spins and watch the multiplier meter double, reaching up to 20x per Wild. With each stage,\nnew Wilds appear, amplifying your chances of massive wins. Will Apollo’s favor shine upon you? Spin now and\nclaim your celestial fortune in Eternal Dawn!\n\nGAME SPECIFICATIONS\n Game Name / Release Date          "
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Medium/High"
+  ],
+  "thumbnail": "thumbs/slotmill-eternal-dawn.webp",
+  "thumbnail_attribution": "Slotmill"
+}

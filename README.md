@@ -78,7 +78,9 @@ Live counts are always in `dataset.json` → `by_provider` / `by_confidence` / `
 | **Pragmatic Play** | **250** (~156 high / ~94 medium) | Expanded from ~42. High = text-extractable official rules PDFs (yesplay.bet CDN + kertn GameRules mirrors). Medium = SlotCatalog when PDF missing or image-only. |
 | **Hacksaw Gaming** | ~203 | Official `en-us-gameinfo.html` dumps (mostly high). |
 | **Backseat Gaming** | **35** (all high) | Independent studio on Hacksaw OpenRGS. Same `en-us-gameinfo.html` CDN path; `identity.provider` = **Backseat Gaming**, slug prefix `backseat-`. |
-| **Nolimit City** | 7 | SlotCatalog seed batch (medium); official sheets to be expanded. |
+| **Elk Studios** | 1 high gold (Ryze from official Game Description PDF) | More titles only when Game Description PDFs parse cleanly. |
+| **Slotmill** | 1 high gold (Ragnarok from product sheet + official page) | Full catalog deferred until FS trigger/costs are rules-backed. |
+| **Nolimit City** | 7 (1 upgraded to high gold: Book of Shadows; others still medium stubs pending official sheets) | Official game sheets / pages preferred; SlotCatalog stubs not expanded this turn. |
 
 Priority while collecting: official rules/gameinfo first, SlotCatalog only to fill gaps without inventing mechanics.
 
@@ -97,7 +99,7 @@ Each `games/*.json` includes:
 - `numeric_limits` — max win / RTP notes
 - `confidence`, `evidence`, `unknowns`
 
-Provider enum includes `Pragmatic Play`, `Hacksaw Gaming`, `Backseat Gaming`, `Nolimit City`, `Other`.
+Provider enum includes `Pragmatic Play`, `Hacksaw Gaming`, `Backseat Gaming`, `Nolimit City`, `Elk Studios`, `Slotmill`, `Other`. Schema **1.1.0** (additive) adds optional `base_game_loop` — see `schema/SCHEMA_1_1.md`.
 
 ## Regenerating
 
@@ -126,3 +128,7 @@ Mechanics text is transcribed/summarized from publicly available game info and r
 - A few very new Backseat titles on BigWinBoard had no Hacksaw launcher/`gameid` yet (or used a non-Hacksaw demo host) → omitted until official `en-us-gameinfo.html` is available.
 - Nolimit official in-game help HTML is not yet bulk-mirrored; current Nolimit rows are medium/SlotCatalog.
 - Interactive demo Info pages sometimes need a real browser session (age gates / JS shells).
+
+
+## Quality bar
+Records should be **rebuildable** from structured fields (ordered loop, concrete bonus triggers/awards, buy/ante costs). Prefer fewer official-source gold rows over SlotCatalog tag dumps. Viewer dossier must never show raw JSON blobs for bonuses/features.

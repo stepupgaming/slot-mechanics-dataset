@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Drunken Sailors",
+    "slug": "slotmill-drunken-sailors",
+    "provider_game_id": "drunken-sailors",
+    "release_year": 2022,
+    "demo_url": "https://drunken-sailors.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/drunken-sailors"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x4 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 40,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 40 betlines"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 40 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Mystery Symbol",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": 12,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Up to 12 Free Spins can be won during which Mystery Symbols are Sticky.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Medium - High"
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "Up to 12 Free Spins can be won during which Mystery Symbols are Sticky.",
+      "params": {}
+    },
+    {
+      "name": "Mystery Respin",
+      "trigger": null,
+      "effects": "Mystery Respin listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins",
+      "trigger": null,
+      "effects": "Up to 12 Free Spins can be won during which Mystery Symbols are Sticky.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000.0,
+    "max_win_notes": "Official Max win; x Bet: 5 000 x",
+    "rtp_percent": 96.14,
+    "rtp_notes": "Variant 1: 96,14% | Variant 2: 94,30%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "low",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/drunken-sailors",
+      "local_path": "sources/slotmill/drunken-sailors.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x4 Video Slot\nPaylines: 40 betlines\nRTP (%): Variant 1: 96,14% | Variant 2: 94,30%\nMax win; x Bet: 5 000 x\nBonus Features: Free Spins, Mystery Respin, Super Free Spins\nSpecial Symbols: Mystery Symbol\nVolatility (variance): Medium - High\nGame URL: \"https://drunken-sailors.slotmill.com\"\nDrunken Sailors is a 40 betline video slot with a 4×5 symbol grid. Set in a comic sailor style theme the game offers players a chance to win up to 5000x bet. The base game holds a random feature triggered by landing a mystery symbol on reel three and which allocates a number of Mystery Symbols on the grid during the respin.\n\nUp to 12 Free Spins can be won during which Mystery Symbols are Sticky. There is also a Super Free Spin which is triggered by landing the Mystery symbol on reel 3 together with 3 bonus symbols. During the first spin of the Super Free spins, 4-19 Sticky Mystery symbols are added to the reels.\n\nIn response to changing player preferences when it comes to gameplay, the Slotm"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_drunken-sailors.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Set sail with Drunken Sailors!\n\nDrunken Sailors is a 40 betline video slot with a 4×5 symbol grid. Set in a comic sailor style theme the game offers players a\nchance to win up to 5000x bet. The base game holds a random feature triggered by landing a mystery symbol on reel three\nand which allocates a number of Mystery Symbols on the grid during the respin.\n\nUp to 12 Free Spins can be won during which Mystery Symbols are Sticky. There is also a Super Free Spin which is triggered\nby landing the Mystery symbol on reel 3 together with 3 bonus symbols. During the first spin of the Super Free spins, 4-19\nSticky Mystery symbols are added to the reels.\n\nIn response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement\nenhancing features; “Burst "
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Medium - High"
+  ],
+  "thumbnail": "thumbs/slotmill-drunken-sailors.webp",
+  "thumbnail_attribution": "Slotmill"
+}

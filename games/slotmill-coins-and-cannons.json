@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Coins and Cannons",
+    "slug": "slotmill-coins-and-cannons",
+    "provider_game_id": "coins-and-cannons",
+    "release_year": 2024,
+    "demo_url": "https://coins-and-cannons.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/coins-and-cannons"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 6x6 Video Slot"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Official Paylines field: 5+ cluster pays"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Prepare to set sail on an epic adventure in Coins & Cannons , a thrilling 6×6 Avalanche video slot where the spoils of victory can reach up to 15,000 times your bet!"
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill cluster-pays / avalanche/cascade: spin → evaluate wins → avalanche while wins continue.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+        "order": 2,
+        "ends_when": "All current winning clusters identified",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Prepare to set sail on an epic adventure in Coins & Cannons , a thrilling 6×6 Avalanche video slot where the spoils of victory can reach up to 15,000 times your bet!",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      }
+    ],
+    "win_evaluation": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Free Spins Bonus",
+        "behavior": "Set your sights on the Free Spins Bonus by landing 3 Bonus symbols, where 10 free spins await, and Coin symbols accumulate for massive potential payouts.",
+        "params": {}
+      },
+      {
+        "name": "Super Free Spins Bonus",
+        "behavior": "Set your sights on the Free Spins Bonus by landing 3 Bonus symbols, where 10 free spins await, and Coin symbols accumulate for massive potential payouts.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": 10,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Set your sights on the Free Spins Bonus by landing 3 Bonus symbols, where 10 free spins await, and Coin symbols accumulate for massive potential payouts.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Yes",
+      "trigger": null,
+      "effects": "Yes listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Prepare to set sail on an epic adventure in Coins & Cannons , a thrilling 6×6 Avalanche video slot where the spoils of victory can reach up to 15,000 times your bet!",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .’  Burst Mode functions as an enhanced auto-play, completing two game rounds per second.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .’  Burst Mode functions as an enhanced auto-play, completing two game rounds per second.",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .’  Burst Mode functions as an enhanced auto-play, completing two game rounds per second.",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000.0,
+    "max_win_notes": "Official Max win; x Bet: 15000x",
+    "rtp_percent": 96.08,
+    "rtp_notes": "Variant 1: 96,08% | Variant 2: 94,04%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/coins-and-cannons",
+      "local_path": "sources/slotmill/coins-and-cannons.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): Variant 1: 96,08% | Variant 2: 94,04%\nMax win; x Bet: 15000x\nBonus Features: Yes\nSpecial Symbols: Free Spins Bonus, Super Free Spins Bonus, Wild\nVolatility (variance): High\nGame URL: \"https://coins-and-cannons.slotmill.com\"\nPrepare to set sail on an epic adventure in Coins & Cannons , a thrilling 6×6 Avalanche video slot where the spoils of victory can reach up to 15,000 times your bet! Immerse yourself in a world of explosive excitement as clusters of coins and symbols cascade across the grid, delivering exhilarating wins and non-stop action.\n\nThe true treasure of Coins & Cannons lies in its powerful bonus features. Harness the unique Coin Cluster™ feature to form clusters of coin symbols, unleashing multipliers that can send your winnings skyrocketing. But the real game-changer is the Multiplier Cannon—when this symbol lands, it locks in place and blasts your total win with multipliers of up to 100x!\n\nSet you"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_coins-and-cannons.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Coins and Cannons\n\nPrepare to set sail on an epic adventure in Coins & Cannons, a thrilling 6×6 Avalanche video slot where the\nspoils of victory can reach up to 15,000 times your bet! Immerse yourself in a world of explosive excitement\nas clusters of coins and symbols cascade across the grid, delivering exhilarating wins and non-stop action.\n\nThe true treasure of Coins & Cannons lies in its powerful bonus features. Harness the unique Coin Cluster™\nfeature to form clusters of coin symbols, unleashing multipliers that can send your winnings skyrocketing.\nBut the real game-changer is the Multiplier Cannon—when this symbol lands, it locks in place and blasts\nyour total win with multipliers of up to 100x!\n\nSet your sights on the Free Spins Bonus by landing 3 Bonus symbols, where 10 free spins a"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: High"
+  ],
+  "thumbnail": "thumbs/slotmill-coins-and-cannons.webp",
+  "thumbnail_attribution": "Slotmill"
+}

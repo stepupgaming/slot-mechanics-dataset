@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Emberfall 40k",
+    "slug": "slotmill-emberfall40k",
+    "provider_game_id": "emberfall-40k",
+    "release_year": 2025,
+    "demo_url": "https://emberfall-40k.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/emberfall40k"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 6x6 Video Slot"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 8,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Official Paylines field: 8+ Scatter Pays"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill payline / progressive win multiplier: spin → evaluate wins → multiplier grows with wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated along 8 paylines (left-to-right) per official Paylines field.",
+        "order": 2,
+        "ends_when": "All paying lines scored",
+        "state_changes": null
+      },
+      {
+        "name": "progressive_multiplier",
+        "what_happens": "Set on a molten 6×6 grid, Emberfall 40k brings back the explosive action you love, where every win powers the Progressive Win Multiplier, doubling with each consecutive win to unlock incredible reward potential.",
+        "order": 3,
+        "ends_when": null,
+        "state_changes": "Win multiplier grows across consecutive wins in the cascade chain"
+      }
+    ],
+    "win_evaluation": "Wins evaluated along 8 paylines (left-to-right) per official Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "The heat intensifies in Free Spins, where the multiplier does not reset between spins, building the potential for truly legendary rewards.",
+        "params": {}
+      },
+      {
+        "name": "Super Bonus",
+        "behavior": "The heat intensifies in Free Spins, where the multiplier does not reset between spins, building the potential for truly legendary rewards.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Progressive Win Multiplier",
+        "behavior": "Set on a molten 6×6 grid, Emberfall 40k brings back the explosive action you love, where every win powers the Progressive Win Multiplier, doubling with each consecutive win to unlock incredible reward potential.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Giant Symbols",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "The heat intensifies in Free Spins, where the multiplier does not reset between spins, building the potential for truly legendary rewards.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Free Spins Bonus",
+      "trigger": null,
+      "effects": "The heat intensifies in Free Spins, where the multiplier does not reset between spins, building the potential for truly legendary rewards.",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins Bonus",
+      "trigger": null,
+      "effects": "The heat intensifies in Free Spins, where the multiplier does not reset between spins, building the potential for truly legendary rewards.",
+      "params": {}
+    },
+    {
+      "name": "Super Mode Super Free Spins Bonus",
+      "trigger": null,
+      "effects": "The heat intensifies in Free Spins, where the multiplier does not reset between spins, building the potential for truly legendary rewards.",
+      "params": {}
+    },
+    {
+      "name": "Progressive Win Multiplier",
+      "trigger": "Each consecutive win in cascade",
+      "effects": "Set on a molten 6×6 grid, Emberfall 40k brings back the explosive action you love, where every win powers the Progressive Win Multiplier, doubling with each consecutive win to unlock incredible reward potential.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet' .",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet' .",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet' .",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": "Official Max win; x Bet: 40000",
+    "rtp_percent": 96.09,
+    "rtp_notes": "Variant 1: 96,09% | Variant 2: 94,26%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/emberfall40k",
+      "local_path": "sources/slotmill/emberfall40k.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 8+ Scatter Pays\nRTP (%): Variant 1: 96,09% | Variant 2: 94,26%\nMax win; x Bet: 40000\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Super Mode Super Free Spins Bonus\nSpecial Symbols: Bonus, Super Bonus, Giant Symbols\nVolatility (variance): Very High\nGame URL: \"https://emberfall-40k.slotmill.com\"\nThe fiery Scatter Pays sensation returns, now blazing hotter than ever with a scorching 40,000x max win!\n\nSet on a molten 6×6 grid, Emberfall 40k brings back the explosive action you love, where every win powers the Progressive Win Multiplier, doubling with each consecutive win to unlock incredible reward potential. Giant Symbols up to 4×4 crash onto the reels, igniting massive payouts and thrilling chain reactions with every spin.\n\nThe heat intensifies in Free Spins, where the multiplier does not reset between spins, building the potential for truly legendary rewards. Then, step into the Super Bonus, where a Giant Symbol lands on every spin, supercharging the grid for fiery wins.\n\nBut the i"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_emberfall40k.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Emberfall 40k\n\nThe fiery Scatter Pays sensation returns, now blazing hotter than ever with a scorching 40,000x max win!\n\nSet on a molten 6×6 grid, Emberfall 40k brings back the explosive action you love, where every win powers the\nProgressive Win Multiplier, doubling with each consecutive win to unlock incredible reward potential. Giant\nSymbols up to 4×4 crash onto the reels, igniting massive payouts and thrilling chain reactions with every spin.\n\nThe heat intensifies in Free Spins, where the multiplier does not reset between spins, building the potential for\ntruly legendary rewards. Then, step into the Super Bonus, where a Giant Symbol lands on every spin, supercharging\nthe grid for fiery wins.\n\nBut the inferno reaches its peak in the Super Mode Super Bonus, where 3×3, 4×4, or multiple 2×"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Very High"
+  ],
+  "thumbnail": "thumbs/slotmill-emberfall40k.webp",
+  "thumbnail_attribution": "Slotmill"
+}

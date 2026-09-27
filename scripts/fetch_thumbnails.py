@@ -41,6 +41,8 @@ PROVIDER_SITEMAP = {
     "Hacksaw Gaming": ["hacksaw-gaming.xml", "backseat-gaming.xml"],
     "Backseat Gaming": ["backseat-gaming.xml", "hacksaw-gaming.xml"],
     "Nolimit City": ["nolimit-city.xml"],
+    "Elk Studios": ["elk-studios.xml"],
+    "Slotmill": ["slotmill.xml"],
 }
 
 OG_RE = re.compile(

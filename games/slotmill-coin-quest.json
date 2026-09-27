@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Coin Quest",
+    "slug": "slotmill-coin-quest",
+    "provider_game_id": "coin-quest",
+    "release_year": 2022,
+    "demo_url": "https://coin-quest.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/coin-quest"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x5 Video Slot"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Official Paylines field: 5+ cluster pays"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Coin Quest is an avalanche, cluster-based video slot with a 5×5 symbol grid."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill cluster-pays / avalanche/cascade / progressive win multiplier: spin → evaluate wins → avalanche while wins continue → multiplier grows with wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+        "order": 2,
+        "ends_when": "All current winning clusters identified",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Coin Quest is an avalanche, cluster-based video slot with a 5×5 symbol grid.",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      },
+      {
+        "name": "progressive_multiplier",
+        "what_happens": "In addition, extra Free Spins can be awarded, and each bonus game holds different features; accumulating coins, a persistent collect meter, and a progressive win multiplier.",
+        "order": 4,
+        "ends_when": null,
+        "state_changes": "Win multiplier grows across consecutive wins in the cascade chain"
+      }
+    ],
+    "win_evaluation": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "Coin Quest Bonus",
+        "behavior": "Spins. The bonus games can be both re-triggered and upgraded.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Progressive Win Multiplier",
+        "behavior": "In addition, extra Free Spins can be awarded, and each bonus game holds different features; accumulating coins, a persistent collect meter, and a progressive win multiplier.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "The game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free Spins. Spins. The bonus games can be both re-triggered and upgraded.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Triggered via Bonus symbol(s) (listed under Special Symbols); exact scatter count not stated on marketing page.",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): High"
+  },
+  "features": [
+    {
+      "name": "Coin Quest Free Spins",
+      "trigger": "Spins. The bonus games can be both re-triggered and upgraded.",
+      "effects": "The game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free Spins.",
+      "params": {}
+    },
+    {
+      "name": "Free Spins",
+      "trigger": "Spins. The bonus games can be both re-triggered and upgraded.",
+      "effects": "The game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free Spins.",
+      "params": {}
+    },
+    {
+      "name": "and Super Free Spins",
+      "trigger": "Spins. The bonus games can be both re-triggered and upgraded.",
+      "effects": "The game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free Spins.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Coin Quest is an avalanche, cluster-based video slot with a 5×5 symbol grid.",
+      "params": {}
+    },
+    {
+      "name": "Progressive Win Multiplier",
+      "trigger": "Each consecutive win in cascade",
+      "effects": "In addition, extra Free Spins can be awarded, and each bonus game holds different features; accumulating coins, a persistent collect meter, and a progressive win multiplier.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to changing player preferences when it comes to gameplay, the Slotmill games have two integrated excitement enhancing features; “Burst Mode” and “Fast Track”.",
+      "params": {},
+      "when": "before spin / bonus access"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10 000 x",
+    "rtp_percent": 96.12,
+    "rtp_notes": "Variant 1: 96,12% | Variant 2: 94,36%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/coin-quest",
+      "local_path": "sources/slotmill/coin-quest.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x5 Video Slot\nPaylines: 5+ cluster pays\nRTP (%): Variant 1: 96,12% | Variant 2: 94,36%\nMax win; x Bet: 10 000 x\nBonus Features: Coin Quest Free Spins, Free Spins, and Super Free Spins\nSpecial Symbols: Coin Quest Bonus\nVolatility (variance): High\nGame URL: \"https://coin-quest.slotmill.com\"\nCoin Quest is an avalanche, cluster-based video slot with a 5×5 symbol grid. The game is played in an ancient Aztec temple setting where treasure seekers are offered a chance to win up to 10,000 times their bet! A collect meter awards a random number of coin & wild symbols. Normal cluster wins generate a wild in a random location, and cluster wins with coin symbols generate a new coin with the aggregate multiplier value of cluster coins.\n\nThe game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free Spins. The bonus games can be both re-triggered and upgraded. In addition, extra Free Spins can be awarded, and each bonus game holds d"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_coin-quest.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "A cluster-based game, Coin Quest!\n\nCoin Quest is an avalanche, cluster-based video slot with a 5x5 symbol grid. The game is played in an ancient Aztec temple\nsetting where treasure seekers are offered a chance to win up to 10,000 times their bet! A collect meter awards a random\nnumber of coin & wild symbols. Normal cluster wins generate a wild in a random location, and cluster wins with coin symbols\ngenerate a new coin with the aggregate multiplier value of cluster coins.\n\nThe game holds three bonus games; Coin Quest Free Spins, Free Spins, and Super Free Spins, awarding 5 respectively 8 Free\nSpins. The bonus games can be both re-triggered and upgraded. In addition, extra Free Spins can be awarded, and each bonus\ngame holds different features; accumulating coins, a persistent collect meter"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: High"
+  ],
+  "thumbnail": "thumbs/slotmill-coin-quest.webp",
+  "thumbnail_attribution": "Slotmill"
+}

@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Carnival Joker",
+    "slug": "slotmill-carnival-joker",
+    "provider_game_id": "carnival-joker",
+    "release_year": 2026,
+    "demo_url": "https://carnival-joker.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/carnival-joker"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x4 -> 7 Video Slot"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Official Paylines field: Betways 2000 -> 5488"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill video slot: spin → evaluate wins.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Wins evaluated as ways-to-win per official Betways/Paylines field.",
+        "order": 2,
+        "ends_when": "All ways scored",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins evaluated as ways-to-win per official Betways/Paylines field.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Unleash the excitement of the Free Spins Bonus, where landing 3 or more Bonus symbols unlocks a world of endless possibilities.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Medium-High"
+  },
+  "features": [
+    {
+      "name": "Free Spins Bonus",
+      "trigger": null,
+      "effects": "Unleash the excitement of the Free Spins Bonus, where landing 3 or more Bonus symbols unlocks a world of endless possibilities.",
+      "params": {}
+    },
+    {
+      "name": "Fortune Frenzy Bonus",
+      "trigger": null,
+      "effects": "Enter the Fortune Frenzy Bonus by collecting 6 Coin symbols and experience the ultimate prize-filled spectacle.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Carnival Joker incorporate two integrated excitement-enhancing features: ‘ Burst Mode ’, and ‘ Xtra-Bet .’  Burst Mode functions as an enhanced auto-play, completing two game rounds per second while Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Carnival Joker incorporate two integrated excitement-enhancing features: ‘ Burst Mode ’, and ‘ Xtra-Bet .’  Burst Mode functions as an enhanced auto-play, completing two game rounds per second while Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5533.0,
+    "max_win_notes": "Official Max win; x Bet: Variant 1: 5533x Variant 2: 5402x",
+    "rtp_percent": 96.08,
+    "rtp_notes": "Variant 1: 96,08% | Variant 2: 94,11%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "low",
+    "base_game_loop": "high",
+    "symbols": "low",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/carnival-joker",
+      "local_path": "sources/slotmill/carnival-joker.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x4 -> 7 Video Slot\nBetways: Betways 2000 -> 5488\nRTP (%): Variant 1: 96,08% | Variant 2: 94,11%\nMax win; x Bet: Variant 1: 5533x Variant 2: 5402x\nBonus Features: Free Spins Bonus, Fortune Frenzy Bonus\nVolatility (variance): Medium-High\nGame URL: \"https://carnival-joker.slotmill.com\"\nStep right into the dazzling world of Carnival Joker! Set against a vibrant carnival backdrop, this 4-5-5-5-4 video slot with up to 5488 Bet Ways delivers a spectacular show packed with thrilling features and fantastic opportunities for massive wins.\n\nUnleash the excitement of the Free Spins Bonus, where landing 3 or more Bonus symbols unlocks a world of endless possibilities. Wild symbols spring into action with random multipliers of x2 or x3, giving your winnings an extra boost. The show gets even bigger as the “UP” symbol can expand the reels, adding extra rows, increasing Bet Ways and boosting your win potential.\n\nBut the carnival excitement doesn’t stop there. Enter the Fortune Frenzy B"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_carnival-joker.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Carnival Joker\n\nStep right into the dazzling world of Carnival Joker! Set against a vibrant carnival backdrop, this 4-5-5-5-4 video slot\nwith up to 5488 Bet Ways delivers a spectacular show packed with thrilling features and fantastic opportunities for\nmassive wins.\n\nUnleash the excitement of the Free Spins Bonus, where landing 3 or more Bonus symbols unlocks a world of\nendless possibilities. Wild symbols spring into action with random multipliers of x2 or x3, giving your winnings an\nextra boost. The show gets even bigger as the “UP” symbol can expand the reels, adding extra rows, increasing Bet\nWays and boosting your win potential.\n\nBut the carnival excitement doesn’t stop there. Enter the Fortune Frenzy Bonus by collecting 6 Coin symbols and\nexperience the ultimate prize-filled spectacle"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "volatility from official specs: Medium-High"
+  ],
+  "thumbnail": "thumbs/slotmill-carnival-joker.webp",
+  "thumbnail_attribution": "Slotmill"
+}

@@ -1,23 +1,28 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T16:09:03Z",
-  "game_count": 495,
-  "thumbnail_count": 495,
+  "updated_at": "2026-09-27T18:31:37Z",
+  "game_count": 497,
+  "thumbnail_count": 497,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
     "Backseat Gaming": 35,
-    "Nolimit City": 7
+    "Nolimit City": 7,
+    "Elk Studios": 1,
+    "Slotmill": 1
   },
   "by_confidence": {
-    "high": 365,
+    "high": 368,
     "low": 28,
-    "medium": 102
+    "medium": 101
   },
   "by_provider_confidence": {
     "Backseat Gaming": {
       "high": 35
+    },
+    "Elk Studios": {
+      "high": 1
     },
     "Hacksaw Gaming": {
       "low": 28,
@@ -25,11 +30,15 @@
       "medium": 1
     },
     "Nolimit City": {
-      "medium": 7
+      "medium": 6,
+      "high": 1
     },
     "Pragmatic Play": {
       "high": 156,
       "medium": 94
+    },
+    "Slotmill": {
+      "high": 1
     }
   },
   "games": [
@@ -487,6 +496,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/backseat-the-cursed-king.webp"
+    },
+    {
+      "slug": "elk-ryze",
+      "title": "Ryze",
+      "provider": "Elk Studios",
+      "confidence_overall": "high",
+      "path": "games/elk-ryze.json",
+      "win_system_type": "clusters",
+      "grid": "6×5",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/elk-ryze.webp"
     },
     {
       "slug": "hacksaw-2-wild-2-die",
@@ -3144,13 +3166,13 @@
       "slug": "nolimit-book-of-shadows",
       "title": "Book of Shadows",
       "provider": "Nolimit City",
-      "confidence_overall": "medium",
+      "confidence_overall": "high",
       "path": "games/nolimit-book-of-shadows.json",
       "win_system_type": "paylines",
-      "grid": "5×5",
-      "has_tumble": null,
+      "grid": "3×5",
+      "has_tumble": false,
       "has_buy": true,
-      "has_ante": false,
+      "has_ante": true,
       "thumbnail": "thumbs/nolimit-book-of-shadows.webp"
     },
     {
@@ -6467,6 +6489,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/pragmatic-zombie-carnival.webp"
+    },
+    {
+      "slug": "slotmill-ragnarok",
+      "title": "Ragnarok",
+      "provider": "Slotmill",
+      "confidence_overall": "high",
+      "path": "games/slotmill-ragnarok.json",
+      "win_system_type": "clusters",
+      "grid": "5×5",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/slotmill-ragnarok.webp"
     }
   ]
 }

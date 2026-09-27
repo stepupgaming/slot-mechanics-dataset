@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Demon's Gate",
+    "slug": "slotmill-demons-gate",
+    "provider_game_id": "demons-gate",
+    "release_year": 2026,
+    "demo_url": "https://demons-gate.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/demons-gate"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 5x5 Cluster Video Slot"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Official Paylines field: 5+ Cluster Pays"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Described as avalanche/cluster cascade in official game page copy."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill cluster-pays / avalanche/cascade: spin → evaluate wins → avalanche while wins continue.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+        "order": 2,
+        "ends_when": "All current winning clusters identified",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Described as avalanche/cluster cascade in official game page copy.",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      }
+    ],
+    "win_evaluation": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Multiplier Wild",
+        "behavior": "A 5x5 Cluster Pays slot built around a Roaming Multiplier Wild that grows with every win and can reach x100, with a max payout of 10,000x your bet waiting on the other side.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Free Spins send you deeper into the gate across five stages, each one unlocked by collecting Bonus Symbols and each one arming you with a more powerful Wild.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Freespins",
+      "trigger": null,
+      "effects": "Freespins listed under Bonus Features on official Slotmill game page.",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins",
+      "trigger": null,
+      "effects": "Free Spins send you deeper into the gate across five stages, each one unlocked by collecting Bonus Symbols and each one arming you with a more powerful Wild.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Described as avalanche/cluster cascade in official game page copy.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10000x",
+    "rtp_percent": 96.02,
+    "rtp_notes": "Variant 1: 96.02 | Variant 2: 94.09",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/demons-gate",
+      "local_path": "sources/slotmill/demons-gate.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 5x5 Cluster Video Slot\nPaylines: 5+ Cluster Pays\nRTP (%): Variant 1: 96.02 | Variant 2: 94.09\nMax win; x Bet: 10000x\nBonus Features: Freespins, Super Free Spins\nSpecial Symbols: Multiplier Wild\nVolatility (variance): Very High\nGame URL: \"https://demons-gate.slotmill.com\"\nDemon's Gate sends a lone demon slayer into the heart of darkness, the deeper you push, the bigger the rewards. A 5x5 Cluster Pays slot built around a Roaming Multiplier Wild that grows with every win and can reach x100, with a max payout of 10,000x your bet waiting on the other side.\n\nThe Multiplier Wild is your weapon of choice, land it in a cluster, it multiplies the win, steps up in value, then moves to a new position ready to strike again. Every hit builds on the last, and the momentum carries. Free Spins send you deeper into the gate across five stages, each one unlocked by collecting Bonus Symbols and each one arming you with a more powerful Wild. It anchors the reels throughout, rese"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_demons-gate.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Demon's Gate\n\nDemon's Gate sends a lone demon slayer into the heart of darkness, the deeper you push, the bigger the rewards.\nA 5x5 Cluster Pays slot built around a Roaming Multiplier Wild that grows with every win and can reach x100, with a\nmax payout of 10,000x your bet waiting on the other side.\n\nThe Multiplier Wild is your weapon of choice, land it in a cluster, it multiplies the win, steps up in value, then moves\nto a new position ready to strike again. Every hit builds on the last, and the momentum carries. Free Spins send\nyou deeper into the gate across five stages, each one unlocked by collecting Bonus Symbols and each one arming\nyou with a more powerful Wild. It anchors the reels throughout, resetting to the current stage multiplier, x3 to\nstart, x100 if you fight your way to Stag"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "exact free-spins award count / scatter trigger count not stated on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Very High"
+  ],
+  "thumbnail": "thumbs/slotmill-demons-gate.webp",
+  "thumbnail_attribution": "Slotmill"
+}

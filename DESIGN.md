@@ -36,3 +36,16 @@ Local files under `thumbs/<slug>.webp` (relative paths in `dataset.json` / per-g
 
 ## Anti-references
 Previous dark purple glass dashboard; previous light admin toolbar shell; text-only tiles without art.
+
+## Dossier UI rules (hard)
+The dossier is **human UI only**. Structured cards, definition lists, chips, and timelines — never a debugger view.
+Raw JSON is **download-only** (button / link). Do not dump objects inline in Mechanics, Symbols, Bonus, or Sources.
+
+- **Never** dump raw JSON (`JSON.stringify`) into Mechanics / Symbols / Bonus / Sources.
+- Bonus modes → cards with labeled fields (Trigger, Awarded, Retrigger, Sticky, Progressive, Effects) and optional numbered phases.
+- Named features → cards (Trigger / Effects / params as pills).
+- Buy options → cards (Cost / Effects / RTP note).
+- Win system, reel behavior, limits → key/value grids + prose — not `<pre>` of objects.
+- Long `effects` strings with newlines → split into bullets/paragraphs; hide empty/`null` fields.
+- Evidence stays as readable excerpt cards, not mono blobs of stringified objects.
+- `Raw JSON` may remain as an explicit download/link action only.

@@ -355,6 +355,49 @@ body {
 .sym .name {
   font-family: var(--display); font-weight: 650; letter-spacing: -0.02em; margin-bottom: 0.25rem;
 }
+
+.feat-card, .mode-card, .buy-card, .kv-card {
+  background: var(--raised-2); border: 1px solid var(--line);
+  border-radius: 14px; padding: 0.85rem 0.95rem; margin: 0 0 0.65rem;
+}
+.feat-card .name, .mode-card .name, .buy-card .name {
+  font-family: var(--display); font-weight: 650; letter-spacing: -0.02em;
+  font-size: 1.02rem; margin-bottom: 0.45rem;
+}
+.kv-grid {
+  display: grid; grid-template-columns: 7.5rem 1fr; gap: 0.35rem 0.75rem;
+  margin: 0 0 0.55rem;
+}
+.kv-grid .k {
+  font-size: 0.68rem; font-weight: 750; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--faint); padding-top: 0.15rem;
+}
+.kv-grid .v { font-size: 0.9rem; color: #d5dae6; line-height: 1.45; white-space: pre-wrap; }
+.phase-list { margin: 0; padding: 0; list-style: none; }
+.phase-list li {
+  position: relative; padding: 0.55rem 0 0.55rem 1.55rem;
+  border-top: 1px solid var(--line); font-size: 0.9rem; color: #d5dae6; line-height: 1.45;
+}
+.phase-list li:first-child { border-top: 0; }
+.phase-list li::before {
+  content: attr(data-n); position: absolute; left: 0; top: 0.55rem;
+  width: 1.15rem; height: 1.15rem; border-radius: 999px;
+  background: rgba(212,162,76,0.15); color: var(--accent);
+  font: 750 0.65rem/1.15rem var(--sans); text-align: center;
+}
+.pill-row { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.35rem 0 0.15rem; }
+.mini-pill {
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 0.18rem 0.5rem; font-size: 0.72rem; color: var(--muted);
+  background: rgba(255,255,255,0.02);
+}
+.mini-pill b { color: var(--text); font-weight: 650; }
+.effect-list {
+  margin: 0.15rem 0 0; padding-left: 1.15rem; color: #d5dae6;
+  font-size: 0.9rem; line-height: 1.45;
+}
+.effect-list li { margin: 0.2rem 0; }
+.effect-list li::marker { color: var(--accent); }
 .conf-map { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .conf-pill {
   border: 1px solid var(--line); border-radius: 999px;
@@ -549,6 +592,43 @@ function renderGrid() {
   });
 }
 
+function isBlank(v) {
+  return v == null || (typeof v === 'string' && !v.trim());
+}
+
+function fmtVal(v) {
+  if (v == null) return '';
+  if (Array.isArray(v)) return v.map(fmtVal).filter(Boolean).join(', ');
+  if (typeof v === 'object') {
+    return Object.entries(v).filter(([, y]) => !isBlank(y)).map(([k, y]) => k + ': ' + fmtVal(y)).join(', ');
+  }
+  return String(v);
+}
+
+function kvRows(pairs) {
+  const rows = pairs.filter(([, v]) => !isBlank(v));
+  if (!rows.length) return '';
+  return '<div class="kv-grid">' + rows.map(([k, v]) =>
+    '<div class="k">' + esc(k) + '</div><div class="v">' + esc(String(v)) + '</div>'
+  ).join('') + '</div>';
+}
+
+function paramsPills(params) {
+  if (!params || typeof params !== 'object') return '';
+  const entries = Object.entries(params).filter(([, v]) => !isBlank(v));
+  if (!entries.length) return '';
+  return '<div class="pill-row">' + entries.map(([k, v]) =>
+    '<span class="mini-pill"><b>' + esc(k) + '</b> ' + esc(fmtVal(v)) + '</span>'
+  ).join('') + '</div>';
+}
+
+function effectsBlock(text) {
+  if (isBlank(text)) return '';
+  const parts = String(text).split(/\n+/).map((s) => s.trim()).filter(Boolean);
+  if (parts.length <= 1) return '<p class="prose">' + esc(String(text)) + '</p>';
+  return '<ul class="effect-list">' + parts.map((p) => '<li>' + esc(p) + '</li>').join('') + '</ul>';
+}
+
 function symbolsHTML(symbols) {
   const groups = [
     ['Wilds', symbols.wilds],
@@ -556,25 +636,111 @@ function symbolsHTML(symbols) {
     ['Multipliers', symbols.multipliers],
     ['Collectors', symbols.collectors],
     ['Specials', symbols.specials],
-  ].filter(([,a]) => a && a.length);
-  if (!groups.length) return `<p class="prose" style="color:var(--muted)">No symbol rules extracted.</p>`;
-  return groups.map(([title, arr]) => `
-    <div class="section">
-      <h3>${esc(title)}</h3>
-      ${arr.map((s) => `
-        <div class="sym">
-          <div class="name">${esc(s.name || 'Symbol')}</div>
-          <p class="prose">${esc((s.behavior || '').slice(0,1600) || '—')}</p>
-        </div>
-      `).join('')}
-    </div>
-  `).join('');
+  ].filter(([, a]) => a && a.length);
+  if (!groups.length) return '<p class="prose" style="color:var(--muted)">No symbol rules extracted.</p>';
+  return groups.map(([title, arr]) =>
+    '<div class="section"><h3>' + esc(title) + '</h3>' +
+    arr.map((s) =>
+      '<div class="sym"><div class="name">' + esc(s.name || 'Symbol') + '</div>' +
+      kvRows([
+        ['Pays', s.pays || s.pay],
+        ['Substitutes', s.substitutes_for],
+      ]) +
+      (s.behavior ? '<p class="prose">' + esc(String(s.behavior).slice(0, 2000)) + '</p>' : '') +
+      paramsPills(s.params) +
+      '</div>'
+    ).join('') +
+    '</div>'
+  ).join('');
+}
+
+function modeCard(m) {
+  const phases = Array.isArray(m.phases) ? m.phases : [];
+  return '<div class="mode-card"><div class="name">' + esc(m.name || 'Bonus mode') + '</div>' +
+    kvRows([
+      ['Trigger', m.trigger],
+      ['Awarded', m.spins_awarded || m.award || m.spins],
+      ['Retrigger', m.retrigger],
+      ['Sticky / persistent', m.sticky_or_persistent_state],
+      ['Progressive state', m.progressive_state],
+      ['End condition', m.end_condition],
+    ]) +
+    effectsBlock(m.effects) +
+    (phases.length
+      ? '<ul class="phase-list" style="margin-top:.55rem">' + phases.map((p, i) => {
+          const title = p.name || ('Phase ' + (i + 1));
+          const body = p.what_happens || p.description || '';
+          const rules = p.rules || p.state_changes || '';
+          return '<li data-n="' + (i + 1) + '"><b>' + esc(title) + '</b>' +
+            (body ? ' — ' + esc(body) : '') +
+            (rules ? '<div class="v" style="margin-top:.25rem">' + esc(rules) + '</div>' : '') +
+            '</li>';
+        }).join('') + '</ul>'
+      : '') +
+    '</div>';
+}
+
+function featureCard(f) {
+  return '<div class="feat-card"><div class="name">' + esc(f.name || 'Feature') + '</div>' +
+    kvRows([
+      ['Trigger', f.trigger],
+      ['When', f.when || f.timing],
+      ['Cost', f.cost_text || (f.cost_multiplier != null ? f.cost_multiplier + '× bet' : null)],
+    ]) +
+    effectsBlock(f.effects) +
+    paramsPills(f.params) +
+    '</div>';
+}
+
+function buyCard(o) {
+  return '<div class="buy-card"><div class="name">' + esc(o.name || 'Buy option') + '</div>' +
+    kvRows([
+      ['Cost', o.cost_text || (o.cost_multiplier != null ? o.cost_multiplier + '× bet' : null)],
+      ['Effects', o.effects],
+      ['RTP when bought', o.rtp_when_bought_note],
+    ]) +
+    '</div>';
+}
+
+function loopHTML(loop) {
+  if (!loop) return '';
+  const phases = loop.phases || loop.steps || [];
+  let html = '<div class="section"><h3>Base game loop</h3>';
+  if (loop.summary) html += '<p class="prose" style="margin-bottom:.55rem">' + esc(loop.summary) + '</p>';
+  if (phases.length) {
+    html += '<ul class="phase-list">' + phases.map((p, i) => {
+      const title = typeof p === 'string' ? p : (p.name || ('Step ' + (i + 1)));
+      const body = typeof p === 'string' ? '' : (p.what_happens || p.description || p.rules || '');
+      return '<li data-n="' + (i + 1) + '"><b>' + esc(title) + '</b>' + (body ? ' — ' + esc(body) : '') + '</li>';
+    }).join('') + '</ul>';
+  }
+  if (loop.win_evaluation) {
+    html += '<div class="kv-card" style="margin-top:.55rem">' + kvRows([['Win evaluation', loop.win_evaluation]]) + '</div>';
+  }
+  html += '</div>';
+  return html;
+}
+
+function limitsHTML(limits) {
+  if (!limits || typeof limits !== 'object') return '';
+  const rows = [
+    ['Max win', limits.max_win_multiplier != null ? limits.max_win_multiplier + '×' : null],
+    ['Max win notes', limits.max_win_notes],
+    ['RTP', limits.rtp_percent != null ? limits.rtp_percent + '%' : null],
+    ['RTP notes', limits.rtp_notes || limits.rtp_note],
+    ['Hit frequency', limits.hit_frequency_notes || limits.hit_frequency],
+    ['Notes', limits.notes],
+  ].filter(([, v]) => !isBlank(v));
+  if (!rows.length) return '';
+  return '<div class="section"><h3>Limits</h3><div class="kv-card">' + kvRows(rows) + '</div></div>';
 }
 
 function tabBody(g) {
   const win = g.win_system || {};
   const reel = g.reel_behavior || {};
   const tumble = reel.cascades_or_tumbles || {};
+  const respin = reel.respins || {};
+  const expand = reel.expanding_reels || {};
   const fs = g.bonus_free_spins || {};
   const buy = g.feature_buy || {};
   const ante = g.ante_bet || {};
@@ -584,43 +750,100 @@ function tabBody(g) {
   const evidence = g.evidence || [];
   const limits = g.numeric_limits || {};
   const id = g.identity || {};
+  const loop = g.base_game_loop || null;
+  const otherReel = reel.other || [];
 
   if (state.tab === 'symbols') return symbolsHTML(g.symbols || {});
+
   if (state.tab === 'bonus') {
-    return `
-      ${(fs.notes || (fs.modes && fs.modes.length)) ? `<div class="section"><h3>Free spins / bonus</h3>${fs.notes?`<pre class="quote">${esc(fs.notes)}</pre>`:''}${fs.modes&&fs.modes.length?`<pre class="quote" style="margin-top:.5rem">${esc(JSON.stringify(fs.modes,null,2))}</pre>`:''}</div>` : `<p class="prose" style="color:var(--muted)">No free-spin block extracted.</p>`}
-      ${features.length ? `<div class="section"><h3>Named features</h3><pre class="quote">${esc(JSON.stringify(features,null,2))}</pre></div>` : ''}
-      ${(buy.notes || (buy.options&&buy.options.length) || ante.notes) ? `<div class="section"><h3>Buy &amp; ante</h3>${buy.notes?`<p class="prose" style="margin-bottom:.5rem">${esc(buy.notes)}</p>`:''}${buy.options&&buy.options.length?`<pre class="quote">${esc(JSON.stringify(buy.options,null,2))}</pre>`:''}${ante.notes?`<p class="prose" style="margin-top:.5rem">${esc(ante.notes)}</p>`:''}</div>` : ''}
-    `;
+    const modes = fs.modes || [];
+    return (
+      '<div class="section"><h3>Free spins / bonus modes</h3>' +
+      (modes.length ? modes.map(modeCard).join('') : '<p class="prose" style="color:var(--muted)">No free-spin / bonus modes extracted.</p>') +
+      (fs.notes ? '<p class="prose" style="margin-top:.35rem;color:var(--muted)">' + esc(fs.notes) + '</p>' : '') +
+      '</div>' +
+      '<div class="section"><h3>Named features</h3>' +
+      (features.length ? features.map(featureCard).join('') : '<p class="prose" style="color:var(--muted)">No named features extracted.</p>') +
+      '</div>' +
+      '<div class="section"><h3>Buy &amp; ante</h3>' +
+      kvRows([
+        ['Feature buy', buy.available === true ? 'Available' : buy.available === false ? 'Not available' : 'Unknown'],
+        ['Buy notes', buy.notes],
+        ['Ante / extra bet', ante.available === true ? 'Available' : ante.available === false ? 'Not available' : 'Unknown'],
+        ['Ante cost', ante.cost_multiplier != null ? ante.cost_multiplier + '× bet' : null],
+        ['Ante effects', ante.effects || ante.notes],
+      ]) +
+      ((buy.options && buy.options.length) ? buy.options.map(buyCard).join('') : '') +
+      '</div>'
+    );
   }
+
   if (state.tab === 'sources') {
-    return `
-      <div class="section"><h3>Links</h3>
-        <div class="dossier-actions" style="margin:0 0 .75rem;padding:0">
-          ${id.official_info_url?`<a class="btn primary sm" href="${esc(id.official_info_url)}" target="_blank" rel="noopener">Official rules</a>`:''}
-          ${id.demo_url?`<a class="btn sm" href="${esc(id.demo_url)}" target="_blank" rel="noopener">Demo</a>`:''}
-          ${id.slotcatalog_url?`<a class="btn sm" href="${esc(id.slotcatalog_url)}" target="_blank" rel="noopener">SlotCatalog</a>`:''}
-          <a class="btn sm" href="./games/${esc(id.slug)}.json" target="_blank" rel="noopener">Raw JSON</a>
-        </div>
-      </div>
-      <div class="section"><h3>Confidence map</h3>
-        <div class="conf-map">${Object.entries(conf).map(([k,v])=>`<span class="conf-pill"><b>${esc(k)}</b> ${esc(v)}</span>`).join('')||'—'}</div>
-      </div>
-      ${unknowns.length?`<div class="section"><h3>Unknowns</h3><p class="prose unknowns">${unknowns.map(u=>'• '+esc(u)).join('\n')}</p></div>`:''}
-      ${evidence.length?`<div class="section"><h3>Evidence excerpts</h3>${evidence.slice(0,4).map(e=>`<pre class="quote" style="margin-bottom:.45rem">${esc((e.quote_or_excerpt||e.excerpt||'').slice(0,900))}\n\n— ${esc(e.source_type||'')}${e.url?' · '+esc(e.url):''}</pre>`).join('')}</div>`:''}
-      ${(limits.max_win_multiplier!=null||limits.rtp_note||limits.notes)?`<div class="section"><h3>Limits</h3><pre class="quote">${esc(JSON.stringify(limits,null,2))}</pre></div>`:''}
-      <p class="attrib">Cover art attribution: ${esc(g.thumbnail_attribution || '—')}. Thumbnails are redistributed lobby/cover stills for catalog browsing; mechanics data is independent.</p>
-    `;
+    return (
+      '<div class="section"><h3>Links</h3><div class="dossier-actions" style="margin:0 0 .75rem;padding:0">' +
+      (id.official_info_url ? '<a class="btn primary sm" href="' + esc(id.official_info_url) + '" target="_blank" rel="noopener">Official rules</a>' : '') +
+      (id.demo_url ? '<a class="btn sm" href="' + esc(id.demo_url) + '" target="_blank" rel="noopener">Demo</a>' : '') +
+      (id.slotcatalog_url ? '<a class="btn sm" href="' + esc(id.slotcatalog_url) + '" target="_blank" rel="noopener">SlotCatalog</a>' : '') +
+      '<a class="btn sm" href="./games/' + esc(id.slug) + '.json" target="_blank" rel="noopener">Raw JSON</a>' +
+      '</div></div>' +
+      '<div class="section"><h3>Confidence map</h3><div class="conf-map">' +
+      (Object.entries(conf).map(([k, v]) => '<span class="conf-pill"><b>' + esc(k) + '</b> ' + esc(v) + '</span>').join('') || '—') +
+      '</div></div>' +
+      (unknowns.length
+        ? '<div class="section"><h3>Unknowns</h3><ul class="effect-list unknowns">' +
+          unknowns.map((u) => '<li>' + esc(u) + '</li>').join('') + '</ul></div>'
+        : '') +
+      (evidence.length
+        ? '<div class="section"><h3>Evidence excerpts</h3>' + evidence.slice(0, 4).map((e) =>
+            '<div class="feat-card" style="margin-bottom:.45rem"><p class="prose">' +
+            esc(String(e.quote_or_excerpt || e.excerpt || '').slice(0, 900)) +
+            '</p><div class="pill-row" style="margin-top:.45rem"><span class="mini-pill"><b>' +
+            esc(e.source_type || 'source') + '</b></span>' +
+            (e.url ? '<span class="mini-pill">' + esc(e.url) + '</span>' : '') +
+            '</div></div>'
+          ).join('') + '</div>'
+        : '') +
+      limitsHTML(limits) +
+      '<p class="attrib">Cover art attribution: ' + esc(g.thumbnail_attribution || '—') +
+      '. Thumbnails are redistributed lobby/cover stills for catalog browsing; mechanics data is independent.</p>'
+    );
   }
-  return `
-    ${win.notes?`<div class="section"><h3>Win system</h3><pre class="quote">${esc(win.notes)}</pre></div>`:''}
-    ${tumble.how_it_works?`<div class="section"><h3>Tumble / cascade</h3><pre class="quote">${esc(tumble.how_it_works)}</pre></div>`:''}
-    ${!win.notes && !tumble.how_it_works ? `<p class="prose" style="color:var(--muted)">Open Symbols, Bonus, or Sources for more on this title.</p>`:''}
-    <div class="section"><h3>Confidence</h3>
-      <div class="conf-map">${Object.entries(conf).map(([k,v])=>`<span class="conf-pill"><b>${esc(k)}</b> ${esc(v)}</span>`).join('')}</div>
-    </div>
-  `;
+
+  return (
+    loopHTML(loop) +
+    '<div class="section"><h3>Win system</h3><div class="kv-card">' +
+    kvRows([
+      ['Type', prettyWin(win.type)],
+      ['Paylines', win.payline_count],
+      ['Ways', win.ways_count],
+      ['Min symbols', win.min_symbols_for_win],
+      ['Direction', win.direction],
+    ]) +
+    (win.notes ? effectsBlock(win.notes) : '') +
+    '</div></div>' +
+    '<div class="section"><h3>Reel behavior</h3><div class="kv-card">' +
+    kvRows([
+      ['Tumbles / cascades', tumble.present === true ? 'Yes' : tumble.present === false ? 'No' : 'Unknown'],
+      ['How tumbles work', tumble.how_it_works],
+      ['Respins', respin.present === true ? 'Yes' : respin.present === false ? 'No' : 'Unknown'],
+      ['How respins work', respin.how_it_works],
+      ['Expanding reels', expand.present === true ? 'Yes' : expand.present === false ? 'No' : 'Unknown'],
+      ['How expanding works', expand.how_it_works],
+    ]) +
+    (otherReel.length
+      ? otherReel.map((o) =>
+          '<div class="sym"><div class="name">' + esc(o.name || 'Other') + '</div>' +
+          effectsBlock(o.how_it_works || '') + '</div>'
+        ).join('')
+      : '') +
+    '</div></div>' +
+    limitsHTML(limits) +
+    '<div class="section"><h3>Confidence</h3><div class="conf-map">' +
+    Object.entries(conf).map(([k, v]) => '<span class="conf-pill"><b>' + esc(k) + '</b> ' + esc(v) + '</span>').join('') +
+    '</div></div>'
+  );
 }
+
 
 function renderDetail(g) {
   const id = g.identity || {};

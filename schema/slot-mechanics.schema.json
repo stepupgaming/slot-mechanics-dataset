@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/stepupgaming/slot-mechanics-dataset/schema/slot-mechanics.schema.json",
   "title": "SlotMechanicsRecord",
-  "description": "Machine-readable description of how a single video slot works, grounded in evidence (prefer official Info/Rules/Paytable text).",
+  "description": "Machine-readable description of how a single video slot works, grounded in evidence (prefer official Info/Rules/Paytable text). Schema 1.1 adds optional base_game_loop and richer bonus mode phases so a reader who never played the game can rebuild the loop.",
   "type": "object",
   "required": [
     "identity",
@@ -25,7 +25,11 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "const": "1.0.0"
+      "enum": [
+        "1.0.0",
+        "1.1.0"
+      ],
+      "description": "1.1.0 records may include base_game_loop and richer bonus mode phases; 1.0.0 remains valid."
     },
     "updated_at": {
       "type": "string",
@@ -47,6 +51,8 @@
             "Hacksaw Gaming",
             "Backseat Gaming",
             "Nolimit City",
+            "Elk Studios",
+            "Slotmill",
             "Other"
           ]
         },
@@ -341,6 +347,59 @@
                   "string",
                   "null"
                 ]
+              },
+              "end_condition": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "phases": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name",
+                    "what_happens"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "what_happens": {
+                      "type": "string",
+                      "description": "Concrete action a rebuilder can implement."
+                    },
+                    "order": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 1
+                    },
+                    "ends_when": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "state_changes": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  }
+                },
+                "description": "Optional ordered sub-steps inside this bonus mode."
+              },
+              "award": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Alias-friendly award text; prefer spins_awarded when spins."
               }
             }
           }
@@ -380,6 +439,24 @@
           "params": {
             "type": "object",
             "additionalProperties": true
+          },
+          "when": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cost_multiplier": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "cost_text": {
+            "type": [
+              "string",
+              "null"
+            ]
           }
         }
       }
@@ -543,6 +620,9 @@
         },
         "numeric_limits": {
           "$ref": "#/$defs/confidenceLevel"
+        },
+        "base_game_loop": {
+          "$ref": "#/$defs/confidenceLevel"
         }
       }
     },
@@ -605,7 +685,7 @@
         "string",
         "null"
       ],
-      "description": "Relative path to local lobby/cover art under thumbs/ (e.g. thumbs/<slug>.webp). Sourced from SlotCatalog / Big Win Board / studio art \u2014 not invented."
+      "description": "Relative path to local lobby/cover art under thumbs/ (e.g. thumbs/<slug>.webp). Sourced from SlotCatalog / Big Win Board / studio art — not invented."
     },
     "thumbnail_attribution": {
       "type": [
@@ -613,6 +693,72 @@
         "null"
       ],
       "description": "Attribution label for the thumbnail source (SlotCatalog, Big Win Board, etc.)."
+    },
+    "base_game_loop": {
+      "type": "object",
+      "description": "Ordered rebuildable description of one paid spin / round in the base game (additive in schema 1.1).",
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phases": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "what_happens"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "what_happens": {
+                "type": "string",
+                "description": "Concrete action a rebuilder can implement."
+              },
+              "order": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "ends_when": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "state_changes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "win_evaluation": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "When and how wins are evaluated relative to phases."
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
     }
   },
   "$defs": {

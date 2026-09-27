@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:31:25Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Ragnarok",
+    "slug": "slotmill-ragnarok",
+    "provider_game_id": "ragnarok",
+    "release_year": 2024,
+    "demo_url": "https://ragnarok.slotmill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/ragnarok"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": 5,
+    "rows_max": 5,
+    "layout_notes": "Official specs: 5×5 Video Slot / Avalanche Cluster Pays on a 5×5 grid."
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "Official Paylines field: '5+ cluster pays'. Marketing copy describes Avalanche Cluster Pays; exact minimum cluster size beyond the '5+' label is not further detailed on the product sheet."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Avalanche: winning clusters explode, paving the way for new symbols; sequence can continue for further wins in the same paid round."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Giant Symbols",
+        "how_it_works": "Giant Symbols can land on the grid for larger payouts (listed under Bonus Features; exact size/transform rules not fully specified on the public product sheet)."
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "5×5 avalanche cluster slot with a progressive win multiplier that doubles on each win in the sequence; Free Spins keep the multiplier active; studio modes Fast Track / Xtra-Bet / Burst Mode available.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Player spins the 5×5 grid at the selected bet (optional Xtra-Bet increases chance of bonus)."
+      },
+      {
+        "name": "Cluster evaluate",
+        "order": 2,
+        "what_happens": "Winning clusters (5+ cluster pays) are awarded."
+      },
+      {
+        "name": "Progressive multiplier",
+        "order": 3,
+        "what_happens": "Progressive Win Multiplier DOUBLES with each win in the avalanche sequence.",
+        "state_changes": "Multiplier ← multiplier × 2 per win"
+      },
+      {
+        "name": "Avalanche",
+        "order": 4,
+        "what_happens": "Winning clusters explode; new symbols enter; repeat evaluate/multiplier/avalanche while wins continue.",
+        "ends_when": "No new winning clusters"
+      },
+      {
+        "name": "Bonus check",
+        "order": 5,
+        "what_happens": "If Free Spins Bonus triggers (exact scatter count not on product sheet) or via Fast Track, enter Free Spins where the progressive multiplier remains active throughout."
+      }
+    ],
+    "win_evaluation": "Cluster wins each avalanche step, scaled by the current progressive multiplier.",
+    "notes": "Exact Free Spins trigger count and starting multiplier value are not printed on the public product sheet / game page specs."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wilds",
+        "behavior": "Official page: Wilds enhance chances of victory. Listed under Special Symbols as Wilds.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "Listed under Special Symbols as Bonus (Free Spins Bonus feature). Exact land counts to trigger are not on the public product sheet.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Progressive Win Multiplier",
+        "behavior": "DOUBLES with each win; remains active throughout Free Spins.",
+        "params": {
+          "growth": "double_per_win",
+          "persists_in_free_spins": true
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Giant Symbols",
+        "behavior": "Can grace the grid with colossal payouts (product sheet / page feature list).",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins Bonus",
+        "trigger": "Bonus feature trigger (exact symbol count not stated on public product sheet). Fast Track can access bonus features directly.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Progressive Win Multiplier remains active throughout Free Spins.",
+        "progressive_state": "Multiplier continues doubling with each win during Free Spins.",
+        "end_condition": null,
+        "effects": "Free Spins play with the progressive multiplier staying active for the feature, enabling larger chained avalanche wins.",
+        "phases": [
+          {
+            "name": "Free spin avalanche",
+            "order": 1,
+            "what_happens": "Resolve cluster wins with avalanches; multiplier doubles per win and persists for the feature."
+          }
+        ]
+      }
+    ],
+    "notes": "Public product sheet lists Free Spins Bonus but does not publish spin counts, retrigger, or scatter thresholds — marked unknown rather than invented."
+  },
+  "features": [
+    {
+      "name": "Progressive Win Multiplier",
+      "trigger": "Each win in an avalanche sequence",
+      "effects": "Multiplier DOUBLES with each win; stays active through Free Spins.",
+      "params": {
+        "growth": "×2 per win"
+      }
+    },
+    {
+      "name": "Giant Symbols",
+      "trigger": null,
+      "effects": "Large symbols on the grid for higher payouts.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player opt-in",
+      "effects": "Enhanced auto-play completing two game rounds per second.",
+      "params": {
+        "rounds_per_second": 2
+      }
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player purchase / opt-in",
+      "when": "Base game",
+      "effects": "Access the game’s bonus features directly.",
+      "cost_text": "Cost not stated on public product sheet",
+      "params": {}
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opt-in",
+      "when": "Base game",
+      "effects": "Augment bet to increase chance of winning a bonus round.",
+      "cost_text": "Cost multiplier not stated on public product sheet",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Fast Track",
+        "cost_multiplier": null,
+        "cost_text": "Not stated on public product sheet",
+        "effects": "Direct access to bonus features.",
+        "rtp_when_bought_note": "Page lists RTP variants 96.12% / 94.05% (sheet headline 96.12%)."
+      }
+    ],
+    "notes": "Fast Track is the studio bonus-entry product; exact price not on public sheet."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet augments the bet to increase bonus-round chance.",
+    "notes": "Exact multiplier not on public product sheet."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10 000x.",
+    "rtp_percent": 96.12,
+    "rtp_notes": "Product sheet RTP 96.12%. Game page also lists Variant 2: 94.05.",
+    "hit_frequency_notes": "Volatility High. Bet levels 0.20–60."
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "medium",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cms.slotmill.com/uploads/product_sheet_Ragnarok_v1_65c5d3728f.pdf",
+      "local_path": "sources/slotmill/product_sheet_Ragnarok.txt",
+      "extracted_at": "2026-09-27T18:31:25Z",
+      "quote_or_excerpt": "Avalanche Cluster Pays… 5x5 grid… Progressive Win Multiplier, which DOUBLES with each win… Free Spins where the multiplier remains active throughout… Fast Track… Xtra-Bet… Game Type 5x5 Video Slot… Payines 5+ cluster pays… RTP 96.12%… Max win 10 000x."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/ragnarok",
+      "local_path": "sources/slotmill/ragnarok.html",
+      "extracted_at": "2026-09-27T18:31:25Z",
+      "quote_or_excerpt": "Game ID ragnarok; Bonus Features: Free Spins Bonus, Giant Symbols, Progressive Multiplier; Special Symbols: Bonus, Wilds; RTP variants 96.12 / 94.05."
+    }
+  ],
+  "unknowns": [
+    "Exact minimum cluster size beyond '5+ cluster pays' wording",
+    "Free Spins trigger symbol count and spins awarded",
+    "Free Spins retrigger rules",
+    "Fast Track and Xtra-Bet exact cost multipliers",
+    "Starting value of progressive multiplier",
+    "Giant Symbol exact transform rules"
+  ],
+  "thumbnail": "thumbs/slotmill-ragnarok.webp",
+  "thumbnail_attribution": "Slotmill"
+}

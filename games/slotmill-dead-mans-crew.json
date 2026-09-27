@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:32:38Z",
+  "identity": {
+    "provider": "Slotmill",
+    "title": "Dead Man's Crew",
+    "slug": "slotmill-dead-mans-crew",
+    "provider_game_id": "dead-mans-crew",
+    "release_year": 2026,
+    "demo_url": "https://dead-mans-crew.slomill.com",
+    "slotcatalog_url": null,
+    "official_info_url": "https://slotmill.com/games/dead-mans-crew"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Game Type: 6x6 Video Slot"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Official Paylines field: 5+ Cluster Pay"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Played on a 6×6 Avalanche grid, wins are formed by matching 5 or more identical symbols, sending winning symbols crashing away and making room for new ones."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on Slotmill cluster-pays / avalanche/cascade: spin → evaluate wins → avalanche while wins continue.",
+    "phases": [
+      {
+        "name": "spin",
+        "what_happens": "Player places a bet and spins; symbols land on the grid.",
+        "order": 1,
+        "ends_when": "Reels/grid settle",
+        "state_changes": null
+      },
+      {
+        "name": "win_evaluation",
+        "what_happens": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+        "order": 2,
+        "ends_when": "All current winning clusters identified",
+        "state_changes": null
+      },
+      {
+        "name": "avalanche_cascade",
+        "what_happens": "Played on a 6×6 Avalanche grid, wins are formed by matching 5 or more identical symbols, sending winning symbols crashing away and making room for new ones.",
+        "order": 3,
+        "ends_when": "No further winning clusters/combinations after a cascade",
+        "state_changes": "Winning symbols removed; grid refilled from above"
+      }
+    ],
+    "win_evaluation": "Winning clusters of 5+ matching adjacent symbols are evaluated.",
+    "notes": "Phases inferred from official Slotmill game-page specs + marketing description; spin counts/costs not invented."
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild Scatter",
+        "behavior": "Raise a glass and join the Dead Man’s Crew  Dead Man’s Crew brings the crew ashore for a night of wild celebrations, cascading wins, and plenty of treasure-fuelled chaos.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Feature Hotspot",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      },
+      {
+        "name": "Crew Features",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      },
+      {
+        "name": "Extra Spins",
+        "behavior": "Listed under Special Symbols on official page.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": 8,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "When the party really gets going, 3 or more Wild Scatters trigger 8 Free Spins — and this time, the Wild multipliers stay with the Crew from spin to spin.",
+        "end_condition": "Free spins counter reaches zero (retrigger not evidenced on marketing page).",
+        "phases": [
+          {
+            "name": "trigger",
+            "what_happens": "Free Spins Bonus triggered (exact symbol count often not on marketing page).",
+            "order": 1,
+            "ends_when": null,
+            "state_changes": null
+          },
+          {
+            "name": "free_spins_play",
+            "what_happens": "Free spins play with base cascade/multiplier rules.",
+            "order": 2,
+            "ends_when": "Awarded free spins are exhausted (retrigger rules not always stated)",
+            "state_changes": null
+          }
+        ]
+      }
+    ],
+    "notes": "Volatility (official): Very High"
+  },
+  "features": [
+    {
+      "name": "Free Spins Bonus",
+      "trigger": null,
+      "effects": "When the party really gets going, 3 or more Wild Scatters trigger 8 Free Spins — and this time, the Wild multipliers stay with the Crew from spin to spin.",
+      "params": {}
+    },
+    {
+      "name": "Super Free Spins Bonus",
+      "trigger": null,
+      "effects": "When the party really gets going, 3 or more Wild Scatters trigger 8 Free Spins — and this time, the Wild multipliers stay with the Crew from spin to spin.",
+      "params": {}
+    },
+    {
+      "name": "Wild Multiplier",
+      "trigger": null,
+      "effects": "When the party really gets going, 3 or more Wild Scatters trigger 8 Free Spins — and this time, the Wild multipliers stay with the Crew from spin to spin.",
+      "params": {}
+    },
+    {
+      "name": "Avalanche / Cluster Cascade",
+      "trigger": "Winning cluster lands",
+      "effects": "Played on a 6×6 Avalanche grid, wins are formed by matching 5 or more identical symbols, sending winning symbols crashing away and making room for new ones.",
+      "params": {}
+    },
+    {
+      "name": "Burst Mode",
+      "trigger": "Player enables Burst Mode",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "any time / auto-play"
+    },
+    {
+      "name": "Fast Track",
+      "trigger": "Player selects Fast Track",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "before spin / bonus access"
+    },
+    {
+      "name": "Xtra-Bet",
+      "trigger": "Player opts into raised bet",
+      "effects": "In response to evolving player preferences in gameplay, Slotmill games incorporate three integrated excitement-enhancing features: ‘ Burst Mode ,’ ‘ Fast Track ,’ and ‘ Xtra-Bet .",
+      "params": {},
+      "when": "base game bet selection"
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Fast Track provides players with the option to access the games' bonus features directly."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round.",
+    "notes": "Xtra-Bet enables players to augment their bets, thereby increasing their chances of winning a bonus round."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Official Max win; x Bet: 10 000x",
+    "rtp_percent": 96.07,
+    "rtp_notes": "Variant 1: 96.07% | Variant 2: 94.09%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "base_game_loop": "high",
+    "symbols": "medium",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://slotmill.com/games/dead-mans-crew",
+      "local_path": "sources/slotmill/dead-mans-crew.html",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Game Type: 6x6 Video Slot\nPaylines: 5+ Cluster Pay\nRTP (%): Variant 1: 96.07% | Variant 2: 94.09%\nMax win; x Bet: 10 000x\nBonus Features: Free Spins Bonus, Super Free Spins Bonus, Wild Multiplier\nSpecial Symbols: Wild Scatter, Feature Hotspot, Crew Features, Extra Spins\nVolatility (variance): Very High\nGame URL: \"https://dead-mans-crew.slomill.com\"\nRaise a glass and join the Dead Man’s Crew\n\nDead Man’s Crew brings the crew ashore for a night of wild celebrations, cascading wins, and plenty of treasure-fuelled chaos. Between adventures, the crew has taken over the tavern — and with growing Wild Scatter multipliers, powerful Crew Features, and a maximum win of 10,000x your bet, the party can get seriously rewarding.\n\nPlayed on a 6×6 Avalanche grid, wins are formed by matching 5 or more identical symbols, sending winning symbols crashing away and making room for new ones. Wild Scatters join the action as substitutes and grow their multiplier every time they contribute to a win, while multiple Wilds can combine their multipliers to make ea"
+    },
+    {
+      "source_type": "provider_product_sheet",
+      "url": null,
+      "local_path": "sources/slotmill/product_sheet_dead-mans-crew.pdf",
+      "extracted_at": "2026-09-27T18:32:38Z",
+      "quote_or_excerpt": "Dead Man's Crew\n\nRaise a glass and join the Dead Man’s Crew\n\nDead Man’s Crew brings the crew ashore for a night of wild celebrations, cascading wins, and plenty of treasure-\nfuelled chaos. Between adventures, the crew has taken over the tavern — and with growing Wild Scatter\nmultipliers, powerful Crew Features, and a maximum win of 10,000x your bet, the party can get seriously\nrewarding.\n\nPlayed on a 6×6 Avalanche grid, wins are formed by matching 5 or more identical symbols, sending winning\nsymbols crashing away and making room for new ones. Wild Scatters join the action as substitutes and grow their\nmultiplier every time they contribute to a win, while multiple Wilds can combine their multipliers to make each\nwinning cluster worth even more.\n\nThe tavern gets even rowdier when Feature Hot"
+    }
+  ],
+  "unknowns": [
+    "full paytable / symbol pays not on marketing page",
+    "Xtra-Bet cost multiplier not stated on marketing page (not invented)",
+    "Fast Track buy cost not stated on marketing page (not invented)",
+    "volatility from official specs: Very High"
+  ],
+  "thumbnail": "thumbs/slotmill-dead-mans-crew.webp",
+  "thumbnail_attribution": "Slotmill"
+}

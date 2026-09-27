@@ -1,166 +1,247 @@
 {
-  "schema_version": "1.0.0",
-  "updated_at": "2026-09-27T04:44:19Z",
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:31:25Z",
   "identity": {
     "provider": "Nolimit City",
     "title": "Book of Shadows",
     "slug": "nolimit-book-of-shadows",
-    "provider_game_id": null,
+    "provider_game_id": "BookOfShadows",
     "release_year": 2020,
-    "demo_url": null,
+    "demo_url": "https://nolimitcity.com/demo/BookOfShadows",
     "slotcatalog_url": "https://slotcatalog.com/en/slots/Book-of-Shadows",
-    "official_info_url": null
+    "official_info_url": "https://nolimitcity.com/games/book-of-shadows"
   },
   "grid": {
-    "rows": 5,
+    "rows": 3,
     "cols": 5,
-    "rows_min": null,
-    "rows_max": null,
-    "layout_notes": "SlotCatalog Layout: 5-5"
+    "rows_min": 3,
+    "rows_max": 5,
+    "layout_notes": "Official game sheet: 5×3 base reel area expandable to 5×4 / 5×5 via Shadow Rows in main game and free spins."
   },
   "win_system": {
     "type": "paylines",
-    "payline_count": 10,
+    "payline_count": null,
     "ways_count": null,
     "min_symbols_for_win": null,
     "direction": "left_to_right",
-    "notes": "SlotCatalog betways: 10"
+    "notes": "Official sheet: expanding rows adds win lines. Exact payline counts per row height are not printed on the public game sheet (marked unknown)."
   },
   "reel_behavior": {
     "cascades_or_tumbles": {
-      "present": null,
-      "how_it_works": null
+      "present": false,
+      "how_it_works": "No cascade/tumble described on the official game sheet."
     },
     "respins": {
       "present": true,
-      "how_it_works": null
+      "how_it_works": "Lucky Locks: after each main-game spin the player may choose which reels to lock and which to respin for an adjusted bet; Scatters can be held to improve Free Spin chance."
     },
     "expanding_reels": {
-      "present": null,
-      "how_it_works": null
+      "present": true,
+      "how_it_works": "Shadow Rows: player pays additional cost to increase row count (and win lines) up to 5×5 in base and free spins."
     },
     "other": []
   },
+  "base_game_loop": {
+    "summary": "Interactive 5-reel Book slot: choose row height (Shadow Rows), spin for left-to-right line wins, optionally Lucky-Lock/respin selected reels, optionally Gamble, or buy into Free Spins.",
+    "phases": [
+      {
+        "name": "Configure rows",
+        "order": 1,
+        "what_happens": "Player may enable Shadow Rows (5×3 → 5×4 → 5×5) for an additional cost before/during play, increasing rows and win lines.",
+        "state_changes": "Active row height and payline set update."
+      },
+      {
+        "name": "Spin",
+        "order": 2,
+        "what_happens": "Reels stop on the active grid. Matching symbols on active paylines from the leftmost reel score according to the paytable.",
+        "ends_when": "Spin result resolved"
+      },
+      {
+        "name": "Lucky Locks (optional)",
+        "order": 3,
+        "what_happens": "After a main-game spin, player may lock selected reels (including Scatters) and respin the others for an adjusted bet.",
+        "ends_when": "Player declines or respin resolves"
+      },
+      {
+        "name": "Gamble (optional)",
+        "order": 4,
+        "what_happens": "Player may gamble a win 50/50 for double-or-nothing, or gamble the win into Free Spins.",
+        "ends_when": "Gamble resolved or declined"
+      },
+      {
+        "name": "Bonus check",
+        "order": 5,
+        "what_happens": "If 3+ Scatter/Wild Book symbols land (or Nolimit Bonus buy / successful gamble-to-bonus), enter Free Spins with Golden symbol.",
+        "ends_when": "No bonus or Free Spins completed"
+      }
+    ],
+    "win_evaluation": "Line wins evaluated on the active row configuration after each spin/respin; Golden expanding symbol evaluated during Free Spins when extra wins are possible.",
+    "notes": "Exact Shadow Rows cost multipliers and payline counts per height are not on the public sheet."
+  },
   "symbols": {
-    "wilds": [],
-    "scatters": [],
+    "wilds": [
+      {
+        "name": "Scatter (Book) — also Wild",
+        "behavior": "Official sheet: Scatters are also wild. Three or more grant Free Spins. Can be held via Lucky Locks.",
+        "params": {
+          "also_scatter": true
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter (Book)",
+        "behavior": "Three or more Scatters grant 10 Free Spins with a special Golden expand symbol.",
+        "params": {
+          "min_to_trigger": 3
+        }
+      }
+    ],
     "multipliers": [],
     "collectors": [],
-    "specials": []
+    "specials": [
+      {
+        "name": "Golden expand symbol",
+        "behavior": "Awarded in Free Spins. Player may redraw the first Golden symbol draw. Golden symbols expand to cover the whole reel when additional wins can be awarded.",
+        "params": {
+          "expand": "full_reel",
+          "redraw_allowed": true
+        }
+      }
+    ]
   },
   "bonus_free_spins": {
     "modes": [
       {
-        "name": "Free Spins",
-        "trigger": null,
-        "spins_awarded": null,
+        "name": "Free Spins with Golden symbol",
+        "trigger": "Land 3 or more Scatters (which are also wild), or enter via Nolimit Bonus feature buy, or via Gamble-to-bonus.",
+        "spins_awarded": "10 Free Spins (base). Choosing more/less Shadow Rows alters the number of spins given.",
         "retrigger": null,
-        "sticky_or_persistent_state": null,
+        "sticky_or_persistent_state": "Golden expand symbol selected for the round (redraw of first draw allowed).",
         "progressive_state": null,
-        "effects": "Free Spins tagged on SlotCatalog; exact rules not taken from official paytable in this record."
+        "end_condition": "Free Spins counter reaches zero (exact retrigger rules not printed on public sheet).",
+        "effects": "Free Spins play with a special Golden expand symbol that can expand to a full reel for extra wins. Shadow Rows option changes both grid height and spins awarded.",
+        "phases": [
+          {
+            "name": "Select Golden symbol",
+            "order": 1,
+            "what_happens": "Game awards a Golden expand symbol; player may redraw once if unhappy with the first draw."
+          },
+          {
+            "name": "Choose Shadow Rows for FS",
+            "order": 2,
+            "what_happens": "Player may pick more or fewer Shadow Rows, which alters the number of Free Spins given."
+          },
+          {
+            "name": "Play Free Spins",
+            "order": 3,
+            "what_happens": "Spins play on the chosen grid. When Golden symbols can create extra wins they expand to cover the whole reel."
+          }
+        ]
       }
     ],
-    "notes": "Secondary source only (SlotCatalog tags/review). Prefer official rules for production use."
+    "notes": "Retrigger counts and exact spin totals per Shadow Row choice are not listed on the public game sheet."
   },
   "features": [
     {
-      "name": "Book of ... mechanic",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Shadow Rows",
+      "trigger": "Player opt-in for additional cost",
+      "when": "Base game and Free Spins",
+      "effects": "Increases number of rows and win lines (5×3 → 5×4 → 5×5) for more frequent wins and bigger payouts.",
+      "cost_text": "Additional cost (multiplier not printed on public sheet)",
+      "params": {
+        "rows_options": [
+          3,
+          4,
+          5
+        ],
+        "cols": 5
+      }
+    },
+    {
+      "name": "Lucky Locks",
+      "trigger": "After each main game spin",
+      "when": "Base game",
+      "effects": "Choose which reels to lock and which to respin for an adjusted bet. Hold Scatters to increase Free Spin chance.",
       "params": {}
     },
     {
-      "name": "Buy Feature",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
+      "name": "Gamble",
+      "trigger": "After a win",
+      "effects": "50/50 double-or-nothing on winnings. Alternate path: gamble the winning straight into Free Spins.",
+      "params": {
+        "odds": "50/50"
+      }
     },
     {
-      "name": "Expanding Symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Free Spins",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Paid respin",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Risk/Gamble (Double) game",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "RTP range",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Scatter symbols",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
-      "params": {}
-    },
-    {
-      "name": "Wild",
-      "trigger": null,
-      "effects": "Listed on SlotCatalog feature tags; detailed trigger/effect text not fully verified from official rules.",
+      "name": "Nolimit Bonus (Feature Buy)",
+      "trigger": "Player purchase",
+      "when": "Base game (may be removed in some regulated markets)",
+      "effects": "Buy directly into Free Spins.",
+      "cost_text": "Cost multiplier not printed on public sheet",
       "params": {}
     }
   ],
   "feature_buy": {
     "available": true,
-    "options": [],
-    "notes": "Buy Feature tagged on SlotCatalog; cost multiplier unknown without official rules."
+    "options": [
+      {
+        "name": "Nolimit Bonus",
+        "cost_multiplier": null,
+        "cost_text": "Not stated on public game sheet",
+        "effects": "Buys directly into Free Spins. May be removed in some regulated markets.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Official sheet confirms Feature Buy; exact price not on sheet."
   },
   "ante_bet": {
-    "available": false,
+    "available": true,
     "cost_multiplier": null,
-    "effects": null,
-    "notes": null
+    "effects": "Shadow Rows is an optional extra-cost grid upgrade (ante-like), distinct from Nolimit Bonus buy.",
+    "notes": "Exact cost multiplier unknown from public sheet."
   },
   "numeric_limits": {
     "max_win_multiplier": 30338.0,
-    "max_win_notes": "SlotCatalog Max Win tag: x30338.00",
-    "rtp_percent": 96.19,
-    "rtp_notes": "SlotCatalog RTP tag: 96.19% (may be one of several operator configs)",
-    "hit_frequency_notes": null
+    "max_win_notes": "Official sheet Max payout: 30,338 × bet (10 billion spin simulation).",
+    "rtp_percent": 96.01,
+    "rtp_notes": "Total RTP 96.01%; DX1 94.09%; DX3 90.15%. Main game RTP 58.70%; Bonus 37.31%.",
+    "hit_frequency_notes": "Hit frequency 33.18%. Bonus round 1 in 154 spins. Win ≥100× 1 in 843 spins. Volatility Extreme (10)."
   },
   "confidence": {
-    "overall": "medium",
-    "grid": "medium",
+    "overall": "high",
+    "grid": "high",
     "win_system": "medium",
-    "reel_behavior": "low",
-    "symbols": "low",
-    "bonus_free_spins": "low",
-    "features": "medium",
-    "feature_buy": "low",
-    "numeric_limits": "medium"
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
   },
   "evidence": [
     {
-      "source_type": "slotcatalog",
-      "url": "https://slotcatalog.com/en/slots/Book-of-Shadows",
-      "local_path": "sources/slotcatalog/Book-of-Shadows.html",
-      "extracted_at": "2026-09-27T04:44:19Z",
-      "quote_or_excerpt": "Free Spins Free Spins No Wagering 5 Free Spins 10 Free Spins 20 Free Spins 30 Free Spins 50 Free Spins 100 Free Spins 150 Free Spins 200 Free Spins Casino Best Online Casinos New Online Casinos Mobile Online Casinos High Roller Casinos Bitcoin / Crypto Casinos Best Payout Online Casinos Real Money Casinos Fast Withdrawal Casinos Live Casino Online Real Money Live Casinos Casino RTP Scam casinos Safe Online Casinos Blackjack Casinos Sweepstakes Casinos $1 Minimum Deposit Casinos Best VPN-Friendly"
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Book_of_Shadows66614_3529856f2c.pdf",
+      "local_path": "sources/nolimit/BookOfShadows_GameSheet.txt",
+      "extracted_at": "2026-09-27T18:31:25Z",
+      "quote_or_excerpt": "A 5x3 reel area that can expand to 5x5 setup… Three or more Scatters (which are also wild) grants 10 Freespins with a special Golden expand symbol… Nolimit Bonus - allows the players to buy directly into the Freespin. Max payout: 30,338 x bet. Total RTP 96.01%."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/book-of-shadows",
+      "local_path": null,
+      "extracted_at": "2026-09-27T18:31:25Z",
+      "quote_or_excerpt": "Official game page lists RTP 96.01%, Max payout 30 338 x bet, Reels/Rows 3-5, Feature buy-in Yes, Bonus mode Yes."
     }
   ],
   "unknowns": [
-    "symbols detailed behaviors",
-    "bonus_free_spins trigger exact counts unless present in excerpt",
-    "feature_buy.cost_multiplier",
-    "numeric_limits only from SlotCatalog tags not official PDF"
+    "Exact payline counts at 5×3 / 5×4 / 5×5",
+    "Shadow Rows exact cost multipliers",
+    "Nolimit Bonus buy cost multiplier",
+    "Free Spins retrigger rules (if any)",
+    "Exact Free Spins totals per Shadow Rows choice"
   ],
   "thumbnail": "thumbs/nolimit-book-of-shadows.webp",
   "thumbnail_attribution": "SlotCatalog"

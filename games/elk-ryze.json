@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:31:32Z",
+  "identity": {
+    "provider": "Elk Studios",
+    "title": "Ryze",
+    "slug": "elk-ryze",
+    "provider_game_id": "10224",
+    "release_year": null,
+    "demo_url": "https://gamelauncher-stage.contentmedia.eu/1.0/game/?gameid=10224&operatorid=44&mode=demo&currency=EUR&device=desktop&language=en_gb&xdm=1",
+    "slotcatalog_url": null,
+    "official_info_url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10224-Ryze_GameDescription_MGA_en_gb.pdf"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official Game Description: 6 rows and 5-to-6 columns slot with an offset symbol grid. Columns vary between 5 and 6; cols recorded as 6 (upper bound) because schema has no cols_min/cols_max."
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": "horizontal_or_vertical",
+    "notes": "A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. Only the largest cluster of the connected identical symbols is paid out. Varying number of ways to win."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Avalanche: All cluster wins in the current symbol drop are collected. Thereafter, all symbols that were part of a winning combination explode. The remaining symbols fall vertically until they reach a resting position and new symbols drop in to fill the empty spaces. Continues as long as new winning combinations appear. Symbols drop vertically with gravity and slide to the left and right repeatedly as far downwards as possible. All symbols except wild symbols can fall through wild symbols."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Offset gravity drop",
+        "how_it_works": "Symbols drop vertically with gravity and slide left and right repeatedly as far downwards as possible on the offset grid. Non-wild symbols can fall through Multiplier Wilds."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Multiplier Wild",
+        "behavior": "Substitutes for any symbol except bonus and burst. Created at x1 in a vacant position after a winning cluster of solely payout symbols (not coins). Increases multiplier by 1 for each winning cluster it is part of, then moves to a vacant position created by removing winning symbols. Multiple Multiplier Wilds in the same cluster: values are added, then the sum multiplies the cluster win. After the win, individual multipliers increase before being multiplied and merged into a new Multiplier Wild.",
+        "params": {
+          "initial_multiplier": 1,
+          "increment_per_cluster": 1,
+          "does_not_substitute_for": [
+            "bonus",
+            "burst"
+          ],
+          "created_by": "payout-symbol-only winning cluster"
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "A bonus symbol that reaches the bonus key mould below the game grid triggers the bonus game with 7 free drops. Reaching a super bonus key mould triggers the super bonus game with 7 free drops. During bonus/super bonus, reaching a mould awards +3 free drops and upgrades to super bonus if a super bonus key mould is reached.",
+        "params": {
+          "trigger_condition": "reaches bonus key mould below grid",
+          "base_award": "7 free drops",
+          "retrigger_award": "3 additional free drops"
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Multiplier Wild",
+        "behavior": "Same symbol as wilds: carries an integer multiplier that starts at x1 and increases by 1 per winning cluster participation. Additive across Multiplier Wilds in one cluster, then that sum multiplies the win.",
+        "params": {
+          "stacking": "add_then_multiply_cluster"
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Coin",
+        "behavior": "Coins show a value that is x times the bet. A cluster of coins pays out its aggregate value; that value is then given to a new coin left behind when the cluster is removed. A cluster of solely coin symbols does not create a Multiplier Wild. Multiplier Wilds in a winning coin cluster add their values; the sum multiplies the coin cluster win.",
+        "params": {
+          "value_unit": "x bet",
+          "creates_multiplier_wild": false
+        }
+      },
+      {
+        "name": "Burst",
+        "behavior": "Blocker activated at the end of the game round when nothing else can happen. Transforms itself and adjacent symbols into the same payout symbol or into coins (individual coin values possible); does not transform into wild. Coins, bonus, burst, and Multiplier Wild symbols are not affected. Adjacent bursts chain so all affected symbols turn into the same payout symbol or coins. Multiple bursts activate simultaneously but act individually. Activates before bonus starts if a bonus trigger is in the same drop; during bonus, activates before awarding additional free drops if another bonus trigger happens in the same free drop.",
+        "params": {
+          "activation": "end of round when nothing else can happen",
+          "transforms_into": [
+            "payout_symbol",
+            "coins"
+          ],
+          "unaffected": [
+            "coin",
+            "bonus",
+            "burst",
+            "Multiplier Wild"
+          ]
+        }
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Paid spin drops symbols onto a 6-row, 5-to-6-column offset grid. Cluster wins (≥5 identical symbols connected horizontally or vertically) are collected; winners explode; remaining symbols fall with gravity (sliding L/R; non-wilds fall through wilds); new symbols drop in (Avalanche) until no new wins. Payout-only winning clusters leave an x1 Multiplier Wild; Multiplier Wilds grow, add, multiply, and merge. Coin clusters pay aggregate and leave a new coin (no MW). When nothing else can happen, Burst may transform itself+adjacents. If a bonus symbol reaches a key mould below the grid, Bonus or Super Bonus (7 free drops) starts after Burst (if any). Round ends immediately if 10,000x win cap is reached.",
+    "phases": [
+      {
+        "name": "Place bet and spin",
+        "order": 1,
+        "what_happens": "Player selects bet (€0.20–€100; each bet is 100 coins) and hits Spin (or Auto Spin). Game round starts on the selected bet level. No bets can be changed during an ongoing round. Optional: activate an X-iter mode from base game only before the drop.",
+        "ends_when": "Spin committed",
+        "state_changes": "Bet locked; optional X-iter mode selected"
+      },
+      {
+        "name": "Initial symbol drop",
+        "order": 2,
+        "what_happens": "Symbols drop onto the offset grid with gravity, sliding left/right as far down as possible. Non-wild symbols can fall through Multiplier Wilds. (X-iter Coin Burst: Burst present in first drop and bursts always give coins. X-iter Wild Concoction: drop starts with a number of Multiplier Wilds.)",
+        "ends_when": "All symbols at resting positions",
+        "state_changes": "Grid filled"
+      },
+      {
+        "name": "Evaluate clusters",
+        "order": 3,
+        "what_happens": "Find clusters of ≥5 identical symbols connected vertically or horizontally. Only the largest cluster of connected identical symbols is paid. Collect all cluster wins for the current drop.",
+        "ends_when": "All current-drop cluster wins collected (or none found)",
+        "state_changes": "Win amounts staged for this drop"
+      },
+      {
+        "name": "Apply Multiplier Wild math and create/merge MWs",
+        "order": 4,
+        "what_happens": "For each winning cluster involving Multiplier Wilds: add MW multipliers in that cluster, then multiply the cluster win by the sum. After the win, increase each participating MW by 1, then multiply/merge them into a new Multiplier Wild in a vacant position. A winning cluster of solely payout symbols (not coins) creates a new x1 Multiplier Wild in a vacant position. Coin-only clusters do not create a Multiplier Wild; coin cluster pays aggregate value and leaves a new coin with that aggregate; MWs in a coin cluster add then multiply the coin win.",
+        "ends_when": "MW and coin leave-behinds resolved for this drop",
+        "state_changes": "New/merged Multiplier Wilds and/or new coins placed in vacant positions"
+      },
+      {
+        "name": "Explode winners and Avalanche",
+        "order": 5,
+        "what_happens": "All symbols that were part of a winning combination explode/are removed. Remaining symbols fall vertically to resting positions; new symbols drop in to fill empty spaces. Return to Evaluate clusters while new winning combinations appear.",
+        "ends_when": "No new winning combinations after a fill",
+        "state_changes": "Grid updated; avalanche chain may continue"
+      },
+      {
+        "name": "Burst resolution",
+        "order": 6,
+        "what_happens": "If Burst symbols remain when nothing else can happen: each Burst activates (simultaneously if multiple, acting individually). Transforms itself and adjacent symbols into the same payout symbol or coins (not wild). Does not affect coins, bonus, burst, or Multiplier Wilds. Adjacent Bursts chain. After transformations, if new clusters form, resume Avalanche loop. If a bonus trigger exists in the same drop, Burst performs before the bonus starts.",
+        "ends_when": "No Burst left to activate, or post-Burst avalanches finished",
+        "state_changes": "Transformed symbols; possible new avalanche wins"
+      },
+      {
+        "name": "Bonus trigger check",
+        "order": 7,
+        "what_happens": "If a bonus symbol reached a bonus key mould below the grid: start Bonus with 7 free drops (Multiplier Wilds sticky). If it reached a super bonus key mould: start Super Bonus with 7 free drops (coins and Multiplier Wilds sticky). X-iter Super Bonus / Bonus guarantee entry. Otherwise end round and pay base-game wins (subject to 10,000x cap).",
+        "ends_when": "Bonus entered or round complete",
+        "state_changes": "Enter bonus mode or settle base round"
+      }
+    ],
+    "win_evaluation": "Cluster wins collected each drop before explode/avalanche. Multiplier Wilds in a cluster add then multiply that cluster. Coin clusters pay aggregate (then leave a new coin). Bonus/super bonus wins are paid out at the end of the bonus mode. Entire round (including bonus) capped at 10,000x bet; round ends immediately when win cap reached and wins so far are paid.",
+    "notes": "Ryze is played in two modes: normal mode and bonus mode with free drops. Hit frequency 27.4%. Theoretical RTP 94.0% (base and all X-iter modes)."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Bonus",
+        "trigger": "A bonus symbol reaches the bonus key mould below the game grid (or X-iter Bonus buy: guaranteed entry at 100x bet).",
+        "spins_awarded": "7 free drops",
+        "retrigger": "3 additional free drops when a bonus symbol reaches a bonus key mould during the bonus game. If a super bonus key mould is reached, the bonus is upgraded to Super Bonus.",
+        "sticky_or_persistent_state": "Multiplier Wilds are sticky between free drops.",
+        "progressive_state": "May upgrade to Super Bonus if a super bonus key mould is reached during free drops.",
+        "effects": "7 free drops with sticky Multiplier Wilds. Avalanche, Burst, coins, and Multiplier Wild rules still apply. Burst activates before awarding additional free drops if another bonus trigger happens in the same free drop. Wins paid at end of bonus mode.",
+        "end_condition": "Ends when no free drops remain or when the win cap (10,000x bet) has been reached.",
+        "phases": [
+          {
+            "name": "Start Bonus",
+            "order": 1,
+            "what_happens": "Award 7 free drops. Multiplier Wilds become sticky between free drops.",
+            "ends_when": "First free drop begins",
+            "state_changes": "free_drops=7; MW sticky enabled"
+          },
+          {
+            "name": "Free drop loop",
+            "order": 2,
+            "what_happens": "Play one free drop with the same Avalanche / MW / coin / Burst loop as base. On Burst+bonus-trigger same drop: Burst first, then award +3 free drops (and upgrade to Super Bonus if super mould). Consume one free drop per iteration.",
+            "ends_when": "free_drops==0 or win cap reached",
+            "state_changes": "Sticky MWs persist; free_drops decremented; possible +3 and upgrade"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay all bonus-mode winnings at end of bonus mode (or immediately if win cap hit).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "7 free drops"
+      },
+      {
+        "name": "Super Bonus",
+        "trigger": "A bonus symbol reaches a super bonus key mould below the game grid; or upgrade from Bonus when a super mould is reached during free drops; or X-iter Super Bonus buy: guaranteed entry at 500x bet.",
+        "spins_awarded": "7 free drops",
+        "retrigger": "3 additional free drops when a bonus symbol reaches a bonus/super bonus key mould during the game.",
+        "sticky_or_persistent_state": "Both coins and Multiplier Wilds are sticky between free drops.",
+        "progressive_state": null,
+        "effects": "7 free drops with sticky coins and sticky Multiplier Wilds. Same Avalanche/Burst ordering rules. Wins paid at end of bonus mode.",
+        "end_condition": "Ends when no free drops remain or when the win cap (10,000x bet) has been reached.",
+        "phases": [
+          {
+            "name": "Start Super Bonus",
+            "order": 1,
+            "what_happens": "Award 7 free drops (or continue from upgraded Bonus). Coins and Multiplier Wilds sticky between free drops.",
+            "ends_when": "Free drop loop begins",
+            "state_changes": "free_drops=7 (or current+award); coins+MW sticky"
+          },
+          {
+            "name": "Free drop loop",
+            "order": 2,
+            "what_happens": "Same Avalanche / MW / coin / Burst loop; sticky coins and MWs persist across drops. Burst before extra free-drop awards on same-drop triggers. +3 free drops on mould reach.",
+            "ends_when": "free_drops==0 or win cap reached",
+            "state_changes": "Sticky coins and MWs persist; free_drops updated"
+          },
+          {
+            "name": "Settle",
+            "order": 3,
+            "what_happens": "Pay all winnings at end of bonus mode (or immediately on win cap).",
+            "ends_when": "Payout complete",
+            "state_changes": "Return to base game"
+          }
+        ],
+        "award": "7 free drops"
+      }
+    ],
+    "notes": "Bonus and Super Bonus both award 7 free drops on trigger. Retrigger during bonus awards +3 free drops. Wins paid at end of bonus mode. Cap 10,000x."
+  },
+  "features": [
+    {
+      "name": "Avalanche",
+      "trigger": "After any drop with cluster wins",
+      "when": "Throughout base and bonus",
+      "effects": "Collect cluster wins → winning symbols explode → remaining fall with gravity (L/R slide; non-wilds through wilds) → new symbols drop in. Continues while new wins appear.",
+      "params": {
+        "provider_name": "Avalanche"
+      }
+    },
+    {
+      "name": "Multiplier Wild creation and growth",
+      "trigger": "Winning cluster of solely payout symbols (not coins)",
+      "when": "After a payout-symbol cluster win",
+      "effects": "Creates x1 Multiplier Wild in a vacant position. MW +1 per winning cluster it participates in; MWs in same cluster add then multiply win; after win, multipliers increase then merge into new MW.",
+      "params": {
+        "initial": 1,
+        "increment": 1
+      }
+    },
+    {
+      "name": "Coins merge",
+      "trigger": "Cluster of coin symbols",
+      "when": "On coin cluster win",
+      "effects": "Pays aggregate coin value (x bet each); leaves a new coin with that aggregate. Solely-coin cluster does not create Multiplier Wild. MWs in coin cluster add then multiply the coin win.",
+      "params": {}
+    },
+    {
+      "name": "Burst",
+      "trigger": "End of round / free drop when nothing else can happen",
+      "when": "After avalanches settle; before bonus start or before awarding extra free drops if trigger same drop",
+      "effects": "Blocker transforms self+adjacent into same payout symbol or coins (not wild). Unaffected: coins, bonus, burst, Multiplier Wild. Adjacent bursts chain. Multiple bursts activate simultaneously but act individually.",
+      "params": {}
+    },
+    {
+      "name": "X-iter",
+      "trigger": "Player selects an X-iter mode in base game only",
+      "when": "Base game only",
+      "cost_text": "Min €0.40, max €50,000; modes 2x–500x bet",
+      "effects": "Five paid modes (Bonus Hunt 2x, Wild Concoction 10x, Coin Burst 25x, Bonus 100x, Super Bonus 500x). All X-iter RTP 94.0%. See feature_buy.options for each mode.",
+      "params": {
+        "min_cost_eur": 0.4,
+        "max_cost_eur": 50000,
+        "rtp_percent": 94.0,
+        "base_game_only": true
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Super Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500x the selected bet",
+        "effects": "Guaranteed entry to the Super Bonus game. Both coins and Multiplier Wilds are sticky throughout the super bonus game.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      },
+      {
+        "name": "Bonus",
+        "cost_multiplier": 100.0,
+        "cost_text": "100x the selected bet",
+        "effects": "Guaranteed entry to the Bonus game. Multiplier Wilds are sticky throughout the bonus game.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      },
+      {
+        "name": "Coin Burst",
+        "cost_multiplier": 25.0,
+        "cost_text": "25x the selected bet",
+        "effects": "Guarantees a game round with a Burst symbol in the first drop; all Burst symbols always give coins.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      },
+      {
+        "name": "Wild Concoction",
+        "cost_multiplier": 10.0,
+        "cost_text": "10x the selected bet",
+        "effects": "One drop that starts with a number of Multiplier Wilds. Exact starting wild count not stated in the Game Description.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      },
+      {
+        "name": "Bonus Hunt",
+        "cost_multiplier": 2.0,
+        "cost_text": "2x the selected bet",
+        "effects": "One drop with more than TRIPLE the chance to trigger the Bonus and Super Bonus game.",
+        "rtp_when_bought_note": "Theoretical RTP for all X-iter game modes is 94.0%"
+      }
+    ],
+    "notes": "X-iter features can only be activated in the base game. Minimum X-iter cost €0.40, maximum €50,000.00. All game rules apply for X-iter features as well."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No ante bet stated in the official Game Description; X-iter covers paid feature entry."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "Max exposure / max win single spin 10,000x max bet; Maximum win €1,000,000.00. Game capped at 10,000x the placed bet; round ends immediately when win cap reached.",
+    "rtp_percent": 94.0,
+    "rtp_notes": "Theoretical RTP 94.0% (base game and all X-iter modes). Min bet €0.20, max bet €100.00. Each bet is 100 coins.",
+    "hit_frequency_notes": "Hit frequency 27.4% (official key features table)"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10224-Ryze_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/10224-Ryze_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:31:32Z",
+      "quote_or_excerpt": "Key features: Name Ryze; ELK Game id 10224; Theoretical RTP 94.0%; Cluster wins (at least 5 connecting symbols); Reels 5 to 6 columns; Rows 6 rows; Hit frequency 27.4%; Min bet €0.20; Max bet €100.00; Max exposure 10 000x max bet; Max win single spin 10 000x max bet; Maximum win €1,000,000.00."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10224-Ryze_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/10224-Ryze_GameDescription_MGA_en_gb.pdf",
+      "extracted_at": "2026-09-27T18:31:32Z",
+      "quote_or_excerpt": "Ryze is a 6 rows and 5-to-6 columns slot with an offset symbol grid, dropping symbols and cluster wins. A winning cluster consists of 5 or more identical symbols which are either vertically or horizontally connected. Only the largest cluster of the connected identical symbols is paid out. Symbols drop vertically with gravity and slide to the left and right repeatedly as far downwards as possible. All symbols except wild symbols can fall through wild symbols. All cluster wins in the current symbol drop are collected. Thereafter, all symbols that were part of a winning combination explode. The remaining symbols fall vertically until they reach a resting position and new symbols drop in to fill the empty spaces. The Avalanche feature continues as long as new winning combinations appear."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10224-Ryze_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/10224-Ryze_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:31:32Z",
+      "quote_or_excerpt": "A winning cluster of solely payout symbols, not coins, creates a x1 Multiplier Wild in one of the vacant positions created after a win. The Multiplier Wild increases its multiplier by 1 for each winning cluster it is a part of... The multiplier values of all Multiplier Wilds that are part of the same cluster are added and the sum is then multiplied by the winning cluster. After the win, the individual multipliers are increased before being multiplied and merged into a new Multiplier Wild. The Multiplier Wild symbol substitutes for any symbol except the bonus and burst symbols. A cluster of solely coin symbols does not create a Multiplier Wild."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10224-Ryze_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/10224-Ryze_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:31:32Z",
+      "quote_or_excerpt": "The burst symbol is a blocker that is activated at the end of the game round when there is nothing more that can happen. It changes itself and adjacent symbols into the same payout symbol or into coins, it does not transform into wild. ... A bonus symbol that reaches the bonus key mould below the game grid triggers the bonus game with 7 free drops. Multiplier Wilds are sticky between free drops in the bonus game. A bonus symbol that reaches a position with a super bonus key mould ... triggers the super bonus game with 7 free drops. Both coins and Multiplier Wilds are sticky ... 3 additional free drops are awarded when a bonus symbol reaches the bonus key mould during a bonus game. The bonus game and super bonus game end when no free drops remain or when the win cap has been reached. Winnings are paid out at the end of the bonus mode."
+    },
+    {
+      "source_type": "official_pdf",
+      "url": "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/10224-Ryze_GameDescription_MGA_en_gb.pdf",
+      "local_path": "sources/elk/10224-Ryze_GameDescription_MGA_en_gb.txt",
+      "extracted_at": "2026-09-27T18:31:32Z",
+      "quote_or_excerpt": "X-iter: Super Bonus 500x guaranteed Super Bonus; Bonus 100x guaranteed Bonus; Coin Burst 25x Burst in first drop and bursts always give coins; Wild Concoction 10x starts with a number of Multiplier Wilds; Bonus Hunt 2x more than TRIPLE chance of Bonus/Super Bonus. X-iter only in base game. Min X-iter cost €0.40, max €50,000.00. RTP for all X-iter modes 94.0%."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://www.elk-studios.com/games/ryze/",
+      "local_path": "sources/elk/ryze.html",
+      "extracted_at": "2026-09-27T18:31:32Z",
+      "quote_or_excerpt": "Demo launcher gameid=10224; marketing confirms 6 row, 5-to-6 column cluster slot, max 10 000x bet, X-iter modes 2x–500x. Mechanics taken from Game Description PDF, not marketing copy."
+    }
+  ],
+  "unknowns": [
+    "Exact paytable symbol values / payout amounts per cluster size (PDF references paytable but text extract has no numeric paytable)",
+    "Exact number of Multiplier Wilds that Wild Concoction starts with (PDF: 'a number of Multiplier Wilds')",
+    "Exact coin value distribution / possible coin multipliers",
+    "Exact Burst transform probabilities (payout symbol vs coins; which payout symbol)",
+    "Precise geometry of the 5-vs-6 column offset layout (which positions exist when 5 cols)",
+    "schema has rows_min/rows_max but no cols_min/cols_max — variable column count stored as cols=6 + layout_notes",
+    "thumbnail_attribution assumed ELK Studios lobby art (thumbs/elk-ryze.webp 600x600 matches studio og:image); SlotCatalog URL not set",
+    "release_year not stated in Game Description PDF (marketing page datePublished 2024-10-08 unused)"
+  ],
+  "thumbnail": "thumbs/elk-ryze.webp",
+  "thumbnail_attribution": "ELK Studios"
+}
