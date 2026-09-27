@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Born Wild",
+    "slug": "hacksaw-born-wild",
+    "provider_game_id": "1075",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1075&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1075/1.26.5/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 5x4 grid in official About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 20. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Land three or more Lion symbols in the base game to activate the Lion’s Roar feature. In this mode, you are awarded respins until no more Lion symbols land on the reels. If you manage to fill the grid with Lion symbols you win the amazing max win of {jackpotwinvalue}! If the max win is not reached, one last spin is awarded where all landed Lion symbols are converted into wilds!"
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "LION’S ROAR",
+        "behavior": "Land three or more Lion symbols in the base game to activate the Lion’s Roar feature. In this mode, you are awarded respins until no more Lion symbols land on the reels. If you manage to fill the grid with Lion symbols you win the amazing max win of {jackpotwinvalue}! If the max win is not reached, one last spin is awarded where all landed Lion symbols are converted into wilds!",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "Get three or more Free Spin scatter symbols to trigger the free spin feature.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Get three or more Free Spin scatter symbols to trigger the free spin feature. In this feature all WILD symbols are sticky and will stick for the duration of the feature. Any subsequent WILD symbols that land during the spins are also sticky. Free spins will play automatically until there are no free spins left.\n 3 FREE SPIN symbols will give you 10 spins.\n\n SPECIAL SYMBOLS\n\n The WILD symbol substitutes for all symbols except the free spins symbol."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "LION’S ROAR",
+      "trigger": null,
+      "effects": "Land three or more Lion symbols in the base game to activate the Lion’s Roar feature. In this mode, you are awarded respins until no more Lion symbols land on the reels. If you manage to fill the grid with Lion symbols you win the amazing max win of {jackpotwinvalue}! If the max win is not reached, one last spin is awarded where all landed Lion symbols are converted into wilds!",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "Get three or more Free Spin scatter symbols to trigger the free spin feature.",
+      "effects": "Get three or more Free Spin scatter symbols to trigger the free spin feature. In this feature all WILD symbols are sticky and will stick for the duration of the feature. Any subsequent WILD symbols that land during the spins are also sticky. Free spins will play automatically until there are no free spins left.\n 3 FREE SPIN symbols will give you 10 spins.\n\n SPECIAL SYMBOLS\n\n The WILD symbol substitutes for all symbols except the free spins symbol.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_wild_respin_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7500,
+    "max_win_notes": "maximum win (except the feature win) is 7,500 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1075/1.26.5/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/born-wild/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Witness the power of the majestic animals in Born Wild!\n Born Wild is a high volatility 5x4 grid game loaded with wilds. The special feature win for this game is a staggering {jackpotwinvalue} and the maximum win (except the feature win) is 7,500 times your bet!\n\n LION’S ROAR\n\n Land three or more Lion symbols in the base game to activate the Lion’s Roar feature. In this mode, you are awarded respins until no more Lion symbols land on the reels. If you manage to fill the grid with Lion symbols you win the amazing max win of {jackpotwinvalue}! If the max win is not reached, one "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

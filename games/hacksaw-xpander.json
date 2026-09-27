@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Xpander",
+    "slug": "hacksaw-xpander",
+    "provider_game_id": "1093",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1093&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1093/1.41.5/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 7x7 grid in official About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "This game features an overlaying MULTIPLIER symbol that will multiply your wins. If you land a MULTIPLIER on a winning cluster it will multiply your win with the current value. The maximum value of the multiplier is 128x.\n\nThese symbols will increase the size and value of the multiplier\n\n DOUBLE UP SYMBOLS\n\n The double up symbols will double the current multiplier value (up to maximum 128x). It is possible to land multiple double up symbols at the same time.\n\n GROW SYMBOLS\n\n Collect grow symbols to increase the size of the multiplier up to covering 4x4 symbols on the grid. Every time you reach 3 collected grow symbols the size of the multiplier will increase. The possible sizes for the multiplier symbol are: 2x2, 3x3 and 4x4 symbols. Every time the multiplier grows in size you will also be awarded with a respin!"
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "MULTIPLIER",
+        "behavior": "This game features an overlaying MULTIPLIER symbol that will multiply your wins. If you land a MULTIPLIER on a winning cluster it will multiply your win with the current value. The maximum value of the multiplier is 128x.\n\nThese symbols will increase the size and value of the multiplier\n\n DOUBLE UP SYMBOLS\n\n The double up symbols will double the current multiplier value (up to maximum 128x). It is possible to land multiple double up symbols at the same time.\n\n GROW SYMBOLS\n\n Collect grow symbols to increase the size of the multiplier up to covering 4x4 symbols on the grid. Every time you reach 3 collected grow symbols the size of the multiplier will increase. The possible sizes for the multiplier symbol are: 2x2, 3x3 and 4x4 symbols. Every time the multiplier grows in size you will also be awarded with a respin!",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "Land 1UP symbols to get additional spins and extend the length of the feature.",
+        "spins_awarded": "get 5 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Get at least three free spin symbols to trigger the free spin feature. In this feature the multiplier value and size is kept progressively for the remainder of the free spins. The maximum value for the multiplier is 4x4 in size with a value of 128x!\n\nWhen you start the feature you get 5 free spins. Land 1UP symbols to get additional spins and extend the length of the feature.\n\nDouble up symbols and grow symbols work the same way in the free spin mode as in the base game, except that the progress is saved between the rounds."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MULTIPLIER",
+      "trigger": null,
+      "effects": "This game features an overlaying MULTIPLIER symbol that will multiply your wins. If you land a MULTIPLIER on a winning cluster it will multiply your win with the current value. The maximum value of the multiplier is 128x.\n\nThese symbols will increase the size and value of the multiplier\n\n DOUBLE UP SYMBOLS\n\n The double up symbols will double the current multiplier value (up to maximum 128x). It is possible to land multiple double up symbols at the same time.\n\n GROW SYMBOLS\n\n Collect grow symbols to increase the size of the multiplier up to covering 4x4 symbols on the grid. Every time you reach 3 collected grow symbols the size of the multiplier will increase. The possible sizes for the multiplier symbol are: 2x2, 3x3 and 4x4 symbols. Every time the multiplier grows in size you will also be awarded with a respin!",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "Land 1UP symbols to get additional spins and extend the length of the feature.",
+      "effects": "Get at least three free spin symbols to trigger the free spin feature. In this feature the multiplier value and size is kept progressively for the remainder of the free spins. The maximum value for the multiplier is 4x4 in size with a value of 128x!\n\nWhen you start the feature you get 5 free spins. Land 1UP symbols to get additional spins and extend the length of the feature.\n\nDouble up symbols and grow symbols work the same way in the free spin mode as in the base game, except that the progress is saved between the rounds.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_freespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1093/1.41.5/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/xpander/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Xpander is a 7x7 grid game featuring a max win of up to 10,000x. It is the latest release that features our Hoppers™ feature, within this series of games there is a hopping multiplier that is on the grid at all times, this innovative feature will really get that excitement flowing!\n\nWhen the game starts you will see a multiplier overlaid on a random position on the reel. Between each spin, this multiplier will hop to a new position.\n\nIf the multiplier overlaps with a winning cluster, the multiplier value will be multiplied by the win amount. Each winning cluster will then be r"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

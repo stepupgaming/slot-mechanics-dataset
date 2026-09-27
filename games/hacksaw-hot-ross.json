@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Hot Ross",
+    "slug": "hacksaw-hot-ross",
+    "provider_game_id": "2062",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2062&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2062/1.15.5/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "RO$$ AND HOT RO$$ SYMBOLS",
+        "behavior": "When a Ro$$ or Hot Ro$$ symbol lands, it expands if the symbol would be part of at least one winning combination once expanded. Expanded Ro$$ or Hot Ro$$ symbols count as Wild on every position that the expanded symbol covers. Ro$$ symbols that do not expand are counted as a single Wild symbol. Only one Ro$$ or Hot Ro$$ symbol can land on a reel at a time.\n\n Ro$$ symbols expand downward, to the bottom of the grid from where the symbol landed.\n\n When a Hot Ro$$ symbol triggers, it moves to the top of the reel, and expands downward to cover the entire reel it landed on. Expanded Hot Ro$$ Reels trigger Ro$$ symbols on adjacent reels directly to the left and right to move to the top of the reel and expand to cover the entire reel.\n\n When a Ro$$ or Hot Ro$$ symbol expands through a Wild symbol it turns into a Multiplier that is applied to the entire expanded Ro$$ symbol or Hot Ro$$ Reel. If a Ro$$ symbol or Hot Ro$$ Reel expands through multiple Wild symbols, the Multiplier values will be added together for one total Multiplier value. Wild Multipliers can have the following Additive Multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x.\n\n When a winning combination includes more than one expanded Ro$$ symbol or Hot Ro$$ Reel with a Multiplier, the Multiplier values will be added together and then applied to the win the symbols are part of.",
+        "params": {}
+      },
+      {
+        "name": "EPIC BONUS - BIGG BOSS ROSS",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the CAT CALLS bonus. In addition, at least two Hot Ro$$ and one Wild symbol is guaranteed on every spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS symbols cannot land below a Ro$$ symbol and FS symbols cannot land on the same reel as a Hot Ro$$ symbol.\n\n If four or more reels are activated in NINE LIVES, FS symbols cannot land.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - CAT CALLS",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base games mechanics with an increased chance of landing Ro$$ and Hot Ro$$ symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - NINE LIVES",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics from the CAT CALLS bonus. In addition, when a Ro$$ or Hot Ro$$ symbol lands on a reel, that reel is activated. When a reel is activated, it guarantees that one Ro$$ or Hot Ro$$ symbol lands on that reel on every spin. The activated reels will stay activated throughout the bonus.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "RO$$ AND HOT RO$$ SYMBOLS",
+      "trigger": null,
+      "effects": "When a Ro$$ or Hot Ro$$ symbol lands, it expands if the symbol would be part of at least one winning combination once expanded. Expanded Ro$$ or Hot Ro$$ symbols count as Wild on every position that the expanded symbol covers. Ro$$ symbols that do not expand are counted as a single Wild symbol. Only one Ro$$ or Hot Ro$$ symbol can land on a reel at a time.\n\n Ro$$ symbols expand downward, to the bottom of the grid from where the symbol landed.\n\n When a Hot Ro$$ symbol triggers, it moves to the top of the reel, and expands downward to cover the entire reel it landed on. Expanded Hot Ro$$ Reels trigger Ro$$ symbols on adjacent reels directly to the left and right to move to the top of the reel and expand to cover the entire reel.\n\n When a Ro$$ or Hot Ro$$ symbol expands through a Wild symbol it turns into a Multiplier that is applied to the entire expanded Ro$$ symbol or Hot Ro$$ Reel. If a Ro$$ symbol or Hot Ro$$ Reel expands through multiple Wild symbols, the Multiplier values will be added together for one total Multiplier value. Wild Multipliers can have the following Additive Multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x.\n\n When a winning combination includes more than one expanded Ro$$ symbol or Hot Ro$$ Reel with a Multiplier, the Multiplier values will be added together and then applied to the win the symbols are part of.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - CAT CALLS",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base games mechanics with an increased chance of landing Ro$$ and Hot Ro$$ symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - NINE LIVES",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics from the CAT CALLS bonus. In addition, when a Ro$$ or Hot Ro$$ symbol lands on a reel, that reel is activated. When a reel is activated, it guarantees that one Ro$$ or Hot Ro$$ symbol lands on that reel on every spin. The activated reels will stay activated throughout the bonus.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "EPIC BONUS - BIGG BOSS ROSS",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the CAT CALLS bonus. In addition, at least two Hot Ro$$ and one Wild symbol is guaranteed on every spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS symbols cannot land below a Ro$$ symbol and FS symbols cannot land on the same reel as a Hot Ro$$ symbol.\n\n If four or more reels are activated in NINE LIVES, FS symbols cannot land.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonus_buy_feature_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_buy_fiesty_featurespins__uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_buy_epic_drop_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_buy_fs_1_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_buy_fs_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_buy_fs_3_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2062/1.15.5/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/hot-ross/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n This just got real hot as Ro$$ the Crazy Cat takes over these reels.\n\n You’ll spot him under the broken pink neon streetlight, rollin’ up his furred sleeves and lighting cannonballs like it’s any other Tuesday. In this game Ro$$ rules and Maxx drools, with 8 lives, 1 eye and 6 claws to spare, Ro$$ is not someone you want to f*nk with.\n\n Join Hot Ross in this wild rat race featuring paylines, 5 reels, 5 rows and a max win of 15 000 times your bet, achievable in all game modes. In RIP City, you gotta smoke ‘em when you got ‘em!\n\n FEATURES\n\n RO$$ AND HOT RO$$ SYMBOLS\n\n When a Ro$"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

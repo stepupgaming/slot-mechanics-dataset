@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Vampire",
+    "slug": "hacksaw-le-vampire",
+    "provider_game_id": "2582",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2582&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2582/1.32.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 3x3 from About text"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more orthogonally connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "HIDDEN EPIC BONUS - DO YOUR FANG",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the LOVE AT FIRST BITE bonus, with a Rainbow or Epic Rainbow symbol guaranteed to land on every spin. In addition, when Level 4 is reached on the Symbol Bar, an Epic Rainbow symbol is guaranteed to land on the next spin.\n\n All Coins that are revealed during the bonus display a value of at least 1x.\n\n For every Level that is reached on the Symbol Bar, +2 free spins are awarded.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS, Rainbow and Epic Rainbow symbols cannot land at the same time. There can only be one Rainbow or Epic Rainbow symbol on the grid at the same time.\n\n FS symbols cannot land in the COFFIN BREAK, LOVE AT FIRST BITE and DO YOUR FANG bonus games.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "GOLDEN SQUARES",
+        "behavior": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares.\n\n When a Rainbow symbol lands on the grid, it activates any Golden Squares after all wins have been collected. Activated Golden Squares reveal Special symbols that are either Bronze, Silver, Gold or Diamond Coins and can also reveal Green or Gold Clover symbols and Bag of Gold or Pot of Gold symbols.\n\n When an Epic Rainbow symbol lands, all grid positions are highlighted as Golden Squares and reveal Special symbols. The reveal and activation process is the same for both Rainbow symbols. Epic Rainbow symbols also have a chance to land and trigger a Blood Rain, where all grid positions are highlighted as Blood Squares. Blood Squares keeps the mechanics of Golden Squares, but will not reveal any Bronze Coin symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.4x, 1x, 2x, 3x, 4x \n Silver Coins can have the following values: 5x, 6x, 7x, 8x, 9x, 10x \n Gold Coins can have the following values: 20x, 30x, 40x, 50x \n Diamond Coins can have the following values: 100x, 150x, 250x, 500x \n\n After all Golden Squares have been revealed, any Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Bag of Gold or Pot of Gold symbols on adjacent squares with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20.\n\n Gold Clover symbols will multiply all Coins or existing Bag of Gold or Pot of Gold symbols on the grid with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. If there are no Special symbols near the Clover symbols, they will activate once there are Special symbols on the grid to multiply.\n\n Once all Clover symbols have applied their Multipliers, Bag of Gold symbols will activate. When Bag of Gold symbols activate, they collect the values of all Coins and other activated Bag of Gold and Pot of Gold symbols on adja",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADES",
+        "behavior": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - COFFIN BREAK",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game’s mechanics and all Golden and Blood Squares remain highlighted until either Rainbow symbol activates them.\n\n When a high-paying symbol is part of a winning combination, the win is handled before all symbols of the same symbol type are upgraded to Epic symbols for the remainder of the bonus, including any new symbols that land. If there are multiple winning combinations including the same high-paying symbol, the symbol type will be upgraded after the first win has been handled. Wins are handled from left to right.\n\n In addition, a Symbol Bar is located outside of the grid. For every symbol type that is upgraded to an Epic symbol, a new Level is reached on the Symbol Bar:\n\n Level 1 awards 2 additional free spins. \n Level 2 awards 2 additional free spins. \n Level 3 awards 2 additional free spins. \n Level 4 awards 2 additional free spins and guarantees that 1 Rainbow or Epic Rainbow symbol will land on the next spin. \n\n When an Epic symbol is part of a win, the square behind the winning symbol is highlighted as a Blood Square."
+      },
+      {
+        "name": "BONUS GAME - LOVE AT FIRST BITE",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "evel that is reached on the Symbol Bar, +2 free spins are awarded.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the COFFIN BREAK bonus and all Golden and Blood Squares remain highlighted even after being activated by a Rainbow symbol. When Epic Rainbow symbols activate, only the Golden and Blood Squares that were on the grid before will remain after the full grid activation is complete.\n\n For every Level that is reached on the Symbol Bar, +2 free spins are awarded."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "GOLDEN SQUARES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares.\n\n When a Rainbow symbol lands on the grid, it activates any Golden Squares after all wins have been collected. Activated Golden Squares reveal Special symbols that are either Bronze, Silver, Gold or Diamond Coins and can also reveal Green or Gold Clover symbols and Bag of Gold or Pot of Gold symbols.\n\n When an Epic Rainbow symbol lands, all grid positions are highlighted as Golden Squares and reveal Special symbols. The reveal and activation process is the same for both Rainbow symbols. Epic Rainbow symbols also have a chance to land and trigger a Blood Rain, where all grid positions are highlighted as Blood Squares. Blood Squares keeps the mechanics of Golden Squares, but will not reveal any Bronze Coin symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.4x, 1x, 2x, 3x, 4x \n Silver Coins can have the following values: 5x, 6x, 7x, 8x, 9x, 10x \n Gold Coins can have the following values: 20x, 30x, 40x, 50x \n Diamond Coins can have the following values: 100x, 150x, 250x, 500x \n\n After all Golden Squares have been revealed, any Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Bag of Gold or Pot of Gold symbols on adjacent squares with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20.\n\n Gold Clover symbols will multiply all Coins or existing Bag of Gold or Pot of Gold symbols on the grid with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. If there are no Special symbols near the Clover symbols, they will activate once there are Special symbols on the grid to multiply.\n\n Once all Clover symbols have applied their Multipliers, Bag of Gold symbols will activate. When Bag of Gold symbols activate, they collect the values of all Coins and other activated Bag of Gold and Pot of Gold symbols on adja",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - COFFIN BREAK",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game’s mechanics and all Golden and Blood Squares remain highlighted until either Rainbow symbol activates them.\n\n When a high-paying symbol is part of a winning combination, the win is handled before all symbols of the same symbol type are upgraded to Epic symbols for the remainder of the bonus, including any new symbols that land. If there are multiple winning combinations including the same high-paying symbol, the symbol type will be upgraded after the first win has been handled. Wins are handled from left to right.\n\n In addition, a Symbol Bar is located outside of the grid. For every symbol type that is upgraded to an Epic symbol, a new Level is reached on the Symbol Bar:\n\n Level 1 awards 2 additional free spins. \n Level 2 awards 2 additional free spins. \n Level 3 awards 2 additional free spins. \n Level 4 awards 2 additional free spins and guarantees that 1 Rainbow or Epic Rainbow symbol will land on the next spin. \n\n When an Epic symbol is part of a win, the square behind the winning symbol is highlighted as a Blood Square.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - LOVE AT FIRST BITE",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the COFFIN BREAK bonus and all Golden and Blood Squares remain highlighted even after being activated by a Rainbow symbol. When Epic Rainbow symbols activate, only the Golden and Blood Squares that were on the grid before will remain after the full grid activation is complete.\n\n For every Level that is reached on the Symbol Bar, +2 free spins are awarded.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - DO YOUR FANG",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the LOVE AT FIRST BITE bonus, with a Rainbow or Epic Rainbow symbol guaranteed to land on every spin. In addition, when Level 4 is reached on the Symbol Bar, an Epic Rainbow symbol is guaranteed to land on the next spin.\n\n All Coins that are revealed during the bonus display a value of at least 1x.\n\n For every Level that is reached on the Symbol Bar, +2 free spins are awarded.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS, Rainbow and Epic Rainbow symbols cannot land at the same time. There can only be one Rainbow or Epic Rainbow symbol on the grid at the same time.\n\n FS symbols cannot land in the COFFIN BREAK, LOVE AT FIRST BITE and DO YOUR FANG bonus games.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rainbow_bite_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rainbow_epic_drop_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "coffin_break_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "love_at_first_bite_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2582/1.32.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-vampire/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n SUPER CASCADES\n\n When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.\n\n GOLDEN SQUARES\n\n When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares.\n\n When a Rainbow symbol lands on the grid, it activates any Golden Squares after all wins have been collected. Activated Golden Squares reveal Special symbols that are either Bronze, Silver, Gold or Diamond Coins and can also reveal Green or Gold C"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

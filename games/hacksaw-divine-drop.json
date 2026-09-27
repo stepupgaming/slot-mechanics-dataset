@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Divine Drop",
+    "slug": "hacksaw-divine-drop",
+    "provider_game_id": "1490",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1490&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1490/1.24.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Land 3 or 4 FS scatter symbols at the same time during the base game to trigger one of the bonus games.\n\n You can also trigger one of the bonuses by collecting FS symbols during respins. If only 1 or 2 FS symbols land on a spin they are collected in the Bonus Meter above the reels if there is at least one Wild Multiplier with 1 or more Vitality. Once the Bonus Meter reaches 3 or 4 collected FS symbols, it will trigger the corresponding bonus game at the end of the round (after any potential respins have been awarded)."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD MULTIPLIER",
+        "behavior": "The Wild Multiplier symbol substitutes for all other symbols in the paytable and multiplies the value of any winning combination that it is part of. Wild Multipliers can land with one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x, 200x.\n\n If more than one Wild Multiplier is part of the same winning combination, their values are added together before being applied to the win.\n\n Wild Multipliers may land with up to 3 Vitality, shown on the symbol as red hearts. While a Wild Multiplier has Vitality remaining, it stays sticky on the grid and awards respins. For each respin awarded, 1 Vitality is removed from every Wild Multiplier on the grid. When a Wild Multiplier reaches 0 Vitality, it will be removed on the next spin or respin.",
+        "params": {}
+      },
+      {
+        "name": "APHRODITE’S LOVE",
+        "behavior": "When the Heart symbol lands it triggers Aphrodite’s Love and restores 1 - 3 Vitality to all Wild Multipliers on the grid.",
+        "params": {}
+      },
+      {
+        "name": "ZEUS’S THUNDER",
+        "behavior": "When the X symbol lands it activates Zeus’s Thunder and calls down a bolt of lightning that doubles the multiplier value of all Wild Multipliers on the grid!",
+        "params": {}
+      },
+      {
+        "name": "FS COLLECT",
+        "behavior": "Land 3 or 4 FS scatter symbols at the same time during the base game to trigger one of the bonus games.\n\n You can also trigger one of the bonuses by collecting FS symbols during respins. If only 1 or 2 FS symbols land on a spin they are collected in the Bonus Meter above the reels if there is at least one Wild Multiplier with 1 or more Vitality. Once the Bonus Meter reaches 3 or 4 collected FS symbols, it will trigger the corresponding bonus game at the end of the round (after any potential respins have been awarded).",
+        "params": {}
+      },
+      {
+        "name": "TRICKS OF HADES",
+        "behavior": "Land or collect 3 FS symbols during the base game to activate the TRICKS OF HADES Bonus with 8 free spins.\n\n During the bonus there is an increased chance of landing Wild Multipliers and special symbols!",
+        "params": {}
+      },
+      {
+        "name": "TRIPLE TRICKS OF HADES",
+        "behavior": "Land or collect 4 FS symbols during the base game to activate the TRIPLE TRICKS OF HADES Bonus with 8 free spins.\n\n During the bonus there is an increased chance of landing Wild Multipliers and special symbols! Furthermore, the minimum value of the Wild Multipliers that land is 3x.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD MULTIPLIER",
+      "trigger": null,
+      "effects": "The Wild Multiplier symbol substitutes for all other symbols in the paytable and multiplies the value of any winning combination that it is part of. Wild Multipliers can land with one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x, 200x.\n\n If more than one Wild Multiplier is part of the same winning combination, their values are added together before being applied to the win.\n\n Wild Multipliers may land with up to 3 Vitality, shown on the symbol as red hearts. While a Wild Multiplier has Vitality remaining, it stays sticky on the grid and awards respins. For each respin awarded, 1 Vitality is removed from every Wild Multiplier on the grid. When a Wild Multiplier reaches 0 Vitality, it will be removed on the next spin or respin.",
+      "params": {}
+    },
+    {
+      "name": "APHRODITE’S LOVE",
+      "trigger": null,
+      "effects": "When the Heart symbol lands it triggers Aphrodite’s Love and restores 1 - 3 Vitality to all Wild Multipliers on the grid.",
+      "params": {}
+    },
+    {
+      "name": "ZEUS’S THUNDER",
+      "trigger": null,
+      "effects": "When the X symbol lands it activates Zeus’s Thunder and calls down a bolt of lightning that doubles the multiplier value of all Wild Multipliers on the grid!",
+      "params": {}
+    },
+    {
+      "name": "FS COLLECT",
+      "trigger": null,
+      "effects": "Land 3 or 4 FS scatter symbols at the same time during the base game to trigger one of the bonus games.\n\n You can also trigger one of the bonuses by collecting FS symbols during respins. If only 1 or 2 FS symbols land on a spin they are collected in the Bonus Meter above the reels if there is at least one Wild Multiplier with 1 or more Vitality. Once the Bonus Meter reaches 3 or 4 collected FS symbols, it will trigger the corresponding bonus game at the end of the round (after any potential respins have been awarded).",
+      "params": {}
+    },
+    {
+      "name": "TRICKS OF HADES",
+      "trigger": null,
+      "effects": "Land or collect 3 FS symbols during the base game to activate the TRICKS OF HADES Bonus with 8 free spins.\n\n During the bonus there is an increased chance of landing Wild Multipliers and special symbols!",
+      "params": {}
+    },
+    {
+      "name": "TRIPLE TRICKS OF HADES",
+      "trigger": null,
+      "effects": "Land or collect 4 FS symbols during the base game to activate the TRIPLE TRICKS OF HADES Bonus with 8 free spins.\n\n During the bonus there is an increased chance of landing Wild Multipliers and special symbols! Furthermore, the minimum value of the Wild Multipliers that land is 3x.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "wild_divinity_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "tricks_of_hades_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "triple_tricks_of_hades_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win in this game is 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1490/1.24.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/divine-drop/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Drop everything else, this game is divine! Divine Drop is a 5-reel, 4-row paylines game featuring a whole host of Greek deities and godly mechanics.\n\n The maximum win in this game is 10,000 times your bet and can be achieved in all game modes!\n\n Join us as we journey to the heights of Olympus and the depths of Hades!\n\n FEATURES\n\n WILD MULTIPLIER\n\n The Wild Multiplier symbol substitutes for all other symbols in the paytable and multiplies the value of any winning combination that it is part of. Wild Multipliers can land with one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

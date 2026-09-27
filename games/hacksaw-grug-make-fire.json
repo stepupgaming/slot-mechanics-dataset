@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Grug Make Fire",
+    "slug": "hacksaw-grug-make-fire",
+    "provider_game_id": "2166",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2166&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2166/1.23.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "BURNING WILD SYMBOLS",
+        "behavior": "When a Burning Wild symbol lands on the grid, it activates and burns all paying symbols and FS symbols on the reel above where the symbol landed.\n\n When low-paying symbols are burnt, they transform into Wild symbols.\n\n When high-paying symbols are burnt, they transform into Burnt Wild Multipliers. When Burnt Wild Multipliers are part of a win, the Multiplier value is added to all wins connected to that Burnt Wild Multiplier. If more than one Burnt Wild Multiplier is part of the same winning combination, the values are added together before being applied to the win.\n\n Burnt Wild Multipliers can have the following Additive Multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x\n\n Each high-paying symbol has its own corresponding Burnt Wild Multiplier.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "FS SYMBOLS",
+        "behavior": "When 3 or more FS symbols land simultaneously, each FS symbol will display a free spin value. The total number of free spins awarded for the bonus is determined by adding up all the numbers on positions covered by each FS symbol. FS symbols can have the following values: 2 - 5.\n\n When FS symbols are burnt, they can display a higher free spin value. Burnt FS symbols can have the following values: 3 - 6.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - GRUG FIND FOOD",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 6 - 18 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics with an increased chance of landing Burning Wild symbols.\n\n FS symbols can land with the following values: 1-3 and Burnt FS symbols can have the following values: 2 - 4.\n\n Landing an additional FS symbol in the bonus awards extra free spins: An FS symbol awards at least 1 free spin and max 4 free spins."
+      },
+      {
+        "name": "BONUS GAME - GRUG FIGHT DINO",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 8 - 24 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the GRUG FIND FOOD bonus. In this bonus, a Wildfire Bar is located outside the grid. The Wildfire Bar has Levels and is progressive throughout the bonus. The Wildfire Bar will reach the next Level when a certain number of winning symbols have been awarded. Each Level will award a certain number of Burnt Reels. Once a new Level is reached, the Bar will reset. The Wildfire Bar starts at Level 0.\n\n 12 winning symbols are needed to reach Level 1, which awards 1 Burnt Reel \n 46 winning symbols are needed to reach Level 2, which awards 2 Burnt Reels \n 96 winning symbols are needed to reach Level 3, which awards 3 Burnt Reels \n 150 winning symbols are needed to reach Level 4, which awards 4-5 Burnt Reels \n\n Once Level 4 is reached, the Wildfire Bar will stay at Level 4 until the end of the bonus.\n\n Burnt Reels burn low and high-paying symbols and FS symbols on that reel, and transform them as in the base game. When a Burnt Wild Multiplier burns twice, the existing Multiplier value will be multiplied by x3. If a Burnt FS symbol burns twice, its free spin value can increase to a higher value. The new possible values are: 3 - 5.\n\n When Burning Wild symbols and Burnt Reels are active at the same time, Burning Wild symbols activate first, followed by Burnt Reels. Any wins are awarded and the Wildfire Bar fills. Burnt Reels can only burn a reel once per spin.\n\n Landing an additional FS symbol in the bonus awards extra free spins: An FS symbol awards at least 1 free spin and max 5 free spins.\n\n SPECIAL SYMBOLS\n\n Burning Wild, Wild and Burnt Wild Multipliers substitute for all symbols in the paytable.\n\n Wild symbols only appear when transformed from a low-paying symbol.\n\n Only one Burning Wild symbol can land on the same reel."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "BURNING WILD SYMBOLS",
+      "trigger": null,
+      "effects": "When a Burning Wild symbol lands on the grid, it activates and burns all paying symbols and FS symbols on the reel above where the symbol landed.\n\n When low-paying symbols are burnt, they transform into Wild symbols.\n\n When high-paying symbols are burnt, they transform into Burnt Wild Multipliers. When Burnt Wild Multipliers are part of a win, the Multiplier value is added to all wins connected to that Burnt Wild Multiplier. If more than one Burnt Wild Multiplier is part of the same winning combination, the values are added together before being applied to the win.\n\n Burnt Wild Multipliers can have the following Additive Multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x\n\n Each high-paying symbol has its own corresponding Burnt Wild Multiplier.",
+      "params": {}
+    },
+    {
+      "name": "FS SYMBOLS",
+      "trigger": null,
+      "effects": "When 3 or more FS symbols land simultaneously, each FS symbol will display a free spin value. The total number of free spins awarded for the bonus is determined by adding up all the numbers on positions covered by each FS symbol. FS symbols can have the following values: 2 - 5.\n\n When FS symbols are burnt, they can display a higher free spin value. Burnt FS symbols can have the following values: 3 - 6.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - GRUG FIND FOOD",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 6 - 18 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics with an increased chance of landing Burning Wild symbols.\n\n FS symbols can land with the following values: 1-3 and Burnt FS symbols can have the following values: 2 - 4.\n\n Landing an additional FS symbol in the bonus awards extra free spins: An FS symbol awards at least 1 free spin and max 4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - GRUG FIGHT DINO",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 8 - 24 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the GRUG FIND FOOD bonus. In this bonus, a Wildfire Bar is located outside the grid. The Wildfire Bar has Levels and is progressive throughout the bonus. The Wildfire Bar will reach the next Level when a certain number of winning symbols have been awarded. Each Level will award a certain number of Burnt Reels. Once a new Level is reached, the Bar will reset. The Wildfire Bar starts at Level 0.\n\n 12 winning symbols are needed to reach Level 1, which awards 1 Burnt Reel \n 46 winning symbols are needed to reach Level 2, which awards 2 Burnt Reels \n 96 winning symbols are needed to reach Level 3, which awards 3 Burnt Reels \n 150 winning symbols are needed to reach Level 4, which awards 4-5 Burnt Reels \n\n Once Level 4 is reached, the Wildfire Bar will stay at Level 4 until the end of the bonus.\n\n Burnt Reels burn low and high-paying symbols and FS symbols on that reel, and transform them as in the base game. When a Burnt Wild Multiplier burns twice, the existing Multiplier value will be multiplied by x3. If a Burnt FS symbol burns twice, its free spin value can increase to a higher value. The new possible values are: 3 - 5.\n\n When Burning Wild symbols and Burnt Reels are active at the same time, Burning Wild symbols activate first, followed by Burnt Reels. Any wins are awarded and the Wildfire Bar fills. Burnt Reels can only burn a reel once per spin.\n\n Landing an additional FS symbol in the bonus awards extra free spins: An FS symbol awards at least 1 free spin and max 5 free spins.\n\n SPECIAL SYMBOLS\n\n Burning Wild, Wild and Burnt Wild Multipliers substitute for all symbols in the paytable.\n\n Wild symbols only appear when transformed from a low-paying symbol.\n\n Only one Burning Wild symbol can land on the same reel.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "grug_play_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "grug_find_food_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "grug_fight_dino_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2166/1.23.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/grug-make-fire/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n BURNING WILD SYMBOLS\n\n When a Burning Wild symbol lands on the grid, it activates and burns all paying symbols and FS symbols on the reel above where the symbol landed.\n\n When low-paying symbols are burnt, they transform into Wild symbols.\n\n When high-paying symbols are burnt, they transform into Burnt Wild Multipliers. When Burnt Wild Multipliers are part of a win, the Multiplier value is added to all wins connected to that Burnt Wild Multiplier. If more than one Burnt Wild Multiplier is part of the same winning combination, the values are added together before being applied to the"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

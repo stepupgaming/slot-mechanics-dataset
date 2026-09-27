@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Feel the Beat",
+    "slug": "hacksaw-feel-the-beat",
+    "provider_game_id": "1372",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1372&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1372/1.17.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 5x5 grid in official About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 27,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 27. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "SPEAKER SYMBOL",
+        "behavior": "When at least two Speaker symbols land on different reels on the grid, all winning paylines that connect them will be identified and the Speaker Mechanic will activate. During the Speaker Mechanic, all symbols including Wild symbols, FS symbols and the Speaker symbols themselves within the winning paylines will be flipped and replaced with a paying symbol. All symbols will be replaced with the same symbol.\n\n The Speaker Mechanic will only activate if there are Speaker symbols present on at least two different reels. If two Speaker symbols land on the same reel during a spin that will activate the Speaker Mechanic, they will fill the vertical gap between them with Speaker symbols to create even more winning paylines.\n\n In the base game, the Speaker Mechanic can only replace symbols with paying symbols.\n\n If an FS symbol is replaced by another symbol during the Speaker Mechanic, it will still count towards potentially triggering a bonus game.",
+        "params": {}
+      },
+      {
+        "name": "PUMP UP THE JAM! BONUS",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to activate the PUMP UP THE JAM! bonus feature with 10 free spins. In this bonus feature, the mechanics of the base game are more likely to be activated. In this game mode, the Speaker Mechanic also has a chance to replace symbols with wild symbols.\n\n In this game mode, the Speaker Mechanic also has a chance to replace symbols with wild symbols.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.",
+        "params": {}
+      },
+      {
+        "name": "GET YOUR BOOTY ON THE FLOOR! BONUS",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to activate the GET YOUR BOOTY ON THE FLOOR! bonus feature with 10 free spins. In this bonus feature, the value of the global multiplier has a chance to increase over time. Every time the X symbol lands on the grid, it reveals its multiplier value which is added to the global multiplier.\n\n The global multiplier is activated when there is a win on the grid, and an X symbol is present on the grid at the same time. When it is activated, the global multiplier will multiply the total win of the current spin.\n\n In this game mode, the Speaker Mechanic also has a chance to replace symbols with wild symbols.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "X SYMBOL",
+        "behavior": "The X Symbol is activated if there is a win on the grid. When activated, the X Symbol reveals a Global multiplier value that will be displayed outside the grid. The revealed multiplier can have the value 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 150x or 200x. This multiplier is applied to your total win for that spin. If the X Symbol is part of a payline that will be replaced by the Speaker Mechanic, the X symbol will be replaced after revealing its value.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SPEAKER SYMBOL",
+      "trigger": null,
+      "effects": "When at least two Speaker symbols land on different reels on the grid, all winning paylines that connect them will be identified and the Speaker Mechanic will activate. During the Speaker Mechanic, all symbols including Wild symbols, FS symbols and the Speaker symbols themselves within the winning paylines will be flipped and replaced with a paying symbol. All symbols will be replaced with the same symbol.\n\n The Speaker Mechanic will only activate if there are Speaker symbols present on at least two different reels. If two Speaker symbols land on the same reel during a spin that will activate the Speaker Mechanic, they will fill the vertical gap between them with Speaker symbols to create even more winning paylines.\n\n In the base game, the Speaker Mechanic can only replace symbols with paying symbols.\n\n If an FS symbol is replaced by another symbol during the Speaker Mechanic, it will still count towards potentially triggering a bonus game.",
+      "params": {}
+    },
+    {
+      "name": "X SYMBOL",
+      "trigger": null,
+      "effects": "The X Symbol is activated if there is a win on the grid. When activated, the X Symbol reveals a Global multiplier value that will be displayed outside the grid. The revealed multiplier can have the value 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 150x or 200x. This multiplier is applied to your total win for that spin. If the X Symbol is part of a payline that will be replaced by the Speaker Mechanic, the X symbol will be replaced after revealing its value.",
+      "params": {}
+    },
+    {
+      "name": "PUMP UP THE JAM! BONUS",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the PUMP UP THE JAM! bonus feature with 10 free spins. In this bonus feature, the mechanics of the base game are more likely to be activated. In this game mode, the Speaker Mechanic also has a chance to replace symbols with wild symbols.\n\n In this game mode, the Speaker Mechanic also has a chance to replace symbols with wild symbols.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "GET YOUR BOOTY ON THE FLOOR! BONUS",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the GET YOUR BOOTY ON THE FLOOR! bonus feature with 10 free spins. In this bonus feature, the value of the global multiplier has a chance to increase over time. Every time the X symbol lands on the grid, it reveals its multiplier value which is added to the global multiplier.\n\n The global multiplier is activated when there is a win on the grid, and an X symbol is present on the grid at the same time. When it is activated, the global multiplier will multiply the total win of the current spin.\n\n In this game mode, the Speaker Mechanic also has a chance to replace symbols with wild symbols.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "disco_double_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "funky_four_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spin_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win of 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1372/1.17.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/feel-the-beat/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Feel the Beat is an electrifying game that brings the party to your screen! Featuring a 5x5 grid and paylines wins, you can groove to the beat while chasing the maximum win of 10,000 times your bet. The max win can be achieved in all game modes.\n\n FEATURES\n\n SPEAKER SYMBOL\n\n When at least two Speaker symbols land on different reels on the grid, all winning paylines that connect them will be identified and the Speaker Mechanic will activate. During the Speaker Mechanic, all symbols including Wild symbols, FS symbols and the Speaker symbols themselves within the winning paylines"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

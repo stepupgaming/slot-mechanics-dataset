@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Bash Bros",
+    "slug": "hacksaw-bash-bros",
+    "provider_game_id": "1928",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1928&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1928/1.16.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 1024. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When a Cash symbol lands, it will activate and expand from that symbol upwards to the top of the reel after all wins and cascades have been handled on that spin.\n\n When a Cash symbol expands, it turns into a Cash Stack. Cash symbols that land on the top row are counted as Cash Stacks. Each position on the grid that the Cash Stack covers will reveal 1 of the following bet Multipliers: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 500x, 1 000x, 5 000x, 10 000x. Once expanded, the Cash Stack Multiplier values will be added and multiplied by the current bet amount to determine the awarded win. If there is more than 1 Cash Stack on the grid, the Multipliers will first be added, then multiplied by the current bet amount to determine the awarded win. Only 1 Cash Stack can land on a reel at a time."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - REACTOR RIOT",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the BROS BEFORE BLOWS bonus. In addition, this bonus guarantees 1 bash from Oskar and 1 smash from Fred on each free spin! If there are already Cash Stacks on every reel, only Fred will activate and smash the Cash Stacks. The order of the bash and smash activation may vary.\n\n FS symbols cannot land in the REACTOR RIOT bonus.\n\n SPECIAL SYMBOLS\n\n FS symbols cannot land above a Cash symbol on the same reel.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "CASH STACKS",
+        "behavior": "When a Cash symbol lands, it will activate and expand from that symbol upwards to the top of the reel after all wins and cascades have been handled on that spin.\n\n When a Cash symbol expands, it turns into a Cash Stack. Cash symbols that land on the top row are counted as Cash Stacks. Each position on the grid that the Cash Stack covers will reveal 1 of the following bet Multipliers: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 500x, 1 000x, 5 000x, 10 000x. Once expanded, the Cash Stack Multiplier values will be added and multiplied by the current bet amount to determine the awarded win. If there is more than 1 Cash Stack on the grid, the Multipliers will first be added, then multiplied by the current bet amount to determine the awarded win. Only 1 Cash Stack can land on a reel at a time.",
+        "params": {}
+      },
+      {
+        "name": "THE BASHING BROS",
+        "behavior": "When the current grid has settled, and there is a Cash Stack on the grid, there is a chance that Oskar, on the left side, will activate and bash the grid, or Fred, on the right side, will activate and smash the grid. When Oskar bashes the grid, between 1- 4 regular symbols will be removed from 1 random reel that does not already contain a Cash Stack. A Cash symbol will then be added to the first empty position at the lowest part of the empty reel and expand into a Cash Stack, revealing new Multiplier values\n\n When Fred smashes the grid, all the Cash Stacks on the grid will be compressed down towards their original Cash symbol. When the Cash Stack is compressed, 1 more Multiplier is added to every position the Cash Stack covers. The Multiplier on each new position will be the same as the previous Multipliers that already existed on those positions. If the Cash Stack values were 2x, 5x, 3x, it will become 2x, 5x, 3x, 2x, 5x, 3x.\n\n When Oskar activates first and bashes the grid, followed by Fred smashing it, the new Cash Stacks created by Oskar will also be compressed and receive double the Multiplier values. Oskar and Fred can each activate once per spin. If there are already Cash Stacks on every reel, only Fred will activate and bash the Cash Stacks. Cash Stacks are removed from the grid before the next spin.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - BROS BEFORE BLOWS",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, increasing the chance of landing Cash Stacks!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - CASH ME OUTSIDE",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the BROS BEFORE BLOWS bonus. In addition, this bonus guarantees that each time a Cash Stack lands, it will get at least 1 bash from Oskar or 1 smash from Fred!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "CASH STACKS",
+      "trigger": null,
+      "effects": "When a Cash symbol lands, it will activate and expand from that symbol upwards to the top of the reel after all wins and cascades have been handled on that spin.\n\n When a Cash symbol expands, it turns into a Cash Stack. Cash symbols that land on the top row are counted as Cash Stacks. Each position on the grid that the Cash Stack covers will reveal 1 of the following bet Multipliers: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 500x, 1 000x, 5 000x, 10 000x. Once expanded, the Cash Stack Multiplier values will be added and multiplied by the current bet amount to determine the awarded win. If there is more than 1 Cash Stack on the grid, the Multipliers will first be added, then multiplied by the current bet amount to determine the awarded win. Only 1 Cash Stack can land on a reel at a time.",
+      "params": {}
+    },
+    {
+      "name": "THE BASHING BROS",
+      "trigger": null,
+      "effects": "When the current grid has settled, and there is a Cash Stack on the grid, there is a chance that Oskar, on the left side, will activate and bash the grid, or Fred, on the right side, will activate and smash the grid. When Oskar bashes the grid, between 1- 4 regular symbols will be removed from 1 random reel that does not already contain a Cash Stack. A Cash symbol will then be added to the first empty position at the lowest part of the empty reel and expand into a Cash Stack, revealing new Multiplier values\n\n When Fred smashes the grid, all the Cash Stacks on the grid will be compressed down towards their original Cash symbol. When the Cash Stack is compressed, 1 more Multiplier is added to every position the Cash Stack covers. The Multiplier on each new position will be the same as the previous Multipliers that already existed on those positions. If the Cash Stack values were 2x, 5x, 3x, it will become 2x, 5x, 3x, 2x, 5x, 3x.\n\n When Oskar activates first and bashes the grid, followed by Fred smashing it, the new Cash Stacks created by Oskar will also be compressed and receive double the Multiplier values. Oskar and Fred can each activate once per spin. If there are already Cash Stacks on every reel, only Fred will activate and bash the Cash Stacks. Cash Stacks are removed from the grid before the next spin.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - BROS BEFORE BLOWS",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, increasing the chance of landing Cash Stacks!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - CASH ME OUTSIDE",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the BROS BEFORE BLOWS bonus. In addition, this bonus guarantees that each time a Cash Stack lands, it will get at least 1 bash from Oskar or 1 smash from Fred!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - REACTOR RIOT",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the BROS BEFORE BLOWS bonus. In addition, this bonus guarantees 1 bash from Oskar and 1 smash from Fred on each free spin! If there are already Cash Stacks on every reel, only Fred will activate and smash the Cash Stacks. The order of the bash and smash activation may vary.\n\n FS symbols cannot land in the REACTOR RIOT bonus.\n\n SPECIAL SYMBOLS\n\n FS symbols cannot land above a Cash symbol on the same reel.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "stacked_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bros_before_blows_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "cash_me_outside_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1928/1.16.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/bash-bros/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Meet Oskar and Fred, two scrappy brothers who flunked out of the minor leagues and decided baseball was overrated. Instead, they turned their knack for smashing and bashing things into a living. Between neon-spray-painted tags and midnight garage takeovers, they’ve pulled off enough low-key heists to fill a busted beanbag.\n\n Step into their underground bunker, where the arcade game in the corner dates back to 1981, and the milk in the fridge might be even older. Bash Bros is a 5-reel, 4-row game with Ways wins and a max win of 10 000 times your bet available in every game mode"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

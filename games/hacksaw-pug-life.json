@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Pug Life",
+    "slug": "hacksaw-pug-life",
+    "provider_game_id": "1217",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1217&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1217/1.35.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 16,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 16. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "TREATS",
+        "behavior": "Treats are revealing wild multipliers. There are three different types of Treats: Biscuit, Bone and Steak. All winning combinations that a Treat is part of will be multiplied with the shown value. If more than one Treat is part of the same winline, their multipliers are first added together and then applied to the win.\n\n If you land 3 Treats of any kind anywhere on the grid on the same spin in the base game, the Treat Yo’self bonus game is awarded! The placement and type of the triggering Treats is carried over into the bonus.\n\n Biscuit can have the values: 2x, 3x, 4x\n\n Bone can have the values: 5x, 10x, 15x, 20x\n\n Steak can have the values: 25x, 50x, 75x, 100x, 150x, 200x",
+        "params": {}
+      },
+      {
+        "name": "THE DAWG’S DEN",
+        "behavior": "Land three or more Dawg’s Den scatter symbols in the base game to trigger this feature. The landed Dawg’s Den symbols will reveal a value of either 3 or 4. The total amount of all values will be the number of free spins awarded.\n\n In this feature no wins are awarded until the end. The win amounts from all winning combinations and the multiplier values of any landed Treats that are part of a winning combination, are collected in a total above the reels to create a final win that is paid out at the end of the feature.\n\n Land the sticky Toaster scatter symbol to increase the current multiplier or add extra wins to the total on every remaining spin! The Toaster will reveal either a multiplier value that is added to the total win multiplier, or $ signs that add your current bet times a random win factor to the total win amount. The Toaster can land on reels 4 and 5 and counts as a Wild.\n\n The Toaster can reveal the following multipliers: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n The Toaster can use the following win factor to multiply your current bet when adding extra wins to: 0.1, 0.2, 0.5, 1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 100\n\n Land additional Dawg’s Den symbols to get more spins.\n\n SPECIAL SYMBOLS\n\n Treat symbols substitute for all paying symbols in the paytable.\n\n Toaster symbols substitute for all paying symbols in the paytable. The Toaster symbol exists only in the The Dawg’s Den bonus feature.\n\n Dawg’s Den symbols exist only in the base game and The Dawg’s Den bonus feature.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "TREAT YO’SELF",
+        "behavior": "In this feature all landed Treats are sticky and will reveal a new multiplier value based on Treat type on every spin. The feature starts with 5 spins. Land additional Treats to get more spins! Every additional Treat landed will give you 1 more spin.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TREATS",
+      "trigger": null,
+      "effects": "Treats are revealing wild multipliers. There are three different types of Treats: Biscuit, Bone and Steak. All winning combinations that a Treat is part of will be multiplied with the shown value. If more than one Treat is part of the same winline, their multipliers are first added together and then applied to the win.\n\n If you land 3 Treats of any kind anywhere on the grid on the same spin in the base game, the Treat Yo’self bonus game is awarded! The placement and type of the triggering Treats is carried over into the bonus.\n\n Biscuit can have the values: 2x, 3x, 4x\n\n Bone can have the values: 5x, 10x, 15x, 20x\n\n Steak can have the values: 25x, 50x, 75x, 100x, 150x, 200x",
+      "params": {}
+    },
+    {
+      "name": "TREAT YO’SELF",
+      "trigger": null,
+      "effects": "In this feature all landed Treats are sticky and will reveal a new multiplier value based on Treat type on every spin. The feature starts with 5 spins. Land additional Treats to get more spins! Every additional Treat landed will give you 1 more spin.",
+      "params": {}
+    },
+    {
+      "name": "THE DAWG’S DEN",
+      "trigger": null,
+      "effects": "Land three or more Dawg’s Den scatter symbols in the base game to trigger this feature. The landed Dawg’s Den symbols will reveal a value of either 3 or 4. The total amount of all values will be the number of free spins awarded.\n\n In this feature no wins are awarded until the end. The win amounts from all winning combinations and the multiplier values of any landed Treats that are part of a winning combination, are collected in a total above the reels to create a final win that is paid out at the end of the feature.\n\n Land the sticky Toaster scatter symbol to increase the current multiplier or add extra wins to the total on every remaining spin! The Toaster will reveal either a multiplier value that is added to the total win multiplier, or $ signs that add your current bet times a random win factor to the total win amount. The Toaster can land on reels 4 and 5 and counts as a Wild.\n\n The Toaster can reveal the following multipliers: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n The Toaster can use the following win factor to multiply your current bet when adding extra wins to: 0.1, 0.2, 0.5, 1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 100\n\n Land additional Dawg’s Den symbols to get more spins.\n\n SPECIAL SYMBOLS\n\n Treat symbols substitute for all paying symbols in the paytable.\n\n Toaster symbols substitute for all paying symbols in the paytable. The Toaster symbol exists only in the The Dawg’s Den bonus feature.\n\n Dawg’s Den symbols exist only in the base game and The Dawg’s Den bonus feature.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonus_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "treats_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "treat_yo_self_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "dawgs_den_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7500,
+    "max_win_notes": "maximum achievable win in this game is 7 500 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1217/1.35.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/pug-life/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n TREATS\n\n Treats are revealing wild multipliers. There are three different types of Treats: Biscuit, Bone and Steak. All winning combinations that a Treat is part of will be multiplied with the shown value. If more than one Treat is part of the same winline, their multipliers are first added together and then applied to the win.\n\n If you land 3 Treats of any kind anywhere on the grid on the same spin in the base game, the Treat Yo’self bonus game is awarded! The placement and type of the triggering Treats is carried over into the bonus.\n\n Biscuit can have the values: 2x, 3x, 4x\n\n Bon"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

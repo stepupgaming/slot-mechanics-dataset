@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Tai The Toad",
+    "slug": "hacksaw-tai-the-toad",
+    "provider_game_id": "1478",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1478&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1478/1.23.6/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "The Toad & the Pot",
+        "behavior": "The Toad symbol is a revealing symbol that reveals either a Wild symbol or a Gold Coins symbol when activated by the Prosperity Pot symbol! All Toad symbols reveal the same type of symbol.\n\n When the Prosperity Pot symbol lands, it first shows what all Toad symbols will reveal and then transforms into the revealed symbol.\n\n Gold Coins scatter symbols are cash prizes based on your current bet. All Gold Coins symbols are added together and the total amount is multiplied by your current bet to produce the win amount.\n\n Gold Coins can have the following values: 1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 75, 100, 250, 500, 750, 1000\n\n When revealing Gold Coins symbols, there is a chance that a Toad symbol instead reveals a Coin Bag scatter symbol.\n\n Coin Bag symbols reveal a multiplier value, and then multiply 1 - 5 Gold Coins symbols with the revealed value. The same Gold Coins pile symbol can be affected multiple times by the same Coin Bag, or by different Coin Bags.\n\n Coin Bags can have the following values: x2, x3, x4, x5",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      {
+        "name": "GOLDEN TOAD BONUS",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to trigger this feature, which awards 10 free spins!\n\n The GOLDEN TOAD BONUS game has progressive Toad Points that do not reset after each Prosperity Pot activation! See description of TOAD BONUS above for other rules.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "TOAD BONUS",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to trigger this feature, which awards 10 free spins!\n\n Land Dragon and Double Dragon scatter symbols to collect Toad Points above the reels!\n\n Dragon symbols add 1 - 5 Toad Points to the meter above the reel where it landed.\n\n Double Dragon symbols add 1 - 5 Toad Points to all reels!\n\n When the Prosperity Pot symbol lands, an equal amount of Toad symbols will fill random positions on the corresponding reels.\n\n Toad Points are reset after each Prosperity Pot symbol has activated.\n\n Completely filling the Toads Points meter above all reels at the same time awards 10 additional free spins!\n\n Landing 3 FS symbols at the same time in the feature awards 4 additional free spins.\n\n Landing 4 FS symbols at the same time in the feature instantly triggers the GOLDEN TOAD BONUS. If the remaining number of free spins is less than 10, the remaining number of free spins will be set to 10. Otherwise, the current number of remaining free spins is unchanged.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "The Toad & the Pot",
+      "trigger": null,
+      "effects": "The Toad symbol is a revealing symbol that reveals either a Wild symbol or a Gold Coins symbol when activated by the Prosperity Pot symbol! All Toad symbols reveal the same type of symbol.\n\n When the Prosperity Pot symbol lands, it first shows what all Toad symbols will reveal and then transforms into the revealed symbol.\n\n Gold Coins scatter symbols are cash prizes based on your current bet. All Gold Coins symbols are added together and the total amount is multiplied by your current bet to produce the win amount.\n\n Gold Coins can have the following values: 1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 75, 100, 250, 500, 750, 1000\n\n When revealing Gold Coins symbols, there is a chance that a Toad symbol instead reveals a Coin Bag scatter symbol.\n\n Coin Bag symbols reveal a multiplier value, and then multiply 1 - 5 Gold Coins symbols with the revealed value. The same Gold Coins pile symbol can be affected multiple times by the same Coin Bag, or by different Coin Bags.\n\n Coin Bags can have the following values: x2, x3, x4, x5",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "name": "TOAD BONUS",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to trigger this feature, which awards 10 free spins!\n\n Land Dragon and Double Dragon scatter symbols to collect Toad Points above the reels!\n\n Dragon symbols add 1 - 5 Toad Points to the meter above the reel where it landed.\n\n Double Dragon symbols add 1 - 5 Toad Points to all reels!\n\n When the Prosperity Pot symbol lands, an equal amount of Toad symbols will fill random positions on the corresponding reels.\n\n Toad Points are reset after each Prosperity Pot symbol has activated.\n\n Completely filling the Toads Points meter above all reels at the same time awards 10 additional free spins!\n\n Landing 3 FS symbols at the same time in the feature awards 4 additional free spins.\n\n Landing 4 FS symbols at the same time in the feature instantly triggers the GOLDEN TOAD BONUS. If the remaining number of free spins is less than 10, the remaining number of free spins will be set to 10. Otherwise, the current number of remaining free spins is unchanged.",
+      "params": {}
+    },
+    {
+      "name": "GOLDEN TOAD BONUS",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to trigger this feature, which awards 10 free spins!\n\n The GOLDEN TOAD BONUS game has progressive Toad Points that do not reset after each Prosperity Pot activation! See description of TOAD BONUS above for other rules.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonusHunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "magical_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "more_magical_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "pig_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "epig_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7500,
+    "max_win_notes": "maximum win in this game is 7,500 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1478/1.23.6/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/tai-the-toad/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n The Toad & the Pot\n\n The Toad symbol is a revealing symbol that reveals either a Wild symbol or a Gold Coins symbol when activated by the Prosperity Pot symbol! All Toad symbols reveal the same type of symbol.\n\n When the Prosperity Pot symbol lands, it first shows what all Toad symbols will reveal and then transforms into the revealed symbol.\n\n Gold Coins scatter symbols are cash prizes based on your current bet. All Gold Coins symbols are added together and the total amount is multiplied by your current bet to produce the win amount.\n\n Gold Coins can have the following values: 1, 2"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

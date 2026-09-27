@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "The Respinners",
+    "slug": "hacksaw-the-respinners",
+    "provider_game_id": "1058",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1058&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1058/1.42.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 5x4 from About text"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 1024,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 1024. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Respins mentioned in About/Features; see feature texts for details."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "THE CROWD GOES WILD",
+        "behavior": "The crowd goes wild feature is activated randomly in the main game. Once activated, a random number of wild symbols are added for up to 12 added wilds!",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "RESPINS",
+        "trigger": "Every time the player wins on a band member symbol, that member is highlighted and a respin is triggered.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Every time the player wins on a band member symbol, that member is highlighted and a respin is triggered. Win on all band members in the same round to activate the free spin feature."
+      },
+      {
+        "name": "FREE SPINS",
+        "trigger": "Win on all band members in the same round in the main game to trigger the free spin feature with 12 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Win on all band members in the same round in the main game to trigger the free spin feature with 12 free spins. In the free spins mode, each band member symbol has a multiplier associated with it.\nEvery time you win on a band member symbol, the currently displayed multiplier is multiplied with the win. Before the next spin, the multiplier grows with 4x."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "RESPINS",
+      "trigger": "Every time the player wins on a band member symbol, that member is highlighted and a respin is triggered.",
+      "effects": "Every time the player wins on a band member symbol, that member is highlighted and a respin is triggered. Win on all band members in the same round to activate the free spin feature.",
+      "params": {}
+    },
+    {
+      "name": "THE CROWD GOES WILD",
+      "trigger": null,
+      "effects": "The crowd goes wild feature is activated randomly in the main game. Once activated, a random number of wild symbols are added for up to 12 added wilds!",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "Win on all band members in the same round in the main game to trigger the free spin feature with 12 free spins.",
+      "effects": "Win on all band members in the same round in the main game to trigger the free spin feature with 12 free spins. In the free spins mode, each band member symbol has a multiplier associated with it.\nEvery time you win on a band member symbol, the currently displayed multiplier is multiplied with the win. Before the next spin, the multiplier grows with 4x.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_freespins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5150,
+    "max_win_notes": "maximum achievable win in this game is 5 150 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1058/1.42.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/the-respinners/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Welcome to a music concert featuring The Respinners! The Respinners is a 5x4 video game with 1024 ways to win and a max win of 5150x. This game is loaded with respins, a crowd goes wild feature and free spins!\n\n RESPINS\n\n Every time the player wins on a band member symbol, that member is highlighted and a respin is triggered. Win on all band members in the same round to activate the free spin feature.\n\n THE CROWD GOES WILD\n\n The crowd goes wild feature is activated randomly in the main game. Once activated, a random number of wild symbols are added for up to 12 added wilds!\n\n "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,88 @@
+<div>
+  <section data-gameinfo-section="about">
+    <h1>ABOUT THE GAME</h1>
+    <p>MINES SUPREME is the supreme version of the classic game, where the objective is to pick squares from a grid. Behind each square there can be either a Mine, a Diamond, a Shield, a Multiplier or the incredible Max Win Diamond! For each Diamond you find, your collectable win increases, but if you hit a Mine, you lose it all. You have to dare to win, and collect your win at the right time!</p>
+    <p>Start a round by pressing BET and pick squares until you are happy with the win, and then collect it - or until you hit a Mine and the round ends. If there are no more squares to pick, the win will be automatically collected. Win or lose, you can then start a new round.</p>
+  </section>
+  <section data-gameinfo-section="features">
+    <h1>FEATURES</h1>
+    <h2>SHIELDS</h2>
+    <div class="FeatureImage FeatureImage--shield"><img src="../../shield.png"></div>
+    <p>Finding the Shield symbol gives you an active Shield that will defuse the next revealed Mine. This means that even after hitting a Mine, you can continue playing. Each Shield defuses only one Mine, then becomes inactive.</p>
+    <div class="FeatureImage FeatureImage--defuse"><img src="../../bomb_disabled.png"></div>
+    <p>If you have an active Shield, the COLLECT button will remain inactive until a Mine is defused and the Shield becomes inactive. You can collect your collectable win immediately after defusing the Mine, or you can continue playing. The Shield symbol can only appear if you are playing with at least 2 Mines on the grid. There are always fewer Shield symbols than Mines.</p>
+    <h2>MULTIPLIERS</h2>
+    <div class="FeatureImage FeatureImage--multipliers"><img src="../../multiplier.png"></div>
+    <p>Finding a Multiplier boosts your current collectable win! Multipliers can have one of the following values: 2x, 3x, 5x, 10x, 100x.</p>
+    <p>Your current collectable win will be multiplied by the shown value. If you keep playing and find additional Diamonds, the win value of each Diamond is added to the new collectable win.</p>
+    <p>Example: You have 1.5x as your collectable win. Finding a multiplier of 3x increases the collectable win to 4.5x. You pick another square and find a Diamond that adds an additional 0.5x to the collectable win for a total of 5x. (Numbers not indicative of real gameplay.)</p>
+    <h2>MAX WIN DIAMOND</h2>
+    <div class="FeatureImage FeatureImage--maxwin"><img src="../../max_win.png"></div>
+    <p data-part-id="gameRtp-fixed">The elusive Max Win Diamond instantly awards the game’s max win of 10 000 times your bet or {maxExposure} (whichever is lower), and ends the current round.</p>
+  </section>
+  <section data-gameinfo-section="payout">
+    <h1>PAYOUT DISPLAY</h1>
+    <div class="FeatureImage FeatureImage--paytable"><img src="../../paytable.png"></div>
+    <p>Above the grid are a series of bars with numbers. The left-most highlighted bar shows the collectable win you will receive if you collect immediately, expressed as a multiplier of your bet amount for the current round. The bar immediately to the right of the highlighted one shows the potential payout if you successfully find another Diamond, and so on.</p>
+  </section>
+  <section data-gameinfo-section="settings">
+    <h1>GAME CONFIGURATION</h1>
+    <div class="FeatureImage FeatureImage--settings"><img src="../../settings.png"></div>
+    <p>The size of the grid and the number of Mines are configurable in the menu panel. The more Mines you play with, the higher the risk, but the larger the potential payout! On the other hand, if you increase the size of the grid or reduce the number of Mines, the payout per Diamond will go down, but the risk decreases. You can configure the game to fit your own playstyle!</p>
+  </section>
+  <section data-gameinfo-section="autoplay">
+    <h1 data-part-id="autoplayDesc">AUTOPLAY MENU</h1>
+    <p data-part-id="autoplayDesc">The autoplay settings are configurable in the autoplay menu. Before starting autoplay, you must select how many squares to pick and the number of rounds to play. You may also change the size of the grid and the number of Mines before starting. There are two options for autoplay, RANDOM where squares are picked at random or CUSTOM where squares are picked using your own custom pattern.</p>
+    <h2 data-part-id="autoplayDesc">RANDOM PATTERN</h2>
+    <p data-part-id="autoplayDesc">In this autoplay mode you decide how many picked squares you would like per round. The maximum allowed number of picks is the grid size minus the number of Mines you have configured. For example, if you have a 5x5 grid with 3 Mines, the maximum number of picks allowed will be 22. If you reach your selected number of picks with an active Shield, autoplay will continue with randomly picked squares until a Mine is defused and the Shield becomes inactive. Autoplay will then immediately end and your win will be credited.</p>
+    <h2 data-part-id="autoplayDesc">CUSTOM PATTERN</h2>
+    <p data-part-id="autoplayDesc">In this autoplay mode you select the squares on the grid that will be picked. Click a square again to remove it from the pattern. The maximum allowed number of picks is the grid size minus the number of Mines you have configured. For example, if you have a 5x5 grid with 3 Mines, the maximum number of picks allowed will be 22. If you reach the end of your selected squares with an active Shield, autoplay will continue with randomly picked squares until a Mine is defused and the Shield becomes inactive. Autoplay will then immediately end and your win will be credited.</p>
+  </section>
+  <section data-gameinfo-section="maxwin">
+    <h1>MAX WIN</h1>
+    <p>The maximum win in this game is 10 000 times your bet or {maxExposure}, whichever is lower. If your selection causes your total collected win to reach or exceed the maximum win amount, the round will end, and your maximum win will be credited immediately.</p>
+  </section>
+  <section data-gameinfo-section="rtp">
+    <h1>RETURN TO PLAYER</h1>
+    <p data-part-id="gameRtp">The RTP of this game is {rtp}%. The RTP is deterministically calculated by a theoretical probability model. The RTP was verified by running 10,000,000,000 simulations.</p>
+  </section>
+  <section data-gameinfo-section="winways">
+    <h1>WAYS TO WIN</h1>
+    <p>Pick at least one Diamond and collect the potential win.</p>
+  </section>
+  <h1>GENERAL</h1>
+  <section data-gameinfo-section="generalSection-balance">
+    <p>BALANCE</p>
+    <p>Your current balance is shown in the BALANCE display. Balance, bets and winnings are presented in the player’s chosen currency.</p>
+  </section>
+  <section data-gameinfo-section="generalSection-bet">
+    <p>BET</p>
+    <p>The current bet level is shown in the BET display. Change the bet by clicking on the arrows and choosing the bet level of your choice.</p>
+    <p>{allowedBetLevels}</p>
+  </section>
+  <section data-gameinfo-section="generalSection-keybinds">
+    <p>KEYBINDS</p>
+    <p>- SHIFT + S - Toggle Sound<br>- SHIFT + M - Toggle Music<br>- SHIFT + I or G - Show/Hide Game info<br><span data-part-id="keybinds-wintable">- SHIFT + P - Show/Hide Game info paytable<br></span>- SHIFT + Arrow UP/DOWN - Change Bet amount<br>- ESC or BACKSPACE - Closes fullscreen windows (ex Game info)<br><span data-part-id="keybinds-turbo">- SHIFT + T - Change Turbo mode<br></span><span data-part-id="keybinds-featureBuy">- SHIFT + B or F - Show/Hide {bonusbuyfeaturespins} menu<br></span><span data-part-id="keybinds-featureBuy">- SHIFT + Arrow LEFT/RIGHT - Navigate between {bonusbuyfeaturespins} on confirmation page<br></span><span data-part-id="keybinds-bonusBuy">- SHIFT + 1/2/3/4 - Bonus Buy shortcut (to confirmation page)<br></span><span data-part-id="keybinds-featureSpin">- SHIFT + F1/F2/F3/F4 - FeatureSpins™ shortcut (to confirmation page)<br></span><span data-part-id="keybinds-featureBuy">- SHIFT + ENTER - Confirm {bonusbuyfeaturespins}<br></span><span data-part-id="keybinds-autoplay">- SHIFT + A - Show Autoplay menu/Stop Autoplay<br></span><span data-part-id="keybinds-autoplay">- <span data-part-id="spacebar">SPACEBAR or </span>SHIFT + ENTER - Start Autoplay if Autoplay menu is open<br></span><span data-part-id="keybinds-autoplay">- SHIFT + Arrow LEFT/RIGHT - Change number of rounds in Autoplay menu</span></p>
+  </section>
+  <section data-gameinfo-section="generalSection-add">
+    <h1>ADDITIONAL INFORMATION</h1>
+    <p>In addition to the features described here, the bar on the bottom of the game screen displays the current balance in the chosen currency, the amount paid if a win occurs, and the amount bet on the last/current proposition.</p>
+  </section>
+  <section data-gameinfo-section="generalSection-interrupted">
+    <h1>INTERRUPTED GAME</h1>
+    <p>In the event of disconnection, a previously started round that has been interrupted may be resumed immediately by starting the game again. The results of a completed round (where display of the visual result was interrupted) will only be re-displayed within the game for winning rounds, but all game rounds may be reviewed in History. Any amount wagered on an unfinished game will remain paused until you either complete the game or the game is void as a result of account inactivity or system maintenance. When an unfinished game is void, your bet will be refunded to your account. Any awards earned on an unfinished round will not be credited unless you resume and complete the game. Winnings on unfinished game rounds where the player cannot further influence the outcome of the game will be automatically credited to the player's account after {payoutPeriod}. Game rounds that require additional player input to determine the outcome of the game will remain unfinished for {payoutPeriod}, after which a default choice will automatically be made in order to complete the round and credit any winnings to the player's account. Game rounds will never be affected by unforeseen external errors due to hardware, bandwidth, network errors or similar. Game rounds will be either stored and completed by the player at a later time or they will be closed and the wager will be refunded to the player. If an incomplete game round has not been resumed within {rollbackPeriod}, the round will be rolled back and the wager will be refunded.</p>
+  </section>
+  <section data-gameinfo-section="generalSection-history">
+    <h1>HISTORY</h1>
+    <p>The result of a completed game may be viewed in History. Results of unfinished games are not displayed in History.</p>
+  </section>
+  <section data-gameinfo-section="generalSection-terms">
+    <h1>GENERAL TERMS AND CONDITIONS</h1>
+    <p>- Misuse or malfunction voids all pays and plays.<br>- Any visual representation of a physical device (a reel, a wheel of fortune or similar) does not represent a “real” physical device and the probabilities of it stopping on any particular position is determined by the game’s random number generator, and not the number of positions on each device.</p>
+  </section>
+</div>
+<div class="GameInfo__edition">
+  <p data-part-id="generatedAtDate">Game rules generated 2026-07-06 08:54 UTC</p>
+  <p><span data-part-id="gameVersion">Game version {gameVersion}</span><br><span data-part-id="serverVersion">Server version {serverVersion}</span></p>
+  <p id="HacksawGamingAnchor" class="GameInfo__reference-link"><a href="https://www.hacksawgaming.com" target="_blank">www.hacksawgaming.com</a></p>
+</div>

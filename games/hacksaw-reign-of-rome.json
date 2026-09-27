@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Reign of Rome",
+    "slug": "hacksaw-reign-of-rome",
+    "provider_game_id": "1728",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1728&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1728/1.27.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - FIGHT FOR GLORY",
+        "behavior": "Land 5 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus includes all the features from the base game and THIS IS ROME bonus. Additionally, in this bonus, all LootBar positions start with 20x multipliers. Non-winning Tribute symbols will add to the starting values in the LootBar. In this bonus all Tribute values stored in the LootBar are kept until the end of the bonus and then paid out as one big prize.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "TRIBUTE SYMBOLS AND LOOTLINES",
+        "behavior": "Tribute symbols are dynamic multiplier symbols that award a cash prize based on the combined value of the Tribute in a LootLine, multiplied with your bet amount.\n\n A LootLine is formed when there is a winning payline of Tribute symbols on the grid. The payout of the LootLine will be determined by the values of the Tribute symbols that are part of the win. The Tribute symbol multipliers will be combined one by one from left to right. The resulting value is then multiplied with your bet to determine the cash prize amount.\n\n There are four variants of the Tribute symbols:\n\n Adding Tribute symbols can have the following multiplier values: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x\n\n Revealing Adding Tribute symbols can have the following multiplier values: 15x, 20x, 25x, 50x, 100x, 250x, 500x\n\n Multiplying Tribute symbols can have the following multiplier values: x2, x3, x4, x5\n\n Revealing Multiplying Tribute symbols can have the following multiplier values: x6, x7, x8, x9, x10, x15, x20, x25\n\n Adding Tribute multipliers are added to the cumulative LootLine value, while Multiplying Tribute multipliers multiply the value. Multiplying values in the left-most position on a LootLine are treated as Adding values.\n\n For example, a winning LootLine that consists of four Tribute symbols with the values x3, 4x, 1x and x2 will have a final payout of (3+4+1)*2=16x.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - PATH TO POWER",
+        "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus game maintains the same mechanics of the base game but with an increased chance of landing Tribute symbols with higher values.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins."
+      },
+      {
+        "name": "BONUS GAME - THIS IS ROME",
+        "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus includes all the features from the base game and PATH TO POWER bonus. Additionally, all non-winning Tribute symbols that appear during the same spin as at least one Tribute symbol win are progressively stored in a LootBar below the grid. The LootBar has five positions, corresponding to the reels on the main grid, and non-winning Tribute symbols are stored in positions corresponding to the reel where they appeared.\n\n When all five LootBar positions are filled with Tribute, the stored Tribute values will be awarded according to the LootLine rules above. The awarded Tribute values are removed from the LootBar.\n\n All LootBar positions start at 0x until a non-winning Tribute symbol is stored in that position.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TRIBUTE SYMBOLS AND LOOTLINES",
+      "trigger": null,
+      "effects": "Tribute symbols are dynamic multiplier symbols that award a cash prize based on the combined value of the Tribute in a LootLine, multiplied with your bet amount.\n\n A LootLine is formed when there is a winning payline of Tribute symbols on the grid. The payout of the LootLine will be determined by the values of the Tribute symbols that are part of the win. The Tribute symbol multipliers will be combined one by one from left to right. The resulting value is then multiplied with your bet to determine the cash prize amount.\n\n There are four variants of the Tribute symbols:\n\n Adding Tribute symbols can have the following multiplier values: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x\n\n Revealing Adding Tribute symbols can have the following multiplier values: 15x, 20x, 25x, 50x, 100x, 250x, 500x\n\n Multiplying Tribute symbols can have the following multiplier values: x2, x3, x4, x5\n\n Revealing Multiplying Tribute symbols can have the following multiplier values: x6, x7, x8, x9, x10, x15, x20, x25\n\n Adding Tribute multipliers are added to the cumulative LootLine value, while Multiplying Tribute multipliers multiply the value. Multiplying values in the left-most position on a LootLine are treated as Adding values.\n\n For example, a winning LootLine that consists of four Tribute symbols with the values x3, 4x, 1x and x2 will have a final payout of (3+4+1)*2=16x.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - PATH TO POWER",
+      "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.",
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus game maintains the same mechanics of the base game but with an increased chance of landing Tribute symbols with higher values.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - THIS IS ROME",
+      "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.",
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus includes all the features from the base game and PATH TO POWER bonus. Additionally, all non-winning Tribute symbols that appear during the same spin as at least one Tribute symbol win are progressively stored in a LootBar below the grid. The LootBar has five positions, corresponding to the reels on the main grid, and non-winning Tribute symbols are stored in positions corresponding to the reel where they appeared.\n\n When all five LootBar positions are filled with Tribute, the stored Tribute values will be awarded according to the LootLine rules above. The awarded Tribute values are removed from the LootBar.\n\n All LootBar positions start at 0x until a non-winning Tribute symbol is stored in that position.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - FIGHT FOR GLORY",
+      "trigger": null,
+      "effects": "Land 5 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus includes all the features from the base game and THIS IS ROME bonus. Additionally, in this bonus, all LootBar positions start with 20x multipliers. Non-winning Tribute symbols will add to the starting values in the LootBar. In this bonus all Tribute values stored in the LootBar are kept until the end of the bonus and then paid out as one big prize.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "shield_wall_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "spears_out_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "path_to_power_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "this_is_rome_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1728/1.27.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/reign-of-rome/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Step into the heart of ancient Rome, where power and riches await. This 5-reel, 5-row game with payline wins captures the glory of the empire. Spin your way to victory and aim for the ultimate prize - a max win of 15 000 times your bet, achievable across all game modes. Will you rise to power and take your place as the ruler of Rome?\n\n FEATURES\n\n TRIBUTE SYMBOLS AND LOOTLINES\n\n Tribute symbols are dynamic multiplier symbols that award a cash prize based on the combined value of the Tribute in a LootLine, multiplied with your bet amount.\n\n A LootLine is formed when there is a w"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

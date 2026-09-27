@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Aztec Twist",
+    "slug": "hacksaw-aztec-twist",
+    "provider_game_id": "1066",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1066&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1066/1.43.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 8,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 5x8 grid in official About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Respins mentioned in About/Features; see feature texts for details."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "RESPINS",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "If you land a full row of the same symbol in the base game, that row and any other row that forms part of the same winning cluster will remain sticky. You will be awarded respins until the winning cluster does not grow any more, at which point your win will be awarded. Every row that is full of the same symbol will also reveal a random multiplier between 2 and 5. After the round the multiplier value will be multiplied by the win amount for that cluster. If you have multiple full rows as part of a cluster, the multipliers will first be added before being multiplied with the win."
+      },
+      {
+        "name": "FREE SPINS",
+        "trigger": "Land three FREE SPIN symbols to trigger the free spins feature which will award you with 8 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land three FREE SPIN symbols to trigger the free spins feature which will award you with 8 free spins. On entering this feature, you will see two cylinders over the grid and there will be an extra special GOLDEN MASK symbol that may appear on each spin. The GOLDEN MASK has been split up into 8 sections and in order to activate the full GOLDEN MASK you will need to land a full row on every reel. Every time you land a full row of the GOLDEN MASK symbol, two things will happen:\n1. You’ll be awarded 2 extra free spins.\n2. The left cylinder over the reels will start spinning. A random multiplier between 1 and 8 will be chosen which will be multiplied with the value displayed on the right wheel. This value will then be multiplied with the current bet level and awarded as a win. The right wheel will then move to the next tier. \nThe tiers on the right wheel are:\n\n10x\n20x\n30x\n40x\n50x\n100x\n250x\n500x\n\nOnce a value has been used on either wheel it can not occur again. Regular wins are awarded in the same way as in the base game."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "RESPINS",
+      "trigger": null,
+      "effects": "If you land a full row of the same symbol in the base game, that row and any other row that forms part of the same winning cluster will remain sticky. You will be awarded respins until the winning cluster does not grow any more, at which point your win will be awarded. Every row that is full of the same symbol will also reveal a random multiplier between 2 and 5. After the round the multiplier value will be multiplied by the win amount for that cluster. If you have multiple full rows as part of a cluster, the multipliers will first be added before being multiplied with the win.",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "Land three FREE SPIN symbols to trigger the free spins feature which will award you with 8 free spins.",
+      "effects": "Land three FREE SPIN symbols to trigger the free spins feature which will award you with 8 free spins. On entering this feature, you will see two cylinders over the grid and there will be an extra special GOLDEN MASK symbol that may appear on each spin. The GOLDEN MASK has been split up into 8 sections and in order to activate the full GOLDEN MASK you will need to land a full row on every reel. Every time you land a full row of the GOLDEN MASK symbol, two things will happen:\n1. You’ll be awarded 2 extra free spins.\n2. The left cylinder over the reels will start spinning. A random multiplier between 1 and 8 will be chosen which will be multiplied with the value displayed on the right wheel. This value will then be multiplied with the current bet level and awarded as a win. The right wheel will then move to the next tier. \nThe tiers on the right wheel are:\n\n10x\n20x\n30x\n40x\n50x\n100x\n250x\n500x\n\nOnce a value has been used on either wheel it can not occur again. Regular wins are awarded in the same way as in the base game.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "gameinfo_aztec_feature_2_header",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 6800,
+    "max_win_notes": "maximum achievable win in this game is 6 800 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "low",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1066/1.43.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/aztec-twist/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Aztec Twist showcases a mighty tower style game with a 5x8 grid and a max win of over 6,800x! This game features respins and an exciting FREE SPIN mode with a special progressive GOLDEN MASK symbol that leads to extra excitement within the game.\n\n RESPINS\n\n If you land a full row of the same symbol in the base game, that row and any other row that forms part of the same winning cluster will remain sticky. You will be awarded respins until the winning cluster does not grow any more, at which point your win will be awarded. Every row that is full of the same symbol will also rev"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

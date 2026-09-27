@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Stick 'Em",
+    "slug": "hacksaw-stick-em",
+    "provider_game_id": "1042",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1042&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1042/1.47.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 1024. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "STICKY WIN SPIN",
+        "behavior": "If three or more thumbs up symbols form a win in a spin, the sticky win spin feature is triggered. This feature awards a free re-spin. The triggering symbols are sticky for the duration of the feature and any subsequent thumbs up symbol that land during the re-spin are also sticky. New re-spins are awarded and the feature continues until no new thumbs up symbols land on the reels. At the end of the feature, you are awarded a total win for all thumbs up symbols that landed during the feature. Bonus and free Spins games can not be triggered during the sticky win spin feature. With this feature you can win up to 2048x your bet!",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "Free spin scatter symbols trigger free spins with added high value symbols.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Free spin scatter symbols trigger free spins with added high value symbols. 3 scatters gives 5 spins, 4 scatters 10 spins and 5 scatters 15 spins. Free spins will play automatically until there are no free spins left.\n\nThe free spin symbol does not appear in the free spins mode."
+      },
+      {
+        "name": "BONUS GAME",
+        "trigger": "Three bonus scatter symbols in the same spin triggers the bonus game featuring the bonus wheel with wins up to 1000x your bet.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Three bonus scatter symbols in the same spin triggers the bonus game featuring the bonus wheel with wins up to 1000x your bet. All wins in the bonus game are proportional to the bet level in the round that activated the bonus game. Bonus scatter symbols appear in base game only."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "STICKY WIN SPIN",
+      "trigger": null,
+      "effects": "If three or more thumbs up symbols form a win in a spin, the sticky win spin feature is triggered. This feature awards a free re-spin. The triggering symbols are sticky for the duration of the feature and any subsequent thumbs up symbol that land during the re-spin are also sticky. New re-spins are awarded and the feature continues until no new thumbs up symbols land on the reels. At the end of the feature, you are awarded a total win for all thumbs up symbols that landed during the feature. Bonus and free Spins games can not be triggered during the sticky win spin feature. With this feature you can win up to 2048x your bet!",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "Free spin scatter symbols trigger free spins with added high value symbols.",
+      "effects": "Free spin scatter symbols trigger free spins with added high value symbols. 3 scatters gives 5 spins, 4 scatters 10 spins and 5 scatters 15 spins. Free spins will play automatically until there are no free spins left.\n\nThe free spin symbol does not appear in the free spins mode.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME",
+      "trigger": "Three bonus scatter symbols in the same spin triggers the bonus game featuring the bonus wheel with wins up to 1000x your bet.",
+      "effects": "Three bonus scatter symbols in the same spin triggers the bonus game featuring the bonus wheel with wins up to 1000x your bet. All wins in the bonus game are proportional to the bet level in the round that activated the bonus game. Bonus scatter symbols appear in base game only.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": "No featureBuy section found"
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1042/1.47.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/stick-em/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n STICKY WIN SPIN\n\n If three or more thumbs up symbols form a win in a spin, the sticky win spin feature is triggered. This feature awards a free re-spin. The triggering symbols are sticky for the duration of the feature and any subsequent thumbs up symbol that land during the re-spin are also sticky. New re-spins are awarded and the feature continues until no new thumbs up symbols land on the reels. At the end of the feature, you are awarded a total win for all thumbs up symbols that landed during the feature. Bonus and free Spins games can not be triggered during the sticky wi"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

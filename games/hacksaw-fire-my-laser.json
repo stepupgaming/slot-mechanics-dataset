@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Fire My Laser",
+    "slug": "hacksaw-fire-my-laser",
+    "provider_game_id": "1640",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1640&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1640/1.24.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 3x3 from About text"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Winning combinations are formed when individual paying symbols are destroyed using Bomb symbols, Laser symbols, or the Orbital Bombardment feature. Each paying symbol that is destroyed awards a certain amount as shown in the paytable. All winning combinatio"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "There are 2 different types of Bombs and 2 different types of Lasers in the game. Bombs and Lasers act as the primary win mechanic for this game by hitting positions on the grid and removing symbols on those positions. Any paying symbols that are removed in this way award a payout according to the paytable. All winnings are collected in the Total Win Bar above the grid, and paid out at the end of each spin. Removed symbols trigger a cascade causing existing symbols to drop down to fill in the gaps and new symbols drop in from the top to fill the grid.\n\n The below symbols are non-paying and do not give any award when destroyed:\n\n Landed Bomb and Laser symbols are randomly activated bottom-to-top, right-to-left. Bombs and Lasers also activate if they are hit by the effect from another Bomb or Laser. When a Bomb or Laser symbol is activated, the grid always settles before another Bomb or Laser symbol activates. \n\n Each type of Bomb and Laser remove symbols in a different pattern when activated.\n\n Small Bomb symbols explode over a 3x3 area centered on the activated Small Bomb symbol.\n\n Big Bomb symbols explode over a 5x5 area centered on the activated Big Bomb symbol.\n\n X-Laser symbols shoot diagonal lines with a width of 1 symbol to the edges of the grid in each of the four diagonal directions centered on the activated X-Laser symbol.\n\n Super Laser symbols shoot diagonal lines with a width of 3 symbols to the edges of the grid in each of the four diagonal directions centered on "
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "DEPLOY SHIELDS",
+        "behavior": "Certain symbols in the game have a Shield, and require multiple hits from Bombs, Lasers (except Super Laser) or Orbital Bombardment strikes to remove the Shield and activate the symbol. The Super Laser instantly destroys all Shields hit by its effect!\n\n Shields are indicated with a blue Shield icon in the top-left corner of the symbol, and the number on the Shield icon indicates how many more hits are required before the Shield breaks.\n\n Shields are found on Multiplier symbols and FS symbols.\n\n Multipliers require either 2 or 3 hits to break their Shield, and have different values depending on how many hits they take.\n\n 2-Shield Multipliers can have the following multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x\n\n 3-Shield Multipliers can have the following multiplier values: 15x, 20x, 25x, 50x, 100x, 250x, 500x\n\n All Multipliers are activated when their Shield breaks. Activated Multipliers are added to the Total Win Bar at the end of the spin and the total multiplier value then multiplies the collected winnings to determine the final win.\n\n There are two types of FS symbols, and both require 3 hits to break their Shield and trigger a bonus game. Each bonus game is triggered by only 1 FS symbol of the corresponding type!",
+        "params": {}
+      },
+      {
+        "name": "ALIEN ATTACK",
+        "behavior": "Unlock this bonus game with 8 free spins by breaking the Shield on an Alien Mind FS symbol in the base game!\n\n The bonus game retains all the mechanics from the base game.\n\n In addition, all activated Multipliers are stored in a Progressive Multiplier.\n\n The Progressive Multiplier is applied to the collected win in the Total Win Bar on any spin where at least one new Multiplier was added to the Progressive Multiplier.\n\n Breaking the Shield on an Alien Mind FS symbol during the bonus awards 2 additional free spins!",
+        "params": {}
+      },
+      {
+        "name": "EXTERMINATION",
+        "behavior": "Unlock this bonus game with 12 free spins by breaking the Shield on a Power Core FS symbol in the base game!\n\n The bonus game retains all the mechanics from the base game.\n\n In addition, all activated Multipliers are stored in a Progressive Global Multiplier that is always active and applies to the collected win in the Total Win Bar at the end of every spin!\n\n Breaking the Shield on a Power Core FS symbol during the bonus awards 2 additional free spins!\n\n SPECIAL SYMBOLS\n\n Only one FS symbol can land on the grid at a time.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "BOMBS AWAY",
+        "behavior": "There are 2 different types of Bombs and 2 different types of Lasers in the game. Bombs and Lasers act as the primary win mechanic for this game by hitting positions on the grid and removing symbols on those positions. Any paying symbols that are removed in this way award a payout according to the paytable. All winnings are collected in the Total Win Bar above the grid, and paid out at the end of each spin. Removed symbols trigger a cascade causing existing symbols to drop down to fill in the gaps and new symbols drop in from the top to fill the grid.\n\n The below symbols are non-paying and do not give any award when destroyed:\n\n Landed Bomb and Laser symbols are randomly activated bottom-to-top, right-to-left. Bombs and Lasers also activate if they are hit by the effect from another Bomb or Laser. When a Bomb or Laser symbol is activated, the grid always settles before another Bomb or Laser symbol activates. \n\n Each type of Bomb and Laser remove symbols in a different pattern when activated.\n\n Small Bomb symbols explode over a 3x3 area centered on the activated Small Bomb symbol.\n\n Big Bomb symbols explode over a 5x5 area centered on the activated Big Bomb symbol.\n\n X-Laser symbols shoot diagonal lines with a width of 1 symbol to the edges of the grid in each of the four diagonal directions centered on the activated X-Laser symbol.\n\n Super Laser symbols shoot diagonal lines with a width of 3 symbols to the edges of the grid in each of the four diagonal directions centered on the activated Super Laser symbol. The Super Laser also instantly destroys all Shields hit by its effect!\n\n Removed symbols trigger a cascade causing existing symbols to drop down to fill in the gaps and new symbols drop in from the top to fill the grid.\n\n Additionally, once the current grid is settled and no more Bombs or Lasers will activate, there is a chance to trigger an Orbital Bombardment on 3 - 7 different positions on the grid. Each Orbital Bombardment strike affects a 2x2 area centered ",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            5
+          ]
+        }
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "BOMBS AWAY",
+      "trigger": null,
+      "effects": "There are 2 different types of Bombs and 2 different types of Lasers in the game. Bombs and Lasers act as the primary win mechanic for this game by hitting positions on the grid and removing symbols on those positions. Any paying symbols that are removed in this way award a payout according to the paytable. All winnings are collected in the Total Win Bar above the grid, and paid out at the end of each spin. Removed symbols trigger a cascade causing existing symbols to drop down to fill in the gaps and new symbols drop in from the top to fill the grid.\n\n The below symbols are non-paying and do not give any award when destroyed:\n\n Landed Bomb and Laser symbols are randomly activated bottom-to-top, right-to-left. Bombs and Lasers also activate if they are hit by the effect from another Bomb or Laser. When a Bomb or Laser symbol is activated, the grid always settles before another Bomb or Laser symbol activates. \n\n Each type of Bomb and Laser remove symbols in a different pattern when activated.\n\n Small Bomb symbols explode over a 3x3 area centered on the activated Small Bomb symbol.\n\n Big Bomb symbols explode over a 5x5 area centered on the activated Big Bomb symbol.\n\n X-Laser symbols shoot diagonal lines with a width of 1 symbol to the edges of the grid in each of the four diagonal directions centered on the activated X-Laser symbol.\n\n Super Laser symbols shoot diagonal lines with a width of 3 symbols to the edges of the grid in each of the four diagonal directions centered on the activated Super Laser symbol. The Super Laser also instantly destroys all Shields hit by its effect!\n\n Removed symbols trigger a cascade causing existing symbols to drop down to fill in the gaps and new symbols drop in from the top to fill the grid.\n\n Additionally, once the current grid is settled and no more Bombs or Lasers will activate, there is a chance to trigger an Orbital Bombardment on 3 - 7 different positions on the grid. Each Orbital Bombardment strike affects a 2x2 area centered ",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "name": "DEPLOY SHIELDS",
+      "trigger": null,
+      "effects": "Certain symbols in the game have a Shield, and require multiple hits from Bombs, Lasers (except Super Laser) or Orbital Bombardment strikes to remove the Shield and activate the symbol. The Super Laser instantly destroys all Shields hit by its effect!\n\n Shields are indicated with a blue Shield icon in the top-left corner of the symbol, and the number on the Shield icon indicates how many more hits are required before the Shield breaks.\n\n Shields are found on Multiplier symbols and FS symbols.\n\n Multipliers require either 2 or 3 hits to break their Shield, and have different values depending on how many hits they take.\n\n 2-Shield Multipliers can have the following multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x\n\n 3-Shield Multipliers can have the following multiplier values: 15x, 20x, 25x, 50x, 100x, 250x, 500x\n\n All Multipliers are activated when their Shield breaks. Activated Multipliers are added to the Total Win Bar at the end of the spin and the total multiplier value then multiplies the collected winnings to determine the final win.\n\n There are two types of FS symbols, and both require 3 hits to break their Shield and trigger a bonus game. Each bonus game is triggered by only 1 FS symbol of the corresponding type!",
+      "params": {}
+    },
+    {
+      "name": "ALIEN ATTACK",
+      "trigger": null,
+      "effects": "Unlock this bonus game with 8 free spins by breaking the Shield on an Alien Mind FS symbol in the base game!\n\n The bonus game retains all the mechanics from the base game.\n\n In addition, all activated Multipliers are stored in a Progressive Multiplier.\n\n The Progressive Multiplier is applied to the collected win in the Total Win Bar on any spin where at least one new Multiplier was added to the Progressive Multiplier.\n\n Breaking the Shield on an Alien Mind FS symbol during the bonus awards 2 additional free spins!",
+      "params": {}
+    },
+    {
+      "name": "EXTERMINATION",
+      "trigger": null,
+      "effects": "Unlock this bonus game with 12 free spins by breaking the Shield on a Power Core FS symbol in the base game!\n\n The bonus game retains all the mechanics from the base game.\n\n In addition, all activated Multipliers are stored in a Progressive Global Multiplier that is always active and applies to the collected win in the Total Win Bar at the end of every spin!\n\n Breaking the Shield on a Power Core FS symbol during the bonus awards 2 additional free spins!\n\n SPECIAL SYMBOLS\n\n Only one FS symbol can land on the grid at a time.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "booming_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "alien_attack_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "extermination_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum win of 15,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1640/1.24.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/fire-my-laser/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n BOMBS AWAY\n\n There are 2 different types of Bombs and 2 different types of Lasers in the game. Bombs and Lasers act as the primary win mechanic for this game by hitting positions on the grid and removing symbols on those positions. Any paying symbols that are removed in this way award a payout according to the paytable. All winnings are collected in the Total Win Bar above the grid, and paid out at the end of each spin. Removed symbols trigger a cascade causing existing symbols to drop down to fill in the gaps and new symbols drop in from the top to fill the grid.\n\n The below symbol"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

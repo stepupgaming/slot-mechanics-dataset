@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Wings of Horus",
+    "slug": "hacksaw-wings-of-horus",
+    "provider_game_id": "1612",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1612&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1612/1.24.6/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 7776. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "ORB OF THE MOON",
+        "behavior": "When the Orb of the Moon symbol lands on the grid, it will select all instances of a random symbol on the grid. Then, it will replace all the positions of the selected symbols and itself with a higher-paying symbol or a wild symbol. The new symbol is randomly selected from a pool of symbols with higher payouts than the selected symbol.",
+        "params": {}
+      },
+      {
+        "name": "ORB OF THE SUN",
+        "behavior": "When the Orb of the Sun symbol lands on the grid, it will select all instances of two random symbols on the grid. Then, it will replace all the positions of the selected symbols and itself with a higher-paying symbol or a wild symbol. The new symbol is randomly selected from a pool of symbols with higher payouts than the selected symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "REVENGE OF THE PHARAOH",
+        "behavior": "Activate this bonus feature with 10 free spins by landing at least 3 FS scatter symbols at the same time during the base game.\n\n Two progression bars are displayed outside the grid. The value of the golden progression bar will increase every time there is a new win on the grid. Every time the golden progression bar is completely filled, the purple Orb progression bar will increase by one level. When the purple Orb progression bar has increased by one, the golden progression bar will reset to zero.\n\n Before the last drop of the bonus feature, the purple Orb progression bar will be activated. The number of levels that are filled in the purple Orb progression bar corresponds to the number of Orbs, either Orb of the Moon or Orb of the Sun, that will land on the final drop of the feature. A maximum of 5 Orbs can land on the grid at the same time.\n\n During this bonus feature, the purple Orb progression bar will start at level 1.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins.",
+        "params": {}
+      },
+      {
+        "name": "RISE OF THE FALCON",
+        "behavior": "Activate this bonus feature with 10 free spins by landing at least 4 FS scatter symbols at the same time during the base game.\n\n This bonus feature has the same mechanics as REVENGE OF THE PHARAOH. However, during this bonus feature, the purple Orb progression bar will start at level 2.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SACRED SCRIPTURE",
+        "behavior": "If the low symbols land in formation to spell out “HORUS” horizontally on the grid, you will be awarded a cash payout of 500 times your current bet.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "ORB OF THE MOON",
+      "trigger": null,
+      "effects": "When the Orb of the Moon symbol lands on the grid, it will select all instances of a random symbol on the grid. Then, it will replace all the positions of the selected symbols and itself with a higher-paying symbol or a wild symbol. The new symbol is randomly selected from a pool of symbols with higher payouts than the selected symbol.",
+      "params": {}
+    },
+    {
+      "name": "ORB OF THE SUN",
+      "trigger": null,
+      "effects": "When the Orb of the Sun symbol lands on the grid, it will select all instances of two random symbols on the grid. Then, it will replace all the positions of the selected symbols and itself with a higher-paying symbol or a wild symbol. The new symbol is randomly selected from a pool of symbols with higher payouts than the selected symbol.",
+      "params": {}
+    },
+    {
+      "name": "SACRED SCRIPTURE",
+      "trigger": null,
+      "effects": "If the low symbols land in formation to spell out “HORUS” horizontally on the grid, you will be awarded a cash payout of 500 times your current bet.",
+      "params": {}
+    },
+    {
+      "name": "REVENGE OF THE PHARAOH",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing at least 3 FS scatter symbols at the same time during the base game.\n\n Two progression bars are displayed outside the grid. The value of the golden progression bar will increase every time there is a new win on the grid. Every time the golden progression bar is completely filled, the purple Orb progression bar will increase by one level. When the purple Orb progression bar has increased by one, the golden progression bar will reset to zero.\n\n Before the last drop of the bonus feature, the purple Orb progression bar will be activated. The number of levels that are filled in the purple Orb progression bar corresponds to the number of Orbs, either Orb of the Moon or Orb of the Sun, that will land on the final drop of the feature. A maximum of 5 Orbs can land on the grid at the same time.\n\n During this bonus feature, the purple Orb progression bar will start at level 1.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins.",
+      "params": {}
+    },
+    {
+      "name": "RISE OF THE FALCON",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing at least 4 FS scatter symbols at the same time during the base game.\n\n This bonus feature has the same mechanics as REVENGE OF THE PHARAOH. However, during this bonus feature, the purple Orb progression bar will start at level 2.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "orby_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "revenge_of_the_pharaoh_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rise_of_the_falcon_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1612/1.24.6/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/wings-of-horus/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n A little revenge party never killed nobody… or did it? Spread your wings and join the God of the Sky on his vengeful quest, in this 5-reel, 6-row game with ways wins and the Orbs of the Sky mechanic. The max win of 15,000 times your bet can be reached in all game modes.\n\n FEATURES\n\n ORB OF THE MOON\n\n When the Orb of the Moon symbol lands on the grid, it will select all instances of a random symbol on the grid. Then, it will replace all the positions of the selected symbols and itself with a higher-paying symbol or a wild symbol. The new symbol is randomly selected from a pool "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

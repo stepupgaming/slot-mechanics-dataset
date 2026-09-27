@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Superstar Sevens",
+    "slug": "hacksaw-superstar-sevens",
+    "provider_game_id": "2138",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2138&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2138/1.15.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Activate the Cascade Counter by landing a Lightning symbol and a win on the same spin. When activated, all non-winning symbols that are removed through Super Cascades are collected and the collected symbols are converted into a Multiplier value. Each collected low-paying symbol adds a 1x Additive Multiplier per winning cluster, and each collected high-paying symbol adds a 2x Additive Multiplier per winning cluster, which is visible in the Total Win Bar. The Cascade Counter stays active until the end of the spin.\n\n When all wins and Super Cascades have been handled on that spin, the final collected win will be multiplied by the Multiplier value from the Cascade Counter in the Total Win Bar to determine the payout for that spin.\n\n If an Epic Lightning symbol lands and there is a win in the Total Win Bar, the total win is multiplied by an additional Multiplier value at the end of the spin. Epic Lightning symbols can have the following Multiplicative Multipliers x5, x6, x7, x8, x9, x10, x25, x50, x77, x100. Only 1 Epic Lightning symbol can land on each spin.\n\n If 6 FS scatter symbols land at the same time, a Max Win is awarded instantly."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "HIDDEN EPIC BONUS - JUICY JOLTZ",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the LUCKY STRIKE bonus. The Total Win Bar is progressive and the final win is awarded at the end of the bonus. Epic Lightning symbols cannot land in this bonus.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n Landing 6 FS symbols at the same time to trigger a Max Win is not possible in the REEL CHARGE, LUCKY STRIKE and JUICY JOLTZ bonuses.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "CASCADE COUNTER",
+        "behavior": "Activate the Cascade Counter by landing a Lightning symbol and a win on the same spin. When activated, all non-winning symbols that are removed through Super Cascades are collected and the collected symbols are converted into a Multiplier value. Each collected low-paying symbol adds a 1x Additive Multiplier per winning cluster, and each collected high-paying symbol adds a 2x Additive Multiplier per winning cluster, which is visible in the Total Win Bar. The Cascade Counter stays active until the end of the spin.\n\n When all wins and Super Cascades have been handled on that spin, the final collected win will be multiplied by the Multiplier value from the Cascade Counter in the Total Win Bar to determine the payout for that spin.\n\n If an Epic Lightning symbol lands and there is a win in the Total Win Bar, the total win is multiplied by an additional Multiplier value at the end of the spin. Epic Lightning symbols can have the following Multiplicative Multipliers x5, x6, x7, x8, x9, x10, x25, x50, x77, x100. Only 1 Epic Lightning symbol can land on each spin.\n\n If 6 FS scatter symbols land at the same time, a Max Win is awarded instantly.",
+        "params": {
+          "multiplier_values_mentioned": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            25,
+            50,
+            77,
+            100
+          ]
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "TOTAL WIN BAR",
+        "behavior": "All wins during each spin are collected in the Total Win Bar outside of the grid. The collected wins are awarded at the end of the spin.",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "SUPER CASCADE",
+        "behavior": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new symbols drop down to fill the empty spaces.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - REEL CHARGE",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics with an increased chance of landing Lightning and Epic Lightning symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - LUCKY STRIKE",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the REEL CHARGE bonus and a Lightning symbol is guaranteed on every spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADE",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new symbols drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "TOTAL WIN BAR",
+      "trigger": null,
+      "effects": "All wins during each spin are collected in the Total Win Bar outside of the grid. The collected wins are awarded at the end of the spin.",
+      "params": {}
+    },
+    {
+      "name": "CASCADE COUNTER",
+      "trigger": null,
+      "effects": "Activate the Cascade Counter by landing a Lightning symbol and a win on the same spin. When activated, all non-winning symbols that are removed through Super Cascades are collected and the collected symbols are converted into a Multiplier value. Each collected low-paying symbol adds a 1x Additive Multiplier per winning cluster, and each collected high-paying symbol adds a 2x Additive Multiplier per winning cluster, which is visible in the Total Win Bar. The Cascade Counter stays active until the end of the spin.\n\n When all wins and Super Cascades have been handled on that spin, the final collected win will be multiplied by the Multiplier value from the Cascade Counter in the Total Win Bar to determine the payout for that spin.\n\n If an Epic Lightning symbol lands and there is a win in the Total Win Bar, the total win is multiplied by an additional Multiplier value at the end of the spin. Epic Lightning symbols can have the following Multiplicative Multipliers x5, x6, x7, x8, x9, x10, x25, x50, x77, x100. Only 1 Epic Lightning symbol can land on each spin.\n\n If 6 FS scatter symbols land at the same time, a Max Win is awarded instantly.",
+      "params": {
+        "multiplier_values_mentioned": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          25,
+          50,
+          77,
+          100
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - REEL CHARGE",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics with an increased chance of landing Lightning and Epic Lightning symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - LUCKY STRIKE",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the REEL CHARGE bonus and a Lightning symbol is guaranteed on every spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - JUICY JOLTZ",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the LUCKY STRIKE bonus. The Total Win Bar is progressive and the final win is awarded at the end of the bonus. Epic Lightning symbols cannot land in this bonus.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n Landing 6 FS symbols at the same time to trigger a Max Win is not possible in the REEL CHARGE, LUCKY STRIKE and JUICY JOLTZ bonuses.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "juiced_featurespins_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "reel_charge_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "lucky_strike_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2138/1.15.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/superstar-sevens/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Step into Superstar Sevens, a timeless arcade-style game that brings the retro age of casinos back to life while spinning 7s, juicy fruits and electric landings! \n\n With 6 reels and 5 rows of classic casino visuals, Clusters and a max win of 10 000 times your bet, is achievable in all game modes!\n\n FEATURES\n\n SUPER CASCADE\n\n When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new symbols drop down to fill the empty spaces.\n\n TOTAL WIN BAR\n\n All wins during each spin are collected in "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

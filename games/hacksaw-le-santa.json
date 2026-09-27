@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Santa",
+    "slug": "hacksaw-le-santa",
+    "provider_game_id": "1965",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1965&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1965/1.8.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "HIDDEN EPIC BONUS - WRECK THE HALLS",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the SLEIGHING IT bonus. In addition, every spin guarantees 1 Rainbow symbol, and when Coins are revealed, they will always be Silver or Gold!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "GOLDEN SQUARES",
+        "behavior": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares.\n\n If there is a Rainbow symbol on the grid, it will activate any Golden Squares after all wins have been collected. Activated Golden Squares reveal Special symbols which are either Bronze, Silver, or Gold Coin scatter symbols and can also reveal Santa Sack scatter symbols, Green or Gold Clover scatter symbols, and Jackpot Boxes scatter symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x, 250x, 500x\n\n After all Golden Squares have been revealed, the Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Santa Sacks on adjacent squares with one of the following Multipliers: x2, x3, x4, x5, x10, x20. Gold Clover symbols will multiply all Coins or existing Santa Sacks on the grid with one of the following Multipliers: x2, x3, x4, x5, x10, x20.\n\n Once all Clover symbols have applied their Multipliers, Santa Sack symbols will activate. Santa Sacks collect the values of all Coins and other Santa Sacks and store their total value. Santa Sacks activate top to bottom, left to right. Santa Sacks will not collect Jackpot Boxes.\n\n When the last Santa Sack on the current grid has activated, all other Golden Squares will activate again to reveal new Special symbols, and the process above repeats.\n\n Once all reveals and activations have been completed, all Coins and Santa Sacks will be added together and multiplied by your bet amount to determine the final awarded win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADES",
+        "behavior": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+        "params": {}
+      },
+      {
+        "name": "JACKPOT BOXES",
+        "behavior": "Jackpot Boxes can land on the grid or be revealed in the Golden Squares. Jackpot Boxes award four different Jackpot prizes with a value based on your current bet. The four Jackpot Boxes are:\n\n MINI: 10x\n\n MAJOR: 100x\n\n MEGA: 1 000x\n\n MAX WIN: 20 000x\n\n The current value of each Jackpot is displayed outside the grid on the Jackpot Sign. Jackpot Boxes that land during a spin will be activated if they land together with a Rainbow. When a Jackpot Box is revealed in a Golden Square, it will be awarded once all Coins and Santa Sack values have been awarded. Only one of each Jackpot value can appear at the same time, so a maximum of 4 different Jackpot Boxes can land on one spin. The Jackpot Box values will be combined before being awarded.\n\n Once all the wins and cash prizes have been awarded, all Special symbols and Golden Squares are removed from the grid for the next spin.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - SILENT HEIST",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, and all Golden Squares are progressive, remaining on the grid until the Rainbow symbol activates them! The minimum Coin value is 1x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - SLEIGHING IT",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the SILENT HEIST bonus. In addition, all Golden Squares stick to the grid until the end of the bonus, even after being activated by a Rainbow symbol!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "GOLDEN SQUARES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares.\n\n If there is a Rainbow symbol on the grid, it will activate any Golden Squares after all wins have been collected. Activated Golden Squares reveal Special symbols which are either Bronze, Silver, or Gold Coin scatter symbols and can also reveal Santa Sack scatter symbols, Green or Gold Clover scatter symbols, and Jackpot Boxes scatter symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x, 250x, 500x\n\n After all Golden Squares have been revealed, the Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Santa Sacks on adjacent squares with one of the following Multipliers: x2, x3, x4, x5, x10, x20. Gold Clover symbols will multiply all Coins or existing Santa Sacks on the grid with one of the following Multipliers: x2, x3, x4, x5, x10, x20.\n\n Once all Clover symbols have applied their Multipliers, Santa Sack symbols will activate. Santa Sacks collect the values of all Coins and other Santa Sacks and store their total value. Santa Sacks activate top to bottom, left to right. Santa Sacks will not collect Jackpot Boxes.\n\n When the last Santa Sack on the current grid has activated, all other Golden Squares will activate again to reveal new Special symbols, and the process above repeats.\n\n Once all reveals and activations have been completed, all Coins and Santa Sacks will be added together and multiplied by your bet amount to determine the final awarded win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "JACKPOT BOXES",
+      "trigger": null,
+      "effects": "Jackpot Boxes can land on the grid or be revealed in the Golden Squares. Jackpot Boxes award four different Jackpot prizes with a value based on your current bet. The four Jackpot Boxes are:\n\n MINI: 10x\n\n MAJOR: 100x\n\n MEGA: 1 000x\n\n MAX WIN: 20 000x\n\n The current value of each Jackpot is displayed outside the grid on the Jackpot Sign. Jackpot Boxes that land during a spin will be activated if they land together with a Rainbow. When a Jackpot Box is revealed in a Golden Square, it will be awarded once all Coins and Santa Sack values have been awarded. Only one of each Jackpot value can appear at the same time, so a maximum of 4 different Jackpot Boxes can land on one spin. The Jackpot Box values will be combined before being awarded.\n\n Once all the wins and cash prizes have been awarded, all Special symbols and Golden Squares are removed from the grid for the next spin.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SILENT HEIST",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, and all Golden Squares are progressive, remaining on the grid until the Rainbow symbol activates them! The minimum Coin value is 1x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SLEIGHING IT",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the SILENT HEIST bonus. In addition, all Golden Squares stick to the grid until the end of the bonus, even after being activated by a Rainbow symbol!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - WRECK THE HALLS",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the SLEIGHING IT bonus. In addition, every spin guarantees 1 Rainbow symbol, and when Coins are revealed, they will always be Silver or Gold!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "frosty_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "silent_heist_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "sleighing_it_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000,
+    "max_win_notes": "maximum achievable win in this game is 20 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1965/1.8.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-santa/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n It’s Christmas time, pretty baby, and Smokey is back in town!\n\n Forget the milk and cookies, this year Smokey is helping himself to the good stuff. There’s no stuff in your stockings, no gifts under the tree, Le Santa is sneaky, a bit cheeky, and coming for thee! But don’t get your tinsel in a tangle, this crafty raccoon has plenty of surprises to give!\n\n Deck or wreck the halls of this 6-reel, 5-row game with Clusters and a seasonal max win of 20 000 times your bet available in every game mode!\n\n FEATURES\n\n SUPER CASCADES\n\n When a winning combination occurs, all regular payin"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

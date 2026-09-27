@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Forest Fortune",
+    "slug": "hacksaw-forest-fortune",
+    "provider_game_id": "1068",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1068&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1068/1.49.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 5x5 from About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILDS",
+        "behavior": "Every time a WILD symbol lands on a reel in the base game, the wind feature is triggered. The wind will blow in a random direction and all WILD symbols on the grid will spread in that direction. The WILD symbols will spread the same number of positions as there are WILD symbols on the grid. Example: A grid contains two WILD symbols. The gust of wind is to the left, so both WILD symbols spread twice to the left leaving 6 WILDs on the grid.\n\n Wins are awarded after the WILDS spread. If you fill the entire grid with WILD symbols you will be awarded a win of 1,000 times your bet!",
+        "params": {}
+      },
+      {
+        "name": "SPECIAL SYMBOLS",
+        "behavior": "The WILD symbol substitutes for all symbols except the free spins symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "land three or more butterfly free spins symbols, the game launches into the free spin mode.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "If you land three or more butterfly free spins symbols, the game launches into the free spin mode. This feature starts off with 3 free spins. The free spins will continue until you get three non-winning spins in a row. Every time you get a winning symbol, the number of free spins is reset to 3. The meter next to the grid displays the number of remaining spins.\n\n Each reel has a number and a progress bar above it. Every time a butterfly or a bumblebee symbol lands it will affect the current reel total above that reel.\n\n At the end of the free spin feature, the total win will equal the sum of all displayed numbers multiplied with the current bet level (this applies if the fixed prize win is not won). All symbols affecting the multipliers are applied in the order left to right, top to bottom.\n\n The symbols appearing in the free spins mode are described below:\n\n The blue butterfly symbol will add the number revealed to the current reel’s multiplier. The possible multipliers are +1, +2, +5, +10, +25, +50, +100.\n\n Every time the green butterfly symbol appears, it will multiply the number shown above the current reel with the factor revealed. The possible multipliers are x2, x3, x5, x10, x25, x50.\n\n Bumblebees add one step on the progress bar above each reel. To win the high fixed prize of {jackpotwinvalue} you need to fill up the progress bar on each reel - it takes 3 times on all reels, 15 in total to trigger the high fixed prize win.\n\n The tornado symbol affects all symbols that have landed on the reels in that spin so that their values are added to all reels. This applies to both multipliers and max win progress.\n\n These symbols are non-winning."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILDS",
+      "trigger": null,
+      "effects": "Every time a WILD symbol lands on a reel in the base game, the wind feature is triggered. The wind will blow in a random direction and all WILD symbols on the grid will spread in that direction. The WILD symbols will spread the same number of positions as there are WILD symbols on the grid. Example: A grid contains two WILD symbols. The gust of wind is to the left, so both WILD symbols spread twice to the left leaving 6 WILDs on the grid.\n\n Wins are awarded after the WILDS spread. If you fill the entire grid with WILD symbols you will be awarded a win of 1,000 times your bet!",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "land three or more butterfly free spins symbols, the game launches into the free spin mode.",
+      "effects": "If you land three or more butterfly free spins symbols, the game launches into the free spin mode. This feature starts off with 3 free spins. The free spins will continue until you get three non-winning spins in a row. Every time you get a winning symbol, the number of free spins is reset to 3. The meter next to the grid displays the number of remaining spins.\n\n Each reel has a number and a progress bar above it. Every time a butterfly or a bumblebee symbol lands it will affect the current reel total above that reel.\n\n At the end of the free spin feature, the total win will equal the sum of all displayed numbers multiplied with the current bet level (this applies if the fixed prize win is not won). All symbols affecting the multipliers are applied in the order left to right, top to bottom.\n\n The symbols appearing in the free spins mode are described below:\n\n The blue butterfly symbol will add the number revealed to the current reel’s multiplier. The possible multipliers are +1, +2, +5, +10, +25, +50, +100.\n\n Every time the green butterfly symbol appears, it will multiply the number shown above the current reel with the factor revealed. The possible multipliers are x2, x3, x5, x10, x25, x50.\n\n Bumblebees add one step on the progress bar above each reel. To win the high fixed prize of {jackpotwinvalue} you need to fill up the progress bar on each reel - it takes 3 times on all reels, 15 in total to trigger the high fixed prize win.\n\n The tornado symbol affects all symbols that have landed on the reels in that spin so that their values are added to all reels. This applies to both multipliers and max win progress.\n\n These symbols are non-winning.",
+      "params": {}
+    },
+    {
+      "name": "SPECIAL SYMBOLS",
+      "trigger": null,
+      "effects": "The WILD symbol substitutes for all symbols except the free spins symbol.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "free_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1068/1.49.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/forest-fortune/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Step into the enchanted and magical forest of fortune! FOREST FORTUNE is a highly volatile 5x5 cluster based game loaded with wilds and multipliers! The maximum win on this game includes an impressive fixed prize of {jackpotwinvalue} and the biggest win (except the fixed prize) is 10,000 times your bet!\n\n WILDS\n\n Every time a WILD symbol lands on a reel in the base game, the wind feature is triggered. The wind will blow in a random direction and all WILD symbols on the grid will spread in that direction. The WILD symbols will spread the same number of positions as there are WI"
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

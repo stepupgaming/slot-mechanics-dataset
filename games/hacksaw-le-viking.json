@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Viking",
+    "slug": "hacksaw-le-viking",
+    "provider_game_id": "1689",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1689&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1689/1.31.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 15625. Please consult the paytable for "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "RAID SPINS RE-SPIN MODE",
+        "behavior": "Land 6 Coins of any kind at the same time in the base game and you will enter the Raid Spins re-spin mode. This re-spin mode gives you 3 refilling lives and contains only dead symbols, Coins, Diamonds and Clover symbols. During the re-spin mode, all Coins, Diamonds, and both Green and Gold Clover symbols are sticky until the re-spin mode ends.\n\n These symbols are dead symbols that have no effect:\n\n During Raid Spins each re-spin consumes 1 life. Land a Coin, Diamond, or Clover of any kind and your lives are refilled to 3. Getting 3 spins in a row with only dead symbols will end the re-spin mode.\n\n At the end of the re-spin mode all Coins and Diamonds on the grid reveal a random cash value depending on the symbol type. The revealed values are calculated based on your current bet. If the value of a Coin or Diamond symbol is too large to be fully displayed, it will be shortened to 2 decimal places. The value displayed will always be the minimum amount you may be awarded. The actual awarded amount may be greater than the displayed value, but never less than the displayed value.\n\n Bronze Coins can reveal values based on the following bet multipliers: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can reveal values based on the following bet multipliers: 5x, 10x, 15x, 20x\n\n Gold Coins can reveal values based on the following bet multipliers: 25x, 50x, 100x\n\n Diamonds can reveal values based on the following bet multipliers: 150x, 250x, 500x\n\n After all Coins and Diamonds have been revealed, any Clover symbols on the grid will activate.\n\n There are two types of Clover symbols: Green Clover and Gold Clover.\n\n Green Clover symbols multiply Coins and Diamonds on adjacent squares with one of the following values: x2, x3, x4, x5, x10, x20\n\n Gold Clover symbols multiply all Coins and Diamonds on the grid with one of the following values: x2, x3, x4, x5, x10, x20\n\n Once all reveals and activations have been completed, all Coin and Diamond symbol values will be added together to determ",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BERSERK FREE SPINS",
+        "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.\n\n The following symbols appear in this bonus: dead symbols, Coins, Diamonds, Green and Gold Clovers, Heart symbols, and Magic Cauldron symbols.\n\n At the start of the bonus, the positions of the FS scatter symbols that activated the bonus feature will be given Grid Multipliers with x2 multipliers. Grid Multipliers are sticky and stay in place until the end of the bonus feature.\n\n All Coins, Diamonds and Clover symbols that land become sticky until either collected by a Magic Cauldron or the bonus feature ends.\n\n When a Magic Cauldron symbol lands all Grid Multipliers and Clover symbols are activated and apply their multipliers to any Coins, Diamonds or previous Magic Cauldrons in their area of effect.\n\n Clover symbols behave the same as in Raid Spins and have the same multiplier values (see above), and may affect any adjacent Coins, Diamonds and Magic Cauldron symbols. Grid Multipliers affect any Coins or Diamonds on the corresponding grid position.\n\n All Coins, Diamonds, and previous Magic Cauldron symbols are then collected into the newest Magic Cauldron, which remains on the grid until it’s collected or the feature ends. Each Magic Cauldron symbol cannot collect more than once.\n\n Each spin in the bonus game consumes 1 life. Whenever any symbol that is not a dead symbol lands, your lives are refilled to the maximum amount. Once all lives are consumed, the bonus will end.\n\n Landing a Heart symbol increases your maximum number of lives in the current bonus game by 1, up to a maximum of 5.\n\n At the end of the bonus feature all Coins and Diamonds on the grid reveal a random cash value depending on the symbol type. These cash values are the same as in Raid Spins (see above).\n\n All Grid Multipliers and Clover symbols will then activate to multiply any Coins, Diamonds, or Magic Cauldron symbols in their area of effect.\n\n Finally, all Coins, Diamonds and Magic Cauldron symbol values will be added together to determine the final win amount for the bonus game."
+      },
+      {
+        "name": "VALKYRIE FREE SPINS",
+        "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.\n\n This bonus game retains the mechanics from the BERSERK bonus feature, but with 4 Grid Multipliers at the start (one for each triggering FS symbol), with x3 multipliers."
+      },
+      {
+        "name": "RAGNARÖK FREE SPINS",
+        "trigger": "Land 5 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land 5 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.\n\n This bonus game retains the mechanics from the BERSERK and VALKYRIE bonus features, but with 5 Grid Multipliers at the start (one for each triggering FS symbol), with x5 multipliers."
+      },
+      {
+        "name": "JOURNEY TO VALHALLA FREE SPINS",
+        "trigger": "Land 6 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Land 6 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.\n\n This bonus game retains the mechanics from the BERSERK, VALKYRIE and RAGNARÖK bonus features, but with 6 Grid Multipliers at the start (one for each triggering FS symbol), with x10 multipliers. In addition, Bronze and Silver coins don’t appear in this bonus, drastically increasing your chances of getting big wins!\n\n SPECIAL SYMBOLS\n\n Normal paying symbols do not appear in any bonus game or in Raid Spins.\n\n FS symbols do not appear in any bonus game or in Raid Spins.\n\n Magic Cauldron symbols cannot land on Grid Multipliers.\n\n Once you have reached the maximum number of lives for a bonus game, Heart symbols will no longer appear in the current bonus game round."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "RAID SPINS RE-SPIN MODE",
+      "trigger": null,
+      "effects": "Land 6 Coins of any kind at the same time in the base game and you will enter the Raid Spins re-spin mode. This re-spin mode gives you 3 refilling lives and contains only dead symbols, Coins, Diamonds and Clover symbols. During the re-spin mode, all Coins, Diamonds, and both Green and Gold Clover symbols are sticky until the re-spin mode ends.\n\n These symbols are dead symbols that have no effect:\n\n During Raid Spins each re-spin consumes 1 life. Land a Coin, Diamond, or Clover of any kind and your lives are refilled to 3. Getting 3 spins in a row with only dead symbols will end the re-spin mode.\n\n At the end of the re-spin mode all Coins and Diamonds on the grid reveal a random cash value depending on the symbol type. The revealed values are calculated based on your current bet. If the value of a Coin or Diamond symbol is too large to be fully displayed, it will be shortened to 2 decimal places. The value displayed will always be the minimum amount you may be awarded. The actual awarded amount may be greater than the displayed value, but never less than the displayed value.\n\n Bronze Coins can reveal values based on the following bet multipliers: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can reveal values based on the following bet multipliers: 5x, 10x, 15x, 20x\n\n Gold Coins can reveal values based on the following bet multipliers: 25x, 50x, 100x\n\n Diamonds can reveal values based on the following bet multipliers: 150x, 250x, 500x\n\n After all Coins and Diamonds have been revealed, any Clover symbols on the grid will activate.\n\n There are two types of Clover symbols: Green Clover and Gold Clover.\n\n Green Clover symbols multiply Coins and Diamonds on adjacent squares with one of the following values: x2, x3, x4, x5, x10, x20\n\n Gold Clover symbols multiply all Coins and Diamonds on the grid with one of the following values: x2, x3, x4, x5, x10, x20\n\n Once all reveals and activations have been completed, all Coin and Diamond symbol values will be added together to determ",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BERSERK FREE SPINS",
+      "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.",
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.\n\n The following symbols appear in this bonus: dead symbols, Coins, Diamonds, Green and Gold Clovers, Heart symbols, and Magic Cauldron symbols.\n\n At the start of the bonus, the positions of the FS scatter symbols that activated the bonus feature will be given Grid Multipliers with x2 multipliers. Grid Multipliers are sticky and stay in place until the end of the bonus feature.\n\n All Coins, Diamonds and Clover symbols that land become sticky until either collected by a Magic Cauldron or the bonus feature ends.\n\n When a Magic Cauldron symbol lands all Grid Multipliers and Clover symbols are activated and apply their multipliers to any Coins, Diamonds or previous Magic Cauldrons in their area of effect.\n\n Clover symbols behave the same as in Raid Spins and have the same multiplier values (see above), and may affect any adjacent Coins, Diamonds and Magic Cauldron symbols. Grid Multipliers affect any Coins or Diamonds on the corresponding grid position.\n\n All Coins, Diamonds, and previous Magic Cauldron symbols are then collected into the newest Magic Cauldron, which remains on the grid until it’s collected or the feature ends. Each Magic Cauldron symbol cannot collect more than once.\n\n Each spin in the bonus game consumes 1 life. Whenever any symbol that is not a dead symbol lands, your lives are refilled to the maximum amount. Once all lives are consumed, the bonus will end.\n\n Landing a Heart symbol increases your maximum number of lives in the current bonus game by 1, up to a maximum of 5.\n\n At the end of the bonus feature all Coins and Diamonds on the grid reveal a random cash value depending on the symbol type. These cash values are the same as in Raid Spins (see above).\n\n All Grid Multipliers and Clover symbols will then activate to multiply any Coins, Diamonds, or Magic Cauldron symbols in their area of effect.\n\n Finally, all Coins, Diamonds and Magic Ca",
+      "params": {}
+    },
+    {
+      "name": "VALKYRIE FREE SPINS",
+      "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.",
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.\n\n This bonus game retains the mechanics from the BERSERK bonus feature, but with 4 Grid Multipliers at the start (one for each triggering FS symbol), with x3 multipliers.",
+      "params": {}
+    },
+    {
+      "name": "RAGNARÖK FREE SPINS",
+      "trigger": "Land 5 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.",
+      "effects": "Land 5 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.\n\n This bonus game retains the mechanics from the BERSERK and VALKYRIE bonus features, but with 5 Grid Multipliers at the start (one for each triggering FS symbol), with x5 multipliers.",
+      "params": {}
+    },
+    {
+      "name": "JOURNEY TO VALHALLA FREE SPINS",
+      "trigger": "Land 6 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.",
+      "effects": "Land 6 FS scatter symbols at the same time in the base game to activate this bonus game with 3 refilling lives.\n\n This bonus game retains the mechanics from the BERSERK, VALKYRIE and RAGNARÖK bonus features, but with 6 Grid Multipliers at the start (one for each triggering FS symbol), with x10 multipliers. In addition, Bronze and Silver coins don’t appear in this bonus, drastically increasing your chances of getting big wins!\n\n SPECIAL SYMBOLS\n\n Normal paying symbols do not appear in any bonus game or in Raid Spins.\n\n FS symbols do not appear in any bonus game or in Raid Spins.\n\n Magic Cauldron symbols cannot land on Grid Multipliers.\n\n Once you have reached the maximum number of lives for a bonus game, Heart symbols will no longer appear in the current bonus game round.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "raider_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "berserk_free_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "ragnarok_free_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1689/1.31.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-viking/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n After a long journey at sea, our sneaky raccoon has finally set foot on solid ground again. The question now is not so much where, but when? Smokey is back once more - back in time, that is - and this time he is going exploring in the Viking Age! Join Smokey on his journey and bring out your inner norseman to make Oden proud!\n\n Le Viking™ is a 6-reel, 5-row game with Ways wins where a max win of 10 000 times your bet is up for grabs in a grand total of four bonus games and an extra re-spins mode! The max win can be reached in all game modes including Raid Spins.\n\n FEATURES\n\n R"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

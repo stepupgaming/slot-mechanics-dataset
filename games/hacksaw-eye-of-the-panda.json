@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Eye of the Panda",
+    "slug": "hacksaw-eye-of-the-panda",
+    "provider_game_id": "1344",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1344&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1344/1.17.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 5x5 grid in official About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 27,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 27. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Land 4 FS scatter symbols at the same time in the base game to activate the JUMPING PANDAS bonus feature with 10 free spins.\n\n The feature keeps all the mechanics of the base game, but the first 5 Wild Panda Multiplier symbols that land become sticky and stay on the reels until the end of the feature. The sticky Pandas will jump to a new random position on each free spin and cascade and get a new Multiplier value on each jump. The Panda Multiplier activates whenever the Panda symbol is a part of a winning combination."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD PANDA MULTIPLIERS",
+        "behavior": "The Panda symbol is a Wild Multiplier with the possible values: x2, x3, x4, x5, x10.\n\n The Panda symbol substitutes for other paying symbols, and will apply their Multipliers to any winning combination that the Panda symbol is a part of. If more than one Panda symbol is part of the same winning combination, the Multipliers will multiply each other, before being applied to the win.\n\n Landed Wild Panda Multipliers are persistent during the round until they are part of a winning combination. Once a Panda symbol is part of a win, it is removed on the next cascade together with the winning symbols.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      },
+      {
+        "name": "NEVER SAY NO TO PANDA! BONUS",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to activate the NEVER SAY NO TO PANDA! bonus feature with 10 free spins.\n\n When a Panda symbol is not part of a winning combination, it will be saved in one of the 5 Panda Collector spaces outside the reel. If there are no empty spaces in the Collector when a Panda symbol lands on a non-winning spin, that Panda will not be saved.\n\n When a win occurs with at least one winning payline, Pandas in the Panda Collector will jump down onto the reels again to randomly selected existing winning positions in a winning combination and apply their Multiplier to any wins they are part of, in the same manner as in the Base Game. Only the number of Pandas that can fit within the existing wins will jump down from the Panda Collector. If there are no more winning positions to fill, the Pandas will be saved in the Panda Collector.\n\n Since Pandas are Wild symbols, they can create new wins when they have jumped down from the Panda Collector. These wins will also be multiplied by the Multiplier.\n\n On the last spin of the feature, all saved Pandas that were not part of any win will jump down to randomly selected losing positions on the reels. If they create winning combinations, those wins will be multiplied by the Panda’s Multipliers and then cascade.",
+        "params": {}
+      },
+      {
+        "name": "JUMPING PANDA BONUS",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to activate the JUMPING PANDAS bonus feature with 10 free spins.\n\n The feature keeps all the mechanics of the base game, but the first 5 Wild Panda Multiplier symbols that land become sticky and stay on the reels until the end of the feature. The sticky Pandas will jump to a new random position on each free spin and cascade and get a new Multiplier value on each jump. The Panda Multiplier activates whenever the Panda symbol is a part of a winning combination.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADE",
+        "behavior": "Whenever a win occurs, all symbols of the winning type(s) are removed from the reels and new symbols drop in to take their place.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADE",
+      "trigger": null,
+      "effects": "Whenever a win occurs, all symbols of the winning type(s) are removed from the reels and new symbols drop in to take their place.",
+      "params": {}
+    },
+    {
+      "name": "WILD PANDA MULTIPLIERS",
+      "trigger": null,
+      "effects": "The Panda symbol is a Wild Multiplier with the possible values: x2, x3, x4, x5, x10.\n\n The Panda symbol substitutes for other paying symbols, and will apply their Multipliers to any winning combination that the Panda symbol is a part of. If more than one Panda symbol is part of the same winning combination, the Multipliers will multiply each other, before being applied to the win.\n\n Landed Wild Panda Multipliers are persistent during the round until they are part of a winning combination. Once a Panda symbol is part of a win, it is removed on the next cascade together with the winning symbols.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "NEVER SAY NO TO PANDA! BONUS",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the NEVER SAY NO TO PANDA! bonus feature with 10 free spins.\n\n When a Panda symbol is not part of a winning combination, it will be saved in one of the 5 Panda Collector spaces outside the reel. If there are no empty spaces in the Collector when a Panda symbol lands on a non-winning spin, that Panda will not be saved.\n\n When a win occurs with at least one winning payline, Pandas in the Panda Collector will jump down onto the reels again to randomly selected existing winning positions in a winning combination and apply their Multiplier to any wins they are part of, in the same manner as in the Base Game. Only the number of Pandas that can fit within the existing wins will jump down from the Panda Collector. If there are no more winning positions to fill, the Pandas will be saved in the Panda Collector.\n\n Since Pandas are Wild symbols, they can create new wins when they have jumped down from the Panda Collector. These wins will also be multiplied by the Multiplier.\n\n On the last spin of the feature, all saved Pandas that were not part of any win will jump down to randomly selected losing positions on the reels. If they create winning combinations, those wins will be multiplied by the Panda’s Multipliers and then cascade.",
+      "params": {}
+    },
+    {
+      "name": "JUMPING PANDA BONUS",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the JUMPING PANDAS bonus feature with 10 free spins.\n\n The feature keeps all the mechanics of the base game, but the first 5 Wild Panda Multiplier symbols that land become sticky and stay on the reels until the end of the feature. The sticky Pandas will jump to a new random position on each free spin and cascade and get a new Multiplier value on each jump. The Panda Multiplier activates whenever the Panda symbol is a part of a winning combination.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "panda_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "never_say_no_to_a_panda_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "jumping_pandas_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1344/1.17.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/eye-of-the-panda/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Come and enjoy a snack in Panda’s kitchen… if you dare! Eye of the Panda is a cascading drop game with a 5x5 grid and winning paylines. The game features the Wild Panda Multiplier symbol that will substitute for other paying symbols, and multiply your wins. The max win in this game, which can be reached in all game modes, is 10,000 times your bet!\n\n FEATURES\n\n SUPER CASCADE\n\n Whenever a win occurs, all symbols of the winning type(s) are removed from the reels and new symbols drop in to take their place.\n\n WILD PANDA MULTIPLIERS\n\n The Panda symbol is a Wild Multiplier with the "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

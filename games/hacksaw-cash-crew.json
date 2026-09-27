@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Cash Crew",
+    "slug": "hacksaw-cash-crew",
+    "provider_game_id": "1456",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1456&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1456/1.30.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 3x3 from About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "MULTIPLIERS GONE WILD",
+        "behavior": "Multiplier symbols are Wild and substitute for any symbol in the paytable. They also multiply the value of all Cash symbols in a 3x3 area around them if you land a Grab’em symbol!\n\n Multiplier values are applied to any winning payline they are part of. If more than one Multiplier is part of the same payline, their values are multiplied by each other before being applied to the payline.\n\n The possible Multiplier values are: x2, x3, x4, x5, x6, x7, x8, x9, x10, x15, x20, x25.\n\n Multiplier symbols with a value of x5 or higher land with a ? and reveal their value when Cash is collected.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "CASH MONEY",
+        "behavior": "Land, collect, multiply!\n\n Cash symbols award a prize when collected! Cash symbols can display a value from one of the following: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 250x, 500x.\n\n Cash symbols are collected if a Grab’em scatter symbol appears at the same time as at least one Cash symbol.\n\n Multiplier symbols affect all collected Cash in a 3x3 area around the symbol. If more than one Multiplier lands adjacent to a Cash symbol, the Cash value is multiplied by each adjacent Multiplier symbol.",
+        "params": {
+          "multiplier_values_mentioned": [
+            3
+          ]
+        }
+      },
+      {
+        "name": "THE VAULT",
+        "behavior": "Activate this bonus feature with 6 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus feature offers an enhanced base game experience, with better odds of landing a greater number of Cash and Multiplier symbols with higher values!\n\n On top of that, all landed Multiplier symbol positions are activated for the duration of the feature! That means that a random multiplier will land on every remaining spin on all activated positions.\n\n Landing the Stopwatch symbol awards 2 to 6 additional free spins, indicated by the number shown on the stopwatch display.",
+        "params": {}
+      },
+      {
+        "name": "THE HIGH-SECURITY VAULT",
+        "behavior": "Activate this bonus feature with 9 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus feature offers an enhanced base game experience, with better odds of landing a greater number of Cash and Multiplier symbols with higher values!\n\n All landed Cash symbols will have a minimum value of 5x!\n\n On top of that, all landed Multiplier symbol positions are activated for the duration of the feature! That means that a random multiplier will land on every remaining spin on all activated positions.\n\n Landing the Stopwatch symbol awards 2 to 6 additional free spins, indicated by the number shown on the stopwatch display.\n\n SPECIAL SYMBOLS\n\n The Multiplier symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MULTIPLIERS GONE WILD",
+      "trigger": null,
+      "effects": "Multiplier symbols are Wild and substitute for any symbol in the paytable. They also multiply the value of all Cash symbols in a 3x3 area around them if you land a Grab’em symbol!\n\n Multiplier values are applied to any winning payline they are part of. If more than one Multiplier is part of the same payline, their values are multiplied by each other before being applied to the payline.\n\n The possible Multiplier values are: x2, x3, x4, x5, x6, x7, x8, x9, x10, x15, x20, x25.\n\n Multiplier symbols with a value of x5 or higher land with a ? and reveal their value when Cash is collected.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    },
+    {
+      "name": "CASH MONEY",
+      "trigger": null,
+      "effects": "Land, collect, multiply!\n\n Cash symbols award a prize when collected! Cash symbols can display a value from one of the following: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 250x, 500x.\n\n Cash symbols are collected if a Grab’em scatter symbol appears at the same time as at least one Cash symbol.\n\n Multiplier symbols affect all collected Cash in a 3x3 area around the symbol. If more than one Multiplier lands adjacent to a Cash symbol, the Cash value is multiplied by each adjacent Multiplier symbol.",
+      "params": {
+        "multiplier_values_mentioned": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "THE VAULT",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 6 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus feature offers an enhanced base game experience, with better odds of landing a greater number of Cash and Multiplier symbols with higher values!\n\n On top of that, all landed Multiplier symbol positions are activated for the duration of the feature! That means that a random multiplier will land on every remaining spin on all activated positions.\n\n Landing the Stopwatch symbol awards 2 to 6 additional free spins, indicated by the number shown on the stopwatch display.",
+      "params": {}
+    },
+    {
+      "name": "THE HIGH-SECURITY VAULT",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 9 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus feature offers an enhanced base game experience, with better odds of landing a greater number of Cash and Multiplier symbols with higher values!\n\n All landed Cash symbols will have a minimum value of 5x!\n\n On top of that, all landed Multiplier symbol positions are activated for the duration of the feature! That means that a random multiplier will land on every remaining spin on all activated positions.\n\n Landing the Stopwatch symbol awards 2 to 6 additional free spins, indicated by the number shown on the stopwatch display.\n\n SPECIAL SYMBOLS\n\n The Multiplier symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "cash_is_king_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "the_vault_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "the_high_security_vault_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win of 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1456/1.30.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/cash-crew/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n MULTIPLIERS GONE WILD\n\n Multiplier symbols are Wild and substitute for any symbol in the paytable. They also multiply the value of all Cash symbols in a 3x3 area around them if you land a Grab’em symbol!\n\n Multiplier values are applied to any winning payline they are part of. If more than one Multiplier is part of the same payline, their values are multiplied by each other before being applied to the payline.\n\n The possible Multiplier values are: x2, x3, x4, x5, x6, x7, x8, x9, x10, x15, x20, x25.\n\n Multiplier symbols with a value of x5 or higher land with a ? and reveal their value"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Dandy Diamonds",
+    "slug": "hacksaw-dandy-diamonds",
+    "provider_game_id": "2334",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2334&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2334/1.18.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 2,
+    "cols": 2,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 2x2 from About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the PLAY WITH SAFIRE bonus. In addition, a 3x3 Colossal Diamond symbol is guaranteed to land during the first free spin.\n\n Diamond symbols can have the following Multiplier values: 2x, 3x, 4x, 5x, 6x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins \n\n SPECIAL SYMBOLS\n\n FS symbols cannot land during Dandy Respins."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "COLOSSAL DIAMOND SYMBOLS",
+        "behavior": "If 4 or more Diamond symbols land in a square formation of 2x2, 3x3, 4x4 or 5x5 they merge to form a Colossal Diamond symbol. When the Colossal Diamond is formed, any Diamond Multiplier values are added together and applied to the Colossal Diamond symbol. Colossal Diamond symbols act as a Wild symbol, substituting for all symbols in the paytable. The Multiplier value of the Colossal Diamond symbol is applied to each winning combination that the Colossal Diamond symbol is part of.\n\n A Colossal Diamond symbol can grow if additional Diamond symbols land around the existing Colossal Diamond in such a way that they collectively form a larger square formation, for example growing from 2x2 to 3x3.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - ICE AND SHINE",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the PLAY WITH SAFIRE bonus. In addition, a 3x3 Colossal Diamond symbol is guaranteed to land during the first free spin.\n\n Diamond symbols can have the following Multiplier values: 2x, 3x, 4x, 5x, 6x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins \n\n SPECIAL SYMBOLS\n\n FS symbols cannot land during Dandy Respins.",
+        "params": {
+          "multiplier_values_mentioned": [
+            3
+          ]
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "BOLT SYMBOLS",
+        "behavior": "A Bolt symbol is activated when it lands within a 3x3 square formation surrounding a Diamond symbol or Colossal Diamond symbol. When activated, the Bolt symbol applies a Multiplier value or increases the Multiplier values of all Diamond symbols and Colossal Diamonds inside the surrounding 3x3 square formation before any wins are rewarded. When the wins have been awarded, the Bolt symbol spins out from the grid along the regular paying symbols. Bolt symbols can land during regular spins and Dandy Respins. Bolt symbols add one of the following Additive Multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x.\n\n An Epic Bolt symbol will activate when it lands while there is any Diamond on the grid. An activated Epic Bolt symbol applies a Multiplier value or increases the Multiplier values of all Diamond symbols and Colossal Diamond symbols on the grid before any wins have been handled. When the wins have been handled, the Epic Bolt symbol spins out from the grid along the regular paying symbols. Epic Bolt symbols can land during regular spins and Dandy Respins. The Epic Bolt symbol adds one of the following Additive Multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x.\n\n Only 1 Bolt and Epic Bolt can land during the same spin. When a Bolt and Epic Bolt symbol land and activate during the same spin, the Bolt symbol will activate before the Epic Bolt symbol.",
+        "params": {
+          "multiplier_values_mentioned": [
+            3
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "DIAMOND SYMBOLS AND DANDY RESPINS",
+        "trigger": "When the Diamond symbol has landed, it will trigger a Dandy Respin after all winning combinations have been handled.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "When a Diamond symbol lands, it acts as a Wild, substituting for all symbols in the paytable. Diamond symbols can also land with an Additive Multiplier. Multipliers can have the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n When the Diamond symbol has landed, it will trigger a Dandy Respin after all winning combinations have been handled. During a Dandy Respin, all Diamond symbols are Sticky, meaning that they keep their grid position and Multiplier value, while new symbols spin in. Every time a new Diamond symbol lands, another Dandy Respin is awarded. The Respin sequence continues until no new Diamond symbols land or there are no more available positions on the grid.\n\n Wins are awarded after every Dandy Respin. When a Diamond Multiplier participates in a winning combination, the value of the win is multiplied by the Diamond’s Multiplier value. If more than one Diamond symbol is part of the same winning combination, their Multiplier values are added together before being applied to the win."
+      },
+      {
+        "name": "BONUS GAME - DIAMOND IN THE ROUGH",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics, with an increased chance of landing Diamond symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins"
+      },
+      {
+        "name": "BONUS GAME - PLAY WITH SAFIRE",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics. In addition, there are no Dandy Respins when a Diamond symbol lands. Instead, all Diamond symbols and Colossal Diamond symbols are Sticky, remaining in the same position throughout the bonus. The Multiplier values of all Diamond symbols are progressive, keeping their Multiplier value until it is increased by a Bolt or Epic Bolt symbol.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "DIAMOND SYMBOLS AND DANDY RESPINS",
+      "trigger": "When the Diamond symbol has landed, it will trigger a Dandy Respin after all winning combinations have been handled.",
+      "effects": "When a Diamond symbol lands, it acts as a Wild, substituting for all symbols in the paytable. Diamond symbols can also land with an Additive Multiplier. Multipliers can have the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n When the Diamond symbol has landed, it will trigger a Dandy Respin after all winning combinations have been handled. During a Dandy Respin, all Diamond symbols are Sticky, meaning that they keep their grid position and Multiplier value, while new symbols spin in. Every time a new Diamond symbol lands, another Dandy Respin is awarded. The Respin sequence continues until no new Diamond symbols land or there are no more available positions on the grid.\n\n Wins are awarded after every Dandy Respin. When a Diamond Multiplier participates in a winning combination, the value of the win is multiplied by the Diamond’s Multiplier value. If more than one Diamond symbol is part of the same winning combination, their Multiplier values are added together before being applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "COLOSSAL DIAMOND SYMBOLS",
+      "trigger": null,
+      "effects": "If 4 or more Diamond symbols land in a square formation of 2x2, 3x3, 4x4 or 5x5 they merge to form a Colossal Diamond symbol. When the Colossal Diamond is formed, any Diamond Multiplier values are added together and applied to the Colossal Diamond symbol. Colossal Diamond symbols act as a Wild symbol, substituting for all symbols in the paytable. The Multiplier value of the Colossal Diamond symbol is applied to each winning combination that the Colossal Diamond symbol is part of.\n\n A Colossal Diamond symbol can grow if additional Diamond symbols land around the existing Colossal Diamond in such a way that they collectively form a larger square formation, for example growing from 2x2 to 3x3.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "name": "BOLT SYMBOLS",
+      "trigger": null,
+      "effects": "A Bolt symbol is activated when it lands within a 3x3 square formation surrounding a Diamond symbol or Colossal Diamond symbol. When activated, the Bolt symbol applies a Multiplier value or increases the Multiplier values of all Diamond symbols and Colossal Diamonds inside the surrounding 3x3 square formation before any wins are rewarded. When the wins have been awarded, the Bolt symbol spins out from the grid along the regular paying symbols. Bolt symbols can land during regular spins and Dandy Respins. Bolt symbols add one of the following Additive Multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x.\n\n An Epic Bolt symbol will activate when it lands while there is any Diamond on the grid. An activated Epic Bolt symbol applies a Multiplier value or increases the Multiplier values of all Diamond symbols and Colossal Diamond symbols on the grid before any wins have been handled. When the wins have been handled, the Epic Bolt symbol spins out from the grid along the regular paying symbols. Epic Bolt symbols can land during regular spins and Dandy Respins. The Epic Bolt symbol adds one of the following Additive Multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x.\n\n Only 1 Bolt and Epic Bolt can land during the same spin. When a Bolt and Epic Bolt symbol land and activate during the same spin, the Bolt symbol will activate before the Epic Bolt symbol.",
+      "params": {
+        "multiplier_values_mentioned": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - DIAMOND IN THE ROUGH",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics, with an increased chance of landing Diamond symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - PLAY WITH SAFIRE",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics. In addition, there are no Dandy Respins when a Diamond symbol lands. Instead, all Diamond symbols and Colossal Diamond symbols are Sticky, remaining in the same position throughout the bonus. The Multiplier values of all Diamond symbols are progressive, keeping their Multiplier value until it is increased by a Bolt or Epic Bolt symbol.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - ICE AND SHINE",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the PLAY WITH SAFIRE bonus. In addition, a 3x3 Colossal Diamond symbol is guaranteed to land during the first free spin.\n\n Diamond symbols can have the following Multiplier values: 2x, 3x, 4x, 5x, 6x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins \n\n SPECIAL SYMBOLS\n\n FS symbols cannot land during Dandy Respins.",
+      "params": {
+        "multiplier_values_mentioned": [
+          3
+        ]
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "glamour_featurespins_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "diamond_in_the_rough_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "play_with_safire_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2334/1.18.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/dandy-diamonds/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n When the Neon lights shine at their brightest, there is only one thing that can match their luminosity…\n\n Step into the luxurious world of Dandy Diamonds - a place filled with diamonds, jewels and a whole lot of glamour. Surrounded by its neon frame, Dandy Diamonds brings you an alluring 5-reel, 5-row game with paylines. The max win of {maximumWinMultiplier} times your bet is achievable in every game mode!\n\n FEATURES\n\n DIAMOND SYMBOLS AND DANDY RESPINS\n\n When a Diamond symbol lands, it acts as a Wild, substituting for all symbols in the paytable. Diamond symbols can also land "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

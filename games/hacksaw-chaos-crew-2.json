@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Chaos Crew 2",
+    "slug": "hacksaw-chaos-crew-2",
+    "provider_game_id": "1352",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1352&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1352/1.24.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "A VERY CRANKY CAT",
+        "behavior": "The Cranky Cat symbol is a wild multiplier that multiplies all the winning combinations that it’s part of in the base game. More than one Cranky Cat can land at the same time and be part of the same winning combination, or different ones. When more than one Cranky Cat is part of the same win, their values multiply each other and the product is then applied to the win.\n\n Each Cranky Cat can have the following values: x2, x3, x4, x5, x10, x20\n\n In the base game, at most one Cranky Cat can land at a time on each reel and the Cranky Cat symbol substitutes for all other symbols in the paytable.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "BONUS",
+        "behavior": "Land 3 BONUS! scatter symbols at the same time in the base game to activate the Bonus feature!\n\n In the Bonus, the game transforms and only non-paying symbols and multiplier scatter symbols will appear!\n\n Above each reel is a reel multiplier that starts at 1x. By landing multiplier symbols of different types, the reel multipliers above the reels are progressively increased! When the Bonus ends, all reel multipliers will be added together and then multiplied with your bet to determine the final win amount!\n\n The special multiplier symbols that appear in the Bonus feature are as follows.\n\n Sketchy Skull: adds its displayed value to the reel multiplier where it landed one time.\nSticky Sketchy Skull: stays on the grid and adds its displayed value to the reel multiplier where it landed on every subsequent spin.\nEpic Sketchy Skull: adds its displayed value to ALL reel multipliers one time.\nEpic Sticky Sketchy Skull: stays on the grid and adds its displayed value to ALL reel multipliers on every subsequent spin.\n\n Possible multiplier values for all Sketchy Skull symbols are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Cranky Cat: multiplies its displayed value with the reel multiplier where it landed one time.\nSticky Cranky Cat: stays on the grid and multiplies its displayed value with the reel multiplier where it landed on every subsequent spin.\nEpic Cranky Cat: multiplies its displayed value with ALL reel multipliers one time.\nEpic Sticky Cranky Cat: stays on the grid and multiplies its displayed value with ALL reel multipliers on every subsequent spin.\n\n Possible multiplier values for all Cranky Cat symbols are: x2, x3, x4, x5, x10, x20\n\n The Bonus has 3 refilling lives that reset each time one of the above multiplier symbols lands. Each life represents one spin. Once all 3 lives are consumed without a new reset, the Bonus ends.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      },
+      {
+        "name": "SUPER BONUS",
+        "behavior": "Land 4 BONUS! scatter symbols at the same time in the base game to activate the Super Bonus feature!\n\n The Super Bonus feature follows the rules for the Bonus feature above, with one exception!\n\n The first spin of each Super Bonus is guaranteed to have a minimum of 7 multiplier symbols from among those listed in the BONUS section.",
+        "params": {}
+      },
+      {
+        "name": "BEST OF BONUS",
+        "behavior": "When 3 BONUS! scatter symbols land at the same time as a BEST OF BONUS scatter symbol in the base game, the BEST OF BONUS feature is activated!\n\n This feature awards three Bonus features in a row, playing them out in full before storing the result on the scoreboard next to the grid!\n\n At the end of the third and final Bonus, the highest value from the scoreboard is awarded and multiplied with your bet to determine the final win amount!",
+        "params": {}
+      },
+      {
+        "name": "BEST OF SUPER BONUS",
+        "behavior": "When 4 BONUS! scatter symbols land at the same time as a BEST OF BONUS scatter symbol in the base game, the BEST OF SUPER BONUS feature is activated!\n\n This feature awards three Super Bonus features in a row, playing them out in full before storing the result on the scoreboard next to the grid!\n\n At the end of the third and final Super Bonus, the highest value from the scoreboard is awarded and multiplied with your bet to determine the final win amount!",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "A DROP OF EPIC PROPORTIONS",
+        "behavior": "The Epic Drop™ feature has a chance to be randomly activated at the start of each spin when playing the base game. When this feature is activated the game will morph into the bonus game and a minimum of five multiplier symbols from the Bonus will drop in to give you their multipliers!\n\n On the next spin, the game reverts back to the usual base game and continues as usual… unless you were lucky enough to activate another Epic Drop™!",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "A DROP OF EPIC PROPORTIONS",
+      "trigger": null,
+      "effects": "The Epic Drop™ feature has a chance to be randomly activated at the start of each spin when playing the base game. When this feature is activated the game will morph into the bonus game and a minimum of five multiplier symbols from the Bonus will drop in to give you their multipliers!\n\n On the next spin, the game reverts back to the usual base game and continues as usual… unless you were lucky enough to activate another Epic Drop™!",
+      "params": {}
+    },
+    {
+      "name": "A VERY CRANKY CAT",
+      "trigger": null,
+      "effects": "The Cranky Cat symbol is a wild multiplier that multiplies all the winning combinations that it’s part of in the base game. More than one Cranky Cat can land at the same time and be part of the same winning combination, or different ones. When more than one Cranky Cat is part of the same win, their values multiply each other and the product is then applied to the win.\n\n Each Cranky Cat can have the following values: x2, x3, x4, x5, x10, x20\n\n In the base game, at most one Cranky Cat can land at a time on each reel and the Cranky Cat symbol substitutes for all other symbols in the paytable.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS",
+      "trigger": null,
+      "effects": "Land 3 BONUS! scatter symbols at the same time in the base game to activate the Bonus feature!\n\n In the Bonus, the game transforms and only non-paying symbols and multiplier scatter symbols will appear!\n\n Above each reel is a reel multiplier that starts at 1x. By landing multiplier symbols of different types, the reel multipliers above the reels are progressively increased! When the Bonus ends, all reel multipliers will be added together and then multiplied with your bet to determine the final win amount!\n\n The special multiplier symbols that appear in the Bonus feature are as follows.\n\n Sketchy Skull: adds its displayed value to the reel multiplier where it landed one time.\nSticky Sketchy Skull: stays on the grid and adds its displayed value to the reel multiplier where it landed on every subsequent spin.\nEpic Sketchy Skull: adds its displayed value to ALL reel multipliers one time.\nEpic Sticky Sketchy Skull: stays on the grid and adds its displayed value to ALL reel multipliers on every subsequent spin.\n\n Possible multiplier values for all Sketchy Skull symbols are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Cranky Cat: multiplies its displayed value with the reel multiplier where it landed one time.\nSticky Cranky Cat: stays on the grid and multiplies its displayed value with the reel multiplier where it landed on every subsequent spin.\nEpic Cranky Cat: multiplies its displayed value with ALL reel multipliers one time.\nEpic Sticky Cranky Cat: stays on the grid and multiplies its displayed value with ALL reel multipliers on every subsequent spin.\n\n Possible multiplier values for all Cranky Cat symbols are: x2, x3, x4, x5, x10, x20\n\n The Bonus has 3 refilling lives that reset each time one of the above multiplier symbols lands. Each life represents one spin. Once all 3 lives are consumed without a new reset, the Bonus ends.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "SUPER BONUS",
+      "trigger": null,
+      "effects": "Land 4 BONUS! scatter symbols at the same time in the base game to activate the Super Bonus feature!\n\n The Super Bonus feature follows the rules for the Bonus feature above, with one exception!\n\n The first spin of each Super Bonus is guaranteed to have a minimum of 7 multiplier symbols from among those listed in the BONUS section.",
+      "params": {}
+    },
+    {
+      "name": "BEST OF BONUS",
+      "trigger": null,
+      "effects": "When 3 BONUS! scatter symbols land at the same time as a BEST OF BONUS scatter symbol in the base game, the BEST OF BONUS feature is activated!\n\n This feature awards three Bonus features in a row, playing them out in full before storing the result on the scoreboard next to the grid!\n\n At the end of the third and final Bonus, the highest value from the scoreboard is awarded and multiplied with your bet to determine the final win amount!",
+      "params": {}
+    },
+    {
+      "name": "BEST OF SUPER BONUS",
+      "trigger": null,
+      "effects": "When 4 BONUS! scatter symbols land at the same time as a BEST OF BONUS scatter symbol in the base game, the BEST OF SUPER BONUS feature is activated!\n\n This feature awards three Super Bonus features in a row, playing them out in full before storing the result on the scoreboard next to the grid!\n\n At the end of the third and final Super Bonus, the highest value from the scoreboard is awarded and multiplied with your bet to determine the final win amount!",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "epic_drop_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "super_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "best_of_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "best_of_super_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000,
+    "max_win_notes": "maximum win of 20,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1352/1.24.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/chaos-crew-2/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n A DROP OF EPIC PROPORTIONS\n\n The Epic Drop™ feature has a chance to be randomly activated at the start of each spin when playing the base game. When this feature is activated the game will morph into the bonus game and a minimum of five multiplier symbols from the Bonus will drop in to give you their multipliers!\n\n On the next spin, the game reverts back to the usual base game and continues as usual… unless you were lucky enough to activate another Epic Drop™!\n\n A VERY CRANKY CAT\n\n The Cranky Cat symbol is a wild multiplier that multiplies all the winning combinations that it’s part"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

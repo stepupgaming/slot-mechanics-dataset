@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Prechaun",
+    "slug": "hacksaw-le-prechaun",
+    "provider_game_id": "2413",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2413&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2413/1.16.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 3x3 from About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "POSITION MULTIPLIERS",
+        "behavior": "When a Wild symbol is part of a win, the win will be handled before the position of the symbol will be marked as a x2 Position Multiplier. When a Position Multiplier is part of a winning combination, the value of the win is multiplied by the shown Multiplier value. When multiple Position Multipliers are part of the same win, their values are multiplied before being applied to the win. Every time a Wild symbol in the same grid position as a Position Multiplier is part of a win, the value of the Position Multiplier is doubled. Position Multipliers are capped at x100.\n\n After all regular wins have been handled, Position Multipliers remain marked until the end of the spin, acting as Golden Squares.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            100
+          ]
+        }
+      },
+      {
+        "name": "HIDDEN EPIC BONUS - SHAMROCK ‘N’ ROLL",
+        "behavior": "Trigger this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the CLOVER THE TOP bonus with the Lucky Charm Bar starting at Level 3 and remaining there for the entire bonus. In addition, all Coins that are revealed during the bonus display a value of at least 1x.\n\n FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS, Rainbow and Epic Rainbow symbols cannot land at the same time.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "GOLDEN SQUARES",
+        "behavior": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares. Position Multipliers will apply its value on any Special Symbols revealed from an activated Golden Square in the same grid position.\n\n When a Rainbow symbol lands on the grid, it activates any Golden Squares after all wins have been collected. Activated Golden Squares reveal special symbols that are either Bronze, Silver, Gold or Diamond Coins and can also reveal Green or Gold Clover symbols and Bag of Gold or Pot of Gold symbols.\n\n When an Epic Rainbow symbol lands, it reveals Special symbols on all positions on the grid. The reveal and activation process is the same for both Rainbow symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet. Any Position Multiplier in the same position as a Coin symbol will multiply the Coin’s value, once the value has been revealed.\n\n Bronze Coins can have the following values: 0.2x, 0.4x, 1x, 2x, 3x, 4x.\n\n Silver Coins can have the following values: 5x, 6x, 7x, 8x, 9x, 10x.\n\n Gold Coins can have the following values: 20x, 30x, 40x, 50x.\n\n Diamond Coins can have the following values: 100x, 150x, 250x, 500x.\n\n After all Golden Squares have been revealed, any Clover symbols activate. Green Clover symbols will multiply all Coins or existing Bag of Gold and Pot of Gold symbols on adjacent squares with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20.\n\n Gold Clover symbols will multiply all Coins or existing Bag of Gold and Pot of Gold symbols on the grid with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. Any Position Multiplier in the same position as a Clover symbol applies its value when the Multiplier value of the Clover symbol has been revealed. If there are no Special symbols near Clover symbols, they will activate once there are Special symbols on the grid to multiply.\n\n Once all Clover symbols have applied their Multipliers, Bag of Gold symbols ",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADES",
+        "behavior": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - ARC ADVENTURE",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics, and all Golden Squares remain on the grid until either Rainbow symbol activates them. Position Multipliers are permanent and remain marked until the end of the bonus.\n\n In addition, a progressive Lucky Charm Bar is located outside of the grid. Every time a FS symbol lands on the grid, the Lucky Charm Bar will increase by one step. After every fifth FS symbol has landed, a new Level is reached on the Lucky Charm Bar:\n\n Level 1 awards 5 additional free spins and guarantees that 2 Position Multipliers are added to the grid.\n\n Level 2 awards 5 additional free spins and guarantees that 3 additional Position Multipliers are added to the grid.\n\n Level 3 awards 5 additional free spins and guarantees that 1 Rainbow symbol will land on every subsequent spin."
+      },
+      {
+        "name": "BONUS GAME - CLOVER THE TOP",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "that is reached on the Lucky Charm Bar, +5 free spins are awarded.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Trigger this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the ARC ADVENTURE bonus and all Golden Squares remain highlighted even after being activated by a Rainbow symbol. When Epic Rainbow symbols activate, only the Golden Squares that were on the grid before will remain after the full grid activation is complete.\n\n For every Level that is reached on the Lucky Charm Bar, +5 free spins are awarded."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "POSITION MULTIPLIERS",
+      "trigger": null,
+      "effects": "When a Wild symbol is part of a win, the win will be handled before the position of the symbol will be marked as a x2 Position Multiplier. When a Position Multiplier is part of a winning combination, the value of the win is multiplied by the shown Multiplier value. When multiple Position Multipliers are part of the same win, their values are multiplied before being applied to the win. Every time a Wild symbol in the same grid position as a Position Multiplier is part of a win, the value of the Position Multiplier is doubled. Position Multipliers are capped at x100.\n\n After all regular wins have been handled, Position Multipliers remain marked until the end of the spin, acting as Golden Squares.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          100
+        ]
+      }
+    },
+    {
+      "name": "SUPER CASCADES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "GOLDEN SQUARES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares. Position Multipliers will apply its value on any Special Symbols revealed from an activated Golden Square in the same grid position.\n\n When a Rainbow symbol lands on the grid, it activates any Golden Squares after all wins have been collected. Activated Golden Squares reveal special symbols that are either Bronze, Silver, Gold or Diamond Coins and can also reveal Green or Gold Clover symbols and Bag of Gold or Pot of Gold symbols.\n\n When an Epic Rainbow symbol lands, it reveals Special symbols on all positions on the grid. The reveal and activation process is the same for both Rainbow symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet. Any Position Multiplier in the same position as a Coin symbol will multiply the Coin’s value, once the value has been revealed.\n\n Bronze Coins can have the following values: 0.2x, 0.4x, 1x, 2x, 3x, 4x.\n\n Silver Coins can have the following values: 5x, 6x, 7x, 8x, 9x, 10x.\n\n Gold Coins can have the following values: 20x, 30x, 40x, 50x.\n\n Diamond Coins can have the following values: 100x, 150x, 250x, 500x.\n\n After all Golden Squares have been revealed, any Clover symbols activate. Green Clover symbols will multiply all Coins or existing Bag of Gold and Pot of Gold symbols on adjacent squares with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20.\n\n Gold Clover symbols will multiply all Coins or existing Bag of Gold and Pot of Gold symbols on the grid with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. Any Position Multiplier in the same position as a Clover symbol applies its value when the Multiplier value of the Clover symbol has been revealed. If there are no Special symbols near Clover symbols, they will activate once there are Special symbols on the grid to multiply.\n\n Once all Clover symbols have applied their Multipliers, Bag of Gold symbols ",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - ARC ADVENTURE",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics, and all Golden Squares remain on the grid until either Rainbow symbol activates them. Position Multipliers are permanent and remain marked until the end of the bonus.\n\n In addition, a progressive Lucky Charm Bar is located outside of the grid. Every time a FS symbol lands on the grid, the Lucky Charm Bar will increase by one step. After every fifth FS symbol has landed, a new Level is reached on the Lucky Charm Bar:\n\n Level 1 awards 5 additional free spins and guarantees that 2 Position Multipliers are added to the grid.\n\n Level 2 awards 5 additional free spins and guarantees that 3 additional Position Multipliers are added to the grid.\n\n Level 3 awards 5 additional free spins and guarantees that 1 Rainbow symbol will land on every subsequent spin.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - CLOVER THE TOP",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Trigger this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the ARC ADVENTURE bonus and all Golden Squares remain highlighted even after being activated by a Rainbow symbol. When Epic Rainbow symbols activate, only the Golden Squares that were on the grid before will remain after the full grid activation is complete.\n\n For every Level that is reached on the Lucky Charm Bar, +5 free spins are awarded.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - SHAMROCK ‘N’ ROLL",
+      "trigger": null,
+      "effects": "Trigger this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the CLOVER THE TOP bonus with the Lucky Charm Bar starting at Level 3 and remaining there for the entire bonus. In addition, all Coins that are revealed during the bonus display a value of at least 1x.\n\n FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS, Rainbow and Epic Rainbow symbols cannot land at the same time.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rainbowride_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rainbow_epic_drop_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "arc_adventure_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "clover_the_top_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2413/1.16.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-prechaun/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Equipped with his magical Wand and signature Green Hat, it might seem like Smokey has taken a well-earned break where rainbows stretch endlessly across the sky and fortune glitters on the horizon…\n\n But don’t be fooled.\n\n Opportunity has always had a way of bringing out his more mischievous side - and those familiar with his exploits know that this Frenchie is never one to resist temptation. Especially when a clever disguise and a quick hand might get him within arm’s reach of that legendary pot of gold waiting at the end of the rainbow.\n\n Suit up and join Le Prechaun in this "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

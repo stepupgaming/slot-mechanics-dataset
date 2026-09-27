@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Snow Slingers",
+    "slug": "hacksaw-snow-slingers",
+    "provider_game_id": "1558",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1558&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1558/1.28.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "SNOW-VOLVER SYMBOL",
+        "behavior": "Normal and Epic Snow-volver symbols can land with 1 - 6 Snowballs. When a Snow-volver lands, the shown number of Snowballs are thrown at random positions on the grid.\n\n When a position without Snow is hit for the first time by a Normal Snowball it sticks to the grid and turns into a Wild Snow symbol. When a Snow symbol is hit by another Snowball, a random multiplier is added to the Snow and turns it into a Wild Snow Multiplier.\n\n When any position is hit by an Epic Snowball it immediately becomes a Snow Multiplier!\n\n The possible multiplier values that each Snowball can add to a Snow Multiplier are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x.\n\n If more than one Snow Multiplier is part of the same winning combination, their multiplier values are added together before being applied to the win.\n\n Subsequent hits on existing Snow Multipliers increases the multiplier value.\n\n In the base game and YOU REAP WHAT YOU SNOW bonus, Epic Snow-volvers always activate before Normal Snow-volvers to maximize the chances of stacking more multipliers on each Snow Multiplier.\n\n Once a Snow-volver is empty, it is replaced by a WILD symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "THROW SNOW! BONUS FEATURE",
+        "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate the THROW SNOW! bonus feature.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the THROW SNOW! bonus feature.\n\n When entering this bonus, the game transforms and only Snow-volver symbols, Reload symbols and non-paying symbols will appear on the reels!\n\n The bonus has 3 refilling lives that reset each time any Snow-volver or Reload symbol lands. Each life represents one spin. Once all 3 lives are consumed without a new reset, the bonus feature ends. If all positions on the grid are filled with used Snow-volver symbols, the feature will end immediately.\n\n There are six Gift Boxes with multiplier values displayed above the grid. Gift Boxes can have either multiplying or adding multipliers:\n\n Possible values for adding multipliers are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 40x, 50x, 75x, 100x, 150x, 200x, 250x, 500x\n\n Possible values for multiplying multipliers are: x2, x3, x4, x5, x10, x20\n\n In this bonus, when a Snow-volver lands the shown number of Snowballs are thrown at random Gift Boxes instead of onto the grid. When a Snowball hits a Gift Box, its multiplier value is added or multiplied to the Snow-volver’s total value.\n\n Normal Snow-volvers stick to the grid and keep their multiplier value until the end of the feature.\n\n Epic Snow-volver total multipliers are added to all existing sticky Normal Snow-volvers and Reload symbols that are present on the grid. All Epic Snow-volvers then disappear on the next spin.\n\n In this bonus Epic Snow-volvers always activate after Normal Snow-volvers and Reload symbols, to maximize the possible multiplier values that are added to the existing symbols.\n\n The Reload symbol reloads Normal Snow-volvers so you can collect more multiplier values!\n\n Landed Reload symbols activate after newly landed Normal Snow-volvers. When a Reload symbol activates it collects all the multipliers from all the sticky Normal Snow-volvers on the reel and reloads the Normal Snow-volvers with 1 - 6 new Snowballs. These Snowballs are then immediately thrown at the Gift Boxes, and the collected values are added to the Normal Snow-volvers. Reload symbols also stick to the grid and keep their collected multipliers until the end of the feature.\n\n At the end of the bonus feature all sticky Normal Snow-volver and Reload symbol multiplier values are added together and multiplied by your bet to give you the final win!"
+      },
+      {
+        "name": "YOU REAP WHAT YOU SNOW BONUS FEATURE",
+        "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate the YOU REAP WHAT YOU SNOW bonus feature with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the YOU REAP WHAT YOU SNOW bonus feature with 10 free spins.\n\n This bonus feature maintains the mechanics of the base game and has the added bonus that all Snow Multipliers become sticky and stay on the grid until the end of the feature!\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.\n\n SPECIAL SYMBOLS\n\n The WILD symbol substitutes for all symbols in the paytable.\n\n Snow and Snow Multiplier symbols substitute for all symbols in the paytable."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SNOW-VOLVER SYMBOL",
+      "trigger": null,
+      "effects": "Normal and Epic Snow-volver symbols can land with 1 - 6 Snowballs. When a Snow-volver lands, the shown number of Snowballs are thrown at random positions on the grid.\n\n When a position without Snow is hit for the first time by a Normal Snowball it sticks to the grid and turns into a Wild Snow symbol. When a Snow symbol is hit by another Snowball, a random multiplier is added to the Snow and turns it into a Wild Snow Multiplier.\n\n When any position is hit by an Epic Snowball it immediately becomes a Snow Multiplier!\n\n The possible multiplier values that each Snowball can add to a Snow Multiplier are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x.\n\n If more than one Snow Multiplier is part of the same winning combination, their multiplier values are added together before being applied to the win.\n\n Subsequent hits on existing Snow Multipliers increases the multiplier value.\n\n In the base game and YOU REAP WHAT YOU SNOW bonus, Epic Snow-volvers always activate before Normal Snow-volvers to maximize the chances of stacking more multipliers on each Snow Multiplier.\n\n Once a Snow-volver is empty, it is replaced by a WILD symbol.",
+      "params": {}
+    },
+    {
+      "name": "THROW SNOW! BONUS FEATURE",
+      "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate the THROW SNOW! bonus feature.",
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the THROW SNOW! bonus feature.\n\n When entering this bonus, the game transforms and only Snow-volver symbols, Reload symbols and non-paying symbols will appear on the reels!\n\n The bonus has 3 refilling lives that reset each time any Snow-volver or Reload symbol lands. Each life represents one spin. Once all 3 lives are consumed without a new reset, the bonus feature ends. If all positions on the grid are filled with used Snow-volver symbols, the feature will end immediately.\n\n There are six Gift Boxes with multiplier values displayed above the grid. Gift Boxes can have either multiplying or adding multipliers:\n\n Possible values for adding multipliers are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 40x, 50x, 75x, 100x, 150x, 200x, 250x, 500x\n\n Possible values for multiplying multipliers are: x2, x3, x4, x5, x10, x20\n\n In this bonus, when a Snow-volver lands the shown number of Snowballs are thrown at random Gift Boxes instead of onto the grid. When a Snowball hits a Gift Box, its multiplier value is added or multiplied to the Snow-volver’s total value.\n\n Normal Snow-volvers stick to the grid and keep their multiplier value until the end of the feature.\n\n Epic Snow-volver total multipliers are added to all existing sticky Normal Snow-volvers and Reload symbols that are present on the grid. All Epic Snow-volvers then disappear on the next spin.\n\n In this bonus Epic Snow-volvers always activate after Normal Snow-volvers and Reload symbols, to maximize the possible multiplier values that are added to the existing symbols.\n\n The Reload symbol reloads Normal Snow-volvers so you can collect more multiplier values!\n\n Landed Reload symbols activate after newly landed Normal Snow-volvers. When a Reload symbol activates it collects all the multipliers from all the sticky Normal Snow-volvers on the reel and reloads the Normal Snow-volvers with 1 - 6 new Snowballs. These Snowballs are then immedi",
+      "params": {}
+    },
+    {
+      "name": "YOU REAP WHAT YOU SNOW BONUS FEATURE",
+      "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate the YOU REAP WHAT YOU SNOW bonus feature with 10 free spins.",
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the YOU REAP WHAT YOU SNOW bonus feature with 10 free spins.\n\n This bonus feature maintains the mechanics of the base game and has the added bonus that all Snow Multipliers become sticky and stay on the grid until the end of the feature!\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.\n\n SPECIAL SYMBOLS\n\n The WILD symbol substitutes for all symbols in the paytable.\n\n Snow and Snow Multiplier symbols substitute for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "snow_day_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "throw_snow_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "you_reap_what_you_snow_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1558/1.28.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/snow-slingers/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n The most wonderful time of the year is upon us and it’s time to get in the holiday spirit! Join the penguins Ruth and Rupert and take the time to celebrate with a classic snowball fight right here in Snow Slingers. The game features include the Snowball mechanic and two jolly bonus games! Snow Slingers is a 5-reel, 4-row paylines game featuring a max win of 10,000 times your bet! The max win can be achieved in all game modes.\n\n FEATURES\n\n SNOW-VOLVER SYMBOL\n\n Normal and Epic Snow-volver symbols can land with 1 - 6 Snowballs. When a Snow-volver lands, the shown number of Snowba"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

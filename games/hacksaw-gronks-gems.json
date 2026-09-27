@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Gronk’s Gems",
+    "slug": "hacksaw-gronks-gems",
+    "provider_game_id": "1221",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1221&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1221/1.21.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Symbol wins make that symbol type enter a charged state and begin to glow. Charged symbol types are also shown in the “charge bar” display above the grid. Symbols retain their charged state until the end of the current spin.\n\n The Epic Gem scatter symbol may drop in on cascades after winning symbols are removed and will activate after the grid has settled, when no more wins or cascades occur. When the Epic Gem activates, all charged symbols on the grid are transformed into the highest paying charged symbol!\n\n All charged symbols are then absorbed by the Epic Gem and counted as if they were one winning cluster. The Epic Gem itself counts as 4 symbols, so that it will always be able to create a minimum win of 5 symbols so long as there is at least one charged symbol on the grid. Once all charged symbols are absorbed, the Epic Gem explodes and triggers another cascade!\n\n Symbols do not have a charged state during the Gem Hoarder game mode."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Gem Hoarder",
+        "behavior": "Land 3 Gem Bag scatter symbols at the same time in the base game to trigger this bonus game, which has 5 refilling free spins. Landing 3 Gem Bag symbols at the same time during the feature refills all 5 free spins!\n\n This feature has a progressive global multiplier that increases whenever winning symbols are removed! The multiplier value is increased by an amount equal to the number of removed symbols. Any winning cluster that connects to the special X-Gem symbol is multiplied by the global multiplier! If more than one X-Gem symbol connect to the same winning cluster, the global multiplier will be applied once for each connecting X-Gem symbol!\n\n SPECIAL SYMBOLS\n\n The Epic Gem does not appear in the Gem Hoarder game mode.\n\n The X-Gem symbol counts as a wild symbol, substituting all other paying symbols, and appears only in the Gem Hoarder game mode.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Charged Symbols & Epic Gem",
+        "behavior": "Symbol wins make that symbol type enter a charged state and begin to glow. Charged symbol types are also shown in the “charge bar” display above the grid. Symbols retain their charged state until the end of the current spin.\n\n The Epic Gem scatter symbol may drop in on cascades after winning symbols are removed and will activate after the grid has settled, when no more wins or cascades occur. When the Epic Gem activates, all charged symbols on the grid are transformed into the highest paying charged symbol!\n\n All charged symbols are then absorbed by the Epic Gem and counted as if they were one winning cluster. The Epic Gem itself counts as 4 symbols, so that it will always be able to create a minimum win of 5 symbols so long as there is at least one charged symbol on the grid. Once all charged symbols are absorbed, the Epic Gem explodes and triggers another cascade!\n\n Symbols do not have a charged state during the Gem Hoarder game mode.",
+        "params": {}
+      },
+      {
+        "name": "Gronk's Treasure",
+        "behavior": "Land 3 Gronk’s Head scatter symbols at the same time in the base game to trigger this bonus game, which awards 10 free spins! This feature has a higher chance to land Epic Gem symbols than the base game!",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Charged Symbols & Epic Gem",
+      "trigger": null,
+      "effects": "Symbol wins make that symbol type enter a charged state and begin to glow. Charged symbol types are also shown in the “charge bar” display above the grid. Symbols retain their charged state until the end of the current spin.\n\n The Epic Gem scatter symbol may drop in on cascades after winning symbols are removed and will activate after the grid has settled, when no more wins or cascades occur. When the Epic Gem activates, all charged symbols on the grid are transformed into the highest paying charged symbol!\n\n All charged symbols are then absorbed by the Epic Gem and counted as if they were one winning cluster. The Epic Gem itself counts as 4 symbols, so that it will always be able to create a minimum win of 5 symbols so long as there is at least one charged symbol on the grid. Once all charged symbols are absorbed, the Epic Gem explodes and triggers another cascade!\n\n Symbols do not have a charged state during the Gem Hoarder game mode.",
+      "params": {}
+    },
+    {
+      "name": "Gronk's Treasure",
+      "trigger": null,
+      "effects": "Land 3 Gronk’s Head scatter symbols at the same time in the base game to trigger this bonus game, which awards 10 free spins! This feature has a higher chance to land Epic Gem symbols than the base game!",
+      "params": {}
+    },
+    {
+      "name": "Gem Hoarder",
+      "trigger": null,
+      "effects": "Land 3 Gem Bag scatter symbols at the same time in the base game to trigger this bonus game, which has 5 refilling free spins. Landing 3 Gem Bag symbols at the same time during the feature refills all 5 free spins!\n\n This feature has a progressive global multiplier that increases whenever winning symbols are removed! The multiplier value is increased by an amount equal to the number of removed symbols. Any winning cluster that connects to the special X-Gem symbol is multiplied by the global multiplier! If more than one X-Gem symbol connect to the same winning cluster, the global multiplier will be applied once for each connecting X-Gem symbol!\n\n SPECIAL SYMBOLS\n\n The Epic Gem does not appear in the Gem Hoarder game mode.\n\n The X-Gem symbol counts as a wild symbol, substituting all other paying symbols, and appears only in the Gem Hoarder game mode.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_bonushunt_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_buy_gronks_treasure_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_buy_gem_hoarder_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7500,
+    "max_win_notes": "maximum achievable win in this game is 7,500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1221/1.21.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/gronks-gems/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n Charged Symbols & Epic Gem\n\n Symbol wins make that symbol type enter a charged state and begin to glow. Charged symbol types are also shown in the “charge bar” display above the grid. Symbols retain their charged state until the end of the current spin.\n\n The Epic Gem scatter symbol may drop in on cascades after winning symbols are removed and will activate after the grid has settled, when no more wins or cascades occur. When the Epic Gem activates, all charged symbols on the grid are transformed into the highest paying charged symbol!\n\n All charged symbols are then absorbed by the "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

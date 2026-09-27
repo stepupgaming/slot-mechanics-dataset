@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Donny And Danny",
+    "slug": "hacksaw-donny-and-danny",
+    "provider_game_id": "2004",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2004&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2004/1.19.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - CASH KINGS FOREVER",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the MAKE IT REIGN bonus. In addition, this bonus guarantees a full grid of Donny symbols on the last free spin!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins.\n\n SPECIAL SYMBOLS\n\n FS symbols cannot land above a Danny symbol.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "DOLLAR-REELS",
+        "behavior": "When a Danny symbol lands, it will expand into a Dollar-Reel if the Danny symbol is part of a LootLine win, or the expanded Dollar-Reel is part of a LootLine win.\n\n Danny symbols only expand upward, to the top of the grid, after all regular wins are collected. Once expanded, the Dollar-Reel and every position it covers can be part of a LootLine. Dollar-Reels will reveal a Multiplier value on every position that the Dollar-Reel covers, positions can have different Multiplier values. Dollar-Reel Multipliers can have the following Multiplying values: x2, x3, x4, x5, x6, x7, x8, x9, x10.\n\n When there is a winning LootLine of Donny symbols and a Dollar-Reel on the grid, the payout of the LootLine will be determined by the values of the symbols that are a part of the win. The values will be applied from left to right, the resulting value is then multiplied by your bet to determine the cash prize. Dollar-Reel Multiplying Multipliers that come first on a winning payline will be treated as Additive Multipliers.\n\n For example, a winning LootLine that consists of 1 Dollar-Reel symbol, 1 Donny symbol and 1 Dollar-Reel symbol with the values x3, 15x and x2 will have a final payout of 3+15*2=36x.\n\n Only 1 Danny symbol can land on a reel at a time. A Dollar-Reel cannot expand over a Donny symbol.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "LOOTLINES",
+        "behavior": "A LootLine is formed when a winning payline contains at least 3 Donny symbols, or a combination of at least 3 symbols made up of Donny and Danny. In a winning LootLine, each Donny symbol will select a random value from the Cash Board, located outside the grid. Each selected value is added to a Donny symbol. The values are added from left to right, top to bottom, and multiplied by the current bet amount to determine the awarded win. The Cash Board values are based on the following bet Multipliers: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 150x, 250x, 500x, 1000x, 5000x, 12 500x.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - ROLLIN’ IN DOUGH",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics with an increased chance of landing Donny symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - MAKE IT REIGN",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the ROLLIN’ IN DOUGH bonus and adds Booster symbols. When a Booster symbol lands, it will remove the lowest value on the Cash Board. If more than 1 Booster symbol lands at the same time, each will remove the lowest value on the Cash Board. The removed values are disabled on subsequent spins.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "LOOTLINES",
+      "trigger": null,
+      "effects": "A LootLine is formed when a winning payline contains at least 3 Donny symbols, or a combination of at least 3 symbols made up of Donny and Danny. In a winning LootLine, each Donny symbol will select a random value from the Cash Board, located outside the grid. Each selected value is added to a Donny symbol. The values are added from left to right, top to bottom, and multiplied by the current bet amount to determine the awarded win. The Cash Board values are based on the following bet Multipliers: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 150x, 250x, 500x, 1000x, 5000x, 12 500x.",
+      "params": {}
+    },
+    {
+      "name": "DOLLAR-REELS",
+      "trigger": null,
+      "effects": "When a Danny symbol lands, it will expand into a Dollar-Reel if the Danny symbol is part of a LootLine win, or the expanded Dollar-Reel is part of a LootLine win.\n\n Danny symbols only expand upward, to the top of the grid, after all regular wins are collected. Once expanded, the Dollar-Reel and every position it covers can be part of a LootLine. Dollar-Reels will reveal a Multiplier value on every position that the Dollar-Reel covers, positions can have different Multiplier values. Dollar-Reel Multipliers can have the following Multiplying values: x2, x3, x4, x5, x6, x7, x8, x9, x10.\n\n When there is a winning LootLine of Donny symbols and a Dollar-Reel on the grid, the payout of the LootLine will be determined by the values of the symbols that are a part of the win. The values will be applied from left to right, the resulting value is then multiplied by your bet to determine the cash prize. Dollar-Reel Multiplying Multipliers that come first on a winning payline will be treated as Additive Multipliers.\n\n For example, a winning LootLine that consists of 1 Dollar-Reel symbol, 1 Donny symbol and 1 Dollar-Reel symbol with the values x3, 15x and x2 will have a final payout of 3+15*2=36x.\n\n Only 1 Danny symbol can land on a reel at a time. A Dollar-Reel cannot expand over a Donny symbol.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - ROLLIN’ IN DOUGH",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics with an increased chance of landing Donny symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - MAKE IT REIGN",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the ROLLIN’ IN DOUGH bonus and adds Booster symbols. When a Booster symbol lands, it will remove the lowest value on the Cash Board. If more than 1 Booster symbol lands at the same time, each will remove the lowest value on the Cash Board. The removed values are disabled on subsequent spins.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - CASH KINGS FOREVER",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the MAKE IT REIGN bonus. In addition, this bonus guarantees a full grid of Donny symbols on the last free spin!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins.\n\n SPECIAL SYMBOLS\n\n FS symbols cannot land above a Danny symbol.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "dollars_to_donuts_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rollin_in_dough_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "make_it_reign_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2004/1.19.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/donny-and-danny/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n LOOTLINES\n\n A LootLine is formed when a winning payline contains at least 3 Donny symbols, or a combination of at least 3 symbols made up of Donny and Danny. In a winning LootLine, each Donny symbol will select a random value from the Cash Board, located outside the grid. Each selected value is added to a Donny symbol. The values are added from left to right, top to bottom, and multiplied by the current bet amount to determine the awarded win. The Cash Board values are based on the following bet Multipliers: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 150x, 250x, 500x, 1"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

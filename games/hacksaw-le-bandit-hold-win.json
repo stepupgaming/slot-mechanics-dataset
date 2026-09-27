@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Bandit Hold & Win",
+    "slug": "hacksaw-le-bandit-hold-win",
+    "provider_game_id": "2465",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2465&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2465/1.4.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 9,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 9. Please consult the paytable for the number of each symbol r"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "RAINBOW FORTUNE HOLD & WIN",
+        "behavior": "Activate this Hold & Win with 3 refilling lives by landing 1 Rainbow scatter symbol during the base game.\n\n In this Hold & Win, only Coin, Jackpot Marker, Pot of Gold, Clover and Dead symbols can land. Dead symbols are non-paying symbols and have no other effect.\n\n Lives are displayed on a Life Meter outside the grid, where 3 lives equal 3 free spins. When any Coin, Jackpot Marker, Pot of Gold, or Clover symbol lands, it sticks to the grid until collected or until the end of the round, and lives and free spins are refilled to 3. When all lives are consumed, the Hold & Win ends.\n\n Clover symbols can land when Coin symbols are present on the grid or when they land together with a Coin symbol. When it lands, it activates at the end of the Hold & Win and multiplies the values of all Coins and existing activated Pot of Gold symbols. If Coin, Clover and Pot of Gold symbols land at the same time, the Clover symbols will activate before the Pot of Gold symbol activates.\n\n Clover symbols can have the following Multiplicative Multipliers: x2, x3, x4, x5, x6, x7, x8, x9, x10, x15, x20\n\n Pot of Gold symbols can land when Coin symbols are present on the grid or when they land together with a Coin symbol. When it lands, it will reveal all Coin values and activate any Clover symbols before it activates. When activated, the Pot of Gold symbol collects the values of all Coin symbols and other activated Pot of Gold symbols, storing their total value. Once a Coin has been collected, it is removed from the grid. Jackpot Markers are revealed after the Pot of Gold has activated and are awarded before the next spin. Only one Pot of Gold symbol can land per spin.\n\n If there is a full grid of Coin, Clover and Jackpot Marker symbols, or if an activated Pot of Gold symbol is on the grid with a full grid of Special symbols, Coins are revealed, Clovers are activated and Jackpot Marker symbols are revealed. Once all reveals and activations are complete, all values are paid out and all Special sy",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20
+          ]
+        }
+      },
+      {
+        "name": "RAINBOW EPIC DROP™ HOLD & WIN",
+        "behavior": "Activate this Hold & Win with 3 refilling lives by landing 1 Epic Rainbow scatter symbol during the base game.\n\n This Hold & Win keeps the same mechanics as RAINBOW FORTUNE HOLD & WIN. In addition, a full grid of Coin, Jackpot Marker, Pot of Gold, and Clover symbols in any combination is guaranteed from the start, with at least one Coin symbol and one Pot of Gold symbol included. When Coin symbols land, their values will be at least 1x.\n\n SPECIAL SYMBOLS\n\n The Coin bucket animation is purely for visual effect and does not affect the game's outcome.\n\n Rainbow and Epic Rainbow symbols cannot land on the grid at the same time as Coin symbols or Jackpot markers.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "COINS AND JACKPOT MARKERS",
+        "behavior": "When three or more Coin symbols or Jackpot Markers or a combination of both land on the grid, the win is awarded after all regular wins have been handled. When part of a win, the Coin symbol reveals a value. Coin values are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.4x, 1x, 2x \n Silver Coins can have the following values: 3x, 4x, 5x, 6x, 7x, 8x, 9x \n Gold Coins can have the following values: 10x, 20x, 30x, 40x, 50x \n\n When Jackpot Markers are part of a win, they award one of four different Jackpot prizes with a value based on your current bet. The value of each Jackpot is displayed outside the grid on the Jackpot Signs. The four Jackpot Markers are:\n\n MINI: 5x \n MAJOR: 25x \n MEGA: 250x \n GRAND: {highestJackpotMultiplier}x",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "COINS AND JACKPOT MARKERS",
+      "trigger": null,
+      "effects": "When three or more Coin symbols or Jackpot Markers or a combination of both land on the grid, the win is awarded after all regular wins have been handled. When part of a win, the Coin symbol reveals a value. Coin values are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.4x, 1x, 2x \n Silver Coins can have the following values: 3x, 4x, 5x, 6x, 7x, 8x, 9x \n Gold Coins can have the following values: 10x, 20x, 30x, 40x, 50x \n\n When Jackpot Markers are part of a win, they award one of four different Jackpot prizes with a value based on your current bet. The value of each Jackpot is displayed outside the grid on the Jackpot Signs. The four Jackpot Markers are:\n\n MINI: 5x \n MAJOR: 25x \n MEGA: 250x \n GRAND: {highestJackpotMultiplier}x",
+      "params": {}
+    },
+    {
+      "name": "RAINBOW FORTUNE HOLD & WIN",
+      "trigger": null,
+      "effects": "Activate this Hold & Win with 3 refilling lives by landing 1 Rainbow scatter symbol during the base game.\n\n In this Hold & Win, only Coin, Jackpot Marker, Pot of Gold, Clover and Dead symbols can land. Dead symbols are non-paying symbols and have no other effect.\n\n Lives are displayed on a Life Meter outside the grid, where 3 lives equal 3 free spins. When any Coin, Jackpot Marker, Pot of Gold, or Clover symbol lands, it sticks to the grid until collected or until the end of the round, and lives and free spins are refilled to 3. When all lives are consumed, the Hold & Win ends.\n\n Clover symbols can land when Coin symbols are present on the grid or when they land together with a Coin symbol. When it lands, it activates at the end of the Hold & Win and multiplies the values of all Coins and existing activated Pot of Gold symbols. If Coin, Clover and Pot of Gold symbols land at the same time, the Clover symbols will activate before the Pot of Gold symbol activates.\n\n Clover symbols can have the following Multiplicative Multipliers: x2, x3, x4, x5, x6, x7, x8, x9, x10, x15, x20\n\n Pot of Gold symbols can land when Coin symbols are present on the grid or when they land together with a Coin symbol. When it lands, it will reveal all Coin values and activate any Clover symbols before it activates. When activated, the Pot of Gold symbol collects the values of all Coin symbols and other activated Pot of Gold symbols, storing their total value. Once a Coin has been collected, it is removed from the grid. Jackpot Markers are revealed after the Pot of Gold has activated and are awarded before the next spin. Only one Pot of Gold symbol can land per spin.\n\n If there is a full grid of Coin, Clover and Jackpot Marker symbols, or if an activated Pot of Gold symbol is on the grid with a full grid of Special symbols, Coins are revealed, Clovers are activated and Jackpot Marker symbols are revealed. Once all reveals and activations are complete, all values are paid out and all Special sy",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "name": "RAINBOW EPIC DROP™ HOLD & WIN",
+      "trigger": null,
+      "effects": "Activate this Hold & Win with 3 refilling lives by landing 1 Epic Rainbow scatter symbol during the base game.\n\n This Hold & Win keeps the same mechanics as RAINBOW FORTUNE HOLD & WIN. In addition, a full grid of Coin, Jackpot Marker, Pot of Gold, and Clover symbols in any combination is guaranteed from the start, with at least one Coin symbol and one Pot of Gold symbol included. When Coin symbols land, their values will be at least 1x.\n\n SPECIAL SYMBOLS\n\n The Coin bucket animation is purely for visual effect and does not affect the game's outcome.\n\n Rainbow and Epic Rainbow symbols cannot land on the grid at the same time as Coin symbols or Jackpot markers.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "rainbow_feature_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "gold_rainbow_feature_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2465/1.4.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-bandit-hold-win/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Smokey the sly bandit has set his sights on shiny coins, jackpots and two Hold & Win games. In Le Bandit Hold & Win, Smokey pulls out the best tools at his disposal to steal a max win of {maximumWinMultiplier} times your bet! The max win is achievable in all modes of this 3-reel, 3-row payline game.\n\n FEATURES\n\n COINS AND JACKPOT MARKERS\n\n When three or more Coin symbols or Jackpot Markers or a combination of both land on the grid, the win is awarded after all regular wins have been handled. When part of a win, the Coin symbol reveals a value. Coin values are cash prizes that "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

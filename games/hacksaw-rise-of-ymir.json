@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Rise of Ymir",
+    "slug": "hacksaw-rise-of-ymir",
+    "provider_game_id": "1616",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1616&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1616/1.27.9/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "When the MEGAMULTIPLIER™ symbol lands while there are Ymir symbols on the grid, the multiplier values of all Ymir symbols will be added together into a global MEGAMULTIPLIER™ that applies to all wins while it is active!\n\n The MEGAMULTIPLIER™ also awards a respin when it activates.\n\n Any new Ymir symbols that land during subsequent respins will add their multiplier value to the MEGAMULTIPLIER™!\n\n The MEGAMULTIPLIER™ is removed at the beginning of the next round."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "YMIR’S CONQUEST",
+        "behavior": "The Ymir symbol is a wild multiplier that substitutes for the other paying symbols in the paytable. When a Ymir symbol participates in a winning combination, the value of the win is multiplied by the shown value. If more than one Ymir symbol is part of the same winning combination, their values are first added together before being applied to the win.\n\n When a Ymir symbol lands, it will stick in place and be given a multiplier from one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n Then, after all winning combinations on the grid have been awarded, a free respin will trigger. If any new Ymir symbols land on the respin, the process repeats. This continues until no new Ymir symbols land.\n\n If 4 Ymir symbols stick on the same reel, they will merge into a big Giant Ymir symbol. The multiplier values from all 4 Ymir symbols on that reel will be added together and applied to the whole Giant Ymir symbol and any winning combination it participates in.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "DAWN OF GODS",
+        "behavior": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game has the YMIR’S CONQUEST and MEGAMULTIPLIER™ features from the base game, with a better chance of landing more Ymir symbols with higher multiplier values!\n\n Landing additional FS symbols at the same time awards extra free spins: 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins.",
+        "params": {}
+      },
+      {
+        "name": "FURY OF YMIR",
+        "behavior": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game has the YMIR’S CONQUEST and MEGAMULTIPLIER™ features from the base game, and the MEGAMULTIPLIER™ remains active between spins until the end of the bonus once activated!\n\n The multiplier on any new Ymir symbols that land while the MEGAMULTIPLIER™ is active will be collected in the global multiplier and applied to all wins!\n\n There is also a better chance of landing more Ymir symbols with higher multiplier values.\n\n Landing additional FS symbols at the same time awards extra free spins: 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins.",
+        "params": {}
+      },
+      {
+        "name": "FALL OF YMIR",
+        "behavior": "Activate this bonus with 3 refilling lives by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game has only the following symbols: non-paying “dead symbols”, Volcanic Ymir symbol, MEGAMULTIPLIER™ symbol, and Asgardian Orb symbols.\n\n The following symbols are dead symbols:\n\n Each spin in the bonus consumes 1 life. Whenever any symbol other than one of the dead symbols lands, your lives are refilled to 3. After 3 spins without a refill, the bonus will end.\n\n The Volcanic Ymir symbol is a special multiplier symbol that can be collected and increased in different ways!\n\n When a Volcanic Ymir symbol lands, it will stick in place and be given a multiplier from one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n When a MEGAMULTIPLIER™ symbol lands, all Volcanic Ymir symbol multipliers values are added to a total global multiplier, while the Volcanic Ymir symbols also retain their values on the grid.\n\n When an Asgardian Orb symbol lands the collected value in the global multiplier is consumed and added to some or all of the Volcanic Ymir symbols.\n\n Green Asgardian Orb symbols add the value to all Volcanic Ymir symbols on the reel where it landed. If there are no Volcanic Ymir symbols on that reel, nothing happens.\n\n Golden Asgardian Orb symbols add the value to ALL Volcanic Ymir symbols on the whole grid!\n\n When the collected global multiplier is consumed in this way, its value is reset to 0 and removed. Land new MEGAMULTIPLIER™ symbols to build it back up again!\n\n Once the bonus game ends, the value of all Volcanic Ymir symbols on the grid will be added together and multiplied by your bet to determine the final win!",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "MEGAMULTIPLIER™",
+        "behavior": "When the MEGAMULTIPLIER™ symbol lands while there are Ymir symbols on the grid, the multiplier values of all Ymir symbols will be added together into a global MEGAMULTIPLIER™ that applies to all wins while it is active!\n\n The MEGAMULTIPLIER™ also awards a respin when it activates.\n\n Any new Ymir symbols that land during subsequent respins will add their multiplier value to the MEGAMULTIPLIER™!\n\n The MEGAMULTIPLIER™ is removed at the beginning of the next round.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "YMIR’S CONQUEST",
+      "trigger": null,
+      "effects": "The Ymir symbol is a wild multiplier that substitutes for the other paying symbols in the paytable. When a Ymir symbol participates in a winning combination, the value of the win is multiplied by the shown value. If more than one Ymir symbol is part of the same winning combination, their values are first added together before being applied to the win.\n\n When a Ymir symbol lands, it will stick in place and be given a multiplier from one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n Then, after all winning combinations on the grid have been awarded, a free respin will trigger. If any new Ymir symbols land on the respin, the process repeats. This continues until no new Ymir symbols land.\n\n If 4 Ymir symbols stick on the same reel, they will merge into a big Giant Ymir symbol. The multiplier values from all 4 Ymir symbols on that reel will be added together and applied to the whole Giant Ymir symbol and any winning combination it participates in.",
+      "params": {}
+    },
+    {
+      "name": "MEGAMULTIPLIER™",
+      "trigger": null,
+      "effects": "When the MEGAMULTIPLIER™ symbol lands while there are Ymir symbols on the grid, the multiplier values of all Ymir symbols will be added together into a global MEGAMULTIPLIER™ that applies to all wins while it is active!\n\n The MEGAMULTIPLIER™ also awards a respin when it activates.\n\n Any new Ymir symbols that land during subsequent respins will add their multiplier value to the MEGAMULTIPLIER™!\n\n The MEGAMULTIPLIER™ is removed at the beginning of the next round.",
+      "params": {}
+    },
+    {
+      "name": "DAWN OF GODS",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game has the YMIR’S CONQUEST and MEGAMULTIPLIER™ features from the base game, with a better chance of landing more Ymir symbols with higher multiplier values!\n\n Landing additional FS symbols at the same time awards extra free spins: 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "FURY OF YMIR",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game has the YMIR’S CONQUEST and MEGAMULTIPLIER™ features from the base game, and the MEGAMULTIPLIER™ remains active between spins until the end of the bonus once activated!\n\n The multiplier on any new Ymir symbols that land while the MEGAMULTIPLIER™ is active will be collected in the global multiplier and applied to all wins!\n\n There is also a better chance of landing more Ymir symbols with higher multiplier values.\n\n Landing additional FS symbols at the same time awards extra free spins: 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "FALL OF YMIR",
+      "trigger": null,
+      "effects": "Activate this bonus with 3 refilling lives by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game has only the following symbols: non-paying “dead symbols”, Volcanic Ymir symbol, MEGAMULTIPLIER™ symbol, and Asgardian Orb symbols.\n\n The following symbols are dead symbols:\n\n Each spin in the bonus consumes 1 life. Whenever any symbol other than one of the dead symbols lands, your lives are refilled to 3. After 3 spins without a refill, the bonus will end.\n\n The Volcanic Ymir symbol is a special multiplier symbol that can be collected and increased in different ways!\n\n When a Volcanic Ymir symbol lands, it will stick in place and be given a multiplier from one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n When a MEGAMULTIPLIER™ symbol lands, all Volcanic Ymir symbol multipliers values are added to a total global multiplier, while the Volcanic Ymir symbols also retain their values on the grid.\n\n When an Asgardian Orb symbol lands the collected value in the global multiplier is consumed and added to some or all of the Volcanic Ymir symbols.\n\n Green Asgardian Orb symbols add the value to all Volcanic Ymir symbols on the reel where it landed. If there are no Volcanic Ymir symbols on that reel, nothing happens.\n\n Golden Asgardian Orb symbols add the value to ALL Volcanic Ymir symbols on the whole grid!\n\n When the collected global multiplier is consumed in this way, its value is reset to 0 and removed. Land new MEGAMULTIPLIER™ symbols to build it back up again!\n\n Once the bonus game ends, the value of all Volcanic Ymir symbols on the grid will be added together and multiplied by your bet to determine the final win!",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "might_of_ymir_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "dawn_of_gods_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "fury_of_ymir_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "fall_of_ymir_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1616/1.27.9/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/rise-of-ymir/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n YMIR’S CONQUEST\n\n The Ymir symbol is a wild multiplier that substitutes for the other paying symbols in the paytable. When a Ymir symbol participates in a winning combination, the value of the win is multiplied by the shown value. If more than one Ymir symbol is part of the same winning combination, their values are first added together before being applied to the win.\n\n When a Ymir symbol lands, it will stick in place and be given a multiplier from one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n Then, after all winning combinations on the grid "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Chaos Crew 3",
+    "slug": "hacksaw-chaos-crew-3",
+    "provider_game_id": "1867",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1867&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1867/1.31.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 3x3 from About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "THIS CAT IS CRANKY",
+        "behavior": "The Cranky Cat symbol is a Wild Multiplier that substitutes for the other paying symbols in the paytable. When a Cranky Cat symbol participates in a winning combination, the value of the win is multiplied by the shown value. If more than 1 Cranky Cat symbol is part of the same winning combination, their values are first multiplied with each other before being applied to the win. Only 1 Cranky Cat symbol can land on a reel at a time in base game mode. The Cranky Cat symbol can have the following Multiplier values: x2, x3, x4, x5, x10, x20.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - AN EPIC GLITCH!",
+        "behavior": "Activate this bonus with free spins and 3 refilling lives by landing 5 FS scatter symbols at the same time during the base game.\n\n The Hidden Epic Bonus keeps the mechanics of THE KORRUPTED K9 bonus. In addition, this bonus guarantees a full grid with Crazy Multipliers, 1 Chaos Upgrade symbol, and at least 1 Glitch Dog symbol from the start!",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "CAN YOU SPELL CHAOS?",
+        "behavior": "Landing 5 low-paying symbols that spell out CHAOS horizontally across a row will trigger an EPIC DROP™.\n\n When the EPIC DROP™ is activated in normal gameplay, it triggers 1 reward spin. During the EPIC DROP™ reward spin, a Reel Multiplier above each reel starts at 1x. All symbols are replaced with dead symbols, and all 5 low-paying CHAOS symbols are transformed into Glitch Dog symbols, which jump to new positions before the grid settles.\n\n Once the Glitch Dog symbol lands in its new position, each Glitch Dog symbol will glitch into a Crazy Multiplier symbol.\n\n The 4 Crazy Multiplier symbols are:\n\n Sketchy Skull symbols add their revealed value to the Reel Multiplier for the reel they land on once.\n\n Epic Sketchy Skull symbols add their revealed value to all Reel Multipliers once.\n\n Possible Adding Multiplier values for all Sketchy Skull symbols are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n Cranky Cat symbols multiply their revealed value with the Reel Multiplier for the reel they land on once.\n\n Epic Cranky Cat symbols multiply all Reel Multipliers by their revealed value once.\n\n Possible Multiplying Multiplier values for all Cranky Cat symbols are: x2, x3, x4, x5, x10, x20.\n\n The Reel Multipliers above the reels increase progressively depending on which Crazy Multiplier is revealed by the Glitch Dog symbol or from other Crazy Multiplier symbols that can land. Crazy Multipliers and Glitch Dog symbols reveal in order from top to bottom, left to right. When the reward spin ends, all Reel Multipliers are added together and multiplied by your bet amount to determine the final awarded win. The grid then resets, and the Reel Multiplier is removed for the next spin.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - CTRL + ALT + CHAOS",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with free spins and 3 refilling lives by landing 3 FS scatter symbols at the same time during the base game.\n\n In this bonus game, lives are displayed on a Life Meter outside the grid, where 3 lives equal 3 free spins. When any Crazy Multiplier symbol lands, the lives and free spins are refilled to 3. A Glitch Dog symbol will refill the Life Meter to max, only the first time it lands on the grid. Once all lives are consumed, the bonus ends.\n\n Additionally, the Reel Multiplier, which starts at 1x, remains active outside the grid throughout the bonus. Only dead symbols, Glitch Dog symbols, and Crazy Multipliers can land. By landing different Crazy Multipliers or Glitch Dog symbols, the Reel Multipliers above the reels progressively increase during the bonus.\n\n When a Glitch Dog symbol lands, it glitches into one of the Crazy Multiplier symbols at the time of the symbols' reveal. That Crazy Multiplier value will be added to the Reel Multiplier. After all the reveals and all the Multipliers have been added to the Reel Multiplier, the Glitch Dog symbol returns to its original form and jumps to a new position on the next spin. When it lands, it glitches into a new Crazy Multiplier when it’s time for its reveal. This continues until the end of the bonus.\n\n At the end of the bonus, all Reel Multipliers are added together and multiplied by your bet amount to determine the final awarded win."
+      },
+      {
+        "name": "BONUS GAME - THE KORRUPTED K9",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with free spins and 3 refilling lives by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game retains the mechanics of the CTRL + ALT + CHAOS bonus and guarantees that at least 4 Crazy Multipliers and 1 Glitch Dog symbol land at the start. In addition, a Chaos Upgrade symbol can land and activate if a Crazy Multiplier or Glitch Dog symbol is within 1 position of where the Chaos Upgrade symbol lands, within a 3x3 square.\n\n When activated, the Chaos Upgrade symbol will add a Multiplier value to all Crazy Multipliers and Glitch Dog symbols within the 3x3 square. Chaos Upgrade symbols can have Adding Multiplier values ranging from 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n Crazy Multipliers and Glitch Dog symbols within the 3x3 square will first reveal their values. Then, the Chaos Upgrade symbol adds its Multiplier value to each Crazy Multiplier and Glitch Dog symbol in the square. Finally, the updated Multiplier values are added to the Reel Multiplier. The Multiplier value of the Chaos Upgrade symbol itself is not added to the Reel Multiplier.\n\n The Chaos Upgrade symbol is removed from the grid for the next free spin. Landing Chaos Upgrade symbols does not refill the Life Meter. Only 1 Chaos Upgrade symbol can land on the grid at a time."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "THIS CAT IS CRANKY",
+      "trigger": null,
+      "effects": "The Cranky Cat symbol is a Wild Multiplier that substitutes for the other paying symbols in the paytable. When a Cranky Cat symbol participates in a winning combination, the value of the win is multiplied by the shown value. If more than 1 Cranky Cat symbol is part of the same winning combination, their values are first multiplied with each other before being applied to the win. Only 1 Cranky Cat symbol can land on a reel at a time in base game mode. The Cranky Cat symbol can have the following Multiplier values: x2, x3, x4, x5, x10, x20.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "CAN YOU SPELL CHAOS?",
+      "trigger": null,
+      "effects": "Landing 5 low-paying symbols that spell out CHAOS horizontally across a row will trigger an EPIC DROP™.\n\n When the EPIC DROP™ is activated in normal gameplay, it triggers 1 reward spin. During the EPIC DROP™ reward spin, a Reel Multiplier above each reel starts at 1x. All symbols are replaced with dead symbols, and all 5 low-paying CHAOS symbols are transformed into Glitch Dog symbols, which jump to new positions before the grid settles.\n\n Once the Glitch Dog symbol lands in its new position, each Glitch Dog symbol will glitch into a Crazy Multiplier symbol.\n\n The 4 Crazy Multiplier symbols are:\n\n Sketchy Skull symbols add their revealed value to the Reel Multiplier for the reel they land on once.\n\n Epic Sketchy Skull symbols add their revealed value to all Reel Multipliers once.\n\n Possible Adding Multiplier values for all Sketchy Skull symbols are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n Cranky Cat symbols multiply their revealed value with the Reel Multiplier for the reel they land on once.\n\n Epic Cranky Cat symbols multiply all Reel Multipliers by their revealed value once.\n\n Possible Multiplying Multiplier values for all Cranky Cat symbols are: x2, x3, x4, x5, x10, x20.\n\n The Reel Multipliers above the reels increase progressively depending on which Crazy Multiplier is revealed by the Glitch Dog symbol or from other Crazy Multiplier symbols that can land. Crazy Multipliers and Glitch Dog symbols reveal in order from top to bottom, left to right. When the reward spin ends, all Reel Multipliers are added together and multiplied by your bet amount to determine the final awarded win. The grid then resets, and the Reel Multiplier is removed for the next spin.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - CTRL + ALT + CHAOS",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with free spins and 3 refilling lives by landing 3 FS scatter symbols at the same time during the base game.\n\n In this bonus game, lives are displayed on a Life Meter outside the grid, where 3 lives equal 3 free spins. When any Crazy Multiplier symbol lands, the lives and free spins are refilled to 3. A Glitch Dog symbol will refill the Life Meter to max, only the first time it lands on the grid. Once all lives are consumed, the bonus ends.\n\n Additionally, the Reel Multiplier, which starts at 1x, remains active outside the grid throughout the bonus. Only dead symbols, Glitch Dog symbols, and Crazy Multipliers can land. By landing different Crazy Multipliers or Glitch Dog symbols, the Reel Multipliers above the reels progressively increase during the bonus.\n\n When a Glitch Dog symbol lands, it glitches into one of the Crazy Multiplier symbols at the time of the symbols' reveal. That Crazy Multiplier value will be added to the Reel Multiplier. After all the reveals and all the Multipliers have been added to the Reel Multiplier, the Glitch Dog symbol returns to its original form and jumps to a new position on the next spin. When it lands, it glitches into a new Crazy Multiplier when it’s time for its reveal. This continues until the end of the bonus.\n\n At the end of the bonus, all Reel Multipliers are added together and multiplied by your bet amount to determine the final awarded win.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - THE KORRUPTED K9",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with free spins and 3 refilling lives by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game retains the mechanics of the CTRL + ALT + CHAOS bonus and guarantees that at least 4 Crazy Multipliers and 1 Glitch Dog symbol land at the start. In addition, a Chaos Upgrade symbol can land and activate if a Crazy Multiplier or Glitch Dog symbol is within 1 position of where the Chaos Upgrade symbol lands, within a 3x3 square.\n\n When activated, the Chaos Upgrade symbol will add a Multiplier value to all Crazy Multipliers and Glitch Dog symbols within the 3x3 square. Chaos Upgrade symbols can have Adding Multiplier values ranging from 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n Crazy Multipliers and Glitch Dog symbols within the 3x3 square will first reveal their values. Then, the Chaos Upgrade symbol adds its Multiplier value to each Crazy Multiplier and Glitch Dog symbol in the square. Finally, the updated Multiplier values are added to the Reel Multiplier. The Multiplier value of the Chaos Upgrade symbol itself is not added to the Reel Multiplier.\n\n The Chaos Upgrade symbol is removed from the grid for the next free spin. Landing Chaos Upgrade symbols does not refill the Life Meter. Only 1 Chaos Upgrade symbol can land on the grid at a time.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - AN EPIC GLITCH!",
+      "trigger": null,
+      "effects": "Activate this bonus with free spins and 3 refilling lives by landing 5 FS scatter symbols at the same time during the base game.\n\n The Hidden Epic Bonus keeps the mechanics of THE KORRUPTED K9 bonus. In addition, this bonus guarantees a full grid with Crazy Multipliers, 1 Chaos Upgrade symbol, and at least 1 Glitch Dog symbol from the start!",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "byte_me_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "ctrl_alt_chaos_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "the_korrupted_k9_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 30000,
+    "max_win_notes": "maximum achievable win in this game is 30,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1867/1.31.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/chaos-crew-3/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n * System reboot complete *\n\n Thought you’d seen the last of us?\n\n Think again!\n\n The Chaos Crew is back — Cranky Cat's twitchier, Sketchy Skull's sketchier. More attitude. More madness. More ways to win. The streets are buzzing, the reels are loaded, and the Crew's back in full force — now with a new member: the glitchiest of Glitch Dogs. This isn’t just a comeback — it’s an upgrade.\n\n We know you’re dying to join us in Chaos Crew 3, a 5-reel, 5-row game with paylines and a jaw-dropping max win of {maximumWinMultiplier} times your bet, available in every game mode!\n\n No rules?"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Phoenix DuelReels",
+    "slug": "hacksaw-phoenix-duelreels",
+    "provider_game_id": "1675",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1675&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1675/1.40.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "DUELREELS™",
+        "behavior": "When a VS symbol lands it will expand into a wild DuelReel if it would be part of or create a winning combination.\n\n Expanded DuelReels™ cover their entire reel and a duel will take place on each DuelReel. Each DuelReel has two multipliers, connected to the Phoenix and the Water Dragon. The surviving duelists multiplier will be applied across the entire reel and affects any winning combinations that includes the DuelReel.\n\n Fully expanded DuelReels™ are counted as full wild reels and substitute for all symbols in the paytable.\n\n The possible multiplier values that can appear on DuelReels™ are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x.\n\n If more than one DuelReels™ are part of the same winning combination, their multipliers are added together before being applied to the win. \n\n Only 1 VS symbol can land on a reel at a time.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "RESURRECTION SPINS",
+        "behavior": "When the Phoenix loses the duel on at least one DuelReel, you will be awarded a Resurrection Spin re-spin. During this re-spin, it is guaranteed that at least 1 VS symbol will land.\n\n The process above will repeat during re-spins until no DuelReels™ with losing Phoenixes appear.",
+        "params": {}
+      },
+      {
+        "name": "BONUS GAMBLE",
+        "behavior": "Whenever you enter a bonus game, you have the choice to either continue directly to the bonus game or gamble. If you choose to gamble, you will be presented with 5 Phoenix Eggs to choose from.\n\n You can choose up to 3 Eggs, with each Egg possibly containing 2 to 10 free spins, or a Bonus Upgrade if you are in the FIRE AND WATER bonus. If a Bonus Upgrade is found, the bonus will be immediately upgraded to the RISE OF THE PHOENIX bonus with 10 free spins.\n\n You may gamble once per bonus and after a Bonus Upgrade.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FIRE AND WATER BONUS GAME",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "s extra free spins:\n\n 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game retains the features of the base game with a better chance of landing more VS symbols!\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "RISE OF THE PHOENIX BONUS GAME",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "s extra free spins:\n\n 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game has the same enhanced features as the FIRE AND WATER bonus game!\n\n Additionally, this bonus has enhanced RESURRECTION SPIN re-spins where the amount of VS symbols that land during the re-spin will be equal to the number of DuelReels™ with losing Phoenixes during the triggering spin.\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "DUELREELS™",
+      "trigger": null,
+      "effects": "When a VS symbol lands it will expand into a wild DuelReel if it would be part of or create a winning combination.\n\n Expanded DuelReels™ cover their entire reel and a duel will take place on each DuelReel. Each DuelReel has two multipliers, connected to the Phoenix and the Water Dragon. The surviving duelists multiplier will be applied across the entire reel and affects any winning combinations that includes the DuelReel.\n\n Fully expanded DuelReels™ are counted as full wild reels and substitute for all symbols in the paytable.\n\n The possible multiplier values that can appear on DuelReels™ are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x.\n\n If more than one DuelReels™ are part of the same winning combination, their multipliers are added together before being applied to the win. \n\n Only 1 VS symbol can land on a reel at a time.",
+      "params": {}
+    },
+    {
+      "name": "RESURRECTION SPINS",
+      "trigger": null,
+      "effects": "When the Phoenix loses the duel on at least one DuelReel, you will be awarded a Resurrection Spin re-spin. During this re-spin, it is guaranteed that at least 1 VS symbol will land.\n\n The process above will repeat during re-spins until no DuelReels™ with losing Phoenixes appear.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAMBLE",
+      "trigger": null,
+      "effects": "Whenever you enter a bonus game, you have the choice to either continue directly to the bonus game or gamble. If you choose to gamble, you will be presented with 5 Phoenix Eggs to choose from.\n\n You can choose up to 3 Eggs, with each Egg possibly containing 2 to 10 free spins, or a Bonus Upgrade if you are in the FIRE AND WATER bonus. If a Bonus Upgrade is found, the bonus will be immediately upgraded to the RISE OF THE PHOENIX bonus with 10 free spins.\n\n You may gamble once per bonus and after a Bonus Upgrade.",
+      "params": {}
+    },
+    {
+      "name": "FIRE AND WATER BONUS GAME",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game retains the features of the base game with a better chance of landing more VS symbols!\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "RISE OF THE PHOENIX BONUS GAME",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game has the same enhanced features as the FIRE AND WATER bonus game!\n\n Additionally, this bonus has enhanced RESURRECTION SPIN re-spins where the amount of VS symbols that land during the re-spin will be equal to the number of DuelReels™ with losing Phoenixes during the triggering spin.\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbol award +2 free spins, 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1675/1.40.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/phoenix-duelreels/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n DUELREELS™\n\n When a VS symbol lands it will expand into a wild DuelReel if it would be part of or create a winning combination.\n\n Expanded DuelReels™ cover their entire reel and a duel will take place on each DuelReel. Each DuelReel has two multipliers, connected to the Phoenix and the Water Dragon. The surviving duelists multiplier will be applied across the entire reel and affects any winning combinations that includes the DuelReel.\n\n Fully expanded DuelReels™ are counted as full wild reels and substitute for all symbols in the paytable.\n\n The possible multiplier values that can a"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

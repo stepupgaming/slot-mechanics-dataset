@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Iron Sight",
+    "slug": "hacksaw-iron-sight",
+    "provider_game_id": "2752",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2752&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2752/1.4.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "DUELREELS™",
+        "behavior": "When a VS symbol lands it will expand into a wild DuelReel if it would be part of a winning combination once expanded.\n\n After expanding, the DuelReel will cover the entire reel and a duel will take place on the reel. Each DuelReel will have two multipliers, connected to the duelists The Outlaw and The Sheriff. The surviving duelists multiplier will be applied across the entire reel and affects any winning combinations that includes the DuelReel.\n\n All expanded DuelReel positions count as WILD symbols\n\n The possible multiplier values for DuelReels™ are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x\n\n If more than one DuelReels™ are part of the same winning combination, their multipliers are added together before being applied to the win.\n\n Only 1 VS symbol can land on a reel at a time.",
+        "params": {}
+      },
+      {
+        "name": "THE OUTLAW FEATURE",
+        "behavior": "When an Outlaw symbol lands, it will expand into a full wild Outlaw reel and show a revolver with 1-6 bullets in its chambers. The number of bullets in the revolver represents the number of Wild symbols that the Outlaw will shoot onto the grid.\n\n If more than one Outlaw is on the grid at the same time, they cannot shoot multiple Wild symbols onto the same positions on the grid, nor can they shoot at each other. A maximum of 2 Outlaw symbols can appear on one spin, and only 1 Outlaw symbol can land on a reel at a time.\n\n Each Outlaw reel will also have a multiplier that can be one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x.\n\n The multiplier affects any winning combination that includes the Outlaw reel. If more than one Outlaw reels are part of the same winning combination, their multipliers are added together before being applied to the win.",
+        "params": {}
+      },
+      {
+        "name": "WILD WILD WEST",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to activate the WILD WILD WEST bonus feature with 10 free spins.\n\n This bonus feature maintains the mechanics of the base game with an increased chance of getting high-value multipliers on DuelReels™ and Outlaw reels! There is also an increased chance of landing VS symbols and Outlaw symbols!\n\n Landing additional FS symbols during the bonus awards extra free spins: \n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+        "params": {}
+      },
+      {
+        "name": "DUSK ‘TIL DAWN",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to activate the DUSK ‘TIL DAWN bonus feature with 10 free spins.\n\n This bonus feature offers the chance of earning 4 DuelSpins with guaranteed VS symbols! You unlock each DuelSpin by landing Outlaw symbols and shooting a full revolver of 6 Wild symbols onto the grid.\n\n Each DuelSpin is awarded immediately after the free spin where you unlocked it and does not count towards your number of free spins in the bonus. No more than 2 DuelSpins can be unlocked in one spin; if more than one are unlocked in the same spin, they are awarded in sequence before proceeding to the next free spin.\n\n Each subsequent DuelSpin awards more guaranteed VS symbols:\n\n The first DuelSpin guarantees at least 2 VS symbols;\n\n The second DuelSpin guarantees at least 3 VS symbols;\n\n The third DuelSpin guarantees at least 4 VS symbols;\n\n The fourth DuelSpin guarantees that 5 VS symbols land!\n\n Each unlocked DuelSpin also awards 3 additional free spins.\n\n VS symbols do not appear in this bonus except during DuelSpins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n A VS symbol and an Outlaw symbol can never land at the same time.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "DUELREELS™",
+      "trigger": null,
+      "effects": "When a VS symbol lands it will expand into a wild DuelReel if it would be part of a winning combination once expanded.\n\n After expanding, the DuelReel will cover the entire reel and a duel will take place on the reel. Each DuelReel will have two multipliers, connected to the duelists The Outlaw and The Sheriff. The surviving duelists multiplier will be applied across the entire reel and affects any winning combinations that includes the DuelReel.\n\n All expanded DuelReel positions count as WILD symbols\n\n The possible multiplier values for DuelReels™ are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x\n\n If more than one DuelReels™ are part of the same winning combination, their multipliers are added together before being applied to the win.\n\n Only 1 VS symbol can land on a reel at a time.",
+      "params": {}
+    },
+    {
+      "name": "THE OUTLAW FEATURE",
+      "trigger": null,
+      "effects": "When an Outlaw symbol lands, it will expand into a full wild Outlaw reel and show a revolver with 1-6 bullets in its chambers. The number of bullets in the revolver represents the number of Wild symbols that the Outlaw will shoot onto the grid.\n\n If more than one Outlaw is on the grid at the same time, they cannot shoot multiple Wild symbols onto the same positions on the grid, nor can they shoot at each other. A maximum of 2 Outlaw symbols can appear on one spin, and only 1 Outlaw symbol can land on a reel at a time.\n\n Each Outlaw reel will also have a multiplier that can be one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 200x.\n\n The multiplier affects any winning combination that includes the Outlaw reel. If more than one Outlaw reels are part of the same winning combination, their multipliers are added together before being applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "WILD WILD WEST",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the WILD WILD WEST bonus feature with 10 free spins.\n\n This bonus feature maintains the mechanics of the base game with an increased chance of getting high-value multipliers on DuelReels™ and Outlaw reels! There is also an increased chance of landing VS symbols and Outlaw symbols!\n\n Landing additional FS symbols during the bonus awards extra free spins: \n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "DUSK ‘TIL DAWN",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the DUSK ‘TIL DAWN bonus feature with 10 free spins.\n\n This bonus feature offers the chance of earning 4 DuelSpins with guaranteed VS symbols! You unlock each DuelSpin by landing Outlaw symbols and shooting a full revolver of 6 Wild symbols onto the grid.\n\n Each DuelSpin is awarded immediately after the free spin where you unlocked it and does not count towards your number of free spins in the bonus. No more than 2 DuelSpins can be unlocked in one spin; if more than one are unlocked in the same spin, they are awarded in sequence before proceeding to the next free spin.\n\n Each subsequent DuelSpin awards more guaranteed VS symbols:\n\n The first DuelSpin guarantees at least 2 VS symbols;\n\n The second DuelSpin guarantees at least 3 VS symbols;\n\n The third DuelSpin guarantees at least 4 VS symbols;\n\n The fourth DuelSpin guarantees that 5 VS symbols land!\n\n Each unlocked DuelSpin also awards 3 additional free spins.\n\n VS symbols do not appear in this bonus except during DuelSpins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n A VS symbol and an Outlaw symbol can never land at the same time.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "deadly_duels_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "lone_outlaw_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "wild_wild_west_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "dusk_til_dawn_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2752/1.4.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/iron-sight/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n DUELREELS™\n\n When a VS symbol lands it will expand into a wild DuelReel if it would be part of a winning combination once expanded.\n\n After expanding, the DuelReel will cover the entire reel and a duel will take place on the reel. Each DuelReel will have two multipliers, connected to the duelists The Outlaw and The Sheriff. The surviving duelists multiplier will be applied across the entire reel and affects any winning combinations that includes the DuelReel.\n\n All expanded DuelReel positions count as WILD symbols\n\n The possible multiplier values for DuelReels™ are: 2x, 3x, 4x, 5x, "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

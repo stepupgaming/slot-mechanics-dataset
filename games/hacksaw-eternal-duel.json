@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Eternal Duel",
+    "slug": "hacksaw-eternal-duel",
+    "provider_game_id": "2148",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2148&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2148/1.15.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "DUELREELS™",
+        "behavior": "When a VS symbol lands, it expands into a DuelReel if part of a winning combination once expanded. Expanded DuelReels™ count as Wild reels and substitute for all symbols in the paytable. Once expanded, the DuelReel will cover the entire reel, triggering a Duel between two duelists. Each DuelReel will have one Multiplier assigned to each of the two duelists.\n\n The Multiplier from the winning duelists will be applied across that entire DuelReel and is added to all wins connected to that reel. If more than one DuelReel is part of the same winning combination, their winning Multipliers are added together before being applied to the win. Only 1 VS symbol can land on a reel at a time.\n\n The possible Additive Multiplier values on DuelReels™ are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x.",
+        "params": {}
+      },
+      {
+        "name": "HIDDEN EPIC BONUS - ETERNAL DESTRUCTION",
+        "behavior": "Activate this bonus with at least 10 free spins by landing 5 FS DuelReels™ at the same time during the base game.\n\n This bonus keeps the mechanics of the ZEUS FURY bonus. In addition, at least one Wild, one Relic or Cyclops symbol and one DuelReel are guaranteed on every spin.\n\n FS symbols cannot land in this bonus.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "FS DUELREELS™",
+        "behavior": "When 3 or more FS scatter symbols land on the grid at the same time, each FS symbol will expand into an FS DuelReel. Each FS DuelReel will have two free spin values that duel against each other. The winning free spin values of each FS DuelReel will be added together to determine the total free spins for the bonus. FS DuelReels™ can have the following values: 2, 3, 4, 5, 10. FS DuelReels™ will activate after all DuelReels™ and wins have been handled.\n\n When triggering a bonus, there is a chance that some FS DuelReels™ will display an Upgrade, upgrading you into the next bonus.\n\n 3 FS DuelReels™ with 1 Upgrade awards an upgrade into the ZEUS FURY bonus.\n\n 3 FS DuelReels™ with 2 Upgrades awards an upgrade into the ETERNAL DESTRUCTION bonus.\n\n 4 FS DuelReels™ with 1 Upgrade awards an upgrade into the ETERNAL DESTRUCTION bonus.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - HADES HAVOC",
+        "trigger": "When DuelReels™ are triggered, the dueling Multipliers come from the top and bottom values of the Reel Multiplier on the reel where the VS symbols landed.",
+        "spins_awarded": null,
+        "retrigger": "Each FS DuelReel awards at least +2 free spins and max +10 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with at least 6 free spins by landing 3 FS DuelReels™ at the same time during the base game.\n\n During this bonus, a Reel Multiplier is located at the top and bottom of each reel. Each Reel Multiplier will start with a random Additive Multiplier value of: Wild, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 20x, 30x, 40x, 50x. When DuelReels™ are triggered, the dueling Multipliers come from the top and bottom values of the Reel Multiplier on the reel where the VS symbols landed.\n\n The Reel Multipliers progressively increase throughout the bonus by landing different Relic and Cyclops symbols. When a Relic or Cyclops symbol lands on the top two rows of the grid, it affects the top Reel Multipliers. When it lands on the bottom two rows, it affects the bottom Reel Multipliers. If it lands on the middle row, it affects both Reel Multipliers. Relic and Cyclops symbols activate left to right, top to bottom. If Relic and/or Cyclops symbols land and DuelReels™ are triggered at the same time, Relic and Cyclops symbols will activate first, followed by the DuelReels™. Reel Multipliers are capped at a maximum of 999x. Wild counts as 1x.\n\n Relic symbols add their value to the top, bottom or both Reel Multipliers of the reel they land on.\n\n Epic Relic symbols add their value to all Reel Multipliers on the top, bottom or to both. Possible Additive Multiplier values are: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 20x, 30x, 40x, 50x.\n\n Cyclops symbols multiply the top, bottom or both Reel Multipliers of the reel they land on.\n\n Epic Cyclops symbols multiply all top, bottom or both Reel Multipliers by their value. Possible Multiplicative Multiplier values are: x2, x3, x4, x5, x10.\n\n Landing additional FS DuelReels™ in the bonus awards extra free spins and can award a bonus upgrade. Only one FS DuelReel is needed to award extra free spins. When upgrading to a new bonus, the Reel Multipliers, the existing free spins and the awarded free spins will be transferred to the new bonus.\n\n Each FS DuelReel awards at least +2 free spins and max +10 free spins.\n\n Landing one or more FS DuelReels™ with 1 Upgrade awards an upgrade into the ZEUS FURY bonus.\n\n Landing FS DuelReels™ with 2 Upgrades awards an upgrade into the ETERNAL DESTRUCTION bonus."
+      },
+      {
+        "name": "BONUS GAME - ZEUS FURY",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": "ade:\n\n Each FS DuelReel awards at least +2 free spins and max +10 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with at least 8 free spins by landing 4 FS DuelReels™ at the same time during the base game.\n\n This bonus keeps the mechanics from the HADES HAVOC bonus. In addition, when Wild symbols land, they receive a Multiplier value from the Reel Multiplier of the reel they land on. When a Wild symbol lands, it gets the Reel Multiplier value based on its position. Landing in the top two rows awards the top Reel Multiplier value of that reel, while landing in the bottom two rows awards the bottom Reel Multiplier value. If the Wild symbol lands on the middle row, it receives the combined values of both Reel Multipliers of that reel. Wild counts as 1x.\n\n When Wild Multipliers are part of a win, the Multiplier value is applied to the win. If a winning combination includes more than one Wild Multiplier, the Multiplier values will be added together from left to right and then applied to the win.\n\n When Relic and/or Cyclops symbols, Wild symbols, and DuelReels™ land at the same time, Relic and Cyclops symbols activate first, followed by Wild symbols, then DuelReels™.\n\n Landing additional FS DuelReels™ in the bonus awards extra free spins and a possible upgrade:\n\n Each FS DuelReel awards at least +2 free spins and max +10 free spins.\n\n Landing FS DuelReels™ with 1 Upgrade awards an upgrade into the ETERNAL DESTRUCTION bonus."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "DUELREELS™",
+      "trigger": null,
+      "effects": "When a VS symbol lands, it expands into a DuelReel if part of a winning combination once expanded. Expanded DuelReels™ count as Wild reels and substitute for all symbols in the paytable. Once expanded, the DuelReel will cover the entire reel, triggering a Duel between two duelists. Each DuelReel will have one Multiplier assigned to each of the two duelists.\n\n The Multiplier from the winning duelists will be applied across that entire DuelReel and is added to all wins connected to that reel. If more than one DuelReel is part of the same winning combination, their winning Multipliers are added together before being applied to the win. Only 1 VS symbol can land on a reel at a time.\n\n The possible Additive Multiplier values on DuelReels™ are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x.",
+      "params": {}
+    },
+    {
+      "name": "FS DUELREELS™",
+      "trigger": null,
+      "effects": "When 3 or more FS scatter symbols land on the grid at the same time, each FS symbol will expand into an FS DuelReel. Each FS DuelReel will have two free spin values that duel against each other. The winning free spin values of each FS DuelReel will be added together to determine the total free spins for the bonus. FS DuelReels™ can have the following values: 2, 3, 4, 5, 10. FS DuelReels™ will activate after all DuelReels™ and wins have been handled.\n\n When triggering a bonus, there is a chance that some FS DuelReels™ will display an Upgrade, upgrading you into the next bonus.\n\n 3 FS DuelReels™ with 1 Upgrade awards an upgrade into the ZEUS FURY bonus.\n\n 3 FS DuelReels™ with 2 Upgrades awards an upgrade into the ETERNAL DESTRUCTION bonus.\n\n 4 FS DuelReels™ with 1 Upgrade awards an upgrade into the ETERNAL DESTRUCTION bonus.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - HADES HAVOC",
+      "trigger": "When DuelReels™ are triggered, the dueling Multipliers come from the top and bottom values of the Reel Multiplier on the reel where the VS symbols landed.",
+      "effects": "Activate this bonus with at least 6 free spins by landing 3 FS DuelReels™ at the same time during the base game.\n\n During this bonus, a Reel Multiplier is located at the top and bottom of each reel. Each Reel Multiplier will start with a random Additive Multiplier value of: Wild, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 20x, 30x, 40x, 50x. When DuelReels™ are triggered, the dueling Multipliers come from the top and bottom values of the Reel Multiplier on the reel where the VS symbols landed.\n\n The Reel Multipliers progressively increase throughout the bonus by landing different Relic and Cyclops symbols. When a Relic or Cyclops symbol lands on the top two rows of the grid, it affects the top Reel Multipliers. When it lands on the bottom two rows, it affects the bottom Reel Multipliers. If it lands on the middle row, it affects both Reel Multipliers. Relic and Cyclops symbols activate left to right, top to bottom. If Relic and/or Cyclops symbols land and DuelReels™ are triggered at the same time, Relic and Cyclops symbols will activate first, followed by the DuelReels™. Reel Multipliers are capped at a maximum of 999x. Wild counts as 1x.\n\n Relic symbols add their value to the top, bottom or both Reel Multipliers of the reel they land on.\n\n Epic Relic symbols add their value to all Reel Multipliers on the top, bottom or to both. Possible Additive Multiplier values are: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 20x, 30x, 40x, 50x.\n\n Cyclops symbols multiply the top, bottom or both Reel Multipliers of the reel they land on.\n\n Epic Cyclops symbols multiply all top, bottom or both Reel Multipliers by their value. Possible Multiplicative Multiplier values are: x2, x3, x4, x5, x10.\n\n Landing additional FS DuelReels™ in the bonus awards extra free spins and can award a bonus upgrade. Only one FS DuelReel is needed to award extra free spins. When upgrading to a new bonus, the Reel Multipliers, the existing free spins and the awarded free spins will be transferred to the new bonus.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - ZEUS FURY",
+      "trigger": null,
+      "effects": "Activate this bonus with at least 8 free spins by landing 4 FS DuelReels™ at the same time during the base game.\n\n This bonus keeps the mechanics from the HADES HAVOC bonus. In addition, when Wild symbols land, they receive a Multiplier value from the Reel Multiplier of the reel they land on. When a Wild symbol lands, it gets the Reel Multiplier value based on its position. Landing in the top two rows awards the top Reel Multiplier value of that reel, while landing in the bottom two rows awards the bottom Reel Multiplier value. If the Wild symbol lands on the middle row, it receives the combined values of both Reel Multipliers of that reel. Wild counts as 1x.\n\n When Wild Multipliers are part of a win, the Multiplier value is applied to the win. If a winning combination includes more than one Wild Multiplier, the Multiplier values will be added together from left to right and then applied to the win.\n\n When Relic and/or Cyclops symbols, Wild symbols, and DuelReels™ land at the same time, Relic and Cyclops symbols activate first, followed by Wild symbols, then DuelReels™.\n\n Landing additional FS DuelReels™ in the bonus awards extra free spins and a possible upgrade:\n\n Each FS DuelReel awards at least +2 free spins and max +10 free spins.\n\n Landing FS DuelReels™ with 1 Upgrade awards an upgrade into the ETERNAL DESTRUCTION bonus.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - ETERNAL DESTRUCTION",
+      "trigger": null,
+      "effects": "Activate this bonus with at least 10 free spins by landing 5 FS DuelReels™ at the same time during the base game.\n\n This bonus keeps the mechanics of the ZEUS FURY bonus. In addition, at least one Wild, one Relic or Cyclops symbol and one DuelReel are guaranteed on every spin.\n\n FS symbols cannot land in this bonus.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "godly_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "deadly_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "hades_havoc_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "zeus_fury_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2148/1.15.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/eternal-duel/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n DUELREELS™\n\n When a VS symbol lands, it expands into a DuelReel if part of a winning combination once expanded. Expanded DuelReels™ count as Wild reels and substitute for all symbols in the paytable. Once expanded, the DuelReel will cover the entire reel, triggering a Duel between two duelists. Each DuelReel will have one Multiplier assigned to each of the two duelists.\n\n The Multiplier from the winning duelists will be applied across that entire DuelReel and is added to all wins connected to that reel. If more than one DuelReel is part of the same winning combination, their winning"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

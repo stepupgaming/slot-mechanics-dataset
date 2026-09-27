@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Cubes 2",
+    "slug": "hacksaw-cubes-2",
+    "provider_game_id": "1069",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1069&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1069/1.56.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 5x5 grid in official About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "CORNER MULTIPLIERS",
+        "behavior": "In the main game, each corner of the initial 5x5 grid contains an X. If a winning cluster is formed that contains one of these cubes, the X will take on a number equivalent to the number of cubes in the winning cluster. The final win will be multiplied with the factor shown.\n\n If a winning cluster connects with multiple corner cubes, the factors shown will be added before being multiplied with the win. For example: If the winning cluster size is 9 cubes which connects with two corner cubes, the total multiplier will be 18.",
+        "params": {
+          "multiplier_values_mentioned": [
+            5
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Activate the free spins feature by getting 5 or more winning clusters in different colors! You will be awarded 5 free spins and enter the free spin mode. Pick mystery cubes until you get a color - this color will be sticky for the duration of the free spins. Before you get a color you can also get additional free spins. The maximum number of free spins that can be awarded in total in this mode is 12.\n\nIn the free spins mode, the size of the grid does not decrease between free spins. All wins in the chosen color are sticky for the duration of the free spins. The max win in this feature is over 10,500 times your bet!\n\n In this game mode, extra wins (based on your bet level) are awarded as soon as you pass a certain number of cubes in the chosen color according to the table below:\n\n Cluster size \n Win \n\n 50 \n 500x \n\n 70 \n 2500x \n\n 90 \n 7000x"
+      },
+      {
+        "name": "MULTI-COLOR FREE SPINS",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate the free spins feature by getting all four corner multipliers in the same color in the initial spin! You will be awarded between 5-10 free spins and enter the multi-color free spin mode. Pick mystery cubes until you get the number of free spins - all of the colors you collect in this mode will be sticky for the duration of the free spins. The game mode starts once the number of awarded free spins is revealed. The maximum number of free spins that can be awarded in total in this mode is 10.\n\nIn the Multi-color free spins mode, the size of the grid does not decrease between free spins. All wins in the picked colors are sticky for the duration of the free spins.\n\nThe max win in this feature is 7,500 times your bet!"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "CORNER MULTIPLIERS",
+      "trigger": null,
+      "effects": "In the main game, each corner of the initial 5x5 grid contains an X. If a winning cluster is formed that contains one of these cubes, the X will take on a number equivalent to the number of cubes in the winning cluster. The final win will be multiplied with the factor shown.\n\n If a winning cluster connects with multiple corner cubes, the factors shown will be added before being multiplied with the win. For example: If the winning cluster size is 9 cubes which connects with two corner cubes, the total multiplier will be 18.",
+      "params": {
+        "multiplier_values_mentioned": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": null,
+      "effects": "Activate the free spins feature by getting 5 or more winning clusters in different colors! You will be awarded 5 free spins and enter the free spin mode. Pick mystery cubes until you get a color - this color will be sticky for the duration of the free spins. Before you get a color you can also get additional free spins. The maximum number of free spins that can be awarded in total in this mode is 12.\n\nIn the free spins mode, the size of the grid does not decrease between free spins. All wins in the chosen color are sticky for the duration of the free spins. The max win in this feature is over 10,500 times your bet!\n\n In this game mode, extra wins (based on your bet level) are awarded as soon as you pass a certain number of cubes in the chosen color according to the table below:\n\n Cluster size \n Win \n\n 50 \n 500x \n\n 70 \n 2500x \n\n 90 \n 7000x",
+      "params": {}
+    },
+    {
+      "name": "MULTI-COLOR FREE SPINS",
+      "trigger": null,
+      "effects": "Activate the free spins feature by getting all four corner multipliers in the same color in the initial spin! You will be awarded between 5-10 free spins and enter the multi-color free spin mode. Pick mystery cubes until you get the number of free spins - all of the colors you collect in this mode will be sticky for the duration of the free spins. The game mode starts once the number of awarded free spins is revealed. The maximum number of free spins that can be awarded in total in this mode is 10.\n\nIn the Multi-color free spins mode, the size of the grid does not decrease between free spins. All wins in the picked colors are sticky for the duration of the free spins.\n\nThe max win in this feature is 7,500 times your bet!",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "gameinfo_feature_3_header",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "gameinfo_feature_2_header",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10500,
+    "max_win_notes": "maximum achievable win in this game is 10 500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1069/1.56.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/cubes-2/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n This is a POCKETZ game, our series of pocket format mobile games!\n\nCUBES is back with a higher max win and more of everything! More multipliers, more features, more COLOR BLAST levels and more music.\n\nCUBES 2 is a cluster win based game with a max win of over 10,500 times your bet! The goal is to match 5 or more connecting symbols of the same color anywhere on the grid to get a winning combination.\n\nThe game loads with a 5x5 grid. If a winning combination is hit on the initial spin, the game play area will grow with one cube in every direction to 7x7. If the amount awarded by "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

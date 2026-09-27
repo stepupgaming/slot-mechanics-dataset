@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Army of Ares",
+    "slug": "hacksaw-army-of-ares",
+    "provider_game_id": "1977",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1977&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1977/1.22.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WRATH REELS",
+        "behavior": "When a Wrath scatter symbol lands, it expands into a Wild Wrath Reel. Once expanded, the Wrath Reel will reveal a Multiplier that is applied to the entire Wrath Reel. If a winning combination includes more than one Wrath Reel, the Wrath Reel Multiplier values will be added together from left to right and then applied to the win. The Additive Multipliers can have the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 300x. Only 1 Wrath symbol can land on a reel at a time.\n\n A Wrath Reel will add between 0-5 Wild symbols to random positions on the grid once expanded. The Wrath Reel and Wild symbols substitute for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - ARES ASCENDS",
+        "behavior": "Activate this bonus with 3 refilling lives by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of WRATH AND RUIN bonus. In addition, this bonus guarantees a full grid with Disc Multipliers and 1 Battle Horse symbol from the start!\n\n SPECIAL SYMBOLS\n\n FS and Wrath symbols cannot land on the same reel at the same time.\n\n Dead symbols are non-paying symbols and have no other effect.\n\n FS symbols cannot land in FEAR AND FLAME, WRATH AND RUIN and the ARES ASCENDS bonus.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - FEAR AND FLAME",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics. In addition, Wild symbols added to the grid by a Wrath Reel will land with a Multiplier value. If a winning combination includes more than one Wild Multiplier and a Wrath Reel, the Multiplier values will be added together from left to right and then applied to the win. The Additive Multipliers can have the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x."
+      },
+      {
+        "name": "BONUS GAME - WRATH AND RUIN",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 3 refilling lives by landing 4 FS scatter symbols at the same time during the base game.\n\n In this bonus game, lives are displayed on a Life Meter outside the grid, where 3 lives equal 3 free spins. When any Disc Multiplier or Battle Horse symbol lands, the lives and free spins are refilled to 3, once all lives are consumed, the bonus ends.\n\n During this bonus, a Reel Multiplier above each reel starts at 1x. Only dead symbols, Disc Multipliers, and Battle Horses can land. By landing different Disc Multipliers, the Reel Multipliers above the reels progressively increase throughout the bonus.\n\n Green Disc symbols add their revealed value to the Reel Multiplier for the reel they land on once.\n\n Epic Green Disc symbols add their revealed value to all Reel Multipliers once.\n\n Possible Adding Multiplier values for all Green Disc symbols are: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x.\n\n Red Disc symbols multiply their revealed value by the Reel Multiplier for the reel they land on once.\n\n Epic Red Disc symbols multiply all Reel Multipliers by their revealed value once.\n\n Possible Multiplying Multiplier values for all Red Disc symbols are: x2, x3, x4, x5, x10.\n\n When a Battle Horse symbol lands, it is collected above the reel it landed on. At the end of the free spins, the collected Battle Horse activates and reveals a Multiplier. The Battle Horse Multiplier is only applied to the Reel Multiplier above the corresponding reel. Only 1 Battle Horse can land on each reel. The Battle Horse symbol can have the following Multiplier values: x2, x3, x4, x5, x10, x15, x20, x25, x50.\n\n Once the Battle Horse activation is complete, all Reel Multiplier values are added together and multiplied by the bet amount to determine the final awarded win."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WRATH REELS",
+      "trigger": null,
+      "effects": "When a Wrath scatter symbol lands, it expands into a Wild Wrath Reel. Once expanded, the Wrath Reel will reveal a Multiplier that is applied to the entire Wrath Reel. If a winning combination includes more than one Wrath Reel, the Wrath Reel Multiplier values will be added together from left to right and then applied to the win. The Additive Multipliers can have the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 300x. Only 1 Wrath symbol can land on a reel at a time.\n\n A Wrath Reel will add between 0-5 Wild symbols to random positions on the grid once expanded. The Wrath Reel and Wild symbols substitute for all symbols in the paytable.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - FEAR AND FLAME",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics. In addition, Wild symbols added to the grid by a Wrath Reel will land with a Multiplier value. If a winning combination includes more than one Wild Multiplier and a Wrath Reel, the Multiplier values will be added together from left to right and then applied to the win. The Additive Multipliers can have the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - WRATH AND RUIN",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 3 refilling lives by landing 4 FS scatter symbols at the same time during the base game.\n\n In this bonus game, lives are displayed on a Life Meter outside the grid, where 3 lives equal 3 free spins. When any Disc Multiplier or Battle Horse symbol lands, the lives and free spins are refilled to 3, once all lives are consumed, the bonus ends.\n\n During this bonus, a Reel Multiplier above each reel starts at 1x. Only dead symbols, Disc Multipliers, and Battle Horses can land. By landing different Disc Multipliers, the Reel Multipliers above the reels progressively increase throughout the bonus.\n\n Green Disc symbols add their revealed value to the Reel Multiplier for the reel they land on once.\n\n Epic Green Disc symbols add their revealed value to all Reel Multipliers once.\n\n Possible Adding Multiplier values for all Green Disc symbols are: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x.\n\n Red Disc symbols multiply their revealed value by the Reel Multiplier for the reel they land on once.\n\n Epic Red Disc symbols multiply all Reel Multipliers by their revealed value once.\n\n Possible Multiplying Multiplier values for all Red Disc symbols are: x2, x3, x4, x5, x10.\n\n When a Battle Horse symbol lands, it is collected above the reel it landed on. At the end of the free spins, the collected Battle Horse activates and reveals a Multiplier. The Battle Horse Multiplier is only applied to the Reel Multiplier above the corresponding reel. Only 1 Battle Horse can land on each reel. The Battle Horse symbol can have the following Multiplier values: x2, x3, x4, x5, x10, x15, x20, x25, x50.\n\n Once the Battle Horse activation is complete, all Reel Multiplier values are added together and multiplied by the bet amount to determine the final awarded win.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - ARES ASCENDS",
+      "trigger": null,
+      "effects": "Activate this bonus with 3 refilling lives by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of WRATH AND RUIN bonus. In addition, this bonus guarantees a full grid with Disc Multipliers and 1 Battle Horse symbol from the start!\n\n SPECIAL SYMBOLS\n\n FS and Wrath symbols cannot land on the same reel at the same time.\n\n Dead symbols are non-paying symbols and have no other effect.\n\n FS symbols cannot land in FEAR AND FLAME, WRATH AND RUIN and the ARES ASCENDS bonus.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_one_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_two_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1977/1.22.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/army-of-ares/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n A barren battlefield stretches beyond, soldiers stand shoulder to shoulder, the ranks unbroken, sweat and steel mingling with the musky odour of men. Banners snap in the wind, spears pound the ground in a thundering rhythm, shields are struck in unison, and war horns roar down the front line. He’s here — Ares, the god of war. Fully armed, his spear gleams, and the twin blades rest impatiently at his sides. His voice fills the air:\n\n Arise now! Arise, Army of Ares!\n\n Let spears be raised, let shields be shattered!\n\n March on! March now!\n\n For glory! For the gods!\n\n Get ready fo"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

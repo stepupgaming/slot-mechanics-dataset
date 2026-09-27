@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Dr Zappo",
+    "slug": "hacksaw-dr-zappo",
+    "provider_game_id": "2253",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2253&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2253/1.48.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD EYEBALL SYMBOLS",
+        "behavior": "When an EyeBall symbol lands, it can only land on the 4th row of the grid. Once the grid has settled, all EyeBall symbols shoot in 1 of 3 directions: straight up, diagonally left, or diagonally right. EyeBall symbols activate in order from left to right.\n\n When an EyeBall shoots, every paying symbol along its path transforms into a Wild symbol. These transformed symbols can remain Wild or reveal an Additive Multiplier value. Wild symbols substitute for all symbols in the paytable. Multiplier values revealed on Wild symbols can be: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x.\n\n If an EyeBall symbol hits an existing Wild symbol, that Wild symbol gains a Multiplier value. If an EyeBall symbol hits a Wild symbol with a Multiplier, the Multiplier value of that Wild will increase by adding a new Multiplier value to the existing Wild Multiplier. Multiplier values added to Wild symbols can be: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x.\n\n Activated EyeBall symbols transform into Wild symbols. If more than 1 Wild Multiplier symbol is part of the same winning combination, the values are first added together before being applied to the win.",
+        "params": {}
+      },
+      {
+        "name": "ENERGY FIELDS",
+        "behavior": "There are 3 Energy Fields located on the left, top, and right edges of the grid. If an EyeBall symbol activates and hits an Energy Field, the EyeBall will bounce off the Energy Field and continue in another direction at the same angle. The EyeBall symbol will continue to transform paying symbols in its path into Wild symbols.\n\n When an EyeBall symbol hits a Energy Field straight on, the EyeBall will bounce back the same way it came from, adding Multiplier values to the transformed Wild symbols. If an EyeBall hits an EyeBall symbol, it adds a Multiplier value.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - IT’S ELECTRIFYING",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the NO-BRAINER bonus. In addition, at least one EyeBall symbol will land on every free spin! FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n FS symbols cannot land at the same time as EyeBall symbols.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - EYECONIC",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics, with an increased chance of landing EyeBall symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins"
+      },
+      {
+        "name": "BONUS GAME - NO-BRAINER",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the EYECONIC bonus. In addition each EyeBall symbol that activates will shoot in two different directions on one spin!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD EYEBALL SYMBOLS",
+      "trigger": null,
+      "effects": "When an EyeBall symbol lands, it can only land on the 4th row of the grid. Once the grid has settled, all EyeBall symbols shoot in 1 of 3 directions: straight up, diagonally left, or diagonally right. EyeBall symbols activate in order from left to right.\n\n When an EyeBall shoots, every paying symbol along its path transforms into a Wild symbol. These transformed symbols can remain Wild or reveal an Additive Multiplier value. Wild symbols substitute for all symbols in the paytable. Multiplier values revealed on Wild symbols can be: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x.\n\n If an EyeBall symbol hits an existing Wild symbol, that Wild symbol gains a Multiplier value. If an EyeBall symbol hits a Wild symbol with a Multiplier, the Multiplier value of that Wild will increase by adding a new Multiplier value to the existing Wild Multiplier. Multiplier values added to Wild symbols can be: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x.\n\n Activated EyeBall symbols transform into Wild symbols. If more than 1 Wild Multiplier symbol is part of the same winning combination, the values are first added together before being applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "ENERGY FIELDS",
+      "trigger": null,
+      "effects": "There are 3 Energy Fields located on the left, top, and right edges of the grid. If an EyeBall symbol activates and hits an Energy Field, the EyeBall will bounce off the Energy Field and continue in another direction at the same angle. The EyeBall symbol will continue to transform paying symbols in its path into Wild symbols.\n\n When an EyeBall symbol hits a Energy Field straight on, the EyeBall will bounce back the same way it came from, adding Multiplier values to the transformed Wild symbols. If an EyeBall hits an EyeBall symbol, it adds a Multiplier value.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - EYECONIC",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics, with an increased chance of landing EyeBall symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - NO-BRAINER",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the EYECONIC bonus. In addition each EyeBall symbol that activates will shoot in two different directions on one spin!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - IT’S ELECTRIFYING",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the NO-BRAINER bonus. In addition, at least one EyeBall symbol will land on every free spin! FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n FS symbols cannot land at the same time as EyeBall symbols.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "zigzag_zappo_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "eyeconic_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "no_brainer_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2253/1.48.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/dr-zappo/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Citizens of Electric City!\n\n The mad genius is at it again! Accompanied by Mr. Brain, they’ve successfully conducted a new experiment. A beast so ferocious it can trample an entire city in minutes! But don’t fear, the Doctor is here!\n\n Experiment with the mad duo in Dr Zappo, a 5-reel, 4-row game with payline wins for an electric max win of {maximumWinMultiplier} times your bet, achievable in all game modes!\n\n FEATURES\n\n WILD EYEBALL SYMBOLS\n\n When an EyeBall symbol lands, it can only land on the 4th row of the grid. Once the grid has settled, all EyeBall symbols shoot in 1 of"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

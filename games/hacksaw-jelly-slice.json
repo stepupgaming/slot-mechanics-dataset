@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Jelly Slice",
+    "slug": "hacksaw-jelly-slice",
+    "provider_game_id": "1452",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1452&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1452/1.63.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 1048576. Please consult the paytable fo"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "RAZOR-SHARP BONUS",
+        "behavior": "Land 5-20 FS scatter symbols during the base game to activate the RAZOR-SHARP bonus game. Each landed FS symbol corresponds to one awarded free spin in the bonus game. During the bonus game there is an increased chance to activate Slicers.\n\n Landing an additional FS symbol during the feature awards additional free spins. The number of free spins awarded is determined by the number of FS symbols that are present on the grid after the landed FS symbol has, or has not, been sliced:\n\n 1 FS symbols awards 1 extra spin.\n\n 2 FS symbols awards 2 extra spins.\n\n 3 FS symbols awards 3 extra spins.\n\n 4 FS symbols awards 4 extra spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SLICER MECHANIC",
+        "behavior": "During the game, there is a chance to activate 1 Slicer per reel before the drop starts. The Slicer will slice all symbols that pass through it into 2, 3 or 4 pieces, depending on the Slicer value. Each sliced symbol piece counts as one symbol towards any potential wins.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SLICER MECHANIC",
+      "trigger": null,
+      "effects": "During the game, there is a chance to activate 1 Slicer per reel before the drop starts. The Slicer will slice all symbols that pass through it into 2, 3 or 4 pieces, depending on the Slicer value. Each sliced symbol piece counts as one symbol towards any potential wins.",
+      "params": {}
+    },
+    {
+      "name": "RAZOR-SHARP BONUS",
+      "trigger": null,
+      "effects": "Land 5-20 FS scatter symbols during the base game to activate the RAZOR-SHARP bonus game. Each landed FS symbol corresponds to one awarded free spin in the bonus game. During the bonus game there is an increased chance to activate Slicers.\n\n Landing an additional FS symbol during the feature awards additional free spins. The number of free spins awarded is determined by the number of FS symbols that are present on the grid after the landed FS symbol has, or has not, been sliced:\n\n 1 FS symbols awards 1 extra spin.\n\n 2 FS symbols awards 2 extra spins.\n\n 3 FS symbols awards 3 extra spins.\n\n 4 FS symbols awards 4 extra spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonus_buy_bonus_hunt_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_buy_slicer_feature_spin_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonus_buy_razor_sharp_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1452/1.63.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/jelly-slice/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Finally, there you are! Join us along the production line of the Jelly Factory in this 5-reel, 4-row game with ways wins. The Slicer mechanic can slice the landed symbols into 2-4 pieces, to create a massive amount of potential ways. The max win of 10,000 times your bet can be reached in all game modes. Now come on and roll up your sleeves - we have jellies to slice and no time to lose!\n\n FEATURES\n\n SLICER MECHANIC\n\n During the game, there is a chance to activate 1 Slicer per reel before the drop starts. The Slicer will slice all symbols that pass through it into 2, 3 or 4 pie"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

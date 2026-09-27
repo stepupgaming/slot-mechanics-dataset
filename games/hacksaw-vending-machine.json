@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Vending Machine",
+    "slug": "hacksaw-vending-machine",
+    "provider_game_id": "1340",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1340&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1340/1.14.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 35,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 35. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Whenever the grid has settled and no more winning combinations can occur on the current spin, there is a chance to trigger an extra cascade where all low-paying symbols are removed and new symbols drop down to replace them.\n\n Low-paying symbols:\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "REMOVE & CASCADE",
+        "behavior": "Whenever the grid has settled and no more winning combinations can occur on the current spin, there is a chance to trigger an extra cascade where all low-paying symbols are removed and new symbols drop down to replace them.\n\n Low-paying symbols:\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "MULTIPLIER LIGHTS",
+        "behavior": "Activate rows of multiplier lights for massive wins!\n\n Each row has an inactive multiplier displayed to the left. At the start of every spin in the base game, the multiplier gets a random value from one of the following possible values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x.\n\n When a winning combination occurs, the multiplier on each row that has symbols included in the winning combination is increased by the number of winning symbols on that row. Each winning symbol increases the multiplier by 1.\n\n When the Multiplier Boost scatter symbol lands it multiplies the multiplier value on the row where it landed by 2. The Epic Multiplier Boost scatter symbol multiplies all row multiplier values by 2.\n\n When the Lightning Bolt scatter symbol lands on a row it activates the multiplier for that row.\n\n When at least one symbol on an activated row is part of a winning combination, that row multiplier is applied to the win. If a winning combination includes symbols from more than one activated row, the values of the multipliers are added together before being applied to the win.\n\n A row’s multiplier value cannot be applied more than once per winning combination, regardless of how many winning symbols are on that row.\n\n When the Blackout Skull scatter symbol lands on a row it deactivates the multiplier for that row.",
+        "params": {}
+      },
+      {
+        "name": "LO-FI SPINS",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus feature.\n\n This feature begins with 3 activated rows of multiplier lights. The feature ends once all row multipliers are deactivated.",
+        "params": {}
+      },
+      {
+        "name": "SPIN AND CHILL",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus feature.\n\n This feature begins with 5 activated rows of multiplier lights. The feature ends once all row multipliers are deactivated.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MULTIPLIER LIGHTS",
+      "trigger": null,
+      "effects": "Activate rows of multiplier lights for massive wins!\n\n Each row has an inactive multiplier displayed to the left. At the start of every spin in the base game, the multiplier gets a random value from one of the following possible values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x.\n\n When a winning combination occurs, the multiplier on each row that has symbols included in the winning combination is increased by the number of winning symbols on that row. Each winning symbol increases the multiplier by 1.\n\n When the Multiplier Boost scatter symbol lands it multiplies the multiplier value on the row where it landed by 2. The Epic Multiplier Boost scatter symbol multiplies all row multiplier values by 2.\n\n When the Lightning Bolt scatter symbol lands on a row it activates the multiplier for that row.\n\n When at least one symbol on an activated row is part of a winning combination, that row multiplier is applied to the win. If a winning combination includes symbols from more than one activated row, the values of the multipliers are added together before being applied to the win.\n\n A row’s multiplier value cannot be applied more than once per winning combination, regardless of how many winning symbols are on that row.\n\n When the Blackout Skull scatter symbol lands on a row it deactivates the multiplier for that row.",
+      "params": {}
+    },
+    {
+      "name": "LO-FI SPINS",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus feature.\n\n This feature begins with 3 activated rows of multiplier lights. The feature ends once all row multipliers are deactivated.",
+      "params": {}
+    },
+    {
+      "name": "SPIN AND CHILL",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus feature.\n\n This feature begins with 5 activated rows of multiplier lights. The feature ends once all row multipliers are deactivated.",
+      "params": {}
+    },
+    {
+      "name": "REMOVE & CASCADE",
+      "trigger": null,
+      "effects": "Whenever the grid has settled and no more winning combinations can occur on the current spin, there is a chance to trigger an extra cascade where all low-paying symbols are removed and new symbols drop down to replace them.\n\n Low-paying symbols:\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_three_lights_name_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_five_lights_name_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000,
+    "max_win_notes": "maximum achievable win in this game is 5 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1340/1.14.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/vending-machine/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Vibe check! Feeling good? Great! Then kick back and relax with us for a while. Vending Machine is a 5-reel, 5-row game with paylines and a max win of 5,000 times your bet. The max win can be reached in the Lo-Fi Spins and Spin and Chill game modes.\n\n MULTIPLIER LIGHTS\n\n Activate rows of multiplier lights for massive wins!\n\n Each row has an inactive multiplier displayed to the left. At the start of every spin in the base game, the multiplier gets a random value from one of the following possible values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x.\n\n When a winning combination occurs, t"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

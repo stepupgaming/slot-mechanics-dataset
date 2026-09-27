@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Hounds of Hell",
+    "slug": "hacksaw-hounds-of-hell",
+    "provider_game_id": "1666",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1666&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1666/1.28.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 6 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "If two or more Hellhound symbols appear on adjacent reels and on the same row (horizontally adjacent) they form a Roaring Pack and their possible multiplier values are increased. Hellhound symbols which spread from a Hellhound that is part of a Roaring Pack will also be counted as part of the Pack.\n\n The possible multiplier values that can appear on Hellhound symbols that are part of a Roaring Pack are:\n\n Adding: 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Multiplying: x3, x4, x5, x10, x20\n\n If a Hellhound has been part of a Roaring Pack it will remain part of the Pack even if it is separated and ends up on a different row as a result of winning symbol cascades."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "WHAT THE HELL!",
+        "behavior": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game retains the features of the base game but all multiplier values collected from Hellhounds are kept above the reels until the end of the round and can be progressively increased. At the end of the bonus game the collected multipliers are added together and multiplied with your bet to determine the final awarded win.\n\n In the bonus game, Hounds are Loose are guaranteed to trigger after 3 non-winning spins in a row. A spin is considered non-winning if it has neither regular symbol wins nor any landed Hellhound symbols.\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols awards +2 free spins, 3 FS symbols awards +4 free spins.",
+        "params": {}
+      },
+      {
+        "name": "WHO LET THE HOUNDS OUT?!?",
+        "behavior": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game retains the features of the base game and has persistent activated Hell Reels!\n\n This bonus also has the improved Hounds are Loose feature of the WHAT THE HELL! bonus.\n\n When a Hellhound lands on a reel for the first time that reel becomes an activated Hell Reel. A Hellhound symbol is guaranteed to land on each activated Hell Reel on each free spin until the end of the bonus.\n\n In this bonus, Hellhound multipliers are added together and paid out times your bet at the end of each free spin, and the total multipliers above each reel reset to 0 between spins.\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols awards +2 free spins, 3 FS symbols awards +4 free spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "HELLHOUNDS",
+        "behavior": "Hellhound symbols are cash prize multipliers that spread and are collected before being multiplied with your bet.\n\n At the end of each spin, landed Hellhound symbols spread to the top of their respective reel. All Hellhound symbols will then display a multiplier value. All multipliers will be collected bottom-to-top, left-to-right, and displayed above each corresponding reel.\n\n The collected multiplier values above each reel will be added together and multiplied with your bet to determine the final awarded win.\n\n There are two types of Hellhound symbols, Adding and Multiplying. Collected multipliers are either added to the current total at the top of the reel, or multiply the current total.\n\n The possible multiplier values that can appear on Hellhound symbols are: \n\n Adding: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x\n\n Multiplying: x2, x3, x4, x5, x10\n\n Only 1 Hellhound symbol can land on a reel at a time.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      },
+      {
+        "name": "ROARING PACKS OF HELL",
+        "behavior": "If two or more Hellhound symbols appear on adjacent reels and on the same row (horizontally adjacent) they form a Roaring Pack and their possible multiplier values are increased. Hellhound symbols which spread from a Hellhound that is part of a Roaring Pack will also be counted as part of the Pack.\n\n The possible multiplier values that can appear on Hellhound symbols that are part of a Roaring Pack are:\n\n Adding: 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Multiplying: x3, x4, x5, x10, x20\n\n If a Hellhound has been part of a Roaring Pack it will remain part of the Pack even if it is separated and ends up on a different row as a result of winning symbol cascades.",
+        "params": {
+          "multiplier_values_mentioned": [
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "HOUNDS ARE LOOSE",
+        "behavior": "The Hounds are Loose can be triggered randomly on a spin once the grid is settled and no new wins are formed. When the Hounds are Loose appear, all low-paying symbols are removed and new symbols will drop in to take their place. Hounds are Loose can trigger multiple times per spin.\n\n After the Hounds are Loose clear away all low-paying symbols, there is an increased chance of landing Hellhound symbols among the new symbols that drop in.",
+        "params": {}
+      },
+      {
+        "name": "BONUS GAMBLE",
+        "behavior": "Whenever you enter a bonus game, you have the choice to either continue directly to the bonus game or gamble. If you choose to gamble, you will be presented with 5 Hellfire Orbs to choose from.\n\n You can choose up to 3 Hellfire Orbs, with each Orb possibly containing 2 to 10 free spins, or a Bonus Upgrade if you are in the WHAT THE HELL! bonus. If a Bonus Upgrade is found, the bonus will be immediately upgraded to the WHO LET THE HOUNDS OUT?!? bonus with 10 free spins.\n\n You may gamble once per bonus and after a Bonus Upgrade.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "HELLHOUNDS",
+      "trigger": null,
+      "effects": "Hellhound symbols are cash prize multipliers that spread and are collected before being multiplied with your bet.\n\n At the end of each spin, landed Hellhound symbols spread to the top of their respective reel. All Hellhound symbols will then display a multiplier value. All multipliers will be collected bottom-to-top, left-to-right, and displayed above each corresponding reel.\n\n The collected multiplier values above each reel will be added together and multiplied with your bet to determine the final awarded win.\n\n There are two types of Hellhound symbols, Adding and Multiplying. Collected multipliers are either added to the current total at the top of the reel, or multiply the current total.\n\n The possible multiplier values that can appear on Hellhound symbols are: \n\n Adding: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x\n\n Multiplying: x2, x3, x4, x5, x10\n\n Only 1 Hellhound symbol can land on a reel at a time.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "ROARING PACKS OF HELL",
+      "trigger": null,
+      "effects": "If two or more Hellhound symbols appear on adjacent reels and on the same row (horizontally adjacent) they form a Roaring Pack and their possible multiplier values are increased. Hellhound symbols which spread from a Hellhound that is part of a Roaring Pack will also be counted as part of the Pack.\n\n The possible multiplier values that can appear on Hellhound symbols that are part of a Roaring Pack are:\n\n Adding: 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Multiplying: x3, x4, x5, x10, x20\n\n If a Hellhound has been part of a Roaring Pack it will remain part of the Pack even if it is separated and ends up on a different row as a result of winning symbol cascades.",
+      "params": {
+        "multiplier_values_mentioned": [
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "HOUNDS ARE LOOSE",
+      "trigger": null,
+      "effects": "The Hounds are Loose can be triggered randomly on a spin once the grid is settled and no new wins are formed. When the Hounds are Loose appear, all low-paying symbols are removed and new symbols will drop in to take their place. Hounds are Loose can trigger multiple times per spin.\n\n After the Hounds are Loose clear away all low-paying symbols, there is an increased chance of landing Hellhound symbols among the new symbols that drop in.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAMBLE",
+      "trigger": null,
+      "effects": "Whenever you enter a bonus game, you have the choice to either continue directly to the bonus game or gamble. If you choose to gamble, you will be presented with 5 Hellfire Orbs to choose from.\n\n You can choose up to 3 Hellfire Orbs, with each Orb possibly containing 2 to 10 free spins, or a Bonus Upgrade if you are in the WHAT THE HELL! bonus. If a Bonus Upgrade is found, the bonus will be immediately upgraded to the WHO LET THE HOUNDS OUT?!? bonus with 10 free spins.\n\n You may gamble once per bonus and after a Bonus Upgrade.",
+      "params": {}
+    },
+    {
+      "name": "WHAT THE HELL!",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game retains the features of the base game but all multiplier values collected from Hellhounds are kept above the reels until the end of the round and can be progressively increased. At the end of the bonus game the collected multipliers are added together and multiplied with your bet to determine the final awarded win.\n\n In the bonus game, Hounds are Loose are guaranteed to trigger after 3 non-winning spins in a row. A spin is considered non-winning if it has neither regular symbol wins nor any landed Hellhound symbols.\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols awards +2 free spins, 3 FS symbols awards +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "WHO LET THE HOUNDS OUT?!?",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game retains the features of the base game and has persistent activated Hell Reels!\n\n This bonus also has the improved Hounds are Loose feature of the WHAT THE HELL! bonus.\n\n When a Hellhound lands on a reel for the first time that reel becomes an activated Hell Reel. A Hellhound symbol is guaranteed to land on each activated Hell Reel on each free spin until the end of the bonus.\n\n In this bonus, Hellhound multipliers are added together and paid out times your bet at the end of each free spin, and the total multipliers above each reel reset to 0 between spins.\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols awards +2 free spins, 3 FS symbols awards +4 free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000,
+    "max_win_notes": "maximum achievable win in this game is 20 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1666/1.28.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/hounds-of-hell/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n HELLHOUNDS\n\n Hellhound symbols are cash prize multipliers that spread and are collected before being multiplied with your bet.\n\n At the end of each spin, landed Hellhound symbols spread to the top of their respective reel. All Hellhound symbols will then display a multiplier value. All multipliers will be collected bottom-to-top, left-to-right, and displayed above each corresponding reel.\n\n The collected multiplier values above each reel will be added together and multiplied with your bet to determine the final awarded win.\n\n There are two types of Hellhound symbols, Adding and Mult"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

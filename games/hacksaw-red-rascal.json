@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Red Rascal",
+    "slug": "hacksaw-red-rascal",
+    "provider_game_id": "2274",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2274&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2274/1.20.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 2,
+    "cols": 2,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 2x2 from About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. In addition, 4+ Rascal symbols are guaranteed to land on every free spin. The Pendulum is visible throughout and will start on one of the two Modes during the first free spin, then switch back and forth on every free spin. The Pendulum will activate and award the selected Mode transforming all Rascal symbols on the grid on every free spin. Respins are not triggered in this bonus.\n\n All Colossal Wild symbols in this bonus can have the following Multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x and all Colossal Coin symbols can have the following Multiplier values: x2, x3, x4, x5, x10, x15, x20, x25, x50, x100\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins"
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "HIDDEN EPIC BONUS - IGNITE THE NIGHT",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. In addition, 4+ Rascal symbols are guaranteed to land on every free spin. The Pendulum is visible throughout and will start on one of the two Modes during the first free spin, then switch back and forth on every free spin. The Pendulum will activate and award the selected Mode transforming all Rascal symbols on the grid on every free spin. Respins are not triggered in this bonus.\n\n All Colossal Wild symbols in this bonus can have the following Multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x and all Colossal Coin symbols can have the following Multiplier values: x2, x3, x4, x5, x10, x15, x20, x25, x50, x100\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            15,
+            20,
+            25,
+            50,
+            100
+          ]
+        }
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "RASCAL RESPIN MODE",
+        "trigger": "When 3 or more Rascal symbols land on the same spin, they stick to the grid and trigger a Respin after all wins have been handled.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "When 3 or more Rascal symbols land on the same spin, they stick to the grid and trigger a Respin after all wins have been handled.\n\n During the Respin only Rascal and Dead symbols can land. Dead symbols are non-paying symbols and have no other effect. All Rascal symbols that land during Respins become sticky. The Respin continues until no new Rascal symbols land or there are no more available positions. When Rascal symbols land in a square formation of 2x2, 3x3, 4x4 or 5x5 they merge to form a Colossal Rascal symbol. If a 5x5 Colossal Rascal symbol is formed, the Max Win is immediately awarded.\n\n When a Respin is triggered, a Pendulum appears outside the grid with two Modes: Coin and Wild. The Pendulum randomly starts on one Mode then switches back and forth on each Respin, alternating between the two Modes. When the Respin sequence ends, the selected Mode is activated. On each Respin sequence, the Pendulum will start in a random Mode.\n\n When Coin Mode activates, it turns all Rascal and Colossal Rascal symbols on the grid into Coins. All Coins are paid as a multiple of your bet.\n\n Bronze Coins have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins have the following values: 25x, 50x, 100x, 250x, 500x\n\n Each Colossal Coin symbol has a Coin value and also receives an additional Multiplicative Multiplier. These two values are multiplied together to create a final bet Multiplier value for the Colossal Coin symbol.\n\n 2x2 Colossal Coin symbols have a minimum Coin value of 5x and an additional Multiplier value between x2, x3, x4, x5, x10, x15, x20, x25, x50, x100\n\n 3x3 Colossal Coin symbols have a minimum Coin value of 10x and an additional Multiplier value between x3, x4, x5, x10, x15, x20, x25, x50, x100\n\n 4x4 Colossal Coin symbols have a minimum Coin value of 25x and an additional Multiplier value between x4, x5, x10, x15, x20, x25, x50, x100\n\n When Wild Mode activates, it turns all Rascal and Colossal Rascal symbols into Wild symbols. Wild symbols substitute for all symbols in the paytable.\n\n All Colossal Wild symbols also receive an Additive Multiplier:\n\n 2x2 Colossal Wild symbols have values between 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n 3x3 Colossal Wild symbols have values between 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n 4x4 Colossal Wild symbols have values between 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n When all Rascal symbols have turned into Wild symbols, a regular spi"
+      },
+      {
+        "name": "BONUS GAME - READY TO RIOT",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics with an increased chance of landing Rascal symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins"
+      },
+      {
+        "name": "BONUS GAME - AFTER DARK",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics. In addition, if less than 3 Rascal symbols land on a spin, those symbols are saved in a Popcorn Bucket outside of the grid until the end of the bonus. On the last free spin, all saved Rascal symbols are added to the grid. If 3 or more Rascal symbols are added to the grid, a Respin sequence is triggered. The maximum number of Rascal symbols that can be saved is 25.\n\n Rascal symbols that trigger a Respin sequence or land during the Respin sequence will not be saved.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "RASCAL RESPIN MODE",
+      "trigger": "When 3 or more Rascal symbols land on the same spin, they stick to the grid and trigger a Respin after all wins have been handled.",
+      "effects": "When 3 or more Rascal symbols land on the same spin, they stick to the grid and trigger a Respin after all wins have been handled.\n\n During the Respin only Rascal and Dead symbols can land. Dead symbols are non-paying symbols and have no other effect. All Rascal symbols that land during Respins become sticky. The Respin continues until no new Rascal symbols land or there are no more available positions. When Rascal symbols land in a square formation of 2x2, 3x3, 4x4 or 5x5 they merge to form a Colossal Rascal symbol. If a 5x5 Colossal Rascal symbol is formed, the Max Win is immediately awarded.\n\n When a Respin is triggered, a Pendulum appears outside the grid with two Modes: Coin and Wild. The Pendulum randomly starts on one Mode then switches back and forth on each Respin, alternating between the two Modes. When the Respin sequence ends, the selected Mode is activated. On each Respin sequence, the Pendulum will start in a random Mode.\n\n When Coin Mode activates, it turns all Rascal and Colossal Rascal symbols on the grid into Coins. All Coins are paid as a multiple of your bet.\n\n Bronze Coins have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins have the following values: 25x, 50x, 100x, 250x, 500x\n\n Each Colossal Coin symbol has a Coin value and also receives an additional Multiplicative Multiplier. These two values are multiplied together to create a final bet Multiplier value for the Colossal Coin symbol.\n\n 2x2 Colossal Coin symbols have a minimum Coin value of 5x and an additional Multiplier value between x2, x3, x4, x5, x10, x15, x20, x25, x50, x100\n\n 3x3 Colossal Coin symbols have a minimum Coin value of 10x and an additional Multiplier value between x3, x4, x5, x10, x15, x20, x25, x50, x100\n\n 4x4 Colossal Coin symbols have a minimum Coin value of 25x and an additional Multiplier value between x4, x5, x10, x15, x20, x25, x50, x100\n\n When Wild Mode activates, it turns all Rascal and Colos",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - READY TO RIOT",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics with an increased chance of landing Rascal symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - AFTER DARK",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics. In addition, if less than 3 Rascal symbols land on a spin, those symbols are saved in a Popcorn Bucket outside of the grid until the end of the bonus. On the last free spin, all saved Rascal symbols are added to the grid. If 3 or more Rascal symbols are added to the grid, a Respin sequence is triggered. The maximum number of Rascal symbols that can be saved is 25.\n\n Rascal symbols that trigger a Respin sequence or land during the Respin sequence will not be saved.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - IGNITE THE NIGHT",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. In addition, 4+ Rascal symbols are guaranteed to land on every free spin. The Pendulum is visible throughout and will start on one of the two Modes during the first free spin, then switch back and forth on every free spin. The Pendulum will activate and award the selected Mode transforming all Rascal symbols on the grid on every free spin. Respins are not triggered in this bonus.\n\n All Colossal Wild symbols in this bonus can have the following Multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x and all Colossal Coin symbols can have the following Multiplier values: x2, x3, x4, x5, x10, x15, x20, x25, x50, x100\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          15,
+          20,
+          25,
+          50,
+          100
+        ]
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "fiery_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "frenzied_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "ready_to_riot_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "after_dark_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2274/1.20.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/red-rascal/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Is this a portal to hell or just the devil’s playground? It’s hard to tell because a devilish rascal has taken over this funhouse. Full of evil clowns, where even the rides run wild. He’s been let loose and is ready to burn it all down. But in his defence, the moon is full and he was left unsupervised.\n\n Run wild with Red Rascal in this 5-reel, 5-row game with paylines and a max win of {maximumWinMultiplier} times your bet, achievable in all game modes.\n\n FEATURES\n\n RASCAL RESPIN MODE\n\n When 3 or more Rascal symbols land on the same spin, they stick to the grid and trigger a R"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

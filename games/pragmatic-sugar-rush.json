@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:43:58Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Sugar Rush",
+    "slug": "pragmatic-sugar-rush",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://yesplay.bet/assets/documents/pragmatic-play-Sugar-Rush-rules.pdf"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official rules: played on a 7x7 grid"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Connected blocks / cluster pays per official rules"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\n disappear. The remaining symbols fall to the bottom of the screen and the empty positions are replaced with new\n symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "This is the SCATTER symbol.\n SCATTER symbol appears on all reels.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "FREE SPINS\n Hit 3, 4, 5, 6 or 7 SCATTER symbols anywhere on the screen to win 10, 12, 15, 20 or 30 free spins respectively.\n During the FREE SPINS round marked spots and their multipliers remain in place until the end of the round and\n can increase with subsequent tumbles across all of the free spins.\n Hit 3, 4, 5, 6 or 7 SCATTER symbols during the round anywhere on the screen to win 10, 12, 15, 20 or 30\n additional free spins respectively.\n Special reels are in play during the feature.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Hit 3, 4, 5, 6 or 7 SCATTER symbols anywhere on the screen to win 10, 12, 15, 20 or 30 free spins respectively.",
+        "spins_awarded": null,
+        "retrigger": "to win 10, 12, 15, 20 or 30\n additional free spins respectively.",
+        "sticky_or_persistent_state": "Persistent/sticky state described in effects",
+        "progressive_state": "Progressive multiplier/collection described in effects",
+        "effects": "Hit 3, 4, 5, 6 or 7 SCATTER symbols anywhere on the screen to win 10, 12, 15, 20 or 30 free spins respectively.\n During the FREE SPINS round marked spots and their multipliers remain in place until the end of the round and\n can increase with subsequent tumbles across all of the free spins.\n Hit 3, 4, 5, 6 or 7 SCATTER symbols during the round anywhere on the screen to win 10, 12, 15, 20 or 30\n additional free spins respectively.\n Special reels are in play during the feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "Hit 3, 4, 5, 6 or 7 SCATTER symbols anywhere on the screen to win 10, 12, 15, 20 or 30 free spins respectively.",
+      "effects": "Hit 3, 4, 5, 6 or 7 SCATTER symbols anywhere on the screen to win 10, 12, 15, 20 or 30 free spins respectively.\n During the FREE SPINS round marked spots and their multipliers remain in place until the end of the round and\n can increase with subsequent tumbles across all of the free spins.\n Hit 3, 4, 5, 6 or 7 SCATTER symbols during the round anywhere on the screen to win 10, 12, 15, 20 or 30\n additional free spins respectively.\n Special reels are in play during the feature.",
+      "params": {}
+    },
+    {
+      "name": "Tumble Feature",
+      "trigger": null,
+      "effects": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\n disappear. The remaining symbols fall to the bottom of the screen and the empty positions are replaced with new\n symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.",
+      "params": {}
+    },
+    {
+      "name": "Multiplier Spots Feature",
+      "trigger": null,
+      "effects": "Whenever a winning symbol explodes it marks its spot on the grid. After the second time a symbol explodes on the\nsame spot a multiplier is added to the spot, starting from x2 and doubling every time one more symbol explodes on\n top of it up to a maximum of x128. The multiplier applies to all winning combinations that hit on top of it. If more\n multipliers are involved in the same winning combination, they add to each other.\n In the base game all the marked spots with multipliers last until the end of the tumbling\n sequence, being cleared when there are no more tumbles.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000.0,
+    "max_win_notes": "maximum win amount is limited to 5,000x bet",
+    "rtp_percent": 94.5,
+    "rtp_notes": "From official rules PDF: theoretical RTP 94.5%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://yesplay.bet/assets/documents/pragmatic-play-Sugar-Rush-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Sugar-Rush.pdf",
+      "extracted_at": "2026-09-27T04:43:58Z",
+      "quote_or_excerpt": "GAME RULES\n All symbols pay in blocks of minimum 5 symbols connected horizontally or vertically.\n The game is played on a 7x7 grid of symbols.\n\n 15+ £30.00 15+ £20.00 15+ £12.00 15+ £8.00 15+ £6.00 15+ £5.00 15+ £4.00\n 14 £14.00 14 £12.00 14 £8.00 14 £4.00 14 £3.00 14 £2.40 14 £2.00\n 13 £7.00 13 £6.00 13 £4.00 13 £2.00 13 £1.60 13 £1.20 13 £1.00\n 12 £3.00 12 £2.50 12 £2.00 12 £1.00 12 £0.70 12 £0.60 12 £0.50\n 11 £1.50 11 £1.20 11 £0.90 11 £0.60 11 £0.50 11 £0.40 11 £0.30\n 10 £1.00 10 £0.80 10 £0.60 10 £0.40 10 £0.30 10 £0.25 10 £0.20\n 9 £0.50 9 £0.40 9 £0.30 9 £0.25 9 £0.20 9 £0.15 9 £0.10\n 8 £0.40 8 £0.30 8 £0.25 8 £0.20 8 £0.15 8 £0.10 8 £0.08\n 7 £0.35 7 £0.25 7 £0.20 7 £0.15 7 £0.10 7 £0."
+    }
+  ],
+  "unknowns": []
+}

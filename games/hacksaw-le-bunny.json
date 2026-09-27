@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Bunny",
+    "slug": "hacksaw-le-bunny",
+    "provider_game_id": "2195",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2195&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2195/1.7.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new symbols drop down to fill the empty spaces."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "HIDDEN EPIC BONUS - RAINBOW RICHES",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the SWIPING THE SWEETS bonus. In addition, every spin guarantees 1 Rainbow symbol, and when Coins are revealed, they will always be Silver or Gold!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "GOLDEN SQUARES",
+        "behavior": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares.\n\n If there is a Rainbow symbol on the grid, it will activate any Golden Squares after all wins have been collected. Activated Golden Squares reveal Special symbols, which are either Bronze, Silver, or Gold Coin symbols and can also reveal Basket symbols, Green or Gold Clover symbols, and Jackpot Eggs symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x, 250x, 500x\n\n After all Golden Squares have been revealed, the Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Baskets on adjacent squares with one of the following Multipliers: x2, x3, x4, x5, x10, x20. Gold Clover symbols will multiply all Coins or existing Baskets on the grid with one of the following Multipliers: x2, x3, x4, x5, x10, x20.\n\n Once all Clover symbols have applied their Multipliers, Basket symbols will activate. Baskets collect the values of all Coins and other Baskets, storing their total value. Baskets activate top to bottom, left to right. Baskets will not collect Jackpot Eggs.\n\n When the last Basket symbol on the current grid has activated, all other Golden Squares will activate again to reveal new Special symbols, and the process above repeats. Once all reveals and activations have been completed, all Coins and Baskets will be added together and multiplied by your bet amount to determine the final awarded win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADES",
+        "behavior": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new symbols drop down to fill the empty spaces.",
+        "params": {}
+      },
+      {
+        "name": "JACKPOT EGGS",
+        "behavior": "Jackpot Eggs can land on the grid or be revealed in the Golden Squares. Jackpot Eggs award four different Jackpot Egg prizes with a value based on your current bet. The four Jackpot Eggs are: \n\n MINI: 10x\n\n MAJOR: 100x\n\n MEGA: 1 000x\n\n MAX WIN: 20 000x\n\n The current value of each Jackpot Egg is displayed outside the grid on the Sign. Jackpot Eggs that land during a spin will be activated if they land together with a Rainbow. When a Jackpot Egg is revealed in a Golden Square, it will be awarded once all Coins and Basket values have been awarded. Only one of each Jackpot Egg value can appear at the same time, so a maximum of 4 different Jackpot Eggs can land on one spin. The Jackpot Egg values will be combined before being awarded.\n\n Once all the wins and cash prizes have been awarded, all Special symbols and Golden Squares are removed from the grid for the next spin.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - SPELL OF LUCK",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, and all Golden Squares are progressive, remaining on the grid until the Rainbow symbol activates them! The minimum Coin value is 1x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - SWIPING THE SWEETS",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the SPELL OF LUCK bonus. In addition, all Golden Squares stick to the grid until the end of the bonus, even after being activated by a Rainbow symbol!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new symbols drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "GOLDEN SQUARES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares.\n\n If there is a Rainbow symbol on the grid, it will activate any Golden Squares after all wins have been collected. Activated Golden Squares reveal Special symbols, which are either Bronze, Silver, or Gold Coin symbols and can also reveal Basket symbols, Green or Gold Clover symbols, and Jackpot Eggs symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x, 250x, 500x\n\n After all Golden Squares have been revealed, the Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Baskets on adjacent squares with one of the following Multipliers: x2, x3, x4, x5, x10, x20. Gold Clover symbols will multiply all Coins or existing Baskets on the grid with one of the following Multipliers: x2, x3, x4, x5, x10, x20.\n\n Once all Clover symbols have applied their Multipliers, Basket symbols will activate. Baskets collect the values of all Coins and other Baskets, storing their total value. Baskets activate top to bottom, left to right. Baskets will not collect Jackpot Eggs.\n\n When the last Basket symbol on the current grid has activated, all other Golden Squares will activate again to reveal new Special symbols, and the process above repeats. Once all reveals and activations have been completed, all Coins and Baskets will be added together and multiplied by your bet amount to determine the final awarded win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "JACKPOT EGGS",
+      "trigger": null,
+      "effects": "Jackpot Eggs can land on the grid or be revealed in the Golden Squares. Jackpot Eggs award four different Jackpot Egg prizes with a value based on your current bet. The four Jackpot Eggs are: \n\n MINI: 10x\n\n MAJOR: 100x\n\n MEGA: 1 000x\n\n MAX WIN: 20 000x\n\n The current value of each Jackpot Egg is displayed outside the grid on the Sign. Jackpot Eggs that land during a spin will be activated if they land together with a Rainbow. When a Jackpot Egg is revealed in a Golden Square, it will be awarded once all Coins and Basket values have been awarded. Only one of each Jackpot Egg value can appear at the same time, so a maximum of 4 different Jackpot Eggs can land on one spin. The Jackpot Egg values will be combined before being awarded.\n\n Once all the wins and cash prizes have been awarded, all Special symbols and Golden Squares are removed from the grid for the next spin.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SPELL OF LUCK",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, and all Golden Squares are progressive, remaining on the grid until the Rainbow symbol activates them! The minimum Coin value is 1x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SWIPING THE SWEETS",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the SPELL OF LUCK bonus. In addition, all Golden Squares stick to the grid until the end of the bonus, even after being activated by a Rainbow symbol!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - RAINBOW RICHES",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the SWIPING THE SWEETS bonus. In addition, every spin guarantees 1 Rainbow symbol, and when Coins are revealed, they will always be Silver or Gold!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rainbowcatching_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "spell_of_luck_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "swiping_sweets_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000,
+    "max_win_notes": "maximum achievable win in this game is 20 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2195/1.7.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-bunny/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Smokey is back from his well-deserved break and the master of disguise keeps living up to his name. For his next great coup he has found yet another creative way to create what he likes the most - confusion.\n\n Easter might be about helping others, but Le Bunny has a different plan in mind and will first and foremost look after his own egg basket. But it’s holiday season after all and Smokey has a soft spot for aspiring professionals in his own craft and he’s ready to accept a helping hand from you.\n\n Work together with Smokey to strike gold in this 6-reel, 5-row Super Cascade "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

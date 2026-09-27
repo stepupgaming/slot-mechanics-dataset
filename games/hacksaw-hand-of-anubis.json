@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Hand of Anubis",
+    "slug": "hacksaw-hand-of-anubis",
+    "provider_game_id": "1164",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1164&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1164/1.76.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 5x6 grid in official About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Soul Orbs",
+        "behavior": "The base game contains two different Soul Orbs; one red and one blue. On each new round, there is a chance of landing either one or both Soul Orbs, or neither. Both Soul Orbs are Wild symbols that absorb power from all cluster wins in a round, with stacking multipliers that are applied to any win the Soul Orbs are a part of. The multiplier on the red Soul Orb increases by 1x for each symbol in every cluster win, while the multiplier on the blue Soul Orb increases by 1x per winning cluster. The multiplier resets on every new round. If both Soul Orbs connect to a winning cluster the multipliers on the Soul Orbs multiply each other.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Underworld",
+        "behavior": "10 free spins\n\n In this bonus feature all paying symbols from the base game appear together with a special green Soul Orb and a multiplier modifier symbol. This feature has multipliers below each reel. Multipliers are increased when winning clusters form, increasing by 1x for each winning symbol on the corresponding reels. The multipliers can also be multiplied by the multiplier modifier symbol.\nThe possible values for the multiplier modifiers are: x2, x3, x4, x5 and x10.\n\n When the green Soul Orb symbol lands on a reel, the multiplier for that reel is activated. All activated multipliers are global. The value of all activated multipliers are added together and multiply the value of each winning cluster. Each time a multiplier is activated 3 additional spins are awarded. The maximum value per multiplier is 9999.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      },
+      {
+        "name": "Judgment",
+        "behavior": "3 refilling spins\n\n In this bonus feature the symbols from the base game are replaced by special “block” symbols. This feature has multipliers above each reel. Multipliers are increased by landing Multiplier Modifier Blocks, which can be either adding or multiplying. There are Normal and Epic variants of both blocks, which affect either only the multiplier in the reel where they land, or all multipliers.\nAdding modifiers values can be\n\nSkull: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x and 100x\nEpic Skull: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x and 100x\n\nMultiplying modifiers values can be\nAnubis Skull: x2, x3, x4, x5 and x10\nEpic Anubis Skull: x2, x3, x4, x5 and x10\n\n When an ice block drops onto the grid, it will be crushed and a Multiplier Block will drop from the multiplier above the reel and fill the empty space. The value on each Multiplier Block is equal to the value of the reel multiplier where they drop. Multiplier Blocks fall to the bottom of the grid at the end of each drop, where they stick and stack on top of each other to gradually fill up the grid.\n\n There is also a special Crusher Block that falls through all other blocks to the bottom of the grid and destroys all Multiplier Blocks in its path to make room for new blocks to drop in. When the Crusher Block reaches the bottom of the grid, it transforms into a Multiplier Block with a value equal to the sum of all Multiplier Blocks that were destroyed by the Crusher Block.\n\n Every time a Multiplier Block, Multiplier Modifier Block or Crusher Block lands, the remaining spins reset to 3. When the bonus feature ends, the payout will equal the sum of all Multiplier Blocks times the bet level. 3 spins in a row without a Multiplier Block, Multiplier Modifier Block or Crusher Block ends the feature.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS FEATURES",
+        "trigger": "Landing 3 Free Spins symbols activates the Underworld bonus game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "This game contains two bonus features triggered by landing the Free Spins scatter symbol in the base game.\nLanding 3 Free Spins symbols activates the Underworld bonus game.\nLanding 4 Free Spins symbols activates the Judgment bonus game."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Soul Orbs",
+      "trigger": null,
+      "effects": "The base game contains two different Soul Orbs; one red and one blue. On each new round, there is a chance of landing either one or both Soul Orbs, or neither. Both Soul Orbs are Wild symbols that absorb power from all cluster wins in a round, with stacking multipliers that are applied to any win the Soul Orbs are a part of. The multiplier on the red Soul Orb increases by 1x for each symbol in every cluster win, while the multiplier on the blue Soul Orb increases by 1x per winning cluster. The multiplier resets on every new round. If both Soul Orbs connect to a winning cluster the multipliers on the Soul Orbs multiply each other.",
+      "params": {}
+    },
+    {
+      "name": "BONUS FEATURES",
+      "trigger": "Landing 3 Free Spins symbols activates the Underworld bonus game.",
+      "effects": "This game contains two bonus features triggered by landing the Free Spins scatter symbol in the base game.\nLanding 3 Free Spins symbols activates the Underworld bonus game.\nLanding 4 Free Spins symbols activates the Judgment bonus game.",
+      "params": {}
+    },
+    {
+      "name": "Underworld",
+      "trigger": null,
+      "effects": "10 free spins\n\n In this bonus feature all paying symbols from the base game appear together with a special green Soul Orb and a multiplier modifier symbol. This feature has multipliers below each reel. Multipliers are increased when winning clusters form, increasing by 1x for each winning symbol on the corresponding reels. The multipliers can also be multiplied by the multiplier modifier symbol.\nThe possible values for the multiplier modifiers are: x2, x3, x4, x5 and x10.\n\n When the green Soul Orb symbol lands on a reel, the multiplier for that reel is activated. All activated multipliers are global. The value of all activated multipliers are added together and multiply the value of each winning cluster. Each time a multiplier is activated 3 additional spins are awarded. The maximum value per multiplier is 9999.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "Judgment",
+      "trigger": null,
+      "effects": "3 refilling spins\n\n In this bonus feature the symbols from the base game are replaced by special “block” symbols. This feature has multipliers above each reel. Multipliers are increased by landing Multiplier Modifier Blocks, which can be either adding or multiplying. There are Normal and Epic variants of both blocks, which affect either only the multiplier in the reel where they land, or all multipliers.\nAdding modifiers values can be\n\nSkull: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x and 100x\nEpic Skull: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x and 100x\n\nMultiplying modifiers values can be\nAnubis Skull: x2, x3, x4, x5 and x10\nEpic Anubis Skull: x2, x3, x4, x5 and x10\n\n When an ice block drops onto the grid, it will be crushed and a Multiplier Block will drop from the multiplier above the reel and fill the empty space. The value on each Multiplier Block is equal to the value of the reel multiplier where they drop. Multiplier Blocks fall to the bottom of the grid at the end of each drop, where they stick and stack on top of each other to gradually fill up the grid.\n\n There is also a special Crusher Block that falls through all other blocks to the bottom of the grid and destroys all Multiplier Blocks in its path to make room for new blocks to drop in. When the Crusher Block reaches the bottom of the grid, it transforms into a Multiplier Block with a value equal to the sum of all Multiplier Blocks that were destroyed by the Crusher Block.\n\n Every time a Multiplier Block, Multiplier Modifier Block or Crusher Block lands, the remaining spins reset to 3. When the bonus feature ends, the payout will equal the sum of all Multiplier Blocks times the bet level. 3 spins in a row without a Multiplier Block, Multiplier Modifier Block or Crusher Block ends the feature.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "judgment_uc_ext",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "underworld_uc_ext",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1164/1.76.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/hand-of-anubis/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Welcome to the Afterlife! Hand of Anubis is a game with a 5x6 grid and cascading cluster wins. This Egypt-themed game has a potential max win of 10 000 times your bet and several different exciting mechanics in both the base game and the two bonus games!\n\n Soul Orbs\n\n The base game contains two different Soul Orbs; one red and one blue. On each new round, there is a chance of landing either one or both Soul Orbs, or neither. Both Soul Orbs are Wild symbols that absorb power from all cluster wins in a round, with stacking multipliers that are applied to any win the Soul Orbs ar"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

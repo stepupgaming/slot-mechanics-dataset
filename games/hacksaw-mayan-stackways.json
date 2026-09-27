@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Mayan Stackways",
+    "slug": "hacksaw-mayan-stackways",
+    "provider_game_id": "1275",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1275&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1275/1.21.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 100000. Please consult the paytable for"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "STACK SPINS",
+        "behavior": "Land 3 Skull scatter symbols at the same time in the base game to activate this bonus feature with 10 free spins.\n\n In the Stack Spins feature you have a higher chance of landing Stackways™ symbols.\n\n Landing the Reel Activator scatter symbol activates the reel where it landed and guarantees that a Stackways™ symbol lands on that reel on each remaining free spin.\n\n Landing 3 Skull symbols at the same time during the feature awards 4 additional free spins.",
+        "params": {}
+      },
+      {
+        "name": "MAYAN GOLD",
+        "behavior": "Land 4 Skull scatter symbols at the same time in the base game to activate this bonus feature.\n\n In the Mayan Gold feature your goal is to collect Coins and save their values above the reel where the Coins land.\n\n Bronze coins can have the following values: 1, 2, 3, 4, 5\n\n Silver coins can have the following values: 10, 15, 20\n\n Gold coins can have the following values: 25, 50, 100, 150, 200, 250, 500, 1000\n\n Landing a Multiplier symbol will multiply the number above the reel where it lands with the value on the Multiplier.\n\n Multipliers can have the following values: 2, 3, 4, 5\n\n Landing a Stackways™ symbol on a reel will fill that reel with a stack of Coins where each Coin takes on the value above that reel! Once a reel is stacked with Coins that reel is locked and no longer spins.\n\n Landing the Collect scatter symbol will collect all Coins on the currently locked reels and store the sum in the Vault below the reels. Collecting the Coins also unlocks the stacked reels!\n\n The feature ends when all five reels are simultaneously locked by stacked Coins. When the feature ends, the values of all stacked Coins and the value stored in the Vault will be added up and multiplied with your bet to determine the awarded prize.",
+        "params": {}
+      },
+      {
+        "name": "A Golden Opportunity",
+        "behavior": "Landing 5 Skull scatter symbols at the same time in the base game will start the Mayan Gold feature with a value of 50 above all reels. This cannot occur when buying the bonus Mayan Gold through the bonus buy feature.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "STACKWAYS™",
+        "behavior": "Land the Stackways™ symbol on a reel to fill that reel with a stacked amount of paying symbols equal to the number displayed. Between 2 - 10 symbols can be stacked on each reel.\n\n The stacked symbol is chosen based on what symbol would create the longest winning way among the symbols present on the reels when the Stackways™ mechanic activates. If there are several symbols that would create equally long winning ways, it chooses randomly among these symbols. The stacking only occurs when the result of the stacking would create a win.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "STACKWAYS™",
+      "trigger": null,
+      "effects": "Land the Stackways™ symbol on a reel to fill that reel with a stacked amount of paying symbols equal to the number displayed. Between 2 - 10 symbols can be stacked on each reel.\n\n The stacked symbol is chosen based on what symbol would create the longest winning way among the symbols present on the reels when the Stackways™ mechanic activates. If there are several symbols that would create equally long winning ways, it chooses randomly among these symbols. The stacking only occurs when the result of the stacking would create a win.",
+      "params": {}
+    },
+    {
+      "name": "STACK SPINS",
+      "trigger": null,
+      "effects": "Land 3 Skull scatter symbols at the same time in the base game to activate this bonus feature with 10 free spins.\n\n In the Stack Spins feature you have a higher chance of landing Stackways™ symbols.\n\n Landing the Reel Activator scatter symbol activates the reel where it landed and guarantees that a Stackways™ symbol lands on that reel on each remaining free spin.\n\n Landing 3 Skull symbols at the same time during the feature awards 4 additional free spins.",
+      "params": {}
+    },
+    {
+      "name": "MAYAN GOLD",
+      "trigger": null,
+      "effects": "Land 4 Skull scatter symbols at the same time in the base game to activate this bonus feature.\n\n In the Mayan Gold feature your goal is to collect Coins and save their values above the reel where the Coins land.\n\n Bronze coins can have the following values: 1, 2, 3, 4, 5\n\n Silver coins can have the following values: 10, 15, 20\n\n Gold coins can have the following values: 25, 50, 100, 150, 200, 250, 500, 1000\n\n Landing a Multiplier symbol will multiply the number above the reel where it lands with the value on the Multiplier.\n\n Multipliers can have the following values: 2, 3, 4, 5\n\n Landing a Stackways™ symbol on a reel will fill that reel with a stack of Coins where each Coin takes on the value above that reel! Once a reel is stacked with Coins that reel is locked and no longer spins.\n\n Landing the Collect scatter symbol will collect all Coins on the currently locked reels and store the sum in the Vault below the reels. Collecting the Coins also unlocks the stacked reels!\n\n The feature ends when all five reels are simultaneously locked by stacked Coins. When the feature ends, the values of all stacked Coins and the value stored in the Vault will be added up and multiplied with your bet to determine the awarded prize.",
+      "params": {}
+    },
+    {
+      "name": "A Golden Opportunity",
+      "trigger": null,
+      "effects": "Landing 5 Skull scatter symbols at the same time in the base game will start the Mayan Gold feature with a value of 50 above all reels. This cannot occur when buying the bonus Mayan Gold through the bonus buy feature.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "stackways_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "stack_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mayan_gold_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1275/1.21.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/mayan-stackways/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n STACKWAYS™\n\n Land the Stackways™ symbol on a reel to fill that reel with a stacked amount of paying symbols equal to the number displayed. Between 2 - 10 symbols can be stacked on each reel.\n\n The stacked symbol is chosen based on what symbol would create the longest winning way among the symbols present on the reels when the Stackways™ mechanic activates. If there are several symbols that would create equally long winning ways, it chooses randomly among these symbols. The stacking only occurs when the result of the stacking would create a win.\n\n STACK SPINS\n\n Land 3 Skull scatter s"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Hop 'N' Pop",
+    "slug": "hacksaw-hop-n-pop",
+    "provider_game_id": "1091",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1091&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1091/1.36.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 7x7 grid in official About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Multipliers",
+        "behavior": "This game features an overlaying MULTIPLIER symbol that will multiply your wins. If you land a MULTIPLIER on a winning cluster it will first multiply your win and then either double in value or split in two. The maximum value per multiplier is 64x.\n If you land more than one MULTIPLIER on the same winning cluster, the multipliers will first be added together and the total will then be multiplied by the win.\n The maximum amount of multipliers you can get is 4 and the maximum multiplier value they each can have is 64x. If a multiplier hits a winning cluster, all symbols of the same kind across the entire grid will be removed!\n\n Orange suns will double the multiplier value (4x, 8x, 16x, 32x, 64x).\n Green suns will split into one more multiplier (maximum a total of 4).\n If a multiplier lands on wild that is part of multiple winning clusters the multiplier will evolve one time per win that the wild is part of.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free spins",
+        "trigger": "Get at least three free spin scatter symbols to trigger the free spin feature.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Get at least three free spin scatter symbols to trigger the free spin feature. In this feature the amount of multipliers and the multiplier values are kept progressively for the remainder of the free spins. You can get up to 4 multipliers, each with a value of up to 64x!\n\n 3 FREE SPIN symbols will give you 10 spins and 1 multiplier with 2x when you start.\n\n 4 FREE SPIN symbols will give you 10 spins and 2 multipliers with 2x when you start.\n\n 5 FREE SPIN symbols will give you 10 spins and 4 multipliers with 4x when you start."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Multipliers",
+      "trigger": null,
+      "effects": "This game features an overlaying MULTIPLIER symbol that will multiply your wins. If you land a MULTIPLIER on a winning cluster it will first multiply your win and then either double in value or split in two. The maximum value per multiplier is 64x.\n If you land more than one MULTIPLIER on the same winning cluster, the multipliers will first be added together and the total will then be multiplied by the win.\n The maximum amount of multipliers you can get is 4 and the maximum multiplier value they each can have is 64x. If a multiplier hits a winning cluster, all symbols of the same kind across the entire grid will be removed!\n\n Orange suns will double the multiplier value (4x, 8x, 16x, 32x, 64x).\n Green suns will split into one more multiplier (maximum a total of 4).\n If a multiplier lands on wild that is part of multiple winning clusters the multiplier will evolve one time per win that the wild is part of.",
+      "params": {}
+    },
+    {
+      "name": "Free spins",
+      "trigger": "Get at least three free spin scatter symbols to trigger the free spin feature.",
+      "effects": "Get at least three free spin scatter symbols to trigger the free spin feature. In this feature the amount of multipliers and the multiplier values are kept progressively for the remainder of the free spins. You can get up to 4 multipliers, each with a value of up to 64x!\n\n 3 FREE SPIN symbols will give you 10 spins and 1 multiplier with 2x when you start.\n\n 4 FREE SPIN symbols will give you 10 spins and 2 multipliers with 2x when you start.\n\n 5 FREE SPIN symbols will give you 10 spins and 4 multipliers with 4x when you start.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_freespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_buy_freespins2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_buy_freespins3_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1091/1.36.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/hop-n-pop/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Hop’n’Pop is a 7x7 grid game featuring a max win of up to 12,500x.\n When the game starts you will see a multiplier overlaid on a random position on the reel. Between each spin, this multiplier will hop to a new position.\n If the multiplier overlaps with a winning cluster, the multiplier will either double in value (for example, from 2 to 4) or split into two. The new multiplier will then jump to a random position.\n Each winning cluster will then be removed and make way for more symbols. The drops will continue until no new winning clusters are created. If a multiplier hits a w"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

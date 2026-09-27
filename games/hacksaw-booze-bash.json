@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Booze Bash",
+    "slug": "hacksaw-booze-bash",
+    "provider_game_id": "1783",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1783&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1783/1.26.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Each symbol appears as either a left or right half. Align 2 matching left-right halves side by side on the same row to create a winning pair. Valid matches only occur within specific reel pairs: Reel 1 with Reel 2, Reel 3 with Reel 4, and Reel 5 with Reel 6"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "MULTIPLIER PAIRS",
+        "behavior": "Multiplier symbols consist of a left half with an “x” and a right half with a number. When a complete Multiplier Pair lands, it acts as a Global Multiplier, applying to all wins on that spin. If more than one Multiplier Pair lands, their values will be multiplied before being applied to all wins. Possible Multiplier Pair values are x2, x3, x4, x5, x10, x15, x20.\n\n Wild symbols appear as half symbols. Landed Wilds will convert to a matching half to form a winning pair with paying symbols. The Wild symbol cannot form a winning Pair with an FS half or a Multiplier half.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            15,
+            20
+          ]
+        }
+      },
+      {
+        "name": "HIDDEN EPIC BONUS - HELL’S HAPPY HOUR",
+        "behavior": "Activate this bonus with 10 free spins by landing 3 FS Pairs during the base game.\n\n This Hidden Epic Bonus game maintains the mechanics of the TOP-SHELF TROUBLE bonus. In addition, all Special Symbols can be revealed in the Bash Bar. FS and Multipliers in the Bash Bar will activate first, followed by the remaining symbols left to right. Multipliers revealed in the Bash Bar will only be applied to Bash Bar wins. Wild symbols in the Bash Bar will convert symbols in that reel to Wild.\n\n Landing additional FS Pairs in the bonus awards 2 extra free spins per pair.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "MATCH 2 WIN",
+        "behavior": "Match symbol halves across the reels to win. Each symbol appears as either a left or right half. Align two matching left-right halves side by side on the same row to create a winning Pair. Matches can only occur on connected reel pairs: 1 and 2, 3 and 4, or 5 and 6. This means, for example, that a match cannot occur between reels 2 and 3.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - GUILTY AS GIN",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 1 FS Pair during the base game.\n\n This bonus game maintains the base game's mechanics with an increased chance of landing high-paying symbols, Multipliers and Wild symbols.\n\n Landing additional FS Pairs in the bonus awards 2 extra free spins per pair."
+      },
+      {
+        "name": "BONUS GAME -TOP-SHELF TROUBLE",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 2 FS Pairs during the base game.\n\n This bonus game has a Bash Bar added as an extra row at the top of the grid. After each spin, once all regular wins are collected, the Bash Bar reveals a symbol for each reel from left to right. The revealed symbol can be either a dead symbol or a paying symbol. Dead symbols are non-paying and have no other effect.\n\n When a paying symbol is revealed and a matching half of the same symbol is present in the connected reel, the revealed symbol will convert its matching position into the same symbol, creating a winning Pair. For example, if a red low-paying symbol is revealed on reel 1’s Bash Bar and reel 2 contains one or more red low-paying symbols, the matching positions on reel 1 will be converted to red low-paying symbols to create winning Pairs. Bash Bar wins cannot occur on previous winning positions on the same spin.\n\n Symbols converted by the Bash Bar revert to their original state once they form a win, allowing the possibility of two separate wins on the same positions. Special Symbols; Wild, FS, and Multipliers cannot land in the Bash Bar during this bonus. Active Global Multipliers will appear outside the grid.\n\n Landing additional FS Pairs in the bonus awards 2 extra free spins per pair."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MATCH 2 WIN",
+      "trigger": null,
+      "effects": "Match symbol halves across the reels to win. Each symbol appears as either a left or right half. Align two matching left-right halves side by side on the same row to create a winning Pair. Matches can only occur on connected reel pairs: 1 and 2, 3 and 4, or 5 and 6. This means, for example, that a match cannot occur between reels 2 and 3.",
+      "params": {}
+    },
+    {
+      "name": "MULTIPLIER PAIRS",
+      "trigger": null,
+      "effects": "Multiplier symbols consist of a left half with an “x” and a right half with a number. When a complete Multiplier Pair lands, it acts as a Global Multiplier, applying to all wins on that spin. If more than one Multiplier Pair lands, their values will be multiplied before being applied to all wins. Possible Multiplier Pair values are x2, x3, x4, x5, x10, x15, x20.\n\n Wild symbols appear as half symbols. Landed Wilds will convert to a matching half to form a winning pair with paying symbols. The Wild symbol cannot form a winning Pair with an FS half or a Multiplier half.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - GUILTY AS GIN",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 1 FS Pair during the base game.\n\n This bonus game maintains the base game's mechanics with an increased chance of landing high-paying symbols, Multipliers and Wild symbols.\n\n Landing additional FS Pairs in the bonus awards 2 extra free spins per pair.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME -TOP-SHELF TROUBLE",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 2 FS Pairs during the base game.\n\n This bonus game has a Bash Bar added as an extra row at the top of the grid. After each spin, once all regular wins are collected, the Bash Bar reveals a symbol for each reel from left to right. The revealed symbol can be either a dead symbol or a paying symbol. Dead symbols are non-paying and have no other effect.\n\n When a paying symbol is revealed and a matching half of the same symbol is present in the connected reel, the revealed symbol will convert its matching position into the same symbol, creating a winning Pair. For example, if a red low-paying symbol is revealed on reel 1’s Bash Bar and reel 2 contains one or more red low-paying symbols, the matching positions on reel 1 will be converted to red low-paying symbols to create winning Pairs. Bash Bar wins cannot occur on previous winning positions on the same spin.\n\n Symbols converted by the Bash Bar revert to their original state once they form a win, allowing the possibility of two separate wins on the same positions. Special Symbols; Wild, FS, and Multipliers cannot land in the Bash Bar during this bonus. Active Global Multipliers will appear outside the grid.\n\n Landing additional FS Pairs in the bonus awards 2 extra free spins per pair.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - HELL’S HAPPY HOUR",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS Pairs during the base game.\n\n This Hidden Epic Bonus game maintains the mechanics of the TOP-SHELF TROUBLE bonus. In addition, all Special Symbols can be revealed in the Bash Bar. FS and Multipliers in the Bash Bar will activate first, followed by the remaining symbols left to right. Multipliers revealed in the Bash Bar will only be applied to Bash Bar wins. Wild symbols in the Bash Bar will convert symbols in that reel to Wild.\n\n Landing additional FS Pairs in the bonus awards 2 extra free spins per pair.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "guilty_as_gin_uc_buy",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "top_shelf_trouble_uc_buy",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1783/1.26.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/booze-bash/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n The neon lights flicker to life, casting shadows in all the right places, the jukebox croons with the smooth sway of jazz. The club’s pulse syncs with the clink of glasses. Fingers linger over the shaker—one flick of the wrist, a shake, a spin, and it’s game on.\n\n In Booze Bash, every round is a new chance to stir up some top-shelf trouble. Whether you're stacking stogies with Bobby Bourbon, shooting shots with Teddy Tequila, or dealing with the devil, there’s no telling where the night might take you. The max win of 12 500 times your bet is up for grabs in every game mode of "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

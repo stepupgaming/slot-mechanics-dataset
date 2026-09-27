@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Fisherman",
+    "slug": "hacksaw-le-fisherman",
+    "provider_game_id": "2057",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2057&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2057/1.21.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 3x3 from About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "HIDDEN EPIC BONUS - SMOKEY UNDER WATER",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the SLIPPERY WHEN WET bonus and the Big Catch Bar starts at Level 4 and remains there for the entire bonus.\n\n FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS, Rainbow and Epic Rainbow symbols cannot land at the same time.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "GOLDEN SQUARES",
+        "behavior": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares.\n\n When a Rainbow symbol lands on the grid, it activates any Golden Squares after all wins have been collected. Activated Golden Squares reveal Special symbols that are either Bronze, Silver, Gold or Diamond Coins and can also reveal Green or Gold Clover symbols and Bucket or Global Bucket symbols.\n\n When an Epic Rainbow symbol lands, it reveals Special symbols on all positions on the grid. The reveal and activation process is the same for both Rainbow symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x\n\n Diamond Coins can have the following values: 150x, 250x, 500x\n\n After all Golden Squares have been revealed, the Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Bucket and Global Bucket symbols on adjacent squares with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. Gold Clover symbols will multiply all Coins or existing Bucket and Global Bucket symbols on the grid with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. If there are no Special symbols near the Clover symbols, they will activate once there are Special symbols on the grid to multiply.\n\n Once all Clover symbols have applied their Multipliers, Bucket symbols will activate. When Bucket symbols activate, they collect the values of all Coins and other activated Bucket and Global Bucket symbols on adjacent 3x3 squares and store their total value. Bucket symbols activate top to bottom, left to right.\n\n Golden Squares will reveal new Special symbols once they have been collected by the Bucket symbol, and the process above repeats. If a Bucket symbol has already been activated, it will not col",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADES",
+        "behavior": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - ON THIN ICE",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "l that is reached on the Big Catch Bar, +5 free spins are awarded.",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, and all Golden Squares are progressive and will remain on the grid until either Rainbow symbol activates them. In addition, a Big Catch Bar is displayed outside the grid. Each time an FS symbol lands on the grid, the Big Catch Bar increases one step.\n\n When a Rainbow symbol has activated, it will transform into another Special symbol depending on the Level reached. The Big Catch Bar begins at Level 0, where the Rainbow symbol functions as usual. After every 5th FS symbol has landed, a new Level is reached on the Big Catch Bar:\n\n Level 1: After either Rainbow symbol activates, it transforms into a Green Clover symbol.\n\n Level 2: After either Rainbow symbol activates, it transforms into a Global Bucket symbol.\n\n Level 3: After either Rainbow symbol activates, it transforms into a Gold Clover symbol.\n\n Level 4: A Rainbow or Epic Rainbow symbol is guaranteed on every free spin, and after a Rainbow symbol activates, it will transform into a Gold Clover symbol.\n\n For every Level that is reached on the Big Catch Bar, +5 free spins are awarded."
+      },
+      {
+        "name": "BONUS GAME - SLIPPERY WHEN WET",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "l that is reached on the Big Catch Bar, +5 free spins are awarded.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the ON THIN ICE bonus. In addition, all Golden Squares are progressive and stay on the grid throughout the bonus, even after being activated by a Rainbow symbol. When Epic Rainbow symbols activate, only the Golden Squares that were on the grid before will remain after the full grid activation is complete. The minimum Coin value is 1x.\n\n For every Level that is reached on the Big Catch Bar, +5 free spins are awarded."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "GOLDEN SQUARES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, the squares behind the winning symbols will be highlighted as Golden Squares.\n\n When a Rainbow symbol lands on the grid, it activates any Golden Squares after all wins have been collected. Activated Golden Squares reveal Special symbols that are either Bronze, Silver, Gold or Diamond Coins and can also reveal Green or Gold Clover symbols and Bucket or Global Bucket symbols.\n\n When an Epic Rainbow symbol lands, it reveals Special symbols on all positions on the grid. The reveal and activation process is the same for both Rainbow symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x\n\n Diamond Coins can have the following values: 150x, 250x, 500x\n\n After all Golden Squares have been revealed, the Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Bucket and Global Bucket symbols on adjacent squares with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. Gold Clover symbols will multiply all Coins or existing Bucket and Global Bucket symbols on the grid with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. If there are no Special symbols near the Clover symbols, they will activate once there are Special symbols on the grid to multiply.\n\n Once all Clover symbols have applied their Multipliers, Bucket symbols will activate. When Bucket symbols activate, they collect the values of all Coins and other activated Bucket and Global Bucket symbols on adjacent 3x3 squares and store their total value. Bucket symbols activate top to bottom, left to right.\n\n Golden Squares will reveal new Special symbols once they have been collected by the Bucket symbol, and the process above repeats. If a Bucket symbol has already been activated, it will not col",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - ON THIN ICE",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, and all Golden Squares are progressive and will remain on the grid until either Rainbow symbol activates them. In addition, a Big Catch Bar is displayed outside the grid. Each time an FS symbol lands on the grid, the Big Catch Bar increases one step.\n\n When a Rainbow symbol has activated, it will transform into another Special symbol depending on the Level reached. The Big Catch Bar begins at Level 0, where the Rainbow symbol functions as usual. After every 5th FS symbol has landed, a new Level is reached on the Big Catch Bar:\n\n Level 1: After either Rainbow symbol activates, it transforms into a Green Clover symbol.\n\n Level 2: After either Rainbow symbol activates, it transforms into a Global Bucket symbol.\n\n Level 3: After either Rainbow symbol activates, it transforms into a Gold Clover symbol.\n\n Level 4: A Rainbow or Epic Rainbow symbol is guaranteed on every free spin, and after a Rainbow symbol activates, it will transform into a Gold Clover symbol.\n\n For every Level that is reached on the Big Catch Bar, +5 free spins are awarded.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SLIPPERY WHEN WET",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the ON THIN ICE bonus. In addition, all Golden Squares are progressive and stay on the grid throughout the bonus, even after being activated by a Rainbow symbol. When Epic Rainbow symbols activate, only the Golden Squares that were on the grid before will remain after the full grid activation is complete. The minimum Coin value is 1x.\n\n For every Level that is reached on the Big Catch Bar, +5 free spins are awarded.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - SMOKEY UNDER WATER",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the SLIPPERY WHEN WET bonus and the Big Catch Bar starts at Level 4 and remains there for the entire bonus.\n\n FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS, Rainbow and Epic Rainbow symbols cannot land at the same time.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rainbow_trout_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rainbow_epic_drop_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "on_thin_ice_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "slippery_when_wet_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2057/1.21.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-fisherman/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Armed with his orange floaties and yellow wellies, Smokey hits the water! He might be looking to put the heists on hold for a weekend and take a relaxing break away, but we know this Frenchie better than that. He isn’t just fishing for dinner; rumor has it there’s some treasure at the bottom of this lake, and if anyone can catch it, it’s Le Fisherman!\n\n So if you’re hanging out by the lake this weekend, you might spot him air-jamming with his fishing pole, singing to himself: “Smokeeey on the waaater, duh duh duuuh, duh duh duh duuduuh!”\n\n Tag along on this 6-reel, 5-row game "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

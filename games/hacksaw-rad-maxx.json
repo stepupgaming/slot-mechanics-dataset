@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Rad Maxx",
+    "slug": "hacksaw-rad-maxx",
+    "provider_game_id": "1732",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1732&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1732/1.18.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 37,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines from left to right starting from the leftmost reel. Wins may also be formed from right to left, top to bottom, and bottom to top, depending on the active pay directions and start"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "CRAZY CAT SYMBOLS",
+        "behavior": "Crazy Cat symbols are Wild multipliers. Landed Crazy Cat symbols will display or reveal one of the following possible multiplier values: x2, x3, x4, x5, x6, x7, x8, x9, x10, x15, x20. When a Crazy Cat symbol participates in a winning combination, the value of the win is multiplied by the shown value. If more than one Crazy Cat symbol is part of the same winning combination, their values are first multiplied with each other before being applied to the win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20
+          ]
+        }
+      },
+      {
+        "name": "PAY DIRECTION ARROWS AND WILD PLUS SYMBOLS",
+        "behavior": "Four Pay Direction Arrows are located outside the grid. These arrows indicate the direction in which winning paylines are calculated. The left Pay Direction Arrow is standard and is always active.\n\n The other arrows are activated by landing a Wild Plus symbol. Wild Plus symbols trigger immediately upon landing before any wins are awarded. A landed Wild Plus symbol activates 1-3 additional payline directions in clockwise order, starting from the top Pay Direction Arrow. Pay Direction Arrows will reset when the next spin is initiated.\n\n Winning paylines are awarded from one direction at a time, starting from the left and going clockwise through each activated Pay Direction.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "MAD MAXX BONUS GAME",
+        "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus game maintains the same mechanics as the base game but has an increased chance of landing Wild Plus symbols!\n\n Crazy Cat symbols that land stick to the grid until the end of the bonus game.\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "MAXXIMICE BONUS GAME",
+        "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus game retains the features of the MAD MAXX bonus and guarantees a Wild Plus symbol on each spin!\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "TO THE MAXX BONUS GAME",
+        "trigger": "Land 5 FS scatter symbols at the same time in the base game to activate this epic bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land 5 FS scatter symbols at the same time in the base game to activate this epic bonus game with 10 free spins.\n\n This bonus game retains the features of the MAD MAXX bonus. In addition, all the Pay Direction Arrows are active throughout the bonus for 360 Wins in all directions!\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "CRAZY CAT SYMBOLS",
+      "trigger": null,
+      "effects": "Crazy Cat symbols are Wild multipliers. Landed Crazy Cat symbols will display or reveal one of the following possible multiplier values: x2, x3, x4, x5, x6, x7, x8, x9, x10, x15, x20. When a Crazy Cat symbol participates in a winning combination, the value of the win is multiplied by the shown value. If more than one Crazy Cat symbol is part of the same winning combination, their values are first multiplied with each other before being applied to the win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "name": "PAY DIRECTION ARROWS AND WILD PLUS SYMBOLS",
+      "trigger": null,
+      "effects": "Four Pay Direction Arrows are located outside the grid. These arrows indicate the direction in which winning paylines are calculated. The left Pay Direction Arrow is standard and is always active.\n\n The other arrows are activated by landing a Wild Plus symbol. Wild Plus symbols trigger immediately upon landing before any wins are awarded. A landed Wild Plus symbol activates 1-3 additional payline directions in clockwise order, starting from the top Pay Direction Arrow. Pay Direction Arrows will reset when the next spin is initiated.\n\n Winning paylines are awarded from one direction at a time, starting from the left and going clockwise through each activated Pay Direction.",
+      "params": {}
+    },
+    {
+      "name": "MAD MAXX BONUS GAME",
+      "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.",
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus game maintains the same mechanics as the base game but has an increased chance of landing Wild Plus symbols!\n\n Crazy Cat symbols that land stick to the grid until the end of the bonus game.\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "MAXXIMICE BONUS GAME",
+      "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.",
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n This bonus game retains the features of the MAD MAXX bonus and guarantees a Wild Plus symbol on each spin!\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "TO THE MAXX BONUS GAME",
+      "trigger": "Land 5 FS scatter symbols at the same time in the base game to activate this epic bonus game with 10 free spins.",
+      "effects": "Land 5 FS scatter symbols at the same time in the base game to activate this epic bonus game with 10 free spins.\n\n This bonus game retains the features of the MAD MAXX bonus. In addition, all the Pay Direction Arrows are active throughout the bonus for 360 Wins in all directions!\n\n Landing additional FS symbols at the same time awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feline_frenzy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mad_maxx_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "maxximice_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum win of 12 500 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1732/1.18.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/rad-maxx/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n We can't always get along, and in this cat-and-mouse game, Maxx owns the streets. He's ready to take Ro$$ for everything he's got! Step into the back alley of this rad 5-reel, 5-row game with paylines, where Maxx is offering a maximum win of 12 500 times your bet. Welcome to the game he proudly named after himself: RAD MAXX.\n\n The maximum win can be achieved in all game modes.\n\n FEATURES\n\n CRAZY CAT SYMBOLS\n\n Crazy Cat symbols are Wild multipliers. Landed Crazy Cat symbols will display or reveal one of the following possible multiplier values: x2, x3, x4, x5, x6, x7, x8, x9, x"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

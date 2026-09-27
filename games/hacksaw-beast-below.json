@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Beast Below",
+    "slug": "hacksaw-beast-below",
+    "provider_game_id": "1279",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1279&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1279/1.23.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "EXPANDING SIRENS",
+        "behavior": "Sirens are wild symbols that expand upward to the top of the reel if the expanded symbol would be part of at least one winning combination.\n\n Each expanded Siren shows a multiplier value that multiplies any winning combinations the Siren is part of. If a winning combination includes more than one Siren, the multiplier values will first be added together and then applied to the win. Only one Siren can appear on each reel at the same time.\n\n In the base game, only the Yellow Siren appears. The Yellow Siren can have the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "THE SIRENS' CALL BONUS GAME",
+        "trigger": "Land 3 FS scatter symbols at the same time in the base game to trigger this bonus feature with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land 3 FS scatter symbols at the same time in the base game to trigger this bonus feature with 10 free spins.\n\n In this bonus game there is a higher chance of landing Siren symbols than in the base game.\n\n The bonus also features the Pink Siren symbol. Expanded Pink Sirens stay on the reel where they expanded, but are gradually removed by nudging one row upward on each subsequent free spin. The Pink Siren can have the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x\n\n Landing additional FS symbols during the feature awards extra free spins:\n2 FS symbols awards 2 additional spins\n3 FS symbols awards 4 additional spins."
+      },
+      {
+        "name": "DOWN BELOW BONUS GAME",
+        "trigger": "Land 4 FS scatter symbols at the same time in the base game to trigger this bonus feature that starts with 10 free spins.",
+        "spins_awarded": "starts with 10 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land 4 FS scatter symbols at the same time in the base game to trigger this bonus feature that starts with 10 free spins.\n\n This bonus features the expanding Diver symbol. When the Diver symbol lands, it expands into a full Diver reel. Divers are wild multipliers and remain for a limited number of subsequent spins after expanding.\n\n Each expanded Diver starts with 3 Oxygen Charges. When a Diver’s Oxygen reaches 0, it’s removed at the end of that spin. At the start of each spin, a Diver may move to an adjacent reel by consuming 1 Charge. When this happens, the Diver multiplier is also updated.\n\n Divers can have the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x,15x, 20x, 25x, 50x,100x, 200x. If a winning combination includes more than one Diver, the multiplier values will first be added together and then applied to the win.\n\n A maximum of 3 Divers can appear at the same time.\n\n Landing additional FS symbols during the feature awards extra free spins:\n2 FS symbols awards 2 additional spins\n3 FS symbols awards 4 additional spins.\n\n SPECIAL SYMBOLS\n\n The Pink Siren only appears in The Sirens’ Call bonus game.\nThe Diver only appears in the Down Below bonus game.\nThe Wild symbol substitutes for all symbols in the paytable.\n\n Both types of Siren substitute for all symbols in the paytable.\nThe Diver substitutes for all symbols in the paytable."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "EXPANDING SIRENS",
+      "trigger": null,
+      "effects": "Sirens are wild symbols that expand upward to the top of the reel if the expanded symbol would be part of at least one winning combination.\n\n Each expanded Siren shows a multiplier value that multiplies any winning combinations the Siren is part of. If a winning combination includes more than one Siren, the multiplier values will first be added together and then applied to the win. Only one Siren can appear on each reel at the same time.\n\n In the base game, only the Yellow Siren appears. The Yellow Siren can have the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x",
+      "params": {}
+    },
+    {
+      "name": "THE SIRENS' CALL BONUS GAME",
+      "trigger": "Land 3 FS scatter symbols at the same time in the base game to trigger this bonus feature with 10 free spins.",
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to trigger this bonus feature with 10 free spins.\n\n In this bonus game there is a higher chance of landing Siren symbols than in the base game.\n\n The bonus also features the Pink Siren symbol. Expanded Pink Sirens stay on the reel where they expanded, but are gradually removed by nudging one row upward on each subsequent free spin. The Pink Siren can have the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x\n\n Landing additional FS symbols during the feature awards extra free spins:\n2 FS symbols awards 2 additional spins\n3 FS symbols awards 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "DOWN BELOW BONUS GAME",
+      "trigger": "Land 4 FS scatter symbols at the same time in the base game to trigger this bonus feature that starts with 10 free spins.",
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to trigger this bonus feature that starts with 10 free spins.\n\n This bonus features the expanding Diver symbol. When the Diver symbol lands, it expands into a full Diver reel. Divers are wild multipliers and remain for a limited number of subsequent spins after expanding.\n\n Each expanded Diver starts with 3 Oxygen Charges. When a Diver’s Oxygen reaches 0, it’s removed at the end of that spin. At the start of each spin, a Diver may move to an adjacent reel by consuming 1 Charge. When this happens, the Diver multiplier is also updated.\n\n Divers can have the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x,15x, 20x, 25x, 50x,100x, 200x. If a winning combination includes more than one Diver, the multiplier values will first be added together and then applied to the win.\n\n A maximum of 3 Divers can appear at the same time.\n\n Landing additional FS symbols during the feature awards extra free spins:\n2 FS symbols awards 2 additional spins\n3 FS symbols awards 4 additional spins.\n\n SPECIAL SYMBOLS\n\n The Pink Siren only appears in The Sirens’ Call bonus game.\nThe Diver only appears in the Down Below bonus game.\nThe Wild symbol substitutes for all symbols in the paytable.\n\n Both types of Siren substitute for all symbols in the paytable.\nThe Diver substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "mod_siren_title_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "fs_siren_title_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "fs_below_title_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win of 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1279/1.23.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/beast-below/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n EXPANDING SIRENS\n\n Sirens are wild symbols that expand upward to the top of the reel if the expanded symbol would be part of at least one winning combination.\n\n Each expanded Siren shows a multiplier value that multiplies any winning combinations the Siren is part of. If a winning combination includes more than one Siren, the multiplier values will first be added together and then applied to the win. Only one Siren can appear on each reel at the same time.\n\n In the base game, only the Yellow Siren appears. The Yellow Siren can have the following multipliers: 2x, 3x, 4x, 5x, 6x, 7x, "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

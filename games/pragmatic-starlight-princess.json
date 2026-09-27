@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:43:58Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Starlight Princess",
+    "slug": "pragmatic-starlight-princess",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://yesplay.bet/assets/documents/pragmatic-play-Starlight-Princess-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": "anywhere",
+    "notes": "Symbols pay anywhere per official GAME RULES"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. The remaining symbols fall to the bottom of the screen and the empty positions are\n replaced with symbols coming from above."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "6 2000 This is the SCATTER symbol.\n 5 100 SCATTER symbol is present on all reels.\n 4 60 SCATTER pays on any position.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "FREE SPINS RULES\n The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.\n The round starts with 15 free spins.\n During the FREE SPINS round, whenever a MULTIPLIER symbol hits and the spin results in a win, the MULTIPLIER\nvalue gets added to the total multiplier. For the whole duration of the round, whenever any new MULTIPLIER symbol\n hits and results in a win the total multiplier value is also used to multiply the win.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n Special reels are in play during the FREE SPINS ROUND.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "MULTIPLIER",
+        "behavior": "These are the multiplier symbols. They are present on all reels and can hit randomly during\n spins and tumbles in both base game and FREE SPINS.",
+        "params": {}
+      },
+      {
+        "name": "MULTIPLIER",
+        "behavior": "Whenever a MULTIPLIER symbol hits, it takes a random multiplier value from 2x to 500x.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            500
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.",
+        "spins_awarded": "starts with 15 free spins.",
+        "retrigger": "uring the FREE SPINS ROUND, 5 additional free spins are awarded.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive multiplier/collection described in effects",
+        "effects": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.\n The round starts with 15 free spins.\n During the FREE SPINS round, whenever a MULTIPLIER symbol hits and the spin results in a win, the MULTIPLIER\nvalue gets added to the total multiplier. For the whole duration of the round, whenever any new MULTIPLIER symbol\n hits and results in a win the total multiplier value is also used to multiply the win.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n Special reels are in play during the FREE SPINS ROUND."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.",
+      "effects": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.\n The round starts with 15 free spins.\n During the FREE SPINS round, whenever a MULTIPLIER symbol hits and the spin results in a win, the MULTIPLIER\nvalue gets added to the total multiplier. For the whole duration of the round, whenever any new MULTIPLIER symbol\n hits and results in a win the total multiplier value is also used to multiply the win.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n Special reels are in play during the FREE SPINS ROUND.",
+      "params": {}
+    },
+    {
+      "name": "Tumble Feature",
+      "trigger": null,
+      "effects": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. The remaining symbols fall to the bottom of the screen and the empty positions are\n replaced with symbols coming from above.\n\n Tumbling will continue until no more winning combinations appear as a result of a tumble. There's no limit to the\n number of possible tumbles.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.\n\n These are the multiplier symbols. They are present on all reels and can hit randomly during\n spins and tumbles in both base game and FREE SPINS.\n\n Whenever a MULTIPLIER symbol hits, it takes a random multiplier value from 2x to 500x.\n\n When the tumbling sequence ends, the values of all MULTIPLIER symbols on the screen are added\n together and the total win of the sequence is multiplied by the final value.",
+      "params": {}
+    },
+    {
+      "name": "Ante Bet",
+      "trigger": null,
+      "effects": "The player has the option to increase the bet multiplier by 25%, to 25x bet per line. When playing\n with ante bet active, the chance to hit SCATTER symbols increases.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": "The player has the option to increase the bet multiplier by 25%, to 25x bet per line. When playing\n with ante bet active, the chance to hit SCATTER symbols increases.",
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000.0,
+    "max_win_notes": "maximum win amount is limited to 5000X bet",
+    "rtp_percent": 89.51,
+    "rtp_notes": "From official rules PDF: theoretical RTP 89.51%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://yesplay.bet/assets/documents/pragmatic-play-Starlight-Princess-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Starlight-Princess.pdf",
+      "extracted_at": "2026-09-27T04:43:58Z",
+      "quote_or_excerpt": "GAME RULES\n Symbols pay anywhere on the screen. The total number of the same symbol on the screen at the\n end of a spin determines the value of the win.\n\n 12 - 30 1000 12 - 30 500 12 - 30 300 12 - 30 240\n 10 - 11 500 10 - 11 200 10 - 11 100 10 - 11 40\n 8 - 9 200 8 - 9 50 8 - 9 40 8 - 9 30\n\n 12 - 30 200 12 - 30 160 12 - 30 100 12 - 30 80 12 - 30 40\n 10 - 11 30 10 - 11 24 10 - 11 20 10 - 11 18 10 - 11 15\n 8 - 9 20 8 - 9 16 8 - 9 10 8-9 8 8-9 5\n\n 6 2000 This is the SCATTER symbol.\n 5 100 SCATTER symbol is present on all reels.\n 4 60 SCATTER pays on any position.\n\n TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. Th"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "grid.rows/cols"
+  ]
+}

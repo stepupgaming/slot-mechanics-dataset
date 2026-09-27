@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Chaos Crew",
+    "slug": "hacksaw-chaos-crew",
+    "provider_game_id": "1059",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1059&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1059/1.67.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 5x5 grid in official About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 15,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 15. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "CRANKY CAT",
+        "behavior": "The Cranky Cat symbol is WILD and also a mystery multiplier that will multiply the current line win. Wins with the Cranky Cat symbol in the main game multiplies the line win with the multiplier shown. When the Cranky Cat symbol lands, it will take on one of the following multipliers: x2, x3 or x5. If you get multiple Cranky Cat symbols on the same win line, the multipliers will multiply each other!\n\nThe Cranky Cat symbol substitutes for all symbols in the base game except the FREE SPINS symbol.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            5
+          ]
+        }
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "land three Free Spin symbols, the game changes into free spin mode.",
+        "spins_awarded": "starts with 3 spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "If you land three Free Spin symbols, the game changes into free spin mode. The free spins mode starts with 3 spins. The free spins continue until you get three non-winning spins in a row. Every time you get a winning symbol, the number of free spins is reset to 3. The meter to the right of the grid displays the number of remaining spins.\n\nA number is displayed above each reel. At the end of the free spins mode, the total win will equal the sum of all displayed numbers multiplied with the current bet level. All symbols affecting the multipliers are applied in the order left to right, top to bottom.\n\nThe symbols appearing in the free spins mode are described below:\n\n Every time the Cranky Cat symbol appears, it will multiply the number shown above the current reel with the factor revealed inside the Cranky Cat symbol. The possible multipliers are x2, x3, x5, x10, x20.\n\n Cranky Cat also has an Epic version. This symbol works the same way as the regular Cranky Cat symbol, but multiplies the value displayed above all reels with the factor shown! The possible multipliers are x2, x3, x5, x10, x20.\n\n The Sketchy Skull symbol will add the number revealed inside the Sketchy Skull symbol to the current reel’s multiplier. The possible multipliers are +1, +2, +5, +10, +20.\n\n The Epic Sketchy Skull symbol will add the number revealed inside the Sketchy Skull symbol to the factors shown above all reels! The possible multipliers are +1, +2, +5, +10, +20.\n\n These symbols are non-winning."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "CRANKY CAT",
+      "trigger": null,
+      "effects": "The Cranky Cat symbol is WILD and also a mystery multiplier that will multiply the current line win. Wins with the Cranky Cat symbol in the main game multiplies the line win with the multiplier shown. When the Cranky Cat symbol lands, it will take on one of the following multipliers: x2, x3 or x5. If you get multiple Cranky Cat symbols on the same win line, the multipliers will multiply each other!\n\nThe Cranky Cat symbol substitutes for all symbols in the base game except the FREE SPINS symbol.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "land three Free Spin symbols, the game changes into free spin mode.",
+      "effects": "If you land three Free Spin symbols, the game changes into free spin mode. The free spins mode starts with 3 spins. The free spins continue until you get three non-winning spins in a row. Every time you get a winning symbol, the number of free spins is reset to 3. The meter to the right of the grid displays the number of remaining spins.\n\nA number is displayed above each reel. At the end of the free spins mode, the total win will equal the sum of all displayed numbers multiplied with the current bet level. All symbols affecting the multipliers are applied in the order left to right, top to bottom.\n\nThe symbols appearing in the free spins mode are described below:\n\n Every time the Cranky Cat symbol appears, it will multiply the number shown above the current reel with the factor revealed inside the Cranky Cat symbol. The possible multipliers are x2, x3, x5, x10, x20.\n\n Cranky Cat also has an Epic version. This symbol works the same way as the regular Cranky Cat symbol, but multiplies the value displayed above all reels with the factor shown! The possible multipliers are x2, x3, x5, x10, x20.\n\n The Sketchy Skull symbol will add the number revealed inside the Sketchy Skull symbol to the current reel’s multiplier. The possible multipliers are +1, +2, +5, +10, +20.\n\n The Epic Sketchy Skull symbol will add the number revealed inside the Sketchy Skull symbol to the factors shown above all reels! The possible multipliers are +1, +2, +5, +10, +20.\n\n These symbols are non-winning.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_bonus",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum feature win for this game is 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1059/1.67.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/chaos-crew/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Welcome to the gritty world of Cranky and Sketchy! Chaos Crew is a high volatility 5x5 grid paylines game loaded with multipliers! The maximum feature win for this game is 10,000 times your bet! The maximum win can be achieved in the Free Spins game mode.\n\n CRANKY CAT\n\n The Cranky Cat symbol is WILD and also a mystery multiplier that will multiply the current line win. Wins with the Cranky Cat symbol in the main game multiplies the line win with the multiplier shown. When the Cranky Cat symbol lands, it will take on one of the following multipliers: x2, x3 or x5. If you get mu"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

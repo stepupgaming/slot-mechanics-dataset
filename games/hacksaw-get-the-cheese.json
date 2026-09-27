@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Get The Cheese",
+    "slug": "hacksaw-get-the-cheese",
+    "provider_game_id": "1580",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1580&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1580/1.32.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Jumping Wild Multipliers jump to a new position after each cascade allowing for new possibilities to win. There are two kinds of multipliers, Normal and Epic.\n\n Normal Jumping Wild Multipliers start with a multiplier value of 1x and increase with +1x every time they jump.\n\n Epic Jumping Wild Multipliers start with a multiplier value of 10x and increase with +10x every time they jump.\n\n A maximum of 4 Jumping Wild Multipliers can be on the grid at any given time."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "CHEESE SYMBOL",
+        "behavior": "When a cheese symbol is part of a winning cluster all the symbols except the FS and Wild multipliers will be removed from the grid and new ones will drop down to fill the empty spaces.",
+        "params": {}
+      },
+      {
+        "name": "JUMPING WILD MULTIPLIERS",
+        "behavior": "Jumping Wild Multipliers jump to a new position after each cascade allowing for new possibilities to win. There are two kinds of multipliers, Normal and Epic.\n\n Normal Jumping Wild Multipliers start with a multiplier value of 1x and increase with +1x every time they jump.\n\n Epic Jumping Wild Multipliers start with a multiplier value of 10x and increase with +10x every time they jump.\n\n A maximum of 4 Jumping Wild Multipliers can be on the grid at any given time.",
+        "params": {}
+      },
+      {
+        "name": "FROMAGE FRENZY",
+        "behavior": "Activate this bonus game with 8 free spins by landing at least 3 FS scatter symbols at the same time during the base game.\n\n You start the bonus with 2 persistent Jumping Wild Multipliers of either type! Wild Multipliers values reset during each new spin. \n\n This bonus includes a Cheese Meter and your goal is to collect the cheese to fill the meter. \n\n The Cheese Meter is located at the top of the grid and shows the progress of collected cheese. Cheese symbols are collected when they are removed from the grid. When the meter is full you will upgrade to the next free spins bonus and be rewarded additional free spins.\n\n From this bonus you will be upgraded to TAKE IT CHEESY bonus and be rewarded 5 additional spins.\n\n Landing additional FS scatter symbols at the same time during the bonus game awards additional free spins:\n\n 3+ FS scatter symbols award 5 extra spins.",
+        "params": {}
+      },
+      {
+        "name": "TAKE IT CHEESY",
+        "behavior": "Activate this bonus game with 10 free spins by landing at least 4 FS scatter symbols at the same time during the base game.\n\n You start the bonus with 3 persistent Jumping Wild Multipliers of either type! Wild Multipliers values reset during each new spin. \n\n This bonus also includes the Cheese Meter (see FROMAGE FRENZY for details).\n\n From this bonus you will be upgraded to LIFE'S SO GOUDA bonus and be rewarded 5 additional spins.\n\n Landing additional FS scatter symbols at the same time during the bonus game awards additional free spins:\n\n 3+ FS scatter symbols award 5 extra spins.",
+        "params": {}
+      },
+      {
+        "name": "LIFE'S SO GOUDA",
+        "behavior": "Activate this bonus game with 12 free spins by landing at least 5 FS scatter symbols at the same time during the base game.\n\n You start the bonus with 4 persistent Jumping Wild Multipliers where at least one is guaranteed to be an Epic Jumping Wild Multiplier!\n\n In this bonus, Wild Multipliers values do NOT reset during each new spin.\n\n Landing additional FS scatter symbols at the same time during the bonus game awards additional free spins:\n\n 3+ FS scatter symbols award 5 extra spins.\n\n SPECIAL SYMBOLS\n\n The Jumping Wild Multiplier symbols substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADES",
+        "behavior": "Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAMES AND SCATTER PAYOUT",
+        "trigger": "Landing 3+ FS scatter symbols at the same time in the base game triggers a bonus.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Landing 3+ FS scatter symbols at the same time in the base game triggers a bonus. \n\n When this happens you are also rewarded with a payout of x-amount times your bet depending on the number of FS scatter symbols:\n\n 3 FS scatter symbols award 5x your bet.\n\n 4 FS scatter symbols award 10x your bet.\n\n 5 FS scatter symbols award 25x your bet.\n\n 6 FS scatter symbols award 100x your bet.\n\n Scatter payouts do not occur in the bonus games."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADES",
+      "trigger": null,
+      "effects": "Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "CHEESE SYMBOL",
+      "trigger": null,
+      "effects": "When a cheese symbol is part of a winning cluster all the symbols except the FS and Wild multipliers will be removed from the grid and new ones will drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "JUMPING WILD MULTIPLIERS",
+      "trigger": null,
+      "effects": "Jumping Wild Multipliers jump to a new position after each cascade allowing for new possibilities to win. There are two kinds of multipliers, Normal and Epic.\n\n Normal Jumping Wild Multipliers start with a multiplier value of 1x and increase with +1x every time they jump.\n\n Epic Jumping Wild Multipliers start with a multiplier value of 10x and increase with +10x every time they jump.\n\n A maximum of 4 Jumping Wild Multipliers can be on the grid at any given time.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAMES AND SCATTER PAYOUT",
+      "trigger": "Landing 3+ FS scatter symbols at the same time in the base game triggers a bonus.",
+      "effects": "Landing 3+ FS scatter symbols at the same time in the base game triggers a bonus. \n\n When this happens you are also rewarded with a payout of x-amount times your bet depending on the number of FS scatter symbols:\n\n 3 FS scatter symbols award 5x your bet.\n\n 4 FS scatter symbols award 10x your bet.\n\n 5 FS scatter symbols award 25x your bet.\n\n 6 FS scatter symbols award 100x your bet.\n\n Scatter payouts do not occur in the bonus games.",
+      "params": {}
+    },
+    {
+      "name": "FROMAGE FRENZY",
+      "trigger": null,
+      "effects": "Activate this bonus game with 8 free spins by landing at least 3 FS scatter symbols at the same time during the base game.\n\n You start the bonus with 2 persistent Jumping Wild Multipliers of either type! Wild Multipliers values reset during each new spin. \n\n This bonus includes a Cheese Meter and your goal is to collect the cheese to fill the meter. \n\n The Cheese Meter is located at the top of the grid and shows the progress of collected cheese. Cheese symbols are collected when they are removed from the grid. When the meter is full you will upgrade to the next free spins bonus and be rewarded additional free spins.\n\n From this bonus you will be upgraded to TAKE IT CHEESY bonus and be rewarded 5 additional spins.\n\n Landing additional FS scatter symbols at the same time during the bonus game awards additional free spins:\n\n 3+ FS scatter symbols award 5 extra spins.",
+      "params": {}
+    },
+    {
+      "name": "TAKE IT CHEESY",
+      "trigger": null,
+      "effects": "Activate this bonus game with 10 free spins by landing at least 4 FS scatter symbols at the same time during the base game.\n\n You start the bonus with 3 persistent Jumping Wild Multipliers of either type! Wild Multipliers values reset during each new spin. \n\n This bonus also includes the Cheese Meter (see FROMAGE FRENZY for details).\n\n From this bonus you will be upgraded to LIFE'S SO GOUDA bonus and be rewarded 5 additional spins.\n\n Landing additional FS scatter symbols at the same time during the bonus game awards additional free spins:\n\n 3+ FS scatter symbols award 5 extra spins.",
+      "params": {}
+    },
+    {
+      "name": "LIFE'S SO GOUDA",
+      "trigger": null,
+      "effects": "Activate this bonus game with 12 free spins by landing at least 5 FS scatter symbols at the same time during the base game.\n\n You start the bonus with 4 persistent Jumping Wild Multipliers where at least one is guaranteed to be an Epic Jumping Wild Multiplier!\n\n In this bonus, Wild Multipliers values do NOT reset during each new spin.\n\n Landing additional FS scatter symbols at the same time during the bonus game awards additional free spins:\n\n 3+ FS scatter symbols award 5 extra spins.\n\n SPECIAL SYMBOLS\n\n The Jumping Wild Multiplier symbols substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "wild_mouse_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "fromage_frenzy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "take_it_cheesy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1580/1.32.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/get-the-cheese/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n SUPER CASCADES\n\n Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces.\n\n CHEESE SYMBOL\n\n When a cheese symbol is part of a winning cluster all the symbols except the FS and Wild multipliers will be removed from the grid and new ones will drop down to fill the empty spaces.\n\n JUMPING WILD MULTIPLIERS\n\n Jumping Wild Multipliers jump to a new position after each cascade allowing for new possibilities to win. There are two kinds of mu"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

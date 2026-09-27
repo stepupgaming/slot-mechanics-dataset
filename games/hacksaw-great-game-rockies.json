@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Great Game Rockies",
+    "slug": "hacksaw-great-game-rockies",
+    "provider_game_id": "2303",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2303&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2303/1.25.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 17,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 17. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "HUNTING SEASON",
+        "behavior": "When a Hunting Season symbol lands on the grid, a Hunt is triggered after all regular wins are handled. One target is located above each reel. Five shots are fired from left to right that will either hit or miss the target.\n\n Any Animal symbols on the reels that are hit are transformed into Coin or Trap symbols. Animal symbols display between 1 and 4 Stars, which determines the minimum currency revealed.\n\n 1 Star Animal symbols grant a minimum of Bronze Coins.\n\n 2 Star Animal symbols grant a minimum of Silver Coins.\n\n 3 Star Animal symbols grant a minimum of Gold Coins.\n\n 4 Star Animal symbols transform into a Trap symbol with a minimum value equal to Gold Coins.\n\n All Coins are awarded as a multiple of your bet amount.\n\n Bronze Coins have the following starting values: 0.2x, 0.4x, 0.6x, 0.8x, 1x\n\n Silver Coins have the following starting values: 2x, 3x, 4x, 5x\n\n Gold Coins have the following starting values: 10x, 15x, 20x, 25x, 50x\n\n Diamond Coins have the following starting values: 100x, 150x, 250x, 500x\n\n During a Hunt, when a 4 Star Animal symbol appears on a reel that is shot, that symbol will transform into a Trap symbol with a value. Trap symbols collect the values of all Coins and other Trap symbols and add the collected values to its existing Trap value. All collected symbols retain their original values when collected by a Trap symbol. Trap symbols activate top to bottom, left to right. The final win is the total value of all Coins and Trap symbols.\n\n If there is a Wild symbol on a reel that has been shot, that Wild symbol receives a Multiplier value. After all Coins and Trap symbols are collected each Wild symbol with a Multiplier multiplies between 1 and 5 Coin and Trap symbols. Wild symbols with Multipliers activate top to bottom, left to right. Wild symbols with Multipliers can have the following Multiplicative Multiplier values: x2, x3, x4, x5, x10, x20.\n\n Only one Hunting Season symbol can land on the grid at a time.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - TROPHY HUNTING",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics from the FREE BIRD bonus. In addition, a Hunting Season symbol is guaranteed to land on every free spin.\n\n FS symbols cannot land in this bonus.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - COUNTRY STRONG",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics with an increased chance of landing Hunting Season symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins"
+      },
+      {
+        "name": "BONUS GAME - FREE BIRD",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics. In addition, when an Animal symbol is part of a regular win, that Animal symbol will gain another Star. The added Star takes effect immediately and is progressive, lasting for the rest of the bonus or until the Animal symbol gains another Star. 4 Star Animal symbols gain the Trap symbol transformation during a Hunt. Each Animal symbol can only gain one Star per spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "HUNTING SEASON",
+      "trigger": null,
+      "effects": "When a Hunting Season symbol lands on the grid, a Hunt is triggered after all regular wins are handled. One target is located above each reel. Five shots are fired from left to right that will either hit or miss the target.\n\n Any Animal symbols on the reels that are hit are transformed into Coin or Trap symbols. Animal symbols display between 1 and 4 Stars, which determines the minimum currency revealed.\n\n 1 Star Animal symbols grant a minimum of Bronze Coins.\n\n 2 Star Animal symbols grant a minimum of Silver Coins.\n\n 3 Star Animal symbols grant a minimum of Gold Coins.\n\n 4 Star Animal symbols transform into a Trap symbol with a minimum value equal to Gold Coins.\n\n All Coins are awarded as a multiple of your bet amount.\n\n Bronze Coins have the following starting values: 0.2x, 0.4x, 0.6x, 0.8x, 1x\n\n Silver Coins have the following starting values: 2x, 3x, 4x, 5x\n\n Gold Coins have the following starting values: 10x, 15x, 20x, 25x, 50x\n\n Diamond Coins have the following starting values: 100x, 150x, 250x, 500x\n\n During a Hunt, when a 4 Star Animal symbol appears on a reel that is shot, that symbol will transform into a Trap symbol with a value. Trap symbols collect the values of all Coins and other Trap symbols and add the collected values to its existing Trap value. All collected symbols retain their original values when collected by a Trap symbol. Trap symbols activate top to bottom, left to right. The final win is the total value of all Coins and Trap symbols.\n\n If there is a Wild symbol on a reel that has been shot, that Wild symbol receives a Multiplier value. After all Coins and Trap symbols are collected each Wild symbol with a Multiplier multiplies between 1 and 5 Coin and Trap symbols. Wild symbols with Multipliers activate top to bottom, left to right. Wild symbols with Multipliers can have the following Multiplicative Multiplier values: x2, x3, x4, x5, x10, x20.\n\n Only one Hunting Season symbol can land on the grid at a time.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - COUNTRY STRONG",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics with an increased chance of landing Hunting Season symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - FREE BIRD",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics. In addition, when an Animal symbol is part of a regular win, that Animal symbol will gain another Star. The added Star takes effect immediately and is progressive, lasting for the rest of the bonus or until the Animal symbol gains another Star. 4 Star Animal symbols gain the Trap symbol transformation during a Hunt. Each Animal symbol can only gain one Star per spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - TROPHY HUNTING",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics from the FREE BIRD bonus. In addition, a Hunting Season symbol is guaranteed to land on every free spin.\n\n FS symbols cannot land in this bonus.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "wild_hunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "country_strong_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_bird_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2303/1.25.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/great-game-rockies/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n He’s up in the morning, yawning, with the coffee pot on. The Huntsman sets out, the air crisp and cool at the break of dawn. Perched in the pines, rifle in hand, scope set, prey in sight. Exhale. Pull the trigger. Join the Hunt in Great Game Rockies. A 5-reel, 3-row game with paylines and a max win of {maximumWinMultiplier} times your bet amount, achievable in all game modes. Looks like meat's back on the menu!\n\n FEATURES\n\n HUNTING SEASON\n\n When a Hunting Season symbol lands on the grid, a Hunt is triggered after all regular wins are handled. One target is located above each r"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

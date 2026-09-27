@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Cup Heroes",
+    "slug": "hacksaw-cup-heroes",
+    "provider_game_id": "1542",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1542&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1542/1.26.9/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "PENALTY SHOOTOUT",
+        "behavior": "A landed VS symbol will expand if it will form part of a win once expanded. Once triggered, it will expand to cover the entire reel and display two opponents with different multipliers. A penalty shot will take place, and the winning character’s multiplier will be applied across the entire reel. At this point the entire reel also turns Wild.\n\n If more than one duel is part of the same winning combination the values will first be added together and then applied to the win amount. The possible multiplier values are 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x​​.\n\n If you land one VS symbol on each reel so that the whole grid is covered, the grid will be treated as entirely Wild.\n\n Only 1 VS symbol can land on each reel at the same time.",
+        "params": {}
+      },
+      {
+        "name": "GOLDEN GOAL BONUS",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to activate the GOLDEN GOAL BONUS feature with 10 free spins!\n\n This bonus maintains the mechanics of the base game. On top of that, a VS symbol is guaranteed to land on every spin.\n\n SPECIAL SYMBOLS\n\n The WILD symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "OVERTIME BONUS",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to activate the OVERTIME BONUS feature with 10 free spins! In this feature there is a higher chance of landing a VS symbol!",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "PENALTY SHOOTOUT",
+      "trigger": null,
+      "effects": "A landed VS symbol will expand if it will form part of a win once expanded. Once triggered, it will expand to cover the entire reel and display two opponents with different multipliers. A penalty shot will take place, and the winning character’s multiplier will be applied across the entire reel. At this point the entire reel also turns Wild.\n\n If more than one duel is part of the same winning combination the values will first be added together and then applied to the win amount. The possible multiplier values are 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x​​.\n\n If you land one VS symbol on each reel so that the whole grid is covered, the grid will be treated as entirely Wild.\n\n Only 1 VS symbol can land on each reel at the same time.",
+      "params": {}
+    },
+    {
+      "name": "OVERTIME BONUS",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the OVERTIME BONUS feature with 10 free spins! In this feature there is a higher chance of landing a VS symbol!",
+      "params": {}
+    },
+    {
+      "name": "GOLDEN GOAL BONUS",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the GOLDEN GOAL BONUS feature with 10 free spins!\n\n This bonus maintains the mechanics of the base game. On top of that, a VS symbol is guaranteed to land on every spin.\n\n SPECIAL SYMBOLS\n\n The WILD symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "goal_rush_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "overtime_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "golden_goal_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1542/1.26.9/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/cup-heroes/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Do you and your team have what it takes to become true champions? Come and find out in Cup Heroes, a 5-reel, 5-row game with payline wins and the Penalty Shootout mechanic. The max win of 12,500 times your bet can be achieved in all game modes.\n\n FEATURES\n\n PENALTY SHOOTOUT\n\n A landed VS symbol will expand if it will form part of a win once expanded. Once triggered, it will expand to cover the entire reel and display two opponents with different multipliers. A penalty shot will take place, and the winning character’s multiplier will be applied across the entire reel. At this p"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

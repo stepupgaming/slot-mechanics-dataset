@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Twisted Lab RotoGrid",
+    "slug": "hacksaw-twisted-lab-rotogrid",
+    "provider_game_id": "1514",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1514&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1514/1.16.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "OOZING BEAKERS",
+        "behavior": "When the RotoGrid™ symbol causes the grid to rotate, any Oozing Beakers on the grid will break and spill their Oozing content to the bottom of the grid. All positions that are covered by the Ooze will become wild symbols that substitute for all symbols in the paytable.\n\n Purple Oozing Beakers do not contain multiplier values.\n\n Possible values for Blue Oozing Beakers adding multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Possible values for Pink Oozing Beakers multiplying multiplier values: x2, x3, x4, x5, x10\n\n If Ooze spills to cover previous Ooze, the multiplier values will be added together and the result will be applied to all Oozing positions on that reel. If Blue Ooze is combined with Pink Ooze, their multipliers will be added together and the resulting Green Ooze multiplier will become multiplying.\n\n If Blue or Pink Ooze is combined with Purple Ooze, the multiplier from the Pink or Blue Ooze will be applied to the whole combined Ooze area on that reel.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "UNLEASH THE OOZE!",
+        "behavior": "Activate this bonus feature with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n Throughout this bonus, there is an increased chance of landing RotoGrid™ symbols, FS symbols and Oozing Beakers!",
+        "params": {}
+      },
+      {
+        "name": "THE TWIST OF THE TWISTED!",
+        "behavior": "Activate this bonus feature with 3 lives by landing 4 FS scatter symbols at the same time during the base game.\n\n In the bonus, the game transforms and only Blue Twisters, Pink Twisters, Collect symbols, RotoGrid™ symbols and non-paying symbols will appear!\n\n The following symbols are non-paying:\n\n Four multiplier values are displayed on each Twister. The value at the top of the symbol is the current value of the multiplier. When the grid rotates, the value that moves to the top of the symbol becomes the new current value.\n\n Possible values for Blue Twister adding multipliers are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 1000x\n\n Possible values for Pink Twister multipliers are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 1000x, x2, x3, x4, x5, x10\n\n Blue Twisters will rotate with the grid when a RotoGrid™ symbol has landed. Pink Twisters will rotate on every new free spin, and will rotate an additional time with the grid if a RotoGrid™ symbol has landed.\n\n Throughout the feature there is a chance to land the Collector symbol. When this symbol has landed, it will activate at the end of the current freespin. When activated, the Collector symbol will collect the multiplier values of all Twisters on the grid.\n\n All Twisters will stay on the grid until they are either collected by a Collector symbol, or until the end of the feature.\n\n The Bonus has 3 refilling lives that reset each time Twisters or Collector symbols land. Each life represents one free spin. Once all 3 lives are consumed without a new reset, the bonus feature ends.\n\n At the end of the bonus feature, the current Twister and Collector symbols on the grid are added or multiplied together depending on the value of the symbol. Symbol values will be added or multiplied together from top to bottom, one reel at a time from left to right. If the first symbol value is a multiplying multiplier, it will be treated as an adding multiplier instead. The resulting value is multiplied by your bet to give ",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "ROTOGRID™",
+        "behavior": "The RotoGrid™ symbol can land on the grid, charged with 1 to 4 ninety-degree clockwise rotations. Each charge will cause the entire grid to rotate by 90 degrees, creating even more opportunities to achieve payline wins! The wins from the initial drop will be calculated and collected before the RotoGrid™ symbol activates.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "ROTOGRID™",
+      "trigger": null,
+      "effects": "The RotoGrid™ symbol can land on the grid, charged with 1 to 4 ninety-degree clockwise rotations. Each charge will cause the entire grid to rotate by 90 degrees, creating even more opportunities to achieve payline wins! The wins from the initial drop will be calculated and collected before the RotoGrid™ symbol activates.",
+      "params": {}
+    },
+    {
+      "name": "OOZING BEAKERS",
+      "trigger": null,
+      "effects": "When the RotoGrid™ symbol causes the grid to rotate, any Oozing Beakers on the grid will break and spill their Oozing content to the bottom of the grid. All positions that are covered by the Ooze will become wild symbols that substitute for all symbols in the paytable.\n\n Purple Oozing Beakers do not contain multiplier values.\n\n Possible values for Blue Oozing Beakers adding multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Possible values for Pink Oozing Beakers multiplying multiplier values: x2, x3, x4, x5, x10\n\n If Ooze spills to cover previous Ooze, the multiplier values will be added together and the result will be applied to all Oozing positions on that reel. If Blue Ooze is combined with Pink Ooze, their multipliers will be added together and the resulting Green Ooze multiplier will become multiplying.\n\n If Blue or Pink Ooze is combined with Purple Ooze, the multiplier from the Pink or Blue Ooze will be applied to the whole combined Ooze area on that reel.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "UNLEASH THE OOZE!",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n Throughout this bonus, there is an increased chance of landing RotoGrid™ symbols, FS symbols and Oozing Beakers!",
+      "params": {}
+    },
+    {
+      "name": "THE TWIST OF THE TWISTED!",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 3 lives by landing 4 FS scatter symbols at the same time during the base game.\n\n In the bonus, the game transforms and only Blue Twisters, Pink Twisters, Collect symbols, RotoGrid™ symbols and non-paying symbols will appear!\n\n The following symbols are non-paying:\n\n Four multiplier values are displayed on each Twister. The value at the top of the symbol is the current value of the multiplier. When the grid rotates, the value that moves to the top of the symbol becomes the new current value.\n\n Possible values for Blue Twister adding multipliers are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 1000x\n\n Possible values for Pink Twister multipliers are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 1000x, x2, x3, x4, x5, x10\n\n Blue Twisters will rotate with the grid when a RotoGrid™ symbol has landed. Pink Twisters will rotate on every new free spin, and will rotate an additional time with the grid if a RotoGrid™ symbol has landed.\n\n Throughout the feature there is a chance to land the Collector symbol. When this symbol has landed, it will activate at the end of the current freespin. When activated, the Collector symbol will collect the multiplier values of all Twisters on the grid.\n\n All Twisters will stay on the grid until they are either collected by a Collector symbol, or until the end of the feature.\n\n The Bonus has 3 refilling lives that reset each time Twisters or Collector symbols land. Each life represents one free spin. Once all 3 lives are consumed without a new reset, the bonus feature ends.\n\n At the end of the bonus feature, the current Twister and Collector symbols on the grid are added or multiplied together depending on the value of the symbol. Symbol values will be added or multiplied together from top to bottom, one reel at a time from left to right. If the first symbol value is a multiplying multiplier, it will be treated as an adding multiplier instead. The resulting value is multiplied by your bet to give ",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rotogrid_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "oozing_rotogrid_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "unleash_the_ooze_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "the_twist_of_the_twisted_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1514/1.16.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/twisted-lab-rotogrid/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n ROTOGRID™\n\n The RotoGrid™ symbol can land on the grid, charged with 1 to 4 ninety-degree clockwise rotations. Each charge will cause the entire grid to rotate by 90 degrees, creating even more opportunities to achieve payline wins! The wins from the initial drop will be calculated and collected before the RotoGrid™ symbol activates.\n\n OOZING BEAKERS\n\n When the RotoGrid™ symbol causes the grid to rotate, any Oozing Beakers on the grid will break and spill their Oozing content to the bottom of the grid. All positions that are covered by the Ooze will become wild symbols that substitut"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

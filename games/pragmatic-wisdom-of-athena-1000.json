@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:43:58Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Wisdom of Athena 1000",
+    "slug": "pragmatic-wisdom-of-athena-1000",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://yesplay.bet/assets/documents/pragmatic-play-Wisdom-of-Athena-1000-rules.pdf"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Grid 6x5 mentioned in rules"
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 8,
+    "direction": "anywhere",
+    "notes": "Symbols pay anywhere per official GAME RULES"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "TUMBLE FEATURE\n The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. The remaining symbols fall to the bottom of the screen and the empty positions\n are replaced with symbols coming from above.\nTumbling will continue until no more winning combinations appear as a result of a tumble. There's no limit to the\n number of possible tumbles.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "This is the SCATTER symbol.\n 6 - 2000 SCATTER symbol is present on all reels.\n 5 - 300 SCATTER pays on any position in the base game.\n 4 - 40 It does not explode as part of tumbles and remains on the\n screen until the end of all tumbles resulted from the same spin.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "FREE SPINS RULES\n The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.\n The round starts with 10 free spins.\nThe FREE SPINS round starts with the locked row fully locked. Every tumble that happens during the FREE SPINS\n round counts towards the unlocks. Once unlocked, positions remain like that until the end of the round.\nDuring the FREE SPINS round, whenever a MULTIPLIER symbol hits, the MULTIPLIER value gets added to the total\n multiplier. For the whole duration of the round, the total multiplier is used to multiply any win.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n Special reels are in play during the feature.\n\f MAX WIN\n The maximum win amount is limited to 10,000x bet. If the total win of a round reaches 10,000x\n bet the round immediately ends, win is awarded and all remaining features are forfeited.",
+        "params": {
+          "multiplier_values_mentioned": [
+            0
+          ]
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "MULTIPLIER",
+        "behavior": "These are the multiplier symbols. They are present on all reels and can hit randomly during\n spins and tumbles in both base game and FREE SPINS.\nWhenever a MULTIPLIER symbol hits, it takes a random multiplier value of 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 15x, 20x,\n 25x, 30x, 40x, 50x, 60x, 80x, 100x, 150x, 200x, 300x, 400x, 500x or 1000x.\n When the tumbling sequence ends, the values of all MULTIPLIER symbols on the screen are added\n together and the total win of the sequence is multiplied by the final value.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            10,
+            12,
+            15,
+            20,
+            25,
+            30,
+            40,
+            50,
+            60,
+            80,
+            100,
+            150,
+            200,
+            300,
+            400,
+            500,
+            1000
+          ]
+        }
+      },
+      {
+        "name": "MULTIPLIER",
+        "behavior": "FREE SPINS RULES\n The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.\n The round starts with 10 free spins.\nThe FREE SPINS round starts with the locked row fully locked. Every tumble that happens during the FREE SPINS\n round counts towards the unlocks. Once unlocked, positions remain like that until the end of the round.\nDuring the FREE SPINS round, whenever a MULTIPLIER symbol hits, the MULTIPLIER value gets added to the total\n multiplier. For the whole duration of the round, the total multiplier is used to multiply any win.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n Special reels are in play during the feature.\n\f MAX WIN\n The maximum win amount is limited to 10,000x bet. If the total win of a round reaches 10,000x\n bet the round immediately ends, win is awarded and all remaining features are forfeited.",
+        "params": {
+          "multiplier_values_mentioned": [
+            0
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.",
+        "spins_awarded": "starts with 10 free spins.",
+        "retrigger": "uring the FREE SPINS ROUND, 5 additional free spins are awarded.",
+        "sticky_or_persistent_state": "Persistent/sticky state described in effects",
+        "progressive_state": "Progressive multiplier/collection described in effects",
+        "effects": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.\n The round starts with 10 free spins.\nThe FREE SPINS round starts with the locked row fully locked. Every tumble that happens during the FREE SPINS\n round counts towards the unlocks. Once unlocked, positions remain like that until the end of the round.\nDuring the FREE SPINS round, whenever a MULTIPLIER symbol hits, the MULTIPLIER value gets added to the total\n multiplier. For the whole duration of the round, the total multiplier is used to multiply any win.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n Special reels are in play during the feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.",
+      "effects": "The FREE SPINS FEATURE is awarded when 4 or more SCATTER symbols hit anywhere on the screen.\n The round starts with 10 free spins.\nThe FREE SPINS round starts with the locked row fully locked. Every tumble that happens during the FREE SPINS\n round counts towards the unlocks. Once unlocked, positions remain like that until the end of the round.\nDuring the FREE SPINS round, whenever a MULTIPLIER symbol hits, the MULTIPLIER value gets added to the total\n multiplier. For the whole duration of the round, the total multiplier is used to multiply any win.\n Whenever 3 or more SCATTER symbols hit during the FREE SPINS ROUND, 5 additional free spins are awarded.\n Special reels are in play during the feature.",
+      "params": {}
+    },
+    {
+      "name": "Tumble Feature",
+      "trigger": null,
+      "effects": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning\n symbols disappear. The remaining symbols fall to the bottom of the screen and the empty positions\n are replaced with symbols coming from above.\nTumbling will continue until no more winning combinations appear as a result of a tumble. There's no limit to the\n number of possible tumbles.\n All wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.\n\n The game has a locked row of symbols on top of the basic 6x5 grid. Subsequent tumbles resulted from the\n same spin can unlock positions one by one, from left to right. Once unlocked, the new positions contain\n symbols and are part of the game grid until the end of all tumbles resulted from the current spin.\n Unlocks happen as follows:\n After the first tumble the position on top of reel 1 unlocks.\n After 3 more tumbles the position on reel 2 unlocks.\n After 6 more tumbles the position on reel 3 unlocks.\n After 9 more tumbles the position on reel 4 unlocks.\n After 12 more tumbles the position on reel 5 unlocks.\n After 15 more tumbles the position on reel 6 unlocks.\n\n These are the multiplier symbols. They are present on all reels and can hit randomly during\n spins and tumbles in both base game and FREE SPINS.\nWhenever a MULTIPLIER symbol hits, it takes a random multiplier value of 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 15x, 20x,\n 25x, 30x, 40x, 50x, 60x, 80x, 100x, 150x, 200x, 300x, 400x, 500x or 1000x.\n When the tumbling sequence ends, the values of all MULTIPLIER symbols on the screen are added\n together and the total win of the sequence is multiplied by the final value.",
+      "params": {}
+    },
+    {
+      "name": "Ante Bet",
+      "trigger": null,
+      "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 25x - the chance to win the FREE SPINS round naturally is higher. More SCATTER symbols are\n present on the reels. The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+      "params": {}
+    },
+    {
+      "name": "Buy Free Spins",
+      "trigger": null,
+      "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it for 100x current total bet.\n When buying the FREE SPINS round, on the triggering spin 4, 5 or 6 SCATTERS can hit randomly.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Buy Free Spins",
+        "cost_multiplier": 100.0,
+        "cost_text": "buying it for 100x",
+        "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it for 100x current total bet.\n When buying the FREE SPINS round, on the triggering spin 4, 5 or 6 SCATTERS can hit randomly.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 1.25,
+    "effects": "The player has the option to select the bet multiplier. Depending on the selected bet, the game behaves differently.\n The possible values are:\n Bet multiplier 25x - the chance to win the FREE SPINS round naturally is higher. More SCATTER symbols are\n present on the reels. The BUY FREE SPINS feature is disabled.\n Bet multiplier 20x - Normal play.",
+    "notes": "Inferred from official ante: 25x bet multiplier vs 20x normal (=1.25x total bet cost)"
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "maximum win amount is limited to 10,000x bet",
+    "rtp_percent": 96.0,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.0%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://yesplay.bet/assets/documents/pragmatic-play-Wisdom-of-Athena-1000-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Wisdom-of-Athena-1000.pdf",
+      "extracted_at": "2026-09-27T04:43:58Z",
+      "quote_or_excerpt": "GAME RULES\n Symbols pay anywhere on the screen. The total number of the same symbol on the screen at the\n end of a spin determines the value of the win.\n\n 15 - 30 1000 15 - 30 500 15 - 30 300 15 - 30 200\n 12 - 14 400 12 - 14 200 12 - 14 120 12 - 14 80\n 10 - 11 200 10 - 11 100 10 - 11 60 10 - 11 40\n 8 - 9 100 8 - 9 50 8 - 9 30 8 - 9 20\n\n 15 - 30 150 15 - 30 100 15 - 30 80 15 - 30 60 15 - 30 50\n 12 - 14 60 12 - 14 40 12 - 14 30 12 - 14 20 12 - 14 15\n 10 - 11 30 10 - 11 20 10 - 11 15 10 - 11 10 10 - 11 8\n 8 - 9 15 8 - 9 10 8-9 8 8-9 6 8-9 5\n\n This is the SCATTER symbol.\n 6 - 2000 SCATTER symbol is present on all reels.\n 5 - 300 SCATTER pays on any position in the base game.\n 4 - 40 It does not "
+    }
+  ],
+  "unknowns": []
+}

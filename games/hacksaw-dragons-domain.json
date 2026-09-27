@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Dragon’s Domain",
+    "slug": "hacksaw-dragons-domain",
+    "provider_game_id": "1360",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1360&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1360/1.18.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Charred Land symbols are Wild multipliers that have 3 charges when they land.\n\n After a Charred Land symbol is part of one or more wins it loses a charge before the next cascade. Each time that a symbol cascade occurs, every Charred Land currently on the grid has its multiplier value increased by 1.\n\n If more than one Charred Land is part of a win, their values are added together before being applied to the win.\n\n Charred Land multipliers can land with one of the following values: 2x, 3x, 4x, 5x, 10x."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "CHARRED LAND",
+        "behavior": "Charred Land symbols are Wild multipliers that have 3 charges when they land.\n\n After a Charred Land symbol is part of one or more wins it loses a charge before the next cascade. Each time that a symbol cascade occurs, every Charred Land currently on the grid has its multiplier value increased by 1.\n\n If more than one Charred Land is part of a win, their values are added together before being applied to the win.\n\n Charred Land multipliers can land with one of the following values: 2x, 3x, 4x, 5x, 10x.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "DRAGON SYMBOLS AND DRAGONFIRE",
+        "behavior": "Dragon symbols on the grid will activate once the grid is fully settled and no more wins occur, breathing Dragonfire in a cross-pattern from its position. All regular paying symbols hit by the Dragonfire will be removed from the grid. If Dragonfire hits any Charred Land symbols, the charges on those Charred Land symbols will be refilled.\n\n Dragon symbols come in two different colors: Red and Gold.\n\n Gold Dragon symbols will have a multiplier from one of the following values: x2, x3, x4, x5, x10.\n\n Whenever a Charred Land symbol is hit by Dragonfire from a Gold Dragon, its multiplier is multiplied by the value on the Gold Dragon.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "DRAGON'S LAIR BONUS GAME",
+        "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate a DRAGON’S LAIR bonus feature with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Land 3 FS scatter symbols at the same time in the base game to activate a DRAGON’S LAIR bonus feature with 10 free spins.\n\n In this feature, all Charred Land multipliers are persistent between free spins as long as they have charges left.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins.\n\n 3 FS symbols awards 4 additional spins."
+      },
+      {
+        "name": "THE HATCHERY BONUS GAME",
+        "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate a THE HATCHERY bonus feature with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Land 4 FS scatter symbols at the same time in the base game to activate a THE HATCHERY bonus feature with 10 free spins.\n\n During this feature, only non-paying symbols, Dragon Egg and Dragon symbols appear.\n\n Dragon Eggs are cash prizes based on your current bet. They are collected when hit by Dragonfire.\n\n Any non-paying symbols hit by Dragonfire will be removed and trigger a cascade.\n\n There are 3 types of Dragon Eggs: Green, Red, and Golden Eggs.\n\n Green Eggs can have the following values: 1, 2, 5, 10.\n\n Red Eggs can have the following values: 20, 30, 40.\n\n Golden Eggs can have the following values: 50, 100, 200.\n\n Whenever a Dragon Egg symbol is hit by Dragonfire from a Gold Dragon, the egg’s value is multiplied by the value on the Gold Dragon.\n\n The value of each collected Dragon Egg will be multiplied by your bet to determine the final awarded amount.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins.\n\n 3 FS symbols awards 4 additional spins.\n\n SPECIAL SYMBOLS\n\n Charred Land symbols substitute for all symbols in the paytable.\n\n Dragon Egg symbols only appear in THE HATCHERY bonus game."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "CHARRED LAND",
+      "trigger": null,
+      "effects": "Charred Land symbols are Wild multipliers that have 3 charges when they land.\n\n After a Charred Land symbol is part of one or more wins it loses a charge before the next cascade. Each time that a symbol cascade occurs, every Charred Land currently on the grid has its multiplier value increased by 1.\n\n If more than one Charred Land is part of a win, their values are added together before being applied to the win.\n\n Charred Land multipliers can land with one of the following values: 2x, 3x, 4x, 5x, 10x.",
+      "params": {}
+    },
+    {
+      "name": "DRAGON SYMBOLS AND DRAGONFIRE",
+      "trigger": null,
+      "effects": "Dragon symbols on the grid will activate once the grid is fully settled and no more wins occur, breathing Dragonfire in a cross-pattern from its position. All regular paying symbols hit by the Dragonfire will be removed from the grid. If Dragonfire hits any Charred Land symbols, the charges on those Charred Land symbols will be refilled.\n\n Dragon symbols come in two different colors: Red and Gold.\n\n Gold Dragon symbols will have a multiplier from one of the following values: x2, x3, x4, x5, x10.\n\n Whenever a Charred Land symbol is hit by Dragonfire from a Gold Dragon, its multiplier is multiplied by the value on the Gold Dragon.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "DRAGON'S LAIR BONUS GAME",
+      "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate a DRAGON’S LAIR bonus feature with 10 free spins.",
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate a DRAGON’S LAIR bonus feature with 10 free spins.\n\n In this feature, all Charred Land multipliers are persistent between free spins as long as they have charges left.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins.\n\n 3 FS symbols awards 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "THE HATCHERY BONUS GAME",
+      "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate a THE HATCHERY bonus feature with 10 free spins.",
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate a THE HATCHERY bonus feature with 10 free spins.\n\n During this feature, only non-paying symbols, Dragon Egg and Dragon symbols appear.\n\n Dragon Eggs are cash prizes based on your current bet. They are collected when hit by Dragonfire.\n\n Any non-paying symbols hit by Dragonfire will be removed and trigger a cascade.\n\n There are 3 types of Dragon Eggs: Green, Red, and Golden Eggs.\n\n Green Eggs can have the following values: 1, 2, 5, 10.\n\n Red Eggs can have the following values: 20, 30, 40.\n\n Golden Eggs can have the following values: 50, 100, 200.\n\n Whenever a Dragon Egg symbol is hit by Dragonfire from a Gold Dragon, the egg’s value is multiplied by the value on the Gold Dragon.\n\n The value of each collected Dragon Egg will be multiplied by your bet to determine the final awarded amount.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins.\n\n 3 FS symbols awards 4 additional spins.\n\n SPECIAL SYMBOLS\n\n Charred Land symbols substitute for all symbols in the paytable.\n\n Dragon Egg symbols only appear in THE HATCHERY bonus game.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "scorched_earth_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "dragons_lair_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "the_hatchery_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1360/1.18.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/dragons-domain/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n CHARRED LAND\n\n Charred Land symbols are Wild multipliers that have 3 charges when they land.\n\n After a Charred Land symbol is part of one or more wins it loses a charge before the next cascade. Each time that a symbol cascade occurs, every Charred Land currently on the grid has its multiplier value increased by 1.\n\n If more than one Charred Land is part of a win, their values are added together before being applied to the win.\n\n Charred Land multipliers can land with one of the following values: 2x, 3x, 4x, 5x, 10x.\n\n DRAGON SYMBOLS AND DRAGONFIRE\n\n Dragon symbols on the grid will a"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

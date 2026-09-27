@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Sand And Ashes",
+    "slug": "hacksaw-sand-and-ashes",
+    "provider_game_id": "2243",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2243&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2243/1.29.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "During a respin, there is a chance that a Sandstorm will be activated before any new symbols land on the grid.\n\n When a Sandstorm is active, no new symbols will land and the Sandstorm nudges all Wild Scarab Multipliers one reel to the left. Once the Wild Scarab Multipliers have been nudged, new symbols will land and the grid will settle. After the grid has settled, any new payline wins will be rewarded.\n\n Wild Scarab Multipliers cannot be nudged if they are located on the leftmost reel, or if the Wild Scarab Multipliers on the adjacent reel on the same row are blocked.\n\n Firestorms and Sandstorms cannot be activated during the same respin."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "FIRESTORMS",
+        "behavior": "During a respin, there is a chance that a Firestorm will be activated before any new symbols land on the grid. When a Firestorm is active, no new symbols will land and the Firestorm will randomly increase the Multiplier value of all the Wild Scarab Multipliers by adding one of the following Multiplier values to the existing Multipliers: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x.\n\n Once the Wild Scarab Multipliers have been increased, new symbols will land on the grid and any new payline wins will be rewarded. The Multiplier values of Wild Scarab Multipliers can continue to increase until they reach 999x.",
+        "params": {}
+      },
+      {
+        "name": "SANDSTORMS",
+        "behavior": "During a respin, there is a chance that a Sandstorm will be activated before any new symbols land on the grid.\n\n When a Sandstorm is active, no new symbols will land and the Sandstorm nudges all Wild Scarab Multipliers one reel to the left. Once the Wild Scarab Multipliers have been nudged, new symbols will land and the grid will settle. After the grid has settled, any new payline wins will be rewarded.\n\n Wild Scarab Multipliers cannot be nudged if they are located on the leftmost reel, or if the Wild Scarab Multipliers on the adjacent reel on the same row are blocked.\n\n Firestorms and Sandstorms cannot be activated during the same respin.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "WILD SCARAB MULTIPLIERS AND RESPINS",
+        "trigger": "After all regular wins have been handled, the landed Wild Scarab Multipliers will trigger a respin.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "The Wild Scarab Multiplier acts as a Wild, substituting for all paying symbols in the paytable. When a Wild Scarab Multiplier lands on the grid, it will have a Multiplier value. The Multiplier value of the Wild Scarab Multiplier will be applied to all wins that the symbol is part of.\n\n If a winning payline includes more than one Wild Scarab Multiplier, the Multiplier values are added together before being applied to the win. Wild Scarab Multipliers will land on the grid with one of the following additive Multiplier values: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 200x.\n\n After all regular wins have been handled, the landed Wild Scarab Multipliers will trigger a respin. During the respin, the Wild Scarab Multiplier will remain in the same grid position as it landed, while new symbols will spin in. If any new Wild Scarab Multiplier lands during a respin, a new respin will be triggered. The respins will continue until no new Wild Scarab Multipliers land or if there are no more available positions. Any new payline wins will be rewarded at the end of every respin."
+      },
+      {
+        "name": "BONUS GAME - DESERT FURY",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics, with an increased chance of landing Wild Scarab Multipliers.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins"
+      },
+      {
+        "name": "BONUS GAME - STORMING SPHINX",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus game with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n During this bonus game, there is no respin when a Wild Scarab Multiplier lands. Instead, Firestorms or Sandstorms can be activated during every free spin, and they have the same effects as in the base game.\n\n In addition, all Wild Scarab Multipliers that land are persistent, meaning that they will remain on the grid until the end of the bonus. The Wild Scarab Multipliers will keep their grid position until they are nudged by a Sandstorm. Wild Scarab Multipliers will keep their Multiplier value throughout the bonus, until it is increased by a Firestorm.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins\n\n SPECIAL SYMBOLS\n\n Wild Scarab Multipliers and FS symbols cannot be on the grid at the same time in the base game or DESERT FURY bonus."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD SCARAB MULTIPLIERS AND RESPINS",
+      "trigger": "After all regular wins have been handled, the landed Wild Scarab Multipliers will trigger a respin.",
+      "effects": "The Wild Scarab Multiplier acts as a Wild, substituting for all paying symbols in the paytable. When a Wild Scarab Multiplier lands on the grid, it will have a Multiplier value. The Multiplier value of the Wild Scarab Multiplier will be applied to all wins that the symbol is part of.\n\n If a winning payline includes more than one Wild Scarab Multiplier, the Multiplier values are added together before being applied to the win. Wild Scarab Multipliers will land on the grid with one of the following additive Multiplier values: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 200x.\n\n After all regular wins have been handled, the landed Wild Scarab Multipliers will trigger a respin. During the respin, the Wild Scarab Multiplier will remain in the same grid position as it landed, while new symbols will spin in. If any new Wild Scarab Multiplier lands during a respin, a new respin will be triggered. The respins will continue until no new Wild Scarab Multipliers land or if there are no more available positions. Any new payline wins will be rewarded at the end of every respin.",
+      "params": {}
+    },
+    {
+      "name": "FIRESTORMS",
+      "trigger": null,
+      "effects": "During a respin, there is a chance that a Firestorm will be activated before any new symbols land on the grid. When a Firestorm is active, no new symbols will land and the Firestorm will randomly increase the Multiplier value of all the Wild Scarab Multipliers by adding one of the following Multiplier values to the existing Multipliers: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x.\n\n Once the Wild Scarab Multipliers have been increased, new symbols will land on the grid and any new payline wins will be rewarded. The Multiplier values of Wild Scarab Multipliers can continue to increase until they reach 999x.",
+      "params": {}
+    },
+    {
+      "name": "SANDSTORMS",
+      "trigger": null,
+      "effects": "During a respin, there is a chance that a Sandstorm will be activated before any new symbols land on the grid.\n\n When a Sandstorm is active, no new symbols will land and the Sandstorm nudges all Wild Scarab Multipliers one reel to the left. Once the Wild Scarab Multipliers have been nudged, new symbols will land and the grid will settle. After the grid has settled, any new payline wins will be rewarded.\n\n Wild Scarab Multipliers cannot be nudged if they are located on the leftmost reel, or if the Wild Scarab Multipliers on the adjacent reel on the same row are blocked.\n\n Firestorms and Sandstorms cannot be activated during the same respin.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - DESERT FURY",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics, with an increased chance of landing Wild Scarab Multipliers.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - STORMING SPHINX",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus game with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n During this bonus game, there is no respin when a Wild Scarab Multiplier lands. Instead, Firestorms or Sandstorms can be activated during every free spin, and they have the same effects as in the base game.\n\n In addition, all Wild Scarab Multipliers that land are persistent, meaning that they will remain on the grid until the end of the bonus. The Wild Scarab Multipliers will keep their grid position until they are nudged by a Sandstorm. Wild Scarab Multipliers will keep their Multiplier value throughout the bonus, until it is increased by a Firestorm.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3 FS symbols award +4 free spins\n\n SPECIAL SYMBOLS\n\n Wild Scarab Multipliers and FS symbols cannot be on the grid at the same time in the base game or DESERT FURY bonus.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "pharaoh_phrenzy_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "desert_fury_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "storming_sphinx_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2243/1.29.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/sand-and-ashes/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Long forgotten tales say that there was only one person left standing when the dust settled in the desert…\n\n With the heart of a lion, the final protector of the Nile Kingdom still had one mission left before going to eternal rest. A threat to the realm is revealing itself on the horizon and the time has come to team up with the desert warrior in the eye of the storm to protect all the riches in the treasury from unwelcome visitors!\n\n Sand and Ashes is a 5-reel, 5-row game with payline wins. The max win of {maximumWinMultiplier} times your bet is available in all game modes!\n\n"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

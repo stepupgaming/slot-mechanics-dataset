@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Smoking Dragon",
+    "slug": "hacksaw-smoking-dragon",
+    "provider_game_id": "1981",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1981&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1981/1.17.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 1024. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When 3 Dragon Egg symbols land on the grid at the same time, they activate and an instant cash prize of 500x is awarded. After the awarded win, the Dragon Egg symbols will become inactive until the Cascades remove them from the grid. No more than 3 active Dragon Eggs can be on the grid at the same time."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD SYMBOLS",
+        "behavior": "When a Wild or Epic Wild symbol lands, it can be only Wild or also have one of the following Additive Multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n When a Wild or Epic Wild symbol with a Multiplier participates in a winning combination, the value of the win is multiplied by the Multiplier value. \n\n When an Epic Wild symbol is on the grid during a Row Cascade, the Multiplier will double its value on each Row Cascade sequence the symbol is a part of.\n\n If more than one Wild and/or Epic Wild symbols are part of the same winning combination, their multiplier values are added together before being applied to the win.",
+        "params": {}
+      },
+      {
+        "name": "EPIC BONUS - FIRE AND FORTUNE",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the SMOLDERING RICHES bonus. In addition, it features one guaranteed win and a Wild and/or Epic Wild on every spin, with the progressive Multiplier Bar starting at 5x.\n\n FS symbols cannot land during this bonus.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "ROW CASCADE",
+        "behavior": "When a winning combination occurs, all symbols on the bottom row are removed from the grid, and all symbols move down one row. New symbols then drop in to fill the empty spaces on the top row.\n\n A new Row Cascade sequence is triggered when the same win is present on the grid, the same win continues to grow, or new wins are created. When no more wins are present, the Row Cascade will end.",
+        "params": {}
+      },
+      {
+        "name": "DRAGON EGGS",
+        "behavior": "When 3 Dragon Egg symbols land on the grid at the same time, they activate and an instant cash prize of 500x is awarded. After the awarded win, the Dragon Egg symbols will become inactive until the Cascades remove them from the grid. No more than 3 active Dragon Eggs can be on the grid at the same time.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - PUFF OF LUCK",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics with an increased chance of landing Wild, Epic Wild, or Dragon Egg symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - SMOLDERING RICHES",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the PUFF OF LUCK bonus. In addition, a Multiplier Bar is located outside the grid, which indicates the lowest possible Multiplier value of all Wild and Epic Wild symbols that land on the grid. The Multiplier Bar starts with a minimum value of 1x. Each time 10 Row Cascades have been accumulated, the Multiplier Bar will increase by one level (up to the max level). The possible values on each level of the Multiplier Bar are 1x, 2x, 5x, 10x, 15x, 25x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "ROW CASCADE",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all symbols on the bottom row are removed from the grid, and all symbols move down one row. New symbols then drop in to fill the empty spaces on the top row.\n\n A new Row Cascade sequence is triggered when the same win is present on the grid, the same win continues to grow, or new wins are created. When no more wins are present, the Row Cascade will end.",
+      "params": {}
+    },
+    {
+      "name": "WILD SYMBOLS",
+      "trigger": null,
+      "effects": "When a Wild or Epic Wild symbol lands, it can be only Wild or also have one of the following Additive Multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n When a Wild or Epic Wild symbol with a Multiplier participates in a winning combination, the value of the win is multiplied by the Multiplier value. \n\n When an Epic Wild symbol is on the grid during a Row Cascade, the Multiplier will double its value on each Row Cascade sequence the symbol is a part of.\n\n If more than one Wild and/or Epic Wild symbols are part of the same winning combination, their multiplier values are added together before being applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "DRAGON EGGS",
+      "trigger": null,
+      "effects": "When 3 Dragon Egg symbols land on the grid at the same time, they activate and an instant cash prize of 500x is awarded. After the awarded win, the Dragon Egg symbols will become inactive until the Cascades remove them from the grid. No more than 3 active Dragon Eggs can be on the grid at the same time.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - PUFF OF LUCK",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics with an increased chance of landing Wild, Epic Wild, or Dragon Egg symbols!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SMOLDERING RICHES",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the PUFF OF LUCK bonus. In addition, a Multiplier Bar is located outside the grid, which indicates the lowest possible Multiplier value of all Wild and Epic Wild symbols that land on the grid. The Multiplier Bar starts with a minimum value of 1x. Each time 10 Row Cascades have been accumulated, the Multiplier Bar will increase by one level (up to the max level). The possible values on each level of the Multiplier Bar are 1x, 2x, 5x, 10x, 15x, 25x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "EPIC BONUS - FIRE AND FORTUNE",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the SMOLDERING RICHES bonus. In addition, it features one guaranteed win and a Wild and/or Epic Wild on every spin, with the progressive Multiplier Bar starting at 5x.\n\n FS symbols cannot land during this bonus.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "flaming_hot_featurespins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "puff_of_luck_featurespins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "smoldering_riches_featurespins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "fire_and_fortune_featurespins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1981/1.17.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/smoking-dragon/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Awakened from his long slumber, the Smoking Dragon has taken back the skies. With his pipe clutched between his claws, he blows clouds that decide whether the sun will rise or the night will linger a little longer. From dusk till dawn, the world bends to his will.\n\n Below, his treasure gleams—piles of gold, glittering jewels, and the rare golden dragon eggs. He spends his days counting, polishing, and admiring every piece—not because he has to, but because he loves it. So seeker, think you can tame him? Forge an unbreakable bond and celebrate the shared riches in this 5-reel, "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

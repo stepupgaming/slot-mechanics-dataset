@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Tasty Treats",
+    "slug": "hacksaw-tasty-treats",
+    "provider_game_id": "1113",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1113&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1113/1.16.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 6x5 grid in official About text"
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "anywhere",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "BUBBLE BOOSTERS",
+        "behavior": "Bubble Boosters is an exciting feature that consists of rising bubbles that will burst over the grid over a random position. The bubbles can be of different sizes and can contain both overlaying multipliers and wild symbols. If the multipliers land on a winning cluster the value will be multiplied by the win amount.\n\nEach spin or collapse has a random chance to trigger 1, 2, 3, 4 or 5 bubbles, each of size 1x1, 2x2 or 3x3. The bubbles can land partially outside the grid.\n\nThe smallest bubbles contain one feature symbol and cover one position on the grid once they burst. The biggest ones contain 9 feature symbols and can cover a 3x3 grid once they burst. The overlaying multipliers can have the values 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x or 100x.\nIf two or more multipliers land on the same position or on the same winning cluster, their values are first added and the total is then multiplied by the win amount.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "name": "Wild symbol",
+        "behavior": "The Wild symbol substitutes for all symbols except the free spin symbol. The Wild symbol can be dropped anywhere on the grid.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Monster hand",
+        "behavior": "The monster hands trigger randomly and remove symbols from the grid to make way for new ones. The monster takes all symbols either from the first three columns, the last three columns or all columns.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free spins",
+        "trigger": "Land three free spins symbols anywhere on the grid in the base game to trigger this feature.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land three free spins symbols anywhere on the grid in the base game to trigger this feature. Each FS symbol that lands on the grid will transform into a number. The total number of free spins is the sum of all the numbers. Each FS symbol can transform into 2, 3, 4 or 5 free spins. The total number of free spins you can win is between 6 and 15\n\nThis feature has more Bubble Boosters compared to the main game\n\nThere are also re-trigger free spin symbols in this feature that can appear anywhere on the grid to give you even more spins!"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "BUBBLE BOOSTERS",
+      "trigger": null,
+      "effects": "Bubble Boosters is an exciting feature that consists of rising bubbles that will burst over the grid over a random position. The bubbles can be of different sizes and can contain both overlaying multipliers and wild symbols. If the multipliers land on a winning cluster the value will be multiplied by the win amount.\n\nEach spin or collapse has a random chance to trigger 1, 2, 3, 4 or 5 bubbles, each of size 1x1, 2x2 or 3x3. The bubbles can land partially outside the grid.\n\nThe smallest bubbles contain one feature symbol and cover one position on the grid once they burst. The biggest ones contain 9 feature symbols and can cover a 3x3 grid once they burst. The overlaying multipliers can have the values 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x or 100x.\nIf two or more multipliers land on the same position or on the same winning cluster, their values are first added and the total is then multiplied by the win amount.",
+      "params": {
+        "multiplier_values_mentioned": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "Monster hand",
+      "trigger": null,
+      "effects": "The monster hands trigger randomly and remove symbols from the grid to make way for new ones. The monster takes all symbols either from the first three columns, the last three columns or all columns.",
+      "params": {}
+    },
+    {
+      "name": "Wild symbol",
+      "trigger": null,
+      "effects": "The Wild symbol substitutes for all symbols except the free spin symbol. The Wild symbol can be dropped anywhere on the grid.",
+      "params": {}
+    },
+    {
+      "name": "Free spins",
+      "trigger": "Land three free spins symbols anywhere on the grid in the base game to trigger this feature.",
+      "effects": "Land three free spins symbols anywhere on the grid in the base game to trigger this feature. Each FS symbol that lands on the grid will transform into a number. The total number of free spins is the sum of all the numbers. Each FS symbol can transform into 2, 3, 4 or 5 free spins. The total number of free spins you can win is between 6 and 15\n\nThis feature has more Bubble Boosters compared to the main game\n\nThere are also re-trigger free spin symbols in this feature that can appear anywhere on the grid to give you even more spins!",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "freespins_x10_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1113/1.16.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/tasty-treats/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT GAME\n\n Tasty Treats is a delicious treat themed game set in a mouth watering world. It features Bubble Boosters, which is a feature with bubbles containing overlaying multipliers and wild symbols. The game is cluster-win based, has a 6x5 grid and a max win of 10,000 times your bet.\n\n BUBBLE BOOSTERS\n\n Bubble Boosters is an exciting feature that consists of rising bubbles that will burst over the grid over a random position. The bubbles can be of different sizes and can contain both overlaying multipliers and wild symbols. If the multipliers land on a winning cluster the value will be mul"
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

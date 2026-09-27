@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Mines Supreme",
+    "slug": "hacksaw-mines-supreme",
+    "provider_game_id": "1913",
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1913/1.8.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n Pick at least one Diamond and collect the potential win.\n\n GENERAL"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "MULTIPLIERS",
+        "behavior": "Finding a Multiplier boosts your current collectable win! Multipliers can have one of the following values: 2x, 3x, 5x, 10x, 100x.\n\n Your current collectable win will be multiplied by the shown value. If you keep playing and find additional Diamonds, the win value of each Diamond is added to the new collectable win.\n\n Example: You have 1.5x as your collectable win. Finding a multiplier of 3x increases the collectable win to 4.5x. You pick another square and find a Diamond that adds an additional 0.5x to the collectable win for a total of 5x. (Numbers not indicative of real gameplay.)",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "SHIELDS",
+        "behavior": "Finding the Shield symbol gives you an active Shield that will defuse the next revealed Mine. This means that even after hitting a Mine, you can continue playing. Each Shield defuses only one Mine, then becomes inactive.\n\n If you have an active Shield, the COLLECT button will remain inactive until a Mine is defused and the Shield becomes inactive. You can collect your collectable win immediately after defusing the Mine, or you can continue playing. The Shield symbol can only appear if you are playing with at least 2 Mines on the grid. There are always fewer Shield symbols than Mines.",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "MAX WIN DIAMOND",
+        "behavior": "The elusive Max Win Diamond instantly awards the game’s max win of 10 000 times your bet or {maxExposure} (whichever is lower), and ends the current round.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SHIELDS",
+      "trigger": null,
+      "effects": "Finding the Shield symbol gives you an active Shield that will defuse the next revealed Mine. This means that even after hitting a Mine, you can continue playing. Each Shield defuses only one Mine, then becomes inactive.\n\n If you have an active Shield, the COLLECT button will remain inactive until a Mine is defused and the Shield becomes inactive. You can collect your collectable win immediately after defusing the Mine, or you can continue playing. The Shield symbol can only appear if you are playing with at least 2 Mines on the grid. There are always fewer Shield symbols than Mines.",
+      "params": {}
+    },
+    {
+      "name": "MULTIPLIERS",
+      "trigger": null,
+      "effects": "Finding a Multiplier boosts your current collectable win! Multipliers can have one of the following values: 2x, 3x, 5x, 10x, 100x.\n\n Your current collectable win will be multiplied by the shown value. If you keep playing and find additional Diamonds, the win value of each Diamond is added to the new collectable win.\n\n Example: You have 1.5x as your collectable win. Finding a multiplier of 3x increases the collectable win to 4.5x. You pick another square and find a Diamond that adds an additional 0.5x to the collectable win for a total of 5x. (Numbers not indicative of real gameplay.)",
+      "params": {}
+    },
+    {
+      "name": "MAX WIN DIAMOND",
+      "trigger": null,
+      "effects": "The elusive Max Win Diamond instantly awards the game’s max win of 10 000 times your bet or {maxExposure} (whichever is lower), and ends the current round.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": "No featureBuy section found"
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win in this game is 10 000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1913/1.8.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/mines-supreme/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n MINES SUPREME is the supreme version of the classic game, where the objective is to pick squares from a grid. Behind each square there can be either a Mine, a Diamond, a Shield, a Multiplier or the incredible Max Win Diamond! For each Diamond you find, your collectable win increases, but if you hit a Mine, you lose it all. You have to dare to win, and collect your win at the right time!\n\n Start a round by pressing BET and pick squares until you are happy with the win, and then collect it - or until you hit a Mine and the round ends. If there are no more squares to pick, the wi"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Bandit Miami Hustle",
+    "slug": "hacksaw-le-bandit-miami-hustle",
+    "provider_game_id": "2242",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2242&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2242/1.1.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "LUCK OF THE BANDIT",
+        "behavior": "Activate this bonus game with 8 free spins by landing 3 FS scatter symbols at the same time in the base game.\n\n In this bonus all Marked Squares remain highlighted between spins until they are activated by the Rainbow symbol.\n\n Landing additional FS symbols at the same time in the bonus game awards extra free spins: 2 FS awards +2 free spins, 3 FS awards +4 free spins.\n\n Landing 4 FS symbols at the same time upgrades the bonus to the All That Glitters Is Gold bonus and awards +4 free spins.",
+        "params": {}
+      },
+      {
+        "name": "ALL THAT GLITTERS IS GOLD",
+        "behavior": "Activate this bonus game with 12 free spins by landing 4 FS scatter symbols at the same time in the base game.\n\n In this bonus all Marked Squares remain highlighted throughout the whole bonus, even after being activated by the Rainbow symbol.\n\n Landing additional FS symbols at the same time in the bonus game awards extra free spins: 2 FS awards +2 free spins, 3 FS awards +4 free spins.",
+        "params": {}
+      },
+      {
+        "name": "TREASURE AT THE END OF THE RAINBOW",
+        "behavior": "Activate this bonus game with 12 free spins by landing 5 FS scatter symbols at the same time in the base game.\n\n In this bonus all Marked Squares remain highlighted throughout the whole bonus, even after being activated by the Rainbow symbol. A Rainbow symbol is guaranteed to land on every spin in this bonus.\n\n In addition, Bronze Coins do not appear in this bonus.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "WIN TO WIN",
+        "behavior": "After a winning combination occurs, the squares behind the winning symbols will be highlighted as Marked Squares.\n\n If there is a Rainbow symbol on the grid it will activate any Marked Squares after all winning combinations have been awarded. Activated Marked Squares reveal either Bronze, Silver or Gold Coins, and have a chance to show Bag of Gold or Four-Leaf Clover symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x, 250x, 500x\n\n After all Coins and special symbols have been revealed, Four-Leaf Clover symbols will activate and multiply all Coins and Bag of Gold symbols on adjacent squares with one of the following values: x2, x3, x4, x5, x10\n\n Bag of Gold symbols will activate after all Four-Leaf Clover symbols have activated. Bag of Gold symbols collect the values of all Coins and other Bag of Gold symbols and store their total value. Bag of Gold symbols activate top-to-bottom, left-to-right.\n\n After the last Bag of Gold on the current grid has activated, all other Marked Squares will activate again to reveal new symbols and the process above repeats until no new Bag of Gold symbols appear. All Marked Squares are then removed.\n\n At the end of the spin all Coins and Bag of Gold symbols will be added together and multiplied with your bet amount to determine the final awarded win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADE",
+        "behavior": "Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADE",
+      "trigger": null,
+      "effects": "Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "WIN TO WIN",
+      "trigger": null,
+      "effects": "After a winning combination occurs, the squares behind the winning symbols will be highlighted as Marked Squares.\n\n If there is a Rainbow symbol on the grid it will activate any Marked Squares after all winning combinations have been awarded. Activated Marked Squares reveal either Bronze, Silver or Gold Coins, and have a chance to show Bag of Gold or Four-Leaf Clover symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x, 250x, 500x\n\n After all Coins and special symbols have been revealed, Four-Leaf Clover symbols will activate and multiply all Coins and Bag of Gold symbols on adjacent squares with one of the following values: x2, x3, x4, x5, x10\n\n Bag of Gold symbols will activate after all Four-Leaf Clover symbols have activated. Bag of Gold symbols collect the values of all Coins and other Bag of Gold symbols and store their total value. Bag of Gold symbols activate top-to-bottom, left-to-right.\n\n After the last Bag of Gold on the current grid has activated, all other Marked Squares will activate again to reveal new symbols and the process above repeats until no new Bag of Gold symbols appear. All Marked Squares are then removed.\n\n At the end of the spin all Coins and Bag of Gold symbols will be added together and multiplied with your bet amount to determine the final awarded win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "LUCK OF THE BANDIT",
+      "trigger": null,
+      "effects": "Activate this bonus game with 8 free spins by landing 3 FS scatter symbols at the same time in the base game.\n\n In this bonus all Marked Squares remain highlighted between spins until they are activated by the Rainbow symbol.\n\n Landing additional FS symbols at the same time in the bonus game awards extra free spins: 2 FS awards +2 free spins, 3 FS awards +4 free spins.\n\n Landing 4 FS symbols at the same time upgrades the bonus to the All That Glitters Is Gold bonus and awards +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "ALL THAT GLITTERS IS GOLD",
+      "trigger": null,
+      "effects": "Activate this bonus game with 12 free spins by landing 4 FS scatter symbols at the same time in the base game.\n\n In this bonus all Marked Squares remain highlighted throughout the whole bonus, even after being activated by the Rainbow symbol.\n\n Landing additional FS symbols at the same time in the bonus game awards extra free spins: 2 FS awards +2 free spins, 3 FS awards +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "TREASURE AT THE END OF THE RAINBOW",
+      "trigger": null,
+      "effects": "Activate this bonus game with 12 free spins by landing 5 FS scatter symbols at the same time in the base game.\n\n In this bonus all Marked Squares remain highlighted throughout the whole bonus, even after being activated by the Rainbow symbol. A Rainbow symbol is guaranteed to land on every spin in this bonus.\n\n In addition, Bronze Coins do not appear in this bonus.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rainbow_activator_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "luck_of_the_bandit_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "all_is_gold_that_glitters_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2242/1.1.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-bandit-miami-hustle/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n SUPER CASCADE\n\n Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces.\n\n WIN TO WIN\n\n After a winning combination occurs, the squares behind the winning symbols will be highlighted as Marked Squares.\n\n If there is a Rainbow symbol on the grid it will activate any Marked Squares after all winning combinations have been awarded. Activated Marked Squares reveal either Bronze, Silver or Gold Coins, and have a chance to show Bag of Gold"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

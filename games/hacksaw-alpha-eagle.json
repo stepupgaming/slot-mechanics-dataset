@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Alpha Eagle",
+    "slug": "hacksaw-alpha-eagle",
+    "provider_game_id": "1201",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1201&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1201/1.40.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 20,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 20. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Landing the golden S’n’S scatter symbol activates the Stack’n’Sync™ feature and guarantees that all 5 reels are stacked. Only high-paying symbols and the Wild symbol can be stacked by the golden S’n’S.\n\n The golden S’n’S also activates a global multiplier that is applied to any wins on the respin. The multiplier is shown in the upper left corner above the reels.\n\n The multiplier can have one of the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x"
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "STACK’N’SYNC™",
+        "behavior": "Landing the S’n’S scatter symbol activates the Stack’n’Sync™ feature.\n\n The reel where the symbol landed is copied to up to 4 other reels and these reels are then stacked with one kind of symbol. The stacked symbols replace existing symbols on the reels. The game then awards a respin, with the stacked reels synced to each other so they stop in the same position.\n\n Landing another S’n’S symbol during the respin will repeat the stacking on additional reels and sync them, and award an additional respin.\n\n The stacked symbol and the stack amount is shown by the symbol and stars that appear in the upper right corner above the reels. Each filled star represents one quarter of the reels. Reels can be a quarter, half, three-quarters or fully stacked!\n\n All regular paying symbols, the Wild symbol, and the FS symbol can be stacked. The Eagle Claw bonus symbol can not be stacked.",
+        "params": {}
+      },
+      {
+        "name": "GOLDEN STACK’N’SYNC™",
+        "behavior": "Landing the golden S’n’S scatter symbol activates the Stack’n’Sync™ feature and guarantees that all 5 reels are stacked. Only high-paying symbols and the Wild symbol can be stacked by the golden S’n’S.\n\n The golden S’n’S also activates a global multiplier that is applied to any wins on the respin. The multiplier is shown in the upper left corner above the reels.\n\n The multiplier can have one of the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x",
+        "params": {}
+      },
+      {
+        "name": "EAGLE LINK",
+        "behavior": "Trigger the Eagle Link bonus by landing 3 Eagle Claw scatter symbols simultaneously in the base game.\n\n This bonus has two phases: a collect phase and a payout phase. Only Eagle symbols, Golden Eagle symbols and non-paying symbols appear in this bonus.\n\n During the collect phase all landed Eagle and Golden Eagle symbols are sticky. The collect phase has 3 spins that refill when a new Eagle or Golden Eagle sticks. After 3 spins in a row without sticking new symbols, the collect phase ends and the bonus transitions to the payout phase. No wins are awarded during the collect phase.\n\n Every landed Golden Eagle symbol activates the Eagle Link feature. The Eagle Link connects to all Eagle symbols that land vertically or horizontally adjacent to a Golden Eagle or another Eagle symbol already connected to the Eagle Link. When the collect phase ends, all Eagle symbols that are not connected to the Eagle Link are removed.\n\n The following symbols are non-paying:\n\n The payout phase initially awards 3 spins. Golden Eagle symbols are sticky and each that lands during this phase awards 1 additional spin.\n\n The payout phase has a global multiplier that applies to all Eagle symbol wins. The multiplier value is equal to the number of stuck Golden Eagle symbols.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all other symbols in the paytable.\n\n The Golden Eagle symbol appears only in the Eagle Link bonus game and substitutes for Eagle symbols when calculating wins.\n\n The Eagle Claw symbol appears only in the base game.\n\n The FS symbol appears only in the base game.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "Trigger Free Spins by landing at least 3 FS scatter symbols simultaneously in the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Trigger Free Spins by landing at least 3 FS scatter symbols simultaneously in the base game. For each landed FS symbol, 1 free spin is awarded. Up to 20 free spins can be awarded.\n\n Free Spins increase the chance of landing S’n’S and golden S’n’S symbols!\n\n The FS symbol is only available through the Stack’n’Sync™ feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "STACK’N’SYNC™",
+      "trigger": null,
+      "effects": "Landing the S’n’S scatter symbol activates the Stack’n’Sync™ feature.\n\n The reel where the symbol landed is copied to up to 4 other reels and these reels are then stacked with one kind of symbol. The stacked symbols replace existing symbols on the reels. The game then awards a respin, with the stacked reels synced to each other so they stop in the same position.\n\n Landing another S’n’S symbol during the respin will repeat the stacking on additional reels and sync them, and award an additional respin.\n\n The stacked symbol and the stack amount is shown by the symbol and stars that appear in the upper right corner above the reels. Each filled star represents one quarter of the reels. Reels can be a quarter, half, three-quarters or fully stacked!\n\n All regular paying symbols, the Wild symbol, and the FS symbol can be stacked. The Eagle Claw bonus symbol can not be stacked.",
+      "params": {}
+    },
+    {
+      "name": "GOLDEN STACK’N’SYNC™",
+      "trigger": null,
+      "effects": "Landing the golden S’n’S scatter symbol activates the Stack’n’Sync™ feature and guarantees that all 5 reels are stacked. Only high-paying symbols and the Wild symbol can be stacked by the golden S’n’S.\n\n The golden S’n’S also activates a global multiplier that is applied to any wins on the respin. The multiplier is shown in the upper left corner above the reels.\n\n The multiplier can have one of the following values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "Trigger Free Spins by landing at least 3 FS scatter symbols simultaneously in the base game.",
+      "effects": "Trigger Free Spins by landing at least 3 FS scatter symbols simultaneously in the base game. For each landed FS symbol, 1 free spin is awarded. Up to 20 free spins can be awarded.\n\n Free Spins increase the chance of landing S’n’S and golden S’n’S symbols!\n\n The FS symbol is only available through the Stack’n’Sync™ feature.",
+      "params": {}
+    },
+    {
+      "name": "EAGLE LINK",
+      "trigger": null,
+      "effects": "Trigger the Eagle Link bonus by landing 3 Eagle Claw scatter symbols simultaneously in the base game.\n\n This bonus has two phases: a collect phase and a payout phase. Only Eagle symbols, Golden Eagle symbols and non-paying symbols appear in this bonus.\n\n During the collect phase all landed Eagle and Golden Eagle symbols are sticky. The collect phase has 3 spins that refill when a new Eagle or Golden Eagle sticks. After 3 spins in a row without sticking new symbols, the collect phase ends and the bonus transitions to the payout phase. No wins are awarded during the collect phase.\n\n Every landed Golden Eagle symbol activates the Eagle Link feature. The Eagle Link connects to all Eagle symbols that land vertically or horizontally adjacent to a Golden Eagle or another Eagle symbol already connected to the Eagle Link. When the collect phase ends, all Eagle symbols that are not connected to the Eagle Link are removed.\n\n The following symbols are non-paying:\n\n The payout phase initially awards 3 spins. Golden Eagle symbols are sticky and each that lands during this phase awards 1 additional spin.\n\n The payout phase has a global multiplier that applies to all Eagle symbol wins. The multiplier value is equal to the number of stuck Golden Eagle symbols.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all other symbols in the paytable.\n\n The Golden Eagle symbol appears only in the Eagle Link bonus game and substitutes for Eagle symbols when calculating wins.\n\n The Eagle Claw symbol appears only in the base game.\n\n The FS symbol appears only in the base game.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonus_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "sns_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "eagle_link_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win of 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1201/1.40.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/alpha-eagle/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n STACK’N’SYNC™\n\n Landing the S’n’S scatter symbol activates the Stack’n’Sync™ feature.\n\n The reel where the symbol landed is copied to up to 4 other reels and these reels are then stacked with one kind of symbol. The stacked symbols replace existing symbols on the reels. The game then awards a respin, with the stacked reels synced to each other so they stop in the same position.\n\n Landing another S’n’S symbol during the respin will repeat the stacking on additional reels and sync them, and award an additional respin.\n\n The stacked symbol and the stack amount is shown by the symbol an"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

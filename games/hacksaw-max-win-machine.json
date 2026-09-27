@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Max Win Machine",
+    "slug": "hacksaw-max-win-machine",
+    "provider_game_id": "2356",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2356&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2356/1.18.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 2,
+    "cols": 1,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 1x2 from About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 1,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined line on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 1. Please consult the paytable for the number of each symbol required to win."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "LUCKY SEVEN SYMBOLS",
+        "behavior": "The Max Win Machine will only reveal Lucky Seven and dead symbols. A win is created when 1, 2 or 3 Lucky Seven symbols land in a line. A win needs to start at the left-most reel. \n\n When a win occurs, the value awarded from the combination will be multiplied by the current bet to determine the win.\n\n 1 Lucky Seven symbol awards 1x \n 2 Lucky Seven symbols award 10x \n 3 Lucky Seven symbols award {maximumWinMultiplier}x \n\n Dead symbols are non-paying symbols and have no other effect.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "LUCKY SEVEN SYMBOLS",
+      "trigger": null,
+      "effects": "The Max Win Machine will only reveal Lucky Seven and dead symbols. A win is created when 1, 2 or 3 Lucky Seven symbols land in a line. A win needs to start at the left-most reel. \n\n When a win occurs, the value awarded from the combination will be multiplied by the current bet to determine the win.\n\n 1 Lucky Seven symbol awards 1x \n 2 Lucky Seven symbols award 10x \n 3 Lucky Seven symbols award {maximumWinMultiplier}x \n\n Dead symbols are non-paying symbols and have no other effect.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "heavy_core_featurespins_96_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "power_core_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "epic_core_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "super_core_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2356/1.18.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/max-win-machine/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n The salon has been lit up and the main event of the evening is about to begin. Take center stage and enter the gallery, where the lights shine at their brightest and with the spotlight highlighting one thing: The Max Win Machine!\n\n Push the button and watch as the Max Win Machine takes care of the rest in this 3-reel, 1-row game with 1 payline and a max win of {maximumWinMultiplier} times your bet available in every game mode!\n\n LUCKY SEVEN SYMBOLS\n\n The Max Win Machine will only reveal Lucky Seven and dead symbols. A win is created when 1, 2 or 3 Lucky Seven symbols land in a"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

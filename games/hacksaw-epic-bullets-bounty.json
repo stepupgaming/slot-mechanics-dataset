@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Epic Bullets & Bounty",
+    "slug": "hacksaw-epic-bullets-bounty",
+    "provider_game_id": "2185",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2185&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2185/1.2.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "DUELREELS™",
+        "behavior": "When a VS or Bounty VS symbol lands, it expands into a DuelReel if part of a winning combination once expanded. Fully expanded DuelReels™ count as Wild reels and substitute for all symbols in the paytable. Once expanded, the DuelReel will cover the entire reel, triggering a Duel between two duelists. Each DuelReel will have 1 Adding Multiplier assigned to each of the 2 duelists.\n\n When a VS symbol expands, it expands into an Outlaw DuelReel. The Multiplier from the surviving duelists will be applied across that entire DuelReel and is added to all wins connected to that reel. If more than 1 Outlaw DuelReel is part of the same winning combination, their winning Multipliers are added together before being applied to the win.\n\n The possible Multiplier values for Outlaw DuelReels™ are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n When a Bounty VS symbol expands, it expands into a Bounty DuelReel with a Duel between the Bounty Hunter and an Outlaw. If the Bounty Hunter wins a Duel, she collects the Multiplier from the Outlaw and combines it with her existing Multiplier, and another Duel is triggered on the same Bounty DuelReel. On the new Duel, the Bounty Hunter will display her combined Multiplier from the previous Duel. This repeats until the Bounty Hunter loses a Duel or after 3 Duels have been played. When the Bounty Hunter loses a Duel, her collected Multiplier is applied to that Bounty DuelReel. The Multiplier values for Bounty DuelReels™ start at 2x.\n\n Only 1 VS symbol or 1 Bounty VS symbol can land on a reel at a time.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "EPIC BONUS - GO AHEAD, MAKE HER DAY",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Epic Bonus game keeps the mechanics of the FOUR SHOTS TO FREEDOM bonus, starting the first spin at DuelSpin Level 1, which awards a minimum of 2 VS symbols. Additionally, it also has Progressive Bounty Hunter Multipliers!",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - TRUE GRIT",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the TRUE GRIT bonus game or to Gamble.\n\n The TRUE GRIT bonus keeps the base game's mechanics and has Progressive Bounty Hunter Multipliers! The latest Bounty Hunter Multiplier to win in a DuelReel becomes the starting Multiplier for the next Bounty Hunter that appears in a DuelReel!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n If you choose to Gamble, a revolver will spin and land on 1 of 6 outcomes:\n\n Three outcomes will immediately award the FOUR SHOTS TO FREEDOM bonus.\n\n Two outcomes will award an immediate 5x Cash Prize.\n\n One outcome awards an immediate 10x Cash Prize."
+      },
+      {
+        "name": "BONUS GAME - FOUR SHOTS TO FREEDOM",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the FOUR SHOTS TO FREEDOM bonus game or to Gamble.\n\n This bonus game keeps the base game's mechanics. In addition, a Bullets & Bounty Bar is displayed outside the grid that will award DuelSpins and VS symbols. Only Bounty VS symbols will appear during regular free spins. Each Duel the Bounty Hunter wins increases the Bullets & Bounty Bar by one step.\n\n 4 DuelSpin Levels are available in this bonus game:\n\n 2 Bounty Hunter wins unlock Level 1, which awards 3 extra free spins and a DuelSpin with a minimum of 2 VS symbols!\n\n 3 Bounty Hunter wins unlock Level 2, which awards 3 extra free spins and a DuelSpin with a minimum of 3 VS symbols!\n\n 4 Bounty Hunter wins unlock Level 3, which awards 3 extra free spins and a DuelSpin with a minimum of 4 VS symbols!\n\n 5 Bounty Hunter wins unlock Level 4, which awards 3 extra free spins and a DuelSpin with 5 VS symbols!\n\n Each DuelSpin is awarded immediately after the free spin where you unlocked it and does not count towards your number of free spins in the bonus. If more than 1 is unlocked in the same spin, they are awarded in sequence before proceeding to the next free spin.\n\n If you choose to Gamble, a revolver will spin and land on 1 of 6 outcomes:\n\n One outcome will immediately award the GO AHEAD, MAKE HER DAY Epic Bonus.\n\n Three outcomes will award an immediate 5x Cash Prize.\n\n One outcome awards an immediate 10x Cash Prize.\n\n One outcome awards an immediate 20x Cash Prize."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "DUELREELS™",
+      "trigger": null,
+      "effects": "When a VS or Bounty VS symbol lands, it expands into a DuelReel if part of a winning combination once expanded. Fully expanded DuelReels™ count as Wild reels and substitute for all symbols in the paytable. Once expanded, the DuelReel will cover the entire reel, triggering a Duel between two duelists. Each DuelReel will have 1 Adding Multiplier assigned to each of the 2 duelists.\n\n When a VS symbol expands, it expands into an Outlaw DuelReel. The Multiplier from the surviving duelists will be applied across that entire DuelReel and is added to all wins connected to that reel. If more than 1 Outlaw DuelReel is part of the same winning combination, their winning Multipliers are added together before being applied to the win.\n\n The possible Multiplier values for Outlaw DuelReels™ are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n When a Bounty VS symbol expands, it expands into a Bounty DuelReel with a Duel between the Bounty Hunter and an Outlaw. If the Bounty Hunter wins a Duel, she collects the Multiplier from the Outlaw and combines it with her existing Multiplier, and another Duel is triggered on the same Bounty DuelReel. On the new Duel, the Bounty Hunter will display her combined Multiplier from the previous Duel. This repeats until the Bounty Hunter loses a Duel or after 3 Duels have been played. When the Bounty Hunter loses a Duel, her collected Multiplier is applied to that Bounty DuelReel. The Multiplier values for Bounty DuelReels™ start at 2x.\n\n Only 1 VS symbol or 1 Bounty VS symbol can land on a reel at a time.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - TRUE GRIT",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the TRUE GRIT bonus game or to Gamble.\n\n The TRUE GRIT bonus keeps the base game's mechanics and has Progressive Bounty Hunter Multipliers! The latest Bounty Hunter Multiplier to win in a DuelReel becomes the starting Multiplier for the next Bounty Hunter that appears in a DuelReel!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n If you choose to Gamble, a revolver will spin and land on 1 of 6 outcomes:\n\n Three outcomes will immediately award the FOUR SHOTS TO FREEDOM bonus.\n\n Two outcomes will award an immediate 5x Cash Prize.\n\n One outcome awards an immediate 10x Cash Prize.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - FOUR SHOTS TO FREEDOM",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the FOUR SHOTS TO FREEDOM bonus game or to Gamble.\n\n This bonus game keeps the base game's mechanics. In addition, a Bullets & Bounty Bar is displayed outside the grid that will award DuelSpins and VS symbols. Only Bounty VS symbols will appear during regular free spins. Each Duel the Bounty Hunter wins increases the Bullets & Bounty Bar by one step.\n\n 4 DuelSpin Levels are available in this bonus game:\n\n 2 Bounty Hunter wins unlock Level 1, which awards 3 extra free spins and a DuelSpin with a minimum of 2 VS symbols!\n\n 3 Bounty Hunter wins unlock Level 2, which awards 3 extra free spins and a DuelSpin with a minimum of 3 VS symbols!\n\n 4 Bounty Hunter wins unlock Level 3, which awards 3 extra free spins and a DuelSpin with a minimum of 4 VS symbols!\n\n 5 Bounty Hunter wins unlock Level 4, which awards 3 extra free spins and a DuelSpin with 5 VS symbols!\n\n Each DuelSpin is awarded immediately after the free spin where you unlocked it and does not count towards your number of free spins in the bonus. If more than 1 is unlocked in the same spin, they are awarded in sequence before proceeding to the next free spin.\n\n If you choose to Gamble, a revolver will spin and land on 1 of 6 outcomes:\n\n One outcome will immediately award the GO AHEAD, MAKE HER DAY Epic Bonus.\n\n Three outcomes will award an immediate 5x Cash Prize.\n\n One outcome awards an immediate 10x Cash Prize.\n\n One outcome awards an immediate 20x Cash Prize.",
+      "params": {}
+    },
+    {
+      "name": "EPIC BONUS - GO AHEAD, MAKE HER DAY",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Epic Bonus game keeps the mechanics of the FOUR SHOTS TO FREEDOM bonus, starting the first spin at DuelSpin Level 1, which awards a minimum of 2 VS symbols. Additionally, it also has Progressive Bounty Hunter Multipliers!",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000,
+    "max_win_notes": "maximum achievable win in this game is 20,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2185/1.2.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/epic-bullets-bounty/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n DUELREELS™\n\n When a VS or Bounty VS symbol lands, it expands into a DuelReel if part of a winning combination once expanded. Fully expanded DuelReels™ count as Wild reels and substitute for all symbols in the paytable. Once expanded, the DuelReel will cover the entire reel, triggering a Duel between two duelists. Each DuelReel will have 1 Adding Multiplier assigned to each of the 2 duelists.\n\n When a VS symbol expands, it expands into an Outlaw DuelReel. The Multiplier from the surviving duelists will be applied across that entire DuelReel and is added to all wins connected to that "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

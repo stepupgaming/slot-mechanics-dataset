@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Benny The Beer",
+    "slug": "hacksaw-benny-the-beer",
+    "provider_game_id": "1356",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1356&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1356/1.26.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 100000. Please consult the paytable for"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "BOOK OF STACKWAYS™",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n At the beginning of the bonus game, 2 paying symbols are randomly chosen to be the Special symbols. When one of the Special symbols lands on at least 3 reels at the same time, indicators below the corresponding reels will light up to reveal a number from 2 - 10. Those reels will then be stacked with the shown amount of the winning symbol.\n\n Stacked symbols pay as if the stacked reels were connected from left to right.\n\n If more than one Special symbol type lands on 3 or more reels at the same time, they will stack and pay one type at a time.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols awards 2 extra spins.\n\n 3 FS symbols awards 4 extra spins. \n\n Landing 4 FS symbols at the same time upgrades the feature to SUPER BOOK OF STACKWAYS™ and awards 4 extra spins.",
+        "params": {}
+      },
+      {
+        "name": "SUPER BOOK OF STACKWAYS™",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus feature with 10 free spins.\n\n At the beginning of the bonus game, 4 paying symbols are randomly chosen to be the Special symbols. When one of the Special symbols lands on at least 3 reels at the same time, indicators below the corresponding reels will light up to reveal a number from 2 - 10. The revealed value corresponds to the number of stacks that will be added to the reel above the number.\n\n When the symbol has been stacked in this way, they will pay as if all reels were counted sequentially from left to right.\n\n If more than one Special symbol lands on 3 or more reels, they will stack and pay one at a time.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols awards 2 extra spins.\n\n 3 FS symbols awards 4 extra spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "STACKWAYS™",
+        "behavior": "Land Stackways™ symbols on a reel to fill that reel with a stack of paying symbols. Between 2 to 10 symbols can be stacked on each reel.\n\n There are two types of Stackways™ symbols:\n\n Normal Stackways™ symbols with the possible values: 2, 3, 4\n\n Revealing Stackways™ symbols with the possible values: 5, 6, 7, 8, 9, 10\n\n The stacked symbol is determined by choosing the symbol that would grant the longest winning combination among the symbols present on the reels when the Stackways™ symbol activates. If more than one winning combination of equal length could be created, the symbol will be chosen randomly from among the symbols that could create those winning combinations. The stacking only occurs when the result would create a winning combination.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "STACKWAYS™",
+      "trigger": null,
+      "effects": "Land Stackways™ symbols on a reel to fill that reel with a stack of paying symbols. Between 2 to 10 symbols can be stacked on each reel.\n\n There are two types of Stackways™ symbols:\n\n Normal Stackways™ symbols with the possible values: 2, 3, 4\n\n Revealing Stackways™ symbols with the possible values: 5, 6, 7, 8, 9, 10\n\n The stacked symbol is determined by choosing the symbol that would grant the longest winning combination among the symbols present on the reels when the Stackways™ symbol activates. If more than one winning combination of equal length could be created, the symbol will be chosen randomly from among the symbols that could create those winning combinations. The stacking only occurs when the result would create a winning combination.",
+      "params": {}
+    },
+    {
+      "name": "BOOK OF STACKWAYS™",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus game with 10 free spins.\n\n At the beginning of the bonus game, 2 paying symbols are randomly chosen to be the Special symbols. When one of the Special symbols lands on at least 3 reels at the same time, indicators below the corresponding reels will light up to reveal a number from 2 - 10. Those reels will then be stacked with the shown amount of the winning symbol.\n\n Stacked symbols pay as if the stacked reels were connected from left to right.\n\n If more than one Special symbol type lands on 3 or more reels at the same time, they will stack and pay one type at a time.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols awards 2 extra spins.\n\n 3 FS symbols awards 4 extra spins. \n\n Landing 4 FS symbols at the same time upgrades the feature to SUPER BOOK OF STACKWAYS™ and awards 4 extra spins.",
+      "params": {}
+    },
+    {
+      "name": "SUPER BOOK OF STACKWAYS™",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus feature with 10 free spins.\n\n At the beginning of the bonus game, 4 paying symbols are randomly chosen to be the Special symbols. When one of the Special symbols lands on at least 3 reels at the same time, indicators below the corresponding reels will light up to reveal a number from 2 - 10. The revealed value corresponds to the number of stacks that will be added to the reel above the number.\n\n When the symbol has been stacked in this way, they will pay as if all reels were counted sequentially from left to right.\n\n If more than one Special symbol lands on 3 or more reels, they will stack and pay one at a time.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols awards 2 extra spins.\n\n 3 FS symbols awards 4 extra spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonushunt_mod_stack_1_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bonushunt_mod_stack_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "book_of_stackways_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "super_book_of_stackways_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1356/1.26.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/benny-the-beer/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Something is brewing in the biergarten! Benny the Beer and all his friends invite you to join them on a foaming forest adventure in this 5-reel, 4-row game with ways-wins and the Stackways™ mechanic. The max win in this game is 10,000 times your bet! The max win can be reached in the base game, Book of Stackways™ and Super Book of Stackways™ game modes.\n\n FEATURES\n\n STACKWAYS™\n\n Land Stackways™ symbols on a reel to fill that reel with a stack of paying symbols. Between 2 to 10 symbols can be stacked on each reel.\n\n There are two types of Stackways™ symbols:\n\n Normal Stackways™"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

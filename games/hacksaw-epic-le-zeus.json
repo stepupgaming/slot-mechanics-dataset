@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Epic Ze Zeus",
+    "slug": "hacksaw-epic-le-zeus",
+    "provider_game_id": "2408",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2408&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2408/1.3.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "EPIC BONUS - ZE ZEUS MIGHT SUPERSTAR",
+        "behavior": "Activate this bonus game with 12 free spins by landing 5 FS scatter symbols at the same time in the base game.\n\n This bonus game keeps the mechanics of the ZE ZEUS TAKE THE WHEEL bonus, with a Hand of Zeus symbol guaranteed to land on every free spin!\n\n In addition, Bronze Coins do not exist in this bonus.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "WIN TO WIN",
+        "behavior": "After a winning combination occurs, the squares behind the winning symbols will be highlighted as Divine Squares.\n\n If there is a Hand of Zeus symbol on the grid it will activate any Divine Squares after all wins have been completed. Activated Divine Squares reveal either Bronze, Silver or Gold Coins, and have a chance to show Vessel of Wealth or Zap of Zeus symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0,2x, 0,5x, 1x, 2x, 3x, 4x \n Silver Coins can have the following values: 5x, 10x, 15x, 20x \n Gold Coins can have the following values: 25x, 50x, 100x, 250x, 500x \n\n After all symbols have been revealed, any Zap of Zeus symbols will activate and multiply all Coins or existing Vessel of Wealth symbols on adjacent squares with one of the following values: x2, x3, x4, x5, x10.\n\n Vessel of Wealth symbols will activate after all Coins have been revealed and all Zap of Zeus symbols have been activated. Vessel of Wealth symbols collect the values of all Coins and other Vessel of Wealth symbols and store their total value. Vessel of Wealth symbols activate top-to-bottom, left-to-right.\n\n After the last Vessel of Wealth on the current grid has activated, all other Divine Squares will activate again to reveal new symbols and the process above repeats.\n\n Once all reveals and activations have been completed all Coins and Vessel of Wealth symbols will be added together and multiplied with your bet amount to determine the final awarded win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "This is the Epic version of Ze Zeus, giving you an even more powerful gaming experience. Here’s what you can expect:",
+        "behavior": "Higher volatility for epic payout potential \n Chance of claiming the boosted max win of {maximumWinMultiplier} times your bet \n Buyable Epic Bonus",
+        "params": {}
+      },
+      {
+        "name": "SUPER CASCADE",
+        "behavior": "Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - WHAT IF ZEUS WAS ONE OF US?",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "rds +2 free spins\n\n 3 FS symbols awards +4 free spins\n\n Landing 4 FS symbols at the same time upgrades the bonus to the ZE ZEUS TAKE THE WHEEL bonus and awards +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. In addition, all Divine Squares remain highlighted between spins until they are activated by the Hand of Zeus symbol and all Coins display a value of at least 1x.\n\n Landing additional FS symbols at the same time in the bonus game awards extra free spins:\n\n 2 FS symbols awards +2 free spins\n\n 3 FS symbols awards +4 free spins\n\n Landing 4 FS symbols at the same time upgrades the bonus to the ZE ZEUS TAKE THE WHEEL bonus and awards +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - ZE ZEUS TAKE THE WHEEL",
+        "trigger": "landing 4 FS scatter symbols at the same time in the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus game with 12 free spins by landing 4 FS scatter symbols at the same time in the base game.\n\n This bonus game keeps the mechanics of the WHAT IF ZEUS WAS ONE OF US? bonus and all Divine Squares remain highlighted throughout the whole bonus, even after being activated by the Hand of Zeus symbol. In addition, all Coins reveal a value of at least 1x.\n\n Landing additional FS symbols at the same time in the bonus game awards extra free spins:\n\n 2 FS symbols awards +2 free spins\n\n 3 FS symbols awards +4 free spins"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "This is the Epic version of Ze Zeus, giving you an even more powerful gaming experience. Here’s what you can expect:",
+      "trigger": null,
+      "effects": "Higher volatility for epic payout potential \n Chance of claiming the boosted max win of {maximumWinMultiplier} times your bet \n Buyable Epic Bonus",
+      "params": {}
+    },
+    {
+      "name": "SUPER CASCADE",
+      "trigger": null,
+      "effects": "Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "WIN TO WIN",
+      "trigger": null,
+      "effects": "After a winning combination occurs, the squares behind the winning symbols will be highlighted as Divine Squares.\n\n If there is a Hand of Zeus symbol on the grid it will activate any Divine Squares after all wins have been completed. Activated Divine Squares reveal either Bronze, Silver or Gold Coins, and have a chance to show Vessel of Wealth or Zap of Zeus symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 0,2x, 0,5x, 1x, 2x, 3x, 4x \n Silver Coins can have the following values: 5x, 10x, 15x, 20x \n Gold Coins can have the following values: 25x, 50x, 100x, 250x, 500x \n\n After all symbols have been revealed, any Zap of Zeus symbols will activate and multiply all Coins or existing Vessel of Wealth symbols on adjacent squares with one of the following values: x2, x3, x4, x5, x10.\n\n Vessel of Wealth symbols will activate after all Coins have been revealed and all Zap of Zeus symbols have been activated. Vessel of Wealth symbols collect the values of all Coins and other Vessel of Wealth symbols and store their total value. Vessel of Wealth symbols activate top-to-bottom, left-to-right.\n\n After the last Vessel of Wealth on the current grid has activated, all other Divine Squares will activate again to reveal new symbols and the process above repeats.\n\n Once all reveals and activations have been completed all Coins and Vessel of Wealth symbols will be added together and multiplied with your bet amount to determine the final awarded win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - WHAT IF ZEUS WAS ONE OF US?",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. In addition, all Divine Squares remain highlighted between spins until they are activated by the Hand of Zeus symbol and all Coins display a value of at least 1x.\n\n Landing additional FS symbols at the same time in the bonus game awards extra free spins:\n\n 2 FS symbols awards +2 free spins\n\n 3 FS symbols awards +4 free spins\n\n Landing 4 FS symbols at the same time upgrades the bonus to the ZE ZEUS TAKE THE WHEEL bonus and awards +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - ZE ZEUS TAKE THE WHEEL",
+      "trigger": "landing 4 FS scatter symbols at the same time in the base game.",
+      "effects": "Activate this bonus game with 12 free spins by landing 4 FS scatter symbols at the same time in the base game.\n\n This bonus game keeps the mechanics of the WHAT IF ZEUS WAS ONE OF US? bonus and all Divine Squares remain highlighted throughout the whole bonus, even after being activated by the Hand of Zeus symbol. In addition, all Coins reveal a value of at least 1x.\n\n Landing additional FS symbols at the same time in the bonus game awards extra free spins:\n\n 2 FS symbols awards +2 free spins\n\n 3 FS symbols awards +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "EPIC BONUS - ZE ZEUS MIGHT SUPERSTAR",
+      "trigger": null,
+      "effects": "Activate this bonus game with 12 free spins by landing 5 FS scatter symbols at the same time in the base game.\n\n This bonus game keeps the mechanics of the ZE ZEUS TAKE THE WHEEL bonus, with a Hand of Zeus symbol guaranteed to land on every free spin!\n\n In addition, Bronze Coins do not exist in this bonus.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "what_if_zeus_was_one_of_us_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "ze_zeus_take_the_wheel_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "ze_zeus_might_superstar_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 50000,
+    "max_win_notes": "maximum achievable win in this game is 50,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2408/1.3.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/epic-le-zeus/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "EPIC VERSION FEATURES\n\n This is the Epic version of Ze Zeus, giving you an even more powerful gaming experience. Here’s what you can expect:\n\n Higher volatility for epic payout potential \n Chance of claiming the boosted max win of {maximumWinMultiplier} times your bet \n Buyable Epic Bonus \n\n SUPER CASCADE\n\n Any time a winning combination occurs, all regular paying symbols of the type that were part of the winning combination will also be removed from the grid and new ones will drop down to fill the empty spaces.\n\n WIN TO WIN\n\n After a winning combination occurs, the squares behind the winning "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

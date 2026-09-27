@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Magic Piggy",
+    "slug": "hacksaw-magic-piggy",
+    "provider_game_id": "1247",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1247&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1247/1.47.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Magic Piggy & Magic Hat",
+        "behavior": "The Magic Piggy symbol is a revealing symbol that reveals either a Wild symbol or a Bill Stack symbol when activated by the Magic Hat symbol! All Magic Piggy symbols reveal the same type of symbol.\n\n When the Magic Hat symbol lands, it first shows what all Magic Piggy symbols will reveal and then transforms into the revealed symbol. \n\n Bill Stack scatter symbols are cash prizes based on your current bet. All Bill Stack symbols are added together and the total amount is multiplied by your current bet to produce the win amount.\n\n Bill Stacks can have the following values: 1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 75, 100, 250, 500, 750, 1000\n\n When revealing Bill Stack symbols, there is a chance that a Magic Piggy symbol instead reveals a Multiplier Coin scatter symbol.\n\n Multiplier Coins reveal a multiplier value, and then multiply 1 - 5 Bill Stack symbols with the revealed value. The same Bill Stack symbol can be affected multiple times by the same Multiplier Coin, or by different Multiplier Coins.\n\n Multiplier Coins can have the following values: x2, x3, x4, x5",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      {
+        "name": "Epig Bonus",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to trigger this feature, which awards 10 free spins!\n\n The Epig Bonus game has progressive Piggy Points that do not reset after a Magic Hat trigger! See description of Pig Bonus above for other rules.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Pig Bonus",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to trigger this feature, which awards 10 free spins!\n\n Land Star and Super Star scatter symbols to collect Piggy Points above the reels!\n\n Star symbols add 1 - 5 Piggy Points to the meter above the reel where it landed.\n\n Super Star symbols add 1 - 5 Piggy Points to all reels!\n\n When the Magic Hat symbol lands, an equal amount of Magic Piggy symbols will fill random positions on the corresponding reels.\n\n Piggy Points are reset after each Magic Hat trigger.\n\n Completely filling the Piggy Points meter above all reels at the same time awards 10 additional free spins!\n\n Landing 3 FS symbols at the same time in the feature awards 4 additional free spins.\n\n Landing 4 FS symbols at the same time in the feature instantly triggers the Epig Bonus. If the remaining number of free spins is less than 10, the remaining number of free spins will be set to 10. Otherwise, the current number of remaining free spins is unchanged.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Magic Piggy & Magic Hat",
+      "trigger": null,
+      "effects": "The Magic Piggy symbol is a revealing symbol that reveals either a Wild symbol or a Bill Stack symbol when activated by the Magic Hat symbol! All Magic Piggy symbols reveal the same type of symbol.\n\n When the Magic Hat symbol lands, it first shows what all Magic Piggy symbols will reveal and then transforms into the revealed symbol. \n\n Bill Stack scatter symbols are cash prizes based on your current bet. All Bill Stack symbols are added together and the total amount is multiplied by your current bet to produce the win amount.\n\n Bill Stacks can have the following values: 1, 2, 3, 4, 5, 10, 15, 20, 25, 50, 75, 100, 250, 500, 750, 1000\n\n When revealing Bill Stack symbols, there is a chance that a Magic Piggy symbol instead reveals a Multiplier Coin scatter symbol.\n\n Multiplier Coins reveal a multiplier value, and then multiply 1 - 5 Bill Stack symbols with the revealed value. The same Bill Stack symbol can be affected multiple times by the same Multiplier Coin, or by different Multiplier Coins.\n\n Multiplier Coins can have the following values: x2, x3, x4, x5",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "name": "Pig Bonus",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to trigger this feature, which awards 10 free spins!\n\n Land Star and Super Star scatter symbols to collect Piggy Points above the reels!\n\n Star symbols add 1 - 5 Piggy Points to the meter above the reel where it landed.\n\n Super Star symbols add 1 - 5 Piggy Points to all reels!\n\n When the Magic Hat symbol lands, an equal amount of Magic Piggy symbols will fill random positions on the corresponding reels.\n\n Piggy Points are reset after each Magic Hat trigger.\n\n Completely filling the Piggy Points meter above all reels at the same time awards 10 additional free spins!\n\n Landing 3 FS symbols at the same time in the feature awards 4 additional free spins.\n\n Landing 4 FS symbols at the same time in the feature instantly triggers the Epig Bonus. If the remaining number of free spins is less than 10, the remaining number of free spins will be set to 10. Otherwise, the current number of remaining free spins is unchanged.",
+      "params": {}
+    },
+    {
+      "name": "Epig Bonus",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to trigger this feature, which awards 10 free spins!\n\n The Epig Bonus game has progressive Piggy Points that do not reset after a Magic Hat trigger! See description of Pig Bonus above for other rules.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonusHunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "magical_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "more_magical_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "pig_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "epig_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7500,
+    "max_win_notes": "maximum win in this game is 7,500 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1247/1.47.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/magic-piggy/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n Magic Piggy & Magic Hat\n\n The Magic Piggy symbol is a revealing symbol that reveals either a Wild symbol or a Bill Stack symbol when activated by the Magic Hat symbol! All Magic Piggy symbols reveal the same type of symbol.\n\n When the Magic Hat symbol lands, it first shows what all Magic Piggy symbols will reveal and then transforms into the revealed symbol. \n\n Bill Stack scatter symbols are cash prizes based on your current bet. All Bill Stack symbols are added together and the total amount is multiplied by your current bet to produce the win amount.\n\n Bill Stacks can have the foll"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

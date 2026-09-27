@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Om Nom",
+    "slug": "hacksaw-om-nom",
+    "provider_game_id": "1043",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1043&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1043/1.44.17/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 4,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 4x4 grid in official About text"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 256. Please consult the paytable for th"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "MULTIPLIER FEATURE",
+        "behavior": "This game features a multiplier feature that will multiply your win in the base game up to 100x. Each game round will randomly generate a symbol (displayed inside the OmNom logotype) from the base game reels. If this 'mystery' symbol matches a winning symbol, the multiplier spinner will start. The win on the symbol matching the mystery symbol will then be multiplied by up to 100 times.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "Get three FREE SPIN symbols to trigger the free spin feature with 8 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Get three FREE SPIN symbols to trigger the free spin feature with 8 free spins. In this feature extra WILD symbols are added to the reels to dramatically increase the chance of winning.\n\nThe FREE SPIN symbol can land on the first three reels. The FREE SPINS symbol does not appear in the free spin feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MULTIPLIER FEATURE",
+      "trigger": null,
+      "effects": "This game features a multiplier feature that will multiply your win in the base game up to 100x. Each game round will randomly generate a symbol (displayed inside the OmNom logotype) from the base game reels. If this 'mystery' symbol matches a winning symbol, the multiplier spinner will start. The win on the symbol matching the mystery symbol will then be multiplied by up to 100 times.",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "Get three FREE SPIN symbols to trigger the free spin feature with 8 free spins.",
+      "effects": "Get three FREE SPIN symbols to trigger the free spin feature with 8 free spins. In this feature extra WILD symbols are added to the reels to dramatically increase the chance of winning.\n\nThe FREE SPIN symbol can land on the first three reels. The FREE SPINS symbol does not appear in the free spin feature.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_freespins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1043/1.44.17/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/om-nom/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n This is a POCKETZ game, our series of pocket format mobile games! Om Nom has a 4x4 grid and a max feature win of 4800x. The main game features a multiplier feature that will multiply your win in the base game up to 100x. The free spin feature adds extra WILD symbols to the reels to dramatically increase the chance of winning.\n\n MULTIPLIER FEATURE\n\n This game features a multiplier feature that will multiply your win in the base game up to 100x. Each game round will randomly generate a symbol (displayed inside the OmNom logotype) from the base game reels. If this 'mystery' symbo"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

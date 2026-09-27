@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Supreme Zeus",
+    "slug": "hacksaw-supreme-zeus",
+    "provider_game_id": "2458",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2458&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2458/1.21.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 2,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 2x3 from About text"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 1024. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "HOT 100 BONUS - LAST ASCENSION",
+        "behavior": "Activate this bonus with 100 free spins by landing 3 Hot 100 symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the THUNDER REIGN bonus, with an increased chance of forming CoinWays™.\n\n FS symbols cannot land in this bonus game\n\n SPECIAL SYMBOLS\n\n Hot 100 symbols act as scatter symbols and can only land during the base game. FS symbols and Hot 100 symbols cannot be on the grid at the same time.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADES",
+        "behavior": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+        "params": {}
+      },
+      {
+        "name": "COINWAYS™",
+        "behavior": "When Bronze, Silver or Gold Coin symbols land in a formation that is equivalent to one of the predetermined Ways to win, CoinWays™ are formed. CoinWays™ must start at the leftmost reel and include Coin symbols on at least 3 adjacent reels. If there are Coins on reels 1, 2, 3 and 5, the CoinWays™ will only include the Coin values of the first 3 reels. CoinWays™ are activated after regular wins have been handled.\n\n Bronze Coins can have the following values: 1x \n Silver Coins can have the following values: 2x, 3x, 4x \n Gold Coins can have the following values: 5x, 6x, 7x, 8x, 9x, 10x \n\n When CoinWays™ activate, the Coin symbols add their values to the Coin Bar value for the reel they land on. Each reel’s Coin value will be displayed in the Coin Bar located outside of the grid. If there are multiple Coins on a reel, the Coin values are added together to determine the total Coin value of the reel.\n\n Once the Coin symbol values have been added to the Coin Bar, the values in the Coin Bar will be multiplied from left to right. For example, if values in the Coin Bar are 2, 3, 2, 7, 3, the final CoinWays™ value will be 2x3x2x7x3=252x. The CoinWays™ value will be awarded as a cash prize that is multiplied by your bet to determine the final win. The Coin Bar will reset before the next spin.\n\n Coin symbols can only land in the THUNDER REIGN, WRATH OF OLYMPUS and LAST ASCENSION bonuses.\n\n Coin symbols can also land in SACRED FEATURESPINS™.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            7
+          ]
+        }
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - THUNDER REIGN",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics with a chance of landing Bronze, Silver and Gold Coin symbols and form CoinWays™.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins"
+      },
+      {
+        "name": "BONUS GAME - WRATH OF OLYMPUS",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the THUNDER REIGN bonus with at least 1 Coin symbol guaranteed to land on every spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "COINWAYS™",
+      "trigger": null,
+      "effects": "When Bronze, Silver or Gold Coin symbols land in a formation that is equivalent to one of the predetermined Ways to win, CoinWays™ are formed. CoinWays™ must start at the leftmost reel and include Coin symbols on at least 3 adjacent reels. If there are Coins on reels 1, 2, 3 and 5, the CoinWays™ will only include the Coin values of the first 3 reels. CoinWays™ are activated after regular wins have been handled.\n\n Bronze Coins can have the following values: 1x \n Silver Coins can have the following values: 2x, 3x, 4x \n Gold Coins can have the following values: 5x, 6x, 7x, 8x, 9x, 10x \n\n When CoinWays™ activate, the Coin symbols add their values to the Coin Bar value for the reel they land on. Each reel’s Coin value will be displayed in the Coin Bar located outside of the grid. If there are multiple Coins on a reel, the Coin values are added together to determine the total Coin value of the reel.\n\n Once the Coin symbol values have been added to the Coin Bar, the values in the Coin Bar will be multiplied from left to right. For example, if values in the Coin Bar are 2, 3, 2, 7, 3, the final CoinWays™ value will be 2x3x2x7x3=252x. The CoinWays™ value will be awarded as a cash prize that is multiplied by your bet to determine the final win. The Coin Bar will reset before the next spin.\n\n Coin symbols can only land in the THUNDER REIGN, WRATH OF OLYMPUS and LAST ASCENSION bonuses.\n\n Coin symbols can also land in SACRED FEATURESPINS™.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          7
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - THUNDER REIGN",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game’s mechanics with a chance of landing Bronze, Silver and Gold Coin symbols and form CoinWays™.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - WRATH OF OLYMPUS",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the THUNDER REIGN bonus with at least 1 Coin symbol guaranteed to land on every spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins",
+      "params": {}
+    },
+    {
+      "name": "HOT 100 BONUS - LAST ASCENSION",
+      "trigger": null,
+      "effects": "Activate this bonus with 100 free spins by landing 3 Hot 100 symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the THUNDER REIGN bonus, with an increased chance of forming CoinWays™.\n\n FS symbols cannot land in this bonus game\n\n SPECIAL SYMBOLS\n\n Hot 100 symbols act as scatter symbols and can only land during the base game. FS symbols and Hot 100 symbols cannot be on the grid at the same time.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "sacred_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "thunder_reign_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "wrath_of_olympus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2458/1.21.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/supreme-zeus/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n The king of gods returns, as thunder echoes across the heavens and a new trial rises before him—one that may prove to be his greatest yet.\n\n For ages untold, legends have spoken of Zeus’ mighty battles against Titans and Giants, clashes that shook the very foundations of the cosmos. Now, a threat stirs, and the riches of his divine realm stand in peril. With lightning in hand and power unrivaled, Zeus must once again rise to defend what is his.\n\n Supreme Zeus is a 5-reel, 4-row game with Ways and a max win of {maximumWinMultiplier} times your bet available in the THUNDER REIGN"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

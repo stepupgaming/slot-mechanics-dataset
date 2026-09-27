@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Dark Spiral",
+    "slug": "hacksaw-dark-spiral",
+    "provider_game_id": "2143",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2143&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2143/1.13.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 2,
+    "cols": 1,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 1x2 from About text"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 331 776. Please consult the paytable fo"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When Summoning symbols land, their size can be 1x2, 1x3 or 1x4. When Summoning symbols land, they all reveal a different stack of the same paying or Wild symbol. The symbol size determines the number of stacked symbols on each Summoning symbol.\n\n Summoning symbol size 1x2 reveals 3, 4, 5 or 6 symbol stacks.\n\n Summoning symbol size 1x3 reveals 5, 6, 7, 8 or 9 symbol stacks.\n\n Summoning symbol size 1x4 reveals 6, 7, 8, 9, 10, 11 or 12 symbol stacks.\n\n If a Wild symbol lands directly above or directly below a Summoning symbol on the same reel, the Summoning symbol will increase in size by expanding to cover that Wild symbol once the grid is settled.\n\n When Summoning symbols are part of a win, they will stay on the grid as other winning symbols cascade out. The winning Summoning symbols will reveal a new paying or Wild symbol. If subsequent wins occur, the Summoning symbols will reveal a new paying or Wild symbol; this continues until no new wins occur. \n\n When there are no more wins, all symbols, including the Summoning symbols, are removed from the grid for the next spin. Summoning symbols can land on reels 2, 3, 4 and 5."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "SUMMONING SYMBOLS",
+        "behavior": "When Summoning symbols land, their size can be 1x2, 1x3 or 1x4. When Summoning symbols land, they all reveal a different stack of the same paying or Wild symbol. The symbol size determines the number of stacked symbols on each Summoning symbol.\n\n Summoning symbol size 1x2 reveals 3, 4, 5 or 6 symbol stacks.\n\n Summoning symbol size 1x3 reveals 5, 6, 7, 8 or 9 symbol stacks.\n\n Summoning symbol size 1x4 reveals 6, 7, 8, 9, 10, 11 or 12 symbol stacks.\n\n If a Wild symbol lands directly above or directly below a Summoning symbol on the same reel, the Summoning symbol will increase in size by expanding to cover that Wild symbol once the grid is settled.\n\n When Summoning symbols are part of a win, they will stay on the grid as other winning symbols cascade out. The winning Summoning symbols will reveal a new paying or Wild symbol. If subsequent wins occur, the Summoning symbols will reveal a new paying or Wild symbol; this continues until no new wins occur. \n\n When there are no more wins, all symbols, including the Summoning symbols, are removed from the grid for the next spin. Summoning symbols can land on reels 2, 3, 4 and 5.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "name": "HIDDEN EPIC BONUS – TORTURED",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the TWISTED bonus. In addition, 2 Summoning symbols are guaranteed on the first spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3+ FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - SHATTERED",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3+ FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics, with an increased chance of landing Summoning symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3+ FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - TWISTED",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3+ FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the SHATTERED bonus. In addition, all Summoning symbols that land will stick to the grid throughout the bonus and reveal new stacks with paying or Wild symbols when part of a win and on every spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3+ FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUMMONING SYMBOLS",
+      "trigger": null,
+      "effects": "When Summoning symbols land, their size can be 1x2, 1x3 or 1x4. When Summoning symbols land, they all reveal a different stack of the same paying or Wild symbol. The symbol size determines the number of stacked symbols on each Summoning symbol.\n\n Summoning symbol size 1x2 reveals 3, 4, 5 or 6 symbol stacks.\n\n Summoning symbol size 1x3 reveals 5, 6, 7, 8 or 9 symbol stacks.\n\n Summoning symbol size 1x4 reveals 6, 7, 8, 9, 10, 11 or 12 symbol stacks.\n\n If a Wild symbol lands directly above or directly below a Summoning symbol on the same reel, the Summoning symbol will increase in size by expanding to cover that Wild symbol once the grid is settled.\n\n When Summoning symbols are part of a win, they will stay on the grid as other winning symbols cascade out. The winning Summoning symbols will reveal a new paying or Wild symbol. If subsequent wins occur, the Summoning symbols will reveal a new paying or Wild symbol; this continues until no new wins occur. \n\n When there are no more wins, all symbols, including the Summoning symbols, are removed from the grid for the next spin. Summoning symbols can land on reels 2, 3, 4 and 5.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - SHATTERED",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the base game's mechanics, with an increased chance of landing Summoning symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3+ FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - TWISTED",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the SHATTERED bonus. In addition, all Summoning symbols that land will stick to the grid throughout the bonus and reveal new stacks with paying or Wild symbols when part of a win and on every spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3+ FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS – TORTURED",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the TWISTED bonus. In addition, 2 Summoning symbols are guaranteed on the first spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins\n\n 3+ FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "summon_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "shattered_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "twisted_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2143/1.13.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/dark-spiral/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n In the old art room, the mirrors were meant to stay covered. When they pulled the cloth away, the faces inside began to melt, skin sliding off bone like hot wax. Eyes rolling in slow, wet circles. Their reflections smiled wider, splitting at the seams, eyes multiplying and tracking every move, even when the girls turned away.\n\n Soon, those eyes followed them across every surface, in windows, mirrors, staring from the curve of a spoon at lunch. Now, when they blink, their lashes melt into their lids, sealing shut with a wet squish. Only the twitching beneath shows something sti"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

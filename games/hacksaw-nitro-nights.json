@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Nitro Nights",
+    "slug": "hacksaw-nitro-nights",
+    "provider_game_id": "2328",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2328&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2328/1.19.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "BURNOUT MODE",
+        "behavior": "When a Nitro symbol lands, the Burnout Mode activates. When the Burnout Mode is activated, it transforms the Nitro symbol into a Wild Nitro symbol and awards Nudges, Wild symbols and Multipliers.\n\n At least 5 Nudges will be added to the Nitrous Bar, located outside of the grid. The Nitrous Bar can contain up to 10 Nudges at the same time.\n\n There will also be 5 Wild symbols and between 0 and 3 Multipliers added to random grid positions. The Wild symbols are added randomly over regular paying symbols currently on the grid.\n\n When the Multipliers are added to the grid, they will be added over any Wild symbols and paying symbols on the grid, creating Position Multipliers. When a Position Multiplier is part of a winning combination, the value of the win is multiplied by the shown value. If more than one Position Multiplier is part of the same winning combination, the values are added together before being applied to the win. Multipliers can have the following values: 2x, 3x, 4x, 5x.\n\n Once all wins have been handled, Nudges will trigger. During Nudges, all symbols are moved down one row and new symbols drop in to fill the empty spaces. All Wild symbols and Position Multipliers are Sticky during Nudges. This means that they will remain in the same grid position as they landed and keep their Multiplier value, while regular paying symbols and Wild Nitro symbols are moved. After every Nudge, any winning combinations are awarded before the next Nudge.\n\n If a new Nitro symbol lands after a Nudge, at least 1 additional Nudge can be awarded to the Nitrous Bar, while 0 to 3 Wild symbols and 0 to 3 Multipliers are added to the grid. If another Multiplier is added to the same position as a Position Multiplier, the Multiplier values are added together. If a Nitro symbol lands while the Nitrous Bar already contains the maximum amount of Nudges, no new Nudges are awarded. The spin will end when the Nitrous Bar is empty.\n\n Only one Nitro symbol can land on the grid at the same time. W",
+        "params": {}
+      },
+      {
+        "name": "HIDDEN EPIC BONUS - FUKUSHIMA",
+        "behavior": "Activate this bonus with 1 free spin by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game’s mechanics, with a Super Nitrous Bar located outside the grid. The spin guarantees that 1 Nitro symbol lands and awards between 10 and 20 Nudges.\n\n There is no limit for how many Nudges can be stored in the Super Nitrous Bar at the same time.\n\n SPECIAL SYMBOLS\n\n The Wild symbol, Wild Nitro symbol and Epic Wild Nitro symbol substitutes for all symbols in the paytable. Wild symbols can only appear when they are added to the grid by a Nitro symbol or when a Nitro or Epic Nitro symbol transforms into a Wild Nitro or Epic Wild Nitro symbol.\n\n Nitro symbols and FS symbols cannot be on the grid at the same time.\n\n FS symbols cannot land during the SEOUL, TOKYO or FUKUSHIMA bonuses.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - SEOUL",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game’s mechanics, with an increased chance of landing Nitro symbols."
+      },
+      {
+        "name": "BONUS GAME - TOKYO",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 8 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game’s mechanics with a Global Multiplier that starts at x2 located outside of the grid. The Global Multiplier value will be applied to all wins. In addition, there is a chance of landing Epic Nitro symbols, which activate the Epic Burnout Mode. During the Epic Burnout Mode, the Global Multiplier value increases by 1 after every Nudge while the other Burnout Mode mechanics remain the same.\n\n When an Epic Nitro symbol lands, it keeps the mechanics of the Nitro symbol with at least 3 Nudges being awarded and added to any existing Nudges in the Nitrous Bar. If a new Epic Nitro symbol lands during the Epic Burnout Mode, at least 1 Nudge can be awarded to the Nitrous Bar, while Wild symbols and Multipliers can be added to the grid. If a Nitro symbol lands during the Epic Burnout Mode, at least 1 additional Nudge can be awarded to the Nitrous Bar.\n\n Only one Epic Nitro symbol can be on the grid at the same time. Nitro symbols and Epic Nitro symbols cannot land on the same spin."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "BURNOUT MODE",
+      "trigger": null,
+      "effects": "When a Nitro symbol lands, the Burnout Mode activates. When the Burnout Mode is activated, it transforms the Nitro symbol into a Wild Nitro symbol and awards Nudges, Wild symbols and Multipliers.\n\n At least 5 Nudges will be added to the Nitrous Bar, located outside of the grid. The Nitrous Bar can contain up to 10 Nudges at the same time.\n\n There will also be 5 Wild symbols and between 0 and 3 Multipliers added to random grid positions. The Wild symbols are added randomly over regular paying symbols currently on the grid.\n\n When the Multipliers are added to the grid, they will be added over any Wild symbols and paying symbols on the grid, creating Position Multipliers. When a Position Multiplier is part of a winning combination, the value of the win is multiplied by the shown value. If more than one Position Multiplier is part of the same winning combination, the values are added together before being applied to the win. Multipliers can have the following values: 2x, 3x, 4x, 5x.\n\n Once all wins have been handled, Nudges will trigger. During Nudges, all symbols are moved down one row and new symbols drop in to fill the empty spaces. All Wild symbols and Position Multipliers are Sticky during Nudges. This means that they will remain in the same grid position as they landed and keep their Multiplier value, while regular paying symbols and Wild Nitro symbols are moved. After every Nudge, any winning combinations are awarded before the next Nudge.\n\n If a new Nitro symbol lands after a Nudge, at least 1 additional Nudge can be awarded to the Nitrous Bar, while 0 to 3 Wild symbols and 0 to 3 Multipliers are added to the grid. If another Multiplier is added to the same position as a Position Multiplier, the Multiplier values are added together. If a Nitro symbol lands while the Nitrous Bar already contains the maximum amount of Nudges, no new Nudges are awarded. The spin will end when the Nitrous Bar is empty.\n\n Only one Nitro symbol can land on the grid at the same time. W",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SEOUL",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game’s mechanics, with an increased chance of landing Nitro symbols.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - TOKYO",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 8 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game’s mechanics with a Global Multiplier that starts at x2 located outside of the grid. The Global Multiplier value will be applied to all wins. In addition, there is a chance of landing Epic Nitro symbols, which activate the Epic Burnout Mode. During the Epic Burnout Mode, the Global Multiplier value increases by 1 after every Nudge while the other Burnout Mode mechanics remain the same.\n\n When an Epic Nitro symbol lands, it keeps the mechanics of the Nitro symbol with at least 3 Nudges being awarded and added to any existing Nudges in the Nitrous Bar. If a new Epic Nitro symbol lands during the Epic Burnout Mode, at least 1 Nudge can be awarded to the Nitrous Bar, while Wild symbols and Multipliers can be added to the grid. If a Nitro symbol lands during the Epic Burnout Mode, at least 1 additional Nudge can be awarded to the Nitrous Bar.\n\n Only one Epic Nitro symbol can be on the grid at the same time. Nitro symbols and Epic Nitro symbols cannot land on the same spin.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - FUKUSHIMA",
+      "trigger": null,
+      "effects": "Activate this bonus with 1 free spin by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game’s mechanics, with a Super Nitrous Bar located outside the grid. The spin guarantees that 1 Nitro symbol lands and awards between 10 and 20 Nudges.\n\n There is no limit for how many Nudges can be stored in the Super Nitrous Bar at the same time.\n\n SPECIAL SYMBOLS\n\n The Wild symbol, Wild Nitro symbol and Epic Wild Nitro symbol substitutes for all symbols in the paytable. Wild symbols can only appear when they are added to the grid by a Nitro symbol or when a Nitro or Epic Nitro symbol transforms into a Wild Nitro or Epic Wild Nitro symbol.\n\n Nitro symbols and FS symbols cannot be on the grid at the same time.\n\n FS symbols cannot land during the SEOUL, TOKYO or FUKUSHIMA bonuses.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "road_rage_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "seoul_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "tokyo_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2328/1.19.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/nitro-nights/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n BURNOUT MODE\n\n When a Nitro symbol lands, the Burnout Mode activates. When the Burnout Mode is activated, it transforms the Nitro symbol into a Wild Nitro symbol and awards Nudges, Wild symbols and Multipliers.\n\n At least 5 Nudges will be added to the Nitrous Bar, located outside of the grid. The Nitrous Bar can contain up to 10 Nudges at the same time.\n\n There will also be 5 Wild symbols and between 0 and 3 Multipliers added to random grid positions. The Wild symbols are added randomly over regular paying symbols currently on the grid.\n\n When the Multipliers are added to the grid, "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

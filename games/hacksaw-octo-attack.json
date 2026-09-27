@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Octo Attack",
+    "slug": "hacksaw-octo-attack",
+    "provider_game_id": "1584",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1584&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1584/1.28.9/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD SYMBOLS AND WILD MULTIPLIER SYMBOLS",
+        "behavior": "The Wild symbol substitutes for all symbols in the paytable.\n\n Wild symbols can also land with one of the following adding multiplier values: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x",
+        "params": {}
+      },
+      {
+        "name": "EYE OF OTTO AND THE TENTA-GRAB MECHANIC",
+        "behavior": "The Eye of Otto symbol activates the Tenta-Grab mechanic when it lands on a grid with Ink Stains. When activated, the Tenta-Grab mechanic will randomly grab one symbol on the grid, and replace all Ink Stained positions and itself with the grabbed symbol. The Tenta-Grab mechanic can grab low symbols, high symbols, FS symbols, Wild symbols or Wild Multiplier symbols.\n\n If a Wild symbol or a Wild Multiplier is grabbed by the Tenta-Grab mechanic, the replacing symbols will be either Wild or Wild Multipliers with higher or lower values than the chosen symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "INK STAINS",
+        "behavior": "When there is a win on the grid the win will be calculated, the winning symbols will be removed and new symbols will drop in to replace them. The winning positions will be marked with Ink Stains. Ink Stains are removed from the grid after they have been used by the Tenta-Grab mechanic, and they are reset between spins.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "EIGHTH ARM IS THE CHARM",
+        "trigger": "The number of normal FS symbols that triggered the bonus feature will equal the number of awarded free spins.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus feature with free spins by landing at least 3 normal FS scatter symbols at the same time during the base game.\n\n The number of normal FS symbols that triggered the bonus feature will equal the number of awarded free spins.\n\n During this bonus feature, Ink Stains are not removed from the grid between spins until they are grabbed by the Tenta-Grab mechanic.\n\n Landing additional normal FS symbols at the same time during the feature awards additional free spins. For every three normal FS scatter symbols that land at the same time, you will be awarded 1 extra spin."
+      },
+      {
+        "name": "GIVE ME EIGHT!",
+        "trigger": "The number of epic FS symbols that triggered the bonus feature will equal the number of awarded free spins.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus feature with free spins by landing at least 3 epic FS scatter symbols at the same time during the base game.\n\n The number of epic FS symbols that triggered the bonus feature will equal the number of awarded free spins.\n\n During this bonus feature, Ink Stains are not removed from the grid between spins until they are grabbed by the Tenta-Grab mechanic. Furthermore, the Tenta-Grab mechanic can only grab Wild symbols, Wild Multiplier symbols or FS symbols!\n\n Landing additional epic FS symbols at the same time during the feature awards additional free spins. For every three epic FS scatter symbols that land at the same time, you will be awarded 1 extra spin."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD SYMBOLS AND WILD MULTIPLIER SYMBOLS",
+      "trigger": null,
+      "effects": "The Wild symbol substitutes for all symbols in the paytable.\n\n Wild symbols can also land with one of the following adding multiplier values: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x",
+      "params": {}
+    },
+    {
+      "name": "INK STAINS",
+      "trigger": null,
+      "effects": "When there is a win on the grid the win will be calculated, the winning symbols will be removed and new symbols will drop in to replace them. The winning positions will be marked with Ink Stains. Ink Stains are removed from the grid after they have been used by the Tenta-Grab mechanic, and they are reset between spins.",
+      "params": {}
+    },
+    {
+      "name": "EYE OF OTTO AND THE TENTA-GRAB MECHANIC",
+      "trigger": null,
+      "effects": "The Eye of Otto symbol activates the Tenta-Grab mechanic when it lands on a grid with Ink Stains. When activated, the Tenta-Grab mechanic will randomly grab one symbol on the grid, and replace all Ink Stained positions and itself with the grabbed symbol. The Tenta-Grab mechanic can grab low symbols, high symbols, FS symbols, Wild symbols or Wild Multiplier symbols.\n\n If a Wild symbol or a Wild Multiplier is grabbed by the Tenta-Grab mechanic, the replacing symbols will be either Wild or Wild Multipliers with higher or lower values than the chosen symbol.",
+      "params": {}
+    },
+    {
+      "name": "EIGHTH ARM IS THE CHARM",
+      "trigger": "The number of normal FS symbols that triggered the bonus feature will equal the number of awarded free spins.",
+      "effects": "Activate this bonus feature with free spins by landing at least 3 normal FS scatter symbols at the same time during the base game.\n\n The number of normal FS symbols that triggered the bonus feature will equal the number of awarded free spins.\n\n During this bonus feature, Ink Stains are not removed from the grid between spins until they are grabbed by the Tenta-Grab mechanic.\n\n Landing additional normal FS symbols at the same time during the feature awards additional free spins. For every three normal FS scatter symbols that land at the same time, you will be awarded 1 extra spin.",
+      "params": {}
+    },
+    {
+      "name": "GIVE ME EIGHT!",
+      "trigger": "The number of epic FS symbols that triggered the bonus feature will equal the number of awarded free spins.",
+      "effects": "Activate this bonus feature with free spins by landing at least 3 epic FS scatter symbols at the same time during the base game.\n\n The number of epic FS symbols that triggered the bonus feature will equal the number of awarded free spins.\n\n During this bonus feature, Ink Stains are not removed from the grid between spins until they are grabbed by the Tenta-Grab mechanic. Furthermore, the Tenta-Grab mechanic can only grab Wild symbols, Wild Multiplier symbols or FS symbols!\n\n Landing additional epic FS symbols at the same time during the feature awards additional free spins. For every three epic FS scatter symbols that land at the same time, you will be awarded 1 extra spin.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "tentacular_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "eight_arm_is_the_charm_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "give_me_eight_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1584/1.28.9/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/octo-attack/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n WILD SYMBOLS AND WILD MULTIPLIER SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n Wild symbols can also land with one of the following adding multiplier values: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x\n\n INK STAINS\n\n When there is a win on the grid the win will be calculated, the winning symbols will be removed and new symbols will drop in to replace them. The winning positions will be marked with Ink Stains. Ink Stains are removed from the grid after they have been used by the Tenta-Grab mechanic, and they are reset between spins.\n\n EYE OF OTTO AND THE TENTA-"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

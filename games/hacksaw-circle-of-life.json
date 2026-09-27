@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Circle of Life",
+    "slug": "hacksaw-circle-of-life",
+    "provider_game_id": "2019",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2019&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2019/1.22.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "When a Tree of Life has fully expanded from the bottom row to the top row of a reel, the Circle of Life is triggered on that Tree of Life. The Circle of Life will activate during the Respin before the grid has settled.\n\n The Circle of Life spins and lands on a Multiplier or a Skull. The Multiplier on which the arrow lands will be combined with the Multiplier on the Tree of Life. If the arrow lands on an Additive Multiplier, the two values will be added together for a new total Multiplier on the Tree of Life. If the arrow lands on a Multiplicative Multiplier, the Tree of Life value will be multiplied by the Circle of Life value for a new total. The Circle of Life Multipliers can have the following values:\n\n Additive Multiplying values: 2x, 3x, 5x, 10x, 25x, 100x\n\n Multiplicative Multiplying value: x2\n\n The Circle of Life will continue spinning and landing on Multiplier values until the arrow lands on the Skull, which ends the Circle of Life. The grid will settle, and new wins formed with the Tree of Life are awarded with the new total Multiplier value on the Tree of Life. A new Respin is triggered, and the Tree of Life is removed from the grid."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "TREE OF LIFE",
+        "behavior": "When a Tree symbol lands, it acts as a Wild symbol that substitutes for all symbols in the paytable and reveals a Multiplier value. If the Tree symbol is part of a win, it triggers a Respin, and the Tree symbol expands into a Tree of Life.\n\n When a Tree symbol forms part of a winning combination, the win is multiplied by the value shown on the Tree symbol. If more than one Tree symbol is part of the same winning combination, their values are first added together before being applied to the win. Tree symbols have the following Additive Multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x.\n\n Once the wins are awarded, a Respin is triggered, the winning Tree symbols will stick to the grid and expand upward by one row into a Tree of Life while everything else respins. The Respin sequence continues when new wins occur on the Tree of Life or other Tree symbols on the grid. The Tree of Life will continue to expand by one row on every Respin sequence until the Tree of Life fully expands by reaching the top of the grid. Once fully expanded, the Tree of Life will be removed from the grid on the next Respin or next spin.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "SPREADING FS SYMBOLS",
+        "behavior": "When 3 or more FS scatter symbols land simultaneously, each FS symbol expands across the entire reel it lands on after all wins have been awarded. Every position the FS symbol covers represents a certain number of free spins. The total number of free spins awarded for the bonus is determined by adding up all the numbers on positions covered by each FS symbol. FS symbols can have the following values: +1, +2, +3.\n\n When triggering and buying a bonus, there is a chance that some positions on expanding FS symbols will transform into Upgrade symbols, upgrading you to the next bonus.\n\n Landing 3 expanding FS symbols with 1 Upgrade symbol awards an upgrade to the ETERNAL bonus.\n\n Landing 3 expanding FS symbols with 2 Upgrade symbols awards an upgrade to the REBIRTH bonus.\n\n Landing 4 expanding FS symbols with 1 Upgrade symbol awards an upgrade to the REBIRTH bonus.",
+        "params": {}
+      },
+      {
+        "name": "HIDDEN EPIC BONUS - REBIRTH",
+        "behavior": "Activate this bonus with free spins by landing 5 expanding FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the ETERNAL bonus. In addition, reels 2 and 4 are activated from the start!\n\n Expanding FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n A Tree symbol and a FS symbol cannot land on the same reel at the same time.\n\n Only 3 expanding FS symbols can land per spin in the ORIGIN and the ETERNAL bonus.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "CIRCLE OF LIFE",
+        "behavior": "When a Tree of Life has fully expanded from the bottom row to the top row of a reel, the Circle of Life is triggered on that Tree of Life. The Circle of Life will activate during the Respin before the grid has settled.\n\n The Circle of Life spins and lands on a Multiplier or a Skull. The Multiplier on which the arrow lands will be combined with the Multiplier on the Tree of Life. If the arrow lands on an Additive Multiplier, the two values will be added together for a new total Multiplier on the Tree of Life. If the arrow lands on a Multiplicative Multiplier, the Tree of Life value will be multiplied by the Circle of Life value for a new total. The Circle of Life Multipliers can have the following values:\n\n Additive Multiplying values: 2x, 3x, 5x, 10x, 25x, 100x\n\n Multiplicative Multiplying value: x2\n\n The Circle of Life will continue spinning and landing on Multiplier values until the arrow lands on the Skull, which ends the Circle of Life. The grid will settle, and new wins formed with the Tree of Life are awarded with the new total Multiplier value on the Tree of Life. A new Respin is triggered, and the Tree of Life is removed from the grid.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - ORIGIN",
+        "trigger": "landing 3 expanding FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "ach expanding FS symbol awards at least +4 free spins and max +12 free spins.",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Activate this bonus with free spins by landing 3 expanding FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. When a Tree symbol is part of a win, the Tree of Life will become sticky on the next free spin. The Tree of Life symbol will remain sticky until it is no longer part of any wins. A fully expanded Tree of Life is removed for the next free spin. Respins cannot be triggered in this bonus.\n\n Landing additional expanding FS symbols in the bonus awards extra free spins:\n\n Each expanding FS symbol awards at least +4 free spins and max +12 free spins."
+      },
+      {
+        "name": "BONUS GAME - ETERNAL",
+        "trigger": "landing 4 expanding FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "ach expanding FS symbol awards at least +4 free spins and max +12 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with free spins by landing 4 expanding FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the ORIGIN bonus. In addition, a reel is activated when a Circle of Life is triggered on that reel. The activated reel will stay active throughout the bonus and guarantees that a Tree symbol lands on that reel every spin, unless the reel already has a Tree symbol or Tree of Life.\n\n Landing additional expanding FS symbols in the bonus awards extra free spins:\n\n Each expanding FS symbol awards at least +4 free spins and max +12 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TREE OF LIFE",
+      "trigger": null,
+      "effects": "When a Tree symbol lands, it acts as a Wild symbol that substitutes for all symbols in the paytable and reveals a Multiplier value. If the Tree symbol is part of a win, it triggers a Respin, and the Tree symbol expands into a Tree of Life.\n\n When a Tree symbol forms part of a winning combination, the win is multiplied by the value shown on the Tree symbol. If more than one Tree symbol is part of the same winning combination, their values are first added together before being applied to the win. Tree symbols have the following Additive Multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x.\n\n Once the wins are awarded, a Respin is triggered, the winning Tree symbols will stick to the grid and expand upward by one row into a Tree of Life while everything else respins. The Respin sequence continues when new wins occur on the Tree of Life or other Tree symbols on the grid. The Tree of Life will continue to expand by one row on every Respin sequence until the Tree of Life fully expands by reaching the top of the grid. Once fully expanded, the Tree of Life will be removed from the grid on the next Respin or next spin.",
+      "params": {}
+    },
+    {
+      "name": "CIRCLE OF LIFE",
+      "trigger": null,
+      "effects": "When a Tree of Life has fully expanded from the bottom row to the top row of a reel, the Circle of Life is triggered on that Tree of Life. The Circle of Life will activate during the Respin before the grid has settled.\n\n The Circle of Life spins and lands on a Multiplier or a Skull. The Multiplier on which the arrow lands will be combined with the Multiplier on the Tree of Life. If the arrow lands on an Additive Multiplier, the two values will be added together for a new total Multiplier on the Tree of Life. If the arrow lands on a Multiplicative Multiplier, the Tree of Life value will be multiplied by the Circle of Life value for a new total. The Circle of Life Multipliers can have the following values:\n\n Additive Multiplying values: 2x, 3x, 5x, 10x, 25x, 100x\n\n Multiplicative Multiplying value: x2\n\n The Circle of Life will continue spinning and landing on Multiplier values until the arrow lands on the Skull, which ends the Circle of Life. The grid will settle, and new wins formed with the Tree of Life are awarded with the new total Multiplier value on the Tree of Life. A new Respin is triggered, and the Tree of Life is removed from the grid.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "SPREADING FS SYMBOLS",
+      "trigger": null,
+      "effects": "When 3 or more FS scatter symbols land simultaneously, each FS symbol expands across the entire reel it lands on after all wins have been awarded. Every position the FS symbol covers represents a certain number of free spins. The total number of free spins awarded for the bonus is determined by adding up all the numbers on positions covered by each FS symbol. FS symbols can have the following values: +1, +2, +3.\n\n When triggering and buying a bonus, there is a chance that some positions on expanding FS symbols will transform into Upgrade symbols, upgrading you to the next bonus.\n\n Landing 3 expanding FS symbols with 1 Upgrade symbol awards an upgrade to the ETERNAL bonus.\n\n Landing 3 expanding FS symbols with 2 Upgrade symbols awards an upgrade to the REBIRTH bonus.\n\n Landing 4 expanding FS symbols with 1 Upgrade symbol awards an upgrade to the REBIRTH bonus.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - ORIGIN",
+      "trigger": "landing 3 expanding FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with free spins by landing 3 expanding FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. When a Tree symbol is part of a win, the Tree of Life will become sticky on the next free spin. The Tree of Life symbol will remain sticky until it is no longer part of any wins. A fully expanded Tree of Life is removed for the next free spin. Respins cannot be triggered in this bonus.\n\n Landing additional expanding FS symbols in the bonus awards extra free spins:\n\n Each expanding FS symbol awards at least +4 free spins and max +12 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - ETERNAL",
+      "trigger": "landing 4 expanding FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with free spins by landing 4 expanding FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the ORIGIN bonus. In addition, a reel is activated when a Circle of Life is triggered on that reel. The activated reel will stay active throughout the bonus and guarantees that a Tree symbol lands on that reel every spin, unless the reel already has a Tree symbol or Tree of Life.\n\n Landing additional expanding FS symbols in the bonus awards extra free spins:\n\n Each expanding FS symbol awards at least +4 free spins and max +12 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - REBIRTH",
+      "trigger": null,
+      "effects": "Activate this bonus with free spins by landing 5 expanding FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the ETERNAL bonus. In addition, reels 2 and 4 are activated from the start!\n\n Expanding FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n A Tree symbol and a FS symbol cannot land on the same reel at the same time.\n\n Only 3 expanding FS symbols can land per spin in the ORIGIN and the ETERNAL bonus.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "life_or_death_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "origin_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "eternal_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum achievable win in this game is 15 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2019/1.22.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/circle-of-life/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n TREE OF LIFE\n\n When a Tree symbol lands, it acts as a Wild symbol that substitutes for all symbols in the paytable and reveals a Multiplier value. If the Tree symbol is part of a win, it triggers a Respin, and the Tree symbol expands into a Tree of Life.\n\n When a Tree symbol forms part of a winning combination, the win is multiplied by the value shown on the Tree symbol. If more than one Tree symbol is part of the same winning combination, their values are first added together before being applied to the win. Tree symbols have the following Additive Multiplier values: 2x, 3x, 4x, 5x"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

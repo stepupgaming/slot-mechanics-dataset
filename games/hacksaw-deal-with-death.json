@@ -1,0 +1,342 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Deal With Death",
+    "slug": "hacksaw-deal-with-death",
+    "provider_game_id": "2000",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2000&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2000/1.29.5/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "JOKER SYMBOL",
+        "behavior": "The JOKER symbol acts as a Wild in Classic Mode, substituting for all paying symbols in the paytable. Only one JOKER symbol can land at the same time in Classic Mode.\n\n After it lands and all payline wins have been awarded, the grid flips to Poker Mode and the JOKER symbol transforms into one of four Joker card options:\n\n Regular Joker \n Hand Multiplier Joker \n Global Multiplier Joker \n Triple Trouble Joker \n\n The different Joker card features are explained below.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - FOOL’S GOLD",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during Classic Mode in the base game. If a JOKER symbol lands on the same spin, the bonus game will be activated after any Poker Mode wins are awarded.\n\n This bonus keeps the mechanics of the DEALBREAKER bonus. In addition, a JOKER symbol is guaranteed to land on every spin, triggering Poker Mode!\n\n Landing additional FS symbols at the same time in Classic Mode in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n FS symbols that land in Classic Mode will transform into a random Joker card if the game enters Poker Mode on the same spin.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "HAND MULTIPLIER JOKER",
+        "behavior": "This Joker activates before Poker Hand wins are calculated, and awards a Poker Hand Multiplier that is applied on the row where it landed, for one spin. The Poker Hand Multiplier can be one of the following values: 2x, 3x, 4x, 5x, or 10x.\n\n After the multiplier has been awarded, the Joker transforms into a regular poker card, always picking the best option for the row where it landed.\n\n If more than one Hand Multiplier Joker lands on the same row, their multipliers will be added together.",
+        "params": {}
+      },
+      {
+        "name": "GLOBAL MULTIPLIER JOKER",
+        "behavior": "This Joker activates before Poker Hand wins are calculated, and awards a Global Multiplier that is applied to all winning Poker Hands on the grid, for one spin. The Global Multiplier can be one of the following values: 2x, 3x, 4x, 5x, or 10x.\n\n After the multiplier has been awarded, the Joker transforms into a regular poker card, always picking the best option for the row where it landed.\n\n If a Global Multiplier affects a winning Poker Hand that is also affected by another multiplier, the values will be added together.",
+        "params": {}
+      }
+    ],
+    "collectors": [
+      {
+        "name": "TRIPLE TROUBLE JOKER",
+        "behavior": "This Joker has a delayed activation that triggers after Poker Hand wins are calculated.\n\n Before calculating Poker Hand wins, the Joker transforms into a regular poker card, always picking the best option for the row where it landed.\n\n Once all Poker Hand wins on the current grid have been awarded, all cards on the grid are collected, shuffled and then the three best possible Poker Hands from all the collected cards are dealt back onto the grid and awarded one by one, in ascending order.\n\n Non-winning Joker cards on the grid will transform into a random poker card.",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "CLASSIC MODE",
+        "behavior": "Classic Mode is the base mode of the game, and acts as a typical game with reels, paying symbols, and payline wins.",
+        "params": {}
+      },
+      {
+        "name": "POKER MODE",
+        "behavior": "Poker Mode is activated by landing the JOKER symbol.\n\n In Poker Mode, all the paying symbols on the grid are transformed into poker cards. Each row represents one Poker Hand, and each row will automatically create the best possible winning combination from the 5 cards on that row (based on the Poker Hand Paytable below).\n\n All cards drawn in Poker Mode are randomly generated and do not correspond to a physical deck of cards.",
+        "params": {}
+      },
+      {
+        "name": "REGULAR JOKER",
+        "behavior": "This Joker activates before Poker Hand wins are calculated and transforms into a regular poker card, always picking the best option for the row where it landed.",
+        "params": {}
+      },
+      {
+        "name": "ROYAL FLUSH",
+        "behavior": "ROYAL FLUSH is worth 2 000 times your bet. This Poker Hand consists of five specific consecutive cards in the same suit, with an Ace acting as the highest ranked card (10-J-Q-K-A).",
+        "params": {}
+      },
+      {
+        "name": "STRAIGHT FLUSH",
+        "behavior": "STRAIGHT FLUSH is worth 500 times your bet. This Poker Hand consists of five consecutive cards in the same suit.",
+        "params": {}
+      },
+      {
+        "name": "FOUR OF A KIND",
+        "behavior": "FOUR OF A KIND is worth 100 times your bet. This Poker Hand consists of four cards of the same rank.",
+        "params": {}
+      },
+      {
+        "name": "FULL HOUSE",
+        "behavior": "FULL HOUSE is worth 75 times your bet. This Poker Hand consists of three cards of one rank and two of another rank.",
+        "params": {}
+      },
+      {
+        "name": "FLUSH",
+        "behavior": "FLUSH is worth 50 times your bet. This Poker Hand consists of five cards of the same suit.",
+        "params": {}
+      },
+      {
+        "name": "STRAIGHT",
+        "behavior": "STRAIGHT is worth 25 times your bet. This Poker Hand consists of five consecutive cards of any suit.",
+        "params": {}
+      },
+      {
+        "name": "THREE OF A KIND",
+        "behavior": "THREE OF A KIND is worth 10 times your bet. This Poker Hand consists of three cards of the same rank.",
+        "params": {}
+      },
+      {
+        "name": "TWO PAIR",
+        "behavior": "TWO PAIR is worth 5 times your bet. This Poker Hand consists of two pair of cards of two different ranks.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - DEAL WITH IT",
+        "trigger": "landing 3 FS scatter symbols at the same time during Classic Mode in the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during Classic Mode in the base game. If a JOKER symbol lands on the same spin, the bonus game will be activated after any Poker Mode wins are awarded.\n\n This bonus keeps the base game's mechanics, with an increased chance of landing a JOKER symbol to trigger Poker Mode!\n\n Landing additional FS symbols at the same time in Classic Mode in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - DEALBREAKER",
+        "trigger": "landing 4 FS scatter symbols at the same time during Classic Mode in the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during Classic Mode in the base game. If a JOKER symbol lands on the same spin, the bonus game will be activated after any Poker Mode wins are awarded.\n\n This bonus keeps the mechanics of the DEAL WITH IT bonus. In addition, every Poker Hand win increases the payout for that specific Poker Hand by its base win amount after the win has been awarded. This means the first win is paid at its starting value, and the payout then increases with the starting value for the next time that same Poker Hand wins.\n\n Landing additional FS symbols at the same time in Classic Mode in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "CLASSIC MODE",
+      "trigger": null,
+      "effects": "Classic Mode is the base mode of the game, and acts as a typical game with reels, paying symbols, and payline wins.",
+      "params": {}
+    },
+    {
+      "name": "POKER MODE",
+      "trigger": null,
+      "effects": "Poker Mode is activated by landing the JOKER symbol.\n\n In Poker Mode, all the paying symbols on the grid are transformed into poker cards. Each row represents one Poker Hand, and each row will automatically create the best possible winning combination from the 5 cards on that row (based on the Poker Hand Paytable below).\n\n All cards drawn in Poker Mode are randomly generated and do not correspond to a physical deck of cards.",
+      "params": {}
+    },
+    {
+      "name": "JOKER SYMBOL",
+      "trigger": null,
+      "effects": "The JOKER symbol acts as a Wild in Classic Mode, substituting for all paying symbols in the paytable. Only one JOKER symbol can land at the same time in Classic Mode.\n\n After it lands and all payline wins have been awarded, the grid flips to Poker Mode and the JOKER symbol transforms into one of four Joker card options:\n\n Regular Joker \n Hand Multiplier Joker \n Global Multiplier Joker \n Triple Trouble Joker \n\n The different Joker card features are explained below.",
+      "params": {}
+    },
+    {
+      "name": "REGULAR JOKER",
+      "trigger": null,
+      "effects": "This Joker activates before Poker Hand wins are calculated and transforms into a regular poker card, always picking the best option for the row where it landed.",
+      "params": {}
+    },
+    {
+      "name": "HAND MULTIPLIER JOKER",
+      "trigger": null,
+      "effects": "This Joker activates before Poker Hand wins are calculated, and awards a Poker Hand Multiplier that is applied on the row where it landed, for one spin. The Poker Hand Multiplier can be one of the following values: 2x, 3x, 4x, 5x, or 10x.\n\n After the multiplier has been awarded, the Joker transforms into a regular poker card, always picking the best option for the row where it landed.\n\n If more than one Hand Multiplier Joker lands on the same row, their multipliers will be added together.",
+      "params": {}
+    },
+    {
+      "name": "GLOBAL MULTIPLIER JOKER",
+      "trigger": null,
+      "effects": "This Joker activates before Poker Hand wins are calculated, and awards a Global Multiplier that is applied to all winning Poker Hands on the grid, for one spin. The Global Multiplier can be one of the following values: 2x, 3x, 4x, 5x, or 10x.\n\n After the multiplier has been awarded, the Joker transforms into a regular poker card, always picking the best option for the row where it landed.\n\n If a Global Multiplier affects a winning Poker Hand that is also affected by another multiplier, the values will be added together.",
+      "params": {}
+    },
+    {
+      "name": "TRIPLE TROUBLE JOKER",
+      "trigger": null,
+      "effects": "This Joker has a delayed activation that triggers after Poker Hand wins are calculated.\n\n Before calculating Poker Hand wins, the Joker transforms into a regular poker card, always picking the best option for the row where it landed.\n\n Once all Poker Hand wins on the current grid have been awarded, all cards on the grid are collected, shuffled and then the three best possible Poker Hands from all the collected cards are dealt back onto the grid and awarded one by one, in ascending order.\n\n Non-winning Joker cards on the grid will transform into a random poker card.",
+      "params": {}
+    },
+    {
+      "name": "ROYAL FLUSH",
+      "trigger": null,
+      "effects": "ROYAL FLUSH is worth 2 000 times your bet. This Poker Hand consists of five specific consecutive cards in the same suit, with an Ace acting as the highest ranked card (10-J-Q-K-A).",
+      "params": {}
+    },
+    {
+      "name": "STRAIGHT FLUSH",
+      "trigger": null,
+      "effects": "STRAIGHT FLUSH is worth 500 times your bet. This Poker Hand consists of five consecutive cards in the same suit.",
+      "params": {}
+    },
+    {
+      "name": "FOUR OF A KIND",
+      "trigger": null,
+      "effects": "FOUR OF A KIND is worth 100 times your bet. This Poker Hand consists of four cards of the same rank.",
+      "params": {}
+    },
+    {
+      "name": "FULL HOUSE",
+      "trigger": null,
+      "effects": "FULL HOUSE is worth 75 times your bet. This Poker Hand consists of three cards of one rank and two of another rank.",
+      "params": {}
+    },
+    {
+      "name": "FLUSH",
+      "trigger": null,
+      "effects": "FLUSH is worth 50 times your bet. This Poker Hand consists of five cards of the same suit.",
+      "params": {}
+    },
+    {
+      "name": "STRAIGHT",
+      "trigger": null,
+      "effects": "STRAIGHT is worth 25 times your bet. This Poker Hand consists of five consecutive cards of any suit.",
+      "params": {}
+    },
+    {
+      "name": "THREE OF A KIND",
+      "trigger": null,
+      "effects": "THREE OF A KIND is worth 10 times your bet. This Poker Hand consists of three cards of the same rank.",
+      "params": {}
+    },
+    {
+      "name": "TWO PAIR",
+      "trigger": null,
+      "effects": "TWO PAIR is worth 5 times your bet. This Poker Hand consists of two pair of cards of two different ranks.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - DEAL WITH IT",
+      "trigger": "landing 3 FS scatter symbols at the same time during Classic Mode in the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during Classic Mode in the base game. If a JOKER symbol lands on the same spin, the bonus game will be activated after any Poker Mode wins are awarded.\n\n This bonus keeps the base game's mechanics, with an increased chance of landing a JOKER symbol to trigger Poker Mode!\n\n Landing additional FS symbols at the same time in Classic Mode in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - DEALBREAKER",
+      "trigger": "landing 4 FS scatter symbols at the same time during Classic Mode in the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during Classic Mode in the base game. If a JOKER symbol lands on the same spin, the bonus game will be activated after any Poker Mode wins are awarded.\n\n This bonus keeps the mechanics of the DEAL WITH IT bonus. In addition, every Poker Hand win increases the payout for that specific Poker Hand by its base win amount after the win has been awarded. This means the first win is paid at its starting value, and the payout then increases with the starting value for the next time that same Poker Hand wins.\n\n Landing additional FS symbols at the same time in Classic Mode in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - FOOL’S GOLD",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during Classic Mode in the base game. If a JOKER symbol lands on the same spin, the bonus game will be activated after any Poker Mode wins are awarded.\n\n This bonus keeps the mechanics of the DEALBREAKER bonus. In addition, a JOKER symbol is guaranteed to land on every spin, triggering Poker Mode!\n\n Landing additional FS symbols at the same time in Classic Mode in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n FS symbols that land in Classic Mode will transform into a random Joker card if the game enters Poker Mode on the same spin.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_name_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_two_name_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000,
+    "max_win_notes": "maximum achievable win in this game is 20,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2000/1.29.5/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/deal-with-death/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n The deal is done and the reels are set in motion. Deal With Death is a game with two faces - one of chance, one of fate. Spin the reels in Classic Mode, or land a JOKER symbol to flip into Poker Mode, where the symbols turn into playing cards and every row becomes a Poker Hand!\n\n Played on a 5-reel, 4-row grid with paylines and poker wins, this game has a max win of 20 000 times your bet. The max win is achievable in all game modes except Classic Mode!\n\n FEATURES\n\n CLASSIC MODE\n\n Classic Mode is the base mode of the game, and acts as a typical game with reels, paying symbols, "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "The Bomb",
+    "slug": "hacksaw-the-bomb",
+    "provider_game_id": "1054",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1054&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1054/1.42.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 5x5 from About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels.\n\n GENERAL"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD SYMBOLS",
+        "behavior": "Connect a wild with a winning cluster in the main game to get a bigger win. Wild symbols can be a part of multiple win clusters. The wild symbol substitutes for all symbols except the BONUS and TNT symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "TNT SYMBOL",
+        "behavior": "The TNT feature is an extra blast that happens after the normal round is completed. All TNT symbols blast clear a 3x3 cluster so that new symbols land on the grid. Regular wins are awarded before the TNT feature is triggered.",
+        "params": {
+          "multiplier_values_mentioned": [
+            3
+          ]
+        }
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME",
+        "trigger": "The bonus game is triggered by getting three Bonus scatter symbols.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "The bonus game is triggered by getting three Bonus scatter symbols. The bonus game scene consists of a total multiplier counter and also a Max Win progress bar. If you get 5 Max Win symbols, you win the {jackpotStr} Max Win!\n\n The bonus game consists of cascading symbols that can be either dead (rocks) or mystery crates. After each drop all mystery crates will reveal their content. Crates can be either empty, contain a Max Win progress symbol, contain multipliers or a multiplier of the total current multiplier. After each round the dead symbols collapse and the other symbols drop to the bottom. In the next round, new symbols drop down and fill all empty spaces.\n\n Once the grid has been filled with crates, the multipliers are added to the total displayed at the top of the screen. The total win equals the displayed number multiplied with your bet amount.\n\n \"Add\" multipliers can be either +1, +2, +3, +4, +5, +10.\n\n\"Multiply\" multipliers can be either x2, x3, x4, x5 or x10.\n\n\"Max Win\" progression symbols are immediately added to the progression bar. If you win the Max Win, the bonus game ends immediately and no further wins are awarded."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "TNT SYMBOL",
+      "trigger": null,
+      "effects": "The TNT feature is an extra blast that happens after the normal round is completed. All TNT symbols blast clear a 3x3 cluster so that new symbols land on the grid. Regular wins are awarded before the TNT feature is triggered.",
+      "params": {
+        "multiplier_values_mentioned": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "WILD SYMBOLS",
+      "trigger": null,
+      "effects": "Connect a wild with a winning cluster in the main game to get a bigger win. Wild symbols can be a part of multiple win clusters. The wild symbol substitutes for all symbols except the BONUS and TNT symbols.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME",
+      "trigger": "The bonus game is triggered by getting three Bonus scatter symbols.",
+      "effects": "The bonus game is triggered by getting three Bonus scatter symbols. The bonus game scene consists of a total multiplier counter and also a Max Win progress bar. If you get 5 Max Win symbols, you win the {jackpotStr} Max Win!\n\n The bonus game consists of cascading symbols that can be either dead (rocks) or mystery crates. After each drop all mystery crates will reveal their content. Crates can be either empty, contain a Max Win progress symbol, contain multipliers or a multiplier of the total current multiplier. After each round the dead symbols collapse and the other symbols drop to the bottom. In the next round, new symbols drop down and fill all empty spaces.\n\n Once the grid has been filled with crates, the multipliers are added to the total displayed at the top of the screen. The total win equals the displayed number multiplied with your bet amount.\n\n \"Add\" multipliers can be either +1, +2, +3, +4, +5, +10.\n\n\"Multiply\" multipliers can be either x2, x3, x4, x5 or x10.\n\n\"Max Win\" progression symbols are immediately added to the progression bar. If you win the Max Win, the bonus game ends immediately and no further wins are awarded.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": null,
+    "options": [],
+    "notes": "No featureBuy section found"
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5500,
+    "max_win_notes": "maximum achievable win in this game is 5,500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1054/1.42.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/the-bomb/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n This is a POCKETZ game, our series of pocket format mobile games! The Bomb is an explosive 5x5 cluster win game experience with an explosive {jackpotStr} Max Win! The maximum feature win in this game is 5500x plus the wins related to the combinations necessary to activate the game's bonus features.\n\n TNT SYMBOL\n\n The TNT feature is an extra blast that happens after the normal round is completed. All TNT symbols blast clear a 3x3 cluster so that new symbols land on the grid. Regular wins are awarded before the TNT feature is triggered.\n\n WILD SYMBOLS\n\n Connect a wild with a win"
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

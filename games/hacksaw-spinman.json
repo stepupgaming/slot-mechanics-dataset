@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Spinman",
+    "slug": "hacksaw-spinman",
+    "provider_game_id": "1752",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1752&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1752/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "JUSTICE REELS",
+        "behavior": "When a Spinman symbol lands it expands into a Wild Justice Reel if the expanded symbol is a part of at least one winning combination once expanded.\n\n When the Justice Reel expands, it activates a Booster Wheel. The Booster Wheel spins and lands on one of six Multipliers or a MAX WIN that is instantly awarded. The Multipliers will be selected from Bronze, Silver, or Gold value brackets to form the six Multiplier values on the Wheel.\n\n The three value brackets have the following Multiplier values:\n\n Bronze: 2x, 3x, 4x, 5x\n\n Silver: 10x, 15x, 20x, 25x\n\n Gold: 50x, 100x, 250x, 500x, MAX WIN\n\n The Multiplier on which the arrow lands will be applied to the entire Justice Reel. If a winning combination includes more than one Justice Reel, the Multiplier values will first be added together from left to right and then applied to the win.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - REEL HEROES",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Hidden Epic Bonus guarantees that at least 2 Spinman symbols land on each spin and that the Multiplier values on the Booster Wheels are all a minimum of 5x!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins.\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Justice Reel substitutes for other paying symbols in the paytable.\n\n Only one Spinman symbol can land on a reel at a time.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - POWER SURGE",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game has an increased chance of landing Spinman symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins.\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - SPINFINITY",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game guarantees that at least 1 Spinman symbol lands on each spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins.\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "JUSTICE REELS",
+      "trigger": null,
+      "effects": "When a Spinman symbol lands it expands into a Wild Justice Reel if the expanded symbol is a part of at least one winning combination once expanded.\n\n When the Justice Reel expands, it activates a Booster Wheel. The Booster Wheel spins and lands on one of six Multipliers or a MAX WIN that is instantly awarded. The Multipliers will be selected from Bronze, Silver, or Gold value brackets to form the six Multiplier values on the Wheel.\n\n The three value brackets have the following Multiplier values:\n\n Bronze: 2x, 3x, 4x, 5x\n\n Silver: 10x, 15x, 20x, 25x\n\n Gold: 50x, 100x, 250x, 500x, MAX WIN\n\n The Multiplier on which the arrow lands will be applied to the entire Justice Reel. If a winning combination includes more than one Justice Reel, the Multiplier values will first be added together from left to right and then applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - POWER SURGE",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game has an increased chance of landing Spinman symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins.\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SPINFINITY",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game guarantees that at least 1 Spinman symbol lands on each spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins.\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - REEL HEROES",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Hidden Epic Bonus guarantees that at least 2 Spinman symbols land on each spin and that the Multiplier values on the Booster Wheels are all a minimum of 5x!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins.\n\n 3 FS symbols award +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Justice Reel substitutes for other paying symbols in the paytable.\n\n Only one Spinman symbol can land on a reel at a time.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "heroic_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "power_surge_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "spinfinity_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1752/1.11.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/spinman/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n JUSTICE REELS\n\n When a Spinman symbol lands it expands into a Wild Justice Reel if the expanded symbol is a part of at least one winning combination once expanded.\n\n When the Justice Reel expands, it activates a Booster Wheel. The Booster Wheel spins and lands on one of six Multipliers or a MAX WIN that is instantly awarded. The Multipliers will be selected from Bronze, Silver, or Gold value brackets to form the six Multiplier values on the Wheel.\n\n The three value brackets have the following Multiplier values:\n\n Bronze: 2x, 3x, 4x, 5x\n\n Silver: 10x, 15x, 20x, 25x\n\n Gold: 50x, 100x,"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

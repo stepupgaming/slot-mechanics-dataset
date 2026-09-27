@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Wishbringer",
+    "slug": "hacksaw-wishbringer",
+    "provider_game_id": "1711",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1711&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1711/1.23.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 4096. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD CLOUD ROWS",
+        "behavior": "Genie symbols can land on reels 2-6. When it lands, the Genie symbol will blow Clouds to the left across all positions on the same row. All positions that are covered by a Genie symbol or Clouds are counted as Wild symbols that substitute for all symbols in the paytable. FS symbols will remain active even when covered by Wild symbols.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "ARABIAN NIGHTS BONUS GAME",
+        "trigger": null,
+        "spins_awarded": "awards 5 free spins,\n\n 4 FS symbols awards 10 free spins,\n\n 5 FS symbols awards 20 free spins,\n\n 6 FS symbols awards 40 free spins",
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "The ARABIAN NIGHTS bonus game mode retains the mechanics of the base game however, you have a better chance of landing the Genie symbol.\n\n Land FS scatter symbols at the same time in the base game to activate this bonus game with a varying number of free spins:\n\n 3 FS symbols awards 5 free spins,\n\n 4 FS symbols awards 10 free spins,\n\n 5 FS symbols awards 20 free spins,\n\n 6 FS symbols awards 40 free spins.\n\n Landing additional FS symbols at the same time during the bonus awards additional free spins:\n\n 2 FS symbols awards 2 extra spins,\n\n 3 FS symbols awards 4 extra spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD CLOUD ROWS",
+      "trigger": null,
+      "effects": "Genie symbols can land on reels 2-6. When it lands, the Genie symbol will blow Clouds to the left across all positions on the same row. All positions that are covered by a Genie symbol or Clouds are counted as Wild symbols that substitute for all symbols in the paytable. FS symbols will remain active even when covered by Wild symbols.",
+      "params": {}
+    },
+    {
+      "name": "ARABIAN NIGHTS BONUS GAME",
+      "trigger": null,
+      "effects": "The ARABIAN NIGHTS bonus game mode retains the mechanics of the base game however, you have a better chance of landing the Genie symbol.\n\n Land FS scatter symbols at the same time in the base game to activate this bonus game with a varying number of free spins:\n\n 3 FS symbols awards 5 free spins,\n\n 4 FS symbols awards 10 free spins,\n\n 5 FS symbols awards 20 free spins,\n\n 6 FS symbols awards 40 free spins.\n\n Landing additional FS symbols at the same time during the bonus awards additional free spins:\n\n 2 FS symbols awards 2 extra spins,\n\n 3 FS symbols awards 4 extra spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "wide_spectrum_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "narrow_spectrum_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win of 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1711/1.23.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/wishbringer/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Bold are the hands that dare to wish, for treasures untold come with a twist. My lamp is hidden, forgotten, and cold. Can you find it, shining with gold?\n\n There is a price to pay to set the Genie free. Join the Genie in a sand-scattered oasis in Wishbringer, a 6-reel, 4-row game featuring ways-wins and a brilliant Wild Cloud Row mechanic. Will you get what you wish for?\n\n The maximum win of 10,000 times your bet can be reached in all game modes.\n\n FEATURES\n\n WILD CLOUD ROWS\n\n Genie symbols can land on reels 2-6. When it lands, the Genie symbol will blow Clouds to the left acr"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

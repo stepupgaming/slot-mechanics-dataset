@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Cash Quest",
+    "slug": "hacksaw-cash-quest",
+    "provider_game_id": "1099",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1099&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1099/1.23.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 6x6 grid in official About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "BOOSTBAR™",
+        "behavior": "Introducing our latest feature BOOSTBAR™. An exciting feature bar that consists of four extra positions located above the reels. Every time that a BOOSTBAR™ activator symbol lands on the grid, the BOOSTBAR™ is activated and 4 special feature symbols will land on the bar. The symbols can be either blocking stones, a symbol that clears the grid, paying symbols, symbol multipliers, global multipliers or wilds. If one or more stones land, those positions are locked.\n\n BOOSTBAR™ FEATURE OVERVIEW:\n\n BLOCKING STONES\n\n This symbol blocks the position it lands on until the next round.\n\n MAGIC LANTERN\n\n This symbol will jump out of the bar and land on the grid. Once it lands it will clear the grid and a new symbol drop will take place.\n\n SYMBOLS WITH SPLITTER FUNCTIONALITY\n\n Can be any of the paying symbols, they will also have an amount in the top right corner. The amount tells you how many symbols will jump out of the bar and land on a random position on the grid.\nThe amounts can be 5, 10, 15, 20, 25 and 30 symbols.\n\n WILDS\n\n Wild symbols will jump out of the bar and land on a random position on the grid. They can have an amount in the top right corner - the amount tells you how many symbols will jump out.\nThe amounts can be 5, 10, 15, 20, 25 or 30.\n\n SYMBOL MULTIPLIERS\n\n Can be any of the paying symbols. Each symbol has a multiplier displayed in the top right corner. The multiplier amount will be multiplied by all wins on that symbol during the round. If there are two or more with the same symbol the multiplier values will first be added and then multiplied by the wins.\nThe symbol multiplier amounts can be 2x, 3x, 4x, 5x, 10x, 25x or 30x. \n\n GLOBAL MULTIPLIERS\n\n These multipliers are global, which means that all wins during the round will be multiplied by the value. If land several global multipliers and/or symbol multipliers, all applicable multiplier values will first be added and then multiplied by the wins.\nThe global multiplier amounts can be 2x, 3x, 4x, 5x, 10x, 25x,",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "BOOSTBAR™",
+      "trigger": null,
+      "effects": "Introducing our latest feature BOOSTBAR™. An exciting feature bar that consists of four extra positions located above the reels. Every time that a BOOSTBAR™ activator symbol lands on the grid, the BOOSTBAR™ is activated and 4 special feature symbols will land on the bar. The symbols can be either blocking stones, a symbol that clears the grid, paying symbols, symbol multipliers, global multipliers or wilds. If one or more stones land, those positions are locked.\n\n BOOSTBAR™ FEATURE OVERVIEW:\n\n BLOCKING STONES\n\n This symbol blocks the position it lands on until the next round.\n\n MAGIC LANTERN\n\n This symbol will jump out of the bar and land on the grid. Once it lands it will clear the grid and a new symbol drop will take place.\n\n SYMBOLS WITH SPLITTER FUNCTIONALITY\n\n Can be any of the paying symbols, they will also have an amount in the top right corner. The amount tells you how many symbols will jump out of the bar and land on a random position on the grid.\nThe amounts can be 5, 10, 15, 20, 25 and 30 symbols.\n\n WILDS\n\n Wild symbols will jump out of the bar and land on a random position on the grid. They can have an amount in the top right corner - the amount tells you how many symbols will jump out.\nThe amounts can be 5, 10, 15, 20, 25 or 30.\n\n SYMBOL MULTIPLIERS\n\n Can be any of the paying symbols. Each symbol has a multiplier displayed in the top right corner. The multiplier amount will be multiplied by all wins on that symbol during the round. If there are two or more with the same symbol the multiplier values will first be added and then multiplied by the wins.\nThe symbol multiplier amounts can be 2x, 3x, 4x, 5x, 10x, 25x or 30x. \n\n GLOBAL MULTIPLIERS\n\n These multipliers are global, which means that all wins during the round will be multiplied by the value. If land several global multipliers and/or symbol multipliers, all applicable multiplier values will first be added and then multiplied by the wins.\nThe global multiplier amounts can be 2x, 3x, 4x, 5x, 10x, 25x,",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_fs_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7500,
+    "max_win_notes": "maximum achievable win in this game is 7,500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1099/1.23.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/cash-quest/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Cash Quest is a magnificent adventure game set in a magical forest with swords, skulls and great treasures as symbols. It features our latest reel modifier called BOOSTBAR™, which is an extra feature bar on top the reels that can award you symbols, multipliers and wilds. The game is cluster-win based, has a 6x6 grid and a max win of 7,500 times your bet.\n\n BOOSTBAR™\n\n Introducing our latest feature BOOSTBAR™. An exciting feature bar that consists of four extra positions located above the reels. Every time that a BOOSTBAR™ activator symbol lands on the grid, the BOOSTBAR™ is ac"
+    }
+  ],
+  "unknowns": [
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

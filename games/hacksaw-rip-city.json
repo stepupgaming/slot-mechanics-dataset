@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "RIP City",
+    "slug": "hacksaw-rip-city",
+    "provider_game_id": "1233",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1233&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1233/1.34.5/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 5x5 from About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD CAT SYMBOL",
+        "behavior": "Wild Cat symbols expand if the expanded symbol would be part of at least one winning combination once expanded.\n\n Expanded Wild Cat symbols count as wild on every position that the expanded symbol covers. Wild Cat symbols only expand downward, to the bottom of the grid. Wild Cat symbols that do not expand are counted as a single wild symbol. Each reel can have only one Wild Cat symbol at a time.",
+        "params": {}
+      },
+      {
+        "name": "WILD SYMBOL",
+        "behavior": "If a Wild Cat symbol expands through a WILD symbol it turns into a multiplier that is applied to the whole expanded Wild Cat symbol.\n\n WILD multipliers can have the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x\n\n If a winning combination includes more than one expanded Wild Cat with a multiplier, the multiplier values will first be added together and then applied to the win.",
+        "params": {}
+      },
+      {
+        "name": "RO$$ BONUS",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to trigger this bonus game, which awards 10 free spins!\n\n In the Ro$$ Bonus game mode you have a better chance of landing Wild Cat symbols and WILD symbols than in the base game!\n\n Landing 3 FS symbols at the same time during the feature awards 4 additional free spins.\n\n Landing 4 FS symbols at the same time during the Ro$$ Bonus game awards the Maxx Bonus at the end of the current spin. If the remaining number of free spins is less than 10, the number of free spins will be set to 10. Otherwise, the current number of remaining free spins is unchanged.",
+        "params": {}
+      },
+      {
+        "name": "MAXX BONUS",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to trigger this bonus game, which awards 10 free spins!\n\n In the Maxx Bonus game mode, each reel can be activated by landing a Wild Cat symbol on that reel! Once a reel is activated, a Wild Cat symbol is guaranteed to land on that reel on all remaining free spins.\n\n Landing 3 FS symbols at the same time during the feature awards 4 additional free spins.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "WILD CAT SYMBOL",
+      "trigger": null,
+      "effects": "Wild Cat symbols expand if the expanded symbol would be part of at least one winning combination once expanded.\n\n Expanded Wild Cat symbols count as wild on every position that the expanded symbol covers. Wild Cat symbols only expand downward, to the bottom of the grid. Wild Cat symbols that do not expand are counted as a single wild symbol. Each reel can have only one Wild Cat symbol at a time.",
+      "params": {}
+    },
+    {
+      "name": "WILD SYMBOL",
+      "trigger": null,
+      "effects": "If a Wild Cat symbol expands through a WILD symbol it turns into a multiplier that is applied to the whole expanded Wild Cat symbol.\n\n WILD multipliers can have the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x\n\n If a winning combination includes more than one expanded Wild Cat with a multiplier, the multiplier values will first be added together and then applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "RO$$ BONUS",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to trigger this bonus game, which awards 10 free spins!\n\n In the Ro$$ Bonus game mode you have a better chance of landing Wild Cat symbols and WILD symbols than in the base game!\n\n Landing 3 FS symbols at the same time during the feature awards 4 additional free spins.\n\n Landing 4 FS symbols at the same time during the Ro$$ Bonus game awards the Maxx Bonus at the end of the current spin. If the remaining number of free spins is less than 10, the number of free spins will be set to 10. Otherwise, the current number of remaining free spins is unchanged.",
+      "params": {}
+    },
+    {
+      "name": "MAXX BONUS",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to trigger this bonus game, which awards 10 free spins!\n\n In the Maxx Bonus game mode, each reel can be activated by landing a Wild Cat symbol on that reel! Once a reel is activated, a Wild Cat symbol is guaranteed to land on that reel on all remaining free spins.\n\n Landing 3 FS symbols at the same time during the feature awards 4 additional free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "two_wild_cats_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "three_wild_cats_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "ross_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "maxx_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum win of 12,500 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1233/1.34.5/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/rip-city/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Why can't we all just get along? Join the game of cat and mouse in RIP City and chase your prize in this 5x5 game with paylines and a maximum win of 12,500 times your bet! The max win can be achieved in the base game, Ro$$ Bonus and Maxx Bonus game modes.\n\n FEATURES\n\n WILD CAT SYMBOL\n\n Wild Cat symbols expand if the expanded symbol would be part of at least one winning combination once expanded.\n\n Expanded Wild Cat symbols count as wild on every position that the expanded symbol covers. Wild Cat symbols only expand downward, to the bottom of the grid. Wild Cat symbols that do "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

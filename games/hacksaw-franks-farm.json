@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Frank's Farm",
+    "slug": "hacksaw-franks-farm",
+    "provider_game_id": "1225",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1225&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1225/1.46.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "MARKET MULTIPLIER",
+        "behavior": "Markets are multiplier scatter symbols that multiply all wins while they are on the grid. If more than one Market is present on the grid at the same time, their values are first multiplied with each other and then applied to the win. \n\n The possible multiplier values for Markets are 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "ORDER RUSH BONUS GAME",
+        "trigger": "Landing 3 FS scatter symbols at the same time in the base game activates the Order Rush bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Landing 3 FS scatter symbols at the same time in the base game activates the Order Rush bonus game with 10 free spins.\n\n Land FS symbols for additional spins. Each FS symbol awards one extra free spin.\n\n In this bonus game, you will receive orders to complete. An order consists of 1 - 3 symbol sets, and each symbol set consists of 10 - 24 symbols of one type. Every time an order is completed, the difficulty of the next order increases. The first Order always has only 1 symbol set. Every three orders, the number of required symbol sets increases by 1, up to the maximum of 3.\n\n After completing an Order, the minimum value of a Market multiplier that you can land increases by 1x."
+      },
+      {
+        "name": "DINER DASH BONUS GAME",
+        "trigger": "Landing 4 FS scatter symbols at the same time in the base game activates the Diner Dash bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Landing 4 FS scatter symbols at the same time in the base game activates the Diner Dash bonus game with 10 free spins.\n\n Land FS symbols for additional spins. Each FS symbol awards one extra free spin.\n\n This bonus game has the special Diner symbol. Once a Diner symbol has landed, it remains sticky for the rest of the bonus game!\n\n All wins awarded while Diner symbols are on the grid are progressively collected by the Diner symbols. The amount stored in each Diner is shown next to the grid and is awarded at the end of each spin!\n\n SPECIAL SYMBOLS\n\n The Diner symbol appears only in the DINER DASH game mode."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MARKET MULTIPLIER",
+      "trigger": null,
+      "effects": "Markets are multiplier scatter symbols that multiply all wins while they are on the grid. If more than one Market is present on the grid at the same time, their values are first multiplied with each other and then applied to the win. \n\n The possible multiplier values for Markets are 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x.",
+      "params": {}
+    },
+    {
+      "name": "ORDER RUSH BONUS GAME",
+      "trigger": "Landing 3 FS scatter symbols at the same time in the base game activates the Order Rush bonus game with 10 free spins.",
+      "effects": "Landing 3 FS scatter symbols at the same time in the base game activates the Order Rush bonus game with 10 free spins.\n\n Land FS symbols for additional spins. Each FS symbol awards one extra free spin.\n\n In this bonus game, you will receive orders to complete. An order consists of 1 - 3 symbol sets, and each symbol set consists of 10 - 24 symbols of one type. Every time an order is completed, the difficulty of the next order increases. The first Order always has only 1 symbol set. Every three orders, the number of required symbol sets increases by 1, up to the maximum of 3.\n\n After completing an Order, the minimum value of a Market multiplier that you can land increases by 1x.",
+      "params": {}
+    },
+    {
+      "name": "DINER DASH BONUS GAME",
+      "trigger": "Landing 4 FS scatter symbols at the same time in the base game activates the Diner Dash bonus game with 10 free spins.",
+      "effects": "Landing 4 FS scatter symbols at the same time in the base game activates the Diner Dash bonus game with 10 free spins.\n\n Land FS symbols for additional spins. Each FS symbol awards one extra free spin.\n\n This bonus game has the special Diner symbol. Once a Diner symbol has landed, it remains sticky for the rest of the bonus game!\n\n All wins awarded while Diner symbols are on the grid are progressively collected by the Diner symbols. The amount stored in each Diner is shown next to the grid and is awarded at the end of each spin!\n\n SPECIAL SYMBOLS\n\n The Diner symbol appears only in the DINER DASH game mode.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonusspins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "orderrush_title_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "dinerdash_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000,
+    "max_win_notes": "maximum achievable win in this game is 5,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1225/1.46.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/franks-farm/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n MARKET MULTIPLIER\n\n Markets are multiplier scatter symbols that multiply all wins while they are on the grid. If more than one Market is present on the grid at the same time, their values are first multiplied with each other and then applied to the win. \n\n The possible multiplier values for Markets are 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x.\n\n ORDER RUSH BONUS GAME\n\n Landing 3 FS scatter symbols at the same time in the base game activates the Order Rush bonus game with 10 free spins.\n\n Land FS symbols for additional spins. Each FS symbol awards one extra free spin.\n\n In this bonus game"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

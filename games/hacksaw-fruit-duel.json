@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Fruit Duel",
+    "slug": "hacksaw-fruit-duel",
+    "provider_game_id": "1197",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1197&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1197/1.31.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 3x3 grid in official About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 17,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 17. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "The DuelReels™ mechanic transforms the entire reel to a wild multiplier! Landing the VS symbol triggers an expanding reel with a duel between two fruits with multipliers. The reel only expands if it would create, or be part of, at least one winning combination when expanded.\n\n The fruit that wins the duel will apply its multiplier to the whole reel. The whole reel becomes wild and the value of any connecting winlines is multiplied by the reel multiplier. If more than one wild reel is part of a winning combination, their multipliers will first be added together and then applied to the win.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x"
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "DUELREELS™",
+        "behavior": "The DuelReels™ mechanic transforms the entire reel to a wild multiplier! Landing the VS symbol triggers an expanding reel with a duel between two fruits with multipliers. The reel only expands if it would create, or be part of, at least one winning combination when expanded.\n\n The fruit that wins the duel will apply its multiplier to the whole reel. The whole reel becomes wild and the value of any connecting winlines is multiplied by the reel multiplier. If more than one wild reel is part of a winning combination, their multipliers will first be added together and then applied to the win.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "landing 3 Free Spins symbols!\n\n When the feature begins 10 free spins are awarded.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Free spins with a better chance to land VS symbols! Free spins are activated by landing 3 Free Spins symbols!\n\n When the feature begins 10 free spins are awarded. During free spins there is a better chance of landing VS symbols than in the base game and you are more likely to get higher multiplier values in the duel!"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "DUELREELS™",
+      "trigger": null,
+      "effects": "The DuelReels™ mechanic transforms the entire reel to a wild multiplier! Landing the VS symbol triggers an expanding reel with a duel between two fruits with multipliers. The reel only expands if it would create, or be part of, at least one winning combination when expanded.\n\n The fruit that wins the duel will apply its multiplier to the whole reel. The whole reel becomes wild and the value of any connecting winlines is multiplied by the reel multiplier. If more than one wild reel is part of a winning combination, their multipliers will first be added together and then applied to the win.\n\n The possible multiplier values are: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "landing 3 Free Spins symbols!\n\n When the feature begins 10 free spins are awarded.",
+      "effects": "Free spins with a better chance to land VS symbols! Free spins are activated by landing 3 Free Spins symbols!\n\n When the feature begins 10 free spins are awarded. During free spins there is a better chance of landing VS symbols than in the base game and you are more likely to get higher multiplier values in the duel!",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "freespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 3333,
+    "max_win_notes": "maximum achievable win in this game is 3,333 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1197/1.31.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/fruit-duel/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Fruit Duel is a fruity game packed with juicy duels where the the entire reel transforms to a wild multiplier! It fits into our 3x3 Spins™ model, with a 3x3 grid, lower volatility and a max win of 3,333x! With our exciting DuelReels™ mechanic you never know what spin is going to suddenly hit a big win!\n\n DUELREELS™\n\n The DuelReels™ mechanic transforms the entire reel to a wild multiplier! Landing the VS symbol triggers an expanding reel with a duel between two fruits with multipliers. The reel only expands if it would create, or be part of, at least one winning combination whe"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

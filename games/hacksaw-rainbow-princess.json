@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Rainbow Princess",
+    "slug": "hacksaw-rainbow-princess",
+    "provider_game_id": "1817",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1817&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1817/1.13.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Aurora Gems can land during cascades. When an Aurora Gem lands, it activates before any wins are awarded. When activated, it will multiply all Magic Frame Multipliers on the grid. When the Aurora Gem has applied its Multiplier, it will be removed from the grid for the next cascade or spin. Only 1 Aurora Gem can land on the grid at a time.\n\n Possible Aurora Gem Multiplier values are: x2, x3, x4, x5, x6, x7, x8, x9, x10"
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "HIDDEN EPIC BONUS - THRONE OF STARLIGHT",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Hidden Epic Bonus game keeps the mechanics of the TIARA TREASURE bonus. Each position will have a Sticky Progressive Magic Frame Multiplier from the start! All Magic Frame Multipliers will start with a minimum value of 4x.\n\n FS symbols cannot land in this game mode.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "MAGIC FRAME MULTIPLIERS",
+        "behavior": "There is a chance that Magic Frame Multipliers are added to random positions during a spin or a cascade if there is at least 1 winning cluster on the grid. Magic Frame Multipliers will display an Adding Multiplier, which activates if that position is part of a winning cluster. The activated Magic Frame Multiplier is applied to the winning cluster that the Frame is part of. If more than 1 Magic Frame Multiplier is part of a winning cluster, the Multipliers will first add together, then the resulting value will be multiplied by the total win amount to form the win.\n\n The possible Magic Frame Multipliers values start at: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, or 100x.\n\n All Magic Frame Multipliers on the grid will remain in the same positions during cascades. Multiplier values will double each time they are part of a new win after the win has been awarded. The new Multiplier value will be applied to the next potential win the Magic Frame Multiplier is part of on the next cascade on that spin. When all cascades are completed and all wins have been paid out, all Magic Frame Multipliers will be removed from the grid for the next spin.",
+        "params": {}
+      },
+      {
+        "name": "AURORA GEMS",
+        "behavior": "Aurora Gems can land during cascades. When an Aurora Gem lands, it activates before any wins are awarded. When activated, it will multiply all Magic Frame Multipliers on the grid. When the Aurora Gem has applied its Multiplier, it will be removed from the grid for the next cascade or spin. Only 1 Aurora Gem can land on the grid at a time.\n\n Possible Aurora Gem Multiplier values are: x2, x3, x4, x5, x6, x7, x8, x9, x10",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADES",
+        "behavior": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - TIARA TREASURE",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game maintains the base game's mechanics and has Sticky Progressive Magic Frame Multipliers! All Magic Frame Multipliers remain in the same positions and retain their values, which can increase through wins or Aurora Gems. Any increased Multiplier values will update and continue to progress throughout the bonus.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - MAKE IT RAINBOW",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the TIARA TREASURE bonus. In addition, a Rainbow Rush Bar is displayed outside the grid. Each time a winning cluster is formed, the Rainbow Rush Bar increases. The size of the increase on the Bar will depend on how many winning symbols are in the cluster.\n\n Once the Rainbow Rush Bar is full and the current grid is settled, it activates and distributes between 3 to 5 Wild symbols to the grid. After the Rainbow Rush Bar has activated, it will reset and then continue to fill on the next spin, as long as there are remaining free spins in the bonus and new wins occur.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "MAGIC FRAME MULTIPLIERS",
+      "trigger": null,
+      "effects": "There is a chance that Magic Frame Multipliers are added to random positions during a spin or a cascade if there is at least 1 winning cluster on the grid. Magic Frame Multipliers will display an Adding Multiplier, which activates if that position is part of a winning cluster. The activated Magic Frame Multiplier is applied to the winning cluster that the Frame is part of. If more than 1 Magic Frame Multiplier is part of a winning cluster, the Multipliers will first add together, then the resulting value will be multiplied by the total win amount to form the win.\n\n The possible Magic Frame Multipliers values start at: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, or 100x.\n\n All Magic Frame Multipliers on the grid will remain in the same positions during cascades. Multiplier values will double each time they are part of a new win after the win has been awarded. The new Multiplier value will be applied to the next potential win the Magic Frame Multiplier is part of on the next cascade on that spin. When all cascades are completed and all wins have been paid out, all Magic Frame Multipliers will be removed from the grid for the next spin.",
+      "params": {}
+    },
+    {
+      "name": "AURORA GEMS",
+      "trigger": null,
+      "effects": "Aurora Gems can land during cascades. When an Aurora Gem lands, it activates before any wins are awarded. When activated, it will multiply all Magic Frame Multipliers on the grid. When the Aurora Gem has applied its Multiplier, it will be removed from the grid for the next cascade or spin. Only 1 Aurora Gem can land on the grid at a time.\n\n Possible Aurora Gem Multiplier values are: x2, x3, x4, x5, x6, x7, x8, x9, x10",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - TIARA TREASURE",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game maintains the base game's mechanics and has Sticky Progressive Magic Frame Multipliers! All Magic Frame Multipliers remain in the same positions and retain their values, which can increase through wins or Aurora Gems. Any increased Multiplier values will update and continue to progress throughout the bonus.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - MAKE IT RAINBOW",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the TIARA TREASURE bonus. In addition, a Rainbow Rush Bar is displayed outside the grid. Each time a winning cluster is formed, the Rainbow Rush Bar increases. The size of the increase on the Bar will depend on how many winning symbols are in the cluster.\n\n Once the Rainbow Rush Bar is full and the current grid is settled, it activates and distributes between 3 to 5 Wild symbols to the grid. After the Rainbow Rush Bar has activated, it will reset and then continue to fill on the next spin, as long as there are remaining free spins in the bonus and new wins occur.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - THRONE OF STARLIGHT",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Hidden Epic Bonus game keeps the mechanics of the TIARA TREASURE bonus. Each position will have a Sticky Progressive Magic Frame Multiplier from the start! All Magic Frame Multipliers will start with a minimum value of 4x.\n\n FS symbols cannot land in this game mode.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "violet_victory_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "diamond_dream_drop_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "make_it_rainbow_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1817/1.13.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/rainbow-princess/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Born from stardust and empowered by gems, Rainbow Princess commands light, color, and cosmic energy. She moves between realms with a crown charged by ancient forces and a heart set on a radiant path. Guided by celestial magic and armed with Aurora Gems, she spins through dreamscapes and rainbow bursts, chasing a destiny written in the rainbows.\n\n Join Rainbow Princess in this 6-reel, 5-row Super Cascade game with Cluster wins and a max win of up to 10 000 times your bet, available in all game modes. Channel the magic; claim the crown!\n\n FEATURES\n\n SUPER CASCADES\n\n When a winni"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

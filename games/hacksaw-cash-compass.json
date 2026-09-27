@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Cash Compass",
+    "slug": "hacksaw-cash-compass",
+    "provider_game_id": "1055",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1055&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1055/1.60.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 6x6 from About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 6 or more connecting symbols of the same kind anywhere on the grid to get a winning combination."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "BONUS WHEEL",
+        "behavior": "If 3 BONUS symbols land on the grid, the bonus game feature is triggered.\nThe bonus game consists of a bonus wheel with 8 sections. The player gets up to 50 spins.\nEvery time that the hit marker comes to a stop at a particular section of the wheel, the displayed multiplier is added to the total and the multiplier on that section is increased to the next level. All multipliers start at 1x and can increase to 10x, 25x, 100x and finally 250x.\n\nThe bonus feature stops once the wheel comes to a stop on the skull symbol. The total win will be calculated as the displayed total multiplier multiplied with the base game bet level.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "COMPASS SYMBOL",
+        "behavior": "Five compass symbols trigger the compass in the logo. The needle starts to spin and once it stops all compass symbols multiply and spread in the direction shown. Regular wins are awarded before the compass feature is triggered.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "If 3 FREE SPINS symbols land on the grid, the free spins feature is triggered.",
+        "spins_awarded": "award 10 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "If 3 FREE SPINS symbols land on the grid, the free spins feature is triggered. In this mode, every time a compass symbol lands on the grid the compass starts spinning. This feature has added compass symbols on the reels. After the compass stops spinning, the compass symbol will multiply and spread in the direction shown. Regular wins are awarded before the compass feature is triggered.\n\n3 FREE SPINS symbols award 10 free spins"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "COMPASS SYMBOL",
+      "trigger": null,
+      "effects": "Five compass symbols trigger the compass in the logo. The needle starts to spin and once it stops all compass symbols multiply and spread in the direction shown. Regular wins are awarded before the compass feature is triggered.",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "If 3 FREE SPINS symbols land on the grid, the free spins feature is triggered.",
+      "effects": "If 3 FREE SPINS symbols land on the grid, the free spins feature is triggered. In this mode, every time a compass symbol lands on the grid the compass starts spinning. This feature has added compass symbols on the reels. After the compass stops spinning, the compass symbol will multiply and spread in the direction shown. Regular wins are awarded before the compass feature is triggered.\n\n3 FREE SPINS symbols award 10 free spins",
+      "params": {}
+    },
+    {
+      "name": "BONUS WHEEL",
+      "trigger": null,
+      "effects": "If 3 BONUS symbols land on the grid, the bonus game feature is triggered.\nThe bonus game consists of a bonus wheel with 8 sections. The player gets up to 50 spins.\nEvery time that the hit marker comes to a stop at a particular section of the wheel, the displayed multiplier is added to the total and the multiplier on that section is increased to the next level. All multipliers start at 1x and can increase to 10x, 25x, 100x and finally 250x.\n\nThe bonus feature stops once the wheel comes to a stop on the skull symbol. The total win will be calculated as the displayed total multiplier multiplied with the base game bet level.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "freespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": null,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7300,
+    "max_win_notes": "maximum achievable win in this game is 7,300 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1055/1.60.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/cash-compass/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Join this adventure set in the Caribbean Sea! Cash Compass is a 6x6 cluster win game with a max win of over 7300x. Trigger the Spreading Compass feature to multiply the symbols for massive wins!\n\n COMPASS SYMBOL\n\n Five compass symbols trigger the compass in the logo. The needle starts to spin and once it stops all compass symbols multiply and spread in the direction shown. Regular wins are awarded before the compass feature is triggered.\n\n FREE SPINS\n\n If 3 FREE SPINS symbols land on the grid, the free spins feature is triggered. In this mode, every time a compass symbol lands"
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

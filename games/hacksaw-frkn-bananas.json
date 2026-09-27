@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "FRKN Bananas",
+    "slug": "hacksaw-frkn-bananas",
+    "provider_game_id": "1693",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1693&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1693/1.33.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "BANANA SPLIT? NO, BANANA SPREAD!",
+        "behavior": "Spreading Banana symbols can point either to the left, or up.\n\n When a Spreading Banana lands, additional Spreading Banana symbols will spread from that symbol either left or up depending on the direction the original Spreading Banana symbol points. When it points up, Spreading Banana symbols will spread upward on the same reel to the edge of the grid, and when it points left Spreading Banana symbols will spread to the left on the same row to the edge of the grid.\n\n The spreading will only occur if the Spreading Bananas would be part of at least one winning combination after spreading.\n\n All Spreading Banana symbols are wild multipliers that substitute for the other symbols in the paytable. Each Spreading Banana symbol will reveal its multiplier value after landing, before spreading. All Spreading Bananas created by spreading will take on the same multiplier value as the Spreading Banana symbol they originate from. If two Spreading Banana symbols spread over the same grid position, their multiplier values will be added together on that position.\n\n Spreading Banana symbols can have one of the following multiplier values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n When at least one Spreading Banana symbol is part of a winning payline, the multiplier is applied to the win. If a winning payline includes more than one Spreading Banana symbol, the multiplier values are added together before being applied to the win.",
+        "params": {}
+      },
+      {
+        "name": "BANANA BLITZ!",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to activate the BANANA BLITZ! bonus game with 10 free spins. \n\n This bonus game features Sticky Banana symbols and the Go Bananas symbol.\n\n Landed Sticky Banana symbols stay on the grid until the end of the bonus. Each Sticky Banana symbol is given a new random multiplier on each spin from one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n If there is a minimum of one Sticky Banana symbol on the grid and you land a Go Bananas symbol, the Go Bananas mechanic will activate immediately.\n\n When activated, the Go Bananas symbol will reveal a value between 3 - 10. This number represents the number of Banana copies that will be created from each of the Sticky Banana symbols currently on the grid.\n\n Example: If there are 3 Sticky Banana symbols on the grid when landing a Go Bananas symbol that reveals a value of 3, 9 copied Bananas will be added to the grid. Some Bananas can land on top of each other, reducing the actual number of Bananas that appear on the grid.\n\n Copied Bananas are wild multipliers symbols that will appear in random positions on the grid and substitute for other symbols in the paytable. A copied Banana symbol will always have the same multiplier value as the Sticky Banana symbol it was copied from. If two copied Banana symbols land on the same position, their multiplier values will be added together.\n\n Copied Bananas are removed from the grid on the next spin. Go Bananas symbols are also removed on the next spin.\n\n Landing additional FS symbols during the bonus awards extra free spins: \n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "BANANZA!",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to activate the BANANZA! bonus game with 10 free spins.\n\n This bonus game maintains the mechanics of the base game with an increased chance of landing Spreading Banana symbols with high-value multipliers! In addition, the Spreading Banana symbols land on more favorable positions on the grid, optimizing the Banana Spread mechanic.\n\n Landing additional FS symbols during the bonus awards extra free spins: \n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "BANANA SPLIT? NO, BANANA SPREAD!",
+      "trigger": null,
+      "effects": "Spreading Banana symbols can point either to the left, or up.\n\n When a Spreading Banana lands, additional Spreading Banana symbols will spread from that symbol either left or up depending on the direction the original Spreading Banana symbol points. When it points up, Spreading Banana symbols will spread upward on the same reel to the edge of the grid, and when it points left Spreading Banana symbols will spread to the left on the same row to the edge of the grid.\n\n The spreading will only occur if the Spreading Bananas would be part of at least one winning combination after spreading.\n\n All Spreading Banana symbols are wild multipliers that substitute for the other symbols in the paytable. Each Spreading Banana symbol will reveal its multiplier value after landing, before spreading. All Spreading Bananas created by spreading will take on the same multiplier value as the Spreading Banana symbol they originate from. If two Spreading Banana symbols spread over the same grid position, their multiplier values will be added together on that position.\n\n Spreading Banana symbols can have one of the following multiplier values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n When at least one Spreading Banana symbol is part of a winning payline, the multiplier is applied to the win. If a winning payline includes more than one Spreading Banana symbol, the multiplier values are added together before being applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "BANANZA!",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the BANANZA! bonus game with 10 free spins.\n\n This bonus game maintains the mechanics of the base game with an increased chance of landing Spreading Banana symbols with high-value multipliers! In addition, the Spreading Banana symbols land on more favorable positions on the grid, optimizing the Banana Spread mechanic.\n\n Landing additional FS symbols during the bonus awards extra free spins: \n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "BANANA BLITZ!",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the BANANA BLITZ! bonus game with 10 free spins. \n\n This bonus game features Sticky Banana symbols and the Go Bananas symbol.\n\n Landed Sticky Banana symbols stay on the grid until the end of the bonus. Each Sticky Banana symbol is given a new random multiplier on each spin from one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x\n\n If there is a minimum of one Sticky Banana symbol on the grid and you land a Go Bananas symbol, the Go Bananas mechanic will activate immediately.\n\n When activated, the Go Bananas symbol will reveal a value between 3 - 10. This number represents the number of Banana copies that will be created from each of the Sticky Banana symbols currently on the grid.\n\n Example: If there are 3 Sticky Banana symbols on the grid when landing a Go Bananas symbol that reveals a value of 3, 9 copied Bananas will be added to the grid. Some Bananas can land on top of each other, reducing the actual number of Bananas that appear on the grid.\n\n Copied Bananas are wild multipliers symbols that will appear in random positions on the grid and substitute for other symbols in the paytable. A copied Banana symbol will always have the same multiplier value as the Sticky Banana symbol it was copied from. If two copied Banana symbols land on the same position, their multiplier values will be added together.\n\n Copied Bananas are removed from the grid on the next spin. Go Bananas symbols are also removed on the next spin.\n\n Landing additional FS symbols during the bonus awards extra free spins: \n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bananza_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "blitz_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1693/1.33.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/frkn-bananas/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Looky here, looky there, it’s FRKN Bananas everywhere! Welcome to the city of Peelington, a place where you can only go left or up, everyone prefers sticky over smooth and where victory is oh so sweet. Bananas are what’s on the menu, so join these unruly fruits in a 6-reel, 5-row paylines game with a max win of 10,000 times your bet!\n\n The max win can be reached in all game modes.\n\n FEATURES\n\n BANANA SPLIT? NO, BANANA SPREAD!\n\n Spreading Banana symbols can point either to the left, or up.\n\n When a Spreading Banana lands, additional Spreading Banana symbols will spread from tha"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

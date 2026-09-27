@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Donny Dough",
+    "slug": "hacksaw-donny-dough",
+    "provider_game_id": "1530",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1530&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1530/1.37.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "STICKY DOUGH BONUS",
+        "behavior": "Activate this bonus feature with 10 free spins by landing 3 FS scatter symbols at the same time in the base game. In this feature, all Multi-Dough symbols are sticky until they are part of a winning payline. The Multi-Dough symbols that are a part of a winning payline are removed on the next spin.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins.",
+        "params": {}
+      },
+      {
+        "name": "STRIKE GOLD BONUS",
+        "behavior": "Activate this bonus feature with 10 free spins by landing 4 FS scatter symbols at the same time in the base game.\n\n When there is a winning payline of Multi-Dough symbols on the grid, a light bulb is lit above all the reels that were a part of the win. One light bulb is lit on each reel for each Multi-Dough symbol on that reel that was a part of a win. A maximum of four light bulbs can be lit at the same time.\n\n When a Donny’s Hat symbol lands on the grid, it will trigger a re-spin if any light bulbs above the reels are lit. During the re-spin, a number of Multi-Dough symbols equal to the number of lit light bulbs above each reel will appear at random positions on the respective reels, potentially creating even more payline wins!\n\n A Donny’s Hat symbol is guaranteed to land on the last spin of the feature.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "LOOTLINES",
+        "behavior": "When you see the Multi-Dough symbol with Donny’s happy face on the grid, it means that there is a chance for big rewards. There are four versions of the Multi-Dough symbols that can land with one of the following values:\n\n Adding Multi-Dough symbol: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x\n\n Revealing adding Multi-Dough symbol: 15x, 20x, 25x, 50x, 100x, 250x, 500x\n\n Multiplying Multi-Dough symbol: x2, x3, x4, x5\n\n Revealing multiplying Multi-Dough symbol: x6, x7, x8, x9, x10, x15, x20, x25\n\n Revealing Multi-Dough symbols land with a question mark on the symbol, and then reveal their value.\n\n When there is a winning payline of Multi-Dough symbols on the grid, the payout of the payline will be determined by the values of the Multi-Dough symbols that are a part of the win. The values will be applied from left to right. Multiplying multipliers that appears on the left-most reel will be treated as Adding multipliers. For example, a winning payline that consists of four Multi-Dough symbols with the values x3, 4x, 1x and x2 will have a final payout of (3+4+1)*2=16x. The resulting value is then multiplied with your bet to form the win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "LOOTLINES",
+      "trigger": null,
+      "effects": "When you see the Multi-Dough symbol with Donny’s happy face on the grid, it means that there is a chance for big rewards. There are four versions of the Multi-Dough symbols that can land with one of the following values:\n\n Adding Multi-Dough symbol: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x\n\n Revealing adding Multi-Dough symbol: 15x, 20x, 25x, 50x, 100x, 250x, 500x\n\n Multiplying Multi-Dough symbol: x2, x3, x4, x5\n\n Revealing multiplying Multi-Dough symbol: x6, x7, x8, x9, x10, x15, x20, x25\n\n Revealing Multi-Dough symbols land with a question mark on the symbol, and then reveal their value.\n\n When there is a winning payline of Multi-Dough symbols on the grid, the payout of the payline will be determined by the values of the Multi-Dough symbols that are a part of the win. The values will be applied from left to right. Multiplying multipliers that appears on the left-most reel will be treated as Adding multipliers. For example, a winning payline that consists of four Multi-Dough symbols with the values x3, 4x, 1x and x2 will have a final payout of (3+4+1)*2=16x. The resulting value is then multiplied with your bet to form the win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          15,
+          20,
+          25
+        ]
+      }
+    },
+    {
+      "name": "STICKY DOUGH BONUS",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing 3 FS scatter symbols at the same time in the base game. In this feature, all Multi-Dough symbols are sticky until they are part of a winning payline. The Multi-Dough symbols that are a part of a winning payline are removed on the next spin.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins.",
+      "params": {}
+    },
+    {
+      "name": "STRIKE GOLD BONUS",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing 4 FS scatter symbols at the same time in the base game.\n\n When there is a winning payline of Multi-Dough symbols on the grid, a light bulb is lit above all the reels that were a part of the win. One light bulb is lit on each reel for each Multi-Dough symbol on that reel that was a part of a win. A maximum of four light bulbs can be lit at the same time.\n\n When a Donny’s Hat symbol lands on the grid, it will trigger a re-spin if any light bulbs above the reels are lit. During the re-spin, a number of Multi-Dough symbols equal to the number of lit light bulbs above each reel will appear at random positions on the respective reels, potentially creating even more payline wins!\n\n A Donny’s Hat symbol is guaranteed to land on the last spin of the feature.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "kaching_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "sticky_dough_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "strike_gold_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win in this game is 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1530/1.37.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/donny-dough/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Step right up! It’s time to play with Donny Dough! He’s got the dough, if you’ve got the luck! This 5-reel, 4 row game is full of gold, jewels and multipliers. Take on the 14 different paylines and the brand new LOOTLINES mechanic to really make it rain!\n\n The maximum win in this game is 10,000 times your bet and can be achieved in all game modes!\n\n FEATURES\n\n LOOTLINES\n\n When you see the Multi-Dough symbol with Donny’s happy face on the grid, it means that there is a chance for big rewards. There are four versions of the Multi-Dough symbols that can land with one of the follo"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

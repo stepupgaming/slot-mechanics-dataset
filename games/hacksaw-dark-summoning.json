@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Dark Summoning",
+    "slug": "hacksaw-dark-summoning",
+    "provider_game_id": "1392",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1392&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1392/1.29.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 24,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 24. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When a winning combination occurs all symbols of the winning type are marked and removed from the grid after all current wins have been awarded.\n\n New symbols cascade in to replace the removed symbols, potentially creating new wins and additional cascades."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD MULTIPLIERS",
+        "behavior": "The Wild symbols substitute for all other symbols in the paytable. There are two Wild symbol variants, a blue Wild and a red Wild. The blue Wild appears in the base game and in the Rise to Salvation bonus feature. The red Wild appears in the Trial by Hellfire bonus feature. There is no functional difference between the two variants.\n\n When a Wild symbol appears it may have one of the following multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x. Wild symbols cannot appear with a multiplier in the Rise to Salvation bonus feature.\n\n If more than one multiplier is part of the same winning combination, their values are added together before being applied to the win.",
+        "params": {}
+      },
+      {
+        "name": "WILL OF THE ORDER",
+        "behavior": "When an Order scatter symbol lands it will replace itself and 1 - 9 other symbols with Wild symbols, which may appear with or without multipliers.\n\n If more than one Order symbol lands at the same time, Will of the Order will be triggered once for each Order symbol.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "UNHOLY SUMMONING",
+        "behavior": "Any Unholy scatter symbols that land together with at least one winning combination are collected at the top-right corner of the grid and saved for the duration of the round. If 3 Unholy symbols land at the same time, they are immediately collected regardless of any winning combinations.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADE",
+        "behavior": "When a winning combination occurs all symbols of the winning type are marked and removed from the grid after all current wins have been awarded.\n\n New symbols cascade in to replace the removed symbols, potentially creating new wins and additional cascades.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "TRIAL BY HELLFIRE BONUS FEATURE",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Collect 3 Unholy symbols during the same round in the base game to activate this bonus feature with 10 free spins.\n\n During the bonus, all winning positions are marked with Hellfire. \n\n When an Unholy symbol lands it will activate the Fires of Hell sequence. At the start of this sequence, the Unholy symbol and all symbols on positions marked by Hellfire are replaced with Wild symbols, which may appear with or without multipliers. All Hellfire is then removed.\n\n The Fires of Hell sequence last until the next cascade. While the Fires of Hell sequence is active, new wins do not create Hellfire."
+      },
+      {
+        "name": "RISE TO SALVATION BONUS FEATURE",
+        "trigger": null,
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "If you collect 3 Unholy symbols during the same round in the base game and an Order symbol is present when the third Unholy symbol is collected, this bonus feature is activated with 10 free spins.\n\n During the bonus, the symbol drop and cascade direction is reversed so that symbols move upwards instead of downwards.\n\n This bonus has special Lost Soul symbols. Whenever a Lost Soul lands, it becomes persistent and stays on the reels until the end of the bonus, or until it Ascends.\n\n Lost Souls move upward together with other cascading symbols to fill the empty spaces left behind by removed wins. When a Lost Soul reaches the top row of the grid, it Ascends and is removed.\n\n There are two Lost Soul symbol variants, a Global Multiplier Lost Soul and a Cash Prize Lost Soul.\n\n When the Global Multiplier Lost soul reaches the top row and Ascends, it adds one of the following multiplier values to a global multiplier above the reels: 2x, 3x, 4x, 5x, 10x, 15x, 25x, 50x, 100x. The global multiplier is applied to all winning combinations.\n\n When the Cash Prize Lost Soul reaches the top row and Ascends, it awards one of the following cash prizes: 10, 15, 20, 25, 50, 100 or 666 times the bet. Cash prizes are also multiplied by the value of the global multiplier.\n\n If three non-winning spins occur in a row, 3 - 5 random Low- or High-paying symbols are removed from the grid on the third spin.\n\n SPECIAL SYMBOLS\n\n The Order symbol does not appear in the Trial by Hellfire bonus feature.\n\n The Unholy symbol does not appear in the Rise to Salvation bonus feature. The Unholy symbol does not appear on reel 1 or 2."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADE",
+      "trigger": null,
+      "effects": "When a winning combination occurs all symbols of the winning type are marked and removed from the grid after all current wins have been awarded.\n\n New symbols cascade in to replace the removed symbols, potentially creating new wins and additional cascades.",
+      "params": {}
+    },
+    {
+      "name": "WILD MULTIPLIERS",
+      "trigger": null,
+      "effects": "The Wild symbols substitute for all other symbols in the paytable. There are two Wild symbol variants, a blue Wild and a red Wild. The blue Wild appears in the base game and in the Rise to Salvation bonus feature. The red Wild appears in the Trial by Hellfire bonus feature. There is no functional difference between the two variants.\n\n When a Wild symbol appears it may have one of the following multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x. Wild symbols cannot appear with a multiplier in the Rise to Salvation bonus feature.\n\n If more than one multiplier is part of the same winning combination, their values are added together before being applied to the win.",
+      "params": {}
+    },
+    {
+      "name": "WILL OF THE ORDER",
+      "trigger": null,
+      "effects": "When an Order scatter symbol lands it will replace itself and 1 - 9 other symbols with Wild symbols, which may appear with or without multipliers.\n\n If more than one Order symbol lands at the same time, Will of the Order will be triggered once for each Order symbol.",
+      "params": {}
+    },
+    {
+      "name": "UNHOLY SUMMONING",
+      "trigger": null,
+      "effects": "Any Unholy scatter symbols that land together with at least one winning combination are collected at the top-right corner of the grid and saved for the duration of the round. If 3 Unholy symbols land at the same time, they are immediately collected regardless of any winning combinations.",
+      "params": {}
+    },
+    {
+      "name": "TRIAL BY HELLFIRE BONUS FEATURE",
+      "trigger": null,
+      "effects": "Collect 3 Unholy symbols during the same round in the base game to activate this bonus feature with 10 free spins.\n\n During the bonus, all winning positions are marked with Hellfire. \n\n When an Unholy symbol lands it will activate the Fires of Hell sequence. At the start of this sequence, the Unholy symbol and all symbols on positions marked by Hellfire are replaced with Wild symbols, which may appear with or without multipliers. All Hellfire is then removed.\n\n The Fires of Hell sequence last until the next cascade. While the Fires of Hell sequence is active, new wins do not create Hellfire.",
+      "params": {}
+    },
+    {
+      "name": "RISE TO SALVATION BONUS FEATURE",
+      "trigger": null,
+      "effects": "If you collect 3 Unholy symbols during the same round in the base game and an Order symbol is present when the third Unholy symbol is collected, this bonus feature is activated with 10 free spins.\n\n During the bonus, the symbol drop and cascade direction is reversed so that symbols move upwards instead of downwards.\n\n This bonus has special Lost Soul symbols. Whenever a Lost Soul lands, it becomes persistent and stays on the reels until the end of the bonus, or until it Ascends.\n\n Lost Souls move upward together with other cascading symbols to fill the empty spaces left behind by removed wins. When a Lost Soul reaches the top row of the grid, it Ascends and is removed.\n\n There are two Lost Soul symbol variants, a Global Multiplier Lost Soul and a Cash Prize Lost Soul.\n\n When the Global Multiplier Lost soul reaches the top row and Ascends, it adds one of the following multiplier values to a global multiplier above the reels: 2x, 3x, 4x, 5x, 10x, 15x, 25x, 50x, 100x. The global multiplier is applied to all winning combinations.\n\n When the Cash Prize Lost Soul reaches the top row and Ascends, it awards one of the following cash prizes: 10, 15, 20, 25, 50, 100 or 666 times the bet. Cash prizes are also multiplied by the value of the global multiplier.\n\n If three non-winning spins occur in a row, 3 - 5 random Low- or High-paying symbols are removed from the grid on the third spin.\n\n SPECIAL SYMBOLS\n\n The Order symbol does not appear in the Trial by Hellfire bonus feature.\n\n The Unholy symbol does not appear in the Rise to Salvation bonus feature. The Unholy symbol does not appear on reel 1 or 2.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "trial_by_hellfire_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "rise_to_salvation_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10666,
+    "max_win_notes": "maximum win of 10,666 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1392/1.29.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/dark-summoning/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n SUPER CASCADE\n\n When a winning combination occurs all symbols of the winning type are marked and removed from the grid after all current wins have been awarded.\n\n New symbols cascade in to replace the removed symbols, potentially creating new wins and additional cascades.\n\n WILD MULTIPLIERS\n\n The Wild symbols substitute for all other symbols in the paytable. There are two Wild symbol variants, a blue Wild and a red Wild. The blue Wild appears in the base game and in the Rise to Salvation bonus feature. The red Wild appears in the Trial by Hellfire bonus feature. There is no function"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

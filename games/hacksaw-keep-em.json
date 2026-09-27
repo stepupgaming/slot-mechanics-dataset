@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Keep 'Em",
+    "slug": "hacksaw-keep-em",
+    "provider_game_id": "1494",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1494&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1494/1.19.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 15625. Please consult the paytable for "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "GET’EM",
+        "behavior": "Cash symbols are collected if a GET ’EM scatter symbol appears at the same time as at least one Cash symbol.\n\n If more than one GET’EM symbol lands on the grid, each one will collect all the Cash symbols on the grid once.\n\n The collected Cash prizes are added together and displayed in the Total Win bar. At the end of the round, the Total Win is multiplied by your bet to form the final win.",
+        "params": {}
+      },
+      {
+        "name": "KEEP’EM COMIN’",
+        "behavior": "Activate this bonus feature with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n Throughout this bonus, there is an increased chance of landing GET’EM symbols, FS symbols and Cash prizes!\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 3 FS symbols award 4 extra spins.\n\n 4 FS symbols award 6 extra spins.",
+        "params": {}
+      },
+      {
+        "name": "KEEP YOUR FRIENDS CLOSE…",
+        "behavior": "Activate this bonus feature with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n In this bonus game, landed Cash prizes stay on the grid until they are collected by a GET’EM symbol. Both the collected Cash prizes and the GET’EM symbol will spin out at the start of the next spin.\n\n Whenever there is a full row or a full reel of Cash prizes on the grid, the row or reel will automatically collect, even if there is no GET’EM symbol on the grid, and spin out at the start of the next spin. If there are one or more GET’EM symbols on the grid, they will also collect the Cash prizes separately.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 3 FS symbols award 4 extra spins.\n\n 4 FS symbols award 6 extra spins.",
+        "params": {}
+      },
+      {
+        "name": "KEEP YOUR CANNY CLOSER!",
+        "behavior": "Activate this bonus feature with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n The mechanics of this bonus game are identical to the KEEP YOUR FRIENDS CLOSE… bonus. On top of that, 3 Cash prizes and 1 GET’EM symbol are guaranteed to land on every spin.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 3 FS symbols award 4 extra spins.\n\n 4 FS symbols award 6 extra spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "CASH’EM",
+        "behavior": "Cash symbols award a prize when collected! Cash symbols can display a value from one of the following: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 250x, 500x, 1000x.",
+        "params": {}
+      }
+    ],
+    "specials": [
+      {
+        "name": "KEEP’EM",
+        "behavior": "Reels 3 and 4 on the grid are the KEEP’EM reels. When a GET’EM symbol and/or a Cash prize land on either of the KEEP’EM reels, the KEEP’EM reels will be activated and 3 re-spins will be awarded. The remaining re-spins are displayed in the Heart Counter.\n\n The symbol that activated the KEEP’EM reels will stay on the grid until the end of the last re-spin. Additional GET’EM symbols and/or Cash prizes that land during the re-spins will also become locked and stay on the grid until the end of the last re-spin. Cash prizes and GET’EM symbols will activate on every new re-spin.\n\n Throughout the 3 re-spins, there is a chance to land the Heart symbol, which will award enough additional re-spins to completely fill the Heart Counter.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "CASH’EM",
+      "trigger": null,
+      "effects": "Cash symbols award a prize when collected! Cash symbols can display a value from one of the following: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 250x, 500x, 1000x.",
+      "params": {}
+    },
+    {
+      "name": "GET’EM",
+      "trigger": null,
+      "effects": "Cash symbols are collected if a GET ’EM scatter symbol appears at the same time as at least one Cash symbol.\n\n If more than one GET’EM symbol lands on the grid, each one will collect all the Cash symbols on the grid once.\n\n The collected Cash prizes are added together and displayed in the Total Win bar. At the end of the round, the Total Win is multiplied by your bet to form the final win.",
+      "params": {}
+    },
+    {
+      "name": "KEEP’EM",
+      "trigger": null,
+      "effects": "Reels 3 and 4 on the grid are the KEEP’EM reels. When a GET’EM symbol and/or a Cash prize land on either of the KEEP’EM reels, the KEEP’EM reels will be activated and 3 re-spins will be awarded. The remaining re-spins are displayed in the Heart Counter.\n\n The symbol that activated the KEEP’EM reels will stay on the grid until the end of the last re-spin. Additional GET’EM symbols and/or Cash prizes that land during the re-spins will also become locked and stay on the grid until the end of the last re-spin. Cash prizes and GET’EM symbols will activate on every new re-spin.\n\n Throughout the 3 re-spins, there is a chance to land the Heart symbol, which will award enough additional re-spins to completely fill the Heart Counter.",
+      "params": {}
+    },
+    {
+      "name": "KEEP’EM COMIN’",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n Throughout this bonus, there is an increased chance of landing GET’EM symbols, FS symbols and Cash prizes!\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 3 FS symbols award 4 extra spins.\n\n 4 FS symbols award 6 extra spins.",
+      "params": {}
+    },
+    {
+      "name": "KEEP YOUR FRIENDS CLOSE…",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n In this bonus game, landed Cash prizes stay on the grid until they are collected by a GET’EM symbol. Both the collected Cash prizes and the GET’EM symbol will spin out at the start of the next spin.\n\n Whenever there is a full row or a full reel of Cash prizes on the grid, the row or reel will automatically collect, even if there is no GET’EM symbol on the grid, and spin out at the start of the next spin. If there are one or more GET’EM symbols on the grid, they will also collect the Cash prizes separately.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 3 FS symbols award 4 extra spins.\n\n 4 FS symbols award 6 extra spins.",
+      "params": {}
+    },
+    {
+      "name": "KEEP YOUR CANNY CLOSER!",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n The mechanics of this bonus game are identical to the KEEP YOUR FRIENDS CLOSE… bonus. On top of that, 3 Cash prizes and 1 GET’EM symbol are guaranteed to land on every spin.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 3 FS symbols award 4 extra spins.\n\n 4 FS symbols award 6 extra spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "cantastic_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "keep_coming_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "keep_friends_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1494/1.19.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/keep-em/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n The best friends are the ones we Keep! Canny and his long-time buddy Bob the Bird are back, in this 6-reel, 5-row drop game with ways wins. The max win of 10 000 times your bet can be achieved in all game modes.\n\n FEATURES\n\n CASH’EM\n\n Cash symbols award a prize when collected! Cash symbols can display a value from one of the following: 1x, 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 250x, 500x, 1000x.\n\n GET’EM\n\n Cash symbols are collected if a GET ’EM scatter symbol appears at the same time as at least one Cash symbol.\n\n If more than one GET’EM symbol lands on the grid, each one will"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

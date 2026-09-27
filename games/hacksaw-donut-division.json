@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Donut Division",
+    "slug": "hacksaw-donut-division",
+    "provider_game_id": "1608",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1608&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1608/1.39.5/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 3,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 3x3 from About text"
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "GOOEY GUNS AND GOOEY WILDS",
+        "behavior": "When a Gooey Gun symbol lands it shoots Gooey Wild symbols to the left on the same row, as far as the edge of the grid. The Gooey Gun symbol then transforms into a Gooey Wild! Gooey Gun symbols can also land with a multiplier value from one of the following values: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n Gooey Wild symbols are wild symbols that substitute for all other symbols in the paytable. All Gooey Wild symbols fired or transformed from a Gooey Gun take on the same multiplier value as the Gun, and the multiplier values are added together into one value which is applied to all connected Gooey Wilds on the same row.\n\n When at least one Gooey Wild with a multiplier is part of a winning payline, that multiplier is applied to the win. If a winning payline includes Gooey Wild multipliers from more than one row of connected Gooey Wild symbols, their multiplier values are added together before being applied to the win.\n\n The multiplier value from a row of connected Gooey Wild symbols cannot be applied more than once per winning combination, regardless of how many winning symbols are on that row.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "BONUS CHOICE",
+        "behavior": "Landing 3 or 4 FS scatter symbols at the same time in the base game brings you into the Bonus Choice menu, where you are able to choose between two bonus game options depending on the number of landed FS symbols.\n\n With 3 FS symbols, you may choose either the WAREHOUSE or the STAKEOUT bonus games.\n\n With 4 FS symbols, you may choose either the SUPER WAREHOUSE or the SUPER STAKEOUT bonus games.",
+        "params": {}
+      },
+      {
+        "name": "STAKEOUT",
+        "behavior": "This bonus feature maintains the mechanics of the base game with an increased chance of landing Gooey Gun symbols and getting high-value multipliers!\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins,\n\n 3 FS symbols awards 4 additional spins.",
+        "params": {}
+      },
+      {
+        "name": "SUPER STAKEOUT",
+        "behavior": "When you choose this bonus game from the Bonus Choice menu, you will be awarded a variant of the STAKEOUT bonus.\n\n After the first time that a Gooey Gun symbol has landed on a row, a Gooey Gun is guaranteed to land somewhere on that same row on every subsequent spin until the end of the bonus feature!\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins,\n\n 3 FS symbols awards 4 additional spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "WAREHOUSE",
+        "behavior": "When you choose this bonus game from the Bonus Choice menu, you will enter the bonus with 3 refilling lives.\n\n The following symbols appear in this bonus: dead symbols and the following special symbols: Adding and Multiplying Multipliers symbols, Battery symbols and Light-Switch symbols. Normal paying symbols do not appear. Dead symbols are non-paying and have no other effect.\n\n Each spin in the bonus consumes 1 life and has 2 Flashlight Charges. Whenever a special symbol is revealed, your lives are refilled to 3. After 3 consecutive spins without a refill, the bonus will end.\n\n This bonus features two flashlights that reveal the hidden darkened symbols on the grid. On every new spin, the flashlights will shine on random positions on the grid and reveal the symbol on that position.\n\n If a special symbol is revealed, it will produce a certain effect depending on the revealed symbol, and the flashlight will move to a new position without consuming a Flashlight Charge or a life. The special symbol effects are detailed below.\n\n When an Adding or Multiplying Multiplier symbol is revealed, the value of that multiplier will be collected in the Total Multiplier above the grid.\n\n Multiplier symbols can have the following values:\n\n Adding Multipliers: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Multiplying Multipliers: x2, x3, x4, x5, x10\n\n When a Battery symbol is revealed, the light from the corresponding flashlight will temporarily expand to a 3x3 area that reveals all symbols in the illuminated area. The area immediately shrinks to 1 square again after all the symbols in the 3x3 area have been activated. Battery symbols can only land on reels 2 and 5, and row 2, 3 or 4.\n\n When a Light-Switch symbol is revealed, the entire grid temporarily lights up and all symbols on the current grid will be revealed and collected. The grid becomes dark again at the start of the next spin.\n\n When a dead symbol is revealed, the flashlight that revealed the symbol wi",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER WAREHOUSE",
+        "behavior": "When you choose this bonus game from the Bonus Choice menu, you will be awarded a variant of the WAREHOUSE bonus. This variant guarantees that the value for all adding multipliers are minimum 5x or higher.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "GOOEY GUNS AND GOOEY WILDS",
+      "trigger": null,
+      "effects": "When a Gooey Gun symbol lands it shoots Gooey Wild symbols to the left on the same row, as far as the edge of the grid. The Gooey Gun symbol then transforms into a Gooey Wild! Gooey Gun symbols can also land with a multiplier value from one of the following values: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x.\n\n Gooey Wild symbols are wild symbols that substitute for all other symbols in the paytable. All Gooey Wild symbols fired or transformed from a Gooey Gun take on the same multiplier value as the Gun, and the multiplier values are added together into one value which is applied to all connected Gooey Wilds on the same row.\n\n When at least one Gooey Wild with a multiplier is part of a winning payline, that multiplier is applied to the win. If a winning payline includes Gooey Wild multipliers from more than one row of connected Gooey Wild symbols, their multiplier values are added together before being applied to the win.\n\n The multiplier value from a row of connected Gooey Wild symbols cannot be applied more than once per winning combination, regardless of how many winning symbols are on that row.",
+      "params": {}
+    },
+    {
+      "name": "BONUS CHOICE",
+      "trigger": null,
+      "effects": "Landing 3 or 4 FS scatter symbols at the same time in the base game brings you into the Bonus Choice menu, where you are able to choose between two bonus game options depending on the number of landed FS symbols.\n\n With 3 FS symbols, you may choose either the WAREHOUSE or the STAKEOUT bonus games.\n\n With 4 FS symbols, you may choose either the SUPER WAREHOUSE or the SUPER STAKEOUT bonus games.",
+      "params": {}
+    },
+    {
+      "name": "WAREHOUSE",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will enter the bonus with 3 refilling lives.\n\n The following symbols appear in this bonus: dead symbols and the following special symbols: Adding and Multiplying Multipliers symbols, Battery symbols and Light-Switch symbols. Normal paying symbols do not appear. Dead symbols are non-paying and have no other effect.\n\n Each spin in the bonus consumes 1 life and has 2 Flashlight Charges. Whenever a special symbol is revealed, your lives are refilled to 3. After 3 consecutive spins without a refill, the bonus will end.\n\n This bonus features two flashlights that reveal the hidden darkened symbols on the grid. On every new spin, the flashlights will shine on random positions on the grid and reveal the symbol on that position.\n\n If a special symbol is revealed, it will produce a certain effect depending on the revealed symbol, and the flashlight will move to a new position without consuming a Flashlight Charge or a life. The special symbol effects are detailed below.\n\n When an Adding or Multiplying Multiplier symbol is revealed, the value of that multiplier will be collected in the Total Multiplier above the grid.\n\n Multiplier symbols can have the following values:\n\n Adding Multipliers: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Multiplying Multipliers: x2, x3, x4, x5, x10\n\n When a Battery symbol is revealed, the light from the corresponding flashlight will temporarily expand to a 3x3 area that reveals all symbols in the illuminated area. The area immediately shrinks to 1 square again after all the symbols in the 3x3 area have been activated. Battery symbols can only land on reels 2 and 5, and row 2, 3 or 4.\n\n When a Light-Switch symbol is revealed, the entire grid temporarily lights up and all symbols on the current grid will be revealed and collected. The grid becomes dark again at the start of the next spin.\n\n When a dead symbol is revealed, the flashlight that revealed the symbol wi",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "SUPER WAREHOUSE",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will be awarded a variant of the WAREHOUSE bonus. This variant guarantees that the value for all adding multipliers are minimum 5x or higher.",
+      "params": {}
+    },
+    {
+      "name": "STAKEOUT",
+      "trigger": null,
+      "effects": "This bonus feature maintains the mechanics of the base game with an increased chance of landing Gooey Gun symbols and getting high-value multipliers!\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins,\n\n 3 FS symbols awards 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "SUPER STAKEOUT",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will be awarded a variant of the STAKEOUT bonus.\n\n After the first time that a Gooey Gun symbol has landed on a row, a Gooey Gun is guaranteed to land somewhere on that same row on every subsequent spin until the end of the bonus feature!\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins,\n\n 3 FS symbols awards 4 additional spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "goo_guns_glazing_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12,500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1608/1.39.5/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/donut-division/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Fresh out of the academy and you think you have what it takes to play in the big leagues? Alright kid, time to get your badge and gun and join Harry, Tom, Burt and Roger, a.k.a. Chief, in the legendary Donut Division! They may not look like much, but this crew has sniffed out more crooks than sprinkles on a donut. Lock, load and glaze ‘em up - it’s time to catch some bad guys in this 6-reel, 5-row game with paylines and a max win of 12,500x times your bet! The max win can be reached in all game modes.\n\n FEATURES\n\n GOOEY GUNS AND GOOEY WILDS\n\n When a Gooey Gun symbol lands it s"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

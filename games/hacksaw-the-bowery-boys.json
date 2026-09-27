@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "The Bowery Boys",
+    "slug": "hacksaw-the-bowery-boys",
+    "provider_game_id": "1135",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1135&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1135/1.45.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 6x5 from About text"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Bowery Savings Bank",
+        "behavior": "10 Free Spins\nIn this feature you will start with 10 Free Spins. For every win you land, the same amount will also be stored in a separate Vault. The amount displayed in the Vault is not awarded unless you collect it by landing the special Dollar scatter symbol.\n\nLand the Dice scatter symbol to multiply the current value by the sum of two six-sided dice. Possible multiplier values are any value in the range x2 - x12.\n\nIf you land the Police Officer Badge scatter symbol the policeman will come bursting in! You’ll have to pay him off with either 10%, 20%, 30%, 40% or 50% of the current value of the stash in the Vault.\n\nLand BONUS symbols for additional spins, each BONUS symbol gives one extra spin.\n\n The stored value in the Bank Vault can never exceed the maximum win for the current bet level\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all paying symbols.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            12
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Strongboxes",
+        "behavior": "Land Strongbox scatters symbols together with a Key scatter symbol to unlock extra cash prizes. These values will be added to the total pending win amount above the reels at the end of the round, before applying any Multipliers. One Key can unlock multiple Strongboxes.\n\nThere are three different Strongboxes with different prize values\nSmall Strongbox: 2x-5x bet cash prize\nMedium Strongbox: 10x-25x bet cash prize\nLarge Strongbox: 50x-250x bet cash prize",
+        "params": {}
+      },
+      {
+        "name": "Blasting Bomb Multipliers",
+        "behavior": "Land Blasting Bomb Multiplier scatter symbols to really make your wins explode! Blasting Bomb Multipliers multiply the current pending win amount by the multiplier value at the end of the round (after applying any opened Strongboxes). If you land two or more multipliers, their values will first be added together, and then the win will be multiplied by the total.\n\nPossible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 25x, 50x, 75x and 100x.\n\nMultipliers are only activated if there is a pending win amount in the total win bar.",
+        "params": {}
+      },
+      {
+        "name": "Strongbox Storage",
+        "behavior": "10 Free Spins\nIn this feature you start with 10 Free Spins. Store up to 5 Strongboxes in the Storage if you land them without landing a Key. Once you land a Key, it will open any Strongbox on the reels and all Strongboxes in your Storage. Land BONUS symbols for additional spins. Each BONUS symbol gives one extra spin.",
+        "params": {}
+      },
+      {
+        "name": "Daisy's Dynamite",
+        "behavior": "10 Free Spins\nIn this feature you will start with 10 Free Spins. The feature contains special Dynamite Multiplier scatter symbols which require a Detonator scatter to activate. Dynamite Multipliers have the following possible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 25x, 50x, 75x and 100x.\n\nAll landed Dynamite Multipliers will be progressively stored in the Dynamite Box until you land a Detonator. When the Detonator lands it will trigger all Dynamite Multipliers stored in the Box in one giant explosion that multiplies your pending win amount for the current round. Land BONUS symbols for additional spins, each BONUS symbol gives one extra spin. Detonators can land on both winning and losing spins!",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "Total Win Bar",
+        "behavior": "All wins during a round will be collected and displayed above the reels in the total win bar as a pending win amount. The pending win amount will be updated after every new win in the round. At the end of a round, the pending win amount is paid out (after applying Strongboxes and Multipliers) and the pending win resets to 0.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAMES!",
+        "trigger": "land 1 BONUS symbol, the Strongbox Storage bonus game will be awarded.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "This game features 3 different bonus games, all triggered through landing the BONUS scatter symbol in the base game.\n\n If you land 1 BONUS symbol, the Strongbox Storage bonus game will be awarded.\n\nIf you land 2 BONUS symbols, the Daisy's Dynamite bonus game will be awarded.\n\nIf you land 3 BONUS symbols, the Bowery Savings Bank bonus game will be awarded."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Total Win Bar",
+      "trigger": null,
+      "effects": "All wins during a round will be collected and displayed above the reels in the total win bar as a pending win amount. The pending win amount will be updated after every new win in the round. At the end of a round, the pending win amount is paid out (after applying Strongboxes and Multipliers) and the pending win resets to 0.",
+      "params": {}
+    },
+    {
+      "name": "Strongboxes",
+      "trigger": null,
+      "effects": "Land Strongbox scatters symbols together with a Key scatter symbol to unlock extra cash prizes. These values will be added to the total pending win amount above the reels at the end of the round, before applying any Multipliers. One Key can unlock multiple Strongboxes.\n\nThere are three different Strongboxes with different prize values\nSmall Strongbox: 2x-5x bet cash prize\nMedium Strongbox: 10x-25x bet cash prize\nLarge Strongbox: 50x-250x bet cash prize",
+      "params": {}
+    },
+    {
+      "name": "Blasting Bomb Multipliers",
+      "trigger": null,
+      "effects": "Land Blasting Bomb Multiplier scatter symbols to really make your wins explode! Blasting Bomb Multipliers multiply the current pending win amount by the multiplier value at the end of the round (after applying any opened Strongboxes). If you land two or more multipliers, their values will first be added together, and then the win will be multiplied by the total.\n\nPossible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 25x, 50x, 75x and 100x.\n\nMultipliers are only activated if there is a pending win amount in the total win bar.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAMES!",
+      "trigger": "land 1 BONUS symbol, the Strongbox Storage bonus game will be awarded.",
+      "effects": "This game features 3 different bonus games, all triggered through landing the BONUS scatter symbol in the base game.\n\n If you land 1 BONUS symbol, the Strongbox Storage bonus game will be awarded.\n\nIf you land 2 BONUS symbols, the Daisy's Dynamite bonus game will be awarded.\n\nIf you land 3 BONUS symbols, the Bowery Savings Bank bonus game will be awarded.",
+      "params": {}
+    },
+    {
+      "name": "Strongbox Storage",
+      "trigger": null,
+      "effects": "10 Free Spins\nIn this feature you start with 10 Free Spins. Store up to 5 Strongboxes in the Storage if you land them without landing a Key. Once you land a Key, it will open any Strongbox on the reels and all Strongboxes in your Storage. Land BONUS symbols for additional spins. Each BONUS symbol gives one extra spin.",
+      "params": {}
+    },
+    {
+      "name": "Daisy's Dynamite",
+      "trigger": null,
+      "effects": "10 Free Spins\nIn this feature you will start with 10 Free Spins. The feature contains special Dynamite Multiplier scatter symbols which require a Detonator scatter to activate. Dynamite Multipliers have the following possible multiplier values: 2x, 3x, 4x, 5x, 10x, 15x, 25x, 50x, 75x and 100x.\n\nAll landed Dynamite Multipliers will be progressively stored in the Dynamite Box until you land a Detonator. When the Detonator lands it will trigger all Dynamite Multipliers stored in the Box in one giant explosion that multiplies your pending win amount for the current round. Land BONUS symbols for additional spins, each BONUS symbol gives one extra spin. Detonators can land on both winning and losing spins!",
+      "params": {}
+    },
+    {
+      "name": "Bowery Savings Bank",
+      "trigger": null,
+      "effects": "10 Free Spins\nIn this feature you will start with 10 Free Spins. For every win you land, the same amount will also be stored in a separate Vault. The amount displayed in the Vault is not awarded unless you collect it by landing the special Dollar scatter symbol.\n\nLand the Dice scatter symbol to multiply the current value by the sum of two six-sided dice. Possible multiplier values are any value in the range x2 - x12.\n\nIf you land the Police Officer Badge scatter symbol the policeman will come bursting in! You’ll have to pay him off with either 10%, 20%, 30%, 40% or 50% of the current value of the stash in the Vault.\n\nLand BONUS symbols for additional spins, each BONUS symbol gives one extra spin.\n\n The stored value in the Bank Vault can never exceed the maximum win for the current bet level\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all paying symbols.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          12
+        ]
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_strongbox_storage_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_buy_daisys_dynamite_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_buy_bowery_savings_bank_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1135/1.45.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/the-bowery-boys/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n The Bowery Boys is a game set in Hell’s Kitchen back in the 19th Century! It has a 6x5 playing field with all-scatter wins. This game is packed with Blasting Bomb Multipliers and Strongboxes filled with cash to really take your wins to another level! You can win up to 10,000 times your bet!\n\n Total Win Bar\n\n All wins during a round will be collected and displayed above the reels in the total win bar as a pending win amount. The pending win amount will be updated after every new win in the round. At the end of a round, the pending win amount is paid out (after applying Strongbo"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

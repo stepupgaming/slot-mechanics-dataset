@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Marlin Masters",
+    "slug": "hacksaw-marlin-masters",
+    "provider_game_id": "1681",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1681&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1681/1.27.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "REEL IT IN!",
+        "behavior": "Activate this bonus feature with 10 free spins by landing 3 FS scatter symbols at the same time in the base game.\n\n In this bonus feature, the Marlin Progress Bar is displayed outside the grid. Each time a Fisherman symbol lands on the grid, the Marlin Progress Bar increases by one step. This increase happens regardless of whether or not the Fisherman symbol collects any Marlin symbols that round.\n\n After every fourth Fisherman symbol has landed, a new upgrade level is reached:\n\n Upgrade 1 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x2.\n\n Upgrade 2 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x4.\n\n Upgrade 3 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x10.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            4,
+            10
+          ]
+        }
+      },
+      {
+        "name": "OFF THE HOOK!",
+        "behavior": "Activate this bonus feature with 15 free spins by landing 4 FS scatter symbols at the same time in the base game.\n\n This bonus features the Marlin Progress Bar mechanic from REEL IT IN!. However, the upgrade levels in this bonus are even more powerful:\n\n From the start, all Fisherman symbols are guaranteed to have a multiplier of at least x2.\n\n Upgrade 1 awards 15 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x4.\n\n Upgrade 2 awards 15 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x10.\n\n Upgrade 3 awards 15 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x15.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            4,
+            10,
+            15
+          ]
+        }
+      },
+      {
+        "name": "PLENTY OF FISH IN THE SEA",
+        "behavior": "Activate this bonus feature with 10 free spins by landing 5 FS scatter symbols at the same time in the base game.\n\n In this bonus feature, all Marlin symbols are guaranteed to have a value of at least 5x. This bonus also guarantees that at least one Marlin symbol and one Fisherman symbol will land on every spin!",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "CATCH THEM ALL!",
+        "behavior": "Marlin symbols are collected if 3 or more Marlin symbols land in a winning payline combination. If there is at least one Fisherman symbol on the grid, each Fisherman symbol will also collect each Marlin symbol one time.\n\n The Fisherman symbol can land with a multiplier value that affects the value of all the Marlin symbols that it collects. The possible multiplier values are: x1, x2, x3, x4, x5, x10, x15, x20.\n\n Fisherman symbols do not collect the value of other Fisherman symbols. A maximum of one Fisherman symbol can land on each reel at the same time.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            15,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [
+      {
+        "name": "LOOTLINES",
+        "behavior": "Marlin symbols are dynamic paying symbols that display cash values. The cash value displayed on the symbol represents the actual payout that will be awarded if the Marlin symbol is collected. Marlin symbols can have values based on the following bet multipliers: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 250x, 1000x.\n\n If the value of a Marlin symbol is too large to be fully displayed, it will be shortened to 2 decimal places. The value displayed will always be the minimum amount you may be awarded. The actual awarded amount may be greater than the displayed value, but never less than the displayed value.\n\n For example: a value of 10,250,500 may be rounded down and displayed as 10.25M.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "LOOTLINES",
+      "trigger": null,
+      "effects": "Marlin symbols are dynamic paying symbols that display cash values. The cash value displayed on the symbol represents the actual payout that will be awarded if the Marlin symbol is collected. Marlin symbols can have values based on the following bet multipliers: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 250x, 1000x.\n\n If the value of a Marlin symbol is too large to be fully displayed, it will be shortened to 2 decimal places. The value displayed will always be the minimum amount you may be awarded. The actual awarded amount may be greater than the displayed value, but never less than the displayed value.\n\n For example: a value of 10,250,500 may be rounded down and displayed as 10.25M.",
+      "params": {}
+    },
+    {
+      "name": "CATCH THEM ALL!",
+      "trigger": null,
+      "effects": "Marlin symbols are collected if 3 or more Marlin symbols land in a winning payline combination. If there is at least one Fisherman symbol on the grid, each Fisherman symbol will also collect each Marlin symbol one time.\n\n The Fisherman symbol can land with a multiplier value that affects the value of all the Marlin symbols that it collects. The possible multiplier values are: x1, x2, x3, x4, x5, x10, x15, x20.\n\n Fisherman symbols do not collect the value of other Fisherman symbols. A maximum of one Fisherman symbol can land on each reel at the same time.",
+      "params": {
+        "multiplier_values_mentioned": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          10,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "name": "REEL IT IN!",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing 3 FS scatter symbols at the same time in the base game.\n\n In this bonus feature, the Marlin Progress Bar is displayed outside the grid. Each time a Fisherman symbol lands on the grid, the Marlin Progress Bar increases by one step. This increase happens regardless of whether or not the Fisherman symbol collects any Marlin symbols that round.\n\n After every fourth Fisherman symbol has landed, a new upgrade level is reached:\n\n Upgrade 1 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x2.\n\n Upgrade 2 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x4.\n\n Upgrade 3 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x10.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          4,
+          10
+        ]
+      }
+    },
+    {
+      "name": "OFF THE HOOK!",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 15 free spins by landing 4 FS scatter symbols at the same time in the base game.\n\n This bonus features the Marlin Progress Bar mechanic from REEL IT IN!. However, the upgrade levels in this bonus are even more powerful:\n\n From the start, all Fisherman symbols are guaranteed to have a multiplier of at least x2.\n\n Upgrade 1 awards 15 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x4.\n\n Upgrade 2 awards 15 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x10.\n\n Upgrade 3 awards 15 additional free spins and guarantees that all subsequent Fisherman symbols land with a multiplier value of at least x15.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          4,
+          10,
+          15
+        ]
+      }
+    },
+    {
+      "name": "PLENTY OF FISH IN THE SEA",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing 5 FS scatter symbols at the same time in the base game.\n\n In this bonus feature, all Marlin symbols are guaranteed to have a value of at least 5x. This bonus also guarantees that at least one Marlin symbol and one Fisherman symbol will land on every spin!",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "fishy_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "reel_it_in_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "off_the_hook_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 7500,
+    "max_win_notes": "maximum achievable win in this game is 7 500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1681/1.27.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/marlin-masters/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Give a man a fish, and he eats for a day; teach a man to fish, and he eats for a lifetime. Take our word for it and learn the ropes in Marlin Masters, a 5-reel, 4-row game with payline wins and the Lootlines mechanic! The max win of 7,500 times your bet can be reached in all game modes.\n\n FEATURES\n\n LOOTLINES\n\n Marlin symbols are dynamic paying symbols that display cash values. The cash value displayed on the symbol represents the actual payout that will be awarded if the Marlin symbol is collected. Marlin symbols can have values based on the following bet multipliers: 1x, 2x,"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

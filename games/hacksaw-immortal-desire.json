@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Immortal Desire",
+    "slug": "hacksaw-immortal-desire",
+    "provider_game_id": "1364",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1364&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1364/1.16.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 1024. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "DARK AWAKENING",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to activate the DARK AWAKENING bonus feature with 10 free spins.\n\n During this feature, only non-paying symbols, Awakened Multipliers and Coffin symbols appear. Above each reel is a multiplier value that can be increased by landing AWAKENED MULTIPLIER and COFFIN symbols. At the end of the feature, the multipliers above the reels will be added together and multiplied with your bet amount to determine the final award.\n\n AWAKENED MULTIPLIER SYMBOLS\n\n Landed Awakened Multiplier symbols increase the value of the multipliers above the reels. They can be adding or multiplying and can affect one or all the reel multipliers.\n\n Normal multipliers only affect the reels they land on, while Epic multipliers are applied to all the reels.\n\n Normal adding multipliers can have the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 250x, 500x.\n\n Epic adding multipliers can have the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 250x, 500x.\n\n Normal Multiplying multipliers can have the following values: x2, x3, x4, x5, x6, x7, x8, x9, x10.\n\n Epic Multiplying multipliers can have the following values: x2, x3, x4, x5, x6, x7, x8, x9, x10.\n\n COFFIN SYMBOLS\n\n Coffin symbols are sticky until the end of the feature. At the end of the bonus game, landed Coffin symbols will reveal a multiplying multiplier which will be applied to their respective reel multiplier.\n\n Coffin symbols can have the following multiplier values: x2, x3, x4, x5, x6, x7, x8, x9, x10.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for other paying symbols in the paytable.\n\n Awakened Multiplier symbols and Coffin symbols only appear in the Dark Awakening bonus game.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "BLOOD MOON",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to activate the BLOOD MOON bonus feature with 10 free spins.\n\n In this bonus, all landed Blood Reels are persistent until the end of the feature. Blood Reel multipliers are refreshed on each spin.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "BLOOD REEL",
+        "behavior": "At the start of each spin, one or more reels can turn into Blood Reels. All winning High-paying symbols on a Blood Reel are turned into Vampire symbols and have multipliers added to them. The total win amount in each winning combination is multiplied by the sum of the multipliers included in that win to determine the final win value.\n\n For example, if a winning combination consists of 5 winning symbols of a certain type, of which 2 are on Blood Reels and both are given a multiplier of 10x, the total multiplier for that win will be 20x and the final win amount will be determined by counting the base win value for those 5 symbols times the multiplier of 20x.\n\n Blood Reels can add the following multiplier values to Vampire symbols: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x.\n\n A Blood Reel always applies the same multiplier value to the Vampire symbols on the reel. Blood Reels may appear during the base game and Blood Moon bonus game. Maximum 5 Blood Reels can appear at the same time.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "BLOOD REEL",
+      "trigger": null,
+      "effects": "At the start of each spin, one or more reels can turn into Blood Reels. All winning High-paying symbols on a Blood Reel are turned into Vampire symbols and have multipliers added to them. The total win amount in each winning combination is multiplied by the sum of the multipliers included in that win to determine the final win value.\n\n For example, if a winning combination consists of 5 winning symbols of a certain type, of which 2 are on Blood Reels and both are given a multiplier of 10x, the total multiplier for that win will be 20x and the final win amount will be determined by counting the base win value for those 5 symbols times the multiplier of 20x.\n\n Blood Reels can add the following multiplier values to Vampire symbols: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x.\n\n A Blood Reel always applies the same multiplier value to the Vampire symbols on the reel. Blood Reels may appear during the base game and Blood Moon bonus game. Maximum 5 Blood Reels can appear at the same time.",
+      "params": {}
+    },
+    {
+      "name": "BLOOD MOON",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the BLOOD MOON bonus feature with 10 free spins.\n\n In this bonus, all landed Blood Reels are persistent until the end of the feature. Blood Reel multipliers are refreshed on each spin.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "DARK AWAKENING",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the DARK AWAKENING bonus feature with 10 free spins.\n\n During this feature, only non-paying symbols, Awakened Multipliers and Coffin symbols appear. Above each reel is a multiplier value that can be increased by landing AWAKENED MULTIPLIER and COFFIN symbols. At the end of the feature, the multipliers above the reels will be added together and multiplied with your bet amount to determine the final award.\n\n AWAKENED MULTIPLIER SYMBOLS\n\n Landed Awakened Multiplier symbols increase the value of the multipliers above the reels. They can be adding or multiplying and can affect one or all the reel multipliers.\n\n Normal multipliers only affect the reels they land on, while Epic multipliers are applied to all the reels.\n\n Normal adding multipliers can have the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 250x, 500x.\n\n Epic adding multipliers can have the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 75x, 100x, 250x, 500x.\n\n Normal Multiplying multipliers can have the following values: x2, x3, x4, x5, x6, x7, x8, x9, x10.\n\n Epic Multiplying multipliers can have the following values: x2, x3, x4, x5, x6, x7, x8, x9, x10.\n\n COFFIN SYMBOLS\n\n Coffin symbols are sticky until the end of the feature. At the end of the bonus game, landed Coffin symbols will reveal a multiplying multiplier which will be applied to their respective reel multiplier.\n\n Coffin symbols can have the following multiplier values: x2, x3, x4, x5, x6, x7, x8, x9, x10.\n\n Landing additional FS scatter symbols during the feature awards extra free spins:\n\n 2 FS symbols awards 2 additional spins;\n\n 3 FS symbols awards 4 additional spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for other paying symbols in the paytable.\n\n Awakened Multiplier symbols and Coffin symbols only appear in the Dark Awakening bonus game.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "blood_moon_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "dark_awakening_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1364/1.16.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/immortal-desire/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n BLOOD REEL\n\n At the start of each spin, one or more reels can turn into Blood Reels. All winning High-paying symbols on a Blood Reel are turned into Vampire symbols and have multipliers added to them. The total win amount in each winning combination is multiplied by the sum of the multipliers included in that win to determine the final win value.\n\n For example, if a winning combination consists of 5 winning symbols of a certain type, of which 2 are on Blood Reels and both are given a multiplier of 10x, the total multiplier for that win will be 20x and the final win amount will be de"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

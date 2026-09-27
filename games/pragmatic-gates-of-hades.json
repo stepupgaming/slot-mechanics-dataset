@@ -1,0 +1,268 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:43:58Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Gates of Hades",
+    "slug": "pragmatic-gates-of-hades",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://yesplay.bet/assets/documents/pragmatic-play-Gates-of-Hades-rules.pdf"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Official rules: played on a 6x6 grid"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": 5,
+    "direction": null,
+    "notes": "Connected blocks / cluster pays per official rules"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "TUMBLE FEATURE\nThe TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\n disappear. The remaining symbols fall to the bottom of the screen and the empty positions are replaced\n with symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble. There's\n no limit to the number of possible tumbles.\nAll wins are added to the player's balance after all of the tumbles resulted from a base spin have been played."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "This is the WILD symbol. It can hit on all reels during spins\n and tumbles in both base game and FREE SPINS.\n Whenever a WILD symbol hits, it can carry a random multiplier value.\n Possible values are: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 50x or 100x.\n During spins and tumbles, any multiplier that hits is collected in a meter on top of the reel the WILD that was\n carrying it hit. Every win from clusters is multiplied by the sum of all multipliers on top of the reels that had\n winning symbols on them, part of the cluster. At the end of all tumbles resulted from a spin, the multipliers\n are cleared from the top of the reels.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20,
+            25,
+            30,
+            50,
+            100
+          ]
+        }
+      },
+      {
+        "name": "WILD",
+        "behavior": "FREE SPINS\n Hit 3, 4, 5 or 6 or more SCATTER symbols to trigger the FREE SPINS feature and win 10, 12, 15 or 20 free\n spins respectively. If the round is triggered by 6 or more SCATTER symbols, it uses the SUPER FREE\n SPINS rule, that the minimum multiplier that can hit on a WILD symbol during this round is 10x.\n During the FREE SPINS round, all multipliers that get collected on top of each reel, do not get cleared at\n the end of tumbles and stay on the screen until the end of the round.\n During the FREE SPINS round, the possible multiplier values are as follows: 1x, 2x, 3x, 4x, 5x,\n 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 50x, 100x, 200x or 500x.\n Hit 3, 4, 5 or 6 or more SCATTER symbols during the round to retrigger the feature and win 5,\n 7, 10 or 12 additional free spins respectively.\n Special reels are in play during the feature.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20,
+            25,
+            30,
+            50,
+            100,
+            200,
+            500
+          ]
+        }
+      }
+    ],
+    "scatters": [
+      {
+        "name": "SCATTER",
+        "behavior": "This is the SCATTER symbol.\n SCATTER symbol is present on all reels.",
+        "params": {}
+      },
+      {
+        "name": "SCATTER",
+        "behavior": "FREE SPINS\n Hit 3, 4, 5 or 6 or more SCATTER symbols to trigger the FREE SPINS feature and win 10, 12, 15 or 20 free\n spins respectively. If the round is triggered by 6 or more SCATTER symbols, it uses the SUPER FREE\n SPINS rule, that the minimum multiplier that can hit on a WILD symbol during this round is 10x.\n During the FREE SPINS round, all multipliers that get collected on top of each reel, do not get cleared at\n the end of tumbles and stay on the screen until the end of the round.\n During the FREE SPINS round, the possible multiplier values are as follows: 1x, 2x, 3x, 4x, 5x,\n 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 50x, 100x, 200x or 500x.\n Hit 3, 4, 5 or 6 or more SCATTER symbols during the round to retrigger the feature and win 5,\n 7, 10 or 12 additional free spins respectively.\n Special reels are in play during the feature.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20,
+            25,
+            30,
+            50,
+            100,
+            200,
+            500
+          ]
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "MONEY",
+        "behavior": "This is the WILD symbol. It can hit on all reels during spins\n and tumbles in both base game and FREE SPINS.\n Whenever a WILD symbol hits, it can carry a random multiplier value.\n Possible values are: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 50x or 100x.\n During spins and tumbles, any multiplier that hits is collected in a meter on top of the reel the WILD that was\n carrying it hit. Every win from clusters is multiplied by the sum of all multipliers on top of the reels that had\n winning symbols on them, part of the cluster. At the end of all tumbles resulted from a spin, the multipliers\n are cleared from the top of the reels.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20,
+            25,
+            30,
+            50,
+            100
+          ]
+        }
+      },
+      {
+        "name": "MONEY",
+        "behavior": "FREE SPINS\n Hit 3, 4, 5 or 6 or more SCATTER symbols to trigger the FREE SPINS feature and win 10, 12, 15 or 20 free\n spins respectively. If the round is triggered by 6 or more SCATTER symbols, it uses the SUPER FREE\n SPINS rule, that the minimum multiplier that can hit on a WILD symbol during this round is 10x.\n During the FREE SPINS round, all multipliers that get collected on top of each reel, do not get cleared at\n the end of tumbles and stay on the screen until the end of the round.\n During the FREE SPINS round, the possible multiplier values are as follows: 1x, 2x, 3x, 4x, 5x,\n 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 50x, 100x, 200x or 500x.\n Hit 3, 4, 5 or 6 or more SCATTER symbols during the round to retrigger the feature and win 5,\n 7, 10 or 12 additional free spins respectively.\n Special reels are in play during the feature.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            15,
+            20,
+            25,
+            30,
+            50,
+            100,
+            200,
+            500
+          ]
+        }
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": "Hit 3, 4, 5 or 6 or more SCATTER symbols to trigger the FREE SPINS feature and win 10, 12, 15 or 20 free\n spins respectively.",
+        "spins_awarded": null,
+        "retrigger": "R symbols during the round to retrigger the feature and win 5,\n 7, 10 or 12 additional free spins respectively.",
+        "sticky_or_persistent_state": "Persistent/sticky state described in effects",
+        "progressive_state": null,
+        "effects": "Hit 3, 4, 5 or 6 or more SCATTER symbols to trigger the FREE SPINS feature and win 10, 12, 15 or 20 free\n spins respectively. If the round is triggered by 6 or more SCATTER symbols, it uses the SUPER FREE\n SPINS rule, that the minimum multiplier that can hit on a WILD symbol during this round is 10x.\n During the FREE SPINS round, all multipliers that get collected on top of each reel, do not get cleared at\n the end of tumbles and stay on the screen until the end of the round.\n During the FREE SPINS round, the possible multiplier values are as follows: 1x, 2x, 3x, 4x, 5x,\n 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 50x, 100x, 200x or 500x.\n Hit 3, 4, 5 or 6 or more SCATTER symbols during the round to retrigger the feature and win 5,\n 7, 10 or 12 additional free spins respectively.\n Special reels are in play during the feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": "Hit 3, 4, 5 or 6 or more SCATTER symbols to trigger the FREE SPINS feature and win 10, 12, 15 or 20 free\n spins respectively.",
+      "effects": "Hit 3, 4, 5 or 6 or more SCATTER symbols to trigger the FREE SPINS feature and win 10, 12, 15 or 20 free\n spins respectively. If the round is triggered by 6 or more SCATTER symbols, it uses the SUPER FREE\n SPINS rule, that the minimum multiplier that can hit on a WILD symbol during this round is 10x.\n During the FREE SPINS round, all multipliers that get collected on top of each reel, do not get cleared at\n the end of tumbles and stay on the screen until the end of the round.\n During the FREE SPINS round, the possible multiplier values are as follows: 1x, 2x, 3x, 4x, 5x,\n 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 50x, 100x, 200x or 500x.\n Hit 3, 4, 5 or 6 or more SCATTER symbols during the round to retrigger the feature and win 5,\n 7, 10 or 12 additional free spins respectively.\n Special reels are in play during the feature.",
+      "params": {}
+    },
+    {
+      "name": "Tumble Feature",
+      "trigger": null,
+      "effects": "The TUMBLE FEATURE means that after every spin, winning combinations are paid and all winning symbols\n disappear. The remaining symbols fall to the bottom of the screen and the empty positions are replaced\n with symbols coming from above.\n Tumbling will continue until no more winning combinations appear as a result of a tumble. There's\n no limit to the number of possible tumbles.\nAll wins are added to the player's balance after all of the tumbles resulted from a base spin have been played.\n\n 36 - 3000\n\n This is the WILD symbol. It can hit on all reels during spins\n and tumbles in both base game and FREE SPINS.\n Whenever a WILD symbol hits, it can carry a random multiplier value.\n Possible values are: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 30x, 50x or 100x.\n During spins and tumbles, any multiplier that hits is collected in a meter on top of the reel the WILD that was\n carrying it hit. Every win from clusters is multiplied by the sum of all multipliers on top of the reels that had\n winning symbols on them, part of the cluster. At the end of all tumbles resulted from a spin, the multipliers\n are cleared from the top of the reels.",
+      "params": {}
+    },
+    {
+      "name": "Buy Free Spins",
+      "trigger": null,
+      "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it.\n Pay 100x total bet to trigger the FREE SPINS feature with 3, 4, 5 or 6 SCATTER symbols\n are guaranteed to hit randomly on the triggering spin.\n Pay 500x total bet to trigger the SUPER FREE SPINS feature. In the SUPER FREE SPINS\n feature, the minimum multiplier that can hit on a WILD symbol is 10x. When buying\n the SUPER FREE SPINS feature 3, 4, 5 or 6 SCATTER symbols are guaranteed to hit\n randomly on the triggering spin.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Buy Free Spins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": "The FREE SPINS round can be instantly triggered from the base game by buying it.\n Pay 100x total bet to trigger the FREE SPINS feature with 3, 4, 5 or 6 SCATTER symbols\n are guaranteed to hit randomly on the triggering spin.\n Pay 500x total bet to trigger the SUPER FREE SPINS feature. In the SUPER FREE SPINS\n feature, the minimum multiplier that can hit on a WILD symbol is 10x. When buying\n the SUPER FREE SPINS feature 3, 4, 5 or 6 SCATTER symbols are guaranteed to hit\n randomly on the triggering spin.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000.0,
+    "max_win_notes": "maximum win amount is limited to 10,000x bet",
+    "rtp_percent": 96.52,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.52%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://yesplay.bet/assets/documents/pragmatic-play-Gates-of-Hades-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Gates-of-Hades.pdf",
+      "extracted_at": "2026-09-27T04:43:58Z",
+      "quote_or_excerpt": "GAME RULES\n All symbols pay in blocks of minimum 5 symbols connected horizontally or vertically.\n The game is played on a 6x6 grid of symbols.\n\n 15 - 36 3000 15 - 36 2400 15 - 36 1200\n 14 1500 14 1200 14 600\n 13 750 13 600 13 300\n 12 360 12 270 12 180\n 11 240 11 180 11 120\n 10 120 10 90 10 75\n 9 90 9 75 9 60\n 8 75 8 60 8 50\n 7 60 7 50 7 30\n 6 45 6 30 6 25\n 5 30 5 25 5 20\n 15 - 36 900 15 - 36 240 15 - 36 200 15 - 36 150 15 - 36 100\n 14 480 14 120 14 100 14 75 14 50\n 13 210 13 60 13 50 13 40 13 20\n 12 150 12 40 12 30 12 20 12 10\n 11 90 11 25 11 20 11 10 11 8\n 10 60 10 15 10 10 10 8 10 6\n 9 45 9 10 9 8 9 6 9 5\n 8 30 8 8 8 6 8 5 8 4\n 7 24 7 6 7 5 7 4 7 3\n 6 18 6 5 6 4 6 3 6 2\n 5 15 5 4 5 3 5 2 5"
+    }
+  ],
+  "unknowns": [
+    "feature_buy.cost_multiplier"
+  ]
+}

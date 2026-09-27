@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Pharaoh",
+    "slug": "hacksaw-le-pharaoh",
+    "provider_game_id": "1562",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1562&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1562/1.48.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "RAINBOW OVER THE PYRAMIDS",
+        "behavior": "Landing 5 FS scatter symbols at the same time in the base game awards the RAINBOW OVER THE PYRAMIDS Epic Bonus with 12 free spins!\n\n This bonus retains the Sticky Re-drops and Golden Riches mechanics from the base game.\n\n During this bonus, all Golden Squares remain highlighted until the end of the feature, even after being activated by a Rainbow symbol!\n\n In addition, a Rainbow symbol is guaranteed to land on every spin!\n\n Landing additional FS symbols at the same time awards extra free spins: \n2 FS awards +2 free spins; \n3 FS awards +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n The FS symbol does not appear in the LOST TREASURES or SUPER LOST TREASURES bonus games.\n\n The symbols in the paytable do not appear in the LOST TREASURES or SUPER LOST TREASURES bonus games.\n\n Stone Tablet symbols and dead symbols can only appear in the LOST TREASURES and SUPER LOST TREASURES bonus games.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "BONUS CHOICE",
+        "behavior": "Landing 3 or 4 FS scatter symbols at the same time in the base game brings you into the Bonus Choice menu, where you are able to choose between two bonus game options depending on the number of landed FS symbols.\n\n With 3 FS symbols, you may choose either the LUCK OF THE PHARAOH or the LOST TREASURES bonus games.\n\n With 4 FS symbols, you may choose either the SUPER LUCK OF THE PHARAOH or the SUPER LOST TREASURES bonus games.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "GOLDEN RICHES",
+        "behavior": "If there is a Rainbow symbol on the grid at the end of the Sticky Re-drops feature, it will activate the Golden Riches feature. When this happens, all Golden Squares on the grid will activate and reveal either Bronze, Silver or Gold Coins, and have a chance to show special Pot Of Gold, Green Clover or Golden Clover symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet. \nBronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x \nSilver Coins can have the following values: 5x, 10x, 15x, 20x \nGold Coins can have the following values: 25x, 50x, 100x, 250x, 500x\n\n After all Coins and special symbols have been revealed, Clover symbols will activate. There are two types of Clover symbols: Green Clover and Golden Clover.\n\n Green Clover symbols multiply Coins or Pot Of Gold symbols on adjacent squares with one of the following values: x2, x3, x4, x5, x10, x20\n\n Golden Clover symbols multiply all Coins or Pot Of Gold symbols on the grid with one of the following values: x2, x3, x4, x5, x10, x20\n\n After all Clover symbols have awarded their multipliers, Pot Of Gold symbols will activate. Pot Of Gold symbols collect the values of all Coins and other Pot Of Gold symbols on the grid and store their total value. Pot Of Gold symbols activate top-to-bottom, left-to-right.\n\n When all values from Coins and Pot Of Gold symbols have been collected, all other Golden Squares will activate again to reveal new symbols and the process above repeats.\n\n Once all reveals and activations have been completed, all Coins and Pot Of Gold symbol values will be added together and multiplied with your bet amount to determine the final awarded win.\n\n Coins and special symbols are removed at the start of the next spin.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      },
+      {
+        "name": "LOST TREASURES",
+        "behavior": "When you choose this bonus game from the Bonus Choice menu, you will enter the bonus with 3 refilling lives.\n\n The following symbols appear in this bonus: dead symbols, Coins, Green and Golden Clover, Pot Of Gold, and two different Stone Tablet symbols. Normal paying symbols do not appear. Dead symbols are non-paying and have no other effect.\n\n Each spin in the bonus consumes 1 life. Whenever any non-dead symbol lands, your lives are refilled to 3. After 3 spins without a refill, the bonus will end.\n\n All Coin symbols and Pot of Gold symbols that land become sticky until collected by a Pot Of Gold or the end of the feature.\n\n Stone Tablet symbols that land also become sticky until the end of the feature. There are two types of Stone Tablet symbols: Adding Stone Tablet and Multiplying Stone Tablet.\n\n The Adding Stone Tablet symbol adds a value to one random Coin on each spin, from one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 250x, 500x\n\n The Multiplying Stone Tablet symbol multiplies the value of one random Coin on each spin, with one of the following multiplier values: x2, x3, x4, x5, x10, x20\n\n If the grid fills completely with Coins, Pot Of Gold, or Stone Tablet symbols, the bonus ends.\n\n At the end of the bonus game, all Coin and Pot Of Gold symbol values will be added together and multiplied with your bet amount to determine the final awarded win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "STICKY RE-DROPS",
+        "behavior": "When a winning combination lands, the symbols in that combination will stick and a re-drop will be awarded. All paying symbols that stick in this way create Golden Squares on their positions.\n\n During the re-drop, paying symbols that either extend existing or create new winning combinations will also stick and another re-drop will be awarded. This continues until no further extensions or new winning combinations are created. Once no further re-drops are awarded, all wins will be paid out.\n\n Rainbow symbols and FS symbols that land together with a sticky winning combination will also stick but do not create Golden Squares.\n\n Sticky paying symbols are removed at the start of the next spin or when the Golden Riches feature activates.\n\n Golden Squares, sticky Rainbow symbols and sticky FS symbols are all removed at the start of the next spin.",
+        "params": {}
+      },
+      {
+        "name": "LUCK OF THE PHARAOH",
+        "behavior": "When you choose this bonus game from the Bonus Choice menu, you will be awarded 10 free spins.\n\n This bonus retains the Sticky Re-drops and Golden Riches mechanics from the base game.\n\n In this bonus all Golden Squares remain highlighted until the end of the feature, even after being activated by a Rainbow symbol.\n\n Landing additional FS symbols at the same time awards extra free spins: \n2 FS awards +2 free spins; \n3 FS awards +4 free spins.",
+        "params": {}
+      },
+      {
+        "name": "SUPER LUCK OF THE PHARAOH",
+        "behavior": "When you choose this bonus game from the Bonus Choice menu, you will be awarded a variant of the LUCK OF THE PHARAOH bonus with an increased number of free spins! In this variant, 12 free spins will be awarded and there are better chances of landing the higher-value Coins and Pot Of Gold symbols.\n\n This variant guarantees that a Clover symbol is revealed whenever the Golden Riches mechanic activates!\n\n Landing additional FS symbols at the same time awards extra free spins: \n2 FS awards +2 free spins; \n3 FS awards +4 free spins.",
+        "params": {}
+      },
+      {
+        "name": "SUPER LOST TREASURES",
+        "behavior": "When you choose this bonus game from the Bonus Choice menu, you will be awarded a variant of the LOST TREASURES bonus. This variant guarantees that an Adding Stone Tablet symbol lands on the first spin. And there are better chances of landing higher-value Coins and Pot Of Gold symbols.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "STICKY RE-DROPS",
+      "trigger": null,
+      "effects": "When a winning combination lands, the symbols in that combination will stick and a re-drop will be awarded. All paying symbols that stick in this way create Golden Squares on their positions.\n\n During the re-drop, paying symbols that either extend existing or create new winning combinations will also stick and another re-drop will be awarded. This continues until no further extensions or new winning combinations are created. Once no further re-drops are awarded, all wins will be paid out.\n\n Rainbow symbols and FS symbols that land together with a sticky winning combination will also stick but do not create Golden Squares.\n\n Sticky paying symbols are removed at the start of the next spin or when the Golden Riches feature activates.\n\n Golden Squares, sticky Rainbow symbols and sticky FS symbols are all removed at the start of the next spin.",
+      "params": {}
+    },
+    {
+      "name": "GOLDEN RICHES",
+      "trigger": null,
+      "effects": "If there is a Rainbow symbol on the grid at the end of the Sticky Re-drops feature, it will activate the Golden Riches feature. When this happens, all Golden Squares on the grid will activate and reveal either Bronze, Silver or Gold Coins, and have a chance to show special Pot Of Gold, Green Clover or Golden Clover symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet. \nBronze Coins can have the following values: 0.2x, 0.5x, 1x, 2x, 3x, 4x \nSilver Coins can have the following values: 5x, 10x, 15x, 20x \nGold Coins can have the following values: 25x, 50x, 100x, 250x, 500x\n\n After all Coins and special symbols have been revealed, Clover symbols will activate. There are two types of Clover symbols: Green Clover and Golden Clover.\n\n Green Clover symbols multiply Coins or Pot Of Gold symbols on adjacent squares with one of the following values: x2, x3, x4, x5, x10, x20\n\n Golden Clover symbols multiply all Coins or Pot Of Gold symbols on the grid with one of the following values: x2, x3, x4, x5, x10, x20\n\n After all Clover symbols have awarded their multipliers, Pot Of Gold symbols will activate. Pot Of Gold symbols collect the values of all Coins and other Pot Of Gold symbols on the grid and store their total value. Pot Of Gold symbols activate top-to-bottom, left-to-right.\n\n When all values from Coins and Pot Of Gold symbols have been collected, all other Golden Squares will activate again to reveal new symbols and the process above repeats.\n\n Once all reveals and activations have been completed, all Coins and Pot Of Gold symbol values will be added together and multiplied with your bet amount to determine the final awarded win.\n\n Coins and special symbols are removed at the start of the next spin.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS CHOICE",
+      "trigger": null,
+      "effects": "Landing 3 or 4 FS scatter symbols at the same time in the base game brings you into the Bonus Choice menu, where you are able to choose between two bonus game options depending on the number of landed FS symbols.\n\n With 3 FS symbols, you may choose either the LUCK OF THE PHARAOH or the LOST TREASURES bonus games.\n\n With 4 FS symbols, you may choose either the SUPER LUCK OF THE PHARAOH or the SUPER LOST TREASURES bonus games.",
+      "params": {}
+    },
+    {
+      "name": "LUCK OF THE PHARAOH",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will be awarded 10 free spins.\n\n This bonus retains the Sticky Re-drops and Golden Riches mechanics from the base game.\n\n In this bonus all Golden Squares remain highlighted until the end of the feature, even after being activated by a Rainbow symbol.\n\n Landing additional FS symbols at the same time awards extra free spins: \n2 FS awards +2 free spins; \n3 FS awards +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "SUPER LUCK OF THE PHARAOH",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will be awarded a variant of the LUCK OF THE PHARAOH bonus with an increased number of free spins! In this variant, 12 free spins will be awarded and there are better chances of landing the higher-value Coins and Pot Of Gold symbols.\n\n This variant guarantees that a Clover symbol is revealed whenever the Golden Riches mechanic activates!\n\n Landing additional FS symbols at the same time awards extra free spins: \n2 FS awards +2 free spins; \n3 FS awards +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "LOST TREASURES",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will enter the bonus with 3 refilling lives.\n\n The following symbols appear in this bonus: dead symbols, Coins, Green and Golden Clover, Pot Of Gold, and two different Stone Tablet symbols. Normal paying symbols do not appear. Dead symbols are non-paying and have no other effect.\n\n Each spin in the bonus consumes 1 life. Whenever any non-dead symbol lands, your lives are refilled to 3. After 3 spins without a refill, the bonus will end.\n\n All Coin symbols and Pot of Gold symbols that land become sticky until collected by a Pot Of Gold or the end of the feature.\n\n Stone Tablet symbols that land also become sticky until the end of the feature. There are two types of Stone Tablet symbols: Adding Stone Tablet and Multiplying Stone Tablet.\n\n The Adding Stone Tablet symbol adds a value to one random Coin on each spin, from one of the following values: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 250x, 500x\n\n The Multiplying Stone Tablet symbol multiplies the value of one random Coin on each spin, with one of the following multiplier values: x2, x3, x4, x5, x10, x20\n\n If the grid fills completely with Coins, Pot Of Gold, or Stone Tablet symbols, the bonus ends.\n\n At the end of the bonus game, all Coin and Pot Of Gold symbol values will be added together and multiplied with your bet amount to determine the final awarded win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "SUPER LOST TREASURES",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will be awarded a variant of the LOST TREASURES bonus. This variant guarantees that an Adding Stone Tablet symbol lands on the first spin. And there are better chances of landing higher-value Coins and Pot Of Gold symbols.",
+      "params": {}
+    },
+    {
+      "name": "RAINBOW OVER THE PYRAMIDS",
+      "trigger": null,
+      "effects": "Landing 5 FS scatter symbols at the same time in the base game awards the RAINBOW OVER THE PYRAMIDS Epic Bonus with 12 free spins!\n\n This bonus retains the Sticky Re-drops and Golden Riches mechanics from the base game.\n\n During this bonus, all Golden Squares remain highlighted until the end of the feature, even after being activated by a Rainbow symbol!\n\n In addition, a Rainbow symbol is guaranteed to land on every spin!\n\n Landing additional FS symbols at the same time awards extra free spins: \n2 FS awards +2 free spins; \n3 FS awards +4 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n The FS symbol does not appear in the LOST TREASURES or SUPER LOST TREASURES bonus games.\n\n The symbols in the paytable do not appear in the LOST TREASURES or SUPER LOST TREASURES bonus games.\n\n Stone Tablet symbols and dead symbols can only appear in the LOST TREASURES and SUPER LOST TREASURES bonus games.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum win of 15,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1562/1.48.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-pharaoh/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n STICKY RE-DROPS\n\n When a winning combination lands, the symbols in that combination will stick and a re-drop will be awarded. All paying symbols that stick in this way create Golden Squares on their positions.\n\n During the re-drop, paying symbols that either extend existing or create new winning combinations will also stick and another re-drop will be awarded. This continues until no further extensions or new winning combinations are created. Once no further re-drops are awarded, all wins will be paid out.\n\n Rainbow symbols and FS symbols that land together with a sticky winning com"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

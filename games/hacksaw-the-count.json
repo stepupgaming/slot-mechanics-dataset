@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "The Count",
+    "slug": "hacksaw-the-count",
+    "provider_game_id": "1803",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1803&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1803/1.14.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 19,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 19. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "EXPANDED BLOODY WILDS",
+        "behavior": "When a Blood symbol lands, it expands into a Bloody Wild if the expanded symbol is a part of at least 1 winning combination once expanded.\n\n Bloody Wilds expand downward, from the top of the grid to the landed Blood symbol. Blood symbols that land on the top row will still be counted as expanded Bloody Wilds if part of a win. Expanded Bloody Wilds count as Wild on every position the expanded symbol covers. Only 1 Blood symbol can land on a reel at a time.\n\n When a Bloody Wild expands, it can just be Wild, or it can reveal a Multiplier, which is applied to the entire Bloody Wild. When an expanded Bloody Wild participates in a winning combination, the value of the win is multiplied by the shown value. If a winning combination includes more than 1 expanded Bloody Wild with a Multiplier, the Multiplier values will be added together and then applied to the win. Expanded Bloody Wilds can have the following Adding Multiplier values: Wild, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x, 500x.",
+        "params": {}
+      },
+      {
+        "name": "WILD BAT SYMBOLS",
+        "behavior": "When a Wild Bat symbol lands, it will have one of the following Adding Multiplier values: Wild, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x, 500x. When a Wild Bat symbol participates in a winning combination, the value of the win is combined with the Wild Bat’s Multiplier value. If more than 1 Wild Bat symbol is part of the same winning combination, their values are added together before being applied to the win. If a winning combination includes an expanded Bloody Wild and a Wild Bat symbol, the two Multiplier values will be added together and then applied to the wins.\n\n When an Epic Wild Bat symbol lands, it will have one of the following Adding Multiplier values: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 500x. When an Epic Wild Bat symbol lands on the grid, it will activate and spread its value to all expanded Bloody Wilds and other Wild Bat symbols on the grid. Only 1 Epic Wild Bat symbol can land per spin.",
+        "params": {}
+      },
+      {
+        "name": "HIDDEN EPIC BONUS - COUNT ON BLOOD",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game\n\n The Hidden Epic Bonus keeps the mechanics of the REST IN PIECES bonus with an increased chance of landing Epic Wild Bat symbols! Guaranteed at least 5 Wild Bat symbols on each spin!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - BAT TO THE BONE",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, increasing the chance of landing Wild Bat symbols! The minimum Multiplier value in this bonus is 2x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - REST IN PIECES",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. Additionally, a progressive Symbol Counter is displayed outside the grid, with 5 sections linked to each of the 5 low-paying symbols. Each time that low-paying symbol creates a win, one section fills up on the corresponding Symbol Counter. When all 5 sections are full, it activates on the next free spin, replacing all corresponding low-paying symbols with Wild Bat symbols for the rest of the bonus! The minimum Multiplier value in this bonus is 2x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "EXPANDED BLOODY WILDS",
+      "trigger": null,
+      "effects": "When a Blood symbol lands, it expands into a Bloody Wild if the expanded symbol is a part of at least 1 winning combination once expanded.\n\n Bloody Wilds expand downward, from the top of the grid to the landed Blood symbol. Blood symbols that land on the top row will still be counted as expanded Bloody Wilds if part of a win. Expanded Bloody Wilds count as Wild on every position the expanded symbol covers. Only 1 Blood symbol can land on a reel at a time.\n\n When a Bloody Wild expands, it can just be Wild, or it can reveal a Multiplier, which is applied to the entire Bloody Wild. When an expanded Bloody Wild participates in a winning combination, the value of the win is multiplied by the shown value. If a winning combination includes more than 1 expanded Bloody Wild with a Multiplier, the Multiplier values will be added together and then applied to the win. Expanded Bloody Wilds can have the following Adding Multiplier values: Wild, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x, 500x.",
+      "params": {}
+    },
+    {
+      "name": "WILD BAT SYMBOLS",
+      "trigger": null,
+      "effects": "When a Wild Bat symbol lands, it will have one of the following Adding Multiplier values: Wild, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x, 500x. When a Wild Bat symbol participates in a winning combination, the value of the win is combined with the Wild Bat’s Multiplier value. If more than 1 Wild Bat symbol is part of the same winning combination, their values are added together before being applied to the win. If a winning combination includes an expanded Bloody Wild and a Wild Bat symbol, the two Multiplier values will be added together and then applied to the wins.\n\n When an Epic Wild Bat symbol lands, it will have one of the following Adding Multiplier values: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 500x. When an Epic Wild Bat symbol lands on the grid, it will activate and spread its value to all expanded Bloody Wilds and other Wild Bat symbols on the grid. Only 1 Epic Wild Bat symbol can land per spin.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - BAT TO THE BONE",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics, increasing the chance of landing Wild Bat symbols! The minimum Multiplier value in this bonus is 2x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - REST IN PIECES",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. Additionally, a progressive Symbol Counter is displayed outside the grid, with 5 sections linked to each of the 5 low-paying symbols. Each time that low-paying symbol creates a win, one section fills up on the corresponding Symbol Counter. When all 5 sections are full, it activates on the next free spin, replacing all corresponding low-paying symbols with Wild Bat symbols for the rest of the bonus! The minimum Multiplier value in this bonus is 2x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - COUNT ON BLOOD",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game\n\n The Hidden Epic Bonus keeps the mechanics of the REST IN PIECES bonus with an increased chance of landing Epic Wild Bat symbols! Guaranteed at least 5 Wild Bat symbols on each spin!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1803/1.14.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/the-count/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Welcome to The Count’s castle - where the night is alive and the creatures are not!\n\n Here, bats fly like they’re late for a party, headless skeletons dance a jig, and The Count’s tailored tails are sharp, just like his bite. With a cheeky wink, he joins the night’s grand ball, counting flaps and claps as he dances down the hall. From spooky crypt corners to the towers up high, his castle’s a playground beneath the starry sky!\n\n The Count is here, but have no fear, in this 5-reel, 5-row game with paylines, a max win of up to 12 500 times your bet is available in every game mod"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Supernova Galaxy Orbs",
+    "slug": "hacksaw-supernova-galaxy-orbs",
+    "provider_game_id": "2390",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2390&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2390/1.13.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 26,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 26. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "RED ORB SYMBOLS AND HOLD & WIN SEQUENCES",
+        "behavior": "When a Red Orb symbol lands, it triggers a Hold & Win sequence after any regular wins have been handled. The Hold & Win sequence starts with 3 refilling lives that represent 3 spins.\n\n During the Hold & Win sequence, only Red Orb, Jackpot, Dead symbols and Bronze, Silver, Gold or Diamond Coins will land. Every time a Red Orb, Coin or Jackpot symbol lands, the lives are refilled and new spins are awarded. Dead symbols are non-paying symbols and have no other effect.\n\n When Red Orb, Coin and Jackpot symbols land, they stick to the grid. All Coins are cash prizes that are paid as a multiple of your bet. Coin symbols award wins when they are collected by Orb symbols.\n\n Bronze Coins can have the following values: 0.2x, 0.4x, 1x, 2x \n Silver Coins can have the following values: 3x, 4x, 5x, 10x \n Gold Coins can have the following values: 15x, 20x, 25x, 50x \n Diamond Coins can have the following values: 100x, 150x, 200x, 250x, 500x, 1000x \n\n After the final life has been used or there are no available positions on the grid, any Jackpot symbols will reveal their values from the Jackpot sign outside of the grid. Only one Jackpot symbol can land at the same time during a spin. Jackpot symbols award wins when they are collected by Orb symbols. Jackpot values revealed from the Jackpot sign are awarded as a multiple of your bet. Jackpot symbols can reveal the following values from the Jackpot sign:\n\n Mini: 10x \n Major: 50x \n Mega: 500x \n {maxWinLabel}: {highestJackpotMultiplier}x \n\n Once the Coin symbols have landed and the Jackpot symbols have revealed their values, the Red Orb symbols activate. Activated Red Orb symbols collect the values of all Coin and Jackpot symbols and the sum is paid out as a multiple of your bet.\n\n 1 Red Orb symbol can land during the same spin. During a Hold & Win sequence, there can be a maximum of 3 Red Orb symbols on the grid at the same time.\n\n When there are multiple Red Orb symbols on the grid at the same time, they separately collect the values o",
+        "params": {}
+      },
+      {
+        "name": "BLUE ORB SYMBOLS",
+        "behavior": "When a Blue Orb symbol lands, any regular wins are handled before the Blue Orb is activated. When activated, Blue Orb symbols collect the values from all Coin and Jackpot symbols on the grid and the sum is paid out as a multiple of your bet.\n\n When there are multiple Blue Orb symbols on the grid, each Blue Orb symbol collects the values of each Coin and Jackpot symbol once. The values collected by each Blue Orb symbol are then added together and the sum is paid out as a multiple of your bet. Blue Orb symbols collect from left to right, top to bottom.\n\n 3 Blue Orb symbols can land during the same spin. Red and Blue Orb symbols cannot be on the grid at the same time.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - SPHERE FACTOR",
+        "trigger": "Landing 3 FS symbols awards 10 free spins in this bonus \n Landing 4 FS symbols awards 15 free spins in this bonus \n Landing 5 FS symbols awards 20 free spins in this bonus \n\n This bonus keeps the base game’s mechanics.",
+        "spins_awarded": "awards 10 free spins in this bonus \n Landing 4 FS symbols awards 15 free spins in this bonus \n Landing 5 FS symbols awards 20 free spins in this bonus \n\n This bonus keeps the base game’s mechanics",
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10-20 free spins by landing FS scatter symbols at the same time during the base game:\n\n Landing 3 FS symbols awards 10 free spins in this bonus \n Landing 4 FS symbols awards 15 free spins in this bonus \n Landing 5 FS symbols awards 20 free spins in this bonus \n\n This bonus keeps the base game’s mechanics. In addition, there is a higher chance of landing Red Orb symbols and triggering a Hold & Win sequence and all Coin symbols have a value of at least 1x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +3 free spins\n\n 3 FS symbols award +5 free spins\n\n 4 FS symbols award +7 free spins\n\n 5 FS symbols award +10 free spins"
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "RED ORB SYMBOLS AND HOLD & WIN SEQUENCES",
+      "trigger": null,
+      "effects": "When a Red Orb symbol lands, it triggers a Hold & Win sequence after any regular wins have been handled. The Hold & Win sequence starts with 3 refilling lives that represent 3 spins.\n\n During the Hold & Win sequence, only Red Orb, Jackpot, Dead symbols and Bronze, Silver, Gold or Diamond Coins will land. Every time a Red Orb, Coin or Jackpot symbol lands, the lives are refilled and new spins are awarded. Dead symbols are non-paying symbols and have no other effect.\n\n When Red Orb, Coin and Jackpot symbols land, they stick to the grid. All Coins are cash prizes that are paid as a multiple of your bet. Coin symbols award wins when they are collected by Orb symbols.\n\n Bronze Coins can have the following values: 0.2x, 0.4x, 1x, 2x \n Silver Coins can have the following values: 3x, 4x, 5x, 10x \n Gold Coins can have the following values: 15x, 20x, 25x, 50x \n Diamond Coins can have the following values: 100x, 150x, 200x, 250x, 500x, 1000x \n\n After the final life has been used or there are no available positions on the grid, any Jackpot symbols will reveal their values from the Jackpot sign outside of the grid. Only one Jackpot symbol can land at the same time during a spin. Jackpot symbols award wins when they are collected by Orb symbols. Jackpot values revealed from the Jackpot sign are awarded as a multiple of your bet. Jackpot symbols can reveal the following values from the Jackpot sign:\n\n Mini: 10x \n Major: 50x \n Mega: 500x \n {maxWinLabel}: {highestJackpotMultiplier}x \n\n Once the Coin symbols have landed and the Jackpot symbols have revealed their values, the Red Orb symbols activate. Activated Red Orb symbols collect the values of all Coin and Jackpot symbols and the sum is paid out as a multiple of your bet.\n\n 1 Red Orb symbol can land during the same spin. During a Hold & Win sequence, there can be a maximum of 3 Red Orb symbols on the grid at the same time.\n\n When there are multiple Red Orb symbols on the grid at the same time, they separately collect the values o",
+      "params": {}
+    },
+    {
+      "name": "BLUE ORB SYMBOLS",
+      "trigger": null,
+      "effects": "When a Blue Orb symbol lands, any regular wins are handled before the Blue Orb is activated. When activated, Blue Orb symbols collect the values from all Coin and Jackpot symbols on the grid and the sum is paid out as a multiple of your bet.\n\n When there are multiple Blue Orb symbols on the grid, each Blue Orb symbol collects the values of each Coin and Jackpot symbol once. The values collected by each Blue Orb symbol are then added together and the sum is paid out as a multiple of your bet. Blue Orb symbols collect from left to right, top to bottom.\n\n 3 Blue Orb symbols can land during the same spin. Red and Blue Orb symbols cannot be on the grid at the same time.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - SPHERE FACTOR",
+      "trigger": "Landing 3 FS symbols awards 10 free spins in this bonus \n Landing 4 FS symbols awards 15 free spins in this bonus \n Landing 5 FS symbols awards 20 free spins in this bonus \n\n This bonus keeps the base game’s mechanics.",
+      "effects": "Activate this bonus with 10-20 free spins by landing FS scatter symbols at the same time during the base game:\n\n Landing 3 FS symbols awards 10 free spins in this bonus \n Landing 4 FS symbols awards 15 free spins in this bonus \n Landing 5 FS symbols awards 20 free spins in this bonus \n\n This bonus keeps the base game’s mechanics. In addition, there is a higher chance of landing Red Orb symbols and triggering a Hold & Win sequence and all Coin symbols have a value of at least 1x.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +3 free spins\n\n 3 FS symbols award +5 free spins\n\n 4 FS symbols award +7 free spins\n\n 5 FS symbols award +10 free spins",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "cosmic_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "galactic_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "sphere_factor_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2390/1.13.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/supernova-galaxy-orbs/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n The time has come to buckle up and head into the next chapter of the Space Race as you burst towards the intergalactic world of Supernova Galaxy Orbs Hold & Win!\n\n This is a 5-reel, 4-row galaxy with paylines and where the Orbs have a cosmic magnetism! The max win of {maximumWinMultiplier} times your bet is available in every game mode!\n\n FEATURES\n\n RED ORB SYMBOLS AND HOLD & WIN SEQUENCES\n\n When a Red Orb symbol lands, it triggers a Hold & Win sequence after any regular wins have been handled. The Hold & Win sequence starts with 3 refilling lives that represent 3 spins.\n\n Dur"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

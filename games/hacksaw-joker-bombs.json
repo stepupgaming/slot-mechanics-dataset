@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Joker Bombs",
+    "slug": "hacksaw-joker-bombs",
+    "provider_game_id": "1117",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1117&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1117/1.30.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 6x5 grid in official About text"
+  },
+  "win_system": {
+    "type": "pay_anywhere",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "anywhere",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 8 or more symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "During each round all wins will be collected and displayed above the reels as a pending win amount. That amount will be updated after every spin/cascade that awards a new win. If you land one or more multiplier bombs their values will be added together and stored as a pending win multiplier that is applied to the total win at the end of each round. All multiplier bombs act as scatter symbols.\n\nThere are three types of multiplier bombs:\n\n NORMAL BOMB\n\n Will land with the multiplier value visible, explodes and adds the multiplier value to the pending win multiplier. Possible values: 2x, 3x and 4x\n\n REVEALING BOMB\n\n Will land with a ?-character, explodes and adds the multiplier value to the pending win multiplier. Possible values are: 5x, 10x, 25x and 50x\n\n EPIC BOMB\n\n Will land with an X-character, explodes and multiplies the pending win multiplier with the value shown. Possible values are: x2, x3, x4, x5 and x10\n\n The normal and revealing bombs will only explode and add their multiplier values to the win multiplier if a win has occured on the current spin and there is a pending win above the reels.\n\nThe epic bombs will only explode to multiply an existing pending win multiplier."
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "MULTIPLIER BOMBS",
+        "behavior": "During each round all wins will be collected and displayed above the reels as a pending win amount. That amount will be updated after every spin/cascade that awards a new win. If you land one or more multiplier bombs their values will be added together and stored as a pending win multiplier that is applied to the total win at the end of each round. All multiplier bombs act as scatter symbols.\n\nThere are three types of multiplier bombs:\n\n NORMAL BOMB\n\n Will land with the multiplier value visible, explodes and adds the multiplier value to the pending win multiplier. Possible values: 2x, 3x and 4x\n\n REVEALING BOMB\n\n Will land with a ?-character, explodes and adds the multiplier value to the pending win multiplier. Possible values are: 5x, 10x, 25x and 50x\n\n EPIC BOMB\n\n Will land with an X-character, explodes and multiplies the pending win multiplier with the value shown. Possible values are: x2, x3, x4, x5 and x10\n\n The normal and revealing bombs will only explode and add their multiplier values to the win multiplier if a win has occured on the current spin and there is a pending win above the reels.\n\nThe epic bombs will only explode to multiply an existing pending win multiplier.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "Land three or more free spin scatter symbols anywhere on the grid in the base game to trigger this feature in which you will get 10 free spins.",
+        "spins_awarded": "get 10 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land three or more free spin scatter symbols anywhere on the grid in the base game to trigger this feature in which you will get 10 free spins. This feature has more multiplier bombs, there is also a higher chance of landing the high value bombs compared to the base game. Land three free spins symbols anywhere on the grid within this feature and you will get an additional 5 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MULTIPLIER BOMBS",
+      "trigger": null,
+      "effects": "During each round all wins will be collected and displayed above the reels as a pending win amount. That amount will be updated after every spin/cascade that awards a new win. If you land one or more multiplier bombs their values will be added together and stored as a pending win multiplier that is applied to the total win at the end of each round. All multiplier bombs act as scatter symbols.\n\nThere are three types of multiplier bombs:\n\n NORMAL BOMB\n\n Will land with the multiplier value visible, explodes and adds the multiplier value to the pending win multiplier. Possible values: 2x, 3x and 4x\n\n REVEALING BOMB\n\n Will land with a ?-character, explodes and adds the multiplier value to the pending win multiplier. Possible values are: 5x, 10x, 25x and 50x\n\n EPIC BOMB\n\n Will land with an X-character, explodes and multiplies the pending win multiplier with the value shown. Possible values are: x2, x3, x4, x5 and x10\n\n The normal and revealing bombs will only explode and add their multiplier values to the win multiplier if a win has occured on the current spin and there is a pending win above the reels.\n\nThe epic bombs will only explode to multiply an existing pending win multiplier.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "Land three or more free spin scatter symbols anywhere on the grid in the base game to trigger this feature in which you will get 10 free spins.",
+      "effects": "Land three or more free spin scatter symbols anywhere on the grid in the base game to trigger this feature in which you will get 10 free spins. This feature has more multiplier bombs, there is also a higher chance of landing the high value bombs compared to the base game. Land three free spins symbols anywhere on the grid within this feature and you will get an additional 5 free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_freespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000,
+    "max_win_notes": "maximum achievable win in this game is 5,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1117/1.30.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/joker-bombs/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n Joker Bombs is a colour explosion game set in a funfair theme! It has a 6x5 grid with all-scatter wins. This game is filled with normal, revealing and epic multiplier bombs to really take your wins to another level! You can win up to 5,000 times your bet!\n\n MULTIPLIER BOMBS\n\n During each round all wins will be collected and displayed above the reels as a pending win amount. That amount will be updated after every spin/cascade that awards a new win. If you land one or more multiplier bombs their values will be added together and stored as a pending win multiplier that is applied to t"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

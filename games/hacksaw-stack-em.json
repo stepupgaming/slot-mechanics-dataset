@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Stack 'Em",
+    "slug": "hacksaw-stack-em",
+    "provider_game_id": "1084",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1084&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1084/1.64.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 5x6 grid in official About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "Multipliers",
+        "behavior": "In the base game, non-winning symbols are removed after every win, and all winning symbols are kept and are dropped to the bottom of the grid. Below each reel, a value is shown indicating the number of winning stacked symbols in that reel. All winning clusters will be multiplied with the total of the multiplier values they are above. For example, if a winning cluster is above 1x, 3x and 2x, those multipliers will first be added together to a total of 6x, which will then be multiplied with the winning cluster amount. This process continues as long as you stack more wins.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Freespins",
+        "trigger": "Get at least three free spin scatter symbols in the base game to trigger the free spin feature.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Get at least three free spin scatter symbols in the base game to trigger the free spin feature. You are initially awarded 5 free spins, displayed as hearts above the reels. The free spins mode continues until no more hearts remain. In free spins, all symbols are removed between each spin. Every time you hit a win in the free spins mode, the total multiplier will be increased by the number of winnings symbols.\nExample: If a winning cluster consists of 6 symbols, 6 will be added to the total.\n\nOn each free spin there is a chance that the special X symbol appears. All winning clusters that connect with this symbol will be multiplied with the factor shown above the reels.\n\nThe ? symbol will give you additional spins or increase your multiplier. The following outcomes are possible:\n\n- 2-5 additional lives\n- Add one of the following to the total multiplier: 1, 2, 5, 10, 25 or 50\n- Multiply the total multiplier by 2, 3, 4 or 5\n\n Special Symbols\n\n The wild symbol substitutes for all paying symbols."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Multipliers",
+      "trigger": null,
+      "effects": "In the base game, non-winning symbols are removed after every win, and all winning symbols are kept and are dropped to the bottom of the grid. Below each reel, a value is shown indicating the number of winning stacked symbols in that reel. All winning clusters will be multiplied with the total of the multiplier values they are above. For example, if a winning cluster is above 1x, 3x and 2x, those multipliers will first be added together to a total of 6x, which will then be multiplied with the winning cluster amount. This process continues as long as you stack more wins.",
+      "params": {}
+    },
+    {
+      "name": "Freespins",
+      "trigger": "Get at least three free spin scatter symbols in the base game to trigger the free spin feature.",
+      "effects": "Get at least three free spin scatter symbols in the base game to trigger the free spin feature. You are initially awarded 5 free spins, displayed as hearts above the reels. The free spins mode continues until no more hearts remain. In free spins, all symbols are removed between each spin. Every time you hit a win in the free spins mode, the total multiplier will be increased by the number of winnings symbols.\nExample: If a winning cluster consists of 6 symbols, 6 will be added to the total.\n\nOn each free spin there is a chance that the special X symbol appears. All winning clusters that connect with this symbol will be multiplied with the factor shown above the reels.\n\nThe ? symbol will give you additional spins or increase your multiplier. The following outcomes are possible:\n\n- 2-5 additional lives\n- Add one of the following to the total multiplier: 1, 2, 5, 10, 25 or 50\n- Multiply the total multiplier by 2, 3, 4 or 5\n\n Special Symbols\n\n The wild symbol substitutes for all paying symbols.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "featurebuyfreespins",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1084/1.64.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/stack-em/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Canny the Can is back in Stack'em! This time he brought his friend Mona the Mouse with him.\n\nStack'em is a 5x6 grid game featuring a max win of up to 10,000x.\n\nStack symbols on top of each other to increase the multipliers shown below the reels. Keep stacking them to multiply your wins!\n\nIn the free spin mode all wins will increase the total multiplier with the size of the cluster. You enter the game mode with a fixed number of spins, shown as heart symbols above the reels.\nThe ? symbol will give a mystery reward which can be either additional spins or increase the multiplier."
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

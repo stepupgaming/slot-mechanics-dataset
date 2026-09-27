@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Dorks of the Deep",
+    "slug": "hacksaw-dorks-of-the-deep",
+    "provider_game_id": "1430",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1430&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1430/1.10.5/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Respins mentioned in About/Features; see feature texts for details."
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "EXPANDING WILD REELS",
+        "behavior": "When a Treasure Chest symbol lands it will expand into a Wild Reel if it would be part of a winning combination once expanded.\n\n Expanded Wild Reels cover the entire reel and will show one of the following characters: Octopus, Mermaid or Ocean King! Each character has a different multiplier tier with increasing multiplier values!\n\n The Octopus can have one of the following multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x\n\n The Mermaid can have one of the following multiplier values: 10x, 15x, 20x\n\n The Ocean King can have one of the following multiplier values: 25x, 50x, 100x, 200x\n\n The landed character’s multiplier is applied across the entire Wild Reel and affects any winning combinations that it is part of.\n\n All Wild Reel positions count as Wild symbols and substitute for all other symbols in the paytable.\n\n If more than one Wild Reels are part of the same winning combination, their multipliers are added together before being applied to the win.\n\n Treasure Chest symbols can land on any reel, but only 1 Treasure Chest symbol can land on a reel at a time.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "DEEP BLUE BONUS GAME",
+        "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate the DEEP BLUE bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the DEEP BLUE bonus game with 10 free spins.\n\n This bonus maintains the mechanics of the base game with the addition that a landed Treasure Chest symbol always expands and becomes a Wild Reel regardless of whether it is part of a win or not.\n\n Furthermore, expanded Wild Reels will reveal 0 - 3 lives and are sticky into the next spin as long as they have lives remaining. 1 life is removed from each sticky Wild Reel at the beginning of each spin. At the start of each spin, sticky Wild Reels will receive a new random multiplier from any of the three character tiers.\n\n If there is at least one Wild Reel with 1 or more lives remaining on the last free spin of the bonus game, the Last Chance feature will activate! Last Chance will award free respins and keep the bonus game active until no Wild Reels have any lives left.\n\n During Last Chance, additional Treasure Chest symbols can land on the grid and turn into new expanded Wild Reels with or without lives. If the Wild Reel reveals lives, the number of lives will never exceed the number of lives of any existing Wild Reels.\n\n The bonus game ends when there are no spins and no Wild Reels with lives remaining.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins."
+      },
+      {
+        "name": "DOWN UNDER BONUS GAME",
+        "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate the DOWN UNDER bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the DOWN UNDER bonus game with 10 free spins.\n\n This bonus maintains the mechanics of the DEEP BLUE bonus. In addition, sticky expanded Wild Reels will never receive a multiplier from a lower character tier than the initially revealed tier. The multiplier value will be randomly selected from any of the multiplier values in the associated tier\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins."
+      },
+      {
+        "name": "HIDDEN TREASURES BONUS GAME",
+        "trigger": "Land 5 FS scatter symbols at the same time in the base game to activate the HIDDEN TREASURES bonus game with 10 free spins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land 5 FS scatter symbols at the same time in the base game to activate the HIDDEN TREASURES bonus game with 10 free spins.\n\n This bonus game maintains the mechanics of the DOWN UNDER bonus game. In addition, you are guaranteed to always have two expanded Wild Reels active on the grid at all times until the end of the bonus.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "EXPANDING WILD REELS",
+      "trigger": null,
+      "effects": "When a Treasure Chest symbol lands it will expand into a Wild Reel if it would be part of a winning combination once expanded.\n\n Expanded Wild Reels cover the entire reel and will show one of the following characters: Octopus, Mermaid or Ocean King! Each character has a different multiplier tier with increasing multiplier values!\n\n The Octopus can have one of the following multiplier values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x\n\n The Mermaid can have one of the following multiplier values: 10x, 15x, 20x\n\n The Ocean King can have one of the following multiplier values: 25x, 50x, 100x, 200x\n\n The landed character’s multiplier is applied across the entire Wild Reel and affects any winning combinations that it is part of.\n\n All Wild Reel positions count as Wild symbols and substitute for all other symbols in the paytable.\n\n If more than one Wild Reels are part of the same winning combination, their multipliers are added together before being applied to the win.\n\n Treasure Chest symbols can land on any reel, but only 1 Treasure Chest symbol can land on a reel at a time.",
+      "params": {}
+    },
+    {
+      "name": "DEEP BLUE BONUS GAME",
+      "trigger": "Land 3 FS scatter symbols at the same time in the base game to activate the DEEP BLUE bonus game with 10 free spins.",
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate the DEEP BLUE bonus game with 10 free spins.\n\n This bonus maintains the mechanics of the base game with the addition that a landed Treasure Chest symbol always expands and becomes a Wild Reel regardless of whether it is part of a win or not.\n\n Furthermore, expanded Wild Reels will reveal 0 - 3 lives and are sticky into the next spin as long as they have lives remaining. 1 life is removed from each sticky Wild Reel at the beginning of each spin. At the start of each spin, sticky Wild Reels will receive a new random multiplier from any of the three character tiers.\n\n If there is at least one Wild Reel with 1 or more lives remaining on the last free spin of the bonus game, the Last Chance feature will activate! Last Chance will award free respins and keep the bonus game active until no Wild Reels have any lives left.\n\n During Last Chance, additional Treasure Chest symbols can land on the grid and turn into new expanded Wild Reels with or without lives. If the Wild Reel reveals lives, the number of lives will never exceed the number of lives of any existing Wild Reels.\n\n The bonus game ends when there are no spins and no Wild Reels with lives remaining.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "DOWN UNDER BONUS GAME",
+      "trigger": "Land 4 FS scatter symbols at the same time in the base game to activate the DOWN UNDER bonus game with 10 free spins.",
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate the DOWN UNDER bonus game with 10 free spins.\n\n This bonus maintains the mechanics of the DEEP BLUE bonus. In addition, sticky expanded Wild Reels will never receive a multiplier from a lower character tier than the initially revealed tier. The multiplier value will be randomly selected from any of the multiplier values in the associated tier\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN TREASURES BONUS GAME",
+      "trigger": "Land 5 FS scatter symbols at the same time in the base game to activate the HIDDEN TREASURES bonus game with 10 free spins.",
+      "effects": "Land 5 FS scatter symbols at the same time in the base game to activate the HIDDEN TREASURES bonus game with 10 free spins.\n\n This bonus game maintains the mechanics of the DOWN UNDER bonus game. In addition, you are guaranteed to always have two expanded Wild Reels active on the grid at all times until the end of the bonus.\n\n Landing additional FS symbols during the bonus awards extra free spins:\n\n 2 FS symbols award 2 additional spins,\n\n 3 FS symbols award 4 additional spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bubbly_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "deep_blue_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "down_under_bonus_buy_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1430/1.10.5/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/dorks-of-the-deep/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Dive deep and discover the dorky denizens of the depths in this deviantly delightful 5-reel, 4-row game with payline wins. Experience decorated Treasure Chests that expand into Wild Reels and take a chance on the eye-watering max win of 10,000 times your bet!\n\n Join the fun and enjoy the reef with the Dorks of the Deep! The max win can be reached in all game modes.\n\n FEATURES\n\n EXPANDING WILD REELS\n\n When a Treasure Chest symbol lands it will expand into a Wild Reel if it would be part of a winning combination once expanded.\n\n Expanded Wild Reels cover the entire reel and will"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

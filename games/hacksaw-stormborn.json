@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Stormborn",
+    "slug": "hacksaw-stormborn",
+    "provider_game_id": "1875",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1875&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1875/1.26.7/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Activate this bonus with 5 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Hidden Epic Bonus keeps the mechanics of the LEGACY OF LIGHTNING bonus. In addition, at least 5 Coins, 1 Collector Chest, and 1 Mjolnir symbol lands during each Thunder Respin sequence!"
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "BONUS CHOICE",
+        "behavior": "Landing 3 or 4 FS scatter symbols at the same time in the base game brings you into the Bonus Choice menu, where you can choose between 2 bonus games depending on the number of landed FS symbols.\n\n With 3 FS symbols, you may choose either the STORMBREAKER or the PERFECT STORM bonus games.\n\n With 4 FS symbols, you may choose either the LEGACY OF LIGHTNING or the HAMMER OF THE HEAVENS bonus games.",
+        "params": {}
+      },
+      {
+        "name": "HIDDEN EPIC BONUS - BLESSINGS OF THE BIFROST",
+        "behavior": "Activate this bonus with 5 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Hidden Epic Bonus keeps the mechanics of the LEGACY OF LIGHTNING bonus. In addition, at least 5 Coins, 1 Collector Chest, and 1 Mjolnir symbol lands during each Thunder Respin sequence!",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "THUNDER RESPINS",
+        "trigger": "Land at least 5 Coin symbols of any kind at the same time to trigger the Thunder Respins.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Land at least 5 Coin symbols of any kind at the same time to trigger the Thunder Respins. This Respin sequence contains only dead symbols, Coins, and Collector Chests. During Thunder Respins, all Coins and Collector Chests that land are sticky until the Respin sequence ends. Dead symbols are non-paying and have no other effect.\n\n Continue to land Coin symbols of any kind or Collector Chests to continue the Thunder Respins. When no new Coin symbols or Collector Chests land, the Respin sequence will end. At the end of the Thunder Respins, all Coins on the grid reveal a random cash value depending on the Coin symbol. The revealed values are calculated based on your current bet.\n\n Bronze Coins can reveal values based on the following bet multipliers: 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can reveal values based on the following bet multipliers: 5x, 10x, 15x, 20x\n\n Gold Coins can reveal values based on the following bet multipliers: 25x, 50x, 75x, 100x, 250x, 500x\n\n The Collector Chest symbols can land with or without a Multiplier. After all Coin symbols reveal their cash values, the Collector Chest activates and collects all Coin symbols on the grid. If a Collector Chest lands with a Multiplier, it first collects the Coin symbols, then reveals the Multiplier value and applies it to the Coin totals to determine the final amount.\n\n If more than 1 Collector Chest lands, each one will apply its own Multiplier to the Coin symbols it collected. Each Collector Chest collects each Coin symbol once. If Coin symbols get collected, they will retain their original values when collected by another Collector Chest. Collector Chests activate one by one, from top to bottom, left to right. The final win is the total value of all collected Coins from all Collector Chests. The possible Multiplier values are: x1, x2, x3, x4, x5, x10, x15, x20\n\n Once the Thunder Respin sequence ends and all collections are complete, the grid resets, removing Coin symbols, Collector Chests, and dead symbols before the next spin."
+      },
+      {
+        "name": "BONUS GAME - STORMBREAKER",
+        "trigger": "In this bonus game, each free spin triggers a new Thunder Respin sequence.",
+        "spins_awarded": "get 3 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "When you choose this bonus game from the Bonus Choice menu, you will get 3 free spins. In this bonus game, each free spin triggers a new Thunder Respin sequence. During Thunder Respins, a minimum of 2 Coins and 1 Collector Chest will land during each Thunder Respin sequence!"
+      },
+      {
+        "name": "BONUS GAME - PERFECT STORM",
+        "trigger": null,
+        "spins_awarded": "get 10 free spins",
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "When you choose this bonus game from the Bonus Choice menu, you will get 10 free spins. In this bonus game, all Wild symbols that land are Sticky and stay on the grid throughout the bonus. When a Wild symbol lands, it substitutes for all symbols in the paytable and has a possible Multiplier value of 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x. When a Wild symbol lands, it can reveal a Multiplier which multiplies the winning payline it is part of. If more than 1 Wild symbol contributes to a win, their values are added together before being applied to the total win.\n\n If 4 Wild symbols land and cover an entire reel, they transform into a full Wild God Reel with a total Multiplier. This total Multiplier is the sum of adding all individual Wild Multiplier values and is applied to the entire Wild God Reel. If a winning combination includes more than 1 Wild God Reel, the Multiplier values will first be added from left to right and then applied to the win. Wild God Reels stick to the grid and remain throughout the bonus.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      },
+      {
+        "name": "BONUS GAME - LEGACY OF LIGHTNING",
+        "trigger": null,
+        "spins_awarded": "get 3 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "When you choose this bonus game from the Bonus Choice menu, you will get 3 free spins. This bonus game keeps the mechanics of STORMBREAKER bonus. During Thunder Respins, a minimum of 4 Coins and 1 Collector Chest will land during each Thunder Respin sequence! In addition, when landing a Mjolnir symbol during a Thunder Respin, it will activate at the end of the spin and multiply a random number of Coin symbols on the grid with a Multiplier of x2, x3, x4, x5, x10, x15, x20. The Collector Chests will activate after the Mjolnir symbol has activated."
+      },
+      {
+        "name": "BONUS GAME - HAMMER OF THE HEAVENS",
+        "trigger": null,
+        "spins_awarded": "get 10 free spins",
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "When you choose this bonus game from the Bonus Choice menu, you will get 10 free spins. This bonus game keeps the mechanics of the PERFECT STORM bonus. In addition, landing a Mjolnir symbol adds a random Multiplier value of x2, x3, x4, x5, x10, x15, x20 to a random number of Wild symbols or expanded Wild God Reels on the grid at the end of the current free spin. When the current free spin ends, all Wild symbols will revert to their original Multiplier value for the next free spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "THUNDER RESPINS",
+      "trigger": "Land at least 5 Coin symbols of any kind at the same time to trigger the Thunder Respins.",
+      "effects": "Land at least 5 Coin symbols of any kind at the same time to trigger the Thunder Respins. This Respin sequence contains only dead symbols, Coins, and Collector Chests. During Thunder Respins, all Coins and Collector Chests that land are sticky until the Respin sequence ends. Dead symbols are non-paying and have no other effect.\n\n Continue to land Coin symbols of any kind or Collector Chests to continue the Thunder Respins. When no new Coin symbols or Collector Chests land, the Respin sequence will end. At the end of the Thunder Respins, all Coins on the grid reveal a random cash value depending on the Coin symbol. The revealed values are calculated based on your current bet.\n\n Bronze Coins can reveal values based on the following bet multipliers: 0.5x, 1x, 2x, 3x, 4x\n\n Silver Coins can reveal values based on the following bet multipliers: 5x, 10x, 15x, 20x\n\n Gold Coins can reveal values based on the following bet multipliers: 25x, 50x, 75x, 100x, 250x, 500x\n\n The Collector Chest symbols can land with or without a Multiplier. After all Coin symbols reveal their cash values, the Collector Chest activates and collects all Coin symbols on the grid. If a Collector Chest lands with a Multiplier, it first collects the Coin symbols, then reveals the Multiplier value and applies it to the Coin totals to determine the final amount.\n\n If more than 1 Collector Chest lands, each one will apply its own Multiplier to the Coin symbols it collected. Each Collector Chest collects each Coin symbol once. If Coin symbols get collected, they will retain their original values when collected by another Collector Chest. Collector Chests activate one by one, from top to bottom, left to right. The final win is the total value of all collected Coins from all Collector Chests. The possible Multiplier values are: x1, x2, x3, x4, x5, x10, x15, x20\n\n Once the Thunder Respin sequence ends and all collections are complete, the grid resets, removing Coin symbols, Collector Chests, and dead symbols be",
+      "params": {}
+    },
+    {
+      "name": "BONUS CHOICE",
+      "trigger": null,
+      "effects": "Landing 3 or 4 FS scatter symbols at the same time in the base game brings you into the Bonus Choice menu, where you can choose between 2 bonus games depending on the number of landed FS symbols.\n\n With 3 FS symbols, you may choose either the STORMBREAKER or the PERFECT STORM bonus games.\n\n With 4 FS symbols, you may choose either the LEGACY OF LIGHTNING or the HAMMER OF THE HEAVENS bonus games.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - STORMBREAKER",
+      "trigger": "In this bonus game, each free spin triggers a new Thunder Respin sequence.",
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will get 3 free spins. In this bonus game, each free spin triggers a new Thunder Respin sequence. During Thunder Respins, a minimum of 2 Coins and 1 Collector Chest will land during each Thunder Respin sequence!",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - PERFECT STORM",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will get 10 free spins. In this bonus game, all Wild symbols that land are Sticky and stay on the grid throughout the bonus. When a Wild symbol lands, it substitutes for all symbols in the paytable and has a possible Multiplier value of 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x. When a Wild symbol lands, it can reveal a Multiplier which multiplies the winning payline it is part of. If more than 1 Wild symbol contributes to a win, their values are added together before being applied to the total win.\n\n If 4 Wild symbols land and cover an entire reel, they transform into a full Wild God Reel with a total Multiplier. This total Multiplier is the sum of adding all individual Wild Multiplier values and is applied to the entire Wild God Reel. If a winning combination includes more than 1 Wild God Reel, the Multiplier values will first be added from left to right and then applied to the win. Wild God Reels stick to the grid and remain throughout the bonus.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - LEGACY OF LIGHTNING",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will get 3 free spins. This bonus game keeps the mechanics of STORMBREAKER bonus. During Thunder Respins, a minimum of 4 Coins and 1 Collector Chest will land during each Thunder Respin sequence! In addition, when landing a Mjolnir symbol during a Thunder Respin, it will activate at the end of the spin and multiply a random number of Coin symbols on the grid with a Multiplier of x2, x3, x4, x5, x10, x15, x20. The Collector Chests will activate after the Mjolnir symbol has activated.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - HAMMER OF THE HEAVENS",
+      "trigger": null,
+      "effects": "When you choose this bonus game from the Bonus Choice menu, you will get 10 free spins. This bonus game keeps the mechanics of the PERFECT STORM bonus. In addition, landing a Mjolnir symbol adds a random Multiplier value of x2, x3, x4, x5, x10, x15, x20 to a random number of Wild symbols or expanded Wild God Reels on the grid at the end of the current free spin. When the current free spin ends, all Wild symbols will revert to their original Multiplier value for the next free spin.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - BLESSINGS OF THE BIFROST",
+      "trigger": null,
+      "effects": "Activate this bonus with 5 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Hidden Epic Bonus keeps the mechanics of the LEGACY OF LIGHTNING bonus. In addition, at least 5 Coins, 1 Collector Chest, and 1 Mjolnir symbol lands during each Thunder Respin sequence!",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 15000,
+    "max_win_notes": "maximum win of 15 000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1875/1.26.7/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/stormborn/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Forged in fire by dwarven masters and born of a god’s wager, the hammer of storms awaits a new wielder. Legend speaks of such a God, one who is powerful beyond measure. One who will be worthy of the hammer Mjolnir.\n\n Enter Stormborn, this electrifying 5-reel, 4-row game which brings myth to life with payline wins, thrilling respin features, and a maximum win of 15 000 times your bet available in all game modes.\n\n Step into myth and witness a legend!\n\n FEATURES\n\n THUNDER RESPINS\n\n Land at least 5 Coin symbols of any kind at the same time to trigger the Thunder Respins. This Res"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

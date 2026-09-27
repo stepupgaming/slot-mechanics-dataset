@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Marlin Masters The Big Haul",
+    "slug": "hacksaw-marlin-masters-the-big-haul",
+    "provider_game_id": "1811",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1811&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1811/1.10.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "HIDDEN EPIC BONUS - HOOKED ON PARADISE",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Hidden Epic Bonus keeps the base game's mechanics. During this bonus, Sticky Fisherman symbols can land, collecting Marlin symbols and remaining on the grid throughout the round. 1 Sticky Fisherman symbol will be on the grid from the start. Additionally, Sticky Golden Fisherman symbols can also land. These collect both Marlin symbols and Fisherman symbols, and they stay on the grid for the duration of the bonus.\n\n If a Sticky Golden Fisherman symbol is on the grid, no other Golden Fisherman symbols can land. At the end of the bonus, the values collected by all Sticky Fisherman symbols are paid out. Golden Marlin symbols that land will have a minimum value of 3x.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "FISHERMAN SYMBOLS",
+        "behavior": "When a Fisherman symbol lands, it collects all Marlin symbols on the grid. Each Fisherman symbol collects each Marlin symbol once and will activate top-to-bottom, left-to-right. Fisherman symbols activate after regular wins and LootLine wins have been awarded. Fisherman symbols can appear normal or Golden.\n\n The normal Fisherman symbols can land with a Multiplier value that affects the value of all the Marlin symbols it collects. The possible Multiplier values are: x1, x2, x3, x4, x5, x10, x15, x20. Once the Marlin symbols have been collected the Fisherman symbol will multiply the values to determine the final awarded win.\n\n If a Golden Fisherman symbol is on the grid, it will activate after all normal Fisherman symbols. The Golden Fisherman symbol collects all Marlin symbols on the grid and the collected values from the other Fisherman symbols on the grid. Only 1 Golden Fisherman symbol can appear at the same time.\n\n The total value of all Fisherman symbols on the grid is paid out at the end of the spin.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            15,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [
+      {
+        "name": "MARLIN SYMBOLS AND LOOTLINES",
+        "behavior": "Marlin symbols are dynamic paying symbols that display cash values and appear normal or Golden. The cash value shown on the symbol represents the payout that is awarded if the Marlin symbol is part of a LootLine or is Collected by a Fisherman. Normal and Golden Marlin symbols can have values based on the following bet Multipliers: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 250x, 500x, and 1000x.\n\n A LootLine is formed when there is a winning payline of Marlin symbols on the grid. The payout of the LootLine is determined by the values of the Marlin symbols that are part of the win. \n\n When a Golden Marlin symbol is part of a LootLine win, the Golden Marlin activates and spreads its value to all normal Marlin symbols on the grid. The LootLine win is then awarded. If there are any other Golden Marlin symbols on the grid that were not part of a win, and a Fisherman symbol is present, they will then activate and spread their values to all normal Marlin symbols. Once all normal wins, LootLine wins, and Golden Marlin activations are complete, the Fisherman collects all Marlin symbols.\n\n If a Marlin symbol's value is too large to display fully, it will be shortened to two decimal places. The displayed value represents the minimum possible award, though the actual amount may be higher. For example, 10 250 500 may be shown as 10.25M.",
+        "params": {}
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - DON’T BE KOI",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. In addition, a Big Haul Bar is displayed outside the grid. Each time a Fisherman symbol lands on the grid, the Big Haul Bar increases one step. This increase happens regardless of whether or not the Fisherman symbol collects any Marlin symbols that round. Golden Marlin symbols that land will have a minimum value of 3x.\n\n After every fourth Fisherman symbol has landed, a new upgrade bonus level is reached:\n\n Upgrade 1 awards 8 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x2.\n\n Upgrade 2 awards 8 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x4.\n\n Upgrade 3 awards 8 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x10."
+      },
+      {
+        "name": "BONUS GAME - CATCH ME IF YOU CAN",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the DON’T BE KOI bonus. In addition, the upgrade levels in this bonus are even more powerful and all Fisherman symbols are guaranteed to have a Multiplier of at least x2! Golden Marlin symbols that land will have a minimum value of 5x.\n\n Upgrade 1 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x4.\n\n Upgrade 2 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x10.\n\n Upgrade 3 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x15."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MARLIN SYMBOLS AND LOOTLINES",
+      "trigger": null,
+      "effects": "Marlin symbols are dynamic paying symbols that display cash values and appear normal or Golden. The cash value shown on the symbol represents the payout that is awarded if the Marlin symbol is part of a LootLine or is Collected by a Fisherman. Normal and Golden Marlin symbols can have values based on the following bet Multipliers: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 250x, 500x, and 1000x.\n\n A LootLine is formed when there is a winning payline of Marlin symbols on the grid. The payout of the LootLine is determined by the values of the Marlin symbols that are part of the win. \n\n When a Golden Marlin symbol is part of a LootLine win, the Golden Marlin activates and spreads its value to all normal Marlin symbols on the grid. The LootLine win is then awarded. If there are any other Golden Marlin symbols on the grid that were not part of a win, and a Fisherman symbol is present, they will then activate and spread their values to all normal Marlin symbols. Once all normal wins, LootLine wins, and Golden Marlin activations are complete, the Fisherman collects all Marlin symbols.\n\n If a Marlin symbol's value is too large to display fully, it will be shortened to two decimal places. The displayed value represents the minimum possible award, though the actual amount may be higher. For example, 10 250 500 may be shown as 10.25M.",
+      "params": {}
+    },
+    {
+      "name": "FISHERMAN SYMBOLS",
+      "trigger": null,
+      "effects": "When a Fisherman symbol lands, it collects all Marlin symbols on the grid. Each Fisherman symbol collects each Marlin symbol once and will activate top-to-bottom, left-to-right. Fisherman symbols activate after regular wins and LootLine wins have been awarded. Fisherman symbols can appear normal or Golden.\n\n The normal Fisherman symbols can land with a Multiplier value that affects the value of all the Marlin symbols it collects. The possible Multiplier values are: x1, x2, x3, x4, x5, x10, x15, x20. Once the Marlin symbols have been collected the Fisherman symbol will multiply the values to determine the final awarded win.\n\n If a Golden Fisherman symbol is on the grid, it will activate after all normal Fisherman symbols. The Golden Fisherman symbol collects all Marlin symbols on the grid and the collected values from the other Fisherman symbols on the grid. Only 1 Golden Fisherman symbol can appear at the same time.\n\n The total value of all Fisherman symbols on the grid is paid out at the end of the spin.",
+      "params": {
+        "multiplier_values_mentioned": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          10,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - DON’T BE KOI",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 8 free spins by landing 3 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. In addition, a Big Haul Bar is displayed outside the grid. Each time a Fisherman symbol lands on the grid, the Big Haul Bar increases one step. This increase happens regardless of whether or not the Fisherman symbol collects any Marlin symbols that round. Golden Marlin symbols that land will have a minimum value of 3x.\n\n After every fourth Fisherman symbol has landed, a new upgrade bonus level is reached:\n\n Upgrade 1 awards 8 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x2.\n\n Upgrade 2 awards 8 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x4.\n\n Upgrade 3 awards 8 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x10.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - CATCH ME IF YOU CAN",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the mechanics of the DON’T BE KOI bonus. In addition, the upgrade levels in this bonus are even more powerful and all Fisherman symbols are guaranteed to have a Multiplier of at least x2! Golden Marlin symbols that land will have a minimum value of 5x.\n\n Upgrade 1 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x4.\n\n Upgrade 2 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x10.\n\n Upgrade 3 awards 10 additional free spins and guarantees that all subsequent Fisherman symbols land with a Multiplier value of at least x15.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - HOOKED ON PARADISE",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This Hidden Epic Bonus keeps the base game's mechanics. During this bonus, Sticky Fisherman symbols can land, collecting Marlin symbols and remaining on the grid throughout the round. 1 Sticky Fisherman symbol will be on the grid from the start. Additionally, Sticky Golden Fisherman symbols can also land. These collect both Marlin symbols and Fisherman symbols, and they stay on the grid for the duration of the bonus.\n\n If a Sticky Golden Fisherman symbol is on the grid, no other Golden Fisherman symbols can land. At the end of the bonus, the values collected by all Sticky Fisherman symbols are paid out. Golden Marlin symbols that land will have a minimum value of 3x.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "fintastic_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "seariously_epic_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "dont_be_koi_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "catch_me_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1811/1.10.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/marlin-masters-the-big-haul/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n The elusive Marlin has been spotted off the coast this morning. So Big Bob grabs his bait, tackle box, and coconut-scented SPF before leaving the beach house. With a quick flip, the sign on the door now reads: \"Gone Fishing.\"\n\n The sun is shining, and the water is so clear you can see straight to the bottom. In the surf, Bob and his trusty boat, Bettsy the Beaut, float in the waves. Reggae on the radio, Bob adjusts his lucky hat. Eyes scanning the horizon, he casts off. Will today be the day he reels in the Big Haul?\n\n Welcome aboard Marlin Masters: The Big Haul, a 5-reel, 4-r"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

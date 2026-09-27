@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Bloodthirst",
+    "slug": "hacksaw-bloodthirst",
+    "provider_game_id": "1251",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1251&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1251/1.21.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 10,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 10. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Immortals",
+        "behavior": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus, which awards 10 free spins.\n\n At the start of the bonus, one of the four high-paying symbols will be selected as the main symbol for the bonus feature. The selected main symbol is the only symbol that can expand into Monster Reels during the bonus.\n\n When a Monster Reel of the chosen symbol expands on a reel the indicator above the reel will be activated for the remainder of the bonus. At the end of all remaining spins Monster Reels will expand on all reels with activated indicators.\n\n Landing the Upgrade scatter symbol will upgrade the selected main symbol to the next higher-paying symbol, if possible. The new selected symbol will then be the only symbol that can expand into Monster Reels. The indicators above each reel will also be upgraded to match.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n The FS symbol appears only in the base game.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bloodthirst",
+        "behavior": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus, which awards 10 free spins.\n\n This bonus game has better odds than the base game to trigger expanding Monster Reels by landing 4 stacked symbols of the same kind on a reel.",
+        "params": {}
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Monster Reels",
+        "behavior": "When 4 high-paying symbols of the same kind land stacked on a reel, they will expand into a Monster Reel after line wins are paid.\n\n Each Monster Reel features a character from one of the four high-paying symbols and awards an individual extra prize after expanding. These prizes are based on your current bet level, and are separate from regular line wins.\n\n A Ghoul Monster Reel awards 5 times current bet\n\n A Vampire Monster Reel awards 10 times current bet\n\n A Werewolf Monster Reel awards 15 times current bet\n\n A Demon Monster Reel awards 20 times current bet\n\n If 5 of the same kind of Monster Reel appear at the same time, they will instead transform into a Monster Takeover that covers all five reels. When this happens, the Monster Reels do not pay their individual extra prizes and no regular line wins are awarded.\n\n A Monster Takeover awards a mega prize based on your current bet level.\n\n A Ghoul Monster Takeover awards 100 times current bet\n\n A Vampire Monster Takeover awards 250 times current bet\n\n A Werewolf Monster Takeover awards 1000 times current bet\n\n A Demon Monster Takeover awards 2500 times current bet",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Monster Reels",
+      "trigger": null,
+      "effects": "When 4 high-paying symbols of the same kind land stacked on a reel, they will expand into a Monster Reel after line wins are paid.\n\n Each Monster Reel features a character from one of the four high-paying symbols and awards an individual extra prize after expanding. These prizes are based on your current bet level, and are separate from regular line wins.\n\n A Ghoul Monster Reel awards 5 times current bet\n\n A Vampire Monster Reel awards 10 times current bet\n\n A Werewolf Monster Reel awards 15 times current bet\n\n A Demon Monster Reel awards 20 times current bet\n\n If 5 of the same kind of Monster Reel appear at the same time, they will instead transform into a Monster Takeover that covers all five reels. When this happens, the Monster Reels do not pay their individual extra prizes and no regular line wins are awarded.\n\n A Monster Takeover awards a mega prize based on your current bet level.\n\n A Ghoul Monster Takeover awards 100 times current bet\n\n A Vampire Monster Takeover awards 250 times current bet\n\n A Werewolf Monster Takeover awards 1000 times current bet\n\n A Demon Monster Takeover awards 2500 times current bet",
+      "params": {}
+    },
+    {
+      "name": "Bloodthirst",
+      "trigger": null,
+      "effects": "Land 3 FS scatter symbols at the same time in the base game to activate this bonus, which awards 10 free spins.\n\n This bonus game has better odds than the base game to trigger expanding Monster Reels by landing 4 stacked symbols of the same kind on a reel.",
+      "params": {}
+    },
+    {
+      "name": "Immortals",
+      "trigger": null,
+      "effects": "Land 4 FS scatter symbols at the same time in the base game to activate this bonus, which awards 10 free spins.\n\n At the start of the bonus, one of the four high-paying symbols will be selected as the main symbol for the bonus feature. The selected main symbol is the only symbol that can expand into Monster Reels during the bonus.\n\n When a Monster Reel of the chosen symbol expands on a reel the indicator above the reel will be activated for the remainder of the bonus. At the end of all remaining spins Monster Reels will expand on all reels with activated indicators.\n\n Landing the Upgrade scatter symbol will upgrade the selected main symbol to the next higher-paying symbol, if possible. The new selected symbol will then be the only symbol that can expand into Monster Reels. The indicators above each reel will also be upgraded to match.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n The FS symbol appears only in the base game.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "bloodthirst_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "immortals_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum win of 10,000 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1251/1.21.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/bloodthirst/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n Monster Reels\n\n When 4 high-paying symbols of the same kind land stacked on a reel, they will expand into a Monster Reel after line wins are paid.\n\n Each Monster Reel features a character from one of the four high-paying symbols and awards an individual extra prize after expanding. These prizes are based on your current bet level, and are separate from regular line wins.\n\n A Ghoul Monster Reel awards 5 times current bet\n\n A Vampire Monster Reel awards 10 times current bet\n\n A Werewolf Monster Reel awards 15 times current bet\n\n A Demon Monster Reel awards 20 times current bet\n\n If 5 "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

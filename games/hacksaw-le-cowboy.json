@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Cowboy",
+    "slug": "hacksaw-le-cowboy",
+    "provider_game_id": "1924",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1924&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1924/2.0.3/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "When a winning Cluster occurs with a Wild symbol, the Wild symbol will transform into a Revolver Cylinder scatter symbol. The Revolver Cylinder will have between 2 and 6 available shots. The Revolver Cylinder will activate after all wins and cascades have been settled. When the Revolver Cylinder fires, it will hit as many symbols on the grid as there are shots in the Revolver Cylinder. If there is more than one Revolver Cylinder on the grid, they will activate in order, from top to bottom, left to right. Revolver Cylinders can shoot the same position more than once. Once the Wild symbol has transformed into a Revolver Cylinder, it is no longer Wild.\n\n The symbols that the Revolver Cylinder hits will reveal Special symbols: Coin scatter symbols, Diamond scatter symbols, Clover scatter symbols, Loot Bag scatter symbols, and Reload scatter symbols. After all shots have been fired, if a Reload symbol appears on the grid, it will activate and reload all the Revolver Cylinders with between 2 and 6 shots, revealing new Special symbols. If a Coin symbol gets shot again by a Revolver Cylinder, that Coin symbol will be upgraded to the next Coin type. If a Green Clover symbol gets shot again by a Revolver Cylinder, it will be upgraded to a Gold Clover symbol. Diamonds, Gold Clovers, Loot Bags, and Reload symbols cannot be shot again. Only one Reload symbol can be on the grid at the same time.\n\n When all the shots have been fired and no new Reload symbols are revealed, the Coin and Diamo"
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "REVOLVER REVEALS",
+        "behavior": "When a winning Cluster occurs with a Wild symbol, the Wild symbol will transform into a Revolver Cylinder scatter symbol. The Revolver Cylinder will have between 2 and 6 available shots. The Revolver Cylinder will activate after all wins and cascades have been settled. When the Revolver Cylinder fires, it will hit as many symbols on the grid as there are shots in the Revolver Cylinder. If there is more than one Revolver Cylinder on the grid, they will activate in order, from top to bottom, left to right. Revolver Cylinders can shoot the same position more than once. Once the Wild symbol has transformed into a Revolver Cylinder, it is no longer Wild.\n\n The symbols that the Revolver Cylinder hits will reveal Special symbols: Coin scatter symbols, Diamond scatter symbols, Clover scatter symbols, Loot Bag scatter symbols, and Reload scatter symbols. After all shots have been fired, if a Reload symbol appears on the grid, it will activate and reload all the Revolver Cylinders with between 2 and 6 shots, revealing new Special symbols. If a Coin symbol gets shot again by a Revolver Cylinder, that Coin symbol will be upgraded to the next Coin type. If a Green Clover symbol gets shot again by a Revolver Cylinder, it will be upgraded to a Gold Clover symbol. Diamonds, Gold Clovers, Loot Bags, and Reload symbols cannot be shot again. Only one Reload symbol can be on the grid at the same time.\n\n When all the shots have been fired and no new Reload symbols are revealed, the Coin and Diamond symbols will reveal their values. All Coins and Diamonds are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x\n\n Diamonds can have the following values: 150x, 250x, 500x\n\n After all Coin and Diamond symbols have revealed their values, the Clover symbols will activate. Green Clover symbols will multiply all Co",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      },
+      {
+        "name": "HIDDEN EPIC BONUS - PISTOLS AT DAWN",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the TRAIL OF TRICKERY bonus. In addition the Bullet Collector is progressive and will start at 5 and trigger on every free spin after all Revolver Cylinders and Reload symbols have activated. After the Bullet Collector has activated, it will reset to the last collected value it had before activating. The Bullet Collector will continue to collect wins on the next free spin. Silver Coins are the lowest Coin type that will land in this bonus!\n\n FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS symbols cannot land at the same time as Revolver Cylinders.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "SUPER CASCADES",
+        "behavior": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - HIGH NOON SALOON",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the HIGH NOON SALOON bonus game or to Gamble. You may Gamble once per bonus and once after a Bonus Upgrade.\n\n The HIGH NOON SALOON bonus keeps the base game's mechanics with an increased chance of triggering Revolver Cylinders!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n If you choose to Gamble, a revolver will shoot and land on 1 of 4 outcomes:\n\n Outcome 1 will immediately award a Bonus Upgrade to the TRAIL OF TRICKERY bonus. By entering TRAIL OF TRICKERY you get the choice again to either play the bonus game or to Gamble.\n\n Outcome 2 awards an immediate Cash Prize of 1x, 2x, 3x, or 4x.\n\n Outcome 3 awards an immediate Cash Prize of 5x, 10x, 15x, or 20x.\n\n Outcome 4 awards an immediate Cash Prize of 25x, 50x, or 100x.\n\n Once an outcome has been awarded, the HIGH NOON SALOON Bonus Gamble will end."
+      },
+      {
+        "name": "BONUS GAME - TRAIL OF TRICKERY",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the TRAIL OF TRICKERY bonus game or to Gamble.\n\n This bonus keeps the mechanics of the HIGH NOON SALOON bonus. In addition, there will be a Bullet Collector displayed outside the grid. Each win will add 1 bullet to the Bullet Collector. On the last free spin, the Bullet Collector will activate after all Revolver Cylinders and Reload symbols have activated. When the Bullet Collector activates, Smokey will shoot all the collected bullets. The positions on the grid that are hit will reveal Coin, Diamond, Clover, and Loot Bag symbols. When all bullets have been fired, the Revolver Reveal process continues as normal. FS symbols cannot land when the Bullet Collector activates.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n If you choose to Gamble, a revolver will shoot and land on 1 of 8 outcomes:\n\n Outcome 1 will immediately award a Bonus Upgrade to the PISTOLS AT DAWN bonus.\n\n Outcomes 2 and 3 award an immediate Cash Prize of 5x, 10x, 15x, or 20x.\n\n Outcomes 4, 5, 6, and 7 award an immediate Cash Prize of 25x, 50x, or 100x.\n\n Outcome 8 awards an immediate Cash Prize of 150x, 250x, or 500x.\n\n Once an outcome has been awarded, the TRAIL OF TRICKERY Bonus Gamble will end."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "SUPER CASCADES",
+      "trigger": null,
+      "effects": "When a winning combination occurs, all regular paying symbols of the type that were part of the winning combination are removed from the grid, and new ones drop down to fill the empty spaces.",
+      "params": {}
+    },
+    {
+      "name": "REVOLVER REVEALS",
+      "trigger": null,
+      "effects": "When a winning Cluster occurs with a Wild symbol, the Wild symbol will transform into a Revolver Cylinder scatter symbol. The Revolver Cylinder will have between 2 and 6 available shots. The Revolver Cylinder will activate after all wins and cascades have been settled. When the Revolver Cylinder fires, it will hit as many symbols on the grid as there are shots in the Revolver Cylinder. If there is more than one Revolver Cylinder on the grid, they will activate in order, from top to bottom, left to right. Revolver Cylinders can shoot the same position more than once. Once the Wild symbol has transformed into a Revolver Cylinder, it is no longer Wild.\n\n The symbols that the Revolver Cylinder hits will reveal Special symbols: Coin scatter symbols, Diamond scatter symbols, Clover scatter symbols, Loot Bag scatter symbols, and Reload scatter symbols. After all shots have been fired, if a Reload symbol appears on the grid, it will activate and reload all the Revolver Cylinders with between 2 and 6 shots, revealing new Special symbols. If a Coin symbol gets shot again by a Revolver Cylinder, that Coin symbol will be upgraded to the next Coin type. If a Green Clover symbol gets shot again by a Revolver Cylinder, it will be upgraded to a Gold Clover symbol. Diamonds, Gold Clovers, Loot Bags, and Reload symbols cannot be shot again. Only one Reload symbol can be on the grid at the same time.\n\n When all the shots have been fired and no new Reload symbols are revealed, the Coin and Diamond symbols will reveal their values. All Coins and Diamonds are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 1x, 2x, 3x, 4x\n\n Silver Coins can have the following values: 5x, 10x, 15x, 20x\n\n Gold Coins can have the following values: 25x, 50x, 100x\n\n Diamonds can have the following values: 150x, 250x, 500x\n\n After all Coin and Diamond symbols have revealed their values, the Clover symbols will activate. Green Clover symbols will multiply all Co",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - HIGH NOON SALOON",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the HIGH NOON SALOON bonus game or to Gamble. You may Gamble once per bonus and once after a Bonus Upgrade.\n\n The HIGH NOON SALOON bonus keeps the base game's mechanics with an increased chance of triggering Revolver Cylinders!\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n If you choose to Gamble, a revolver will shoot and land on 1 of 4 outcomes:\n\n Outcome 1 will immediately award a Bonus Upgrade to the TRAIL OF TRICKERY bonus. By entering TRAIL OF TRICKERY you get the choice again to either play the bonus game or to Gamble.\n\n Outcome 2 awards an immediate Cash Prize of 1x, 2x, 3x, or 4x.\n\n Outcome 3 awards an immediate Cash Prize of 5x, 10x, 15x, or 20x.\n\n Outcome 4 awards an immediate Cash Prize of 25x, 50x, or 100x.\n\n Once an outcome has been awarded, the HIGH NOON SALOON Bonus Gamble will end.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - TRAIL OF TRICKERY",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the TRAIL OF TRICKERY bonus game or to Gamble.\n\n This bonus keeps the mechanics of the HIGH NOON SALOON bonus. In addition, there will be a Bullet Collector displayed outside the grid. Each win will add 1 bullet to the Bullet Collector. On the last free spin, the Bullet Collector will activate after all Revolver Cylinders and Reload symbols have activated. When the Bullet Collector activates, Smokey will shoot all the collected bullets. The positions on the grid that are hit will reveal Coin, Diamond, Clover, and Loot Bag symbols. When all bullets have been fired, the Revolver Reveal process continues as normal. FS symbols cannot land when the Bullet Collector activates.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins,\n\n 3 FS symbols award +4 free spins.\n\n If you choose to Gamble, a revolver will shoot and land on 1 of 8 outcomes:\n\n Outcome 1 will immediately award a Bonus Upgrade to the PISTOLS AT DAWN bonus.\n\n Outcomes 2 and 3 award an immediate Cash Prize of 5x, 10x, 15x, or 20x.\n\n Outcomes 4, 5, 6, and 7 award an immediate Cash Prize of 25x, 50x, or 100x.\n\n Outcome 8 awards an immediate Cash Prize of 150x, 250x, or 500x.\n\n Once an outcome has been awarded, the TRAIL OF TRICKERY Bonus Gamble will end.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - PISTOLS AT DAWN",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus keeps the mechanics of the TRAIL OF TRICKERY bonus. In addition the Bullet Collector is progressive and will start at 5 and trigger on every free spin after all Revolver Cylinders and Reload symbols have activated. After the Bullet Collector has activated, it will reset to the last collected value it had before activating. The Bullet Collector will continue to collect wins on the next free spin. Silver Coins are the lowest Coin type that will land in this bonus!\n\n FS symbols cannot land in this bonus.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all symbols in the paytable.\n\n FS symbols cannot land at the same time as Revolver Cylinders.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "wild_west_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 25000,
+    "max_win_notes": "maximum achievable win in this game is 25 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1924/2.0.3/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-cowboy/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n There’s a new sheriff in town, and his name is Smokey Le Cowboy. He’s all hat and no cattle.\n\n The Bandit has entered his Cowboy era, where hats and spurs are the latest fashion accessory, and eating BBQ rattlesnakes is apparently normal behavior…? With nimble paws and a silver tongue, he’ll charm every lawman he meets and vanish before they can say “draw”!\n\n Saddle up with Le Cowboy, we ride at dawn! In this 6-reel, 5-row game with Cluster wins, every shot counts. A max win of 25 000 times your bet is available in every game mode!\n\n FEATURES\n\n SUPER CASCADES\n\n When a winning "
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Rusty & Curly",
+    "slug": "hacksaw-rusty-curly",
+    "provider_game_id": "1404",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1404&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1404/1.18.7/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Come on down to Bonus Town, where the grass is dead and the girls are gritty! Get 3 FS scatter symbols during one spin in the base game to activate the STICK TO THE PLAN! bonus feature with 6 free spins!\n\n This bonus feature improves on the base game experience by increasing the chance that Wild Posters land with a greater number of Hearts and bigger Multipliers!\n\n In the bonus feature, Wild Poster multipliers can be one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x. If more than one Wild Poster with multipliers participates in a winning combination, their multipliers are added together before being applied to the win.\n\n While there is at least one Wild Poster on the grid with one Heart or more, you will be given free respins that do not count towards your awarded free spins!"
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "ALMOST STICKY WILD POSTERS",
+        "behavior": "Wild Posters can land with Hearts, a Multiplier, or both! They will stay on the grid and give respins as long as at least one Heart remains.\n\n Each Wild Poster can land with up to 3 Hearts and loses one Heart per respin. Once no Hearts are left, the Wild Poster will be removed on the next respin.\n\n Wild Posters can also land with a random multiplier from one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x. If more than one Wild Poster with multipliers participates in a winning combination, their multipliers are added together before being applied to the win.\n\n All landed FS symbols will be collected in the progress bar above the grid during the respins. If you manage to collect 3 or 4, you get a bonus!",
+        "params": {}
+      },
+      {
+        "name": "STICK TO THE PLAN!",
+        "behavior": "Come on down to Bonus Town, where the grass is dead and the girls are gritty! Get 3 FS scatter symbols during one spin in the base game to activate the STICK TO THE PLAN! bonus feature with 6 free spins!\n\n This bonus feature improves on the base game experience by increasing the chance that Wild Posters land with a greater number of Hearts and bigger Multipliers!\n\n In the bonus feature, Wild Poster multipliers can be one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x. If more than one Wild Poster with multipliers participates in a winning combination, their multipliers are added together before being applied to the win.\n\n While there is at least one Wild Poster on the grid with one Heart or more, you will be given free respins that do not count towards your awarded free spins!",
+        "params": {}
+      },
+      {
+        "name": "WHO SHOT THE SHERIFF?",
+        "behavior": "When the bullets start flying, what’s the best thing to do? Shoot more, of course! Get 4 FS scatter symbols during one spin in the base game to activate the WHO SHOT THE SHERIFF? bonus feature with 12 free spins divided in 3 Cycles!\n\n This bonus feature consists of a Collect Phase and a Payout Phase which together make up one “Cycle” that consists of 1 Collect Phase spin and 3 Payout Phase spins.\n\n In the Collect Phase either Rusty, Curly or both of them will land and expand to a Wild Reel on a random reel. They will then both shoot 1 to 6 times at the Multipliers that appear on the grid. The total value of the Multipliers they shoot at will be added to that Wild Reel in the Payout Phase. The available Multiplier values are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 200x. If more than one Wild Reel with multipliers participates in a winning combination, their multipliers are added together before being applied to the win.\n\n The Payout Phase consists of 3 spins with paying symbols. The Rusty & Curly Wild Reels are sticky with Multiplier values carried over from the Collect Phase. After 3 Payout Phase spins the game will go back to the Collect Phase again.\n\n During the Payout Phase, Crispy & Chewy symbols can also land and expand to Wild Reels, but will not have any multipliers. Crispy & Chewy Wild Reels are not sticky.\n\n Landing additional FS symbols in the feature at the same time awards additional Cycles: Landing 1 FS symbol awards 1 additional Cycle, Landing 2 FS symbols awards 2 additional Cycles, Landing 3 FS symbols awards 3 additional Cycles.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "ALMOST STICKY WILD POSTERS",
+      "trigger": null,
+      "effects": "Wild Posters can land with Hearts, a Multiplier, or both! They will stay on the grid and give respins as long as at least one Heart remains.\n\n Each Wild Poster can land with up to 3 Hearts and loses one Heart per respin. Once no Hearts are left, the Wild Poster will be removed on the next respin.\n\n Wild Posters can also land with a random multiplier from one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x. If more than one Wild Poster with multipliers participates in a winning combination, their multipliers are added together before being applied to the win.\n\n All landed FS symbols will be collected in the progress bar above the grid during the respins. If you manage to collect 3 or 4, you get a bonus!",
+      "params": {}
+    },
+    {
+      "name": "STICK TO THE PLAN!",
+      "trigger": null,
+      "effects": "Come on down to Bonus Town, where the grass is dead and the girls are gritty! Get 3 FS scatter symbols during one spin in the base game to activate the STICK TO THE PLAN! bonus feature with 6 free spins!\n\n This bonus feature improves on the base game experience by increasing the chance that Wild Posters land with a greater number of Hearts and bigger Multipliers!\n\n In the bonus feature, Wild Poster multipliers can be one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 25x, 50x, 100x. If more than one Wild Poster with multipliers participates in a winning combination, their multipliers are added together before being applied to the win.\n\n While there is at least one Wild Poster on the grid with one Heart or more, you will be given free respins that do not count towards your awarded free spins!",
+      "params": {}
+    },
+    {
+      "name": "WHO SHOT THE SHERIFF?",
+      "trigger": null,
+      "effects": "When the bullets start flying, what’s the best thing to do? Shoot more, of course! Get 4 FS scatter symbols during one spin in the base game to activate the WHO SHOT THE SHERIFF? bonus feature with 12 free spins divided in 3 Cycles!\n\n This bonus feature consists of a Collect Phase and a Payout Phase which together make up one “Cycle” that consists of 1 Collect Phase spin and 3 Payout Phase spins.\n\n In the Collect Phase either Rusty, Curly or both of them will land and expand to a Wild Reel on a random reel. They will then both shoot 1 to 6 times at the Multipliers that appear on the grid. The total value of the Multipliers they shoot at will be added to that Wild Reel in the Payout Phase. The available Multiplier values are: 1x, 2x, 3x, 4x, 5x, 10x, 15x, 20x, 25x, 50x, 100x, 200x. If more than one Wild Reel with multipliers participates in a winning combination, their multipliers are added together before being applied to the win.\n\n The Payout Phase consists of 3 spins with paying symbols. The Rusty & Curly Wild Reels are sticky with Multiplier values carried over from the Collect Phase. After 3 Payout Phase spins the game will go back to the Collect Phase again.\n\n During the Payout Phase, Crispy & Chewy symbols can also land and expand to Wild Reels, but will not have any multipliers. Crispy & Chewy Wild Reels are not sticky.\n\n Landing additional FS symbols in the feature at the same time awards additional Cycles: Landing 1 FS symbol awards 1 additional Cycle, Landing 2 FS symbols awards 2 additional Cycles, Landing 3 FS symbols awards 3 additional Cycles.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "the_stickup_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "stick_to_the_plan_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "who_shot_the_sheriff_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1404/1.18.7/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/rusty-curly/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n ALMOST STICKY WILD POSTERS\n\n Wild Posters can land with Hearts, a Multiplier, or both! They will stay on the grid and give respins as long as at least one Heart remains.\n\n Each Wild Poster can land with up to 3 Hearts and loses one Heart per respin. Once no Hearts are left, the Wild Poster will be removed on the next respin.\n\n Wild Posters can also land with a random multiplier from one of the following values: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x. If more than one Wild Poster with multipliers participates in a winning combination, their multipliers are added together before being ap"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

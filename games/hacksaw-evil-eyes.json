@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Evil Eyes",
+    "slug": "hacksaw-evil-eyes",
+    "provider_game_id": "1570",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1570&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1570/1.17.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 3125. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [
+      {
+        "name": "WICKED NIGHT",
+        "behavior": "Activate this bonus feature with three lives by landing at least 3 FS scatter symbols at the same time during the base game.\n\n In this feature, only non-paying symbols, Evil Eye symbols and multiplier scatter symbols will appear. Every time an Evil Eye symbol lands it will glance up, right, left or down and collect all the multiplier symbols that cross its gaze. The multiplier symbol values that are collected will be added to the reel multiplier above the reel that they landed on.\n\n If the gaze of an Evil Eye symbol crosses another Evil Eye symbol, the Evil Eye symbol will reveal a multiplier that will be added to all reel multipliers above each reel. The revealed multiplier can have the same values as the normal adding multipliers described below.\n\n In this bonus feature, the Evil Eye symbol can land on all reels, and multiple Evil Eye symbols can land on the grid at the same time.\n\n This feature has 3 refilling lives that reset each time the eye looks at and collects a multiplier. Each life represents one spin. Once all three lives are consumed without a new reset, the feature will end. When the feature ends, all reel multipliers will be added together and multiplied with your bet to determine the final win. \n\n The multipliers can have one of the following values:\n\n Adding multipliers: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Multiplying multipliers: x2, x3, x4, x5, x10\n\n Multipliers are collected in sequence from the Eye to the edge of the grid.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      },
+      {
+        "name": "THE GRAVEYARD",
+        "behavior": "Activate this bonus feature with 10 free spins by landing at least 4 FS scatter symbols at the same time during the base game.\n\n Throughout this feature, low symbols that have been a part of a win and spread by the Evil Spread mechanic will not appear in future spins. The low symbol indicator above the grid shows which low symbols remain within the feature.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins: \n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "WICKED EPIC DROP™",
+        "behavior": "The Epic Drop™ feature has a chance to be randomly activated at the start of each spin when playing the base game. When this feature is activated the game transforms into the Wicked Night bonus feature for just one spin. On this spin, at least 3 Evil Eye symbols and 4 multipliers are guaranteed to land, and at least one multiplier will always be collected!\n\n The Wicked Epic Drop™ does not have any lives and after the wins from the drop have been awarded, the game reverts back to the base game mode and continues as usual…unless you were lucky enough to activate another Epic Drop™!",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "THE EVIL EYE AND THE EVIL SPREAD MECHANIC",
+        "behavior": "If the Evil Eye symbol lands under a winning symbol, it will activate the Evil Spread mechanic. The Evil Eye symbol will first mark all the symbols of that win. Then it will rotate to face right or down to indicate the direction of the Evil Spread mechanic. The Evil Spread mechanic will extend the win to the end of the grid in the chosen direction by replacing the marked symbols with the winning symbol. If the Evil Spread mechanic crosses the path of the Evil Eye symbol itself, the Evil Eye symbol will also be replaced. For example: If the direction is “down”, all symbols under the marked win will be replaced with the winning symbol.\n\n If the Evil Spread mechanic was activated to the right, there is a chance that the mechanic will be activated again in the downward direction. The Evil Eye symbol can only land on reel 3, and only one Evil Eye symbol can land on the grid at the same time. The Evil Eye symbol cannot land on row 1.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "THE EVIL EYE AND THE EVIL SPREAD MECHANIC",
+      "trigger": null,
+      "effects": "If the Evil Eye symbol lands under a winning symbol, it will activate the Evil Spread mechanic. The Evil Eye symbol will first mark all the symbols of that win. Then it will rotate to face right or down to indicate the direction of the Evil Spread mechanic. The Evil Spread mechanic will extend the win to the end of the grid in the chosen direction by replacing the marked symbols with the winning symbol. If the Evil Spread mechanic crosses the path of the Evil Eye symbol itself, the Evil Eye symbol will also be replaced. For example: If the direction is “down”, all symbols under the marked win will be replaced with the winning symbol.\n\n If the Evil Spread mechanic was activated to the right, there is a chance that the mechanic will be activated again in the downward direction. The Evil Eye symbol can only land on reel 3, and only one Evil Eye symbol can land on the grid at the same time. The Evil Eye symbol cannot land on row 1.",
+      "params": {}
+    },
+    {
+      "name": "WICKED NIGHT",
+      "trigger": null,
+      "effects": "Activate this bonus feature with three lives by landing at least 3 FS scatter symbols at the same time during the base game.\n\n In this feature, only non-paying symbols, Evil Eye symbols and multiplier scatter symbols will appear. Every time an Evil Eye symbol lands it will glance up, right, left or down and collect all the multiplier symbols that cross its gaze. The multiplier symbol values that are collected will be added to the reel multiplier above the reel that they landed on.\n\n If the gaze of an Evil Eye symbol crosses another Evil Eye symbol, the Evil Eye symbol will reveal a multiplier that will be added to all reel multipliers above each reel. The revealed multiplier can have the same values as the normal adding multipliers described below.\n\n In this bonus feature, the Evil Eye symbol can land on all reels, and multiple Evil Eye symbols can land on the grid at the same time.\n\n This feature has 3 refilling lives that reset each time the eye looks at and collects a multiplier. Each life represents one spin. Once all three lives are consumed without a new reset, the feature will end. When the feature ends, all reel multipliers will be added together and multiplied with your bet to determine the final win. \n\n The multipliers can have one of the following values:\n\n Adding multipliers: 1x, 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x\n\n Multiplying multipliers: x2, x3, x4, x5, x10\n\n Multipliers are collected in sequence from the Eye to the edge of the grid.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "name": "WICKED EPIC DROP™",
+      "trigger": null,
+      "effects": "The Epic Drop™ feature has a chance to be randomly activated at the start of each spin when playing the base game. When this feature is activated the game transforms into the Wicked Night bonus feature for just one spin. On this spin, at least 3 Evil Eye symbols and 4 multipliers are guaranteed to land, and at least one multiplier will always be collected!\n\n The Wicked Epic Drop™ does not have any lives and after the wins from the drop have been awarded, the game reverts back to the base game mode and continues as usual…unless you were lucky enough to activate another Epic Drop™!",
+      "params": {}
+    },
+    {
+      "name": "THE GRAVEYARD",
+      "trigger": null,
+      "effects": "Activate this bonus feature with 10 free spins by landing at least 4 FS scatter symbols at the same time during the base game.\n\n Throughout this feature, low symbols that have been a part of a win and spread by the Evil Spread mechanic will not appear in future spins. The low symbol indicator above the grid shows which low symbols remain within the feature.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins: \n\n 2 FS symbols award 2 extra spins;\n\n 3 FS symbols award 4 extra spins",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "spy_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "eye_for_eye_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "forest_freespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "graveyard_freespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum achievable win in this game is 12 500 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1570/1.17.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/evil-eyes/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Something wicked this way comes... The Shade has trapped you in their gaze, and for you there is no escape. Evil Eyes is a 5-reel, 5-row game with ways wins, the Evil Eye symbol and the Evil Spread mechanic. The max win of 12,500 times your bet can be reached in all game modes.\n\n FEATURES\n\n THE EVIL EYE AND THE EVIL SPREAD MECHANIC\n\n If the Evil Eye symbol lands under a winning symbol, it will activate the Evil Spread mechanic. The Evil Eye symbol will first mark all the symbols of that win. Then it will rotate to face right or down to indicate the direction of the Evil Spread"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Le Digger",
+    "slug": "hacksaw-le-digger",
+    "provider_game_id": "2229",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=2229&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/2229/1.31.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 2,
+    "cols": 2,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Parsed grid 2x2 from About text"
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "LAYERS",
+        "behavior": "When a winning combination occurs, the win is handled. Then, all regular paying symbols of the type that were part of the winning combination are removed from the grid, including one Layer of the grid behind those symbols. A new Layer appears and new symbols fill the empty spaces. This process continues until there are no more wins.\n\n The grid has 3 Layers, each Layer can have the following symbols:\n\n Layer 1: Low-paying, high-paying, Wild Dynamite and FS symbols. \n Layer 2: Low-paying, high-paying, Wild Dynamite and FS symbols. \n Layer 3: Golden reveals with Special symbols.",
+        "params": {}
+      },
+      {
+        "name": "DYNAMITE REMOVAL",
+        "behavior": "After the grid has settled, there is a chance that Smokey will throw 1-5 Dynamites onto the grid.\n\n When Dynamite lands on the grid, it affects a 2x2 square around where the Dynamite landed. The affected symbols are removed, including one Layer behind the symbol. A new Layer appears and new symbols fill the empty spaces.\n\n When Smokey throws a Dynamite that affects a Wild Dynamite symbol, the Wild Dynamite will explode, removing symbols and one Layer in a 3x3 square around that Wild Dynamite symbol. This can cause a chain reaction if another Wild Dynamite symbol is within the 3x3 area, which in turn explodes and removes symbols and a Layer. If any two Dynamites affect the same position, only one Layer of the grid is removed. \n\n If new regular wins are created, there is a chance that Smokey throws more Dynamite onto the grid. This can continue until no more regular wins occur.\n\n FS symbols and Layer 3 cannot be affected by thrown Dynamite or Wild Dynamite.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "name": "HIDDEN EPIC BONUS - GOLD DIGGER",
+        "behavior": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. In this bonus, Smokey is guaranteed to throw 5 Dynamites onto the grid once on every free spin after all regular wins have been handled. When all the Dynamite has exploded, new wins and any Golden reveals are handled. On Golden reveals, Coins will be Silver, Gold and Diamond.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins \n\n SPECIAL SYMBOLS\n\n The Wild Dynamite symbols substitutes for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "GOLDEN REVEALS",
+        "behavior": "When Layer 3 is reached, those Golden positions reveal Special symbols when all regular wins and Dynamite have been handled. Special symbols are either Bronze, Silver, Gold or Diamond Coin symbols and can also reveal Collector symbols and Green or Gold Clover symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 1x, 2x, 3x, 4x \n Silver Coins can have the following values: 5x, 6x, 7x, 8x, 9x, 10x \n Gold Coins can have the following values: 20x, 30x, 40x, 50x \n Diamond Coins can have the following values: 100x, 150x, 250x, 500x \n\n After all Golden positions have been revealed, the Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Collectors on adjacent squares with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. Gold Clover symbols will multiply all Coins or existing Collectors on the grid with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20.\n\n Once all Clover symbols have applied their Multipliers, Collector symbols will activate. Collectors collect the values of all Coins and other activated Collectors and store their total value. Collectors activate top to bottom, left to right.\n\n After a Collector activates, all collected Golden positions will reveal new Special symbols, and the process above repeats for each Collector on the grid.\n\n Once all reveals and activations have been completed, all Coins and Collectors will be added together and multiplied by your bet amount to determine the final awarded win.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10,
+            20
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME - TOMB SERVICE",
+        "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": null,
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the TOMB SERVICE bonus game or to Gamble.\n\n This bonus game keeps the base game's mechanics. Additionally, a Dynamite Collector will be displayed outside the grid. Every time a Wild Dynamite symbol is part of a win, it will be collected in the Dynamite Collector. On the last free spin, the Dynamite Collector will activate after all regular wins have been handled. When the Dynamite Collector activates, Smokey will throw the number of collected Dynamite onto the grid. When all Dynamite has been thrown and exploded, new wins and any Golden reveals are handled.\n\n Once the Dynamite Collector has activated, it cannot collect any more Wild Dynamite symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins \n\n If you choose to Gamble, you will be awarded 1 of 4 outcomes:\n\n One outcome immediately awards a Bonus Upgrade into the DIG IT bonus. By entering DIG IT you get the choice again to either play the bonus game or to Gamble.\n\n One outcome awards an immediate Cash Prize of 1x, 2x, 3x, 4x.\n\n One outcome awards an immediate Cash Prize of 5x, 6x, 7x, 8x, 9x, 10x.\n\n One outcome awards an immediate Cash Prize of 20x, 30x, 40x, 50x.\n\n Once an outcome has been awarded, the TOMB SERVICE Bonus Gamble will end."
+      },
+      {
+        "name": "BONUS GAME - DIG IT",
+        "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+        "spins_awarded": "awards 5 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive/accumulating state described in effects",
+        "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the DIG IT bonus game or to Gamble.\n\n This bonus game keeps the base game's mechanics. In addition, a Blast Bar is displayed outside the grid. Each time a symbol is removed from the grid by a win or by Dynamite in Layers 1 and 2, the Blast Bar increases. The Blast Bar is progressive throughout the bonus and doesn’t reset between free spins until full. Once the Blast Bar is full, it will reset and then can continue to fill. 85 symbols are needed to fill the Blast Bar to reach the Silver Coin type, 100 to reach Gold and 115 to reach Diamond.\n\n When the Blast Bar is full, it activates and increases the minimum Coin type that can be revealed for the next Golden reveal and awards 5 free spins. On the first activation of the Blast Bar, Silver will be the minimum Coin type, then Gold and finally Diamond, removing the lowest-value Coin types each time the Blast Bar activates. More than one Blast Bar activation cannot occur on the same free spin. FS symbols cannot land in this bonus.\n\n If you choose to Gamble, you will be awarded 1 of 8 outcomes:\n\n One outcome immediately awards a Bonus Upgrade to the GOLD DIGGER bonus\n\n Two outcomes award an immediate Cash Prize of 5x, 6x, 7x, 8x, 9x, 10x.\n\n Four outcomes award an immediate Cash Prize of 20x, 30x, 40x, 50x.\n\n One outcome awards an immediate Cash Prize of 100x, 150x, 250x, 500x.\n\n Once an outcome has been awarded, the DIG IT Bonus Gamble will end."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "LAYERS",
+      "trigger": null,
+      "effects": "When a winning combination occurs, the win is handled. Then, all regular paying symbols of the type that were part of the winning combination are removed from the grid, including one Layer of the grid behind those symbols. A new Layer appears and new symbols fill the empty spaces. This process continues until there are no more wins.\n\n The grid has 3 Layers, each Layer can have the following symbols:\n\n Layer 1: Low-paying, high-paying, Wild Dynamite and FS symbols. \n Layer 2: Low-paying, high-paying, Wild Dynamite and FS symbols. \n Layer 3: Golden reveals with Special symbols.",
+      "params": {}
+    },
+    {
+      "name": "DYNAMITE REMOVAL",
+      "trigger": null,
+      "effects": "After the grid has settled, there is a chance that Smokey will throw 1-5 Dynamites onto the grid.\n\n When Dynamite lands on the grid, it affects a 2x2 square around where the Dynamite landed. The affected symbols are removed, including one Layer behind the symbol. A new Layer appears and new symbols fill the empty spaces.\n\n When Smokey throws a Dynamite that affects a Wild Dynamite symbol, the Wild Dynamite will explode, removing symbols and one Layer in a 3x3 square around that Wild Dynamite symbol. This can cause a chain reaction if another Wild Dynamite symbol is within the 3x3 area, which in turn explodes and removes symbols and a Layer. If any two Dynamites affect the same position, only one Layer of the grid is removed. \n\n If new regular wins are created, there is a chance that Smokey throws more Dynamite onto the grid. This can continue until no more regular wins occur.\n\n FS symbols and Layer 3 cannot be affected by thrown Dynamite or Wild Dynamite.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "GOLDEN REVEALS",
+      "trigger": null,
+      "effects": "When Layer 3 is reached, those Golden positions reveal Special symbols when all regular wins and Dynamite have been handled. Special symbols are either Bronze, Silver, Gold or Diamond Coin symbols and can also reveal Collector symbols and Green or Gold Clover symbols.\n\n All Coins are cash prizes that are paid as a multiple of your bet.\n\n Bronze Coins can have the following values: 1x, 2x, 3x, 4x \n Silver Coins can have the following values: 5x, 6x, 7x, 8x, 9x, 10x \n Gold Coins can have the following values: 20x, 30x, 40x, 50x \n Diamond Coins can have the following values: 100x, 150x, 250x, 500x \n\n After all Golden positions have been revealed, the Clover symbols will activate. Green Clover symbols will multiply all Coins or existing Collectors on adjacent squares with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20. Gold Clover symbols will multiply all Coins or existing Collectors on the grid with one of the following Multiplicative Multipliers: x2, x3, x4, x5, x10, x20.\n\n Once all Clover symbols have applied their Multipliers, Collector symbols will activate. Collectors collect the values of all Coins and other activated Collectors and store their total value. Collectors activate top to bottom, left to right.\n\n After a Collector activates, all collected Golden positions will reveal new Special symbols, and the process above repeats for each Collector on the grid.\n\n Once all reveals and activations have been completed, all Coins and Collectors will be added together and multiplied by your bet amount to determine the final awarded win.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "name": "BONUS GAME - TOMB SERVICE",
+      "trigger": "landing 3 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 3 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the TOMB SERVICE bonus game or to Gamble.\n\n This bonus game keeps the base game's mechanics. Additionally, a Dynamite Collector will be displayed outside the grid. Every time a Wild Dynamite symbol is part of a win, it will be collected in the Dynamite Collector. On the last free spin, the Dynamite Collector will activate after all regular wins have been handled. When the Dynamite Collector activates, Smokey will throw the number of collected Dynamite onto the grid. When all Dynamite has been thrown and exploded, new wins and any Golden reveals are handled.\n\n Once the Dynamite Collector has activated, it cannot collect any more Wild Dynamite symbols.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins \n\n If you choose to Gamble, you will be awarded 1 of 4 outcomes:\n\n One outcome immediately awards a Bonus Upgrade into the DIG IT bonus. By entering DIG IT you get the choice again to either play the bonus game or to Gamble.\n\n One outcome awards an immediate Cash Prize of 1x, 2x, 3x, 4x.\n\n One outcome awards an immediate Cash Prize of 5x, 6x, 7x, 8x, 9x, 10x.\n\n One outcome awards an immediate Cash Prize of 20x, 30x, 40x, 50x.\n\n Once an outcome has been awarded, the TOMB SERVICE Bonus Gamble will end.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME - DIG IT",
+      "trigger": "landing 4 FS scatter symbols at the same time during the base game.",
+      "effects": "Activate this bonus with 10 free spins by landing 4 FS scatter symbols at the same time during the base game. This brings you into a Bonus Gamble, where you have a choice to either play the DIG IT bonus game or to Gamble.\n\n This bonus game keeps the base game's mechanics. In addition, a Blast Bar is displayed outside the grid. Each time a symbol is removed from the grid by a win or by Dynamite in Layers 1 and 2, the Blast Bar increases. The Blast Bar is progressive throughout the bonus and doesn’t reset between free spins until full. Once the Blast Bar is full, it will reset and then can continue to fill. 85 symbols are needed to fill the Blast Bar to reach the Silver Coin type, 100 to reach Gold and 115 to reach Diamond.\n\n When the Blast Bar is full, it activates and increases the minimum Coin type that can be revealed for the next Golden reveal and awards 5 free spins. On the first activation of the Blast Bar, Silver will be the minimum Coin type, then Gold and finally Diamond, removing the lowest-value Coin types each time the Blast Bar activates. More than one Blast Bar activation cannot occur on the same free spin. FS symbols cannot land in this bonus.\n\n If you choose to Gamble, you will be awarded 1 of 8 outcomes:\n\n One outcome immediately awards a Bonus Upgrade to the GOLD DIGGER bonus\n\n Two outcomes award an immediate Cash Prize of 5x, 6x, 7x, 8x, 9x, 10x.\n\n Four outcomes award an immediate Cash Prize of 20x, 30x, 40x, 50x.\n\n One outcome awards an immediate Cash Prize of 100x, 150x, 250x, 500x.\n\n Once an outcome has been awarded, the DIG IT Bonus Gamble will end.",
+      "params": {}
+    },
+    {
+      "name": "HIDDEN EPIC BONUS - GOLD DIGGER",
+      "trigger": null,
+      "effects": "Activate this bonus with 10 free spins by landing 5 FS scatter symbols at the same time during the base game.\n\n This bonus game keeps the base game's mechanics. In this bonus, Smokey is guaranteed to throw 5 Dynamites onto the grid once on every free spin after all regular wins have been handled. When all the Dynamite has exploded, new wins and any Golden reveals are handled. On Golden reveals, Coins will be Silver, Gold and Diamond.\n\n Landing additional FS symbols at the same time in the bonus awards extra free spins:\n\n 2 FS symbols award +2 free spins \n 3 FS symbols award +4 free spins \n\n SPECIAL SYMBOLS\n\n The Wild Dynamite symbols substitutes for all symbols in the paytable.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "low"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/2229/1.31.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/le-digger/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n LAYERS\n\n When a winning combination occurs, the win is handled. Then, all regular paying symbols of the type that were part of the winning combination are removed from the grid, including one Layer of the grid behind those symbols. A new Layer appears and new symbols fill the empty spaces. This process continues until there are no more wins.\n\n The grid has 3 Layers, each Layer can have the following symbols:\n\n Layer 1: Low-paying, high-paying, Wild Dynamite and FS symbols. \n Layer 2: Low-paying, high-paying, Wild Dynamite and FS symbols. \n Layer 3: Golden reveals with Special symbol"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "numeric_limits.max_win_multiplier",
+    "numeric_limits.rtp_percent"
+  ]
+}

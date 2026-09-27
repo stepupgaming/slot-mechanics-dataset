@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:43:58Z",
+  "identity": {
+    "provider": "Pragmatic Play",
+    "title": "Cowboys Gold",
+    "slug": "pragmatic-cowboys-gold",
+    "provider_game_id": null,
+    "release_year": null,
+    "demo_url": null,
+    "slotcatalog_url": null,
+    "official_info_url": "https://yesplay.bet/assets/documents/pragmatic-play-Cowboys-Gold-rules.pdf"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "Left-to-right adjacent / paylines per official rules"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD",
+        "behavior": "This symbol is WILD and\n This is the BONUS symbol.\n substitutes for all symbols except\n It appears on reels 2, 3 and 4. for BONUS and RENEGADE\n Hit 3 BONUS symbols to trigger symbol.\n the FREE SPINS FEATURE. It appears on all reels.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [
+      {
+        "name": "MONEY",
+        "behavior": "FREE SPINS FEATURE\nHit 3 BONUS symbols or any number of BONUS symbols plus a RENEGADE symbol to trigger the FREE SPINS feature.\n The round starts with 10 free spins.\n The feature can be retriggered up to 3 times, by hitting 3 BONUS symbols or any number of\n BONUS symbols plus a RENEGADE symbol\n Every retrigger adds 5 more free spins and increases a multiplier for the money collect feature, up to a maximum of\n 25 spins for the whole round and a maximum of 5x multiplier.\n During the feature, whenever a RENEGADE symbol hits and collects, the total paid amount is multiplied, as follows:\n When the feature starts the multiplier is 1x.\n After the first retrigger the multiplier increases to 2x.\n On the 2nd retrigger the multiplier increases to 3x.\n For the 3rd and last retrigger the multiplier increases to 5x.",
+        "params": {
+          "multiplier_values_mentioned": [
+            1,
+            2,
+            3,
+            5
+          ]
+        }
+      }
+    ],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Free Spins",
+        "trigger": null,
+        "spins_awarded": "starts with 10 free spins.",
+        "retrigger": "After the first retrigger the multiplier increases to 2x.",
+        "sticky_or_persistent_state": null,
+        "progressive_state": "Progressive multiplier/collection described in effects",
+        "effects": "FEATURE. It appears on all reels.\n\n MONEY COLLECT FEATURE\n At every spin COWBOY symbols can hit having assigned a random total bet multiplier value taken\n from a predefined set, from 1x to 100x total bet.\n\n This is the RENEGADE symbol.\n It appears only on reel 5.\n Whenever the RENEGADE symbol hits, the money values of all COWBOY symbols\n on the screen are added together and the total is paid.\n RENEGADE symbol also subsitutes for BONUS symbol.\n\n FREE SPINS FEATURE\nHit 3 BONUS symbols or any number of BONUS symbols plus a RENEGADE symbol to trigger the FREE SPINS feature.\n The round starts with 10 free spins.\n The feature can be retriggered up to 3 times, by hitting 3 BONUS symbols or any number of\n BONUS symbols plus a RENEGADE symbol\n Every retrigger adds 5 more free spins and increases a multiplier for the money collect feature, up to a maximum of\n 25 spins for the whole round and a maximum of 5x multiplier.\n During the feature, whenever a RENEGADE symbol hits and collects, the total paid amount is multiplied, as follows:\n When the feature starts the multiplier is 1x.\n After the first retrigger the multiplier increases to 2x.\n On the 2nd retrigger the multiplier increases to 3x.\n For the 3rd and last retrigger the multiplier increases to 5x.\n\n Special reels are in play during the FREE SPINS feature."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Free Spins",
+      "trigger": null,
+      "effects": "FEATURE. It appears on all reels.\n\n MONEY COLLECT FEATURE\n At every spin COWBOY symbols can hit having assigned a random total bet multiplier value taken\n from a predefined set, from 1x to 100x total bet.\n\n This is the RENEGADE symbol.\n It appears only on reel 5.\n Whenever the RENEGADE symbol hits, the money values of all COWBOY symbols\n on the screen are added together and the total is paid.\n RENEGADE symbol also subsitutes for BONUS symbol.\n\n FREE SPINS FEATURE\nHit 3 BONUS symbols or any number of BONUS symbols plus a RENEGADE symbol to trigger the FREE SPINS feature.\n The round starts with 10 free spins.\n The feature can be retriggered up to 3 times, by hitting 3 BONUS symbols or any number of\n BONUS symbols plus a RENEGADE symbol\n Every retrigger adds 5 more free spins and increases a multiplier for the money collect feature, up to a maximum of\n 25 spins for the whole round and a maximum of 5x multiplier.\n During the feature, whenever a RENEGADE symbol hits and collects, the total paid amount is multiplied, as follows:\n When the feature starts the multiplier is 1x.\n After the first retrigger the multiplier increases to 2x.\n On the 2nd retrigger the multiplier increases to 3x.\n For the 3rd and last retrigger the multiplier increases to 5x.\n\n Special reels are in play during the FREE SPINS feature.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": false,
+    "options": [],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": null,
+    "max_win_notes": null,
+    "rtp_percent": 96.5,
+    "rtp_notes": "From official rules PDF: theoretical RTP 96.5%",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "low",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://yesplay.bet/assets/documents/pragmatic-play-Cowboys-Gold-rules.pdf",
+      "local_path": "sources/pragmatic/pdfs/Cowboys-Gold.pdf",
+      "extracted_at": "2026-09-27T04:43:58Z",
+      "quote_or_excerpt": "GAME RULES\n All symbols pay from left to right on adjacent reels starting from the leftmost reel.\n 5 - 750\n 5 - 500 5 - 250 5 - 200\n 4 - 200\n 4 - 150 4 - 100 4 - 100\n 3 - 50\n 3 - 30 3 - 25 3 - 20\n 2-5\n 5 - 50 5 - 50 5 - 25 5 - 25\n 4 - 25 4 - 25 4 - 10 4 - 10\n 3-5 3-5 3-5 3-5\n\n 5 - 100\n 4 - 50\n 3 - 10\n\n The COWBOY symbols connect and form winning combinations between eachother.\n\n This symbol is WILD and\n This is the BONUS symbol.\n substitutes for all symbols except\n It appears on reels 2, 3 and 4. for BONUS and RENEGADE\n Hit 3 BONUS symbols to trigger symbol.\n the FREE SPINS FEATURE. It appears on all reels.\n\n MONEY COLLECT FEATURE\n At every spin COWBOY symbols can hit having assigned a rando"
+    }
+  ],
+  "unknowns": [
+    "grid.rows/cols",
+    "numeric_limits.max_win_multiplier"
+  ]
+}

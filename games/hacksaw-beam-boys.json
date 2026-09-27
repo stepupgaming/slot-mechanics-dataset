@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Beam Boys",
+    "slug": "hacksaw-beam-boys",
+    "provider_game_id": "1426",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1426&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1426/1.37.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": null,
+    "cols": null,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear on adjacent reels from left to right, starting with the leftmost reel. Each winning combination of matching symbols creates a winning way. The number of possible ways in this game is 4096. Please consult the paytable for t"
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "WILD ROWS",
+        "behavior": "Wild Laser Cat Symbols can land on reels 2-6. When it lands, the Wild Laser Cat Symbol will shoot a laser beam to the left across all positions on the same row. All positions that are covered by a Wild Laser Cat Symbol or the laser beam become Wild symbols that substitute for all symbols in the paytable.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "VOLATILITY SWITCH",
+        "behavior": "The volatility switch is displayed outside the grid. Flip the switch to toggle between the extreme and normal volatility modes. Normal Volatility means that you usually win smaller but more often, Extreme Volatility means that you usually win bigger but less frequently",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "BONUS GAME",
+        "trigger": null,
+        "spins_awarded": "awards 5 free spins;\n\n 4 FS symbols awards 10 free spins;\n\n 5 FS symbols awards 20 free spins;\n\n 6 FS symbols awards 40 free spins",
+        "retrigger": "Retrigger mentioned (see effects)",
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Land FS scatter symbols at the same time in the base game to activate this bonus game with free spins:\n\n 3 FS symbols awards 5 free spins;\n\n 4 FS symbols awards 10 free spins;\n\n 5 FS symbols awards 20 free spins;\n\n 6 FS symbols awards 40 free spins.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols awards 2 extra spins;\n\n 3 FS symbols awards 4 extra spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "VOLATILITY SWITCH",
+      "trigger": null,
+      "effects": "The volatility switch is displayed outside the grid. Flip the switch to toggle between the extreme and normal volatility modes. Normal Volatility means that you usually win smaller but more often, Extreme Volatility means that you usually win bigger but less frequently",
+      "params": {}
+    },
+    {
+      "name": "WILD ROWS",
+      "trigger": null,
+      "effects": "Wild Laser Cat Symbols can land on reels 2-6. When it lands, the Wild Laser Cat Symbol will shoot a laser beam to the left across all positions on the same row. All positions that are covered by a Wild Laser Cat Symbol or the laser beam become Wild symbols that substitute for all symbols in the paytable.",
+      "params": {}
+    },
+    {
+      "name": "BONUS GAME",
+      "trigger": null,
+      "effects": "Land FS scatter symbols at the same time in the base game to activate this bonus game with free spins:\n\n 3 FS symbols awards 5 free spins;\n\n 4 FS symbols awards 10 free spins;\n\n 5 FS symbols awards 20 free spins;\n\n 6 FS symbols awards 40 free spins.\n\n Landing additional FS symbols at the same time during the feature awards additional free spins:\n\n 2 FS symbols awards 2 extra spins;\n\n 3 FS symbols awards 4 extra spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "wide_spectrum_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "narrow_spectrum_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "free_spins_bonus_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum win of 12,500 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "low",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1426/1.37.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/beam-boys/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n VOLATILITY SWITCH\n\n The volatility switch is displayed outside the grid. Flip the switch to toggle between the extreme and normal volatility modes. Normal Volatility means that you usually win smaller but more often, Extreme Volatility means that you usually win bigger but less frequently\n\n WILD ROWS\n\n Wild Laser Cat Symbols can land on reels 2-6. When it lands, the Wild Laser Cat Symbol will shoot a laser beam to the left across all positions on the same row. All positions that are covered by a Wild Laser Cat Symbol or the laser beam become Wild symbols that substitute for all symb"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "grid.rows/cols",
+    "numeric_limits.rtp_percent"
+  ]
+}

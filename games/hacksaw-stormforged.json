@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Stormforged",
+    "slug": "hacksaw-stormforged",
+    "provider_game_id": "1243",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1243&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1243/1.29.4/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 14,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 14. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "PORTALS TO MUSPELHEIM",
+        "behavior": "When the Hand of Surtur scatter symbol lands and activates it rips downward to the bottom of the reel and creates a Portal to Muspelheim! Portals act as wild symbols and substitutes for all other paying symbols. The Hand of Surtur symbol only activates if the created Portal would be part of or create at least one winning combination.\n\n If the Hand of Surtur rips through a WILD symbol it will reveal a multiplier value that is applied to the whole Portal and affects any winning lines that pass through it.\n\n The possible Portal multiplier values are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x\n\n If a winning line is affected by more than one multiplier, the multipliers will first be added together and then applied to the win.\n\n If the Hand of Surtur rips through a Treasure Chest symbol it will shatter and award its contents as an extra cash prize!\n\n The possible Treasure Chest cash prizes values are: 5, 10, 15, 20, 25, 50, 75, 100, 150, 200, 250, 500, 750, 1000, 1500, 2000, 2500 times your bet.\n\n If the Hand of Surtur rips through both a WILD and a Treasure Chest at the same time, the multiplier from the WILD will also be applied to the cash prize from the Treasure Chest.\n\n BONUS FEATURES",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": []
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "SURTUR’S VENGEANCE BONUS FEATURE",
+        "trigger": "When the Frost Sword scatter symbol activates it will trigger a Portal to Midgard and an icy sword will slice downward to the bottom of the reel, breaking any WILD symbols or Treasure Chests in its path.",
+        "spins_awarded": "award 10 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Sticky/persistent state described in effects",
+        "progressive_state": null,
+        "effects": "Get at least 3 Surtur scatter symbols at the same time in the base game to activate this bonus feature!\n\n 3 Surtur symbols award 10 free spins.\n4 Surtur symbols award 12 free spins.\n5 Surtur symbols award 14 free spins.\n\n The first WILD symbol that lands on each reel will become sticky until the end of the bonus. If any WILD symbols were present on the reels when the bonus feature was awarded, they will be carried over from the base game into the bonus and become sticky.\n\n There can be only one sticky WILD symbol on each reel. If a reel already has a sticky WILD symbol, no additional WILD symbols will appear on that reel.\n\n When the Frost Sword scatter symbol activates it will trigger a Portal to Midgard and an icy sword will slice downward to the bottom of the reel, breaking any WILD symbols or Treasure Chests in its path. See the section Portal to Muspelheim above for more details. The Frost Sword symbol only activates if the created Portal would be part of or create at least one winning combination.\n\n Landing additional Surtur symbols simultaneously in the bonus feature will award extra free spins:\n\n 2 Surtur symbols award 2 extra free spins.\n3 Surtur symbols award 4 extra free spins.\n4 Surtur symbols award 6 extra free spins.\n5 Surtur symbols award 8 extra free spins."
+      },
+      {
+        "name": "WARRIORS OF THE STORM BONUS FEATURE",
+        "trigger": null,
+        "spins_awarded": "award 10 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Get at least 3 Viking scatter symbols at the same time in the base game to activate this bonus feature!\n\n 3 Viking symbols award 10 free spins.\n4 Viking symbols award 12 free spins.\n5 Viking symbols award 14 free spins.\n\n When the Hammer of Thor scatter symbol lands it will forge the reel it landed on into a Storm Reel that persists until the end of the bonus feature! Storm Reels are full wild reels and substitutes for all other paying symbols.\n\n On each spin, all Storm Reels will reveal either a Viking Warrior or be filled with a raging STORM.\n\n Three different warriors can appear in each Storm Reel, revealing a multiplier value that is applied to the whole Storm Reel and affects any winning lines that pass through it. If a winning line is affected by more than one multiplier, the multipliers will first be added together and then applied to the win.\n\n The Rogue can have the following multiplier values: 2x, 3x, 4x, 5x\n\n The Shieldmaiden can have the following multiplier values: 6x, 7x, 8x, 9x, 10x\n\n The Berserker can have the following multiplier values: 15x, 20x, 25x, 50x, 100x, 200x\n\n When a Storm Reel is filled with a STORM it will be only wild during the current spin, then move one step to the left at the start of the next free spin. The moving Storm Reel will also push other Storm Reels in its way to the left. The reels will not move if there is no empty space to the left that they can move into.\n\n Landing additional Viking symbols simultaneously in the bonus feature will award extra free spins:\n\n 2 Viking symbols award 2 extra free spins.\n3 Viking symbols award 4 extra free spins.\n4 Viking symbols award 6 extra free spins.\n5 Viking symbols award 8 extra free spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "PORTALS TO MUSPELHEIM",
+      "trigger": null,
+      "effects": "When the Hand of Surtur scatter symbol lands and activates it rips downward to the bottom of the reel and creates a Portal to Muspelheim! Portals act as wild symbols and substitutes for all other paying symbols. The Hand of Surtur symbol only activates if the created Portal would be part of or create at least one winning combination.\n\n If the Hand of Surtur rips through a WILD symbol it will reveal a multiplier value that is applied to the whole Portal and affects any winning lines that pass through it.\n\n The possible Portal multiplier values are: 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 15x, 20x, 25x, 50x, 100x, 200x\n\n If a winning line is affected by more than one multiplier, the multipliers will first be added together and then applied to the win.\n\n If the Hand of Surtur rips through a Treasure Chest symbol it will shatter and award its contents as an extra cash prize!\n\n The possible Treasure Chest cash prizes values are: 5, 10, 15, 20, 25, 50, 75, 100, 150, 200, 250, 500, 750, 1000, 1500, 2000, 2500 times your bet.\n\n If the Hand of Surtur rips through both a WILD and a Treasure Chest at the same time, the multiplier from the WILD will also be applied to the cash prize from the Treasure Chest.\n\n BONUS FEATURES",
+      "params": {}
+    },
+    {
+      "name": "SURTUR’S VENGEANCE BONUS FEATURE",
+      "trigger": "When the Frost Sword scatter symbol activates it will trigger a Portal to Midgard and an icy sword will slice downward to the bottom of the reel, breaking any WILD symbols or Treasure Chests in its path.",
+      "effects": "Get at least 3 Surtur scatter symbols at the same time in the base game to activate this bonus feature!\n\n 3 Surtur symbols award 10 free spins.\n4 Surtur symbols award 12 free spins.\n5 Surtur symbols award 14 free spins.\n\n The first WILD symbol that lands on each reel will become sticky until the end of the bonus. If any WILD symbols were present on the reels when the bonus feature was awarded, they will be carried over from the base game into the bonus and become sticky.\n\n There can be only one sticky WILD symbol on each reel. If a reel already has a sticky WILD symbol, no additional WILD symbols will appear on that reel.\n\n When the Frost Sword scatter symbol activates it will trigger a Portal to Midgard and an icy sword will slice downward to the bottom of the reel, breaking any WILD symbols or Treasure Chests in its path. See the section Portal to Muspelheim above for more details. The Frost Sword symbol only activates if the created Portal would be part of or create at least one winning combination.\n\n Landing additional Surtur symbols simultaneously in the bonus feature will award extra free spins:\n\n 2 Surtur symbols award 2 extra free spins.\n3 Surtur symbols award 4 extra free spins.\n4 Surtur symbols award 6 extra free spins.\n5 Surtur symbols award 8 extra free spins.",
+      "params": {}
+    },
+    {
+      "name": "WARRIORS OF THE STORM BONUS FEATURE",
+      "trigger": null,
+      "effects": "Get at least 3 Viking scatter symbols at the same time in the base game to activate this bonus feature!\n\n 3 Viking symbols award 10 free spins.\n4 Viking symbols award 12 free spins.\n5 Viking symbols award 14 free spins.\n\n When the Hammer of Thor scatter symbol lands it will forge the reel it landed on into a Storm Reel that persists until the end of the bonus feature! Storm Reels are full wild reels and substitutes for all other paying symbols.\n\n On each spin, all Storm Reels will reveal either a Viking Warrior or be filled with a raging STORM.\n\n Three different warriors can appear in each Storm Reel, revealing a multiplier value that is applied to the whole Storm Reel and affects any winning lines that pass through it. If a winning line is affected by more than one multiplier, the multipliers will first be added together and then applied to the win.\n\n The Rogue can have the following multiplier values: 2x, 3x, 4x, 5x\n\n The Shieldmaiden can have the following multiplier values: 6x, 7x, 8x, 9x, 10x\n\n The Berserker can have the following multiplier values: 15x, 20x, 25x, 50x, 100x, 200x\n\n When a Storm Reel is filled with a STORM it will be only wild during the current spin, then move one step to the left at the start of the next free spin. The moving Storm Reel will also push other Storm Reels in its way to the left. The reels will not move if there is no empty space to the left that they can move into.\n\n Landing additional Viking symbols simultaneously in the bonus feature will award extra free spins:\n\n 2 Viking symbols award 2 extra free spins.\n3 Viking symbols award 4 extra free spins.\n4 Viking symbols award 6 extra free spins.\n5 Viking symbols award 8 extra free spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "bonushunt_featurespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "surtur_featurespins_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "surtur_featurespins_3_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "surturs_vengeance_uc_ext",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "surturs_fury_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "warriors_of_storm_uc_ext",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 12500,
+    "max_win_notes": "maximum win of 12 500 times your bet",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1243/1.29.4/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/stormforged/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Behold the clash of ice and fire! Stormforged is a 5-reel, 4-row paylines game with a maximum win of 12 500 times your bet! This game features two thrilling bonus games, one taking place in the fiery realm of Muspelheim and the other in the midst of a raging snowstorm in the icy realm of Midgard.\n\n FEATURES\n\n PORTALS TO MUSPELHEIM\n\n When the Hand of Surtur scatter symbol lands and activates it rips downward to the bottom of the reel and creates a Portal to Muspelheim! Portals act as wild symbols and substitutes for all other paying symbols. The Hand of Surtur symbol only activ"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

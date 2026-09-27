@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Dork Unit",
+    "slug": "hacksaw-dork-unit",
+    "provider_game_id": "1172",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1172&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1172/1.48.1/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 4,
+    "cols": 5,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": null
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 16,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n You win if matching symbols appear along one of the following predefined lines on adjacent reels from left to right, starting with the leftmost reel. The number of possible lines in this game is 16. Please consult the paytable for the number of each symbol "
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "GIFT BOXES",
+        "behavior": "Gift Boxes are wild multipliers. There are three different kinds of Gift Boxes: Common Gift Box, Rare Gift Box and Epic Gift Box. The Common Gift Boxes always show their multiplier value. The Rare and Epic Gift Boxes only reveal their multiplier value when they are part of a winning combination. All winning combinations that a Gift Box is part of will be multiplied with the shown value. If more than one Gift Box is part of the same winline, their multipliers are first added together and then applied to the win.\n\n The Common Gift Box can have the values: Wild, 2x, 3x, 4x\n\n The Rare Gift Box can have the values: 5x, 10x, 15x, 20x\n\n The Epic Gift Box can have the values: 25x, 50x, 75x, 100x, 150x, 200x\n\n If you land 3 Gift Boxes of any kind on the same spin the Gift Bonanza bonus game is awarded!. The placement and the value of the triggering Gift Boxes is carried over into the bonus.",
+        "params": {}
+      },
+      {
+        "name": "DORK SPINS",
+        "behavior": "Landing 3 Lenny symbols activates the Dork Spins bonus game.\n\n In Dork Spins, the Lenny symbol can land only on reels 2, 3 and 4. When the Lenny symbol lands, it expands into a wild Dork Reel! Expanded Dork Reels remain expanded until the bonus ends!\n\n On every spin one of the Dorks will appear on each expanded Dork Reel and reveal a multiplier value based on which Dork appeared. All connecting winlines are multiplied by the shown value. If a winline connects to more than one Dork Reel, the multipliers are added together before being applied to the win.\n\n Tiny Timmy can reveal these multiplier values: 2x, 3x, 4x\n\n Hefty Hector can reveal these multiplier values: 5x, 10x, 15x, 20x\n\n Long Lenny can reveal these multiplier values: 25x, 50x, 75x, 100x, 150x, 200x\n\n SPECIAL SYMBOLS\n\n Gift Box symbols substitute for all paying symbols in the paytable. Gift Box symbols do not appear in the Dork Spins bonus feature. \n\nThe Lenny symbol can land in any position in the base game. The Lenny symbol does not appear in the Gift Bonanza bonus feature.",
+        "params": {}
+      }
+    ],
+    "scatters": [],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "GIFT BONANZA",
+        "behavior": "All landed Gift Boxes are sticky throughout the whole bonus game. The bonus starts with 3 spins. Landing additional Gift Boxes refills the remaining spins to 3 and keeps the bonus going! 3 spins in a row without landing any new Gift Boxes ends the bonus.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "GIFT BOXES",
+      "trigger": null,
+      "effects": "Gift Boxes are wild multipliers. There are three different kinds of Gift Boxes: Common Gift Box, Rare Gift Box and Epic Gift Box. The Common Gift Boxes always show their multiplier value. The Rare and Epic Gift Boxes only reveal their multiplier value when they are part of a winning combination. All winning combinations that a Gift Box is part of will be multiplied with the shown value. If more than one Gift Box is part of the same winline, their multipliers are first added together and then applied to the win.\n\n The Common Gift Box can have the values: Wild, 2x, 3x, 4x\n\n The Rare Gift Box can have the values: 5x, 10x, 15x, 20x\n\n The Epic Gift Box can have the values: 25x, 50x, 75x, 100x, 150x, 200x\n\n If you land 3 Gift Boxes of any kind on the same spin the Gift Bonanza bonus game is awarded!. The placement and the value of the triggering Gift Boxes is carried over into the bonus.",
+      "params": {}
+    },
+    {
+      "name": "GIFT BONANZA",
+      "trigger": null,
+      "effects": "All landed Gift Boxes are sticky throughout the whole bonus game. The bonus starts with 3 spins. Landing additional Gift Boxes refills the remaining spins to 3 and keeps the bonus going! 3 spins in a row without landing any new Gift Boxes ends the bonus.",
+      "params": {}
+    },
+    {
+      "name": "DORK SPINS",
+      "trigger": null,
+      "effects": "Landing 3 Lenny symbols activates the Dork Spins bonus game.\n\n In Dork Spins, the Lenny symbol can land only on reels 2, 3 and 4. When the Lenny symbol lands, it expands into a wild Dork Reel! Expanded Dork Reels remain expanded until the bonus ends!\n\n On every spin one of the Dorks will appear on each expanded Dork Reel and reveal a multiplier value based on which Dork appeared. All connecting winlines are multiplied by the shown value. If a winline connects to more than one Dork Reel, the multipliers are added together before being applied to the win.\n\n Tiny Timmy can reveal these multiplier values: 2x, 3x, 4x\n\n Hefty Hector can reveal these multiplier values: 5x, 10x, 15x, 20x\n\n Long Lenny can reveal these multiplier values: 25x, 50x, 75x, 100x, 150x, 200x\n\n SPECIAL SYMBOLS\n\n Gift Box symbols substitute for all paying symbols in the paytable. Gift Box symbols do not appear in the Dork Spins bonus feature. \n\nThe Lenny symbol can land in any position in the base game. The Lenny symbol does not appear in the Gift Bonanza bonus feature.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "gift_bonanza_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "dork_spins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_buy_mod_0_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10 000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1172/1.48.1/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/dork-unit/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "FEATURES\n\n GIFT BOXES\n\n Gift Boxes are wild multipliers. There are three different kinds of Gift Boxes: Common Gift Box, Rare Gift Box and Epic Gift Box. The Common Gift Boxes always show their multiplier value. The Rare and Epic Gift Boxes only reveal their multiplier value when they are part of a winning combination. All winning combinations that a Gift Box is part of will be multiplied with the shown value. If more than one Gift Box is part of the same winline, their multipliers are first added together and then applied to the win.\n\n The Common Gift Box can have the values: Wild, 2x, 3x, 4x"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

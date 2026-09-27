@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Double Rainbow",
+    "slug": "hacksaw-double-rainbow",
+    "provider_game_id": "1144",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1144&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1144/1.47.0/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 6,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 7x6 grid in official About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "RAINBOW REELS",
+        "behavior": "This game has 7 Rainbow Reels, one for each color of the rainbow. Each Rainbow Reel has a Reel Multiplier that is applied to all wins of the Rainbow Reel's color, while the Reel is active. Rainbow Reels are activated when a Cloud symbol lands on the reel and reset on every new round.",
+        "params": {}
+      },
+      {
+        "name": "MULTIPLIER CLOUDS",
+        "behavior": "When a Cloud lands on a reel it will reveal a multiplier value and add it to the reel's Reel Multiplier.",
+        "params": {}
+      },
+      {
+        "name": "NORMAL CLOUD",
+        "behavior": "When the Normal Cloud lands on a reel, it activates the Reel Multiplier if it is not already active. It then adds one of the following values to the Reel Multiplier: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 250x. It also awards 1 extra spin where all activated Rainbow Reels remain active.",
+        "params": {}
+      },
+      {
+        "name": "FULL RAINBOW",
+        "behavior": "When all Rainbow Reels are simultaneously activated the Full Rainbow feature is triggered. When this occurs, all Reel Multipliers are multiplied by one of these possible values: x2, x3, x4, x5, x10. It also awards 5 extra spins where all activated Rainbow Reels remain active.",
+        "params": {
+          "multiplier_values_mentioned": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "DOUBLE RAINBOW CLOUD",
+        "behavior": "The Double Rainbow Cloud will add one of the following values to all active Reel Multipliers: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 250x. It also awards 3 extra spins where all activated Rainbow Reels remain active.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "RAINBOW REELS",
+      "trigger": null,
+      "effects": "This game has 7 Rainbow Reels, one for each color of the rainbow. Each Rainbow Reel has a Reel Multiplier that is applied to all wins of the Rainbow Reel's color, while the Reel is active. Rainbow Reels are activated when a Cloud symbol lands on the reel and reset on every new round.",
+      "params": {}
+    },
+    {
+      "name": "MULTIPLIER CLOUDS",
+      "trigger": null,
+      "effects": "When a Cloud lands on a reel it will reveal a multiplier value and add it to the reel's Reel Multiplier.",
+      "params": {}
+    },
+    {
+      "name": "NORMAL CLOUD",
+      "trigger": null,
+      "effects": "When the Normal Cloud lands on a reel, it activates the Reel Multiplier if it is not already active. It then adds one of the following values to the Reel Multiplier: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 250x. It also awards 1 extra spin where all activated Rainbow Reels remain active.",
+      "params": {}
+    },
+    {
+      "name": "DOUBLE RAINBOW CLOUD",
+      "trigger": null,
+      "effects": "The Double Rainbow Cloud will add one of the following values to all active Reel Multipliers: 2x, 3x, 4x, 5x, 10x, 25x, 50x, 100x, 250x. It also awards 3 extra spins where all activated Rainbow Reels remain active.",
+      "params": {}
+    },
+    {
+      "name": "FULL RAINBOW",
+      "trigger": null,
+      "effects": "When all Rainbow Reels are simultaneously activated the Full Rainbow feature is triggered. When this occurs, all Reel Multipliers are multiplied by one of these possible values: x2, x3, x4, x5, x10. It also awards 5 extra spins where all activated Rainbow Reels remain active.",
+      "params": {
+        "multiplier_values_mentioned": [
+          2,
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "feature_buy_mod_1_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      },
+      {
+        "name": "feature_buy_mod_2_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 5000,
+    "max_win_notes": "maximum achievable win in this game is 5 000 times",
+    "rtp_percent": null,
+    "rtp_notes": "Official gameinfo uses template placeholder {rtp}%; concrete RTP not present in static HTML.",
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "low",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1144/1.47.0/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/double-rainbow/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Double Rainbow is a thrilling chase-the-rainbow 7x6 grid game, featuring a max win of up to 5,000x. Create big clusters in combination with the correct Rainbow Reel for skyhigh wins!\n\n RAINBOW REELS\n\n This game has 7 Rainbow Reels, one for each color of the rainbow. Each Rainbow Reel has a Reel Multiplier that is applied to all wins of the Rainbow Reel's color, while the Reel is active. Rainbow Reels are activated when a Cloud symbol lands on the reel and reset on every new round.\n\n MULTIPLIER CLOUDS\n\n When a Cloud lands on a reel it will reveal a multiplier value and add it t"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "bonus_free_spins.modes (none clearly extracted)",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}

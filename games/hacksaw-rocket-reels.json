@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-27T04:41:24Z",
+  "identity": {
+    "provider": "Hacksaw Gaming",
+    "title": "Rocket Reels",
+    "slug": "hacksaw-rocket-reels",
+    "provider_game_id": "1102",
+    "release_year": null,
+    "demo_url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1102&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+    "slotcatalog_url": null,
+    "official_info_url": "https://static-live.hacksawgaming.com/1102/1.35.2/gameinfoassets/templates/en-us/en-us-gameinfo.html"
+  },
+  "grid": {
+    "rows": 7,
+    "cols": 7,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Described as 7x7 grid in official About text"
+  },
+  "win_system": {
+    "type": "clusters",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": null,
+    "notes": "WAYS TO WIN\n\n The specified requirements for a winning combination in the base game are also used during bonus features or free spins play unless otherwise stated. Each wager is eligible for all winning combinations unless otherwise stated.\n\n Land 5 or more connecting symbols of the same kind anywhere on the grid to get a winning combination.\n\n After every win the winning symbols are removed and new ones drop in. This continues until there are no more new wins on the reels."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": null,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": null,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": null,
+      "how_it_works": null
+    },
+    "other": []
+  },
+  "symbols": {
+    "wilds": [],
+    "scatters": [],
+    "multipliers": [
+      {
+        "name": "MULTIPLIER ROCKETS",
+        "behavior": "This game features launching ROCKETS that ascend through the reel and destroy any symbols they pass through. The ROCKETS then leave a trail of MULTIPLIERS on all symbol positions! When new symbols drop you have a chance to overlay a MULTIPLIER on a winning cluster and multiply your win.\n\nIf you land more than one MULTIPLIER on the same winning cluster, the multipliers will first be added together and the win will then be multiplied by the total multiplier value.\n\nThere can be only one ROCKET on each reel per spin. In the base game three or more ROCKETS are required to trigger a ROCKET launch and in the Free Spins feature all landed rockets will launch.\n\nThere are three types of rockets with different multiplier values\n\n ROCKET 1\n\nPossible multiplier values: 1x, 2x, 3x, 4x, 5x\n\n ROCKET 2\n\nPossible multiplier values: 10x, 15x, 20x\n\n ROCKET 3\n\nPossible multiplier values: 25x, 50x, 75x",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "UFO",
+        "behavior": "Get lucky and you might see a UFO! The UFO appears randomly on spins where rockets have launched. It will beam up a random number (minimum 20 and maximum all of them) of symbols and clear those from the grid. New symbols will then drop to replace the removed ones. The UFO can appear both in the base game and in the Free spins feature.",
+        "params": {}
+      }
+    ]
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "FREE SPINS",
+        "trigger": "Get at least three free spin scatter symbols in the base game to trigger the free spin feature.",
+        "spins_awarded": null,
+        "retrigger": null,
+        "sticky_or_persistent_state": null,
+        "progressive_state": null,
+        "effects": "Get at least three free spin scatter symbols in the base game to trigger the free spin feature. In this feature every single rocket launches and drops their multipliers, the maximum value is up to 75x per multiplier!\n\n3 FREE SPIN symbols will give you 8 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all paying symbols in the paytable. The Wild symbol only appears in Free Spins."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "MULTIPLIER ROCKETS",
+      "trigger": null,
+      "effects": "This game features launching ROCKETS that ascend through the reel and destroy any symbols they pass through. The ROCKETS then leave a trail of MULTIPLIERS on all symbol positions! When new symbols drop you have a chance to overlay a MULTIPLIER on a winning cluster and multiply your win.\n\nIf you land more than one MULTIPLIER on the same winning cluster, the multipliers will first be added together and the win will then be multiplied by the total multiplier value.\n\nThere can be only one ROCKET on each reel per spin. In the base game three or more ROCKETS are required to trigger a ROCKET launch and in the Free Spins feature all landed rockets will launch.\n\nThere are three types of rockets with different multiplier values\n\n ROCKET 1\n\nPossible multiplier values: 1x, 2x, 3x, 4x, 5x\n\n ROCKET 2\n\nPossible multiplier values: 10x, 15x, 20x\n\n ROCKET 3\n\nPossible multiplier values: 25x, 50x, 75x",
+      "params": {}
+    },
+    {
+      "name": "UFO",
+      "trigger": null,
+      "effects": "Get lucky and you might see a UFO! The UFO appears randomly on spins where rockets have launched. It will beam up a random number (minimum 20 and maximum all of them) of symbols and clear those from the grid. New symbols will then drop to replace the removed ones. The UFO can appear both in the base game and in the Free spins feature.",
+      "params": {}
+    },
+    {
+      "name": "FREE SPINS",
+      "trigger": "Get at least three free spin scatter symbols in the base game to trigger the free spin feature.",
+      "effects": "Get at least three free spin scatter symbols in the base game to trigger the free spin feature. In this feature every single rocket launches and drops their multipliers, the maximum value is up to 75x per multiplier!\n\n3 FREE SPIN symbols will give you 8 free spins.\n\n SPECIAL SYMBOLS\n\n The Wild symbol substitutes for all paying symbols in the paytable. The Wild symbol only appears in Free Spins.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "freespins_uc",
+        "cost_multiplier": null,
+        "cost_text": null,
+        "effects": null,
+        "rtp_when_bought_note": "RTP when buying is template-injected ({featureBuyRtp}) in gameinfo HTML"
+      }
+    ],
+    "notes": "Bonus buy available per official rules, but cost multipliers are not stated as concrete numbers in the static gameinfo HTML (often runtime-injected)."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "FeatureSpins/ante-style options referenced in gameinfo; concrete cost multipliers often runtime-injected."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 10000,
+    "max_win_notes": "maximum achievable win in this game is 10,000 times",
+    "rtp_percent": null,
+    "rtp_notes": null,
+    "hit_frequency_notes": "Hit frequency uses template {hitfreq}% in static gameinfo"
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "medium",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_gameinfo",
+      "url": "https://static-live.hacksawgaming.com/1102/1.35.2/gameinfoassets/templates/en-us/en-us-gameinfo.html",
+      "local_path": "sources/hacksaw/rocket-reels/en-us-gameinfo.html",
+      "extracted_at": "2026-09-27T04:41:24Z",
+      "quote_or_excerpt": "ABOUT THE GAME\n\n Rocket Reels is an outer space themed 7x7 grid game featuring a max win of up to 10,000x! Each spin has the potential to bring a number of rockets into play. When the rockets launch they shatter all symbols in their launch path and leave behind a trail of multipliers of up to 75x!\n\nIf the multiplier overlaps a winning cluster, the win value will be multiplied by the multiplier value. If more than one multiplier overlaps a winning cluster, the multipliers will first be added and then multiplied by the cluster win.\n\nEach winning cluster will then be removed and make way for more"
+    }
+  ],
+  "unknowns": [
+    "ante_bet.cost_multiplier",
+    "feature_buy.cost_multiplier",
+    "feature_buy.rtp_when_bought",
+    "numeric_limits.rtp_percent"
+  ]
+}
