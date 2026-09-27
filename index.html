@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Slot Mechanics Dataset</title>
+<meta name="description" content="Browse evidence-backed slot game mechanics: grid, win systems, tumbles, free spins, feature buys."/>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0b0d10;
+    --panel: #12151a;
+    --panel2: #181c22;
+    --border: #222831;
+    --border2: #2a313c;
+    --text: #e8eaed;
+    --muted: #9aa0a6;
+    --accent: #7cb3ff;
+    --high: #3dd68c;
+    --med: #f5c542;
+    --low: #f07178;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  header {
+    padding: 1.1rem 1.25rem 0.85rem;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, #12151a 0%, #0b0d10 100%);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  header .wrap { max-width: 1280px; margin: 0 auto; }
+  h1 { font-size: 1.25rem; margin: 0 0 0.25rem; font-weight: 650; letter-spacing: -0.02em; }
+  .sub { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.4; }
+  .sub a { color: var(--accent); text-decoration: none; }
+  .sub a:hover { text-decoration: underline; }
+  .stats {
+    display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.75rem;
+  }
+  .chip {
+    font-size: 0.78rem; color: var(--muted);
+    border: 1px solid var(--border2); background: var(--panel2);
+    border-radius: 999px; padding: 0.28rem 0.65rem;
+  }
+  .chip b { color: var(--text); font-weight: 600; }
+  .controls {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 0.5rem;
+    margin-top: 0.85rem;
+  }
+  @media (max-width: 820px) {
+    .controls { grid-template-columns: 1fr 1fr; }
+    .controls input { grid-column: 1 / -1; }
+  }
+  input, select {
+    background: var(--panel);
+    border: 1px solid var(--border2);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 0.55rem 0.7rem;
+    font-size: 0.9rem;
+    outline: none;
+  }
+  input:focus, select:focus { border-color: #4a6a93; }
+  .layout {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem 2.5rem;
+    display: grid;
+    grid-template-columns: minmax(280px, 380px) 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+  }
+  .list-panel, .detail-panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    min-height: 420px;
+  }
+  .list-head, .detail-head {
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  #game-list {
+    max-height: calc(100vh - 230px);
+    overflow: auto;
+  }
+  .game-row {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #1a1f27;
+    color: var(--text);
+    padding: 0.7rem 0.9rem;
+    cursor: pointer;
+    display: grid;
+    gap: 0.2rem;
+  }
+  .game-row:hover { background: #171b22; }
+  .game-row.active { background: #1c2430; box-shadow: inset 3px 0 0 var(--accent); }
+  .game-row .title { font-size: 0.92rem; font-weight: 600; }
+  .game-row .meta { font-size: 0.78rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
+  .badge {
+    display: inline-flex; align-items: center;
+    font-size: 0.7rem; font-weight: 650; text-transform: uppercase;
+    letter-spacing: 0.03em; border-radius: 999px; padding: 0.12rem 0.45rem;
+  }
+  .badge.high { color: #0d2a1c; background: var(--high); }
+  .badge.medium { color: #2a2106; background: var(--med); }
+  .badge.low { color: #2a0d10; background: var(--low); }
+  .detail-body { padding: 1rem 1.05rem 1.4rem; }
+  .empty {
+    color: var(--muted); padding: 2rem 1rem; text-align: center; font-size: 0.95rem;
+  }
+  .detail-title { margin: 0 0 0.2rem; font-size: 1.35rem; letter-spacing: -0.02em; }
+  .detail-provider { color: var(--muted); margin: 0 0 0.9rem; font-size: 0.95rem; }
+  .kv {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 0.35rem 0.75rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 560px) { .kv { grid-template-columns: 1fr; } }
+  .kv .k { color: var(--muted); }
+  .kv .v { word-break: break-word; }
+  section.block {
+    margin-top: 1rem;
+    background: var(--panel2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.8rem 0.9rem;
+  }
+  section.block h3 {
+    margin: 0 0 0.55rem;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    font-weight: 650;
+  }
+  pre.quote, .prose {
+    margin: 0;
+    white-space: pre-wrap;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: #c8ccd2;
+    max-height: 220px;
+    overflow: auto;
+  }
+  .prose { font-family: inherit; font-size: 0.88rem; max-height: none; }
+  ul.clean { margin: 0; padding-left: 1.1rem; }
+  ul.clean li { margin: 0.25rem 0; font-size: 0.88rem; }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.35rem; }
+  .pill {
+    border: 1px solid var(--border2); border-radius: 999px;
+    padding: 0.2rem 0.55rem; font-size: 0.75rem; color: #c4c7cc;
+  }
+  .links a { color: var(--accent); font-size: 0.88rem; word-break: break-all; }
+  .err { color: var(--low); padding: 1rem; }
+  footer {
+    max-width: 1280px; margin: 0 auto; padding: 0 1.25rem 2rem;
+    color: var(--muted); font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Slot Mechanics Dataset</h1>
+    <p class="sub">Evidence-backed how-each-slot-works records. Raw JSON on <a href="https://github.com/stepupgaming/slot-mechanics-dataset">GitHub</a>.</p>
+    <div class="stats" id="stats"></div>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search title or slug…" autocomplete="off"/>
+      <select id="provider"><option value="">All providers</option></select>
+      <select id="confidence">
+        <option value="">All confidence</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <select id="win">
+        <option value="">All win systems</option>
+        <option value="paylines">Paylines</option>
+        <option value="ways">Ways</option>
+        <option value="pay_anywhere">Pay anywhere</option>
+        <option value="clusters">Clusters</option>
+        <option value="other">Other</option>
+        <option value="unknown">Unknown</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <div class="list-panel">
+    <div class="list-head"><span id="list-count">Loading…</span><span>click a game</span></div>
+    <div id="game-list"></div>
+  </div>
+  <div class="detail-panel">
+    <div class="detail-head"><span>Game detail</span><span id="detail-status"></span></div>
+    <div class="detail-body" id="detail">
+      <div class="empty">Pick a game from the list.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Official rules preferred. Gaps stay null. Confidence is overall + per section in each record.
+</footer>
+
+<script>
+const state = {
+  index: null,
+  games: [],
+  filtered: [],
+  selected: null,
+  cache: new Map(),
+  winBySlug: new Map(), // filled lazily from detail; index may not have win type
+};
+
+const el = (id) => document.getElementById(id);
+
+function badge(conf) {
+  const c = (conf || 'unknown').toLowerCase();
+  return `<span class="badge ${c}">${c}</span>`;
+}
+
+function esc(s) {
+  return String(s ?? '').replace(/[&<>"']/g, (ch) => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[ch]));
+}
+
+function renderStats(idx) {
+  const parts = [
+    `<span class="chip"><b>${idx.game_count}</b> games</span>`,
+    ...Object.entries(idx.by_provider || {}).map(([k,v]) => `<span class="chip"><b>${v}</b> ${esc(k)}</span>`),
+    ...Object.entries(idx.by_confidence || {}).map(([k,v]) => `<span class="chip"><b>${v}</b> ${esc(k)}</span>`),
+  ];
+  el('stats').innerHTML = parts.join('');
+  const sel = el('provider');
+  Object.keys(idx.by_provider || {}).sort().forEach((p) => {
+    const o = document.createElement('option');
+    o.value = p; o.textContent = p;
+    sel.appendChild(o);
+  });
+}
+
+function applyFilters() {
+  const q = el('q').value.trim().toLowerCase();
+  const provider = el('provider').value;
+  const conf = el('confidence').value;
+  const win = el('win').value;
+  state.filtered = state.games.filter((g) => {
+    if (provider && g.provider !== provider) return false;
+    if (conf && (g.confidence_overall || '').toLowerCase() !== conf) return false;
+    if (q) {
+      const hay = `${g.title} ${g.slug} ${g.provider}`.toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    if (win) {
+      const w = state.winBySlug.get(g.slug) || g.win_system_type;
+      if (!w || w !== win) return false;
+    }
+    return true;
+  });
+  renderList();
+}
+
+function renderList() {
+  const root = el('game-list');
+  el('list-count').textContent = `${state.filtered.length} shown`;
+  if (!state.filtered.length) {
+    root.innerHTML = `<div class="empty">No matches.</div>`;
+    return;
+  }
+  root.innerHTML = state.filtered.map((g) => `
+    <button class="game-row ${state.selected === g.slug ? 'active' : ''}" data-slug="${esc(g.slug)}">
+      <div class="title">${esc(g.title)}</div>
+      <div class="meta">
+        <span>${esc(g.provider)}</span>
+        ${badge(g.confidence_overall)}
+      </div>
+    </button>
+  `).join('');
+  root.querySelectorAll('.game-row').forEach((btn) => {
+    btn.addEventListener('click', () => selectGame(btn.dataset.slug));
+  });
+}
+
+function pretty(obj) {
+  if (obj == null) return '—';
+  if (typeof obj === 'string') return esc(obj);
+  return `<pre class="quote">${esc(JSON.stringify(obj, null, 2))}</pre>`;
+}
+
+function textOrDash(v) {
+  if (v == null || v === '') return '—';
+  return esc(String(v));
+}
+
+function symbolBlock(title, arr) {
+  if (!arr || !arr.length) return '';
+  const items = arr.map((s) => {
+    const name = esc(s.name || 'Symbol');
+    const beh = esc((s.behavior || '').slice(0, 1200));
+    return `<li><b>${name}</b><div class="prose" style="margin-top:0.25rem;color:#c8ccd2">${beh || '—'}</div></li>`;
+  }).join('');
+  return `<section class="block"><h3>${esc(title)}</h3><ul class="clean">${items}</ul></section>`;
+}
+
+function renderDetail(g) {
+  const id = g.identity || {};
+  const win = g.win_system || {};
+  const grid = g.grid || {};
+  const conf = g.confidence || {};
+  const buy = g.feature_buy || {};
+  const ante = g.ante_bet || {};
+  const reel = g.reel_behavior || {};
+  const fs = g.bonus_free_spins || {};
+  const symbols = g.symbols || {};
+  const features = g.features || [];
+  const unknowns = g.unknowns || [];
+  const evidence = g.evidence || [];
+
+  if (win.type) state.winBySlug.set(id.slug || state.selected, win.type);
+
+  const tumble = reel.cascades_or_tumbles || {};
+  const respin = reel.respins || {};
+
+  el('detail').innerHTML = `
+    <h2 class="detail-title">${esc(id.title || 'Untitled')}</h2>
+    <p class="detail-provider">${esc(id.provider || '')} · ${badge(conf.overall || 'unknown')} · <code>${esc(id.slug || '')}</code></p>
+
+    <div class="kv">
+      <div class="k">Grid</div>
+      <div class="v">${grid.rows && grid.cols ? `${esc(grid.rows)}×${esc(grid.cols)}` : textOrDash(grid.layout_notes)}</div>
+      <div class="k">Win system</div>
+      <div class="v">${esc(win.type || 'unknown')}${win.payline_count ? ` · ${esc(win.payline_count)} lines` : ''}${win.ways_count ? ` · ${esc(win.ways_count)} ways` : ''}${win.min_symbols_for_win ? ` · min ${esc(win.min_symbols_for_win)}` : ''}</div>
+      <div class="k">Tumbles</div>
+      <div class="v">${tumble.present ? 'Yes' : tumble.present === false ? 'No' : '—'}</div>
+      <div class="k">Respins</div>
+      <div class="v">${respin.present ? 'Yes' : respin.present === false ? 'No' : '—'}</div>
+      <div class="k">Feature buy</div>
+      <div class="v">${buy.available === true ? 'Available' : buy.available === false ? 'No' : '—'}</div>
+      <div class="k">Ante</div>
+      <div class="v">${ante.available === true ? 'Available' : ante.available === false ? 'No' : '—'}${ante.cost_multiplier ? ` · ${esc(ante.cost_multiplier)}x` : ''}</div>
+    </div>
+
+    <div class="pill-row">
+      ${Object.entries(conf).filter(([k]) => k !== 'overall').map(([k,v]) => `<span class="pill">${esc(k)}: ${esc(v)}</span>`).join('')}
+    </div>
+
+    ${win.notes ? `<section class="block"><h3>Win system notes</h3><pre class="quote">${esc(win.notes)}</pre></section>` : ''}
+    ${tumble.how_it_works ? `<section class="block"><h3>Tumble / cascade</h3><pre class="quote">${esc(tumble.how_it_works)}</pre></section>` : ''}
+    ${fs.notes || (fs.modes && fs.modes.length) ? `<section class="block"><h3>Free spins / bonus</h3>${fs.notes ? `<pre class="quote">${esc(fs.notes)}</pre>` : ''}${pretty(fs.modes)}</section>` : ''}
+    ${features.length ? `<section class="block"><h3>Features</h3>${pretty(features)}</section>` : ''}
+    ${buy.notes || (buy.options && buy.options.length) ? `<section class="block"><h3>Feature buy</h3>${buy.notes ? `<div class="prose">${esc(buy.notes)}</div>` : ''}${pretty(buy.options)}</section>` : ''}
+
+    ${symbolBlock('Wilds', symbols.wilds)}
+    ${symbolBlock('Scatters', symbols.scatters)}
+    ${symbolBlock('Multipliers', symbols.multipliers)}
+    ${symbolBlock('Collectors', symbols.collectors)}
+    ${symbolBlock('Specials', symbols.specials)}
+
+    ${unknowns.length ? `<section class="block"><h3>Unknowns</h3><ul class="clean">${unknowns.map(u => `<li>${esc(u)}</li>`).join('')}</ul></section>` : ''}
+
+    <section class="block links">
+      <h3>Sources</h3>
+      <ul class="clean">
+        ${id.official_info_url ? `<li><a href="${esc(id.official_info_url)}" target="_blank" rel="noopener">Official info</a></li>` : ''}
+        ${id.demo_url ? `<li><a href="${esc(id.demo_url)}" target="_blank" rel="noopener">Demo</a></li>` : ''}
+        ${id.slotcatalog_url ? `<li><a href="${esc(id.slotcatalog_url)}" target="_blank" rel="noopener">SlotCatalog</a></li>` : ''}
+        <li><a href="./games/${esc(id.slug)}.json" target="_blank" rel="noopener">Raw JSON</a></li>
+      </ul>
+      ${evidence.length ? `<div style="margin-top:0.7rem">${evidence.slice(0,3).map(e => `<pre class="quote" style="margin-bottom:0.5rem">${esc((e.quote_or_excerpt || e.excerpt || '').slice(0,800))}\n— ${esc(e.source_type || '')} ${esc(e.url || '')}</pre>`).join('')}</div>` : ''}
+    </section>
+  `;
+}
+
+async function selectGame(slug) {
+  state.selected = slug;
+  renderList();
+  el('detail-status').textContent = 'Loading…';
+  el('detail').innerHTML = `<div class="empty">Loading ${esc(slug)}…</div>`;
+  try {
+    let g = state.cache.get(slug);
+    if (!g) {
+      const res = await fetch(`./games/${encodeURIComponent(slug)}.json`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      g = await res.json();
+      state.cache.set(slug, g);
+    }
+    el('detail-status').textContent = '';
+    renderDetail(g);
+    // Re-apply win filter if set now that we know type
+    if (el('win').value) applyFilters();
+    history.replaceState(null, '', `#${encodeURIComponent(slug)}`);
+  } catch (err) {
+    el('detail-status').textContent = 'Error';
+    el('detail').innerHTML = `<div class="err">Could not load ${esc(slug)}: ${esc(err.message)}</div>`;
+  }
+}
+
+async function boot() {
+  try {
+    const res = await fetch('./dataset.json');
+    if (!res.ok) throw new Error(`dataset.json HTTP ${res.status}`);
+    const idx = await res.json();
+    state.index = idx;
+    state.games = idx.games || [];
+    renderStats(idx);
+    applyFilters();
+    const hash = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+    if (hash && state.games.some((g) => g.slug === hash)) {
+      selectGame(hash);
+    } else if (state.filtered[0]) {
+      selectGame(state.filtered[0].slug);
+    }
+  } catch (err) {
+    el('list-count').textContent = 'Failed';
+    el('game-list').innerHTML = `<div class="err">${esc(err.message)}</div>`;
+  }
+}
+
+['q','provider','confidence','win'].forEach((id) => {
+  el(id).addEventListener('input', applyFilters);
+  el(id).addEventListener('change', applyFilters);
+});
+
+boot();
+</script>
+</body>
+</html>

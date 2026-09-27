@@ -4,6 +4,12 @@ Public, machine-readable descriptions of **how video slots actually work** (grid
 
 Built for Money / Crypto Marketing workflows under GitHub user [`stepupgaming`](https://github.com/stepupgaming).
 
+## Browse online
+
+Live dataset viewer (GitHub Pages): **https://stepupgaming.github.io/slot-mechanics-dataset/**
+
+Search/filter by provider, confidence, and win system; open any game for mechanics + evidence excerpts. Raw JSON remains in `games/` and `dataset.json`.
+
 ## Layout
 
 ```
