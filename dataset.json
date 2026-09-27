@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T18:36:29Z",
-  "game_count": 557,
-  "thumbnail_count": 557,
+  "updated_at": "2026-09-27T18:38:16Z",
+  "game_count": 560,
+  "thumbnail_count": 560,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
     "Slotmill": 61,
     "Backseat Gaming": 35,
-    "Nolimit City": 7,
+    "Nolimit City": 10,
     "Elk Studios": 1
   },
   "by_confidence": {
-    "high": 389,
+    "high": 392,
     "low": 28,
     "medium": 140
   },
@@ -30,7 +30,7 @@
       "medium": 1
     },
     "Nolimit City": {
-      "high": 7
+      "high": 10
     },
     "Pragmatic Play": {
       "high": 156,
@@ -3189,6 +3189,19 @@
       "thumbnail": "thumbs/nolimit-deadwood-xnudge.webp"
     },
     {
+      "slug": "nolimit-fire-in-the-hole",
+      "title": "Fire in the Hole xBomb",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-fire-in-the-hole.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-fire-in-the-hole.webp"
+    },
+    {
       "slug": "nolimit-kiss-my-chainsaw",
       "title": "Kiss My Chainsaw",
       "provider": "Nolimit City",
@@ -3228,6 +3241,19 @@
       "thumbnail": "thumbs/nolimit-punk-rocker.webp"
     },
     {
+      "slug": "nolimit-san-quentin",
+      "title": "San Quentin xWays",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-san-quentin.json",
+      "win_system_type": "ways",
+      "grid": "3×5",
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-san-quentin.webp"
+    },
+    {
       "slug": "nolimit-tombstone-rip",
       "title": "Tombstone R.I.P",
       "provider": "Nolimit City",
@@ -3239,6 +3265,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-tombstone-rip.webp"
+    },
+    {
+      "slug": "nolimit-true-grit-redemption",
+      "title": "True Grit Redemption",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-true-grit-redemption.json",
+      "win_system_type": "ways",
+      "grid": "5×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-true-grit-redemption.webp"
     },
     {
       "slug": "pragmatic-3-buzzing-wilds",

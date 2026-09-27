@@ -80,7 +80,7 @@ Live counts are always in `dataset.json` → `by_provider` / `by_confidence` / `
 | **Backseat Gaming** | **35** (all high) | Independent studio on Hacksaw OpenRGS. Same `en-us-gameinfo.html` CDN path; `identity.provider` = **Backseat Gaming**, slug prefix `backseat-`. |
 | **Elk Studios** | 1 (1 high: Ryze from Game Description PDF) | Expand only with official Game Description PDFs. |
 | **Slotmill** | **61** (**16 high** / **45 medium**) | Official pages + product sheets. High only when FS trigger/award evidenced in sheet/copy; Fast Track/Xtra-Bet *costs* not stated in public sheets (left null, medium when FS also vague). |
-| **Nolimit City** | 7 high gold (schema 1.1.0 + base_game_loop) | Upgraded all stubs from official GameSheets / CMS features; sheets under sources/nolimit/. |
+| **Nolimit City** | 10 high gold (schema 1.1.0 + base_game_loop) | +San Quentin, Fire in the Hole xBomb, True Grit Redemption from official sheets. |
 
 Priority while collecting: official rules/gameinfo first, SlotCatalog only to fill gaps without inventing mechanics.
 

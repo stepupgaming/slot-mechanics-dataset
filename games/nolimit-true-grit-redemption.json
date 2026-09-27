@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:37:33Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "True Grit Redemption",
+    "slug": "nolimit-true-grit-redemption",
+    "provider_game_id": "TrueGrit",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/TrueGrit",
+    "slotcatalog_url": "https://slotcatalog.com/en/slots/True-Grit-Redemption",
+    "official_info_url": "https://nolimitcity.com/games/true-grit-redemption"
+  },
+  "grid": {
+    "rows": 5,
+    "cols": 6,
+    "rows_min": null,
+    "rows_max": null,
+    "layout_notes": "Sheet branding 6x5. Includes top reel / bottom reel structure for Wild Transform and xNudge on bottom reel; some positions locked in main game and unlock in bonus."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "xWays / Infectious xWays expand ways. Exact base ways count not printed on sheet. Grit Girl is a scatter-paying symbol (pays on 3+ reels)."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Reel Split doubles symbols above it on the main reel, then vanishes causing a bottom-reel collapse for new symbols."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Torture Spins / Dead Spins expand the active game area and unlock previously locked main-game positions for the bonus."
+    },
+    "other": [
+      {
+        "name": "Wild Transform",
+        "how_it_works": "Match symbol in top reel with symbol underneath on same reel → both become Wild."
+      },
+      {
+        "name": "xNudge Wild",
+        "how_it_works": "Stacked Wild on bottom reel always nudges fully visible; +1 wild multiplier per nudge. Second chance with higher multiplier if first nudge does not win."
+      },
+      {
+        "name": "xWays & Infectious xWays",
+        "how_it_works": "xWays reveals 2–3 of the same symbol. Infectious xWays multiplies all symbols of the revealed type."
+      },
+      {
+        "name": "Transform 'em",
+        "how_it_works": "Transforms all of the same symbol type into the same symbol (all character symbols become the same one)."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xNudge Wild",
+        "behavior": "Stacked Wild on bottom reel; nudges fully into view; +1 multiplier per nudge; second-chance nudge with higher multiplier if no win first time.",
+        "params": {}
+      },
+      {
+        "name": "Wild (transform / sticky)",
+        "behavior": "Created by Wild Transform (top+under match). Dead Spins unlock sticky Wild with multiplier in bottom-right corner for the bonus duration.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Scatter",
+        "behavior": "3 Scatters → 8+ Torture Spins. 4 Scatters → 10+ Dead Spins.",
+        "params": {}
+      },
+      {
+        "name": "Grit Girl",
+        "behavior": "Scatter-paying symbol: pays when appearing on 3+ reels. Base x25 on 3 reels, x500 on 4 reels, with chance of a massive multiplier.",
+        "params": {
+          "pays_3": 25,
+          "pays_4": 500
+        }
+      }
+    ],
+    "multipliers": [],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "xWays",
+        "behavior": "Reveals 2–3 of the same symbol.",
+        "params": {}
+      },
+      {
+        "name": "Infectious xWays",
+        "behavior": "Affects and multiplies all symbols of the revealed type.",
+        "params": {}
+      },
+      {
+        "name": "Reel Split",
+        "behavior": "Doubles all symbols above it on the main reel, then vanishes and collapses the bottom reel for new symbols.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on 6×5-style grid with locked positions. Wild Transform, xNudge bottom Wild, xWays/Infectious xWays, Reel Split collapses, and Transform 'em can reshape the grid before ways pay. Grit Girl pays as scatter on 3+/4 reels. 3 Scatters → Torture Spins (8+); 4 → Dead Spins (10+). Buy 69×–669×.",
+    "phases": [
+      {
+        "name": "Spin",
+        "order": 1,
+        "what_happens": "Reels stop including top/bottom reel structure; some positions may be locked.",
+        "ends_when": "Stop",
+        "state_changes": null
+      },
+      {
+        "name": "Modifiers",
+        "order": 2,
+        "what_happens": "Apply Wild Transform, xNudge (with possible second chance), xWays / Infectious xWays, Reel Split collapse, Transform 'em as they land.",
+        "ends_when": "Modifiers resolved",
+        "state_changes": "Ways/wilds/multipliers update"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Pay ways wins and Grit Girl scatter pays (3+ / 4 reels).",
+        "ends_when": "Wins paid",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus check",
+        "order": 4,
+        "what_happens": "3 Scatters → 8+ Torture Spins (expand area, unlock locked positions). 4 Scatters → 10+ Dead Spins (expand + unlock including sticky Wild with multiplier bottom-right).",
+        "ends_when": "Bonus entered or round ends",
+        "state_changes": "Enter Torture or Dead Spins"
+      }
+    ],
+    "win_evaluation": "After nudge/transform/split modifiers; Grit Girl pays independently as scatter-style on reel counts.",
+    "notes": "Exact meaning of '8+' / '10+' extra spin awards beyond base 8/10 not detailed on sheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Torture Spins",
+        "trigger": "Three Scatter symbols.",
+        "spins_awarded": "8+ Torture Spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Active game area expands; locked positions from main game available for the bonus duration.",
+        "progressive_state": null,
+        "end_condition": "Spins complete or No More Grit max win 20,220×.",
+        "phases": [
+          {
+            "name": "Enter Torture",
+            "order": 1,
+            "what_happens": "Expand active area; unlock main-game locked positions; play 8+ spins."
+          }
+        ],
+        "effects": "8+ FS with expanded area and unlocked positions."
+      },
+      {
+        "name": "Dead Spins",
+        "trigger": "Four Scatter symbols.",
+        "spins_awarded": "10+ Dead Spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Expanded area; all previously locked spots available including sticky Wild with multiplier in bottom-right corner for the bonus duration.",
+        "progressive_state": null,
+        "end_condition": "Spins complete or 20,220× cap.",
+        "phases": [
+          {
+            "name": "Enter Dead Spins",
+            "order": 1,
+            "what_happens": "Expand area; unlock all locked spots including bottom-right sticky Wild+multiplier; play 10+ spins."
+          }
+        ],
+        "effects": "10+ FS; full unlock including sticky Wild with multiplier bottom-right."
+      }
+    ],
+    "notes": "Sheet writes '8+' and '10+' without defining the '+' award table."
+  },
+  "features": [
+    {
+      "name": "Wild Transform",
+      "trigger": "Top reel symbol matches symbol underneath on same reel",
+      "when": "during_spin",
+      "effects": "Both positions become Wild.",
+      "params": {}
+    },
+    {
+      "name": "xNudge Wild",
+      "trigger": "Stacked Wild on bottom reel",
+      "when": "during_spin",
+      "effects": "Nudge fully visible; +1 mult per nudge; second chance with higher mult if no win.",
+      "params": {}
+    },
+    {
+      "name": "xWays & Infectious xWays",
+      "trigger": "xWays / Infectious xWays lands",
+      "when": "during_spin",
+      "effects": "xWays reveals 2–3 same symbol; Infectious multiplies all of that type.",
+      "params": {}
+    },
+    {
+      "name": "Reel Split",
+      "trigger": "Reel Split lands",
+      "when": "during_spin",
+      "effects": "Double symbols above on main reel; vanish; bottom reel collapse.",
+      "params": {}
+    },
+    {
+      "name": "Transform 'em",
+      "trigger": "Feature lands",
+      "when": "during_spin",
+      "effects": "All character symbols become the same symbol type.",
+      "params": {}
+    },
+    {
+      "name": "Grit Girl",
+      "trigger": "Appears on 3+ reels",
+      "when": "during_spin",
+      "effects": "Scatter pay x25 (3 reels) / x500 (4 reels) with chance of massive multiplier.",
+      "params": {}
+    },
+    {
+      "name": "No More Grit to be Found",
+      "trigger": "Total win hits cap",
+      "effects": "Max payout 20,220× base bet.",
+      "params": {
+        "max_win_multiplier": 20220
+      }
+    },
+    {
+      "name": "Nolimit Bonus (Feature Buy)",
+      "trigger": "Player buys",
+      "when": "base_game",
+      "cost_text": "69×–669× base bet",
+      "effects": "Buy into different bonus features in that range. May be removed in some regulated markets.",
+      "params": {
+        "cost_range_min": 69,
+        "cost_range_max": 669
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "69×–669× base bet (range)",
+        "effects": "Buy straight into Torture / Dead Spins (or variants).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Per-mode prices within range not itemized on sheet."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20220.0,
+    "max_win_notes": "No More Grit to be Found — 20,220× (~1 in 6M rounds)",
+    "rtp_percent": 96.11,
+    "rtp_notes": "Dual RTP 96.11% / 94.04% (DX1). Main 62.46%, free spins 33.65%.",
+    "hit_frequency_notes": "Hit frequency 24.36%; free spins 1 in 214; win 100× 1 in 1474."
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "medium",
+    "win_system": "medium",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_Sheet_Slots_True_Grit_Redemption_41414_3379cdb0aa.pdf",
+      "local_path": "sources/nolimit/true-grit-redemption/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:37:33Z",
+      "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                 xNudge Wild\n                                                                 xWays & Infectious\n                                                                 xWays\n                                                                 Reel Split\n                                                                 Transform Em’\n                                                           6x5   Grit Girl\n                                                                 Torture Spins\n                                                                 Dead Spins\n\n\n\n\nTrue Grit Redemption\nA mission for vengeance develops into a\nharrowing journey where the crew’s grit is\ntested. Will you join them on their quest for\nredemption, where the stakes are high and\nthe guns blazing?\nTrue Grit Redemption is available with dual RTP setup at\n96.11% and 94.04% (DX1).\n\fGAME SHEET\n\n\nGame Features\nWild Transform\nMatch the symbol in the top reel and the symbol underneath on\nthe same reel to transform both into a Wild symbol.\n\n\nxNudge Wild\nStacked Wild symbol in the bottom reel that will always nudge to\nbe fully visible, each nudge increas"
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/true-grit-redemption",
+      "local_path": "sources/nolimit/true-grit-redemption/cms_features.txt",
+      "extracted_at": "2026-09-27T18:37:33Z",
+      "quote_or_excerpt": "## Wild Transform\nMatch the symbol in the top reel and the symbol underneath on the same reel to transform both into a Wild symbol.\n\n## xNudge Wild\nStacked Wild symbol in the bottom reel that will always nudge to be fully visible, each nudge increased a wild multiplier by 1. Get a 2nd chance with an even higher multiplier if you don’t win on it the first time...\n\n## xWays & Infectious xWays\nYou’ve seen it before - xWays reveals 2-3 of the same symbol. Infectious xWays symbol will affect and multiply all symbols of the revealed type for massive wins.\n\n## Reel Split\nReel split will double all symbols above it on the main reel. It then vanishes, causing a bottom reel collapse for new symbols to appear.\n\n## Transform ‘em\nWill transform all of the same symbol type into the same symbol, meaning that all character symbols will turn into the same one!\n\n## Grit Girl\nScatter paying symbol that pays as soon as she appears on 3+ reels. Grit Girl has the base payout of x25, four reels have a base payout of x500, but it will also have the chance of a massive multiplier....\n\n## Torture Spins\nIf you get three scatter symbols, you’ll get 8+ Torture Spins. The active game area expands, and locked po"
+    }
+  ],
+  "unknowns": [
+    "exact base ways_count",
+    "precise locked-position map in base game",
+    "what the '+' means in 8+ / 10+ spin awards",
+    "per-mode buy prices within 69×–669×"
+  ],
+  "thumbnail": "thumbs/nolimit-true-grit-redemption.webp",
+  "thumbnail_attribution": "SlotCatalog"
+}

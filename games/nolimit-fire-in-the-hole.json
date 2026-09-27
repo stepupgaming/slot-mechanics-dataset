@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:37:33Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Fire in the Hole xBomb",
+    "slug": "nolimit-fire-in-the-hole",
+    "provider_game_id": "FireInTheHole",
+    "release_year": null,
+    "demo_url": "https://playin.com/embed/v1/demo/FireInTheHole",
+    "slotcatalog_url": "https://slotcatalog.com/en/slots/Fire-in-the-Hole-xBomb",
+    "official_info_url": "https://nolimitcity.com/games/fire-in-the-hole"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 6,
+    "rows_min": 3,
+    "rows_max": 6,
+    "layout_notes": "6×3 that expands up to 6×6 via Collapsing Mine. Sheet: 64 ways expanding up to 46,656."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 64,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "64 ways at 6×3 base; expands up to 46,656 ways as rows open to 6."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Collapsing Mine: winning symbols are paid and removed; symbols fall down; empty positions refill. Each collapse can open an additional row (up to 6). Collapses also from xBomb explosions or Wild Mining."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "Starts with 3 active rows; each collapse activates one more row up to 6."
+    },
+    "other": [
+      {
+        "name": "xBomb Wild",
+        "how_it_works": "Substitutes except Bonus. Explodes removing adjacent symbols (except Bonus); +1 win multiplier for next collapse. Explodes on win (even if not in combo) before next collapse; also explodes with no win if Wild Mining not triggered. Does not explode when Wild Mining is triggered."
+      },
+      {
+        "name": "Wild Mining",
+        "how_it_works": "Main game: 3/4/5 identical symbols align horizontally with no winning combo → award 1/2/3 wilds; other non-Bonus/non-Wild positions above the bar explode; triggers a new collapse."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xBomb Wild",
+        "behavior": "Substitutes any symbol except Bonus. Explodes to remove adjacent non-Bonus symbols and increases win multiplier by +1 for the next collapse. Explodes before next collapse when there is a win (whether or not part of the win), or with no win if Wild Mining did not trigger. Skips explosion when Wild Mining triggers.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus symbol",
+        "behavior": "3/4/5 Bonus symbols trigger Lucky Wagon Spins with 2/3/4 rows open initially.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Collapse win multiplier",
+        "behavior": "Increased by +1 per xBomb explosion for the next collapse.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Lucky Wagon coins / enhancers",
+        "behavior": "During Lucky Wagon Spins, coins land valued × active bet; top-row enhancers (Coin values, Multipliers, Dynamites, Bag, Chest, Dwarf) activate when a coin lands on the reel below.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Paid spin on 6×3 (64 ways) Collapsing Mine: wins tumble and open rows up to 6×6 / 46,656 ways. xBomb Wilds explode to clear neighbors and +1 collapse multiplier. Wild Mining can spawn wilds from horizontal non-winning matches. 3–5 Bonus symbols start Lucky Wagon Spins (buyable at 60×/157×/500×).",
+    "phases": [
+      {
+        "name": "Spin (3 rows active)",
+        "order": 1,
+        "what_happens": "Start with 3 active rows on 6 reels.",
+        "ends_when": "Reels stop",
+        "state_changes": "Active rows = 3"
+      },
+      {
+        "name": "Evaluate & collapse loop",
+        "order": 2,
+        "what_happens": "Pay winning combinations; remove winners; tumble/refill. xBomb may explode (clear adjacents, +1 mult for next collapse). Wild Mining may fire if 3–5 matching symbols align horizontally with no win. Each collapse can activate +1 row up to 6.",
+        "ends_when": "No more wins, xBomb no-win explosions, or Wild Mining triggers exhausted",
+        "state_changes": "Rows may increase; collapse multiplier may rise"
+      },
+      {
+        "name": "Bonus check",
+        "order": 3,
+        "what_happens": "3/4/5 Bonus → Lucky Wagon Spins with 2/3/4 rows open initially.",
+        "ends_when": "Feature entered or round ends",
+        "state_changes": "Enter Lucky Wagon Spins"
+      }
+    ],
+    "win_evaluation": "Wins paid before each collapse removal; collapse multiplier from xBombs applies to subsequent collapse wins.",
+    "notes": "First NLC title with xBomb per sheet."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Lucky Wagon Spins",
+        "trigger": "3, 4, or 5 Bonus symbols (opens 2, 3, or 4 rows initially).",
+        "spins_awarded": "Starts with 3 spins; resets to 3 whenever a coin lands in the reel area.",
+        "retrigger": "Any coin landing resets spin counter to 3.",
+        "sticky_or_persistent_state": "Initial open rows fixed by Bonus count (2/3/4). Top row shows enhancers each spin.",
+        "progressive_state": "Collected coin values (× active bet) accumulate; enhancers activate when coin lands under them.",
+        "end_condition": "Spin counter reaches 0 with no coin reset (or max win 60,000×).",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Open 2/3/4 rows from 3/4/5 Bonuses; set spins = 3."
+          },
+          {
+            "name": "Spin / collect",
+            "order": 2,
+            "what_happens": "Top row reveals enhancers; coins collect × bet; coin under enhancer activates it; coin reset spins to 3."
+          },
+          {
+            "name": "End",
+            "order": 3,
+            "what_happens": "When spins hit 0 without coin, pay collected values and return to base."
+          }
+        ],
+        "effects": "Hold-and-win style with 3-spin reset on coins; enhancer row; coin values × bet."
+      }
+    ],
+    "notes": null
+  },
+  "features": [
+    {
+      "name": "Collapsing Mine",
+      "trigger": "Win, xBomb explosion, or Wild Mining",
+      "when": "during_spin",
+      "effects": "Remove winners/exploded symbols; tumble; may open +1 row up to 6.",
+      "params": {}
+    },
+    {
+      "name": "xBomb Wild Multiplier",
+      "trigger": "xBomb lands",
+      "when": "during_spin",
+      "effects": "Wild except Bonus; explode adjacents; +1 win mult next collapse; explosion rules as above.",
+      "params": {}
+    },
+    {
+      "name": "Wild Mining",
+      "trigger": "3/4/5 same symbol horizontal with no win",
+      "when": "during_spin",
+      "effects": "Award 1/2/3 wilds; explode other non-Bonus/non-Wild above bar; new collapse. Suppresses xBomb explosion that step.",
+      "params": {}
+    },
+    {
+      "name": "Nolimit Bonus (Feature Buy)",
+      "trigger": "Player buys Lucky Wagon",
+      "when": "base_game",
+      "cost_text": "60× / 157× / 500× for 3 / 4 / 5 Bonus symbols",
+      "effects": "Buy Lucky Wagon Spins with 3, 4, or 5 Bonus symbols.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Lucky Wagon Spins — 3 Bonus",
+        "cost_multiplier": 60.0,
+        "cost_text": "60× bet",
+        "effects": "Trigger with 3 Bonus symbols (2 rows open initially).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Lucky Wagon Spins — 4 Bonus",
+        "cost_multiplier": 157.0,
+        "cost_text": "157× bet",
+        "effects": "Trigger with 4 Bonus symbols (3 rows open initially).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Lucky Wagon Spins — 5 Bonus",
+        "cost_multiplier": 500.0,
+        "cost_text": "500× bet",
+        "effects": "Trigger with 5 Bonus symbols (4 rows open initially).",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": null
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": null
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 60000.0,
+    "max_win_notes": "60,000× bet",
+    "rtp_percent": 96.06,
+    "rtp_notes": "96.06%; DX1 94.11%; DX3 90.02%. Main 63.51%, Free Spins 32.55%.",
+    "hit_frequency_notes": "Hit frequency 25.98%; free spins 1 in 200; win 100× 1 in 1,009."
+  },
+  "confidence": {
+    "overall": "high",
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "official_pdf",
+      "url": "https://fan-cdn.nolimitcity.com/Nolimit_City_Game_sheet_Slots_Fire_In_The_Hole_x_Bomb_a1c8adf3d4.pdf",
+      "local_path": "sources/nolimit/fire-in-the-hole/GameSheet.pdf",
+      "extracted_at": "2026-09-27T18:37:33Z",
+      "quote_or_excerpt": "GAME SHEET\n\n\n\n\n                                                                        Collapsing Mine\n                                                                  6x3   Lucky Wagon Spins\n                                                                        xBomb Wilds\n                                                                        Wild Mining\n\n\n\n\nFIRE IN THE HOLE xBOMB\nGrab your sharpest pickaxe and your most\nexplosive dynamite as Nolimit City takes you\ndeep down underground to where the sun\ndoesn’t shine - but the gold does.\nWith a 6x3 reel area that expands up to 6x6, exploding\nwilds and 64 ways to win that can expand up to 46,656 -\nyou’ll blast your way through the mines in search of the\nlucrative gold.\n\nFire In The Hole xBomb is the first Nolimit City title with the\nxBomb feature, which removes all adjacent symbols and\nincreases the win multiplier with one - no matter if it’s a\nwinning round or not.\n\fGAME SHEET\n\n\n\n\nGame Features\nCollapsing Mine\nEach spin begins with 3 active rows and for each collapse,\nan additional row becomes active, up to 6 rows. A new\ncollapse can be triggered by a winning combination,\nxBomb Wild explosion or a Wild Mining feature.\n\nWinning "
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/fire-in-the-hole",
+      "local_path": "sources/nolimit/fire-in-the-hole/cms_features.txt",
+      "extracted_at": "2026-09-27T18:37:33Z",
+      "quote_or_excerpt": "## Collapsing Mine\nEach spin begins with 3 active rows and for each collapse, an additional row becomes active, up to 6 rows. A new collapse can be triggered by a winning combination, xBomb Wild explosion or a Wild Mining feature.\\nWinning symbols are paid out and removed before triggering the next collapse, which will, in turn, make all symbols fall downwards, leaving the empty position for new symbols to drop down to.\n\n## Lucky Wagon Spins\n3, 4 or 5 bonus symbols will trigger the Lucky Wagons Spins feature with 2, 3 or 4 rows of the reel area open initially. The feature starts with 3 spins and will reset to 3 spins every time a coin lands in the reel area. All coin values are valued times (x) the active bet.\\nDuring the Lucky Wagon Spins feature, the top row will reveal enhancers for each spin - Coin values, Multipliers, Dynamites, Bag, Chest or the Dwarf. An enhancer is activated when a coin lands on the reel below the enhancer.\n\n## xBomb Wild Multiplier\nAn xBomb Wild symbol substitutes any symbol except for the Bonus symbols. An exploding xBomb Wild removes adjacent symbols except for Bonus symbols and will increase the win multiplier by one for the next collapse.\\nAll xBomb Wi"
+    }
+  ],
+  "unknowns": [
+    "exact enhancer effect details for Dynamites / Bag / Chest / Dwarf beyond names on sheet",
+    "whether max-win cap ends Lucky Wagon mid-feature (not explicitly stated like Psycho Manhunt)"
+  ],
+  "thumbnail": "thumbs/nolimit-fire-in-the-hole.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
