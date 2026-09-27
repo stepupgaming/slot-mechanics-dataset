@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:46:50Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Deadwood R.I.P",
+    "slug": "nolimit-deadwood-rip",
+    "provider_game_id": "DeadwoodRip",
+    "release_year": 2024,
+    "demo_url": "https://playin.com/embed/v1/demo/DeadwoodRip",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/deadwood-rip"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": 2,
+    "rows_max": 4,
+    "layout_notes": "Official layout 3-4-4-4-2. Fifth reel: all symbols count double when fully landed; no lows; Gunslinger + Hog Me Tight in main/Redemption; Salvation holds only Hog Me Tight on reel 5."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 384,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "384 ways from 3x4x4x4x2 layout (page). Reel 5 symbols count as double when fully landed."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "xNudge",
+        "how_it_works": "Stacked Wild on middle three reels always nudges fully visible; each nudge +1 win mult. Base: multiple Nudge Wilds add; bonus modes: multiply each other."
+      },
+      {
+        "name": "xSplit / Hog Me Tight",
+        "how_it_works": "2 Diamondback activates Reel Split Wild on middle three (halves symbols, doubles count). Hog Me Tight on last reel (2 high, Wild) splits middle rows leftward; split Nudge Wild doubles its multiplier."
+      },
+      {
+        "name": "Quick Draw",
+        "how_it_works": "1 revolver cylinder on reel 1 randomly shoots 3-6 times (by bullets); each shot doubles hit symbol multiplier."
+      },
+      {
+        "name": "Shootout",
+        "how_it_works": "2 Sheriff Badges on reels 2 and 4: all low win symbols on center 3 reels act as Wilds."
+      },
+      {
+        "name": "xRip",
+        "how_it_works": "If total paytable payout is below base bet (main or bonus), no payout."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Nudge Wild (xNudge)",
+        "behavior": "Middle three reels; nudges fully visible; +1 mult per nudge. Base adds; bonus multiplies. Split doubles Nudge mult.",
+        "params": {}
+      },
+      {
+        "name": "Reel Split Wild",
+        "behavior": "From 2 Diamondback on middle three; splits reel symbols in half.",
+        "params": {}
+      },
+      {
+        "name": "Hog Me Tight Scatter",
+        "behavior": "Last reel only; 2 high; Wild; splits middle rows left; with 3 Diamondback upgrades to Salvation.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Diamondback Scatter",
+        "behavior": "Middle three reels in main. 3 awards 5 Redemption Spins; 3 + Hog Me Tight awards 6 Salvation. Only 2 converts to Reel Split Wilds.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      },
+      {
+        "name": "Hog Me Tight Scatter",
+        "behavior": "Last reel; upgrades Redemption to Salvation (+1 spin to 6) or splits left if alone.",
+        "params": {}
+      },
+      {
+        "name": "RIP Scatter",
+        "behavior": "3 RIP during bonus retrigger: +5 Redemption or +6 Salvation.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      },
+      {
+        "name": "Sheriff Badge",
+        "behavior": "2 on reels 2 and 4 trigger Shootout (lows wild on center 3).",
+        "params": {}
+      },
+      {
+        "name": "Revolver cylinder",
+        "behavior": "1 on reel 1 triggers Quick Draw (3-6 shots doubling hit mult).",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Nudge / Quick Draw multipliers",
+        "behavior": "Nudge Wild x1-x4 contribute to persistent bonus win mult; Quick Draw doubles hit symbol mult per shot.",
+        "params": {}
+      }
+    ],
+    "collectors": [],
+    "specials": []
+  },
+  "base_game_loop": {
+    "summary": "Spin on 3-4-4-4-2 ways (384). Optional xBet +150% (Scatter on reel 2, more than double Redemption/Salvation chance) or Double xBet +1400% (Scatter on 2+3, about 10x trigger). xNudge on middle reels; 2 Diamondback to xSplit; Quick Draw / Shootout modifiers; xRip voids sub-stake pays. 3 Diamondback awards 5 Redemption; +Hog Me Tight awards 6 Salvation. Buys 80-1,500x.",
+    "phases": [
+      {
+        "name": "Configure xBet",
+        "order": 1,
+        "what_happens": "Optional xBet +150% (Scatter guaranteed reel 2; more than double bonus chance) or Double xBet +1400% (Scatter on reels 2+3; about 10x trigger). Pays still on base bet.",
+        "ends_when": "Spin",
+        "state_changes": "Stake x2.5 or x15 if ante on"
+      },
+      {
+        "name": "Spin + xMechanics",
+        "order": 2,
+        "what_happens": "Reels stop; Nudge Wilds nudge; optional Quick Draw / Shootout / xSplit from 2 Diamondback or lone Hog Me Tight.",
+        "ends_when": "Modifiers resolved",
+        "state_changes": "Mults / wilds / splits applied"
+      },
+      {
+        "name": "Evaluate + xRip",
+        "order": 3,
+        "what_happens": "Pay ways; if total below base bet, xRip zeros payout.",
+        "ends_when": "Payout finalized",
+        "state_changes": "Possible void"
+      },
+      {
+        "name": "Bonus check",
+        "order": 4,
+        "what_happens": "3 Diamondback awards 5 Redemption; +Hog Me Tight awards 6 Salvation.",
+        "ends_when": "Feature or end",
+        "state_changes": "Enter free spins"
+      }
+    ],
+    "win_evaluation": "After nudges/splits/Quick Draw/Shootout; then xRip may void sub-stake totals.",
+    "notes": "From official CMS on nolimitcity.com/games/deadwood-rip."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Redemption Spins",
+        "trigger": "3 Diamondback Scatter symbols.",
+        "spins_awarded": "5 free spins",
+        "retrigger": "3 RIP Scatter awards +5 spins. Landing Hog Me Tight on last reel upgrades to Salvation (+1 spin).",
+        "sticky_or_persistent_state": "Win mult from Nudge Wilds (x1-x4) remains; further Nudge Wilds multiply the collected mult.",
+        "progressive_state": "Persistent win multiplier across Redemption spins.",
+        "end_condition": "Spins exhausted or Final Judgement 100,000x.",
+        "phases": [
+          {
+            "name": "Enter Redemption",
+            "order": 1,
+            "what_happens": "Award 5 spins; Nudge Wild mults stick and multiply each other."
+          },
+          {
+            "name": "Upgrade / retrigger",
+            "order": 2,
+            "what_happens": "Hog Me Tight upgrades to Salvation (+1); 3 RIP awards +5 spins."
+          }
+        ],
+        "effects": "5 FS; sticky multiplying Nudge win mult; upgradeable to Salvation; RIP retrigger +5."
+      },
+      {
+        "name": "Salvation Spins",
+        "trigger": "3 Diamondback + Hog Me Tight Scatter.",
+        "spins_awarded": "6 free spins",
+        "retrigger": "3 RIP Scatter awards +6 spins.",
+        "sticky_or_persistent_state": "Reel 5 always holds Hog Me Tight (Wild + splits middle row every spin). Nudge Wild mults stick and multiply.",
+        "progressive_state": "Persistent win multiplier; perpetual Hog Me Tight on reel 5.",
+        "end_condition": "Spins exhausted or 100,000x.",
+        "phases": [
+          {
+            "name": "Enter Salvation",
+            "order": 1,
+            "what_happens": "6 spins; reel 5 locked Hog Me Tight Wild+split; Nudge mults persist/multiply."
+          },
+          {
+            "name": "Retrigger",
+            "order": 2,
+            "what_happens": "3 RIP awards +6 spins."
+          }
+        ],
+        "effects": "6 FS; locked Hog Me Tight on reel 5; sticky multiplying Nudge mult; RIP +6."
+      }
+    ],
+    "notes": "Exact itemized buy prices within 80-1,500x range not listed beyond the band."
+  },
+  "features": [
+    {
+      "name": "xNudge",
+      "trigger": "Nudge Wild on middle reels",
+      "when": "during_spin",
+      "effects": "Nudge fully visible; +1 mult/step; add in base, multiply in bonus.",
+      "params": {}
+    },
+    {
+      "name": "xSplit",
+      "trigger": "2 Diamondback or Hog Me Tight",
+      "when": "during_spin",
+      "effects": "Split reel/middle-row symbols; double Nudge mult if split.",
+      "params": {}
+    },
+    {
+      "name": "xBet",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_multiplier": 2.5,
+      "cost_text": "+150% base bet (2.5x total)",
+      "effects": "Scatter on reel 2; more than double Redemption/Salvation chance; pays on base bet.",
+      "params": {}
+    },
+    {
+      "name": "Double xBet",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_multiplier": 15.0,
+      "cost_text": "+1400% base bet (15x total)",
+      "effects": "Scatter on reels 2+3; about 10x bonus trigger chance; pays on base bet.",
+      "params": {}
+    },
+    {
+      "name": "Quick Draw",
+      "trigger": "1 revolver cylinder reel 1",
+      "when": "during_spin",
+      "effects": "3-6 shots; each doubles hit symbol mult.",
+      "params": {}
+    },
+    {
+      "name": "Shootout",
+      "trigger": "2 Sheriff Badges on reels 2+4",
+      "when": "during_spin",
+      "effects": "Lows on center 3 reels act as Wilds.",
+      "params": {}
+    },
+    {
+      "name": "xRip",
+      "trigger": "Total paytable win below base bet",
+      "when": "after_spin",
+      "effects": "No payout.",
+      "params": {}
+    },
+    {
+      "name": "Final Judgement",
+      "trigger": "Cap",
+      "effects": "Max 100,000x; round ends.",
+      "params": {
+        "max_win_multiplier": 100000
+      }
+    },
+    {
+      "name": "Nolimit Bonus Buy",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "80x-1,500x bet",
+      "effects": "Buy into bonus features / boosters.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Nolimit Bonus — bonus features",
+        "cost_multiplier": null,
+        "cost_text": "80x-1,500x bet",
+        "effects": "Buy into different bonus features (band only on CMS).",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Nolimit Booster",
+        "cost_multiplier": null,
+        "cost_text": "Per-spin feature cost from balance",
+        "effects": "Activate a specific feature in the Nolimit Bonus tool each spin.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "Exact menu line prices not printed beyond 80-1,500x range."
+  },
+  "ante_bet": {
+    "available": true,
+    "cost_multiplier": 2.5,
+    "effects": "xBet +150%: guaranteed Scatter reel 2; more than double Redemption/Salvation chance. Double xBet +1400% (15x) also available.",
+    "notes": "Double xBet is a separate 15x ante option."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 100000.0,
+    "max_win_notes": "Final Judgement 100,000x base bet",
+    "rtp_percent": 96.09,
+    "rtp_notes": "96.09% from official page title/meta.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "medium",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/deadwood-rip",
+      "local_path": "sources/nolimit/deadwood-rip/cms_features.txt",
+      "extracted_at": "2026-09-27T18:46:50Z",
+      "quote_or_excerpt": "Layout 3-4-4-4-2. 3 Diamondback = 5 Redemption; +Hog Me Tight = 6 Salvation. RIP retrigger +5/+6. xBet +150% / Double xBet +1400%. Max 100,000x. Buys 80-1,500x."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/deadwood-rip",
+      "local_path": "sources/nolimit/deadwood-rip/page.html",
+      "extracted_at": "2026-09-27T18:46:50Z",
+      "quote_or_excerpt": "Title/meta: Deadwood R.I.P Slot - Play | 96.09% RTP, 100000 xBet MAX WIN. 384 ways; rowsReels 3-4-4-4-2."
+    }
+  ],
+  "unknowns": [
+    "exact Nolimit Bonus line-item costs inside 80-1,500x band",
+    "DX RTP variants if any"
+  ],
+  "thumbnail": "thumbs/nolimit-deadwood-rip.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

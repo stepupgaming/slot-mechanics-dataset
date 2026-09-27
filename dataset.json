@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "description": "Index of slot mechanics records. Full records live in games/<slug>.json",
-  "updated_at": "2026-09-27T18:44:07Z",
-  "game_count": 580,
-  "thumbnail_count": 580,
+  "updated_at": "2026-09-27T18:47:15Z",
+  "game_count": 583,
+  "thumbnail_count": 583,
   "by_provider": {
     "Pragmatic Play": 250,
     "Hacksaw Gaming": 203,
     "Slotmill": 61,
     "Backseat Gaming": 35,
-    "Nolimit City": 20,
+    "Nolimit City": 23,
     "Elk Studios": 11
   },
   "by_confidence": {
-    "high": 449,
+    "high": 452,
     "low": 28,
     "medium": 103
   },
@@ -30,7 +30,7 @@
       "medium": 1
     },
     "Nolimit City": {
-      "high": 20
+      "high": 23
     },
     "Pragmatic Play": {
       "high": 156,
@@ -3345,6 +3345,19 @@
       "thumbnail": "thumbs/nolimit-das-xboot.webp"
     },
     {
+      "slug": "nolimit-deadwood-rip",
+      "title": "Deadwood R.I.P",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-deadwood-rip.json",
+      "win_system_type": "ways",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": true,
+      "thumbnail": "thumbs/nolimit-deadwood-rip.webp"
+    },
+    {
       "slug": "nolimit-deadwood-xnudge",
       "title": "Deadwood xNudge",
       "provider": "Nolimit City",
@@ -3395,6 +3408,19 @@
       "has_buy": true,
       "has_ante": true,
       "thumbnail": "thumbs/nolimit-fire-in-the-hole-2.webp"
+    },
+    {
+      "slug": "nolimit-fire-in-the-hole-3",
+      "title": "Fire in the Hole 3",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-fire-in-the-hole-3.json",
+      "win_system_type": "ways",
+      "grid": "3×6",
+      "has_tumble": true,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-fire-in-the-hole-3.webp"
     },
     {
       "slug": "nolimit-fire-in-the-hole",
@@ -3499,6 +3525,19 @@
       "has_buy": true,
       "has_ante": false,
       "thumbnail": "thumbs/nolimit-san-quentin.webp"
+    },
+    {
+      "slug": "nolimit-tombstone-begins",
+      "title": "Tombstone Begins",
+      "provider": "Nolimit City",
+      "confidence_overall": "high",
+      "path": "games/nolimit-tombstone-begins.json",
+      "win_system_type": "paylines",
+      "grid": null,
+      "has_tumble": false,
+      "has_buy": true,
+      "has_ante": false,
+      "thumbnail": "thumbs/nolimit-tombstone-begins.webp"
     },
     {
       "slug": "nolimit-tombstone-rip",

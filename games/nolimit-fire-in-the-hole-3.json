@@ -1,0 +1,343 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:46:12Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Fire in the Hole 3",
+    "slug": "nolimit-fire-in-the-hole-3",
+    "provider_game_id": "FireInTheHole3",
+    "release_year": 2025,
+    "demo_url": "https://playin.com/embed/v1/demo/FireInTheHole3",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/fire-in-the-hole-3"
+  },
+  "grid": {
+    "rows": 3,
+    "cols": 6,
+    "rows_min": 3,
+    "rows_max": 6,
+    "layout_notes": "Collapsing Mine 6-wide; starts 3 active rows, expands to 6. Official rowsReels 6-6-6-6-6-6. Lucky Wagon opens 2/3/4 rows initially (4 with 6 Bonus)."
+  },
+  "win_system": {
+    "type": "ways",
+    "payline_count": null,
+    "ways_count": 46656,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "46,656 ways at full 6-row open (6^6). Ways scale with active rows."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": true,
+      "how_it_works": "Collapsing Mine: wins paid and removed; tumble; +1 active row per collapse up to 6. Also triggered by xBomb, Wild Mining, or xHole."
+    },
+    "respins": {
+      "present": false,
+      "how_it_works": null
+    },
+    "expanding_reels": {
+      "present": true,
+      "how_it_works": "3 to 6 active rows via collapses."
+    },
+    "other": [
+      {
+        "name": "Ice Buried Features",
+        "how_it_works": "Ice may hide Wild, xSplit, Win Multiplier (2x-100x), xHole, Bonus, or 2x2 Max. Inactive until ice removed by exploding xBomb; xSplit reveals contents except win multiplier. Max awards max win when all ice cleared from the symbol."
+      },
+      {
+        "name": "xBomb Wild",
+        "how_it_works": "Wild except Bonus; explodes adjacents (not Bonus); +win mult by its value for next collapse; skips explode when Wild Mining triggers."
+      },
+      {
+        "name": "xHole",
+        "how_it_works": "Pays wins first; draws only regulars, scatters them as size 1-3 splits; leaves empty space triggering collapse. Multiple xHole increase symbol size."
+      },
+      {
+        "name": "xSplit",
+        "how_it_works": "Splits all other symbols on its reel (doubling). Bonus/xSplit/xHole not split; after activate become regulars. Ice hit by split removed on collapse."
+      },
+      {
+        "name": "Wild Mining",
+        "how_it_works": "3-6 same symbols align H or V with no win, no active xHole, no active xBomb: remove them, place 1-4 Wilds in middle; explode non-Bonus/Ice-Buried above bar; Ice Buried reveal on collapse."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "xBomb Wild",
+        "behavior": "Substitutes except Bonus; explode adjacents; +mult by bomb value for next collapse.",
+        "params": {}
+      },
+      {
+        "name": "Wild (mining / ice)",
+        "behavior": "Created by Wild Mining or revealed from ice.",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3/4/5 trigger Lucky Wagon with 2/3/4 rows open; 6 Bonus triggers Lucky Wagon with Persistent Dwarf on first spin and 4 rows open.",
+        "params": {}
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "Collapse / ice win multiplier",
+        "behavior": "xBomb increases win mult for next collapse; ice can hold 2x, 3x, 5x, 10x, 20x, 50x, or 100x.",
+        "params": {
+          "values_mentioned": [
+            2,
+            3,
+            5,
+            10,
+            20,
+            50,
+            100
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Max (ice)",
+        "behavior": "2x2 in ice; clearing all ice from it awards Fire In The Bowl (70,000x).",
+        "params": {}
+      },
+      {
+        "name": "Lucky Wagon coins / enhancers / Dwarfs",
+        "behavior": "Coins times bet; top enhancers (Coin values, Multipliers, Dynamite, Persistent Dynamite, xHole, Evil Dwarf, Persistent Dwarf). Persistent Dwarf collects all values each spin; Evil Dwarf Golden Spin reactivates coins. xHole in bonus awards 3 Frozen Wagon Spins then resumes Lucky Wagon reset to 3.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Collapse spin from 3 to 6 rows with xBomb, xSplit, ice-buried features, Wild Mining, and xHole. Optional Gamble on wins of at least 5x for Lucky Wagon levels. 3-6 Bonus to Lucky Wagon (3-spin reset on coins) with enhancers; xHole may insert Frozen Wagon. Buys: Guaranteed Dwarf 4,000x, Evil Dwarf Forever 700x, Golden Nugget 7,000x; boosters 2x/5x/5x.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional Nolimit Boosters: Bonus on reel 2 (2x), at least 3 Bonus in ice (5x), or all 6 rows active (5x).",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged for active boosters"
+      },
+      {
+        "name": "Collapse loop",
+        "order": 2,
+        "what_happens": "Pay wins; tumble; xBomb/xSplit/xHole/Wild Mining/ice reveals; open rows to 6.",
+        "ends_when": "No more collapses",
+        "state_changes": "Rows/mult may rise; ice features may activate"
+      },
+      {
+        "name": "Gamble / Lucky Wagon check",
+        "order": 3,
+        "what_happens": "If win at least 5x and Gamble on, option to gamble for Lucky Wagon levels. Else 3-6 Bonus enter Lucky Wagon.",
+        "ends_when": "Feature or end",
+        "state_changes": null
+      }
+    ],
+    "win_evaluation": "Wins paid before each collapse; xBomb mult applies to next collapse; Max ice awards 70,000x when fully cleared.",
+    "notes": "From official CMS feature blurbs on nolimitcity.com/games/fire-in-the-hole-3 (no GameSheet PDF linked on page)."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Lucky Wagon Spins",
+        "trigger": "3, 4, or 5 Bonus (2/3/4 rows open); or 6 Bonus (Persistent Dwarf first spin, 4 rows open); or via Gamble / buys.",
+        "spins_awarded": "Starts at 3; resets to 3 whenever a coin lands.",
+        "retrigger": "Coin landing resets to 3. xHole transforms to 1x coin, awards 3 Frozen Wagon Spins, then resumes Lucky Wagon with spin count reset to 3.",
+        "sticky_or_persistent_state": "Persistent Dynamite / Persistent Dwarf can stick; Collect chests via Dynamite.",
+        "progressive_state": "Coin values accumulate times bet via enhancers; Multiplier enhancer multiplies coins/dwarf/persistent dynamite below.",
+        "end_condition": "Spins hit 0 with no coin reset, or Fire In The Bowl 70,000x.",
+        "phases": [
+          {
+            "name": "Enter",
+            "order": 1,
+            "what_happens": "Open 2/3/4 rows (4 with 6 Bonus); spins=3; enable enhancer row."
+          },
+          {
+            "name": "Collect",
+            "order": 2,
+            "what_happens": "Coins trigger enhancers; Dynamite/Dwarf/xHole/Frozen Wagon as applicable."
+          }
+        ],
+        "effects": "Hold-and-win with reset-3, enhancers, Persistent/Evil Dwarf, Frozen Wagon via xHole, 70,000x cap."
+      },
+      {
+        "name": "Frozen Wagon Spins",
+        "trigger": "xHole during Lucky Wagon Spins.",
+        "spins_awarded": "3 Frozen Wagon Spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Existing coins remain; top enhancer row coins-only.",
+        "progressive_state": "All existing coins collect enhancer coin values and add to existing values.",
+        "end_condition": "3 Frozen spins complete; then resume Lucky Wagon with count reset to 3.",
+        "phases": [
+          {
+            "name": "Frozen collect",
+            "order": 1,
+            "what_happens": "3 spins; enhancers are coins only; existing coins add enhancer values."
+          }
+        ],
+        "effects": "Interrupts Lucky Wagon; boosts coin values; resumes Lucky Wagon at 3 spins."
+      }
+    ],
+    "notes": "Standard 70/200/600x scatter buys not listed on CMS for this title (unlike FIT2); only named Nolimit Bonus / Booster prices evidenced."
+  },
+  "features": [
+    {
+      "name": "Collapsing Mine",
+      "trigger": "Win / xBomb / Wild Mining / xHole",
+      "when": "during_spin",
+      "effects": "Tumble and open rows to 6.",
+      "params": {}
+    },
+    {
+      "name": "xBomb",
+      "trigger": "xBomb lands",
+      "when": "during_spin",
+      "effects": "Explode adjacents; +mult by value next collapse.",
+      "params": {}
+    },
+    {
+      "name": "xSplit",
+      "trigger": "xSplit lands",
+      "when": "during_spin",
+      "effects": "Split reel symbols; ice removal on collapse.",
+      "params": {}
+    },
+    {
+      "name": "xHole",
+      "trigger": "xHole lands",
+      "when": "during_spin",
+      "effects": "Scatter split regulars; empty space collapse; in bonus enters Frozen Wagon.",
+      "params": {}
+    },
+    {
+      "name": "Wild Mining",
+      "trigger": "3-6 same H/V, no win/xHole/xBomb",
+      "when": "during_spin",
+      "effects": "Replace with Wilds; explode above bar; reveal ice.",
+      "params": {}
+    },
+    {
+      "name": "Gamble",
+      "trigger": "Main-game win at least 5x base; Gamble enabled",
+      "when": "after_spin",
+      "effects": "Optional gamble of round win for Lucky Wagon levels; can escalate; Collect to stop.",
+      "params": {}
+    },
+    {
+      "name": "Fire In The Bowl",
+      "trigger": "Cap / Max ice cleared",
+      "effects": "Max 70,000x; round ends.",
+      "params": {
+        "max_win_multiplier": 70000
+      }
+    },
+    {
+      "name": "Nolimit Bonus / Booster",
+      "trigger": "Buy",
+      "when": "base_game",
+      "cost_text": "Dwarf 4,000x; Evil Dwarf Forever 700x; Golden Nugget 7,000x; Boosters 2x/5x/5x",
+      "effects": "Buy named Lucky Wagon variants or per-spin boosters.",
+      "params": {}
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Guaranteed Dwarf",
+        "cost_multiplier": 4000.0,
+        "cost_text": "4,000x bet",
+        "effects": "Lucky Wagon with 6 Bonus and guaranteed Persistent Dwarf.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Evil Dwarf Forever",
+        "cost_multiplier": 700.0,
+        "cost_text": "700x bet",
+        "effects": "Lucky Wagon with 3 Bonus and guaranteed Evil Dwarf on top row each spin.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Golden Nugget",
+        "cost_multiplier": 7000.0,
+        "cost_text": "7,000x bet",
+        "effects": "Guaranteed Max symbol in ice (chase Fire In The Bowl); Gamble unavailable.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Booster 1 — Bonus on reel 2",
+        "cost_multiplier": 2.0,
+        "cost_text": "2x bet per spin",
+        "effects": "Guaranteed Bonus on reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Booster 2 — Bonus in ice",
+        "cost_multiplier": 5.0,
+        "cost_text": "5x bet per spin",
+        "effects": "At least 3 Bonus symbols in ice blocks.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Booster 3 — All 6 rows",
+        "cost_multiplier": 5.0,
+        "cost_text": "5x bet per spin",
+        "effects": "Activate all 6 rows.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "CMS lists these Nolimit Bonus/Booster prices; no 70/200/600x standard scatter buy text on page."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No xBet ante described on FIT3 CMS (boosters used instead)."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 70000.0,
+    "max_win_notes": "Fire In The Bowl 70,000x base bet",
+    "rtp_percent": 96.05,
+    "rtp_notes": "96.05% from official page title/meta.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/fire-in-the-hole-3",
+      "local_path": "sources/nolimit/fire-in-the-hole-3/cms_features.txt",
+      "extracted_at": "2026-09-27T18:46:12Z",
+      "quote_or_excerpt": "## Collapsing Mine / Lucky Wagon / Fire In The Bowl / Guaranteed Dwarf 4000x / Evil Dwarf Forever 700x / Golden Nugget 7000x / Boosters 2x 5x 5x. Max 70,000x."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/fire-in-the-hole-3",
+      "local_path": "sources/nolimit/fire-in-the-hole-3/page.html",
+      "extracted_at": "2026-09-27T18:46:12Z",
+      "quote_or_excerpt": "Title/meta: Fire in the Hole 3 Slot - Play | 96.05% RTP, 70000 xBet MAX WIN. rowsReels 6-6-6-6-6-6; 46,656 ways."
+    }
+  ],
+  "unknowns": [
+    "exact per-scatter Nolimit Bonus prices for 3/4/5 Bonus if offered beyond named buys",
+    "DX RTP variants if any"
+  ],
+  "thumbnail": "thumbs/nolimit-fire-in-the-hole-3.webp",
+  "thumbnail_attribution": "Nolimit City"
+}

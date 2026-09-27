@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.1.0",
+  "updated_at": "2026-09-27T18:46:50Z",
+  "identity": {
+    "provider": "Nolimit City",
+    "title": "Tombstone Begins",
+    "slug": "nolimit-tombstone-begins",
+    "provider_game_id": "TombstoneBegins",
+    "release_year": 2026,
+    "demo_url": "https://playin.com/embed/v1/demo/TombstoneBegins",
+    "slotcatalog_url": null,
+    "official_info_url": "https://nolimitcity.com/games/tombstone-begins"
+  },
+  "grid": {
+    "rows": null,
+    "cols": 5,
+    "rows_min": 4,
+    "rows_max": 5,
+    "layout_notes": "Official rowsReels 4-5-5-5-4 (22 paylines per page marketing text)."
+  },
+  "win_system": {
+    "type": "paylines",
+    "payline_count": 22,
+    "ways_count": null,
+    "min_symbols_for_win": null,
+    "direction": "left_to_right",
+    "notes": "winType Lines; unusual 4-5-5-5-4 grid with 22 distinct win lines (page copy)."
+  },
+  "reel_behavior": {
+    "cascades_or_tumbles": {
+      "present": false,
+      "how_it_works": null
+    },
+    "respins": {
+      "present": true,
+      "how_it_works": "Win Respins: winning symbols (and all instances of those types), Wilds, Bonus (base only), and Revolvers stick; new sticky awards +1 respin. Payout when no respins left. xNudge Wilds nudge fully when respins done."
+    },
+    "expanding_reels": {
+      "present": false,
+      "how_it_works": null
+    },
+    "other": [
+      {
+        "name": "Revolver bullets",
+        "how_it_works": "Revolvers (3-6 bullets) fire one bullet each per spin left-to-right, top-to-bottom. Bullet types: Wild, xSplit (double target mult), Upgrade (to higher pay), xNudge Wild (reels 2/4), xNudge Multiplier (+2x/3x/10x/100x additive), or Random."
+      },
+      {
+        "name": "Unleash / Refill",
+        "how_it_works": "Unleash: all Revolvers fire remaining bullets one after another (max one Unleash per spin). Refill: all Revolvers to 6 bullets (max one Refill per spin)."
+      }
+    ]
+  },
+  "symbols": {
+    "wilds": [
+      {
+        "name": "Wild",
+        "behavior": "Can land normally or from Wild bullet.",
+        "params": {}
+      },
+      {
+        "name": "xNudge Wild",
+        "behavior": "From xNudge Wild bullet above top of reels 2/4; nudges fully visible when no respins left; each nudge +1 win mult. Multiplier bullets can raise xNudge mult by 2x/3x/10x/100x (additive).",
+        "params": {}
+      }
+    ],
+    "scatters": [
+      {
+        "name": "Bonus",
+        "behavior": "3 awards 6 Gunslinger Spins (+1 per extra); 4 awards 8 Outlaw Spins; 5 awards 10 Widowmaker Spins.",
+        "params": {
+          "count_for_trigger": 3
+        }
+      }
+    ],
+    "multipliers": [
+      {
+        "name": "xNudge multiplier",
+        "behavior": "Persists across Gunslinger/Outlaw/Widowmaker spins (does not reset). Extra Spin keeps prior xNudge mults.",
+        "params": {
+          "values_mentioned": [
+            2,
+            3,
+            10,
+            100
+          ]
+        }
+      }
+    ],
+    "collectors": [],
+    "specials": [
+      {
+        "name": "Revolver",
+        "behavior": "3-6 bullets; one fire per spin (or all remaining on Unleash / Widowmaker end). Sticky during Win Respins.",
+        "params": {}
+      },
+      {
+        "name": "Unleash / Refill",
+        "behavior": "Unleash fires all remaining bullets; Refill reloads to 6. One of each max per spin.",
+        "params": {}
+      }
+    ]
+  },
+  "base_game_loop": {
+    "summary": "Line spin on 4-5-5-5-4 (22 lines). Wins award Win Respins with sticky winning types/Wild/Bonus/Revolver. Revolvers fire bullets (Wild/xSplit/Upgrade/xNudge/xNudge mult/Random); Unleash/Refill modifiers. 3/4/5 Bonus awards Gunslinger 6 / Outlaw 8 / Widowmaker 10. Boosters 2x/30x/190x/999x; optional Extra Spin after bonus.",
+    "phases": [
+      {
+        "name": "Configure boosters",
+        "order": 1,
+        "what_happens": "Optional: Bonus Booster 2x (Bonus reel 2); xNudge Showdown 30x; xNudge Fully Loaded 190x; Revolver Mayhem 999x.",
+        "ends_when": "Spin",
+        "state_changes": "Stake charged for booster"
+      },
+      {
+        "name": "Spin + Revolvers",
+        "order": 2,
+        "what_happens": "Reels stop; Revolvers fire one bullet each (or Unleash/Refill); optional sticky Win Respins until no new stickies.",
+        "ends_when": "No respins left; then xNudge Wilds nudge fully",
+        "state_changes": "Stickies, mults, upgrades applied"
+      },
+      {
+        "name": "Evaluate wins",
+        "order": 3,
+        "what_happens": "Pay 22 lines with Wild/xNudge mults when respins exhausted.",
+        "ends_when": "Wins paid",
+        "state_changes": null
+      },
+      {
+        "name": "Bonus check",
+        "order": 4,
+        "what_happens": "3/4/5 Bonus awards Gunslinger 6 / Outlaw 8 / Widowmaker 10 (+1 spin per extra Bonus on Gunslinger).",
+        "ends_when": "Feature or end",
+        "state_changes": "Enter free spins"
+      }
+    ],
+    "win_evaluation": "Payout after Win Respins end and xNudge Wilds have nudged; xNudge mults apply.",
+    "notes": "From official CMS on nolimitcity.com/games/tombstone-begins. No standard scatter buy price band listed — boosters and Extra Spin only."
+  },
+  "bonus_free_spins": {
+    "modes": [
+      {
+        "name": "Gunslinger Spins",
+        "trigger": "3 Bonus symbols (+1 spin per additional Bonus).",
+        "spins_awarded": "6 free spins (+1 per extra Bonus)",
+        "retrigger": null,
+        "sticky_or_persistent_state": "xNudge multiplier does not reset between Gunslinger Spins. Win Respins still apply.",
+        "progressive_state": "Accumulated xNudge mult persists across the bonus.",
+        "end_condition": "Spins done or Vengeance 20,000x; optional Extra Spin offer.",
+        "phases": [
+          {
+            "name": "Enter Gunslinger",
+            "order": 1,
+            "what_happens": "Award 6 (+extras) spins; keep xNudge mult across spins."
+          },
+          {
+            "name": "Extra Spin offer",
+            "order": 2,
+            "what_happens": "After bonus, may buy Extra Spin keeping xNudge mults; guaranteed Revolver with xNudge bullet if cost is at most total win."
+          }
+        ],
+        "effects": "6+ FS; persistent xNudge mult; Win Respins + Revolvers."
+      },
+      {
+        "name": "Outlaw Spins",
+        "trigger": "4 Bonus symbols.",
+        "spins_awarded": "8 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "All Gunslinger features; all Revolvers land fully loaded.",
+        "progressive_state": "xNudge mult persists.",
+        "end_condition": "Spins done or 20,000x; optional Extra Spin.",
+        "phases": [
+          {
+            "name": "Enter Outlaw",
+            "order": 1,
+            "what_happens": "8 spins; Revolvers fully loaded; persistent xNudge mult."
+          }
+        ],
+        "effects": "8 FS; fully loaded Revolvers; persistent xNudge mult."
+      },
+      {
+        "name": "Widowmaker Spins",
+        "trigger": "5 Bonus symbols.",
+        "spins_awarded": "10 free spins",
+        "retrigger": null,
+        "sticky_or_persistent_state": "Outlaw features plus: all Revolvers fire remaining bullets before xNudge activation or when no respins left after a respin award. After all Revolvers fired, bullet-formed wins do not award more respins.",
+        "progressive_state": "xNudge mult persists.",
+        "end_condition": "Spins done or 20,000x; optional Extra Spin.",
+        "phases": [
+          {
+            "name": "Enter Widowmaker",
+            "order": 1,
+            "what_happens": "10 spins; fully loaded and dump remaining bullets at end of respin chain."
+          }
+        ],
+        "effects": "10 FS; fully loaded; dump remaining bullets; no extra respins from post-dump bullet wins."
+      }
+    ],
+    "notes": "Extra Spin cost calculated from Nudge multipliers; offered only if cost is at most total win."
+  },
+  "features": [
+    {
+      "name": "Win Respins",
+      "trigger": "Any win",
+      "when": "during_spin",
+      "effects": "Sticky winning types/Wild/Bonus(base)/Revolver; +respin on new sticky; pay when done.",
+      "params": {}
+    },
+    {
+      "name": "Revolver / Unleash / Refill",
+      "trigger": "Symbols land",
+      "when": "during_spin",
+      "effects": "Fire bullets; Unleash dumps remaining; Refill to 6.",
+      "params": {}
+    },
+    {
+      "name": "xSplit bullet",
+      "trigger": "xSplit bullet hits",
+      "when": "during_spin",
+      "effects": "Doubles target symbol multiplier (regulars or Wilds).",
+      "params": {}
+    },
+    {
+      "name": "xNudge Wild / Multiplier bullets",
+      "trigger": "Bullets above reels 2-4",
+      "when": "during_spin",
+      "effects": "Activate/nudge Wild; additive mult boosts 2x/3x/10x/100x.",
+      "params": {}
+    },
+    {
+      "name": "Bonus Booster",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_multiplier": 2.0,
+      "cost_text": "2x bet",
+      "effects": "Guaranteed Bonus on reel 2.",
+      "params": {}
+    },
+    {
+      "name": "xNudge Showdown",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_multiplier": 30.0,
+      "cost_text": "30x bet",
+      "effects": "Revolver with 2 xNudge + 2 xNudge multiplier bullets.",
+      "params": {}
+    },
+    {
+      "name": "xNudge Fully Loaded",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_multiplier": 190.0,
+      "cost_text": "190x bet",
+      "effects": "Revolver with 3 xNudge + 3 xNudge multiplier bullets.",
+      "params": {}
+    },
+    {
+      "name": "Revolver Mayhem",
+      "trigger": "Player enables",
+      "when": "before_spin",
+      "cost_multiplier": 999.0,
+      "cost_text": "999x bet",
+      "effects": "6 Revolvers on top/bottom of reels 2-4; 3 with xNudge mult bullets and one xNudge bullet.",
+      "params": {}
+    },
+    {
+      "name": "Extra Spin",
+      "trigger": "After bonus if cost at most total win",
+      "when": "after_bonus",
+      "effects": "Buy one more spin keeping xNudge mults; guaranteed Revolver with xNudge bullet.",
+      "params": {}
+    },
+    {
+      "name": "Vengeance",
+      "trigger": "Cap",
+      "effects": "Max 20,000x; round ends.",
+      "params": {
+        "max_win_multiplier": 20000
+      }
+    }
+  ],
+  "feature_buy": {
+    "available": true,
+    "options": [
+      {
+        "name": "Bonus Booster",
+        "cost_multiplier": 2.0,
+        "cost_text": "2x bet",
+        "effects": "Guaranteed Bonus on reel 2.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xNudge Showdown",
+        "cost_multiplier": 30.0,
+        "cost_text": "30x bet",
+        "effects": "Revolver: 2 xNudge + 2 xNudge mult bullets.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "xNudge Fully Loaded",
+        "cost_multiplier": 190.0,
+        "cost_text": "190x bet",
+        "effects": "Revolver: 3 xNudge + 3 xNudge mult bullets.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Revolver Mayhem",
+        "cost_multiplier": 999.0,
+        "cost_text": "999x bet",
+        "effects": "6 Revolvers on reels 2-4 extremes with guaranteed xNudge payload.",
+        "rtp_when_bought_note": null
+      },
+      {
+        "name": "Extra Spin",
+        "cost_multiplier": null,
+        "cost_text": "Calculated from Nudge multipliers",
+        "effects": "Post-bonus extra spin keeping mults; guaranteed xNudge Revolver if offered.",
+        "rtp_when_bought_note": null
+      }
+    ],
+    "notes": "CMS shows Widowmaker Spins (Nolimit Bonus) icon without price text; not invented. No free-spin buy band printed."
+  },
+  "ante_bet": {
+    "available": false,
+    "cost_multiplier": null,
+    "effects": null,
+    "notes": "No classic xBet ante; Bonus Booster 2x is the light per-spin guarantee."
+  },
+  "numeric_limits": {
+    "max_win_multiplier": 20000.0,
+    "max_win_notes": "Vengeance 20,000x base bet",
+    "rtp_percent": 96.02,
+    "rtp_notes": "96.02% from official page title/meta.",
+    "hit_frequency_notes": null
+  },
+  "confidence": {
+    "grid": "high",
+    "win_system": "high",
+    "reel_behavior": "high",
+    "symbols": "high",
+    "bonus_free_spins": "high",
+    "features": "high",
+    "feature_buy": "high",
+    "numeric_limits": "high",
+    "base_game_loop": "high",
+    "overall": "high"
+  },
+  "evidence": [
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tombstone-begins",
+      "local_path": "sources/nolimit/tombstone-begins/cms_features.txt",
+      "extracted_at": "2026-09-27T18:46:50Z",
+      "quote_or_excerpt": "Win Respins; Gunslinger 6 / Outlaw 8 / Widowmaker 10; boosters 2x/30x/190x/999x; Vengeance 20,000x."
+    },
+    {
+      "source_type": "provider_marketing",
+      "url": "https://nolimitcity.com/games/tombstone-begins",
+      "local_path": "sources/nolimit/tombstone-begins/page.html",
+      "extracted_at": "2026-09-27T18:46:50Z",
+      "quote_or_excerpt": "Title/meta: Tombstone Begins Slot - Play | 96.02% RTP, 20000 xBet MAX WIN. rowsReels 4-5-5-5-4; winType Lines; twenty-two distinct win lines."
+    }
+  ],
+  "unknowns": [
+    "Widowmaker Spins (Nolimit Bonus) buy price if offered (icon only on page)",
+    "DX RTP variants if any"
+  ],
+  "thumbnail": "thumbs/nolimit-tombstone-begins.webp",
+  "thumbnail_attribution": "Nolimit City"
+}
